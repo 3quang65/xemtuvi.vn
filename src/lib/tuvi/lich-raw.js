@@ -1,5 +1,5 @@
 /*
- * lich.js — Lịch âm Việt Nam (múi giờ UTC+7), can chi, tiết khí,
+ * lich.js — Lịch âm Việt Nam (mặc định múi giờ UTC+7), can chi, tiết khí,
  * giờ/ngày hoàng đạo, 12 trực, ngày kỵ và chấm điểm xem ngày.
  * Thuật toán đổi lịch: Hồ Ngọc Đức (dựa trên "Astronomical Algorithms" của Jean Meeus).
  * Chạy được cả trên trình duyệt (window.Lich) lẫn Node (require).
@@ -84,9 +84,10 @@
     return i - 1;
   }
 
-  /** Dương → Âm. Trả về {ngay, thang, nam, nhuan} */
-  function duongSangAm(dd, mm, yy) {
-    var tz = TZ, dayNumber = jdFromDate(dd, mm, yy);
+  /** Dương → Âm. Trả về {ngay, thang, nam, nhuan}. tz: múi giờ tính lịch (mặc định 7) */
+  function duongSangAm(dd, mm, yy, tz) {
+    tz = tz || TZ;
+    var dayNumber = jdFromDate(dd, mm, yy);
     var k = INT((dayNumber - 2415021.076998695) / 29.530588853);
     var monthStart = getNewMoonDay(k + 1, tz);
     if (monthStart > dayNumber) monthStart = getNewMoonDay(k, tz);
@@ -104,9 +105,10 @@
     return { ngay: lunarDay, thang: lunarMonth, nam: lunarYear, nhuan: leap };
   }
 
-  /** Âm → Dương. Trả về {ngay, thang, nam} hoặc null nếu không có tháng nhuận đó */
-  function amSangDuong(ld, lm, ly, nhuan) {
-    var tz = TZ, a11, b11;
+  /** Âm → Dương. Trả về {ngay, thang, nam} hoặc null nếu không có tháng nhuận đó. tz như duongSangAm */
+  function amSangDuong(ld, lm, ly, nhuan, tz) {
+    tz = tz || TZ;
+    var a11, b11;
     if (lm < 11) { a11 = getLunarMonth11(ly - 1, tz); b11 = getLunarMonth11(ly, tz); }
     else { a11 = getLunarMonth11(ly, tz); b11 = getLunarMonth11(ly + 1, tz); }
     var k = INT(0.5 + (a11 - 2415021.076998695) / 29.530588853);
@@ -120,7 +122,7 @@
     var monthStart = getNewMoonDay(k + off, tz);
     var r = jdToDate(monthStart + ld - 1);
     // kiểm tra ngày 30 có tồn tại không
-    var back = duongSangAm(r[0], r[1], r[2]);
+    var back = duongSangAm(r[0], r[1], r[2], tz);
     if (back.ngay !== ld || back.thang !== lm) return null;
     return { ngay: r[0], thang: r[1], nam: r[2] };
   }

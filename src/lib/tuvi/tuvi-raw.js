@@ -83,6 +83,29 @@
     ['thaiDuong', 'vuKhuc', 'thienDong', 'thaiAm'], ['cuMon', 'thaiDuong', 'vanKhuc', 'vanXuong'],
     ['thienLuong', 'tuVi', 'thienPhu', 'vuKhuc'], ['phaQuan', 'cuMon', 'thaiAm', 'thamLang']];
 
+  // ---- Quy ước an sao. Mỗi điểm các trường phái khác nhau là một tùy chọn, mặc định theo đặc tả
+  // docs/nghien-cuu/tuvi-an-sao-spec.md (mục 10). Lá số trả về kèm quy ước đã dùng.
+  var QUY_UOC_MAC_DINH = {
+    muiGioLich: 'lichSu'    // 10.2: 'lichSu' = âm lịch theo UTC+8 trước 01/01/1968, UTC+7 từ đó; 'utc7' = UTC+7 mọi năm
+  };
+  var JD_1968 = L.jdFromDate(1, 1, 1968);
+  function jdCua(x) { return L.jdFromDate(x.ngay, x.thang, x.nam); }
+  function tzLich(qu, jd) { return qu.muiGioLich === 'lichSu' && jd < JD_1968 ? 8 : 7; }
+  function layQuyUoc(rieng) {
+    var qu = {}, k;
+    for (k in QUY_UOC_MAC_DINH) qu[k] = rieng && rieng[k] != null ? rieng[k] : QUY_UOC_MAC_DINH[k];
+    return qu;
+  }
+  // Âm → dương theo quy ước múi giờ: ngày trước 1968 đổi theo lịch UTC+8
+  function amSangDuong(am, qu) {
+    var r = L.amSangDuong(am.ngay, am.thang, am.nam, am.nhuan, 7);
+    if (qu.muiGioLich === 'lichSu' && (!r || jdCua(r) < JD_1968)) {
+      var r8 = L.amSangDuong(am.ngay, am.thang, am.nam, am.nhuan, 8);
+      if (r8 && jdCua(r8) < JD_1968) return r8;
+    }
+    return r;
+  }
+
   var SINH = { Kim: 'Thủy', 'Thủy': 'Mộc', 'Mộc': 'Hỏa', 'Hỏa': 'Thổ', 'Thổ': 'Kim' };
   var KHAC = { Kim: 'Mộc', 'Mộc': 'Thổ', 'Thổ': 'Thủy', 'Thủy': 'Hỏa', 'Hỏa': 'Kim' };
   function sinhKhac(menh, cuc) {
@@ -94,18 +117,19 @@
   }
 
   /**
-   * opts: { lich: 'duong'|'am', ngay, thang, nam, nhuan, gio (0–23), gioiTinh: 'nam'|'nu', ten }
+   * opts: { lich: 'duong'|'am', ngay, thang, nam, nhuan, gio (0–23), gioiTinh: 'nam'|'nu', ten,
+   *         quyUoc: một phần của QUY_UOC_MAC_DINH (không bắt buộc) }
    */
   function anLaSo(opts) {
-    var am, duong;
+    var qu = layQuyUoc(opts.quyUoc);
+    var duong;
     if (opts.lich === 'am') {
-      am = { ngay: +opts.ngay, thang: +opts.thang, nam: +opts.nam, nhuan: !!opts.nhuan };
-      duong = L.amSangDuong(am.ngay, am.thang, am.nam, am.nhuan);
+      duong = amSangDuong({ ngay: +opts.ngay, thang: +opts.thang, nam: +opts.nam, nhuan: !!opts.nhuan }, qu);
       if (!duong) throw new Error('Ngày âm lịch không tồn tại');
     } else {
       duong = { ngay: +opts.ngay, thang: +opts.thang, nam: +opts.nam };
-      am = L.duongSangAm(duong.ngay, duong.thang, duong.nam);
     }
+    var am = L.duongSangAm(duong.ngay, duong.thang, duong.nam, tzLich(qu, jdCua(duong)));
     var nn = am.ngay, tt = am.thang, nam = am.nam;   // tháng nhuận an như tháng chính
     var h = L.chiGio(+opts.gio), gio = h + 1;         // giờ: 1 = Tý … 12 = Hợi
     var nu = opts.gioiTinh === 'nu', gt = nu ? -1 : 1;
@@ -253,6 +277,7 @@
       menhTai: CHI[cungMenh - 1], thanTai: CHI[cungThan - 1] + ' (cung ' + cungChu[cungThan] + ')',
       menhChu: MENH_CHU[cungMenh - 1], thanChu: THAN_CHU[chiNam - 1],
       tuan: CHI[tuan1 - 1] + '–' + CHI[tuan2 - 1], triet: CHI[triet[0] - 1] + '–' + CHI[triet[1] - 1],
+      quyUoc: qu,
       cung: ketQua
     };
   }
@@ -279,5 +304,5 @@
     return lines.join('\n');
   }
 
-  return { anLaSo: anLaSo, tomTat: tomTat, CUNG: CUNG, DAC_TEN: DAC_TEN };
+  return { anLaSo: anLaSo, tomTat: tomTat, CUNG: CUNG, DAC_TEN: DAC_TEN, QUY_UOC_MAC_DINH: QUY_UOC_MAC_DINH };
 });
