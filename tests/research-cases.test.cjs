@@ -49,6 +49,9 @@ for (const c of cases) {
     for (const [chi, tuoi] of Object.entries(k.daiHanTuoiBatDau)) assert.equal(ls.cung.find((x) => x.tenChi === chi).daiVanTu, tuoi, `đại hạn ${chi}`);
     for (const [chi, nam] of Object.entries(k.tieuHanNamChi)) assert.equal(ls.cung.find((x) => x.tenChi === chi).tieuHan, nam, `tiểu hạn ${chi}`);
     assert.equal(ls.thanChu, k.thanChu, 'Thân chủ');
+    assert.equal(ls.menhChu, k.menhChu.theoChiNamSinh, 'Mệnh chủ');
+    assert.deepEqual(ls.menhChuCach, { theoChiNam: k.menhChu.theoChiNamSinh, theoCungMenh: k.menhChu.theoChiCungMenh });
+    assert.equal(lap(c.input, { menhChu: 'cungMenh' }).menhChu, k.menhChu.theoChiCungMenh, 'Mệnh chủ theo cung Mệnh');
   });
 }
 

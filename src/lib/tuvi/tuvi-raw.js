@@ -94,7 +94,8 @@
     phaToai: 'iztro',       // 10.9: 'iztro' = Tý Ngọ Mão Dậu → Tỵ, Dần Thân Tỵ Hợi → Dậu, Thìn Tuất Sửu Mùi → Sửu; 'ansaotuvi' = đổi Tỵ và Dậu
     luuHa: 'trungQuoc',     // 10.10: 'trungQuoc' = Đinh Thân, Canh Thìn; 'ansaotuvi' = Đinh Thìn, Canh Thân
     thienTruQuy: 'tuat',    // 10.11: Thiên Trù can Quý 'tuat' (sách Việt, engine cũ) | 'hoi' (iztro)
-    thienGiai: 'thienLuong' // 10.7: 'thienLuong' = Thân + 2(M−1); 'capThang' = tháng 1–2 Thân, 3–4 Tuất…; 'thanThuan' = Thân + (M−1)
+    thienGiai: 'thienLuong', // 10.7: 'thienLuong' = Thân + 2(M−1); 'capThang' = tháng 1–2 Thân, 3–4 Tuất…; 'thanThuan' = Thân + (M−1)
+    menhChu: 'chiNam'       // 10.14: Mệnh chủ tra theo 'chiNam' (chi năm sinh, phái Việt) | 'cungMenh' (chi cung Mệnh, engine cũ, iztro)
   };
   // Thiên Khôi, Thiên Việt theo can 0…9, cung 0 = Tý
   var KHOI_VIET = {
@@ -304,7 +305,8 @@
       banMenh: napAmNam, hanhMenh: hanhMenh,
       cuc: CUC_TEN[cuc], cucHanh: hanhCuc, sinhKhac: sinhKhac(hanhMenh, hanhCuc),
       menhTai: CHI[cungMenh - 1], thanTai: CHI[cungThan - 1] + ' (cung ' + cungChu[cungThan] + ')',
-      menhChu: MENH_CHU[cungMenh - 1], thanChu: THAN_CHU[chiNam - 1],
+      menhChu: qu.menhChu === 'cungMenh' ? MENH_CHU[cungMenh - 1] : MENH_CHU[chiNam - 1], thanChu: THAN_CHU[chiNam - 1],
+      menhChuCach: { theoChiNam: MENH_CHU[chiNam - 1], theoCungMenh: MENH_CHU[cungMenh - 1] },
       tuan: CHI[tuan1 - 1] + '–' + CHI[tuan2 - 1], triet: CHI[triet[0] - 1] + '–' + CHI[triet[1] - 1],
       gioChuan: { ngay: ngayChuan[0], thang: ngayChuan[1], nam: ngayChuan[2], gio: hhmm(gioChuan, phutChuan), daQuyDoi: daQuyDoi },
       amLichTz: tzAm,

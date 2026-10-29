@@ -55,6 +55,8 @@ export interface QuyUoc {
   thienTruQuy: 'tuat' | 'hoi';
   /** 10.7 — Thiên Giải: Thân + 2(M−1) (mặc định), theo cặp tháng, hay Thân + (M−1) */
   thienGiai: 'thienLuong' | 'capThang' | 'thanThuan';
+  /** 10.14 — Mệnh chủ tra theo chi năm sinh (mặc định, phái Việt) hay chi cung Mệnh */
+  menhChu: 'chiNam' | 'cungMenh';
 }
 
 export interface ThongTinSinh {
@@ -88,7 +90,8 @@ export interface LaSo {
   sinhKhac: string;
   menhTai: string;
   thanTai: string;
-  menhChu: string;
+  menhChu: string; // theo quy ước menhChu
+  menhChuCach: { theoChiNam: string; theoCungMenh: string };
   thanChu: string;
   tuan: string;
   triet: string;
