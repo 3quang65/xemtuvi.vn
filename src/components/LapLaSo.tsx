@@ -16,6 +16,7 @@ type FormState = {
   gio: string; // giờ đồng hồ 0–23
   phut: string;
   giuNgayTyMuon: boolean; // sinh 23h: giữ ngày cũ thay vì sang ngày hôm sau
+  mienNam: boolean; // nơi sinh miền Nam trước 1975 (đồng hồ UTC+8)
   nhuan: boolean;
 };
 
@@ -23,11 +24,16 @@ const GIO = Array.from({ length: 24 }, (_, i) => i);
 
 export default function LapLaSo() {
   const [f, setF] = useState<FormState>({
-    ten: '', gioiTinh: '', lich: 'duong', ngay: '', thang: '', nam: '', gio: '', phut: '', giuNgayTyMuon: false, nhuan: false,
+    ten: '', gioiTinh: '', lich: 'duong', ngay: '', thang: '', nam: '', gio: '', phut: '', giuNgayTyMuon: false, mienNam: false, nhuan: false,
   });
   const [loi, setLoi] = useState<string | null>(null);
   const [laSo, setLaSo] = useState<LaSo | null>(null);
   const ketQuaRef = useRef<HTMLDivElement>(null);
+
+  const namSo = Number(f.nam);
+  const hienMienNam = namSo >= 1959 && namSo <= 1975;
+  // Giờ chuẩn có thể rơi vào 23h khi khai sinh 0h ở miền Nam (lùi 1 giờ)
+  const hienTyMuon = f.gio === '23' || (hienMienNam && f.mienNam && f.gio === '0');
 
   const doi = <K extends keyof FormState>(k: K, v: FormState[K]) => setF((s) => ({ ...s, [k]: v }));
 
@@ -43,7 +49,8 @@ export default function LapLaSo() {
       gio: f.gio === '' ? NaN : Number(f.gio),
       phut: f.phut === '' ? 0 : Number(f.phut),
       nhuan: f.lich === 'am' && f.nhuan,
-      quyUoc: f.gio === '23' && f.giuNgayTyMuon ? { gioTyMuon: 'giuNgay' } : undefined,
+      mienNamTruoc1975: hienMienNam && f.mienNam,
+      quyUoc: hienTyMuon && f.giuNgayTyMuon ? { gioTyMuon: 'giuNgay' } : undefined,
     };
     const thongBao = kiemTraThongTin(t);
     if (thongBao) { setLoi(thongBao); return; }
@@ -114,7 +121,13 @@ export default function LapLaSo() {
               <input inputMode="numeric" placeholder="Phút" aria-label="Phút sinh" value={f.phut}
                 onChange={(e) => doi('phut', e.target.value.replace(/\D/g, '').slice(0, 2))} />
             </div>
-            {f.gio === '23' && (
+            {hienMienNam && (
+              <label className="nhuan">
+                <input type="checkbox" checked={f.mienNam} onChange={(e) => doi('mienNam', e.target.checked)} />
+                Nơi sinh: miền Nam trước 1975 <em>(đồng hồ khi đó nhanh hơn 1 giờ, sẽ tự quy đổi)</em>
+              </label>
+            )}
+            {hienTyMuon && (
               <label className="nhuan">
                 <input type="checkbox" checked={f.giuNgayTyMuon} onChange={(e) => doi('giuNgayTyMuon', e.target.checked)} />
                 Giữ ngày sinh cũ (mặc định giờ 23h tính sang ngày hôm sau)

@@ -51,6 +51,7 @@ export interface ThongTinSinh {
   nhuan?: boolean;
   gio: number; // 0–23, giờ đồng hồ
   phut?: number; // 0–59
+  mienNamTruoc1975?: boolean; // sinh ở miền Nam, giờ khai sinh theo đồng hồ UTC+8 (1960–1975)
   gioiTinh: 'nam' | 'nu';
   ten?: string;
   quyUoc?: Partial<QuyUoc>;
@@ -77,6 +78,10 @@ export interface LaSo {
   thanChu: string;
   tuan: string;
   triet: string;
+  /** Giờ sinh sau khi quy về giờ chuẩn UTC+7 (đặc tả 1.2) */
+  gioChuan: { ngay: number; thang: number; nam: number; gio: string; daQuyDoi: boolean };
+  /** Múi giờ đã dùng để đổi âm lịch (8 với ngày trước 1968) */
+  amLichTz: 7 | 8;
   quyUoc: QuyUoc;
   cung: Cung[]; // 12 phần tử, chỉ số = chi (0 = Tý)
 }
@@ -111,6 +116,20 @@ export function lapLaSo(t: ThongTinSinh): LaSo {
   const loi = kiemTraThongTin(t);
   if (loi) throw new Error(loi);
   return engine.anLaSo(t);
+}
+
+/** Các quy ước đã áp dụng cho lá số này, viết cho người xem ("Lá số lập theo…"). */
+export function moTaQuyUoc(ls: LaSo): string[] {
+  const ds: string[] = [];
+  const g = ls.gioChuan;
+  if (g.daQuyDoi) ds.push(`Giờ khai sinh miền Nam (đồng hồ UTC+8) đã quy về giờ chuẩn: ${g.gio} ngày ${g.ngay}/${g.thang}/${g.nam}.`);
+  if (g.gio.startsWith('23:')) {
+    ds.push(ls.quyUoc.gioTyMuon === 'ngaySau'
+      ? 'Sinh từ 23 giờ: tính sang ngày hôm sau (giờ Tý của ngày mới).'
+      : 'Sinh từ 23 giờ: giữ ngày sinh cũ, chỉ đổi sang giờ Tý (theo lựa chọn của bạn).');
+  }
+  if (ls.amLichTz === 8) ds.push('Âm lịch trước năm 1968 tính theo lịch thời đó (múi giờ UTC+8).');
+  return ds;
 }
 
 /** Tóm tắt lá số thành văn bản gọn (dùng làm đầu vào cho phần luận giải). */

@@ -90,6 +90,8 @@
     gioTyMuon: 'ngaySau'    // 10.1: sinh 23:00–23:59 'ngaySau' = tính sang ngày hôm sau; 'giuNgay' = giữ ngày, chỉ đổi giờ Tý
   };
   var JD_1968 = L.jdFromDate(1, 1, 1968);
+  // Miền Nam dùng đồng hồ UTC+8 từ 01/01/1960 đến 13/06/1975 (cơ sở dữ liệu IANA, Asia/Ho_Chi_Minh)
+  var PHUT_MN_TU = L.jdFromDate(1, 1, 1960) * 1440, PHUT_MN_DEN = L.jdFromDate(13, 6, 1975) * 1440;
   function jdCua(x) { return L.jdFromDate(x.ngay, x.thang, x.nam); }
   function tzLich(qu, jd) { return qu.muiGioLich === 'lichSu' && jd < JD_1968 ? 8 : 7; }
   function layQuyUoc(rieng) {
@@ -119,6 +121,7 @@
 
   /**
    * opts: { lich: 'duong'|'am', ngay, thang, nam, nhuan, gio (0–23), phut (0–59), gioiTinh: 'nam'|'nu', ten,
+   *         mienNamTruoc1975: sinh ở miền Nam, giờ khai sinh theo đồng hồ thời đó,
    *         quyUoc: một phần của QUY_UOC_MAC_DINH (không bắt buộc) }
    */
   function anLaSo(opts) {
@@ -130,15 +133,18 @@
     } else {
       duong = { ngay: +opts.ngay, thang: +opts.thang, nam: +opts.nam };
     }
+    // Giờ chuẩn UTC+7 (đặc tả 1.2): giờ khai sinh miền Nam 1960–1975 theo đồng hồ UTC+8, lùi 1 giờ
+    var phutSinh = jdCua(duong) * 1440 + (+opts.gio) * 60 + (+opts.phut || 0);
+    var daQuyDoi = !!opts.mienNamTruoc1975 && phutSinh >= PHUT_MN_TU && phutSinh < PHUT_MN_DEN;
+    if (daQuyDoi) phutSinh -= 60;
+    var ngayChuan = L.jdToDate(Math.floor(phutSinh / 1440)), gioChuan = Math.floor(phutSinh % 1440 / 60), phutChuan = phutSinh % 60;
     // Ngày dùng để đổi âm lịch và tính can chi ngày: giờ Tý muộn (23h) thuộc ngày hôm sau
-    var ngayLich = duong;
-    if (+opts.gio === 23 && qu.gioTyMuon === 'ngaySau') {
-      var sau = L.jdToDate(jdCua(duong) + 1);
-      ngayLich = { ngay: sau[0], thang: sau[1], nam: sau[2] };
-    }
-    var am = L.duongSangAm(ngayLich.ngay, ngayLich.thang, ngayLich.nam, tzLich(qu, jdCua(ngayLich)));
+    var jdLich = Math.floor(phutSinh / 1440) + (gioChuan === 23 && qu.gioTyMuon === 'ngaySau' ? 1 : 0);
+    var nl = L.jdToDate(jdLich), ngayLich = { ngay: nl[0], thang: nl[1], nam: nl[2] };
+    var tzAm = tzLich(qu, jdLich);
+    var am = L.duongSangAm(ngayLich.ngay, ngayLich.thang, ngayLich.nam, tzAm);
     var nn = am.ngay, tt = am.thang, nam = am.nam;   // tháng nhuận an như tháng chính
-    var h = L.chiGio(+opts.gio), gio = h + 1;         // giờ: 1 = Tý … 12 = Hợi
+    var h = L.chiGio(gioChuan), gio = h + 1;         // giờ: 1 = Tý … 12 = Hợi
     var nu = opts.gioiTinh === 'nu', gt = nu ? -1 : 1;
     var canNam = (nam + 6) % 10 + 1, chiNam = (nam + 8) % 12 + 1;
     var amDuongNam = canNam % 2 === 1 ? 1 : -1;
@@ -284,6 +290,8 @@
       menhTai: CHI[cungMenh - 1], thanTai: CHI[cungThan - 1] + ' (cung ' + cungChu[cungThan] + ')',
       menhChu: MENH_CHU[cungMenh - 1], thanChu: THAN_CHU[chiNam - 1],
       tuan: CHI[tuan1 - 1] + '–' + CHI[tuan2 - 1], triet: CHI[triet[0] - 1] + '–' + CHI[triet[1] - 1],
+      gioChuan: { ngay: ngayChuan[0], thang: ngayChuan[1], nam: ngayChuan[2], gio: hhmm(gioChuan, phutChuan), daQuyDoi: daQuyDoi },
+      amLichTz: tzAm,
       quyUoc: qu,
       cung: ketQua
     };

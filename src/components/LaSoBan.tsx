@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import type { Cung, LaSo, Sao } from '@/lib/tuvi';
+import { moTaQuyUoc, type Cung, type LaSo, type Sao } from '@/lib/tuvi';
 
 // Vị trí 12 cung trên bàn 4×4 truyền thống (hàng, cột), theo chỉ số chi: 0 = Tý … 11 = Hợi
 const VI_TRI: Record<number, [number, number]> = {
@@ -84,6 +84,7 @@ export default function LaSoBan({ laSo, namXem }: { laSo: LaSo; namXem: number }
   const vanNay = laSo.cung.find((c) => tuoiMu >= c.daiVanTu && tuoiMu <= c.daiVanTu + 9);
 
   const d = laSo.duong, a = laSo.am;
+  const quyUoc = moTaQuyUoc(laSo);
   return (
     <section className="ket-qua" aria-label="Lá số tử vi">
       <div className="ban">
@@ -111,6 +112,7 @@ export default function LaSoBan({ laSo, namXem }: { laSo: LaSo; namXem: number }
         Độ sáng: M Miếu · V Vượng · Đ Đắc · B Bình hòa · H Hãm. Lộc, Quyền, Khoa, Kỵ là tứ hóa theo can năm sinh.
         {vanNay && ` Đại vận đang đi (${namXem}, ${tuoiMu} tuổi mụ) được tô đậm.`}
       </p>
+      {quyUoc.length > 0 && <p className="chu-giai">Lá số lập theo: {quyUoc.join(' ')}</p>}
     </section>
   );
 }

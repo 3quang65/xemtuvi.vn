@@ -100,3 +100,25 @@ test('Giờ Tý muộn 23:00–23:59 tính sang ngày hôm sau (đặc tả 1.4,
   // Đêm giao thừa: sang năm mới
   assert.equal(T.anLaSo({ lich: 'duong', ngay: 9, thang: 2, nam: 2024, gio: 23, gioiTinh: 'nu' }).canChi.nam, 'Giáp Thìn');
 });
+
+test('Giờ khai sinh miền Nam 1960–1975 quy về giờ chuẩn UTC+7 (đặc tả 1.2, 10.3)', () => {
+  const lapMN = (ngay, thang, nam, gio, phut, mienNamTruoc1975) =>
+    T.anLaSo({ lich: 'duong', ngay, thang, nam, gio, phut, gioiTinh: 'nam', mienNamTruoc1975 });
+  // Sài Gòn 11:30 ngày 1/5/1970 (đồng hồ UTC+8) là 10:30 giờ chuẩn: giờ Tỵ, không phải Ngọ.
+  // (Ví dụ 10:30 → 09:30 ở đặc tả 1.2 không đổi canh: cả hai đều là giờ Tỵ.)
+  const mn = lapMN(1, 5, 1970, 11, 30, true);
+  assert.equal(mn.gio.chi, 'Tỵ');
+  assert.deepEqual(mn.gioChuan, { ngay: 1, thang: 5, nam: 1970, gio: '10:30', daQuyDoi: true });
+  assert.equal(mn.gio.dongHo, '11:30');
+  assert.equal(lapMN(1, 5, 1970, 11, 30, false).gio.chi, 'Ngọ');
+  // Ngoài khoảng 01/01/1960 – 13/06/1975 không quy đổi
+  assert.equal(lapMN(13, 6, 1975, 10, 30, true).gioChuan.daQuyDoi, false);
+  assert.equal(lapMN(12, 6, 1975, 10, 30, true).gioChuan.daQuyDoi, true);
+  assert.equal(lapMN(31, 12, 1959, 23, 30, true).gioChuan.daQuyDoi, false);
+  // 00:30 ngày 2/3/1970 → 23:30 ngày 1/3: Tý muộn, vẫn thuộc ngày 2/3 khi đổi âm lịch
+  const dem = lapMN(2, 3, 1970, 0, 30, true);
+  assert.deepEqual(dem.gioChuan, { ngay: 1, thang: 3, nam: 1970, gio: '23:30', daQuyDoi: true });
+  assert.deepEqual(dem.am, lapMN(2, 3, 1970, 0, 30, false).am);
+  const giu = T.anLaSo({ lich: 'duong', ngay: 2, thang: 3, nam: 1970, gio: 0, phut: 30, gioiTinh: 'nam', mienNamTruoc1975: true, quyUoc: { gioTyMuon: 'giuNgay' } });
+  assert.deepEqual(giu.am, lapMN(1, 3, 1970, 12, 0, false).am);
+});
