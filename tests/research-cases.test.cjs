@@ -217,3 +217,35 @@ test('Tùy chọn Phá Toái, Lưu Hà, Thiên Trù can Quý, Thiên Giải (đ�
   assert.deepEqual(giai('capThang'), ['Thân', 'Thân', 'Tuất', 'Tuất', 'Tý', 'Tý', 'Dần', 'Dần', 'Thìn', 'Thìn', 'Ngọ', 'Ngọ']);
   assert.deepEqual(giai('thanThuan'), ['Thân', 'Dậu', 'Tuất', 'Hợi', 'Tý', 'Sửu', 'Dần', 'Mão', 'Thìn', 'Tỵ', 'Ngọ', 'Mùi']);
 });
+
+test('Tùy chọn độ sáng Tử Vi ở Tý, Ngọ và độ sáng Hóa Lộc, Quyền, Kỵ (đặc tả mục 6)', () => {
+  const dacTinh = (ls, ten) => ls.cung.flatMap((c) => c.chinhTinh.concat(c.phuTinh)).find((s) => s.ten === ten).dacTinh;
+  // TC06: Tử Vi ở Ngọ; TC02 có Tử Vi ở Thân (không bị ảnh hưởng)
+  const tc06 = cases.find((c) => c.id === 'TC06').input, tc02 = cases.find((c) => c.id === 'TC02').input;
+  assert.equal(dacTinh(lap(tc06), 'Tử Vi'), 'M');
+  assert.equal(dacTinh(lap(tc06, { tuViTyNgo: 'cungBinh' }), 'Tử Vi'), 'B');
+  assert.equal(dacTinh(lap(tc06, { tuViTyNgo: 'cungMieu' }), 'Tử Vi'), 'M');
+  assert.equal(dacTinh(lap(tc02, { tuViTyNgo: 'cungBinh' }), 'Tử Vi'), 'M', 'Tử Vi ở Thân giữ nguyên');
+  // 11/2/1985 9h nam: Tử Vi ở Tý
+  const tuViTy = { lich: 'duong', ngay: 11, thang: 2, nam: 1985, gio: 9, gioiTinh: 'nam' };
+  assert.equal(viTriSao(lap(tuViTy))['Tử Vi'], 'Tý');
+  assert.equal(dacTinh(lap(tuViTy), 'Tử Vi'), 'B');
+  assert.equal(dacTinh(lap(tuViTy, { tuViTyNgo: 'cungMieu' }), 'Tử Vi'), 'M');
+  // Ẩn độ sáng Hóa Lộc, Quyền, Kỵ; Hóa Khoa giữ nguyên
+  const an = lap(tc06, { dacTinhHoa: 'an' });
+  for (const h of ['Hóa Lộc', 'Hóa Quyền', 'Hóa Kỵ']) {
+    assert.ok(dacTinh(lap(tc06), h), h);
+    assert.equal(dacTinh(an, h), null, h);
+  }
+  assert.equal(dacTinh(an, 'Hóa Khoa'), 'Đ');
+});
+
+test('Quy ước mặc định đúng đặc tả mục 10 và được trả kèm lá số', () => {
+  const ls = lap(cases[0].input);
+  assert.deepEqual(ls.quyUoc, {
+    muiGioLich: 'lichSu', gioTyMuon: 'ngaySau', hoaLinh: 'cauPhu', khoiViet: 'toanThu', phaToai: 'iztro',
+    luuHa: 'trungQuoc', thienTruQuy: 'tuat', thienGiai: 'thienLuong', menhChu: 'chiNam', tuViTyNgo: 'ansaotuvi', dacTinhHoa: 'ansaotuvi',
+  });
+  assert.deepEqual(lap(cases[0].input, { khoiViet: 'ansaotuvi', khongCo: 1 }).quyUoc.khoiViet, 'ansaotuvi');
+  assert.equal('khongCo' in lap(cases[0].input, { khongCo: 1 }).quyUoc, false);
+});

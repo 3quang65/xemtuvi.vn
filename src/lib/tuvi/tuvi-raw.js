@@ -95,7 +95,9 @@
     luuHa: 'trungQuoc',     // 10.10: 'trungQuoc' = Đinh Thân, Canh Thìn; 'ansaotuvi' = Đinh Thìn, Canh Thân
     thienTruQuy: 'tuat',    // 10.11: Thiên Trù can Quý 'tuat' (sách Việt, engine cũ) | 'hoi' (iztro)
     thienGiai: 'thienLuong', // 10.7: 'thienLuong' = Thân + 2(M−1); 'capThang' = tháng 1–2 Thân, 3–4 Tuất…; 'thanThuan' = Thân + (M−1)
-    menhChu: 'chiNam'       // 10.14: Mệnh chủ tra theo 'chiNam' (chi năm sinh, phái Việt) | 'cungMenh' (chi cung Mệnh, engine cũ, iztro)
+    menhChu: 'chiNam',      // 10.14: Mệnh chủ tra theo 'chiNam' (chi năm sinh, phái Việt) | 'cungMenh' (chi cung Mệnh, engine cũ, iztro)
+    tuViTyNgo: 'ansaotuvi', // 6: độ sáng Tử Vi ở Tý, Ngọ: 'ansaotuvi' = Tý Bình, Ngọ Miếu | 'cungMieu' | 'cungBinh'
+    dacTinhHoa: 'ansaotuvi' // 6: độ sáng Hóa Lộc, Quyền, Kỵ: 'ansaotuvi' = đắc ở tứ mộ, hãm nơi khác | 'an' = không ghi
   };
   // Thiên Khôi, Thiên Việt theo can 0…9, cung 0 = Tý
   var KHOI_VIET = {
@@ -262,10 +264,17 @@
     var khoiHan = d(11, -3 * (chiNam - 1));
     var cungTy1 = d(khoiHan, -gt * (chiNam - 1));
 
+    // Độ sáng sao tại cung c (1 = Tý … 12 = Hợi), theo quy ước ở các điểm sách chưa thống nhất
+    function dacTinh(key, c) {
+      if (qu.dacTinhHoa === 'an' && (key === 'hoaLoc' || key === 'hoaQuyen' || key === 'hoaKy')) return '.';
+      if (key === 'tuVi' && (c === 1 || c === 7) && qu.tuViTyNgo !== 'ansaotuvi') return qu.tuViTyNgo === 'cungMieu' ? 'M' : 'B';
+      return DAC_TINH[key] ? DAC_TINH[key].charAt(c - 1) : '.';
+    }
+
     var ketQua = [];
     for (c = 1; c <= 12; c++) {
       var dsSao = cung[c].map(function (s) {
-        var dt = DAC_TINH[s.key] ? DAC_TINH[s.key].charAt(c - 1) : '.';
+        var dt = dacTinh(s.key, c);
         return {
           key: s.key, ten: s.ten, hanh: HANH_TEN[s.hanh],
           loai: s.loaiSo === 1 ? 'chinh' : s.loaiSo < 10 ? 'cat' : 'sat',

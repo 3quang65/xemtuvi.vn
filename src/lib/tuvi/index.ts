@@ -57,6 +57,10 @@ export interface QuyUoc {
   thienGiai: 'thienLuong' | 'capThang' | 'thanThuan';
   /** 10.14 — Mệnh chủ tra theo chi năm sinh (mặc định, phái Việt) hay chi cung Mệnh */
   menhChu: 'chiNam' | 'cungMenh';
+  /** Mục 6 đặc tả — độ sáng Tử Vi ở Tý, Ngọ: Tý Bình, Ngọ Miếu (mặc định), cùng Miếu, hay cùng Bình */
+  tuViTyNgo: 'ansaotuvi' | 'cungMieu' | 'cungBinh';
+  /** Mục 6 đặc tả — độ sáng Hóa Lộc, Quyền, Kỵ: theo bảng ansaotuvi (mặc định) hay không ghi */
+  dacTinhHoa: 'ansaotuvi' | 'an';
 }
 
 export interface ThongTinSinh {
