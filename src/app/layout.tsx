@@ -1,0 +1,35 @@
+import type { Metadata, Viewport } from 'next';
+import { Be_Vietnam_Pro, Noto_Serif } from 'next/font/google';
+import './globals.css';
+
+const sans = Be_Vietnam_Pro({
+  subsets: ['latin', 'vietnamese'],
+  weight: ['400', '500', '600'],
+  variable: '--font-sans',
+  display: 'swap',
+});
+
+const serif = Noto_Serif({
+  subsets: ['latin', 'vietnamese'],
+  weight: ['400', '600'],
+  variable: '--font-serif',
+  display: 'swap',
+});
+
+export const metadata: Metadata = {
+  metadataBase: new URL('https://xemtuvi.vn'),
+  title: 'Lập lá số tử vi online — xemtuvi.vn',
+  description:
+    'Lập lá số Tử Vi Đẩu Số theo cách an sao Việt Nam: 12 cung, chính tinh, phụ tinh, tứ hóa, đại vận. Miễn phí, không cần đăng ký.',
+  openGraph: { siteName: 'xemtuvi.vn', locale: 'vi_VN', type: 'website' },
+};
+
+export const viewport: Viewport = { themeColor: '#1F2A44' };
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="vi" className={`${sans.variable} ${serif.variable}`}>
+      <body>{children}</body>
+    </html>
+  );
+}
