@@ -9,7 +9,7 @@ const { cases, testLich } = require('../docs/nghien-cuu/tuvi-test-cases.json');
 // Sao tùy chọn (đặc tả 5.4), engine chưa an
 const KHONG_AN = new Set(['Thiên Nguyệt', 'Thiên Vu', 'Âm Sát']);
 // Sao engine đang theo bảng khác đặc tả (mục 10), sẽ đổi thành tùy chọn
-const CHUA_THEO_DAC_TA = new Set(['Thiên Khôi', 'Thiên Việt', 'Phá Toái', 'Lưu Hà']);
+const CHUA_THEO_DAC_TA = new Set(['Phá Toái', 'Lưu Hà']);
 const TEN_ENGINE = { 'Bác Sĩ': 'Bác Sỹ' };
 
 function lap(i, quyUoc) {
@@ -176,4 +176,21 @@ test('Tùy chọn Hỏa Tinh, Linh Tinh tuổi Tỵ Dậu Sửu (đặc tả 5.1
   // Mặc định: tuổi Dậu (TC11, Âm Nữ, giờ Hợi): Hỏa khởi Mão đếm thuận 11 → Dần; Linh khởi Tuất đếm nghịch 11 → Hợi
   const v = viTriSao(lap(cases.find((c) => c.id === 'TC11').input));
   assert.deepEqual([v['Hỏa Tinh'], v['Linh Tinh']], ['Dần', 'Hợi']);
+});
+
+test('Tùy chọn Thiên Khôi, Thiên Việt (đặc tả 5.7, 10.8)', () => {
+  kiemTraCachCu(['Thiên Khôi', 'Thiên Việt'], { khoiViet: 'ansaotuvi' });
+  const kv = (nam, khoiViet) => {
+    const v = viTriSao(T.anLaSo({ lich: 'duong', ngay: 1, thang: 6, nam, gio: 12, gioiTinh: 'nam', quyUoc: { khoiViet } }));
+    return [v['Thiên Khôi'], v['Thiên Việt']];
+  };
+  // Mặc định: Giáp Mậu Canh Sửu/Mùi, Ất Kỷ Tý/Thân, Bính Đinh Hợi/Dậu, Tân Ngọ/Dần, Nhâm Quý Mão/Tỵ
+  const MAC_DINH = [['Sửu', 'Mùi'], ['Tý', 'Thân'], ['Hợi', 'Dậu'], ['Hợi', 'Dậu'], ['Sửu', 'Mùi'], ['Tý', 'Thân'], ['Sửu', 'Mùi'], ['Ngọ', 'Dần'], ['Mão', 'Tỵ'], ['Mão', 'Tỵ']];
+  for (let i = 0; i < 10; i++) assert.deepEqual(kv(1984 + i), MAC_DINH[i], `can ${L.CAN[i]}`);
+  assert.deepEqual(kv(1990, 'canhTanMaHo'), ['Ngọ', 'Dần'], 'Canh theo "Canh Tân phùng Mã Hổ"');
+  assert.deepEqual(kv(1992, 'ansaotuvi'), ['Tỵ', 'Mão'], 'engine cũ đảo cả can Nhâm');
+  // Sao lưu Khôi Việt theo cùng bảng
+  const ls = T.anLaSo({ lich: 'duong', ngay: 1, thang: 6, nam: 1990, gio: 12, gioiTinh: 'nam', quyUoc: { khoiViet: 'canhTanMaHo' } });
+  const luu = T.anLuuNien(ls, 2030, { dayDu: true }).saoLuu;
+  assert.deepEqual(['L. Thiên Khôi', 'L. Thiên Việt'].map((t) => L.CHI[luu.find((s) => s.ten === t).chi]), ['Ngọ', 'Dần']);
 });

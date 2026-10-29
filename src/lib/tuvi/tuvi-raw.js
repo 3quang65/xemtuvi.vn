@@ -72,7 +72,6 @@
   var CUC_TEN = { 2: 'Thủy Nhị Cục', 3: 'Mộc Tam Cục', 4: 'Kim Tứ Cục', 5: 'Thổ Ngũ Cục', 6: 'Hỏa Lục Cục' };
   var HANH_CUC = { 'Thủy': 2, 'Mộc': 3, 'Kim': 4, 'Thổ': 5, 'Hỏa': 6 };
   var LOC_TON = [0, 3, 4, 6, 7, 6, 7, 9, 10, 12, 1];          // theo can năm 1…10
-  var KHOI = [0, 2, 1, 12, 10, 8, 1, 8, 7, 6, 4];
   var THIEN_QUAN = [0, 8, 5, 6, 3, 4, 10, 12, 10, 11, 7], THIEN_PHUC = [0, 10, 9, 1, 12, 4, 3, 7, 6, 7, 6];
   var LUU_HA = [0, 10, 11, 8, 5, 6, 7, 9, 4, 12, 3], THIEN_TRU = [0, 6, 7, 1, 6, 7, 9, 3, 7, 10, 11];
   // Tứ hóa theo can năm: [Lộc, Quyền, Khoa, Kỵ]
@@ -88,8 +87,17 @@
   var QUY_UOC_MAC_DINH = {
     muiGioLich: 'lichSu',   // 10.2: 'lichSu' = âm lịch theo UTC+8 trước 01/01/1968, UTC+7 từ đó; 'utc7' = UTC+7 mọi năm
     gioTyMuon: 'ngaySau',   // 10.1: sinh 23:00–23:59 'ngaySau' = tính sang ngày hôm sau; 'giuNgay' = giữ ngày, chỉ đổi giờ Tý
-    hoaLinh: 'cauPhu'       // 10.6: tuổi Tỵ Dậu Sửu 'cauPhu' = Hỏa khởi Mão, Linh khởi Tuất; 'ansaotuvi' = Hỏa Tuất, Linh Mão (engine cũ)
+    hoaLinh: 'cauPhu',      // 10.6: tuổi Tỵ Dậu Sửu 'cauPhu' = Hỏa khởi Mão, Linh khởi Tuất; 'ansaotuvi' = Hỏa Tuất, Linh Mão (engine cũ)
+    khoiViet: 'toanThu'     // 10.8: 'toanThu' = "Giáp Mậu Canh ngưu dương…"; 'canhTanMaHo' = như trên nhưng Canh ở Ngọ/Dần;
+                            //       'ansaotuvi' = engine cũ (Khôi/Việt đảo nhau ở can Đinh, Mậu, Canh, Nhâm)
   };
+  // Thiên Khôi, Thiên Việt theo can 0…9, cung 0 = Tý
+  var KHOI_VIET = {
+    toanThu: { khoi: [1, 0, 11, 11, 1, 0, 1, 6, 3, 3], viet: [7, 8, 9, 9, 7, 8, 7, 2, 5, 5] },
+    canhTanMaHo: { khoi: [1, 0, 11, 11, 1, 0, 6, 6, 3, 3], viet: [7, 8, 9, 9, 7, 8, 2, 2, 5, 5] },
+    ansaotuvi: { khoi: [1, 0, 11, 9, 7, 0, 7, 6, 5, 3], viet: [7, 8, 9, 11, 1, 8, 1, 2, 3, 5] }
+  };
+  function bangKhoiViet(qu) { return KHOI_VIET[qu.khoiViet] || KHOI_VIET.toanThu; }
   var JD_1968 = L.jdFromDate(1, 1, 1968);
   // Miền Nam dùng đồng hồ UTC+8 từ 01/01/1960 đến 13/06/1975 (cơ sở dữ liệu IANA, Asia/Ho_Chi_Minh)
   var PHUT_MN_TU = L.jdFromDate(1, 1, 1960) * 1440, PHUT_MN_DEN = L.jdFromDate(13, 6, 1975) * 1440;
@@ -214,7 +222,7 @@
     var vanKhuc = d(5, gio - 1); nhap(vanKhuc, 'vanKhuc'); var vanXuong = d(2, 2 - vanKhuc); nhap(vanXuong, 'vanXuong');
     var tamThai = d(5, tt + nn - 2); nhap(tamThai, 'tamThai'); nhap(d(2, 2 - tamThai), 'batToa');
     var anQuang = d(vanXuong, nn - 2); nhap(anQuang, 'anQuang'); nhap(d(2, 2 - anQuang), 'thienQuy');
-    var khoi = KHOI[canNam]; nhap(khoi, 'thienKhoi'); nhap(d(5, 5 - khoi), 'thienViet');
+    var kv = bangKhoiViet(qu); nhap(kv.khoi[canNam - 1] + 1, 'thienKhoi'); nhap(kv.viet[canNam - 1] + 1, 'thienViet');
     nhap(d(7, chiNam - 1), 'thienHu'); nhap(d(7, -chiNam + 1), 'thienKhoc');
     nhap(d(cungMenh, chiNam - 1), 'thienTai'); nhap(d(cungThan, chiNam - 1), 'thienTho');
     var hongLoan = d(4, -chiNam + 1); nhap(hongLoan, 'hongLoan'); nhap(d(hongLoan, 6), 'thienHy');
@@ -300,7 +308,6 @@
   }
 
   // ---- Lưu niên (đặc tả mục 7.3–7.5): sao lưu theo can chi năm xem, lưu tứ hóa, đại vận, tiểu hạn, lưu nguyệt
-  var KHOI_VIET_LUU = { khoi: [1, 0, 11, 11, 1, 0, 1, 6, 3, 3], viet: [7, 8, 9, 9, 7, 8, 7, 2, 5, 5] };   // theo can 0…9, chi 0…11
   var VAN_KHUC_LUU = [9, 8, 6, 5, 6, 5, 3, 2, 0, 11];
   var SAO_LUU_TEN = {
     thaiTue: 'L. Thái Tuế', tangMon: 'L. Tang Môn', bachHo: 'L. Bạch Hổ', thienKhoc: 'L. Thiên Khốc', thienHu: 'L. Thiên Hư',
@@ -324,7 +331,8 @@
       locTon: lt, kinhDuong: m(lt + 1), daLa: m(lt - 1), thienMa: [2, 11, 8, 5][y % 4]
     };
     if (dayDu) {
-      vt.thienKhoi = KHOI_VIET_LUU.khoi[c]; vt.thienViet = KHOI_VIET_LUU.viet[c];
+      var kv = bangKhoiViet(ls.quyUoc);
+      vt.thienKhoi = kv.khoi[c]; vt.thienViet = kv.viet[c];
       vt.vanXuong = m(lt + 3); vt.vanKhuc = VAN_KHUC_LUU[c];
       vt.hongLoan = m(3 - y); vt.thienHy = m(9 - y);
     }

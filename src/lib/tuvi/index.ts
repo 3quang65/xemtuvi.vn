@@ -45,6 +45,8 @@ export interface QuyUoc {
   gioTyMuon: 'ngaySau' | 'giuNgay';
   /** 10.6 — Hỏa, Linh tuổi Tỵ Dậu Sửu: câu phú (Hỏa Mão, Linh Tuất) hay engine cũ (Hỏa Tuất, Linh Mão) */
   hoaLinh: 'cauPhu' | 'ansaotuvi';
+  /** 10.8 — Thiên Khôi, Thiên Việt: Toàn Thư (mặc định), biến thể "Canh Tân phùng Mã Hổ", hay engine cũ */
+  khoiViet: 'toanThu' | 'canhTanMaHo' | 'ansaotuvi';
 }
 
 export interface ThongTinSinh {
