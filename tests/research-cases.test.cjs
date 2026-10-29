@@ -8,8 +8,6 @@ const { cases, testLich } = require('../docs/nghien-cuu/tuvi-test-cases.json');
 
 // Sao tùy chọn (đặc tả 5.4), engine chưa an
 const KHONG_AN = new Set(['Thiên Nguyệt', 'Thiên Vu', 'Âm Sát']);
-// Sao engine đang theo bảng khác đặc tả (mục 10), sẽ đổi thành tùy chọn
-const CHUA_THEO_DAC_TA = new Set(['Phá Toái', 'Lưu Hà']);
 const TEN_ENGINE = { 'Bác Sĩ': 'Bác Sỹ' };
 
 function lap(i, quyUoc) {
@@ -44,7 +42,7 @@ for (const c of cases) {
     assert.equal(ls.tuan, k.tuan.join('–'), 'Tuần');
     assert.equal(ls.triet, k.triet.join('–'), 'Triệt');
     for (const [sao, chi] of Object.entries(k.saoKhac)) {
-      if (KHONG_AN.has(sao) || CHUA_THEO_DAC_TA.has(sao)) continue;
+      if (KHONG_AN.has(sao)) continue;
       assert.equal(v[TEN_ENGINE[sao] || sao], chi, sao);
     }
     for (const [ts, chi] of Object.entries(k.trangSinh)) assert.equal(ls.cung.find((x) => x.trangSinh === ts).tenChi, chi, ts);
@@ -193,4 +191,26 @@ test('Tùy chọn Thiên Khôi, Thiên Việt (đặc tả 5.7, 10.8)', () => {
   const ls = T.anLaSo({ lich: 'duong', ngay: 1, thang: 6, nam: 1990, gio: 12, gioiTinh: 'nam', quyUoc: { khoiViet: 'canhTanMaHo' } });
   const luu = T.anLuuNien(ls, 2030, { dayDu: true }).saoLuu;
   assert.deepEqual(['L. Thiên Khôi', 'L. Thiên Việt'].map((t) => L.CHI[luu.find((s) => s.ten === t).chi]), ['Ngọ', 'Dần']);
+});
+
+test('Tùy chọn Phá Toái, Lưu Hà, Thiên Trù can Quý, Thiên Giải (đặc tả 5.4, 5.7, 5.9, 10.7, 10.9–10.11)', () => {
+  kiemTraCachCu(['Phá Toái', 'Lưu Hà'], { phaToai: 'ansaotuvi', luuHa: 'ansaotuvi' });
+  const sao = (nam, thang, quyUoc, ten) =>
+    viTriSao(T.anLaSo({ lich: 'am', ngay: 10, thang, nam, gio: 12, gioiTinh: 'nu', quyUoc }))[ten];
+  // Phá Toái mặc định: Tý Ngọ Mão Dậu → Tỵ; Dần Thân Tỵ Hợi → Dậu; Thìn Tuất Sửu Mùi → Sửu
+  const PHA_TOAI = ['Tỵ', 'Sửu', 'Dậu', 'Tỵ', 'Sửu', 'Dậu', 'Tỵ', 'Sửu', 'Dậu', 'Tỵ', 'Sửu', 'Dậu'];
+  for (let i = 0; i < 12; i++) assert.equal(sao(1984 + i, 1, undefined, 'Phá Toái'), PHA_TOAI[i], `tuổi ${L.CHI[i]}`);
+  // Lưu Hà mặc định: Giáp Dậu, Ất Tuất, Bính Mùi, Đinh Thân, Mậu Tỵ, Kỷ Ngọ, Canh Thìn, Tân Mão, Nhâm Hợi, Quý Dần
+  const LUU_HA = ['Dậu', 'Tuất', 'Mùi', 'Thân', 'Tỵ', 'Ngọ', 'Thìn', 'Mão', 'Hợi', 'Dần'];
+  for (let i = 0; i < 10; i++) assert.equal(sao(1984 + i, 1, undefined, 'Lưu Hà'), LUU_HA[i], `can ${L.CAN[i]}`);
+  assert.equal(sao(1987, 1, { luuHa: 'ansaotuvi' }, 'Lưu Hà'), 'Thìn');
+  // Thiên Trù can Quý (năm 1993)
+  assert.equal(sao(1993, 1, undefined, 'Thiên Trù'), 'Tuất');
+  assert.equal(sao(1993, 1, { thienTruQuy: 'hoi' }, 'Thiên Trù'), 'Hợi');
+  assert.equal(sao(1992, 1, { thienTruQuy: 'hoi' }, 'Thiên Trù'), 'Dậu', 'chỉ đổi can Quý');
+  // Thiên Giải theo tháng âm 1…12
+  const giai = (thienGiai) => Array.from({ length: 12 }, (_, i) => sao(1990, i + 1, { thienGiai }, 'Thiên Giải'));
+  assert.deepEqual(giai(undefined), ['Thân', 'Tuất', 'Tý', 'Dần', 'Thìn', 'Ngọ', 'Thân', 'Tuất', 'Tý', 'Dần', 'Thìn', 'Ngọ']);
+  assert.deepEqual(giai('capThang'), ['Thân', 'Thân', 'Tuất', 'Tuất', 'Tý', 'Tý', 'Dần', 'Dần', 'Thìn', 'Thìn', 'Ngọ', 'Ngọ']);
+  assert.deepEqual(giai('thanThuan'), ['Thân', 'Dậu', 'Tuất', 'Hợi', 'Tý', 'Sửu', 'Dần', 'Mão', 'Thìn', 'Tỵ', 'Ngọ', 'Mùi']);
 });

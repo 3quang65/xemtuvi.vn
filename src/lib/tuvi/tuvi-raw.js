@@ -73,7 +73,8 @@
   var HANH_CUC = { 'Thủy': 2, 'Mộc': 3, 'Kim': 4, 'Thổ': 5, 'Hỏa': 6 };
   var LOC_TON = [0, 3, 4, 6, 7, 6, 7, 9, 10, 12, 1];          // theo can năm 1…10
   var THIEN_QUAN = [0, 8, 5, 6, 3, 4, 10, 12, 10, 11, 7], THIEN_PHUC = [0, 10, 9, 1, 12, 4, 3, 7, 6, 7, 6];
-  var LUU_HA = [0, 10, 11, 8, 5, 6, 7, 9, 4, 12, 3], THIEN_TRU = [0, 6, 7, 1, 6, 7, 9, 3, 7, 10, 11];
+  var LUU_HA = { trungQuoc: [0, 10, 11, 8, 9, 6, 7, 5, 4, 12, 3], ansaotuvi: [0, 10, 11, 8, 5, 6, 7, 9, 4, 12, 3] };
+  var THIEN_TRU = [0, 6, 7, 1, 6, 7, 9, 3, 7, 10, 11];
   // Tứ hóa theo can năm: [Lộc, Quyền, Khoa, Kỵ]
   var TU_HOA = [null,
     ['liemTrinh', 'phaQuan', 'vuKhuc', 'thaiDuong'], ['thienCo', 'thienLuong', 'tuVi', 'thaiAm'],
@@ -88,8 +89,12 @@
     muiGioLich: 'lichSu',   // 10.2: 'lichSu' = âm lịch theo UTC+8 trước 01/01/1968, UTC+7 từ đó; 'utc7' = UTC+7 mọi năm
     gioTyMuon: 'ngaySau',   // 10.1: sinh 23:00–23:59 'ngaySau' = tính sang ngày hôm sau; 'giuNgay' = giữ ngày, chỉ đổi giờ Tý
     hoaLinh: 'cauPhu',      // 10.6: tuổi Tỵ Dậu Sửu 'cauPhu' = Hỏa khởi Mão, Linh khởi Tuất; 'ansaotuvi' = Hỏa Tuất, Linh Mão (engine cũ)
-    khoiViet: 'toanThu'     // 10.8: 'toanThu' = "Giáp Mậu Canh ngưu dương…"; 'canhTanMaHo' = như trên nhưng Canh ở Ngọ/Dần;
+    khoiViet: 'toanThu',    // 10.8: 'toanThu' = "Giáp Mậu Canh ngưu dương…"; 'canhTanMaHo' = như trên nhưng Canh ở Ngọ/Dần;
                             //       'ansaotuvi' = engine cũ (Khôi/Việt đảo nhau ở can Đinh, Mậu, Canh, Nhâm)
+    phaToai: 'iztro',       // 10.9: 'iztro' = Tý Ngọ Mão Dậu → Tỵ, Dần Thân Tỵ Hợi → Dậu, Thìn Tuất Sửu Mùi → Sửu; 'ansaotuvi' = đổi Tỵ và Dậu
+    luuHa: 'trungQuoc',     // 10.10: 'trungQuoc' = Đinh Thân, Canh Thìn; 'ansaotuvi' = Đinh Thìn, Canh Thân
+    thienTruQuy: 'tuat',    // 10.11: Thiên Trù can Quý 'tuat' (sách Việt, engine cũ) | 'hoi' (iztro)
+    thienGiai: 'thienLuong' // 10.7: 'thienLuong' = Thân + 2(M−1); 'capThang' = tháng 1–2 Thân, 3–4 Tuất…; 'thanThuan' = Thân + (M−1)
   };
   // Thiên Khôi, Thiên Việt theo can 0…9, cung 0 = Tý
   var KHOI_VIET = {
@@ -231,18 +236,20 @@
     var coThan = [0, 3, 3, 6, 6, 6, 9, 9, 9, 12, 12, 12, 3][chiNam]; nhap(coThan, 'coThan'); nhap(d(coThan, -4), 'quaTu');
     var vanTinh = d(kd, 2); nhap(vanTinh, 'vanTinh'); var duongPhu = d(vanTinh, 2); nhap(duongPhu, 'duongPhu'); nhap(d(duongPhu, 3), 'quocAn');
     nhap(d(vanKhuc, 2), 'thaiPhu'); nhap(d(vanKhuc, -2), 'phongCao');
-    nhap(d(9, 2 * tt - 2), 'thienGiai'); nhap(d(taPhu, 3), 'diaGiai');
+    var thienGiai = qu.thienGiai === 'capThang' ? d(9, 2 * Math.floor((tt - 1) / 2)) : qu.thienGiai === 'thanThuan' ? d(9, tt - 1) : d(9, 2 * tt - 2);
+    nhap(thienGiai, 'thienGiai'); nhap(d(taPhu, 3), 'diaGiai');
     nhap(5, 'thienLa'); nhap(11, 'diaVong'); nhap(cungNoBoc, 'thienThuong'); nhap(cungTatAch, 'thienSu');
     var thienMa = [6, 3, 12, 9][chiNam % 4]; nhap(thienMa, 'thienMa');
     nhap(d(thienMa, 2), 'hoaCai'); var kiepSat = d(thienMa, 3); nhap(kiepSat, 'kiepSat'); nhap(d(kiepSat, 4), 'daoHoa');
-    nhap([6, 10, 2][chiNam % 3], 'phaToai');
+    nhap((qu.phaToai === 'ansaotuvi' ? [6, 10, 2] : [10, 6, 2])[chiNam % 3], 'phaToai');
     nhap(d(chiNam, -tt + gio), 'dauQuan');
 
     // Tứ hóa
     var th = TU_HOA[canNam], HOA_KEY = ['hoaLoc', 'hoaQuyen', 'hoaKhoa', 'hoaKy'], HOA_TEN = ['Hóa Lộc', 'Hóa Quyền', 'Hóa Khoa', 'Hóa Kỵ'];
     var hoaCua = {};
     th.forEach(function (key, i) { nhap(VI[key], HOA_KEY[i]); hoaCua[key] = HOA_TEN[i]; });
-    nhap(LUU_HA[canNam], 'luuHa'); nhap(THIEN_TRU[canNam], 'thienTru');
+    nhap((LUU_HA[qu.luuHa] || LUU_HA.trungQuoc)[canNam], 'luuHa');
+    nhap(canNam === 10 && qu.thienTruQuy === 'hoi' ? 12 : THIEN_TRU[canNam], 'thienTru');
 
     // Tuần, Triệt
     var tuan1 = d(d(chiNam, 10 - canNam), 1), tuan2 = d(tuan1, 1);

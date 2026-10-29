@@ -47,6 +47,14 @@ export interface QuyUoc {
   hoaLinh: 'cauPhu' | 'ansaotuvi';
   /** 10.8 — Thiên Khôi, Thiên Việt: Toàn Thư (mặc định), biến thể "Canh Tân phùng Mã Hổ", hay engine cũ */
   khoiViet: 'toanThu' | 'canhTanMaHo' | 'ansaotuvi';
+  /** 10.9 — Phá Toái: iztro/sách Trung Quốc (mặc định) hay engine cũ (đổi Tỵ và Dậu) */
+  phaToai: 'iztro' | 'ansaotuvi';
+  /** 10.10 — Lưu Hà: sách Trung Quốc (Đinh Thân, Canh Thìn) hay engine cũ (Đinh Thìn, Canh Thân) */
+  luuHa: 'trungQuoc' | 'ansaotuvi';
+  /** 10.11 — Thiên Trù can Quý: Tuất (mặc định) hay Hợi (iztro) */
+  thienTruQuy: 'tuat' | 'hoi';
+  /** 10.7 — Thiên Giải: Thân + 2(M−1) (mặc định), theo cặp tháng, hay Thân + (M−1) */
+  thienGiai: 'thienLuong' | 'capThang' | 'thanThuan';
 }
 
 export interface ThongTinSinh {
