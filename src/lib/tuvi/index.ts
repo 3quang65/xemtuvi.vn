@@ -43,6 +43,8 @@ export interface Cung {
 export interface QuyUoc {
   muiGioLich: 'lichSu' | 'utc7';
   gioTyMuon: 'ngaySau' | 'giuNgay';
+  /** 10.6 — Hỏa, Linh tuổi Tỵ Dậu Sửu: câu phú (Hỏa Mão, Linh Tuất) hay engine cũ (Hỏa Tuất, Linh Mão) */
+  hoaLinh: 'cauPhu' | 'ansaotuvi';
 }
 
 export interface ThongTinSinh {

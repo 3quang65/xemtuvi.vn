@@ -87,7 +87,8 @@
   // docs/nghien-cuu/tuvi-an-sao-spec.md (mục 10). Lá số trả về kèm quy ước đã dùng.
   var QUY_UOC_MAC_DINH = {
     muiGioLich: 'lichSu',   // 10.2: 'lichSu' = âm lịch theo UTC+8 trước 01/01/1968, UTC+7 từ đó; 'utc7' = UTC+7 mọi năm
-    gioTyMuon: 'ngaySau'    // 10.1: sinh 23:00–23:59 'ngaySau' = tính sang ngày hôm sau; 'giuNgay' = giữ ngày, chỉ đổi giờ Tý
+    gioTyMuon: 'ngaySau',   // 10.1: sinh 23:00–23:59 'ngaySau' = tính sang ngày hôm sau; 'giuNgay' = giữ ngày, chỉ đổi giờ Tý
+    hoaLinh: 'cauPhu'       // 10.6: tuổi Tỵ Dậu Sửu 'cauPhu' = Hỏa khởi Mão, Linh khởi Tuất; 'ansaotuvi' = Hỏa Tuất, Linh Mão (engine cũ)
   };
   var JD_1968 = L.jdFromDate(1, 1, 1968);
   // Miền Nam dùng đồng hồ UTC+8 từ 01/01/1960 đến 13/06/1975 (cơ sở dữ liệu IANA, Asia/Ho_Chi_Minh)
@@ -203,7 +204,7 @@
     var hk, lk;
     if ([3, 7, 11].indexOf(chiNam) >= 0) { hk = 2; lk = 4; }
     else if ([1, 5, 9].indexOf(chiNam) >= 0) { hk = 3; lk = 11; }
-    else if ([6, 10, 2].indexOf(chiNam) >= 0) { hk = 11; lk = 4; }
+    else if ([6, 10, 2].indexOf(chiNam) >= 0) { if (qu.hoaLinh === 'ansaotuvi') { hk = 11; lk = 4; } else { hk = 4; lk = 11; } }
     else { hk = 10; lk = 11; }
     if (gt * amDuongNam === -1) { nhap(d(hk + 1, -gio), 'hoaTinh'); nhap(d(lk - 1, gio), 'linhTinh'); }
     else { nhap(d(hk - 1, gio), 'hoaTinh'); nhap(d(lk + 1, -gio), 'linhTinh'); }

@@ -9,7 +9,7 @@ const { cases, testLich } = require('../docs/nghien-cuu/tuvi-test-cases.json');
 // Sao tùy chọn (đặc tả 5.4), engine chưa an
 const KHONG_AN = new Set(['Thiên Nguyệt', 'Thiên Vu', 'Âm Sát']);
 // Sao engine đang theo bảng khác đặc tả (mục 10), sẽ đổi thành tùy chọn
-const CHUA_THEO_DAC_TA = new Set(['Hỏa Tinh', 'Linh Tinh', 'Thiên Khôi', 'Thiên Việt', 'Phá Toái', 'Lưu Hà']);
+const CHUA_THEO_DAC_TA = new Set(['Thiên Khôi', 'Thiên Việt', 'Phá Toái', 'Lưu Hà']);
 const TEN_ENGINE = { 'Bác Sĩ': 'Bác Sỹ' };
 
 function lap(i, quyUoc) {
@@ -154,4 +154,26 @@ test('Sao lưu niên (đặc tả 7.4, testLuuNien từ bộ test iztro)', () =>
   // Năm xem trùng chi năm sinh thì tháng Giêng lưu nguyệt ở đúng cung Đẩu Quân
   assert.equal(T.anLuuNien(ls, 2023).luuNguyet[0], dauQuan);
   assert.equal(ln.luuNguyet.length, 12);
+});
+
+// Tùy chọn theo engine cũ (ansaotuvi) phải ra đúng các giá trị "repo" đã ghi trong file mẫu.
+// Bỏ TC06, TC07 vì ở đó engine cũ lệch cả lịch.
+function kiemTraCachCu(saoDs, quyUoc) {
+  let soCa = 0;
+  for (const c of cases) {
+    if (c.id === 'TC06' || c.id === 'TC07') continue;
+    const v = viTriSao(lap(c.input, quyUoc));
+    for (const l of c.repoXemboi.lech) {
+      const sao = l.truong.replace('sao.', '');
+      if (saoDs.includes(sao)) { assert.equal(v[sao], l.repo, `${c.id} ${sao}`); soCa++; }
+    }
+  }
+  assert.ok(soCa > 0);
+}
+
+test('Tùy chọn Hỏa Tinh, Linh Tinh tuổi Tỵ Dậu Sửu (đặc tả 5.10, 10.6)', () => {
+  kiemTraCachCu(['Hỏa Tinh', 'Linh Tinh'], { hoaLinh: 'ansaotuvi' });
+  // Mặc định: tuổi Dậu (TC11, Âm Nữ, giờ Hợi): Hỏa khởi Mão đếm thuận 11 → Dần; Linh khởi Tuất đếm nghịch 11 → Hợi
+  const v = viTriSao(lap(cases.find((c) => c.id === 'TC11').input));
+  assert.deepEqual([v['Hỏa Tinh'], v['Linh Tinh']], ['Dần', 'Hợi']);
 });
