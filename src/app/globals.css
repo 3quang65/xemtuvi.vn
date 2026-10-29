@@ -159,6 +159,8 @@ a { color: inherit; }
   .thien-ban { padding: 10px; }
   .thien-ban dl { grid-template-columns: 1fr; gap: 0; font-size: 0.72rem; }
   .thien-ban dt { display: none; }
+  /* Trên điện thoại chỉ giữ ngày sinh, âm lịch, bản mệnh, cục; tứ trụ và mệnh/thân chủ xem ở bản rộng */
+  .thien-ban dd:nth-of-type(3), .thien-ban dd:nth-of-type(n+7) { display: none; }
   .ten-duong-so { font-size: 0.95rem; margin-bottom: 4px; }
 }
 
