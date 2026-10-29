@@ -93,7 +93,7 @@ export default function LaSoBan({ laSo, namXem }: { laSo: LaSo; namXem: number }
         <div className="thien-ban">
           {laSo.ten && <p className="ten-duong-so">{laSo.ten}</p>}
           <dl>
-            <dt>Dương lịch</dt><dd>{d.ngay}/{d.thang}/{d.nam}, giờ {laSo.gio.chi}</dd>
+            <dt>Dương lịch</dt><dd>{d.ngay}/{d.thang}/{d.nam}, {laSo.gio.dongHo} (giờ {laSo.gio.chi})</dd>
             <dt>Âm lịch</dt><dd>{a.ngay}/{a.thang}{a.nhuan ? ' nhuận' : ''} năm {laSo.canChi.nam}</dd>
             <dt>Tứ trụ</dt><dd>{laSo.canChi.nam}, {laSo.canChi.thang}, {laSo.canChi.ngay}, {laSo.canChi.gio}</dd>
             <dt>Âm dương</dt><dd>{laSo.amDuong} · {laSo.amDuongLy}</dd>

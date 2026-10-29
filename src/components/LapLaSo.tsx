@@ -1,7 +1,7 @@
 'use client';
 
 import { useRef, useState } from 'react';
-import { GIO_SINH, kiemTraThongTin, lapLaSo, type LaSo, type ThongTinSinh } from '@/lib/tuvi';
+import { canhGio, kiemTraThongTin, lapLaSo, type LaSo, type ThongTinSinh } from '@/lib/tuvi';
 import LaSoBan from './LaSoBan';
 
 const NAM_HIEN_TAI = new Date().getFullYear();
@@ -13,15 +13,17 @@ type FormState = {
   ngay: string;
   thang: string;
   nam: string;
-  gioChi: string; // chỉ số canh giờ 0–11
+  gio: string; // giờ đồng hồ 0–23
+  phut: string;
+  giuNgayTyMuon: boolean; // sinh 23h: giữ ngày cũ thay vì sang ngày hôm sau
   nhuan: boolean;
 };
 
-const GIO_DAI_DIEN = [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22]; // giờ đại diện cho mỗi canh
+const GIO = Array.from({ length: 24 }, (_, i) => i);
 
 export default function LapLaSo() {
   const [f, setF] = useState<FormState>({
-    ten: '', gioiTinh: '', lich: 'duong', ngay: '', thang: '', nam: '', gioChi: '', nhuan: false,
+    ten: '', gioiTinh: '', lich: 'duong', ngay: '', thang: '', nam: '', gio: '', phut: '', giuNgayTyMuon: false, nhuan: false,
   });
   const [loi, setLoi] = useState<string | null>(null);
   const [laSo, setLaSo] = useState<LaSo | null>(null);
@@ -38,8 +40,10 @@ export default function LapLaSo() {
       ngay: Number(f.ngay),
       thang: Number(f.thang),
       nam: Number(f.nam),
-      gio: f.gioChi === '' ? NaN : GIO_DAI_DIEN[Number(f.gioChi)],
+      gio: f.gio === '' ? NaN : Number(f.gio),
+      phut: f.phut === '' ? 0 : Number(f.phut),
       nhuan: f.lich === 'am' && f.nhuan,
+      quyUoc: f.gio === '23' && f.giuNgayTyMuon ? { gioTyMuon: 'giuNgay' } : undefined,
     };
     const thongBao = kiemTraThongTin(t);
     if (thongBao) { setLoi(thongBao); return; }
@@ -100,13 +104,23 @@ export default function LapLaSo() {
             )}
           </fieldset>
 
-          <label className="o">
-            <span>Giờ sinh</span>
-            <select value={f.gioChi} onChange={(e) => doi('gioChi', e.target.value)}>
-              <option value="">Chọn giờ sinh</option>
-              {GIO_SINH.map((g, i) => <option key={g} value={i}>{g}</option>)}
-            </select>
-          </label>
+          <fieldset className="o">
+            <legend>Giờ sinh <em>(theo giấy khai sinh)</em></legend>
+            <div className="hai-o">
+              <select aria-label="Giờ sinh" value={f.gio} onChange={(e) => doi('gio', e.target.value)}>
+                <option value="">Giờ</option>
+                {GIO.map((g) => <option key={g} value={g}>{g} giờ · {canhGio(g)}</option>)}
+              </select>
+              <input inputMode="numeric" placeholder="Phút" aria-label="Phút sinh" value={f.phut}
+                onChange={(e) => doi('phut', e.target.value.replace(/\D/g, '').slice(0, 2))} />
+            </div>
+            {f.gio === '23' && (
+              <label className="nhuan">
+                <input type="checkbox" checked={f.giuNgayTyMuon} onChange={(e) => doi('giuNgayTyMuon', e.target.checked)} />
+                Giữ ngày sinh cũ (mặc định giờ 23h tính sang ngày hôm sau)
+              </label>
+            )}
+          </fieldset>
 
           {loi && <p className="bao-loi" role="alert">{loi}</p>}
 

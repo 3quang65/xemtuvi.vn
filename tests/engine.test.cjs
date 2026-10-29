@@ -85,3 +85,10 @@ test('Quy luật bất biến trên 3.000 lá số ngẫu nhiên', () => {
     assert.equal(ls.cung.find((c) => c.ten === 'Mệnh').daiVanTu, soCuc, tag);
   }
 });
+
+test('Nhập giờ phút: canh giờ theo giờ đồng hồ, lá số ghi lại giờ phút', () => {
+  const ls = T.anLaSo({ lich: 'duong', ngay: 15, thang: 8, nam: 1990, gio: 7, phut: 30, gioiTinh: 'nam' });
+  assert.equal(ls.gio.chi, 'Thìn');
+  assert.equal(ls.gio.dongHo, '07:30');
+  assert.equal(T.anLaSo({ lich: 'duong', ngay: 15, thang: 8, nam: 1990, gio: 0, gioiTinh: 'nam' }).gio.dongHo, '00:00');
+});

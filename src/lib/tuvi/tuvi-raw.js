@@ -118,7 +118,7 @@
   }
 
   /**
-   * opts: { lich: 'duong'|'am', ngay, thang, nam, nhuan, gio (0–23), gioiTinh: 'nam'|'nu', ten,
+   * opts: { lich: 'duong'|'am', ngay, thang, nam, nhuan, gio (0–23), phut (0–59), gioiTinh: 'nam'|'nu', ten,
    *         quyUoc: một phần của QUY_UOC_MAC_DINH (không bắt buộc) }
    */
   function anLaSo(opts) {
@@ -276,7 +276,7 @@
       amDuong: (amDuongNam === 1 ? 'Dương ' : 'Âm ') + (nu ? 'Nữ' : 'Nam'),
       amDuongLy: amDuongCung * amDuongChi === 1 ? 'Âm dương thuận lý' : 'Âm dương nghịch lý',
       duong: duong, am: am,
-      gio: { chi: CHI[h], khoang: L.GIO_KHOANG[h], canChi: CAN[canGio] + ' ' + CHI[h] },
+      gio: { chi: CHI[h], khoang: L.GIO_KHOANG[h], canChi: CAN[canGio] + ' ' + CHI[h], dongHo: hhmm(+opts.gio, +opts.phut || 0) },
       canChi: { nam: CAN[canNam - 1] + ' ' + CHI[chiNam - 1], thang: L.ten(ccM), ngay: L.ten(ccD), gio: CAN[canGio] + ' ' + CHI[h] },
       conGiap: L.CON_GIAP[chiNam - 1],
       banMenh: napAmNam, hanhMenh: hanhMenh,
@@ -289,13 +289,14 @@
     };
   }
 
+  function hhmm(g, p) { return (g < 10 ? '0' : '') + g + ':' + (p < 10 ? '0' : '') + p; }
   function fmt(s) { return s.ten + (s.dacTinh ? ' (' + s.dacTinh + ')' : ''); }
 
   /** Tóm tắt lá số thành văn bản gọn để gửi cho AI luận giải */
   function tomTat(ls) {
     var lines = [];
     lines.push('Giới tính: ' + ls.gioiTinh + ' (' + ls.amDuong + ', ' + ls.amDuongLy + ')');
-    lines.push('Sinh dương lịch: ' + ls.duong.ngay + '/' + ls.duong.thang + '/' + ls.duong.nam + ', giờ ' + ls.gio.chi + ' (' + ls.gio.khoang + ')');
+    lines.push('Sinh dương lịch: ' + ls.duong.ngay + '/' + ls.duong.thang + '/' + ls.duong.nam + ', ' + ls.gio.dongHo + ' giờ ' + ls.gio.chi + ' (' + ls.gio.khoang + ')');
     lines.push('Âm lịch: ngày ' + ls.am.ngay + ' tháng ' + ls.am.thang + (ls.am.nhuan ? ' (nhuận)' : '') + ' năm ' + ls.canChi.nam + ', giờ ' + ls.gio.canChi);
     lines.push('Bản mệnh: ' + ls.banMenh + '. Cục: ' + ls.cuc + ' (' + ls.sinhKhac + '). Mệnh an tại ' + ls.menhTai + ', Thân cư ' + ls.thanTai + '.');
     lines.push('Mệnh chủ: ' + ls.menhChu + '. Thân chủ: ' + ls.thanChu + '. Tuần tại ' + ls.tuan + ', Triệt tại ' + ls.triet + '.');
