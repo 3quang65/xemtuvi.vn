@@ -122,3 +122,36 @@ test('Giờ khai sinh miền Nam 1960–1975 quy về giờ chuẩn UTC+7 (đặ
   const giu = T.anLaSo({ lich: 'duong', ngay: 2, thang: 3, nam: 1970, gio: 0, phut: 30, gioiTinh: 'nam', mienNamTruoc1975: true, quyUoc: { gioTyMuon: 'giuNgay' } });
   assert.deepEqual(giu.am, lapMN(1, 3, 1970, 12, 0, false).am);
 });
+
+test('Sao lưu niên (đặc tả 7.4, testLuuNien từ bộ test iztro)', () => {
+  const { testLuuNien } = require('../docs/nghien-cuu/tuvi-test-cases.json');
+  const ls = T.anLaSo({ lich: 'duong', ngay: 6, thang: 3, nam: 2023, gio: 8, gioiTinh: 'nam' });
+  const viTriLuu = (namXem, dayDu) => {
+    const ln = T.anLuuNien(ls, namXem, { dayDu });
+    return Object.fromEntries(ln.saoLuu.map((s) => [s.ten.replace('L. ', 'L.'), L.CHI[s.chi]]));
+  };
+  // Năm Quý Mão 2023
+  assert.deepEqual(viTriLuu(2023, true), { ...viTriLuu(2023, true), ...testLuuNien[0].kyVong });
+  // Can chi Canh Thìn (năm 2000)
+  const canh = viTriLuu(2000, true);
+  for (const [sao, chi] of Object.entries(testLuuNien[1].kyVong)) assert.equal(canh['L.' + sao], chi, sao);
+  // Mặc định chỉ 9 sao lưu phổ biến ở phái Việt; Thái Tuế, Tang Môn, Bạch Hổ, Khốc, Hư theo chi năm xem
+  const ln = T.anLuuNien(ls, 2026);
+  assert.equal(ln.canChi, 'Bính Ngọ');
+  assert.equal(ln.saoLuu.length, 9);
+  const v = viTriLuu(2026);
+  assert.deepEqual([v['L.Thái Tuế'], v['L.Tang Môn'], v['L.Bạch Hổ'], v['L.Thiên Khốc'], v['L.Thiên Hư']], ['Ngọ', 'Thân', 'Dần', 'Tý', 'Tý']);
+  assert.deepEqual([v['L.Lộc Tồn'], v['L.Kình Dương'], v['L.Đà La'], v['L.Thiên Mã']], ['Tỵ', 'Ngọ', 'Thìn', 'Thân']);
+  // Lưu tứ hóa can Bính: Đồng Lộc, Cơ Quyền, Xương Khoa, Liêm Kỵ, nằm cùng cung sao gốc
+  const goc = (ten) => ls.cung.find((c) => c.chinhTinh.concat(c.phuTinh).some((s) => s.ten === ten)).chi;
+  assert.deepEqual(ln.luuTuHoa.map((h) => [h.hoa, h.sao, h.chi]),
+    [['Hóa Lộc', 'Thiên Đồng', goc('Thiên Đồng')], ['Hóa Quyền', 'Thiên Cơ', goc('Thiên Cơ')], ['Hóa Khoa', 'Văn Xương', goc('Văn Xương')], ['Hóa Kỵ', 'Liêm Trinh', goc('Liêm Trinh')]]);
+  // Đại vận, tiểu hạn, lưu nguyệt
+  assert.equal(ln.tuoiMu, 4);
+  assert.equal(ln.daiVan, ls.cung.find((c) => c.ten === 'Mệnh').chi, 'tuổi 4 còn ở đại vận cung Mệnh (Thủy nhị cục: 2–11)');
+  assert.equal(L.CHI[ln.tieuHan], ls.cung.find((c) => c.tieuHan === 'Ngọ').tenChi);
+  const dauQuan = ls.cung.find((c) => c.phuTinh.some((s) => s.ten === 'Đẩu Quân')).chi;
+  // Năm xem trùng chi năm sinh thì tháng Giêng lưu nguyệt ở đúng cung Đẩu Quân
+  assert.equal(T.anLuuNien(ls, 2023).luuNguyet[0], dauQuan);
+  assert.equal(ln.luuNguyet.length, 12);
+});

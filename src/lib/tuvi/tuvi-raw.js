@@ -292,8 +292,62 @@
       tuan: CHI[tuan1 - 1] + '–' + CHI[tuan2 - 1], triet: CHI[triet[0] - 1] + '–' + CHI[triet[1] - 1],
       gioChuan: { ngay: ngayChuan[0], thang: ngayChuan[1], nam: ngayChuan[2], gio: hhmm(gioChuan, phutChuan), daQuyDoi: daQuyDoi },
       amLichTz: tzAm,
+      chiSo: { canNam: canNam - 1, chiNam: chiNam - 1, thang: tt, gio: h },   // dùng cho anLuuNien
       quyUoc: qu,
       cung: ketQua
+    };
+  }
+
+  // ---- Lưu niên (đặc tả mục 7.3–7.5): sao lưu theo can chi năm xem, lưu tứ hóa, đại vận, tiểu hạn, lưu nguyệt
+  var KHOI_VIET_LUU = { khoi: [1, 0, 11, 11, 1, 0, 1, 6, 3, 3], viet: [7, 8, 9, 9, 7, 8, 7, 2, 5, 5] };   // theo can 0…9, chi 0…11
+  var VAN_KHUC_LUU = [9, 8, 6, 5, 6, 5, 3, 2, 0, 11];
+  var SAO_LUU_TEN = {
+    thaiTue: 'L. Thái Tuế', tangMon: 'L. Tang Môn', bachHo: 'L. Bạch Hổ', thienKhoc: 'L. Thiên Khốc', thienHu: 'L. Thiên Hư',
+    locTon: 'L. Lộc Tồn', kinhDuong: 'L. Kình Dương', daLa: 'L. Đà La', thienMa: 'L. Thiên Mã',
+    thienKhoi: 'L. Thiên Khôi', thienViet: 'L. Thiên Việt', vanXuong: 'L. Văn Xương', vanKhuc: 'L. Văn Khúc',
+    hongLoan: 'L. Hồng Loan', thienHy: 'L. Thiên Hỷ'
+  };
+
+  /**
+   * An sao lưu cho năm âm lịch namXem trên lá số ls (kết quả của anLaSo).
+   * tuyChon.dayDu: thêm 6 sao lưu ít dùng ở phái Việt (Khôi, Việt, Xương, Khúc, Hồng Loan, Thiên Hỷ).
+   * Chỉ số cung: 0 = Tý … 11 = Hợi.
+   */
+  function anLuuNien(ls, namXem, tuyChon) {
+    var dayDu = !!(tuyChon && tuyChon.dayDu);
+    var c = (namXem + 6) % 10, y = (namXem + 8) % 12;
+    var m = function (x) { return ((x % 12) + 12) % 12; };
+    var lt = LOC_TON[c + 1] - 1;
+    var vt = {
+      thaiTue: y, tangMon: m(y + 2), bachHo: m(y + 8), thienKhoc: m(6 - y), thienHu: m(6 + y),
+      locTon: lt, kinhDuong: m(lt + 1), daLa: m(lt - 1), thienMa: [2, 11, 8, 5][y % 4]
+    };
+    if (dayDu) {
+      vt.thienKhoi = KHOI_VIET_LUU.khoi[c]; vt.thienViet = KHOI_VIET_LUU.viet[c];
+      vt.vanXuong = m(lt + 3); vt.vanKhuc = VAN_KHUC_LUU[c];
+      vt.hongLoan = m(3 - y); vt.thienHy = m(9 - y);
+    }
+    var saoLuu = Object.keys(vt).map(function (k) { return { key: 'luu_' + k, ten: SAO_LUU_TEN[k], chi: vt[k] }; });
+
+    var viTri = {};
+    ls.cung.forEach(function (cg) { cg.chinhTinh.concat(cg.phuTinh).forEach(function (s) { viTri[s.key] = cg.chi; }); });
+    var HOA_TEN = ['Hóa Lộc', 'Hóa Quyền', 'Hóa Khoa', 'Hóa Kỵ'];
+    var luuTuHoa = TU_HOA[c + 1].map(function (k, i) { return { hoa: HOA_TEN[i], sao: SAO[k][0], chi: viTri[k] }; });
+
+    var tuoiMu = namXem - ls.am.nam + 1;
+    var daiVan = null, tieuHan = null;
+    ls.cung.forEach(function (cg) {
+      if (tuoiMu >= cg.daiVanTu && tuoiMu <= cg.daiVanTu + 9) daiVan = cg.chi;
+      if (cg.tieuHan === CHI[y]) tieuHan = cg.chi;
+    });
+    // Lưu nguyệt (Đẩu Quân năm xem): tháng t ở cung Y' − (M − 1) + H + (t − 1)
+    var luuNguyet = [];
+    for (var t = 1; t <= 12; t++) luuNguyet.push(m(y - (ls.chiSo.thang - 1) + ls.chiSo.gio + t - 1));
+
+    return {
+      namXem: namXem, canChi: CAN[c] + ' ' + CHI[y], tuoiMu: tuoiMu,
+      saoLuu: saoLuu, luuTuHoa: luuTuHoa,
+      luuThaiTue: y, daiVan: daiVan, tieuHan: tieuHan, luuNguyet: luuNguyet
     };
   }
 
@@ -320,5 +374,5 @@
     return lines.join('\n');
   }
 
-  return { anLaSo: anLaSo, tomTat: tomTat, CUNG: CUNG, DAC_TEN: DAC_TEN, QUY_UOC_MAC_DINH: QUY_UOC_MAC_DINH };
+  return { anLaSo: anLaSo, anLuuNien: anLuuNien, tomTat: tomTat, CUNG: CUNG, DAC_TEN: DAC_TEN, QUY_UOC_MAC_DINH: QUY_UOC_MAC_DINH };
 });

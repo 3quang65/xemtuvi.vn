@@ -1,10 +1,9 @@
 'use client';
 
 import { useRef, useState } from 'react';
-import { canhGio, kiemTraThongTin, lapLaSo, type LaSo, type ThongTinSinh } from '@/lib/tuvi';
+import { canhGio, kiemTraThongTin, lapLaSo, namAmHienTai, type LaSo, type ThongTinSinh } from '@/lib/tuvi';
 import LaSoBan from './LaSoBan';
 
-const NAM_HIEN_TAI = new Date().getFullYear();
 
 type FormState = {
   ten: string;
@@ -141,7 +140,7 @@ export default function LapLaSo() {
         </form>
       </section>
 
-      <div ref={ketQuaRef}>{laSo && <LaSoBan laSo={laSo} namXem={NAM_HIEN_TAI} />}</div>
+      <div ref={ketQuaRef}>{laSo && <LaSoBan key={JSON.stringify(laSo.duong) + laSo.gio.dongHo + laSo.gioiTinh} laSo={laSo} namHienTai={namAmHienTai()} />}</div>
     </>
   );
 }

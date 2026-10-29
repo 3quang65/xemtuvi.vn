@@ -4,6 +4,8 @@
 
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 import TuViRaw from './tuvi-raw.js';
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+import LichRaw from './lich-raw.js';
 
 export type NguHanh = 'Kim' | 'Mộc' | 'Thủy' | 'Hỏa' | 'Thổ';
 export type DacTinh = 'M' | 'V' | 'Đ' | 'B' | 'H';
@@ -82,16 +84,33 @@ export interface LaSo {
   gioChuan: { ngay: number; thang: number; nam: number; gio: string; daQuyDoi: boolean };
   /** Múi giờ đã dùng để đổi âm lịch (8 với ngày trước 1968) */
   amLichTz: 7 | 8;
+  /** Chỉ số nội bộ (0 = Giáp/Tý) để an sao lưu */
+  chiSo: { canNam: number; chiNam: number; thang: number; gio: number };
   quyUoc: QuyUoc;
   cung: Cung[]; // 12 phần tử, chỉ số = chi (0 = Tý)
 }
 
+/** Sao lưu niên, lưu tứ hóa và vận hạn của một năm xem (đặc tả mục 7). Chỉ số cung: 0 = Tý … 11 = Hợi. */
+export interface LuuNien {
+  namXem: number; // năm âm lịch
+  canChi: string;
+  tuoiMu: number;
+  saoLuu: { key: string; ten: string; chi: number }[];
+  luuTuHoa: { hoa: 'Hóa Lộc' | 'Hóa Quyền' | 'Hóa Khoa' | 'Hóa Kỵ'; sao: string; chi: number }[];
+  luuThaiTue: number;
+  daiVan: number | null;
+  tieuHan: number | null;
+  luuNguyet: number[]; // cung của tháng 1…12
+}
+
 interface Engine {
   anLaSo(opts: ThongTinSinh): LaSo;
+  anLuuNien(ls: LaSo, namXem: number, tuyChon?: { dayDu?: boolean }): LuuNien;
   tomTat(ls: LaSo): string;
 }
 
 const engine = TuViRaw as unknown as Engine;
+const Lich = LichRaw as unknown as { duongSangAm(d: number, m: number, y: number): { nam: number } };
 
 /** Kiểm tra dữ liệu đầu vào trước khi an sao. Trả về thông báo lỗi tiếng Việt, hoặc null nếu hợp lệ. */
 export function kiemTraThongTin(t: Partial<ThongTinSinh>): string | null {
@@ -130,6 +149,20 @@ export function moTaQuyUoc(ls: LaSo): string[] {
   }
   if (ls.amLichTz === 8) ds.push('Âm lịch trước năm 1968 tính theo lịch thời đó (múi giờ UTC+8).');
   return ds;
+}
+
+/**
+ * An sao lưu cho năm âm lịch namXem. Mặc định 9 sao lưu phổ biến ở phái Việt và lưu tứ hóa;
+ * dayDu thêm Lưu Khôi, Việt, Xương, Khúc, Hồng Loan, Thiên Hỷ.
+ */
+export function luuNien(ls: LaSo, namXem: number, dayDu = false): LuuNien {
+  return engine.anLuuNien(ls, namXem, { dayDu });
+}
+
+/** Năm âm lịch hiện tại theo giờ Việt Nam. */
+export function namAmHienTai(): number {
+  const vn = new Date(Date.now() + 7 * 3600 * 1000);
+  return Lich.duongSangAm(vn.getUTCDate(), vn.getUTCMonth() + 1, vn.getUTCFullYear()).nam;
 }
 
 /** Tóm tắt lá số thành văn bản gọn (dùng làm đầu vào cho phần luận giải). */
