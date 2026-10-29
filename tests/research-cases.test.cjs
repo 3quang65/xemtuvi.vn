@@ -6,7 +6,6 @@ const T = require('../src/lib/tuvi/tuvi-raw.js');
 const L = require('../src/lib/tuvi/lich-raw.js');
 const { cases, testLich } = require('../docs/nghien-cuu/tuvi-test-cases.json');
 
-const CHO_SUA = { TC06: 'Giờ 23h–24h chưa tính sang ngày hôm sau' };
 // Sao tùy chọn (đặc tả 5.4), engine chưa an
 const KHONG_AN = new Set(['Thiên Nguyệt', 'Thiên Vu', 'Âm Sát']);
 // Sao engine đang theo bảng khác đặc tả (mục 10), sẽ đổi thành tùy chọn
@@ -24,7 +23,7 @@ function viTriSao(ls) {
 
 for (const c of cases) {
   const k = c.kyVong;
-  test(`${c.id} ${c.ten}`, { todo: CHO_SUA[c.id] }, () => {
+  test(`${c.id} ${c.ten}`, () => {
     const ls = lap(c.input);
     const v = viTriSao(ls);
     assert.deepEqual(ls.am, k.amLich, 'âm lịch');
@@ -78,4 +77,26 @@ test('Âm lịch trước 01/01/1968 theo múi giờ +8 (đặc tả 1.5, 10.2)'
   // Từ 1968 dùng UTC+7: Tết Mậu Thân miền Bắc 29/1/1968
   assert.deepEqual(T.anLaSo({ lich: 'duong', ngay: 29, thang: 1, nam: 1968, gio: 12, gioiTinh: 'nam' }).am, { ngay: 1, thang: 1, nam: 1968, nhuan: false });
   assert.equal(ls.quyUoc.muiGioLich, 'lichSu');
+});
+
+test('Giờ Tý muộn 23:00–23:59 tính sang ngày hôm sau (đặc tả 1.4, 10.1)', () => {
+  const { testIztroTuViTheoGio: t } = require('../docs/nghien-cuu/tuvi-test-cases.json');
+  const tuVi = (gio, quyUoc) => viTriSao(T.anLaSo({ lich: 'duong', ngay: 1, thang: 8, nam: 2023, gio, gioiTinh: 'nam', quyUoc }))['Tử Vi'];
+  // Bộ test iztro ngày 01/08/2023: 12 canh giờ và Tý muộn
+  const GIO = [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22];
+  Object.values(t.tuViTheoGio).slice(0, 12).forEach((chi, i) => assert.equal(tuVi(GIO[i]), chi, `giờ ${GIO[i]}`));
+  assert.equal(tuVi(23), t.tuViTheoGio['Tý muộn (23h-24h)'], 'Tý muộn');
+  // Tùy chọn giữ ngày: như Tý sớm của cùng ngày
+  const giu = T.anLaSo({ lich: 'duong', ngay: 1, thang: 8, nam: 2023, gio: 23, gioiTinh: 'nam', quyUoc: { gioTyMuon: 'giuNgay' } });
+  assert.deepEqual(giu.am, { ngay: 15, thang: 6, nam: 2023, nhuan: false });
+  assert.equal(viTriSao(giu)['Tử Vi'], tuVi(0));
+  // Sinh đêm cuối tháng: sang hẳn tháng sau (không như iztro chỉ cộng ngày âm)
+  const cuoi = T.anLaSo({ lich: 'duong', ngay: 19, thang: 2, nam: 2023, gio: 23, gioiTinh: 'nam' });
+  assert.deepEqual(cuoi.am, { ngay: 1, thang: 2, nam: 2023, nhuan: false });
+  assert.equal(cuoi.menhTai, 'Mão', 'Mệnh theo tháng 2');
+  assert.equal(viTriSao(cuoi)['Tử Vi'], t.them.tuVi);
+  // Dương lịch giữ nguyên ngày khai sinh
+  assert.deepEqual(cuoi.duong, { ngay: 19, thang: 2, nam: 2023 });
+  // Đêm giao thừa: sang năm mới
+  assert.equal(T.anLaSo({ lich: 'duong', ngay: 9, thang: 2, nam: 2024, gio: 23, gioiTinh: 'nu' }).canChi.nam, 'Giáp Thìn');
 });

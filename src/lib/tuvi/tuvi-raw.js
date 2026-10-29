@@ -86,7 +86,8 @@
   // ---- Quy ước an sao. Mỗi điểm các trường phái khác nhau là một tùy chọn, mặc định theo đặc tả
   // docs/nghien-cuu/tuvi-an-sao-spec.md (mục 10). Lá số trả về kèm quy ước đã dùng.
   var QUY_UOC_MAC_DINH = {
-    muiGioLich: 'lichSu'    // 10.2: 'lichSu' = âm lịch theo UTC+8 trước 01/01/1968, UTC+7 từ đó; 'utc7' = UTC+7 mọi năm
+    muiGioLich: 'lichSu',   // 10.2: 'lichSu' = âm lịch theo UTC+8 trước 01/01/1968, UTC+7 từ đó; 'utc7' = UTC+7 mọi năm
+    gioTyMuon: 'ngaySau'    // 10.1: sinh 23:00–23:59 'ngaySau' = tính sang ngày hôm sau; 'giuNgay' = giữ ngày, chỉ đổi giờ Tý
   };
   var JD_1968 = L.jdFromDate(1, 1, 1968);
   function jdCua(x) { return L.jdFromDate(x.ngay, x.thang, x.nam); }
@@ -129,7 +130,13 @@
     } else {
       duong = { ngay: +opts.ngay, thang: +opts.thang, nam: +opts.nam };
     }
-    var am = L.duongSangAm(duong.ngay, duong.thang, duong.nam, tzLich(qu, jdCua(duong)));
+    // Ngày dùng để đổi âm lịch và tính can chi ngày: giờ Tý muộn (23h) thuộc ngày hôm sau
+    var ngayLich = duong;
+    if (+opts.gio === 23 && qu.gioTyMuon === 'ngaySau') {
+      var sau = L.jdToDate(jdCua(duong) + 1);
+      ngayLich = { ngay: sau[0], thang: sau[1], nam: sau[2] };
+    }
+    var am = L.duongSangAm(ngayLich.ngay, ngayLich.thang, ngayLich.nam, tzLich(qu, jdCua(ngayLich)));
     var nn = am.ngay, tt = am.thang, nam = am.nam;   // tháng nhuận an như tháng chính
     var h = L.chiGio(+opts.gio), gio = h + 1;         // giờ: 1 = Tý … 12 = Hợi
     var nu = opts.gioiTinh === 'nu', gt = nu ? -1 : 1;
@@ -257,7 +264,7 @@
       };
     }
 
-    var jd = L.jdFromDate(duong.ngay, duong.thang, duong.nam);
+    var jd = jdCua(ngayLich);
     var ccD = L.canChiNgay(jd), ccM = L.canChiThang(am.thang, am.nam);
     var canGio = (L.canGioTy(ccD.can) + h) % 10;
     var napAmNam = L.napAm(canNam - 1, chiNam - 1), hanhMenh = L.hanhCuaNapAm(napAmNam);
