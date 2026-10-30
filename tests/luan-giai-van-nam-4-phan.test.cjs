@@ -24,9 +24,9 @@ for (const nam of [1970, 1980, 1990, 2000, 2010]) for (const [thang, gio, gioiTi
 const tatCaDoan = (bai) => bai.muc.flatMap((m) => m.nhanDinh);
 const doanDu = (bai) => tatCaDoan(bai).filter((n) => !n.cauDan);
 
-test('danh mục việc nên làm: 82 mẫu, đủ trường, mỗi việc ≤ 45 chữ, có thước đo, không lời khuyên ép mua', () => {
-  assert.equal(VIEC.length, 82);
-  assert.equal(new Set(VIEC.map((v) => v.maMau)).size, 82);
+test('danh mục việc nên làm: 103 mẫu, đủ trường, mỗi việc ≤ 45 chữ, có thước đo, không lời khuyên ép mua', () => {
+  assert.equal(VIEC.length, 103);
+  assert.equal(new Set(VIEC.map((v) => v.maMau)).size, 103);
   for (const v of VIEC) {
     assert.ok(v.chuDe && v.maHuong.length && v.cau && v.thuocDo && v.thoiHanThang >= 1 && v.thoiHanThang <= 3, v.maMau);
     assert.ok(soChu(v.cau) <= 45, `${v.maMau} dài ${soChu(v.cau)} chữ`);
