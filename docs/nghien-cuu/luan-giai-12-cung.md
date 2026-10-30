@@ -736,68 +736,68 @@ Sách gốc nêu số con cụ thể. Dưới đây giữ nguyên số trong ngo
 ### 5.2. 14 chính tinh tại cung
 
 #### Tử Vi
-- **[TAI-TV-01]** Tử Vi miếu (Ngọ) đơn thủ hoặc Tử Tướng: tài lộc dồi dào, có tích lũy; Tử Vi ở Tý (bình): khá nhưng kém hơn ở Ngọ. — *Nguồn: TB (tr. 190, mục 12.1); TT (q.2 «五财帛»: "紫微丰足仓箱…天相同财帛蓄积")*
-- **[TAI-TV-02]** Tử Vi gặp Kình, Đà, Hỏa, Linh, Không, Kiếp: tài lộc không vượng như thường. — *Nguồn: TT (q.2 «五财帛»: "加羊陀火铃空劫不旺"); TB (tr. 194–195, mục 12.15–12.17: Kình Đà, Hỏa Linh, Không Kiếp mờ ám thì hao tán)*
+- **[TAI-TV-01]** Tử Vi miếu (Ngọ) đơn thủ hoặc Tử Tướng: tài lộc dồi dào, có tích lũy; Tử Vi ở Tý (bình): khá nhưng kém hơn ở Ngọ. Gợi ý: tự nắm các quyết định lớn dựa trên bảng tổng tài sản xem lại mỗi quý; đặt hạn mức cho khoản chi vì thể diện. *(Nhận xét nhóm, không phải quy tắc gốc)* — *Nguồn: TB (tr. 190, mục 12.1); TT (q.2 «五财帛»: "紫微丰足仓箱…天相同财帛蓄积")*
+- **[TAI-TV-02]** Tử Vi gặp Kình, Đà, Hỏa, Linh, Không, Kiếp: tài lộc không vượng như thường. Gợi ý: hỏi ý người am hiểu tài chính trước quyết định lớn. *(Nhận xét nhóm, không phải quy tắc gốc)* — *Nguồn: TT (q.2 «五财帛»: "加羊陀火铃空劫不旺"); TB (tr. 194–195, mục 12.15–12.17: Kình Đà, Hỏa Linh, Không Kiếp mờ ám thì hao tán)*
 - **[TAI-TV-03]** Đồng cung: Tử Phủ giàu, giữ của bền, hợp nghề tài chính; Tử Sát kiếm tiền nhanh; Tử Phá buổi đầu chật vật, về sau dễ kiếm. — *Nguồn: TB (tr. 190, mục 12.1); TT (q.2 «五财帛»: "天府同富足终身保守…七杀同加吉财帛横发", "破军同先难后易")*
 
 #### Liêm Trinh
-- **[TAI-LT-01]** Liêm Trinh vượng (Dần, Thân) đơn thủ: kiếm tiền qua cạnh tranh, môi trường sôi động; giàu chậm nhưng chắc. Liêm Phủ, Liêm Tướng: khá giả, giữ của bền. — *Nguồn: TB (tr. 190, mục 12.2); TT (q.2 «五财帛»: "廉贞在申寅宫闹中生财…天相同富足仓箱")*
+- **[TAI-LT-01]** Liêm Trinh vượng (Dần, Thân) đơn thủ: kiếm tiền qua cạnh tranh, môi trường sôi động; giàu chậm nhưng chắc. Liêm Phủ, Liêm Tướng: khá giả, giữ của bền. Gợi ý: chọn lĩnh vực cạnh tranh nhưng luật chơi minh bạch; tự viết nguyên tắc tiền bạc (cho vay, hùn vốn) và giữ đúng. *(Nhận xét nhóm, không phải quy tắc gốc)* — *Nguồn: TB (tr. 190, mục 12.2); TT (q.2 «五财帛»: "廉贞在申寅宫闹中生财…天相同富足仓箱")*
 - **[TAI-LT-02]** Liêm Trinh hãm (Tỵ, Hợi, đồng cung Tham Lang): tài chính dễ lên xuống thất thường, dễ vướng tranh chấp vì tiền; nên giữ giấy tờ, hợp đồng minh bạch *(sách gốc diễn đạt nặng, đã trung tính hóa)*. — *Nguồn: TB (tr. 190: "Hay mắc tai họa vì tiền, nhất là kiện tụng"); TT (q.2 «五财帛»: "贪狼生横发横破")*
 - **[TAI-LT-03]** Liêm Phá (Mão, Dậu, Liêm hãm): tiền vào ra thất thường, hay tiêu nhiều nhưng hết lại có; buổi đầu khó, sau dễ hơn. Liêm Sát: kiếm tiền trong môi trường xáo động. — *Nguồn: TB (tr. 190, mục 12.2); TT (q.2 «五财帛»: "陷宫先难后易…七杀同闹中取")*
 
 #### Thiên Đồng
-- **[TAI-TD-01]** Thiên Đồng đắc (Mão) đơn thủ, hoặc Đồng Âm tại Tý: tay trắng làm nên, càng về sau càng khá; Đồng Lương: kinh doanh ngày càng phát. — *Nguồn: TB (tr. 190–191, mục 12.3); TT (q.2 «五财帛»: "天同白手生财晚发…天梁同财大旺")*
-- **[TAI-TD-02]** Thiên Đồng hãm (Thìn, Tuất): tài chính hay eo hẹp; Dậu (hãm): tiền tụ tán thất thường; Đồng Âm tại Ngọ: phải vất vả, về già mới khá. — *Nguồn: TB (tr. 190–191); TT (q.2 «五财帛» mục 太阴: "陷宫成败不聚")*
+- **[TAI-TD-01]** Thiên Đồng đắc (Mão) đơn thủ, hoặc Đồng Âm tại Tý: tay trắng làm nên, càng về sau càng khá; Đồng Lương: kinh doanh ngày càng phát. Gợi ý: chọn nguồn thu gắn với việc mình thích làm lâu dài; đặt ngày cố định trong tháng xem lại khoản chi theo cảm hứng. *(Nhận xét nhóm, không phải quy tắc gốc)* — *Nguồn: TB (tr. 190–191, mục 12.3); TT (q.2 «五财帛»: "天同白手生财晚发…天梁同财大旺")*
+- **[TAI-TD-02]** Thiên Đồng hãm (Thìn, Tuất): tài chính hay eo hẹp; Dậu (hãm): tiền tụ tán thất thường; Đồng Âm tại Ngọ: phải vất vả, về già mới khá. Gợi ý: giữ bảng ngân sách tối giản ba nhóm: thiết yếu, tiết kiệm, tiêu dùng. *(Nhận xét nhóm, không phải quy tắc gốc)* — *Nguồn: TB (tr. 190–191); TT (q.2 «五财帛» mục 太阴: "陷宫成败不聚")*
 - **[TAI-TD-03]** Đồng Cự: tiền tụ tán thất thường, dễ thị phi vì tiền; đi xa, làm ăn nơi khác thì thuận hơn. — *Nguồn: TB (tr. 191); TT (q.2 «五财帛»: "巨门同财气进退")*
 
 #### Vũ Khúc
-- **[TAI-VK-01]** Vũ Khúc miếu (Thìn, Tuất) đơn thủ: tài lộc lớn; gặp cát hóa thì càng vượng. — *Nguồn: TB (tr. 191, mục 12.4); TT (q.2 «五财帛»: "武曲丰足化吉有巨万家资")*
+- **[TAI-VK-01]** Vũ Khúc miếu (Thìn, Tuất) đơn thủ: tài lộc lớn; gặp cát hóa thì càng vượng. Gợi ý: dành khoản cố định mỗi năm cho học hỏi và các mối quan hệ để kỷ luật không quá cứng. *(Nhận xét nhóm, không phải quy tắc gốc)* — *Nguồn: TB (tr. 191, mục 12.4); TT (q.2 «五财帛»: "武曲丰足化吉有巨万家资")*
 - **[TAI-VK-02]** Vũ Phủ: giàu, giữ của bền; Vũ Tướng: của cải dồi dào, hay gặp người nâng đỡ. — *Nguồn: TB (tr. 191); TT (q.2 «五财帛»: "天相同财帛丰盈，遇贵生财成家"; q.3 «财宅»: "紫府武曲居财帛更兼权禄富奢翁")*
-- **[TAI-VK-03]** Vũ Tham: từ sau khoảng 30 tuổi mới phát; Vũ Sát: tay trắng lập nghiệp, đầu vất vả sau dễ. Hai sách khớp gần như nguyên văn. — *Nguồn: TB (tr. 191: "từ ngoài 30 trở đi, mới giàu"; "tay trắng lập nghiệp"); TT (q.2 «五财帛»: "七杀同白手生财成家，贪狼同三十年后方发财")*
-- **[TAI-VK-04]** Vũ Khúc hãm (Tỵ, Hợi, đồng cung Phá Quân): tiền vào tay này ra tay kia, trước ít sau có; hợp ngành sản xuất, thương mại. Gặp Kình, Đà, Hỏa, Linh thì khó tụ, kỵ nhất gặp Không vong. — *Nguồn: TB (tr. 191: "tiền vào tay này sang tay kia, trước không sau có"); TT (q.2 «五财帛»: "破军同东来西去先无后有…加羊陀火铃不聚极怕空亡")*
+- **[TAI-VK-03]** Vũ Tham: từ sau khoảng 30 tuổi mới phát; Vũ Sát: tay trắng lập nghiệp, đầu vất vả sau dễ. Hai sách khớp gần như nguyên văn. Gợi ý: đào sâu một nguồn thu chính trước khi mở thêm nguồn khác. *(Nhận xét nhóm, không phải quy tắc gốc)* — *Nguồn: TB (tr. 191: "từ ngoài 30 trở đi, mới giàu"; "tay trắng lập nghiệp"); TT (q.2 «五财帛»: "七杀同白手生财成家，贪狼同三十年后方发财")*
+- **[TAI-VK-04]** Vũ Khúc hãm (Tỵ, Hợi, đồng cung Phá Quân): tiền vào tay này ra tay kia, trước ít sau có; hợp ngành sản xuất, thương mại. Gặp Kình, Đà, Hỏa, Linh thì khó tụ, kỵ nhất gặp Không vong. Gợi ý: chuyển một phần thu nhập sang tài khoản khó rút ngay khi nhận tiền. *(Nhận xét nhóm, không phải quy tắc gốc)* — *Nguồn: TB (tr. 191: "tiền vào tay này sang tay kia, trước không sau có"); TT (q.2 «五财帛»: "破军同东来西去先无后有…加羊陀火铃不聚极怕空亡")*
 
 #### Thái Dương
-- **[TAI-TDU-01]** Thái Dương sáng (Dần đến Ngọ): dễ kiếm tiền, sung túc. — *Nguồn: TB (tr. 191, mục 12.5); TT (q.2 «五财帛»: "太阳入庙丰足")*
-- **[TAI-TDU-02]** Thái Dương hãm (Thân đến Tý): phải vất vả mới đủ dùng, về già mới sung túc. — *Nguồn: TB (tr. 191); TT (q.2 «五财帛»: "陷宫劳碌不遂")*
+- **[TAI-TDU-01]** Thái Dương sáng (Dần đến Ngọ): dễ kiếm tiền, sung túc. Gợi ý: xây uy tín cá nhân rõ ràng; chờ một ngày trước khi nhận lời cho mượn hoặc tài trợ khoản lớn. *(Nhận xét nhóm, không phải quy tắc gốc)* — *Nguồn: TB (tr. 191, mục 12.5); TT (q.2 «五财帛»: "太阳入庙丰足")*
+- **[TAI-TDU-02]** Thái Dương hãm (Thân đến Tý): phải vất vả mới đủ dùng, về già mới sung túc. Gợi ý: đặt mục tiêu tài chính theo mốc 5 năm, không so với người cùng tuổi. *(Nhận xét nhóm, không phải quy tắc gốc)* — *Nguồn: TB (tr. 191); TT (q.2 «五财帛»: "陷宫劳碌不遂")*
 - **[TAI-TDU-03]** Nhật Nguyệt đồng cung: trước ít sau nhiều; gặp Tả Hữu, cát tinh thì phát khá. Nhật Cự: TB nói tại Dần giàu, tại Thân vất vả; TT nói chung "sớm thành bại, trung niên chưa đầy". — *Nguồn: TB (tr. 191–192); TT (q.2 «五财帛»: "太阴同加左右吉星发财不小…巨门同早年成败中未充盈")*
 
 #### Thiên Cơ
-- **[TAI-TCO-01]** Thiên Cơ sáng (Tỵ, Ngọ, Mùi) đơn thủ: tiền bạc sung túc; bản chất là kiếm tiền bằng trí óc, tính toán, "lao tâm". — *Nguồn: TB (tr. 191, mục 12.6); TT (q.2 «五财帛»: "天机劳心费力生财")*
-- **[TAI-TCO-02]** Thiên Cơ ở Hợi (hãm), Tý, Sửu: kiếm tiền chậm và khó; gặp Kình, Đà, Hỏa, Linh, Không, Kiếp thì một đời có thành có bại. — *Nguồn: TB (tr. 191); TT (q.2 «五财帛»: "加羊陀火铃空劫一生有成有败")*
+- **[TAI-TCO-01]** Thiên Cơ sáng (Tỵ, Ngọ, Mùi) đơn thủ: tiền bạc sung túc; bản chất là kiếm tiền bằng trí óc, tính toán, "lao tâm". Gợi ý: chọn một nguồn thu phụ từ chuyên môn, giới hạn thời gian để không quá sức; giữ kế hoạch tài chính ít nhất sáu tháng rồi mới đổi. *(Nhận xét nhóm, không phải quy tắc gốc)* — *Nguồn: TB (tr. 191, mục 12.6); TT (q.2 «五财帛»: "天机劳心费力生财")*
+- **[TAI-TCO-02]** Thiên Cơ ở Hợi (hãm), Tý, Sửu: kiếm tiền chậm và khó; gặp Kình, Đà, Hỏa, Linh, Không, Kiếp thì một đời có thành có bại. Gợi ý: thử ý tưởng kiếm tiền ở quy mô nhỏ trước khi mở rộng. *(Nhận xét nhóm, không phải quy tắc gốc)* — *Nguồn: TB (tr. 191); TT (q.2 «五财帛»: "加羊陀火铃空劫一生有成有败")*
 - **[TAI-TCO-03]** Cơ Lương: dễ làm giàu nhờ mưu trí, có nguồn thu ngoài; Cơ Cự: giàu nhờ cạnh tranh, hoạt động sôi nổi; Cơ Âm tại Thân tay trắng mà khá, tại Dần thành bại thất thường. — *Nguồn: TB (tr. 191); TT (q.2 «五财帛»: "巨门同闹中求取，天梁同机关巧计生外财，太阴同陷宫成败")*
 
 #### Thiên Phủ
-- **[TAI-TP-01]** Thiên Phủ đắc (Tỵ, Hợi) đơn thủ: sung túc, giữ của bền; ở Sửu, Mùi, Mão, Dậu: khá nhưng kém hơn. — *Nguồn: TB (tr. 191, mục 12.7); TT (q.2 «五财帛»: "天府富足")*
-- **[TAI-TP-02]** Thiên Phủ gặp Kình, Đà, Hỏa, Linh, Không, Kiếp: có thành có bại, không còn ổn định. — *Nguồn: TT (q.2 «五财帛»: "见羊陀火铃空劫有成败"); TB (tr. 194–195, mục 12.15–12.17)*
+- **[TAI-TP-01]** Thiên Phủ đắc (Tỵ, Hợi) đơn thủ: sung túc, giữ của bền; ở Sửu, Mùi, Mão, Dậu: khá nhưng kém hơn. Gợi ý: chia tài sản thành ba ngăn: dự phòng, mục tiêu gần, mục tiêu xa; tiền tích lũy chỉ dùng cho mục tiêu đã định. *(Nhận xét nhóm, không phải quy tắc gốc)* — *Nguồn: TB (tr. 191, mục 12.7); TT (q.2 «五财帛»: "天府富足")*
+- **[TAI-TP-02]** Thiên Phủ gặp Kình, Đà, Hỏa, Linh, Không, Kiếp: có thành có bại, không còn ổn định. Gợi ý: kiểm lại quỹ khẩn cấp trước mỗi khoản chi lớn. *(Nhận xét nhóm, không phải quy tắc gốc)* — *Nguồn: TT (q.2 «五财帛»: "见羊陀火铃空劫有成败"); TB (tr. 194–195, mục 12.15–12.17)*
 
 #### Thái Âm
-- **[TAI-TA-01]** Thái Âm miếu (Dậu, Tuất, Hợi): dễ kiếm tiền, tích lũy tốt; Thái Âm cùng Lộc Tồn, Tả Hữu thì rất khá. — *Nguồn: TB (tr. 192, mục 12.8); TT (q.2 «五财帛»: "太阴入庙富足仓箱…禄存兼左右同主大富")*
-- **[TAI-TA-02]** Thái Âm hãm (Mão, Thìn, Tỵ): phải vất vả, thành bại khó tụ, về già mới sung túc. — *Nguồn: TB (tr. 192); TT (q.2 «五财帛»: "陷宫成败不聚")*
+- **[TAI-TA-01]** Thái Âm miếu (Dậu, Tuất, Hợi): dễ kiếm tiền, tích lũy tốt; Thái Âm cùng Lộc Tồn, Tả Hữu thì rất khá. Gợi ý: tích lũy định kỳ một tỷ lệ cố định của thu nhập; ghi lý do mua trước các món ngoài dự tính. *(Nhận xét nhóm, không phải quy tắc gốc)* — *Nguồn: TB (tr. 192, mục 12.8); TT (q.2 «五财帛»: "太阴入庙富足仓箱…禄存兼左右同主大富")*
+- **[TAI-TA-02]** Thái Âm hãm (Mão, Thìn, Tỵ): phải vất vả, thành bại khó tụ, về già mới sung túc. Gợi ý: ghi lại những lần tiền tụ rồi tán để tìm khoản chi lặp lại cần cắt. *(Nhận xét nhóm, không phải quy tắc gốc)* — *Nguồn: TB (tr. 192); TT (q.2 «五财帛»: "陷宫成败不聚")*
 
 #### Tham Lang
-- **[TAI-THL-01]** Tham Lang vượng (Thìn, Tuất) đơn thủ: có thể phát nhanh ("hoạnh phát"), càng về già càng khá. — *Nguồn: TB (tr. 192, mục 12.9); TT (q.2 «五财帛»: "贪狼庙旺横发")*
+- **[TAI-THL-01]** Tham Lang vượng (Thìn, Tuất) đơn thủ: có thể phát nhanh ("hoạnh phát"), càng về già càng khá. Gợi ý: trích ngay một phần khoản thu lớn bất ngờ vào tích lũy; đặt trần chi giải trí mỗi tháng. *(Nhận xét nhóm, không phải quy tắc gốc)* — *Nguồn: TB (tr. 192, mục 12.9); TT (q.2 «五财帛»: "贪狼庙旺横发")*
 - **[TAI-THL-02]** Tham Lang hãm (Tý, Ngọ): dễ tiêu xài vì vui chơi, tài chính eo hẹp; nên lập kỷ luật chi tiêu *(sách gốc diễn đạt nặng, đã trung tính hóa)*. Tại Dần, Thân (đắc): tiền vào ra nhanh. — *Nguồn: TB (tr. 192: "hoang phí, chơi bời nên hao tán"); TT (q.2 «五财帛»: "陷地贫穷")*
 - **[TAI-THL-03]** Tham Lang gặp Hỏa Tinh: trước 30 tuổi có thành có bại, sau 30 có thể phát nhanh. — *Nguồn: TT (q.2 «五财帛»: "见火星三十年前成败，三十年后横发"); WT7 (Tham Lang gặp Hỏa, Linh "giàu nhanh hoặc được của bất ngờ")*
 
 #### Cự Môn
-- **[TAI-CM-01]** Cự Môn sáng (Tý, Ngọ vượng; Hợi đắc) đơn thủ: tay trắng lập nghiệp, hợp môi trường cạnh tranh, sôi động. — *Nguồn: TB (tr. 192, mục 12.10: "tay trắng lập nghiệp… nhất là trong lúc náo loạn, cạnh tranh"); TT (q.2 «五财帛»: "巨门白手生财成家，宜闹中取")*
-- **[TAI-CM-02]** Cự Môn hãm (Thìn, Tuất, Tỵ): tiền tụ tán thất thường, dễ thị phi vì tiền; gặp Kình, Đà, Hỏa, Linh, Không, Kiếp thì nhiều đường hao. — *Nguồn: TB (tr. 192); TT (q.2 «五财帛»: "加羊陀火铃空劫破财多端")*
+- **[TAI-CM-01]** Cự Môn sáng (Tý, Ngọ vượng; Hợi đắc) đơn thủ: tay trắng lập nghiệp, hợp môi trường cạnh tranh, sôi động. Gợi ý: rèn kỹ năng đàm phán giá; thống nhất điều khoản thanh toán bằng văn bản trước khi làm. *(Nhận xét nhóm, không phải quy tắc gốc)* — *Nguồn: TB (tr. 192, mục 12.10: "tay trắng lập nghiệp… nhất là trong lúc náo loạn, cạnh tranh"); TT (q.2 «五财帛»: "巨门白手生财成家，宜闹中取")*
+- **[TAI-CM-02]** Cự Môn hãm (Thìn, Tuất, Tỵ): tiền tụ tán thất thường, dễ thị phi vì tiền; gặp Kình, Đà, Hỏa, Linh, Không, Kiếp thì nhiều đường hao. Gợi ý: bàn chuyện tiền chung riêng tư, nói rõ từng con số. *(Nhận xét nhóm, không phải quy tắc gốc)* — *Nguồn: TB (tr. 192); TT (q.2 «五财帛»: "加羊陀火铃空劫破财多端")*
 
 #### Thiên Tướng
-- **[TAI-TT-01]** Thiên Tướng đắc (Tỵ, Hợi, Sửu, Mùi) đơn thủ: sung túc, hay có mối lợi tự đến. — *Nguồn: TB (tr. 193, mục 12.11); TT (q.2 «五财帛»: "天相富足")*
-- **[TAI-TT-02]** Thiên Tướng hãm (Mão, Dậu): bình thường, hợp nghề kỹ thuật, công nghệ; gặp Kình, Đà, Hỏa, Linh, Không, Kiếp, Hao, Kỵ thì thành bại, khó tích lũy. — *Nguồn: TB (tr. 193: "bình thường, nên chuyên về công nghệ"); TT (q.2 «五财帛»: "加羊陀火铃空劫耗忌，成败无积聚")*
+- **[TAI-TT-01]** Thiên Tướng đắc (Tỵ, Hợi, Sửu, Mùi) đơn thủ: sung túc, hay có mối lợi tự đến. Gợi ý: lưu lời giới thiệu, phản hồi tốt từ đối tác; tự hỏi "cần không, đủ tiền không, để sau được không" trước khi chi theo lời rủ. *(Nhận xét nhóm, không phải quy tắc gốc)* — *Nguồn: TB (tr. 193, mục 12.11); TT (q.2 «五财帛»: "天相富足")*
+- **[TAI-TT-02]** Thiên Tướng hãm (Mão, Dậu): bình thường, hợp nghề kỹ thuật, công nghệ; gặp Kình, Đà, Hỏa, Linh, Không, Kiếp, Hao, Kỵ thì thành bại, khó tích lũy. Gợi ý: học một kỹ năng kỹ thuật có chứng chỉ để nâng mức thu nhập. *(Nhận xét nhóm, không phải quy tắc gốc)* — *Nguồn: TB (tr. 193: "bình thường, nên chuyên về công nghệ"); TT (q.2 «五财帛»: "加羊陀火铃空劫耗忌，成败无积聚")*
 
 #### Thiên Lương
-- **[TAI-TL-01]** Thiên Lương miếu (Ngọ), đắc (Tý): tài chính vững, ít phải lo sinh kế. — *Nguồn: TB (tr. 193, mục 12.12); TT (q.2 «五财帛»: "天梁富足入庙上等富贵")*
-- **[TAI-TL-02]** Thiên Lương hãm (Tỵ, Hợi): kiếm tiền phải đi nhiều nơi, vất vả, khó giữ của. — *Nguồn: TB (tr. 193: "lang thang nay đây mai đó đi kiếm tiền… không giữ được của"); TT (q.2 «五财帛»: "陷宫辛勤求财度日"); WT7 (hãm "phiêu bạt, vất vả kiếm tiền")*
+- **[TAI-TL-01]** Thiên Lương miếu (Ngọ), đắc (Tý): tài chính vững, ít phải lo sinh kế. Gợi ý: lập kế hoạch tài chính sớm cho các mốc lớn của gia đình; đặt giới hạn tổng cho khoản giúp đỡ trong năm. *(Nhận xét nhóm, không phải quy tắc gốc)* — *Nguồn: TB (tr. 193, mục 12.12); TT (q.2 «五财帛»: "天梁富足入庙上等富贵")*
+- **[TAI-TL-02]** Thiên Lương hãm (Tỵ, Hợi): kiếm tiền phải đi nhiều nơi, vất vả, khó giữ của. Gợi ý: gom tiết kiệm về một nơi, hạn chế để rải rác. *(Nhận xét nhóm, không phải quy tắc gốc)* — *Nguồn: TB (tr. 193: "lang thang nay đây mai đó đi kiếm tiền… không giữ được của"); TT (q.2 «五财帛»: "陷宫辛勤求财度日"); WT7 (hãm "phiêu bạt, vất vả kiếm tiền")*
 
 #### Thất Sát
-- **[TAI-TS-01]** Thất Sát miếu (Dần, Thân) đơn thủ: trước ít sau nhiều, đến tuổi trung niên kiếm tiền nhanh; tại Tý, Ngọ (miếu): tụ tán thất thường nhưng hay có khoản thu bất ngờ. — *Nguồn: TB (tr. 193, mục 12.13); WT7 (Thất Sát miếu vượng gặp Lộc, Quyền, Khoa "nguồn tiền tài dồi dào", "của bất ngờ")*
-- **[TAI-TS-02]** Thất Sát hãm (Thìn, Tuất): tài chính hay eo hẹp *(sách gốc: "suốt đời thiếu thốn", đã trung tính hóa)*; WT7 nói gặp Tả Hữu, Xương Khúc thì cải thiện. TT không có mục Thất Sát đơn thủ ở Tài Bạch. — *Nguồn: TB (tr. 193); WT7*
+- **[TAI-TS-01]** Thất Sát miếu (Dần, Thân) đơn thủ: trước ít sau nhiều, đến tuổi trung niên kiếm tiền nhanh; tại Tý, Ngọ (miếu): tụ tán thất thường nhưng hay có khoản thu bất ngờ. Gợi ý: xác định mức thu tối thiểu mỗi tháng, chỉ nhận rủi ro mới khi giữ được mức này; chia khoản thu theo đợt cho từng tháng tới. *(Nhận xét nhóm, không phải quy tắc gốc)* — *Nguồn: TB (tr. 193, mục 12.13); WT7 (Thất Sát miếu vượng gặp Lộc, Quyền, Khoa "nguồn tiền tài dồi dào", "của bất ngờ")*
+- **[TAI-TS-02]** Thất Sát hãm (Thìn, Tuất): tài chính hay eo hẹp *(sách gốc: "suốt đời thiếu thốn", đã trung tính hóa)*; WT7 nói gặp Tả Hữu, Xương Khúc thì cải thiện. TT không có mục Thất Sát đơn thủ ở Tài Bạch. Gợi ý: chờ ba ngày trước quyết định tiền bạc lớn hơn một tháng thu nhập. *(Nhận xét nhóm, không phải quy tắc gốc)* — *Nguồn: TB (tr. 193); WT7*
 
 #### Phá Quân
-- **[TAI-PQ-01]** Phá Quân miếu (Tý, Ngọ) đơn thủ: có tích lũy, kiếm tiền mạnh tay, dám chi để thu lớn; tại Thìn, Tuất (vượng) cũng khá, tụ tán nhưng hết lại có. — *Nguồn: TB (tr. 193–194, mục 12.14); TT (q.2 «五财帛»: "破军在子午宫，多有金银宝贝蓄积，辰戌旺宫亦财盛")*
-- **[TAI-PQ-02]** Phá Quân hãm (Dần, Thân): kiếm tiền khó, chi nhiều hơn thu; hợp nghề thủ công, mỹ thuật. Gặp Không Kiếp thì rất eo hẹp. — *Nguồn: TB (tr. 194: "kiếm tiền khó khăn, thu vào ít phóng ra nhiều, nên làm nghề thủ công hay mỹ thuật"); TT (q.2 «五财帛»: "陷宫破祖不聚…加空劫极贫")*
+- **[TAI-PQ-01]** Phá Quân miếu (Tý, Ngọ) đơn thủ: có tích lũy, kiếm tiền mạnh tay, dám chi để thu lớn; tại Thìn, Tuất (vượng) cũng khá, tụ tán nhưng hết lại có. Gợi ý: tách quỹ thử nghiệm riêng cho ý tưởng mới, hết quỹ thì dừng; viết trước mức lỗ tối đa khi đổi hướng. *(Nhận xét nhóm, không phải quy tắc gốc)* — *Nguồn: TB (tr. 193–194, mục 12.14); TT (q.2 «五财帛»: "破军在子午宫，多有金银宝贝蓄积，辰戌旺宫亦财盛")*
+- **[TAI-PQ-02]** Phá Quân hãm (Dần, Thân): kiếm tiền khó, chi nhiều hơn thu; hợp nghề thủ công, mỹ thuật. Gặp Không Kiếp thì rất eo hẹp. Gợi ý: theo dõi chênh lệch thu chi mỗi tháng, cắt khoản chi lớn nhất khi âm. *(Nhận xét nhóm, không phải quy tắc gốc)* — *Nguồn: TB (tr. 194: "kiếm tiền khó khăn, thu vào ít phóng ra nhiều, nên làm nghề thủ công hay mỹ thuật"); TT (q.2 «五财帛»: "陷宫破祖不聚…加空劫极贫")*
 
 ### 5.3. Bộ sao phụ quan trọng (SP)
 
