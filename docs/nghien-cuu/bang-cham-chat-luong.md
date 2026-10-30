@@ -186,6 +186,8 @@ Kết quả kiểm: `git diff 78e185c 8f578e4` cho thấy đoạn Tứ hóa **kh
 | Giọng | 3 | Tiền tố "Với Phu Thê:" đọc như máy; "tứ chính", "thế", "cách" chưa giải thích; gạch 1 dài ~60 chữ, hai mệnh đề khuyên nối bằng dấu hai chấm và chấm phẩy. | Giải thích ngắn thuật ngữ lần đầu; bỏ tiền tố; tách câu. |
 | **Tổng** | **14/25** | **Trượt** (Đúng 4 < 5; Sâu, Cụ thể, Áp dụng, Giọng < 4). Tăng 4 điểm so với Phiếu 3. | |
 
+**Đức trả lời (30/10):** đọc theo SP-03/TP-06. Đã bổ sung vào CHUNG-CC-08 vế "Ngoại lệ Sát Phá Tham" và thêm CHUNG-TRANH-13: với cách Sát Phá Tham, sát tinh đắc địa (bảng SP-10) = 0 điểm phá, là trợ lực, không nêu làm lý do phá cách; bình/hãm vẫn tính điểm; cách khác không đổi. Lá này: Kình Dương (Đ) Thìn, Địa Kiếp (Đ) Thân = 0 điểm; vẫn mức 3 vì Hỏa Tinh hãm tọa thủ Phu Thê. Góp ý (a) của phiếu là đúng.
+
 ### Tổng hợp chấm thử
 
 | Bài | Đúng | Sâu | Cụ thể | Áp dụng | Giọng | Tổng | Kết luận |
