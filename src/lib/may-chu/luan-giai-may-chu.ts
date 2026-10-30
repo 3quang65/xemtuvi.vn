@@ -2,9 +2,9 @@
 import { lapLaSo, namAmHienTai, type ThongTinSinh } from '@/lib/tuvi';
 import { khoaCache, PHIEN_BAN_QUY_TAC, sinhLuanGiai, timDaiVan, type ChuyenDeMa, type LuanGiai } from '@/lib/luan-giai/ai';
 import { MA_VAN_NAM } from '@/lib/goi';
-import { baiVanNamGiaLap } from '@/lib/van-nam-mau';
+import { PHIEN_BAN_VAN_NAM, sinhVanNam, xemTruocVanNam, type BaiVanNam, type XemTruocVanNam } from '@/lib/luan-giai/ai/van-nam';
 import type { Csdl } from './csdl';
-import { coQuyenXem, LoiNghiepVu } from './dich-vu';
+import { coQuyenXem, laSoCuaToi, LoiNghiepVu } from './dich-vu';
 import { giaiMaJson, khoaTim, maHoaJson, type BoKhoa } from './ma-hoa';
 
 /** Chủ đề khách mua → chuyên đề luận giải. Tài chính, Gia đạo chưa có bộ quy tắc: hỏi thì 404. */
@@ -14,11 +14,26 @@ const CHUYEN_DE_CUA_CHU_DE: Record<string, ChuyenDeMa | null> = {
 };
 export const CHU_DE_HOP_LE = [...Object.keys(CHUYEN_DE_CUA_CHU_DE), MA_VAN_NAM];
 
-export async function luanGiaiChoKhach(db: Csdl, k: BoKhoa, nguoiDungId: number, laSoId: number, chuDe: string, bayGio = Date.now()): Promise<LuanGiai> {
-  if (chuDe === MA_VAN_NAM) {
-    if (!coQuyenXem(db, nguoiDungId, laSoId, MA_VAN_NAM, bayGio)) throw new LoiNghiepVu('chua_mua', 'Bạn chưa mở phần này.', 403);
-    return baiVanNamGiaLap(); // TODO: thay bằng hàm sinh thật của B1 (src/lib/luan-giai) khi có
-  }
+/** Trả lời cho chủ đề Vận năm: đã mua → bài đầy đủ; chưa mua → chỉ bản xem trước (không nội dung tháng, không mã quy tắc). */
+export type VanNamTraVe = { daMua: true; bai: BaiVanNam } | { daMua: false; xemTruoc: XemTruocVanNam };
+
+async function vanNamChoKhach(db: Csdl, k: BoKhoa, nguoiDungId: number, laSoId: number, bayGio: number): Promise<VanNamTraVe> {
+  // Lá số không phải của người này: 403 như mọi chủ đề, không lộ gì.
+  if (!laSoCuaToi(db, nguoiDungId, laSoId)) throw new LoiNghiepVu('chua_mua', 'Bạn chưa mở phần này.', 403);
+  const hang = db.prepare('SELECT sinh_ma_hoa FROM la_so WHERE id=?').get(laSoId) as { sinh_ma_hoa: string };
+  const ls = lapLaSo(giaiMaJson<ThongTinSinh>(hang.sinh_ma_hoa, k));
+  if (!coQuyenXem(db, nguoiDungId, laSoId, MA_VAN_NAM, bayGio)) return { daMua: false, xemTruoc: xemTruocVanNam(ls) };
+  const khoa = khoaTim(`${khoaCache(ls, MA_VAN_NAM, PHIEN_BAN_VAN_NAM)}`, k);
+  const co = db.prepare('SELECT noi_dung_ma_hoa FROM luan_giai_luu WHERE khoa_cache=?').get(khoa) as { noi_dung_ma_hoa: string } | undefined;
+  if (co) return { daMua: true, bai: giaiMaJson<BaiVanNam>(co.noi_dung_ma_hoa, k) };
+  // boQuaCache: không ghi tệp đệm bản rõ trong .cache; bộ nhớ đệm duy nhất là bảng mã hóa.
+  const bai = await sinhVanNam(ls, { boQuaCache: true });
+  db.prepare('INSERT OR REPLACE INTO luan_giai_luu (khoa_cache, chuyen_de, phien_ban, noi_dung_ma_hoa) VALUES (?,?,?,?)').run(khoa, MA_VAN_NAM, PHIEN_BAN_VAN_NAM, maHoaJson(bai, k));
+  return { daMua: true, bai };
+}
+
+export async function luanGiaiChoKhach(db: Csdl, k: BoKhoa, nguoiDungId: number, laSoId: number, chuDe: string, bayGio = Date.now()): Promise<LuanGiai | VanNamTraVe> {
+  if (chuDe === MA_VAN_NAM) return vanNamChoKhach(db, k, nguoiDungId, laSoId, bayGio);
   if (!(chuDe in CHUYEN_DE_CUA_CHU_DE)) throw new LoiNghiepVu('chu_de_sai', 'Chủ đề không hợp lệ.');
   // Kiểm quyền TRƯỚC mọi việc khác; sai quyền không được biết chủ đề có nội dung hay không.
   if (!coQuyenXem(db, nguoiDungId, laSoId, chuDe === 'van-10-nam' ? null : chuDe, bayGio)) throw new LoiNghiepVu('chua_mua', 'Bạn chưa mở phần này.', 403);

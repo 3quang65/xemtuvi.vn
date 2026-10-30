@@ -97,15 +97,37 @@ test('mua lẻ vận năm phải kèm lá số; quyền theo đúng lá số', a
   assert.ok(!dv.coQuyenXem(M.db, k.nguoiDungId, khac, 'van-nam-2027'));
 });
 
-test('GET /api/luan-giai van-nam-2027: chưa mua 403 không kèm nội dung; đã mua 200', async () => {
+test('GET /api/luan-giai van-nam-2027: chưa mua trả bản xem trước (không nội dung tháng, không mã quy tắc); đã mua trả bài thật', async () => {
+  const { sinhVanNam } = nap('lib/luan-giai/ai/van-nam.ts');
+  const { lapLaSo } = nap('lib/tuvi/index.ts');
+  const that = await sinhVanNam(lapLaSo(SINH), { boQuaCache: true });
+  const chuoiThang = that.thang.flatMap((t) => t.nhanDinh.map((n) => n.text));
+  assert.ok(chuoiThang.length >= 12);
   const chua = await khach('chua@example.vn', 'tron-la-so');
   const r1 = await x.luanGiai(yc(`/api/luan-giai?laSo=${chua.laSoId}&chuDe=van-nam-2027`, { cookie: chua.cookie }), M);
-  assert.equal(r1.status, 403);
-  assert.ok(!/muc/.test(await r1.text()));
+  assert.equal(r1.status, 200);
+  const t1 = await r1.text();
+  const j1 = JSON.parse(t1);
+  assert.equal(j1.daMua, false);
+  assert.ok(j1.xemTruoc && !('bai' in j1));
+  // Câu trùng với bản xem trước miễn phí (điểm thuận) là chủ ý của B1; chỉ kiểm câu CHỈ có ở tháng.
+  const congKhai = JSON.stringify(j1.xemTruoc);
+  const rieng = chuoiThang.filter((c) => !congKhai.includes(JSON.stringify(c).slice(1, -1)));
+  assert.ok(rieng.length >= 12);
+  for (const c of rieng) assert.ok(!t1.includes(JSON.stringify(c).slice(1, -1)), 'lộ nội dung tháng: ' + c.slice(0, 40));
+  assert.doesNotMatch(t1, /NAM-[A-Z]|quyTacId|thamChieu|"thang":\[\{[^}]*nhanDinh/);
+  assert.ok(!('muc' in j1.xemTruoc) && !('thang' in j1.xemTruoc));
   const da = await khach('da@example.vn', 'van-nam-2027');
   const r2 = await x.luanGiai(yc(`/api/luan-giai?laSo=${da.laSoId}&chuDe=van-nam-2027`, { cookie: da.cookie }), M);
   assert.equal(r2.status, 200);
-  assert.ok((await r2.json()).muc.length > 0);
+  const j2 = await r2.json();
+  assert.equal(j2.daMua, true);
+  assert.equal(j2.bai.thang.length, 12);
+  assert.ok(j2.bai.muc.length >= 5 && j2.bai.ghiChuTruongPhai && /hệ thống/.test(j2.bai.ghiChu));
+  // lá số của người khác: 403, không biết có bài hay không
+  const r3 = await x.luanGiai(yc(`/api/luan-giai?laSo=${da.laSoId}&chuDe=van-nam-2027`, { cookie: chua.cookie }), M);
+  assert.equal(r3.status, 403);
+  assert.ok(!/xemTruoc|bai/.test(await r3.text()));
 });
 
 test('sự kiện đo phễu cho trang đích và gói mới', () => {
