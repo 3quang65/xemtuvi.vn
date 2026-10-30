@@ -49,3 +49,14 @@ test('chữ dẫn khu Vận: 2 thẻ và 1 thẻ', () => {
   assert.match(g.chuDanVanNam(ds), /Mua lẻ hoặc gộp/);
   assert.equal(g.chuDanVanNam(ds.slice(0, 1)), 'Luận riêng năm 2027 cho lá số này.');
 });
+
+test('L-eb6204 B2: thẻ gộp render MỘT dòng chữ thường, số từ biến', () => {
+  const fs = require('node:fs');
+  const src = fs.readFileSync(require('node:path').join(__dirname, '../src/components/ThanGoi.tsx'), 'utf8');
+  assert.match(src, /<p className="so-sanh">\{g\.soSanh\.join\(' · '\)\}<\/p>/);
+  const css = fs.readFileSync(require('node:path').join(__dirname, '../src/app/globals.css'), 'utf8');
+  assert.doesNotMatch(css, /\.khu-van-nam \.so-sanh li/);
+  assert.doesNotMatch(css, /text-transform: uppercase/);
+  const x = gop(); const { tongMuaRieng, tietKiem } = g.giaMuaRiengVaTietKiem();
+  assert.equal(x.soSanh.join(' · '), `Mua riêng ${g.dinhDangGia(tongMuaRieng)} · tiết kiệm ${g.dinhDangGia(tietKiem)}`);
+});

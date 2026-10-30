@@ -205,11 +205,8 @@ a { color: inherit; }
 .gia strong { font-size: 1.5rem; color: var(--muc); }
 .so-sanh { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; font-size: 0.92rem; font-weight: 500; color: var(--ngoc-dam); }
 .han-ban { margin: 0; font-size: 0.92rem; color: var(--muc-nhat); }
-/* Thẻ gói gộp Vận 2027: "Mua riêng …" một dòng chữ thường, "tiết kiệm …" dòng riêng dạng nhãn viền; không giá gạch */
-.khu-van-nam .so-sanh { font-size: 0.95rem; }
-.khu-van-nam .so-sanh li:first-child { color: var(--muc-nhat); font-weight: 400; }
-.khu-van-nam .so-sanh li + li { justify-self: start; padding: 3px 12px; border: 1px solid var(--ngoc); border-radius: 999px; background: var(--giay); color: var(--ngoc-dam); font-weight: 600; }
-.khu-van-nam .so-sanh li + li::first-letter { text-transform: uppercase; }
+/* Thẻ gói gộp Vận 2027: một dòng chữ thường "Mua riêng … · tiết kiệm …"; không viên thuốc, không giá gạch */
+.khu-van-nam .so-sanh { margin: 0; font-size: 0.95rem; font-weight: 500; color: var(--ngoc-dam); }
 .chon-chu-de { border: 0; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .chon-chu-de legend { font-weight: 600; font-size: 0.95rem; padding: 0; margin-bottom: 6px; }
 .chon-chu-de label { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 12px; border: 1px solid var(--vien); border-radius: 999px; background: var(--giay); cursor: pointer; }
