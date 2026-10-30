@@ -261,6 +261,41 @@ Kết quả kiểm: `git diff 78e185c 8f578e4` cho thấy đoạn Tứ hóa **kh
 - Còn sót lạc đề: ban-06 "Địa Kiếp ở Quan Lộc… hay muốn đổi hướng, nên cân nhắc trước khi quyết" (KHUNG-phu-the-SP-ĐịaKiếp-xung, bản xung của câu đã tắt ở tam hợp); nhẹ hơn: ban-09 "Tả Phù… dễ hợp tác" (hợp tác là chuyện việc), "Linh Tinh…: nên giữ nhịp nghỉ ngơi".
 - Câu Phúc Đức vô chính diệu ban-06: **chưa sửa**, vẫn "phái Việt coi gặp Tuần hoặc Triệt là thuận hơn" dù Phúc Đức Dậu không có Tuần/Triệt; thêm lỗi Đúng: CHUNG-VCD-03 ghi Phúc Đức vô chính diệu "nên gặp Tuần, **kỵ Triệt**", nên gộp "Tuần hoặc Triệt" là sai với cung Phúc Đức. Câu cũng không nêu tên chính tinh mượn ở cung đối diện. Bảo: chỉ in vế Tuần/Triệt khi cung có Tuần/Triệt, và với Phúc Đức tách Tuần (thuận) / Triệt (kỵ).
 
+### Phiếu 2e: mau-2 bản 01, đoạn "Tứ hóa", chấm vòng 5
+
+`docs/luan-giai/mau-2/ban-01.md` (sau 900d384) · bộ ghép tự động (Bảo) · ngày 30/10 · việc T-a4504a vòng 4 · đối chiếu khối "Sao các cung liên quan" và bảng 12 cung trong file. Cổng an toàn: **Qua** (không từ cấm, có câu "do hệ thống… tham khảo", không lộ dữ liệu khách).
+Kết quả kiểm: `git diff 419854b 900d384` cho thấy 4 gạch Tứ hóa **không đổi**. Đã sửa ngoài đoạn theo Phiếu 2d (Sâu): bỏ câu KHUNG-menh-DH-Tuần-Ky ("tam phương có Hóa Kỵ") ở mục Cát hung, hết lặp ý và hết gọi sai chỗ Kỵ.
+
+| Tiêu chí | Điểm | Trích dẫn lỗi | Sửa gì |
+|---|---|---|---|
+| Đúng | 5 | Không lỗi. Câu hỏi CC-10 (cung giáp Sửu bị Triệt, Mão bị Tuần) vẫn mở, không chặn. | Đức: chốt vế Tuần/Triệt ở cung giáp. |
+| Sâu | 4 | Hỏa Tinh (Đ) đồng cung Kỵ vẫn chưa gộp vào gạch Kỵ (Phiếu 2c, 2d). | Không chặn. Muốn lên 5: gạch Kỵ thêm vế Hỏa Tinh đồng cung + một câu "Tóm lại". |
+| Cụ thể | 4 | Gạch 2 "có người uy tín sẵn lòng giúp" chưa nói là ai (Khoa ở Huynh Đệ, Quyền ở Phụ Mẫu). | Hạnh: câu CC-10 nêu nguồn giúp theo cung giáp. |
+| Áp dụng được | 4 | Gạch 2 "cần chủ động đón nhận" vẫn chung. | Vd "chủ động hỏi ý người đi trước khi gặp việc lớn". |
+| Giọng | 4 | "Đây là điểm cần đầu tư công sức nơi bản thân" vẫn cứng. Ngoài đoạn (lùi mới): Tổng quan "đa tài, ham học hỏi, giỏi giao tiếp. **Nhiều tài và có duyên giao tiếp**" lặp ý ngay câu sau (ML-S09-TOT); Cách cục gạch 3 "Hỏa Tinh đắc địa **trong tam phương**" trong khi Hỏa Tinh tọa thủ Mệnh. | Bảo/Hạnh: bỏ câu lặp ở ML-S09-TOT; câu trợ lực ghi "ngay tại Mệnh" khi sát tinh tọa thủ. Không chặn đoạn Tứ hóa. |
+| **Tổng** | **21/25** | **Đạt** (qua cổng, tổng ≥ 20, không tiêu chí < 4, Đúng = 5). Giữ kết quả Phiếu 2d. | |
+
+### Phiếu 3e: mau-2 bản 03, đoạn "Cách cục", chấm vòng 5
+
+`docs/luan-giai/mau-2/ban-03.md` (sau 900d384) · chuyên đề Phu Thê · bộ ghép tự động (Bảo) · ngày 30/10 · việc T-a4504a vòng 4 · đối chiếu khối "Sao các cung liên quan" (Phu Thê Tý: Tham Lang (H), Hỏa Tinh (H); Phúc Đức Thìn: Thất Sát (H), Kình Dương (Đ); Thiên Di Thân: Phá Quân (H), Địa Kiếp (Đ), Tuần; Quan Lộc Ngọ: Tử Vi (M) hóa Khoa, Triệt). Cổng an toàn: **Qua**.
+Đã sửa so với Phiếu 3d: bỏ cụm treo "(tứ chính gồm…)"; bỏ câu lặp "nhịp quan hệ dễ lên xuống"; thêm gạch 4 "Kình Dương, Địa Kiếp đắc địa trong tam phương là trợ lực của thế Sát Phá Tham" (KHUNG-phu-the-CC-SatPhaTham-TroLuc), vị trí và độ sáng khớp dữ liệu, đúng CHUNG-SP-03, TP-06, CC-08 ngoại lệ.
+
+| Tiêu chí | Điểm | Trích dẫn lỗi | Sửa gì |
+|---|---|---|---|
+| Đúng | 5 | Không lỗi; mức 3, lý do (Hỏa Tinh hãm tọa thủ), trợ lực đều đúng. | — |
+| Sâu | 4 | Đã cân yếu tố trái chiều: ba sao chủ cách hãm (mặt khó) và Kình, Kiếp đắc (trợ lực). Còn thiếu để lên 5: (a) Tử Vi (M) hóa Khoa ở Quan Lộc bị Triệt chưa nối vào cách (ý dính CHUNG-TP-05, chờ chuyên gia; không trừ điểm vì lý do này); (b) Tuần ở Thiên Di làm Phá Quân hãm bớt xấu (CHUNG-TUAN-06, có nguồn KL, WC7) chưa nêu trong cách; (c) không có câu tổng hợp. Cả Khoa, Triệt Quan Lộc, Tuần Thiên Di đều có mặt ở mục Tứ hóa và Sao phụ, nên không tính là bỏ sót yếu tố đổi kết luận (mức 3). | Không chặn. Muốn lên 5 mà không cần TP-05: gạch Tứ hóa "Tử Vi mang Hóa Khoa…" gộp Triệt cùng cung theo TUAN-06 (như gạch Kỵ + Tuần của ban-01); gạch 3 thêm vế Tuần ở Thiên Di (TUAN-06); thêm "Tóm lại". |
+| Cụ thể | 5 | Mọi gạch nêu sao, độ sáng của lá này, nói về quan hệ. Gạch 4 dùng khuôn chung với ban-01 ("có thêm sức bền để vượt thử thách") và chưa nêu cung (Phúc Đức, Thiên Di), không đủ để hạ điểm. | Nêu cung của sát tinh trợ lực. |
+| Áp dụng được | 5 | Gạch 1, 2 có việc làm được, đúng chuyên đề. | — |
+| Giọng | 4 | Gạch 2 vẫn ~60 chữ; "trợ lực", "tam phương" chưa giải thích. | Tách gạch 2; giải thích ngắn "tam phương". |
+| **Tổng** | **23/25** | **Đạt** (qua cổng, tổng ≥ 20, không tiêu chí < 4, Đúng = 5). Tăng 1 điểm so với Phiếu 3d. Sâu lên 4 nhờ ý trợ lực có nguồn, **không phải chấm ngoại lệ**. | |
+
+**Ghi chú cho Đức (TP-05):** câu KHUNG-phu-the-TRIET-xung (ban-03 Sao phụ: "các sao tại Quan Lộc bị giảm cường độ nên phần đóng góp của cung này cho chuyện tình cảm… dịu hơn") và KHUNG-*-TUAN-tam-hop đang dùng chính ý của CHUNG-TP-05 (sao ở cung có Tuần/Triệt chiếu sang mang cường độ đã giảm) nhưng ghi nguồn NL, KL như quy tắc đã duyệt. Cần chốt một chiều: TP-05 được dùng thì cho phép luôn ý "Tử Vi hóa Khoa bị Triệt nên điểm tựa đến chậm"; chưa được dùng thì hai khung trên cũng phải gắn cờ chờ duyệt.
+
+**Kiểm thêm vòng 5 (toàn mau-2, sau 900d384):**
+- Script `dem-sao-bo-sot.cjs`: bỏ sót **6/66 (9%)**, không giảm so với vòng 4. Đã bù: ban-03 Địa Kiếp@Thiên Di (qua gạch trợ lực). Lùi mới: ban-06 **Địa Kiếp@Quan Lộc** (câu lạc đề KHUNG-phu-the-SP-ĐịaKiếp-xung bị tắt thay vì viết bản Phu Thê; Quan Lộc có cặp Địa Không (Đ) + Địa Kiếp (Đ) xung chiếu, cả hai nay không có câu nào — TP-06: cặp sát tinh mới là yếu tố đáng kể). Còn nguyên: ban-03 Thiên Không@Phu Thê; ban-06 Địa Không@Quan Lộc; ban-09 **Hóa Lộc@Phu Thê** (Tứ hóa tọa thủ chính cung, lần thứ hai), Thiên Không@Quan Lộc, Lộc Tồn@Thiên Di. Khuôn "ảnh hưởng đến …:" 32/140 (23%), "mỗi người cảm nhận khác nhau" 9/140.
+- Phúc Đức vô chính diệu ban-06: **đã sửa** vế "gặp Tuần hoặc Triệt" (Phúc Đức Dậu không có Tuần/Triệt). Còn: chưa nêu tên chính tinh mượn ở cung đối diện; "khi luận chuyện tình cảm và hôn nhân, nên mượn…" là lời người luận, không nói với khách.
+- Nghiệm thu còn mở (P0 trước khi mau-2 lên site trả phí): script 0/66; Hạnh viết bản Phu Thê cho Hóa Lộc tọa thủ, Thiên Không, Không Kiếp xung, Lộc Tồn; Bảo **thay** câu, không tắt.
+
 ### Tổng hợp chấm thử
 
 | Bài | Đúng | Sâu | Cụ thể | Áp dụng | Giọng | Tổng | Kết luận |
@@ -275,5 +310,7 @@ Kết quả kiểm: `git diff 78e185c 8f578e4` cho thấy đoạn Tứ hóa **kh
 | mau-2 ban-03 · Cách cục (Phiếu 3c, sau e347da5) | 4 | 3 | 4 | 3 | 4 | 18 | Trượt |
 | mau-2 ban-01 · Tứ hóa (Phiếu 2d, sau f7b661b) | 5 | 4 | 4 | 4 | 4 | 21 | **Đạt** |
 | mau-2 ban-03 · Cách cục (Phiếu 3d, sau f7b661b) | 5 | 3 | 5 | 5 | 4 | 22 | Trượt (Sâu 3 < 4) |
+| mau-2 ban-01 · Tứ hóa (Phiếu 2e, sau 900d384) | 5 | 4 | 4 | 4 | 4 | 21 | **Đạt** (đoạn không đổi; giữ) |
+| mau-2 ban-03 · Cách cục (Phiếu 3e, sau 900d384) | 5 | 4 | 5 | 5 | 4 | 23 | **Đạt** (Sâu lên 4 nhờ trợ lực, không cần ngoại lệ) |
 
 Nhận xét: bài viết tay theo quy tắc (VN01) chỉ vướng điều kiện quy tắc; bản ghép tự động mau-2 hỏng ở bộ ghép (câu khuôn dùng chung giữa chuyên đề, tính sai mức cách, thiếu vế loại trừ), nên phải sửa ở `quy-tac-khung.json` và bộ ghép, không sửa từng bài. Mau-2 chưa được lên site trả phí.
