@@ -6,7 +6,7 @@ Theo định dạng quy tắc bản 2 (`docs/luan-giai/quy-tac-v2/DINH-DANG.md`)
 | File | Nội dung |
 |---|---|
 | `QUY-TAC.md` | Quy tắc luận năm Đinh Mùi (NAM-PP, TH, TT, HOA, LUU, MANG, THANG, CAM, TRANH) có nguồn, trường phái. |
-| `doan-mau.json` | 76 đoạn mẫu theo khóa, máy đọc (định dạng dưới). |
+| `doan-mau.json` | 87 đoạn mẫu theo khóa, máy đọc (định dạng dưới); bản 1.1 sửa theo phiếu Thư vòng 1 và kết luận của Đức. |
 | `du-lieu.md` | Dữ liệu engine của 3 lá số giả lập VN01–VN03. |
 | `VN01.md`–`VN03.md` | 3 bài mẫu đủ khung. |
 | `TU-KIEM.md` | Tự chấm theo thang `docs/luan-giai/kiem-duyet-dai-van.md`. |
@@ -56,6 +56,10 @@ Bản miễn phí (xem trước): đầu bài + đoạn `thai-tue` + 1 điểm t
 | `khongCoYeuToNam` | `true` khi cung không là tiểu hạn/Thái Tuế/đại vận, không có lưu hóa, sao lưu, kể cả ở xung chiếu (NAM-MANG-01). |
 | `nhom` + `toiThieu` | Mảng các nhóm sao; cần ≥ `toiThieu` **nhóm** có ít nhất một phần tử trong `viTri`. Phần tử dạng `Tên sao`, `Tên sao:sáng` (Miếu/Vượng/Đắc), `hoa:<hóa gốc>`, `luuHoa:<hóa năm>` (NAM-TH-04). |
 | `sao` chứa tên `L. …` | Cho phép trộn sao gốc và sao lưu trong `toiThieu` (vd NAM-TH-04). |
+| `canNamSinh` | Can năm sinh, vd `["Canh"]`. **Mới ở bản 1.1 (T-752727)**: tách đoạn theo bảng Tứ hóa (NAM-HOA-08-KY-LOC tuổi Ất / -CANH tuổi Canh), tuổi Đinh (hóa trùng), tuổi Đinh và Kỷ (NAM-LUU-07). |
+| `motTrong` | Mảng điều kiện; đúng khi **ít nhất một** điều kiện con đúng (dùng trong `khong` và trong bản `-SAT`: Kình/Đà hoặc Hóa Kỵ gốc hoặc lưu Hóa Kỵ tại cung). **Mới ở bản 1.1.** |
+
+**Lưu ý cho Kỹ thuật (bản 1.1):** bộ khớp `src/lib/luan-giai/ai/van-nam.ts` hiện **chưa** đọc `canNamSinh`, `motTrong`. Nếu chép `doan-mau.json` bản này đè lên `quy-tac-van/van-nam-2027.json` trước khi bộ khớp hỗ trợ, máy sẽ bỏ qua hai trường đó: đoạn tuổi Ất lẫn tuổi Canh cùng khớp, và vế `khong` có `motTrong` sẽ chặn mọi đoạn. Phải thêm hỗ trợ (Tùng/Bảo, qua Minh) rồi mới chép. Điều kiện Xương Khúc của NAM-TH-04 nay là `saoLuu` với `viTri: "chinh"` (tại cung), nhóm sao trợ lực `toiThieu: 2`.
 
 ## Ghép bài (gợi ý cho Kỹ thuật, không sửa engine)
 1. `luuNien(ls, 2027, true)` → xác định cung của từng `lop`.

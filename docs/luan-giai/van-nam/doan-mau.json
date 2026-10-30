@@ -2,7 +2,7 @@
  {
   "chuyenDe": "van-nam",
   "namXem": 2027,
-  "truongPhai": "Tam hợp phái Việt",
+  "truongPhai": "tổng hợp",
   "khong": [],
   "tongHop": false,
   "id": "NAM-PP-02-KHUNG",
@@ -11,18 +11,20 @@
   "loai": "YN",
   "maNghienCuu": [
    "NAM-PP-02",
-   "VAN-PP-10"
+   "VAN-PP-10",
+   "NAM-TRANH-01"
   ],
   "dieuKien": [],
   "muc": "tong-quan",
   "phan": "boi-canh",
-  "noiDung": "Đọc một năm trên lá số có ba lớp: đại vận là môi trường 10 năm bạn đang đi, cung Lưu Thái Tuế cho biết trọng điểm của năm, còn cung tiểu hạn chỉ ra phần việc riêng của bạn dễ được \"đánh thức\" trong năm. Ba lớp bổ sung cho nhau, không lớp nào thay lớp nào.",
+  "noiDung": "Xemtuvi.vn đọc một năm trên lá số theo ba lớp: đại vận là môi trường 10 năm bạn đang đi, cung Lưu Thái Tuế cho biết trọng điểm của năm, còn cung tiểu hạn chỉ ra phần việc riêng của bạn dễ được \"đánh thức\" trong năm. Ba lớp bổ sung cho nhau, không lớp nào thay lớp nào.",
   "nguon": [
    "Tư liệu web: iztro \"运限\"",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
    "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)"
   ],
-  "nguonChiTiet": "WV1; TB Phần 3 §2.1; NL tập 2"
+  "nguonChiTiet": "WV1; TB Phần 3 §2.1; NL tập 2",
+  "ghiChu": "Cách chia vai là quy ước xemtuvi.vn theo iztro; sách Việt (TB, KL) lấy tiểu hạn làm cung năm chính (NAM-TRANH-01, Đức M5-1). Không viết \"theo phái Việt\"."
  },
  {
   "chuyenDe": "van-nam",
@@ -1310,7 +1312,7 @@
   "namXem": 2027,
   "truongPhai": "Tam hợp phái Việt",
   "khong": [],
-  "tongHop": false,
+  "tongHop": true,
   "id": "NAM-TT-03",
   "lop": "thai-tue",
   "cung": "Lưu Thái Tuế",
@@ -1329,12 +1331,12 @@
   ],
   "muc": "tong-quan",
   "phan": "thai-tue",
-  "noiDung": "Cung đối diện Lưu Thái Tuế có Thiên Lương. Toàn Thư viết Thiên Lương gặp Thái Tuế xung \"lại thành phúc\": sức ép của năm thường đi kèm người giúp, lời khuyên đúng lúc, và bạn dễ tìm ra lối gỡ.",
+  "noiDung": "Cung đối diện Lưu Thái Tuế (năm 2027 là cung Sửu) trên lá số của bạn có Thiên Lương. Toàn Thư có câu Thiên Lương gặp Thái Tuế xung thì \"thành phúc\"; áp vào năm, sức ép của năm thường đi kèm người giúp, lời khuyên đúng lúc.",
   "nguon": [
-   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
-   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
   ],
-  "nguonChiTiet": "TT q.1 問天梁: 太歲沖而為福; VAN-CT-TL-01"
+  "nguonChiTiet": "TT q.1 問天梁星所主若何: 太歲沖而為福 (đối chiếu TT-WS, TT-IZ); VAN-CT-TL-01; áp cho Lưu Thái Tuế: tổng hợp",
+  "ghiChu": "Vế Bạch Hổ chỉ dùng khi L. Bạch Hổ (Mão) ở đúng cung Thiên Lương."
  },
  {
   "chuyenDe": "van-nam",
@@ -1525,7 +1527,27 @@
   "chuyenDe": "van-nam",
   "namXem": 2027,
   "truongPhai": "Tam hợp phái Việt",
-  "khong": [],
+  "khong": [
+   {
+    "motTrong": [
+     {
+      "sao": [
+       "Kình Dương",
+       "Đà La",
+       "L. Kình Dương",
+       "L. Đà La"
+      ],
+      "toiThieu": 1
+     },
+     {
+      "hoa": "Hóa Kỵ"
+     },
+     {
+      "luuHoa": "Hóa Kỵ"
+     }
+    ]
+   }
+  ],
   "tongHop": false,
   "id": "NAM-TH-04",
   "lop": "tieu-han",
@@ -1537,14 +1559,12 @@
   ],
   "dieuKien": [
    {
-    "sao": [
-     "Văn Xương",
-     "Văn Khúc",
+    "saoLuu": [
      "L. Văn Xương",
      "L. Văn Khúc"
     ],
     "toiThieu": 1,
-    "viTri": "tam-phuong"
+    "viTri": "chinh"
    },
    {
     "nhom": [
@@ -1579,19 +1599,19 @@
       "L. Thiên Mã"
      ]
     ],
-    "toiThieu": 3,
+    "toiThieu": 2,
     "viTri": "tam-phuong"
    }
   ],
   "muc": "tong-quan",
   "phan": "tieu-han",
-  "noiDung": "Tam phương cung tiểu hạn hội Văn Xương, Văn Khúc cùng quý nhân và sao trợ lực: Toàn Thư coi đây là năm thuận cho thi cử, lấy bằng, được công nhận chuyên môn. Thuận không có nghĩa là chắc chắn, phần chuẩn bị vẫn là của bạn.",
+  "noiDung": "Văn Xương hoặc Văn Khúc của năm ở ngay cung tiểu hạn, tam phương có thêm quý nhân và sao trợ lực: Toàn Thư coi đây là năm thuận cho thi cử, lấy bằng, được công nhận chuyên môn. Thuận không có nghĩa là chắc chắn, phần chuẩn bị vẫn là của bạn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
   ],
-  "nguonChiTiet": "TT q.1 問流年昌曲",
-  "ghiChu": "Áp cả cho cung Lưu Thái Tuế (lop thai-tue) cùng điều kiện; xem NAM-TH-04-TT."
+  "nguonChiTiet": "TT q.1 問流年昌曲若何 (命限值之…若得二三拱照); VAN-SP-06",
+  "ghiChu": "Xương Khúc của năm phải tại cung (Đức Q2). Có Kình/Đà/Kỵ tại cung thì dùng bản -SAT."
  },
  {
   "chuyenDe": "van-nam",
@@ -1599,7 +1619,194 @@
   "truongPhai": "Tam hợp phái Việt",
   "khong": [],
   "tongHop": false,
-  "id": "NAM-TH-04-TT",
+  "id": "NAM-TH-04-SAT",
+  "lop": "tieu-han",
+  "cung": "Tiểu hạn",
+  "loai": "CC",
+  "maNghienCuu": [
+   "NAM-TH-04",
+   "VAN-SP-06"
+  ],
+  "dieuKien": [
+   {
+    "saoLuu": [
+     "L. Văn Xương",
+     "L. Văn Khúc"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh"
+   },
+   {
+    "nhom": [
+     [
+      "Thiên Khôi",
+      "Thiên Việt",
+      "L. Thiên Khôi",
+      "L. Thiên Việt"
+     ],
+     [
+      "Tả Phù",
+      "Hữu Bật"
+     ],
+     [
+      "Tam Thai",
+      "Bát Tọa"
+     ],
+     [
+      "Thái Dương:sáng",
+      "Thái Âm:sáng"
+     ],
+     [
+      "hoa:Hóa Khoa",
+      "hoa:Hóa Quyền",
+      "hoa:Hóa Lộc",
+      "luuHoa:Hóa Khoa",
+      "luuHoa:Hóa Quyền",
+      "luuHoa:Hóa Lộc"
+     ],
+     [
+      "Thiên Mã",
+      "L. Thiên Mã"
+     ]
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   },
+   {
+    "motTrong": [
+     {
+      "sao": [
+       "Kình Dương",
+       "Đà La",
+       "L. Kình Dương",
+       "L. Đà La"
+      ],
+      "toiThieu": 1
+     },
+     {
+      "hoa": "Hóa Kỵ"
+     },
+     {
+      "luuHoa": "Hóa Kỵ"
+     }
+    ]
+   }
+  ],
+  "muc": "tong-quan",
+  "phan": "tieu-han",
+  "noiDung": "Văn Xương hoặc Văn Khúc của năm ở ngay cung tiểu hạn, tam phương có thêm sao trợ lực, nên năm có yếu tố thuận cho học, thi, lấy chứng chỉ. Nhưng cùng cung có Kình Dương, Đà La hoặc Hóa Kỵ, nên giấy tờ dễ nhầm lẫn: rà soát kỹ hồ sơ, văn bản trước khi nộp.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT q.1 問流年昌曲若何; VAN-SP-06 (TT q.2 文昌入限: 更有羊陀火鈴忌)",
+  "ghiChu": "Vế loại trừ của NAM-TH-04 (phiếu Thư Q2)."
+ },
+ {
+  "chuyenDe": "van-nam",
+  "namXem": 2027,
+  "truongPhai": "Tam hợp phái Việt",
+  "khong": [],
+  "tongHop": false,
+  "id": "NAM-TH-04-TT-SAT",
+  "lop": "thai-tue",
+  "cung": "Lưu Thái Tuế",
+  "loai": "CC",
+  "maNghienCuu": [
+   "NAM-TH-04",
+   "VAN-SP-06"
+  ],
+  "dieuKien": [
+   {
+    "saoLuu": [
+     "L. Văn Xương",
+     "L. Văn Khúc"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh"
+   },
+   {
+    "nhom": [
+     [
+      "Thiên Khôi",
+      "Thiên Việt",
+      "L. Thiên Khôi",
+      "L. Thiên Việt"
+     ],
+     [
+      "Tả Phù",
+      "Hữu Bật"
+     ],
+     [
+      "Tam Thai",
+      "Bát Tọa"
+     ],
+     [
+      "Thái Dương:sáng",
+      "Thái Âm:sáng"
+     ],
+     [
+      "hoa:Hóa Khoa",
+      "hoa:Hóa Quyền",
+      "hoa:Hóa Lộc",
+      "luuHoa:Hóa Khoa",
+      "luuHoa:Hóa Quyền",
+      "luuHoa:Hóa Lộc"
+     ],
+     [
+      "Thiên Mã",
+      "L. Thiên Mã"
+     ]
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   },
+   {
+    "motTrong": [
+     {
+      "sao": [
+       "Kình Dương",
+       "Đà La",
+       "L. Kình Dương",
+       "L. Đà La"
+      ],
+      "toiThieu": 1
+     },
+     {
+      "hoa": "Hóa Kỵ"
+     },
+     {
+      "luuHoa": "Hóa Kỵ"
+     }
+    ]
+   }
+  ],
+  "muc": "tong-quan",
+  "phan": "thai-tue",
+  "noiDung": "Văn Xương hoặc Văn Khúc của năm ở ngay cung Lưu Thái Tuế, tam phương có thêm sao trợ lực, nên năm có yếu tố thuận cho học, thi, lấy chứng chỉ. Nhưng cùng cung có Kình Dương, Đà La hoặc Hóa Kỵ, nên giấy tờ dễ nhầm lẫn: rà soát kỹ hồ sơ, văn bản trước khi nộp.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT q.1 問流年昌曲若何; VAN-SP-06 (TT q.2 文昌入限: 更有羊陀火鈴忌)",
+  "ghiChu": "Vế loại trừ của NAM-TH-04 (phiếu Thư Q2)."
+ },
+ {
+  "chuyenDe": "van-nam",
+  "namXem": 2027,
+  "truongPhai": "tổng hợp",
+  "khong": [
+   {
+    "saoLuu": [
+     "L. Văn Xương",
+     "L. Văn Khúc"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh"
+   }
+  ],
+  "tongHop": true,
+  "id": "NAM-TH-04-GOC",
   "lop": "thai-tue",
   "cung": "Lưu Thái Tuế",
   "loai": "CC",
@@ -1611,12 +1818,10 @@
    {
     "sao": [
      "Văn Xương",
-     "Văn Khúc",
-     "L. Văn Xương",
-     "L. Văn Khúc"
+     "Văn Khúc"
     ],
     "toiThieu": 1,
-    "viTri": "tam-phuong"
+    "viTri": "chinh"
    },
    {
     "nhom": [
@@ -1651,19 +1856,109 @@
       "L. Thiên Mã"
      ]
     ],
-    "toiThieu": 3,
+    "toiThieu": 2,
     "viTri": "tam-phuong"
    }
   ],
   "muc": "tong-quan",
   "phan": "thai-tue",
-  "noiDung": "Tam phương cung Lưu Thái Tuế hội Văn Xương, Văn Khúc cùng quý nhân và sao trợ lực: Toàn Thư coi đây là năm thuận cho thi cử, lấy bằng, được công nhận chuyên môn. Thuận không có nghĩa là chắc chắn, phần chuẩn bị vẫn là của bạn.",
+  "noiDung": "Văn Xương, Văn Khúc của lá số gốc ở ngay cung Lưu Thái Tuế, tam phương có thêm sao trợ lực: năm có yếu tố thuận cho học hành, được công nhận chuyên môn. Phần chuẩn bị vẫn là của bạn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
   ],
-  "nguonChiTiet": "TT q.1 問流年昌曲",
-  "ghiChu": ""
+  "nguonChiTiet": "Tổng hợp: VAN-SP-06 (Xương Khúc tại cung hạn) + NAM-TH-04(d); TT 問流年昌曲 chỉ nói Xương Khúc lưu niên",
+  "ghiChu": "Áp cả cho lop tieu-han cùng điều kiện. Có Kình/Đà/Kỵ tại cung thì thêm câu rà văn bản (VAN-SP-06)."
+ },
+ {
+  "chuyenDe": "van-nam",
+  "namXem": 2027,
+  "truongPhai": "Tam hợp phái Việt",
+  "khong": [
+   {
+    "motTrong": [
+     {
+      "sao": [
+       "Kình Dương",
+       "Đà La",
+       "L. Kình Dương",
+       "L. Đà La"
+      ],
+      "toiThieu": 1
+     },
+     {
+      "hoa": "Hóa Kỵ"
+     },
+     {
+      "luuHoa": "Hóa Kỵ"
+     }
+    ]
+   }
+  ],
+  "tongHop": false,
+  "id": "NAM-TH-04-TT",
+  "lop": "thai-tue",
+  "cung": "Lưu Thái Tuế",
+  "loai": "CC",
+  "maNghienCuu": [
+   "NAM-TH-04",
+   "VAN-SP-06"
+  ],
+  "dieuKien": [
+   {
+    "saoLuu": [
+     "L. Văn Xương",
+     "L. Văn Khúc"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh"
+   },
+   {
+    "nhom": [
+     [
+      "Thiên Khôi",
+      "Thiên Việt",
+      "L. Thiên Khôi",
+      "L. Thiên Việt"
+     ],
+     [
+      "Tả Phù",
+      "Hữu Bật"
+     ],
+     [
+      "Tam Thai",
+      "Bát Tọa"
+     ],
+     [
+      "Thái Dương:sáng",
+      "Thái Âm:sáng"
+     ],
+     [
+      "hoa:Hóa Khoa",
+      "hoa:Hóa Quyền",
+      "hoa:Hóa Lộc",
+      "luuHoa:Hóa Khoa",
+      "luuHoa:Hóa Quyền",
+      "luuHoa:Hóa Lộc"
+     ],
+     [
+      "Thiên Mã",
+      "L. Thiên Mã"
+     ]
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "muc": "tong-quan",
+  "phan": "thai-tue",
+  "noiDung": "Văn Xương hoặc Văn Khúc của năm ở ngay cung Lưu Thái Tuế, tam phương có thêm quý nhân và sao trợ lực: Toàn Thư coi đây là năm thuận cho thi cử, lấy bằng, được công nhận chuyên môn. Thuận không có nghĩa là chắc chắn, phần chuẩn bị vẫn là của bạn.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT q.1 問流年昌曲若何 (命限值之…若得二三拱照); VAN-SP-06",
+  "ghiChu": "Xương Khúc của năm phải tại cung (Đức Q2). Có Kình/Đà/Kỵ tại cung thì dùng bản -SAT."
  },
  {
   "chuyenDe": "van-nam",
@@ -1967,7 +2262,7 @@
  {
   "chuyenDe": "van-nam",
   "namXem": 2027,
-  "truongPhai": "Trung Châu",
+  "truongPhai": "tổng hợp",
   "khong": [],
   "tongHop": true,
   "id": "NAM-HOA-08-KY-LOC",
@@ -1985,21 +2280,66 @@
     ],
     "hoa": "Hóa Kỵ",
     "luuHoa": "Hóa Lộc"
+   },
+   {
+    "canNamSinh": [
+     "Ất"
+    ]
    }
   ],
   "muc": "tong-quan",
   "phan": "tu-hoa",
-  "noiDung": "Thái Âm vốn mang Hóa Kỵ trên lá số gốc, năm nay lại nhận Hóa Lộc của năm. Theo phái Trung Châu, đây là lúc điểm vướng cũ có cơ hội chuyển thành có lợi, nếu bạn chủ động gỡ thay vì né.",
+  "noiDung": "Thái Âm vốn mang Hóa Kỵ trên lá số gốc, năm nay lại nhận Hóa Lộc của năm. Theo cách xét tổng hợp (hóa của năm chạm hóa gốc cùng sao), đây thường là lúc điểm vướng cũ có cơ hội chuyển thành có lợi, nếu bạn chủ động gỡ thay vì né.",
   "nguon": [
    "Trung Châu phái (Vương Đình Chi)",
    "Tư liệu web: iztro \"运限\""
   ],
-  "nguonChiTiet": "VAN-HOA-07 (WV3); WV1"
+  "nguonChiTiet": "VAN-HOA-07 (TC nói cho đại vận, qua WV3); WV1; áp cho năm: tổng hợp",
+  "ghiChu": "Tuổi Ất (Thái Âm Kỵ ở mọi bảng). Tuổi Canh dùng NAM-HOA-08-KY-LOC-CANH."
  },
  {
   "chuyenDe": "van-nam",
   "namXem": 2027,
-  "truongPhai": "Trung Châu",
+  "truongPhai": "tổng hợp",
+  "khong": [],
+  "tongHop": true,
+  "id": "NAM-HOA-08-KY-LOC-CANH",
+  "lop": "cung-goc",
+  "cung": "*",
+  "loai": "HOA",
+  "maNghienCuu": [
+   "NAM-HOA-08",
+   "VAN-HOA-07"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thái Âm"
+    ],
+    "hoa": "Hóa Kỵ",
+    "luuHoa": "Hóa Lộc"
+   },
+   {
+    "canNamSinh": [
+     "Canh"
+    ]
+   }
+  ],
+  "muc": "tong-quan",
+  "phan": "tu-hoa",
+  "noiDung": "Thái Âm mang Hóa Kỵ trên lá số gốc (theo bảng Tứ hóa xemtuvi.vn dùng; can Canh khác bảng giữa các sách), năm nay lại nhận Hóa Lộc của năm. Theo cách xét tổng hợp (hóa của năm chạm hóa gốc cùng sao), đây thường là lúc điểm vướng cũ có cơ hội chuyển thành có lợi, nếu bạn chủ động gỡ thay vì né.",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
+   "Tư liệu web: iztro \"运限\""
+  ],
+  "nguonChiTiet": "Bảng Canh: KL tr. 363–364, NL tập 3 tr. 194 (Âm Kỵ); TT, TC: Canh Kỵ Thiên Đồng; nguyên tắc chồng hóa: VAN-HOA-07, WV1 (tổng hợp)",
+  "ghiChu": "Phiếu Thư lỗi 1, Q1; Đức Q1. Không được gắn nhãn Trung Châu."
+ },
+ {
+  "chuyenDe": "van-nam",
+  "namXem": 2027,
+  "truongPhai": "tổng hợp",
   "khong": [],
   "tongHop": true,
   "id": "NAM-HOA-08-LOC-KY",
@@ -2018,21 +2358,26 @@
     ],
     "hoa": "Hóa Lộc",
     "luuHoa": "Hóa Kỵ"
+   },
+   {
+    "canNamSinh": [
+     "Tân"
+    ]
    }
   ],
   "muc": "tong-quan",
   "phan": "tu-hoa",
-  "noiDung": "Cự Môn vốn mang Hóa Lộc trên lá số gốc, năm nay nhận Hóa Kỵ của năm. Theo phái Trung Châu, lợi ban đầu dễ giảm và dễ vướng vì tiền: nên chốt điều khoản rõ ràng trước khi nhận việc, tránh hứa miệng.",
+  "noiDung": "Cự Môn vốn mang Hóa Lộc trên lá số gốc, năm nay nhận Hóa Kỵ của năm. Theo cách xét tổng hợp (hóa của năm chạm hóa gốc cùng sao), lợi ban đầu dễ giảm và dễ vướng vì tiền: nên chốt điều khoản rõ ràng trước khi nhận việc, tránh hứa miệng.",
   "nguon": [
    "Trung Châu phái (Vương Đình Chi)",
    "Tư liệu web: iztro \"运限\""
   ],
-  "nguonChiTiet": "VAN-HOA-07 (WV3); CHUNG-HOA-07; WV1"
+  "nguonChiTiet": "VAN-HOA-07 (TC nói cho đại vận); CHUNG-HOA-07; WV1; áp cho năm: tổng hợp (Đức M5-2)"
  },
  {
   "chuyenDe": "van-nam",
   "namXem": 2027,
-  "truongPhai": "Trung Châu",
+  "truongPhai": "tổng hợp",
   "khong": [],
   "tongHop": true,
   "id": "NAM-HOA-08-KY-KY",
@@ -2040,7 +2385,8 @@
   "cung": "*",
   "loai": "HOA",
   "maNghienCuu": [
-   "NAM-HOA-08"
+   "NAM-HOA-08",
+   "CHUNG-HOA-CM-01"
   ],
   "dieuKien": [
    {
@@ -2049,16 +2395,136 @@
     ],
     "hoa": "Hóa Kỵ",
     "luuHoa": "Hóa Kỵ"
+   },
+   {
+    "canNamSinh": [
+     "Đinh"
+    ]
    }
   ],
   "muc": "tong-quan",
   "phan": "tu-hoa",
-  "noiDung": "Cự Môn mang Hóa Kỵ cả ở lá số gốc lẫn của năm: lĩnh vực này năm nay cần kiên nhẫn gấp đôi; nói ít mà rõ, ưu tiên văn bản.",
+  "noiDung": "Cự Môn mang Hóa Kỵ ở lá số gốc, và năm nay nhận thêm Hóa Kỵ của năm. Đọc hai lớp riêng: lĩnh vực này vốn cần đầu tư công sức trong lời nói (gốc); năm 2027 chủ đề đó được nhấn mạnh thêm (năm). Nói ít mà rõ, ưu tiên văn bản.",
   "nguon": [
-   "Trung Châu phái (Vương Đình Chi)"
+   "Trung Châu phái (Vương Đình Chi)",
+   "Tư liệu web: iztro \"运限\""
   ],
-  "nguonChiTiet": "VAN-HOA-07",
-  "ghiChu": "Áp cho người sinh năm can Đinh (Cự Môn hóa Kỵ gốc)."
+  "nguonChiTiet": "VAN-HOA-07; NAM-HOA-08(c) hai lớp (Đức Q4a: không tìm thấy câu sách)",
+  "ghiChu": "Không viết \"gấp đôi\" (Đức Q4a)."
+ },
+ {
+  "chuyenDe": "van-nam",
+  "namXem": 2027,
+  "truongPhai": "tổng hợp",
+  "khong": [],
+  "tongHop": true,
+  "id": "NAM-HOA-08-LOC-LOC",
+  "lop": "cung-goc",
+  "cung": "*",
+  "loai": "HOA",
+  "maNghienCuu": [
+   "NAM-HOA-08",
+   "NAM-HOA-03"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thái Âm"
+    ],
+    "hoa": "Hóa Lộc",
+    "luuHoa": "Hóa Lộc"
+   },
+   {
+    "canNamSinh": [
+     "Đinh"
+    ]
+   }
+  ],
+  "muc": "tong-quan",
+  "phan": "tu-hoa",
+  "noiDung": "Thái Âm mang Hóa Lộc ở lá số gốc, năm nay nhận thêm Hóa Lộc của năm. Đọc hai lớp riêng: nguồn lợi nhờ sự chu đáo, tích góp vốn là điểm của lá số; năm 2027 lĩnh vực của Thái Âm được nhấn mạnh thêm, cả mặt thuận lẫn mặt cần giữ.",
+  "nguon": [
+   "Trung Châu phái (Vương Đình Chi)",
+   "Tư liệu web: iztro \"运限\""
+  ],
+  "nguonChiTiet": "NAM-HOA-08(d), tuổi Đinh; VAN-HOA-07; WV1 (tổng hợp, Đức Q4a: không tìm thấy câu sách)",
+  "ghiChu": "Tuổi Đinh: bốn hóa năm trùng bốn hóa gốc. Không viết \"gấp đôi\", không kết luận cát hung."
+ },
+ {
+  "chuyenDe": "van-nam",
+  "namXem": 2027,
+  "truongPhai": "tổng hợp",
+  "khong": [],
+  "tongHop": true,
+  "id": "NAM-HOA-08-QUYEN-QUYEN",
+  "lop": "cung-goc",
+  "cung": "*",
+  "loai": "HOA",
+  "maNghienCuu": [
+   "NAM-HOA-08",
+   "NAM-HOA-03"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Đồng"
+    ],
+    "hoa": "Hóa Quyền",
+    "luuHoa": "Hóa Quyền"
+   },
+   {
+    "canNamSinh": [
+     "Đinh"
+    ]
+   }
+  ],
+  "muc": "tong-quan",
+  "phan": "tu-hoa",
+  "noiDung": "Thiên Đồng mang Hóa Quyền ở lá số gốc, năm nay nhận thêm Hóa Quyền của năm. Đọc hai lớp riêng: vai trò chủ động có được nhờ khéo léo, hòa nhã vốn là điểm của lá số; năm 2027 lĩnh vực của Thiên Đồng được nhấn mạnh thêm, cả mặt thuận lẫn mặt cần giữ.",
+  "nguon": [
+   "Trung Châu phái (Vương Đình Chi)",
+   "Tư liệu web: iztro \"运限\""
+  ],
+  "nguonChiTiet": "NAM-HOA-08(d), tuổi Đinh; VAN-HOA-07; WV1 (tổng hợp, Đức Q4a: không tìm thấy câu sách)",
+  "ghiChu": "Tuổi Đinh: bốn hóa năm trùng bốn hóa gốc. Không viết \"gấp đôi\", không kết luận cát hung."
+ },
+ {
+  "chuyenDe": "van-nam",
+  "namXem": 2027,
+  "truongPhai": "tổng hợp",
+  "khong": [],
+  "tongHop": true,
+  "id": "NAM-HOA-08-KHOA-KHOA",
+  "lop": "cung-goc",
+  "cung": "*",
+  "loai": "HOA",
+  "maNghienCuu": [
+   "NAM-HOA-08",
+   "NAM-HOA-03"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Cơ"
+    ],
+    "hoa": "Hóa Khoa",
+    "luuHoa": "Hóa Khoa"
+   },
+   {
+    "canNamSinh": [
+     "Đinh"
+    ]
+   }
+  ],
+  "muc": "tong-quan",
+  "phan": "tu-hoa",
+  "noiDung": "Thiên Cơ mang Hóa Khoa ở lá số gốc, năm nay nhận thêm Hóa Khoa của năm. Đọc hai lớp riêng: sự ghi nhận về ý tưởng, tay nghề vốn là điểm của lá số; năm 2027 lĩnh vực của Thiên Cơ được nhấn mạnh thêm, cả mặt thuận lẫn mặt cần giữ.",
+  "nguon": [
+   "Trung Châu phái (Vương Đình Chi)",
+   "Tư liệu web: iztro \"运限\""
+  ],
+  "nguonChiTiet": "NAM-HOA-08(d), tuổi Đinh; VAN-HOA-07; WV1 (tổng hợp, Đức Q4a: không tìm thấy câu sách)",
+  "ghiChu": "Tuổi Đinh: bốn hóa năm trùng bốn hóa gốc. Không viết \"gấp đôi\", không kết luận cát hung."
  },
  {
   "chuyenDe": "van-nam",
@@ -2169,6 +2635,128 @@
   "namXem": 2027,
   "truongPhai": "Tam hợp phái Việt",
   "khong": [],
+  "tongHop": false,
+  "id": "NAM-LUU-07-LOC",
+  "lop": "cung-goc",
+  "cung": "*",
+  "loai": "SP",
+  "maNghienCuu": [
+   "NAM-LUU-07"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Lộc Tồn"
+    ]
+   },
+   {
+    "saoLuu": [
+     "L. Lộc Tồn"
+    ]
+   },
+   {
+    "canNamSinh": [
+     "Đinh",
+     "Kỷ"
+    ]
+   }
+  ],
+  "muc": "tai-chinh",
+  "noiDung": "Lộc Tồn của năm trùng đúng Lộc Tồn trên lá số gốc ở cung {cung}: nguồn lợi ở lĩnh vực này năm nay rõ hơn thường lệ, thuận cho tích góp đều.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT q.3 論羊陀迭並; TB P3 §4.3 tr. 268–269 (sách diễn đạt nặng, đã trung tính hóa)",
+  "ghiChu": "Tuổi Đinh, Kỷ. Cấm câu thơ 羊陀迭並 và câu TB \"tai họa\" (NAM-CAM-02)."
+ },
+ {
+  "chuyenDe": "van-nam",
+  "namXem": 2027,
+  "truongPhai": "Tam hợp phái Việt",
+  "khong": [],
+  "tongHop": false,
+  "id": "NAM-LUU-07-KINH",
+  "lop": "cung-goc",
+  "cung": "*",
+  "loai": "SP",
+  "maNghienCuu": [
+   "NAM-LUU-07"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Kình Dương"
+    ]
+   },
+   {
+    "saoLuu": [
+     "L. Kình Dương"
+    ]
+   },
+   {
+    "canNamSinh": [
+     "Đinh",
+     "Kỷ"
+    ]
+   }
+  ],
+  "muc": "tong-quan",
+  "noiDung": "Kình Dương của năm trùng Kình Dương trên lá số gốc ở cung {cung}: lĩnh vực này năm nay đòi hỏi bình tĩnh, làm chắc từng bước, tránh quyết vội; sức ép nếu có là để bạn sắp lại thứ tự ưu tiên.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT q.3 論羊陀迭並; TB P3 §4.3 tr. 268–269 (sách diễn đạt nặng, đã trung tính hóa)",
+  "phan": "sao-luu",
+  "ghiChu": "Tuổi Đinh, Kỷ. Cấm câu thơ 羊陀迭並 và câu TB \"tai họa\" (NAM-CAM-02)."
+ },
+ {
+  "chuyenDe": "van-nam",
+  "namXem": 2027,
+  "truongPhai": "Tam hợp phái Việt",
+  "khong": [],
+  "tongHop": false,
+  "id": "NAM-LUU-07-DA",
+  "lop": "cung-goc",
+  "cung": "*",
+  "loai": "SP",
+  "maNghienCuu": [
+   "NAM-LUU-07"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Đà La"
+    ]
+   },
+   {
+    "saoLuu": [
+     "L. Đà La"
+    ]
+   },
+   {
+    "canNamSinh": [
+     "Đinh",
+     "Kỷ"
+    ]
+   }
+  ],
+  "muc": "tong-quan",
+  "noiDung": "Đà La của năm trùng Đà La trên lá số gốc ở cung {cung}: việc của lĩnh vực này năm nay dễ kéo dài hơn dự tính; kiên nhẫn, làm chắc từng bước và tránh quyết vội.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT q.3 論羊陀迭並; TB P3 §4.3 tr. 268–269 (sách diễn đạt nặng, đã trung tính hóa)",
+  "phan": "sao-luu",
+  "ghiChu": "Tuổi Đinh, Kỷ. Cấm câu thơ 羊陀迭並 và câu TB \"tai họa\" (NAM-CAM-02)."
+ },
+ {
+  "chuyenDe": "van-nam",
+  "namXem": 2027,
+  "truongPhai": "Tam hợp phái Việt",
+  "khong": [],
   "tongHop": true,
   "id": "NAM-LUU-02",
   "lop": "cung-goc",
@@ -2234,7 +2822,27 @@
   "chuyenDe": "van-nam",
   "namXem": 2027,
   "truongPhai": "Tam hợp phái Việt",
-  "khong": [],
+  "khong": [
+   {
+    "motTrong": [
+     {
+      "sao": [
+       "Kình Dương",
+       "Đà La",
+       "L. Kình Dương",
+       "L. Đà La"
+      ],
+      "toiThieu": 1
+     },
+     {
+      "hoa": "Hóa Kỵ"
+     },
+     {
+      "luuHoa": "Hóa Kỵ"
+     }
+    ]
+   }
+  ],
   "tongHop": false,
   "id": "NAM-LUU-04",
   "lop": "cung-goc",
@@ -2255,12 +2863,64 @@
   ],
   "muc": "tong-quan",
   "phan": "sao-luu",
-  "noiDung": "Văn Xương và Thiên Việt của năm cùng ở cung {cung}: việc học, viết, thi, hồ sơ liên quan lĩnh vực này thuận lợi hơn thường lệ.",
+  "noiDung": "Văn Xương và Thiên Việt của năm cùng ở cung {cung}: việc học, viết, hồ sơ liên quan lĩnh vực này thường thuận hơn, có người có vị thế giúp.",
   "nguon": [
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
   ],
   "nguonChiTiet": "VAN-SP-06; TT q.1 問流年昌曲"
+ },
+ {
+  "chuyenDe": "van-nam",
+  "namXem": 2027,
+  "truongPhai": "Tam hợp phái Việt",
+  "khong": [],
+  "tongHop": false,
+  "id": "NAM-LUU-04-SAT",
+  "lop": "cung-goc",
+  "cung": "*",
+  "loai": "SP",
+  "maNghienCuu": [
+   "NAM-LUU-04",
+   "VAN-SP-06"
+  ],
+  "dieuKien": [
+   {
+    "saoLuu": [
+     "L. Văn Xương",
+     "L. Thiên Việt"
+    ],
+    "toiThieu": 2
+   },
+   {
+    "motTrong": [
+     {
+      "sao": [
+       "Kình Dương",
+       "Đà La",
+       "L. Kình Dương",
+       "L. Đà La"
+      ],
+      "toiThieu": 1
+     },
+     {
+      "hoa": "Hóa Kỵ"
+     },
+     {
+      "luuHoa": "Hóa Kỵ"
+     }
+    ]
+   }
+  ],
+  "muc": "tong-quan",
+  "phan": "sao-luu",
+  "noiDung": "Văn Xương và Thiên Việt của năm cùng ở cung {cung}: có người có vị thế giúp việc hồ sơ ở lĩnh vực này, nhưng cùng cung có Kình Dương, Đà La hoặc Hóa Kỵ nên giấy tờ dễ nhầm. Rà soát kỹ từng văn bản; việc lớn thì hỏi người có chuyên môn.",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "nguonChiTiet": "VAN-SP-06; TT q.1 問流年昌曲",
+  "ghiChu": "Vế loại trừ theo VAN-SP-06 (phiếu Thư Q3, lỗi 2). Không dùng làm căn cứ khuyên thời điểm cho việc tài chính."
  },
  {
   "chuyenDe": "van-nam",
