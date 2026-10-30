@@ -1474,6 +1474,23 @@
   }
  },
  {
+  "maMau": "TC-25",
+  "chuDe": "tai-chinh",
+  "maHuong": [
+   "NAM-TT-02"
+  ],
+  "cau": "Khi một cơ hội kiếm tiền có nhiều người cùng nhắm, viết trước giới hạn bạn chấp nhận (tiền, thời gian) và lý do nó đáng theo; chạm giới hạn thì dừng lại cân nhắc.",
+  "thuocDo": "Ghi các cơ hội đã cân nhắc; 100% có giới hạn và lý do viết trước; không có dịp thì ghi \"không có\"",
+  "thoiHanThang": 3,
+  "dieuKien": {
+   "NAM-TT-02": {
+    "quyTacId": [
+     "NAM-TT-02"
+    ]
+   }
+  }
+ },
+ {
   "maMau": "GD-06",
   "chuDe": "gia-dao",
   "maHuong": [
