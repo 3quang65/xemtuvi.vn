@@ -30,7 +30,7 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 ## Bài luận giải (đúng như khách nhận)
 
 ### Cách cục
-- Thế Tử Phá (Tử Vi và Phá Quân đồng cung) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): xu hướng đổi mới và chuyển biến cao hơn, nên chọn hướng đi rõ và cân nhắc kỹ trước quyết định lớn. Đây là nét nền trong cách bạn hành xử và chọn hướng đi.  
+- Thế Tử Phá (Tử Vi và Phá Quân đồng cung) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): xu hướng đổi mới và chuyển biến cao hơn, nên chọn hướng đi rõ và cân nhắc kỹ trước quyết định lớn.  
   _↳ KHUNG-menh-CC-TuPha-PHA · Mệnh · Tử Vi+Phá Quân+Địa Không+Địa Kiếp · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Tổng quan bản thân

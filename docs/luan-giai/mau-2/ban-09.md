@@ -30,9 +30,9 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 ## Bài luận giải (đúng như khách nhận)
 
 ### Cách cục
-- Thiên Cơ, Thái Âm, Thiên Đồng, Thiên Lương cùng hội trong tam phương, tạo thế Cơ Nguyệt Đồng Lương: thiên về trí tuệ, chuyên môn, công việc ổn định trong tổ chức (hành chính, giáo dục, dịch vụ, nghiên cứu); hợp thêm Tam Hóa, Văn Xương, Văn Khúc. Trong tình cảm, xu hướng này ảnh hưởng đến cách bạn chọn và gìn giữ mối quan hệ.  
+- Thiên Cơ, Thái Âm, Thiên Đồng, Thiên Lương cùng hội trong tam phương, tạo thế Cơ Nguyệt Đồng Lương: thiên về trí tuệ, chuyên môn, công việc ổn định trong tổ chức (hành chính, giáo dục, dịch vụ, nghiên cứu); hợp thêm Tam Hóa, Văn Xương, Văn Khúc.  
   _↳ KHUNG-phu-the-CC-CoNguyetdongLuong · Phu Thê · Thiên Cơ+Thái Âm+Thiên Đồng+Thiên Lương · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
-- Thái Dương và Thái Âm cùng hội trong tam phương, tạo thế Nhật Nguyệt: cùng sáng là cách tốt, chủ hiển đạt; nếu một trong hai kém sáng thì cần thêm nỗ lực và sự bền bỉ. Trong tình cảm, xu hướng này ảnh hưởng đến cách bạn chọn và gìn giữ mối quan hệ.  
+- Thái Dương và Thái Âm cùng hội trong tam phương, tạo thế Nhật Nguyệt: cùng sáng là cách tốt, chủ hiển đạt; nếu một trong hai kém sáng thì cần thêm nỗ lực và sự bền bỉ.  
   _↳ KHUNG-phu-the-CC-NhatNguyet · Phu Thê · Thái Dương+Thái Âm · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Cách yêu và gắn bó

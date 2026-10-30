@@ -30,7 +30,7 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 ## Bài luận giải (đúng như khách nhận)
 
 ### Cách cục
-- Thế Nhật Nguyệt (Thái Dương và Thái Âm cùng hội trong tam phương) có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): cần bền bỉ và tự tạo cơ hội để phát huy được ánh sáng của hai sao. Trong công việc, nên chọn môi trường và vai trò hợp với xu hướng này.  
+- Thế Nhật Nguyệt (Thái Dương và Thái Âm cùng hội trong tam phương) có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): cần bền bỉ và tự tạo cơ hội để phát huy được ánh sáng của hai sao.  
   _↳ KHUNG-quan-loc-CC-NhatNguyet-PHA · Quan Lộc · Thái Dương+Thái Âm+Địa Không+Địa Kiếp+Đà La+Linh Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Phong cách làm việc

@@ -30,9 +30,9 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 ## Bài luận giải (đúng như khách nhận)
 
 ### Cách cục
-- Thế Tử Phủ Vũ Tướng có đủ sao nhưng tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): xu hướng ổn định, quản lý, tổ chức vẫn còn, cần thêm nỗ lực và sự cẩn trọng để giữ vững. Đây là nét nền trong cách bạn hành xử và chọn hướng đi.  
+- Thế Tử Phủ Vũ Tướng có đủ sao nhưng tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): xu hướng ổn định, quản lý, tổ chức vẫn còn, cần thêm nỗ lực và sự cẩn trọng để giữ vững.  
   _↳ KHUNG-menh-CC-TuPhuVuTuong-PHA · Mệnh · Tử Vi+Thiên Phủ+Vũ Khúc+Thiên Tướng+Địa Không+Địa Kiếp · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
-- Địa Không và Địa Kiếp cùng hội chiếu vào Mệnh (thế Không Kiếp chiếu): sát tinh thành cặp hội vào tứ chính làm bức tranh nhiều biến đổi hơn; nên thực tế hóa ý tưởng, cân nhắc trước khi đổi hướng và giữ dự phòng. Đây là nét nền trong cách bạn hành xử và chọn hướng đi.  
+- Địa Không và Địa Kiếp cùng hội chiếu vào Mệnh (thế Không Kiếp chiếu): sát tinh thành cặp hội vào tứ chính làm bức tranh nhiều biến đổi hơn; nên thực tế hóa ý tưởng, cân nhắc trước khi đổi hướng và giữ dự phòng.  
   _↳ KHUNG-menh-CC-KhongKiepChieu · Mệnh · Địa Không+Địa Kiếp · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Tổng quan bản thân

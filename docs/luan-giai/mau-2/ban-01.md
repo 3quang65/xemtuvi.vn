@@ -30,9 +30,9 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 ## Bài luận giải (đúng như khách nhận)
 
 ### Cách cục
-- Thế Sát Phá Tham có đủ sao và tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): nhịp biến động cao hơn, nên chọn mục tiêu rõ và tránh dàn trải sức lực. Đây là nét nền trong cách bạn hành xử và chọn hướng đi.  
+- Thế Sát Phá Tham có đủ sao và tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): nhịp biến động cao hơn, nên chọn mục tiêu rõ và tránh dàn trải sức lực.  
   _↳ KHUNG-menh-CC-SatPhaTham-PHA · Mệnh · Thất Sát+Phá Quân+Tham Lang+Địa Kiếp+Hỏa Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
-- Tham Lang đồng cung Hỏa Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Hỏa Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc và chọn một mục tiêu chính. Đây là nét nền trong cách bạn hành xử và chọn hướng đi.  
+- Tham Lang đồng cung Hỏa Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Hỏa Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc và chọn một mục tiêu chính.  
   _↳ KHUNG-menh-CC-HoaThamLinhTham-Hoa-PHA · Mệnh · Tham Lang+Hỏa Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Tổng quan bản thân

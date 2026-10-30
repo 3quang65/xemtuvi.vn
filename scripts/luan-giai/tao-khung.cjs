@@ -131,11 +131,6 @@ for (const [cd, c] of Object.entries(CD)) {
 
 // --- Cách cục (10 cách ưu tiên). Xét ở tam phương của cung chính chuyên đề. Phá cách = từ 2 sát tinh trở lên hội tam phương (CHUNG-PP-11).
 const PHA = { sao: ['Địa Không', 'Địa Kiếp', 'Kình Dương', 'Đà La', 'Hỏa Tinh', 'Linh Tinh'], toiThieu: 2, viTri: 'tam-phuong' };
-const SAC_THAI = {
-  menh: 'Đây là nét nền trong cách bạn hành xử và chọn hướng đi.',
-  'quan-loc': 'Trong công việc, nên chọn môi trường và vai trò hợp với xu hướng này.',
-  'phu-the': 'Trong tình cảm, xu hướng này ảnh hưởng đến cách bạn chọn và gìn giữ mối quan hệ.',
-};
 const CACH = [
   { ten: 'Tử Phủ Vũ Tướng', dk: [{ sao: ['Tử Vi', 'Thiên Phủ', 'Vũ Khúc', 'Thiên Tướng'], rai: true, viTri: 'tam-phuong' }], ma: ['CHUNG-CC-01', 'CHUNG-CC-08'],
     t: 'Tử Vi, Thiên Phủ, Vũ Khúc, Thiên Tướng cùng hội trong tam phương, tạo thế Tử Phủ Vũ Tướng: thiên về ổn định, quản lý, tổ chức và tài chính; phát huy tốt khi có thêm Tả Phù, Hữu Bật và Tam Hóa.',
@@ -169,7 +164,7 @@ const nguonCc = [TT, TB];
 const ccBase = (cd, c, ten, ma, dk, noiDung, o) => ({
   id: `KHUNG-${cd}-CC-${ten.normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/gi, 'd').replace(/[^A-Za-z0-9]+/g, '')}${o.hau}`,
   chuyenDe: cd, cung: c.cung, loai: 'CC', maNghienCuu: ma, dieuKien: dk, ...(o.khong ? { khong: o.khong } : {}), cachCuc: ten,
-  ...(o.pha ? { phaCach: true } : {}), uuTien: o.uuTien, muc: 'cach-cuc', noiDung: `${noiDung} ${SAC_THAI[cd]}`,
+  ...(o.pha ? { phaCach: true } : {}), uuTien: o.uuTien, muc: 'cach-cuc', noiDung,
   nguon: nguonCc, nguonChiTiet: 'TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB', truongPhai: TP, yeuTo: [`Cách ${ten}`],
 });
 for (const [cd, c] of Object.entries(CD)) {
@@ -189,12 +184,11 @@ for (const [cd, c] of Object.entries(CD)) {
   }
   // Không Kiếp giáp / chiếu: vốn đã là thế cần thực tế hóa, nên chỉ có một mức.
   const kk = ['Địa Không', 'Địa Kiếp'];
-  const sacThai = SAC_THAI[cd];
   them({ id: `KHUNG-${cd}-CC-KhongKiepGiap`, chuyenDe: cd, cung: c.cung, loai: 'CC', maNghienCuu: ['CHUNG-TP-06', 'CHUNG-SP-02'], dieuKien: [{ sao: kk, rai: true, viTri: 'giap' }], cachCuc: 'Không Kiếp giáp / chiếu', uuTien: 80, muc: 'cach-cuc',
-    noiDung: `Địa Không và Địa Kiếp nằm ở hai cung kề ${c.cung} (thế Không Kiếp giáp): dễ nghĩ khác lạ và muốn đổi hướng, hữu ích khi biến thành sáng tạo có kế hoạch; nên thực tế hóa ý tưởng và cân nhắc kỹ trước quyết định lớn. ${sacThai}`,
+    noiDung: `Địa Không và Địa Kiếp nằm ở hai cung kề ${c.cung} (thế Không Kiếp giáp): dễ nghĩ khác lạ và muốn đổi hướng, hữu ích khi biến thành sáng tạo có kế hoạch; nên thực tế hóa ý tưởng và cân nhắc kỹ trước quyết định lớn.`,
     nguon: nguonCc, nguonChiTiet: 'TT (Luận cách tinh số cao hạ, "tam giáp")', truongPhai: TP, yeuTo: ['Cách Không Kiếp giáp / chiếu'] });
   them({ id: `KHUNG-${cd}-CC-KhongKiepChieu`, chuyenDe: cd, cung: c.cung, loai: 'CC', maNghienCuu: ['CHUNG-TP-06', 'CHUNG-SP-02'], dieuKien: [{ sao: kk, rai: true, viTri: 'hop-chieu' }], khong: [{ sao: kk, rai: true, viTri: 'giap' }], cachCuc: 'Không Kiếp giáp / chiếu', uuTien: 70, muc: 'cach-cuc',
-    noiDung: `Địa Không và Địa Kiếp cùng hội chiếu vào ${c.cung} (thế Không Kiếp chiếu): sát tinh thành cặp hội vào tứ chính làm bức tranh nhiều biến đổi hơn; nên thực tế hóa ý tưởng, cân nhắc trước khi đổi hướng và giữ dự phòng. ${sacThai}`,
+    noiDung: `Địa Không và Địa Kiếp cùng hội chiếu vào ${c.cung} (thế Không Kiếp chiếu): sát tinh thành cặp hội vào tứ chính làm bức tranh nhiều biến đổi hơn; nên thực tế hóa ý tưởng, cân nhắc trước khi đổi hướng và giữ dự phòng.`,
     nguon: nguonCc, nguonChiTiet: 'TT (Luận cách tinh số cao hạ)', truongPhai: TP, yeuTo: ['Cách Không Kiếp giáp / chiếu'] });
 }
 

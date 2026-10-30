@@ -30,11 +30,11 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 ## Bài luận giải (đúng như khách nhận)
 
 ### Cách cục
-- Thế Sát Phá Tham có đủ sao và tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): nhịp biến động cao hơn, nên chọn mục tiêu rõ và tránh dàn trải sức lực. Trong tình cảm, xu hướng này ảnh hưởng đến cách bạn chọn và gìn giữ mối quan hệ.  
+- Thế Sát Phá Tham có đủ sao và tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): nhịp biến động cao hơn, nên chọn mục tiêu rõ và tránh dàn trải sức lực.  
   _↳ KHUNG-phu-the-CC-SatPhaTham-PHA · Phu Thê · Thất Sát+Phá Quân+Tham Lang+Địa Kiếp+Kình Dương+Hỏa Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
-- Tham Lang đồng cung Hỏa Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Hỏa Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc và chọn một mục tiêu chính. Trong tình cảm, xu hướng này ảnh hưởng đến cách bạn chọn và gìn giữ mối quan hệ.  
+- Tham Lang đồng cung Hỏa Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Hỏa Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc và chọn một mục tiêu chính.  
   _↳ KHUNG-phu-the-CC-HoaThamLinhTham-Hoa-PHA · Phu Thê · Tham Lang+Hỏa Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
-- Thế Tham Đào (Tham Lang đồng cung Đào Hoa) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): sức hút vẫn còn, nên rõ ràng về điều mình muốn để tránh phân tán. Trong tình cảm, xu hướng này ảnh hưởng đến cách bạn chọn và gìn giữ mối quan hệ.  
+- Thế Tham Đào (Tham Lang đồng cung Đào Hoa) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): sức hút vẫn còn, nên rõ ràng về điều mình muốn để tránh phân tán.  
   _↳ KHUNG-phu-the-CC-Thamdao-PHA · Phu Thê · Tham Lang+Đào Hoa+Địa Kiếp+Kình Dương+Hỏa Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Cách yêu và gắn bó
