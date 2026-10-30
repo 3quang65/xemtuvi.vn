@@ -19,6 +19,9 @@ export const dinhDangGia = (d: number) => d.toLocaleString('vi-VN') + 'đ';
 
 const GIA_TRON_LA_SO = 99000;
 
+/** Trần số tiền trừ khi nâng lên Thành viên năm (bằng giá Trọn lá số, vì gói năm đã gồm Trọn lá số). */
+export const TRAN_TRU_NANG_GOI = GIA_TRON_LA_SO;
+
 // Chuyên đề "Vận năm 2027" (mã chuyên đề van-nam-2027). Giá nháp, CHỜ An/anh chốt. Không giá gạch, không đếm ngược.
 export const MA_VAN_NAM = 'van-nam-2027';
 export const GIA_VAN_NAM_2027 = 39000; // mua lẻ cho một lá số

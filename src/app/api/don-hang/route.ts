@@ -4,3 +4,5 @@ import * as x from '@/lib/may-chu/xu-ly';
 export const dynamic = 'force-dynamic';
 
 export const POST = (r: Request) => x.donHangTao(r, layMayChu());
+
+export const GET = (r: Request) => x.donHangTru(r, layMayChu());

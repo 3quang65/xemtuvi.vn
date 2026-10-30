@@ -28,11 +28,16 @@ export default function ThanhToan() {
   const laSo = laSoMay ? true : laSoTam;
   const [email, setEmail] = useState<string | null>(null); // tài khoản đang đăng nhập (từ máy chủ)
   const [nhap, setNhap] = useState('');
+  const [tru, setTru] = useState(0); // số được trừ khi nâng lên Thành viên năm (máy chủ tính)
   const [bao, setBao] = useState('');
   const [dangXuLy, setDangXuLy] = useState(false);
 
   useEffect(() => { if (laSo && !hopLe) router.replace(laSoMay ? '/luan-giai' : '/chon-goi'); }, [laSo, hopLe, router, laSoMay]);
   useEffect(() => { if (laSo && hopLe) { guiSuKien('vao_thanh_toan', suKien); goiApi<{ dangNhap: boolean; email?: string }>('/api/toi').then((t) => setEmail(t.dangNhap ? t.email ?? null : null)).catch(() => {}); } }, [laSo, hopLe]); // eslint-disable-line react-hooks/exhaustive-deps
+  useEffect(() => {
+    if (!email || goi?.ma !== 'thanh-vien-nam') { setTru(0); return; }
+    goiApi<{ tru: number }>('/api/don-hang?maGoi=thanh-vien-nam').then((r) => setTru(r.tru || 0)).catch(() => setTru(0));
+  }, [email, goi?.ma]);
   if (!laSo || !bangGia.san || !hopLe || !goi) return <p className="dang-tai" role="status">Đang tải…</p>;
 
   async function dangNhap(ncc: NhaCungCap) {
@@ -79,7 +84,8 @@ export default function ThanhToan() {
           <div><dt>Gói</dt><dd>{goi.ten}</dd></div>
           {chuDe && goi.ma === 'mot-chu-de' && <div><dt>Chủ đề</dt><dd>{chuDe.ten}</dd></div>}
           <div><dt>Thời hạn</dt><dd>{goi.donVi}</dd></div>
-          <div><dt>Tổng</dt><dd><strong>{dinhDangGia(goi.gia)}</strong></dd></div>
+          {tru > 0 && <div><dt>Đã trừ</dt><dd>{dinhDangGia(tru)}</dd></div>}
+          <div><dt>Tổng</dt><dd><strong>{dinhDangGia(goi.gia - tru)}</strong></dd></div>
         </dl>
         <button type="button" className="nut-chinh" disabled={!email || dangXuLy} onClick={thanhToan}>Thanh toán (giả lập)</button>
         {bao && <p className="bao-loi-nhap" role="alert">{bao}</p>}

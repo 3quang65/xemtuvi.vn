@@ -91,6 +91,13 @@ export const donHangTao = (req: Request, m: MayChu) => chay(req, async () => {
   return json(dv.taoDon(m.db, id, { maGoi: b.maGoi, chuDe: b.chuDe, laSoId: b.laSoId, bang: bangGiaCuaYeuCau(req) }), 201);
 });
 
+/** GET /api/don-hang?maGoi=thanh-vien-nam : số tiền sẽ được trừ (máy chủ tự tính) để trang thanh toán hiện đúng tổng. */
+export function donHangTru(req: Request, m: MayChu) {
+  const id = nguoiDung(req, m); if (!id) return canDangNhap();
+  const ma = new URL(req.url).searchParams.get('maGoi');
+  return json({ tru: ma === 'thanh-vien-nam' ? dv.truNangGoiCuaToi(m.db, id, bangGiaCuaYeuCau(req)) : 0 });
+}
+
 export const thanhToanGiaLap = (req: Request, m: MayChu) => chay(req, async () => {
   if (process.env.CONG_THANH_TOAN !== 'gia_lap') return loi(404, 'tat', 'Thanh toán giả lập đang tắt.');
   const id = nguoiDung(req, m); if (!id) return canDangNhap();

@@ -134,11 +134,11 @@ test('Mua giả lập thu đúng số tiền nhánh; tắt công tắc về giá
   assert.equal(await mua('tron-la-so', undefined), 99000);
   assert.equal(await mua('tron-la-so', 'a.thu', 1), 129000); // số tiền trình duyệt gửi bị bỏ qua
   datCfg(CFG(true, 'b'));
-  assert.equal(await mua('thanh-vien-nam', 'b.thu'), 199000);
+  assert.equal(await mua('thanh-vien-nam', 'b.thu'), 100000); // 199000 trừ 99000 (đã mua Trọn lá số ở trên, trần = giá Trọn lá số)
   assert.equal(await mua('tron-la-so', 'b.thu'), 99000);
   datCfg(CFG(false));
   assert.equal(await mua('tron-la-so', 'a.thu'), 99000);
-  assert.equal(await mua('thanh-vien-nam', 'b.thu'), 299000);
+  assert.equal(await mua('thanh-vien-nam', 'b.thu'), 200000); // giá hiện hành 299000 trừ trần 99000 (lại có Trọn lá số mua sau lần nâng trước)
 });
 
 test('Báo cáo theo nhánh: đúng mẫu số, doanh thu/phiên, tỉ trọng gói, bao_loi, nhóm nguồn', () => {

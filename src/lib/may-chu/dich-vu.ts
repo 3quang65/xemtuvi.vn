@@ -1,9 +1,10 @@
 // Nghiệp vụ: người dùng, lá số, đơn, quyền xem. Chỉ làm việc với CSDL; không biết gì về HTTP.
-import { layChuDe, layGoi, MA_VAN_NAM, type BangGia, type MaGoi } from '../goi';
+import { layChuDe, layGoi, MA_VAN_NAM, TRAN_TRU_NANG_GOI, type BangGia, type MaGoi } from '../goi';
 import type { Csdl } from './csdl';
 import { giaiMaJson, khoaTim, maHoaJson, type BoKhoa } from './ma-hoa';
 
 const NGAY = 86_400_000;
+export const HAN_TRU_NGAY = 30; // chot-faq-6-8_v1.md mục 8
 export const TOI_DA_LA_SO = 20;
 export const LA_SO_THANH_VIEN = 3; // thành viên năm: tối đa 3 lá số (bang-gia.md)
 
@@ -42,6 +43,24 @@ export function laSoCuaToi(db: Csdl, nguoiDungId: number, laSoId: number | null 
   return !!db.prepare('SELECT 1 FROM la_so WHERE id=? AND nguoi_dung_id=?').get(laSoId ?? -1, nguoiDungId);
 }
 
+export interface DonDaTra { maGoi: string; soTien: number; traLuc: number }
+
+/** Số tiền trừ khi nâng lên Thành viên năm: tổng đơn lẻ/Trọn lá số đã trả trong 30 ngày, bỏ các đơn trả trước lần nâng gần nhất; tối đa `tran`. */
+export function tinhTruNangGoi(donDaTra: DonDaTra[], bayGio = Date.now(), tran = TRAN_TRU_NANG_GOI): number {
+  const lanNang = Math.max(-Infinity, ...donDaTra.filter((d) => d.maGoi === 'thanh-vien-nam').map((d) => d.traLuc));
+  const tu = bayGio - HAN_TRU_NGAY * NGAY;
+  const tong = donDaTra
+    .filter((d) => (d.maGoi === 'mot-chu-de' || d.maGoi === 'tron-la-so') && d.traLuc >= tu && d.traLuc <= bayGio && d.traLuc > lanNang)
+    .reduce((t, d) => t + d.soTien, 0);
+  return Math.max(0, Math.min(tong, tran));
+}
+
+/** Số trừ cho người dùng này nếu nâng lên Thành viên năm lúc này. Máy chủ tự tính từ đơn đã trả. */
+export function truNangGoiCuaToi(db: Csdl, nguoiDungId: number, bang?: BangGia, bayGio = Date.now()): number {
+  const don = db.prepare("SELECT ma_goi AS maGoi, so_tien AS soTien, tra_luc AS traLuc FROM don_hang WHERE nguoi_dung_id=? AND trang_thai='da_tra' AND tra_luc IS NOT NULL").all(nguoiDungId) as DonDaTra[];
+  return tinhTruNangGoi(don, bayGio, layGoi('tron-la-so', bang)?.gia ?? TRAN_TRU_NANG_GOI);
+}
+
 /** Tạo đơn chờ. Số tiền lấy từ goi.ts (theo bảng giá nhánh thử nếu có, do máy chủ truyền); mọi số tiền từ trình duyệt đã bị bỏ qua ở tầng HTTP. */
 export function taoDon(db: Csdl, nguoiDungId: number, v: { maGoi: unknown; chuDe?: unknown; laSoId?: unknown; bang?: BangGia }, cong: Cong = 'gia_lap', bayGio = Date.now()) {
   const goi = layGoi(typeof v.maGoi === 'string' ? v.maGoi : null, v.bang);
@@ -58,8 +77,10 @@ export function taoDon(db: Csdl, nguoiDungId: number, v: { maGoi: unknown; chuDe
     laSoId = v.laSoId as number;
   }
   if (goi.ma !== 'thanh-vien-nam' && laSoId === null) throw new LoiNghiepVu('thieu_la_so', 'Cần chọn lá số cho gói này.');
-  const id = Number(db.prepare('INSERT INTO don_hang (nguoi_dung_id, la_so_id, ma_goi, chu_de, so_tien, cong, tao_luc) VALUES (?,?,?,?,?,?,?)').run(nguoiDungId, laSoId, goi.ma, chuDe, goi.gia, cong, bayGio).lastInsertRowid);
-  return { id, maGoi: goi.ma as MaGoi, chuDe, laSoId, soTien: goi.gia, trangThai: 'cho' as const };
+  const tru = goi.ma === 'thanh-vien-nam' ? Math.min(truNangGoiCuaToi(db, nguoiDungId, v.bang, bayGio), goi.gia) : 0;
+  const soTien = goi.gia - tru;
+  const id = Number(db.prepare('INSERT INTO don_hang (nguoi_dung_id, la_so_id, ma_goi, chu_de, so_tien, tru, cong, tao_luc) VALUES (?,?,?,?,?,?,?,?)').run(nguoiDungId, laSoId, goi.ma, chuDe, soTien, tru, cong, bayGio).lastInsertRowid);
+  return { id, maGoi: goi.ma as MaGoi, chuDe, laSoId, soTien, tru, trangThai: 'cho' as const };
 }
 
 export const layDon = (db: Csdl, id: number) =>
