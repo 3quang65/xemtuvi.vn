@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: { siteName: 'xemtuvi.vn', locale: 'vi_VN', type: 'website' },
 };
 
-export const viewport: Viewport = { themeColor: '#1F2A44' };
+export const viewport: Viewport = { themeColor: '#2B2540' };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
