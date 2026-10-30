@@ -115,7 +115,8 @@
   },
   "maPhatHuy": [
    "NAM-HOA-06"
-  ]
+  ],
+  "tuoiTu": 18
  },
  {
   "maMau": "CV-15",
@@ -272,7 +273,8 @@
      "NAM-HOA-KY-HAM"
     ]
    }
-  }
+  },
+  "tuoiTu": 18
  },
  {
   "maMau": "TC-11",
@@ -324,7 +326,11 @@
      "NAM-HOA-LOC-SANG"
     ]
    }
-  }
+  },
+  "maPhatHuy": [
+   "NAM-HOA-04"
+  ],
+  "tuoiTu": 18
  },
  {
   "maMau": "TC-14",
@@ -431,7 +437,8 @@
      "NAM-LUU-04-SAT"
     ]
    }
-  }
+  },
+  "tuoiTu": 18
  },
  {
   "maMau": "TT-08",
@@ -517,7 +524,8 @@
      "NAM-HOA-KY-HAM"
     ]
    }
-  }
+  },
+  "tuoiTu": 18
  },
  {
   "maMau": "TT-12",
@@ -789,8 +797,8 @@
   "maHuong": [
    "NAM-HOA-04/sáng"
   ],
-  "cau": "Mỗi lần có khoản thu thêm, ghi ngay một dòng và để {phần bạn tự chọn} vào khoản tích góp riêng của gia đình.",
-  "thuocDo": "100% khoản thu thêm trong 3 tháng có ghi",
+  "cau": "Mỗi lần có khoản thu thêm ngoài thu nhập thường kỳ, để riêng ngay {phần bạn tự chọn} của khoản đó vào một chỗ tích góp.",
+  "thuocDo": "Ghi các khoản thu thêm; ≥ 4/5 khoản đã để riêng phần tích góp; không có khoản nào thì ghi \"không có\"",
   "thoiHanThang": 3,
   "dieuKien": {
    "NAM-HOA-04/sáng": {
@@ -819,7 +827,8 @@
      "NAM-HOA-08-KY-LOC-CANH"
     ]
    }
-  }
+  },
+  "tuoiTu": 18
  },
  {
   "maMau": "TC-23",
@@ -847,7 +856,7 @@
   "maHuong": [
    "NAM-LUU-03"
   ],
-  "cau": "Khi phân vân một chuyện tình cảm, hỏi ý một người lớn bạn tin, rồi tự viết ra quyết định và lý do của mình.",
+  "cau": "Khi phân vân một chuyện tình cảm, hỏi ý một người từng trải mà bạn tin, rồi tự viết ra quyết định và lý do của mình.",
   "thuocDo": "Mỗi lần phân vân có một lần hỏi và một dòng viết; không phát sinh thì ghi \"không có\"",
   "thoiHanThang": 3,
   "dieuKien": {
@@ -895,7 +904,8 @@
      "NAM-LUU-04-SAT"
     ]
    }
-  }
+  },
+  "tuoiTu": 18
  },
  {
   "maMau": "TT-20",

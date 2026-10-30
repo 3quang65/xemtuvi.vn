@@ -53,7 +53,7 @@ Mọi mã bám đã kiểm có trong `maNghienCuu` (hoặc là `quyTacId`) của
 | CV-09 | cong-viec | NAM-TT-06 | i | NAM-TT-06: quyTacId=NAM-TT-06, cung=Quan Lộc, saoTrongCung=nhóm sao |
 | CV-10 | cong-viec | NAM-HOA-07 | i | NAM-HOA-07: quyTacId=NAM-HOA-KY-SANG/NAM-HOA-KY-HAM |
 | CV-11 | cong-viec | NAM-HOA-08/Kỵ-Lộc | i | NAM-HOA-08/Kỵ-Lộc: quyTacId=NAM-HOA-08-KY-LOC/NAM-HOA-08-KY-LOC-CANH |
-| CV-12 | cong-viec | NAM-HOA-04/hãm | i | NAM-HOA-04/hãm: quyTacId=NAM-HOA-LOC-HAM |
+| CV-12 | cong-viec | NAM-HOA-04/hãm | iii | NAM-HOA-04/hãm: quyTacId=NAM-HOA-LOC-HAM |
 | CV-13 | cong-viec | NAM-HOA-05/hãm | i | NAM-HOA-05/hãm: quyTacId=NAM-HOA-QUYEN-HAM |
 | CV-14 | cong-viec | NAM-HOA-06/sáng | ii · tongHop | NAM-HOA-06/sáng: quyTacId=NAM-HOA-KHOA-SANG |
 | CV-15 | cong-viec | NAM-HOA-06/hãm | i | NAM-HOA-06/hãm: quyTacId=NAM-HOA-KHOA-HAM |
@@ -66,8 +66,8 @@ Mọi mã bám đã kiểm có trong `maNghienCuu` (hoặc là `quyTacId`) của
 | TC-10 | tai-chinh | NAM-HOA-07 | i | NAM-HOA-07: quyTacId=NAM-HOA-KY-SANG/NAM-HOA-KY-HAM |
 | TC-11 | tai-chinh | NAM-HOA-08/Lộc-Kỵ | i | NAM-HOA-08/Lộc-Kỵ: quyTacId=NAM-HOA-08-LOC-KY |
 | TC-12 | tai-chinh | NAM-HOA-08/Kỵ-Lộc | i | NAM-HOA-08/Kỵ-Lộc: quyTacId=NAM-HOA-08-KY-LOC/NAM-HOA-08-KY-LOC-CANH |
-| TC-13 | tai-chinh | NAM-HOA-04/sáng | i | NAM-HOA-04/sáng: quyTacId=NAM-HOA-LOC-SANG |
-| TC-14 | tai-chinh | NAM-HOA-04/hãm | i | NAM-HOA-04/hãm: quyTacId=NAM-HOA-LOC-HAM |
+| TC-13 | tai-chinh | NAM-HOA-04/sáng | ii · tongHop | NAM-HOA-04/sáng: quyTacId=NAM-HOA-LOC-SANG |
+| TC-14 | tai-chinh | NAM-HOA-04/hãm | iii | NAM-HOA-04/hãm: quyTacId=NAM-HOA-LOC-HAM |
 | TC-15 | tai-chinh | NAM-HOA-05/hãm | i | NAM-HOA-05/hãm: quyTacId=NAM-HOA-QUYEN-HAM |
 | TC-16 | tai-chinh | NAM-HOA-06/sáng | i | NAM-HOA-06/sáng: quyTacId=NAM-HOA-KHOA-SANG |
 | TC-17 | tai-chinh | NAM-HOA-05/sáng | ii · tongHop | NAM-HOA-05/sáng: quyTacId=NAM-HOA-QUYEN-SANG |
@@ -84,7 +84,7 @@ Mọi mã bám đã kiểm có trong `maNghienCuu` (hoặc là `quyTacId`) của
 | TT-17 | tinh-cam | NAM-HOA-06/sáng | ii · tongHop | NAM-HOA-06/sáng: quyTacId=NAM-HOA-KHOA-SANG |
 | SK-05 | suc-khoe | NAM-LUU-02 | iii · tongHop | NAM-LUU-02: quyTacId=NAM-LUU-02 |
 | SK-06 | suc-khoe | NAM-TT-06 | i | NAM-TT-06: quyTacId=NAM-TT-06, cung=Tật Ách, saoTrongCung=nhóm sao |
-| CV-19 | cong-viec | NAM-HOA-04/hãm | i | NAM-HOA-04/hãm: quyTacId=NAM-HOA-LOC-HAM |
+| CV-19 | cong-viec | NAM-HOA-04/hãm | iii | NAM-HOA-04/hãm: quyTacId=NAM-HOA-LOC-HAM |
 | CV-20 | cong-viec | NAM-HOA-08/Kỵ-Lộc | i | NAM-HOA-08/Kỵ-Lộc: quyTacId=NAM-HOA-08-KY-LOC/NAM-HOA-08-KY-LOC-CANH |
 | CV-21 | cong-viec | NAM-LUU-02 | i | NAM-LUU-02: quyTacId=NAM-LUU-02 |
 | TC-18 | tai-chinh | NAM-HOA-05/hãm | i | NAM-HOA-05/hãm: quyTacId=NAM-HOA-QUYEN-HAM |
@@ -121,7 +121,7 @@ Mọi mã bám đã kiểm có trong `maNghienCuu` (hoặc là `quyTacId`) của
 
 ## 5. Điểm cần Thư chú ý
 
-1. **Dạng (ii) phát huy** (tongHop): CV-14, CV-16, CV-17, TC-08, TC-17, TC-20, TC-21, TC-23, TT-09, TT-10, TT-13, TT-14, TT-17, TT-18. Nhất là NAM-LUU-03 (quý nhân) sang tình cảm (TT-09 gặp người thân/bạn bè cả hai quý trọng; TT-18 hỏi ý người lớn) và tài chính (TC-08 hỏi người có chuyên môn): xin Thư xác nhận không phải "suy từ hình tượng sao".
+1. **Dạng (ii) phát huy** (tongHop): CV-14, CV-16, CV-17, TC-08, TC-17, TC-20, TC-21, TC-23, TT-09, TT-10, TT-13, TT-14, TT-17, TT-18. Nhất là NAM-LUU-03 (quý nhân) sang tình cảm (TT-09 gặp người thân/bạn bè cả hai quý trọng; TT-18 hỏi ý người từng trải) và tài chính (TC-08 hỏi người có chuyên môn): xin Thư xác nhận không phải "suy từ hình tượng sao".
 2. **SK-05** bám NAM-LUU-02 dạng (iii) (di chuyển, đổi lịch → giữ giờ ngủ): chỉ nếp sống, không bộ phận, bệnh.
 3. **Giới hạn tài chính**: TC-13, TC-21 có "tích góp", "chi tiêu gia đình" theo chữ NAM-HOA-04; người đọc tự đặt mức. TC-11, TC-22, TC-24 chỉ là ghi điều khoản, hỏi rõ, xin thêm thời gian; không bảo nhận/từ chối, vay, trả.
 4. **TT-07, TT-19** (giấy tờ chung hai người, bám VAN-SP-06/thận trọng): dùng cùng điều kiện TC-07; câu "trước khi ký hay gửi" không khuyên ký hay không ký.
@@ -129,9 +129,23 @@ Mọi mã bám đã kiểm có trong `maNghienCuu` (hoặc là `quyTacId`) của
 6. NAM-LUU-02 trong `doan-mau.json` viết "Thiên Mã, Đà La **và Văn Khúc** của năm" nhưng điều kiện máy chỉ xét Mã + Đà (L. Văn Khúc luôn ở Tỵ cùng hai sao này năm 2027 nên câu vẫn đúng); ghi để Thư biết, không sửa.
 7. Một số câu mở bằng cụm điều kiện ("Khi…", "Trước khi…", "Mỗi tháng…") rồi mới tới động từ, giống CV-01, CV-06 đã duyệt.
 
+## 6. Sửa theo phiếu Thư (L-2381a4)
+
+- TC-21: viết lại thành một việc (để riêng phần tích góp từ khoản thu thêm, khác TC-03 là thu nhập thường kỳ); cách đo đếm số khoản đã để riêng; bỏ "của gia đình".
+- TT-18: "người lớn bạn tin" → "người từng trải mà bạn tin".
+- Nhãn dạng: TC-13 → ii (`maPhatHuy: ["NAM-HOA-04"]`); CV-12, CV-19, TC-14 → iii. Câu giữ nguyên.
+
+## 7. Lọc theo tuổi
+
+Minh nhận đề xuất của Thư (phiếu mục 5). Mẫu có ký giấy tờ chung, tiền chung/gia đình hoặc gửi đề xuất lên cấp trên mang `"tuoiTu": 18`: bộ chọn mẫu bỏ qua khi người đọc dưới 18 tuổi trong năm xem (Bảo/Tùng làm phần code).
+
+- Bộ mới (`viec-nen-lam-bo-sung.json`, đã thêm trường): CV-14 (gửi cấp trên), TC-10 (thỏa thuận có tiền giữa hai bên), TC-13 (chi tiêu gia đình), TC-22 (khoản tiền giữa hai bên), TT-07 (giấy tờ chung/gia đình), TT-11 (việc chung có tiền, việc nhà), TT-19 (ký giấy tờ chung).
+- Bộ cũ (`src/lib/luan-giai/ai/quy-tac-van/viec-nen-lam.json`, chưa sửa, Tùng thêm khi nạp): CV-08 (hợp đồng, văn bản gửi ra ngoài), TC-04 (tiền chung, cho mượn, góp vốn), TC-05 (ký, chuyển tiền giao dịch lớn), GD-02 (tiền với anh chị em), GD-04 (giấy tờ nhà ở).
+- Rà và không gắn: các mẫu còn lại hợp mọi tuổi (học, ghi chép, nếp ngủ, trò chuyện); TC-11, TC-17, TC-19 chỉ là ghi/bàn chuyện tiền của chính người đọc.
+
 ## Tự kiểm (mục 8 khung)
 
-- Cổng an toàn: 0/74 từ trong `tu-cam.json` ở 49 câu việc, cách đo và đoạn Phu Thê (lọc bằng máy); không giải hạn, vật phẩm, chọn ngày; không lời khuyên tài chính, y tế, pháp lý cụ thể; đoạn Phu Thê không phán cố định.
+- Cổng an toàn: 0/52 từ (52 mục `tuCam`) trong `tu-cam.json` ở 49 câu việc, cách đo và đoạn Phu Thê (lọc bằng máy); không giải hạn, vật phẩm, chọn ngày; không lời khuyên tài chính, y tế, pháp lý cụ thể; đoạn Phu Thê không phán cố định.
 - (b) đoạn Phu Thê: mỗi ý truy về VAN-SP-10 (c) và NAM-MANG-04; điều kiện máy khớp đúng 4 lá số (kiểm từng lá số bằng bộ ghép).
 - (c) Toàn Thư, Khảo Luận · Tam hợp phái Việt · đánh dấu tổng hợp.
 - (d) 49/49 câu ≤ 45 chữ, một việc, có cách đo, hạn 1–3 tháng; mã bám nằm trong `maNghienCuu`/`quyTacId` của đoạn; vế khóa bằng `dieuKien`.
