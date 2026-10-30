@@ -113,6 +113,24 @@ Cổng an toàn: Qua / Trượt (<dòng vi phạm>)
 | Giọng | 5 | Giọng xu hướng, Kỵ và Hỏa Linh viết trung tính kèm lối ra; "năm thuận chứ chưa phải năm định" đúng tinh thần. | — |
 | **Tổng** | **23/25** | **Trượt** vì Đúng = 4 (< 5). Sửa 3 chỗ ở dòng Đúng là đạt. | |
 
+### Phiếu 1b: VN01 chấm lại vòng 2
+
+`docs/luan-giai/van-nam/VN01.md` (sau 859159b, 5b0ec85) · người viết: Hạnh · ngày 30/10 · việc L-65158e · đối chiếu `docs/luan-giai/van-nam/du-lieu.md` mục VN01. Cổng an toàn: **Qua** (không có từ cấm, có câu "do hệ thống tạo… tham khảo", ngày sinh ghi giả lập).
+Kiểm 3 lỗi Đúng của Phiếu 1 và vế Sâu:
+- (a) NAM-TH-04: **đã sửa**. Bài ghi Văn Xương (hãm) gốc và Văn Khúc của năm ở Tật Ách (Tỵ), cung đối diện tiểu hạn, đi cùng L. Đà La; "chưa phải năm thi cử thuận theo sách"; điểm thuận chuyển sang Hóa Khoa năm ở Thiên Cơ (Mùi, cung Thái Tuế), NAM-HOA-06. Khớp dữ liệu. Gợi ý Sự nghiệp đổi thành "lên kế hoạch từ đầu năm và chuẩn bị hồ sơ kỹ".
+- (b) Ghi chú trường phái: **đã sửa**, đúng mẫu câu NAM-TRANH-01 (quy ước xemtuvi.vn; TB, KL lấy tiểu hạn làm cung năm chính); thêm NAM-TRANH-04 (Đẩu Quân theo TT, một số sách Việt khởi tháng từ tiểu hạn).
+- (c) T6: **đã sửa**, "Đà La và Địa Kiếp (hãm)"; dữ liệu Thiên Di Thìn: Đà La (Đ), Địa Kiếp (H).
+- Tài chính: **đã thêm** Kình Dương (hãm) gốc ở Tài Bạch Ngọ (dữ liệu: Kình Dương (H), Địa Không (H), L. Lộc Tồn), dẫn TAI-SP-05 nhánh hãm. Bối cảnh 10 năm tách VAN-CT-TV-02 (Thất Sát xung từ Dần; Đà La, Địa Kiếp ở Thiên Di Thìn, đúng tam hợp của Thân) và VAN-CT-TP-02 (Tuần tại cung). Khớp dữ liệu.
+
+| Tiêu chí | Điểm | Trích dẫn lỗi | Sửa gì |
+|---|---|---|---|
+| Đúng | 5 | Không còn lỗi. Một điểm ở bộ quy tắc, không tính vào bài: T11 "Văn Xương, Thiên Việt của năm (cung không có Kình, Đà, Kỵ) thường thuận học hỏi" đúng câu chữ NAM-LUU-04, nhưng Huynh Đệ Dậu có Văn Khúc (H) gốc cùng cung và Dậu là vị trí hãm của Xương Khúc (SPEC bảng độ sáng); vế loại trừ NAM-LUU-04 hiện chỉ xét "Văn Xương gốc hãm", chưa xét Văn Khúc gốc hãm hay độ sáng của sao lưu (VAN-SP-06 nói "Xương Khúc hãm"). | Đức: chốt NAM-LUU-04 có thêm vế "Xương hoặc Khúc hãm cùng cung" không; nếu có, Hạnh thêm vào T11 một vế "Văn Khúc gốc hãm cùng cung nên giấy tờ vẫn cần rà". Không chặn bản này. |
+| Sâu | 5 | Đã bù Kình Dương ở Tài chính và tách hai quy tắc vận ở bối cảnh. Đủ lớp: chính tinh + độ sáng, tam phương, sát tinh, Tứ hóa tách gốc/năm, Tuần Triệt, kết luận ghi "nhận xét tổng hợp". | — |
+| Cụ thể | 5 | Như vòng 1; vế mới đều gắn sao, cung, độ sáng của lá này. | — |
+| Áp dụng được | 5 | Như vòng 1; Tài chính thêm "đi chậm và chọn thương vụ mình hiểu rõ" (lời khuyên chung, không phải lời khuyên tài chính cụ thể). | — |
+| Giọng | 5 | Giọng xu hướng giữ nguyên; vế Kình Dương viết trung tính kèm lối ra. | — |
+| **Tổng** | **25/25** | **Đạt**: qua cổng an toàn, tổng ≥ 20, không tiêu chí < 4, Đúng = 5. Được lên site trả phí. | |
+
 ### Phiếu 2: mau-2 bản 01, đoạn "Tứ hóa"
 
 `docs/luan-giai/mau-2/ban-01.md` · tiêu đề `### Tứ hóa` (3 gạch đầu dòng) · bộ ghép tự động · đối chiếu khối "Sao các cung liên quan" và bảng 12 cung trong chính file (nữ, Quý Sửu, Mệnh Dần Tham Lang (Đ) hóa Kỵ, Tuần). Cổng an toàn: **Qua**.
@@ -144,7 +162,8 @@ Cổng an toàn: Qua / Trượt (<dòng vi phạm>)
 
 | Bài | Đúng | Sâu | Cụ thể | Áp dụng | Giọng | Tổng | Kết luận |
 |---|---|---|---|---|---|---|---|
-| VN01 (cả bài) | 4 | 4 | 5 | 5 | 5 | 23 | Trượt (Đúng < 5), sửa 3 chỗ là đạt |
+| VN01 (cả bài, vòng 1) | 4 | 4 | 5 | 5 | 5 | 23 | Trượt (Đúng < 5), sửa 3 chỗ là đạt |
+| VN01 (cả bài, vòng 2, Phiếu 1b) | 5 | 5 | 5 | 5 | 5 | 25 | **Đạt**, lên site được; 1 câu hỏi quy tắc NAM-LUU-04 cho Đức (không chặn) |
 | mau-2 ban-01 · Tứ hóa | 3 | 2 | 2 | 2 | 3 | 12 | Trượt |
 | mau-2 ban-03 · Cách cục | 2 | 2 | 1 | 2 | 3 | 10 | Trượt |
 
