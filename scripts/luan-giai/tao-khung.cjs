@@ -276,7 +276,7 @@ const CACH = [
   { ten: 'Nhật Nguyệt', kieu: 'on', dk: [{ sao: ['Thái Dương', 'Thái Âm'], rai: true, viTri: 'tam-phuong' }], ma: ['CHUNG-CC-05', 'CHUNG-CC-08'],
     core: 'Thái Dương và Thái Âm cùng hội trong tam phương, tạo thế Nhật Nguyệt', them: '',
     khu: 'cần bền bỉ và tự tạo cơ hội để phát huy ánh sáng của hai sao',
-    ud: { menh: 'cùng sáng là cách tốt, chủ hiển đạt; nếu một trong hai kém sáng thì cần thêm nỗ lực và sự bền bỉ', 'quan-loc': 'cùng sáng thì công việc có tiếng, được cấp trên lẫn đồng nghiệp tin; kém sáng thì cần bền bỉ hơn', 'phu-the': 'cùng sáng thì quan hệ ấm áp, quan tâm hai chiều; kém sáng thì cần chủ động hỏi han nhau', 'tai-bach': 'cùng sáng thì thu nhập khá đều từ nhiều nguồn; kém sáng thì cần kiên trì tích lũy', 'dien-trach': 'cùng sáng thì nhà cửa thuận lợi, có chỗ ở tốt; kém sáng thì cần chủ động tạo dựng' } },
+    ud: { menh: 'cùng sáng là cách tốt, có xu hướng được ghi nhận và có chỗ đứng; nếu một trong hai kém sáng thì cần thêm nỗ lực và sự bền bỉ', 'quan-loc': 'cùng sáng thì công việc có tiếng, được cấp trên lẫn đồng nghiệp tin; kém sáng thì cần bền bỉ hơn', 'phu-the': 'cùng sáng thì quan hệ ấm áp, quan tâm hai chiều; kém sáng thì cần chủ động hỏi han nhau', 'tai-bach': 'cùng sáng thì thu nhập khá đều từ nhiều nguồn; kém sáng thì cần kiên trì tích lũy', 'dien-trach': 'cùng sáng thì nhà cửa thuận lợi, có chỗ ở tốt; kém sáng thì cần chủ động tạo dựng' } },
 ];
 // Hỏa Tham / Linh Tham: `ud` khi Tham Lang sáng (thành cách), `udPha` khi Tham Lang chưa đủ sáng (chỉ luận "Tham Lang gặp Hỏa/Linh", CHUNG-CC-09).
 const HOA_THAM = {
