@@ -94,12 +94,12 @@ test('vòng 4: vô chính diệu chỉ nói Tuần/Triệt khi cung có; Phúc �
   assert.ok(K.every((q) => !/Tuần hoặc Triệt/.test(q.noiDung)));
   assert.ok(K.some((q) => /kỵ Triệt/.test(q.noiDung) && q.dieuKien[0].tenCung === 'Phúc Đức' && q.dieuKien[0].triet));
   assert.ok(K.some((q) => /nên gặp Tuần/.test(q.noiDung) && q.dieuKien[0].tenCung === 'Phúc Đức' && q.dieuKien[0].tuan));
-  assert.ok(K.filter((q) => /thuận hơn/.test(q.noiDung) && !/Phúc Đức/.test(q.noiDung)).every((q) => q.khong.some((k) => k.tenCung === 'Phúc Đức')));
+  assert.ok(K.filter((q) => /thuận hơn/.test(q.noiDung) && !/Phúc Đức/.test(q.noiDung) && !/-VCD-chinh/.test(q.id)).every((q) => q.khong.some((k) => k.tenCung === 'Phúc Đức')));
 });
 
 test('vòng 4: câu Tuần–Kỵ không ghi Kỵ là "tam phương" khi Kỵ ở ngay cung chính', async () => {
   for (let i = 0; i < TC.length; i++) for (const d of cau(await sinh(i, 'menh'))) {
-    if (/DH-(Tuần|Triệt)-Ky/.test(d.thamChieu.quyTacId)) assert.match(d.text, /Hóa Kỵ nằm ở cung hợp chiếu/);
+    if (/DH-(Tuần|Triệt)-Ky/.test(d.thamChieu.quyTacId)) assert.match(d.text, /Hóa Kỵ nằm cùng (Tuần|Triệt) ở .+ \(cung hợp chiếu của Mệnh\)/) // L-28bc46: Kỵ cùng cung với Tuần/Triệt;
   }
   const bai = await sinh(0, 'menh'); // TC01: Kỵ tọa thủ Mệnh có Tuần
   assert.ok(!cau(bai).some((d) => /DH-Tuần-Ky/.test(d.thamChieu.quyTacId)));

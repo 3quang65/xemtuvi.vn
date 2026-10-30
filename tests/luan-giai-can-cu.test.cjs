@@ -51,5 +51,6 @@ test('L-6e89d7: mọi nhận định 4 chuyên đề gói Trọn lá số có c�
       }
     }
   }
-  assert.equal(dem, 65, `có ${dem} nhận định`);
+  // 65 -> 64 (L-28bc46): một câu hợp chiếu của sao Hãm không còn được phát khi chưa có câu C-HAM.
+  assert.equal(dem, 64, `có ${dem} nhận định`);
 });

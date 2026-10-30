@@ -10527,6 +10527,108 @@
   "yeuTo": []
  },
  {
+  "id": "KHUNG-menh-VCD-chinh",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "loai": "VCD",
+  "maNghienCuu": [
+   "CHUNG-VCD-01",
+   "CHUNG-VCD-03"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh"
+   }
+  ],
+  "khong": [
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh",
+    "tuan": true
+   },
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh",
+    "triet": true
+   }
+  ],
+  "muc": "cung-lien-quan",
+  "noiDung": "Mệnh không có chính tinh (vô chính diệu): khi luận tính cách và hướng đi của bạn, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB, NL (vô chính diệu); WC6 (phú Phúc vô chính diệu)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Vô Chính Diệu"
+  ]
+ },
+ {
+  "id": "KHUNG-menh-VCD-chinh-Tuan",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "loai": "VCD",
+  "maNghienCuu": [
+   "CHUNG-VCD-01",
+   "CHUNG-VCD-03"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh",
+    "tuan": true
+   }
+  ],
+  "muc": "cung-lien-quan",
+  "noiDung": "Mệnh không có chính tinh (vô chính diệu): khi luận tính cách và hướng đi của bạn, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Tuần, mà phái Việt coi vô chính diệu gặp Tuần là thuận hơn.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB, NL (vô chính diệu); WC6 (phú Phúc vô chính diệu)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Vô Chính Diệu"
+  ]
+ },
+ {
+  "id": "KHUNG-menh-VCD-chinh-Triet",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "loai": "VCD",
+  "maNghienCuu": [
+   "CHUNG-VCD-01",
+   "CHUNG-VCD-03"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh",
+    "triet": true
+   }
+  ],
+  "khong": [
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh",
+    "tuan": true
+   }
+  ],
+  "muc": "cung-lien-quan",
+  "noiDung": "Mệnh không có chính tinh (vô chính diệu): khi luận tính cách và hướng đi của bạn, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Triệt, mà phái Việt coi vô chính diệu gặp Triệt là thuận hơn.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB, NL (vô chính diệu); WC6 (phú Phúc vô chính diệu)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Vô Chính Diệu"
+  ]
+ },
+ {
   "id": "KHUNG-menh-VCD-xung",
   "chuyenDe": "menh",
   "cung": "Mệnh",
@@ -10554,7 +10656,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung xung chiếu của Mệnh) không có chính tinh (vô chính diệu): khi luận tính cách và hướng đi của bạn, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung.",
+  "noiDung": "{cung} (cung xung chiếu của Mệnh) không có chính tinh (vô chính diệu): khi luận tính cách và hướng đi của bạn, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -10589,7 +10691,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung xung chiếu của Mệnh) không có chính tinh (vô chính diệu): khi luận tính cách và hướng đi của bạn, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Tuần, mà phái Việt coi vô chính diệu gặp Tuần là thuận hơn.",
+  "noiDung": "{cung} (cung xung chiếu của Mệnh) không có chính tinh (vô chính diệu): khi luận tính cách và hướng đi của bạn, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Tuần, mà phái Việt coi vô chính diệu gặp Tuần là thuận hơn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -10629,7 +10731,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung xung chiếu của Mệnh) không có chính tinh (vô chính diệu): khi luận tính cách và hướng đi của bạn, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Triệt, mà phái Việt coi vô chính diệu gặp Triệt là thuận hơn.",
+  "noiDung": "{cung} (cung xung chiếu của Mệnh) không có chính tinh (vô chính diệu): khi luận tính cách và hướng đi của bạn, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Triệt, mà phái Việt coi vô chính diệu gặp Triệt là thuận hơn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -10658,7 +10760,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung xung chiếu của Mệnh) không có chính tinh (vô chính diệu): khi luận tính cách và hướng đi của bạn, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu nên gặp Tuần, nên cung này có Tuần là thuận.",
+  "noiDung": "{cung} (cung xung chiếu của Mệnh) không có chính tinh (vô chính diệu): khi luận tính cách và hướng đi của bạn, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu nên gặp Tuần, nên cung này có Tuần là thuận.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -10695,7 +10797,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung xung chiếu của Mệnh) không có chính tinh (vô chính diệu): khi luận tính cách và hướng đi của bạn, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu kỵ Triệt, nên cung này có Triệt cần thận trọng hơn với phần phúc và nội tâm.",
+  "noiDung": "{cung} (cung xung chiếu của Mệnh) không có chính tinh (vô chính diệu): khi luận tính cách và hướng đi của bạn, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu kỵ Triệt, nên cung này có Triệt cần thận trọng hơn với phần phúc và nội tâm.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -10734,7 +10836,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung tam hợp của Mệnh) không có chính tinh (vô chính diệu): khi luận tính cách và hướng đi của bạn, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung.",
+  "noiDung": "{cung} (cung tam hợp của Mệnh) không có chính tinh (vô chính diệu): khi luận tính cách và hướng đi của bạn, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -10769,7 +10871,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung tam hợp của Mệnh) không có chính tinh (vô chính diệu): khi luận tính cách và hướng đi của bạn, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Tuần, mà phái Việt coi vô chính diệu gặp Tuần là thuận hơn.",
+  "noiDung": "{cung} (cung tam hợp của Mệnh) không có chính tinh (vô chính diệu): khi luận tính cách và hướng đi của bạn, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Tuần, mà phái Việt coi vô chính diệu gặp Tuần là thuận hơn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -10809,7 +10911,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung tam hợp của Mệnh) không có chính tinh (vô chính diệu): khi luận tính cách và hướng đi của bạn, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Triệt, mà phái Việt coi vô chính diệu gặp Triệt là thuận hơn.",
+  "noiDung": "{cung} (cung tam hợp của Mệnh) không có chính tinh (vô chính diệu): khi luận tính cách và hướng đi của bạn, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Triệt, mà phái Việt coi vô chính diệu gặp Triệt là thuận hơn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -10838,7 +10940,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung tam hợp của Mệnh) không có chính tinh (vô chính diệu): khi luận tính cách và hướng đi của bạn, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu nên gặp Tuần, nên cung này có Tuần là thuận.",
+  "noiDung": "{cung} (cung tam hợp của Mệnh) không có chính tinh (vô chính diệu): khi luận tính cách và hướng đi của bạn, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu nên gặp Tuần, nên cung này có Tuần là thuận.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -10875,7 +10977,109 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung tam hợp của Mệnh) không có chính tinh (vô chính diệu): khi luận tính cách và hướng đi của bạn, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu kỵ Triệt, nên cung này có Triệt cần thận trọng hơn với phần phúc và nội tâm.",
+  "noiDung": "{cung} (cung tam hợp của Mệnh) không có chính tinh (vô chính diệu): khi luận tính cách và hướng đi của bạn, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu kỵ Triệt, nên cung này có Triệt cần thận trọng hơn với phần phúc và nội tâm.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB, NL (vô chính diệu); WC6 (phú Phúc vô chính diệu)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Vô Chính Diệu"
+  ]
+ },
+ {
+  "id": "KHUNG-quan-loc-VCD-chinh",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "loai": "VCD",
+  "maNghienCuu": [
+   "CHUNG-VCD-01",
+   "CHUNG-VCD-03"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh"
+   }
+  ],
+  "khong": [
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh",
+    "tuan": true
+   },
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh",
+    "triet": true
+   }
+  ],
+  "muc": "cung-lien-quan",
+  "noiDung": "Quan Lộc không có chính tinh (vô chính diệu): khi luận công việc và sự nghiệp, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB, NL (vô chính diệu); WC6 (phú Phúc vô chính diệu)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Vô Chính Diệu"
+  ]
+ },
+ {
+  "id": "KHUNG-quan-loc-VCD-chinh-Tuan",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "loai": "VCD",
+  "maNghienCuu": [
+   "CHUNG-VCD-01",
+   "CHUNG-VCD-03"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh",
+    "tuan": true
+   }
+  ],
+  "muc": "cung-lien-quan",
+  "noiDung": "Quan Lộc không có chính tinh (vô chính diệu): khi luận công việc và sự nghiệp, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Tuần, mà phái Việt coi vô chính diệu gặp Tuần là thuận hơn.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB, NL (vô chính diệu); WC6 (phú Phúc vô chính diệu)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Vô Chính Diệu"
+  ]
+ },
+ {
+  "id": "KHUNG-quan-loc-VCD-chinh-Triet",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "loai": "VCD",
+  "maNghienCuu": [
+   "CHUNG-VCD-01",
+   "CHUNG-VCD-03"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh",
+    "triet": true
+   }
+  ],
+  "khong": [
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh",
+    "tuan": true
+   }
+  ],
+  "muc": "cung-lien-quan",
+  "noiDung": "Quan Lộc không có chính tinh (vô chính diệu): khi luận công việc và sự nghiệp, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Triệt, mà phái Việt coi vô chính diệu gặp Triệt là thuận hơn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -10914,7 +11118,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung xung chiếu của Quan Lộc) không có chính tinh (vô chính diệu): khi luận công việc và sự nghiệp, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung.",
+  "noiDung": "{cung} (cung xung chiếu của Quan Lộc) không có chính tinh (vô chính diệu): khi luận công việc và sự nghiệp, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -10949,7 +11153,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung xung chiếu của Quan Lộc) không có chính tinh (vô chính diệu): khi luận công việc và sự nghiệp, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Tuần, mà phái Việt coi vô chính diệu gặp Tuần là thuận hơn.",
+  "noiDung": "{cung} (cung xung chiếu của Quan Lộc) không có chính tinh (vô chính diệu): khi luận công việc và sự nghiệp, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Tuần, mà phái Việt coi vô chính diệu gặp Tuần là thuận hơn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -10989,7 +11193,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung xung chiếu của Quan Lộc) không có chính tinh (vô chính diệu): khi luận công việc và sự nghiệp, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Triệt, mà phái Việt coi vô chính diệu gặp Triệt là thuận hơn.",
+  "noiDung": "{cung} (cung xung chiếu của Quan Lộc) không có chính tinh (vô chính diệu): khi luận công việc và sự nghiệp, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Triệt, mà phái Việt coi vô chính diệu gặp Triệt là thuận hơn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -11018,7 +11222,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung xung chiếu của Quan Lộc) không có chính tinh (vô chính diệu): khi luận công việc và sự nghiệp, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu nên gặp Tuần, nên cung này có Tuần là thuận.",
+  "noiDung": "{cung} (cung xung chiếu của Quan Lộc) không có chính tinh (vô chính diệu): khi luận công việc và sự nghiệp, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu nên gặp Tuần, nên cung này có Tuần là thuận.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -11055,7 +11259,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung xung chiếu của Quan Lộc) không có chính tinh (vô chính diệu): khi luận công việc và sự nghiệp, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu kỵ Triệt, nên cung này có Triệt cần thận trọng hơn với phần phúc và nội tâm.",
+  "noiDung": "{cung} (cung xung chiếu của Quan Lộc) không có chính tinh (vô chính diệu): khi luận công việc và sự nghiệp, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu kỵ Triệt, nên cung này có Triệt cần thận trọng hơn với phần phúc và nội tâm.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -11094,7 +11298,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung tam hợp của Quan Lộc) không có chính tinh (vô chính diệu): khi luận công việc và sự nghiệp, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung.",
+  "noiDung": "{cung} (cung tam hợp của Quan Lộc) không có chính tinh (vô chính diệu): khi luận công việc và sự nghiệp, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -11129,7 +11333,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung tam hợp của Quan Lộc) không có chính tinh (vô chính diệu): khi luận công việc và sự nghiệp, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Tuần, mà phái Việt coi vô chính diệu gặp Tuần là thuận hơn.",
+  "noiDung": "{cung} (cung tam hợp của Quan Lộc) không có chính tinh (vô chính diệu): khi luận công việc và sự nghiệp, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Tuần, mà phái Việt coi vô chính diệu gặp Tuần là thuận hơn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -11169,7 +11373,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung tam hợp của Quan Lộc) không có chính tinh (vô chính diệu): khi luận công việc và sự nghiệp, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Triệt, mà phái Việt coi vô chính diệu gặp Triệt là thuận hơn.",
+  "noiDung": "{cung} (cung tam hợp của Quan Lộc) không có chính tinh (vô chính diệu): khi luận công việc và sự nghiệp, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Triệt, mà phái Việt coi vô chính diệu gặp Triệt là thuận hơn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -11198,7 +11402,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung tam hợp của Quan Lộc) không có chính tinh (vô chính diệu): khi luận công việc và sự nghiệp, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu nên gặp Tuần, nên cung này có Tuần là thuận.",
+  "noiDung": "{cung} (cung tam hợp của Quan Lộc) không có chính tinh (vô chính diệu): khi luận công việc và sự nghiệp, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu nên gặp Tuần, nên cung này có Tuần là thuận.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -11235,7 +11439,109 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung tam hợp của Quan Lộc) không có chính tinh (vô chính diệu): khi luận công việc và sự nghiệp, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu kỵ Triệt, nên cung này có Triệt cần thận trọng hơn với phần phúc và nội tâm.",
+  "noiDung": "{cung} (cung tam hợp của Quan Lộc) không có chính tinh (vô chính diệu): khi luận công việc và sự nghiệp, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu kỵ Triệt, nên cung này có Triệt cần thận trọng hơn với phần phúc và nội tâm.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB, NL (vô chính diệu); WC6 (phú Phúc vô chính diệu)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Vô Chính Diệu"
+  ]
+ },
+ {
+  "id": "KHUNG-phu-the-VCD-chinh",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "loai": "VCD",
+  "maNghienCuu": [
+   "CHUNG-VCD-01",
+   "CHUNG-VCD-03"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh"
+   }
+  ],
+  "khong": [
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh",
+    "tuan": true
+   },
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh",
+    "triet": true
+   }
+  ],
+  "muc": "cung-lien-quan",
+  "noiDung": "Phu Thê không có chính tinh (vô chính diệu): khi luận chuyện tình cảm và hôn nhân, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB, NL (vô chính diệu); WC6 (phú Phúc vô chính diệu)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Vô Chính Diệu"
+  ]
+ },
+ {
+  "id": "KHUNG-phu-the-VCD-chinh-Tuan",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "loai": "VCD",
+  "maNghienCuu": [
+   "CHUNG-VCD-01",
+   "CHUNG-VCD-03"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh",
+    "tuan": true
+   }
+  ],
+  "muc": "cung-lien-quan",
+  "noiDung": "Phu Thê không có chính tinh (vô chính diệu): khi luận chuyện tình cảm và hôn nhân, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Tuần, mà phái Việt coi vô chính diệu gặp Tuần là thuận hơn.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB, NL (vô chính diệu); WC6 (phú Phúc vô chính diệu)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Vô Chính Diệu"
+  ]
+ },
+ {
+  "id": "KHUNG-phu-the-VCD-chinh-Triet",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "loai": "VCD",
+  "maNghienCuu": [
+   "CHUNG-VCD-01",
+   "CHUNG-VCD-03"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh",
+    "triet": true
+   }
+  ],
+  "khong": [
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh",
+    "tuan": true
+   }
+  ],
+  "muc": "cung-lien-quan",
+  "noiDung": "Phu Thê không có chính tinh (vô chính diệu): khi luận chuyện tình cảm và hôn nhân, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Triệt, mà phái Việt coi vô chính diệu gặp Triệt là thuận hơn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -11274,7 +11580,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung xung chiếu của Phu Thê) không có chính tinh (vô chính diệu): khi luận chuyện tình cảm và hôn nhân, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung.",
+  "noiDung": "{cung} (cung xung chiếu của Phu Thê) không có chính tinh (vô chính diệu): khi luận chuyện tình cảm và hôn nhân, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -11309,7 +11615,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung xung chiếu của Phu Thê) không có chính tinh (vô chính diệu): khi luận chuyện tình cảm và hôn nhân, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Tuần, mà phái Việt coi vô chính diệu gặp Tuần là thuận hơn.",
+  "noiDung": "{cung} (cung xung chiếu của Phu Thê) không có chính tinh (vô chính diệu): khi luận chuyện tình cảm và hôn nhân, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Tuần, mà phái Việt coi vô chính diệu gặp Tuần là thuận hơn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -11349,7 +11655,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung xung chiếu của Phu Thê) không có chính tinh (vô chính diệu): khi luận chuyện tình cảm và hôn nhân, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Triệt, mà phái Việt coi vô chính diệu gặp Triệt là thuận hơn.",
+  "noiDung": "{cung} (cung xung chiếu của Phu Thê) không có chính tinh (vô chính diệu): khi luận chuyện tình cảm và hôn nhân, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Triệt, mà phái Việt coi vô chính diệu gặp Triệt là thuận hơn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -11378,7 +11684,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung xung chiếu của Phu Thê) không có chính tinh (vô chính diệu): khi luận chuyện tình cảm và hôn nhân, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu nên gặp Tuần, nên cung này có Tuần là thuận.",
+  "noiDung": "{cung} (cung xung chiếu của Phu Thê) không có chính tinh (vô chính diệu): khi luận chuyện tình cảm và hôn nhân, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu nên gặp Tuần, nên cung này có Tuần là thuận.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -11415,7 +11721,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung xung chiếu của Phu Thê) không có chính tinh (vô chính diệu): khi luận chuyện tình cảm và hôn nhân, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu kỵ Triệt, nên cung này có Triệt cần thận trọng hơn với phần phúc và nội tâm.",
+  "noiDung": "{cung} (cung xung chiếu của Phu Thê) không có chính tinh (vô chính diệu): khi luận chuyện tình cảm và hôn nhân, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu kỵ Triệt, nên cung này có Triệt cần thận trọng hơn với phần phúc và nội tâm.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -11454,7 +11760,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung tam hợp của Phu Thê) không có chính tinh (vô chính diệu): khi luận chuyện tình cảm và hôn nhân, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung.",
+  "noiDung": "{cung} (cung tam hợp của Phu Thê) không có chính tinh (vô chính diệu): khi luận chuyện tình cảm và hôn nhân, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -11489,7 +11795,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung tam hợp của Phu Thê) không có chính tinh (vô chính diệu): khi luận chuyện tình cảm và hôn nhân, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Tuần, mà phái Việt coi vô chính diệu gặp Tuần là thuận hơn.",
+  "noiDung": "{cung} (cung tam hợp của Phu Thê) không có chính tinh (vô chính diệu): khi luận chuyện tình cảm và hôn nhân, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Tuần, mà phái Việt coi vô chính diệu gặp Tuần là thuận hơn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -11529,7 +11835,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung tam hợp của Phu Thê) không có chính tinh (vô chính diệu): khi luận chuyện tình cảm và hôn nhân, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Triệt, mà phái Việt coi vô chính diệu gặp Triệt là thuận hơn.",
+  "noiDung": "{cung} (cung tam hợp của Phu Thê) không có chính tinh (vô chính diệu): khi luận chuyện tình cảm và hôn nhân, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Triệt, mà phái Việt coi vô chính diệu gặp Triệt là thuận hơn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -11558,7 +11864,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung tam hợp của Phu Thê) không có chính tinh (vô chính diệu): khi luận chuyện tình cảm và hôn nhân, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu nên gặp Tuần, nên cung này có Tuần là thuận.",
+  "noiDung": "{cung} (cung tam hợp của Phu Thê) không có chính tinh (vô chính diệu): khi luận chuyện tình cảm và hôn nhân, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu nên gặp Tuần, nên cung này có Tuần là thuận.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -11595,7 +11901,109 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung tam hợp của Phu Thê) không có chính tinh (vô chính diệu): khi luận chuyện tình cảm và hôn nhân, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu kỵ Triệt, nên cung này có Triệt cần thận trọng hơn với phần phúc và nội tâm.",
+  "noiDung": "{cung} (cung tam hợp của Phu Thê) không có chính tinh (vô chính diệu): khi luận chuyện tình cảm và hôn nhân, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu kỵ Triệt, nên cung này có Triệt cần thận trọng hơn với phần phúc và nội tâm.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB, NL (vô chính diệu); WC6 (phú Phúc vô chính diệu)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Vô Chính Diệu"
+  ]
+ },
+ {
+  "id": "KHUNG-tai-bach-VCD-chinh",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "VCD",
+  "maNghienCuu": [
+   "CHUNG-VCD-01",
+   "CHUNG-VCD-03"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh"
+   }
+  ],
+  "khong": [
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh",
+    "tuan": true
+   },
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh",
+    "triet": true
+   }
+  ],
+  "muc": "cung-lien-quan",
+  "noiDung": "Tài Bạch không có chính tinh (vô chính diệu): khi luận cách kiếm tiền và giữ tiền, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB, NL (vô chính diệu); WC6 (phú Phúc vô chính diệu)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Vô Chính Diệu"
+  ]
+ },
+ {
+  "id": "KHUNG-tai-bach-VCD-chinh-Tuan",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "VCD",
+  "maNghienCuu": [
+   "CHUNG-VCD-01",
+   "CHUNG-VCD-03"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh",
+    "tuan": true
+   }
+  ],
+  "muc": "cung-lien-quan",
+  "noiDung": "Tài Bạch không có chính tinh (vô chính diệu): khi luận cách kiếm tiền và giữ tiền, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Tuần, mà phái Việt coi vô chính diệu gặp Tuần là thuận hơn.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB, NL (vô chính diệu); WC6 (phú Phúc vô chính diệu)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Vô Chính Diệu"
+  ]
+ },
+ {
+  "id": "KHUNG-tai-bach-VCD-chinh-Triet",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "VCD",
+  "maNghienCuu": [
+   "CHUNG-VCD-01",
+   "CHUNG-VCD-03"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh",
+    "triet": true
+   }
+  ],
+  "khong": [
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh",
+    "tuan": true
+   }
+  ],
+  "muc": "cung-lien-quan",
+  "noiDung": "Tài Bạch không có chính tinh (vô chính diệu): khi luận cách kiếm tiền và giữ tiền, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Triệt, mà phái Việt coi vô chính diệu gặp Triệt là thuận hơn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -11634,7 +12042,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung xung chiếu của Tài Bạch) không có chính tinh (vô chính diệu): khi luận cách kiếm tiền và giữ tiền, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung.",
+  "noiDung": "{cung} (cung xung chiếu của Tài Bạch) không có chính tinh (vô chính diệu): khi luận cách kiếm tiền và giữ tiền, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -11669,7 +12077,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung xung chiếu của Tài Bạch) không có chính tinh (vô chính diệu): khi luận cách kiếm tiền và giữ tiền, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Tuần, mà phái Việt coi vô chính diệu gặp Tuần là thuận hơn.",
+  "noiDung": "{cung} (cung xung chiếu của Tài Bạch) không có chính tinh (vô chính diệu): khi luận cách kiếm tiền và giữ tiền, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Tuần, mà phái Việt coi vô chính diệu gặp Tuần là thuận hơn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -11709,7 +12117,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung xung chiếu của Tài Bạch) không có chính tinh (vô chính diệu): khi luận cách kiếm tiền và giữ tiền, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Triệt, mà phái Việt coi vô chính diệu gặp Triệt là thuận hơn.",
+  "noiDung": "{cung} (cung xung chiếu của Tài Bạch) không có chính tinh (vô chính diệu): khi luận cách kiếm tiền và giữ tiền, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Triệt, mà phái Việt coi vô chính diệu gặp Triệt là thuận hơn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -11738,7 +12146,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung xung chiếu của Tài Bạch) không có chính tinh (vô chính diệu): khi luận cách kiếm tiền và giữ tiền, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu nên gặp Tuần, nên cung này có Tuần là thuận.",
+  "noiDung": "{cung} (cung xung chiếu của Tài Bạch) không có chính tinh (vô chính diệu): khi luận cách kiếm tiền và giữ tiền, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu nên gặp Tuần, nên cung này có Tuần là thuận.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -11775,7 +12183,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung xung chiếu của Tài Bạch) không có chính tinh (vô chính diệu): khi luận cách kiếm tiền và giữ tiền, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu kỵ Triệt, nên cung này có Triệt cần thận trọng hơn với phần phúc và nội tâm.",
+  "noiDung": "{cung} (cung xung chiếu của Tài Bạch) không có chính tinh (vô chính diệu): khi luận cách kiếm tiền và giữ tiền, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu kỵ Triệt, nên cung này có Triệt cần thận trọng hơn với phần phúc và nội tâm.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -11814,7 +12222,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung tam hợp của Tài Bạch) không có chính tinh (vô chính diệu): khi luận cách kiếm tiền và giữ tiền, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung.",
+  "noiDung": "{cung} (cung tam hợp của Tài Bạch) không có chính tinh (vô chính diệu): khi luận cách kiếm tiền và giữ tiền, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -11849,7 +12257,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung tam hợp của Tài Bạch) không có chính tinh (vô chính diệu): khi luận cách kiếm tiền và giữ tiền, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Tuần, mà phái Việt coi vô chính diệu gặp Tuần là thuận hơn.",
+  "noiDung": "{cung} (cung tam hợp của Tài Bạch) không có chính tinh (vô chính diệu): khi luận cách kiếm tiền và giữ tiền, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Tuần, mà phái Việt coi vô chính diệu gặp Tuần là thuận hơn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -11889,7 +12297,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung tam hợp của Tài Bạch) không có chính tinh (vô chính diệu): khi luận cách kiếm tiền và giữ tiền, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Triệt, mà phái Việt coi vô chính diệu gặp Triệt là thuận hơn.",
+  "noiDung": "{cung} (cung tam hợp của Tài Bạch) không có chính tinh (vô chính diệu): khi luận cách kiếm tiền và giữ tiền, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Triệt, mà phái Việt coi vô chính diệu gặp Triệt là thuận hơn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -11918,7 +12326,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung tam hợp của Tài Bạch) không có chính tinh (vô chính diệu): khi luận cách kiếm tiền và giữ tiền, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu nên gặp Tuần, nên cung này có Tuần là thuận.",
+  "noiDung": "{cung} (cung tam hợp của Tài Bạch) không có chính tinh (vô chính diệu): khi luận cách kiếm tiền và giữ tiền, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu nên gặp Tuần, nên cung này có Tuần là thuận.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -11955,7 +12363,109 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung tam hợp của Tài Bạch) không có chính tinh (vô chính diệu): khi luận cách kiếm tiền và giữ tiền, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu kỵ Triệt, nên cung này có Triệt cần thận trọng hơn với phần phúc và nội tâm.",
+  "noiDung": "{cung} (cung tam hợp của Tài Bạch) không có chính tinh (vô chính diệu): khi luận cách kiếm tiền và giữ tiền, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu kỵ Triệt, nên cung này có Triệt cần thận trọng hơn với phần phúc và nội tâm.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB, NL (vô chính diệu); WC6 (phú Phúc vô chính diệu)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Vô Chính Diệu"
+  ]
+ },
+ {
+  "id": "KHUNG-dien-trach-VCD-chinh",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "VCD",
+  "maNghienCuu": [
+   "CHUNG-VCD-01",
+   "CHUNG-VCD-03"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh"
+   }
+  ],
+  "khong": [
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh",
+    "tuan": true
+   },
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh",
+    "triet": true
+   }
+  ],
+  "muc": "cung-lien-quan",
+  "noiDung": "Điền Trạch không có chính tinh (vô chính diệu): khi luận nhà cửa và gia đạo, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB, NL (vô chính diệu); WC6 (phú Phúc vô chính diệu)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Vô Chính Diệu"
+  ]
+ },
+ {
+  "id": "KHUNG-dien-trach-VCD-chinh-Tuan",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "VCD",
+  "maNghienCuu": [
+   "CHUNG-VCD-01",
+   "CHUNG-VCD-03"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh",
+    "tuan": true
+   }
+  ],
+  "muc": "cung-lien-quan",
+  "noiDung": "Điền Trạch không có chính tinh (vô chính diệu): khi luận nhà cửa và gia đạo, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Tuần, mà phái Việt coi vô chính diệu gặp Tuần là thuận hơn.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB, NL (vô chính diệu); WC6 (phú Phúc vô chính diệu)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Vô Chính Diệu"
+  ]
+ },
+ {
+  "id": "KHUNG-dien-trach-VCD-chinh-Triet",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "VCD",
+  "maNghienCuu": [
+   "CHUNG-VCD-01",
+   "CHUNG-VCD-03"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh",
+    "triet": true
+   }
+  ],
+  "khong": [
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh",
+    "tuan": true
+   }
+  ],
+  "muc": "cung-lien-quan",
+  "noiDung": "Điền Trạch không có chính tinh (vô chính diệu): khi luận nhà cửa và gia đạo, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Triệt, mà phái Việt coi vô chính diệu gặp Triệt là thuận hơn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -11994,7 +12504,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung xung chiếu của Điền Trạch) không có chính tinh (vô chính diệu): khi luận nhà cửa và gia đạo, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung.",
+  "noiDung": "{cung} (cung xung chiếu của Điền Trạch) không có chính tinh (vô chính diệu): khi luận nhà cửa và gia đạo, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -12029,7 +12539,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung xung chiếu của Điền Trạch) không có chính tinh (vô chính diệu): khi luận nhà cửa và gia đạo, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Tuần, mà phái Việt coi vô chính diệu gặp Tuần là thuận hơn.",
+  "noiDung": "{cung} (cung xung chiếu của Điền Trạch) không có chính tinh (vô chính diệu): khi luận nhà cửa và gia đạo, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Tuần, mà phái Việt coi vô chính diệu gặp Tuần là thuận hơn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -12069,7 +12579,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung xung chiếu của Điền Trạch) không có chính tinh (vô chính diệu): khi luận nhà cửa và gia đạo, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Triệt, mà phái Việt coi vô chính diệu gặp Triệt là thuận hơn.",
+  "noiDung": "{cung} (cung xung chiếu của Điền Trạch) không có chính tinh (vô chính diệu): khi luận nhà cửa và gia đạo, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Triệt, mà phái Việt coi vô chính diệu gặp Triệt là thuận hơn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -12098,7 +12608,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung xung chiếu của Điền Trạch) không có chính tinh (vô chính diệu): khi luận nhà cửa và gia đạo, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu nên gặp Tuần, nên cung này có Tuần là thuận.",
+  "noiDung": "{cung} (cung xung chiếu của Điền Trạch) không có chính tinh (vô chính diệu): khi luận nhà cửa và gia đạo, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu nên gặp Tuần, nên cung này có Tuần là thuận.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -12135,7 +12645,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung xung chiếu của Điền Trạch) không có chính tinh (vô chính diệu): khi luận nhà cửa và gia đạo, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu kỵ Triệt, nên cung này có Triệt cần thận trọng hơn với phần phúc và nội tâm.",
+  "noiDung": "{cung} (cung xung chiếu của Điền Trạch) không có chính tinh (vô chính diệu): khi luận nhà cửa và gia đạo, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu kỵ Triệt, nên cung này có Triệt cần thận trọng hơn với phần phúc và nội tâm.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -12174,7 +12684,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung tam hợp của Điền Trạch) không có chính tinh (vô chính diệu): khi luận nhà cửa và gia đạo, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung.",
+  "noiDung": "{cung} (cung tam hợp của Điền Trạch) không có chính tinh (vô chính diệu): khi luận nhà cửa và gia đạo, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -12209,7 +12719,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung tam hợp của Điền Trạch) không có chính tinh (vô chính diệu): khi luận nhà cửa và gia đạo, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Tuần, mà phái Việt coi vô chính diệu gặp Tuần là thuận hơn.",
+  "noiDung": "{cung} (cung tam hợp của Điền Trạch) không có chính tinh (vô chính diệu): khi luận nhà cửa và gia đạo, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Tuần, mà phái Việt coi vô chính diệu gặp Tuần là thuận hơn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -12249,7 +12759,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung tam hợp của Điền Trạch) không có chính tinh (vô chính diệu): khi luận nhà cửa và gia đạo, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Triệt, mà phái Việt coi vô chính diệu gặp Triệt là thuận hơn.",
+  "noiDung": "{cung} (cung tam hợp của Điền Trạch) không có chính tinh (vô chính diệu): khi luận nhà cửa và gia đạo, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Triệt, mà phái Việt coi vô chính diệu gặp Triệt là thuận hơn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -12278,7 +12788,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung tam hợp của Điền Trạch) không có chính tinh (vô chính diệu): khi luận nhà cửa và gia đạo, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu nên gặp Tuần, nên cung này có Tuần là thuận.",
+  "noiDung": "{cung} (cung tam hợp của Điền Trạch) không có chính tinh (vô chính diệu): khi luận nhà cửa và gia đạo, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu nên gặp Tuần, nên cung này có Tuần là thuận.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -12315,7 +12825,7 @@
    }
   ],
   "muc": "cung-lien-quan",
-  "noiDung": "{cung} (cung tam hợp của Điền Trạch) không có chính tinh (vô chính diệu): khi luận nhà cửa và gia đạo, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu kỵ Triệt, nên cung này có Triệt cần thận trọng hơn với phần phúc và nội tâm.",
+  "noiDung": "{cung} (cung tam hợp của Điền Trạch) không có chính tinh (vô chính diệu): khi luận nhà cửa và gia đạo, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; Phúc Đức vô chính diệu kỵ Triệt, nên cung này có Triệt cần thận trọng hơn với phần phúc và nội tâm.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -12337,23 +12847,22 @@
   ],
   "dieuKien": [
    {
-    "tuan": true,
-    "viTri": "chinh"
-   },
-   {
     "hoa": "Hóa Kỵ",
+    "tuan": true,
     "viTri": "hop-chieu"
    }
   ],
   "muc": "phu-tinh",
-  "noiDung": "Mệnh có Tuần trong khi Hóa Kỵ nằm ở cung hợp chiếu ({cung}): Tuần làm cả mặt mạnh lẫn mặt vướng đều dịu đi, nên biên độ hẹp lại, ít bứt phá lớn nhưng cũng ít vấp lớn; điểm mạnh cần thời gian để bộc lộ, điểm vướng cũng nhẹ hơn.",
+  "noiDung": "{sao} mang Hóa Kỵ nằm cùng Tuần ở {cung} (cung hợp chiếu của Mệnh): Tuần làm cả mặt mạnh lẫn mặt vướng của cung này đều dịu đi, nên biên độ hẹp lại, ít bứt phá lớn nhưng cũng ít vấp lớn; điểm mạnh cần thời gian để bộc lộ, điểm vướng cũng nhẹ hơn.",
   "nguon": [
    "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
    "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
   ],
   "nguonChiTiet": "NL, KL (Tuần Triệt)",
   "truongPhai": "Tam hợp phái Việt",
-  "yeuTo": []
+  "yeuTo": [
+   "Tuần"
+  ]
  },
  {
   "id": "KHUNG-menh-DH-Triệt-Ky",
@@ -12366,23 +12875,22 @@
   ],
   "dieuKien": [
    {
-    "triet": true,
-    "viTri": "chinh"
-   },
-   {
     "hoa": "Hóa Kỵ",
+    "triet": true,
     "viTri": "hop-chieu"
    }
   ],
   "muc": "phu-tinh",
-  "noiDung": "Mệnh có Triệt trong khi Hóa Kỵ nằm ở cung hợp chiếu ({cung}): Triệt làm cả mặt mạnh lẫn mặt vướng đều dịu đi, nên biên độ hẹp lại, ít bứt phá lớn nhưng cũng ít vấp lớn; điểm mạnh cần thời gian để bộc lộ, điểm vướng cũng nhẹ hơn.",
+  "noiDung": "{sao} mang Hóa Kỵ nằm cùng Triệt ở {cung} (cung hợp chiếu của Mệnh): Triệt làm cả mặt mạnh lẫn mặt vướng của cung này đều dịu đi, nên biên độ hẹp lại, ít bứt phá lớn nhưng cũng ít vấp lớn; điểm mạnh cần thời gian để bộc lộ, điểm vướng cũng nhẹ hơn.",
   "nguon": [
    "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
    "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
   ],
   "nguonChiTiet": "NL, KL (Tuần Triệt)",
   "truongPhai": "Tam hợp phái Việt",
-  "yeuTo": []
+  "yeuTo": [
+   "Triệt"
+  ]
  },
  {
   "id": "KHUNG-menh-DH-Lộc-Ky",
@@ -12482,23 +12990,22 @@
   ],
   "dieuKien": [
    {
-    "tuan": true,
-    "viTri": "chinh"
-   },
-   {
     "hoa": "Hóa Kỵ",
+    "tuan": true,
     "viTri": "hop-chieu"
    }
   ],
   "muc": "phu-tinh",
-  "noiDung": "Quan Lộc có Tuần trong khi Hóa Kỵ nằm ở cung hợp chiếu ({cung}): Tuần làm cả mặt mạnh lẫn mặt vướng đều dịu đi, nên biên độ hẹp lại, ít bứt phá lớn nhưng cũng ít vấp lớn; điểm mạnh cần thời gian để bộc lộ, điểm vướng cũng nhẹ hơn.",
+  "noiDung": "{sao} mang Hóa Kỵ nằm cùng Tuần ở {cung} (cung hợp chiếu của Quan Lộc): Tuần làm cả mặt mạnh lẫn mặt vướng của cung này đều dịu đi, nên biên độ hẹp lại, ít bứt phá lớn nhưng cũng ít vấp lớn; điểm mạnh cần thời gian để bộc lộ, điểm vướng cũng nhẹ hơn.",
   "nguon": [
    "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
    "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
   ],
   "nguonChiTiet": "NL, KL (Tuần Triệt)",
   "truongPhai": "Tam hợp phái Việt",
-  "yeuTo": []
+  "yeuTo": [
+   "Tuần"
+  ]
  },
  {
   "id": "KHUNG-quan-loc-DH-Triệt-Ky",
@@ -12511,23 +13018,22 @@
   ],
   "dieuKien": [
    {
-    "triet": true,
-    "viTri": "chinh"
-   },
-   {
     "hoa": "Hóa Kỵ",
+    "triet": true,
     "viTri": "hop-chieu"
    }
   ],
   "muc": "phu-tinh",
-  "noiDung": "Quan Lộc có Triệt trong khi Hóa Kỵ nằm ở cung hợp chiếu ({cung}): Triệt làm cả mặt mạnh lẫn mặt vướng đều dịu đi, nên biên độ hẹp lại, ít bứt phá lớn nhưng cũng ít vấp lớn; điểm mạnh cần thời gian để bộc lộ, điểm vướng cũng nhẹ hơn.",
+  "noiDung": "{sao} mang Hóa Kỵ nằm cùng Triệt ở {cung} (cung hợp chiếu của Quan Lộc): Triệt làm cả mặt mạnh lẫn mặt vướng của cung này đều dịu đi, nên biên độ hẹp lại, ít bứt phá lớn nhưng cũng ít vấp lớn; điểm mạnh cần thời gian để bộc lộ, điểm vướng cũng nhẹ hơn.",
   "nguon": [
    "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
    "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
   ],
   "nguonChiTiet": "NL, KL (Tuần Triệt)",
   "truongPhai": "Tam hợp phái Việt",
-  "yeuTo": []
+  "yeuTo": [
+   "Triệt"
+  ]
  },
  {
   "id": "KHUNG-quan-loc-DH-Lộc-Ky",
@@ -12627,23 +13133,22 @@
   ],
   "dieuKien": [
    {
-    "tuan": true,
-    "viTri": "chinh"
-   },
-   {
     "hoa": "Hóa Kỵ",
+    "tuan": true,
     "viTri": "hop-chieu"
    }
   ],
   "muc": "phu-tinh",
-  "noiDung": "Phu Thê có Tuần trong khi Hóa Kỵ nằm ở cung hợp chiếu ({cung}): Tuần làm cả mặt mạnh lẫn mặt vướng đều dịu đi, nên biên độ hẹp lại, ít bứt phá lớn nhưng cũng ít vấp lớn; điểm mạnh cần thời gian để bộc lộ, điểm vướng cũng nhẹ hơn.",
+  "noiDung": "{sao} mang Hóa Kỵ nằm cùng Tuần ở {cung} (cung hợp chiếu của Phu Thê): Tuần làm cả mặt mạnh lẫn mặt vướng của cung này đều dịu đi, nên biên độ hẹp lại, ít bứt phá lớn nhưng cũng ít vấp lớn; điểm mạnh cần thời gian để bộc lộ, điểm vướng cũng nhẹ hơn.",
   "nguon": [
    "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
    "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
   ],
   "nguonChiTiet": "NL, KL (Tuần Triệt)",
   "truongPhai": "Tam hợp phái Việt",
-  "yeuTo": []
+  "yeuTo": [
+   "Tuần"
+  ]
  },
  {
   "id": "KHUNG-phu-the-DH-Triệt-Ky",
@@ -12656,23 +13161,22 @@
   ],
   "dieuKien": [
    {
-    "triet": true,
-    "viTri": "chinh"
-   },
-   {
     "hoa": "Hóa Kỵ",
+    "triet": true,
     "viTri": "hop-chieu"
    }
   ],
   "muc": "phu-tinh",
-  "noiDung": "Phu Thê có Triệt trong khi Hóa Kỵ nằm ở cung hợp chiếu ({cung}): Triệt làm cả mặt mạnh lẫn mặt vướng đều dịu đi, nên biên độ hẹp lại, ít bứt phá lớn nhưng cũng ít vấp lớn; điểm mạnh cần thời gian để bộc lộ, điểm vướng cũng nhẹ hơn.",
+  "noiDung": "{sao} mang Hóa Kỵ nằm cùng Triệt ở {cung} (cung hợp chiếu của Phu Thê): Triệt làm cả mặt mạnh lẫn mặt vướng của cung này đều dịu đi, nên biên độ hẹp lại, ít bứt phá lớn nhưng cũng ít vấp lớn; điểm mạnh cần thời gian để bộc lộ, điểm vướng cũng nhẹ hơn.",
   "nguon": [
    "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
    "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
   ],
   "nguonChiTiet": "NL, KL (Tuần Triệt)",
   "truongPhai": "Tam hợp phái Việt",
-  "yeuTo": []
+  "yeuTo": [
+   "Triệt"
+  ]
  },
  {
   "id": "KHUNG-phu-the-DH-Lộc-Ky",
@@ -12772,23 +13276,22 @@
   ],
   "dieuKien": [
    {
-    "tuan": true,
-    "viTri": "chinh"
-   },
-   {
     "hoa": "Hóa Kỵ",
+    "tuan": true,
     "viTri": "hop-chieu"
    }
   ],
   "muc": "phu-tinh",
-  "noiDung": "Tài Bạch có Tuần trong khi Hóa Kỵ nằm ở cung hợp chiếu ({cung}): Tuần làm cả mặt mạnh lẫn mặt vướng đều dịu đi, nên biên độ hẹp lại, ít bứt phá lớn nhưng cũng ít vấp lớn; điểm mạnh cần thời gian để bộc lộ, điểm vướng cũng nhẹ hơn.",
+  "noiDung": "{sao} mang Hóa Kỵ nằm cùng Tuần ở {cung} (cung hợp chiếu của Tài Bạch): Tuần làm cả mặt mạnh lẫn mặt vướng của cung này đều dịu đi, nên biên độ hẹp lại, ít bứt phá lớn nhưng cũng ít vấp lớn; điểm mạnh cần thời gian để bộc lộ, điểm vướng cũng nhẹ hơn.",
   "nguon": [
    "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
    "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
   ],
   "nguonChiTiet": "NL, KL (Tuần Triệt)",
   "truongPhai": "Tam hợp phái Việt",
-  "yeuTo": []
+  "yeuTo": [
+   "Tuần"
+  ]
  },
  {
   "id": "KHUNG-tai-bach-DH-Triệt-Ky",
@@ -12801,23 +13304,22 @@
   ],
   "dieuKien": [
    {
-    "triet": true,
-    "viTri": "chinh"
-   },
-   {
     "hoa": "Hóa Kỵ",
+    "triet": true,
     "viTri": "hop-chieu"
    }
   ],
   "muc": "phu-tinh",
-  "noiDung": "Tài Bạch có Triệt trong khi Hóa Kỵ nằm ở cung hợp chiếu ({cung}): Triệt làm cả mặt mạnh lẫn mặt vướng đều dịu đi, nên biên độ hẹp lại, ít bứt phá lớn nhưng cũng ít vấp lớn; điểm mạnh cần thời gian để bộc lộ, điểm vướng cũng nhẹ hơn.",
+  "noiDung": "{sao} mang Hóa Kỵ nằm cùng Triệt ở {cung} (cung hợp chiếu của Tài Bạch): Triệt làm cả mặt mạnh lẫn mặt vướng của cung này đều dịu đi, nên biên độ hẹp lại, ít bứt phá lớn nhưng cũng ít vấp lớn; điểm mạnh cần thời gian để bộc lộ, điểm vướng cũng nhẹ hơn.",
   "nguon": [
    "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
    "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
   ],
   "nguonChiTiet": "NL, KL (Tuần Triệt)",
   "truongPhai": "Tam hợp phái Việt",
-  "yeuTo": []
+  "yeuTo": [
+   "Triệt"
+  ]
  },
  {
   "id": "KHUNG-tai-bach-DH-Lộc-Ky",
@@ -12917,23 +13419,22 @@
   ],
   "dieuKien": [
    {
-    "tuan": true,
-    "viTri": "chinh"
-   },
-   {
     "hoa": "Hóa Kỵ",
+    "tuan": true,
     "viTri": "hop-chieu"
    }
   ],
   "muc": "phu-tinh",
-  "noiDung": "Điền Trạch có Tuần trong khi Hóa Kỵ nằm ở cung hợp chiếu ({cung}): Tuần làm cả mặt mạnh lẫn mặt vướng đều dịu đi, nên biên độ hẹp lại, ít bứt phá lớn nhưng cũng ít vấp lớn; điểm mạnh cần thời gian để bộc lộ, điểm vướng cũng nhẹ hơn.",
+  "noiDung": "{sao} mang Hóa Kỵ nằm cùng Tuần ở {cung} (cung hợp chiếu của Điền Trạch): Tuần làm cả mặt mạnh lẫn mặt vướng của cung này đều dịu đi, nên biên độ hẹp lại, ít bứt phá lớn nhưng cũng ít vấp lớn; điểm mạnh cần thời gian để bộc lộ, điểm vướng cũng nhẹ hơn.",
   "nguon": [
    "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
    "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
   ],
   "nguonChiTiet": "NL, KL (Tuần Triệt)",
   "truongPhai": "Tam hợp phái Việt",
-  "yeuTo": []
+  "yeuTo": [
+   "Tuần"
+  ]
  },
  {
   "id": "KHUNG-dien-trach-DH-Triệt-Ky",
@@ -12946,23 +13447,22 @@
   ],
   "dieuKien": [
    {
-    "triet": true,
-    "viTri": "chinh"
-   },
-   {
     "hoa": "Hóa Kỵ",
+    "triet": true,
     "viTri": "hop-chieu"
    }
   ],
   "muc": "phu-tinh",
-  "noiDung": "Điền Trạch có Triệt trong khi Hóa Kỵ nằm ở cung hợp chiếu ({cung}): Triệt làm cả mặt mạnh lẫn mặt vướng đều dịu đi, nên biên độ hẹp lại, ít bứt phá lớn nhưng cũng ít vấp lớn; điểm mạnh cần thời gian để bộc lộ, điểm vướng cũng nhẹ hơn.",
+  "noiDung": "{sao} mang Hóa Kỵ nằm cùng Triệt ở {cung} (cung hợp chiếu của Điền Trạch): Triệt làm cả mặt mạnh lẫn mặt vướng của cung này đều dịu đi, nên biên độ hẹp lại, ít bứt phá lớn nhưng cũng ít vấp lớn; điểm mạnh cần thời gian để bộc lộ, điểm vướng cũng nhẹ hơn.",
   "nguon": [
    "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
    "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
   ],
   "nguonChiTiet": "NL, KL (Tuần Triệt)",
   "truongPhai": "Tam hợp phái Việt",
-  "yeuTo": []
+  "yeuTo": [
+   "Triệt"
+  ]
  },
  {
   "id": "KHUNG-dien-trach-DH-Lộc-Ky",

@@ -224,15 +224,23 @@ function khopBan2(ls: LaSo, q: QuyTacBan2): KetQuaKhop | null {
   const pha = dkPha ? khopDieuKien(ls, goc, dkPha) ?? [] : [];
   const dkDac = q.dieuKien.find((k) => k.satDac !== undefined);
   const dac = dkDac ? khopDieuKien(ls, goc, dkDac) ?? [] : [];
-  const cau = q.noiDung.replaceAll('{dac}', dac.join(', ')).replaceAll('{pha}', pha.join(', ')).replaceAll('{sao}', sao.join(', ')).replaceAll('{cung}', cung.join(' và '));
+  // {sao_muon}: vô chính diệu mượn chính tinh cung đối diện (xung chiếu) để luận (CHUNG-VCD-01); nêu tên sao được mượn và cung của chúng.
+  const muon = q.noiDung.includes('{sao_muon}')
+    ? cung.map((ten) => {
+        const c = ls.cung.find((x) => x.ten === ten)!;
+        const d = ls.cung.find((x) => x.chi === (c.chi + 6) % 12)!;
+        return { d, chuoi: d.chinhTinh.length ? `${d.chinhTinh.map((s) => s.ten).join(', ')} ở ${d.ten}` : `${d.ten} cũng không có chính tinh` };
+      })
+    : [];
+  const cau = q.noiDung.replaceAll('{sao_muon}', muon.map((m) => m.chuoi).join('; ')).replaceAll('{dac}', dac.join(', ')).replaceAll('{pha}', pha.join(', ')).replaceAll('{sao}', sao.join(', ')).replaceAll('{cung}', cung.join(' và '));
   // Quy tắc cấp cung (không điều kiện, vd VAN-CUNG-*): căn cứ là chính tinh tọa thủ cung gốc; vô chính diệu thì
   // mượn chính tinh cung xung chiếu (như VAN-CT-VCD-01) và ghi yếu tố Vô Chính Diệu (L-6e89d7).
   const capCung = !q.dieuKien.length && !sao.length && !q.yeuTo?.length;
   const vcd = capCung && !goc.chinhTinh.length;
   const xung = ls.cung.find((c) => c.chi === (goc.chi + 6) % 12)!;
   return {
-    sao: capCung ? (vcd ? xung : goc).chinhTinh.map((s) => s.ten) : sao,
-    yeuTo: vcd ? ['Vô Chính Diệu'] : q.yeuTo ?? [], cungLienQuan: capCung ? (vcd ? [goc.ten, xung.ten] : [goc.ten]) : cung, cau, uuTien: q.uuTien ?? 0, cungGoc: q.cung,
+    sao: capCung ? (vcd ? xung : goc).chinhTinh.map((s) => s.ten) : muon.length ? [...new Set(muon.flatMap((m) => m.d.chinhTinh.map((s) => s.ten)))] : sao,
+    yeuTo: vcd ? ['Vô Chính Diệu'] : q.yeuTo ?? [], cungLienQuan: capCung ? (vcd ? [goc.ten, xung.ten] : [goc.ten]) : muon.length ? [...new Set([...cung, ...muon.map((m) => m.d.ten)])] : cung, cau, uuTien: q.uuTien ?? 0, cungGoc: q.cung,
     loai: q.loai, cachCuc: q.cachCuc, phaCach: q.phaCach,
     q: { id: q.id, chuyenDe: q.chuyenDe, muc: q.muc, nguon: q.nguon.join('; '), truongPhai: q.truongPhai },
   };
@@ -341,6 +349,11 @@ export async function sinhLuanGiai(ls: LaSo, chuyenDe: ChuyenDeMa, tuyChon: TuyC
   // Có câu "Hóa Kỵ hóa vào <sao>" (bộ khung) thì bỏ câu chung "Hóa Kỵ tại <cung> là điểm nhạy cảm" của bộ quy tắc cũ (T-a4504a vòng 2).
   if (khopDs.some((x) => /^KHUNG-[a-z-]+-KY-/.test(x.q.id))) {
     const chung = new Set(QUY_TAC.filter((q) => q.chuyenDe === chuyenDe && !q.sao.length && q.dieuKien?.hoa === 'Hóa Kỵ').map((q) => q.id));
+    for (let i = khopDs.length - 1; i >= 0; i--) if (chung.has(khopDs[i].q.id)) khopDs.splice(i, 1);
+  }
+  // Có câu vô chính diệu cung chính (bộ khung, nêu tên sao được mượn) thì bỏ câu chung "<cung> không có chính tinh" của bộ quy tắc cũ (L-28bc46).
+  if (khopDs.some((x) => /^KHUNG-[a-z-]+-VCD-chinh/.test(x.q.id))) {
+    const chung = new Set(QUY_TAC.filter((q) => q.chuyenDe === chuyenDe && !q.sao.length && q.dieuKien?.cungCo === 'Vô Chính Diệu').map((q) => q.id));
     for (let i = khopDs.length - 1; i >= 0; i--) if (chung.has(khopDs[i].q.id)) khopDs.splice(i, 1);
   }
   // Câu hợp chiếu (C) cũ nhường cho quy tắc C bản 2 cùng sao, cùng cung (Hạnh viết lại thì dùng bản của Hạnh).

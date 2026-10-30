@@ -197,33 +197,40 @@ for (const [cd, c] of Object.entries(CD)) {
   });
 }
 
-// --- Vô chính diệu ở cung hợp chiếu. Vế Tuần/Triệt chỉ in khi cung có Tuần/Triệt; Phúc Đức "nên gặp Tuần, kỵ Triệt" (CHUNG-VCD-03).
+// --- Vô chính diệu ở cung chính và cung hợp chiếu (L-28bc46). Câu nêu tên chính tinh cung đối diện được mượn ({sao_muon}, bộ ghép điền).
+// Vế Tuần/Triệt chỉ in khi cung đó có Tuần/Triệt (áp cả cung chính); Phúc Đức "nên gặp Tuần, kỵ Triệt" (CHUNG-VCD-03).
+// Quy tắc cung chính thay câu chung ML/QL/PT-VCD của bộ quy tắc cũ (index.ts bỏ câu cũ khi có KHUNG-<cd>-VCD-chinh*).
 for (const [cd, c] of Object.entries(CD)) {
-  for (const vt of ['xung', 'tam-hop']) {
+  for (const vt of ['chinh', 'xung', 'tam-hop']) {
     const goc = { voChinhDieu: true, viTri: vt };
-    const dau = `{cung} (${VT[vt]} của ${c.cung}) không có chính tinh (vô chính diệu): khi luận ${c.chuDe}, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung`;
+    const ten = vt === 'chinh' ? `${c.cung} không có chính tinh (vô chính diệu)` : `{cung} (${VT[vt]} của ${c.cung}) không có chính tinh (vô chính diệu)`;
+    const dau = `${ten}: khi luận ${c.chuDe}, nên mượn chính tinh của cung đối diện để xem ({sao_muon}), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung`;
     const PD = { tenCung: 'Phúc Đức' };
+    const laPD = vt !== 'chinh';
     const mk = (hau, dk, khong, tail) => them({
       id: `KHUNG-${cd}-VCD-${vt}${hau}`, chuyenDe: cd, cung: c.cung, loai: 'VCD',
       maNghienCuu: ['CHUNG-VCD-01', 'CHUNG-VCD-03'], dieuKien: dk, ...(khong.length ? { khong } : {}), muc: c.mucCl,
       noiDung: `${dau}${tail}`, nguon: [TT, TB], nguonChiTiet: 'TT (Luận cách tinh số cao hạ); TB, NL (vô chính diệu); WC6 (phú Phúc vô chính diệu)', truongPhai: TP, yeuTo: ['Vô Chính Diệu'],
     });
     mk('', [goc], [{ ...goc, tuan: true }, { ...goc, triet: true }], '.');
-    mk('-Tuan', [{ ...goc, tuan: true }], [{ ...goc, ...PD }], '; cung này có Tuần, mà phái Việt coi vô chính diệu gặp Tuần là thuận hơn.');
-    mk('-Triet', [{ ...goc, triet: true }], [{ ...goc, ...PD }, { ...goc, tuan: true }], '; cung này có Triệt, mà phái Việt coi vô chính diệu gặp Triệt là thuận hơn.');
-    mk('-PD-Tuan', [{ ...goc, ...PD, tuan: true }], [], '; Phúc Đức vô chính diệu nên gặp Tuần, nên cung này có Tuần là thuận.');
-    mk('-PD-Triet', [{ ...goc, ...PD, triet: true }], [{ ...goc, ...PD, tuan: true }], '; Phúc Đức vô chính diệu kỵ Triệt, nên cung này có Triệt cần thận trọng hơn với phần phúc và nội tâm.');
+    mk('-Tuan', [{ ...goc, tuan: true }], laPD ? [{ ...goc, ...PD }] : [], '; cung này có Tuần, mà phái Việt coi vô chính diệu gặp Tuần là thuận hơn.');
+    mk('-Triet', [{ ...goc, triet: true }], [...(laPD ? [{ ...goc, ...PD }] : []), { ...goc, tuan: true }], '; cung này có Triệt, mà phái Việt coi vô chính diệu gặp Triệt là thuận hơn.');
+    if (laPD) {
+      mk('-PD-Tuan', [{ ...goc, ...PD, tuan: true }], [], '; Phúc Đức vô chính diệu nên gặp Tuần, nên cung này có Tuần là thuận.');
+      mk('-PD-Triet', [{ ...goc, ...PD, triet: true }], [{ ...goc, ...PD, tuan: true }], '; Phúc Đức vô chính diệu kỵ Triệt, nên cung này có Triệt cần thận trọng hơn với phần phúc và nội tâm.');
+    }
   }
 }
 
 // --- Câu dung hòa (CHUNG-TUAN-06, CHUNG-HOA-07): cung có cả mặt thuận lẫn mặt vướng thì không chọn một chiều.
 for (const [cd, c] of Object.entries(CD)) {
+  // Chỉ áp khi Hóa Kỵ nằm CÙNG cung bị Tuần/Triệt (cung hợp chiếu); Tuần/Triệt ở chỗ khác không làm dịu Kỵ này (CHUNG-TP-04, L-28bc46).
   for (const [k, ten] of [['tuan', 'Tuần'], ['triet', 'Triệt']]) {
     them({
       id: `KHUNG-${cd}-DH-${ten}-Ky`, chuyenDe: cd, cung: c.cung, loai: 'YN',
-      maNghienCuu: ['CHUNG-TUAN-06', 'CHUNG-TUAN-02'], dieuKien: [{ [k]: true, viTri: 'chinh' }, { hoa: 'Hóa Kỵ', viTri: 'hop-chieu' }], muc: MUC_PT,
-      noiDung: `${c.cung} có ${ten} trong khi Hóa Kỵ nằm ở cung hợp chiếu ({cung}): ${ten} làm cả mặt mạnh lẫn mặt vướng đều dịu đi, nên biên độ hẹp lại, ít bứt phá lớn nhưng cũng ít vấp lớn; điểm mạnh cần thời gian để bộc lộ, điểm vướng cũng nhẹ hơn.`,
-      nguon: [NL, KL], nguonChiTiet: 'NL, KL (Tuần Triệt)', truongPhai: TP, yeuTo: [],
+      maNghienCuu: ['CHUNG-TUAN-06', 'CHUNG-TUAN-02'], dieuKien: [{ hoa: 'Hóa Kỵ', [k]: true, viTri: 'hop-chieu' }], muc: MUC_PT,
+      noiDung: `{sao} mang Hóa Kỵ nằm cùng ${ten} ở {cung} (cung hợp chiếu của ${c.cung}): ${ten} làm cả mặt mạnh lẫn mặt vướng của cung này đều dịu đi, nên biên độ hẹp lại, ít bứt phá lớn nhưng cũng ít vấp lớn; điểm mạnh cần thời gian để bộc lộ, điểm vướng cũng nhẹ hơn.`,
+      nguon: [NL, KL], nguonChiTiet: 'NL, KL (Tuần Triệt)', truongPhai: TP, yeuTo: [ten],
     });
   }
   const DH_VIEC = { 'Hóa Lộc': 'giữ một khoản dự phòng trước khi mở hướng mới', 'Hóa Quyền': 'bàn với người cùng làm trước khi chốt quyết định lớn', 'Hóa Khoa': 'nhờ người có kinh nghiệm góp ý trước khi chốt' };
