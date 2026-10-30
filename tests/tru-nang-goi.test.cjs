@@ -41,7 +41,7 @@ test('hàm thuần: đơn lẻ trừ nguyên giá; cộng lẻ + trọn bị ch�
   assert.equal(dv.tinhTruNangGoi([{ maGoi: 'mot-chu-de', soTien: GIA_LE, traLuc: t - NGAY }], t), GIA_LE);
   assert.equal(dv.tinhTruNangGoi([{ maGoi: 'mot-chu-de', soTien: GIA_LE, traLuc: t - NGAY }, { maGoi: 'tron-la-so', soTien: GIA_TRON, traLuc: t - NGAY }], t), GIA_TRON);
   assert.equal(dv.tinhTruNangGoi([], t), 0);
-  assert.equal(dv.tinhTruNangGoi([{ maGoi: 'van-nam-2027', soTien: 39000, traLuc: t - NGAY }], t), 0, 'chỉ tính mot-chu-de / tron-la-so');
+  assert.equal(dv.tinhTruNangGoi([{ maGoi: 'van-nam-2027', soTien: 49000, traLuc: t - NGAY }], t), 0, 'chỉ tính mot-chu-de / tron-la-so');
 });
 
 test('đơn trả 31 ngày trước → không trừ; 29 ngày → có trừ', () => {

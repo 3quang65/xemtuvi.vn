@@ -44,11 +44,21 @@ export const dieuKienXemLai = (goiNamMo: boolean) =>
   'Nếu bạn xóa tài khoản, lá số và quyền xem bị xóa theo, không khôi phục được.';
 const XEM_LAI = 'Xem lại không giới hạn thời gian khi đăng nhập tài khoản';
 
-// Chuyên đề "Vận năm 2027" (mã chuyên đề van-nam-2027). Giá nháp, CHỜ An/anh chốt. Không giá gạch, không đếm ngược.
+// Chuyên đề "Vận năm 2027" (mã chuyên đề van-nam-2027). Giá đã duyệt L-5ff005 (gia-van-nam-2027_v2). Không giá gạch, không đếm ngược.
 export const MA_VAN_NAM = 'van-nam-2027';
-export const GIA_VAN_NAM_2027 = 39000; // mua lẻ cho một lá số
+export const GIA_VAN_NAM_2027 = 49000; // mua lẻ cho một lá số
 export const GIA_TRON_LA_SO_KEM_VAN_NAM = 129000; // gộp Trọn lá số + Vận năm 2027 cho cùng một lá số
 export const BAN_DEN_GOI_GOP = '2027-02-06'; // gói gộp bán 15/12/2026–6/2/2027 (gia-van-nam-2027_v2)
+export const MO_BAN_VAN_TU = '2026-12-15'; // ngày mở bán gói Vận 2027 và gói gộp (giờ Việt Nam)
+
+/**
+ * Cổng mở bán gói Vận 2027 và gói gộp: từ MO_BAN_VAN_TU VÀ cờ nội dung Vận 2027 đã qua Thư (env NOI_DUNG_VAN_2027_DA_QUA_THU=1, mặc định TẮT).
+ * Máy chủ (taoDon) chặn đơn khi cổng đóng. Bật cờ chỉ sau khi Thư duyệt xong nội dung Vận 2027.
+ */
+export const CO_VAN_2027_DA_QUA_THU = () => process.env.NOI_DUNG_VAN_2027_DA_QUA_THU === '1';
+export const cuaBanVan2027Mo = (bayGio: number = Date.now(), coThu: boolean = CO_VAN_2027_DA_QUA_THU()) =>
+  coThu && bayGio >= Date.parse(`${MO_BAN_VAN_TU}T00:00:00+07:00`);
+export const laGoiVan2027 = (ma: string) => ma === 'van-nam-2027' || ma === 'tron-la-so-kem-van-nam';
 
 /** Bảng giá nhánh thử: mã gói -> giá (đồng). Gói không có trong bảng giữ giá hiện hành. */
 export type BangGia = Partial<Record<MaGoi, number>>;
@@ -102,6 +112,14 @@ export const DIEU_KIEN_XEM_LAI = dieuKienXemLai(!GOI.find((g) => g.ma === 'thanh
 
 /** Gói và giá theo nhánh thử; bảng rỗng/không có = giá hiện hành (xem src/lib/may-chu/thu-gia.ts). */
 export const goiTheoBang = (bang?: BangGia) => ({ goi: dungGoi(bang), vanNam: dungGoiVanNam(bang) });
+
+/** Mua riêng Trọn lá số + Vận lẻ, và số tiết kiệm khi mua gói gộp; tính từ giá đang dùng (kể cả bảng giá nhánh thử). */
+export function giaMuaRiengVaTietKiem(bang?: BangGia) {
+  const { goi, vanNam } = goiTheoBang(bang);
+  const gia = (ds: Goi[], ma: MaGoi) => ds.find((g) => g.ma === ma)!.gia;
+  const tongMuaRieng = gia(goi, 'tron-la-so') + gia(vanNam, 'van-nam-2027');
+  return { tongMuaRieng, tietKiem: tongMuaRieng - gia(vanNam, 'tron-la-so-kem-van-nam') };
+}
 
 /** Tên mọi chủ đề có mã (kể cả chủ đề chưa bán), để hiện tên ở khung mã mời, lịch sử. */
 export const CHU_DE_TAT_CA: { ma: MaChuDe; ten: string }[] = [

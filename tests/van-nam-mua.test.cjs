@@ -1,5 +1,7 @@
 // B2: mua lẻ / mua gộp "Vận năm 2027", quyền xem, sự kiện đo phễu.
 const test = require('node:test');
+process.env.NOI_DUNG_VAN_2027_DA_QUA_THU = '1'; // cổng mở bán Vận 2027 (L-f65975)
+const ThucDateNow = Date.now; Date.now = () => Date.parse('2026-12-20T09:00:00+07:00'); // sau ngày mở bán 15/12
 process.env.MO_GOI_AN = '1'; // gói Thành viên năm đang ẩn; test này kiểm luồng gói năm nên mở lại
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
@@ -49,7 +51,9 @@ test('giá cấu hình một chỗ, có ghi chú chờ chốt, không giá gạc
   assert.equal(goi.GOI.length, 3, 'không đổi ba gói hiện có');
   assert.equal(goi.layGoi('tron-la-so').gia, 99000);
   const src = fs.readFileSync(path.join(__dirname, '../src/lib/goi.ts'), 'utf8');
-  assert.match(src, /CHỜ An\/anh chốt/);
+  assert.match(src, /đã duyệt L-5ff005/);
+  assert.equal(goi.GIA_VAN_NAM_2027, 49000);
+  assert.equal(goi.layGoi('tron-la-so-kem-van-nam').gia, 129000);
 });
 
 test('mua lẻ vận năm: chỉ có vận năm, không có chủ đề khác', async () => {
@@ -176,4 +180,24 @@ test('máy chủ từ chối gói gộp sau ngày dừng, từ chối chủ đ�
   const nd = M.db.prepare("INSERT INTO nguoi_dung (nha_cung_cap, ma_ngoai, email, tao_luc) VALUES ('thu','hh','hh@example.vn',0)").run().lastInsertRowid;
   assert.throws(() => dv.taoDon(M.db, Number(nd), { maGoi: 'tron-la-so-kem-van-nam', laSoId: 1 }, 'gia_lap', Date.parse('2027-02-07T00:00:01+07:00')), /dừng bán/);
   assert.throws(() => dv.taoDon(M.db, Number(nd), { maGoi: 'mot-chu-de', chuDe: 'gia-dao', laSoId: 1 }), /chủ đề hợp lệ/);
+});
+
+test('L-f65975: mua riêng 148k, tiết kiệm 19k, tính từ biến và từ bảng giá nhánh thử', () => {
+  assert.deepEqual(goi.giaMuaRiengVaTietKiem(), { tongMuaRieng: 148000, tietKiem: 19000 });
+  assert.deepEqual(goi.giaMuaRiengVaTietKiem({ 'tron-la-so': 109000 }), { tongMuaRieng: 158000, tietKiem: 29000 });
+});
+
+test('L-f65975: cổng mở bán Vận 2027 cần cờ Thư và ngày 15/12/2026; gói gộp ẩn sau 6/2/2027', () => {
+  const T = (s) => Date.parse(s + '+07:00');
+  assert.ok(!goi.cuaBanVan2027Mo(T('2026-12-20T09:00:00'), false), 'cờ tắt thì chưa bán');
+  assert.ok(!goi.cuaBanVan2027Mo(T('2026-12-14T23:59:59'), true), 'trước 15/12 chưa bán');
+  assert.ok(goi.cuaBanVan2027Mo(T('2026-12-15T00:00:00'), true));
+  const nd = M.db.prepare("INSERT INTO nguoi_dung (nha_cung_cap, ma_ngoai, email, tao_luc) VALUES ('thu','cong','cong@example.vn',0)").run().lastInsertRowid;
+  const laSo = (ma) => ({ maGoi: ma, laSoId: undefined });
+  const cu = process.env.NOI_DUNG_VAN_2027_DA_QUA_THU;
+  delete process.env.NOI_DUNG_VAN_2027_DA_QUA_THU;
+  for (const ma of ['van-nam-2027', 'tron-la-so-kem-van-nam']) assert.throws(() => dv.taoDon(M.db, Number(nd), laSo(ma), 'gia_lap', T('2026-12-20T09:00:00')), /chưa mở bán/);
+  process.env.NOI_DUNG_VAN_2027_DA_QUA_THU = cu;
+  assert.throws(() => dv.taoDon(M.db, Number(nd), laSo('van-nam-2027'), 'gia_lap', T('2026-12-01T09:00:00')), /chưa mở bán/);
+  assert.equal(goi.goiDangBan(goi.GOI_VAN_NAM, T('2027-02-07T08:00:00')).some((g) => g.ma === 'tron-la-so-kem-van-nam'), false);
 });

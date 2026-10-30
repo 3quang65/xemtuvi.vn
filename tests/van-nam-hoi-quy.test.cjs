@@ -1,6 +1,7 @@
 // Hồi quy chuyên đề "Vận năm 2027" sau khi nạp 88 đoạn bản 1.1 (việc L-c24d69, Phúc kiểm thử độc lập).
 // Phủ: (1) 41 lá số đủ can/giờ/trường hợp biên, (2) VN01–VN03 khớp bài mẫu, (3) quyền xem như mốc 1, (4) từ cấm,
 // (5) bộ khớp canNamSinh/motTrong chọn đúng đoạn. Danh sách lá số: docs/luan-giai/van-nam/hoi-quy-la-so.md
+process.env.NOI_DUNG_VAN_2027_DA_QUA_THU = '1'; Date.now = () => Date.parse('2026-12-20T09:00:00+07:00'); // cổng mở bán Vận 2027 (L-f65975)
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
