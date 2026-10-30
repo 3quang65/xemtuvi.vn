@@ -42,6 +42,12 @@ export interface DieuKien {
   tuCung?: string;
   /** Với `rai`: mọi sao trong `sao` đều có mặt VÀ cùng thuộc các độ sáng này (vd ba sao chủ cách đều Hãm). */
   deuDoSang?: DoSang[];
+  /** Với `sao` là chính tinh: chỉ xét sao chủ của cung (chính tinh sáng nhất, bằng nhau thì sao đứng trước). Cung hai nhóm sao theo nhóm của sao chủ. */
+  chu?: boolean;
+  /** Dùng với `chu`: cung vô chính diệu thì mượn chính tinh cung xung chiếu (như Mệnh vô chính diệu trong nhân hòa VAN-PP-12/14/15). */
+  muonXung?: boolean;
+  /** Chỉ khớp khi cung gốc (cung vận) có tuổi vào đại vận (`daiVanTu`) từ mức này trở lên, vd 16: tránh câu đi làm, tình cảm, vay mượn ở vận tuổi nhỏ. */
+  tuoiVanTuMin?: number;
 }
 
 export interface QuyTacV2 {
@@ -83,6 +89,7 @@ export function cungTheoViTri(ls: LaSo, goc: Cung, viTri: ViTri = 'chinh'): Cung
 }
 
 function cungDat(c: Cung, k: DieuKien, dau?: Sao): boolean {
+  if (k.tuoiVanTuMin !== undefined && !(c.daiVanTu >= k.tuoiVanTuMin)) return false;
   if (k.tenCung && c.ten !== k.tenCung) return false;
   if (k.chi && !k.chi.includes(c.tenChi)) return false;
   if (k.tuan !== undefined && c.tuan !== k.tuan) return false;
@@ -95,6 +102,16 @@ function cungDat(c: Cung, k: DieuKien, dau?: Sao): boolean {
     else if (!saoCua(c).some((s) => s.hoa === k.hoa)) return false;
   }
   return true;
+}
+
+const THU_TU_SANG: string[] = ['Miếu', 'Vượng', 'Đắc', 'Bình', 'Hãm'];
+
+/** Chính tinh được xét của cung theo `chu` / `muonXung`: sao chủ (sáng nhất) hoặc cả chính tinh; vô chính diệu + muonXung thì lấy cung xung. */
+function chinhTinhXet(ls: LaSo, c: Cung, k: DieuKien): { cung: Cung; sao: Sao[] } {
+  const nguon = !c.chinhTinh.length && k.muonXung ? ls.cung.find((x) => x.chi === (c.chi + 6) % 12) ?? c : c;
+  if (!k.chu) return { cung: nguon, sao: nguon.chinhTinh };
+  const chu = [...nguon.chinhTinh].sort((a, b) => THU_TU_SANG.indexOf(a.dacTinhTen ?? 'Hãm') - THU_TU_SANG.indexOf(b.dacTinhTen ?? 'Hãm'))[0];
+  return { cung: nguon, sao: chu ? [chu] : [] };
 }
 
 const SAT_TINH = ['Địa Không', 'Địa Kiếp', 'Kình Dương', 'Đà La', 'Hỏa Tinh', 'Linh Tinh'];
@@ -154,8 +171,14 @@ export function khopDieuKien(ls: LaSo, gocQT: Cung, k: DieuKien): string[] | nul
   if (k.giapHoa) return giapHoaKhop(ls, goc, k.giapHoa);
   const ds = cungTheoViTri(ls, goc, k.viTri);
   const sao = k.sao ?? [];
+  if (k.chu || k.muonXung) {
+    const co = ds.flatMap((c) => chinhTinhXet(ls, c, k).sao).filter((s) => sao.includes(s.ten) && (!k.doSang || (!!s.dacTinhTen && k.doSang.includes(s.dacTinhTen))));
+    if (co.length < (k.toiThieu ?? 1)) return null;
+    return ds.some((c) => cungDat(c, { ...k, doSang: undefined, hoa: undefined })) ? [...new Set(co.map((s) => s.ten))] : null;
+  }
   if (k.rai || k.toiThieu !== undefined) {
-    const co = sao.filter((t) => ds.some((c) => saoCua(c).some((s) => s.ten === t)));
+    const dungSang = (s: Sao) => !k.doSang || (!!s.dacTinhTen && k.doSang.includes(s.dacTinhTen));
+    const co = sao.filter((t) => ds.some((c) => saoCua(c).some((s) => s.ten === t && dungSang(s))));
     if (co.length < (k.toiThieu ?? sao.length)) return null;
     if (k.deuDoSang && !sao.every((t) => ds.some((c) => saoCua(c).some((s) => s.ten === t && s.dacTinhTen && k.deuDoSang!.includes(s.dacTinhTen))))) return null;
     return ds.some((c) => cungDat(c, { ...k, doSang: undefined, hoa: undefined })) ? co : null;
@@ -192,7 +215,8 @@ export function cungKhopDieuKien(ls: LaSo, gocQT: Cung, k: DieuKien): Cung[] {
   if (k.giapHoa) return cungTheoViTri(ls, goc, 'giap');
   const ds = cungTheoViTri(ls, goc, k.viTri);
   const sao = k.sao ?? [];
-  if (k.rai || k.toiThieu !== undefined) return ds.filter((c) => saoCua(c).some((s) => sao.includes(s.ten)));
+  if (k.chu || k.muonXung) return ds.map((c) => chinhTinhXet(ls, c, k).cung).filter((c, i, a) => a.indexOf(c) === i && c.chinhTinh.some((s) => sao.includes(s.ten)));
+  if (k.rai || k.toiThieu !== undefined) return ds.filter((c) => saoCua(c).some((s) => sao.some((t) => t === s.ten && (!k.doSang || (!!s.dacTinhTen && k.doSang.includes(s.dacTinhTen))))));
   return ds.filter((c) => {
     const tat = saoCua(c);
     if (!sao.every((t) => tat.some((s) => s.ten === t))) return false;
