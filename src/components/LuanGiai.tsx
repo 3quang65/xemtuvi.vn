@@ -14,6 +14,7 @@ import type { BaiVanNam, XemTruocVanNam } from '@/lib/luan-giai/ai/van-nam';
 import { VanNamBai } from './VanNamBai';
 import { VanNamNutMua, VanNamXemTruoc } from './VanNamXemTruoc';
 import ThongBaoLoi from './ThongBaoLoi';
+import DangNhapMa from './DangNhapMa';
 import { linkBaoLoi, maDonHienThi } from '@/lib/tro-giup';
 
 const HAN_TAI_MS = 20_000; // quá hạn này coi như tải chậm/đứt (E08)
@@ -95,26 +96,13 @@ const tenLaSo = (l: LaSoMay, i: number) => l.tenGoi || l.thongTinSinh.ten || `L�
 
 /** Đăng nhập thử (bản thử, giống bước 1 ở trang thanh toán) để xem lại gói đã mua trên máy khác. */
 function DangNhap({ khiXong }: { khiXong: () => void }) {
-  const [nhap, setNhap] = useState('');
-  const [bao, setBao] = useState('');
-  const [dang, setDang] = useState(false);
-  async function vao(ncc: 'google' | 'zalo') {
-    setBao(''); setDang(true);
-    try { const r = await layJson<{ moi?: boolean }>('/api/dang-nhap', { nhaCungCap: ncc, email: nhap }); guiSuKien('dang_nhap'); if (r?.moi) guiSuKien('dang_ky_thanh_vien'); khiXong(); } catch (e) { setBao((e as Error).message); setDang(false); }
-  }
   return (
     <section className="trang-buoc">
       <h1>Luận giải chuyên sâu</h1>
       <div className="khoi-buoc">
         <h2>Đăng nhập để xem gói đã mua</h2>
-        <p className="ghi-chu-rieng-tu thu">Bản thử: đăng nhập giả lập, không gửi thông tin đến Google hay Zalo.</p>
-        <label htmlFor="email-xem">Email bạn đã dùng khi mua</label>
-        <input id="email-xem" type="email" inputMode="email" autoComplete="email" value={nhap} onChange={(e) => setNhap(e.target.value)} />
-        <div className="hai-nut">
-          <button type="button" className="nut-phu" disabled={dang || !nhap} onClick={() => vao('google')}>Tiếp tục với Google</button>
-          <button type="button" className="nut-phu" disabled={dang || !nhap} onClick={() => vao('zalo')}>Tiếp tục với Zalo</button>
-        </div>
-        {bao && <p role="alert">{bao}</p>}
+        <p className="ghi-chu-rieng-tu thu">Bản thử: đăng nhập bằng email và mã khôi phục, không gửi thông tin đến Google hay Zalo.</p>
+        <DangNhapMa idEmail="email-xem" nhanEmail="Email bạn đã dùng khi mua" khiXong={khiXong} />
       </div>
       <p><Link href="/">Chưa mua? Lập lá số miễn phí</Link></p>
     </section>

@@ -9,6 +9,7 @@ const nap = require('./_nap-ts.cjs');
 const { moCsdl } = nap('lib/may-chu/csdl.ts');
 const { taoBoKhoa } = nap('lib/may-chu/ma-hoa.ts');
 const x = nap('lib/may-chu/xu-ly.ts');
+require('./_dang-nhap.cjs')(x);
 const tg = nap('lib/may-chu/thu-gia.ts');
 const { GOI, GOI_VAN_NAM, goiTheoBang, layGoi } = nap('lib/goi.ts');
 const { kiemTraSuKien } = require('../src/lib/su-kien.js');

@@ -8,7 +8,8 @@ const DATA = path.join(HOME, 'xemtuvi-data');
 const DB = process.env.CSDL_TEP || path.join(DATA, 'csdl', 'xemtuvi.db');
 const DIR = process.env.SAO_LUU_DIR || path.join(DATA, 'sao-luu');
 const DRIVE = process.env.SAO_LUU_DRIVE || 'drive:09 Sao lưu (backup)/Cơ sở dữ liệu/';
-const GIU = 14;
+const GIU = 14; // bản giữ trên máy
+const GIU_DRIVE = '30d'; // bản trên Drive quá hạn này bị xóa (khách xóa dữ liệu thì bản sao lưu cũng không tồn tại quá 30 ngày)
 const ngay = new Date(Date.now() + 7 * 3600_000).toISOString().slice(0, 10);
 
 function canhBao(nd) {
@@ -38,6 +39,8 @@ function main() {
   if (process.env.BO_QUA_DRIVE) { console.log('[sao-luu] ok (chỉ máy): ' + dich); return 0; }
   const r = spawnSync('rclone', ['copy', dich, DRIVE], { encoding: 'utf8', timeout: 600_000 });
   if (r.status !== 0) { canhBao('tải lên Drive lỗi: ' + String(r.stderr).slice(-150)); return 2; }
+  const x = spawnSync('rclone', ['delete', DRIVE, '--min-age', GIU_DRIVE, '--include', 'xemtuvi-*.db.gz'], { encoding: 'utf8', timeout: 600_000 });
+  if (x.status !== 0) { canhBao('xóa bản quá ' + GIU_DRIVE + ' trên Drive lỗi: ' + String(x.stderr).slice(-150)); return 3; }
   console.log('[sao-luu] ok: ' + dich + ' -> ' + DRIVE);
   return 0;
 }

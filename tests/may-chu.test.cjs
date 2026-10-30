@@ -6,6 +6,7 @@ const nap = require('./_nap-ts.cjs');
 const { moCsdl } = nap('lib/may-chu/csdl.ts');
 const { taoBoKhoa } = nap('lib/may-chu/ma-hoa.ts');
 const x = nap('lib/may-chu/xu-ly.ts');
+require('./_dang-nhap.cjs')(x);
 const dv = nap('lib/may-chu/dich-vu.ts');
 const ph = nap('lib/may-chu/phien.ts');
 const { tra } = require('./_goi-ts.cjs');

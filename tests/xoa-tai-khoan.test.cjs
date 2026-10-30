@@ -5,6 +5,7 @@ const nap = require('./_nap-ts.cjs');
 const { moCsdl } = nap('lib/may-chu/csdl.ts');
 const { taoBoKhoa } = nap('lib/may-chu/ma-hoa.ts');
 const x = nap('lib/may-chu/xu-ly.ts');
+require('./_dang-nhap.cjs')(x);
 const { BAN_CHU_LIEN_HE } = nap('lib/may-chu/lien-he.ts');
 
 process.env.DANG_NHAP_THU = '1'; process.env.EMAIL_THU_CHO_PHEP = '@example.vn,@x.vn,@b.vn,@test.vn';
@@ -48,12 +49,12 @@ test('xóa tài khoản: cần đăng nhập và xác nhận; xong thì không c
   await x.nhanTinGhi(yc('/api/nhan-tin', { method: 'POST', body: { email: 'xoa@x.vn', dongY: true } }), M);
   const id = M.db.prepare("SELECT id FROM nguoi_dung WHERE ma_ngoai='xoa@x.vn'").get().id;
 
-  assert.equal((await x.toiXoa(yc('/api/toi/xoa', { method: 'POST', body: { xacNhan: true } }), M)).status, 401);
+  assert.equal((await x.toiXoa(yc('/api/toi/xoa', { method: 'POST', body: { xacNhan: 'XOA' } }), M)).status, 401);
   assert.equal((await x.toiXoa(yc('/api/toi/xoa', { method: 'POST', cookie: ck, body: {} }), M)).status, 400);
-  assert.equal((await x.toiXoa(yc('/api/toi/xoa', { method: 'POST', cookie: ck, body: { xacNhan: true }, origin: 'https://evil.test' }), M)).status, 403);
+  assert.equal((await x.toiXoa(yc('/api/toi/xoa', { method: 'POST', cookie: ck, body: { xacNhan: 'XOA' }, origin: 'https://evil.test' }), M)).status, 403);
   assert.equal(dem('la_so', 'nguoi_dung_id=?', id), 1);
 
-  const r = await x.toiXoa(yc('/api/toi/xoa', { method: 'POST', cookie: ck, body: { xacNhan: true } }), M);
+  const r = await x.toiXoa(yc('/api/toi/xoa', { method: 'POST', cookie: ck, body: { xacNhan: 'XOA' } }), M);
   assert.equal(r.status, 200);
   assert.match(r.headers.get('set-cookie'), /xtv_phien=;|Max-Age=0/);
   assert.equal(dem('la_so', 'nguoi_dung_id=?', id), 0);

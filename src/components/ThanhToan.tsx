@@ -4,10 +4,11 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
 import { CONG_BO_GIA, giaHienThi, HOAN_TIEN, layChuDe, type Goi } from '@/lib/goi';
 import { useGia } from '@/lib/useGia';
-import { docThongTinSinh, guiSuKien, type NhaCungCap } from '@/lib/phien';
+import { docThongTinSinh, guiSuKien } from '@/lib/phien';
 import { useLaSoDaLuu } from '@/lib/useLaSoDaLuu';
 import { linkBaoLoi, maDonHienThi, tinXacNhanDon } from '@/lib/tro-giup';
 import ThongBaoLoi from './ThongBaoLoi';
+import DangNhapMa from './DangNhapMa';
 
 async function goiApi<T>(duong: string, body?: unknown): Promise<T> {
   const r = await fetch(duong, body === undefined ? { cache: 'no-store' } : { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
@@ -29,7 +30,6 @@ export default function ThanhToan() {
   const laSoTam = useLaSoDaLuu(!laSoMay);
   const laSo = laSoMay ? true : laSoTam;
   const [email, setEmail] = useState<string | null>(null); // tài khoản đang đăng nhập (từ máy chủ)
-  const [nhap, setNhap] = useState('');
   const [tru, setTru] = useState(0); // số được trừ khi nâng lên Thành viên năm (máy chủ tính)
   const [bao, setBao] = useState('');
   const [dangXuLy, setDangXuLy] = useState(false);
@@ -49,13 +49,6 @@ export default function ThanhToan() {
   }, [email, goi?.ma]);
   if (!laSo || !bangGia.san || !hopLe || !goi) return <p className="dang-tai" role="status">Đang tải…</p>;
 
-  async function dangNhap(ncc: NhaCungCap) {
-    setBao(''); setDangXuLy(true);
-    try {
-      const r = await goiApi<{ moi?: boolean }>('/api/dang-nhap', { nhaCungCap: ncc, email: nhap });
-      setEmail(nhap.trim().toLowerCase()); guiSuKien('dang_nhap'); if (r?.moi) guiSuKien('dang_ky_thanh_vien', { goi: suKien.goi });
-    } catch (e) { setBao((e as Error).message); } finally { setDangXuLy(false); }
-  }
   async function thanhToan() {
     if (dangBam.current) { setBamTrung(true); return; } // lần bấm thứ hai trở đi: chỉ báo E06, không tạo thêm đơn
     dangBam.current = true; setBao(''); setLoiTT(false); setBamTrung(false); setDangXuLy(true);
@@ -105,12 +98,7 @@ export default function ThanhToan() {
           <p className="da-dang-nhap">Đã đăng nhập thử bằng {email} (bản thử).</p>
         ) : (
           <>
-            <label htmlFor="email-thu">Email của bạn (để xem lại gói trên máy khác)</label>
-            <input id="email-thu" type="email" inputMode="email" autoComplete="email" value={nhap} onChange={(e) => setNhap(e.target.value)} />
-            <div className="hai-nut">
-              <button type="button" className="nut-phu" disabled={dangXuLy || !nhap} onClick={() => dangNhap('google')}>Tiếp tục với Google</button>
-              <button type="button" className="nut-phu" disabled={dangXuLy || !nhap} onClick={() => dangNhap('zalo')}>Tiếp tục với Zalo</button>
-            </div>
+            <DangNhapMa idEmail="email-thu" nhanEmail="Email của bạn (để xem lại gói trên máy khác)" thamSoDangKy={suKien.goi ? { goi: suKien.goi } : undefined} khiXong={setEmail} />
           </>
         )}
       </div>

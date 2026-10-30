@@ -3,6 +3,7 @@
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { CHU_DE } from '@/lib/goi';
+import DangNhapMa from './DangNhapMa';
 import { docMaMoi, docThongTinSinh, guiSuKien, maPhien } from '@/lib/phien';
 
 interface Kiem { hopLe: boolean; nguon?: string; gopYUrl?: string; chuDe: string[]; dangNhap: boolean; daDung: boolean }
@@ -34,16 +35,11 @@ export function KhungMoiMo({ laSoId }: { laSoId?: number | null }) {
   const [lan, setLan] = useState(0);
   const moi = useMaMoi(lan);
   const [chon, setChon] = useState<string | null>(null);
-  const [nhap, setNhap] = useState('');
   const [bao, setBao] = useState('');
   const [dang, setDang] = useState(false);
   if (!moi || moi.kiem.daDung) return null;
   const { ma, kiem } = moi;
 
-  async function dangNhap() {
-    setBao(''); setDang(true);
-    try { const r = await api<{ moi?: boolean }>('/api/dang-nhap', { nhaCungCap: 'google', email: nhap }); guiSuKien('dang_nhap'); if (r?.moi) guiSuKien('dang_ky_thanh_vien'); setLan((n) => n + 1); } catch (e) { setBao((e as Error).message); } finally { setDang(false); }
-  }
   async function mo() {
     setBao(''); setDang(true);
     try {
@@ -58,9 +54,7 @@ export function KhungMoiMo({ laSoId }: { laSoId?: number | null }) {
       <p className="tt-ghi-chu">Chọn một chuyên đề bạn quan tâm nhất. Bản thử, không thu tiền.</p>
       {!kiem.dangNhap && (
         <>
-          <label htmlFor="email-moi">Email của bạn (để xem lại trên máy khác)</label>
-          <input id="email-moi" type="email" inputMode="email" autoComplete="email" value={nhap} onChange={(e) => setNhap(e.target.value)} />
-          <button type="button" className="nut-phu" disabled={dang || !nhap} onClick={dangNhap}>Tiếp tục (đăng nhập thử)</button>
+          <DangNhapMa idEmail="email-moi" nhanEmail="Email của bạn (để xem lại trên máy khác)" khiXong={() => setLan((n) => n + 1)} />
         </>
       )}
       {kiem.dangNhap && (

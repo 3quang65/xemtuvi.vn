@@ -14,6 +14,7 @@ import { ghiSuKien } from '../ghi-su-kien';
 import { daDungMa, dungMa, chuDeMoi, kiemMa, nguonDaDung } from './ma-moi';
 import { ghiLoi } from './nhat-ky';
 import { bangGiaCuaYeuCau } from './thu-gia';
+import { biChan, ghiSai, xoaSaiCuaEmail } from './ma-khoi-phuc';
 import { cookieDat, cookieXoa, cungNguon, docCookie, docPhien, taoPhien, xoaPhien } from './phien';
 
 const DAU = { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'private, no-store' };
@@ -52,9 +53,19 @@ export const dangNhap = (req: Request, m: MayChu) => chay(req, async () => {
   const b = await doc(req);
   if (!b || typeof b.email !== 'string') return loi(400, 'du_lieu_sai', 'Thiếu email.');
   if (!emailDuocThu(b.email)) return loi(403, 'dang_thu_nghiem', 'Tính năng đang thử nghiệm, chưa mở cho email này.');
-  const truoc = dv.coNguoiDung(m.db, b.email);
-  const id = dv.dangNhapThu(m.db, b.email);
-  return json({ ok: true, moi: !truoc }, 200, { 'Set-Cookie': cookieDat(taoPhien(m.db, id)) });
+  const ip = nguonGui(req), e = b.email.trim().toLowerCase();
+  const vao = (id: number, them: Record<string, unknown> = {}) => json({ ok: true, ...them }, 200, { 'Set-Cookie': cookieDat(taoPhien(m.db, id)) });
+  if (!dv.coNguoiDung(m.db, e)) {
+    if (biChan(m.db, e, ip)) return loi(429, 'sai_nhieu', 'Bạn thử nhiều lần chưa đúng. Chờ 15 phút rồi thử lại nhé.');
+    const { id, maKhoiPhuc } = dv.taoTaiKhoanThu(m.db, e);
+    return vao(id, { moi: true, maKhoiPhuc });
+  }
+  if (biChan(m.db, e, ip)) return loi(429, 'sai_nhieu', 'Bạn thử nhiều lần chưa đúng. Chờ 15 phút rồi thử lại nhé.');
+  const kq = dv.kiemDangNhapThu(m.db, e, b.maKhoiPhuc);
+  if (typeof kq === 'number') { xoaSaiCuaEmail(m.db, e); return vao(kq, { moi: false }); }
+  if (kq === 'chua_co_ma') return loi(401, 'chua_co_ma', 'Tài khoản thử này chưa có mã khôi phục. Vui lòng liên hệ hỗ trợ.');
+  ghiSai(m.db, e, ip);
+  return loi(401, 'sai_thong_tin', 'Email hoặc mã khôi phục chưa đúng.');
 });
 
 export const dangXuat = (req: Request, m: MayChu) => chay(req, () => {
@@ -71,11 +82,11 @@ export function toi(req: Request, m: MayChu) {
   return json({ dangNhap: true, email: nd.email, quyen: dv.dsQuyen(m.db, id), laSoIds: dv.dsLaSo(m.db, m.khoa, id).map((l) => l.id), donGanNhat: don?.id ?? null });
 }
 
-/** POST /api/toi/xoa {xacNhan:true}: xóa tài khoản đang đăng nhập và dữ liệu của nó; đơn hàng giữ ở dạng ẩn danh. */
+/** POST /api/toi/xoa {xacNhan:'XOA'}: xóa tài khoản đang đăng nhập và dữ liệu của nó; đơn hàng giữ ở dạng ẩn danh. */
 export const toiXoa = (req: Request, m: MayChu) => chay(req, async () => {
   const id = nguoiDung(req, m); if (!id) return canDangNhap();
   const b = await doc(req);
-  if (!b || b.xacNhan !== true) return loi(400, 'chua_xac_nhan', 'Cần xác nhận xóa tài khoản.');
+  if (!b || typeof b.xacNhan !== 'string' || b.xacNhan.trim().toUpperCase() !== 'XOA') return loi(400, 'chua_xac_nhan', 'Gõ XOA để xác nhận xóa dữ liệu.');
   dv.xoaTaiKhoan(m.db, id);
   return json({ ok: true }, 200, { 'Set-Cookie': cookieXoa() });
 });

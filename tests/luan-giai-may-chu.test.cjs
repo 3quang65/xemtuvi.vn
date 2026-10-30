@@ -9,6 +9,7 @@ const nap = require('./_nap-ts.cjs');
 const { moCsdl } = nap('lib/may-chu/csdl.ts');
 const { taoBoKhoa } = nap('lib/may-chu/ma-hoa.ts');
 const x = nap('lib/may-chu/xu-ly.ts');
+require('./_dang-nhap.cjs')(x);
 
 process.env.DANG_NHAP_THU = '1'; process.env.EMAIL_THU_CHO_PHEP = '@example.vn';
 process.env.CONG_THANH_TOAN = 'gia_lap';

@@ -1,6 +1,7 @@
 // Nghiệp vụ: người dùng, lá số, đơn, quyền xem. Chỉ làm việc với CSDL; không biết gì về HTTP.
 import { layChuDe, layGoi, MA_VAN_NAM, TRAN_TRU_NANG_GOI, type BangGia, type MaGoi } from '../goi';
 import type { Csdl } from './csdl';
+import { bamMa, chuanHoaMa, DO_DAI_MA, kiemMaKhoiPhuc, sinhMa } from './ma-khoi-phuc';
 import { giaiMaJson, khoaTim, maHoaJson, type BoKhoa } from './ma-hoa';
 
 const NGAY = 86_400_000;
@@ -12,16 +13,41 @@ export type Cong = 'gia_lap';
 export interface Quyen { id: number; loai: 'chu_de' | 'tron_la_so' | 'thanh_vien' | 'van_nam'; laSoId: number | null; chuDe: string | null; tuLuc: number; denLuc: number | null }
 export class LoiNghiepVu extends Error { constructor(public ma: string, thongDiep: string, public trangThai = 400) { super(thongDiep); } }
 
-/** Email này đã có tài khoản chưa (để tách đăng ký lần đầu khỏi đăng nhập lại). Email sai định dạng coi như chưa có; dangNhapThu sẽ báo lỗi. */
+/** Email này đã có tài khoản chưa (để tách đăng ký lần đầu khỏi đăng nhập lại). Email sai định dạng coi như chưa có; taoTaiKhoanThu sẽ báo lỗi. */
 export function coNguoiDung(db: Csdl, email: string): boolean {
   return !!db.prepare('SELECT 1 FROM nguoi_dung WHERE nha_cung_cap=? AND ma_ngoai=?').get('thu', email.trim().toLowerCase());
 }
 
-export function dangNhapThu(db: Csdl, email: string, bayGio = Date.now()): number {
+const chuanEmail = (email: string) => {
   const e = email.trim().toLowerCase();
   if (e.length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)) throw new LoiNghiepVu('email_sai', 'Email chưa đúng định dạng.');
+  return e;
+};
+
+/** Chỉ cho mã nội bộ và test: lấy/tạo tài khoản KHÔNG qua mã khôi phục. Tầng HTTP không được gọi hàm này. */
+export function dangNhapThu(db: Csdl, email: string, bayGio = Date.now()): number {
+  const e = chuanEmail(email);
   db.prepare('INSERT OR IGNORE INTO nguoi_dung (nha_cung_cap, ma_ngoai, email, tao_luc) VALUES (?,?,?,?)').run('thu', e, e, bayGio);
   return (db.prepare('SELECT id FROM nguoi_dung WHERE nha_cung_cap=? AND ma_ngoai=?').get('thu', e) as { id: number }).id;
+}
+
+/** Tạo tài khoản thử cho email chưa có; trả mã khôi phục dạng rõ đúng một lần (CSDL chỉ giữ băm). Email đã có → LoiNghiepVu. */
+export function taoTaiKhoanThu(db: Csdl, email: string, bayGio = Date.now()): { id: number; maKhoiPhuc: string } {
+  const e = chuanEmail(email);
+  if (coNguoiDung(db, e)) throw new LoiNghiepVu('da_co', 'Email này đã có tài khoản.', 409);
+  const ma = sinhMa();
+  const id = Number(db.prepare('INSERT INTO nguoi_dung (nha_cung_cap, ma_ngoai, email, tao_luc, ma_khoi_phuc) VALUES (?,?,?,?,?)').run('thu', e, e, bayGio, bamMa(ma)).lastInsertRowid);
+  return { id, maKhoiPhuc: ma };
+}
+
+/** Kết quả kiểm mã của email đã có: id nếu đúng; 'chua_co_ma' nếu tài khoản cũ chưa có mã; null nếu sai. */
+export function kiemDangNhapThu(db: Csdl, email: string, ma: unknown): number | 'chua_co_ma' | null {
+  const e = chuanEmail(email);
+  const nd = db.prepare('SELECT id, ma_khoi_phuc AS h FROM nguoi_dung WHERE nha_cung_cap=? AND ma_ngoai=?').get('thu', e) as { id: number; h: string | null } | undefined;
+  if (!nd) return null;
+  if (!nd.h) return 'chua_co_ma';
+  const m = chuanHoaMa(ma);
+  return m.length === DO_DAI_MA && kiemMaKhoiPhuc(m, nd.h) ? nd.id : null;
 }
 
 export function luuLaSo(db: Csdl, k: BoKhoa, nguoiDungId: number, sinh: unknown, tenGoi?: string, bayGio = Date.now()): number {
@@ -136,8 +162,9 @@ export function xoaTaiKhoan(db: Csdl, nguoiDungId: number): void {
     db.prepare('DELETE FROM la_so WHERE nguoi_dung_id=?').run(nguoiDungId);
     db.prepare('DELETE FROM phien WHERE nguoi_dung_id=?').run(nguoiDungId);
     const e = nd.email?.toLowerCase() ?? null;
+    if (e) db.prepare('DELETE FROM dang_nhap_sai WHERE khoa=?').run('e:' + e);
     db.prepare("DELETE FROM lien_he WHERE nguoi_dung_id=? OR (loai='email' AND gia_tri=?)").run(nguoiDungId, e);
     if (e) db.prepare('DELETE FROM nhan_tin_van_nam WHERE email=?').run(e);
-    db.prepare("UPDATE nguoi_dung SET nha_cung_cap='da_xoa', ma_ngoai=?, email=NULL WHERE id=?").run(`xoa-${nguoiDungId}-${Date.now()}`, nguoiDungId);
+    db.prepare("UPDATE nguoi_dung SET nha_cung_cap='da_xoa', ma_ngoai=?, email=NULL, ma_khoi_phuc=NULL WHERE id=?").run(`xoa-${nguoiDungId}-${Date.now()}`, nguoiDungId);
   })();
 }
