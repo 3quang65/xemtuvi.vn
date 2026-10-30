@@ -49,6 +49,9 @@ function emailDuocThu(email: string): boolean {
   return ds.split(/[,\s]+/).map((x) => x.trim().toLowerCase()).filter(Boolean).some((x) => (x.startsWith('@') ? e.endsWith(x) && e.indexOf('@') === e.length - x.length : e === x));
 }
 
+import { giaiMaNguon, TEN_COOKIE_NGUON } from '@/lib/nguon-khach';
+const nguonKhachCuaYeuCau = (req: Request) => { const n = giaiMaNguon(docCookie(req, TEN_COOKIE_NGUON)); return Object.keys(n).length ? { nguon: n } : {}; };
+
 export const dangNhap = (req: Request, m: MayChu) => chay(req, async () => {
   if (process.env.DANG_NHAP_THU !== '1') return loi(404, 'tat', 'Đăng nhập thử đang tắt.');
   const b = await doc(req);
@@ -218,7 +221,7 @@ export const nhanTinGhi = (req: Request, m: MayChu) => chay(req, async () => {
   const lh = chuanHoa('email', b.email);
   if (!lh) return loi(400, 'lien_he_sai', 'Email chưa đúng.');
   const { maHuy } = luuNhanTin(m.db, { email: lh.giaTri, nguon: lamSachNguon(b.nguon) });
-  if (typeof b.phien === 'string' && PHIEN_DO.test(b.phien)) await ghiSuKien({ ten: 'dang_ky_nhan_tin', phien: b.phien, trang: trangCua('dang_ky_nhan_tin') });
+  if (typeof b.phien === 'string' && PHIEN_DO.test(b.phien)) await ghiSuKien({ ten: 'dang_ky_nhan_tin', phien: b.phien, trang: trangCua('dang_ky_nhan_tin'), ...nguonKhachCuaYeuCau(req) });
   return json({ ok: true, duongHuy: `/huy-dang-ky?ma=${maHuy}` });
 });
 

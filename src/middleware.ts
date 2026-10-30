@@ -1,4 +1,5 @@
 import { NextResponse, type NextRequest } from 'next/server';
+import { TEN_COOKIE_NGUON, NGAY_NGUON, moHoaNguon, nguonTuYeuCau } from '@/lib/nguon-khach';
 
 // Trang kết quả (lá số của khách) không bao giờ được index.
 // SITE_NOINDEX=1: bản thử, cấm index toàn site.
@@ -10,6 +11,11 @@ export function middleware(req: NextRequest) {
   const ketQua = TRANG_KET_QUA.some((p) => pathname === p || pathname.startsWith(p + '/'));
   if (process.env.SITE_NOINDEX === '1' || ketQua) {
     res.headers.set('X-Robots-Tag', 'noindex, nofollow, noarchive');
+  }
+  // Ghi nguồn khách lần vào đầu có nguồn (UTM hoặc trang giới thiệu ngoài); đã có cookie thì giữ nguyên.
+  if (req.method === 'GET' && !pathname.startsWith('/api/') && !req.cookies.has(TEN_COOKIE_NGUON)) {
+    const n = nguonTuYeuCau(req.nextUrl.searchParams, req.headers.get('referer'), req.headers.get('host') ?? req.nextUrl.host);
+    if (Object.keys(n).length) res.cookies.set(TEN_COOKIE_NGUON, moHoaNguon(n), { path: '/', httpOnly: true, secure: true, sameSite: 'lax', maxAge: NGAY_NGUON * 86400 });
   }
   return res;
 }
