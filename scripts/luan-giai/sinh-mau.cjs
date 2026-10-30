@@ -1,5 +1,5 @@
 // Sinh N bản luận giải mẫu (stub, không mạng) ra docs/luan-giai/<thư mục>/ để kiểm duyệt.
-// Dùng: node scripts/luan-giai/sinh-mau.cjs [thu-muc=mau-1] [so-ban=10]
+// Dùng: node scripts/luan-giai/sinh-mau.cjs [thu-muc=mau-1] [so-ban=10] [chuyen-de=menh,quan-loc,phu-the]
 const fs = require('node:fs');
 const path = require('node:path');
 const ts = require('typescript');
@@ -10,15 +10,16 @@ const ROOT = path.join(__dirname, '../..');
 const { lapLaSo, tomTatLaSo } = require(path.join(ROOT, 'src/lib/tuvi/index.ts'));
 const AI = require(path.join(ROOT, 'src/lib/luan-giai/ai/index.ts'));
 const TC = require(path.join(ROOT, 'docs/nghien-cuu/tuvi-test-cases.json')).cases;
-const CD = ['menh', 'quan-loc', 'phu-the'];
-const CUNG = { menh: ['Mệnh', 'Thiên Di', 'Quan Lộc', 'Tài Bạch'], 'quan-loc': ['Quan Lộc', 'Phu Thê', 'Mệnh', 'Tài Bạch'], 'phu-the': ['Phu Thê', 'Quan Lộc', 'Thiên Di', 'Phúc Đức'] };
+const CD = (process.argv[4] || 'menh,quan-loc,phu-the').split(',');
+const CUNG = { menh: ['Mệnh', 'Thiên Di', 'Quan Lộc', 'Tài Bạch'], 'quan-loc': ['Quan Lộc', 'Phu Thê', 'Mệnh', 'Tài Bạch'], 'phu-the': ['Phu Thê', 'Quan Lộc', 'Thiên Di', 'Phúc Đức'],
+  'tai-bach': ['Tài Bạch', 'Phúc Đức', 'Mệnh', 'Quan Lộc'], 'dien-trach': ['Điền Trạch', 'Tử Tức', 'Huynh Đệ', 'Tật Ách', 'Phụ Mẫu'] };
 const out = path.join(ROOT, 'docs/luan-giai', process.argv[2] || 'mau-1');
 const n = Number(process.argv[3] || 10);
 fs.mkdirSync(out, { recursive: true });
 const saoStr = (s) => s.ten + (s.dacTinhTen ? `(${s.dacTinhTen})` : '') + (s.hoa ? `[${s.hoa}]` : '');
 (async () => {
   for (let i = 0; i < n; i++) {
-    const tc = TC[i % TC.length]; const cd = CD[i % 3];
+    const tc = TC[i % TC.length]; const cd = CD[i % CD.length];
     const ls = lapLaSo(tc.input);
     const bai = await AI.sinhLuanGiai(ls, cd, { boQuaCache: true });
     const L = [`# Bản ${String(i + 1).padStart(2, '0')} — ${tc.id} × ${cd}`, '', `Đầu vào: \`${JSON.stringify(tc.input)}\``, '', `Tóm tắt: ${tomTatLaSo(ls)}`, '', '## Sao các cung liên quan (để đối chiếu)'];

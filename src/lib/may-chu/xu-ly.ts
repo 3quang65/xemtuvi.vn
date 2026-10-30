@@ -54,7 +54,9 @@ export function toi(req: Request, m: MayChu) {
   const id = nguoiDung(req, m);
   if (!id) return json({ dangNhap: false });
   const nd = m.db.prepare('SELECT email FROM nguoi_dung WHERE id=?').get(id) as { email: string };
-  return json({ dangNhap: true, email: nd.email, quyen: dv.dsQuyen(m.db, id), laSoIds: dv.dsLaSo(m.db, m.khoa, id).map((l) => l.id) });
+  // donGanNhat: đơn đã trả mới nhất, để thông báo E07 và biểu mẫu báo lỗi tự điền mã đơn.
+  const don = m.db.prepare("SELECT id FROM don_hang WHERE nguoi_dung_id=? AND trang_thai='da_tra' ORDER BY id DESC LIMIT 1").get(id) as { id: number } | undefined;
+  return json({ dangNhap: true, email: nd.email, quyen: dv.dsQuyen(m.db, id), laSoIds: dv.dsLaSo(m.db, m.khoa, id).map((l) => l.id), donGanNhat: don?.id ?? null });
 }
 
 /** POST /api/toi/xoa {xacNhan:true}: xóa tài khoản đang đăng nhập và dữ liệu của nó; đơn hàng giữ ở dạng ẩn danh. */

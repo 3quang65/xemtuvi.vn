@@ -13,24 +13,45 @@ import { KhungMoiMo, NutGopY } from './KhungMoi';
 import type { BaiVanNam, XemTruocVanNam } from '@/lib/luan-giai/ai/van-nam';
 import { VanNamBai } from './VanNamBai';
 import { VanNamNutMua, VanNamXemTruoc } from './VanNamXemTruoc';
+import ThongBaoLoi from './ThongBaoLoi';
+import { linkBaoLoi, maDonHienThi } from '@/lib/tro-giup';
+
+const HAN_TAI_MS = 20_000; // quá hạn này coi như tải chậm/đứt (E08)
+
+/** Tải nội dung trả phí có thời gian chờ. 'loi' = lỗi mạng/máy chủ hoặc quá hạn; 'chua-mo' = máy chủ từ chối (403) dù khách có gói. */
+function useTai<T>(url: string): { kq: T | 'loi' | 'chua-mo' | null; taiLai: () => void } {
+  const [kq, setKq] = useState<T | 'loi' | 'chua-mo' | null>(null);
+  const [lan, setLan] = useState(0);
+  useEffect(() => {
+    let huy = false;
+    const dk = new AbortController();
+    const hen = setTimeout(() => dk.abort(), HAN_TAI_MS);
+    setKq(null);
+    fetch(url, { cache: 'no-store', signal: dk.signal })
+      .then((r) => (r.ok ? r.json() : r.status === 403 ? 'chua-mo' : Promise.reject(new Error(String(r.status)))))
+      .then((b) => { if (!huy) setKq(b as T | 'chua-mo'); })
+      .catch(() => { if (!huy) setKq('loi'); })
+      .finally(() => clearTimeout(hen));
+    return () => { huy = true; clearTimeout(hen); dk.abort(); };
+  }, [url, lan]);
+  return { kq, taiLai: () => setLan((n) => n + 1) };
+}
+
+/** E07 (có đơn nhưng nội dung chưa mở) và E08 (tải chậm/đứt), thay vùng nội dung. */
+function LoiNoiDung({ ma, maDon, goi, taiLai }: { ma: 'E07' | 'E08'; maDon: number | null; goi?: string; taiLai: () => void }) {
+  const md = maDon ? maDonHienThi(maDon) : undefined;
+  return <ThongBaoLoi ma={ma} bien={{ maDon: md }} nut={{ 'tai-lai': taiLai, 'gui-bao-loi': linkBaoLoi({ maDon: md, goi, tinhHuong: ma }) }} />;
+}
 
 const TEN_CHU_DE: Record<string, string> = { 'ban-than': 'Bản thân', 'tinh-cam': 'Tình cảm', 'su-nghiep': 'Sự nghiệp', 'tai-chinh': 'Tài chính', 'gia-dao': 'Gia đạo', 'van-10-nam': 'Vận 10 năm', 'van-nam-2027': 'Vận năm 2027' };
 
 /** Nội dung trả phí chỉ đến từ GET /api/luan-giai (máy chủ kiểm quyền); không nằm trong mã gửi xuống trình duyệt. */
-function BaiLuan({ laSoId, chuDe }: { laSoId: number; chuDe: string }) {
-  const [bai, setBai] = useState<BaiLuanGiai | 'loi' | null>(null);
-  useEffect(() => {
-    let huy = false;
-    setBai(null);
-    fetch(`/api/luan-giai?laSo=${laSoId}&chuDe=${chuDe}`, { cache: 'no-store' })
-      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
-      .then((b: BaiLuanGiai) => { if (!huy) setBai(b); })
-      .catch(() => { if (!huy) setBai('loi'); });
-    return () => { huy = true; };
-  }, [laSoId, chuDe]);
+function BaiLuan({ laSoId, chuDe, maDon, goi }: { laSoId: number; chuDe: string; maDon: number | null; goi?: string }) {
+  const { kq: bai, taiLai } = useTai<BaiLuanGiai>(`/api/luan-giai?laSo=${laSoId}&chuDe=${chuDe}`);
   if (!bai) return <p className="dang-tai" role="status">Đang tải…</p>;
-  if (bai === 'loi') return <p role="alert">Chưa tải được phần này. Bạn thử lại sau ít phút nhé.</p>;
-  if (!bai.muc.length) return <p className="khoi-buoc">Phần này chưa có nội dung cho lá số của bạn.</p>;
+  if (bai === 'loi') return <LoiNoiDung ma="E08" maDon={maDon} goi={goi} taiLai={taiLai} />;
+  if (bai === 'chua-mo') return <LoiNoiDung ma="E07" maDon={maDon} goi={goi} taiLai={taiLai} />;
+  if (!bai.muc.length) return <LoiNoiDung ma="E07" maDon={maDon} goi={goi} taiLai={taiLai} />;
   return (
     <div className="bai-luan">
       {bai.muc.map((m) => (
@@ -47,19 +68,10 @@ function BaiLuan({ laSoId, chuDe }: { laSoId: number; chuDe: string }) {
 }
 
 /** Vận năm: máy chủ quyết định đã mua hay chưa (bài đầy đủ hoặc bản xem trước), giao diện chỉ hiển thị. */
-function VanNam({ laSoId }: { laSoId: number }) {
-  const [kq, setKq] = useState<{ daMua: true; bai: BaiVanNam } | { daMua: false; xemTruoc: XemTruocVanNam } | 'loi' | null>(null);
-  useEffect(() => {
-    let huy = false;
-    setKq(null);
-    fetch(`/api/luan-giai?laSo=${laSoId}&chuDe=van-nam-2027`, { cache: 'no-store' })
-      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
-      .then((b) => { if (!huy) setKq(b); })
-      .catch(() => { if (!huy) setKq('loi'); });
-    return () => { huy = true; };
-  }, [laSoId]);
+function VanNam({ laSoId, maDon }: { laSoId: number; maDon: number | null }) {
+  const { kq, taiLai } = useTai<{ daMua: true; bai: BaiVanNam } | { daMua: false; xemTruoc: XemTruocVanNam }>(`/api/luan-giai?laSo=${laSoId}&chuDe=van-nam-2027`);
   if (!kq) return <p className="dang-tai" role="status">Đang tải…</p>;
-  if (kq === 'loi') return <p role="alert">Chưa tải được phần này. Bạn thử lại sau ít phút nhé.</p>;
+  if (kq === 'loi' || kq === 'chua-mo') return <LoiNoiDung ma="E08" maDon={maDon} goi="van-nam-2027" taiLai={taiLai} />;
   if (kq.daMua) return <VanNamBai bai={kq.bai} />;
   return (
     <div className="khu-van-nam">
@@ -70,7 +82,7 @@ function VanNam({ laSoId }: { laSoId: number }) {
 }
 
 interface LaSoMay { id: number; tenGoi: string | null; thongTinSinh: ThongTinSinh }
-interface Toi { dangNhap: boolean; quyen?: QuyenGiaoDien[]; laSoIds?: number[] }
+interface Toi { dangNhap: boolean; quyen?: QuyenGiaoDien[]; laSoIds?: number[]; donGanNhat?: number | null }
 
 async function layJson<T>(duong: string, body?: unknown): Promise<T> {
   const r = await fetch(duong, body === undefined ? { cache: 'no-store' } : { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
@@ -115,7 +127,6 @@ export default function LuanGiai() {
   const [dsLaSo, setDsLaSo] = useState<LaSoMay[]>([]);
   const [laSoId, setLaSoId] = useState<number | null>(null);
   const [chon, setChon] = useState<string | null>(null);
-  const [daBao, setDaBao] = useState(false);
   const [lanTai, setLanTai] = useState(0);
   useEffect(() => {
     let huy = false;
@@ -133,6 +144,7 @@ export default function LuanGiai() {
     return () => { huy = true; };
   }, [lanTai]);
 
+  const maDonGanNhat = toi && toi !== 'loi' ? toi.donGanNhat ?? null : null;
   const laSoChon = dsLaSo.find((l) => l.id === laSoId) ?? null;
   const quyen = toi && toi !== 'loi' && laSoId !== null ? tongHopQuyen(toi.quyen ?? [], laSoId, dsLaSo.map((l) => l.id)) : null;
   const dsChuDe = quyen?.dsChuDe ?? [];
@@ -154,7 +166,7 @@ export default function LuanGiai() {
         {dsLaSo.length > 1 && <ChonLaSo ds={dsLaSo} id={laSoId} doi={(id) => { setLaSoId(id); setChon(null); }} />}
         {laSoId !== null && <KhungMoiMo laSoId={laSoId} />}
         <NutGopY />
-        {laSoId !== null && <VanNam laSoId={laSoId} />}
+        {laSoId !== null && <VanNam laSoId={laSoId} maDon={maDonGanNhat} />}
         <Link href={dsLaSo.length ? '/chon-goi' : '/'} className="nut-chinh nut-lien-ket">{dsLaSo.length ? 'Chọn gói luận giải' : 'Lập lá số miễn phí'}</Link>
       </section>
     );
@@ -173,7 +185,7 @@ export default function LuanGiai() {
               ))}
             </div>
           )}
-          {chonHopLe === 'van-nam-2027' ? <VanNam laSoId={laSoId} /> : <BaiLuan laSoId={laSoId} chuDe={chonHopLe} />}
+          {chonHopLe === 'van-nam-2027' ? <VanNam laSoId={laSoId} maDon={maDonGanNhat} /> : <BaiLuan laSoId={laSoId} chuDe={chonHopLe} maDon={maDonGanNhat} goi={goi.ma} />}
         </>
       ) : (
         <p className="khoi-buoc">Chưa tìm thấy lá số đã lưu cho gói này.</p>
@@ -181,13 +193,9 @@ export default function LuanGiai() {
       {laSoVe && <TomTatMienPhi laSo={laSoVe} choMua={false} />}
       <NutGopY />
       <div className="bao-loi">
-        {daBao ? (
-          <p role="status">Đã ghi nhận. Bản thử chưa thu tiền nên chưa có bước hoàn tiền; khi bán chính thức, lỗi kỹ thuật sẽ được hoàn 100%.</p>
-        ) : (
-          <button type="button" className="nut-phu" onClick={() => { guiSuKien('bao_loi', { goi: goi.ma }); setDaBao(true); }}>
-            Không xem được đủ phần đã mua? Báo lỗi
-          </button>
-        )}
+        <a className="nut-phu nut-lien-ket" href={linkBaoLoi({ maDon: maDonGanNhat ? maDonHienThi(maDonGanNhat) : undefined, goi: goi.ma })} onClick={() => guiSuKien('bao_loi', { goi: goi.ma })}>
+          Không xem được đủ phần đã mua? Báo lỗi
+        </a>
       </div>
     </section>
   );
