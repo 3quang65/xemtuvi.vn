@@ -31,3 +31,6 @@ Repo công khai: không ghi thông tin cá nhân, tài chính, mật khẩu, kh�
 - `npm ci` chỉ chạy khi `package-lock.json` đổi, vì nó xóa `node_modules` đang dùng.
 - Nghiệm thu: lúc triển khai, `curl` lặp trang chủ + một chunk `/_next/static/...` mỗi 2 giây, không có 4xx/5xx.
 
+
+## Ra mắt: đọc như khách (QUY-CHE mục 0)
+- Trước mỗi lần ra tính năng/gói: Phúc và Thư chạy "đọc như khách" trên điện thoại (iPhone 390px, 4G giả lập) theo `docs/san-pham/doc-nhu-khach.md`, lưu phiếu và ảnh vào `docs/san-pham/`. Chưa chạy hoặc còn lỗi chặn (lỗi chặn luồng, bài dưới ngưỡng, câu gây sợ/ép mua, tải > 3 giây) thì không ra mắt.
