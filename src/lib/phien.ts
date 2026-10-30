@@ -5,6 +5,7 @@ import { lapLaSo, type LaSo, type ThongTinSinh } from '@/lib/tuvi';
 const K_SINH = 'xtv.sinh';
 const K_PHIEN = 'xtv.phien';
 const K_NGUON = 'xtv.nguon';
+const K_Y_DINH = 'xtv.y-dinh';
 
 const kho = (loai: 'session' | 'local') => (typeof window === 'undefined' ? null : loai === 'session' ? window.sessionStorage : window.localStorage);
 
@@ -24,6 +25,10 @@ export function laSoDaLuu(): LaSo | null {
   if (!t) return null;
   try { return lapLaSo(t); } catch { return null; }
 }
+
+/** Ý định từ trang đích (ví dụ 'van-nam-2027'): màn chọn gói đưa khu đó lên đầu. */
+export const luuYDinh = (v: string) => ghi('session', K_Y_DINH, v);
+export const docYDinh = () => doc<string>('session', K_Y_DINH);
 
 export type NhaCungCap = 'google' | 'zalo';
 

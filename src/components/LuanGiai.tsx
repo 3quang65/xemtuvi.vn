@@ -5,11 +5,12 @@ import { useEffect, useMemo, useState } from 'react';
 import { layGoi } from '@/lib/goi';
 import { guiSuKien } from '@/lib/phien';
 import { lapLaSo, type LaSo, type ThongTinSinh } from '@/lib/tuvi';
-import { laSoMacDinh, tongHopQuyen, type QuyenGiaoDien } from '@/lib/quyen-xem';
+import { coVanNam, laSoMacDinh, tongHopQuyen, type QuyenGiaoDien } from '@/lib/quyen-xem';
 import type { LuanGiai as BaiLuanGiai } from '@/lib/luan-giai/ai';
 import TomTatMienPhi from './TomTatMienPhi';
+import { VanNamNutMua, VanNamXemTruoc } from './VanNamXemTruoc';
 
-const TEN_CHU_DE: Record<string, string> = { 'ban-than': 'Bản thân', 'tinh-cam': 'Tình cảm', 'su-nghiep': 'Sự nghiệp', 'tai-chinh': 'Tài chính', 'gia-dao': 'Gia đạo', 'van-10-nam': 'Vận 10 năm' };
+const TEN_CHU_DE: Record<string, string> = { 'ban-than': 'Bản thân', 'tinh-cam': 'Tình cảm', 'su-nghiep': 'Sự nghiệp', 'tai-chinh': 'Tài chính', 'gia-dao': 'Gia đạo', 'van-10-nam': 'Vận 10 năm', 'van-nam-2027': 'Vận năm 2027' };
 
 /** Nội dung trả phí chỉ đến từ GET /api/luan-giai (máy chủ kiểm quyền); không nằm trong mã gửi xuống trình duyệt. */
 function BaiLuan({ laSoId, chuDe }: { laSoId: number; chuDe: string }) {
@@ -37,6 +38,16 @@ function BaiLuan({ laSoId, chuDe }: { laSoId: number; chuDe: string }) {
         </section>
       ))}
       <p><small>{bai.ghiChu}</small></p>
+    </div>
+  );
+}
+
+/** Chuyên đề chưa mua: bản xem trước + phần khóa mờ + nút mua (không tải nội dung trả phí). */
+function VanNamKhoa({ laSoId }: { laSoId: number }) {
+  return (
+    <div className="khu-van-nam">
+      <VanNamXemTruoc />
+      <VanNamNutMua laSoId={laSoId} />
     </div>
   );
 }
@@ -108,7 +119,9 @@ export default function LuanGiai() {
   const laSoChon = dsLaSo.find((l) => l.id === laSoId) ?? null;
   const quyen = toi && toi !== 'loi' && laSoId !== null ? tongHopQuyen(toi.quyen ?? [], laSoId, dsLaSo.map((l) => l.id)) : null;
   const dsChuDe = quyen?.dsChuDe ?? [];
-  const chonHopLe = chon && dsChuDe.includes(chon) ? chon : dsChuDe[0] ?? null;
+  const daMuaVanNam = !!toi && toi !== 'loi' && laSoId !== null && coVanNam(toi.quyen ?? [], laSoId, dsLaSo.map((l) => l.id));
+  const dsTab = daMuaVanNam || laSoId === null ? dsChuDe : [...dsChuDe, 'van-nam-2027']; // chưa mua vẫn hiện tab, bên trong là bản khóa
+  const chonHopLe = chon && dsTab.includes(chon) ? chon : dsTab[0] ?? null;
   const laSoVe = useMemo<LaSo | null>(() => { try { return laSoChon ? lapLaSo(laSoChon.thongTinSinh) : null; } catch { return null; } }, [laSoChon]);
 
   if (toi === null) return <p className="dang-tai" role="status">Đang tải…</p>;
@@ -122,6 +135,7 @@ export default function LuanGiai() {
         <h1>Luận giải chuyên sâu</h1>
         <p>{dsLaSo.length ? 'Lá số này chưa mở gói nào.' : 'Tài khoản này chưa có lá số hay gói nào.'}</p>
         {dsLaSo.length > 1 && <ChonLaSo ds={dsLaSo} id={laSoId} doi={(id) => { setLaSoId(id); setChon(null); }} />}
+        {laSoId !== null && <VanNamKhoa laSoId={laSoId} />}
         <Link href={dsLaSo.length ? '/chon-goi' : '/'} className="nut-chinh nut-lien-ket">{dsLaSo.length ? 'Chọn gói luận giải' : 'Lập lá số miễn phí'}</Link>
       </section>
     );
@@ -133,14 +147,14 @@ export default function LuanGiai() {
       {dsLaSo.length > 1 && <ChonLaSo ds={dsLaSo} id={laSoId} doi={(id) => { setLaSoId(id); setChon(null); }} />}
       {chonHopLe ? (
         <>
-          {dsChuDe.length > 1 && (
+          {dsTab.length > 1 && (
             <div role="tablist" aria-label="Chuyên đề">
-              {dsChuDe.map((c) => (
+              {dsTab.map((c) => (
                 <button key={c} type="button" role="tab" aria-selected={c === chonHopLe} className={c === chonHopLe ? 'nut-chinh' : 'nut-phu'} onClick={() => setChon(c)}>{TEN_CHU_DE[c] ?? c}</button>
               ))}
             </div>
           )}
-          <BaiLuan laSoId={laSoId} chuDe={chonHopLe} />
+          {chonHopLe === 'van-nam-2027' && !daMuaVanNam ? <VanNamKhoa laSoId={laSoId} /> : <BaiLuan laSoId={laSoId} chuDe={chonHopLe} />}
         </>
       ) : (
         <p className="khoi-buoc">Chưa tìm thấy lá số đã lưu cho gói này.</p>

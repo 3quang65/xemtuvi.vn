@@ -20,13 +20,15 @@ export default function ThanhToan() {
   const chuDe = layChuDe(tham.get('chuDe'));
   const hopLe = !!goi && (goi.ma !== 'mot-chu-de' || !!chuDe); // gói chủ đề bắt buộc có chủ đề
   const suKien = { goi: goi?.ma, chuDe: goi?.ma === 'mot-chu-de' ? chuDe?.ma : undefined };
-  const laSo = useLaSoDaLuu();
+  const laSoMay = Number(tham.get('laSo')) || null; // mua cho lá số đã lưu trên máy chủ (từ /luan-giai), không cần sessionStorage
+  const laSoTam = useLaSoDaLuu(!laSoMay);
+  const laSo = laSoMay ? true : laSoTam;
   const [email, setEmail] = useState<string | null>(null); // tài khoản đang đăng nhập (từ máy chủ)
   const [nhap, setNhap] = useState('');
   const [bao, setBao] = useState('');
   const [dangXuLy, setDangXuLy] = useState(false);
 
-  useEffect(() => { if (laSo && !hopLe) router.replace('/chon-goi'); }, [laSo, hopLe, router]);
+  useEffect(() => { if (laSo && !hopLe) router.replace(laSoMay ? '/luan-giai' : '/chon-goi'); }, [laSo, hopLe, router, laSoMay]);
   useEffect(() => { if (laSo && hopLe) { guiSuKien('vao_thanh_toan', suKien); goiApi<{ dangNhap: boolean; email?: string }>('/api/toi').then((t) => setEmail(t.dangNhap ? t.email ?? null : null)).catch(() => {}); } }, [laSo, hopLe]); // eslint-disable-line react-hooks/exhaustive-deps
   if (!laSo || !hopLe || !goi) return <p className="dang-tai" role="status">Đang tải…</p>;
 
@@ -40,8 +42,7 @@ export default function ThanhToan() {
   async function thanhToan() {
     setBao(''); setDangXuLy(true);
     try {
-      const sinh = docThongTinSinh();
-      const { id: laSoId } = await goiApi<{ id: number }>('/api/la-so', { thongTinSinh: sinh });
+      const laSoId = laSoMay ?? (await goiApi<{ id: number }>('/api/la-so', { thongTinSinh: docThongTinSinh() })).id;
       const don = await goiApi<{ id: number }>('/api/don-hang', { maGoi: goi!.ma, chuDe: suKien.chuDe, laSoId });
       await goiApi('/api/thanh-toan/gia-lap', { donHangId: don.id });
       guiSuKien('thanh_toan_xong', suKien); router.push('/luan-giai');
@@ -80,7 +81,7 @@ export default function ThanhToan() {
         <button type="button" className="nut-chinh" disabled={!email || dangXuLy} onClick={thanhToan}>Thanh toán (giả lập)</button>
         {bao && <p className="bao-loi-nhap" role="alert">{bao}</p>}
         {!email && <p className="tt-ghi-chu">Chọn tài khoản ở trên để thanh toán.</p>}
-        <p className="ghi-chu-rieng-tu">Khi thanh toán, thông tin sinh của lá số này được lưu (mã hóa) trên máy chủ để bạn xem lại ở máy khác. Trước đó, thông tin chỉ nằm trên trình duyệt của bạn.</p>
+        {!laSoMay && <p className="ghi-chu-rieng-tu">Khi thanh toán, thông tin sinh của lá số này được lưu (mã hóa) trên máy chủ để bạn xem lại ở máy khác. Trước đó, thông tin chỉ nằm trên trình duyệt của bạn.</p>}
         <p className="cam-ket">{HOAN_TIEN}</p>
       </div>
     </section>

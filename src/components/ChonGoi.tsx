@@ -4,8 +4,8 @@ import { useRouter } from 'next/navigation';
 import { useEffect, useId, useMemo, useState } from 'react';
 import type { LaSo } from '@/lib/tuvi';
 import { DOAN_MAU, doanMauCuaLaSo, tachDoanMau } from '@/lib/luan-giai';
-import { CHU_DE, dinhDangGia, GOI, HOAN_TIEN, PHUONG_PHAP, type Goi, type MaChuDe } from '@/lib/goi';
-import { guiSuKien } from '@/lib/phien';
+import { CHU_DE, dinhDangGia, GOI, GOI_VAN_NAM, HOAN_TIEN, PHUONG_PHAP, type Goi, type MaChuDe } from '@/lib/goi';
+import { docYDinh, guiSuKien } from '@/lib/phien';
 import { useLaSoDaLuu } from '@/lib/useLaSoDaLuu';
 
 /** Đoạn mẫu lấy từ chính lá số của khách: câu đầu đọc được, phần sau làm mờ. Không có quy tắc khớp thì dùng ví dụ minh họa. */
@@ -75,22 +75,28 @@ export default function ChonGoi() {
   const router = useRouter();
   const laSo = useLaSoDaLuu();
   useEffect(() => { if (laSo) guiSuKien('vao_chon_goi'); }, [laSo]);
+  const [uuTienVanNam, setUuTien] = useState(false);
+  useEffect(() => { setUuTien(docYDinh() === 'van-nam-2027'); }, []);
   if (!laSo) return <p className="dang-tai" role="status">Đang tải…</p>;
 
+  const chonGoi = (x: Goi, chuDe?: MaChuDe) => {
+    guiSuKien('chon_goi', { goi: x.ma, chuDe });
+    router.push(`/thanh-toan?goi=${x.ma}${chuDe ? `&chuDe=${chuDe}` : ''}`);
+  };
   return (
     <section className="trang-buoc">
       <h1>Chọn gói luận giải</h1>
       <p className="tt-ghi-chu">Luận giải chuyên sâu cho lá số bạn vừa lập. Bản thử: chưa thu tiền thật.</p>
       <DoanKhoa laSo={laSo} />
       <PhuongPhap />
-      <ul className="luoi-goi">
-        {GOI.map((g) => (
-          <TheGoi key={g.ma} g={g} onChon={(x, chuDe) => {
-            guiSuKien('chon_goi', { goi: x.ma, chuDe });
-            router.push(`/thanh-toan?goi=${x.ma}${chuDe ? `&chuDe=${chuDe}` : ''}`);
-          }} />
-        ))}
-      </ul>
+      <div className="khu-chon-goi">
+        <section className="khu-van-nam" id="van-nam-2027" aria-labelledby="tieu-de-van-nam" style={uuTienVanNam ? { order: -1 } : undefined}>
+          <h2 id="tieu-de-van-nam">Vận năm 2027 (Đinh Mùi)</h2>
+          <p className="tt-ghi-chu">Luận riêng năm 2027 cho lá số này. Mua lẻ hoặc gộp với Trọn lá số.</p>
+          <ul className="luoi-goi">{GOI_VAN_NAM.map((g) => <TheGoi key={g.ma} g={g} onChon={chonGoi} />)}</ul>
+        </section>
+        <ul className="luoi-goi">{GOI.map((g) => <TheGoi key={g.ma} g={g} onChon={chonGoi} />)}</ul>
+      </div>
       <p className="cam-ket">{HOAN_TIEN}</p>
     </section>
   );
