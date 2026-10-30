@@ -18,6 +18,8 @@ function hoaTheoCan(ls, can) {
   for (let n = 2020; n < 2030; n++) { const l = E.anLuuNien(ls, n); if (l.canChi.split(' ')[0] === can) return l.luuTuHoa; }
   return [];
 }
+module.exports = { MAU };
+if (require.main === module) {
 const out = ['# Dữ liệu đại vận 10 lá số mẫu (năm xem ' + namXem + ')', '',
   'Sinh bởi `node tools/du-lieu-dai-van.cjs ' + namXem + '`. Giờ địa phương Việt Nam. Cung vận = cung có tuổi mụ nằm trong khoảng đại vận.', ''];
 for (const [ma, ngay, thang, nam, gio, phut, gioiTinh] of MAU) {
@@ -43,3 +45,4 @@ for (const [ma, ngay, thang, nam, gio, phut, gioiTinh] of MAU) {
     '');
 }
 console.log(out.join('\n'));
+}
