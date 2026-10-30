@@ -51,7 +51,8 @@ DU_LIEU.forEach((khoi, i) => {
     assert.ok(theoPhan('tieu-han').some((x) => /^NAM-TH-01-/.test(x.thamChieu.quyTacId)));
     // lưu tứ hóa can Đinh: đoạn tu-hoa nào nêu hóa của năm đều đúng cung engine
     const tuHoa = theoPhan('tu-hoa');
-    assert.ok(tuHoa.length >= 1, 'có đoạn tu-hoa');
+    // Từ việc L-7c8b01: đoạn thiếu (a)/(d) bị giữ lại (khung-doan-tra-phi.md, quy tắc 4 cuối tài liệu), nên không đòi mọi phần đều có đoạn.
+    const cho = await VN.doanChoVanNam(ls);
     for (const x of tuHoa.filter((d) => d.thamChieu.sao.length === 1 && /^NAM-HOA-(LOC|QUYEN|KHOA|KY)-/.test(d.thamChieu.quyTacId))) {
       const h = luuHoa.find((y) => y.sao === x.thamChieu.sao[0]);
       assert.ok(h, `${x.thamChieu.sao[0]} phải là sao lưu hóa Đinh`);
@@ -61,7 +62,7 @@ DU_LIEU.forEach((khoi, i) => {
     // Hóa Kỵ của năm (Cự Môn) và Hóa Khoa (Thiên Cơ) có đoạn riêng khi sao sáng/hãm đủ bộ; ít nhất mỗi lưu hóa có thể truy ra cung
     for (const h of luuHoa) {
       const co = tq.filter((x) => x.thamChieu.cung === h.cung);
-      assert.ok(co.length, `cung ${h.cung} (${h.hoa}) có mặt trong tổng quan`);
+      assert.ok(co.length || cho.some((c) => c.cung === h.cung), `cung ${h.cung} (${h.hoa}) có mặt trong tổng quan hoặc nằm trong danh sách chờ`);
     }
     // Khớp từng dữ kiện của bài mẫu: tháng đúng cung đại vận/tiểu hạn
     assert.equal(bai.thang.length, 12);
@@ -85,7 +86,8 @@ test('Khung bài: đầu bài, tổng quan đủ 5 phần + tóm lại, 4 mảng
   assert.deepEqual([...new Set(phan)], thuTu.filter((p) => phan.includes(p)));
   for (const p of ['boi-canh', 'thai-tue', 'tieu-han', 'tu-hoa', 'tom-lai']) assert.ok(phan.includes(p), 'thiếu phần ' + p);
   assert.equal(phan.at(-1), 'tom-lai');
-  for (const m of bai.muc.slice(1)) assert.ok(m.nhanDinh.length, `mảng ${m.id} rỗng`);
+  // Đoạn thiếu (a)/(d) bị giữ lại nên một mảng có thể không có đoạn điểm; đoạn nào còn thì có nội dung.
+  for (const m of bai.muc.slice(1)) for (const x of m.nhanDinh) assert.ok(x.text.trim(), `mảng ${m.id} có đoạn rỗng`);
   assert.ok(bai.muc.find((m) => m.id === 'su-nghiep').nhanDinh.some((x) => x.phan === 'nen'), 'Sự nghiệp có nền');
   assert.ok(bai.muc.find((m) => m.id === 'suc-khoe').nhanDinh.some((x) => x.phan === 'goi-y'), 'Sức khỏe có gợi ý');
   assert.equal(bai.thang.length, 12);
@@ -95,7 +97,6 @@ test('Khung bài: đầu bài, tổng quan đủ 5 phần + tóm lại, 4 mảng
   // bộ đổi chữ: không còn từ của đại vận 10 năm
   const het = JSON.stringify(tatCaNd(bai).filter((x) => x.thamChieu.quyTacId.startsWith('VAN-CT-')).map((x) => x.text));
   assert.ok(!/10 năm|giai đoạn|cung vận|tọa vận|vận rèn/.test(het), 'còn chữ của đại vận 10 năm trong đoạn chính tinh');
-  assert.ok(tatCaNd(bai).some((x) => x.thamChieu.quyTacId.startsWith('VAN-CT-')), 'có đoạn chính tinh');
   assert.ok(bai.muc[0].nhanDinh.some((x) => x.phan === 'boi-canh' && /^VAN-CUNG-05/.test(x.thamChieu.quyTacId)), 'bối cảnh đại vận Phu Thê');
   // mọi nhận định có nguồn + trường phái; mã quy tắc có thật
   const ma = new Set(JSON.parse(fs.readFileSync(path.join(__dirname, '../src/lib/luan-giai/ai/quy-tac-van/van-nam-2027.json'), 'utf8')).map((q) => q.id));
@@ -178,7 +179,8 @@ test('25 lá số (giờ Tý muộn, tháng nhuận, trước 1968, miền Nam t
       assert.ok(!/\{(sao|cung)\}|undefined|null|\[object/.test(x.text), `${ten}: còn chỗ trống chưa điền: ${x.text}`);
     }
     for (const t of bai.thang) assert.ok(t.nhanDinh.length >= 1 && t.cung, ten);
-    for (const m of bai.muc) assert.ok(m.nhanDinh.length >= 1, `${ten}: mục ${m.id} rỗng`);
+    // Mảng có thể không còn đoạn nào khi mọi đoạn khớp đều chờ (a)/(d); tổng quan luôn có câu dẫn.
+    assert.ok(bai.muc[0].nhanDinh.length >= 1, `${ten}: tổng quan rỗng`);
     assert.ok(xt.thaiTue.length >= 1 && xt.cungThang.length === 12, ten);
     khongTuCam(bai);
     khongTuCam(xt);

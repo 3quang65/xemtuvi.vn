@@ -25,6 +25,10 @@ const khongTuCam = (v, ten = '') => {
 };
 const tatCaNd = (b) => [...b.dauBai.nhanDinh, ...b.muc.flatMap((m) => m.nhanDinh), ...b.thang.flatMap((t) => t.nhanDinh)];
 const tuHoaIds = (b) => b.muc[0].nhanDinh.filter((n) => n.phan === 'tu-hoa').map((n) => n.thamChieu.quyTacId);
+// Từ việc L-7c8b01 (khung-doan-tra-phi.md, quy tắc 4 cuối tài liệu): đoạn thiếu (a)/(d) không ra bản trả phí mà vào danh sách chờ
+// (doanChoVanNam). Các test dưới đây kiểm BỘ KHỚP chọn đúng quy tắc, nên gộp đoạn có trong bài với đoạn đang chờ.
+const choIds = async (ls) => (await VN.doanChoVanNam(ls)).map((c) => c.quyTacId);
+const tuHoaKhop = async (ls, bai) => [...new Set([...tuHoaIds(bai), ...(await choIds(ls)).filter((id) => /^NAM-HOA-/.test(id))])];
 
 // ---------------------------------------------------------------- 41 lá số
 const D = (ngay, thang, nam, gio, gioiTinh, extra = {}) => ({ lich: 'duong', ngay, thang, nam, gio, phut: 0, gioiTinh, ...extra });
@@ -65,12 +69,12 @@ test('lá số: can năm sinh đúng nhãn, không ném lỗi, không đoạn r�
     const xt = VN.xemTruocVanNam(ls);
     assert.equal(bai.thang.length, 12, ten);
     assert.equal(bai.muc.length, 5, ten);
-    assert.ok(tuHoaIds(bai).length >= 1, ten + ': thiếu đoạn tu-hoa');
+    assert.ok((await tuHoaKhop(ls, bai)).length >= 1, ten + ': thiếu đoạn tu-hoa');
     for (const n of tatCaNd(bai)) {
       assert.ok(n.text && n.text.trim().length >= 30, `${ten}: đoạn rỗng/ngắn ${n.thamChieu.quyTacId}`);
       assert.ok(!/\{(sao|cung)\}|undefined|null|\[object/.test(n.text), `${ten}: còn chỗ trống ${n.thamChieu.quyTacId}`);
     }
-    for (const m of bai.muc) assert.ok(m.nhanDinh.length >= 1, `${ten}: mục ${m.id} rỗng`);
+    assert.ok(bai.muc[0].nhanDinh.length >= 1, `${ten}: tổng quan rỗng`); // mảng có thể không còn đoạn khi chờ (a)/(d)
     for (const t of bai.thang) assert.ok(t.nhanDinh.length >= 1 && t.cung, ten);
     khongTuCam(bai, ten);
     khongTuCam(xt, ten);
@@ -101,7 +105,8 @@ DU_LIEU.forEach((khoi, i) => {
     // lưu tứ hóa của lá số đúng cung ghi trong du-lieu.md
     const luuHoa = [...khoi.match(/Lưu tứ hóa \(Đinh\): (.*)/)[1].matchAll(/(Hóa \S+) (.+?) \([MVĐBH]\) → ([^(;]+?) \(/g)].map((m) => ({ sao: m[2], cung: m[3] }));
     assert.equal(luuHoa.length, 4);
-    for (const h of luuHoa) assert.ok(tq.some((n) => n.thamChieu.cung === h.cung), `cung ${h.cung} có mặt`);
+    const cho = await VN.doanChoVanNam(lapLaSo(input));
+    for (const h of luuHoa) assert.ok(tq.some((n) => n.thamChieu.cung === h.cung) || cho.some((c) => c.cung === h.cung), `cung ${h.cung} có mặt (trong bài hoặc danh sách chờ)`);
     khongTuCam(bai, ma);
   });
 });
@@ -178,7 +183,8 @@ const HOA08_DINH = ['NAM-HOA-08-KY-KY', 'NAM-HOA-08-LOC-LOC', 'NAM-HOA-08-QUYEN-
 
 test('canNamSinh: không lá số nào nhận đoạn NAM-HOA-08 của can khác; Ất và Canh không nhận cả hai đoạn Thái Âm Kỵ', async () => {
   for (const [i, [can, sinh]] of LA_SO.entries()) {
-    const ids = tuHoaIds(await VN.sinhVanNam(lapLaSo(sinh), { boQuaCache: true })).filter((id) => /^NAM-HOA-08/.test(id));
+    const ls = lapLaSo(sinh);
+    const ids = (await tuHoaKhop(ls, await VN.sinhVanNam(ls, { boQuaCache: true }))).filter((id) => /^NAM-HOA-08/.test(id));
     const duoc = can === 'Đinh' ? HOA08_DINH : HOA08[can] ? [HOA08[can]] : [];
     for (const id of ids) assert.ok(duoc.includes(id), `#${i + 1} tuổi ${can} nhận nhầm ${id}`);
     assert.ok(!(ids.includes('NAM-HOA-08-KY-LOC') && ids.includes('NAM-HOA-08-KY-LOC-CANH')), `#${i + 1}: nhận cả hai đoạn Ất và Canh`);
@@ -191,7 +197,8 @@ test('canNamSinh: không lá số nào nhận đoạn NAM-HOA-08 của can khác
 test('tuổi Ất/Canh/Tân/Đinh nhận đúng đoạn NAM-HOA-08 riêng trong bài', async () => {
   for (const [i, [can, sinh]] of LA_SO.entries()) {
     if (!['Ất', 'Canh', 'Tân', 'Đinh'].includes(can)) continue;
-    const ids = tuHoaIds(await VN.sinhVanNam(lapLaSo(sinh), { boQuaCache: true })).filter((id) => /^NAM-HOA-08/.test(id));
+    const ls = lapLaSo(sinh);
+    const ids = (await tuHoaKhop(ls, await VN.sinhVanNam(ls, { boQuaCache: true }))).filter((id) => /^NAM-HOA-08/.test(id));
     const can2 = can === 'Đinh' ? HOA08_DINH : [HOA08[can]];
     assert.deepEqual(ids.sort(), [...can2].sort(), `#${i + 1} tuổi ${can}`);
   }
@@ -200,7 +207,8 @@ test('tuổi Ất/Canh/Tân/Đinh nhận đúng đoạn NAM-HOA-08 riêng trong 
 test('canNamSinh: NAM-LUU-07 (Kình/Đà tuổi Đinh–Kỷ) chỉ xuất hiện ở tuổi Đinh và Kỷ, và xuất hiện ở cả hai', async () => {
   const thay = new Set();
   for (const [i, [can, sinh]] of LA_SO.entries()) {
-    const ids = (await VN.sinhVanNam(lapLaSo(sinh), { boQuaCache: true })).muc[0].nhanDinh.map((n) => n.thamChieu.quyTacId);
+    const ls = lapLaSo(sinh);
+    const ids = [...(await VN.sinhVanNam(ls, { boQuaCache: true })).muc[0].nhanDinh.map((n) => n.thamChieu.quyTacId), ...(await choIds(ls))];
     const co = ids.some((id) => /^NAM-LUU-07/.test(id));
     if (co) thay.add(can);
     if (!['Đinh', 'Kỷ'].includes(can)) assert.ok(!co, `#${i + 1} tuổi ${can} nhận NAM-LUU-07`);
