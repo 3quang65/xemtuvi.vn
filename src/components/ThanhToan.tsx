@@ -2,7 +2,7 @@
 
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
-import { dinhDangGia, HOAN_TIEN, layChuDe, type Goi } from '@/lib/goi';
+import { CONG_BO_GIA, giaHienThi, HOAN_TIEN, layChuDe, type Goi } from '@/lib/goi';
 import { useGia } from '@/lib/useGia';
 import { docThongTinSinh, guiSuKien, type NhaCungCap } from '@/lib/phien';
 import { useLaSoDaLuu } from '@/lib/useLaSoDaLuu';
@@ -121,8 +121,8 @@ export default function ThanhToan() {
           <div><dt>Gói</dt><dd>{goi.ten}</dd></div>
           {chuDe && goi.ma === 'mot-chu-de' && <div><dt>Chủ đề</dt><dd>{chuDe.ten}</dd></div>}
           <div><dt>Thời hạn</dt><dd>{goi.donVi}</dd></div>
-          {tru > 0 && <div><dt>Đã trừ</dt><dd>{dinhDangGia(tru)}</dd></div>}
-          <div><dt>Tổng</dt><dd><strong>{dinhDangGia(goi.gia - tru)}</strong></dd></div>
+          {CONG_BO_GIA && tru > 0 && <div><dt>Đã trừ</dt><dd>{giaHienThi(tru)}</dd></div>}
+          <div><dt>Tổng</dt><dd><strong>{giaHienThi(goi.gia - tru)}</strong></dd></div>
         </dl>
         {loiTT ? (
           <ThongBaoLoi ma="E05" nut={{ 'thu-lai': thanhToan, 'gui-bao-loi': linkBaoLoi({ goi: goi.ma, maDon: donId ? maDonHienThi(donId) : undefined, tinhHuong: 'E05' }) }} />
@@ -135,7 +135,7 @@ export default function ThanhToan() {
         {bao && <p className="bao-loi-nhap" role="alert">{bao}</p>}
         {!email && <p className="tt-ghi-chu">Chọn tài khoản ở trên để thanh toán.</p>}
         {!laSoMay && <p className="ghi-chu-rieng-tu">Khi thanh toán, thông tin sinh của lá số này được lưu (mã hóa) trên máy chủ để bạn xem lại ở máy khác. Trước đó, thông tin chỉ nằm trên trình duyệt của bạn.</p>}
-        <p className="cam-ket">{HOAN_TIEN}</p>
+        {CONG_BO_GIA && <p className="cam-ket">{HOAN_TIEN}</p>}
       </div>
     </section>
   );

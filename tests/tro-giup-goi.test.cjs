@@ -34,3 +34,9 @@ test('máy chủ từ chối tạo đơn gói ẩn; MO_GOI_AN=1 (test nâng gói
   process.env.MO_GOI_AN = '1';
   try { assert.equal(dv.taoDon(db, nd, { maGoi: 'thanh-vien-nam' }).maGoi, 'thanh-vien-nam'); } finally { delete process.env.MO_GOI_AN; }
 });
+
+test('giaHienThi (/chon-goi, /thanh-toan): cờ tắt hiện chữ trung tính, không số; cờ bật hiện giá đúng (L-1964d2)', () => {
+  assert.equal(goi.giaHienThi(99000), goi.CHU_CHUA_CONG_BO);
+  assert.doesNotMatch(goi.giaHienThi(29000), /\d/);
+  assert.equal(goi.giaHienThi(99000, true), goi.dinhDangGia(99000));
+});

@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 import { useEffect, useId, useMemo, useState } from 'react';
 import type { LaSo } from '@/lib/tuvi';
 import { DOAN_MAU, doanMauCuaLaSo, tachDoanMau } from '@/lib/luan-giai';
-import { CHU_DE, dinhDangGia, GHI_CHU_AI, HOAN_TIEN, PHUONG_PHAP, type Goi, type MaChuDe } from '@/lib/goi';
+import { CHU_DE, CONG_BO_GIA, giaHienThi, GHI_CHU_AI, HOAN_TIEN, PHUONG_PHAP, type Goi, type MaChuDe } from '@/lib/goi';
 import { docYDinh, guiSuKien } from '@/lib/phien';
 import { useGia } from '@/lib/useGia';
 import { useLaSoDaLuu } from '@/lib/useLaSoDaLuu';
@@ -48,8 +48,8 @@ function TheGoi({ g, onChon }: { g: Goi; onChon: (g: Goi, chuDe?: MaChuDe) => vo
     <li className={`the-goi ${g.chinh ? 'noi-bat' : ''}`}>
       {g.nhan && <span className="nhan-chinh">{g.nhan}</span>}
       <h3>{g.ten}</h3>
-      <p className="gia"><strong>{dinhDangGia(g.gia)}</strong> <span>/ {g.donVi}</span></p>
-      {g.soSanh && <p className="so-sanh">{g.soSanh.join(' · ')}</p>}
+      <p className="gia">{CONG_BO_GIA ? <><strong>{giaHienThi(g.gia)}</strong> <span>/ {g.donVi}</span></> : <span>{giaHienThi(g.gia)}</span>}</p>
+      {CONG_BO_GIA && g.soSanh && <p className="so-sanh">{g.soSanh.join(' · ')}</p>}
       <ul className="quyen-loi">{g.quyenLoi.map((q) => <li key={q}>{q}</li>)}</ul>
       {canChuDe && (
         <fieldset className="chon-chu-de">
@@ -102,7 +102,7 @@ export default function ChonGoi() {
         <ul className="luoi-goi">{gia.goi.map((g) => <TheGoi key={g.ma} g={g} onChon={chonGoi} />)}</ul>
       </div>
       <p className="tt-ghi-chu">{GHI_CHU_AI}</p>
-      <p className="cam-ket">{HOAN_TIEN}</p>
+      {CONG_BO_GIA && <p className="cam-ket">{HOAN_TIEN}</p>}
       <p className="tt-ghi-chu"><a href="/tro-giup">Trợ giúp</a></p>
     </section>
   );

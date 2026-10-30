@@ -21,10 +21,14 @@ export const dinhDangGia = (d: number) => d.toLocaleString('vi-VN') + 'đ';
 const GIA_TRON_LA_SO = 99000;
 
 /**
- * Cờ công bố giá ra các chỗ chữ (trang /tro-giup, tin xác nhận đơn). TẮT cho đến khi anh Cường duyệt giá.
- * Màn chọn gói và thanh toán luôn hiện giá thật (khách cần biết số tiền khi mua); cờ này chỉ chặn các chỗ nhắc giá bằng lời.
+ * Cờ công bố giá: /tro-giup, tin xác nhận đơn, /chon-goi, /thanh-toan. TẮT cho đến khi anh Cường duyệt giá (L-1964d2):
+ * chỗ giá hiện CHU_CHUA_CONG_BO, ẩn so sánh giá và câu hoàn tiền. Luồng mua giả lập vẫn chạy (máy chủ vẫn tính giá thật).
  */
 export const CONG_BO_GIA = false;
+export const CHU_CHUA_CONG_BO = 'Sẽ công bố khi ra mắt';
+
+/** Số tiền để hiện trên màn chọn gói/thanh toán: cờ tắt thì chữ trung tính. */
+export const giaHienThi = (d: number, cong: boolean = CONG_BO_GIA) => (cong ? dinhDangGia(d) : CHU_CHUA_CONG_BO);
 
 /** Trần số tiền trừ khi nâng lên Thành viên năm (bằng giá Trọn lá số, vì gói năm đã gồm Trọn lá số). */
 export const TRAN_TRU_NANG_GOI = GIA_TRON_LA_SO;
