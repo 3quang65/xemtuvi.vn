@@ -8,6 +8,8 @@
 
 ## Kết luận
 
+> **Cập nhật (duyệt lại lần 2, commit sửa e57f750):** cả 3 lỗi chặn và 3 lỗi nhẹ đã sửa. **Bộ 10 bản ĐẠT để thu tiền**, TB 9,0/10. Chi tiết ở mục 7.
+
 **Đạt ngưỡng điểm, nhưng CHƯA ĐẠT để thu tiền** cho tới khi Hạnh sửa **3 lỗi chặn** ở DV06 (2 lỗi) và DV09 (1 lỗi). Điểm TB chung **8,8/10** (Đúng 8,2 · Sâu 8,0 · Giọng 9,0 · An toàn 10). Có **8/10 bản đạt ngay**. Tất cả số liệu khớp engine: cung vận, khoảng tuổi, khoảng năm dương lịch, chính tinh, độ sáng, Tứ hóa bản mệnh, ngũ hành tam hợp, vòng Thái Tuế, chặng tuổi (VAN-CUNG-01). Câu Tứ hóa theo can vận chỉ xuất hiện khi đúng điều kiện VAN-HOA-08: kiểm 10/10 bản, có 4 câu, đúng cả 4. Không có từ cấm, không đoán bệnh, tai nạn hay người thân. Sửa xong 3 lỗi chặn thì Thư duyệt lại riêng DV06 và DV09, không cần chấm lại cả bộ.
 
 ## 1. Bảng điểm (sau khi Thư sửa câu chữ)
@@ -101,3 +103,52 @@ Từ nặng: 10 bản không còn "khắc tuổi" hay "giai đoạn khó nhất"
 1. **Hạnh (sửa ngay, chặn thu tiền):** sửa lỗi 1, 2, 3. Nên sửa luôn lỗi 4, 5, 6. Nghiệm thu: Thư duyệt lại DV06, DV09, cả hai đạt Đúng ≥ 8.
 2. **Đức (bộ quy tắc):** thêm điều kiện độ sáng hoặc phá cách cho VAN-SP-10 (Hỏa Linh gặp Tham chỉ thành "bứt phá" khi Tham miếu, vượng và không hóa Kỵ, dẫn MENH-CC-06), VAN-PP-16 (sao vận sáng) và VAN-SP-15 (thêm câu cho bản hãm). Ba lỗi 2, 5, 6 bắt nguồn từ việc quy tắc thiếu điều kiện.
 3. **Bảo (công cụ kiểm):** `kiem-dai-van.cjs` thêm hai phép kiểm. (a) Câu có "<sao> … Hóa Kỵ/Lộc/Quyền/Khoa" thì sao đó phải đúng là sao mang hóa theo can năm sinh (bắt được lỗi 1). (b) Bài dùng VAN-CT-TP-01 mà cung vận có Thiên Không, Địa Không, Tuần hoặc Triệt thì báo lỗi (bắt được lỗi 3, 4).
+
+## 7. Duyệt lại lần 2 (30/10/2026, sau commit sửa e57f750 của Hạnh)
+
+Phạm vi: DV02, DV06, DV07, DV08, DV09. Cùng tiêu chí, thang điểm như mục 1. Năm bản còn lại không đổi nội dung, giữ điểm cũ.
+
+### 7.1. Đối chiếu từng lỗi
+
+| # | Bản | Sửa của Hạnh | Đối chiếu dữ liệu và quy tắc | Kết quả |
+|---|---|---|---|---|
+| 1 | DV06 | "Tham Lang mang Hóa Kỵ của lá số gốc ngay tại cung vận: mong muốn dễ dàn ra nhiều hướng, chuyện chi tiêu và tình cảm…" | Can Quý: Hóa Kỵ Tham Lang, nằm ở Quan Lộc Tỵ (du-lieu.md). Nêu đủ lĩnh vực sao bị hóa (CHUNG-HOA-THL-01: "tình cảm và tiền bạc") và cung vận (sự nghiệp), đúng VAN-HOA-05. Ghi rõ lớp "của lá số gốc" (VAN-HOA-10). Liêm Trinh tách riêng, chỉ luận theo độ hãm (VAN-CT-LT-02). | Đã sửa |
+| 2 | DV06 | Bỏ Hỏa Tham khỏi Thuận lợi, chuyển sang Điều cần chú ý: "Tham Lang hãm lại hóa Kỵ nên chưa thành cách Tham Hỏa; nên tránh nóng vội" | Tham Lang (H), Hóa Kỵ (H), Hỏa Tinh (Đ). Khớp MENH-CC-06, CHUNG-CC-07, cùng cách viết với tiền lệ tc01-luan-thu. Mục Tóm lại bỏ "nhiều động lực bứt phá", thay bằng "nhiều chuyển động, có người nâng đỡ" (Thiên Mã, Thiên Việt: VAN-SP-03, SP-07). | Đã sửa |
+| 3 | DV09 | Bỏ VAN-CT-TP-01. Thuận lợi chỉ giữ Hóa Khoa (Thiên Phủ) tại vận. Thêm vào Điều cần chú ý: "Thiên Phủ gặp Thiên Không… của dễ hao, dễ tin nhầm người" | Cung Tử Tức Kỷ Dậu có Thiên Không. Khớp VAN-CT-TP-02. Can Nhâm: Hóa Khoa Thiên Phủ, khớp VAN-HOA-04. Gợi ý thêm "tìm hiểu kỹ đối tác trước khi góp vốn hay cho vay". | Đã sửa |
+| 4 | DV08 | TP-01 chuyển xuống Điều cần chú ý thành câu dung hòa: "vốn là sao kho… nhưng gặp Triệt và Địa Không nên tính kho bị giảm". Liêm Trinh: "chưa đến mức miếu vượng nên lực vừa phải" | Phu Thê Ất Sửu có Triệt, Địa Không (H). Đúng TP-02, CHUNG-TUAN-06. Liêm Trinh (Đ), Thất Sát (Đ): VAN-CT-LT-01 đòi miếu vượng, bài đã hạ lực và dựa thêm VAN-PP-07 (chính tinh đắc ở xung chiếu thì tốt). | Đã sửa |
+| 5 | DV02 | "sách coi là dịp tài chính có thể bứt nhanh, nhưng cả ba sao vận đều hãm nên đi kèm biến động, cần dự phòng" | Tham Lang, Thất Sát, Phá Quân đều (H). Khớp VAN-PP-16 và CHUNG-CC-07. | Đã sửa |
+| 6 | DV02, DV07 | "Tiểu Hao…, Đại Hao…, cả hai đều hãm: hay thay đổi chỗ ở, công việc; nên giữ chặt dòng tiền" | Cả hai bản: Tiểu Hao (H), Đại Hao (H). Khớp VAN-SP-15 (nhánh sao mờ). DV07 có Vũ Khúc ở Mệnh và Thiên Phủ ở tam hợp nên đúng điều kiện. DV02 có Vũ Khúc ở Mệnh gốc. | Đã sửa |
+
+### 7.2. Câu "sát tinh sáng thành sức bật" ở DV02 (Thư đã sửa thẳng)
+
+Câu cũ: "Địa Kiếp đắc địa đi cùng Phá Quân, Kình Dương đắc địa gặp Thất Sát: sát tinh sáng thành sức bật."
+
+- Vế Địa Kiếp: **truy được**. Thiên Di Giáp Thân có Địa Kiếp (Đ) và Phá Quân. VAN-SP-11 ghi ngoại lệ "gặp Phá Quân, hoặc Không Kiếp đắc địa… mưu sự thành nhanh". Ở đây đủ cả hai điều kiện.
+- Vế Kình Dương: **chỉ truy được một nửa**. Kình Dương (Đ) ở Phúc Đức Canh Thìn là sát tinh sáng. VAN-PP-16 cho Mệnh Vũ Tướng sáng (Vũ Khúc V, Thiên Tướng M) hợp với vận có sát tinh sáng, nên ý "sức bật" có nguồn. Riêng cặp "Kình gặp Thất Sát" là sức bật thì chỉ có ở VAN-SP-08. Quy tắc đó đòi tuổi Thìn, Tuất, Sửu, Mùi hoặc Kình gặp Tử Vi, Thiên Phủ, Văn Xương. Tuổi Hợi không đủ điều kiện, mà Thất Sát ở đây lại hãm. Không có quy tắc nào khác cho cặp này.
+- Đã sửa thành: "Địa Kiếp đắc địa đi cùng Phá Quân ở tam hợp: sách coi đây là ngoại lệ của Không Kiếp, mưu sự có thể thành nhanh. Kình Dương ở tam hợp cũng đắc địa, mà Mệnh Vũ Tướng sáng được coi là hợp với sát tinh sáng: đây có thể thành sức bật nếu bạn giữ được nhịp." Mã giữ VAN-SP-11, VAN-PP-16. Bỏ ý "gặp Thất Sát", thêm "có thể" để bỏ giọng khẳng định (VAN-CAM-03).
+
+### 7.3. Bảng điểm cập nhật
+
+| Bản | Đúng | Sâu | Giọng | An toàn | **TB** | Kết quả |
+|---|---|---|---|---|---|---|
+| DV01 | 9 | 8 | 9 | 10 | **9,00** | Đạt (không đổi) |
+| DV02 | 9 | 8 | 9 | 10 | **9,00** | Đạt (8,75 → 9,00) |
+| DV03 | 9 | 9 | 9 | 10 | **9,25** | Đạt (không đổi) |
+| DV04 | 9 | 8 | 9 | 10 | **9,00** | Đạt (không đổi) |
+| DV05 | 9 | 7 | 9 | 10 | **8,75** | Đạt (không đổi) |
+| DV06 | 9 | 8 | 9 | 10 | **9,00** | Đạt, hết chặn (8,25 → 9,00) |
+| DV07 | 9 | 8 | 9 | 10 | **9,00** | Đạt (8,75 → 9,00) |
+| DV08 | 9 | 8 | 9 | 10 | **9,00** | Đạt (8,75 → 9,00) |
+| DV09 | 9 | 9 | 9 | 10 | **9,25** | Đạt, hết chặn (8,50 → 9,25). Sâu +1 vì đã cân hai mặt Khoa và Thiên Không |
+| DV10 | 9 | 8 | 9 | 10 | **9,00** | Đạt (không đổi) |
+| **TB** | **9,0** | **8,1** | **9,0** | **10** | **9,0** | 10/10 đạt |
+
+### 7.4. Kết luận lần 2
+
+**ĐẠT để thu tiền cho cả bộ 10 bản.** Không còn lỗi chặn (sai sao, sai Tứ hóa, sai điều kiện quy tắc). TB 9,0 ≥ 8 và An toàn 10/10 bản. Truy lại các ý đã sửa: 12/12 ý khớp dữ liệu và điều kiện. `node tools/kiem-dai-van.cjs` cho kết quả Đạt 10/10.
+
+Còn lại, không chặn:
+- Thiếu độ sâu như ghi ở mục 2: DV05 thiếu nhân hòa và vế VAN-PP-14, DV03 thiếu Không Kiếp giáp, DV01 thiếu Thiên Đồng và Cơ Cự ở tam hợp, DV06 thiếu Thất Sát (H) ở tam hợp. Hạnh bổ sung khi nâng cấp bản sau.
+- Đề xuất 2 (Đức thêm điều kiện cho VAN-SP-10, PP-16, SP-15) và đề xuất 3 (Bảo thêm hai phép kiểm cho công cụ) ở mục 6 vẫn mở. Thêm: VAN-SP-08 cần tách riêng nhánh "Kình đắc gặp Thất Sát" (nguồn KL) nếu muốn dùng được cho tuổi không thuộc tứ mộ.
+- Ghi chú về nhãn "do AI tạo" và lọc chú thích HTML (mục 5) vẫn chờ Phúc kiểm khi ghép vào trang.
+
