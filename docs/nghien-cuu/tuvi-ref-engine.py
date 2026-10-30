@@ -142,7 +142,9 @@ def chart(y, m, d, h, mi, gender, late_ty='next_day', leap_rule='same', tz_rule=
     jd = jd_from_date(sd, sm, sy)
     can_d = (jd + 9) % 10; chi_d = (jd + 1) % 12
     can_h = ((can_d % 5)*2 + hb) % 10
-    can_m = (can_y*12 + mm + 3) % 10  # month stem (ngu ho don)
+    # Can chi thang (ngu ho don, dac ta 2.1): can thang Gieng = (C mod 5)*2 + 2, thang lm cong (lm - 1).
+    # Thang nhuan dung can chi cua thang chinh (lm), khong theo leap_rule; leap_rule chi doi M de an sao.
+    can_m = ((can_y % 5)*2 + 2 + (lm - 1)) % 10
     # Menh / Than
     menh = m12(2 + (mm - 1) - hb)
     than = m12(2 + (mm - 1) + hb)
@@ -255,7 +257,7 @@ def chart(y, m, d, h, mi, gender, late_ty='next_day', leap_rule='same', tz_rule=
     cung = {CHI[m12(menh + i)]: PALACES[i] for i in range(12)}
     out = {
         'lunar': {'ngay': ld, 'thang': lm, 'nam': ly, 'nhuan': leap},
-        'canChi': {'nam': CAN[can_y]+' '+CHI[chi_y], 'thang': CAN[can_m]+' '+CHI[(mm+1) % 12],
+        'canChi': {'nam': CAN[can_y]+' '+CHI[chi_y], 'thang': CAN[can_m]+' '+CHI[(lm+1) % 12],
                    'ngay': CAN[can_d]+' '+CHI[chi_d], 'gio': CAN[can_h]+' '+CHI[hb]},
         'amDuong': ('Dương' if duong else 'Âm') + (' Nam' if nam else ' Nữ'),
         'napAmNam': nap_am(can_y, chi_y),

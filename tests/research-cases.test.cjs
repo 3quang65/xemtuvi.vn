@@ -25,10 +25,7 @@ for (const c of cases) {
     const ls = lap(c.input);
     const v = viTriSao(ls);
     assert.deepEqual(ls.am, k.amLich, 'âm lịch');
-    // Can tháng trong file mẫu sai do engine tham chiếu dùng chỉ số can thay cho số năm
-    // ((can_y*12 + M + 3) % 10); nguồn ngoài của TC01 ghi tháng Ất Sửu, khớp engine. Chỉ so chi tháng.
-    assert.deepEqual({ ...ls.canChi, thang: undefined }, { ...k.canChi, thang: undefined }, 'can chi');
-    assert.equal(ls.canChi.thang.split(' ')[1], k.canChi.thang.split(' ')[1], 'chi tháng');
+    assert.deepEqual(ls.canChi, k.canChi, 'can chi');
     assert.equal(ls.amDuong, k.amDuong, 'âm dương');
     assert.equal(ls.banMenh, k.napAmNam, 'bản mệnh');
     assert.equal(ls.menhTai, k.menh, 'cung Mệnh');

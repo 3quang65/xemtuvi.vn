@@ -173,7 +173,7 @@
     },
     "canChi": {
      "nam": "Quý Sửu",
-     "thang": "Đinh Sửu",
+     "thang": "Ất Sửu",
      "ngay": "Canh Tý",
      "gio": "Đinh Hợi"
     },
@@ -430,7 +430,7 @@
     },
     "canChi": {
      "nam": "Quý Mão",
-     "thang": "Đinh Mão",
+     "thang": "Ất Mão",
      "ngay": "Quý Hợi",
      "gio": "Bính Thìn"
     },
@@ -682,7 +682,7 @@
     },
     "canChi": {
      "nam": "Ất Hợi",
-     "thang": "Kỷ Hợi",
+     "thang": "Đinh Hợi",
      "ngay": "Ất Dậu",
      "gio": "Ất Dậu"
     },
@@ -933,7 +933,7 @@
     },
     "canChi": {
      "nam": "Canh Tý",
-     "thang": "Quý Tỵ",
+     "thang": "Tân Tỵ",
      "ngay": "Giáp Thân",
      "gio": "Kỷ Tỵ"
     },
@@ -1232,7 +1232,7 @@
     },
     "canChi": {
      "nam": "Ất Sửu",
-     "thang": "Canh Dần",
+     "thang": "Mậu Dần",
      "ngay": "Ất Dậu",
      "gio": "Tân Tỵ"
     },
@@ -1489,7 +1489,7 @@
     },
     "canChi": {
      "nam": "Quý Mão",
-     "thang": "Tân Mùi",
+     "thang": "Kỷ Mùi",
      "ngay": "Nhâm Thìn",
      "gio": "Canh Tý"
     },
@@ -1883,7 +1883,7 @@
     },
     "canChi": {
      "nam": "Giáp Thìn",
-     "thang": "Kỷ Sửu",
+     "thang": "Đinh Sửu",
      "ngay": "Bính Tuất",
      "gio": "Giáp Ngọ"
     },
@@ -2611,7 +2611,7 @@
     },
     "canChi": {
      "nam": "Canh Ngọ",
-     "thang": "Ất Mùi",
+     "thang": "Quý Mùi",
      "ngay": "Nhâm Tý",
      "gio": "Giáp Thìn"
     },
@@ -2877,7 +2877,7 @@
     },
     "canChi": {
      "nam": "Đinh Mão",
-     "thang": "Canh Thân",
+     "thang": "Mậu Thân",
      "ngay": "Giáp Dần",
      "gio": "Nhâm Thân"
     },
@@ -3143,7 +3143,7 @@
     },
     "canChi": {
      "nam": "Mậu Thìn",
-     "thang": "Đinh Mão",
+     "thang": "Ất Mão",
      "ngay": "Ất Mùi",
      "gio": "Mậu Dần"
     },
@@ -3399,7 +3399,7 @@
     },
     "canChi": {
      "nam": "Tân Dậu",
-     "thang": "Tân Hợi",
+     "thang": "Kỷ Hợi",
      "ngay": "Đinh Mùi",
      "gio": "Tân Hợi"
     },
