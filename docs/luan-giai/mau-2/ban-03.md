@@ -32,21 +32,23 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 ### Cách cục
 - Tham Lang và Hỏa Tinh đều hãm, nên chưa đủ điều kiện gọi trọn cách Hỏa Tham: xem là cảm xúc đến nhanh và nóng trong quan hệ, cần tiết chế khi hai người bất đồng.  
   _↳ KHUNG-phu-the-CC-HoaThamLinhTham-Hoa-PHA-HAM · Phu Thê · Tham Lang+Hỏa Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
-- Có dáng dấp của thế Sát Phá Tham: quan hệ tình cảm có nhịp nhanh, cảm xúc mạnh, dễ đến dễ đi nếu thiếu nền tin cậy; nhưng Hỏa Tinh hãm ngay tại cung này (tứ chính gồm cung này và ba cung chiếu về) nên chưa thể coi là cách vững. Trong tình cảm, nhịp quan hệ dễ lên xuống; trước khi gắn bó lâu dài, hãy cùng nói rõ điều mỗi người cần, và khi nóng thì hẹn lúc khác nói.  
+- Có dáng dấp của thế Sát Phá Tham: quan hệ tình cảm có nhịp nhanh, cảm xúc mạnh, dễ đến dễ đi nếu thiếu nền tin cậy; nhưng Hỏa Tinh hãm ngay tại cung này nên chưa thể coi là cách vững. Trong tình cảm, trước khi gắn bó lâu dài, hãy cùng nói rõ điều mỗi người cần, và khi nóng thì hẹn lúc khác nói.  
   _↳ KHUNG-phu-the-CC-SatPhaTham-PHA3-ham · Phu Thê · Thất Sát+Phá Quân+Tham Lang+Hỏa Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 - Cả ba sao chủ cách Sát Phá Tham (Thất Sát, Phá Quân, Tham Lang) đều hãm, nên chuyện tình cảm của bạn thường nhiều thử thách hơn và cần nhiều lần điều chỉnh.  
   _↳ KHUNG-phu-the-CC-SatPhaTham-DeuHam · Phu Thê · Thất Sát+Phá Quân+Tham Lang · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
+- Kình Dương, Địa Kiếp đắc địa trong tam phương là trợ lực của thế Sát Phá Tham, giúp chuyện tình cảm của bạn có thêm sức bền để vượt thử thách.  
+  _↳ KHUNG-phu-the-CC-SatPhaTham-TroLuc · Phu Thê · Thất Sát+Phá Quân+Tham Lang+Kình Dương+Địa Kiếp · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Cách yêu và gắn bó
-- Tham Lang tại Phu Thê: thu hút, thích sự mới mẻ, nên đặt mục tiêu chung rõ ràng với bạn đời. Với các sao kém sáng nêu trong bài, nên bù bằng sự kiên nhẫn và trao đổi cởi mở trong quan hệ.  
+- Tham Lang tại Phu Thê: trong tình cảm, bạn có xu hướng thu hút, thích sự mới mẻ. Cảm xúc dễ thay đổi, có lúc hay ghen hoặc ham vui; nên rõ ràng về sự tin tưởng và tìm hiểu kỹ trước khi gắn bó. Bạn thử đối chiếu với những mối quan hệ mình đã trải qua để xem điều này gần với mình đến đâu.  
   _↳ PT-S09-HAM · Phu Thê · Tham Lang · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) · tam hợp phái Việt_
 
 ### Cung hợp chiếu
-- Tử Vi ở cung Quan Lộc (xung chiếu với Phu Thê): bổ sung xu hướng cần một người bạn đời tôn trọng sự chủ động và cùng bàn bạc.  
+- Tử Vi ở cung Quan Lộc (xung chiếu với Phu Thê): bổ sung xu hướng cần một người bạn đời tôn trọng sự chủ động của mình và cùng bàn bạc. Trong quan hệ, nên cùng nhau bàn bạc thay vì một người quyết hết.  
   _↳ PT-S01-C2 · Quan Lộc · Tử Vi · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
-- Thất Sát ở cung Phúc Đức (tam hợp với Phu Thê): bổ sung xu hướng cá tính mạnh, cần học cách mềm mỏng để quan hệ hài hòa.  
+- Thất Sát ở cung Phúc Đức (tam hợp với Phu Thê): bổ sung xu hướng cá tính mạnh, cần một người đủ bản lĩnh bên cạnh. Trong quan hệ, nên mềm mỏng hơn khi bất đồng.  
   _↳ PT-S13-C6 · Phúc Đức · Thất Sát · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
-- Phá Quân ở cung Thiên Di (tam hợp với Phu Thê): bổ sung xu hướng thích làm mới mối quan hệ, nên duy trì sự ổn định song song với đổi mới.  
+- Phá Quân ở cung Thiên Di (tam hợp với Phu Thê): bổ sung xu hướng thích làm mới mối quan hệ. Trong quan hệ, nên giữ sự ổn định song song với đổi mới.  
   _↳ PT-S14-C1 · Thiên Di · Phá Quân · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
 
 ### Tứ hóa

@@ -121,7 +121,7 @@ const QUY_TAC_VAN = quyTacVanJson as unknown as QuyTacVan[];
 const TU_CAM = tuCamJson as unknown as TuCamCauHinh;
 const PROMPT = fs.readFileSync(path.join(process.cwd(), 'src/lib/luan-giai/ai/prompt-he-thong.md'), 'utf8');
 /** Tăng khi đổi cách ghép/lọc câu (không đổi quy tắc) để bản lưu cũ không bị dùng lại. */
-const PHIEN_BAN_BO_GHEP = 'ghep-5';
+const PHIEN_BAN_BO_GHEP = 'ghep-6';
 export const PHIEN_BAN_QUY_TAC = bam(JSON.stringify([QUY_TAC, QUY_TAC_2, QUY_TAC_VAN, CHUYEN_DE, TU_CAM, PROMPT, PHIEN_BAN_BO_GHEP])).slice(0, 12);
 
 export function nhaCungCapDangDung(yeuCau: TuyChon['nhaCungCap']): 'stub' | 'claude' | string {
@@ -207,7 +207,9 @@ function khopBan2(ls: LaSo, q: QuyTacBan2): KetQuaKhop | null {
   // {pha}: tên yếu tố quyết định mức phá cách (điều kiện phaCach), vd "Hỏa Tinh".
   const dkPha = q.dieuKien.find((k) => k.phaCach);
   const pha = dkPha ? khopDieuKien(ls, goc, dkPha) ?? [] : [];
-  const cau = q.noiDung.replaceAll('{pha}', pha.join(', ')).replaceAll('{sao}', sao.join(', ')).replaceAll('{cung}', cung.join(' và '));
+  const dkDac = q.dieuKien.find((k) => k.satDac !== undefined);
+  const dac = dkDac ? khopDieuKien(ls, goc, dkDac) ?? [] : [];
+  const cau = q.noiDung.replaceAll('{dac}', dac.join(', ')).replaceAll('{pha}', pha.join(', ')).replaceAll('{sao}', sao.join(', ')).replaceAll('{cung}', cung.join(' và '));
   return {
     sao, yeuTo: q.yeuTo ?? [], cungLienQuan: cung, cau, uuTien: q.uuTien ?? 0, cungGoc: q.cung,
     q: { id: q.id, chuyenDe: q.chuyenDe, muc: q.muc, nguon: q.nguon.join('; '), truongPhai: q.truongPhai },
@@ -280,7 +282,7 @@ export const TAT_O_BAI: Record<string, Set<string>> = {
   'phu-the': new Set([
     'PT-PS-4', 'PT-PS-5', 'PT-HOA-0',
     'KHUNG-phu-the-SP-ThienKhong-chinh', 'KHUNG-phu-the-SP-ĐịaKiếp-tam-hop', 'KHUNG-phu-the-SP-ĐịaKhông-xung',
-    'KHUNG-phu-the-SP-ThiênKhông-xung', 'KHUNG-phu-the-SP-LộcTồn-tam-hop', 'KHUNG-phu-the-CC-KhongKiepChieu',
+    'KHUNG-phu-the-SP-ThiênKhông-xung', 'KHUNG-phu-the-SP-LộcTồn-tam-hop', 'KHUNG-phu-the-SP-ĐịaKiếp-xung', 'KHUNG-phu-the-CC-KhongKiepChieu',
   ]),
 };
 

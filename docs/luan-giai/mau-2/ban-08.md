@@ -30,23 +30,23 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 ## Bài luận giải (đúng như khách nhận)
 
 ### Cách cục
-- Có dáng dấp của thế Nhật Nguyệt: cả hai sao đều sáng nên công việc có tiếng, được cấp trên lẫn đồng nghiệp tin; nhưng Địa Không hãm ngay tại cung này (tứ chính gồm cung này và ba cung chiếu về) nên chưa thể coi là cách vững. Trong công việc, hợp vị trí cần tính tổ chức và trách nhiệm; nên tìm môi trường có quy trình rõ.  
+- Có dáng dấp của thế Nhật Nguyệt: cả hai sao đều sáng nên công việc có tiếng, được cấp trên lẫn đồng nghiệp tin; nhưng Địa Không hãm ngay tại cung này nên chưa thể coi là cách vững. Trong công việc, hợp vị trí cần tính tổ chức và trách nhiệm; nên tìm môi trường có quy trình rõ.  
   _↳ KHUNG-quan-loc-CC-NhatNguyet-SANG-PHA3-ham · Quan Lộc · Thái Dương+Thái Âm+Địa Không · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Phong cách làm việc
-- Quan Lộc không có chính tinh: tính cách linh hoạt, chịu ảnh hưởng nhiều từ cung xung chiếu và hoàn cảnh, nên xem kỹ các cung hợp chiếu.  
+- Quan Lộc không có chính tinh: con đường sự nghiệp có xu hướng linh hoạt, chịu ảnh hưởng nhiều từ cung xung chiếu và hoàn cảnh; nên thử vài vai trò khác nhau giai đoạn đầu rồi chọn hướng mình làm tốt nhất để theo lâu dài.  
   _↳ QL-VCD · Quan Lộc · — · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
 
 ### Cung hợp chiếu
-- Thái Dương ở cung Mệnh (tam hợp với Quan Lộc): bổ sung xu hướng hợp môi trường công khai, có tầm ảnh hưởng, dễ được ghi nhận.  
+- Thái Dương ở cung Mệnh (tam hợp với Quan Lộc): bổ sung xu hướng hợp môi trường công khai, có tầm ảnh hưởng, dễ được ghi nhận. Nên chủ động trình bày kết quả để được ghi nhận.  
   _↳ QL-S03-C5 · Mệnh · Thái Dương · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
-- Thiên Đồng ở cung Phu Thê (xung chiếu với Quan Lộc): bổ sung xu hướng hợp môi trường hợp tác, ít áp lực đối đầu, cần thêm động lực.  
+- Thiên Đồng ở cung Phu Thê (xung chiếu với Quan Lộc): bổ sung xu hướng hợp môi trường hợp tác, ít áp lực đối đầu, cần thêm động lực. Nên tự đặt mục tiêu rõ để giữ động lực.  
   _↳ QL-S05-C4 · Phu Thê · Thiên Đồng · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
-- Thái Âm ở cung Tài Bạch (tam hợp với Quan Lộc): bổ sung xu hướng hợp công việc cần sự cẩn trọng, chăm chút và làm việc âm thầm.  
+- Thái Âm ở cung Tài Bạch (tam hợp với Quan Lộc): bổ sung xu hướng hợp công việc cần sự cẩn trọng, chăm chút và làm việc âm thầm. Với thu nhập từ công việc, nên tích góp đều từ lương thay vì trông vào khoản lớn bất chợt.  
   _↳ QL-S08-C3 · Tài Bạch · Thái Âm · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
-- Cự Môn ở cung Phu Thê (xung chiếu với Quan Lộc): bổ sung xu hướng hợp công việc dùng lời nói, phân tích, tư vấn; cần diễn đạt khéo.  
+- Cự Môn ở cung Phu Thê (xung chiếu với Quan Lộc): bổ sung xu hướng hợp công việc dùng lời nói, phân tích, tư vấn; cần diễn đạt khéo. Nên chuẩn bị kỹ lập luận trước các buổi trao đổi quan trọng.  
   _↳ QL-S10-C4 · Phu Thê · Cự Môn · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
-- Thiên Lương ở cung Mệnh (tam hợp với Quan Lộc): bổ sung xu hướng hợp công việc mang tính tư vấn, giáo dục, bảo vệ quyền lợi.  
+- Thiên Lương ở cung Mệnh (tam hợp với Quan Lộc): bổ sung xu hướng hợp công việc mang tính tư vấn, giáo dục, bảo vệ quyền lợi. Nên phát huy ở vai trò hướng dẫn, góp ý.  
   _↳ QL-S12-C5 · Mệnh · Thiên Lương · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
 
 ### Tứ hóa
@@ -78,7 +78,7 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
   _↳ KHUNG-quan-loc-SP-ĐịaKiếp-tam-hop · Quan Lộc · Địa Kiếp · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 - Thiên Không đồng cung Quan Lộc: ý nghĩ thoáng, nhiều ý tưởng nhưng khó nắm chắc, nên cụ thể hóa bằng kế hoạch.  
   _↳ KHUNG-quan-loc-SP-ThienKhong-chinh · Quan Lộc · Thiên Không · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
-- Quan Lộc có Triệt trong khi tam phương có Hóa Kỵ: Triệt làm cả mặt mạnh lẫn mặt vướng đều dịu đi, nên biên độ hẹp lại, ít bứt phá lớn nhưng cũng ít vấp lớn; điểm mạnh cần thời gian để bộc lộ, điểm vướng cũng nhẹ hơn.  
+- Quan Lộc có Triệt trong khi Hóa Kỵ nằm ở cung hợp chiếu (Quan Lộc và Tài Bạch): Triệt làm cả mặt mạnh lẫn mặt vướng đều dịu đi, nên biên độ hẹp lại, ít bứt phá lớn nhưng cũng ít vấp lớn; điểm mạnh cần thời gian để bộc lộ, điểm vướng cũng nhẹ hơn.  
   _↳ KHUNG-quan-loc-DH-Triệt-Ky · Quan Lộc · Thái Âm · Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương) · Tam hợp phái Việt_
 
 > Luận giải do hệ thống xemtuvi.vn tạo tự động từ các quy tắc Tử Vi có ghi nguồn; nội dung mang tính tham khảo, giúp hiểu mình và định hướng, không phải lời đoán chắc về tương lai.

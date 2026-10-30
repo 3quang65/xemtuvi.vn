@@ -36,11 +36,11 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
   _↳ KHUNG-menh-CC-KhongKiepChieu · Mệnh · Địa Không+Địa Kiếp · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Tổng quan bản thân
-- Tử Vi tại Mệnh: thích giữ vai trò dẫn dắt, coi trọng thể diện và sự tự chủ. Các sao ở độ sáng trung bình trong bài này cho kết quả tùy vào mức rèn luyện bản thân và hoàn cảnh.  
+- Tử Vi tại Mệnh: bạn có xu hướng thích giữ vai trò dẫn dắt, coi trọng thể diện và sự tự chủ. Tố chất dẫn dắt có nhưng cần người hỗ trợ; nên chủ động xây vài người cộng sự tin cậy thay vì gánh một mình. Bạn thử đối chiếu với trải nghiệm của mình xem nét nào đúng, nét nào chưa.  
   _↳ ML-S01-BINH · Mệnh · Tử Vi · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) · tam hợp phái Việt_
 
 ### Cung hợp chiếu
-- Vũ Khúc ở cung Tài Bạch (tam hợp với Mệnh): bổ sung xu hướng thực tế, quyết đoán, coi trọng kỷ luật tài chính.  
+- Vũ Khúc ở cung Tài Bạch (tam hợp với Mệnh): bổ sung xu hướng thực tế, quyết đoán, coi trọng kỷ luật tài chính. Về tiền bạc, nên đặt mục tiêu tiết kiệm theo tháng và theo dõi bằng con số.  
   _↳ ML-S04-C3 · Tài Bạch · Vũ Khúc · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
 - Liêm Trinh ở cung Quan Lộc (tam hợp với Mệnh): bổ sung xu hướng có nguyên tắc, cá tính rõ nét, giàu cảm xúc bên trong.  
   _↳ ML-S06-C2 · Quan Lộc · Liêm Trinh · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
@@ -48,7 +48,7 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
   _↳ ML-S07-C2 · Quan Lộc · Thiên Phủ · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
 - Tham Lang ở cung Thiên Di (xung chiếu với Mệnh): bổ sung xu hướng đa tài, nhiều ham muốn học hỏi, giỏi giao tiếp.  
   _↳ ML-S09-C1 · Thiên Di · Tham Lang · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
-- Thiên Tướng ở cung Tài Bạch (tam hợp với Mệnh): bổ sung xu hướng công bằng, biết giúp đỡ, giữ chữ tín.  
+- Thiên Tướng ở cung Tài Bạch (tam hợp với Mệnh): bổ sung xu hướng công bằng, biết giúp đỡ, giữ chữ tín. Về tiền bạc, nên cân nhắc kỹ trước khi đứng ra bảo lãnh hoặc cho vay.  
   _↳ ML-S11-C3 · Tài Bạch · Thiên Tướng · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
 
 ### Tứ hóa

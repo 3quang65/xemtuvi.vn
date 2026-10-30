@@ -32,11 +32,13 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 ### Cách cục
 - Tham Lang đồng cung Hỏa Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Hỏa Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc khi quyết định.  
   _↳ KHUNG-menh-CC-HoaThamLinhTham-Hoa-PHA · Mệnh · Tham Lang+Hỏa Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
-- Có dáng dấp của thế Sát Phá Tham: chủ động hành động, dám khai phá và chấp nhận thay đổi, nhịp sống nhiều chuyển biến; nhưng Tham Lang hóa Kỵ ngay trong sao tạo cách nên chưa thể coi là cách vững. Với bản thân, đời sống nhiều chuyển biến; nên chọn một mục tiêu chính mỗi giai đoạn để không dàn trải.  
+- Có dáng dấp của thế Sát Phá Tham: chủ động hành động, dám khai phá và chấp nhận thay đổi, nhịp sống nhiều chuyển biến; nhưng Tham Lang hóa Kỵ ngay trong sao tạo cách nên chưa thể coi là cách vững. Với bản thân, nên chọn một mục tiêu chính mỗi giai đoạn để không dàn trải.  
   _↳ KHUNG-menh-CC-SatPhaTham-PHA3-ky · Mệnh · Thất Sát+Phá Quân+Tham Lang · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
+- Hỏa Tinh đắc địa trong tam phương là trợ lực của thế Sát Phá Tham, giúp hướng đi của bạn có thêm sức bền để vượt thử thách.  
+  _↳ KHUNG-menh-CC-SatPhaTham-TroLuc · Mệnh · Thất Sát+Phá Quân+Tham Lang+Hỏa Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Tổng quan bản thân
-- Tham Lang tại Mệnh: đa tài, nhiều ham muốn học hỏi, giỏi giao tiếp.  
+- Tham Lang tại Mệnh: bạn có xu hướng đa tài, ham học hỏi, giỏi giao tiếp. Nhiều tài và có duyên giao tiếp; nên chọn một mũi nhọn chính để tài năng không bị dàn trải. Bạn thử đối chiếu với trải nghiệm của mình xem nét nào đúng, nét nào chưa.  
   _↳ ML-S09-TOT · Mệnh · Tham Lang · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) · tam hợp phái Việt_
 
 ### Cung hợp chiếu
@@ -44,7 +46,7 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
   _↳ ML-S06-C1 · Thiên Di · Liêm Trinh · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
 - Thất Sát ở cung Quan Lộc (tam hợp với Mệnh): bổ sung xu hướng mạnh mẽ, dứt khoát, dám đương đầu thử thách.  
   _↳ ML-S13-C2 · Quan Lộc · Thất Sát · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
-- Phá Quân ở cung Tài Bạch (tam hợp với Mệnh): bổ sung xu hướng thích đổi mới, dám bứt phá, không ngại làm lại.  
+- Phá Quân ở cung Tài Bạch (tam hợp với Mệnh): bổ sung xu hướng thích đổi mới, dám bứt phá, không ngại làm lại. Về tiền bạc, chi tiêu dễ biến động; nên lập kế hoạch trước mỗi khoản chi lớn.  
   _↳ ML-S14-C3 · Tài Bạch · Phá Quân · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
 
 ### Tứ hóa
@@ -68,7 +70,5 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
   _↳ KHUNG-menh-SP-ĐịaKiếp-tam-hop · Mệnh · Địa Kiếp · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 - Thiên Không đồng cung Mệnh: ý nghĩ thoáng, nhiều ý tưởng nhưng khó nắm chắc, nên cụ thể hóa bằng kế hoạch.  
   _↳ KHUNG-menh-SP-ThienKhong-chinh · Mệnh · Thiên Không · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
-- Mệnh có Tuần trong khi tam phương có Hóa Kỵ: Tuần làm cả mặt mạnh lẫn mặt vướng đều dịu đi, nên biên độ hẹp lại, ít bứt phá lớn nhưng cũng ít vấp lớn; điểm mạnh cần thời gian để bộc lộ, điểm vướng cũng nhẹ hơn.  
-  _↳ KHUNG-menh-DH-Tuần-Ky · Mệnh · Tham Lang · Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương) · Tam hợp phái Việt_
 
 > Luận giải do hệ thống xemtuvi.vn tạo tự động từ các quy tắc Tử Vi có ghi nguồn; nội dung mang tính tham khảo, giúp hiểu mình và định hướng, không phải lời đoán chắc về tương lai.

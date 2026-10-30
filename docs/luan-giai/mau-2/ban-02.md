@@ -30,15 +30,15 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 ## Bài luận giải (đúng như khách nhận)
 
 ### Phong cách làm việc
-- Thiên Đồng tại Quan Lộc: hợp môi trường hợp tác, ít áp lực đối đầu, cần thêm động lực.  
+- Thiên Đồng tại Quan Lộc: hợp môi trường hợp tác, ít áp lực đối đầu, cần thêm động lực. Nên chọn nghề dịch vụ, chăm sóc, giáo dục và đặt mục tiêu theo quý để giữ động lực.  
   _↳ QL-S05-TOT · Quan Lộc · Thiên Đồng · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) · tam hợp phái Việt_
 
 ### Cung hợp chiếu
-- Thiên Cơ ở cung Tài Bạch (tam hợp với Quan Lộc): bổ sung xu hướng mạnh về phân tích, lập kế hoạch, hợp công việc cần tư duy.  
+- Thiên Cơ ở cung Tài Bạch (tam hợp với Quan Lộc): bổ sung xu hướng mạnh về phân tích, lập kế hoạch, hợp công việc cần tư duy. Với thu nhập từ công việc, nên biến sáng kiến, chuyên môn thành sản phẩm hoặc dịch vụ có giá rõ ràng.  
   _↳ QL-S02-C3 · Tài Bạch · Thiên Cơ · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
-- Thái Âm ở cung Phu Thê (xung chiếu với Quan Lộc): bổ sung xu hướng hợp công việc cần sự cẩn trọng, chăm chút và làm việc âm thầm.  
+- Thái Âm ở cung Phu Thê (xung chiếu với Quan Lộc): bổ sung xu hướng hợp công việc cần sự cẩn trọng, chăm chút và làm việc âm thầm. Nên làm rõ phần đóng góp của mình trong việc chung.  
   _↳ QL-S08-C4 · Phu Thê · Thái Âm · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
-- Cự Môn ở cung Mệnh (tam hợp với Quan Lộc): bổ sung xu hướng hợp công việc dùng lời nói, phân tích, tư vấn; cần diễn đạt khéo.  
+- Cự Môn ở cung Mệnh (tam hợp với Quan Lộc): bổ sung xu hướng hợp công việc dùng lời nói, phân tích, tư vấn; cần diễn đạt khéo. Nên chuẩn bị kỹ lập luận trước các buổi trao đổi quan trọng.  
   _↳ QL-S10-C5 · Mệnh · Cự Môn · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
 
 ### Tứ hóa

@@ -36,17 +36,17 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
   _↳ KHUNG-phu-the-CC-NhatNguyet-SANG-PHA · Phu Thê · Thái Dương+Thái Âm+Linh Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Cách yêu và gắn bó
-- Thái Âm tại Phu Thê: dịu dàng, nhạy cảm, cần không gian chia sẻ cảm xúc.  
+- Thái Âm tại Phu Thê: trong tình cảm, bạn có xu hướng dịu dàng, nhạy cảm, cần không gian chia sẻ cảm xúc. Nên tạo thói quen trò chuyện riêng của hai người để giữ sự gần gũi. Bạn thử đối chiếu với những mối quan hệ mình đã trải qua để xem điều này gần với mình đến đâu.  
   _↳ PT-S08-TOT · Phu Thê · Thái Âm · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) · tam hợp phái Việt_
 
 ### Cung hợp chiếu
-- Thiên Cơ ở cung Thiên Di (tam hợp với Phu Thê): bổ sung xu hướng thích trao đổi nhiều, quan hệ bền khi hai bên cùng chia sẻ.  
+- Thiên Cơ ở cung Thiên Di (tam hợp với Phu Thê): bổ sung xu hướng thích trao đổi nhiều, quan hệ bền khi hai bên cùng chia sẻ. Trong quan hệ, nên dành thời gian trò chuyện đều đặn.  
   _↳ PT-S02-C1 · Thiên Di · Thiên Cơ · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
-- Thái Dương ở cung Quan Lộc (xung chiếu với Phu Thê): bổ sung xu hướng ấm áp, hào phóng trong tình cảm, nên giữ cân bằng giữa cho và nhận.  
+- Thái Dương ở cung Quan Lộc (xung chiếu với Phu Thê): bổ sung xu hướng ấm áp, hào phóng trong tình cảm. Trong quan hệ, nên giữ cân bằng giữa cho và nhận.  
   _↳ PT-S03-C2 · Quan Lộc · Thái Dương · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
-- Thiên Đồng ở cung Phúc Đức (tam hợp với Phu Thê): bổ sung xu hướng nhẹ nhàng, dễ thông cảm, quan hệ cần thêm sự chủ động.  
+- Thiên Đồng ở cung Phúc Đức (tam hợp với Phu Thê): bổ sung xu hướng nhẹ nhàng, dễ thông cảm. Trong quan hệ, nên chủ động hơn trong kế hoạch chung.  
   _↳ PT-S05-C6 · Phúc Đức · Thiên Đồng · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
-- Thiên Lương ở cung Phúc Đức (tam hợp với Phu Thê): bổ sung xu hướng nghiêng về vai người chăm sóc, nên để đối phương có không gian riêng.  
+- Thiên Lương ở cung Phúc Đức (tam hợp với Phu Thê): bổ sung xu hướng nghiêng về vai người chăm sóc. Trong quan hệ, nên để đối phương có không gian riêng.  
   _↳ PT-S12-C6 · Phúc Đức · Thiên Lương · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
 
 ### Tứ hóa

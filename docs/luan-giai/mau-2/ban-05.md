@@ -34,15 +34,15 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
   _↳ KHUNG-quan-loc-CC-CoLuong · Quan Lộc · Thiên Cơ+Thiên Lương · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Phong cách làm việc
-- Thiên Cơ tại Quan Lộc: mạnh về phân tích, lập kế hoạch, hợp công việc cần tư duy.  
+- Thiên Cơ tại Quan Lộc: mạnh về phân tích, lập kế hoạch, hợp công việc cần tư duy. Nên chọn việc tham mưu, kỹ thuật, lập kế hoạch và ghi lại sáng kiến của mình để được ghi nhận.  
   _↳ QL-S02-TOT · Quan Lộc · Thiên Cơ · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) · tam hợp phái Việt_
 
 ### Cung hợp chiếu
-- Thiên Đồng ở cung Mệnh (tam hợp với Quan Lộc): bổ sung xu hướng hợp môi trường hợp tác, ít áp lực đối đầu, cần thêm động lực.  
+- Thiên Đồng ở cung Mệnh (tam hợp với Quan Lộc): bổ sung xu hướng hợp môi trường hợp tác, ít áp lực đối đầu, cần thêm động lực. Nên tự đặt mục tiêu rõ để giữ động lực.  
   _↳ QL-S05-C5 · Mệnh · Thiên Đồng · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
-- Cự Môn ở cung Tài Bạch (tam hợp với Quan Lộc): bổ sung xu hướng hợp công việc dùng lời nói, phân tích, tư vấn; cần diễn đạt khéo.  
+- Cự Môn ở cung Tài Bạch (tam hợp với Quan Lộc): bổ sung xu hướng hợp công việc dùng lời nói, phân tích, tư vấn; cần diễn đạt khéo. Với thu nhập từ công việc, nên định giá rõ cho phần tư vấn, giảng giải mình làm.  
   _↳ QL-S10-C3 · Tài Bạch · Cự Môn · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
-- Thiên Lương ở cung Phu Thê (xung chiếu với Quan Lộc): bổ sung xu hướng hợp công việc mang tính tư vấn, giáo dục, bảo vệ quyền lợi.  
+- Thiên Lương ở cung Phu Thê (xung chiếu với Quan Lộc): bổ sung xu hướng hợp công việc mang tính tư vấn, giáo dục, bảo vệ quyền lợi. Nên phát huy ở vai trò hướng dẫn, góp ý.  
   _↳ QL-S12-C4 · Phu Thê · Thiên Lương · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
 
 ### Tứ hóa

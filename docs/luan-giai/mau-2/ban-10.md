@@ -30,21 +30,21 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 ## Bài luận giải (đúng như khách nhận)
 
 ### Cách cục
-- Có dáng dấp của thế Tử Phá: vừa coi trọng vị thế vừa thích đổi mới, đời sống nhiều chuyển biến; nhưng Địa Kiếp hãm ngay tại cung này (tứ chính gồm cung này và ba cung chiếu về) nên chưa thể coi là cách vững. Với bản thân, đời sống nhiều chuyển biến; nên chọn một mục tiêu chính mỗi giai đoạn để không dàn trải.  
+- Có dáng dấp của thế Tử Phá: vừa coi trọng vị thế vừa thích đổi mới, đời sống nhiều chuyển biến; nhưng Địa Kiếp hãm ngay tại cung này nên chưa thể coi là cách vững. Với bản thân, nên chọn một mục tiêu chính mỗi giai đoạn để không dàn trải.  
   _↳ KHUNG-menh-CC-TuPha-PHA3-ham · Mệnh · Tử Vi+Phá Quân+Địa Kiếp · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Tổng quan bản thân
-- Thiên Tướng tại Mệnh: công bằng, biết giúp đỡ, giữ chữ tín.  
+- Thiên Tướng tại Mệnh: bạn có xu hướng công bằng, biết giúp đỡ, giữ chữ tín. Bạn dễ được tin giao việc điều phối; nên nhận vai trò kết nối, giữ chuẩn mực cho nhóm. Bạn thử đối chiếu với trải nghiệm của mình xem nét nào đúng, nét nào chưa.  
   _↳ ML-S11-TOT · Mệnh · Thiên Tướng · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) · tam hợp phái Việt_
 
 ### Cung hợp chiếu
 - Tử Vi ở cung Thiên Di (xung chiếu với Mệnh): bổ sung xu hướng thích giữ vai trò dẫn dắt, coi trọng thể diện và sự tự chủ.  
   _↳ ML-S01-C1 · Thiên Di · Tử Vi · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
-- Thiên Phủ ở cung Tài Bạch (tam hợp với Mệnh): bổ sung xu hướng ổn định, chu toàn, biết gìn giữ.  
+- Thiên Phủ ở cung Tài Bạch (tam hợp với Mệnh): bổ sung xu hướng ổn định, chu toàn, biết gìn giữ. Về tiền bạc, bạn giỏi giữ của; nên dành một phần nhỏ cho học hỏi, đầu tư vào bản thân để không bỏ lỡ cơ hội.  
   _↳ ML-S07-C3 · Tài Bạch · Thiên Phủ · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
 - Phá Quân ở cung Thiên Di (xung chiếu với Mệnh): bổ sung xu hướng thích đổi mới, dám bứt phá, không ngại làm lại.  
   _↳ ML-S14-C1 · Thiên Di · Phá Quân · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
-- Quan Lộc (cung tam hợp của Mệnh) không có chính tinh (vô chính diệu): khi luận tính cách và hướng đi của bạn, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; phái Việt coi gặp Tuần hoặc Triệt là thuận hơn.  
+- Quan Lộc (cung tam hợp của Mệnh) không có chính tinh (vô chính diệu): khi luận tính cách và hướng đi của bạn, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung.  
   _↳ KHUNG-menh-VCD-tam-hop · Mệnh · — · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Tứ hóa

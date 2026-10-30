@@ -46,7 +46,7 @@ test('mức theo CC-08: 3 = "có dáng dấp", 2 = "có khuyết", 1 = thành c�
       const bai = await AI.sinhLuanGiai(ls, cd, { boQuaCache: true });
       for (const m of bai.muc.filter((x) => x.id === 'cach-cuc')) for (const d of m.nhanDinh) {
         const ten = (d.thamChieu.yeuTo ?? []).find((y) => y.startsWith('Cách '));
-        if (!ten || /Không Kiếp/.test(ten) || /Hỏa Tham/.test(ten) || /TRANH13|DeuHam/.test(d.thamChieu.quyTacId)) continue;
+        if (!ten || /Không Kiếp/.test(ten) || /Hỏa Tham/.test(ten) || /TRANH13|DeuHam|TroLuc/.test(d.thamChieu.quyTacId)) continue;
         const q = KHUNG.find((k) => k.id === d.thamChieu.quyTacId);
         const { muc } = mucCC08(ls, cd, q.dieuKien[0].sao ?? [], ten === 'Cách Sát Phá Tham');
         dem[muc]++;

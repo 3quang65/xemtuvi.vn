@@ -34,15 +34,17 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
   _↳ KHUNG-menh-CC-SatPhaTham-PHA · Mệnh · Thất Sát+Phá Quân+Tham Lang+Kình Dương · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 - Tử Vi và Phá Quân đồng cung, tạo thế Tử Phá (thành cách nhưng có khuyết): vừa coi trọng vị thế vừa thích đổi mới, đời sống nhiều chuyển biến; cần cân nhắc kỹ trước quyết định lớn.  
   _↳ KHUNG-menh-CC-TuPha-PHA · Mệnh · Tử Vi+Phá Quân+Đà La+Kình Dương · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
+- Đà La đắc địa trong tam phương là trợ lực của thế Sát Phá Tham, giúp hướng đi của bạn có thêm sức bền để vượt thử thách.  
+  _↳ KHUNG-menh-CC-SatPhaTham-TroLuc · Mệnh · Thất Sát+Phá Quân+Tham Lang+Đà La · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Tổng quan bản thân
-- Tử Vi tại Mệnh: thích giữ vai trò dẫn dắt, coi trọng thể diện và sự tự chủ.  
+- Tử Vi tại Mệnh: bạn có xu hướng thích giữ vai trò dẫn dắt, coi trọng thể diện và sự tự chủ. Khi được giao trách nhiệm rõ ràng, bạn thường thể hiện tốt; nên chủ động nhận vai trò điều phối ở việc mình hiểu sâu. Bạn thử đối chiếu với trải nghiệm của mình xem nét nào đúng, nét nào chưa.  
   _↳ ML-S01-TOT · Mệnh · Tử Vi · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) · tam hợp phái Việt_
-- Phá Quân tại Mệnh: thích đổi mới, dám bứt phá, không ngại làm lại.  
+- Phá Quân tại Mệnh: bạn có xu hướng thích đổi mới, dám bứt phá, không ngại làm lại. Bạn hợp với việc khởi đầu, cải tổ; nên có một người đồng hành giữ ổn định bên cạnh.  
   _↳ ML-S14-TOT · Mệnh · Phá Quân · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) · tam hợp phái Việt_
 
 ### Cung hợp chiếu
-- Vũ Khúc ở cung Tài Bạch (tam hợp với Mệnh): bổ sung xu hướng thực tế, quyết đoán, coi trọng kỷ luật tài chính.  
+- Vũ Khúc ở cung Tài Bạch (tam hợp với Mệnh): bổ sung xu hướng thực tế, quyết đoán, coi trọng kỷ luật tài chính. Về tiền bạc, nên đặt mục tiêu tiết kiệm theo tháng và theo dõi bằng con số.  
   _↳ ML-S04-C3 · Tài Bạch · Vũ Khúc · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
 - Liêm Trinh ở cung Quan Lộc (tam hợp với Mệnh): bổ sung xu hướng có nguyên tắc, cá tính rõ nét, giàu cảm xúc bên trong.  
   _↳ ML-S06-C2 · Quan Lộc · Liêm Trinh · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
@@ -50,7 +52,7 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
   _↳ ML-S09-C2 · Quan Lộc · Tham Lang · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
 - Thiên Tướng ở cung Thiên Di (xung chiếu với Mệnh): bổ sung xu hướng công bằng, biết giúp đỡ, giữ chữ tín.  
   _↳ ML-S11-C1 · Thiên Di · Thiên Tướng · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
-- Thất Sát ở cung Tài Bạch (tam hợp với Mệnh): bổ sung xu hướng mạnh mẽ, dứt khoát, dám đương đầu thử thách.  
+- Thất Sát ở cung Tài Bạch (tam hợp với Mệnh): bổ sung xu hướng mạnh mẽ, dứt khoát, dám đương đầu thử thách. Về tiền bạc, thu nhập có lúc lên xuống; nên giữ quỹ dự phòng đủ vài tháng chi tiêu.  
   _↳ ML-S13-C3 · Tài Bạch · Thất Sát · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
 
 ### Tứ hóa

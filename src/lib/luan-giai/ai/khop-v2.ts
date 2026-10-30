@@ -36,6 +36,8 @@ export interface DieuKien {
   cungCoSao?: string[];
   /** Thế giáp: hai cung kề cung gốc, mỗi cung một trong hai hóa này (Khoa–Quyền, CC-10). Mọi giá trị khác của điều kiện bị bỏ qua. */
   giapHoa?: [string, string];
+  /** Chỉ khớp cung có đúng tên này (vd Phúc Đức: vô chính diệu nên gặp Tuần, kỵ Triệt). */
+  tenCung?: string;
   /** Với `rai`: mọi sao trong `sao` đều có mặt VÀ cùng thuộc các độ sáng này (vd ba sao chủ cách đều Hãm). */
   deuDoSang?: DoSang[];
 }
@@ -79,6 +81,7 @@ export function cungTheoViTri(ls: LaSo, goc: Cung, viTri: ViTri = 'chinh'): Cung
 }
 
 function cungDat(c: Cung, k: DieuKien, dau?: Sao): boolean {
+  if (k.tenCung && c.ten !== k.tenCung) return false;
   if (k.chi && !k.chi.includes(c.tenChi)) return false;
   if (k.tuan !== undefined && c.tuan !== k.tuan) return false;
   if (k.triet !== undefined && c.triet !== k.triet) return false;

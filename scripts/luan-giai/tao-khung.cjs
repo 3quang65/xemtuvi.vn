@@ -197,15 +197,22 @@ for (const [cd, c] of Object.entries(CD)) {
   });
 }
 
-// --- Vô chính diệu ở cung hợp chiếu.
+// --- Vô chính diệu ở cung hợp chiếu. Vế Tuần/Triệt chỉ in khi cung có Tuần/Triệt; Phúc Đức "nên gặp Tuần, kỵ Triệt" (CHUNG-VCD-03).
 for (const [cd, c] of Object.entries(CD)) {
   for (const vt of ['xung', 'tam-hop']) {
-    them({
-      id: `KHUNG-${cd}-VCD-${vt}`, chuyenDe: cd, cung: c.cung, loai: 'VCD',
-      maNghienCuu: ['CHUNG-VCD-01', 'CHUNG-VCD-03'], dieuKien: [{ voChinhDieu: true, viTri: vt }], muc: c.mucCl,
-      noiDung: `{cung} (${VT[vt]} của ${c.cung}) không có chính tinh (vô chính diệu): khi luận ${c.chuDe}, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; phái Việt coi gặp Tuần hoặc Triệt là thuận hơn.`,
-      nguon: [TT, TB], nguonChiTiet: 'TT (Luận cách tinh số cao hạ); TB, NL (vô chính diệu)', truongPhai: TP, yeuTo: ['Vô Chính Diệu'],
+    const goc = { voChinhDieu: true, viTri: vt };
+    const dau = `{cung} (${VT[vt]} của ${c.cung}) không có chính tinh (vô chính diệu): khi luận ${c.chuDe}, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung`;
+    const PD = { tenCung: 'Phúc Đức' };
+    const mk = (hau, dk, khong, tail) => them({
+      id: `KHUNG-${cd}-VCD-${vt}${hau}`, chuyenDe: cd, cung: c.cung, loai: 'VCD',
+      maNghienCuu: ['CHUNG-VCD-01', 'CHUNG-VCD-03'], dieuKien: dk, ...(khong.length ? { khong } : {}), muc: c.mucCl,
+      noiDung: `${dau}${tail}`, nguon: [TT, TB], nguonChiTiet: 'TT (Luận cách tinh số cao hạ); TB, NL (vô chính diệu); WC6 (phú Phúc vô chính diệu)', truongPhai: TP, yeuTo: ['Vô Chính Diệu'],
     });
+    mk('', [goc], [{ ...goc, tuan: true }, { ...goc, triet: true }], '.');
+    mk('-Tuan', [{ ...goc, tuan: true }], [{ ...goc, ...PD }], '; cung này có Tuần, mà phái Việt coi vô chính diệu gặp Tuần là thuận hơn.');
+    mk('-Triet', [{ ...goc, triet: true }], [{ ...goc, ...PD }, { ...goc, tuan: true }], '; cung này có Triệt, mà phái Việt coi vô chính diệu gặp Triệt là thuận hơn.');
+    mk('-PD-Tuan', [{ ...goc, ...PD, tuan: true }], [], '; Phúc Đức vô chính diệu nên gặp Tuần, nên cung này có Tuần là thuận.');
+    mk('-PD-Triet', [{ ...goc, ...PD, triet: true }], [{ ...goc, ...PD, tuan: true }], '; Phúc Đức vô chính diệu kỵ Triệt, nên cung này có Triệt cần thận trọng hơn với phần phúc và nội tâm.');
   }
 }
 
@@ -214,8 +221,8 @@ for (const [cd, c] of Object.entries(CD)) {
   for (const [k, ten] of [['tuan', 'Tuần'], ['triet', 'Triệt']]) {
     them({
       id: `KHUNG-${cd}-DH-${ten}-Ky`, chuyenDe: cd, cung: c.cung, loai: 'YN',
-      maNghienCuu: ['CHUNG-TUAN-06', 'CHUNG-TUAN-02'], dieuKien: [{ [k]: true, viTri: 'chinh' }, { hoa: 'Hóa Kỵ', viTri: 'tam-phuong' }], muc: MUC_PT,
-      noiDung: `${c.cung} có ${ten} trong khi tam phương có Hóa Kỵ: ${ten} làm cả mặt mạnh lẫn mặt vướng đều dịu đi, nên biên độ hẹp lại, ít bứt phá lớn nhưng cũng ít vấp lớn; điểm mạnh cần thời gian để bộc lộ, điểm vướng cũng nhẹ hơn.`,
+      maNghienCuu: ['CHUNG-TUAN-06', 'CHUNG-TUAN-02'], dieuKien: [{ [k]: true, viTri: 'chinh' }, { hoa: 'Hóa Kỵ', viTri: 'hop-chieu' }], muc: MUC_PT,
+      noiDung: `${c.cung} có ${ten} trong khi Hóa Kỵ nằm ở cung hợp chiếu ({cung}): ${ten} làm cả mặt mạnh lẫn mặt vướng đều dịu đi, nên biên độ hẹp lại, ít bứt phá lớn nhưng cũng ít vấp lớn; điểm mạnh cần thời gian để bộc lộ, điểm vướng cũng nhẹ hơn.`,
       nguon: [NL, KL], nguonChiTiet: 'NL, KL (Tuần Triệt)', truongPhai: TP, yeuTo: [],
     });
   }
@@ -273,7 +280,7 @@ const HOA_THAM = {
 // Lời áp dụng theo chuyên đề (kiểu cách × chuyên đề): để câu cách cục của các bài khác chuyên đề không chép y hệt nhau (T-a4504a, Phiếu 3).
 const UNG = {
   on: { menh: 'Với bản thân, đây là điểm tựa để sống nề nếp và giữ vai trò đáng tin trong nhóm.', 'quan-loc': 'Trong công việc, hợp vị trí cần tính tổ chức và trách nhiệm; nên tìm môi trường có quy trình rõ.', 'phu-the': 'Trong tình cảm, bạn trân trọng sự bền vững; hãy nói rõ kỳ vọng để hai người cùng đi đường dài.', 'tai-bach': 'Về tiền bạc, hợp cách tích lũy đều đặn; nên chia quỹ chi tiêu và quỹ dự phòng ngay từ đầu.', 'dien-trach': 'Về nhà cửa, hợp hướng ổn định lâu dài; nên đặt kế hoạch an cư theo từng giai đoạn.' },
-  bien: { menh: 'Với bản thân, đời sống nhiều chuyển biến; nên chọn một mục tiêu chính mỗi giai đoạn để không dàn trải.', 'quan-loc': 'Trong công việc, hợp môi trường cạnh tranh và thay đổi; nên thử việc mới có tính toán chứ không bốc đồng.', 'phu-the': 'Trong tình cảm, nhịp quan hệ dễ lên xuống; trước khi gắn bó lâu dài, hãy cùng nói rõ điều mỗi người cần, và khi nóng thì hẹn lúc khác nói.', 'tai-bach': 'Về tiền bạc, thu chi dễ biến động; nên giữ một khoản dự phòng và tránh quyết định lớn khi đang nóng vội.', 'dien-trach': 'Về nhà cửa, dễ có lần đổi chỗ ở hoặc sửa sang; nên cân nhắc kỹ chi phí trước khi quyết.' },
+  bien: { menh: 'Với bản thân, nên chọn một mục tiêu chính mỗi giai đoạn để không dàn trải.', 'quan-loc': 'Trong công việc, nên thử việc mới có tính toán chứ không bốc đồng.', 'phu-the': 'Trong tình cảm, trước khi gắn bó lâu dài, hãy cùng nói rõ điều mỗi người cần, và khi nóng thì hẹn lúc khác nói.', 'tai-bach': 'Về tiền bạc, nên giữ một khoản dự phòng và tránh quyết định lớn khi đang nóng vội.', 'dien-trach': 'Về nhà cửa, nên cân nhắc kỹ chi phí trước khi quyết.' },
   tri: { menh: 'Với bản thân, mạnh ở suy xét và chuyên môn; nên biến ý tưởng thành việc làm cụ thể theo từng bước.', 'quan-loc': 'Trong công việc, hợp nghề cần phân tích và chuyên môn; nên chủ động nhận việc để năng lực được thấy.', 'phu-the': 'Trong tình cảm, bạn thiên về suy nghĩ kỹ; hãy chia sẻ điều mình nghĩ thay vì giữ trong lòng.', 'tai-bach': 'Về tiền bạc, hợp quản lý cẩn trọng; nên ghi chép thu chi và so sánh kỹ trước khi đầu tư.', 'dien-trach': 'Về nhà cửa, bạn cân nhắc kỹ trước khi quyết; nên đặt hạn chốt để không trì hoãn việc lớn.' },
   ngon: { menh: 'Với bản thân, mạnh ở lời nói và truyền đạt; nên giữ lời rõ ràng, tránh nói khi đang nóng.', 'quan-loc': 'Trong công việc, hợp nghề cần giao tiếp và thuyết phục; nên viết lại thỏa thuận quan trọng cho rõ.', 'phu-the': 'Trong tình cảm, lời nói quyết định không khí; khi nóng, hẹn lúc bình tĩnh để bàn chuyện khó.', 'tai-bach': 'Về tiền bạc, thu nhập gắn với danh tiếng và quan hệ; nên ghi rõ điều khoản khi hợp tác.', 'dien-trach': 'Về nhà cửa, trao đổi trong gia đình là chìa khóa; nên bàn bạc rõ ràng trước các quyết định chung.' },
 };
@@ -281,7 +288,7 @@ const UNG = {
 // GHI CHÚ (chờ Đức chốt): lý do "yếu tố hung ở tứ chính nặng" theo CC-08; SP-03 coi sát tinh đắc địa hội bộ Sát Phá Tham là trợ lực. Chưa đổi cách đọc sát tinh đắc địa.
 const CUA_BAN = { menh: 'hướng đi của bạn', 'quan-loc': 'công việc của bạn', 'phu-the': 'chuyện tình cảm của bạn', 'tai-bach': 'chuyện tiền bạc của bạn', 'dien-trach': 'chuyện nhà cửa của bạn' };
 const PHA3_LY = {
-  ham: 'nhưng {pha} hãm ngay tại cung này (tứ chính gồm cung này và ba cung chiếu về) nên chưa thể coi là cách vững',
+  ham: 'nhưng {pha} hãm ngay tại cung này nên chưa thể coi là cách vững',
   ky: 'nhưng {pha} hóa Kỵ ngay trong sao tạo cách nên chưa thể coi là cách vững',
   diem: 'nhưng nhiều yếu tố hung ({pha}) hội ở tứ chính (cung này và ba cung chiếu về) nên chưa thể coi là cách vững',
 };
@@ -333,6 +340,12 @@ for (const [cd, c] of Object.entries(CD)) {
         dieuKien: [{ ...cach.dk[0], deuDoSang: ['Hãm'] }], cachCuc: cach.ten, uuTien: 75, muc: 'cach-cuc',
         noiDung: `Cả ba sao chủ cách Sát Phá Tham (Thất Sát, Phá Quân, Tham Lang) đều hãm, nên ${CUA_BAN[cd]} thường nhiều thử thách hơn và cần nhiều lần điều chỉnh.`,
         nguon: nguonCc, nguonChiTiet: 'TT (Luận cách tinh số cao hạ); TB', truongPhai: TP, yeuTo: [`Cách ${cach.ten}`] });
+    }
+    if (cach.ten === 'Sát Phá Tham') { // CC-08 ngoại lệ, SP-03: sát tinh đắc địa là trợ lực của Sát Phá Tham
+      them({ id: `KHUNG-${cd}-CC-SatPhaTham-TroLuc`, chuyenDe: cd, cung: c.cung, loai: 'CC', maNghienCuu: ['CHUNG-CC-08', 'CHUNG-SP-03'],
+        dieuKien: [...cach.dk, { satDac: 1, viTri: 'tam-phuong' }], cachCuc: cach.ten, uuTien: 70, muc: 'cach-cuc',
+        noiDung: `{dac} đắc địa trong tam phương là trợ lực của thế Sát Phá Tham, giúp ${CUA_BAN[cd]} có thêm sức bền để vượt thử thách.`,
+        nguon: nguonCc, nguonChiTiet: 'SPEC mục 6; TT (Thái Vi phú: "Thất Sát Phá Quân chuyên y Dương Linh")', truongPhai: TP, yeuTo: [`Cách ${cach.ten}`] });
     }
     if (cach.ten === 'Sát Phá Tham') { // TRANH-13: từ ba sát tinh đắc địa mà thiếu Lộc → thêm một câu, không hạ mức
       them({ id: `KHUNG-${cd}-CC-SatPhaTham-TRANH13`, chuyenDe: cd, cung: c.cung, loai: 'CC', maNghienCuu: ['CHUNG-CC-08', 'CHUNG-TRANH-13'],

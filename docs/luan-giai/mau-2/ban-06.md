@@ -30,17 +30,17 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 ## Bài luận giải (đúng như khách nhận)
 
 ### Cách yêu và gắn bó
-- Thiên Cơ tại Phu Thê: thích trao đổi nhiều, quan hệ bền khi hai bên cùng chia sẻ.  
+- Thiên Cơ tại Phu Thê: trong tình cảm, bạn có xu hướng thích trao đổi nhiều, quan hệ bền khi hai bên cùng chia sẻ. Nên giữ thói quen trò chuyện mỗi tuần về kế hoạch chung. Bạn thử đối chiếu với những mối quan hệ mình đã trải qua để xem điều này gần với mình đến đâu.  
   _↳ PT-S02-TOT · Phu Thê · Thiên Cơ · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) · tam hợp phái Việt_
 
 ### Cung hợp chiếu
-- Thiên Đồng ở cung Thiên Di (tam hợp với Phu Thê): bổ sung xu hướng nhẹ nhàng, dễ thông cảm, quan hệ cần thêm sự chủ động.  
+- Thiên Đồng ở cung Thiên Di (tam hợp với Phu Thê): bổ sung xu hướng nhẹ nhàng, dễ thông cảm. Trong quan hệ, nên chủ động hơn trong kế hoạch chung.  
   _↳ PT-S05-C1 · Thiên Di · Thiên Đồng · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
-- Thái Âm ở cung Quan Lộc (xung chiếu với Phu Thê): bổ sung xu hướng dịu dàng, nhạy cảm, cần không gian chia sẻ cảm xúc.  
+- Thái Âm ở cung Quan Lộc (xung chiếu với Phu Thê): bổ sung xu hướng dịu dàng, nhạy cảm, cần không gian chia sẻ cảm xúc. Trong quan hệ, nên tạo không gian chia sẻ cảm xúc.  
   _↳ PT-S08-C2 · Quan Lộc · Thái Âm · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
-- Cự Môn ở cung Thiên Di (tam hợp với Phu Thê): bổ sung xu hướng cần nói chuyện thẳng thắn nhưng nhẹ nhàng để tránh hiểu lầm.  
+- Cự Môn ở cung Thiên Di (tam hợp với Phu Thê): bổ sung xu hướng coi trọng sự thẳng thắn, dễ có lời qua tiếng lại khi bất đồng. Trong quan hệ, nên nói thẳng nhưng nhẹ nhàng.  
   _↳ PT-S10-C1 · Thiên Di · Cự Môn · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
-- Phúc Đức (cung tam hợp của Phu Thê) không có chính tinh (vô chính diệu): khi luận chuyện tình cảm và hôn nhân, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; phái Việt coi gặp Tuần hoặc Triệt là thuận hơn.  
+- Phúc Đức (cung tam hợp của Phu Thê) không có chính tinh (vô chính diệu): khi luận chuyện tình cảm và hôn nhân, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung.  
   _↳ KHUNG-phu-the-VCD-tam-hop · Phu Thê · — · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Tứ hóa
@@ -64,7 +64,5 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
   _↳ KHUNG-phu-the-SP-ĐàLa-xung · Phu Thê · Đà La · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 - Hỏa Tinh ở Phúc Đức (cung tam hợp của Phu Thê) ảnh hưởng đến chuyện tình cảm và hôn nhân: nhiệt huyết, phản ứng nhanh, nên tiết chế cảm xúc.  
   _↳ KHUNG-phu-the-SP-HỏaTinh-tam-hop · Phu Thê · Hỏa Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
-- Địa Kiếp ở Quan Lộc (cung xung chiếu của Phu Thê) ảnh hưởng đến chuyện tình cảm và hôn nhân: hay muốn đổi hướng, nên cân nhắc trước khi quyết.  
-  _↳ KHUNG-phu-the-SP-ĐịaKiếp-xung · Phu Thê · Địa Kiếp · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 > Luận giải do hệ thống xemtuvi.vn tạo tự động từ các quy tắc Tử Vi có ghi nguồn; nội dung mang tính tham khảo, giúp hiểu mình và định hướng, không phải lời đoán chắc về tương lai.

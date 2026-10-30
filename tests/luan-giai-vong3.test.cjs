@@ -73,8 +73,34 @@ test('Kỵ cùng cung với Tuần/Triệt (CHUNG-TUAN-06): câu Kỵ nói mặt
   assert.ok(gap >= 1, 'bộ mẫu không có Kỵ cùng Tuần/Triệt');
 });
 
-test('bài Phu Thê tắt 9 câu lạc đề (danh sách ở TAT_O_BAI)', async () => {
+test('bài Phu Thê tắt 10 câu lạc đề (danh sách ở TAT_O_BAI)', async () => {
   const tat = AI.TAT_O_BAI['phu-the'];
-  assert.equal(tat.size, 9);
+  assert.equal(tat.size, 10);
   for (let i = 0; i < TC.length; i++) for (const d of cau(await sinh(i, 'phu-the'))) assert.ok(!tat.has(d.thamChieu.quyTacId), d.thamChieu.quyTacId);
+});
+
+test('vòng 4: ban-03 nêu Kình Dương, Địa Kiếp đắc địa là trợ lực; ham không treo chữ "tứ chính"; không lặp ý nhịp', async () => {
+  const ds = cau(await sinh(2, 'phu-the')).filter((x) => (x.thamChieu.yeuTo ?? []).includes('Cách Sát Phá Tham'));
+  const t = ds.map((x) => x.text).join(' ');
+  assert.match(t, /Kình Dương, Địa Kiếp đắc địa trong tam phương là trợ lực/);
+  assert.ok(!/tứ chính/.test(t));
+  assert.ok((t.match(/nhịp/g) ?? []).length <= 1, t);
+  const ban1 = cau(await sinh(0, 'menh')).filter((x) => (x.thamChieu.yeuTo ?? []).includes('Cách Sát Phá Tham')).map((x) => x.text).join(' ');
+  assert.ok((ban1.match(/chuyển biến/g) ?? []).length <= 1, ban1);
+});
+
+test('vòng 4: vô chính diệu chỉ nói Tuần/Triệt khi cung có; Phúc Đức nên gặp Tuần, kỵ Triệt', () => {
+  const K = JSON.parse(fs.readFileSync(require('node:path').join(__dirname, '../src/lib/luan-giai/ai/quy-tac-khung.json'), 'utf8')).filter((q) => q.loai === 'VCD');
+  assert.ok(K.every((q) => !/Tuần hoặc Triệt/.test(q.noiDung)));
+  assert.ok(K.some((q) => /kỵ Triệt/.test(q.noiDung) && q.dieuKien[0].tenCung === 'Phúc Đức' && q.dieuKien[0].triet));
+  assert.ok(K.some((q) => /nên gặp Tuần/.test(q.noiDung) && q.dieuKien[0].tenCung === 'Phúc Đức' && q.dieuKien[0].tuan));
+  assert.ok(K.filter((q) => /thuận hơn/.test(q.noiDung) && !/Phúc Đức/.test(q.noiDung)).every((q) => q.khong.some((k) => k.tenCung === 'Phúc Đức')));
+});
+
+test('vòng 4: câu Tuần–Kỵ không ghi Kỵ là "tam phương" khi Kỵ ở ngay cung chính', async () => {
+  for (let i = 0; i < TC.length; i++) for (const d of cau(await sinh(i, 'menh'))) {
+    if (/DH-(Tuần|Triệt)-Ky/.test(d.thamChieu.quyTacId)) assert.match(d.text, /Hóa Kỵ nằm ở cung hợp chiếu/);
+  }
+  const bai = await sinh(0, 'menh'); // TC01: Kỵ tọa thủ Mệnh có Tuần
+  assert.ok(!cau(bai).some((d) => /DH-Tuần-Ky/.test(d.thamChieu.quyTacId)));
 });
