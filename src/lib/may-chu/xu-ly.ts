@@ -2,6 +2,8 @@
 import { kiemTraThongTin, type ThongTinSinh } from '../tuvi';
 import type { MayChu } from './csdl';
 import * as dv from './dich-vu';
+import { luanGiaiChoKhach } from './luan-giai-may-chu';
+import { ghiLoi } from './nhat-ky';
 import { cookieDat, cookieXoa, cungNguon, docCookie, docPhien, taoPhien, xoaPhien } from './phien';
 
 const DAU = { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'private, no-store' };
@@ -86,3 +88,19 @@ export const thanhToanGiaLap = (req: Request, m: MayChu) => chay(req, async () =
 
 /** Chỗ cắm cổng thật: sau này kiểm chữ ký rồi gọi xacNhanDaTra(). Bản MVP chưa hỗ trợ. */
 export const webhook = (_req: Request) => loi(501, 'chua_ho_tro', 'Cổng thanh toán này chưa được kết nối.');
+
+/** GET /api/luan-giai?laSo=&chuDe= : chỉ trả chuyên đề khách đã mua; chưa mua 403, không kèm nội dung. */
+export async function luanGiai(req: Request, m: MayChu) {
+  const id = nguoiDung(req, m); if (!id) return canDangNhap();
+  const u = new URL(req.url);
+  const laSo = Number(u.searchParams.get('laSo'));
+  const chuDe = u.searchParams.get('chuDe') ?? '';
+  if (!Number.isInteger(laSo) || laSo <= 0 || !chuDe) return loi(400, 'du_lieu_sai', 'Thiếu lá số hoặc chủ đề.');
+  try {
+    return json(await luanGiaiChoKhach(m.db, m.khoa, id, laSo, chuDe));
+  } catch (e) {
+    if (e instanceof dv.LoiNghiepVu) return loi(e.trangThai, e.ma, e.message);
+    ghiLoi('loi', '/api/luan-giai', 'sinh_that_bai', e instanceof Error ? e.message : 'không rõ');
+    return loi(500, 'loi_may_chu', 'Chưa tạo được luận giải, vui lòng thử lại.');
+  }
+}
