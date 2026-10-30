@@ -1,24 +1,57 @@
 # Phiếu kiểm duyệt: đoạn nền Quan Lộc 4 phần (NAM-MANG-07), mẫu CV-23…CV-37, mã nghiên cứu 107 đoạn QL-*
 
-Người duyệt: Thư (kiem-duyet), 30/10/2026. Việc L-5e7bce. Bản nộp: Hạnh, commit 06b4f7f.
+Người duyệt: Thư (kiem-duyet), 30/10/2026. Việc L-5e7bce. Bản nộp lần 1: Hạnh, commit 06b4f7f. Lần 2: commit dbd84f9 (+8e2797c).
 Chuẩn đối chiếu: `khung-doan-tra-phi.md` mục 6 và 6.0 (5 điều); `van-nam/QUY-TAC.md` mục 6; `docs/nghien-cuu/luan-giai-12-cung.md` (mã QUAN-*, CHUNG-VCD-*, CHUNG-TUAN-*); đoạn QL-* trong `src/lib/luan-giai/ai/quy-tac.json`; `tu-cam.json`; skill `kiem-duyet-noi-dung` mục 1–2. Lá số: an bằng `src/lib/tuvi` cho 25 lá số Canh của bộ đo.
 
-## 1. Kết luận: KHÔNG ĐẠT (chưa nạp vào `src`)
+## 1. Kết luận lần 2 (30/10/2026): ĐẠT để nạp vào `src`, kèm 2 điều kiện trước khi lên site
 
-| Tiêu chí | Điểm | Lý do ngắn |
+Bản duyệt lại: Hạnh sửa lần 1, nội dung nằm trong commit dbd84f9 (ghi nhận ở 8e2797c). Đối chiếu: `nen-quan-loc.md` mục 2–4 (bản in 7 lá số), `viec-nen-lam-ql.json` (21 mẫu), `khung-doan-tra-phi.md` 6.1, NAM-MANG-07, `ql-nguon-ma.json`. Thư an lại 7 lá số bằng `src/lib/tuvi` (Quan Lộc, cung xung chiếu, Mệnh, Tài Bạch): (a) của 5 đoạn 4 phần khớp lá số (chính tinh, độ sáng, Hóa, Linh Tinh, Triệt; 0/5 lá VCD có lục cát tinh, nên vế "không cát tinh" đúng).
+
+Phạm vi chấm: phần L-5e7bce thêm vào (NAM-MANG-07, CV-23…43, 5 đoạn nền 4 phần). Hai dòng câu dẫn HAM trong bản in là hành vi sẵn có ở HEAD, không do việc này sinh ra; xét ở mục 1.3.
+
+| Tiêu chí | Lần 1 | Lần 2 | Lý do ngắn |
+|---|---|---|---|
+| Đúng | 5 | 8 | 0 đoạn HAM gắn mẫu; (a) đủ sao, đúng lá số ở 5/5 bản in; CV-25 ghi vế sáng; CV-37/38 tách vế CHUNG-VCD-02, bỏ QUAN-CC-01 khỏi `maHuong` |
+| Sâu | 5 | 7 | Có B2 Tuần/Triệt, B3 mượn sao xung chiếu, B4 Kỵ/sát. Còn thiếu: (b) chỉ luận chính tinh đầu (Thiên Tướng ở Liêm Tướng Ngọ không có câu); VCD mượn sao **hãm** hoặc mang **Hóa Kỵ** mà (b) không nói (lỗi S4) |
+| Giọng | 7 | 8 | CV-31 `tuoiTu 18`, CV-26 bỏ "số khách", dưới 15 giữ câu dẫn, 15–17 loại QL-S04/S07-BINH/S14; B1 bỏ "giai đoạn đầu" từ 30 tuổi (Canh 1970 đã bỏ, Canh 2010 nam 17 tuổi giữ đúng). B2/B3 là câu khuôn có biến, chấp nhận |
+| An toàn | 9 | 10 | 0 "dồn vốn" trong phần 4 phần; 6 mẫu mới CV-38…43 không có lời khuyên tài chính, y tế, pháp lý; 0 từ cấm |
+
+**TB 8,25.** Đạt cả 4 điều kiện ngưỡng. Tùng/Bảo được nạp NAM-MANG-07 và CV-23…43 vào `src`.
+
+### 1.1 Kiểm từng lỗi lần 1
+
+| Mã | Lần 2 | Bằng chứng |
 |---|---|---|
-| Đúng | 5 | Mã bám hợp lệ ở bản sáng/bình, nhưng mẫu "phát huy" gán cả cho 14 đoạn QL-Snn-HAM; câu đầu các đoạn HAM tả sao hãm như sao sáng; CV-25 trái vế "hãm" của chính mã bám QUAN-TDU-05 |
-| Sâu | 5 | Đoạn đủ 4 phần chỉ in một chính tinh; bỏ sao đồng cung, Tuần/Triệt, Hóa Kỵ tại Quan Lộc; cung vô chính diệu không nêu chính tinh xung chiếu |
-| Giọng | 7 | Câu rõ, có cách đo, ≤ 33 chữ; còn CV-26, CV-31 không trung tính cho người dưới 18; QL-VCD "giai đoạn đầu" lạc tuổi với người 57 tuổi; chưa có ngưỡng tuổi dưới 15 |
-| An toàn | 9 | 0 từ cấm (52 mục `tu-cam.json`), không mê tín, không gây sợ, CV-37 đã bỏ câu nặng của QUAN-CC-01. Trừ: NAM-MANG-07 đưa QL-S04-HAM ("tránh dồn vốn vào một chỗ", lời khuyên đầu tư) lên bài trả phí |
+| Đ1 P0 | Xong | `quyTacId` CV-23…36 chỉ TOT/BINH; thêm `khongSaoTrongCung` Kỵ/sát. Canh 1990 nam, Canh 2000 nam: đoạn HAM giữ câu dẫn, không gắn mẫu |
+| Đ2 P0 | Xong | CV-25 `QUAN-TDU-05/sáng`, `quyTacId` QL-S03-TOT/BINH |
+| Đ3 P0 | Xong (theo phương án "giữ câu dẫn" lần 1 đã cho phép) | NAM-MANG-07: HAM không áp dụng cho tới khi câu đầu viết lại và Thư duyệt. Câu đầu chưa viết lại, xem 1.3 |
+| S1 P0 | Xong | Canh 2000 nữ: "Liêm Trinh (vượng), Thiên Tướng (vượng); có Triệt" + B2 |
+| S2 P0 | Xong | Canh 1970 nữ: VCD, Linh Tinh, Triệt, mượn Thiên Đồng (Khoa), Thái Âm (Kỵ) ở Phu Thê + B3 Triệt |
+| A1 P0 | Xong trong NAM-MANG-07 | QL-S04-HAM bị loại; nhưng câu dẫn vẫn in nguyên văn, xem 1.3 |
+| Đ4 P1 | Xong | CV-37 `CHUNG-VCD-02/không cát tinh`, CV-38 `/có cát tinh`, điều kiện `catTinhTamPhuong` |
+| S3 P1 | Xong | CV-39 (Kỵ), CV-40…43 (sát, dạng i); B4 nối QL-HOA-3, QL-PS-* |
+| G1, G2 P1 | Xong | như bảng điểm |
+| T1 P1 | Xong | câu dẫn trước đoạn nền ở 5/5 bản in; (c) 3 sách |
+| G3 P2 | Xong | B1 |
 
-**TB 6,5.** Trượt cả 4 điều kiện ngưỡng: TB < 7,5; Đúng và Sâu < 6; Sâu < 6; An toàn < 10. Không nâng điểm.
+### 1.2 Ý kiến về "chặn bằng câu dẫn"
 
-Phần đạt (giữ nguyên, không cần làm lại):
-- `ql-ma-nghien-cuu.json`: 107/107 đoạn QL-* có mã, 0 mã thiếu trong tài liệu nghiên cứu (kiểm bằng máy). Gán mã phong cách (QUAN-<SAO>-cuối) cho đoạn nền là đúng.
-- Bảng 6.1 khớp JSON ở 15/15 mẫu (câu, cách đo, hạn). Câu ≤ 33 chữ, một việc, hạn 2–3 tháng, đo được.
-- Với đoạn **TOT** (Miếu, Vượng, Đắc), CV-23…CV-36 đủ 5 điều mục 6.0.
-- Không có đoạn năm giả; NAM-MANG-07 cấm "năm nay sẽ…", đúng tinh thần NAM-MANG-01.
+Đủ để **L-5e7bce đạt**: NAM-MANG-07 không đưa đoạn HAM lên thành 4 phần, không gắn mẫu "phát huy", đúng điều kiện lần 1 (Đ3, A1). **Chưa đủ để lên site**: câu dẫn không chặn nội dung. `src/lib/luan-giai/ai/van-nam.ts` dòng 628 chèn **nguyên văn** đoạn nền `phong-cach` làm câu dẫn của mảng Sự nghiệp, bất kể độ sáng. Vì vậy:
+- Bản in Canh 1990 nam 4/9h: "Thái Âm tại Quan Lộc: hợp công việc cần sự cẩn trọng, chăm chút…" (Thái Âm **hãm**, Hóa Kỵ); Canh 2000 nam 4/9h: "Thiên Tướng tại Quan Lộc: hợp vai trò hỗ trợ, phối hợp, đại diện…" (Thiên Tướng **hãm**). Hai câu tả sao hãm như sao sáng, nằm trong bài trả phí. Nếu chấm cả mảng Sự nghiệp như khách đọc thì Đúng tối đa 6.
+- Lá số có Vũ Khúc hãm tại Quan Lộc vẫn nhận "tránh dồn vốn vào một chỗ" (QL-S04-HAM, `quy-tac.json` dòng 1913) ở câu dẫn. Đếm "0 lần dồn vốn" trên 28 lá số chỉ vì bộ đo không có lá nào như vậy. Đoạn này cũng in ở bài Quan Lộc của bộ 12 cung.
+
+### 1.3 Lỗi còn lại và điều kiện lên site (Thư không sửa)
+
+| Mã | Mức | Lỗi | Cần làm | Người |
+|---|---|---|---|---|
+| A2 | P0 (trước thử kín 16/11) | QL-S04-HAM "dồn vốn" vẫn đến khách qua câu dẫn và bài 12 cung | Áp câu thay. Câu Hạnh đề xuất **đạt**, chỉ sửa một chỗ: "dễ vất vả hơn mức bỏ ra" đọc ngược nghĩa, đổi thành "kết quả dễ ít hơn công sức bỏ ra". Gắn mã vế hãm của QUAN-VK. Nghiệm thu: `grep "dồn vốn" src/lib/luan-giai/ai/quy-tac.json` = 0 | Minh duyệt, Tùng/Bảo nạp |
+| A3 | P0 (báo Minh, ngoài phạm vi) | `quy-tac-van/van-10-nam.json` dòng 450: "Vũ Khúc hãm ở cung vận: … có khoản hao; nên lập quỹ dự phòng và tránh dồn vốn vào một chỗ" (lời khuyên tài chính, bài 10 năm) | Hạnh viết lại theo hành vi như A2 | Hạnh |
+| Đ5 | P1 (trước ra mắt 27/11) | Câu đầu 14 đoạn QL-Snn-HAM tả như sao sáng, đang in ở câu dẫn (vi phạm skill mục 1) | Hạnh viết lại câu đầu theo mặt cần chú ý, bám vế hãm (QUAN-TA-02, QUAN-THL-02…). Xong thì Thư duyệt và NAM-MANG-07 mở cho HAM | Hạnh |
+| S4 | P1 | VCD mượn sao xung chiếu **hãm** (Canh 1990 nữ: Thái Dương hãm) hoặc mang **Hóa Kỵ** (Canh 1970 nữ, Canh 2010 nam: Thái Âm Kỵ): (a) có ghi, (b) không nói, mẫu (d) vẫn trung tính | Thêm vế B3: sao mượn hãm hoặc Hóa Kỵ thì thêm một câu mặt cần chú ý (CHUNG-VCD-01, QUAN-HOA-03), lực nhẹ hơn khi ở ngay cung | Hạnh |
+| S5 | P2 | Hai chính tinh đồng cung: (b) chỉ có câu của sao đầu (Canh 2000 nữ: Thiên Tướng không được luận) | Nối câu ngắn của sao thứ hai hoặc câu gộp cặp sao | Hạnh, Bảo |
+| N1 | P2 | CHUNG-TUAN-05, CHUNG-VCD-03 có nguồn web (WC6, WC7) nhưng `ql-nguon-ma.json` để `[]`; câu "phái Việt coi là thế thuận hơn" không có nguồn ở (c) | Ghi "Tư liệu tham khảo trực tuyến" hoặc nguồn sách nếu có | Hạnh |
+
+Ghi chú lần 1 (mục 2–4 dưới đây) giữ nguyên làm lịch sử.
 
 ## 2. Hai câu Minh hỏi
 
