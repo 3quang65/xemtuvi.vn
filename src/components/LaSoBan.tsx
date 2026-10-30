@@ -1,7 +1,8 @@
 'use client';
 
 import { useMemo, useState } from 'react';
-import { luuNien, moTaQuyUoc, type Cung, type LaSo, type LuuNien, type Sao } from '@/lib/tuvi';
+import { luuNien, moTaQuyUoc, type Cung, type LaSo, type LuuNien, type QuyUoc, type Sao } from '@/lib/tuvi';
+import TuyChonTruongPhai from './TuyChonTruongPhai';
 
 // Vị trí 12 cung trên bàn 4×4 truyền thống (hàng, cột), theo chỉ số chi: 0 = Tý … 11 = Hợi
 const VI_TRI: Record<number, [number, number]> = {
@@ -95,7 +96,7 @@ function ChiTietCung({ c, ln }: { c: Cung; ln: LuuNien }) {
   );
 }
 
-export default function LaSoBan({ laSo, namHienTai }: { laSo: LaSo; namHienTai: number }) {
+export default function LaSoBan({ laSo, namHienTai, onDoiQuyUoc }: { laSo: LaSo; namHienTai: number; onDoiQuyUoc: (p: Partial<QuyUoc>) => void }) {
   const cungMenh = laSo.cung.find((c) => c.ten === 'Mệnh')!;
   const [chon, setChon] = useState<number>(cungMenh.chi);
   const [namXem, setNamXem] = useState(Math.max(namHienTai, laSo.am.nam));
@@ -139,6 +140,7 @@ export default function LaSoBan({ laSo, namHienTai }: { laSo: LaSo; namHienTai: 
         {vanNay && ` Đại vận đang đi (${namXem}, ${tuoiMu} tuổi mụ) được tô đậm.`}
       </p>
       {quyUoc.length > 0 && <p className="chu-giai">Lá số lập theo: {quyUoc.join(' ')}</p>}
+      <TuyChonTruongPhai quyUoc={laSo.quyUoc} onDoi={onDoiQuyUoc} />
     </section>
   );
 }

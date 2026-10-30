@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { canhGio, kiemTraThongTin, lapLaSo, namAmHienTai, type LaSo, type ThongTinSinh } from '@/lib/tuvi';
+import { canhGio, kiemTraThongTin, lapLaSo, namAmHienTai, type LaSo, type QuyUoc, type ThongTinSinh } from '@/lib/tuvi';
 import LaSoBan from './LaSoBan';
 import TomTatMienPhi from './TomTatMienPhi';
 import { docThongTinSinh, guiSuKien, luuThongTinSinh } from '@/lib/phien';
@@ -29,13 +29,14 @@ export default function LapLaSo() {
   });
   const [loi, setLoi] = useState<string | null>(null);
   const [laSo, setLaSo] = useState<LaSo | null>(null);
+  const [tt, setTt] = useState<ThongTinSinh | null>(null);
   const ketQuaRef = useRef<HTMLDivElement>(null);
 
   // Quay lại từ các bước sau: dựng lại lá số từ thông tin đã nhớ tạm trong tab này
   useEffect(() => {
     const daLuu = docThongTinSinh();
     if (daLuu) {
-      try { setLaSo(lapLaSo(daLuu)); return; } catch { /* thông tin hỏng: coi như chưa có */ }
+      try { setLaSo(lapLaSo(daLuu)); setTt(daLuu); return; } catch { /* thông tin hỏng: coi như chưa có */ }
     }
     guiSuKien('vao_form');
   }, []);
@@ -66,6 +67,7 @@ export default function LapLaSo() {
     if (thongBao) { setLoi(thongBao); return; }
     try {
       setLaSo(lapLaSo(t as ThongTinSinh));
+      setTt(t as ThongTinSinh);
       luuThongTinSinh(t as ThongTinSinh);
       guiSuKien('lap_la_so');
       setLoi(null);
@@ -73,6 +75,16 @@ export default function LapLaSo() {
     } catch (err) {
       setLoi(err instanceof Error ? err.message : 'Không lập được lá số với thông tin này.');
     }
+  }
+
+  function doiQuyUoc(p: Partial<QuyUoc>) {
+    if (!tt) return;
+    const moi: ThongTinSinh = { ...tt, quyUoc: { ...tt.quyUoc, ...p } };
+    try {
+      setLaSo(lapLaSo(moi));
+      setTt(moi);
+      luuThongTinSinh(moi);
+    } catch { /* giữ lá số hiện tại */ }
   }
 
   return (
@@ -156,7 +168,7 @@ export default function LapLaSo() {
       <div ref={ketQuaRef}>
         {laSo && (
           <>
-            <LaSoBan key={JSON.stringify(laSo.duong) + laSo.gio.dongHo + laSo.gioiTinh} laSo={laSo} namHienTai={namAmHienTai()} />
+            <LaSoBan key={JSON.stringify(laSo.duong) + laSo.gio.dongHo + laSo.gioiTinh} laSo={laSo} namHienTai={namAmHienTai()} onDoiQuyUoc={doiQuyUoc} />
             <TomTatMienPhi laSo={laSo} />
           </>
         )}

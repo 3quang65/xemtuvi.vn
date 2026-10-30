@@ -215,12 +215,20 @@ a { color: inherit; }
 .da-dang-nhap { margin: 0; font-weight: 500; color: var(--ngoc-dam); }
 .tt-dong.don { margin: 0; }
 
+/* Trường phái và tùy chọn dưới lá số */
+.truong-phai { margin-top: 4px; }
+.tuy-chon { margin-top: 10px; }
+.tuy-chon-luoi { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 12px 16px; margin-top: 12px; }
+.tuy-chon-o { display: grid; grid-template-columns: minmax(0, 1fr); gap: 4px; font-size: 0.88rem; min-width: 0; }
+.tuy-chon-o select { min-height: 44px; width: 100%; max-width: 100%; font: inherit; }
+
 /* ---------- Màn hình hẹp ---------- */
 @media (max-width: 860px) {
   .mo-dau { grid-template-columns: 1fr; gap: 24px; padding-top: 24px; }
 }
 @media (max-width: 640px) {
-  .ban { grid-template-rows: repeat(4, minmax(104px, auto)); }
+  /* Bàn tràn hết bề ngang màn hình để mỗi ô cung rộng >= 88px ở 375px */
+  .ban { grid-template-rows: repeat(4, minmax(104px, auto)); margin: 0 -16px; border-radius: 0; border-left: 0; border-right: 0; }
   .o-cung { padding: 6px; font-size: 0.72rem; gap: 3px; }
   .phu-tinh, .sao-luu, .cung-chan > span:not(.van-nay) { display: none; }
   .nam-xem { margin-top: 6px; font-size: 0.72rem; gap: 4px; }
