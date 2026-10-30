@@ -208,3 +208,26 @@ test('L-f65975: cổng mở bán Vận 2027 cần cờ Thư và ngày 15/12/2026
   assert.throws(() => dv.taoDon(M.db, Number(nd), laSo('van-nam-2027'), 'gia_lap', T('2026-12-01T09:00:00')), /chưa mở bán/);
   assert.equal(goi.goiDangBan(goi.GOI_VAN_NAM, T('2027-02-07T08:00:00')).some((g) => g.ma === 'tron-la-so-kem-van-nam'), false);
 });
+
+test('L-eb6204 B1: đã có Trọn lá số của lá số đó thì không mua gộp được; người chưa mua vẫn mua gộp', () => {
+  const { coTronLaSo } = nap('lib/quyen-xem.ts');
+  const T = Date.parse('2026-12-20T09:00:00+07:00');
+  const them = (email) => Number(M.db.prepare("INSERT INTO nguoi_dung (nha_cung_cap, ma_ngoai, email, tao_luc) VALUES ('thu',?,?,0)").run(email, email).lastInsertRowid);
+  const themLaSo = (nd) => Number(M.db.prepare('INSERT INTO la_so (nguoi_dung_id, sinh_ma_hoa, khoa_tim, tao_luc) VALUES (?,?,?,0)').run(nd, 'x', 'k' + Math.random()).lastInsertRowid);
+  const mua = (nd, ls, ma) => dv.xacNhanDaTra(M.db, dv.taoDon(M.db, nd, { maGoi: ma, laSoId: ls }, 'gia_lap', T).id, 'gia_lap', 'gd' + Math.random(), T);
+  const a = them('b1a@example.vn'); const lsA = themLaSo(a); const lsA2 = themLaSo(a);
+  const gop = (nd, ls) => dv.taoDon(M.db, nd, { maGoi: 'tron-la-so-kem-van-nam', laSoId: ls }, 'gia_lap', T);
+  assert.equal(gop(a, lsA).soTien, 129000, 'chưa mua vẫn mua gộp được');
+  mua(a, lsA, 'tron-la-so');
+  assert.throws(() => gop(a, lsA), (e) => e.ma === 'da_co_tron_la_so' && e.trangThai === 409 && /Vận năm 2027/.test(e.message));
+  assert.equal(gop(a, lsA2).soTien, 129000, 'lá số khác chưa mua vẫn mua gộp được');
+  assert.equal(dv.taoDon(M.db, a, { maGoi: 'van-nam-2027', laSoId: lsA }, 'gia_lap', T).soTien, 49000, 'vẫn mua lẻ được');
+  const b = them('b1b@example.vn'); const lsB = themLaSo(b); mua(b, lsB, 'thanh-vien-nam');
+  assert.throws(() => gop(b, lsB), (e) => e.ma === 'da_co_tron_la_so');
+  // giao diện: cùng quy tắc
+  assert.equal(coTronLaSo([{ loai: 'tron_la_so', chuDe: null, laSoId: 5 }], 5, [5]), true);
+  assert.equal(coTronLaSo([{ loai: 'tron_la_so', chuDe: null, laSoId: 5 }], 6, [5, 6]), false);
+  assert.equal(coTronLaSo([{ loai: 'chu_de', chuDe: 'ban-than', laSoId: 5 }], 5, [5]), false);
+  assert.equal(coTronLaSo([{ loai: 'thanh_vien', chuDe: null, laSoId: null }], 5, [5]), true);
+  assert.equal(coTronLaSo([], 5, [5]), false);
+});

@@ -12,6 +12,12 @@ export function coVanNam(quyen: QuyenGiaoDien[], laSoId: number, laSoIds: number
   return quyen.some((x) => x.loai === 'thanh_vien' ? duocThanhVien : x.loai === 'van_nam' && x.laSoId === laSoId);
 }
 
+/** Đã có Trọn lá số cho lá số này (mua Trọn lá số/gộp, hoặc thành viên năm phủ lá số này): khi đó không bán gói gộp nữa. */
+export function coTronLaSo(quyen: QuyenGiaoDien[], laSoId: number, laSoIds: number[]): boolean {
+  const duocThanhVien = laSoIds.slice(0, SO_LA_SO_THANH_VIEN).includes(laSoId);
+  return quyen.some((x) => x.loai === 'thanh_vien' ? duocThanhVien : x.loai === 'tron_la_so' && x.laSoId === laSoId);
+}
+
 export function tongHopQuyen(quyen: QuyenGiaoDien[], laSoId: number, laSoIds: number[]): { goi: MaGoi; dsChuDe: string[] } | null {
   const duocThanhVien = laSoIds.slice(0, SO_LA_SO_THANH_VIEN).includes(laSoId);
   const cua = quyen.filter((x) => x.loai === 'thanh_vien' ? duocThanhVien : x.laSoId === laSoId);

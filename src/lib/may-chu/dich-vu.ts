@@ -99,6 +99,12 @@ export function truNangGoiCuaToi(db: Csdl, nguoiDungId: number, bang?: BangGia, 
   return tinhTruNangGoi(don, bayGio, layGoi('tron-la-so', bang)?.gia ?? TRAN_TRU_NANG_GOI);
 }
 
+/** Lá số này đã có quyền Trọn lá số (đơn trọn/gộp, hoặc thành viên còn hạn phủ 3 lá số đầu)? Dùng chặn bán gói gộp. */
+export function daCoTronLaSo(db: Csdl, nguoiDungId: number, laSoId: number, bayGio = Date.now()): boolean {
+  const dau = (db.prepare('SELECT id FROM la_so WHERE nguoi_dung_id=? ORDER BY id LIMIT ?').all(nguoiDungId, LA_SO_THANH_VIEN) as { id: number }[]).map((r) => r.id);
+  return dsQuyen(db, nguoiDungId, bayGio).some((q) => q.loai === 'thanh_vien' ? dau.includes(laSoId) : q.loai === 'tron_la_so' && q.laSoId === laSoId);
+}
+
 /** Tạo đơn chờ. Số tiền lấy từ goi.ts (theo bảng giá nhánh thử nếu có, do máy chủ truyền); mọi số tiền từ trình duyệt đã bị bỏ qua ở tầng HTTP. */
 export function taoDon(db: Csdl, nguoiDungId: number, v: { maGoi: unknown; chuDe?: unknown; laSoId?: unknown; bang?: BangGia }, cong: Cong = 'gia_lap', bayGio = Date.now()) {
   const goi = layGoi(typeof v.maGoi === 'string' ? v.maGoi : null, v.bang);
@@ -118,6 +124,9 @@ export function taoDon(db: Csdl, nguoiDungId: number, v: { maGoi: unknown; chuDe
     laSoId = v.laSoId as number;
   }
   if (goi.ma !== 'thanh-vien-nam' && laSoId === null) throw new LoiNghiepVu('thieu_la_so', 'Cần chọn lá số cho gói này.');
+  if (goi.ma === 'tron-la-so-kem-van-nam' && laSoId !== null && daCoTronLaSo(db, nguoiDungId, laSoId, bayGio)) {
+    throw new LoiNghiepVu('da_co_tron_la_so', 'Bạn đã có Trọn lá số cho lá số này. Hãy mua gói Vận năm 2027 lẻ để chỉ trả phần còn thiếu.', 409);
+  }
   const tru = goi.ma === 'thanh-vien-nam' ? Math.min(truNangGoiCuaToi(db, nguoiDungId, v.bang, bayGio), goi.gia) : 0;
   const soTien = goi.gia - tru;
   const id = Number(db.prepare('INSERT INTO don_hang (nguoi_dung_id, la_so_id, ma_goi, chu_de, so_tien, tru, cong, tao_luc) VALUES (?,?,?,?,?,?,?,?)').run(nguoiDungId, laSoId, goi.ma, chuDe, soTien, tru, cong, bayGio).lastInsertRowid);
