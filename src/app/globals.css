@@ -284,3 +284,4 @@ a { color: inherit; }
 .van-nam-thang { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
 .van-nam-thang li { border: 1px solid var(--vien); border-radius: 12px; padding: 10px 12px; overflow-wrap: anywhere; }
 .van-nam-thang li p { margin: 4px 0 0; }
+.bai-luan .can-cu { display: block; margin-top: 4px; overflow-wrap: anywhere; color: var(--chu-phu, inherit); }

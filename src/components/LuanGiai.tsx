@@ -7,6 +7,7 @@ import { guiSuKien } from '@/lib/phien';
 import { lapLaSo, type LaSo, type ThongTinSinh } from '@/lib/tuvi';
 import { coVanNam, laSoMacDinh, tongHopQuyen, type QuyenGiaoDien } from '@/lib/quyen-xem';
 import type { LuanGiai as BaiLuanGiai } from '@/lib/luan-giai/ai';
+import { dongCanCu } from '@/lib/luan-giai/can-cu';
 import TomTatMienPhi from './TomTatMienPhi';
 import { KhungMoiMo, NutGopY } from './KhungMoi';
 import type { BaiVanNam, XemTruocVanNam } from '@/lib/luan-giai/ai/van-nam';
@@ -36,7 +37,7 @@ function BaiLuan({ laSoId, chuDe }: { laSoId: number; chuDe: string }) {
         <section key={m.id}>
           <h3>{m.tieuDe}</h3>
           {m.nhanDinh.map((n) => (
-            <p key={n.thamChieu.quyTacId}>{n.text} <small>({n.thamChieu.nguon}; {n.thamChieu.truongPhai})</small></p>
+            <p key={n.thamChieu.quyTacId}>{n.text} <small className="can-cu">{dongCanCu(n.thamChieu)}</small></p>
           ))}
         </section>
       ))}
