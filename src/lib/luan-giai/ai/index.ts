@@ -126,8 +126,13 @@ export function maNghienCuuCua(id: string): string[] {
 const QUY_TAC_VAN = [...(quyTacVanJson as unknown as QuyTacVan[]), ...(quyTacVanSpJson as unknown as QuyTacVan[]), ...(quyTacVanPpJson as unknown as QuyTacVan[])];
 const TU_CAM = tuCamJson as unknown as TuCamCauHinh;
 const PROMPT = fs.readFileSync(path.join(process.cwd(), 'src/lib/luan-giai/ai/prompt-he-thong.md'), 'utf8');
+/**
+ * Câu hợp chiếu của bộ quy tắc cũ: id ML/QL/PT-S<sao>-C<n> (độ sáng tốt: Miếu/Vượng/Đắc/Bình) và hậu tố -HAM (Hãm).
+ * Sao Hãm mà chưa có câu -HAM thì không phát câu C nào cho sao đó (không tả sao hãm bằng nét tích cực); danh sách chờ ở docs/luan-giai/cho-hanh-C-HAM.md.
+ */
+export const LA_CAU_C = /^(ML|QL|PT)-S\d+-C\d+(-HAM)?$/;
 /** Tăng khi đổi cách ghép/lọc câu (không đổi quy tắc) để bản lưu cũ không bị dùng lại. */
-const PHIEN_BAN_BO_GHEP = 'ghep-7';
+const PHIEN_BAN_BO_GHEP = 'ghep-8';
 export const PHIEN_BAN_QUY_TAC = bam(JSON.stringify([QUY_TAC, QUY_TAC_2, QUY_TAC_VAN, CHUYEN_DE, TU_CAM, PROMPT, PHIEN_BAN_BO_GHEP])).slice(0, 12);
 
 export function nhaCungCapDangDung(yeuCau: TuyChon['nhaCungCap']): 'stub' | 'claude' | string {
@@ -172,6 +177,10 @@ interface KetQuaKhop {
   cau: string;
   uuTien: number;
   cungGoc: string;
+  /** Loại quy tắc bản 2 (CT, C, SP, CC, HOA, VCD…); quy tắc cũ không có. */
+  loai?: string;
+  cachCuc?: string;
+  phaCach?: boolean;
   q: { id: string; chuyenDe: string; muc?: string; nguon: string; truongPhai: string };
 }
 
@@ -224,6 +233,7 @@ function khopBan2(ls: LaSo, q: QuyTacBan2): KetQuaKhop | null {
   return {
     sao: capCung ? (vcd ? xung : goc).chinhTinh.map((s) => s.ten) : sao,
     yeuTo: vcd ? ['Vô Chính Diệu'] : q.yeuTo ?? [], cungLienQuan: capCung ? (vcd ? [goc.ten, xung.ten] : [goc.ten]) : cung, cau, uuTien: q.uuTien ?? 0, cungGoc: q.cung,
+    loai: q.loai, cachCuc: q.cachCuc, phaCach: q.phaCach,
     q: { id: q.id, chuyenDe: q.chuyenDe, muc: q.muc, nguon: q.nguon.join('; '), truongPhai: q.truongPhai },
   };
 }
@@ -332,6 +342,14 @@ export async function sinhLuanGiai(ls: LaSo, chuyenDe: ChuyenDeMa, tuyChon: TuyC
   if (khopDs.some((x) => /^KHUNG-[a-z-]+-KY-/.test(x.q.id))) {
     const chung = new Set(QUY_TAC.filter((q) => q.chuyenDe === chuyenDe && !q.sao.length && q.dieuKien?.hoa === 'Hóa Kỵ').map((q) => q.id));
     for (let i = khopDs.length - 1; i >= 0; i--) if (chung.has(khopDs[i].q.id)) khopDs.splice(i, 1);
+  }
+  // Câu hợp chiếu (C) cũ nhường cho quy tắc C bản 2 cùng sao, cùng cung (Hạnh viết lại thì dùng bản của Hạnh).
+  const c2 = khopDs.filter((x) => x.loai === 'C');
+  if (c2.length) {
+    for (let i = khopDs.length - 1; i >= 0; i--) {
+      const x = khopDs[i];
+      if (LA_CAU_C.test(x.q.id) && c2.some((y) => y.sao.some((t) => x.sao.includes(t)) && y.cungLienQuan?.includes(x.cungGoc))) khopDs.splice(i, 1);
+    }
   }
   // Câu sao phụ dùng chung lạc đề với bài tình cảm (Phiếu 3c, T-a4504a vòng 3): tắt đến khi Hạnh viết bản Phu Thê.
   const tat = TAT_O_BAI[chuyenDe];
