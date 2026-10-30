@@ -154,7 +154,7 @@ test('L-f91bef: lời hứa khớp sản phẩm thật, chủ đề lẻ chỉ 3
   assert.ok(!/12 cung|bất cứ lúc nào/.test(chu), chu);
   assert.match(goi.layGoi('tron-la-so').quyenLoi[0], /ba cung trọng yếu/);
   assert.deepEqual(goi.CHU_DE.map((c) => c.ma), ['ban-than', 'tinh-cam', 'su-nghiep']);
-  assert.equal(goi.CHU_DE_TAT_CA.length, 5);
+  assert.equal(goi.CHU_DE_TAT_CA.length, 3); // L-1786cd: tên hai chủ đề chưa bán nằm ở KhungMoi, không ở goi.ts
   assert.equal(goi.layChuDe('tai-chinh'), undefined);
   const gop = goi.layGoi('tron-la-so-kem-van-nam');
   assert.equal(gop.banDen, '2027-02-06');

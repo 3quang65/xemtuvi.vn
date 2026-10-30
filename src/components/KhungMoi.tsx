@@ -7,7 +7,7 @@ import DangNhapMa from './DangNhapMa';
 import { docMaMoi, docThongTinSinh, guiSuKien, maPhien } from '@/lib/phien';
 
 interface Kiem { hopLe: boolean; nguon?: string; gopYUrl?: string; chuDe: string[]; dangNhap: boolean; daDung: boolean }
-const TEN: Record<string, string> = { ...Object.fromEntries(CHU_DE_TAT_CA.map((c) => [c.ma, c.ten])), 'van-nam-2027': 'Vận năm 2027 (Bản thử)' };
+const TEN: Record<string, string> = { ...Object.fromEntries(CHU_DE_TAT_CA.map((c) => [c.ma, c.ten])), 'tai-chinh': 'Tài chính', 'gia-dao': 'Gia đạo', 'van-nam-2027': 'Vận năm 2027 (Bản thử)' };
 
 async function api<T>(duong: string, body?: unknown): Promise<T> {
   const r = await fetch(duong, body === undefined ? { cache: 'no-store' } : { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });

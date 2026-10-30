@@ -69,12 +69,10 @@ function dungGoi(bang?: BangGia): Goi[] {
     },
     {
       ma: 'thanh-vien-nam', ten: 'Thành viên năm', gia: giaNam, donVi: 'một năm', chinh: false,
-      an: true, // ẩn đến khi vận năm, lưu nguyệt, hỏi đáp hoàn tất (Minh, 30/10). Bỏ dòng này để mở bán lại.
+      an: true, // ẩn đến khi các quyền lợi bổ sung của gói năm hoàn tất (Minh, 30/10). Bỏ dòng này để mở bán lại.
       soSanh: [`≈ ${dinhDangGia(Math.round(giaNam / 12 / 1000) * 1000)}/tháng`, `Mua lẻ 3 lá số đã là ${dinhDangGia(3 * giaTron)}`],
       quyenLoi: [
         'Trọn lá số của bạn, xem trong 365 ngày kể từ ngày thanh toán',
-        'Luận vận năm và lưu nguyệt từng tháng',
-        'Hỏi đáp về lá số: 5 câu mỗi tháng',
         'Trọn lá số cho 2 người thân',
         'Áp dụng cho 3 lá số bạn lập đầu tiên trong tài khoản (tính theo thứ tự lập, không đổi được)',
       ],
@@ -110,10 +108,8 @@ export const CHU_DE_TAT_CA: { ma: MaChuDe; ten: string }[] = [
   { ma: 'ban-than', ten: 'Bản thân' },
   { ma: 'tinh-cam', ten: 'Tình cảm' },
   { ma: 'su-nghiep', ten: 'Sự nghiệp' },
-  { ma: 'tai-chinh', ten: 'Tài chính' },
-  { ma: 'gia-dao', ten: 'Gia đạo' },
 ];
-/** Chủ đề đang bán lẻ (khớp ba cung của Trọn lá số). Tài chính, Gia đạo mở bán khi nội dung qua Thư duyệt. */
+/** Chủ đề đang bán lẻ (khớp ba cung của Trọn lá số). Hai chủ đề còn lại mở bán khi nội dung qua Thư duyệt. */
 const CHU_DE_DANG_BAN: MaChuDe[] = ['ban-than', 'tinh-cam', 'su-nghiep'];
 export const CHU_DE = CHU_DE_TAT_CA.filter((c) => CHU_DE_DANG_BAN.includes(c.ma));
 
