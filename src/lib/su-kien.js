@@ -8,10 +8,15 @@ const TRANG = {
   dang_ky_nhan_tin: 'lp', // đăng ký nhận tin ở /van-nam-2027; KHÔNG ghi email vào sự kiện
   xem_lp_van_nam: 'lp', bam_lap_la_so_lp: 'lp', // trang đích /lp/van-nam-2027
   vao_moi: 'form', dung_ma_moi: 'luan-giai', bam_gop_y: 'luan-giai', // bản thử khách mời (ban-thu-khach-moi.md)
+  hien_khao_sat: 'luan-giai', tra_loi_khao_sat: 'luan-giai', bo_qua_khao_sat: 'luan-giai', // khảo sát 'đáng tiền' sau bài trả phí (khao-sat-dang-tien_v1.md); không tính vào 4 màn
   bao_loi: 'luan-giai', // khách báo không xem được đủ phần đã mua (đếm khiếu nại); sau khi mua nên không tính vào 4 màn
 };
 const { MA_GOI, MA_CHU_DE } = require('./goi-ma.js');
 const TEN_SU_KIEN = Object.keys(TRANG);
+const KHAO_SAT = ['hien_khao_sat', 'tra_loi_khao_sat', 'bo_qua_khao_sat'];
+const MA_BAI = [...MA_CHU_DE, 'van-nam-2027']; // mã bài = chuyên đề đã mua (không phải mã lá số, không dữ liệu sinh)
+const CACH_KICH_HOAT = ['cuoi_bai', 'doc_xong'];
+const DIEM = [1, 2, 3, 4, 5];
 // Chỉ máy chủ được ghi (kèm nguon tra từ mã mời); máy khách gửi lên /api/su-kien thì bị từ chối.
 const CHI_MAY_CHU = ['vao_moi', 'dung_ma_moi', 'dang_ky_nhan_tin'];
 
@@ -65,10 +70,38 @@ function kiemNguon(b) {
   return ra;
 }
 
+/** Sự kiện khảo sát: chỉ nhận danh sách trường cho phép (mã bài, gói, cách kích hoạt, điểm, có lời hay không). */
+function kiemKhaoSat(b) {
+  const choPhep = { hien_khao_sat: ['bai', 'goi', 'cach'], tra_loi_khao_sat: ['bai', 'goi', 'diem_a', 'diem_c', 'co_loi_b'], bo_qua_khao_sat: ['bai', 'goi'] }[b.ten];
+  const khoa = Object.keys(b);
+  if (!khoa.includes('phien') || khoa.some((k) => !['ten', 'phien', 'thietBi', ...choPhep].includes(k))) return null;
+  if (typeof b.phien !== 'string' || !/^[A-Za-z0-9_-]{16,32}$/.test(b.phien)) return null;
+  if (typeof b.bai !== 'string' || !MA_BAI.includes(b.bai)) return null;
+  if (typeof b.goi !== 'string' || !MA_GOI.includes(b.goi)) return null;
+  const ra = { ten: b.ten, phien: b.phien, bai: b.bai, goi: b.goi };
+  if (khoa.includes('thietBi')) {
+    if (typeof b.thietBi !== 'string' || !MAU_THIET_BI.test(b.thietBi)) return null;
+    ra.thietBi = b.thietBi;
+  }
+  if (b.ten === 'hien_khao_sat') {
+    if (!CACH_KICH_HOAT.includes(b.cach)) return null;
+    ra.cach = b.cach;
+  }
+  if (b.ten === 'tra_loi_khao_sat') {
+    if (!DIEM.includes(b.diem_a)) return null;
+    ra.diem_a = b.diem_a;
+    if (b.diem_c !== undefined && b.diem_c !== null) { if (!DIEM.includes(b.diem_c)) return null; ra.diem_c = b.diem_c; }
+    if (typeof b.co_loi_b !== 'boolean') return null;
+    ra.co_loi_b = b.co_loi_b;
+  }
+  return ra;
+}
+
 /** Nhận {ten, phien} và (chỉ với CO_GOI) thêm goi, chuDe, nhanh; thietBi (tùy chọn, kiểm định dạng); trả về bản sạch hoặc null nếu có bất kỳ điều gì sai. */
 function kiemTraSuKien(b) {
   if (!b || typeof b !== 'object' || Array.isArray(b)) return null;
   if (typeof b.ten !== 'string' || !TEN_SU_KIEN.includes(b.ten) || CHI_MAY_CHU.includes(b.ten)) return null;
+  if (KHAO_SAT.includes(b.ten)) return kiemKhaoSat(b);
   const laVaoTrang = b.ten === 'vao_trang';
   const choPhep = laVaoTrang ? ['ten', 'phien', 'thietBi', ...TRUONG_UTM, 'ref', 'dich', 'may']
     : CO_GOI.includes(b.ten) ? ['ten', 'phien', 'thietBi', 'goi', 'chuDe', 'nhanh'] : ['ten', 'phien', 'thietBi'];
@@ -99,4 +132,4 @@ function kiemTraSuKien(b) {
   return ra;
 }
 
-module.exports = { NHANH, TEN_SU_KIEN, CHI_MAY_CHU, NHOM_NGUON, trangCua, kiemTraSuKien, nhomNguon };
+module.exports = { KHAO_SAT, MA_BAI, NHANH, TEN_SU_KIEN, CHI_MAY_CHU, NHOM_NGUON, trangCua, kiemTraSuKien, nhomNguon };

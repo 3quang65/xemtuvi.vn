@@ -7,9 +7,9 @@ const path = require('node:path');
 const { kiemTraSuKien, nhomNguon, TEN_SU_KIEN, CHI_MAY_CHU, trangCua } = require('../src/lib/su-kien.js');
 const { tinhPheu, docThuMuc, tinhTheoNguon, taoGiaLap } = require('../tools/pheu.cjs');
 
-test('Sự kiện hợp lệ: đủ 19 tên (3 tên chỉ máy chủ ghi), phiên 16–32 ký tự', () => {
-  assert.equal(TEN_SU_KIEN.length, 19);
-  for (const ten of TEN_SU_KIEN.filter((t) => !CHI_MAY_CHU.includes(t) && t !== 'vao_trang')) // vao_trang cần thêm dich, may: có test riêng
+test('Sự kiện hợp lệ: đủ 22 tên (3 tên chỉ máy chủ ghi, 3 tên khảo sát có test riêng), phiên 16–32 ký tự', () => {
+  assert.equal(TEN_SU_KIEN.length, 22);
+  for (const ten of TEN_SU_KIEN.filter((t) => !CHI_MAY_CHU.includes(t) && t !== 'vao_trang' && !t.endsWith('_khao_sat'))) // vao_trang cần thêm dich, may: có test riêng
     assert.deepEqual(kiemTraSuKien({ ten, phien: 'a1b2c3d4e5f6a7b8' }), { ten, phien: 'a1b2c3d4e5f6a7b8' });
 });
 

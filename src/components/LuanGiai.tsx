@@ -14,6 +14,7 @@ import type { BaiVanNam, XemTruocVanNam } from '@/lib/luan-giai/ai/van-nam';
 import { VanNamBai } from './VanNamBai';
 import { VanNamNutMua, VanNamXemTruoc } from './VanNamXemTruoc';
 import ThongBaoLoi from './ThongBaoLoi';
+import KhaoSatDangTien from './KhaoSatDangTien';
 import DangNhapMa from './DangNhapMa';
 import { linkBaoLoi, maDonHienThi } from '@/lib/tro-giup';
 
@@ -64,6 +65,7 @@ function BaiLuan({ laSoId, chuDe, maDon, goi }: { laSoId: number; chuDe: string;
         </section>
       ))}
       <p><small>{bai.ghiChu}</small></p>
+      {goi && <KhaoSatDangTien key={`${laSoId}-${chuDe}`} bai={chuDe} goi={goi} />}
     </div>
   );
 }
@@ -73,7 +75,7 @@ function VanNam({ laSoId, maDon }: { laSoId: number; maDon: number | null }) {
   const { kq, taiLai } = useTai<{ daMua: true; bai: BaiVanNam } | { daMua: false; xemTruoc: XemTruocVanNam }>(`/api/luan-giai?laSo=${laSoId}&chuDe=van-nam-2027`);
   if (!kq) return <p className="dang-tai" role="status">Đang tải…</p>;
   if (kq === 'loi' || kq === 'chua-mo') return <LoiNoiDung ma="E08" maDon={maDon} goi="van-nam-2027" taiLai={taiLai} />;
-  if (kq.daMua) return <VanNamBai bai={kq.bai} />;
+  if (kq.daMua) return <><VanNamBai bai={kq.bai} /><KhaoSatDangTien key={`${laSoId}-van-nam`} bai="van-nam-2027" goi="van-nam-2027" /></>;
   return (
     <div className="khu-van-nam">
       <VanNamXemTruoc xt={kq.xemTruoc} />

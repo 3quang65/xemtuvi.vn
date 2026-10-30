@@ -4,6 +4,7 @@
 //   --nhanh        báo cáo thử nghiệm giá theo nhánh (thu-gia_v1.md): phiên chon_goi, đơn, doanh thu/phiên, tỉ trọng gói, bao_loi, theo nhóm nguồn; kèm --md để dán vào docs/
 //   --nhanh --bootstrap=10000 --hat=<số>  thêm chênh lệch (nhánh thử − gốc) + khoảng 95% bằng bootstrap: doanh thu/phiên, tỉ lệ trả tiền, tỉ lệ gói năm (thu-gia_v2.md mục 5 ý 3); hạt cố định → lặp lại y hệt
 //   --nhanh --csv  xuất CSV (phiên, thiết bị, nhánh, doanh thu) để kiểm lại độc lập
+//   --khao-sat     báo cáo khảo sát 'đáng tiền' theo gói (khao-sat-dang-tien_v1.md mục 3): điểm (a), điểm (c), tỉ lệ trả lời, tỉ lệ bỏ qua; < 30 phản hồi → 'chưa đủ mẫu'; thêm --tuan để tách theo tuần; kèm --gia-lap để ra số mẫu
 //   --gia-lap      dùng số giả lập (cố định theo --hat=N, mặc định 7) thay cho thư mục thật; không ghi file
 //   --gia-lap --nhanh  số giả lập có 2 nhánh giá (thử 'a': Trọn lá số 99k so 129k)
 //   --gia-lap --ghi=<thư mục>  ghi số giả lập ra JSONL để thử các công cụ khác
@@ -315,6 +316,65 @@ function taoGiaLap(hat = 7, coNhanh = false) {
   return ra;
 }
 
+// ---- Khảo sát 'đáng tiền' (khao-sat-dang-tien_v1.md mục 3) ----
+const MAU_KHAO_SAT = 30; // phản hồi tối thiểu/gói (/tuần nếu --tuan); ít hơn: 'chưa đủ mẫu', không kết luận
+const MUC_TIEU_A = 4.5;
+const tuanCua = (t) => { const d = new Date(t + 7 * 3600_000); const th = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate())); const so = th.getUTCDay() || 7; th.setUTCDate(th.getUTCDate() + 4 - so); const dau = Date.UTC(th.getUTCFullYear(), 0, 1); return th.getUTCFullYear() + '-T' + String(Math.ceil(((th - dau) / 86400000 + 1) / 7)).padStart(2, '0'); };
+const tb = (ds) => (ds.length ? ds.reduce((a, b) => a + b, 0) / ds.length : null);
+
+/** Gộp theo gói (và theo tuần nếu `theoTuan`). Mỗi dòng sự kiện là một lượt hiện/trả lời/bỏ qua (thẻ chỉ hiện 1 lần/bài nên không cần khử trùng). */
+function tinhKhaoSat(dongs, { theoTuan = false } = {}) {
+  const nhom = {};
+  for (const d of dongs) {
+    if (!['hien_khao_sat', 'tra_loi_khao_sat', 'bo_qua_khao_sat'].includes(d.ten) || !d.goi) continue;
+    const k = theoTuan ? `${d.goi} · ${tuanCua(d.t || 0)}` : d.goi;
+    const g = (nhom[k] = nhom[k] || { hien: 0, traLoi: 0, boQua: 0, a: [], c: [], coLoi: 0 });
+    if (d.ten === 'hien_khao_sat') g.hien++;
+    else if (d.ten === 'bo_qua_khao_sat') g.boQua++;
+    else {
+      g.traLoi++;
+      if (Number.isInteger(d.diem_a)) g.a.push(d.diem_a);
+      if (Number.isInteger(d.diem_c)) g.c.push(d.diem_c);
+      if (d.co_loi_b === true) g.coLoi++;
+    }
+  }
+  const ra = {};
+  for (const k of Object.keys(nhom).sort()) {
+    const g = nhom[k], duMau = g.traLoi >= MAU_KHAO_SAT;
+    ra[k] = { hien: g.hien, traLoi: g.traLoi, boQua: g.boQua, coLoi: g.coLoi, duMau, diemA: tb(g.a), diemC: tb(g.c), tiLeTraLoi: chia(g.traLoi, g.hien), tiLeBoQua: chia(g.boQua, g.hien), datMucTieu: duMau && tb(g.a) !== null ? tb(g.a) >= MUC_TIEU_A : null };
+  }
+  return ra;
+}
+
+function bangKhaoSat(t, md) {
+  const khoa = Object.keys(t);
+  if (!khoa.length) return 'Chưa có sự kiện khảo sát (hien_khao_sat / tra_loi_khao_sat / bo_qua_khao_sat).';
+  const so = (r, v) => (r.duMau ? v : 'chưa đủ mẫu');
+  const dau = ['Gói', 'Hiện', 'Trả lời', 'Bỏ qua', 'Tỉ lệ trả lời', 'Tỉ lệ bỏ qua', 'Điểm (a) đáng tiền', 'Điểm (c) giới thiệu', 'Có lời (b)'];
+  const hang = khoa.map((k) => { const r = t[k]; return [k, String(r.hien), String(r.traLoi), String(r.boQua), pct(r.tiLeTraLoi), pct(r.tiLeBoQua), so(r, r.diemA === null ? '—' : r.diemA.toFixed(2) + (r.datMucTieu ? ' (đạt ≥ 4,5)' : ' (chưa đạt 4,5)')), so(r, r.diemC === null ? '—' : r.diemC.toFixed(2)), String(r.coLoi)]; });
+  const ghi = `Mẫu tối thiểu: ${MAU_KHAO_SAT} phản hồi/${'gói'}${t[khoa[0]] && khoa[0].includes('·') ? '/tuần' : ''}; ít hơn ghi 'chưa đủ mẫu'.`;
+  return (md ? ['| ' + dau.join(' | ') + ' |', '|' + dau.map(() => '---').join('|') + '|', ...hang.map((h) => '| ' + h.join(' | ') + ' |')] : [dau, ...hang].map((h) => h.join('  |  '))).join('\n') + '\n' + ghi;
+}
+
+/** Số giả lập khảo sát: gói Trọn lá số đủ mẫu (điểm a trung bình ~4,6), gói Một chủ đề thiếu mẫu (dưới 30 phản hồi). */
+function taoGiaLapKhaoSat(hat = 7) {
+  const r = ngauNhien(hat), ra = [];
+  let n = 0;
+  const lo = [['tron-la-so', 160, 0.55, 0.25, 4.6], ['mot-chu-de', 40, 0.35, 0.40, 4.2]];
+  for (const [goi, hien, pTra, pBo, a0] of lo) {
+    for (let i = 0; i < hien; i++) {
+      const phien = 'ks' + String(++n).padStart(14, '0'), bai = 'ban-than', t = 1730000000000 + i * 3600_000 * 5;
+      ra.push({ t, ten: 'hien_khao_sat', phien, trang: 'luan-giai', bai, goi, cach: r() < 0.7 ? 'cuoi_bai' : 'doc_xong' });
+      const x = r();
+      if (x < pTra) {
+        const a = Math.max(1, Math.min(5, Math.round(a0 + (r() - 0.5) * 1.6)));
+        ra.push({ t, ten: 'tra_loi_khao_sat', phien, trang: 'luan-giai', bai, goi, diem_a: a, ...(r() < 0.8 ? { diem_c: Math.max(1, Math.min(5, a - (r() < 0.3 ? 1 : 0))) } : {}), co_loi_b: r() < 0.25 });
+      } else if (x < pTra + pBo) ra.push({ t, ten: 'bo_qua_khao_sat', phien, trang: 'luan-giai', bai, goi });
+    }
+  }
+  return ra;
+}
+
 function in_(p) {
   console.log('Số phiên theo sự kiện');
   for (const t of TEN_SU_KIEN) console.log('  ' + (t === 'vao_chon_goi' ? 'xem_trang_gia' : t).padEnd(20) + p.phien[t] + (t === 'vao_chon_goi' ? '  (tên ghi: vao_chon_goi)' : ''));
@@ -339,6 +399,11 @@ if (require.main === module) {
   const co = (c) => process.argv.includes(c);
   const tham = (t) => (process.argv.find((a) => a.startsWith(t + '=')) || '').slice(t.length + 1);
   const giaLap = co('--gia-lap');
+  if (co('--khao-sat')) {
+    const ds = giaLap ? taoGiaLapKhaoSat(Number(tham('--hat')) || 7) : docThuMuc(thuMucMacDinh());
+    console.log((giaLap ? 'SỐ GIẢ LẬP (không phải số thật)\n' : '') + bangKhaoSat(tinhKhaoSat(ds, { theoTuan: co('--tuan') }), co('--md')));
+    process.exit(0);
+  }
   const dongs = giaLap ? taoGiaLap(Number(tham('--hat')) || 7, co('--nhanh')) : docThuMuc(thuMucMacDinh());
   const ghi = tham('--ghi');
   if (giaLap && ghi) {
@@ -365,4 +430,4 @@ if (require.main === module) {
   }
 }
 
-module.exports = { phienChonGoi, bootstrap, bangBootstrap, csvNhanh, tinhTheoNhanh, bangNhanh, tinhPheu, docThuMuc, tinhTheoNguon, bangNguon, taoGiaLap };
+module.exports = { tinhKhaoSat, bangKhaoSat, taoGiaLapKhaoSat, MAU_KHAO_SAT, phienChonGoi, bootstrap, bangBootstrap, csvNhanh, tinhTheoNhanh, bangNhanh, tinhPheu, docThuMuc, tinhTheoNguon, bangNguon, taoGiaLap };

@@ -1,7 +1,7 @@
 import { layGoi } from '@/lib/goi';
 import { ghiSuKien } from '@/lib/ghi-su-kien';
 import { bangGiaCuaYeuCau, nhanhDaGan } from '@/lib/may-chu/thu-gia';
-import { kiemTraSuKien, nhomNguon, trangCua } from '@/lib/su-kien';
+import { KHAO_SAT, kiemTraSuKien, nhomNguon, trangCua } from '@/lib/su-kien';
 
 export const dynamic = 'force-dynamic';
 
@@ -15,6 +15,11 @@ export async function POST(req: Request) {
   if (!sk) return new Response(null, { status: 400 });
   const n = nhanhDaGan(req);
   const thietBi = n?.thietBi ? { thietBi: n.thietBi } : {}; // mã từ cookie, thay mã trình duyệt khai (nếu có)
+  if (KHAO_SAT.includes(sk.ten)) { // khảo sát 'đáng tiền': giữ nguyên trường đã kiểm (bai, goi, cach, diem_a, diem_c, co_loi_b); không gia/nhanh
+    const { ten, phien, thietBi: _tb, ...truong } = sk;
+    await ghiSuKien({ ten, phien, trang: trangCua(ten), ...thietBi, ...truong });
+    return new Response(null, { status: 204 });
+  }
   if (sk.ten === 'vao_trang') {
     const { ten, phien, thietBi: _bo, ...nguon } = sk;
     await ghiSuKien({ ten, phien, trang: trangCua(ten), ...thietBi, ...nguon, nhom: nhomNguon(sk) });

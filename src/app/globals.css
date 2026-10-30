@@ -307,3 +307,22 @@ a { color: inherit; }
 /* Ô nhập đăng nhập thử (email, mã khôi phục) và ô gõ XOA */
 .khoi-buoc input[type="email"], .khoi-buoc input[type="text"], .lien-he input[type="text"] { width: 100%; min-height: 44px; padding: 0 12px; font: inherit; font-size: 1rem; border: 1px solid var(--vien-dam); border-radius: 10px; background: var(--giay); }
 .khoi-buoc input[type="email"]:focus, .khoi-buoc input[type="text"]:focus { border-color: var(--ngoc); outline: none; box-shadow: 0 0 0 3px rgba(106, 61, 115, 0.2); }
+
+/* ---------- Khảo sát 'đáng tiền' sau bài trả phí (một thẻ dưới bài, không chặn nội dung) ---------- */
+.khao-sat { margin: 24px 0; }
+.ks-doc-xong { min-height: 48px; font-size: 1rem; }
+.ks-the { background: var(--giay); border: 1px solid var(--vien); border-radius: 18px; box-shadow: var(--bong); padding: 20px; display: grid; gap: 16px; font-size: 1rem; }
+.ks-the p { margin: 0; }
+.ks-dau { display: flex; gap: 12px; align-items: flex-start; justify-content: space-between; }
+.ks-nut-x { flex: none; min-width: 44px; min-height: 44px; font: inherit; font-size: 1.5rem; line-height: 1; color: var(--muc); background: transparent; border: 1px solid var(--vien-dam); border-radius: 10px; cursor: pointer; }
+.ks-hang { display: grid; gap: 8px; }
+.ks-cau { font-weight: 600; }
+.ks-diem { display: flex; gap: 10px; }
+.ks-nut-diem { flex: 1 1 0; min-width: 48px; min-height: 48px; font: inherit; font-size: 1.1rem; font-weight: 600; color: var(--ngoc-dam); background: var(--giay); border: 1.5px solid var(--ngoc); border-radius: 10px; cursor: pointer; }
+.ks-nut-diem[aria-pressed='true'] { background: var(--ngoc); color: #fff; }
+.ks-nhan-dau { display: flex; justify-content: space-between; gap: 12px; color: var(--muc-nhat); font-size: 1rem; }
+.ks-chu { font: inherit; font-size: 1rem; color: var(--muc); width: 100%; box-sizing: border-box; padding: 10px 12px; border: 1.5px solid var(--vien-dam); border-radius: 10px; background: var(--giay); resize: vertical; }
+.ks-chu:focus { border-color: var(--ngoc); outline: none; box-shadow: 0 0 0 3px rgba(106, 61, 115, 0.2); }
+.ks-nho { color: var(--muc-nhat); font-size: 1rem; }
+.ks-nut { display: flex; flex-wrap: wrap; gap: 12px; }
+.ks-nut > button, .ks-dong { min-height: 48px; min-width: 44px; padding: 0 24px; }
