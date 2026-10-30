@@ -23,7 +23,7 @@ test('migration tạo bảng bao_loi, không có cột ngày giờ sinh', () => 
 test('kiemTraBaoLoi: hợp lệ giữ đúng trường, bỏ trường lạ và mã tình huống lạ', () => {
   const r = bl.kiemTraBaoLoi({ ...OK, ngaySinh: '1995-08-15', tinhHuong: 'E07' });
   assert.equal(r.ok, true);
-  assert.deepEqual(Object.keys(r.v).sort(), ['gioKhach', 'goi', 'maDon', 'moTa', 'thietBi', 'tinhHuong']);
+  assert.deepEqual(Object.keys(r.v).sort(), ['gioKhach', 'goi', 'lienHe', 'maDon', 'moTa', 'thietBi', 'tinhHuong']);
   assert.equal(r.v.tinhHuong, 'E07');
   assert.equal(bl.kiemTraBaoLoi({ ...OK, tinhHuong: '<x>' }).v.tinhHuong, '');
 });

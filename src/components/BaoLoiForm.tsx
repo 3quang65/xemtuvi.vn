@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { docThamSoBaoLoi, tomTatThietBi } from '@/lib/tro-giup';
 
-const GIOI_HAN = { moTa: 1000, maDon: 40, goi: 40, thietBi: 120 };
+const GIOI_HAN = { moTa: 1000, maDon: 40, goi: 40, thietBi: 120, lienHe: 120 };
 const gioHienTai = () => { const d = new Date(), p = (n: number) => String(n).padStart(2, '0'); return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())} ${p(d.getHours())}:${p(d.getMinutes())}`; };
 
 /** Biểu mẫu báo lỗi / góp ý. Cố ý KHÔNG có ô ngày giờ sinh. Từ E04/E05/E07/E08 vào thì mã đơn, gói, tình huống được điền sẵn qua địa chỉ. */
@@ -14,6 +14,7 @@ export default function BaoLoiForm() {
   const [thietBi, setThietBi] = useState('');
   const [gioKhach, setGio] = useState('');
   const [tinhHuong, setTinhHuong] = useState('');
+  const [lienHe, setLienHe] = useState('');
   const [bao, setBao] = useState<{ ok: boolean; chu: string } | null>(null);
   const [dang, setDang] = useState(false);
 
@@ -28,9 +29,9 @@ export default function BaoLoiForm() {
     if (dang) return;
     setBao(null); setDang(true);
     try {
-      const r = await fetch('/api/bao-loi', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ moTa, maDon, goi, thietBi, gioKhach, tinhHuong }) });
+      const r = await fetch('/api/bao-loi', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ moTa, maDon, goi, thietBi, gioKhach, tinhHuong, lienHe }) });
       const d = await r.json().catch(() => ({}));
-      if (r.ok) { setBao({ ok: true, chu: 'Mình đã ghi nhận và chuyển đội xử lý. Cảm ơn bạn.' }); setMoTa(''); }
+      if (r.ok) { setBao({ ok: true, chu: 'Mình đã ghi nhận và chuyển đội xử lý. Cảm ơn bạn.' }); setMoTa(''); setLienHe(''); }
       else setBao({ ok: false, chu: (d as { thongDiep?: string }).thongDiep || 'Chưa gửi được. Bạn thử lại sau ít phút giúp mình nhé.' });
     } catch { setBao({ ok: false, chu: 'Chưa gửi được. Bạn thử lại sau ít phút giúp mình nhé.' }); }
     finally { setDang(false); }
@@ -48,6 +49,11 @@ export default function BaoLoiForm() {
       <label className="o"><span>Gói <em>(nếu có)</em></span><input maxLength={GIOI_HAN.goi} value={goi} onChange={(e) => setGoi(e.target.value)} autoComplete="off" /></label>
       <label className="o"><span>Thiết bị và trình duyệt</span><input maxLength={GIOI_HAN.thietBi} value={thietBi} onChange={(e) => setThietBi(e.target.value)} autoComplete="off" /></label>
       <label className="o"><span>Giờ xảy ra</span><input maxLength={40} value={gioKhach} onChange={(e) => setGio(e.target.value)} autoComplete="off" /></label>
+      <label className="o">
+        <span>Email hoặc Zalo để mình trả lời <em>(không bắt buộc)</em></span>
+        <input maxLength={GIOI_HAN.lienHe} value={lienHe} onChange={(e) => setLienHe(e.target.value)} autoComplete="off" inputMode="email" aria-describedby="bao-loi-lien-he" />
+        <small id="bao-loi-lien-he" className="tt-ghi-chu">Chỉ dùng để trả lời báo lỗi này, không dùng để gửi tin khác. Xóa tài khoản hoặc dữ liệu thì mình xóa luôn ô này.</small>
+      </label>
       {bao && <p className={bao.ok ? 'bao-loi-ok' : 'bao-loi'} role={bao.ok ? 'status' : 'alert'}>{bao.chu}</p>}
       <button type="submit" className="nut-chinh" disabled={dang}>{dang ? 'Đang gửi…' : 'Gửi báo lỗi / góp ý'}</button>
     </form>

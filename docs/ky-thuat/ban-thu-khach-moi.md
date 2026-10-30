@@ -13,6 +13,8 @@ Cửa sổ thử 16/11–30/11/2026 (Minh chốt 30/10, khớp kế hoạch kinh
 - Migration `004-ma-moi.sql`: bảng `ma_moi(ma TEXT PK, nguon TEXT, ghi_chu TEXT, gioi_han INTEGER, het_han INTEGER NULL, tao_luc)`, bảng `ma_moi_dung(id, ma, nguoi_dung_id UNIQUE, la_so_id, chu_de, luc)`. Đơn 0đ ghi vào `don_hang` với `cong='moi'`, `so_tien=0`, cấp quyền qua `xacNhanDaTra` (một chỗ duy nhất cấp quyền, giữ nguyên).
 - `nguon` khớp mã `nguon=` của Hoàng: `tuvivn`, `anh`, `cd-3a`…`cd-3e`. Mã ngẫu nhiên 8 ký tự (khó đoán), không chứa thông tin cá nhân.
 - Công cụ phát mã: `node tools/ma-moi.cjs tao --nguon tuvivn --so-luong 40 --gioi-han 1` và `... bao-cao`.
+- **Phát mã (Sơn chạy `tao`)**: theo danh sách nguồn Hoàng gửi, mỗi nguồn một lệnh (`--nguon` đúng mã nguồn, `--so-luong` theo danh sách, `--gioi-han 1`, `--het-han` theo cửa sổ thử). Không ghi tên khách vào `--ghi-chu`. In ra `mã<TAB>đường dẫn`, gửi lại Hoàng.
+- **Tra mã (Ngân)**: `node tools/ma-moi.cjs ds` in mã, nguồn, giới hạn, đã dùng, hết hạn, tình trạng (dùng được / hết lượt / hết hạn). Không in tên khách, không in ghi chú. Xem `docs/ky-thuat/cskh-cong-cu.md`.
 
 ## Đo theo nguồn
 - Thêm sự kiện: `vao_moi` (vào bằng mã), `dung_ma_moi` (mở chuyên đề), `bam_gop_y`. Giữ quy tắc `su-kien.js`: máy chủ kiểm, không dữ liệu cá nhân; `nguon` lấy từ mã ở máy chủ, không tin máy khách.

@@ -163,7 +163,7 @@ export function coQuyenXem(db: Csdl, nguoiDungId: number, laSoId: number, chuDe:
       : q.laSoId === laSoId && ((q.loai === 'tron_la_so' && chuDe !== MA_VAN_NAM) || (chuDe !== null && q.chuDe === chuDe)));
 }
 
-/** Xóa tài khoản và dữ liệu: lá số, quyền xem, lượt dùng mã mời, phiên, cờ đồng ý nhận tin (theo tài khoản và theo email).
+/** Xóa tài khoản và dữ liệu: lá số, quyền xem, lượt dùng mã mời, phiên, cờ đồng ý nhận tin (theo tài khoản và theo email), liên hệ trả lời báo lỗi.
  *  Đơn hàng giữ lại, ẩn danh: bỏ liên kết lá số, tài khoản chỉ còn dòng rỗng (không email, không mã ngoài). */
 export function xoaTaiKhoan(db: Csdl, nguoiDungId: number): void {
   db.transaction(() => {
@@ -177,6 +177,8 @@ export function xoaTaiKhoan(db: Csdl, nguoiDungId: number): void {
     const e = nd.email?.toLowerCase() ?? null;
     if (e) db.prepare('DELETE FROM dang_nhap_sai WHERE khoa=?').run('e:' + e);
     db.prepare("DELETE FROM lien_he WHERE nguoi_dung_id=? OR (loai='email' AND gia_tri=?)").run(nguoiDungId, e);
+    // Liên hệ trả lời báo lỗi: xóa theo tài khoản và theo email (khách gửi lúc chưa đăng nhập). Nội dung báo lỗi giữ lại, không còn cách nhận ra khách.
+    db.prepare("UPDATE bao_loi SET lien_he_tra_loi='' WHERE nguoi_dung_id=? OR (? IS NOT NULL AND lien_he_tra_loi=?)").run(nguoiDungId, e, e);
     if (e) db.prepare('DELETE FROM nhan_tin_van_nam WHERE email=?').run(e);
     db.prepare("UPDATE nguoi_dung SET nha_cung_cap='da_xoa', ma_ngoai=?, email=NULL, ma_khoi_phuc=NULL WHERE id=?").run(`xoa-${nguoiDungId}-${Date.now()}`, nguoiDungId);
   })();
