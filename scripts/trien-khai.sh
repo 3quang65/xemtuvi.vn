@@ -5,6 +5,12 @@
 # Bản thử luôn noindex (SITE_NOINDEX=1). Gỡ khi ra chính thức.
 set -euo pipefail
 cd "$(dirname "$0")/.."
+# Từ chối khi còn thay đổi chưa commit: bản chạy thật phải trùng với git. Ép bỏ qua: CHO_PHEP_GIT_BAN=1.
+if [ -n "$(git status --porcelain)" ] && [ "${CHO_PHEP_GIT_BAN:-}" != "1" ]; then
+  echo "TỪ CHỐI: git status chưa sạch. Commit hoặc gỡ trước khi triển khai:" >&2
+  git status --short >&2
+  exit 1
+fi
 # npm ci xóa node_modules đang chạy: chỉ cài lại khi package-lock.json đổi.
 if [ "$(sha1sum package-lock.json | cut -d' ' -f1)" != "$(cat .lock-da-cai 2>/dev/null || echo)" ] || [ ! -d node_modules ]; then
   npm ci --silent
