@@ -26,26 +26,6 @@
    ]
   },
   {
-   "ma": "PHU-TV-02",
-   "cau": "Tử Phá (Sửu, Mùi): dễ giận hờn, kém thuận hòa. Tử Tham: nên cưới muộn, cần chú ý tính ghen. Tử Sát: lúc đầu trắc trở rồi thành. Gặp sát tinh thì càng cần kiên nhẫn.",
-   "nguon": [
-    "Tân Biên",
-    "Toàn Thư"
-   ],
-   "dieuKien": [
-    {
-     "sao": [
-      "Phá Quân",
-      "Tử Vi"
-     ],
-     "chi": [
-      1,
-      7
-     ]
-    }
-   ]
-  },
-  {
    "ma": "PHU-TV-03",
    "cau": "Tử Tướng (Thìn, Tuất): cả hai đều cứng cỏi, lúc đầu hòa sau dễ xích mích nhưng vẫn khá giả. Hợp khi người chồng lớn tuổi hơn.",
    "nguon": [
@@ -85,53 +65,6 @@
    ]
   },
   {
-   "ma": "PHU-LT-02",
-   "cau": "Liêm Trinh ở Dần, Thân, hoặc Liêm Tham, Liêm Sát, Liêm Phá, Liêm Tướng: tình duyên nhiều thay đổi, dễ bất hòa. Nên tìm hiểu kỹ, cưới muộn và giữ giao tiếp cởi mở. *(sách gốc ghi \"ba lần lập gia đình\", \"tử biệt sinh ly\", đã trung tính hóa)*",
-   "nguon": [
-    "Tân Biên",
-    "Toàn Thư"
-   ],
-   "dieuKien": [
-    {
-     "sao": [
-      "Liêm Trinh"
-     ],
-     "chi": [
-      2,
-      8
-     ]
-    },
-    {
-     "sao": [
-      "Liêm Trinh",
-      "Tham Lang"
-     ],
-     "chi": null
-    },
-    {
-     "sao": [
-      "Liêm Trinh",
-      "Thất Sát"
-     ],
-     "chi": null
-    },
-    {
-     "sao": [
-      "Liêm Trinh",
-      "Phá Quân"
-     ],
-     "chi": null
-    },
-    {
-     "sao": [
-      "Liêm Trinh",
-      "Thiên Tướng"
-     ],
-     "chi": null
-    }
-   ]
-  },
-  {
    "ma": "PHU-TD-01",
    "cau": "Thiên Đồng ở Mão (Đ): cưới muộn thì mọi việc dễ và bền lâu. Đồng Lương (Dần, Thân): sớm thành đôi, thường là người quen hoặc hai gia đình thân nhau, đẹp đôi. Đồng Nguyệt ở Tý: tương tự, người chồng thường nể và được nhờ vợ.",
    "nguon": [
@@ -145,36 +78,6 @@
      ],
      "chi": [
       3
-     ]
-    }
-   ]
-  },
-  {
-   "ma": "PHU-TD-02",
-   "cau": "Thiên Đồng ở Dậu, Thìn, Tuất (H), Tỵ, hoặc Đồng Cự (Sửu, Mùi): dễ đến dễ đi, hay cãi nhau, có thể xa cách một thời gian rồi mới đoàn tụ. Gặp tứ sát thì càng cần nhẫn nại.",
-   "nguon": [
-    "Tân Biên",
-    "Toàn Thư"
-   ],
-   "dieuKien": [
-    {
-     "sao": [
-      "Thiên Đồng"
-     ],
-     "chi": [
-      9,
-      4,
-      10
-     ]
-    },
-    {
-     "sao": [
-      "Cự Môn",
-      "Thiên Đồng"
-     ],
-     "chi": [
-      1,
-      7
      ]
     }
    ]
@@ -194,36 +97,6 @@
      "chi": [
       4,
       10
-     ]
-    }
-   ]
-  },
-  {
-   "ma": "PHU-VK-02",
-   "cau": "Vũ Sát (Mão, Dậu), Vũ Phá (Tỵ, Hợi, H): cả hai đều mạnh và giỏi, nhưng cưới sớm thì dễ va chạm và đổ vỡ. Nên kết hôn khi đã chín chắn.",
-   "nguon": [
-    "Tân Biên",
-    "Toàn Thư"
-   ],
-   "dieuKien": [
-    {
-     "sao": [
-      "Thất Sát",
-      "Vũ Khúc"
-     ],
-     "chi": [
-      3,
-      9
-     ]
-    },
-    {
-     "sao": [
-      "Phá Quân",
-      "Vũ Khúc"
-     ],
-     "chi": [
-      5,
-      11
      ]
     }
    ]
@@ -261,31 +134,18 @@
       "Thái Dương"
      ],
      "chi": [
-      3,
       4,
       5,
       6
      ]
-    }
-   ]
-  },
-  {
-   "ma": "PHU-TDU-02",
-   "cau": "Thái Dương ở Dậu, Tuất, Hợi, Tý (H): việc cưới xin hay trắc trở, cưới muộn thì thuận. Nhật Cự ở Thân: nên cưới muộn. Nhật Nguyệt (Sửu, Mùi): cả hai đều có vị thế, nên cưới muộn.",
-   "nguon": [
-    "Tân Biên",
-    "Toàn Thư"
-   ],
-   "dieuKien": [
+    },
     {
      "sao": [
-      "Thái Dương"
+      "Thái Dương",
+      "Thiên Lương"
      ],
      "chi": [
-      9,
-      10,
-      11,
-      0
+      3
      ]
     }
    ]
@@ -306,24 +166,6 @@
       5,
       6,
       7
-     ]
-    }
-   ]
-  },
-  {
-   "ma": "PHU-TCO-02",
-   "cau": "Thiên Cơ ở Hợi (H), Tý, Sửu, hoặc Cơ Nguyệt ở Dần, Cơ Cự (Mão, Dậu): nên cưới muộn, hai người dễ không hợp tính, dễ tranh chấp. Gặp tứ sát thì cần chú ý giữ gắn kết.",
-   "nguon": [
-    "Tân Biên",
-    "Toàn Thư"
-   ],
-   "dieuKien": [
-    {
-     "sao": [
-      "Thiên Cơ"
-     ],
-     "chi": [
-      11
      ]
     }
    ]
@@ -389,26 +231,6 @@
    ]
   },
   {
-   "ma": "PHU-TA-02",
-   "cau": "Thái Âm ở Mão, Thìn, Tỵ (H): dễ bất hòa, cưới xin gặp trở ngại. Nên cưới muộn và tìm hiểu kỹ người phối ngẫu. Gặp sát tinh, Kỵ thì dễ xa cách. *(sách gốc mô tả phối ngẫu rất nặng, đã trung tính hóa)*",
-   "nguon": [
-    "Tân Biên",
-    "Toàn Thư"
-   ],
-   "dieuKien": [
-    {
-     "sao": [
-      "Thái Âm"
-     ],
-     "chi": [
-      3,
-      4,
-      5
-     ]
-    }
-   ]
-  },
-  {
    "ma": "PHU-THL-01",
    "cau": "Tham Lang ở Thìn, Tuất (V): phối ngẫu giỏi, có của hoặc có vị thế nhưng hay ghen hoặc ham vui. Cưới muộn thì tránh được đổ vỡ.",
    "nguon": [
@@ -424,34 +246,6 @@
       4,
       10
      ]
-    }
-   ]
-  },
-  {
-   "ma": "PHU-THL-02",
-   "cau": "Tham Lang ở Dần, Thân, Tý, Ngọ, hoặc Liêm Tham: dễ đến dễ đi, nhiều cảm xúc mạnh. Nên cưới muộn, đặt nền tảng tin cậy và cam kết rõ. Gặp sát tinh thì càng cần thận trọng.",
-   "nguon": [
-    "Tân Biên",
-    "Toàn Thư"
-   ],
-   "dieuKien": [
-    {
-     "sao": [
-      "Tham Lang"
-     ],
-     "chi": [
-      2,
-      8,
-      0,
-      6
-     ]
-    },
-    {
-     "sao": [
-      "Liêm Trinh",
-      "Tham Lang"
-     ],
-     "chi": null
     }
    ]
   },
@@ -496,26 +290,6 @@
    ]
   },
   {
-   "ma": "PHU-CM-02",
-   "cau": "Cự Môn ở Thìn, Tuất, Tỵ (H): dễ xung khắc, dễ chia tay. Gặp tứ sát, Không Kiếp thì càng cần học cách giao tiếp không gây tổn thương.",
-   "nguon": [
-    "Tân Biên",
-    "Toàn Thư"
-   ],
-   "dieuKien": [
-    {
-     "sao": [
-      "Cự Môn"
-     ],
-     "chi": [
-      4,
-      10,
-      5
-     ]
-    }
-   ]
-  },
-  {
    "ma": "PHU-CM-03",
    "cau": "Cơ Cự: phối ngẫu tài giỏi, có vị thế nhưng nên cưới muộn. Đồng Cự: phối ngẫu thông minh, có thể xa cách một thời gian.",
    "nguon": [
@@ -529,35 +303,6 @@
       "Thiên Cơ"
      ],
      "chi": null
-    }
-   ]
-  },
-  {
-   "ma": "PHU-TT-02",
-   "cau": "Thiên Tướng ở Mão, Dậu (H), hoặc Liêm Tướng (Tý, Ngọ), hoặc gặp sát tinh: việc cưới xin nhiều trở ngại, dễ bất hòa. Cưới muộn thì tránh được phần lớn.",
-   "nguon": [
-    "Tân Biên",
-    "Toàn Thư"
-   ],
-   "dieuKien": [
-    {
-     "sao": [
-      "Thiên Tướng"
-     ],
-     "chi": [
-      3,
-      9
-     ]
-    },
-    {
-     "sao": [
-      "Liêm Trinh",
-      "Thiên Tướng"
-     ],
-     "chi": [
-      0,
-      6
-     ]
     }
    ]
   },
@@ -576,25 +321,6 @@
      "chi": [
       0,
       6
-     ]
-    }
-   ]
-  },
-  {
-   "ma": "PHU-TL-02",
-   "cau": "Thiên Lương ở Tỵ, Hợi (H): dễ đến dễ đi. Gặp sát tinh thì kém thuận hòa. Nên giữ cam kết và dành thời gian chung.",
-   "nguon": [
-    "Tân Biên",
-    "Toàn Thư"
-   ],
-   "dieuKien": [
-    {
-     "sao": [
-      "Thiên Lương"
-     ],
-     "chi": [
-      5,
-      11
      ]
     }
    ]
@@ -619,30 +345,6 @@
    ]
   },
   {
-   "ma": "PHU-TS-02",
-   "cau": "Thất Sát ở Tý, Ngọ, Thìn, Tuất (H ở Thìn, Tuất), hoặc Liêm Sát, Vũ Sát: cưới sớm dễ đổ vỡ, đời sống chung nhiều sóng gió. Nên kết hôn khi đã trưởng thành về cảm xúc và tài chính. *(sách gốc diễn đạt rất nặng, đã trung tính hóa)*",
-   "nguon": [
-    "Tân Biên",
-    "Toàn Thư"
-   ],
-   "dieuKien": [
-    {
-     "sao": [
-      "Liêm Trinh",
-      "Thất Sát"
-     ],
-     "chi": null
-    },
-    {
-     "sao": [
-      "Thất Sát",
-      "Vũ Khúc"
-     ],
-     "chi": null
-    }
-   ]
-  },
-  {
    "ma": "PHU-PQ-01",
    "cau": "Phá Quân ở Tý, Ngọ (M): vợ chồng khá giả nhưng nên cưới muộn, nếu không trong đời có lúc xa nhau.",
    "nguon": [
@@ -658,56 +360,6 @@
       0,
       6
      ]
-    }
-   ]
-  },
-  {
-   "ma": "PHU-PQ-02",
-   "cau": "Phá Quân ở Dần, Thân (H), Thìn, Tuất, hoặc Liêm Phá, Vũ Phá: tình duyên nhiều biến động, dễ phải làm lại từ đầu. Nên cưới muộn và tìm người có giá trị sống tương đồng.",
-   "nguon": [
-    "Tân Biên",
-    "Toàn Thư"
-   ],
-   "dieuKien": [
-    {
-     "sao": [
-      "Phá Quân"
-     ],
-     "chi": [
-      2,
-      8
-     ]
-    },
-    {
-     "sao": [
-      "Liêm Trinh",
-      "Phá Quân"
-     ],
-     "chi": null
-    },
-    {
-     "sao": [
-      "Phá Quân",
-      "Vũ Khúc"
-     ],
-     "chi": null
-    }
-   ]
-  },
-  {
-   "ma": "PHU-PQ-03",
-   "cau": "Tử Phá: hợp khi người vợ lớn tuổi hơn.",
-   "nguon": [
-    "Tân Biên",
-    "Toàn Thư"
-   ],
-   "dieuKien": [
-    {
-     "sao": [
-      "Phá Quân",
-      "Tử Vi"
-     ],
-     "chi": null
     }
    ]
   }
@@ -735,24 +387,6 @@
       "Tử Vi"
      ],
      "chi": null
-    }
-   ]
-  },
-  {
-   "ma": "QUAN-TV-02",
-   "cau": "Tử Vi tại Tý (bình) hoặc gặp Kình Đà Hỏa Linh: công danh bình thường. Không có Tả Hữu thì thành \"cô quân\", có tài nhưng thiếu người phò tá",
-   "nguon": [
-    "Tân Biên",
-    "Toàn Thư"
-   ],
-   "dieuKien": [
-    {
-     "sao": [
-      "Tử Vi"
-     ],
-     "chi": [
-      0
-     ]
     }
    ]
   },
@@ -853,45 +487,6 @@
    ]
   },
   {
-   "ma": "QUAN-LT-03",
-   "cau": "Liêm Tham (Tỵ Hợi, hãm): đường công danh nhiều trở ngại, dễ vướng rắc rối pháp lý. Nên tránh vị trí nhạy cảm về quyền lợi, giữ minh bạch tuyệt đối",
-   "nguon": [
-    "Tân Biên",
-    "Khảo Luận",
-    "Toàn Thư"
-   ],
-   "dieuKien": [
-    {
-     "sao": [
-      "Liêm Trinh",
-      "Tham Lang"
-     ],
-     "chi": [
-      5,
-      11
-     ]
-    }
-   ]
-  },
-  {
-   "ma": "QUAN-LT-04",
-   "cau": "Liêm Sát: lên nhanh xuống nhanh, may rủi đi liền. Nếu làm kinh doanh hoặc kỹ thuật thì thuận và yên hơn. Liêm Phá: nên làm kỹ thuật hoặc thương mại, đi đường quan chức dễ không toại ý. TT: Liêm Trinh miếu thì võ chức quyền quý nhưng không bền",
-   "nguon": [
-    "Tân Biên",
-    "Toàn Thư",
-    "Khảo Luận"
-   ],
-   "dieuKien": [
-    {
-     "sao": [
-      "Liêm Trinh",
-      "Thất Sát"
-     ],
-     "chi": null
-    }
-   ]
-  },
-  {
    "ma": "QUAN-LT-05",
    "cau": "Thiên hướng và phong cách: nguyên tắc, quyết liệt, hợp môi trường có luật lệ rõ (pháp lý, thanh tra, quản lý nhà nước, ngành kỷ luật) hoặc kỹ thuật, thương mại khi gặp Sát, Phá. Cần giữ cân bằng giữa tham vọng và liêm chính *(Nhận xét nhóm, tổng hợp từ TB, TT)*",
    "nguon": [
@@ -923,25 +518,6 @@
      ],
      "chi": [
       3
-     ]
-    }
-   ]
-  },
-  {
-   "ma": "QUAN-TD-02",
-   "cau": "Thiên Đồng tại Dậu (hãm): công danh muộn, chức vị nhỏ, hay thay đổi, nên theo thương mại hoặc kỹ thuật. Tại Tỵ Hợi: phú quý như mây nổi, làm việc chóng chán, thích di chuyển, nên làm việc lưu động. TT: hãm thì làm vị trí thừa hành",
-   "nguon": [
-    "Tân Biên",
-    "Toàn Thư",
-    "Khảo Luận"
-   ],
-   "dieuKien": [
-    {
-     "sao": [
-      "Thiên Đồng"
-     ],
-     "chi": [
-      9
      ]
     }
    ]
@@ -1039,46 +615,6 @@
    ]
   },
   {
-   "ma": "QUAN-TDU-02",
-   "cau": "Thái Dương tại Tuất, Hợi (hãm): đường công danh nhiều trở ngại, tuổi trẻ vất vả, lớn tuổi mới toại ý; có tài nhưng ít cơ hội thể hiện, dù vậy vẫn được kính trọng vì đức độ và văn tài. Tại Tý: công danh muộn, giỏi ăn nói, văn chương",
-   "nguon": [
-    "Tân Biên",
-    "Toàn Thư",
-    "Khảo Luận"
-   ],
-   "dieuKien": [
-    {
-     "sao": [
-      "Thái Dương"
-     ],
-     "chi": [
-      10,
-      11
-     ]
-    }
-   ]
-  },
-  {
-   "ma": "QUAN-TDU-04",
-   "cau": "Nhật Nguyệt đồng cung (Sửu Mùi): công danh trắc trở lúc đầu, có tài mà chưa đắc chí. Rất cần Tuần/Triệt án ngữ thì về sau hiển hách",
-   "nguon": [
-    "Tân Biên",
-    "Khảo Luận"
-   ],
-   "dieuKien": [
-    {
-     "sao": [
-      "Thái Dương",
-      "Thái Âm"
-     ],
-     "chi": [
-      1,
-      7
-     ]
-    }
-   ]
-  },
-  {
    "ma": "QUAN-TDU-05",
    "cau": "Thiên hướng và phong cách: hướng ngoại, thích được ghi nhận, hợp công việc xuất hiện trước công chúng hoặc truyền đạt: giáo dục, truyền thông, chính sách công, bán hàng, lãnh đạo tổ chức. Thái Dương sáng thì nổi bật sớm; hãm thì nên chọn chuyên môn sâu, bền bỉ để thành công muộn",
    "nguon": [
@@ -1110,26 +646,6 @@
       5,
       6,
       7
-     ]
-    }
-   ]
-  },
-  {
-   "ma": "QUAN-TCO-02",
-   "cau": "Thiên Cơ tại Hợi, Tý, Sửu: công danh muộn và chật vật, nên làm kinh doanh hoặc kỹ thuật. TT: hãm thì dễ rời chức, đứng ở vị trí thừa hành",
-   "nguon": [
-    "Tân Biên",
-    "Toàn Thư"
-   ],
-   "dieuKien": [
-    {
-     "sao": [
-      "Thiên Cơ"
-     ],
-     "chi": [
-      11,
-      0,
-      1
      ]
     }
    ]
@@ -1249,25 +765,6 @@
    ]
   },
   {
-   "ma": "QUAN-TA-02",
-   "cau": "Thái Âm tại Thìn, Tỵ (hãm): đường công danh nhiều trở ngại, tuổi trẻ vất vả, lớn tuổi mới toại ý, vẫn được kính trọng vì đức độ và văn tài. Tại Mão: công danh muộn, giỏi ăn nói, văn chương. TT: hãm thì \"khí cao\", dễ phá, khó hiển đạt",
-   "nguon": [
-    "Tân Biên",
-    "Toàn Thư"
-   ],
-   "dieuKien": [
-    {
-     "sao": [
-      "Thái Âm"
-     ],
-     "chi": [
-      4,
-      5
-     ]
-    }
-   ]
-  },
-  {
    "ma": "QUAN-TA-04",
    "cau": "Thiên hướng và phong cách: tinh tế, chu đáo, kiên nhẫn, có khiếu thẩm mỹ, văn chương. Hợp nghề sáng tạo nội dung, thiết kế, giáo dục, chăm sóc, tài chính cá nhân, bất động sản. Hợp môi trường ổn định, tôn trọng sự tỉ mỉ",
    "nguon": [
@@ -1299,45 +796,6 @@
      "chi": [
       4,
       10
-     ]
-    }
-   ]
-  },
-  {
-   "ma": "QUAN-THL-02",
-   "cau": "Tham Lang tại Tý, Ngọ (hãm): chức vị nhỏ, lên xuống thất thường; nên giữ liêm chính, tránh cám dỗ quyền lợi. TT: hãm thì dễ thành \"quan tham\"",
-   "nguon": [
-    "Tân Biên",
-    "Toàn Thư",
-    "Khảo Luận"
-   ],
-   "dieuKien": [
-    {
-     "sao": [
-      "Tham Lang"
-     ],
-     "chi": [
-      0,
-      6
-     ]
-    }
-   ]
-  },
-  {
-   "ma": "QUAN-THL-03",
-   "cau": "Tham Lang tại Dần, Thân: chức vị nhỏ ở ngành kỷ luật, không thật toại nguyện, nhưng **buôn bán lại phát đạt**. Liêm Tham: nhiều trở ngại, nên tránh vị trí có quyền lợi nhạy cảm",
-   "nguon": [
-    "Tân Biên",
-    "Khảo Luận"
-   ],
-   "dieuKien": [
-    {
-     "sao": [
-      "Tham Lang"
-     ],
-     "chi": [
-      2,
-      8
      ]
     }
    ]
@@ -1380,25 +838,6 @@
    ]
   },
   {
-   "ma": "QUAN-CM-02",
-   "cau": "Cự Môn tại Tỵ (hãm): công danh trắc trở, chức vị nhỏ. Tại Thìn, Tuất (hãm): trước nhỏ sau lớn, hay đổi việc, giỏi xét đoán, lý luận, ăn nói hùng hồn nhưng nhiều thị phi, dễ bị gièm pha. TT: hãm thì gặp nhiều điều hối tiếc, gặp sát tinh dễ mất vị trí",
-   "nguon": [
-    "Tân Biên",
-    "Toàn Thư",
-    "Khảo Luận"
-   ],
-   "dieuKien": [
-    {
-     "sao": [
-      "Cự Môn"
-     ],
-     "chi": [
-      5
-     ]
-    }
-   ]
-  },
-  {
    "ma": "QUAN-CM-03",
    "cau": "Thiên hướng và phong cách: **làm việc bằng lời nói và lập luận**. Hợp luật sư, thẩm phán, giáo viên, giảng viên, nhà báo, đàm phán, tư vấn, bán hàng tư vấn. Môi trường phù hợp: nơi tranh luận được tôn trọng. Cần chú ý cách nói để giảm thị phi",
    "nguon": [
@@ -1436,42 +875,6 @@
    ]
   },
   {
-   "ma": "QUAN-TT-02",
-   "cau": "Thiên Tướng tại Mão, Dậu (hãm): chức vị nhỏ, lên xuống thất thường. TT: hãm thì có thành có bại; gặp sát tinh dễ bị giáng chức",
-   "nguon": [
-    "Tân Biên",
-    "Toàn Thư"
-   ],
-   "dieuKien": [
-    {
-     "sao": [
-      "Thiên Tướng"
-     ],
-     "chi": [
-      3,
-      9
-     ]
-    }
-   ]
-  },
-  {
-   "ma": "QUAN-TT-03",
-   "cau": "Tử Tướng: giỏi tổ chức, có thể vượt quyền cấp trên. Liêm Tướng: giàu sang, được nể. Vũ Tướng: làm chức vụ cũng toại, kinh doanh cũng sớm giàu. TT: Vũ Tướng hợp chức ở vùng biên, nơi xa; Liêm Tướng quyền quý nổi bật",
-   "nguon": [
-    "Tân Biên",
-    "Toàn Thư"
-   ],
-   "dieuKien": [
-    {
-     "sao": [
-      "Thiên Tướng",
-      "Tử Vi"
-     ],
-     "chi": null
-    }
-   ]
-  },
-  {
    "ma": "QUAN-TT-04",
    "cau": "Thiên hướng và phong cách: người điều phối, \"phó tướng\" đáng tin, công bằng, giữ chuẩn mực. Hợp hành chính, nhân sự, pháp chế, thư ký điều hành, ngoại giao, quản lý dự án. TT gọi Thiên Tướng là sao \"ấn\", \"quan lộc văn tinh\"",
    "nguon": [
@@ -1503,26 +906,6 @@
      "chi": [
       0,
       6
-     ]
-    }
-   ]
-  },
-  {
-   "ma": "QUAN-TL-02",
-   "cau": "Thiên Lương tại Tỵ, Hợi (hãm): phú quý như mây nổi, làm việc chóng chán, thích di chuyển; nên làm công việc lưu động. Gặp sát tinh: bình thường",
-   "nguon": [
-    "Tân Biên",
-    "Khảo Luận",
-    "Toàn Thư"
-   ],
-   "dieuKien": [
-    {
-     "sao": [
-      "Thiên Lương"
-     ],
-     "chi": [
-      5,
-      11
      ]
     }
    ]
@@ -1584,24 +967,6 @@
    ]
   },
   {
-   "ma": "QUAN-TS-03",
-   "cau": "Tử Sát: có uy quyền, hợp ngành kỷ luật. Vũ Sát: hiển đạt, hay công tác xa, lên xuống thất thường. Liêm Sát: lên nhanh xuống nhanh; làm kinh doanh, kỹ thuật thì yên hơn. TT: Vũ Sát quyền quý; Liêm Sát công danh hiển đạt",
-   "nguon": [
-    "Tân Biên",
-    "Toàn Thư",
-    "Khảo Luận"
-   ],
-   "dieuKien": [
-    {
-     "sao": [
-      "Thất Sát",
-      "Tử Vi"
-     ],
-     "chi": null
-    }
-   ]
-  },
-  {
    "ma": "QUAN-TS-04",
    "cau": "Thiên hướng và phong cách: quyết đoán, chịu áp lực, thích thử thách, làm việc độc lập. Hợp khởi nghiệp, quân đội/công an, phẫu thuật, xây dựng, xử lý khủng hoảng, bán hàng chỉ tiêu cao. TT: không hợp công việc văn phòng thuần túy",
    "nguon": [
@@ -1633,26 +998,6 @@
      "chi": [
       0,
       6
-     ]
-    }
-   ]
-  },
-  {
-   "ma": "QUAN-PQ-02",
-   "cau": "Phá Quân tại Dần, Thân (hãm): công danh trắc trở, chức vị nhỏ, giàu sang cũng không bền; nên kinh doanh hoặc làm kỹ thuật. TT 卷一: Phá Quân ở Quan Lộc chủ thanh bần (nói chung)",
-   "nguon": [
-    "Tân Biên",
-    "Toàn Thư",
-    "Khảo Luận"
-   ],
-   "dieuKien": [
-    {
-     "sao": [
-      "Phá Quân"
-     ],
-     "chi": [
-      2,
-      8
      ]
     }
    ]

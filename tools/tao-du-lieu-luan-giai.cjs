@@ -88,8 +88,28 @@ for (const [muc, khoa] of [['3', 'Phu Thê'], ['9', 'Quan Lộc']]) {
     if (dk.length) dm[khoa].push({ ma: r.ma, cau: r.cau.replace(/^\([ab]\) /, ''), nguon: r.nguon, dieuKien: dk });
   }
 }
+// --- Chỉnh theo docs/nghien-cuu/kiem-doan-mau.md (việc T-b0145e).
+// (1) Sửa 6 điều kiện sai hoặc thiếu (ghi theo chi: Tý=0 … Hợi=11). Điều kiện nào ghi sai thì thay cả danh sách của quy tắc đó.
+const C = (...t) => t.map((x) => CHI.indexOf(x));
+const SUA = {
+  'PHU-TDU-01': [{ sao: ['Thái Dương'], chi: C('Thìn', 'Tỵ', 'Ngọ') }, { sao: ['Thái Dương', 'Thiên Lương'], chi: C('Mão') }], // Thái Dương đơn thủ không bao giờ ở Mão
+  'PHU-TDU-02': [{ sao: ['Thái Dương'], chi: C('Tuất', 'Hợi', 'Tý') }, { sao: ['Thái Dương', 'Thiên Lương'], chi: C('Dậu') }], // không ở Dậu
+  'PHU-TD-02': [{ sao: ['Thiên Đồng'], chi: C('Thìn', 'Tỵ', 'Dậu', 'Tuất') }, { sao: ['Cự Môn', 'Thiên Đồng'], chi: C('Sửu', 'Mùi') }], // câu gốc có "Tỵ"
+  'PHU-TCO-02': [{ sao: ['Thiên Cơ'], chi: C('Tý', 'Sửu', 'Hợi') }, { sao: ['Thái Âm', 'Thiên Cơ'], chi: C('Dần') }, { sao: ['Cự Môn', 'Thiên Cơ'], chi: C('Mão', 'Dậu') }],
+  'PHU-TS-02': [{ sao: ['Thất Sát'], chi: C('Tý', 'Thìn', 'Ngọ', 'Tuất') }, { sao: ['Liêm Trinh', 'Thất Sát'], chi: null }, { sao: ['Thất Sát', 'Vũ Khúc'], chi: null }], // thiếu vế đầu
+  'PHU-PQ-02': [{ sao: ['Phá Quân'], chi: C('Dần', 'Thìn', 'Thân', 'Tuất') }, { sao: ['Liêm Trinh', 'Phá Quân'], chi: null }, { sao: ['Phá Quân', 'Vũ Khúc'], chi: null }],
+};
+// (2) Loại khỏi màn chào bán: 28 quy tắc cột "Mẫu = Loại" (câu mở đầu nặng nề) + các quy tắc bị quy tắc đứng trước che (không bao giờ được chọn).
+const LOAI = new Set(['PHU-TV-02', 'PHU-LT-02', 'PHU-TD-02', 'PHU-VK-02', 'PHU-TDU-02', 'PHU-TCO-02', 'PHU-TA-02', 'PHU-THL-02', 'PHU-CM-02', 'PHU-TT-02', 'PHU-TL-02', 'PHU-TS-02', 'PHU-PQ-02', 'PHU-PQ-03',
+  'QUAN-TV-02', 'QUAN-LT-03', 'QUAN-LT-04', 'QUAN-TD-02', 'QUAN-TDU-02', 'QUAN-TDU-04', 'QUAN-TCO-02', 'QUAN-TA-02', 'QUAN-THL-02', 'QUAN-THL-03', 'QUAN-CM-02', 'QUAN-TT-02', 'QUAN-TL-02', 'QUAN-PQ-02']);
+const BI_CHE = new Set(['PHU-PQ-03', 'QUAN-TT-03', 'QUAN-TS-03']); // bị TV-02, TV-03, TV-04 che
+for (const khoa of Object.keys(dm)) {
+  for (const r of dm[khoa]) if (SUA[r.ma]) r.dieuKien = SUA[r.ma];
+  dm[khoa] = dm[khoa].filter((r) => !LOAI.has(r.ma) && !BI_CHE.has(r.ma));
+}
+
 fs.writeFileSync(path.join(__dirname, '../src/lib/luan-giai/doan-mau.json'), JSON.stringify(dm, null, 1) + '\n');
-console.log('Đoạn mẫu:', Object.entries(dm).map(([k, v]) => `${k} ${v.length}`).join(', '), 'quy tắc có điều kiện máy đọc được');
+console.log('Đoạn mẫu (sau khi loại câu nặng và quy tắc bị che):', Object.entries(dm).map(([k, v]) => `${k} ${v.length}`).join(', '), 'quy tắc có điều kiện máy đọc được');
 
 fs.writeFileSync(path.join(__dirname, '../src/lib/luan-giai/menh-chinh-tinh.json'), JSON.stringify(ra, null, 1) + '\n');
 console.log('Đã ghi', Object.values(ra.menh).flat().length, 'quy tắc Mệnh,', ra.voChinhDieu.length, 'quy tắc vô chính diệu');

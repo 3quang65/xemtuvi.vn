@@ -31,7 +31,7 @@ function chonDoanMau(cacCung, duLieu) {
 function tachDoanMau(cau) {
   const i = cau.indexOf(': ');
   let s = (i > 0 ? cau.slice(i + 2) : cau).replace(/\b(TT|TB|NL|KL|CN|TC)\b(?=[\s:,.])/g, (m) => VIET_TAT[m]);
-  s = s.replace(/\s*\*\([^)]*\)\*/g, '').trim();
+  s = s.replace(/\s*\*\([^)]*\)\*/g, '').replace(/\*\*/g, '').trim();
   s = s.charAt(0).toLocaleUpperCase('vi') + s.slice(1);
   let cat = s.search(/[.;](\s|$)/) + 1;
   if (cat <= 0 || cat >= s.length - 1) { const p = s.indexOf(', '); cat = p > 0 ? p + 1 : Math.ceil(s.length / 2); }
