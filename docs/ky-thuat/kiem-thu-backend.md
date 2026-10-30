@@ -43,3 +43,9 @@ Hết hạn phiên 90 ngày, thành viên năm giới hạn 3 lá số, sao lưu
 
 ## Đã sửa L1, L2
 `/luan-giai` không còn cần lá số trong `sessionStorage`: đăng nhập rồi lấy `/api/toi` + `GET /api/la-so`, cho chọn lá số; chưa đăng nhập thì hiện form đăng nhập tại chỗ. Quyền gộp theo lá số (`src/lib/quyen-xem.ts`): thành viên > trọn lá số > các chủ đề mua lẻ. Kiểm: `tests/quyen-xem.test.cjs`; kịch bản 2 trình duyệt `anh-kiem-thu-backend/kich-ban-l1-l2.cjs` (10/10 đạt, 375px không tràn ngang).
+
+## Kiểm lại độc lập R1, L1, L2 (Phúc, 30/10, bản pm2 thật cổng 3000, commit 87c95bd)
+Kết luận: **R1, L1, L2 đã sửa đúng, chưa thấy lỗi mới.**
+- R1: pm2 có `DANG_NHAP_THU=1`, `CONG_THANH_TOAN=gia_lap`; `POST /api/dang-nhap` 200; `~/xemtuvi-data/.env` có dòng `KHOA_DU_LIEU` (chỉ kiểm có/không) và app đọc được (lưu lá số qua giao diện thành công, không `LoiKhoa`). Đạt.
+- L1, L2: chạy `kich-ban-l1-l2.cjs` (đổi cổng 3000) ở 375px và 1366px, 2 hồ sơ trình duyệt độc lập, 10/10 đạt mỗi cỡ: máy A mua trọn lá số rồi mua thêm chủ đề Sự nghiệp, vẫn "Đã mở: Trọn lá số", đủ 4 tab; máy B mở thẳng `/luan-giai` thấy form đăng nhập tại chỗ, đăng nhập cùng email thấy gói, tóm tắt lá số và nội dung luận; email khác báo chưa có lá số/gói; không tràn ngang; không lỗi JS. Ảnh: `B-375-cong3000-luan-giai.png`, `B-1366-cong3000-luan-giai.png`.
+- Dọn: đã xóa 5 người dùng thử của Phúc cùng phiên, lá số, đơn, quyền của họ. Giữ nguyên dữ liệu của Sơn: người dùng `son-kiemtra@example.com`, lá số id 1, 1 phiên; bảng `luan_giai_luu` còn 1 dòng bộ nhớ đệm (không gắn người dùng, không xóa).
