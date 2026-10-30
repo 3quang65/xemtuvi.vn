@@ -267,3 +267,8 @@ a { color: inherit; }
 .lh-dong-y { display: flex; gap: 10px; align-items: flex-start; font-size: 0.92rem; cursor: pointer; }
 .lh-dong-y input { flex: 0 0 22px; width: 22px; height: 22px; margin-top: 2px; }
 .lien-he .chon-doi.nho label { min-height: 44px; }
+.lien-he { max-width: 640px; }
+.lien-he .nut-phu { min-height: 44px; justify-self: start; padding: 0 24px; }
+.lien-he .nut-phu:disabled { opacity: 0.45; cursor: not-allowed; }
+.lh-dong-y { line-height: 1.5; }
+.lh-dong-y input { accent-color: var(--ngoc); }

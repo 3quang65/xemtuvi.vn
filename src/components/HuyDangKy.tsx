@@ -11,7 +11,7 @@ export default function HuyDangKy({ ma }: { ma: string }) {
       setTt(r.ok ? 'xong' : 'loi');
     } catch { setTt('loi'); }
   }
-  if (tt === 'xong') return <p role="status">Đã hủy. Chúng tôi sẽ không gửi tin cho liên hệ này nữa.</p>;
+  if (tt === 'xong') return <p role="status">Đã hủy. Chúng tôi sẽ không gửi tin cho liên hệ này nữa. <a href="/">Về trang chủ</a></p>;
   return (
     <>
       <p>Bạn muốn ngừng nhận bản lá số và tin nhắc vận từ xemtuvi.vn?</p>
