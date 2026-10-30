@@ -5,9 +5,19 @@
 # Bản thử luôn noindex (SITE_NOINDEX=1). Gỡ khi ra chính thức.
 set -euo pipefail
 cd "$(dirname "$0")/.."
-npm ci --silent
+# npm ci xóa node_modules đang chạy: chỉ cài lại khi package-lock.json đổi.
+if [ "$(sha1sum package-lock.json | cut -d' ' -f1)" != "$(cat .lock-da-cai 2>/dev/null || echo)" ] || [ ! -d node_modules ]; then
+  npm ci --silent
+  sha1sum package-lock.json | cut -d' ' -f1 > .lock-da-cai
+fi
 npm test --silent
-npm run build
+# Build vào ô trống (.next-a / .next-b), site vẫn chạy ô đang dùng; xong mới đổi ô + pm2 reload (cluster, không rớt yêu cầu).
+HIEN_TAI="$(cat .next-slot 2>/dev/null || echo)"
+if [ "$HIEN_TAI" = ".next-a" ]; then MOI=".next-b"; else MOI=".next-a"; fi
+rm -rf "$MOI"
+NEXT_DIST_DIR="$MOI" npm run build
+echo "$MOI" > .next-slot
+export NEXT_DIST_DIR="$MOI"
 SITE_NOINDEX="${SITE_NOINDEX:-1}" pm2 startOrReload ecosystem.config.cjs --update-env
 pm2 save
 if [ "${1:-}" != "" ]; then

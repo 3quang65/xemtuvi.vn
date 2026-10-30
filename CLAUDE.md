@@ -23,3 +23,11 @@ Repo công khai: không ghi thông tin cá nhân, tài chính, mật khẩu, kh�
 - `npm run dev` — chạy thử tại http://localhost:3000
 - `npm test` — kiểm thử engine
 - `npm run build` — build bản chạy thật
+
+## Triển khai không làm hỏng trang (X2)
+- Chạy `scripts/trien-khai.sh`. Không chạy `npm run build` thẳng vào `.next` khi site đang chạy: khách sẽ nhận HTML trỏ chunk đã bị xóa.
+- Build vào ô trống `.next-a` / `.next-b` (biến `NEXT_DIST_DIR`, ô đang chạy ghi ở `.next-slot`), xong mới `pm2 startOrReload` với ô mới. pm2 chạy chế độ cluster nên reload bật tiến trình mới trước rồi mới tắt cũ.
+- Ô cũ giữ nguyên đến lần triển khai sau (quay lại: ghi tên ô cũ vào `.next-slot`, `NEXT_DIST_DIR=<ô cũ> pm2 reload xemtuvi --update-env`).
+- `npm ci` chỉ chạy khi `package-lock.json` đổi, vì nó xóa `node_modules` đang dùng.
+- Nghiệm thu: lúc triển khai, `curl` lặp trang chủ + một chunk `/_next/static/...` mỗi 2 giây, không có 4xx/5xx.
+
