@@ -1,0 +1,30 @@
+// Phân loại lỗi ở form lập lá số thành E01 (thiếu), E02 (ngày sai), E03 (giờ sai) để hiện đúng thông báo dưới đúng ô.
+// Khớp kiemTraThongTin() của engine: trả null khi và chỉ khi engine cũng chấp nhận (có test đối chiếu).
+import type { ThongTinSinh } from './tuvi';
+
+export type OLoi = 'gioiTinh' | 'ngay' | 'gio';
+export interface LoiNhap { ma: 'E01' | 'E02' | 'E03'; o: OLoi; thieu?: string[] }
+
+const co = (n: unknown) => typeof n === 'number' && Number.isFinite(n) && n !== 0;
+
+export function phanLoaiLoiNhap(t: Partial<ThongTinSinh>): LoiNhap | null {
+  const thieu: { ten: string; o: OLoi }[] = [];
+  if (!t.gioiTinh) thieu.push({ ten: 'giới tính', o: 'gioiTinh' });
+  if (!co(t.ngay) || !co(t.thang) || !co(t.nam)) thieu.push({ ten: 'ngày, tháng, năm sinh', o: 'ngay' });
+  if (typeof t.gio !== 'number' || !Number.isFinite(t.gio)) thieu.push({ ten: 'giờ sinh', o: 'gio' });
+  if (thieu.length) return { ma: 'E01', o: thieu[0].o, thieu: thieu.map((x) => x.ten) };
+
+  const { ngay, thang, nam, gio } = t as { ngay: number; thang: number; nam: number; gio: number };
+  if (!Number.isInteger(nam) || nam < 1900 || nam > 2100 || !Number.isInteger(thang) || thang < 1 || thang > 12 || !Number.isInteger(ngay) || ngay < 1 || ngay > 31) return { ma: 'E02', o: 'ngay' };
+  if (t.lich === 'duong') {
+    if (new Date(Date.UTC(nam, thang - 1, ngay)).getUTCDate() !== ngay) return { ma: 'E02', o: 'ngay' };
+  } else if (ngay > 30) return { ma: 'E02', o: 'ngay' };
+  if (!Number.isInteger(gio) || gio < 0 || gio > 23) return { ma: 'E03', o: 'gio' };
+  if (t.phut != null && (!Number.isInteger(t.phut) || t.phut < 0 || t.phut > 59)) return { ma: 'E03', o: 'gio' };
+  return null;
+}
+
+/** "a", "a và b", "a, b và c". */
+export function noiTen(ds: string[]): string {
+  return ds.length <= 1 ? ds.join('') : `${ds.slice(0, -1).join(', ')} và ${ds[ds.length - 1]}`;
+}
