@@ -47,7 +47,7 @@ test('CSDL: migrations idempotent, tạo người dùng, lá số mã hóa, đơ
   assert.equal(db.pragma('journal_mode', { simple: true }), 'wal');
   db.close();
   db = moCsdl(tep); // mở lại: không chạy lại migration
-  assert.equal(db.prepare('SELECT COUNT(*) n FROM migrations').get().n, 7);
+  assert.equal(db.prepare('SELECT COUNT(*) n FROM migrations').get().n, 8);
 
   const now = Date.now();
   const nd = db.prepare('INSERT INTO nguoi_dung (nha_cung_cap, ma_ngoai, email, tao_luc) VALUES (?,?,?,?)').run('thu', 'a@x.vn', 'a@x.vn', now).lastInsertRowid;

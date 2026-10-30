@@ -3,6 +3,7 @@ import { kiemTraThongTin, type ThongTinSinh } from '../tuvi';
 import type { MayChu } from './csdl';
 import * as dv from './dich-vu';
 import { luanGiaiChoKhach } from './luan-giai-may-chu';
+import { choPhepToanSite, choPhepTheoNguon, kiemTraBaoLoi, luuBaoLoi } from './bao-loi';
 import { chuanHoa, huyLienHe, lamSachNguon, luuLienHe } from './lien-he';
 import { huyNhanTin, luuNhanTin } from './nhan-tin';
 import { trangCua } from '../su-kien';
@@ -190,4 +191,17 @@ export const maMoiDung = (req: Request, m: MayChu) => chay(req, async () => {
   const kq = dungMa(m.db, id, { ma: b.ma, laSoId: b.laSoId, chuDe: b.chuDe });
   await ghiSuKien({ ten: 'dung_ma_moi', phien: b.phien, trang: trangCua('dung_ma_moi'), nguon: kq.nguon, chuDe: kq.chuDe });
   return json({ ok: true, chuDe: kq.chuDe });
+});
+
+/** Nguồn gửi để chống gửi dồn: địa chỉ do Cloudflare/nginx đặt; chỉ dùng làm khóa đếm trong bộ nhớ, không lưu. */
+const nguonGui = (req: Request) => req.headers.get('cf-connecting-ip') ?? req.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ?? 'khong-ro';
+
+/** POST /api/bao-loi {moTa, maDon?, goi?, thietBi?, gioKhach?, tinhHuong?}: lưu báo lỗi/góp ý. Không nhận ngày giờ sinh. */
+export const baoLoiGhi = (req: Request, m: MayChu) => chay(req, async () => {
+  const b = await doc(req);
+  const kq = kiemTraBaoLoi(b);
+  if (!kq.ok) return json({ loi: 'du_lieu_sai', truong: kq.truong, thongDiep: kq.thongDiep }, 400);
+  if (!choPhepTheoNguon(nguonGui(req)) || !choPhepToanSite(m.db)) return loi(429, 'gui_don', 'Bạn gửi hơi nhanh. Chờ ít phút rồi gửi lại giúp mình nhé.');
+  luuBaoLoi(m.db, kq.v, nguoiDung(req, m));
+  return json({ ok: true }, 201);
 });
