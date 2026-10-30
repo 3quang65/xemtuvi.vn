@@ -4,8 +4,9 @@ import { useRouter } from 'next/navigation';
 import { useEffect, useId, useMemo, useState } from 'react';
 import type { LaSo } from '@/lib/tuvi';
 import { DOAN_MAU, doanMauCuaLaSo, tachDoanMau } from '@/lib/luan-giai';
-import { CHU_DE, dinhDangGia, GOI, GHI_CHU_AI, GOI_VAN_NAM, HOAN_TIEN, PHUONG_PHAP, type Goi, type MaChuDe } from '@/lib/goi';
+import { CHU_DE, dinhDangGia, GHI_CHU_AI, HOAN_TIEN, PHUONG_PHAP, type Goi, type MaChuDe } from '@/lib/goi';
 import { docYDinh, guiSuKien } from '@/lib/phien';
+import { useGia } from '@/lib/useGia';
 import { useLaSoDaLuu } from '@/lib/useLaSoDaLuu';
 import { KhungMoiMo } from './KhungMoi';
 
@@ -76,9 +77,10 @@ export default function ChonGoi() {
   const router = useRouter();
   const laSo = useLaSoDaLuu();
   useEffect(() => { if (laSo) guiSuKien('vao_chon_goi'); }, [laSo]);
+  const gia = useGia();
   const [uuTienVanNam, setUuTien] = useState(false);
   useEffect(() => { setUuTien(docYDinh() === 'van-nam-2027'); }, []);
-  if (!laSo) return <p className="dang-tai" role="status">Đang tải…</p>;
+  if (!laSo || !gia.san) return <p className="dang-tai" role="status">Đang tải…</p>;
 
   const chonGoi = (x: Goi, chuDe?: MaChuDe) => {
     guiSuKien('chon_goi', { goi: x.ma, chuDe });
@@ -95,9 +97,9 @@ export default function ChonGoi() {
         <section className="khu-van-nam" id="van-nam-2027" aria-labelledby="tieu-de-van-nam" style={uuTienVanNam ? { order: -1 } : undefined}>
           <h2 id="tieu-de-van-nam">Vận năm 2027 (Đinh Mùi)</h2>
           <p className="tt-ghi-chu">Luận riêng năm 2027 cho lá số này. Mua lẻ hoặc gộp với Trọn lá số.</p>
-          <ul className="luoi-goi">{GOI_VAN_NAM.map((g) => <TheGoi key={g.ma} g={g} onChon={chonGoi} />)}</ul>
+          <ul className="luoi-goi">{gia.vanNam.map((g) => <TheGoi key={g.ma} g={g} onChon={chonGoi} />)}</ul>
         </section>
-        <ul className="luoi-goi">{GOI.map((g) => <TheGoi key={g.ma} g={g} onChon={chonGoi} />)}</ul>
+        <ul className="luoi-goi">{gia.goi.map((g) => <TheGoi key={g.ma} g={g} onChon={chonGoi} />)}</ul>
       </div>
       <p className="tt-ghi-chu">{GHI_CHU_AI}</p>
       <p className="cam-ket">{HOAN_TIEN}</p>

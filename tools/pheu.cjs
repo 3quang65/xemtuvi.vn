@@ -1,7 +1,9 @@
 // In phễu mua từ các file sự kiện. Chạy: node tools/pheu.cjs  (DATA_DIR=… để đổi thư mục)
 //   --nguon        thêm bảng theo nhóm nguồn khách (dac-ta-do-luong_v1.md mục 2–3)
 //   --md           in bảng theo nhóm nguồn dạng Markdown (dán vào docs/)
+//   --nhanh        báo cáo thử nghiệm giá theo nhánh (thu-gia_v1.md): phiên chon_goi, đơn, doanh thu/phiên, tỉ trọng gói, bao_loi, theo nhóm nguồn; kèm --md để dán vào docs/
 //   --gia-lap      dùng số giả lập (cố định theo --hat=N, mặc định 7) thay cho thư mục thật; không ghi file
+//   --gia-lap --nhanh  số giả lập có 2 nhánh giá (thử 'a': Trọn lá số 99k so 129k)
 //   --gia-lap --ghi=<thư mục>  ghi số giả lập ra JSONL để thử các công cụ khác
 const fs = require('fs');
 const os = require('os');
@@ -136,6 +138,69 @@ function bangNguon(t, md) {
   return [dau, ...hang].map((h) => h.map((c, i) => (i === 0 ? c.padEnd(10) : c.padStart(i === 3 ? 24 : i > 3 ? 18 : 8))).join(' ')).join('\n');
 }
 
+// ---- Theo nhánh thử giá (thu-gia_v1.md mục 1, 5) ----
+/** Nhóm nguồn của từng phiên (vao_trang đầu tiên). */
+function nhomCuaPhien(dongs) {
+  const m = new Map();
+  for (const d of dongs) if (d.ten === 'vao_trang' && !m.has(d.phien) && NHOM_NGUON.includes(d.nhom)) m.set(d.phien, d.nhom);
+  return m;
+}
+
+/**
+ * Mẫu số = phiên có chon_goi, thuộc nhánh của sự kiện đầu có `nhanh` (khóa "<thử>/<nhánh>", vd a/thu).
+ * Đơn = phiên có chon_goi VÀ thanh_toan_xong; doanh thu phiên = tổng `gia` các thanh_toan_xong (0 nếu không mua).
+ * bao_loi tính theo `nhanh` ghi trên chính sự kiện đó (khách có thể báo lỗi ở phiên sau), chia cho đơn cùng nhánh.
+ */
+function tinhTheoNhanh(dongs) {
+  const nhom = nhomCuaPhien(dongs);
+  const khoaCua = (d) => (d.nhanh ? `${d.thu || '?'}/${d.nhanh}` : null);
+  const nhanhPhien = new Map();
+  for (const d of dongs) { const k = khoaCua(d); if (k && !nhanhPhien.has(d.phien)) nhanhPhien.set(d.phien, k); }
+  const chon = lanCuoi(dongs, 'chon_goi');
+  const doanhThu = new Map(), coDon = new Set();
+  for (const d of dongs) if (d.ten === 'thanh_toan_xong') { coDon.add(d.phien); doanhThu.set(d.phien, (doanhThu.get(d.phien) || 0) + (typeof d.gia === 'number' ? d.gia : 0)); }
+  const loi = {};
+  for (const d of dongs) if (d.ten === 'bao_loi') { const k = khoaCua(d); if (k) (loi[k] = loi[k] || new Set()).add(d.phien); }
+  const nh = {};
+  const lay = (k) => (nh[k] = nh[k] || { chon: 0, don: 0, doanhThu: 0, goi: {}, nguon: {} });
+  for (const [phien, dong] of chon) {
+    const k = nhanhPhien.get(phien);
+    if (!k) continue;
+    const g = lay(k), mua = coDon.has(phien), dt = doanhThu.get(phien) || 0;
+    g.chon++; g.goi[dong.goi] = (g.goi[dong.goi] || 0) + 1;
+    if (mua) { g.don++; g.doanhThu += dt; }
+    const n = g.nguon[nhom.get(phien) || CHUA_RO] = g.nguon[nhom.get(phien) || CHUA_RO] || { chon: 0, don: 0, doanhThu: 0 };
+    n.chon++; if (mua) { n.don++; n.doanhThu += dt; }
+  }
+  const ra = {};
+  for (const k of Object.keys(nh).sort()) {
+    const g = nh[k], baoLoi = loi[k] ? loi[k].size : 0;
+    ra[k] = {
+      chon: g.chon, don: g.don, doanhThu: g.doanhThu, doanhThuMoiPhien: chia(g.doanhThu, g.chon),
+      tiLeTra: chia(g.don, g.chon), donTrungBinh: chia(g.doanhThu, g.don),
+      tiTrongGoi: Object.fromEntries(MA_GOI.map((ma) => [ma, chia(g.goi[ma] || 0, g.chon)])),
+      baoLoi, baoLoiTrenDon: chia(baoLoi, g.don), nguon: g.nguon,
+    };
+  }
+  return ra;
+}
+
+const dong = (n) => (n === null ? '—' : Math.round(n).toLocaleString('vi-VN') + 'đ');
+
+function bangNhanh(t, md) {
+  const khoa = Object.keys(t);
+  if (!khoa.length) return 'Chưa có sự kiện mang trường nhanh (thử nghiệm giá chưa bật).';
+  const goiCoDung = MA_GOI.filter((ma) => khoa.some((k) => t[k].tiTrongGoi[ma]));
+  const dau = ['Nhánh', 'Phiên chon_goi', 'Đơn', 'Tỉ lệ trả', 'Doanh thu', 'Doanh thu / phiên', 'Đơn TB', ...goiCoDung.map((m) => 'Tỉ trọng ' + m), 'bao_loi', 'bao_loi / đơn'];
+  const hang = khoa.map((k) => { const r = t[k]; return [k, r.chon, r.don, pct(r.tiLeTra), dong(r.doanhThu), dong(r.doanhThuMoiPhien), dong(r.donTrungBinh), ...goiCoDung.map((m) => pct(r.tiTrongGoi[m])), r.baoLoi, pct(r.baoLoiTrenDon)].map(String); });
+  const nhomDu = [...new Set(khoa.flatMap((k) => Object.keys(t[k].nguon)))].sort();
+  const dau2 = ['Nhánh', 'Nhóm nguồn', 'Phiên chon_goi', 'Đơn', 'Doanh thu / phiên'];
+  const hang2 = [];
+  for (const k of khoa) for (const n of nhomDu) { const r = t[k].nguon[n]; if (r) hang2.push([k, n, String(r.chon), String(r.don), dong(chia(r.doanhThu, r.chon))]); }
+  const bang = (d, h) => (md ? ['| ' + d.join(' | ') + ' |', '|' + d.map(() => '---').join('|') + '|', ...h.map((x) => '| ' + x.join(' | ') + ' |')] : [d, ...h].map((x) => x.map((c) => c.padEnd(16)).join(' '))).join('\n');
+  return bang(dau, hang) + '\n\nTheo nhóm nguồn\n' + (md ? '\n' : '') + bang(dau2, hang2);
+}
+
 // ---- Số giả lập (chỉ để thử báo cáo; không phải số thật) ----
 function ngauNhien(hat) { let a = hat >>> 0; return () => { a = (a + 0x6D2B79F5) >>> 0; let t = a; t = Math.imul(t ^ (t >>> 15), t | 1); t ^= t + Math.imul(t ^ (t >>> 7), t | 61); return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
 const MAU_GIA_LAP = { // nhóm: [số phiên, truy cập→lập, lập→chọn, chọn→trả, utm_source, utm_medium, ref]
@@ -148,7 +213,20 @@ const MAU_GIA_LAP = { // nhóm: [số phiên, truy cập→lập, lập→chọn
   direct: [150, 0.28, 0.11, 0.20, null, null, null],
   referral: [120, 0.30, 0.12, 0.18, null, null, 'blog.example.vn'],
 };
-function taoGiaLap(hat = 7) {
+const GIA_NHANH = { goc: { 'mot-chu-de': 29000, 'tron-la-so': 99000, 'thanh-vien-nam': 299000 }, thu: { 'mot-chu-de': 29000, 'tron-la-so': 129000, 'thanh-vien-nam': 299000 } };
+/** Một phiên đã chọn gói trong thử nghiệm 'a': chia nhánh 50/50, nhánh 'thu' trả tiền ít hơn 20% ở gói Trọn lá số. */
+function phienNhanhGiaLap(them, r, c) {
+  const nhanh = r() < 0.5 ? 'goc' : 'thu', x = r(), goi = x < 0.15 ? 'mot-chu-de' : x < 0.25 ? 'thanh-vien-nam' : 'tron-la-so';
+  const mang = { goi, nhanh, thu: 'a' };
+  them('chon_goi', { ...mang, gia: GIA_NHANH[nhanh][goi] });
+  if (r() >= 0.8) return;
+  them('vao_thanh_toan', { ...mang, gia: GIA_NHANH[nhanh][goi] });
+  if (r() < (c / 0.8) * (nhanh === 'thu' && goi === 'tron-la-so' ? 0.8 : 1)) {
+    them('dang_nhap'); them('thanh_toan_xong', { ...mang, gia: GIA_NHANH[nhanh][goi] });
+    if (r() < 0.04) them('bao_loi', mang);
+  }
+}
+function taoGiaLap(hat = 7, coNhanh = false) {
   const r = ngauNhien(hat), ra = [];
   let n = 0;
   for (const [nhom, [soPhien, a, b, c, src, med, ref]] of Object.entries(MAU_GIA_LAP)) {
@@ -161,6 +239,7 @@ function taoGiaLap(hat = 7) {
       if (r() < 0.8) them('bam_xem_sau');
       them('vao_chon_goi');
       if (r() >= b) continue;
+      if (coNhanh) { phienNhanhGiaLap(them, r, c); continue; }
       them('chon_goi', { goi: 'tron-la-so', gia: 99000 });
       if (r() >= 0.8) continue;
       them('vao_thanh_toan', { goi: 'tron-la-so' });
@@ -194,12 +273,14 @@ if (require.main === module) {
   const co = (c) => process.argv.includes(c);
   const tham = (t) => (process.argv.find((a) => a.startsWith(t + '=')) || '').slice(t.length + 1);
   const giaLap = co('--gia-lap');
-  const dongs = giaLap ? taoGiaLap(Number(tham('--hat')) || 7) : docThuMuc(thuMucMacDinh());
+  const dongs = giaLap ? taoGiaLap(Number(tham('--hat')) || 7, co('--nhanh')) : docThuMuc(thuMucMacDinh());
   const ghi = tham('--ghi');
   if (giaLap && ghi) {
     fs.mkdirSync(ghi, { recursive: true });
     fs.writeFileSync(path.join(ghi, 'gia-lap.jsonl'), dongs.map((d) => JSON.stringify(d)).join('\n') + '\n');
     console.log('Đã ghi ' + dongs.length + ' dòng giả lập vào ' + ghi);
+  } else if (co('--nhanh')) {
+    console.log(bangNhanh(tinhTheoNhanh(dongs), co('--md')));
   } else if (co('--md')) {
     console.log(bangNguon(tinhTheoNguon(dongs), true));
   } else {
@@ -214,4 +295,4 @@ if (require.main === module) {
   }
 }
 
-module.exports = { tinhPheu, docThuMuc, tinhTheoNguon, bangNguon, taoGiaLap };
+module.exports = { tinhTheoNhanh, bangNhanh, tinhPheu, docThuMuc, tinhTheoNguon, bangNguon, taoGiaLap };

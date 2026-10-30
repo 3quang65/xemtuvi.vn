@@ -1,5 +1,5 @@
 // Nghiệp vụ: người dùng, lá số, đơn, quyền xem. Chỉ làm việc với CSDL; không biết gì về HTTP.
-import { layChuDe, layGoi, MA_VAN_NAM, type MaGoi } from '../goi';
+import { layChuDe, layGoi, MA_VAN_NAM, type BangGia, type MaGoi } from '../goi';
 import type { Csdl } from './csdl';
 import { giaiMaJson, khoaTim, maHoaJson, type BoKhoa } from './ma-hoa';
 
@@ -42,9 +42,9 @@ export function laSoCuaToi(db: Csdl, nguoiDungId: number, laSoId: number | null 
   return !!db.prepare('SELECT 1 FROM la_so WHERE id=? AND nguoi_dung_id=?').get(laSoId ?? -1, nguoiDungId);
 }
 
-/** Tạo đơn chờ. Số tiền lấy từ goi.ts; mọi số tiền từ trình duyệt đã bị bỏ qua ở tầng HTTP. */
-export function taoDon(db: Csdl, nguoiDungId: number, v: { maGoi: unknown; chuDe?: unknown; laSoId?: unknown }, cong: Cong = 'gia_lap', bayGio = Date.now()) {
-  const goi = layGoi(typeof v.maGoi === 'string' ? v.maGoi : null);
+/** Tạo đơn chờ. Số tiền lấy từ goi.ts (theo bảng giá nhánh thử nếu có, do máy chủ truyền); mọi số tiền từ trình duyệt đã bị bỏ qua ở tầng HTTP. */
+export function taoDon(db: Csdl, nguoiDungId: number, v: { maGoi: unknown; chuDe?: unknown; laSoId?: unknown; bang?: BangGia }, cong: Cong = 'gia_lap', bayGio = Date.now()) {
+  const goi = layGoi(typeof v.maGoi === 'string' ? v.maGoi : null, v.bang);
   if (!goi) throw new LoiNghiepVu('goi_sai', 'Gói không tồn tại.');
   let chuDe: string | null = null;
   if (goi.ma === 'mot-chu-de') {

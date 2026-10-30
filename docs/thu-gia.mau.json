@@ -1,0 +1,8 @@
+{
+  "bat": false,
+  "thu": "a",
+  "thuNghiem": {
+    "a": { "tron-la-so": 129000 },
+    "b": { "thanh-vien-nam": 199000 }
+  }
+}

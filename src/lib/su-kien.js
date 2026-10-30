@@ -18,6 +18,7 @@ const CHI_MAY_CHU = ['vao_moi', 'dung_ma_moi', 'dang_ky_nhan_tin'];
 /** Màn hình (trong tối đa 4 màn) mà sự kiện thuộc về; máy chủ tự suy ra, không tin máy khách. */
 function trangCua(ten) { return TRANG[ten]; }
 
+const NHANH = ['goc', 'thu']; // nhánh thử nghiệm giá (thu-gia_v1.md); máy chủ mới là bên quyết định nhánh và giá
 const CO_GOI = ['chon_goi', 'vao_thanh_toan', 'thanh_toan_xong', 'bao_loi', 'dang_ky_thanh_vien'];
 
 // Nguồn khách (dac-ta-do-luong_v1.md mục 2). Chỉ chữ thường không dấu, không có thông tin cá nhân.
@@ -63,13 +64,13 @@ function kiemNguon(b) {
   return ra;
 }
 
-/** Nhận {ten, phien} và (chỉ với CO_GOI) thêm goi, chuDe; trả về bản sạch hoặc null nếu có bất kỳ điều gì sai. */
+/** Nhận {ten, phien} và (chỉ với CO_GOI) thêm goi, chuDe, nhanh; trả về bản sạch hoặc null nếu có bất kỳ điều gì sai. */
 function kiemTraSuKien(b) {
   if (!b || typeof b !== 'object' || Array.isArray(b)) return null;
   if (typeof b.ten !== 'string' || !TEN_SU_KIEN.includes(b.ten) || CHI_MAY_CHU.includes(b.ten)) return null;
   const laVaoTrang = b.ten === 'vao_trang';
   const choPhep = laVaoTrang ? ['ten', 'phien', ...TRUONG_UTM, 'ref', 'dich', 'may']
-    : CO_GOI.includes(b.ten) ? ['ten', 'phien', 'goi', 'chuDe'] : ['ten', 'phien'];
+    : CO_GOI.includes(b.ten) ? ['ten', 'phien', 'goi', 'chuDe', 'nhanh'] : ['ten', 'phien'];
   const khoa = Object.keys(b);
   if (!khoa.includes('phien') || khoa.some((k) => !choPhep.includes(k))) return null;
   if (typeof b.phien !== 'string' || !/^[A-Za-z0-9_-]{16,32}$/.test(b.phien)) return null;
@@ -82,6 +83,10 @@ function kiemTraSuKien(b) {
     if (typeof b.goi !== 'string' || !MA_GOI.includes(b.goi)) return null;
     ra.goi = b.goi;
   }
+  if (khoa.includes('nhanh')) {
+    if (typeof b.nhanh !== 'string' || !NHANH.includes(b.nhanh)) return null;
+    ra.nhanh = b.nhanh;
+  }
   if (khoa.includes('chuDe')) {
     if (ra.goi !== 'mot-chu-de' || typeof b.chuDe !== 'string' || !MA_CHU_DE.includes(b.chuDe)) return null;
     ra.chuDe = b.chuDe;
@@ -89,4 +94,4 @@ function kiemTraSuKien(b) {
   return ra;
 }
 
-module.exports = { TEN_SU_KIEN, CHI_MAY_CHU, NHOM_NGUON, trangCua, kiemTraSuKien, nhomNguon };
+module.exports = { NHANH, TEN_SU_KIEN, CHI_MAY_CHU, NHOM_NGUON, trangCua, kiemTraSuKien, nhomNguon };

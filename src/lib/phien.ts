@@ -48,10 +48,14 @@ export function maPhien(): string {
   return moi;
 }
 
+let nhanhHienTai: 'goc' | 'thu' | null = null;
+/** Nhánh thử giá của thiết bị (từ /api/gia). Chỉ để gắn vào sự kiện; máy chủ vẫn tự tính nhánh từ cookie. */
+export const datNhanh = (n: 'goc' | 'thu' | null) => { nhanhHienTai = n; };
+
 /** Gửi sự kiện đo phễu. Không bao giờ làm hỏng giao diện. */
 export function guiSuKien(ten: string, tuyChon?: { goi?: string; chuDe?: string; nguon?: Record<string, string> }) {
   try {
-    const body = new Blob([JSON.stringify({ ten, phien: maPhien(), ...(tuyChon?.goi ? { goi: tuyChon.goi } : {}), ...(tuyChon?.chuDe ? { chuDe: tuyChon.chuDe } : {}), ...tuyChon?.nguon })], { type: 'application/json' });
+    const body = new Blob([JSON.stringify({ ten, phien: maPhien(), ...(tuyChon?.goi ? { goi: tuyChon.goi } : {}), ...(tuyChon?.chuDe ? { chuDe: tuyChon.chuDe } : {}), ...(tuyChon?.goi && nhanhHienTai ? { nhanh: nhanhHienTai } : {}), ...tuyChon?.nguon })], { type: 'application/json' });
     if (!navigator.sendBeacon('/api/su-kien', body)) {
       void fetch('/api/su-kien', { method: 'POST', body, keepalive: true }).catch(() => {});
     }

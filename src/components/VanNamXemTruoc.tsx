@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { dinhDangGia, GOI_VAN_NAM } from '@/lib/goi';
+import { dinhDangGia } from '@/lib/goi';
+import { useGia } from '@/lib/useGia';
 import type { XemTruocVanNam } from '@/lib/luan-giai/ai/van-nam';
 import { XEM_TRUOC } from '@/lib/van-nam-noi-dung';
 
@@ -26,9 +27,10 @@ export function VanNamXemTruoc({ xt, mau = false }: { xt: XemTruocVanNam; mau?: 
 /** Hai nút mua (lẻ, gộp) dẫn tới /thanh-toan. Có laSoId thì mua cho đúng lá số đó (xem ở máy khác cũng được). */
 export function VanNamNutMua({ laSoId }: { laSoId?: number }) {
   const them = laSoId ? `&laSo=${laSoId}` : '';
+  const { vanNam } = useGia();
   return (
     <div className="hai-nut">
-      {GOI_VAN_NAM.map((g) => (
+      {vanNam.map((g) => (
         <Link key={g.ma} href={`/thanh-toan?goi=${g.ma}${them}`} className={`${g.chinh ? 'nut-chinh' : 'nut-phu'} nut-lien-ket`}>
           {g.ten}: {dinhDangGia(g.gia)}
         </Link>

@@ -2,7 +2,8 @@
 
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { dinhDangGia, HOAN_TIEN, layChuDe, layGoi } from '@/lib/goi';
+import { dinhDangGia, HOAN_TIEN, layChuDe, type Goi } from '@/lib/goi';
+import { useGia } from '@/lib/useGia';
 import { docThongTinSinh, guiSuKien, type NhaCungCap } from '@/lib/phien';
 import { useLaSoDaLuu } from '@/lib/useLaSoDaLuu';
 
@@ -16,7 +17,9 @@ async function goiApi<T>(duong: string, body?: unknown): Promise<T> {
 export default function ThanhToan() {
   const router = useRouter();
   const tham = useSearchParams();
-  const goi = layGoi(tham.get('goi'));
+  const bangGia = useGia();
+  const ma = tham.get('goi');
+  const goi: Goi | undefined = [...bangGia.goi, ...bangGia.vanNam].find((g) => g.ma === ma);
   const chuDe = layChuDe(tham.get('chuDe'));
   const hopLe = !!goi && (goi.ma !== 'mot-chu-de' || !!chuDe); // gói chủ đề bắt buộc có chủ đề
   const suKien = { goi: goi?.ma, chuDe: goi?.ma === 'mot-chu-de' ? chuDe?.ma : undefined };
@@ -30,7 +33,7 @@ export default function ThanhToan() {
 
   useEffect(() => { if (laSo && !hopLe) router.replace(laSoMay ? '/luan-giai' : '/chon-goi'); }, [laSo, hopLe, router, laSoMay]);
   useEffect(() => { if (laSo && hopLe) { guiSuKien('vao_thanh_toan', suKien); goiApi<{ dangNhap: boolean; email?: string }>('/api/toi').then((t) => setEmail(t.dangNhap ? t.email ?? null : null)).catch(() => {}); } }, [laSo, hopLe]); // eslint-disable-line react-hooks/exhaustive-deps
-  if (!laSo || !hopLe || !goi) return <p className="dang-tai" role="status">Đang tải…</p>;
+  if (!laSo || !bangGia.san || !hopLe || !goi) return <p className="dang-tai" role="status">Đang tải…</p>;
 
   async function dangNhap(ncc: NhaCungCap) {
     setBao(''); setDangXuLy(true);

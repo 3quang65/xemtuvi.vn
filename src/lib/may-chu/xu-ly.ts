@@ -9,6 +9,7 @@ import { trangCua } from '../su-kien';
 import { ghiSuKien } from '../ghi-su-kien';
 import { daDungMa, dungMa, chuDeMoi, kiemMa, nguonDaDung } from './ma-moi';
 import { ghiLoi } from './nhat-ky';
+import { bangGiaCuaYeuCau } from './thu-gia';
 import { cookieDat, cookieXoa, cungNguon, docCookie, docPhien, taoPhien, xoaPhien } from './phien';
 
 const DAU = { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'private, no-store' };
@@ -87,7 +88,7 @@ export const donHangTao = (req: Request, m: MayChu) => chay(req, async () => {
   const b = await doc(req);
   if (!b) return loi(400, 'du_lieu_sai', 'Dữ liệu không hợp lệ.');
   // Cố ý chỉ lấy maGoi, chuDe, laSoId: mọi trường khác (như soTien) bị bỏ qua.
-  return json(dv.taoDon(m.db, id, { maGoi: b.maGoi, chuDe: b.chuDe, laSoId: b.laSoId }), 201);
+  return json(dv.taoDon(m.db, id, { maGoi: b.maGoi, chuDe: b.chuDe, laSoId: b.laSoId, bang: bangGiaCuaYeuCau(req) }), 201);
 });
 
 export const thanhToanGiaLap = (req: Request, m: MayChu) => chay(req, async () => {

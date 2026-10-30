@@ -1,10 +1,11 @@
 import { layGoi } from '@/lib/goi';
 import { ghiSuKien } from '@/lib/ghi-su-kien';
+import { bangGiaCuaYeuCau, nhanhDaGan } from '@/lib/may-chu/thu-gia';
 import { kiemTraSuKien, nhomNguon, trangCua } from '@/lib/su-kien';
 
 export const dynamic = 'force-dynamic';
 
-// Chỉ ghi {t, ten, phien, trang, goi?, chuDe?, gia?}; riêng vao_trang thêm nguồn (utm_*, ref là tên máy chủ, dich, may) và nhom do máy chủ tính; gia tra từ goi.ts tại máy chủ. Không IP, không user-agent, không dữ liệu sinh.
+// Chỉ ghi {t, ten, phien, trang, goi?, chuDe?, nhanh?, thu?, gia?}; nhanh/thu và gia do máy chủ tính từ cookie nhánh (không tin trình duyệt); riêng vao_trang thêm nguồn (utm_*, ref là tên máy chủ, dich, may) và nhom do máy chủ tính; gia tra từ goi.ts tại máy chủ. Không IP, không user-agent, không dữ liệu sinh.
 export async function POST(req: Request) {
   const tho = await req.text();
   if (tho.length > 1024) return new Response(null, { status: 413 });
@@ -17,9 +18,11 @@ export async function POST(req: Request) {
     await ghiSuKien({ ten, phien, trang: trangCua(ten), ...nguon, nhom: nhomNguon(sk) });
     return new Response(null, { status: 204 });
   }
+  const n = nhanhDaGan(req);
   await ghiSuKien({
     ten: sk.ten, phien: sk.phien, trang: trangCua(sk.ten),
-    ...(sk.goi ? { goi: sk.goi, gia: layGoi(sk.goi)?.gia } : {}), ...(sk.chuDe ? { chuDe: sk.chuDe } : {}),
+    ...(sk.goi ? { goi: sk.goi, gia: layGoi(sk.goi, bangGiaCuaYeuCau(req))?.gia } : {}), ...(sk.chuDe ? { chuDe: sk.chuDe } : {}),
+    ...(n && sk.goi ? { nhanh: n.nhanh, thu: n.thu } : {}),
   });
   return new Response(null, { status: 204 });
 }
