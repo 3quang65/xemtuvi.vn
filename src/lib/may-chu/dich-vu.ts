@@ -101,3 +101,21 @@ export function coQuyenXem(db: Csdl, nguoiDungId: number, laSoId: number, chuDe:
     q.loai === 'thanh_vien' ? dau.includes(laSoId)
       : q.laSoId === laSoId && ((q.loai === 'tron_la_so' && chuDe !== MA_VAN_NAM) || (chuDe !== null && q.chuDe === chuDe)));
 }
+
+/** Xóa tài khoản và dữ liệu: lá số, quyền xem, lượt dùng mã mời, phiên, cờ đồng ý nhận tin (theo tài khoản và theo email).
+ *  Đơn hàng giữ lại, ẩn danh: bỏ liên kết lá số, tài khoản chỉ còn dòng rỗng (không email, không mã ngoài). */
+export function xoaTaiKhoan(db: Csdl, nguoiDungId: number): void {
+  db.transaction(() => {
+    const nd = db.prepare('SELECT email FROM nguoi_dung WHERE id=?').get(nguoiDungId) as { email: string | null } | undefined;
+    if (!nd) return;
+    db.prepare('UPDATE don_hang SET la_so_id=NULL WHERE nguoi_dung_id=?').run(nguoiDungId);
+    db.prepare('DELETE FROM quyen_xem WHERE nguoi_dung_id=?').run(nguoiDungId);
+    db.prepare('DELETE FROM ma_moi_dung WHERE nguoi_dung_id=?').run(nguoiDungId);
+    db.prepare('DELETE FROM la_so WHERE nguoi_dung_id=?').run(nguoiDungId);
+    db.prepare('DELETE FROM phien WHERE nguoi_dung_id=?').run(nguoiDungId);
+    const e = nd.email?.toLowerCase() ?? null;
+    db.prepare("DELETE FROM lien_he WHERE nguoi_dung_id=? OR (loai='email' AND gia_tri=?)").run(nguoiDungId, e);
+    if (e) db.prepare('DELETE FROM nhan_tin_van_nam WHERE email=?').run(e);
+    db.prepare("UPDATE nguoi_dung SET nha_cung_cap='da_xoa', ma_ngoai=?, email=NULL WHERE id=?").run(`xoa-${nguoiDungId}-${Date.now()}`, nguoiDungId);
+  })();
+}

@@ -55,6 +55,15 @@ export function toi(req: Request, m: MayChu) {
   return json({ dangNhap: true, email: nd.email, quyen: dv.dsQuyen(m.db, id), laSoIds: dv.dsLaSo(m.db, m.khoa, id).map((l) => l.id) });
 }
 
+/** POST /api/toi/xoa {xacNhan:true}: xóa tài khoản đang đăng nhập và dữ liệu của nó; đơn hàng giữ ở dạng ẩn danh. */
+export const toiXoa = (req: Request, m: MayChu) => chay(req, async () => {
+  const id = nguoiDung(req, m); if (!id) return canDangNhap();
+  const b = await doc(req);
+  if (!b || b.xacNhan !== true) return loi(400, 'chua_xac_nhan', 'Cần xác nhận xóa tài khoản.');
+  dv.xoaTaiKhoan(m.db, id);
+  return json({ ok: true }, 200, { 'Set-Cookie': cookieXoa() });
+});
+
 export const laSoGhi = (req: Request, m: MayChu) => chay(req, async () => {
   const id = nguoiDung(req, m); if (!id) return canDangNhap();
   const b = await doc(req);
@@ -119,7 +128,7 @@ export const lienHeGhi = (req: Request, m: MayChu) => chay(req, async () => {
   if (b.dongY !== true) return loi(400, 'chua_dong_y', 'Cần tích đồng ý nhận tin trước khi gửi.');
   const lh = chuanHoa(b.loai, b.giaTri);
   if (!lh) return loi(400, 'lien_he_sai', b.loai === 'zalo' ? 'Số điện thoại chưa đúng.' : 'Email chưa đúng.');
-  const { maHuy } = luuLienHe(m.db, { ...lh, nguon: lamSachNguon(b.nguon) });
+  const { maHuy } = luuLienHe(m.db, { ...lh, nguon: lamSachNguon(b.nguon), nguoiDungId: nguoiDung(req, m) });
   return json({ ok: true, duongHuy: `/huy-dang-ky?ma=${maHuy}` });
 });
 
