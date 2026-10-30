@@ -247,7 +247,7 @@ Cột "Bám quy tắc" (`maHuong`): đoạn có một trong các mã này trong 
 | TC-04 | TAI-LT-02, HUYNH-HOA-02, HUYNH-TL-03, PHU-CC-07 | Mỗi khoản tiền chung, cho mượn hay góp vốn với người quen đều có một tin nhắn ghi số tiền, mục đích, hạn. | 100% khoản mới trong 3 tháng có tin nhắn | 3 tháng |
 | TC-05 | NAM-LUU-01, DIEN-HOA-04 | Trước khi ký hay chuyển tiền cho giao dịch lớn, đọc lại toàn bộ giấy tờ và hỏi một người có chuyên môn. | 100% giao dịch lớn trong 3 tháng có bước này; không phát sinh giao dịch lớn thì ghi "không có" | 3 tháng |
 | TC-06 | *TAI-PQ-01, TAI-HOA-02, TAI-SP-03* | Liệt kê các nguồn thu hiện có; chọn một nguồn bạn làm tốt nhất và dành thêm một buổi mỗi tuần cho nó. | ≥ 8/12 tuần có buổi này | 3 tháng |
-| TC-07 | VAN-SP-06/thận trọng, NAM-LUU-04-SAT (chỉ khi Xương/Khúc gốc hoặc của năm ở Tài Bạch, hãm hoặc gặp Kình, Đà, Hóa Kỵ) | Gom giấy tờ tài chính đang có vào một chỗ, đọc lại từng tờ, đánh dấu điều chưa rõ để hỏi người có chuyên môn. Cấm thêm động từ quyết định (tất toán, gia hạn, đổi, vay, mua, bán). | Xong danh mục (có/không); 100% điều đánh dấu được hỏi | 1 tháng |
+| TC-07 | VAN-SP-06/thận trọng, NAM-LUU-04-SAT (chỉ khi Xương/Khúc gốc hoặc của năm ở Tài Bạch, hãm hoặc gặp Kình, Đà, Hóa Kỵ; cấm thêm động từ quyết định: tất toán, gia hạn, đổi, vay, mua, bán) | Gom giấy tờ tài chính đang có vào một chỗ, đọc lại từng tờ, đánh dấu điều chưa rõ để hỏi người có chuyên môn. | Xong danh mục (có/không); 100% điều đánh dấu được hỏi | 1 tháng |
 
 **Tình cảm (`tinh-cam`)**
 
