@@ -430,8 +430,8 @@ Khởi Tràng Sinh theo cục: Thủy nhị và Thổ ngũ ở **Thân**, Mộc 
 
 | Sao | Giáp | Ất | Bính | Đinh | Mậu | Kỷ | Canh | Tân | Nhâm | Quý | Repo |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Thiên Khôi ⚠ | Sửu | Tý | Hợi | Hợi | Sửu | Tý | Sửu | Ngọ | Mão | Mão | khác ở Đinh, Mậu, Canh |
-| Thiên Việt ⚠ | Mùi | Thân | Dậu | Dậu | Mùi | Thân | Mùi | Dần | Tỵ | Tỵ | khác ở Đinh, Mậu, Canh |
+| Thiên Khôi ⚠ | Sửu | Tý | Hợi | Hợi | Sửu | Tý | Sửu | Ngọ | Mão | Mão | khác ở Đinh, Mậu, Canh, Nhâm |
+| Thiên Việt ⚠ | Mùi | Thân | Dậu | Dậu | Mùi | Thân | Mùi | Dần | Tỵ | Tỵ | khác ở Đinh, Mậu, Canh, Nhâm |
 | Thiên Quan | Mùi | Thìn | Tỵ | Dần | Mão | Dậu | Hợi | Dậu | Tuất | Ngọ | đúng |
 | Thiên Phúc | Dậu | Thân | Tý | Hợi | Mão | Dần | Ngọ | Tỵ | Ngọ | Tỵ | đúng |
 | Lưu Hà ⚠ | Dậu | Tuất | Mùi | Thân | Tỵ | Ngọ | Thìn | Mão | Hợi | Dần | khác ở Đinh, Canh |
@@ -707,7 +707,7 @@ Giữ cấu trúc hiện có của `anLaSo` (repo) để không vỡ phần lu�
 | 10.5 | Hỏa/Linh: chiều đếm | Việt: theo âm dương nam nữ, Hỏa Linh ngược chiều nhau. Trung Quốc: cả hai thuận | Việt | Sách Việt thống nhất | đúng |
 | 10.6 | Hỏa/Linh: khởi nhóm Tỵ Dậu Sửu | Hỏa Mão, Linh Tuất (câu phú, iztro) hoặc Hỏa Tuất, Linh Mão (repo) | Hỏa Mão, Linh Tuất | Khớp câu phú khởi Hỏa Linh và iztro; repo nhiều khả năng đảo nhầm | **sai**, cần sửa |
 | 10.7 | Thiên Giải | (a) `Thân + 2(M−1)` (ansaotuvi/Thiên Lương); (b) theo cặp tháng: tháng 1–2 Thân, 3–4 Tuất, 5–6 Tý, 7–8 Dần, 9–10 Thìn, 11–12 Ngọ (sao Giải Thần theo tháng của Trung Quốc, iztro gọi là "nguyệt giải"); (c) `Thân + (M−1)` (một số trang Việt) | (a), tạm thời | Không tìm được nguồn sách Việt độc lập để kiểm chứng; giữ cách của repo để không đổi kết quả cũ | (a) |
-| 10.8 | Thiên Khôi, Thiên Việt | (A) Giáp Mậu Canh: Sửu/Mùi; Ất Kỷ: Tý/Thân; Bính Đinh: Hợi/Dậu; Tân: Ngọ/Dần; Nhâm Quý: Mão/Tỵ (Toàn Thư, iztro). (B) một số sách Việt: "Canh Tân phùng Mã Hổ" (Canh Ngọ/Dần). (C) repo: Đinh Dậu/Hợi, Mậu và Canh Mùi/Sửu (đảo Khôi và Việt) | (A) | Khớp câu phú cổ "Giáp Mậu Canh ngưu dương…", khớp iztro (cả bộ test sao lưu với can Canh) | khác ở Đinh, Mậu, Canh (khoảng 30% lá số) |
+| 10.8 | Thiên Khôi, Thiên Việt | (A) Giáp Mậu Canh: Sửu/Mùi; Ất Kỷ: Tý/Thân; Bính Đinh: Hợi/Dậu; Tân: Ngọ/Dần; Nhâm Quý: Mão/Tỵ (Toàn Thư, iztro). (B) một số sách Việt: "Canh Tân phùng Mã Hổ" (Canh Ngọ/Dần). (C) repo (engine cũ): Đinh Dậu/Hợi, Mậu và Canh Mùi/Sửu, Nhâm Tỵ/Mão (đảo Khôi và Việt ở 4 can) | (A) | Khớp câu phú cổ "Giáp Mậu Canh ngưu dương…", khớp iztro (cả bộ test sao lưu với can Canh) | khác ở Đinh, Mậu, Canh, Nhâm (khoảng 40% lá số: 1.199/3.000, mục 11) |
 | 10.9 | Phá Toái | Tý Ngọ Mão Dậu Tỵ, Dần Thân Tỵ Hợi Dậu, Thìn Tuất Sửu Mùi Sửu (iztro, sách Trung Quốc) hoặc repo (đổi Tỵ và Dậu) | bảng iztro | Có nguồn mã nguồn mở và sách Trung Quốc thống nhất; chưa thấy sách Việt nào ghi như repo | khác, chờ chuyên gia |
 | 10.10 | Lưu Hà | Đinh Thân, Canh Thìn (sách Trung Quốc) hoặc Đinh Thìn, Canh Thân (repo) | Đinh Thân, Canh Thìn | Câu phú Lưu Hà phổ biến trong sách Trung Quốc "Giáp kê, Ất khuyển, Bính dương, Đinh hầu, Mậu xà, Kỷ mã, Canh long, Tân thố, Nhâm trư, Quý hổ" | khác, chờ chuyên gia |
 | 10.11 | Thiên Trù | Quý ở Tuất (repo) hoặc Hợi (iztro) | Tuất | Không có nguồn thứ ba; giữ repo | đúng theo mặc định |
@@ -729,7 +729,7 @@ Phương pháp: chạy `tuvi-raw.js` (repo) và engine tham chiếu (`tuvi-ref-e
 |---|---|---|
 | 14 chính tinh, Mệnh, Thân, cục, tứ hóa, sao theo ngày | 3–46 | Toàn bộ do múi giờ lịch trước 1968 (10.2); ngoài ra khớp 100% |
 | Hỏa Tinh, Linh Tinh | 711 | 10.6 (nhóm Tỵ Dậu Sửu) |
-| Thiên Khôi, Thiên Việt | 1.199 | 10.8 |
+| Thiên Khôi, Thiên Việt | 1.199 | 10.8 (repo đảo Khôi và Việt ở 4 can Đinh, Mậu, Canh, Nhâm, tức khoảng 4/10 lá số) |
 | Phá Toái | 1.985 | 10.9 |
 | Lưu Hà | 612 | 10.10 |
 | Thiên Nguyệt, Thiên Vu, Âm Sát | 3.000 | repo không an (tùy chọn) |
@@ -801,7 +801,7 @@ Giới hạn nguồn: không chạy được iztro trực tiếp vì môi trư�
 ### 13.2. Độ tin cậy trung bình (có mặc định, nên duyệt)
 
 1. Hỏa Tinh, Linh Tinh nhóm Tỵ Dậu Sửu (10.6): đề xuất sửa repo.
-2. Thiên Khôi, Thiên Việt can Đinh, Mậu, Canh, và biến thể "Canh Tân phùng Mã Hổ" (10.8).
+2. Thiên Khôi, Thiên Việt can Đinh, Mậu, Canh, Nhâm, và biến thể "Canh Tân phùng Mã Hổ" (10.8).
 3. Phá Toái (10.9), Lưu Hà (10.10).
 4. Giờ Tý muộn (10.1).
 5. Múi giờ lịch trước 1968 và lịch miền Nam 1968–1975 (10.2, 10.3).
@@ -818,7 +818,7 @@ Giới hạn nguồn: không chạy được iztro trực tiếp vì môi trư�
 ### 13.4. Việc cần chuyên gia làm
 
 - Lấy bản in *Tử Vi Đẩu Số Tân Biên* (Vân Đằng Thái Thứ Lang) và *Tử Vi Chỉ Nam* (Song An Đỗ Văn Lưu): đối chiếu bảng 5.7, 5.9, 5.10, mục 6 và 8.2; chốt từng dòng ⚠ ở mục 10.
-- Cho 3–5 lá số thật mà thầy đã lập tay (có ngày giờ, giới tính) để bổ sung vào `tuvi-test-cases.json`, ưu tiên người sinh năm Tỵ, Dậu, Sửu, can Đinh, Mậu, Canh, sinh giờ 23h, sinh trước 1968.
+- Cho 3–5 lá số thật mà thầy đã lập tay (có ngày giờ, giới tính) để bổ sung vào `tuvi-test-cases.json`, ưu tiên người sinh năm Tỵ, Dậu, Sửu, can Đinh, Mậu, Canh, Nhâm, sinh giờ 23h, sinh trước 1968.
 - Duyệt văn bản "Lá số lập theo…" hiển thị cho khách (mục 9).
 
 ### 13.5. Hạn chế của lần nghiên cứu này

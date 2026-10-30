@@ -13,7 +13,7 @@ Nguyên tắc: mỗi điểm các trường phái khác nhau phải là **tùy c
 
 ## Làm thành tùy chọn, chờ chuyên gia chốt mặc định
 6. Hỏa Tinh, Linh Tinh với tuổi Tỵ Dậu Sửu.
-7. Thiên Khôi, Thiên Việt can Đinh, Mậu, Canh.
+7. Thiên Khôi, Thiên Việt can Đinh, Mậu, Canh, Nhâm.
 8. Phá Toái, Lưu Hà, Thiên Trù can Quý, Thiên Giải.
 9. Mệnh chủ theo chi năm sinh (đặc tả khuyến nghị mặc định) hay chi cung Mệnh.
 10. Độ sáng Tử Vi ở Tý, Ngọ; độ sáng của Hóa Lộc, Quyền, Kỵ.
