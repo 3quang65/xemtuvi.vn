@@ -253,7 +253,7 @@ Cột "Bám quy tắc" (`maHuong`): đoạn có một trong các mã này trong 
 
 | Mã | Bám quy tắc | Việc nên làm (câu mẫu) | Cách đo | Hạn |
 |---|---|---|---|---|
-| TT-01 | PHU-SP-06, PHU-HOA-04, PHU-LT-02 | Cùng {nguoiLienQuan} thống nhất một quy ước: khi bất đồng, tạm dừng và hẹn lúc bình tĩnh trong ngày để nói tiếp. | Ghi các lần bất đồng; ≥ 3/4 lần dùng quy ước | 2 tháng |
+| TT-01 | PHU-SP-06, PHU-HOA-04, PHU-LT-02, VAN-SP-10/hãm (Hỏa Tinh hoặc Linh Tinh hãm, lời khuyên "nên giữ bình tĩnh"; Thư duyệt `kiem-duyet-khung-4-phan.md` mục Đoạn 3) | Cùng {nguoiLienQuan} thống nhất một quy ước: khi bất đồng, tạm dừng và hẹn lúc bình tĩnh trong ngày để nói tiếp. | Ghi các lần bất đồng; ≥ 3/4 lần dùng quy ước | 2 tháng |
 | TT-02 | PHU-SP-08, PHU-TL-02, NAM-TT-06 (chỉ khi L. Thiên Khốc, L. Thiên Hư, L. Tang Môn hoặc L. Bạch Hổ ở ngay Phu Thê và (b) đã nêu; câu không nhắc tang, tai nạn) | Đặt một buổi cố định mỗi tuần cho hai người, không điện thoại, không bàn việc. | ≥ 10/12 tuần giữ được | 3 tháng |
 | TT-03 | PHU-THL-02, PHU-SP-11, PHU-HOA-04 | Dành một buổi nói rõ ba điều mỗi người cần trong mối quan hệ; viết lại và xem lại sau một tháng. | Có buổi nói chuyện + một lần xem lại | 2 tháng |
 | TT-04 | PHU-PQ-02, PHU-LT-02, PHU-YN-05 | Đang tìm hiểu ai đó: viết ba giá trị sống bạn cần ở người đồng hành; sau mỗi lần gặp, ghi người đó khớp mấy điều. | Có danh sách + ghi chép sau mỗi lần gặp | 3 tháng |
