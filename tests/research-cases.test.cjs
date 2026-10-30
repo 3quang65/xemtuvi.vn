@@ -103,7 +103,6 @@ test('Giờ khai sinh miền Nam 1960–1975 quy về giờ chuẩn UTC+7 (đặ
   const lapMN = (ngay, thang, nam, gio, phut, mienNamTruoc1975) =>
     T.anLaSo({ lich: 'duong', ngay, thang, nam, gio, phut, gioiTinh: 'nam', mienNamTruoc1975 });
   // Sài Gòn 11:30 ngày 1/5/1970 (đồng hồ UTC+8) là 10:30 giờ chuẩn: giờ Tỵ, không phải Ngọ.
-  // (Ví dụ 10:30 → 09:30 ở đặc tả 1.2 không đổi canh: cả hai đều là giờ Tỵ.)
   const mn = lapMN(1, 5, 1970, 11, 30, true);
   assert.equal(mn.gio.chi, 'Tỵ');
   assert.deepEqual(mn.gioChuan, { ngay: 1, thang: 5, nam: 1970, gio: '10:30', daQuyDoi: true });

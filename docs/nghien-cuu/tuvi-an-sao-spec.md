@@ -40,7 +40,7 @@ Giờ khai sinh là giờ đồng hồ theo múi giờ chính thức tại thờ
 | 1960-01-01 → 1975-06-13 | UTC+7 | **UTC+8** |
 | Trước 1960 | Có nhiều lần đổi (thời Pháp, Nhật); xem cơ sở dữ liệu IANA tz | Như cột trái |
 
-Quy tắc: đổi giờ đồng hồ sang UTC bằng cơ sở dữ liệu IANA (`Asia/Ho_Chi_Minh` cho cả nước nếu không biết nơi sinh), rồi cộng 7 giờ. Kết quả là "giờ chuẩn UTC+7", dùng cho mọi bước sau. Ví dụ: sinh ở Sài Gòn 10:30 ngày 1/5/1970 (đồng hồ UTC+8) thì giờ chuẩn là 09:30, tức giờ **Tỵ**, không phải giờ Ngọ.
+Quy tắc: đổi giờ đồng hồ sang UTC bằng cơ sở dữ liệu IANA (`Asia/Ho_Chi_Minh` cho cả nước nếu không biết nơi sinh), rồi cộng 7 giờ. Kết quả là "giờ chuẩn UTC+7", dùng cho mọi bước sau. Ví dụ: sinh ở Sài Gòn 11:30 ngày 1/5/1970 (đồng hồ UTC+8) thì giờ chuẩn là 10:30, tức giờ **Tỵ**, không phải giờ Ngọ như khi đọc thẳng giờ đồng hồ.
 
 ⚠ Có thầy dùng **giờ mặt trời thực** (hiệu chỉnh theo kinh độ nơi sinh và phương trình thời gian, ví dụ Hà Nội chậm khoảng 10–20 phút so với UTC+7). Mặc định **không** hiệu chỉnh; nên có tùy chọn nâng cao "giờ mặt trời thực" về sau.
 
