@@ -139,7 +139,7 @@ Mọi mã bám đã kiểm có trong `maNghienCuu` (hoặc là `quyTacId`) của
 
 Minh nhận đề xuất của Thư (phiếu mục 5). Mẫu có ký giấy tờ chung, tiền chung/gia đình hoặc gửi đề xuất lên cấp trên mang `"tuoiTu": 18`: bộ chọn mẫu bỏ qua khi người đọc dưới 18 tuổi trong năm xem (Bảo/Tùng làm phần code).
 
-- Bộ mới (`viec-nen-lam-bo-sung.json`, đã thêm trường): CV-14 (gửi cấp trên), TC-10 (thỏa thuận có tiền giữa hai bên), TC-13 (chi tiêu gia đình), TC-22 (khoản tiền giữa hai bên), TT-07 (giấy tờ chung/gia đình), TT-11 (việc chung có tiền, việc nhà), TT-19 (ký giấy tờ chung).
+- Bộ mới (`viec-nen-lam-bo-sung.json`, đã thêm trường): CV-14 (gửi cấp trên), CV-16, CV-18 (việc ở chỗ làm chính thức, Thư bổ sung lần 2), TC-10 (thỏa thuận có tiền giữa hai bên), TC-13 (chi tiêu gia đình), TC-22 (khoản tiền giữa hai bên), TT-07 (giấy tờ chung/gia đình), TT-11 (việc chung có tiền, việc nhà), TT-19 (ký giấy tờ chung).
 - Bộ cũ (`src/lib/luan-giai/ai/quy-tac-van/viec-nen-lam.json`, chưa sửa, Tùng thêm khi nạp): CV-08 (hợp đồng, văn bản gửi ra ngoài), TC-04 (tiền chung, cho mượn, góp vốn), TC-05 (ký, chuyển tiền giao dịch lớn), GD-02 (tiền với anh chị em), GD-04 (giấy tờ nhà ở).
 - Rà và không gắn: các mẫu còn lại hợp mọi tuổi (học, ghi chép, nếp ngủ, trò chuyện); TC-11, TC-17, TC-19 chỉ là ghi/bàn chuyện tiền của chính người đọc.
 
