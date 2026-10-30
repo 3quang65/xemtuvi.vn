@@ -9,7 +9,7 @@
   4. `/thanh-toan?goi=…` Đăng nhập (Google / Zalo) + thanh toán **giả lập** trên cùng một màn. Xong → `/luan-giai` (trang đích, không tính là bước).
 - Đăng nhập Google/Zalo ở MVP là **giả lập** (nút bấm tạo tài khoản thử trong trình duyệt). Đăng nhập thật cần đăng ký ứng dụng với Google/Zalo → việc sau.
 - Thông tin sinh không gửi lên máy chủ: lưu trong `sessionStorage` của trình duyệt để mang qua các bước. Không đưa ngày sinh lên URL.
-- Giá tạm (sửa ở một file cấu hình, không giá gạch): Mở 1 chủ đề 39.000đ · Trọn lá số 129.000đ (gói chính) · Thành viên năm 299.000đ.
+- Giá: xem `docs/san-pham/bang-gia.md` (một nguồn duy nhất `src/lib/goi.ts`, không giá gạch).
 
 ## Đo lường (không lưu dữ liệu cá nhân)
 Sự kiện gửi về `/api/su-kien` với mã phiên ngẫu nhiên, ghi file JSONL trên máy chủ (ngoài repo):
