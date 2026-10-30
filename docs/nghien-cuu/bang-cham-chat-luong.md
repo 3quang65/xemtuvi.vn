@@ -158,6 +158,34 @@ Kiểm 3 lỗi Đúng của Phiếu 1 và vế Sâu:
 | Giọng | 3 | Không gây sợ, nhưng nhiều thuật ngữ không giải thích ("hội chiếu", "sát tinh", "thế"), câu máy, ba gạch cùng một khuôn. | Giải thích ngắn thuật ngữ lần đầu xuất hiện; viết câu tự nhiên. |
 | **Tổng** | **10/25** | **Trượt** (Đúng 2 < 5; 4 tiêu chí < 4). Tiêu chí thấp nhất: Cụ thể (1). | |
 
+### Phiếu 2b: mau-2 bản 01, đoạn "Tứ hóa", chấm lại
+
+`docs/luan-giai/mau-2/ban-01.md` (sau 4b66536, c3ac597, 1a97321, 8f578e4) · bộ ghép tự động (Bảo) · ngày 30/10 · việc T-a4504a · đối chiếu khối "Sao các cung liên quan" trong file. Cổng an toàn: **Qua**.
+Kết quả kiểm: `git diff 78e185c 8f578e4` cho thấy đoạn Tứ hóa **không đổi một chữ**; bốn commit chỉ sửa Cách cục, tên tác giả, câu đuôi độ sáng. Tên tác giả Tân Biên trong file đã đúng (Vân Đằng Thái Thứ Lang, ML-S09-TOT, ML-TT-TUẦN).
+
+| Tiêu chí | Điểm | Trích dẫn lỗi | Sửa gì |
+|---|---|---|---|
+| Đúng | 3 | Gạch 2 vẫn: "Phá Quân mang Hóa Lộc ở Tài Bạch…: mở thêm cơ hội và nguồn lực cho bản thân, nên chủ động nắm bắt." Tài Bạch có Địa Kiếp (H) đồng cung với Hóa Lộc; MENH-HOA-01, TAI-CC-08: Lộc gặp Không Kiếp thì dễ hao tán. Thiếu vế loại trừ (lần thứ tư). | Bộ ghép thêm vế loại trừ Không Kiếp cho mọi đoạn Hóa Lộc (`quy-tac-khung.json`, KHUNG-*-HOA-Lộc-*); lời theo TAI-PQ-01, CHUNG-SP-02: "dám chi để thu, dù Địa Kiếp cùng cung làm thu chi dễ lên xuống". |
+| Sâu | 2 | Vẫn không xét giáp Khoa (Sửu) – Quyền (Mão) kẹp Mệnh Dần (CHUNG-PP-09, CHUNG-CC-10: Mệnh có Kỵ thì giáp cát giảm). Kỵ không gộp với Tham Lang, Hỏa Tinh, Tuần. | Thêm đoạn giáp Khoa Quyền theo CC-10; gộp Kỵ + Tham Lang + Tuần thành một ý (CHUNG-TUAN-06). |
+| Cụ thể | 2 | Gạch 1 "Hóa Kỵ tại Mệnh là điểm nhạy cảm, dễ băn khoăn hoặc vướng mắc" không nói Kỵ hóa vào Tham Lang; gạch 2 vẫn câu khuôn "ảnh hưởng đến tính cách và hướng đi của bạn". Câu này chỉ xuất hiện ở bài Mệnh nên test đoạn trùng (chỉ so giữa chuyên đề) không bắt được. | Dùng MENH-HOA-04 + CHUNG-HOA-THL-01: Tham Lang hóa Kỵ thì mong muốn nhiều, kỳ vọng cao; "làm việc chỉ cầu bảy phần". |
+| Áp dụng được | 2 | "chuẩn bị kỹ và giao tiếp rõ ràng", "chủ động nắm bắt", "giữ nhịp đều, dự phòng" vẫn chung. | Một hành động gắn đúng điểm, vd "đặt mức đủ tốt thay vì hoàn hảo cho mục tiêu chính của năm". |
+| Giọng | 3 | Gạch 3 vẫn một câu ~50 chữ, bốn động từ khuyên liền nhau. | Tách câu, mỗi câu một ý. |
+| **Tổng** | **12/25** | **Trượt** (Đúng 3 < 5; Sâu, Cụ thể, Áp dụng < 4). Không đổi so với Phiếu 2: lỗi nằm ở khối Tứ hóa của bộ ghép, chưa nằm trong phạm vi bốn commit. | |
+
+### Phiếu 3b: mau-2 bản 03, đoạn "Cách cục", chấm lại
+
+`docs/luan-giai/mau-2/ban-03.md` (sau 4b66536, c3ac597, 1a97321, 8f578e4) · chuyên đề Phu Thê · bộ ghép tự động (Bảo) · ngày 30/10 · việc T-a4504a · đối chiếu khối "Sao các cung liên quan" trong file. Cổng an toàn: **Qua**.
+Đã sửa so với Phiếu 3: Sát Phá Tham hạ xuống mức 3, chỉ nói "có dáng dấp của…" (đúng CC-08: Hỏa Tinh (H) tọa thủ Phu Thê); gạch Tham Đào đã bỏ; gạch 1 có thêm một câu theo chuyên đề tình cảm.
+
+| Tiêu chí | Điểm | Trích dẫn lỗi | Sửa gì |
+|---|---|---|---|
+| Đúng | 4 | (a) Gạch 2 nêu lý do phá cách là "yếu tố hung ở tứ chính nặng", nguồn liệt kê Kình Dương + Địa Kiếp là yếu tố phá. Ở lá này Kình Dương (Đ) Thìn, Địa Kiếp (Đ) Thân đều đắc địa; CHUNG-SP-03, CHUNG-TP-06: sát tinh đắc địa hội bộ Sát Phá Tham là trợ lực. Lý do đúng của mức 3 là Hỏa Tinh **hãm tọa thủ** Phu Thê (CC-08 vế 1). (b) Gạch 1 nói "Tham Lang chưa đủ sáng" nhưng không nói Hỏa Tinh cũng hãm, vẫn luận "năng lượng nhanh và nóng" như Hỏa đắc (CHUNG-CC-09: Tham hãm thì chỉ luận "Tham Lang gặp Hỏa Tinh"). | (a) Bộ tính mức cách: không cộng điểm phá cho sát tinh đắc địa khi cách là Sát Phá Tham (SP-03); câu lý do nêu đúng yếu tố quyết định mức ("Hỏa Tinh hãm ngay cung này"). (b) Câu Hỏa Tham ghi rõ cả hai sao hãm. Cần Đức xác nhận cách đọc CC-08 so với SP-03 (CC-08 chưa phân biệt độ sáng sát tinh). |
+| Sâu | 2 | Vẫn không nêu ba sao chủ cách đều hãm (Tham Lang Tý, Thất Sát Thìn, Phá Quân Thân); không xét Tử Vi (M) hóa Khoa xung chiếu bị Triệt trong phần cách cục. | Như Phiếu 3: một câu "ba sao chủ cách đều hãm nên nhịp biến động thiên về thử thách; Tử Vi miếu hóa Khoa ở cung đối là điểm tựa nhưng bị Triệt nên đến chậm". |
+| Cụ thể | 2 | Gạch 2 **chép y hệt** ở 7/10 bản (ban-01, 03, 04, 07, 08, 09, 10), chỉ khác tiền tố "Với Mệnh:" / "Với Phu Thê:", không một chữ về người đồng hành. Câu đầu gạch 1 cũng y hệt ban-01. Test `luan-giai-cach-cuc-cc08` "đoạn trùng = 0" qua được vì tiền tố làm câu khác chuỗi và test chỉ so trong cùng một lá số. Có tiến bộ: câu cuối gạch 1 nói về quan hệ. | Câu Sát Phá Tham viết theo chuyên đề (PHU-THL-02: dễ đến dễ đi, nhiều cảm xúc mạnh, nên đặt nền tin cậy, cam kết rõ). Test so câu sau khi bỏ tiền tố "Với <cung>:" và so giữa các lá số. |
+| Áp dụng được | 3 | Có một hành động đúng chuyên đề ("trước khi gắn bó lâu dài, hãy cùng nói rõ điều mỗi người cần"), nhưng cùng gạch vẫn còn "chọn một mục tiêu chính" (lời khuyên công việc); gạch 2 "cần nỗ lực nhiều hơn để phát huy" không biết làm gì. | Bỏ "chọn một mục tiêu chính" khỏi câu Hỏa Tham ở chuyên đề Phu Thê; gạch 2 thêm một việc làm được trong quan hệ (vd "khi nóng, hẹn lúc khác nói"). |
+| Giọng | 3 | Tiền tố "Với Phu Thê:" đọc như máy; "tứ chính", "thế", "cách" chưa giải thích; gạch 1 dài ~60 chữ, hai mệnh đề khuyên nối bằng dấu hai chấm và chấm phẩy. | Giải thích ngắn thuật ngữ lần đầu; bỏ tiền tố; tách câu. |
+| **Tổng** | **14/25** | **Trượt** (Đúng 4 < 5; Sâu, Cụ thể, Áp dụng, Giọng < 4). Tăng 4 điểm so với Phiếu 3. | |
+
 ### Tổng hợp chấm thử
 
 | Bài | Đúng | Sâu | Cụ thể | Áp dụng | Giọng | Tổng | Kết luận |
@@ -166,5 +194,7 @@ Kiểm 3 lỗi Đúng của Phiếu 1 và vế Sâu:
 | VN01 (cả bài, vòng 2, Phiếu 1b) | 5 | 5 | 5 | 5 | 5 | 25 | **Đạt**, lên site được; 1 câu hỏi quy tắc NAM-LUU-04 cho Đức (không chặn) |
 | mau-2 ban-01 · Tứ hóa | 3 | 2 | 2 | 2 | 3 | 12 | Trượt |
 | mau-2 ban-03 · Cách cục | 2 | 2 | 1 | 2 | 3 | 10 | Trượt |
+| mau-2 ban-01 · Tứ hóa (Phiếu 2b, sau 8f578e4) | 3 | 2 | 2 | 2 | 3 | 12 | Trượt, đoạn không đổi |
+| mau-2 ban-03 · Cách cục (Phiếu 3b, sau 8f578e4) | 4 | 2 | 2 | 3 | 3 | 14 | Trượt |
 
 Nhận xét: bài viết tay theo quy tắc (VN01) chỉ vướng điều kiện quy tắc; bản ghép tự động mau-2 hỏng ở bộ ghép (câu khuôn dùng chung giữa chuyên đề, tính sai mức cách, thiếu vế loại trừ), nên phải sửa ở `quy-tac-khung.json` và bộ ghép, không sửa từng bài. Mau-2 chưa được lên site trả phí.
