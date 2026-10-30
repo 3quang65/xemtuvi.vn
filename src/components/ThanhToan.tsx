@@ -35,8 +35,8 @@ export default function ThanhToan() {
   async function dangNhap(ncc: NhaCungCap) {
     setBao(''); setDangXuLy(true);
     try {
-      await goiApi('/api/dang-nhap', { nhaCungCap: ncc, email: nhap });
-      setEmail(nhap.trim().toLowerCase()); guiSuKien('dang_nhap');
+      const r = await goiApi<{ moi?: boolean }>('/api/dang-nhap', { nhaCungCap: ncc, email: nhap });
+      setEmail(nhap.trim().toLowerCase()); guiSuKien('dang_nhap'); if (r?.moi) guiSuKien('dang_ky_thanh_vien', { goi: suKien.goi });
     } catch (e) { setBao((e as Error).message); } finally { setDangXuLy(false); }
   }
   async function thanhToan() {

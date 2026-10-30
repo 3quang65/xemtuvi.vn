@@ -87,7 +87,7 @@ function DangNhap({ khiXong }: { khiXong: () => void }) {
   const [dang, setDang] = useState(false);
   async function vao(ncc: 'google' | 'zalo') {
     setBao(''); setDang(true);
-    try { await layJson('/api/dang-nhap', { nhaCungCap: ncc, email: nhap }); guiSuKien('dang_nhap'); khiXong(); } catch (e) { setBao((e as Error).message); setDang(false); }
+    try { const r = await layJson<{ moi?: boolean }>('/api/dang-nhap', { nhaCungCap: ncc, email: nhap }); guiSuKien('dang_nhap'); if (r?.moi) guiSuKien('dang_ky_thanh_vien'); khiXong(); } catch (e) { setBao((e as Error).message); setDang(false); }
   }
   return (
     <section className="trang-buoc">

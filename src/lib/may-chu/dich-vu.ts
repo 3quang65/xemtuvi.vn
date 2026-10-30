@@ -11,6 +11,11 @@ export type Cong = 'gia_lap';
 export interface Quyen { id: number; loai: 'chu_de' | 'tron_la_so' | 'thanh_vien' | 'van_nam'; laSoId: number | null; chuDe: string | null; tuLuc: number; denLuc: number | null }
 export class LoiNghiepVu extends Error { constructor(public ma: string, thongDiep: string, public trangThai = 400) { super(thongDiep); } }
 
+/** Email này đã có tài khoản chưa (để tách đăng ký lần đầu khỏi đăng nhập lại). Email sai định dạng coi như chưa có; dangNhapThu sẽ báo lỗi. */
+export function coNguoiDung(db: Csdl, email: string): boolean {
+  return !!db.prepare('SELECT 1 FROM nguoi_dung WHERE nha_cung_cap=? AND ma_ngoai=?').get('thu', email.trim().toLowerCase());
+}
+
 export function dangNhapThu(db: Csdl, email: string, bayGio = Date.now()): number {
   const e = email.trim().toLowerCase();
   if (e.length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)) throw new LoiNghiepVu('email_sai', 'Email chưa đúng định dạng.');

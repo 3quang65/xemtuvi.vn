@@ -42,7 +42,7 @@ export function KhungMoiMo({ laSoId }: { laSoId?: number | null }) {
 
   async function dangNhap() {
     setBao(''); setDang(true);
-    try { await api('/api/dang-nhap', { nhaCungCap: 'google', email: nhap }); guiSuKien('dang_nhap'); setLan((n) => n + 1); } catch (e) { setBao((e as Error).message); } finally { setDang(false); }
+    try { const r = await api<{ moi?: boolean }>('/api/dang-nhap', { nhaCungCap: 'google', email: nhap }); guiSuKien('dang_nhap'); if (r?.moi) guiSuKien('dang_ky_thanh_vien'); setLan((n) => n + 1); } catch (e) { setBao((e as Error).message); } finally { setDang(false); }
   }
   async function mo() {
     setBao(''); setDang(true);

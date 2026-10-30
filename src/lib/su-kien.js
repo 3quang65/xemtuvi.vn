@@ -1,9 +1,10 @@
 // Danh sách sự kiện đo phễu (docs/san-pham/luong-mua.md). Không chứa dữ liệu cá nhân.
 const TRANG = {
+  vao_trang: 'vao', // trang đầu của phiên, kèm nguồn khách (docs/bao-cao-pheu-mau.md)
   vao_form: 'form', lap_la_so: 'form', de_lai_lien_he: 'form', // sau lập lá số: khách tích đồng ý và để lại email/Zalo
   xem_tom_tat: 'tom-tat', bam_xem_sau: 'tom-tat',
   vao_chon_goi: 'chon-goi', chon_goi: 'chon-goi',
-  vao_thanh_toan: 'thanh-toan', dang_nhap: 'thanh-toan', thanh_toan_xong: 'thanh-toan',
+  vao_thanh_toan: 'thanh-toan', dang_nhap: 'thanh-toan', dang_ky_thanh_vien: 'thanh-toan', thanh_toan_xong: 'thanh-toan', // dang_ky_thanh_vien = tài khoản tạo lần đầu, tách khỏi dang_nhap
   xem_lp_van_nam: 'lp', bam_lap_la_so_lp: 'lp', // trang đích /lp/van-nam-2027
   vao_moi: 'form', dung_ma_moi: 'luan-giai', bam_gop_y: 'luan-giai', // bản thử khách mời (ban-thu-khach-moi.md)
   bao_loi: 'luan-giai', // khách báo không xem được đủ phần đã mua (đếm khiếu nại); sau khi mua nên không tính vào 4 màn
@@ -16,17 +17,66 @@ const CHI_MAY_CHU = ['vao_moi', 'dung_ma_moi'];
 /** Màn hình (trong tối đa 4 màn) mà sự kiện thuộc về; máy chủ tự suy ra, không tin máy khách. */
 function trangCua(ten) { return TRANG[ten]; }
 
-const CO_GOI = ['chon_goi', 'vao_thanh_toan', 'thanh_toan_xong', 'bao_loi'];
+const CO_GOI = ['chon_goi', 'vao_thanh_toan', 'thanh_toan_xong', 'bao_loi', 'dang_ky_thanh_vien'];
+
+// Nguồn khách (dac-ta-do-luong_v1.md mục 2). Chỉ chữ thường không dấu, không có thông tin cá nhân.
+const NHOM_NGUON = ['tuvi-vn', 'organic', 'social', 'paid', 'email', 'partner', 'direct', 'referral'];
+const TRUONG_UTM = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+const MAU_UTM = /^[a-z0-9][a-z0-9._-]{0,49}$/;
+const MAU_HOST = /^[a-z0-9][a-z0-9.-]{0,98}[a-z0-9]$/;
+const MAU_DICH = /^\/(?:[A-Za-z0-9_-]{1,40}(?:\/[A-Za-z0-9_-]{1,40})?)?$/;
+const MAY = ['dien-thoai', 'may-tinh'];
+const TIM_KIEM = /^(www\.|m\.)?(google|bing|coccoc|duckduckgo|yahoo|baidu|yandex|ecosia)\.[a-z.]+$/;
+const MXH = /(^|\.)(facebook\.com|fb\.com|fb\.me|instagram\.com|threads\.net|tiktok\.com|zalo\.me|youtube\.com|t\.co)$/;
+
+/** Gộp nguồn vào 8 nhóm. UTM thắng; không UTM thì suy từ trang giới thiệu (`ref` là tên máy chủ, không đường dẫn). */
+function nhomNguon(n) {
+  const nguon = n.utm_source, kenh = n.utm_medium, ref = n.ref || '';
+  if (nguon === 'tuvi-vn') return 'tuvi-vn';
+  if (kenh === 'cpc' || kenh === 'paid') return 'paid';
+  if (kenh === 'social') return 'social';
+  if (kenh === 'email') return 'email';
+  if (kenh === 'partner') return 'partner';
+  if (kenh === 'organic') return 'organic';
+  if (nguon || kenh) return 'referral'; // có UTM nhưng ngoài danh mục: không đoán, gom vào referral
+  if (!ref || ref === 'xemtuvi.vn' || ref === 'www.xemtuvi.vn') return 'direct';
+  if (ref === 'tuvi.vn' || ref === 'www.tuvi.vn') return 'tuvi-vn';
+  if (TIM_KIEM.test(ref)) return 'organic';
+  if (MXH.test(ref)) return 'social';
+  return 'referral';
+}
+
+/** Kiểm trường nguồn của vao_trang; trả bản sạch hoặc null nếu có trường sai. */
+function kiemNguon(b) {
+  const ra = {};
+  for (const k of TRUONG_UTM) {
+    if (b[k] === undefined) continue;
+    if (typeof b[k] !== 'string' || !MAU_UTM.test(b[k])) return null;
+    ra[k] = b[k];
+  }
+  if (b.ref !== undefined) { if (typeof b.ref !== 'string' || !MAU_HOST.test(b.ref)) return null; ra.ref = b.ref; }
+  if (typeof b.dich !== 'string' || !MAU_DICH.test(b.dich)) return null;
+  ra.dich = /^\/moi(\/|$)/.test(b.dich) ? '/moi' : b.dich.toLowerCase(); // mã mời là thông tin riêng: chỉ giữ '/moi'
+  if (!MAY.includes(b.may)) return null;
+  ra.may = b.may;
+  return ra;
+}
 
 /** Nhận {ten, phien} và (chỉ với CO_GOI) thêm goi, chuDe; trả về bản sạch hoặc null nếu có bất kỳ điều gì sai. */
 function kiemTraSuKien(b) {
   if (!b || typeof b !== 'object' || Array.isArray(b)) return null;
   if (typeof b.ten !== 'string' || !TEN_SU_KIEN.includes(b.ten) || CHI_MAY_CHU.includes(b.ten)) return null;
-  const choPhep = CO_GOI.includes(b.ten) ? ['ten', 'phien', 'goi', 'chuDe'] : ['ten', 'phien'];
+  const laVaoTrang = b.ten === 'vao_trang';
+  const choPhep = laVaoTrang ? ['ten', 'phien', ...TRUONG_UTM, 'ref', 'dich', 'may']
+    : CO_GOI.includes(b.ten) ? ['ten', 'phien', 'goi', 'chuDe'] : ['ten', 'phien'];
   const khoa = Object.keys(b);
   if (!khoa.includes('phien') || khoa.some((k) => !choPhep.includes(k))) return null;
   if (typeof b.phien !== 'string' || !/^[A-Za-z0-9_-]{16,32}$/.test(b.phien)) return null;
   const ra = { ten: b.ten, phien: b.phien };
+  if (laVaoTrang) {
+    const n = kiemNguon(b);
+    return n ? { ...ra, ...n } : null;
+  }
   if (khoa.includes('goi')) {
     if (typeof b.goi !== 'string' || !MA_GOI.includes(b.goi)) return null;
     ra.goi = b.goi;
@@ -38,4 +88,4 @@ function kiemTraSuKien(b) {
   return ra;
 }
 
-module.exports = { TEN_SU_KIEN, CHI_MAY_CHU, trangCua, kiemTraSuKien };
+module.exports = { TEN_SU_KIEN, CHI_MAY_CHU, NHOM_NGUON, trangCua, kiemTraSuKien, nhomNguon };

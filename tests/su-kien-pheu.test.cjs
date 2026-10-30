@@ -4,12 +4,13 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
-const { kiemTraSuKien, TEN_SU_KIEN, CHI_MAY_CHU, trangCua } = require('../src/lib/su-kien.js');
-const { tinhPheu, docThuMuc } = require('../tools/pheu.cjs');
+const { kiemTraSuKien, nhomNguon, TEN_SU_KIEN, CHI_MAY_CHU, trangCua } = require('../src/lib/su-kien.js');
+const { tinhPheu, docThuMuc, tinhTheoNguon, taoGiaLap } = require('../tools/pheu.cjs');
 
-test('Sự kiện hợp lệ: đủ 16 tên (2 tên chỉ máy chủ ghi), phiên 16–32 ký tự', () => {
-  assert.equal(TEN_SU_KIEN.length, 16);
-  for (const ten of TEN_SU_KIEN.filter((t) => !CHI_MAY_CHU.includes(t))) assert.deepEqual(kiemTraSuKien({ ten, phien: 'a1b2c3d4e5f6a7b8' }), { ten, phien: 'a1b2c3d4e5f6a7b8' });
+test('Sự kiện hợp lệ: đủ 18 tên (2 tên chỉ máy chủ ghi), phiên 16–32 ký tự', () => {
+  assert.equal(TEN_SU_KIEN.length, 18);
+  for (const ten of TEN_SU_KIEN.filter((t) => !CHI_MAY_CHU.includes(t) && t !== 'vao_trang')) // vao_trang cần thêm dich, may: có test riêng
+    assert.deepEqual(kiemTraSuKien({ ten, phien: 'a1b2c3d4e5f6a7b8' }), { ten, phien: 'a1b2c3d4e5f6a7b8' });
 });
 
 test('Từ chối: trường lạ, tên lạ, phiên sai độ dài/ký tự, không phải object', () => {
@@ -24,7 +25,7 @@ test('Từ chối: trường lạ, tên lạ, phiên sai độ dài/ký tự, kh
 });
 
 test('Màn hình của từng sự kiện: 4 màn mua + trang luận giải (báo lỗi)', () => {
-  assert.equal(new Set(TEN_SU_KIEN.map(trangCua)).size, 6);
+  assert.equal(new Set(TEN_SU_KIEN.map(trangCua)).size, 7); // thêm 'vao' (vao_trang)
   assert.equal(trangCua('bao_loi'), 'luan-giai');
   assert.equal(trangCua('thanh_toan_xong'), 'thanh-toan');
 });
@@ -144,4 +145,82 @@ test('Không có đơn: tỉ lệ bậc và đơn TB là null, không chia cho 0
   assert.equal(p.bac.donTrungBinh, null);
   assert.equal(p.bac.tiLeGoiNam, null);
   assert.equal(p.bac.chuDeNhieuNhat, null);
+});
+
+const P = 'a1b2c3d4e5f6a7b8';
+const vt = (o) => kiemTraSuKien({ ten: 'vao_trang', phien: P, dich: '/', may: 'dien-thoai', ...o });
+
+test('vao_trang: nhận UTM + nơi giới thiệu + trang đích + loại máy; từ chối trường lạ/giá trị lạ', () => {
+  assert.deepEqual(vt({ utm_source: 'meta', utm_medium: 'cpc', utm_campaign: 'lap-la-so-202701', utm_content: 'qc-001', utm_term: 'tu-vi' }),
+    { ten: 'vao_trang', phien: P, utm_source: 'meta', utm_medium: 'cpc', utm_campaign: 'lap-la-so-202701', utm_content: 'qc-001', utm_term: 'tu-vi', dich: '/', may: 'dien-thoai' });
+  assert.equal(vt({ email: 'a@b.vn' }), null); // trường lạ
+  assert.equal(vt({ utm_source: 'Meta Ads' }), null); // chưa chuẩn hóa
+  assert.equal(vt({ utm_source: 'a@b.vn' }), null);
+  assert.equal(vt({ ref: 'https://x.vn/duong-dan?email=a' }), null); // chỉ nhận tên máy chủ
+  assert.equal(vt({ may: 'tivi' }), null);
+  assert.equal(vt({ dich: '/lp?ngay=1995-08-15' }), null);
+  assert.equal(kiemTraSuKien({ ten: 'vao_trang', phien: P }), null); // thiếu dich/may
+  assert.equal(kiemTraSuKien({ ten: 'vao_form', phien: P, utm_source: 'meta' }), null); // sự kiện khác không mang nguồn
+});
+
+test('vao_trang: trang mời chỉ giữ "/moi", không lộ mã mời', () => {
+  assert.equal(vt({ dich: '/moi/AbC123xyz' }).dich, '/moi');
+  assert.equal(vt({ dich: '/lp/van-nam-2027' }).dich, '/lp/van-nam-2027');
+});
+
+test('dang_ky_thanh_vien: nhận (kèm gói tùy chọn), không nhận trường lạ', () => {
+  assert.deepEqual(kiemTraSuKien({ ten: 'dang_ky_thanh_vien', phien: P }), { ten: 'dang_ky_thanh_vien', phien: P });
+  assert.equal(kiemTraSuKien({ ten: 'dang_ky_thanh_vien', phien: P, goi: 'tron-la-so' }).goi, 'tron-la-so');
+  assert.equal(kiemTraSuKien({ ten: 'dang_ky_thanh_vien', phien: P, email: 'a@b.vn' }), null);
+});
+
+test('Nhóm nguồn: UTM thắng; không UTM suy từ trang giới thiệu', () => {
+  assert.equal(nhomNguon({ utm_source: 'tuvi-vn', utm_medium: 'site' }), 'tuvi-vn');
+  assert.equal(nhomNguon({ utm_source: 'facebook', utm_medium: 'social' }), 'social');
+  assert.equal(nhomNguon({ utm_source: 'meta', utm_medium: 'cpc' }), 'paid');
+  assert.equal(nhomNguon({ utm_source: 'email', utm_medium: 'email' }), 'email');
+  assert.equal(nhomNguon({ utm_source: 'doi-tac-a', utm_medium: 'partner' }), 'partner');
+  assert.equal(nhomNguon({ utm_source: 'meta', utm_medium: 'cpc', ref: 'l.facebook.com' }), 'paid'); // UTM thắng referrer
+  assert.equal(nhomNguon({}), 'direct');
+  assert.equal(nhomNguon({ ref: 'xemtuvi.vn' }), 'direct');
+  assert.equal(nhomNguon({ ref: 'www.google.com.vn' }), 'organic');
+  assert.equal(nhomNguon({ ref: 'com.google.android.gm' }), 'referral'); // không nhầm ứng dụng Gmail với Google Search
+  assert.equal(nhomNguon({ ref: 'blog.example.vn' }), 'referral');
+});
+
+test('Báo cáo theo nhóm nguồn: tách nhóm, chưa đủ mẫu < 100 phiên, phiên cũ vào "chưa rõ"', () => {
+  const ds = [];
+  const phien = (i) => 'p' + String(i).padStart(15, '0');
+  for (let i = 0; i < 100; i++) { // 100 phiên paid: 50 lập, 10 chọn, 5 trả
+    ds.push({ t: 1, ten: 'vao_trang', phien: phien(i), nhom: 'paid' });
+    if (i < 50) ds.push(dong(phien(i), 'lap_la_so'));
+    if (i < 10) ds.push(dong(phien(i), 'chon_goi'));
+    if (i < 5) ds.push(dong(phien(i), 'thanh_toan_xong'));
+  }
+  for (let i = 100; i < 105; i++) { ds.push({ t: 1, ten: 'vao_trang', phien: phien(i), nhom: 'social' }); ds.push(dong(phien(i), 'lap_la_so')); }
+  ds.push(dong('cu', 'vao_form')); ds.push(dong('cu', 'lap_la_so')); // không có vao_trang
+  const t = tinhTheoNguon(ds);
+  assert.equal(t.nhom.paid.phien, 100);
+  assert.equal(t.nhom.paid.duMau, true);
+  assert.equal(t.nhom.paid.lapTrenVao, 0.5);
+  assert.equal(t.nhom.paid.chonTrenLap, 0.2);
+  assert.equal(t.nhom.paid.traTrenChon, 0.5);
+  assert.equal(t.nhom.paid.cpa, null);
+  assert.equal(t.nhom.social.duMau, false);
+  assert.equal(t.nhom['chưa rõ'].phien, 1);
+  assert.equal(t.tong, 106);
+});
+
+test('vao_trang không tính thành màn hình mua; vao_chon_goi hiện là xem_trang_gia', () => {
+  const ds = [dong('A', 'vao_form'), { t: 1, ten: 'vao_trang', phien: 'A', trang: 'vao' }, dong('A', 'thanh_toan_xong')];
+  assert.equal(tinhPheu(ds).soManTrungBinh, 2);
+});
+
+test('Số giả lập: đủ 8 nhóm, ổn định theo hạt, ≥ 3 nhóm đủ mẫu có đủ chỉ số', () => {
+  const a = tinhTheoNguon(taoGiaLap(7)), b = tinhTheoNguon(taoGiaLap(7));
+  assert.deepEqual(a, b);
+  const du = Object.values(a.nhom).filter((r) => r.duMau);
+  assert.ok(du.length >= 3);
+  for (const r of du) for (const k of ['phien', 'tiLePhien', 'lapTrenVao', 'chonTrenLap', 'traTrenChon']) assert.notEqual(r[k], null);
+  assert.equal(Object.keys(a.nhom).length, 8);
 });

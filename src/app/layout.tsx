@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import { Be_Vietnam_Pro, Noto_Serif } from 'next/font/google';
+import DoLuong from '@/components/DoLuong';
 import './globals.css';
 
 const sans = Be_Vietnam_Pro({
@@ -29,7 +30,10 @@ export const viewport: Viewport = { themeColor: '#2B2540' };
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="vi" className={`${sans.variable} ${serif.variable}`}>
-      <body>{children}</body>
+      <body>
+        <DoLuong />
+        {children}
+      </body>
     </html>
   );
 }

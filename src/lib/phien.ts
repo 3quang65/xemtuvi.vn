@@ -5,6 +5,7 @@ import { lapLaSo, type LaSo, type ThongTinSinh } from '@/lib/tuvi';
 const K_SINH = 'xtv.sinh';
 const K_PHIEN = 'xtv.phien';
 const K_NGUON = 'xtv.nguon';
+const K_VAO = 'xtv.vao-trang';
 const K_Y_DINH = 'xtv.y-dinh';
 const K_MA_MOI = 'xtv.ma-moi';
 
@@ -48,9 +49,9 @@ export function maPhien(): string {
 }
 
 /** Gửi sự kiện đo phễu. Không bao giờ làm hỏng giao diện. */
-export function guiSuKien(ten: string, tuyChon?: { goi?: string; chuDe?: string }) {
+export function guiSuKien(ten: string, tuyChon?: { goi?: string; chuDe?: string; nguon?: Record<string, string> }) {
   try {
-    const body = new Blob([JSON.stringify({ ten, phien: maPhien(), ...(tuyChon?.goi ? { goi: tuyChon.goi } : {}), ...(tuyChon?.chuDe ? { chuDe: tuyChon.chuDe } : {}) })], { type: 'application/json' });
+    const body = new Blob([JSON.stringify({ ten, phien: maPhien(), ...(tuyChon?.goi ? { goi: tuyChon.goi } : {}), ...(tuyChon?.chuDe ? { chuDe: tuyChon.chuDe } : {}), ...tuyChon?.nguon })], { type: 'application/json' });
     if (!navigator.sendBeacon('/api/su-kien', body)) {
       void fetch('/api/su-kien', { method: 'POST', body, keepalive: true }).catch(() => {});
     }
@@ -66,6 +67,27 @@ export function ghiNguon() {
   try { if (document.referrer) nguon.ref = new URL(document.referrer).hostname; } catch { /* bỏ qua */ }
   ghi('session', K_NGUON, nguon);
 }
+/** Chuẩn hóa giá trị UTM theo quy ước (chữ thường, không dấu, '-' thay khoảng trắng); null nếu còn ký tự lạ. */
+function chuanUtm(v: string | null): string | null {
+  const x = (v ?? '').trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd').replace(/\s+/g, '-').slice(0, 50);
+  return /^[a-z0-9][a-z0-9._-]*$/.test(x) ? x : null;
+}
+
+/** Ghi `vao_trang` đúng 1 lần cho mỗi phiên (tab), ở trang đầu tiên. Nguồn lưu một lần; các sự kiện sau gắn vào phiên ở máy chủ/báo cáo. */
+export function ghiVaoTrang() {
+  if (typeof window === 'undefined' || kho('session')?.getItem(K_VAO)) return;
+  try { kho('session')?.setItem(K_VAO, '1'); } catch { return; } // không lưu được thì không gửi, tránh lặp mỗi trang
+  ghiNguon();
+  const q = new URLSearchParams(window.location.search);
+  const nguon: Record<string, string> = {};
+  for (const k of ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term']) { const v = chuanUtm(q.get(k)); if (v) nguon[k] = v; }
+  try { const h = document.referrer ? new URL(document.referrer).hostname.toLowerCase() : ''; if (h) nguon.ref = h; } catch { /* bỏ qua */ }
+  const p = window.location.pathname.toLowerCase();
+  nguon.dich = /^\/moi(\/|$)/.test(p) ? '/moi' : p.replace(/\/+$/, '').split('/').slice(0, 3).join('/') || '/'; // mã mời là thông tin riêng: chỉ giữ '/moi'
+  nguon.may = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent) ? 'dien-thoai' : 'may-tinh';
+  guiSuKien('vao_trang', { nguon });
+}
+
 export const docNguon = () => doc<Record<string, string>>('session', K_NGUON) ?? {};
 
 /** Mã mời của khách (từ /moi/<ma>), chỉ trong tab này. Máy chủ vẫn kiểm lại mỗi lần dùng. */

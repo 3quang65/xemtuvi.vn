@@ -36,8 +36,9 @@ export const dangNhap = (req: Request, m: MayChu) => chay(req, async () => {
   if (process.env.DANG_NHAP_THU !== '1') return loi(404, 'tat', 'Đăng nhập thử đang tắt.');
   const b = await doc(req);
   if (!b || typeof b.email !== 'string') return loi(400, 'du_lieu_sai', 'Thiếu email.');
+  const truoc = dv.coNguoiDung(m.db, b.email);
   const id = dv.dangNhapThu(m.db, b.email);
-  return json({ ok: true }, 200, { 'Set-Cookie': cookieDat(taoPhien(m.db, id)) });
+  return json({ ok: true, moi: !truoc }, 200, { 'Set-Cookie': cookieDat(taoPhien(m.db, id)) });
 });
 
 export const dangXuat = (req: Request, m: MayChu) => chay(req, () => {
