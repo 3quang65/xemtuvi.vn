@@ -106,5 +106,35 @@
     "huongDan": "Sao hỗ trợ và cần lưu ý"
    }
   ]
+ },
+ "van-10-nam": {
+  "ten": "Vận 10 năm",
+  "cungChinh": "Vận",
+  "cungLienQuan": [
+   "xung chiếu",
+   "tam hợp"
+  ],
+  "muc": [
+   {
+    "id": "chu-de",
+    "tieuDe": "Chủ đề nổi bật",
+    "huongDan": "Cung đại vận đang đi và việc thuộc cung đó"
+   },
+   {
+    "id": "chinh-tinh",
+    "tieuDe": "Chính tinh của vận",
+    "huongDan": "Chính tinh tại cung vận và độ sáng"
+   },
+   {
+    "id": "tu-hoa",
+    "tieuDe": "Tứ hóa lá số gốc",
+    "huongDan": "Hóa Lộc, Quyền, Khoa, Kỵ bản mệnh trong thế tam phương của vận"
+   },
+   {
+    "id": "tuan-triet",
+    "tieuDe": "Tuần, Triệt",
+    "huongDan": "Ảnh hưởng của Tuần, Triệt tại cung vận"
+   }
+  ]
  }
 }

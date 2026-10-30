@@ -11,11 +11,13 @@ import { bam, doc, ghi, thongKe, xoaBoNho } from './cache';
 import { kiemTraMaSauViet, locTuCam, type TuCamCauHinh } from './loc';
 import { cungKhopDieuKien, khopQuyTac, type QuyTacV2 } from './khop-v2';
 import khungJson from './quy-tac-khung.json';
+import quyTacVanJson from './quy-tac-van/van-10-nam.json';
+import { namAmHienTai } from '../../tuvi';
 
 export { xoaBoNho };
 export const thongKeCache = thongKe;
 
-export type ChuyenDeMa = 'menh' | 'quan-loc' | 'phu-the';
+export type ChuyenDeMa = 'menh' | 'quan-loc' | 'phu-the' | 'van-10-nam';
 
 export interface QuyTac {
   id: string;
@@ -49,8 +51,19 @@ export interface NhanDinh {
     yeuTo?: string[];
   };
 }
+/** Đại vận đang đi (chỉ chuyên đề "van-10-nam"). Năm là năm âm lịch, tuổi là tuổi mụ. */
+export interface ThongTinVan {
+  cung: string;
+  canChi: string; // can chi của cung vận, ví dụ "Kỷ Mùi"
+  tuoiTu: number;
+  tuoiDen: number;
+  namTu: number;
+  namDen: number;
+}
 export interface LuanGiai {
   chuyenDe: ChuyenDeMa;
+  /** Chỉ có ở chuyên đề "van-10-nam"; null nếu chưa tới tuổi vào đại vận. */
+  van?: ThongTinVan | null;
   muc: { id: string; tieuDe: string; nhanDinh: NhanDinh[] }[];
   ghiChu: string;
   phienBan: string;
@@ -70,6 +83,8 @@ export interface TuyChon {
   /** Hàm gọi mô hình thật, chỉ dùng khi bật "claude". Chưa truyền thì tự về stub. */
   goiClaude?: (promptHeThong: string, duLieu: string) => Promise<string>;
   boQuaCache?: boolean;
+  /** Năm âm lịch cần xem (chỉ chuyên đề "van-10-nam"); mặc định năm âm lịch hiện tại. */
+  namXem?: number;
 }
 
 export const GHI_CHU =
@@ -100,9 +115,12 @@ function napBan2(): QuyTacBan2[] {
   return [...(khungJson as unknown as QuyTacBan2[]), ...tuThuMuc];
 }
 const QUY_TAC_2 = napBan2();
+/** Quy tắc đại vận (VAN-): cung gốc là cung vận, điền khi sinh bài. `cungVan` giới hạn quy tắc chỉ dùng khi vận ở đúng cung đó ("*" = mọi cung). */
+type QuyTacVan = QuyTacBan2 & { cungVan?: string };
+const QUY_TAC_VAN = quyTacVanJson as unknown as QuyTacVan[];
 const TU_CAM = tuCamJson as unknown as TuCamCauHinh;
 const PROMPT = fs.readFileSync(path.join(process.cwd(), 'src/lib/luan-giai/ai/prompt-he-thong.md'), 'utf8');
-export const PHIEN_BAN_QUY_TAC = bam(JSON.stringify([QUY_TAC, QUY_TAC_2, CHUYEN_DE, TU_CAM, PROMPT])).slice(0, 12);
+export const PHIEN_BAN_QUY_TAC = bam(JSON.stringify([QUY_TAC, QUY_TAC_2, QUY_TAC_VAN, CHUYEN_DE, TU_CAM, PROMPT])).slice(0, 12);
 
 export function nhaCungCapDangDung(yeuCau: TuyChon['nhaCungCap']): 'stub' | 'claude' | string {
   if (typeof yeuCau === 'object' && yeuCau) return yeuCau.ten;
@@ -112,6 +130,26 @@ export function nhaCungCapDangDung(yeuCau: TuyChon['nhaCungCap']): 'stub' | 'cla
 export function khoaCache(ls: LaSo, chuyenDe: string, phienBan: string): string {
   const sinh = [ls.duong.nam, ls.duong.thang, ls.duong.ngay, ls.gio.dongHo, ls.gioChuan.gio, ls.gioiTinh, JSON.stringify(ls.quyUoc)];
   return bam([...sinh, chuyenDe, phienBan].join('|'));
+}
+
+/** Khóa cache chuyên đề Vận 10 năm: theo lá số và đại vận (cung vận), không theo năm xem. */
+export function khoaVan(ls: LaSo, cungVan: string): string {
+  return khoaCache(ls, `van-10-nam@${cungVan}`, PHIEN_BAN_QUY_TAC);
+}
+
+/** Đại vận đang đi của lá số ở năm âm lịch namXem; null nếu chưa tới tuổi vào đại vận. */
+export function timDaiVan(ls: LaSo, namXem: number): { cung: LaSo['cung'][number]; thongTin: ThongTinVan } | null {
+  const tuoiMu = namXem - ls.am.nam + 1;
+  const cung = ls.cung.find((c) => tuoiMu >= c.daiVanTu && tuoiMu <= c.daiVanTu + 9);
+  if (!cung) return null;
+  const tuoiDen = cung.daiVanTu + 9;
+  return {
+    cung,
+    thongTin: {
+      cung: cung.ten, canChi: `${cung.can} ${cung.tenChi}`, tuoiTu: cung.daiVanTu, tuoiDen,
+      namTu: ls.am.nam + cung.daiVanTu - 1, namDen: ls.am.nam + tuoiDen - 1,
+    },
+  };
 }
 
 function tatCaSao(ls: LaSo, tenCung: string): { sao: Sao[]; tuan: boolean; triet: boolean } | null {
@@ -174,18 +212,29 @@ function khopBan2(ls: LaSo, q: QuyTacBan2): KetQuaKhop | null {
 export async function sinhLuanGiai(ls: LaSo, chuyenDe: ChuyenDeMa, tuyChon: TuyChon = {}): Promise<LuanGiai> {
   const cfg = CHUYEN_DE[chuyenDe];
   if (!cfg) throw new Error(`Chuyên đề không hợp lệ: ${chuyenDe}`);
-  const khoa = khoaCache(ls, chuyenDe, PHIEN_BAN_QUY_TAC);
+  const laVan = chuyenDe === 'van-10-nam';
+  const dv = laVan ? timDaiVan(ls, tuyChon.namXem ?? namAmHienTai()) : null;
+  if (laVan && !dv) {
+    // Chưa tới tuổi vào đại vận (nhỏ hơn số cục): không có gì để luận.
+    return { chuyenDe, van: null, muc: [], ghiChu: GHI_CHU, phienBan: PHIEN_BAN_QUY_TAC };
+  }
+  const khoa = dv ? khoaVan(ls, dv.thongTin.cung) : khoaCache(ls, chuyenDe, PHIEN_BAN_QUY_TAC);
   if (!tuyChon.boQuaCache) {
     const co = doc<LuanGiai>(khoa);
     if (co) return co;
   }
 
+  // Quy tắc đại vận: gắn cung gốc = cung vận rồi khớp như quy tắc bản 2; quy tắc riêng một cung chỉ dùng khi đúng cung.
+  const quyTacBan2 = dv
+    ? QUY_TAC_VAN.filter((q) => !q.cungVan || q.cungVan === '*' || q.cungVan === dv.thongTin.cung).map((q) => ({ ...q, cung: dv.thongTin.cung }))
+    : QUY_TAC_2.filter((q) => q.chuyenDe === chuyenDe);
+
   const khopDs: KetQuaKhop[] = [
-    ...QUY_TAC.filter((q) => q.chuyenDe === chuyenDe).flatMap((q) => {
+    ...(dv ? [] : QUY_TAC.filter((q) => q.chuyenDe === chuyenDe).flatMap((q) => {
       const r = khop(ls, q);
       return r ? [{ ...r, cau: q.noiDung, uuTien: 0, cungGoc: q.cung, q }] : [];
-    }),
-    ...QUY_TAC_2.filter((q) => q.chuyenDe === chuyenDe).flatMap((q) => {
+    })),
+    ...quyTacBan2.flatMap((q) => {
       const r = khopBan2(ls, q);
       return r ? [r] : [];
     }),
@@ -234,7 +283,7 @@ export async function sinhLuanGiai(ls: LaSo, chuyenDe: ChuyenDeMa, tuyChon: TuyC
   // Cách cục (mục đầu) xếp theo mức ưu tiên giảm dần; thứ tự ghép còn lại giữ nguyên.
   const mucRa = muc.map((m) => ({ id: m.id, tieuDe: m.tieuDe, nhanDinh: [...m.nhanDinh].sort((a, b) => b.u - a.u).map((x) => x.n) }));
 
-  const kq: LuanGiai = { chuyenDe, muc: mucRa.filter((m) => m.nhanDinh.length), ghiChu: GHI_CHU, phienBan: PHIEN_BAN_QUY_TAC };
+  const kq: LuanGiai = { chuyenDe, ...(dv ? { van: dv.thongTin } : {}), muc: mucRa.filter((m) => m.nhanDinh.length), ghiChu: GHI_CHU, phienBan: PHIEN_BAN_QUY_TAC };
   if (!tuyChon.boQuaCache && dung === 'stub') ghi(khoa, kq);
   return kq;
 }
