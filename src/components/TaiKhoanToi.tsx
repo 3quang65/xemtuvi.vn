@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import { DIEU_KIEN_XEM_LAI } from '@/lib/goi';
 
 type Buoc = 'tai' | 'chua-dang-nhap' | 'loi' | 'xem' | 'hoi' | 'dang-xoa' | 'xong';
 
@@ -51,6 +52,7 @@ export default function TaiKhoanToi() {
       ) : (
         <div role="alertdialog" aria-labelledby="toi-hoi" className="toi-xac-nhan">
           <p id="toi-hoi"><strong>Bạn chắc chắn muốn xóa?</strong> Việc này không hoàn tác được và các luận giải đã mua sẽ không xem lại được. Bản sao lưu của hệ thống cũng tự xóa sau tối đa 30 ngày.</p>
+          <p className="tt-ghi-chu">{DIEU_KIEN_XEM_LAI}</p>
           <label htmlFor="toi-go">Gõ XOA để xác nhận</label>
           <input id="toi-go" type="text" autoComplete="off" autoCapitalize="characters" spellCheck={false} value={go} onChange={(e) => setGo(e.target.value)} />
           {loi && <p className="bao-loi" role="alert">{loi}</p>}

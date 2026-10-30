@@ -8,11 +8,11 @@ Mặt bằng lần mua đầu của đối thủ 35k–129k; mở lẻ 9k/mục;
 | Bậc | Mã | Giá | Gồm |
 |---|---|---|---|
 | Mở một chủ đề | `mot-chu-de` | **29.000đ** / một lần | Luận sâu 1 chủ đề tự chọn: Bản thân · Tình cảm · Sự nghiệp (Tài chính, Gia đạo mở khi qua kiểm duyệt). Ghi sao, cung, nguồn. |
-| Trọn lá số — **Khuyên dùng** | `tron-la-so` | **99.000đ** / một lần | Ba cung trọng yếu (Mệnh, Quan Lộc, Phu Thê) + vận 10 năm hiện tại (đại vận). Ghi sao, cung, trường phái. Xem lại không thời hạn khi đăng nhập. |
+| Trọn lá số — **Khuyên dùng** | `tron-la-so` | **99.000đ** / một lần | Ba cung trọng yếu (Mệnh, Quan Lộc, Phu Thê) + vận 10 năm hiện tại (đại vận). Ghi sao, cung, trường phái. Xem lại không giới hạn thời gian khi đăng nhập tài khoản. |
 | Thành viên năm | `thanh-vien-nam` | **299.000đ** / năm (≈ 25.000đ/tháng) | Trọn lá số của bạn + luận vận năm + lưu nguyệt từng tháng + hỏi đáp về lá số 5 câu/tháng + trọn lá số cho 2 người thân. |
 
 Vận năm 2027 (`van-nam-2027`, giá nháp 39.000đ, chờ duyệt 49.000đ) và gói gộp `tron-la-so-kem-van-nam` 129.000đ, bán đến hết 6/2/2027 (`banDen`, máy chủ từ chối đơn sau ngày đó).
-Điều kiện xem lại: hằng `DIEU_KIEN_XEM_LAI` trong `goi.ts` (L-f91bef 30/10: hạ lời hứa 12 cung → ba cung theo sản phẩm thật).
+Điều kiện xem lại: hằng `DIEU_KIEN_XEM_LAI` trong `goi.ts` (L-44c062 theo trang giá v4: câu Thành viên năm chỉ ghép khi gói năm mở), hiện ở /chon-goi và bước xác nhận xóa ở /toi.
 
 ## Lý do chọn số
 - **29k chủ đề**: đủ thấp để thử (gần 20–35k của Mèo Béo), nhưng 4 chủ đề = 116k > 99k → khách muốn xem nhiều tự thấy gói trọn lá số lợi hơn. Không hạ về 9k: định vị học thuật, không cạnh tranh giá rẻ nhất.

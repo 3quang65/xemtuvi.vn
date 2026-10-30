@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 import { useEffect, useId, useMemo, useState } from 'react';
 import type { LaSo } from '@/lib/tuvi';
 import { DOAN_MAU, doanMauCuaLaSo, tachDoanMau } from '@/lib/luan-giai';
-import { CHU_DE, CONG_BO_GIA, giaHienThi, GHI_CHU_AI, HOAN_TIEN, PHUONG_PHAP, type Goi, type MaChuDe } from '@/lib/goi';
+import { CHU_DE, CONG_BO_GIA, DIEU_KIEN_XEM_LAI, giaHienThi, GHI_CHU_AI, HOAN_TIEN, PHUONG_PHAP, type Goi, type MaChuDe } from '@/lib/goi';
 import { docYDinh, guiSuKien } from '@/lib/phien';
 import { useGia } from '@/lib/useGia';
 import { useLaSoDaLuu } from '@/lib/useLaSoDaLuu';
@@ -101,6 +101,7 @@ export default function ChonGoi() {
         </section>
         <ul className="luoi-goi">{gia.goi.map((g) => <TheGoi key={g.ma} g={g} onChon={chonGoi} />)}</ul>
       </div>
+      <p className="tt-ghi-chu">{DIEU_KIEN_XEM_LAI}</p>
       <p className="tt-ghi-chu">{GHI_CHU_AI}</p>
       {CONG_BO_GIA && <p className="cam-ket">{HOAN_TIEN}</p>}
       <p className="tt-ghi-chu"><a href="/tro-giup">Trợ giúp</a></p>

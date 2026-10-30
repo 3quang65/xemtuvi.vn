@@ -34,12 +34,15 @@ export const giaHienThi = (d: number, cong: boolean = CONG_BO_GIA) => (cong ? di
 /** Trần số tiền trừ khi nâng lên Thành viên năm (bằng giá Trọn lá số, vì gói năm đã gồm Trọn lá số). */
 export const TRAN_TRU_NANG_GOI = GIA_TRON_LA_SO;
 
-/** Điều kiện xem lại phần đã mua (L-f91bef): dùng chung cho trang tài khoản, email, trang giá. */
-export const DIEU_KIEN_XEM_LAI =
+/** Điều kiện xem lại phần đã mua (trang-gia-va-thu-gia_v4 L3): trang giá, bước xóa tài khoản, email. Câu Thành viên năm chỉ ghép khi gói năm mở. */
+const CAU_XEM_LAI_GOI_NAM =
+  'Thành viên năm: xem trong 365 ngày kể từ ngày thanh toán, áp dụng cho 3 lá số bạn lập đầu tiên trong tài khoản (tính theo thứ tự lập, không đổi được). ' +
+  'Phần bạn đã mua lẻ trước đó vẫn xem lại không giới hạn thời gian, kể cả khi gói năm hết hạn. ';
+export const dieuKienXemLai = (goiNamMo: boolean) =>
   'Phần đã mua gắn với tài khoản và lá số của bạn. Mở một chủ đề, Trọn lá số, Vận năm 2027: xem lại không giới hạn thời gian mỗi khi đăng nhập. ' +
-  'Thành viên năm: xem trong 365 ngày kể từ ngày thanh toán, áp dụng cho 3 lá số đầu tiên trong tài khoản. ' +
+  (goiNamMo ? CAU_XEM_LAI_GOI_NAM : '') +
   'Nếu bạn xóa tài khoản, lá số và quyền xem bị xóa theo, không khôi phục được.';
-const XEM_LAI = 'Xem lại không thời hạn khi đăng nhập tài khoản';
+const XEM_LAI = 'Xem lại không giới hạn thời gian khi đăng nhập tài khoản';
 
 // Chuyên đề "Vận năm 2027" (mã chuyên đề van-nam-2027). Giá nháp, CHỜ An/anh chốt. Không giá gạch, không đếm ngược.
 export const MA_VAN_NAM = 'van-nam-2027';
@@ -69,10 +72,11 @@ function dungGoi(bang?: BangGia): Goi[] {
       an: true, // ẩn đến khi vận năm, lưu nguyệt, hỏi đáp hoàn tất (Minh, 30/10). Bỏ dòng này để mở bán lại.
       soSanh: [`≈ ${dinhDangGia(Math.round(giaNam / 12 / 1000) * 1000)}/tháng`, `Mua lẻ 3 lá số đã là ${dinhDangGia(3 * giaTron)}`],
       quyenLoi: [
-        'Trọn lá số của bạn',
+        'Trọn lá số của bạn, xem trong 365 ngày kể từ ngày thanh toán',
         'Luận vận năm và lưu nguyệt từng tháng',
         'Hỏi đáp về lá số: 5 câu mỗi tháng',
         'Trọn lá số cho 2 người thân',
+        'Áp dụng cho 3 lá số bạn lập đầu tiên trong tài khoản (tính theo thứ tự lập, không đổi được)',
       ],
     },
   ];
@@ -88,7 +92,7 @@ function dungGoiVanNam(bang?: BangGia): Goi[] {
     {
       ma: 'tron-la-so-kem-van-nam', ten: 'Trọn lá số + Vận năm 2027', gia: bang?.['tron-la-so-kem-van-nam'] ?? GIA_TRON_LA_SO_KEM_VAN_NAM, donVi: 'một lần', chinh: true, nhan: 'Gộp tiết kiệm hơn',
       banDen: BAN_DEN_GOI_GOP,
-      quyenLoi: ['Toàn bộ Trọn lá số: ba cung trọng yếu và vận 10 năm', 'Cộng luận Vận năm 2027', 'Mỗi nhận định ghi sao, cung và trường phái'],
+      quyenLoi: ['Toàn bộ Trọn lá số: ba cung trọng yếu và vận 10 năm', 'Cộng luận Vận năm 2027', 'Mỗi nhận định ghi sao, cung và trường phái', XEM_LAI],
     },
   ];
 }
@@ -96,6 +100,7 @@ function dungGoiVanNam(bang?: BangGia): Goi[] {
 /** Giá hiện hành (chính thức). Thử nghiệm giá không đổi các hằng này mà dùng goiTheoBang(). */
 export const GOI: Goi[] = dungGoi();
 export const GOI_VAN_NAM: Goi[] = dungGoiVanNam();
+export const DIEU_KIEN_XEM_LAI = dieuKienXemLai(!GOI.find((g) => g.ma === 'thanh-vien-nam')?.an);
 
 /** Gói và giá theo nhánh thử; bảng rỗng/không có = giá hiện hành (xem src/lib/may-chu/thu-gia.ts). */
 export const goiTheoBang = (bang?: BangGia) => ({ goi: dungGoi(bang), vanNam: dungGoiVanNam(bang) });

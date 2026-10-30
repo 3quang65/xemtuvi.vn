@@ -161,7 +161,15 @@ test('L-f91bef: lời hứa khớp sản phẩm thật, chủ đề lẻ chỉ 3
   assert.ok(goi.conHanBan(gop, Date.parse('2027-02-06T23:59:00+07:00')));
   assert.ok(!goi.conHanBan(gop, Date.parse('2027-02-07T00:00:00+07:00')));
   assert.equal(goi.goiDangBan(goi.GOI_VAN_NAM, Date.parse('2027-02-07T08:00:00+07:00')).length, 1);
-  assert.match(goi.DIEU_KIEN_XEM_LAI, /365 ngày/);
+  // v4 L3: gói năm đang ẩn thì điều kiện không nhắc Thành viên năm; mở lại thì ghép câu 365 ngày
+  assert.doesNotMatch(goi.DIEU_KIEN_XEM_LAI, /365 ngày|Thành viên năm/);
+  assert.match(goi.dieuKienXemLai(true), /365 ngày kể từ ngày thanh toán, áp dụng cho 3 lá số bạn lập đầu tiên/);
+  assert.match(goi.DIEU_KIEN_XEM_LAI, /không giới hạn thời gian/);
+  // v4 L7: một cụm XEM_LAI cho thẻ 1, 2, Vận năm và gói gộp
+  for (const ma of ['mot-chu-de', 'tron-la-so', 'van-nam-2027', 'tron-la-so-kem-van-nam']) {
+    assert.ok(goi.layGoi(ma).quyenLoi.includes('Xem lại không giới hạn thời gian khi đăng nhập tài khoản'), ma);
+  }
+  assert.match(goi.layGoi('thanh-vien-nam').quyenLoi[0], /365 ngày kể từ ngày thanh toán/);
 });
 
 test('máy chủ từ chối gói gộp sau ngày dừng, từ chối chủ đề lẻ chưa bán', () => {
