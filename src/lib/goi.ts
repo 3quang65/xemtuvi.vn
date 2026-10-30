@@ -66,7 +66,8 @@ export const CHU_DE: { ma: MaChuDe; ten: string }[] = [
 ];
 
 /** Cam kết hiện ở màn chọn gói và thanh toán. Một chỗ duy nhất, mọi trang đọc từ đây. */
-export const HOAN_TIEN = 'Hoàn 100% nếu lỗi kỹ thuật khiến bạn không xem được đủ phần đã mua. Không hoàn vì nội dung không hợp ý.';
+export const GHI_CHU_AI = 'Nội dung luận giải do AI tạo từ bộ quy tắc Tử Vi phái Việt, có ghi nguồn.';
+export const HOAN_TIEN = 'Hoàn đủ số tiền nếu lỗi kỹ thuật khiến bạn không xem được đủ phần đã mua. Không hoàn vì nội dung không hợp ý.';
 export const PHUONG_PHAP = [
   'An sao và độ sáng theo cách Việt Nam (phái Việt): Tuần, Triệt và Tứ hóa năm Canh, Nhâm khác một số sách Trung Quốc.',
   'Luận theo phương pháp tam hợp, dựa trên Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), đối chiếu sách gốc Tử Vi Đẩu Số Toàn Thư. Sách nói khác nhau thì ghi rõ theo sách nào.',
