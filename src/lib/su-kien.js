@@ -19,6 +19,7 @@ const CHI_MAY_CHU = ['vao_moi', 'dung_ma_moi', 'dang_ky_nhan_tin'];
 function trangCua(ten) { return TRANG[ten]; }
 
 const NHANH = ['goc', 'thu']; // nhánh thử nghiệm giá (thu-gia_v1.md); máy chủ mới là bên quyết định nhánh và giá
+const MAU_THIET_BI = /^[A-Za-z0-9_-]{16,32}$/; // mã thiết bị ẩn danh (chuỗi ngẫu nhiên, cookie bên thứ nhất); máy chủ gắn từ cookie
 const CO_GOI = ['chon_goi', 'vao_thanh_toan', 'thanh_toan_xong', 'bao_loi', 'dang_ky_thanh_vien'];
 
 // Nguồn khách (dac-ta-do-luong_v1.md mục 2). Chỉ chữ thường không dấu, không có thông tin cá nhân.
@@ -64,17 +65,21 @@ function kiemNguon(b) {
   return ra;
 }
 
-/** Nhận {ten, phien} và (chỉ với CO_GOI) thêm goi, chuDe, nhanh; trả về bản sạch hoặc null nếu có bất kỳ điều gì sai. */
+/** Nhận {ten, phien} và (chỉ với CO_GOI) thêm goi, chuDe, nhanh; thietBi (tùy chọn, kiểm định dạng); trả về bản sạch hoặc null nếu có bất kỳ điều gì sai. */
 function kiemTraSuKien(b) {
   if (!b || typeof b !== 'object' || Array.isArray(b)) return null;
   if (typeof b.ten !== 'string' || !TEN_SU_KIEN.includes(b.ten) || CHI_MAY_CHU.includes(b.ten)) return null;
   const laVaoTrang = b.ten === 'vao_trang';
-  const choPhep = laVaoTrang ? ['ten', 'phien', ...TRUONG_UTM, 'ref', 'dich', 'may']
-    : CO_GOI.includes(b.ten) ? ['ten', 'phien', 'goi', 'chuDe', 'nhanh'] : ['ten', 'phien'];
+  const choPhep = laVaoTrang ? ['ten', 'phien', 'thietBi', ...TRUONG_UTM, 'ref', 'dich', 'may']
+    : CO_GOI.includes(b.ten) ? ['ten', 'phien', 'thietBi', 'goi', 'chuDe', 'nhanh'] : ['ten', 'phien', 'thietBi'];
   const khoa = Object.keys(b);
   if (!khoa.includes('phien') || khoa.some((k) => !choPhep.includes(k))) return null;
   if (typeof b.phien !== 'string' || !/^[A-Za-z0-9_-]{16,32}$/.test(b.phien)) return null;
   const ra = { ten: b.ten, phien: b.phien };
+  if (khoa.includes('thietBi')) {
+    if (typeof b.thietBi !== 'string' || !MAU_THIET_BI.test(b.thietBi)) return null;
+    ra.thietBi = b.thietBi;
+  }
   if (laVaoTrang) {
     const n = kiemNguon(b);
     return n ? { ...ra, ...n } : null;

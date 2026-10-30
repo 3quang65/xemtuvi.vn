@@ -13,7 +13,7 @@ require('./_dang-nhap.cjs')(x);
 const tg = nap('lib/may-chu/thu-gia.ts');
 const { GOI, GOI_VAN_NAM, goiTheoBang, layGoi } = nap('lib/goi.ts');
 const { kiemTraSuKien } = require('../src/lib/su-kien.js');
-const { tinhTheoNhanh, bangNhanh, taoGiaLap } = require('../tools/pheu.cjs');
+const { tinhTheoNhanh, bangNhanh, taoGiaLap, phienChonGoi, bootstrap, csvNhanh } = require('../tools/pheu.cjs');
 const gia = nap('app/api/gia/route.ts');
 const apiSuKien = nap('app/api/su-kien/route.ts');
 
@@ -66,7 +66,7 @@ test('Bật: cùng thiết bị luôn một giá qua 5 lần tải; hai nhánh c
   for (let i = 0; i < 200; i++) {
     const r1 = await gia.GET(yc('/api/gia'));
     const ck = cookieNhanh(r1), b1 = await r1.json();
-    assert.match(ck, /^a\.(goc|thu)$/); assert.equal(b1.nhanh, ck.split('.')[1]);
+    assert.match(ck, /^a\.(goc|thu)\.[A-Za-z0-9_-]{16,32}$/); assert.equal(b1.nhanh, ck.split('.')[1]);
     assert.equal(b1.gia['tron-la-so'], b1.nhanh === 'thu' ? 129000 : 99000);
     dem[b1.nhanh]++;
     for (let k = 0; k < 5; k++) {
@@ -77,7 +77,7 @@ test('Bật: cùng thiết bị luôn một giá qua 5 lần tải; hai nhánh c
     }
   }
   assert.ok(dem.goc > 70 && dem.thu > 70, JSON.stringify(dem));
-  assert.match(tg.nhanhCuaYeuCau(yc('/'), tg.cauHinhThuGia(), () => 0.1).setCookie, /xtv_nhanh=a\.goc; Path=\/; HttpOnly; Secure; SameSite=Lax/);
+  assert.match(tg.nhanhCuaYeuCau(yc('/'), tg.cauHinhThuGia(), () => 0.1).setCookie, /xtv_nhanh=a\.goc\.[A-Za-z0-9_-]{16}; Path=\/; HttpOnly; Secure; SameSite=Lax/);
   assert.equal(tg.nhanhCuaYeuCau(yc('/'), tg.cauHinhThuGia(), () => 0.9).nhanh, 'thu');
 });
 
@@ -167,4 +167,99 @@ test('Số giả lập hai nhánh: báo cáo in đủ cột cho cả hai nhánh'
   const md = bangNhanh(tinhTheoNhanh(taoGiaLap(7, true)), true);
   for (const c of ['Phiên chon_goi', 'Doanh thu / phiên', 'Tỉ trọng tron-la-so', 'bao_loi / đơn', 'Nhóm nguồn', 'a/goc', 'a/thu']) assert.ok(md.includes(c), c);
   assert.equal(bangNhanh(tinhTheoNhanh(taoGiaLap(7, false)), true).startsWith('Chưa có'), true);
+});
+
+const TB = 'tbAAAAAAAAAAAAAAAA', TB2 = 'tbBBBBBBBBBBBBBBBB';
+
+test('Mã thiết bị: cấp một lần, giữ nguyên qua các lần tải; cookie cũ chưa có mã giữ nhánh và được cấp mã', async () => {
+  datCfg(CFG(true));
+  const ck = cookieNhanh(await gia.GET(yc('/api/gia')));
+  const tb = ck.split('.')[2];
+  for (let i = 0; i < 3; i++) assert.equal((await gia.GET(yc('/api/gia', { cookie: 'xtv_nhanh=' + ck }))).headers.get('set-cookie'), null);
+  assert.equal(tg.nhanhDaGan(yc('/', { cookie: 'xtv_nhanh=' + ck })).thietBi, tb);
+  const cu = cookieNhanh(await gia.GET(yc('/api/gia', { cookie: 'xtv_nhanh=a.thu' })));
+  assert.match(cu, /^a\.thu\.[A-Za-z0-9_-]{16,32}$/);
+  assert.notEqual(cu.split('.')[2], tb);
+  assert.equal(tg.nhanhDaGan(yc('/', { cookie: 'xtv_nhanh=a.thu.ngan' })).thietBi, undefined); // mã sai định dạng không nhận
+  assert.equal(tg.nhanhDaGan(yc('/', { cookie: 'xtv_nhanh=a.thu.' + TB + '.x' })), null);
+});
+
+test('kiemTraSuKien: thietBi kiểm định dạng, cho mọi sự kiện', () => {
+  assert.deepEqual(kiemTraSuKien({ ten: 'vao_form', phien: P, thietBi: TB }), { ten: 'vao_form', phien: P, thietBi: TB });
+  assert.deepEqual(kiemTraSuKien({ ten: 'bao_loi', phien: P, thietBi: TB }), { ten: 'bao_loi', phien: P, thietBi: TB });
+  for (const xau of ['ngan', 'có dấu!!!!!!!!!!!!!!', 'a'.repeat(40), 5, null]) assert.equal(kiemTraSuKien({ ten: 'vao_form', phien: P, thietBi: xau }), null);
+});
+
+test('Sự kiện: thietBi từ cookie gắn mọi sự kiện; bao_loi (không gói) mang nhanh theo thiết bị', async () => {
+  datCfg(CFG(true));
+  const ck = 'xtv_nhanh=a.thu.' + TB;
+  const gui = (body, cookie = ck) => apiSuKien.POST(yc('/api/su-kien', { method: 'POST', cookie, body }));
+  assert.equal((await gui({ ten: 'bao_loi', phien: 'q1' + P })).status, 204);
+  assert.equal((await gui({ ten: 'vao_form', phien: 'q2' + P, thietBi: TB2 })).status, 204); // mã khai bị thay bằng mã cookie
+  assert.equal((await gui({ ten: 'vao_form', phien: 'q3' + P }, null)).status, 204); // chưa có cookie: không thietBi
+  assert.equal((await gui({ ten: 'vao_trang', phien: 'q4' + P, dich: '/', may: 'dien-thoai' })).status, 204);
+  const ds = docSk(), l = (p) => ds.find((d) => d.phien === p + P);
+  assert.deepEqual([l('q1').ten, l('q1').nhanh, l('q1').thu, l('q1').thietBi], ['bao_loi', 'thu', 'a', TB]);
+  assert.equal(l('q2').thietBi, TB); assert.equal(l('q2').nhanh, undefined);
+  assert.equal(l('q3').thietBi, undefined);
+  assert.equal(l('q4').thietBi, TB);
+  datCfg(CFG(false));
+  await gui({ ten: 'bao_loi', phien: 'q5' + P });
+  assert.deepEqual([docSk().find((d) => d.phien === 'q5' + P)].map((d) => [d.nhanh, d.thietBi]), [[undefined, undefined]]);
+});
+
+test('Doanh thu chỉ tính phiên có chon_goi; giá trị phiên = tổng mọi thanh_toan_xong', () => {
+  const ev = [], e = (ten, phien, x = {}) => ev.push({ t: 1, ten, phien, ...x });
+  const nh = (n, gia, tb) => ({ goi: 'tron-la-so', gia, nhanh: n, thu: 'a', thietBi: tb });
+  e('chon_goi', 'S1', nh('goc', 99000, 'd1')); e('thanh_toan_xong', 'S1', nh('goc', 29000, 'd1')); e('thanh_toan_xong', 'S1', nh('goc', 99000, 'd1')); // mua hai lần: 128000
+  e('thanh_toan_xong', 'S2', nh('goc', 99000, 'd2')); // chỉ có thanh_toan_xong: không vào doanh thu, không vào mẫu số
+  e('chon_goi', 'S3', nh('goc', 99000, 'd3'));
+  const t = tinhTheoNhanh(ev)['a/goc'];
+  assert.equal(t.chon, 2); assert.equal(t.don, 1); assert.equal(t.doanhThu, 128000); assert.equal(t.doanhThuMoiPhien, 64000);
+  assert.deepEqual(phienChonGoi(ev).hang.map((h) => h.phien), ['S1', 'S3']);
+});
+
+test('Thiết bị xuất hiện ở cả hai nhánh bị loại khỏi báo cáo, bootstrap và CSV (kể cả bao_loi)', () => {
+  const ev = [], e = (ten, phien, x = {}) => ev.push({ t: 1, ten, phien, ...x });
+  const nh = (n, tb) => ({ goi: 'tron-la-so', gia: 99000, nhanh: n, thu: 'a', thietBi: tb });
+  e('chon_goi', 'T1', nh('goc', 'x1')); e('chon_goi', 'T2', nh('thu', 'x1')); // x1 thấy cả hai nhánh
+  e('chon_goi', 'T3', nh('goc', 'x2')); e('thanh_toan_xong', 'T3', nh('goc', 'x2'));
+  e('chon_goi', 'T4', nh('thu', 'x3'));
+  e('bao_loi', 'T9', nh('thu', 'x1')); e('bao_loi', 'T8', nh('thu', 'x3'));
+  const pc = phienChonGoi(ev);
+  assert.deepEqual(pc.hang.map((h) => h.phien).sort(), ['T3', 'T4']);
+  const t = tinhTheoNhanh(ev);
+  assert.equal(t['a/goc'].chon, 1); assert.equal(t['a/thu'].chon, 1); assert.equal(t['a/thu'].baoLoi, 1);
+  const csv = csvNhanh(pc.hang).split('\n');
+  assert.equal(csv[0], 'phien,thietBi,nhanh,doanhThu'); assert.deepEqual(csv.slice(1).sort(), ['T3,x2,a/goc,99000', 'T4,x3,a/thu,0']);
+});
+
+// Dữ liệu giả hai nhánh biết trước: gốc 1000 phiên, 25% trả 99.000đ (TB 24.750đ); thử 1000 phiên, 30% trả 129.000đ (TB 38.700đ) → chênh thật 13.950đ.
+const hangBiet = () => {
+  const h = [];
+  for (let i = 0; i < 1000; i++) h.push({ phien: 'g' + i, thietBi: 'dg' + i, nhanh: 'a/goc', goi: 'tron-la-so', doanhThu: i < 250 ? 99000 : 0, tra: i < 250 ? 1 : 0, nam: i < 50 ? 1 : 0 });
+  for (let i = 0; i < 1000; i++) h.push({ phien: 't' + i, thietBi: 'dt' + i, nhanh: 'a/thu', goi: 'tron-la-so', doanhThu: i < 300 ? 129000 : 0, tra: i < 300 ? 1 : 0, nam: i < 100 ? 1 : 0 });
+  return h;
+};
+
+test('Bootstrap: hạt cố định lặp lại y hệt; hạt khác cho số khác', () => {
+  const a = bootstrap(hangBiet(), { lan: 2000, hat: 42 }), b = bootstrap(hangBiet(), { lan: 2000, hat: 42 }), c = bootstrap(hangBiet(), { lan: 2000, hat: 43 });
+  assert.deepEqual(a, b);
+  assert.notEqual(a.a.doanhThu.thap, c.a.doanhThu.thap);
+});
+
+test('Bootstrap: khoảng 95% chứa đúng giá trị biết trước và kết luận đúng', () => {
+  const r = bootstrap(hangBiet(), { lan: 10000, hat: 42 }).a;
+  assert.equal(r.lan, 10000); assert.equal(r.hat, 42); assert.deepEqual(r.co, { goc: 1000, thu: 1000 });
+  assert.equal(r.doanhThu.goc, 24750); assert.equal(r.doanhThu.thu, 38700); assert.equal(r.doanhThu.chenh, 13950);
+  assert.ok(r.doanhThu.thap < 13950 && 13950 < r.doanhThu.cao, JSON.stringify(r.doanhThu));
+  assert.ok(r.doanhThu.thap > 0 && r.doanhThu.ketLuan === 'thắng');
+  assert.ok(Math.abs(r.tra.chenh - 0.05) < 1e-9 && r.tra.thap < 0.05 && 0.05 < r.tra.cao && r.tra.thap > 0);
+  assert.ok(Math.abs(r.nam.chenh - 0.05) < 1e-9 && r.nam.thap < 0.05 && 0.05 < r.nam.cao);
+  // không chênh lệch thật → hòa; chênh âm → thua
+  const hoa = hangBiet().map((h) => (h.nhanh === 'a/thu' ? { ...h, doanhThu: h.phien === 't0' ? 0 : h.doanhThu } : h)).map((h, i) => (h.nhanh === 'a/thu' ? { ...h, doanhThu: [99000, 0, 0, 0][i % 4], tra: [1, 0, 0, 0][i % 4] } : h));
+  assert.equal(bootstrap(hoa, { lan: 3000, hat: 1 }).a.doanhThu.ketLuan, 'hòa');
+  const thua = hangBiet().map((h) => (h.nhanh === 'a/thu' ? { ...h, doanhThu: 0, tra: 0 } : h));
+  assert.equal(bootstrap(thua, { lan: 3000, hat: 1 }).a.doanhThu.ketLuan, 'thua');
+  assert.equal(bootstrap(hangBiet().filter((h) => h.nhanh === 'a/goc'), { lan: 10, hat: 1 }).a.thieu, true);
 });

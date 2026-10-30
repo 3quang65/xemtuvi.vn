@@ -2,6 +2,8 @@
 //   --nguon        thêm bảng theo nhóm nguồn khách (dac-ta-do-luong_v1.md mục 2–3)
 //   --md           in bảng theo nhóm nguồn dạng Markdown (dán vào docs/)
 //   --nhanh        báo cáo thử nghiệm giá theo nhánh (thu-gia_v1.md): phiên chon_goi, đơn, doanh thu/phiên, tỉ trọng gói, bao_loi, theo nhóm nguồn; kèm --md để dán vào docs/
+//   --nhanh --bootstrap=10000 --hat=<số>  thêm chênh lệch (nhánh thử − gốc) + khoảng 95% bằng bootstrap: doanh thu/phiên, tỉ lệ trả tiền, tỉ lệ gói năm (thu-gia_v2.md mục 5 ý 3); hạt cố định → lặp lại y hệt
+//   --nhanh --csv  xuất CSV (phiên, thiết bị, nhánh, doanh thu) để kiểm lại độc lập
 //   --gia-lap      dùng số giả lập (cố định theo --hat=N, mặc định 7) thay cho thư mục thật; không ghi file
 //   --gia-lap --nhanh  số giả lập có 2 nhánh giá (thử 'a': Trọn lá số 99k so 129k)
 //   --gia-lap --ghi=<thư mục>  ghi số giả lập ra JSONL để thử các công cụ khác
@@ -147,30 +149,46 @@ function nhomCuaPhien(dongs) {
 }
 
 /**
- * Mẫu số = phiên có chon_goi, thuộc nhánh của sự kiện đầu có `nhanh` (khóa "<thử>/<nhánh>", vd a/thu).
- * Đơn = phiên có chon_goi VÀ thanh_toan_xong; doanh thu phiên = tổng `gia` các thanh_toan_xong (0 nếu không mua).
- * bao_loi tính theo `nhanh` ghi trên chính sự kiện đó (khách có thể báo lỗi ở phiên sau), chia cho đơn cùng nhánh.
+ * Mỗi phiên chon_goi gắn nhánh của sự kiện đầu có `nhanh` (khóa "<thử>/<nhánh>", vd a/thu).
+ * Doanh thu CHỈ tính phiên có chon_goi (phiên chỉ có thanh_toan_xong bị bỏ); giá trị phiên = tổng `gia` MỌI thanh_toan_xong trong phiên (0 nếu không mua).
+ * Thiết bị (trường thietBi) xuất hiện ở cả hai nhánh của cùng một thử bị loại khỏi mọi số liệu, kể cả bao_loi.
  */
-function tinhTheoNhanh(dongs) {
-  const nhom = nhomCuaPhien(dongs);
-  const khoaCua = (d) => (d.nhanh ? `${d.thu || '?'}/${d.nhanh}` : null);
-  const nhanhPhien = new Map();
-  for (const d of dongs) { const k = khoaCua(d); if (k && !nhanhPhien.has(d.phien)) nhanhPhien.set(d.phien, k); }
-  const chon = lanCuoi(dongs, 'chon_goi');
+function phienChonGoi(dongs) {
+  const nhanhPhien = new Map(), thietBiPhien = new Map(), nhanhThietBi = new Map();
+  for (const d of dongs) {
+    if (d.thietBi && !thietBiPhien.has(d.phien)) thietBiPhien.set(d.phien, d.thietBi);
+    if (!d.nhanh) continue;
+    const k = `${d.thu || '?'}/${d.nhanh}`;
+    if (!nhanhPhien.has(d.phien)) nhanhPhien.set(d.phien, k);
+    if (d.thietBi) { const t = nhanhThietBi.get(d.thietBi) || new Set(); t.add(k); nhanhThietBi.set(d.thietBi, t); }
+  }
+  const trung = new Set();
+  for (const [tb, ks] of nhanhThietBi) { const theoThu = new Map(); for (const k of ks) { const [thu, nh] = k.split('/'); theoThu.set(thu, (theoThu.get(thu) || new Set()).add(nh)); } if ([...theoThu.values()].some((v) => v.size > 1)) trung.add(tb); }
   const doanhThu = new Map(), coDon = new Set();
   for (const d of dongs) if (d.ten === 'thanh_toan_xong') { coDon.add(d.phien); doanhThu.set(d.phien, (doanhThu.get(d.phien) || 0) + (typeof d.gia === 'number' ? d.gia : 0)); }
+  const hang = [];
+  for (const [phien, dong] of lanCuoi(dongs, 'chon_goi')) {
+    const nhanh = nhanhPhien.get(phien), thietBi = thietBiPhien.get(phien);
+    if (!nhanh || (thietBi && trung.has(thietBi))) continue;
+    hang.push({ phien, thietBi: thietBi || '', nhanh, goi: dong.goi, doanhThu: doanhThu.get(phien) || 0, tra: coDon.has(phien) ? 1 : 0, nam: dong.goi === 'thanh-vien-nam' ? 1 : 0 });
+  }
+  return { hang, trung };
+}
+
+/** Báo cáo theo nhánh. bao_loi tính theo `nhanh` ghi trên chính sự kiện đó (khách có thể báo lỗi ở phiên sau), chia cho đơn cùng nhánh. */
+function tinhTheoNhanh(dongs) {
+  const nhom = nhomCuaPhien(dongs);
+  const { hang, trung } = phienChonGoi(dongs);
   const loi = {};
-  for (const d of dongs) if (d.ten === 'bao_loi') { const k = khoaCua(d); if (k) (loi[k] = loi[k] || new Set()).add(d.phien); }
+  for (const d of dongs) if (d.ten === 'bao_loi' && d.nhanh && !(d.thietBi && trung.has(d.thietBi))) { const k = `${d.thu || '?'}/${d.nhanh}`; (loi[k] = loi[k] || new Set()).add(d.phien); }
   const nh = {};
   const lay = (k) => (nh[k] = nh[k] || { chon: 0, don: 0, doanhThu: 0, goi: {}, nguon: {} });
-  for (const [phien, dong] of chon) {
-    const k = nhanhPhien.get(phien);
-    if (!k) continue;
-    const g = lay(k), mua = coDon.has(phien), dt = doanhThu.get(phien) || 0;
-    g.chon++; g.goi[dong.goi] = (g.goi[dong.goi] || 0) + 1;
-    if (mua) { g.don++; g.doanhThu += dt; }
-    const n = g.nguon[nhom.get(phien) || CHUA_RO] = g.nguon[nhom.get(phien) || CHUA_RO] || { chon: 0, don: 0, doanhThu: 0 };
-    n.chon++; if (mua) { n.don++; n.doanhThu += dt; }
+  for (const h of hang) {
+    const g = lay(h.nhanh);
+    g.chon++; g.goi[h.goi] = (g.goi[h.goi] || 0) + 1;
+    if (h.tra) { g.don++; g.doanhThu += h.doanhThu; }
+    const nn = g.nguon[nhom.get(h.phien) || CHUA_RO] = g.nguon[nhom.get(h.phien) || CHUA_RO] || { chon: 0, don: 0, doanhThu: 0 };
+    nn.chon++; if (h.tra) { nn.don++; nn.doanhThu += h.doanhThu; }
   }
   const ra = {};
   for (const k of Object.keys(nh).sort()) {
@@ -183,6 +201,54 @@ function tinhTheoNhanh(dongs) {
     };
   }
   return ra;
+}
+
+// ---- Bootstrap (thu-gia_v2.md mục 5 ý 3) ----
+/**
+ * Đơn vị mẫu = phiên chon_goi. Mỗi thử nghiệm: nhánh gốc 'goc' so nhánh 'thu'. Mỗi lần lặp lấy mẫu có hoàn lại TRONG TỪNG nhánh, đúng cỡ nhánh đó;
+ * thống kê = (nhánh thu) − (nhánh gốc). Khoảng 95% = phân vị 2,5 và 97,5 (chỉ số floor(0,025·N) và ceil(0,975·N)−1 của N chênh lệch đã sắp).
+ * Ba chỉ số cùng một mẫu lặp: doanh thu/phiên, tỉ lệ trả tiền, tỉ lệ gói năm. Thắng: cận dưới > 0; thua: cận trên < 0; còn lại hòa.
+ */
+function bootstrap(hang, { lan = 10000, hat = 7 } = {}) {
+  const theoThu = {};
+  for (const h of hang) { const [thu, nh] = h.nhanh.split('/'); ((theoThu[thu] = theoThu[thu] || { goc: [], thu: [] })[nh]).push(h); }
+  const ra = {};
+  for (const thu of Object.keys(theoThu).sort()) {
+    const { goc, thu: moi } = theoThu[thu];
+    if (!goc.length || !moi.length) { ra[thu] = { thieu: true, cỡ: { goc: goc.length, thu: moi.length } }; continue; }
+    const r = ngauNhien(hat);
+    const tb = (ds, k) => ds.reduce((a, h) => a + h[k], 0) / ds.length;
+    const goc0 = { doanhThu: tb(goc, 'doanhThu'), tra: tb(goc, 'tra'), nam: tb(goc, 'nam') }, moi0 = { doanhThu: tb(moi, 'doanhThu'), tra: tb(moi, 'tra'), nam: tb(moi, 'nam') };
+    const diff = { doanhThu: new Float64Array(lan), tra: new Float64Array(lan), nam: new Float64Array(lan) };
+    const mau = (ds) => { const t = { doanhThu: 0, tra: 0, nam: 0 }, n = ds.length; for (let i = 0; i < n; i++) { const h = ds[Math.floor(r() * n)]; t.doanhThu += h.doanhThu; t.tra += h.tra; t.nam += h.nam; } return { doanhThu: t.doanhThu / n, tra: t.tra / n, nam: t.nam / n }; };
+    for (let i = 0; i < lan; i++) { const a = mau(goc), b = mau(moi); for (const k of Object.keys(diff)) diff[k][i] = b[k] - a[k]; }
+    const kq = {};
+    for (const k of Object.keys(diff)) {
+      const d = Float64Array.from(diff[k]).sort();
+      const thap = d[Math.floor(0.025 * lan)], cao = d[Math.ceil(0.975 * lan) - 1], chenh = moi0[k] - goc0[k];
+      kq[k] = { goc: goc0[k], thu: moi0[k], chenh, thap, cao, ketLuan: thap > 0 ? 'thắng' : cao < 0 ? 'thua' : 'hòa' };
+    }
+    ra[thu] = { lan, hat, co: { goc: goc.length, thu: moi.length }, ...kq };
+  }
+  return ra;
+}
+
+function bangBootstrap(bt, md) {
+  const nhan = { doanhThu: 'Doanh thu / phiên (đ)', tra: 'Tỉ lệ trả tiền', nam: 'Tỉ lệ gói năm' };
+  const so = (k, x) => (k === 'doanhThu' ? Math.round(x).toLocaleString('vi-VN') : (x * 100).toFixed(2) + '%');
+  const ra = [];
+  for (const [thu, r] of Object.entries(bt)) {
+    if (r.thieu) { ra.push(`Thử ${thu}: thiếu một nhánh (gốc ${r.cỡ.goc}, thử ${r.cỡ.thu} phiên chon_goi), không bootstrap.`); continue; }
+    ra.push(`Thử ${thu} · bootstrap ${r.lan} lần · hạt ${r.hat} · phiên chon_goi: gốc ${r.co.goc}, thử ${r.co.thu} · khoảng 95% của (nhánh thử − gốc)`);
+    const dau = ['Chỉ số', 'Gốc', 'Thử', 'Chênh', 'Cận dưới', 'Cận trên', 'Kết luận'];
+    const hang = ['doanhThu', 'tra', 'nam'].map((k) => [nhan[k], so(k, r[k].goc), so(k, r[k].thu), so(k, r[k].chenh), so(k, r[k].thap), so(k, r[k].cao), r[k].ketLuan]);
+    ra.push(md ? ['| ' + dau.join(' | ') + ' |', '|' + dau.map(() => '---').join('|') + '|', ...hang.map((h) => '| ' + h.join(' | ') + ' |')].join('\n') : [dau, ...hang].map((h) => h.map((c) => c.padEnd(22)).join(' ')).join('\n'));
+  }
+  return ra.join('\n\n');
+}
+
+function csvNhanh(hang) {
+  return ['phien,thietBi,nhanh,doanhThu', ...hang.map((h) => [h.phien, h.thietBi, h.nhanh, h.doanhThu].join(','))].join('\n');
 }
 
 const dong = (n) => (n === null ? '—' : Math.round(n).toLocaleString('vi-VN') + 'đ');
@@ -232,7 +298,7 @@ function taoGiaLap(hat = 7, coNhanh = false) {
   for (const [nhom, [soPhien, a, b, c, src, med, ref]] of Object.entries(MAU_GIA_LAP)) {
     for (let i = 0; i < soPhien; i++) {
       const phien = 'gl' + String(++n).padStart(14, '0');
-      const them = (ten, x) => ra.push({ t: 1, ten, phien, trang: trangCua(ten), ...x });
+      const them = (ten, x) => ra.push({ t: 1, ten, phien, trang: trangCua(ten), thietBi: 'tb' + phien.slice(2), ...x });
       them('vao_trang', { ...(src ? { utm_source: src, utm_medium: med } : {}), ...(ref ? { ref } : {}), dich: '/', may: r() < 0.7 ? 'dien-thoai' : 'may-tinh', nhom });
       if (r() >= a) continue;
       them('vao_form'); them('lap_la_so'); them('xem_tom_tat');
@@ -279,8 +345,12 @@ if (require.main === module) {
     fs.mkdirSync(ghi, { recursive: true });
     fs.writeFileSync(path.join(ghi, 'gia-lap.jsonl'), dongs.map((d) => JSON.stringify(d)).join('\n') + '\n');
     console.log('Đã ghi ' + dongs.length + ' dòng giả lập vào ' + ghi);
+  } else if (co('--nhanh') && co('--csv')) {
+    console.log(csvNhanh(phienChonGoi(dongs).hang));
   } else if (co('--nhanh')) {
     console.log(bangNhanh(tinhTheoNhanh(dongs), co('--md')));
+    const lan = Number(tham('--bootstrap'));
+    if (lan > 0) console.log('\nKhoảng tin cậy 95% (bootstrap)\n' + (co('--md') ? '\n' : '') + bangBootstrap(bootstrap(phienChonGoi(dongs).hang, { lan, hat: Number(tham('--hat')) || 7 }), co('--md')));
   } else if (co('--md')) {
     console.log(bangNguon(tinhTheoNguon(dongs), true));
   } else {
@@ -295,4 +365,4 @@ if (require.main === module) {
   }
 }
 
-module.exports = { tinhTheoNhanh, bangNhanh, tinhPheu, docThuMuc, tinhTheoNguon, bangNguon, taoGiaLap };
+module.exports = { phienChonGoi, bootstrap, bangBootstrap, csvNhanh, tinhTheoNhanh, bangNhanh, tinhPheu, docThuMuc, tinhTheoNguon, bangNguon, taoGiaLap };
