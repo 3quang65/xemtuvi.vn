@@ -1,6 +1,6 @@
 # Bản thử khách mời 50–100 người (đặc tả, việc L-de9ca7)
 
-Cửa sổ thử 25/11–5/12/2026; sẵn sàng 24/11. Chưa mở công khai, chưa chạy quảng cáo, thanh toán vẫn giả lập, không nêu giá với khách.
+Cửa sổ thử 16/11–30/11/2026 (Minh chốt 30/10, khớp kế hoạch kinh doanh; trước đây ghi 25/11–5/12); sẵn sàng 13/11. Chưa mở công khai, chưa chạy quảng cáo, thanh toán vẫn giả lập, không nêu giá với khách.
 
 ## Luồng khách
 1. Khách mở `/moi/<ma>` (mã do đội phát, in trong lời mời). Mã hợp lệ → ghi sự kiện `vao_moi` kèm nguồn của mã, lưu mã ở sessionStorage, chuyển về form lập lá số. Mã sai/hết hạn/hết lượt → trang báo nhẹ nhàng, vẫn cho lập lá số thường.
