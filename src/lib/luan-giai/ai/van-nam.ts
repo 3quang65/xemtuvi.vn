@@ -625,6 +625,8 @@ async function taoBai(ls: LaSo, namXem: number, boQuaCache?: boolean): Promise<{
     const loai = ({ 'su-nghiep': 'quan-loc', 'tinh-cam': 'phu-the' } as Record<string, 'quan-loc' | 'phu-the'>)[m.id];
     if (!loai) return m;
     const nen = (await sinhLuanGiai(ls, loai, { boQuaCache })).muc.find((x) => x.id === 'phong-cach')?.nhanDinh[0];
+    // Đoạn nền độ sáng Hãm: câu đầu còn tả như sao sáng (Đ5), nên không chèn làm câu dẫn; mảng giữ nhận định năm.
+    if (nen && /-HAM$/.test(nen.thamChieu.quyTacId ?? '')) return m;
     return nen ? { ...m, nhanDinh: [{ text: nen.text, phan: 'nen', thamChieu: { quyTacId: nen.thamChieu.quyTacId, sao: nen.thamChieu.sao, cung: nen.thamChieu.cung, nguon: nen.thamChieu.nguon, truongPhai: nen.thamChieu.truongPhai } }, ...m.nhanDinh] } : m;
   }));
   const { muc: mucDu, doanCho } = lamGiauMuc(n, mucNen);
