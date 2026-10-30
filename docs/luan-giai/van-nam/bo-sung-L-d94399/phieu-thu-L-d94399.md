@@ -70,3 +70,38 @@ Chấm theo 5 điều mục 6.0, 47 mẫu còn lại đều đạt: một việc
 
 - **Tuổi người đọc:** lá số Canh 2010 (17 tuổi năm 2027) vẫn có thể nhận các mẫu "giấy tờ chung… trước khi ký" (TT-07, TT-19), "chi tiêu gia đình" (TC-13), "gửi cấp trên đề xuất" (CV-14). Đề xuất (Minh quyết, Bảo hoặc Tùng làm): khi người đọc dưới khoảng 18 tuổi, bộ chọn mẫu ưu tiên `hoc-tap` ở mảng Sự nghiệp và bỏ các mẫu có ký giấy tờ hoặc tiền chung. Nghiệm thu: sinh bài Canh 2010 cả 5 giờ sinh, 0 mẫu loại này.
 - Mảng Tài chính còn trống ở 14 lá số và Sự nghiệp ở 5 lá số, do bộ ghép (lớp `thai-tue` không được kéo vào mảng), không do mẫu. Đồng ý với đề xuất (a) của Hạnh ở mục 4.1; Minh quyết.
+
+## Duyệt lại lần 2 (commit ea80967, 30/10/2026)
+
+Kiểm máy trên bản sửa: 49 mẫu, 0 từ cấm (52 mục `tuCam`), câu dài nhất 32 chữ. Câu, cách đo và hạn ở bảng 6.1 khớp JSON.
+
+| Mục | Kết luận | Lý do |
+|---|---|---|
+| TC-21 (câu mới) | **ĐẠT** | Còn một việc: để riêng {phần} của khoản thu thêm vào chỗ tích góp. Cách đo "≥ 4/5 khoản đã để riêng" đo đúng việc đó, có nhánh "không có". Khác TC-03 vì chỉ áp cho khoản thu ngoài thu nhập thường kỳ. Đã bỏ "của gia đình". Câu 26 chữ, hạn 3 tháng, bám NAM-HOA-04/sáng ("tích góp"), không vượt ranh tài chính. |
+| TT-18 (câu mới) | **ĐẠT** | "Người từng trải mà bạn tin" hợp với mọi lứa tuổi trong bộ đo. Vẫn bám NAM-LUU-03 và vẫn giữ quyền tự quyết của người đọc. |
+| Nhãn dạng TC-13 (ii, `maPhatHuy` NAM-HOA-04), CV-12, CV-19, TC-14 (iii) | **ĐẠT** | Nhãn đã đúng ở JSON, bảng 6.1 và bảng mục 2 của báo cáo; câu giữ nguyên. |
+| `tuoiTu: 18`, 7 mẫu mới | **ĐẠT CÓ ĐIỀU KIỆN** | Xem hai mục dưới. |
+| Số từ cấm trong báo cáo Hạnh | **ĐẠT** | Đã sửa thành 0/52. |
+
+**Đánh giá `tuoiTu: 18`**
+
+Ba mẫu Hạnh tự thêm đều hợp lý:
+- TC-10: thỏa thuận có chuyển hoặc nhận tiền giữa hai bên.
+- TC-22: khoản tiền chưa rõ giữa hai bên.
+- TT-11: việc chung của hai người, có tiền và việc nhà.
+
+Cả ba đều giả định người đọc có giao dịch tiền với người khác hoặc đang sống chung, giống TC-04 và TT-19.
+
+**Sót 2 mẫu**, cần thêm `tuoiTu: 18` theo đúng tiêu chí Hạnh đặt ra ("gửi đề xuất lên cấp trên"):
+- **CV-16**: "Trước mỗi đề xuất quan trọng, hỏi ý một người sẽ chịu ảnh hưởng…". Cùng bản chất với CV-14 (đề xuất ở chỗ làm).
+- **CV-18**: "Trước khi nhận việc mới, chuyển bộ phận hay đi công tác dài…". Mẫu này giả định người đọc đã đi làm chính thức.
+
+Không bắt buộc gắn:
+- CV-10 và CV-20 (việc được giao, việc vướng với cấp trên hoặc đồng nghiệp): vẫn hợp với người 16–17 tuổi có việc làm thêm. Để Hạnh quyết.
+- TC-11, TC-12, TC-17, TC-19, TC-24: chỉ là hành vi ghi chép hoặc bàn chuyện tiền của chính người đọc. Đồng ý với phần rà của Hạnh.
+
+**Điều kiện:**
+1. Hạnh thêm `tuoiTu: 18` cho CV-16 và CV-18, ở cả JSON lẫn danh sách mục 7 của báo cáo.
+2. Hiện chưa có code nào đọc trường `tuoiTu` của mẫu việc: `van-nam.ts` chưa có bước lọc, chỉ `ai/index.ts` có một trường `tuoiTu` khác nghĩa (tuổi bắt đầu đại vận). Vì vậy trường mới chưa có tác dụng. Tùng hoặc Bảo làm bước lọc khi nạp, và gắn thêm cho 5 mẫu cũ Hạnh đã liệt kê (CV-08, TC-04, TC-05, GD-02, GD-04). Nghiệm thu: sinh bài Canh 2010 đủ 5 giờ sinh, không bài nào chứa mẫu có `tuoiTu: 18`. Lá số người lớn (VN01–03) có số đoạn đủ 4 phần không giảm.
+
+**Kết luận lần 2: ĐẠT CÓ ĐIỀU KIỆN.** Cả 49/49 mẫu đạt về câu chữ. Còn điều kiện 1 (Hạnh, sửa nhỏ) và điều kiện 2 (Tùng, nằm trong bước nạp). Điều kiện nạp 2 và 4 ở mục 1 của phiếu (đồng bộ TT-01, Đức kiểm nhánh Thái Tuế) vẫn giữ nguyên.
