@@ -1,6 +1,6 @@
 // Danh sách sự kiện đo phễu (docs/san-pham/luong-mua.md). Không chứa dữ liệu cá nhân.
 const TRANG = {
-  vao_form: 'form', lap_la_so: 'form',
+  vao_form: 'form', lap_la_so: 'form', de_lai_lien_he: 'form', // sau lập lá số: khách tích đồng ý và để lại email/Zalo
   xem_tom_tat: 'tom-tat', bam_xem_sau: 'tom-tat',
   vao_chon_goi: 'chon-goi', chon_goi: 'chon-goi',
   vao_thanh_toan: 'thanh-toan', dang_nhap: 'thanh-toan', thanh_toan_xong: 'thanh-toan',

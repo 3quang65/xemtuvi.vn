@@ -255,3 +255,14 @@ a { color: inherit; }
 .phuong-phap ul { margin: 8px 0 0; padding-left: 18px; display: grid; gap: 4px; font-size: 0.9rem; }
 .cam-ket { margin: 0; font-size: 0.88rem; color: var(--ngoc-dam); }
 .bao-loi p { margin: 0; font-size: 0.9rem; color: var(--muc-nhat); }
+
+/* Ô để lại email/Zalo sau khi lập lá số */
+.lien-he { background: var(--giay); border: 1px solid var(--vien); border-radius: 16px; padding: 18px; margin-top: 20px; display: grid; gap: 12px; }
+.lien-he h1, .lien-he h2 { font-size: 1.05rem; margin: 0; }
+.lien-he h2 em { font-style: normal; color: var(--muc-nhat); font-weight: 400; }
+.lien-he form { display: grid; gap: 12px; }
+.lien-he p { margin: 0; }
+.lien-he input[type="email"], .lien-he input[type="tel"] { width: 100%; min-height: 44px; padding: 0 12px; font: inherit; border: 1px solid var(--vien-dam); border-radius: 10px; background: var(--giay); }
+.lien-he input:focus { border-color: var(--ngoc); outline: none; box-shadow: 0 0 0 3px rgba(106, 61, 115, 0.2); }
+.lh-dong-y { display: flex; gap: 10px; align-items: flex-start; font-size: 0.92rem; cursor: pointer; }
+.lh-dong-y input { flex: 0 0 22px; width: 22px; height: 22px; margin-top: 2px; }

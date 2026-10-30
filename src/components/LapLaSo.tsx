@@ -4,7 +4,8 @@ import { useEffect, useRef, useState } from 'react';
 import { canhGio, kiemTraThongTin, lapLaSo, namAmHienTai, type LaSo, type QuyUoc, type ThongTinSinh } from '@/lib/tuvi';
 import LaSoBan from './LaSoBan';
 import TomTatMienPhi from './TomTatMienPhi';
-import { docThongTinSinh, guiSuKien, luuThongTinSinh } from '@/lib/phien';
+import LienHe from './LienHe';
+import { docThongTinSinh, ghiNguon, guiSuKien, luuThongTinSinh } from '@/lib/phien';
 
 
 type FormState = {
@@ -34,6 +35,7 @@ export default function LapLaSo() {
 
   // Quay lại từ các bước sau: dựng lại lá số từ thông tin đã nhớ tạm trong tab này
   useEffect(() => {
+    ghiNguon();
     const daLuu = docThongTinSinh();
     if (daLuu) {
       try { setLaSo(lapLaSo(daLuu)); setTt(daLuu); return; } catch { /* thông tin hỏng: coi như chưa có */ }
@@ -170,6 +172,7 @@ export default function LapLaSo() {
           <>
             <LaSoBan key={JSON.stringify(laSo.duong) + laSo.gio.dongHo + laSo.gioiTinh} laSo={laSo} namHienTai={namAmHienTai()} onDoiQuyUoc={doiQuyUoc} />
             <TomTatMienPhi laSo={laSo} />
+            <LienHe />
           </>
         )}
       </div>

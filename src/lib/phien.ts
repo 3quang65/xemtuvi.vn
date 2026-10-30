@@ -4,6 +4,7 @@ import { lapLaSo, type LaSo, type ThongTinSinh } from '@/lib/tuvi';
 
 const K_SINH = 'xtv.sinh';
 const K_PHIEN = 'xtv.phien';
+const K_NGUON = 'xtv.nguon';
 
 const kho = (loai: 'session' | 'local') => (typeof window === 'undefined' ? null : loai === 'session' ? window.sessionStorage : window.localStorage);
 
@@ -49,3 +50,14 @@ export function guiSuKien(ten: string, tuyChon?: { goi?: string; chuDe?: string 
     }
   } catch { /* bỏ qua */ }
 }
+
+/** Nhớ nguồn truy cập (UTM, trang đầu, nơi giới thiệu) ở lần vào đầu tiên của tab; chỉ dùng khi khách để lại liên hệ. */
+export function ghiNguon() {
+  if (typeof window === 'undefined' || kho('session')?.getItem(K_NGUON)) return;
+  const q = new URLSearchParams(window.location.search);
+  const nguon: Record<string, string> = { trang: window.location.pathname };
+  for (const k of ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term']) { const v = q.get(k); if (v) nguon[k] = v.slice(0, 100); }
+  try { if (document.referrer) nguon.ref = new URL(document.referrer).hostname; } catch { /* bỏ qua */ }
+  ghi('session', K_NGUON, nguon);
+}
+export const docNguon = () => doc<Record<string, string>>('session', K_NGUON) ?? {};

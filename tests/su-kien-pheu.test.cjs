@@ -7,8 +7,8 @@ const path = require('node:path');
 const { kiemTraSuKien, TEN_SU_KIEN, trangCua } = require('../src/lib/su-kien.js');
 const { tinhPheu, docThuMuc } = require('../tools/pheu.cjs');
 
-test('Sự kiện hợp lệ: đủ 10 tên, phiên 16–32 ký tự', () => {
-  assert.equal(TEN_SU_KIEN.length, 10);
+test('Sự kiện hợp lệ: đủ 11 tên, phiên 16–32 ký tự', () => {
+  assert.equal(TEN_SU_KIEN.length, 11);
   for (const ten of TEN_SU_KIEN) assert.deepEqual(kiemTraSuKien({ ten, phien: 'a1b2c3d4e5f6a7b8' }), { ten, phien: 'a1b2c3d4e5f6a7b8' });
 });
 

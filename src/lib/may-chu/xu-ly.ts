@@ -3,6 +3,7 @@ import { kiemTraThongTin, type ThongTinSinh } from '../tuvi';
 import type { MayChu } from './csdl';
 import * as dv from './dich-vu';
 import { luanGiaiChoKhach } from './luan-giai-may-chu';
+import { chuanHoa, huyLienHe, lamSachNguon, luuLienHe } from './lien-he';
 import { ghiLoi } from './nhat-ky';
 import { cookieDat, cookieXoa, cungNguon, docCookie, docPhien, taoPhien, xoaPhien } from './phien';
 
@@ -104,3 +105,21 @@ export async function luanGiai(req: Request, m: MayChu) {
     return loi(500, 'loi_may_chu', 'Chưa tạo được luận giải, vui lòng thử lại.');
   }
 }
+
+/** POST /api/lien-he {loai, giaTri, dongY:true, nguon?}: không đồng ý (khác đúng true) thì không lưu gì. */
+export const lienHeGhi = (req: Request, m: MayChu) => chay(req, async () => {
+  const b = await doc(req);
+  if (!b) return loi(400, 'du_lieu_sai', 'Dữ liệu không hợp lệ.');
+  if (b.dongY !== true) return loi(400, 'chua_dong_y', 'Cần tích đồng ý nhận tin trước khi gửi.');
+  const lh = chuanHoa(b.loai, b.giaTri);
+  if (!lh) return loi(400, 'lien_he_sai', b.loai === 'zalo' ? 'Số điện thoại chưa đúng.' : 'Email chưa đúng.');
+  const { maHuy } = luuLienHe(m.db, { ...lh, nguon: lamSachNguon(b.nguon) });
+  return json({ ok: true, duongHuy: `/huy-dang-ky?ma=${maHuy}` });
+});
+
+/** POST /api/lien-he/huy {ma}: hủy đăng ký nhận tin. */
+export const lienHeHuy = (req: Request, m: MayChu) => chay(req, async () => {
+  const b = await doc(req);
+  if (!b || typeof b.ma !== 'string' || !huyLienHe(m.db, b.ma)) return loi(404, 'khong_co', 'Liên kết hủy không đúng hoặc đã hết hiệu lực.');
+  return json({ ok: true });
+});

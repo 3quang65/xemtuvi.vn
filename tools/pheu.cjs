@@ -64,6 +64,7 @@ function tinhPheu(dongs) {
     phien,
     tiLe: {
       lapTrenVao: chia(phien.lap_la_so, phien.vao_form),
+      lienHeTrenLap: chia(phien.de_lai_lien_he, phien.lap_la_so),
       bamTrenLap: chia(phien.bam_xem_sau, phien.lap_la_so),
       muaTrenBam: chia(phien.thanh_toan_xong, phien.bam_xem_sau),
       chonTrenChaoBan: chia(phien.chon_goi, phien.vao_chon_goi), // bấm mua trên màn chào bán
@@ -82,6 +83,7 @@ function in_(p) {
   for (const t of TEN_SU_KIEN) console.log('  ' + t.padEnd(16) + p.phien[t]);
   console.log('Tỉ lệ');
   console.log('  lap_la_so / vao_form          ' + pct(p.tiLe.lapTrenVao) + '  (mục tiêu ≥ 70%)');
+  console.log('  de_lai_lien_he / lap_la_so    ' + pct(p.tiLe.lienHeTrenLap) + '  (để lại email/Zalo có đồng ý)');
   console.log('  bam_xem_sau / lap_la_so       ' + pct(p.tiLe.bamTrenLap));
   console.log('  thanh_toan_xong / bam_xem_sau ' + pct(p.tiLe.muaTrenBam));
   console.log('  chon_goi / vao_chon_goi       ' + pct(p.tiLe.chonTrenChaoBan) + '  (bấm mua trên màn chào bán)');
