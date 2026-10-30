@@ -56,6 +56,11 @@ function BaiLuan({ laSoId, chuDe, maDon, goi }: { laSoId: number; chuDe: string;
   if (!bai.muc.length) return <LoiNoiDung ma="E07" maDon={maDon} goi={goi} taiLai={taiLai} />;
   return (
     <div className="bai-luan">
+      {bai.van && (
+        <h2 className="tieu-de-van">
+          Đại vận {bai.van.tuoiTu}–{bai.van.tuoiDen} tuổi, cung {bai.van.cung} ({bai.van.canChi}), khoảng năm {bai.van.namTu}–{bai.van.namDen}
+        </h2>
+      )}
       {bai.muc.map((m) => (
         <section key={m.id}>
           <h3>{m.tieuDe}</h3>
