@@ -1,6 +1,6 @@
 # Khung chuẩn đoạn luận trả phí (4 phần)
 
-Người lập: Hạnh (luận giải). Ngày 30/10/2026. Trạng thái: bản 1, chờ Thư kiểm duyệt.
+Người lập: Hạnh (luận giải). Ngày 30/10/2026. Trạng thái: bản 1.1, thêm mục 6.0 và sửa 6.1 theo phiếu Thư `kiem-duyet-khung-4-phan.md` (L-fd4220).
 Mục tiêu: mọi đoạn luận khách trả tiền đều **cụ thể với lá số người đọc** và **áp dụng được** (nguyên tắc "giá trị khách hàng là số 1"). Khung này dùng cho người viết tay, cho prompt AI và cho bộ ghép tự động (Kỹ thuật ghép từ dữ liệu lá số).
 
 Áp dụng: đoạn luận trong bài cung, chuyên đề (`menh`, `quan-loc`, `phu-the`…), vận 10 năm, vận năm (tổng quan và bốn mảng). Bảng 12 tháng dùng bản rút gọn (mục 7.2).
@@ -191,7 +191,7 @@ Yếu tố ở cung khác: `…; {sao} ({doSang}) ở {cung.ten} chiếu sang ({
 3. Giới hạn: không lời khuyên tài chính cụ thể (vay, đầu tư, mua bán tài sản, chọn sản phẩm), không lời khuyên y tế (bộ phận, xét nghiệm, thuốc, ăn kiêng), không pháp lý; không chọn ngày giờ, hướng nhà, màu sắc, vật phẩm; không "cưới/chia tay/nghỉ việc vào lúc…". Người đọc tự đặt mức (số tiền, số giờ): câu mẫu để `{mức bạn tự chọn}`.
 4. Không ép mua: "Việc nên làm" không bao giờ là "mua gói…", "xem thêm luận giải…".
 5. Vận năm: ưu tiên việc làm trong "tháng mốc" (NAM-THANG-04) nếu có, ghi tháng âm lịch.
-6. Luôn có mã ẩn: `việc: <maMau> bám <maHuong>; tongHop`.
+6. Luôn có mã ẩn: `việc: <maMau> bám <maHuong>/<vế>; dạng i|ii|iii; tongHop` (quy định mục 6.0).
 
 **Biến cần:** `viecNenLam` (MỚI: `maMau`, `maHuong`, `cau`, `thuocDo`, `thoiHanThang`), `chuDe` (MỚI), `nguoiLienQuan` (MỚI), `quyTac.maNghienCuu[]` (khớp `maHuong`), `cung.ten`, `luuNien.luuNguyet[]` + `thangMoc` (CÓ ở `ThangNam`, chỉ vận năm), `ls.gioiTinh` (chỉ để chọn cách xưng hô, không đổi nội dung việc).
 
@@ -203,6 +203,23 @@ Yếu tố ở cung khác: `…; {sao} ({doSang}) ở {cung.ten} chiếu sang ({
 > Năm nay nên vay thêm để mở rộng kinh doanh. *(lời khuyên tài chính dựa vào sao; trượt cổng)*
 > Nên đeo vòng đá hợp mệnh để giữ tiền. *(vật phẩm; trượt cổng)*
 
+### 6.0. Quy định "việc nên làm" bám quy tắc có nguồn
+
+Chép từ phiếu Thư `docs/luan-giai/kiem-duyet-khung-4-phan.md` mục 1 (30/10/2026). Phần (d) phải suy ra từ ý nghĩa hoặc lời khuyên của chính mã quy tắc mà phần (b) đã dùng, không suy từ tên sao hay hình tượng sao.
+
+**Hợp lệ khi đủ cả 5 điều:**
+1. **Mã bám (`maHuong`) nằm trong `maNghienCuu` của đoạn và phần (b) có câu dùng ý của mã đó.** Mã chỉ có trong mã ẩn mà (b) không nói thì không được làm mã bám.
+2. **Mã bám là mã nội dung**: mã mô tả tính chất, ý nghĩa, rủi ro hoặc lời khuyên (CHUNG-HOA, CHUNG-CT, VAN-CT, VAN-SP, NAM-HOA, NAM-LUU, NAM-TT-02…06, NAM-TH-03/04, NAM-MANG-02…05, MENH-, PHU-, TAI-, QUAN-, TAT-<sao>-…). **Không** dùng mã phương pháp (NAM-PP, NAM-MANG-01, NAM-TH-01/02, NAM-TT-01, CHUNG-PP, TAT-YN-01…04), mã điều cấm (CAM), mã tranh luận (TRANH).
+3. **Việc là một trong ba dạng, ưu tiên theo thứ tự**: (i) cách làm cụ thể của **lời khuyên có sẵn trong câu quy tắc** ("nên chốt kế hoạch", "nên rà soát kỹ văn bản", "thỏa thuận thành văn bản", "dành thời gian", "khám định kỳ"); (ii) phát huy **điểm mạnh** mã mô tả (mẫu "phát huy", mã in nghiêng ở 6.1); (iii) giảm **đúng rủi ro** mã mô tả (vd "dễ nóng lời" → quy ước khi bất đồng). Dạng (ii), (iii) ghi `tongHop`.
+4. **Điều kiện của mã đủ trên lá số, kể cả vế loại trừ.** Mã có nhiều vế chỉ dùng vế đã kích hoạt và ghi rõ vế trong mã ẩn: `CHUNG-HOA-TCO-01/Kỵ`, `NAM-TH-03/Kỵ`, `VAN-SP-06/thận trọng`. Sao "tô thêm" (NAM-TT-06, CHUNG-SP-08…) chỉ làm mã bám khi sao ở **ngay** cung chủ đề của đoạn.
+5. **Giữ giới hạn an toàn** (quy tắc 3 ở trên): tài chính chỉ là hành vi ghi chép, chờ, đọc lại, chốt bằng chữ, hỏi người có chuyên môn; không bảo vay, trả, gia hạn, tái cơ cấu, mua, bán, đầu tư, chọn sản phẩm, chọn thời điểm. Sức khỏe chỉ là nếp sống (ngủ, nghỉ, vận động, ghi năng lượng) và khám sức khỏe **tổng quát** định kỳ có điều kiện ("nếu đã hơn 12 tháng"); không chuyên khoa, xét nghiệm, thuốc, ăn kiêng, bộ phận cơ thể.
+
+**Không hợp lệ (ví dụ):** suy từ tên/hình tượng sao (Thiên Mã → "đi du lịch"; Lộc Tồn → "mở sổ tiết kiệm"; Thiên Y → "uống thuốc bổ"; Hồng Loan → "đi xem mắt tháng này"); suy từ mã phương pháp (SK-04 bám TAT-YN-03); lấy sao lưu làm căn cứ chọn thời điểm cho một hành động tài chính, pháp lý (NAM-LUU-04).
+
+**Biến thể câu mẫu**: được thay đối tượng theo cung/`nguoiLienQuan` và thêm một thước đo suy từ chính quy tắc (vd thêm "số lần đổi mục tiêu = 0" vì CHUNG-HOA-TCO-01/Kỵ nói "hay đổi ý"). Không đổi động từ chính, không thêm hành động mới; đổi hành động là mẫu mới, phải đề xuất (qua Minh, Thư duyệt).
+
+**Ghi trong mã ẩn**: `việc: <maMau> bám <mã>/<vế>; dạng i|ii|iii; tongHop`.
+
 ### 6.1. Danh mục mẫu "việc nên làm"
 
 Cột "Bám quy tắc" (`maHuong`): đoạn có một trong các mã này trong `maNghienCuu` thì được dùng mẫu. Mã có lời khuyên trực tiếp trong câu quy tắc ghi thường; mã chỉ mô tả điểm mạnh (dùng cho mẫu "phát huy") ghi *nghiêng*. Mọi mẫu là gợi ý tổng hợp (`tongHop: true`). Thời hạn tính từ ngày khách đọc.
@@ -212,12 +229,13 @@ Cột "Bám quy tắc" (`maHuong`): đoạn có một trong các mã này trong 
 | Mã | Bám quy tắc | Việc nên làm (câu mẫu) | Cách đo | Hạn |
 |---|---|---|---|---|
 | CV-01 | NAM-HOA-07, MENH-CM-02, CHUNG-HOA-CM-01 | Sau mỗi buổi trao đổi quan trọng với {nguoiLienQuan}, gửi lại 3 dòng chốt kết luận trong ngày. | ≥ 80% buổi quan trọng có tin chốt, đếm theo tuần | 2 tháng |
-| CV-02 | MENH-THL-02, MENH-TL-02, MENH-TCO-02 | Chọn một mục tiêu nghề nghiệp cho 12 tuần, viết ra một câu; mỗi tuần làm một việc nhỏ cho mục tiêu đó. | ≥ 9/12 tuần có việc hoàn thành | 3 tháng |
+| CV-02 | MENH-THL-02, MENH-TL-02, MENH-TCO-02, CHUNG-HOA-TCO-01/Kỵ, NAM-TH-03/Kỵ (Hóa Kỵ gốc tại cung tiểu hạn) | Chọn một mục tiêu nghề nghiệp cho 12 tuần, viết ra một câu; mỗi tuần làm một việc nhỏ cho mục tiêu đó. | ≥ 9/12 tuần có việc hoàn thành | 3 tháng |
 | CV-03 | MENH-TT-02 | Trước khi nhận vai trò hay dự án mới, viết một trang: việc phải làm, nguồn lực đang có, người có thể hỏi. | 100% việc mới nhận trong 3 tháng có trang này | 3 tháng |
 | CV-04 | MENH-TDU-02, MENH-TD-02 | Giữ hai khung giờ cố định mỗi tuần cho việc quan trọng nhất, không xếp việc khác vào. | ≥ 10/12 tuần giữ đủ hai khung | 3 tháng |
 | CV-05 | MENH-HOA-04, TAI-HOA-04 | Với mỗi việc lớn, viết trước 3 tiêu chí "đủ tốt"; đạt đủ ba thì chốt, không sửa thêm. | ≥ 3 việc chốt đúng hạn theo tiêu chí viết trước | 2 tháng |
 | CV-06 | MENH-TS-02, MENH-LT-02, CHUNG-SP-11 | Khi gặp tin nhắn hay ý kiến khiến bạn bực, chờ ít nhất 2 giờ rồi mới trả lời. | Ghi các lần gặp; ≥ 4/5 lần có chờ | 1 tháng |
 | CV-07 | *QUAN-SP-03, CHUNG-SP-01* | Mỗi tháng hẹn một người đi trước trong nghề, hỏi một câu cụ thể về việc bạn đang làm. | 3 cuộc hẹn trong 3 tháng | 3 tháng |
+| CV-08 | VAN-SP-06/thận trọng (chỉ khi Xương/Khúc hóa Kỵ hoặc gặp Kình, Đà, Kỵ tại Quan Lộc hoặc tại cung trọng điểm năm mang chủ đề công việc) | Nhờ một đồng nghiệp hoặc người được phép xem nội dung đọc soát văn bản gửi ra ngoài mang tên bạn (hợp đồng, báo cáo, đề xuất) trước khi gửi. | 100% văn bản loại này trong 3 tháng có người đọc soát | 3 tháng |
 
 **Tài chính (`tai-chinh`)**
 
@@ -227,15 +245,16 @@ Cột "Bám quy tắc" (`maHuong`): đoạn có một trong các mã này trong 
 | TC-02 | TAI-SP-07, MENH-SP-08, MENH-PQ-02 | Trước mỗi khoản chi lớn hơn {mức bạn tự chọn} không có trong kế hoạch, chờ 48 giờ rồi mới quyết. | ≥ 4/5 khoản có chờ đủ 48 giờ | 3 tháng |
 | TC-03 | MENH-SP-08, MENH-PQ-02, PHU-CC-07 | Mỗi lần nhận thu nhập, chuyển ngay {phần bạn tự chọn} vào một tài khoản riêng chỉ dùng cho việc bất ngờ. | 3/3 tháng chuyển đúng ngày | 3 tháng |
 | TC-04 | TAI-LT-02, HUYNH-HOA-02, HUYNH-TL-03, PHU-CC-07 | Mỗi khoản tiền chung, cho mượn hay góp vốn với người quen đều có một tin nhắn ghi số tiền, mục đích, hạn. | 100% khoản mới trong 3 tháng có tin nhắn | 3 tháng |
-| TC-05 | NAM-LUU-01, DIEN-HOA-04 | Trước khi ký hay chuyển tiền cho giao dịch lớn, đọc lại toàn bộ giấy tờ và hỏi một người có chuyên môn. | 100% giao dịch lớn trong 3 tháng có bước này | 3 tháng |
+| TC-05 | NAM-LUU-01, DIEN-HOA-04 | Trước khi ký hay chuyển tiền cho giao dịch lớn, đọc lại toàn bộ giấy tờ và hỏi một người có chuyên môn. | 100% giao dịch lớn trong 3 tháng có bước này; không phát sinh giao dịch lớn thì ghi "không có" | 3 tháng |
 | TC-06 | *TAI-PQ-01, TAI-HOA-02, TAI-SP-03* | Liệt kê các nguồn thu hiện có; chọn một nguồn bạn làm tốt nhất và dành thêm một buổi mỗi tuần cho nó. | ≥ 8/12 tuần có buổi này | 3 tháng |
+| TC-07 | VAN-SP-06/thận trọng, NAM-LUU-04-SAT (chỉ khi Xương/Khúc gốc hoặc của năm ở Tài Bạch, hãm hoặc gặp Kình, Đà, Hóa Kỵ) | Gom giấy tờ tài chính đang có vào một chỗ, đọc lại từng tờ, đánh dấu điều chưa rõ để hỏi người có chuyên môn. Cấm thêm động từ quyết định (tất toán, gia hạn, đổi, vay, mua, bán). | Xong danh mục (có/không); 100% điều đánh dấu được hỏi | 1 tháng |
 
 **Tình cảm (`tinh-cam`)**
 
 | Mã | Bám quy tắc | Việc nên làm (câu mẫu) | Cách đo | Hạn |
 |---|---|---|---|---|
 | TT-01 | PHU-SP-06, PHU-HOA-04, PHU-LT-02 | Cùng {nguoiLienQuan} thống nhất một quy ước: khi bất đồng, tạm dừng và hẹn lúc bình tĩnh trong ngày để nói tiếp. | Ghi các lần bất đồng; ≥ 3/4 lần dùng quy ước | 2 tháng |
-| TT-02 | PHU-SP-08, PHU-TL-02 | Đặt một buổi cố định mỗi tuần cho hai người, không điện thoại, không bàn việc. | ≥ 10/12 tuần giữ được | 3 tháng |
+| TT-02 | PHU-SP-08, PHU-TL-02, NAM-TT-06 (chỉ khi L. Thiên Khốc, L. Thiên Hư, L. Tang Môn hoặc L. Bạch Hổ ở ngay Phu Thê và (b) đã nêu; câu không nhắc tang, tai nạn) | Đặt một buổi cố định mỗi tuần cho hai người, không điện thoại, không bàn việc. | ≥ 10/12 tuần giữ được | 3 tháng |
 | TT-03 | PHU-THL-02, PHU-SP-11, PHU-HOA-04 | Dành một buổi nói rõ ba điều mỗi người cần trong mối quan hệ; viết lại và xem lại sau một tháng. | Có buổi nói chuyện + một lần xem lại | 2 tháng |
 | TT-04 | PHU-PQ-02, PHU-LT-02, PHU-YN-05 | Đang tìm hiểu ai đó: viết ba giá trị sống bạn cần ở người đồng hành; sau mỗi lần gặp, ghi người đó khớp mấy điều. | Có danh sách + ghi chép sau mỗi lần gặp | 3 tháng |
 | TT-05 | PHU-YN-05, PHU-TS-02 | Trước khi tiến xa hơn, cùng nói chuyện về ba chủ đề thực tế: tiền bạc, nơi ở, kế hoạch vài năm tới. | Đủ 3 buổi, mỗi buổi một chủ đề | 3 tháng |
@@ -245,10 +264,10 @@ Cột "Bám quy tắc" (`maHuong`): đoạn có một trong các mã này trong 
 
 | Mã | Bám quy tắc | Việc nên làm (câu mẫu) | Cách đo | Hạn |
 |---|---|---|---|---|
-| SK-01 | TAT-TV-02, TAT-VK-02, CHUNG-SP-17, CHUNG-HOA-03 | Nếu đã hơn 12 tháng chưa khám sức khỏe tổng quát, đặt lịch khám trong 3 tháng tới. | Đã đặt lịch / đã khám (có/không) | 3 tháng |
+| SK-01 | TAT-TV-02, TAT-VK-02, CHUNG-SP-17, CHUNG-HOA-03, NAM-MANG-05 | Nếu đã hơn 12 tháng chưa khám sức khỏe tổng quát, đặt lịch khám trong 3 tháng tới. | Đã đặt lịch / đã khám (có/không) | 3 tháng |
 | SK-02 | TAT-LT-02 | Chọn một giờ đi ngủ cố định và giữ ít nhất 5 đêm mỗi tuần. | ≥ 6/8 tuần đạt 5 đêm | 2 tháng |
 | SK-03 | TAT-TV-02, PHUC-YN-01 | Mỗi ngày làm việc, dành 15 phút nghỉ không màn hình vào cùng một khung giờ. | ≥ 4/5 ngày mỗi tuần, trong 8 tuần | 2 tháng |
-| SK-04 | TAT-YN-02, TAT-YN-03 | Ghi một dòng mỗi tối về mức năng lượng trong ngày (1–5); cuối tháng xem tuần nào thấp và vì sao. | ≥ 20 ngày ghi/tháng; 1 lần xem lại mỗi tháng | 3 tháng |
+| SK-04 | NAM-MANG-05, TAT-SP-04 | Ghi một dòng mỗi tối về mức năng lượng trong ngày (1–5); cuối tháng xem tuần nào thấp và vì sao. | ≥ 20 ngày ghi/tháng; 1 lần xem lại mỗi tháng | 3 tháng |
 
 **Học tập (`hoc-tap`)**
 
