@@ -1803,6 +1803,25 @@
     ],
     "toiThieu": 1,
     "viTri": "chinh"
+   },
+   {
+    "motTrong": [
+     {
+      "sao": [
+       "Kình Dương",
+       "Đà La",
+       "L. Kình Dương",
+       "L. Đà La"
+      ],
+      "toiThieu": 1
+     },
+     {
+      "hoa": "Hóa Kỵ"
+     },
+     {
+      "luuHoa": "Hóa Kỵ"
+     }
+    ]
    }
   ],
   "tongHop": true,
@@ -1868,7 +1887,105 @@
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
   ],
   "nguonChiTiet": "Tổng hợp: VAN-SP-06 (Xương Khúc tại cung hạn) + NAM-TH-04(d); TT 問流年昌曲 chỉ nói Xương Khúc lưu niên",
-  "ghiChu": "Áp cả cho lop tieu-han cùng điều kiện. Có Kình/Đà/Kỵ tại cung thì thêm câu rà văn bản (VAN-SP-06)."
+  "ghiChu": "Áp cả cho lop tieu-han cùng điều kiện. Có Kình/Đà/Kỵ tại cung thì dùng bản NAM-TH-04-GOC-SAT (VAN-SP-06; phiếu Thư vòng 2 N1)."
+ },
+ {
+  "chuyenDe": "van-nam",
+  "namXem": 2027,
+  "truongPhai": "tổng hợp",
+  "khong": [
+   {
+    "saoLuu": [
+     "L. Văn Xương",
+     "L. Văn Khúc"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh"
+   }
+  ],
+  "tongHop": true,
+  "id": "NAM-TH-04-GOC-SAT",
+  "lop": "thai-tue",
+  "cung": "Lưu Thái Tuế",
+  "loai": "CC",
+  "maNghienCuu": [
+   "NAM-TH-04",
+   "VAN-SP-06"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Văn Xương",
+     "Văn Khúc"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh"
+   },
+   {
+    "nhom": [
+     [
+      "Thiên Khôi",
+      "Thiên Việt",
+      "L. Thiên Khôi",
+      "L. Thiên Việt"
+     ],
+     [
+      "Tả Phù",
+      "Hữu Bật"
+     ],
+     [
+      "Tam Thai",
+      "Bát Tọa"
+     ],
+     [
+      "Thái Dương:sáng",
+      "Thái Âm:sáng"
+     ],
+     [
+      "hoa:Hóa Khoa",
+      "hoa:Hóa Quyền",
+      "hoa:Hóa Lộc",
+      "luuHoa:Hóa Khoa",
+      "luuHoa:Hóa Quyền",
+      "luuHoa:Hóa Lộc"
+     ],
+     [
+      "Thiên Mã",
+      "L. Thiên Mã"
+     ]
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   },
+   {
+    "motTrong": [
+     {
+      "sao": [
+       "Kình Dương",
+       "Đà La",
+       "L. Kình Dương",
+       "L. Đà La"
+      ],
+      "toiThieu": 1
+     },
+     {
+      "hoa": "Hóa Kỵ"
+     },
+     {
+      "luuHoa": "Hóa Kỵ"
+     }
+    ]
+   }
+  ],
+  "muc": "tong-quan",
+  "phan": "thai-tue",
+  "noiDung": "Văn Xương, Văn Khúc của lá số gốc ở ngay cung Lưu Thái Tuế, tam phương có thêm sao trợ lực, nên năm có yếu tố thuận cho học hành. Nhưng cùng cung có Kình Dương, Đà La hoặc Hóa Kỵ, nên giấy tờ dễ nhầm lẫn: rà soát kỹ hồ sơ, văn bản trước khi nộp.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "Tổng hợp: VAN-SP-06 (Xương Khúc tại cung hạn; TT q.2 文昌入限: 更有羊陀火鈴忌) + NAM-TH-04(c)(d)",
+  "ghiChu": "Vế loại trừ của NAM-TH-04-GOC (phiếu Thư vòng 2 N1). Năm 2027 Kình Dương của năm ở Mùi nên cung Thái Tuế luôn khớp bản này. Áp cả cho lop tieu-han cùng điều kiện."
  },
  {
   "chuyenDe": "van-nam",
@@ -2634,7 +2751,15 @@
   "chuyenDe": "van-nam",
   "namXem": 2027,
   "truongPhai": "Tam hợp phái Việt",
-  "khong": [],
+  "khong": [
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp"
+    ],
+    "toiThieu": 1
+   }
+  ],
   "tongHop": false,
   "id": "NAM-LUU-07-LOC",
   "lop": "cung-goc",
@@ -2668,7 +2793,7 @@
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
   ],
   "nguonChiTiet": "TT q.3 論羊陀迭並; TB P3 §4.3 tr. 268–269 (sách diễn đạt nặng, đã trung tính hóa)",
-  "ghiChu": "Tuổi Đinh, Kỷ. Cấm câu thơ 羊陀迭並 và câu TB \"tai họa\" (NAM-CAM-02)."
+  "ghiChu": "Tuổi Đinh, Kỷ. Cấm câu thơ 羊陀迭並 và câu TB \"tai họa\" (NAM-CAM-02). Có Địa Không/Địa Kiếp tại cung thì nhường cho NAM-LUU-01-KHONG (phiếu Thư vòng 2 N3)."
  },
  {
   "chuyenDe": "van-nam",
@@ -2839,6 +2964,14 @@
      },
      {
       "luuHoa": "Hóa Kỵ"
+     },
+     {
+      "sao": [
+       "Văn Xương"
+      ],
+      "doSang": [
+       "Hãm"
+      ]
      }
     ]
    }
@@ -2908,13 +3041,21 @@
      },
      {
       "luuHoa": "Hóa Kỵ"
+     },
+     {
+      "sao": [
+       "Văn Xương"
+      ],
+      "doSang": [
+       "Hãm"
+      ]
      }
     ]
    }
   ],
   "muc": "tong-quan",
   "phan": "sao-luu",
-  "noiDung": "Văn Xương và Thiên Việt của năm cùng ở cung {cung}: có người có vị thế giúp việc hồ sơ ở lĩnh vực này, nhưng cùng cung có Kình Dương, Đà La hoặc Hóa Kỵ nên giấy tờ dễ nhầm. Rà soát kỹ từng văn bản; việc lớn thì hỏi người có chuyên môn.",
+  "noiDung": "Văn Xương và Thiên Việt của năm cùng ở cung {cung}: có người có vị thế giúp việc hồ sơ ở lĩnh vực này, nhưng cùng cung có Kình Dương, Đà La, Hóa Kỵ hoặc Văn Xương gốc ở thế hãm nên giấy tờ dễ nhầm. Rà soát kỹ từng văn bản; việc lớn thì hỏi người có chuyên môn.",
   "nguon": [
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"

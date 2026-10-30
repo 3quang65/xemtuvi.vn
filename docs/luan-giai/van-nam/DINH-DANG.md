@@ -6,7 +6,7 @@ Theo định dạng quy tắc bản 2 (`docs/luan-giai/quy-tac-v2/DINH-DANG.md`)
 | File | Nội dung |
 |---|---|
 | `QUY-TAC.md` | Quy tắc luận năm Đinh Mùi (NAM-PP, TH, TT, HOA, LUU, MANG, THANG, CAM, TRANH) có nguồn, trường phái. |
-| `doan-mau.json` | 87 đoạn mẫu theo khóa, máy đọc (định dạng dưới); bản 1.1 sửa theo phiếu Thư vòng 1 và kết luận của Đức. |
+| `doan-mau.json` | 88 đoạn mẫu theo khóa, máy đọc (định dạng dưới); bản 1.1 sửa theo phiếu Thư vòng 1 và kết luận của Đức. |
 | `du-lieu.md` | Dữ liệu engine của 3 lá số giả lập VN01–VN03. |
 | `VN01.md`–`VN03.md` | 3 bài mẫu đủ khung. |
 | `TU-KIEM.md` | Tự chấm theo thang `docs/luan-giai/kiem-duyet-dai-van.md`. |

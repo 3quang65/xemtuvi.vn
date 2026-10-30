@@ -71,3 +71,9 @@ Không có lỗi chặn đã biết: đối chiếu từng sao, độ sáng, T�
 **Còn ⚑ (Đức giữ, viết giọng xu hướng):** NAM-HOA-08 (cả (a)–(d), không tìm thấy câu sách cho lưu niên), NAM-TT-03 (phần áp cho Lưu Thái Tuế), NAM-TH-04(d) Xương Khúc gốc, cùng các dòng ⚑ cũ chưa thuộc phạm vi T-ab4be9 (PP-06 đến 10, TT-04, TT-05, LUU-02, MANG-01, THANG-04).
 
 **Lưu ý triển khai:** `doan-mau.json` bản này dùng hai điều kiện mới `canNamSinh`, `motTrong` mà bộ khớp `van-nam.ts` chưa đọc. **Chưa chép** đè `src/lib/luan-giai/ai/quy-tac-van/van-nam-2027.json`; cần Kỹ thuật hỗ trợ trước (DINH-DANG.md). Site hiện vẫn chạy bản JSON cũ (còn nhãn Trung Châu cho tuổi Canh) cho tới khi chép.
+
+## Sửa N1–N3 (phiếu Thư vòng 2)
+- N1: thêm vế `khong` Kình/Đà/Kỵ cho `NAM-TH-04-GOC` và đoạn mới `NAM-TH-04-GOC-SAT`; QUY-TAC NAM-TH-04(d) ghi cùng điều kiện.
+- N2: thêm `{sao: Văn Xương, doSang: Hãm}` vào `motTrong` của `NAM-LUU-04` (khong) và `NAM-LUU-04-SAT` (dieuKien), câu SAT nhắc đủ vế.
+- N3: `NAM-LUU-07-LOC` thêm `khong` Địa Không/Địa Kiếp, nhường cho `NAM-LUU-01-KHONG`; QUY-TAC NAM-LUU-07 ghi vế loại trừ.
+- Kiểm: `node tools/kiem-van-nam.cjs` → Đạt (88 đoạn, 46 quy tắc); `tests/luan-giai-van-nam.test.cjs` 9/9; `luan-giai-may-chu`, `man-chao-ban` 20/20.
