@@ -53,3 +53,27 @@ Phần làm tốt: bỏ được ba đuôi "Độ sáng tốt/trung bình/kém�
 
 - `tom-tat-mien-phi.json` còn khẳng định ("bạn chững chạc…"): Hạnh đã tự nêu, đồng ý rà #8 ở việc sau.
 - Chấm lại sau khi Hạnh sửa #1–#3: Thư chạy lại `/tmp/thu/vn.cjs` và grep ở mục 2.
+
+## 7. Chấm lại vòng 2 (commit e34d441, Thư, 30/10/2026)
+
+**Kết luận: ĐẠT.** Giọng **8**/10, An toàn **10**/10 (cả hai ≥ 8).
+
+| Mục phiếu | Kiểm đo của Thư | Kết quả |
+|---|---|---|
+| P0 câu nhắc bác sĩ trong Vận năm | `node scripts/luan-giai/dem-cau-van-nam.cjs` và `/tmp/thu/vn.cjs`: 480 bài, **480/480 đúng 1 câu**; Mệnh, Phu Thê, Quan Lộc, Vận 10 năm 0 câu; `docs/luan-giai/van-nam/doan-mau.json` trùng byte với `van-nam-2027.json` | Đã sửa |
+| P1 28 câu `ML-S01..14-C1/C2` | `grep -c "góp thêm sắc thái"` = 0; đọc mẫu `ML-S03-C1`, `ML-S09-C1`, `ML-S06-C2`, `ML-S13-C2`: có gợi ý riêng theo cung ("Khi ra ngoài…", "Trong công việc…") | Đã sửa |
+| P1 16 đoạn Quan Lộc `doan-mau.json` | phú quý, giàu sang, hiển hách, song toàn, lưỡng toàn, rất nổi tiếng, hiển đạt: đều 0; đọc `QUAN-TV-01`, `QUAN-TCO-01`, `QUAN-TL-01`, `QUAN-LT-01`, `QUAN-PQ-03`: có "có xu hướng", câu sách viết "TT cho rằng…" | Đã sửa |
+| P2 #4 `PT-S03-*` | lặp "trong tình cảm" = 0 | Đã sửa |
+| P2 #5 `VAN-CT-TL-02` | "sức bền có xu hướng giảm, dễ thấy mệt khi dồn việc" | Đã sửa |
+| P2 #6 | "Biết gỡ khó khăn"; "bổ sung xu hướng" = 0 | Đã sửa |
+| Quét từ nặng | `/tmp/hanh/quet.sh`: TỔNG 0 | Sạch |
+
+**Câu hỏi: Vận 10 năm không còn câu nhắc bác sĩ, có đạt An toàn theo #10 không?** Thư quyết: **Đạt, không cần thêm lại.** Lý do:
+1. Mục #10 yêu cầu "nhắc bác sĩ **khi cần**", tức khi câu nói tới dấu hiệu bệnh hoặc rủi ro sức khỏe cụ thể. Các đoạn Vận 10 năm còn lại không có câu như vậy: `VAN-CUNG-08` chỉ nói ưu tiên nhịp sống và khuyên "khám sức khỏe định kỳ" (đây đã là lời khuyên đi khám); `VAN-CT-TL-02` nói "có xu hướng", "dễ thấy mệt khi dồn việc", là mức mệt sinh hoạt, không phải triệu chứng.
+2. Bài Vận năm 2027 dùng lại đoạn đại vận. Thêm câu bác sĩ vào `van-10-nam.json` sẽ làm Vận năm quay lại 2 câu/bài, tức lỗi P0 vòng 1.
+3. Điều kiện giữ: sau này đoạn Vận 10 năm nào nói tới dấu hiệu sức khỏe cụ thể (đau, bệnh, mất ngủ kéo dài…) thì phải có lời khuyên đi khám **trong chính đoạn đó**. Nếu khi ấy Vận năm lặp lại 2 câu thì xử lý bằng `boCauLap` cho Vận năm (Bảo), không bỏ lời khuyên.
+
+**Còn lại, không chặn (P2, đợt sau):**
+- Tiền tố mới "soi sang thêm nét" (42 câu) và "tiếp thêm nét" (84 câu) vẫn là tiền tố chung. Có 42 câu ghép thành câu không xuôi, ví dụ `QL-S04-C4` "soi sang thêm nét hợp việc cần kỷ luật…" (nét + "hợp…"). Đề xuất: khi phần sau bắt đầu bằng "hợp/mạnh về/có phong thái" thì bỏ chữ "nét" ("tiếp thêm thế mạnh: hợp việc…"). Đây là lý do Giọng 8, chưa lên 9.
+- `menh-chinh-tinh.json` dòng 444 "Thiên Lương ở Ngọ: đường công danh trong sạch, hiển đạt." vẫn khẳng định cứng (câu chưa sửa ở vòng 1): nên viết "có xu hướng…".
+- Mục 5 (câu đầu quy tắc `-HAM`, `PHU-TA-01`) vẫn để đợt sau, như Hạnh đã ghi.
