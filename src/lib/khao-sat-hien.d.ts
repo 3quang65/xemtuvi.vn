@@ -4,3 +4,4 @@ export const GIU_MS: number;
 export interface TrangThaiKhaoSat { baiDaHoi: Record<string, number>; lanCuoi: number }
 export function nenHoi(da: unknown, bai: string, bayGio: number): boolean;
 export function danhDauDaHoi(da: unknown, bai: string, bayGio: number): TrangThaiKhaoSat;
+export function cachHien(e: { giaoNhau?: boolean; canhDuoi?: number } | null | undefined): 'doi' | 'ngay' | 'khong';

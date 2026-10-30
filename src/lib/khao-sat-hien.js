@@ -18,4 +18,16 @@ function danhDauDaHoi(da, bai, bayGio) {
   return { baiDaHoi: { ...(d.baiDaHoi && typeof d.baiDaHoi === 'object' ? d.baiDaHoi : {}), [bai]: bayGio }, lanCuoi: bayGio };
 }
 
-module.exports = { K_KHAO_SAT, BAY_NGAY_MS, GIU_MS, nenHoi, danhDauDaHoi };
+/**
+ * Mốc cuối bài so với khung nhìn: 'doi' (đang trong khung: đợi GIU_MS), 'ngay' (mốc đã nằm phía trên khung nhìn: khách đã cuộn qua
+ * cuối bài, kể cả nhảy thẳng xuống chân trang), 'khong' (mốc còn phía dưới hoặc thiếu dữ liệu).
+ * `giaoNhau` = IntersectionObserverEntry.isIntersecting; `canhDuoi` = boundingClientRect.bottom của mốc.
+ */
+function cachHien(e) {
+  if (!e || typeof e !== 'object') return 'khong';
+  if (e.giaoNhau === true) return 'doi';
+  if (e.giaoNhau === false && typeof e.canhDuoi === 'number' && e.canhDuoi <= 0) return 'ngay';
+  return 'khong';
+}
+
+module.exports = { K_KHAO_SAT, BAY_NGAY_MS, GIU_MS, nenHoi, danhDauDaHoi, cachHien };

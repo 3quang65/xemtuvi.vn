@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { guiSuKien } from '@/lib/phien';
-import { GIU_MS, K_KHAO_SAT, danhDauDaHoi, nenHoi } from '@/lib/khao-sat-hien';
+import { GIU_MS, K_KHAO_SAT, cachHien, danhDauDaHoi, nenHoi } from '@/lib/khao-sat-hien';
 
 const TOI_DA = 300;
 type Cach = 'cuoi_bai' | 'doc_xong';
@@ -25,8 +25,8 @@ function HangDiem({ ten, nhan, nhanThap, nhanCao, giaTri, chon }: { ten: string;
 }
 
 /**
- * Khảo sát 'đáng tiền' dưới bài trả phí (khao-sat-dang-tien_v1.md). Không chặn nội dung: thẻ nằm dưới bài, hiện khi cuối bài ở trong khung nhìn ≥ 2 giây
- * hoặc khi khách bấm "Đọc xong". Chỉ hỏi 1 lần/bài; khách đã thấy thì 7 ngày sau mới hỏi bài khác. Sự kiện không mang dữ liệu sinh.
+ * Khảo sát 'đáng tiền' dưới bài trả phí (khao-sat-dang-tien_v1.md). Không chặn nội dung: thẻ nằm dưới bài, hiện khi cuối bài ở trong khung nhìn ≥ 2 giây,
+ * hoặc ngay khi mốc cuối bài đã nằm phía trên khung nhìn (khách cuộn qua / nhảy xuống chân trang), hoặc khi khách bấm "Đọc xong". Chỉ hỏi 1 lần/bài; khách đã thấy thì 7 ngày sau mới hỏi bài khác. Sự kiện không mang dữ liệu sinh.
  */
 export default function KhaoSatDangTien({ bai, goi }: { bai: string; goi: string }) {
   const [buoc, setBuoc] = useState<'cho' | 'hien' | 'cam-on' | 'dong'>('cho');
@@ -53,7 +53,9 @@ export default function KhaoSatDangTien({ bai, goi }: { bai: string; goi: string
     if (!duocHoi || buoc !== 'cho' || !el || typeof IntersectionObserver === 'undefined') return;
     let hen: ReturnType<typeof setTimeout> | null = null;
     const quanSat = new IntersectionObserver(([e]) => {
-      if (e.isIntersecting) { if (!hen) hen = setTimeout(() => hien('cuoi_bai'), GIU_MS); }
+      const kieu = cachHien({ giaoNhau: e.isIntersecting, canhDuoi: e.boundingClientRect.bottom });
+      if (kieu === 'ngay') { if (hen) { clearTimeout(hen); hen = null; } hien('cuoi_bai'); }
+      else if (kieu === 'doi') { if (!hen) hen = setTimeout(() => hien('cuoi_bai'), GIU_MS); }
       else if (hen) { clearTimeout(hen); hen = null; }
     });
     quanSat.observe(el);

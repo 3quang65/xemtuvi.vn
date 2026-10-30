@@ -108,3 +108,15 @@ test('Thời điểm hiện: 1 lần/bài, khách đã thấy thì 7 ngày sau m
   assert.equal(nenHoi(da, 'tinh-cam', T + BAY_NGAY_MS), true);
   assert.deepEqual(Object.keys(da).sort(), ['baiDaHoi', 'lanCuoi']); // chỉ mã bài và giờ
 });
+
+test('Quyết định hiện theo vị trí mốc cuối bài: trong khung đợi 2 giây, đã cuộn qua thì hiện ngay', () => {
+  const { cachHien } = require('../src/lib/khao-sat-hien.js');
+  assert.equal(cachHien({ giaoNhau: true, canhDuoi: 400 }), 'doi'); // đang ở trong khung nhìn
+  assert.equal(cachHien({ giaoNhau: false, canhDuoi: -50 }), 'ngay'); // mốc nằm phía trên khung nhìn (cuộn qua, nhảy xuống chân trang)
+  assert.equal(cachHien({ giaoNhau: false, canhDuoi: -0.5 }), 'ngay');
+  assert.equal(cachHien({ giaoNhau: false, canhDuoi: 900 }), 'khong'); // mốc còn ở phía dưới: chưa đọc tới
+  assert.equal(cachHien({ giaoNhau: false, canhDuoi: 0 }), 'ngay'); // sát mép trên, đã ra khỏi khung
+  assert.equal(cachHien({ giaoNhau: true, canhDuoi: -10 }), 'doi'); // giao nhau thì luôn theo luật 2 giây
+  assert.equal(cachHien(null), 'khong');
+  assert.equal(cachHien({}), 'khong');
+});
