@@ -4,6 +4,9 @@ import type { MayChu } from './csdl';
 import * as dv from './dich-vu';
 import { luanGiaiChoKhach } from './luan-giai-may-chu';
 import { chuanHoa, huyLienHe, lamSachNguon, luuLienHe } from './lien-he';
+import { trangCua } from '../su-kien';
+import { ghiSuKien } from '../ghi-su-kien';
+import { daDungMa, dungMa, chuDeMoi, kiemMa } from './ma-moi';
 import { ghiLoi } from './nhat-ky';
 import { cookieDat, cookieXoa, cungNguon, docCookie, docPhien, taoPhien, xoaPhien } from './phien';
 
@@ -122,4 +125,33 @@ export const lienHeHuy = (req: Request, m: MayChu) => chay(req, async () => {
   const b = await doc(req);
   if (!b || typeof b.ma !== 'string' || !huyLienHe(m.db, b.ma)) return loi(404, 'khong_co', 'Liên kết hủy không đúng hoặc đã hết hiệu lực.');
   return json({ ok: true });
+});
+
+const PHIEN_DO = /^[A-Za-z0-9_-]{16,32}$/;
+
+/** POST /api/ma-moi/vao {ma, phien}: mã hợp lệ → ghi vao_moi kèm nguon lấy từ mã (không tin máy khách). Mã sai trả 200 hopLe:false để trang báo nhẹ nhàng. */
+export const maMoiVao = (req: Request, m: MayChu) => chay(req, async () => {
+  const b = await doc(req);
+  if (!b || typeof b.phien !== 'string' || !PHIEN_DO.test(b.phien)) return loi(400, 'du_lieu_sai', 'Dữ liệu không hợp lệ.');
+  const kq = kiemMa(m.db, b.ma);
+  if (!kq.hopLe) return json({ hopLe: false, ly: kq.ly });
+  await ghiSuKien({ ten: 'vao_moi', phien: b.phien, trang: trangCua('vao_moi'), nguon: kq.nguon });
+  return json({ hopLe: true });
+});
+
+/** GET /api/ma-moi/kiem?ma= : khung "mời mở miễn phí" dùng để biết hiện gì (đã dùng chưa, chuyên đề nào được chọn). */
+export function maMoiKiem(req: Request, m: MayChu) {
+  const kq = kiemMa(m.db, new URL(req.url).searchParams.get('ma'));
+  const id = nguoiDung(req, m);
+  return json({ hopLe: kq.hopLe, ...(kq.hopLe ? {} : { ly: kq.ly }), chuDe: chuDeMoi(), dangNhap: !!id, daDung: id ? daDungMa(m.db, id) : false });
+}
+
+/** POST /api/ma-moi/dung {ma, laSoId, chuDe, phien}: mở một chuyên đề miễn phí. */
+export const maMoiDung = (req: Request, m: MayChu) => chay(req, async () => {
+  const id = nguoiDung(req, m); if (!id) return canDangNhap();
+  const b = await doc(req);
+  if (!b || typeof b.phien !== 'string' || !PHIEN_DO.test(b.phien)) return loi(400, 'du_lieu_sai', 'Dữ liệu không hợp lệ.');
+  const kq = dungMa(m.db, id, { ma: b.ma, laSoId: b.laSoId, chuDe: b.chuDe });
+  await ghiSuKien({ ten: 'dung_ma_moi', phien: b.phien, trang: trangCua('dung_ma_moi'), nguon: kq.nguon, chuDe: kq.chuDe });
+  return json({ ok: true, chuDe: kq.chuDe });
 });

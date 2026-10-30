@@ -12,6 +12,8 @@ const CHUYEN_DE_CUA_CHU_DE: Record<string, ChuyenDeMa | null> = {
   'ban-than': 'menh', 'tinh-cam': 'phu-the', 'su-nghiep': 'quan-loc', 'tai-chinh': null, 'gia-dao': null,
   'van-10-nam': 'van-10-nam', // chỉ gói trọn lá số / thành viên
 };
+/** Chủ đề đã có nội dung luận (Tài chính, Gia đạo chưa có). */
+export const CHU_DE_CO_NOI_DUNG = Object.keys(CHUYEN_DE_CUA_CHU_DE).filter((c) => c !== 'van-10-nam' && CHUYEN_DE_CUA_CHU_DE[c]);
 export const CHU_DE_HOP_LE = [...Object.keys(CHUYEN_DE_CUA_CHU_DE), MA_VAN_NAM];
 
 /** Trả lời cho chủ đề Vận năm: đã mua → bài đầy đủ; chưa mua → chỉ bản xem trước (không nội dung tháng, không mã quy tắc). */

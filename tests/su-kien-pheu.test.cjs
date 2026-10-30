@@ -4,12 +4,12 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
-const { kiemTraSuKien, TEN_SU_KIEN, trangCua } = require('../src/lib/su-kien.js');
+const { kiemTraSuKien, TEN_SU_KIEN, CHI_MAY_CHU, trangCua } = require('../src/lib/su-kien.js');
 const { tinhPheu, docThuMuc } = require('../tools/pheu.cjs');
 
-test('Sự kiện hợp lệ: đủ 13 tên, phiên 16–32 ký tự', () => {
-  assert.equal(TEN_SU_KIEN.length, 13);
-  for (const ten of TEN_SU_KIEN) assert.deepEqual(kiemTraSuKien({ ten, phien: 'a1b2c3d4e5f6a7b8' }), { ten, phien: 'a1b2c3d4e5f6a7b8' });
+test('Sự kiện hợp lệ: đủ 16 tên (2 tên chỉ máy chủ ghi), phiên 16–32 ký tự', () => {
+  assert.equal(TEN_SU_KIEN.length, 16);
+  for (const ten of TEN_SU_KIEN.filter((t) => !CHI_MAY_CHU.includes(t))) assert.deepEqual(kiemTraSuKien({ ten, phien: 'a1b2c3d4e5f6a7b8' }), { ten, phien: 'a1b2c3d4e5f6a7b8' });
 });
 
 test('Từ chối: trường lạ, tên lạ, phiên sai độ dài/ký tự, không phải object', () => {

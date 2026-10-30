@@ -5,10 +5,13 @@ const TRANG = {
   vao_chon_goi: 'chon-goi', chon_goi: 'chon-goi',
   vao_thanh_toan: 'thanh-toan', dang_nhap: 'thanh-toan', thanh_toan_xong: 'thanh-toan',
   xem_lp_van_nam: 'lp', bam_lap_la_so_lp: 'lp', // trang đích /lp/van-nam-2027
+  vao_moi: 'form', dung_ma_moi: 'luan-giai', bam_gop_y: 'luan-giai', // bản thử khách mời (ban-thu-khach-moi.md)
   bao_loi: 'luan-giai', // khách báo không xem được đủ phần đã mua (đếm khiếu nại); sau khi mua nên không tính vào 4 màn
 };
 const { MA_GOI, MA_CHU_DE } = require('./goi-ma.js');
 const TEN_SU_KIEN = Object.keys(TRANG);
+// Chỉ máy chủ được ghi (kèm nguon tra từ mã mời); máy khách gửi lên /api/su-kien thì bị từ chối.
+const CHI_MAY_CHU = ['vao_moi', 'dung_ma_moi'];
 
 /** Màn hình (trong tối đa 4 màn) mà sự kiện thuộc về; máy chủ tự suy ra, không tin máy khách. */
 function trangCua(ten) { return TRANG[ten]; }
@@ -18,7 +21,7 @@ const CO_GOI = ['chon_goi', 'vao_thanh_toan', 'thanh_toan_xong', 'bao_loi'];
 /** Nhận {ten, phien} và (chỉ với CO_GOI) thêm goi, chuDe; trả về bản sạch hoặc null nếu có bất kỳ điều gì sai. */
 function kiemTraSuKien(b) {
   if (!b || typeof b !== 'object' || Array.isArray(b)) return null;
-  if (typeof b.ten !== 'string' || !TEN_SU_KIEN.includes(b.ten)) return null;
+  if (typeof b.ten !== 'string' || !TEN_SU_KIEN.includes(b.ten) || CHI_MAY_CHU.includes(b.ten)) return null;
   const choPhep = CO_GOI.includes(b.ten) ? ['ten', 'phien', 'goi', 'chuDe'] : ['ten', 'phien'];
   const khoa = Object.keys(b);
   if (!khoa.includes('phien') || khoa.some((k) => !choPhep.includes(k))) return null;
@@ -35,4 +38,4 @@ function kiemTraSuKien(b) {
   return ra;
 }
 
-module.exports = { TEN_SU_KIEN, trangCua, kiemTraSuKien };
+module.exports = { TEN_SU_KIEN, CHI_MAY_CHU, trangCua, kiemTraSuKien };
