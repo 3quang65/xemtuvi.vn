@@ -4,7 +4,7 @@ Phiên bản nháp 1, 30/10/2026 (việc L-fcc128, mốc M2). **Chưa qua chuyê
 
 Mục đích: nền tảng chuyên môn cho luận giải trả phí. AI và người viết chỉ luận điều có trong bộ quy tắc này, và ghi trường phái khi các phái khác nhau. Cách dùng: skill `tuvi-luan-giai` (kho vanphongai).
 
-Tệp này được **gộp tự động** từ các phần trong `docs/nghien-cuu/luan-giai/` (sửa ở phần nháp rồi gộp lại, không sửa thẳng tệp này). Quy ước định dạng, mã nguồn, giọng văn: `luan-giai/QUY-UOC.md`. Tên sao, cung, độ sáng: `tuvi-an-sao-spec.md` (mục 2, 4, 5, 6).
+Tệp này được **gộp tự động** (`python3 scripts/luan-giai/gop-luan-giai.py docs/nghien-cuu`; đếm: `scripts/luan-giai/dem-quy-tac.py`) từ các phần trong `docs/nghien-cuu/luan-giai/` (sửa ở phần nháp rồi gộp lại, không sửa thẳng tệp này). Quy ước định dạng, mã nguồn, giọng văn: `luan-giai/QUY-UOC.md`. Tên sao, cung, độ sáng: `tuvi-an-sao-spec.md` (mục 2, 4, 5, 6).
 
 Đọc mã quy tắc: `[CUNG-CHỦĐỀ-số]`, ví dụ `[QUAN-TS-02]` = cung Quan Lộc, sao Thất Sát, quy tắc 2. Cờ `⚑1nguồn`: chỉ có một nguồn; `⚑chưa-nguồn`: chưa tìm được nguồn. Mã nguồn sách (TT, TB, NL, KL, TC, PT…) ở mục 0.10; mã nguồn web theo từng phần (WC chung, WM cung 1–3, WT cung 4–6, WQ cung 7–9, WD cung 10–12) ở Phụ lục A.
 
