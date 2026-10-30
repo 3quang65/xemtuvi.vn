@@ -119,6 +119,10 @@ function napBan2(): QuyTacBan2[] {
 const QUY_TAC_2 = napBan2();
 /** Quy tắc đại vận (VAN-): cung gốc là cung vận, điền khi sinh bài. `cungVan` giới hạn quy tắc chỉ dùng khi vận ở đúng cung đó ("*" = mọi cung). */
 type QuyTacVan = QuyTacBan2 & { cungVan?: string };
+/** Mã nghiên cứu của một quy tắc bản 2 hoặc đại vận (để bộ ghép Vận năm chọn "việc nên làm" bám đúng mã). */
+export function maNghienCuuCua(id: string): string[] {
+  return [...QUY_TAC_2, ...QUY_TAC_VAN].find((q) => q.id === id)?.maNghienCuu ?? [];
+}
 const QUY_TAC_VAN = [...(quyTacVanJson as unknown as QuyTacVan[]), ...(quyTacVanSpJson as unknown as QuyTacVan[]), ...(quyTacVanPpJson as unknown as QuyTacVan[])];
 const TU_CAM = tuCamJson as unknown as TuCamCauHinh;
 const PROMPT = fs.readFileSync(path.join(process.cwd(), 'src/lib/luan-giai/ai/prompt-he-thong.md'), 'utf8');

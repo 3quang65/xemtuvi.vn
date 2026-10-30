@@ -10,7 +10,9 @@ import { khopDieuKien, cungTheoViTri, type DieuKien } from './khop-v2';
 import { locTuCam, type TuCamCauHinh } from './loc';
 import tuCamJson from './tu-cam.json';
 import quyTacVanJson from './quy-tac-van/van-10-nam.json';
-import { GHI_CHU, PHIEN_BAN_QUY_TAC, khoaCache, sinhLuanGiai } from './index';
+import viecJson from './quy-tac-van/viec-nen-lam.json';
+import ghiChuPhaiJson from './quy-tac-van/ghi-chu-truong-phai.json';
+import { GHI_CHU, PHIEN_BAN_QUY_TAC, khoaCache, maNghienCuuCua, sinhLuanGiai } from './index';
 
 export const MA_VAN_NAM = 'van-nam-2027';
 const NAM_HOP_LE = 2027;
@@ -45,14 +47,50 @@ export interface QuyTacNam {
   nguon: string[];
   truongPhai: string;
   uuTien?: number;
+  maNghienCuu?: string[];
+  tongHop?: boolean;
 }
+
+/** Điều kiện máy đọc của một mã bám trong viec-nen-lam.json (xem khung-doan-tra-phi.md, mục 6.0 điều 4). */
+interface DieuKienViec {
+  quyTacId?: string[];
+  cung?: string[];
+  /** Tất cả nhóm đều phải có mặt ở cung của đoạn; trong nhóm chỉ cần một: tên sao, "hoa:Hóa Kỵ" (hóa gốc), "luuHoa:Hóa Kỵ" (hóa của năm). */
+  saoTrongCung?: string[][];
+  /** Có sao khớp của đoạn mang hóa gốc này. */
+  saoKhopHoaGoc?: string;
+}
+interface MauViec {
+  maMau: string;
+  chuDe: string;
+  maHuong: string[];
+  maPhatHuy?: string[];
+  cau: string;
+  thuocDo: string;
+  thoiHanThang: number;
+  dieuKien?: Record<string, DieuKienViec>;
+}
+/** Việc nên làm (phần d): khách thấy cau, thuocDo, thoiHanThang; maMau và maHuong là mã ẩn. */
+export interface ViecNenLam { maMau: string; maHuong: string; cau: string; thuocDo: string; thoiHanThang: number }
 
 export interface NhanDinhNam {
   text: string;
   /** Vị trí trong mục: tổng quan có `phan`; bốn mảng có nen/nam-nay/goi-y. */
   phan?: string;
-  thamChieu: { quyTacId: string; sao: string[]; cung: string; nguon: string; truongPhai: string };
+  /** (a) Một dòng "căn cứ trên lá số": sao, độ sáng, cung, chi, hóa, sao lưu. Thiếu ở câu dẫn. */
+  canCu?: string;
+  /** (c) Một dòng nguồn · trường phái (tên sách ngắn). */
+  nguon?: string;
+  /** Chỉ khi đoạn chạm chỗ các sách khác nhau. */
+  ghiChuTruongPhai?: string;
+  /** (d) Việc nên làm và cách đo. Thiếu ở câu dẫn. */
+  viecNenLam?: ViecNenLam;
+  /** Câu dẫn/khung (trọng điểm năm, bối cảnh, tóm lại): không thuộc đoạn 4 phần, không có (a)(c)(d). */
+  cauDan?: true;
+  thamChieu: { quyTacId: string; sao: string[]; cung: string; nguon: string; truongPhai: string; maNghienCuu?: string[]; tongHop?: boolean; viecBam?: string };
 }
+/** Đoạn bị giữ lại, không xuất ra bản trả phí vì thiếu (a) hoặc (d): chờ người viết bổ sung quy tắc hoặc mẫu việc. */
+export interface DoanCho { quyTacId: string; cung: string; lyDo: string }
 export interface ThangNam {
   thang: number;
   /** Ngày dương lịch bắt đầu tháng âm lịch, d/m/yyyy. */
@@ -97,8 +135,10 @@ function napQuyTac(): QuyTacNam[] {
 }
 const QUY_TAC = napQuyTac();
 /** Tăng số này mỗi khi đổi cách ghép bài để cache cũ không bị dùng lại. */
-const PHIEN_BAN_GHEP = 'gh1';
-export const PHIEN_BAN_VAN_NAM = bam(JSON.stringify([QUY_TAC, PHIEN_BAN_QUY_TAC, PHIEN_BAN_GHEP])).slice(0, 12);
+const PHIEN_BAN_GHEP = 'gh3-4phan';
+const MAU_VIEC = viecJson as unknown as MauViec[];
+const GHI_CHU_PHAI = ghiChuPhaiJson as unknown as Record<string, string>;
+export const PHIEN_BAN_VAN_NAM = bam(JSON.stringify([QUY_TAC, MAU_VIEC, GHI_CHU_PHAI, PHIEN_BAN_QUY_TAC, PHIEN_BAN_GHEP])).slice(0, 12);
 const NAM_CO_QUY_TAC = new Set(QUY_TAC.map((q) => q.namXem ?? NAM_HOP_LE));
 
 // Ngày dương lịch bắt đầu 12 tháng âm lịch và hết năm (engine lịch; test đối chiếu lại bằng engine).
@@ -266,7 +306,7 @@ function chinhTinhCuaCung(n: Ngu, g: Cung, nhan: string, phan: string): Khop[] {
 }
 
 function thamChieu(k: Khop) {
-  return { quyTacId: k.q.id, sao: k.sao, cung: k.cung.ten, nguon: k.q.nguon.join('; '), truongPhai: k.q.truongPhai };
+  return { quyTacId: k.q.id, sao: k.sao, cung: k.cung.ten, nguon: k.q.nguon.join('; '), truongPhai: k.q.truongPhai, maNghienCuu: k.q.maNghienCuu ?? [], ...(k.q.tongHop ? { tongHop: true } : {}) };
 }
 function nhanDinh(k: Khop, phan?: string): NhanDinhNam | null {
   const text = locTuCam(k.text, TU_CAM);
@@ -401,11 +441,199 @@ function ghepBai(ls: LaSo, namXem: number) {
     tuNgay: ngay.thang[0], denNgay: ngay.het,
     nhanDinh: gom(tatCa.filter((k) => k.q.muc === 'dau-bai'), 'dau-bai'),
   };
-  return { ln, tatCa, muc, thang, dauBai };
+  return { ln, tatCa, muc, thang, dauBai, n };
+}
+
+
+// ---------------------------------------------------------------- bốn phần của đoạn trả phí (khung-doan-tra-phi.md)
+
+const SO_CHU_TOI_DA_CAN_CU = 35;
+/** Chủ đề của đoạn tổng quan theo cung nó rơi vào (khung mục 2.1); bốn mảng dùng chủ đề của mảng. */
+const CHU_DE_THEO_CUNG: Record<string, string[]> = {
+  'Mệnh': ['cong-viec', 'hoc-tap', 'tinh-cam', 'gia-dao'], 'Thiên Di': ['cong-viec', 'hoc-tap'],
+  'Quan Lộc': ['cong-viec', 'hoc-tap'], 'Nô Bộc': ['cong-viec'], 'Tài Bạch': ['tai-chinh'],
+  'Phu Thê': ['tinh-cam'], 'Tật Ách': ['suc-khoe'], 'Phúc Đức': ['suc-khoe', 'gia-dao'],
+  'Phụ Mẫu': ['gia-dao', 'cong-viec', 'hoc-tap'], 'Huynh Đệ': ['gia-dao', 'tai-chinh'],
+  'Điền Trạch': ['gia-dao'], 'Tử Tức': ['gia-dao', 'cong-viec', 'hoc-tap'],
+};
+const CHU_DE_THEO_MANG: Record<string, string[]> = {
+  'su-nghiep': ['cong-viec', 'hoc-tap'], 'tai-chinh': ['tai-chinh'], 'tinh-cam': ['tinh-cam'], 'suc-khoe': ['suc-khoe'],
+};
+const NGUOI_THEO_CUNG: Record<string, string> = {
+  'Phụ Mẫu': 'cha mẹ hoặc cấp trên', 'Huynh Đệ': 'anh chị em', 'Phu Thê': 'người đồng hành', 'Tử Tức': 'con cái',
+  'Nô Bộc': 'bạn bè, đồng nghiệp', 'Điền Trạch': 'người trong nhà', 'Phúc Đức': 'người thân',
+};
+const NGUOI_THEO_CHU_DE: Record<string, string> = {
+  'cong-viec': 'cấp trên hoặc đồng nghiệp', 'tinh-cam': 'người đồng hành', 'gia-dao': 'người thân trong nhà',
+};
+/** Câu dẫn/khung: mã phương pháp, không phải một điểm trên lá số nên không đòi đủ 4 phần. */
+const LA_CAU_DAN = /^(NAM-(TT|TH)-01|NAM-PP-|NAM-MANG-01-)/;
+const TEN_NGAN_SACH: [string, string][] = [
+  ['Nghiệm Lý', 'Nghiệm Lý'], ['Tân Biên', 'Tân Biên'], ['Toàn Thư', 'Toàn Thư'], ['Khảo Luận', 'Khảo Luận'],
+  ['Trung Châu', 'Trung Châu'], ['Đặc tả an sao', 'Đặc tả an sao xemtuvi.vn'], ['Tư liệu web', 'Tư liệu tham khảo trực tuyến'],
+];
+const soChu = (s: string) => s.trim().split(/\s+/).filter(Boolean).length;
+
+/** Thứ tự ưu tiên CHUNG-PP-10 áp cho mã bám: chính tinh > cách cục > Tứ hóa > sát/cát tinh, sao lưu > mảng > ý nghĩa cung. */
+function bacMa(ma: string): number {
+  if (/-CC-|^NAM-TH-04/.test(ma)) return 1;
+  if (/-HOA-|^NAM-TH-03/.test(ma)) return 2;
+  if (/-SP-|^NAM-LUU|^NAM-TT-0[2-6]/.test(ma)) return 3;
+  if (/^NAM-MANG/.test(ma)) return 4;
+  if (/-YN-/.test(ma)) return 5;
+  return 0;
+}
+
+function dieuKienViecDung(n: Ngu, nd: NhanDinhNam, c: Cung, dk?: DieuKienViec): boolean {
+  if (!dk) return true;
+  if (dk.quyTacId && !dk.quyTacId.includes(nd.thamChieu.quyTacId)) return false;
+  if (dk.cung && !dk.cung.includes(c.ten)) return false;
+  const ds = saoCua(c);
+  if (dk.saoTrongCung) {
+    const co = (tok: string) => {
+      const [loai, ten = ''] = tok.split(':');
+      return ds.some((x) => (loai === 'hoa' ? x.hoa === ten : loai === 'luuHoa' ? x.ten === `@${ten}` : x.ten === tok));
+    };
+    if (!dk.saoTrongCung.every((nhom) => nhom.some(co))) return false;
+  }
+  if (dk.saoKhopHoaGoc) {
+    const goc = nd.thamChieu.sao.some((ten) => n.ls.cung.some((cc) => saoCua(cc).some((x) => x.ten === ten && x.hoa === dk.saoKhopHoaGoc)));
+    if (!goc) return false;
+  }
+  return true;
+}
+
+function dienViec(m: MauViec, nd: NhanDinhNam, c: Cung, chuDe: string): string[] {
+  const nguoi = NGUOI_THEO_CUNG[c.ten] && chuDe !== 'cong-viec' ? NGUOI_THEO_CUNG[c.ten] : NGUOI_THEO_CHU_DE[chuDe] ?? 'người thân';
+  return [m.cau, m.thuocDo].map((t) => t.replaceAll('{nguoiLienQuan}', nguoi).replace(/\{([^}]+)\}/g, '$1'));
+}
+
+/** Chọn mẫu việc (phần d): chủ đề đúng, mã bám ∩ mã nghiên cứu của đoạn, điều kiện/vế đúng trên lá số, mỗi mẫu một lần mỗi bài. */
+function chonViec(n: Ngu, nd: NhanDinhNam, mucId: string, daDung: Set<string>): { m: MauViec; ma: string; chuDe: string } | null {
+  const c = cungTheoTen(n.ls, nd.thamChieu.cung);
+  const tap = new Set([nd.thamChieu.quyTacId, ...(nd.thamChieu.maNghienCuu ?? [])]);
+  const chuDe = mucId === 'tong-quan'
+    ? [...(CHU_DE_THEO_CUNG[c.ten] ?? []), ...(/^NAM-TH-04/.test(nd.thamChieu.quyTacId) ? ['hoc-tap'] : [])]
+    : CHU_DE_THEO_MANG[mucId] ?? [];
+  let tot: { m: MauViec; ma: string; bac: number; thu: number } | null = null;
+  MAU_VIEC.forEach((m, thu) => {
+    if (daDung.has(m.maMau) || !chuDe.includes(m.chuDe)) return;
+    for (const ma of m.maHuong) {
+      if (!tap.has(ma.split('/')[0]) || !dieuKienViecDung(n, nd, c, m.dieuKien?.[ma])) continue;
+      const bac = bacMa(ma);
+      if (!tot || bac < tot.bac || (bac === tot.bac && thu < tot.thu)) tot = { m, ma, bac, thu };
+    }
+  });
+  const t = tot as { m: MauViec; ma: string } | null;
+  return t ? { m: t.m, ma: t.ma, chuDe: t.m.chuDe } : null;
+}
+
+/** (a) Một dòng căn cứ từ yếu tố đã khớp: cung và chi, vai trò năm, sao + độ sáng, hóa gốc, lưu hóa. */
+function canCuDong(n: Ngu, nd: NhanDinhNam): string {
+  const g = cungTheoTen(n.ls, nd.thamChieu.cung);
+  const vai = nd.phan === 'thai-tue' ? ', cung Lưu Thái Tuế (trọng điểm năm)' : nd.phan === 'tieu-han' ? ', cung tiểu hạn (việc riêng của năm)' : '';
+  const dau = `Cung ${g.ten} (${g.tenChi})${vai}`;
+  const parts: string[] = [];
+  const thay = new Set<string>();
+  for (const ten of nd.thamChieu.sao) {
+    if (thay.has(ten)) continue;
+    thay.add(ten);
+    const luu = ten.startsWith('L. ');
+    const c = n.ls.cung.find((x) => saoCua(x).some((y) => y.ten === ten));
+    const sao = c?.chinhTinh.concat(c.catTinh, c.hungTinh, c.phuTinh).find((y) => y.ten === ten);
+    if (!c || !sao) { parts.push(luu ? `${ten.slice(3)} của năm` : ten); continue; }
+    let t = luu ? `${ten.slice(3)} của năm` : sao.dacTinhTen ? `${sao.ten} (${sao.dacTinhTen.toLowerCase()})` : sao.ten;
+    if (!luu && sao.hoa) t += `, mang ${sao.hoa} gốc`;
+    const lh = luu ? undefined : n.ln.luuTuHoa.find((h) => h.sao === ten && h.chi === c.chi);
+    if (lh) t += `, nhận ${lh.hoa} của năm`;
+    if (c.chi !== g.chi) t += ` ở cung ${c.ten} (${c.tenChi})`;
+    parts.push(t);
+  }
+  if (!parts.length) {
+    for (const h of n.ln.luuTuHoa.filter((x) => x.chi === g.chi)) parts.push(`${h.sao} nhận ${h.hoa} của năm`);
+    if (!parts.length && !g.chinhTinh.length) parts.push('cung vô chính diệu (không có chính tinh)');
+  }
+  const dong = () => `${dau}${parts.length ? ': ' + parts.join('; ') : ''}.`;
+  while (parts.length > 1 && soChu(dong()) > SO_CHU_TOI_DA_CAN_CU) parts.pop();
+  return dong();
+}
+
+/** (c) Một dòng "tên sách ngắn · trường phái"; đoạn tổng hợp thêm nhãn nhận xét tổng hợp của xemtuvi.vn. */
+function nguonDong(nd: NhanDinhNam): string {
+  const sach: string[] = [];
+  for (const nguon of nd.thamChieu.nguon.split('; ')) {
+    const ten = TEN_NGAN_SACH.find(([khoa]) => nguon.includes(khoa))?.[1];
+    if (ten && !sach.includes(ten)) sach.push(ten);
+  }
+  const tongHop = !!nd.thamChieu.tongHop || nd.thamChieu.truongPhai === 'tổng hợp';
+  const phai = nd.thamChieu.truongPhai === 'tổng hợp' ? 'Tam hợp phái Việt' : nd.thamChieu.truongPhai;
+  return [sach.slice(0, 3).join(', ') || 'Đặc tả an sao xemtuvi.vn', phai, ...(tongHop ? ['nhận xét tổng hợp của xemtuvi.vn'] : [])].join(' · ');
+}
+
+/**
+ * Gắn đủ 4 phần cho từng đoạn của các mục (tổng quan, bốn mảng). Đoạn thiếu (a) hoặc (d) bị loại khỏi bản trả phí và
+ * ghi vào danh sách chờ; câu dẫn/khung (mã phương pháp) giữ nguyên, đánh dấu cauDan.
+ */
+function lamGiauMuc(n: Ngu, muc: BaiVanNam['muc']): { muc: BaiVanNam['muc']; doanCho: DoanCho[] } {
+  const daDung = new Set<string>();
+  const doanCho: DoanCho[] = [];
+  const ra = muc.map((m) => ({
+    ...m,
+    nhanDinh: m.nhanDinh.flatMap((nd): NhanDinhNam[] => {
+      const id = nd.thamChieu.quyTacId;
+      const maNC = nd.thamChieu.maNghienCuu ?? maNghienCuuCua(id);
+      const dayDu: NhanDinhNam = { ...nd, thamChieu: { ...nd.thamChieu, maNghienCuu: maNC } };
+      const chon = chonViec(n, dayDu, m.id, daDung);
+      const ghi = [id, ...maNC].map((k) => GHI_CHU_PHAI[k]).find(Boolean);
+      if (!chon) {
+        if (LA_CAU_DAN.test(id) || dayDu.phan === 'boi-canh' || dayDu.phan === 'tom-lai' || dayDu.phan === 'nen') return [{ ...dayDu, cauDan: true, ...(ghi ? { ghiChuTruongPhai: ghi } : {}) }];
+        doanCho.push({ quyTacId: id, cung: nd.thamChieu.cung, lyDo: 'thiếu (d): không mẫu việc nào bám mã nghiên cứu của đoạn' });
+        return [];
+      }
+      const canCu = canCuDong(n, dayDu);
+      if (!canCu) {
+        doanCho.push({ quyTacId: id, cung: nd.thamChieu.cung, lyDo: 'thiếu (a): không dựng được căn cứ' });
+        return [];
+      }
+      daDung.add(chon.m.maMau);
+      const [cau, thuocDo] = dienViec(chon.m, dayDu, cungTheoTen(n.ls, nd.thamChieu.cung), chon.chuDe);
+      return [{
+        ...dayDu, canCu, nguon: nguonDong(dayDu), ...(ghi ? { ghiChuTruongPhai: ghi } : {}),
+        viecNenLam: { maMau: chon.m.maMau, maHuong: chon.ma, cau, thuocDo, thoiHanThang: chon.m.thoiHanThang },
+        thamChieu: { ...dayDu.thamChieu, viecBam: `${chon.m.maMau} bám ${chon.ma}` },
+      }];
+    }),
+  }));
+  return { muc: ra, doanCho };
 }
 
 const GHI_CHU_TRUONG_PHAI =
   'Xemtuvi.vn luận năm theo phái Việt: đọc cả cung Lưu Thái Tuế (trọng điểm năm) lẫn cung tiểu hạn (việc riêng), không xếp lại 12 cung lưu niên như phái Trung Quốc; tháng tính theo Đẩu Quân. Bảng Tứ hóa can Đinh giống nhau giữa các phái.';
+
+/** Ghép bài đầy đủ không qua cache: bài trả phí và danh sách đoạn chờ (thiếu (a) hoặc (d)). */
+async function taoBai(ls: LaSo, namXem: number, boQuaCache?: boolean): Promise<{ bai: BaiVanNam; doanCho: DoanCho[] }> {
+  const { ln, muc, thang, dauBai, n } = ghepBai(ls, namXem);
+  const mucNen = await Promise.all(muc.map(async (m) => {
+    const loai = ({ 'su-nghiep': 'quan-loc', 'tinh-cam': 'phu-the' } as Record<string, 'quan-loc' | 'phu-the'>)[m.id];
+    if (!loai) return m;
+    const nen = (await sinhLuanGiai(ls, loai, { boQuaCache })).muc.find((x) => x.id === 'phong-cach')?.nhanDinh[0];
+    return nen ? { ...m, nhanDinh: [{ text: nen.text, phan: 'nen', thamChieu: { quyTacId: nen.thamChieu.quyTacId, sao: nen.thamChieu.sao, cung: nen.thamChieu.cung, nguon: nen.thamChieu.nguon, truongPhai: nen.thamChieu.truongPhai } }, ...m.nhanDinh] } : m;
+  }));
+  const { muc: mucDu, doanCho } = lamGiauMuc(n, mucNen);
+  if (doanCho.length && process.env.VAN_NAM_LOG) console.info(`[van-nam] ${doanCho.length} đoạn chờ (thiếu (a)/(d)):`, doanCho.map((d) => `${d.quyTacId}@${d.cung}`).join(', '));
+  const bai: BaiVanNam = {
+    chuyenDe: MA_VAN_NAM, namXem, canChi: ln.canChi, tuoiMu: ln.tuoiMu, dauBai, muc: mucDu, thang,
+    ghiChuTruongPhai: GHI_CHU_TRUONG_PHAI, ghiChu: GHI_CHU, phienBan: PHIEN_BAN_VAN_NAM,
+  };
+  return { bai, doanCho };
+}
+
+/** Danh sách đoạn chờ của một lá số (không dùng cache): đoạn thiếu (a) hoặc (d) không được xuất ra bản trả phí. */
+export async function doanChoVanNam(ls: LaSo, tuyChon: { namXem?: number } = {}): Promise<DoanCho[]> {
+  const namXem = tuyChon.namXem ?? NAM_HOP_LE;
+  kiemTraNamXem(namXem, ls);
+  return (await taoBai(ls, namXem, true)).doanCho;
+}
 
 /** Bài Vận năm đầy đủ (gói trả phí). Cache theo lá số + năm xem. Năm khác 2027 (Đinh Mùi) bị từ chối. */
 export async function sinhVanNam(ls: LaSo, tuyChon: { namXem?: number; boQuaCache?: boolean } = {}): Promise<BaiVanNam> {
@@ -416,19 +644,9 @@ export async function sinhVanNam(ls: LaSo, tuyChon: { namXem?: number; boQuaCach
     const co = doc<BaiVanNam>(khoa);
     if (co) return co;
   }
-  const { ln, muc, thang, dauBai } = ghepBai(ls, namXem);
-  const mucNen = await Promise.all(muc.map(async (m) => {
-    const loai = ({ 'su-nghiep': 'quan-loc', 'tinh-cam': 'phu-the' } as Record<string, 'quan-loc' | 'phu-the'>)[m.id];
-    if (!loai) return m;
-    const nen = (await sinhLuanGiai(ls, loai, { boQuaCache: tuyChon.boQuaCache })).muc.find((x) => x.id === 'phong-cach')?.nhanDinh[0];
-    return nen ? { ...m, nhanDinh: [{ text: nen.text, phan: 'nen', thamChieu: { quyTacId: nen.thamChieu.quyTacId, sao: nen.thamChieu.sao, cung: nen.thamChieu.cung, nguon: nen.thamChieu.nguon, truongPhai: nen.thamChieu.truongPhai } }, ...m.nhanDinh] } : m;
-  }));
-  const kq: BaiVanNam = {
-    chuyenDe: MA_VAN_NAM, namXem, canChi: ln.canChi, tuoiMu: ln.tuoiMu, dauBai, muc: mucNen, thang,
-    ghiChuTruongPhai: GHI_CHU_TRUONG_PHAI, ghiChu: GHI_CHU, phienBan: PHIEN_BAN_VAN_NAM,
-  };
-  if (!tuyChon.boQuaCache) ghi(khoa, kq);
-  return kq;
+  const { bai } = await taoBai(ls, namXem, tuyChon.boQuaCache);
+  if (!tuyChon.boQuaCache) ghi(khoa, bai);
+  return bai;
 }
 
 /** Điểm thuận ưu tiên cho bản xem trước (NAM-CAM-03: không dùng câu gây lo để kéo mua). */

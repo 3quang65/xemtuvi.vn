@@ -337,7 +337,16 @@
   ],
   "cau": "Nếu đã hơn 12 tháng chưa khám sức khỏe tổng quát, đặt lịch khám trong 3 tháng tới.",
   "thuocDo": "Đã đặt lịch / đã khám (có/không)",
-  "thoiHanThang": 3
+  "thoiHanThang": 3,
+  "dieuKien": {
+   "NAM-MANG-05": {
+    "saoTrongCung": [
+     [
+      "Vũ Khúc"
+     ]
+    ]
+   }
+  }
  },
  {
   "maMau": "SK-02",
