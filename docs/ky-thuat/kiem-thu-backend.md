@@ -40,3 +40,6 @@ Backend đạt: tài khoản/đơn/quyền nằm ở máy chủ, nội dung tr�
 
 ## Chưa kiểm
 Hết hạn phiên 90 ngày, thành viên năm giới hạn 3 lá số, sao lưu lên Drive (BE4), trình duyệt thật qua HTTPS của tên miền (kiểm trên localhost; cookie Secure chạy được vì localhost được coi là an toàn).
+
+## Đã sửa L1, L2
+`/luan-giai` không còn cần lá số trong `sessionStorage`: đăng nhập rồi lấy `/api/toi` + `GET /api/la-so`, cho chọn lá số; chưa đăng nhập thì hiện form đăng nhập tại chỗ. Quyền gộp theo lá số (`src/lib/quyen-xem.ts`): thành viên > trọn lá số > các chủ đề mua lẻ. Kiểm: `tests/quyen-xem.test.cjs`; kịch bản 2 trình duyệt `anh-kiem-thu-backend/kich-ban-l1-l2.cjs` (10/10 đạt, 375px không tràn ngang).

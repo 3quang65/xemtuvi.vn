@@ -1,15 +1,15 @@
 'use client';
 
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
-import { layChuDe, layGoi } from '@/lib/goi';
+import { useEffect, useMemo, useState } from 'react';
+import { layGoi } from '@/lib/goi';
 import { guiSuKien } from '@/lib/phien';
-import { useLaSoDaLuu } from '@/lib/useLaSoDaLuu';
+import { lapLaSo, type LaSo, type ThongTinSinh } from '@/lib/tuvi';
+import { laSoMacDinh, tongHopQuyen, type QuyenGiaoDien } from '@/lib/quyen-xem';
 import type { LuanGiai as BaiLuanGiai } from '@/lib/luan-giai/ai';
 import TomTatMienPhi from './TomTatMienPhi';
 
-const TEN_CHU_DE: Record<string, string> = { 'ban-than': 'Bản thân', 'tinh-cam': 'Tình cảm', 'su-nghiep': 'Sự nghiệp', 'van-10-nam': 'Vận 10 năm' };
-const CHU_DE_TRON = ['ban-than', 'tinh-cam', 'su-nghiep', 'van-10-nam'];
+const TEN_CHU_DE: Record<string, string> = { 'ban-than': 'Bản thân', 'tinh-cam': 'Tình cảm', 'su-nghiep': 'Sự nghiệp', 'tai-chinh': 'Tài chính', 'gia-dao': 'Gia đạo', 'van-10-nam': 'Vận 10 năm' };
 
 /** Nội dung trả phí chỉ đến từ GET /api/luan-giai (máy chủ kiểm quyền); không nằm trong mã gửi xuống trình duyệt. */
 function BaiLuan({ laSoId, chuDe }: { laSoId: number; chuDe: string }) {
@@ -41,56 +41,111 @@ function BaiLuan({ laSoId, chuDe }: { laSoId: number; chuDe: string }) {
   );
 }
 
+interface LaSoMay { id: number; tenGoi: string | null; thongTinSinh: ThongTinSinh }
+interface Toi { dangNhap: boolean; quyen?: QuyenGiaoDien[]; laSoIds?: number[] }
+
+async function layJson<T>(duong: string, body?: unknown): Promise<T> {
+  const r = await fetch(duong, body === undefined ? { cache: 'no-store' } : { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+  const d = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error((d as { thongDiep?: string }).thongDiep || 'Có lỗi, vui lòng thử lại.');
+  return d as T;
+}
+
+const tenLaSo = (l: LaSoMay, i: number) => l.tenGoi || l.thongTinSinh.ten || `Lá số ${i + 1}`;
+
+/** Đăng nhập thử (bản thử, giống bước 1 ở trang thanh toán) để xem lại gói đã mua trên máy khác. */
+function DangNhap({ khiXong }: { khiXong: () => void }) {
+  const [nhap, setNhap] = useState('');
+  const [bao, setBao] = useState('');
+  const [dang, setDang] = useState(false);
+  async function vao(ncc: 'google' | 'zalo') {
+    setBao(''); setDang(true);
+    try { await layJson('/api/dang-nhap', { nhaCungCap: ncc, email: nhap }); guiSuKien('dang_nhap'); khiXong(); } catch (e) { setBao((e as Error).message); setDang(false); }
+  }
+  return (
+    <section className="trang-buoc">
+      <h1>Luận giải chuyên sâu</h1>
+      <div className="khoi-buoc">
+        <h2>Đăng nhập để xem gói đã mua</h2>
+        <p className="ghi-chu-rieng-tu thu">Bản thử: đăng nhập giả lập, không gửi thông tin đến Google hay Zalo.</p>
+        <label htmlFor="email-xem">Email bạn đã dùng khi mua</label>
+        <input id="email-xem" type="email" inputMode="email" autoComplete="email" value={nhap} onChange={(e) => setNhap(e.target.value)} />
+        <div className="hai-nut">
+          <button type="button" className="nut-phu" disabled={dang || !nhap} onClick={() => vao('google')}>Tiếp tục với Google</button>
+          <button type="button" className="nut-phu" disabled={dang || !nhap} onClick={() => vao('zalo')}>Tiếp tục với Zalo</button>
+        </div>
+        {bao && <p role="alert">{bao}</p>}
+      </div>
+      <p><Link href="/">Chưa mua? Lập lá số miễn phí</Link></p>
+    </section>
+  );
+}
+
 export default function LuanGiai() {
-  const laSo = useLaSoDaLuu();
-  const [goi, setGoi] = useState<ReturnType<typeof layGoi> | null | undefined>(undefined);
-  const [chuDe, setChuDe] = useState<ReturnType<typeof layChuDe>>(undefined);
+  // Mọi thứ lấy từ máy chủ (đăng nhập ở máy nào cũng thấy), không cần lá số trong sessionStorage.
+  const [toi, setToi] = useState<Toi | null | 'loi'>(null);
+  const [dsLaSo, setDsLaSo] = useState<LaSoMay[]>([]);
   const [laSoId, setLaSoId] = useState<number | null>(null);
-  const [dsChuDe, setDsChuDe] = useState<string[]>([]);
   const [chon, setChon] = useState<string | null>(null);
   const [daBao, setDaBao] = useState(false);
+  const [lanTai, setLanTai] = useState(0);
   useEffect(() => {
-    // Quyền xem lấy từ máy chủ (đăng nhập ở máy nào cũng thấy).
-    fetch('/api/toi', { cache: 'no-store' }).then((r) => r.json()).then((t: { quyen?: { loai: string; chuDe: string | null; laSoId: number | null }[]; laSoIds?: number[] }) => {
-      const moi = (t.quyen ?? []).at(-1); // quyền mua gần nhất
-      const ma = moi?.loai === 'thanh_vien' ? 'thanh-vien-nam' : moi?.loai === 'tron_la_so' ? 'tron-la-so' : moi?.loai === 'chu_de' ? 'mot-chu-de' : null;
-      setGoi(layGoi(ma) ?? null);
-      setChuDe(moi?.loai === 'chu_de' ? layChuDe(moi.chuDe) : undefined);
-      const ds = moi?.loai === 'chu_de' && moi.chuDe ? [moi.chuDe] : moi ? CHU_DE_TRON : [];
-      setDsChuDe(ds); setChon(ds[0] ?? null);
-      setLaSoId(moi?.laSoId ?? t.laSoIds?.[0] ?? null);
-    }).catch(() => setGoi(null));
-  }, []);
-  if (!laSo || goi === undefined) return <p className="dang-tai" role="status">Đang tải…</p>;
+    let huy = false;
+    (async () => {
+      try {
+        const t = await layJson<Toi>('/api/toi');
+        if (!t.dangNhap) { if (!huy) setToi(t); return; }
+        const { laSo } = await layJson<{ laSo: LaSoMay[] }>('/api/la-so');
+        if (huy) return;
+        setDsLaSo(laSo);
+        setLaSoId(laSoMacDinh(t.quyen ?? [], laSo.map((l) => l.id)));
+        setToi(t);
+      } catch { if (!huy) setToi('loi'); }
+    })();
+    return () => { huy = true; };
+  }, [lanTai]);
 
-  if (!goi) {
+  const laSoChon = dsLaSo.find((l) => l.id === laSoId) ?? null;
+  const quyen = toi && toi !== 'loi' && laSoId !== null ? tongHopQuyen(toi.quyen ?? [], laSoId, dsLaSo.map((l) => l.id)) : null;
+  const dsChuDe = quyen?.dsChuDe ?? [];
+  const chonHopLe = chon && dsChuDe.includes(chon) ? chon : dsChuDe[0] ?? null;
+  const laSoVe = useMemo<LaSo | null>(() => { try { return laSoChon ? lapLaSo(laSoChon.thongTinSinh) : null; } catch { return null; } }, [laSoChon]);
+
+  if (toi === null) return <p className="dang-tai" role="status">Đang tải…</p>;
+  if (toi === 'loi') return <section className="trang-buoc"><h1>Luận giải chuyên sâu</h1><p role="alert">Chưa tải được. Bạn thử lại sau ít phút nhé.</p></section>;
+  if (!toi.dangNhap) return <DangNhap khiXong={() => { setToi(null); setLanTai((n) => n + 1); }} />;
+
+  const goi = quyen ? layGoi(quyen.goi) : null;
+  if (!goi || laSoId === null) {
     return (
       <section className="trang-buoc">
         <h1>Luận giải chuyên sâu</h1>
-        <p>Bạn chưa mở gói nào.</p>
-        <Link href="/chon-goi" className="nut-chinh nut-lien-ket">Chọn gói luận giải</Link>
+        <p>{dsLaSo.length ? 'Lá số này chưa mở gói nào.' : 'Tài khoản này chưa có lá số hay gói nào.'}</p>
+        {dsLaSo.length > 1 && <ChonLaSo ds={dsLaSo} id={laSoId} doi={(id) => { setLaSoId(id); setChon(null); }} />}
+        <Link href={dsLaSo.length ? '/chon-goi' : '/'} className="nut-chinh nut-lien-ket">{dsLaSo.length ? 'Chọn gói luận giải' : 'Lập lá số miễn phí'}</Link>
       </section>
     );
   }
   return (
     <section className="trang-buoc">
       <h1>Luận giải chuyên sâu</h1>
-      <p className="da-dang-nhap">Đã mở: {goi.ten}{chuDe ? ` — ${chuDe.ten}` : ''} (bản thử, chưa thu tiền thật).</p>
-      {laSoId !== null && chon ? (
+      <p className="da-dang-nhap">Đã mở: {goi.ten}{quyen!.goi === 'mot-chu-de' ? ` — ${dsChuDe.map((c) => TEN_CHU_DE[c] ?? c).join(', ')}` : ''} (bản thử, chưa thu tiền thật).</p>
+      {dsLaSo.length > 1 && <ChonLaSo ds={dsLaSo} id={laSoId} doi={(id) => { setLaSoId(id); setChon(null); }} />}
+      {chonHopLe ? (
         <>
           {dsChuDe.length > 1 && (
             <div role="tablist" aria-label="Chuyên đề">
               {dsChuDe.map((c) => (
-                <button key={c} type="button" role="tab" aria-selected={c === chon} className={c === chon ? 'nut-chinh' : 'nut-phu'} onClick={() => setChon(c)}>{TEN_CHU_DE[c] ?? c}</button>
+                <button key={c} type="button" role="tab" aria-selected={c === chonHopLe} className={c === chonHopLe ? 'nut-chinh' : 'nut-phu'} onClick={() => setChon(c)}>{TEN_CHU_DE[c] ?? c}</button>
               ))}
             </div>
           )}
-          <BaiLuan laSoId={laSoId} chuDe={chon} />
+          <BaiLuan laSoId={laSoId} chuDe={chonHopLe} />
         </>
       ) : (
         <p className="khoi-buoc">Chưa tìm thấy lá số đã lưu cho gói này.</p>
       )}
-      <TomTatMienPhi laSo={laSo} choMua={false} />
+      {laSoVe && <TomTatMienPhi laSo={laSoVe} choMua={false} />}
       <div className="bao-loi">
         {daBao ? (
           <p role="status">Đã ghi nhận. Bản thử chưa thu tiền nên chưa có bước hoàn tiền; khi bán chính thức, lỗi kỹ thuật sẽ được hoàn 100%.</p>
@@ -101,5 +156,16 @@ export default function LuanGiai() {
         )}
       </div>
     </section>
+  );
+}
+
+function ChonLaSo({ ds, id, doi }: { ds: LaSoMay[]; id: number | null; doi: (id: number) => void }) {
+  return (
+    <div className="tuy-chon-o">
+      <label htmlFor="chon-la-so">Lá số</label>
+      <select id="chon-la-so" value={id ?? ''} onChange={(e) => doi(Number(e.target.value))}>
+        {ds.map((l, i) => <option key={l.id} value={l.id}>{tenLaSo(l, i)}</option>)}
+      </select>
+    </div>
   );
 }
