@@ -30,7 +30,7 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 ## Bài luận giải (đúng như khách nhận)
 
 ### Cách kiếm và giữ tiền
-- Thiên Phủ tại Tài Bạch: về tiền bạc, bạn có xu hướng biết vun vén và giữ của; mức sung túc thường ở mức khá và vững dần theo thời gian. Nên đặt quy tắc chỉ dùng tiền tích lũy cho mục tiêu đã định từ trước, không dùng cho chi tiêu bất chợt.  
+- Có Thiên Phủ giữ kho ở Tài Bạch, bạn thường biết vun vén và tích dần; khi không gặp Địa Không, Địa Kiếp hay sao hao tán cùng cung, của cải có xu hướng bền lên theo thời gian. Nên đặt quy tắc chỉ dùng tiền tích lũy cho mục tiêu đã định từ trước, không dùng cho chi tiêu bất chợt.  
   _↳ TB-S07-BINH · Tài Bạch · Thiên Phủ · Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn) · Tam hợp phái Việt_
 
 ### Cung hợp chiếu

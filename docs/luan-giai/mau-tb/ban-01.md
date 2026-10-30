@@ -38,7 +38,7 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
   _↳ KHUNG-tai-bach-CC-SatPhaTham-TroLuc · Tài Bạch · Thất Sát+Phá Quân+Tham Lang+Hỏa Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Cách kiếm và giữ tiền
-- Phá Quân tại Tài Bạch: về tiền bạc, bạn có xu hướng kiếm tiền mạnh tay, dám chi để thu lớn; tiền có lúc tụ lúc tán nhưng hết lại có. Nên tách riêng một quỹ thử nghiệm cho ý tưởng mới, tiêu hết quỹ đó thì dừng, không lấy sang tiền sinh hoạt.  
+- Phá Quân sáng ở Tài Bạch cho lối kiếm tiền mạnh tay, dám chi để thu lớn: dòng tiền thường có lúc tụ lúc tán nhưng hết lại có. Nên tách riêng một quỹ thử nghiệm cho ý tưởng mới, tiêu hết quỹ đó thì dừng, không lấy sang tiền sinh hoạt.  
   _↳ TB-S14-TOT · Tài Bạch · Phá Quân · Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn) · Tam hợp phái Việt_
 
 ### Tứ hóa

@@ -34,9 +34,9 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
   _↳ KHUNG-tai-bach-CC-TuPhuVuTuong-PHA · Tài Bạch · Tử Vi+Thiên Phủ+Vũ Khúc+Thiên Tướng+Địa Kiếp · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Cách kiếm và giữ tiền
-- Vũ Khúc tại Tài Bạch: về tiền bạc, bạn có xu hướng thực tế, quyết đoán và giữ kỷ luật tài chính tốt; Vũ Khúc là tài tinh nên đây là vị trí thuận cho việc kiếm và giữ tiền. Nên dành sẵn một khoản cố định mỗi năm cho học hỏi và các mối quan hệ, để kỷ luật không thành quá cứng.  
+- Vũ Khúc là tài tinh, sáng ở Tài Bạch là vị trí thuận cho việc kiếm và giữ tiền: bạn thường thực tế, quyết đoán, giữ kỷ luật tài chính tốt, dù có khi phải bền bỉ một thời gian mới thấy rõ kết quả. Nên dành sẵn một khoản cố định mỗi năm cho học hỏi và các mối quan hệ, để kỷ luật không thành quá cứng.  
   _↳ TB-S04-TOT · Tài Bạch · Vũ Khúc · Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn) · Tam hợp phái Việt_
-- Thiên Tướng tại Tài Bạch: về tiền bạc, bạn có xu hướng đủ đầy, hay có mối lợi đến từ uy tín và cách làm việc chỉn chu. Nên lưu lại những lời giới thiệu, phản hồi tốt từ đối tác để mở thêm cơ hội thu nhập.  
+- Thiên Tướng sáng tại Tài Bạch giúp tài chính thường đủ đầy, hay có mối lợi đến từ uy tín và cách làm việc chỉn chu của bạn. Nên lưu lại những lời giới thiệu, phản hồi tốt từ đối tác để mở thêm cơ hội thu nhập.  
   _↳ TB-S11-TOT · Tài Bạch · Thiên Tướng · Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn) · Tam hợp phái Việt_
 
 ### Sao hỗ trợ và cần lưu ý

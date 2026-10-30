@@ -40,7 +40,7 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 ### Cách kiếm và giữ tiền
 - Thân cư Tài Bạch: càng về sau, chuyện tiền bạc và cách quản lý nguồn lực càng ảnh hưởng nhiều đến hướng đi của bạn; nên sớm tập thói quen quản lý tài chính để nền này vững dần.  
   _↳ KHUNG-tai-bach-THAN-CU · Tài Bạch · — · Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương) · Tam hợp phái Việt_
-- Thái Âm tại Tài Bạch: về tiền bạc, bạn có xu hướng kiếm tiền đều đặn và tích lũy tốt, thích sự chắc chắn hơn mạo hiểm. Nên tích lũy định kỳ một tỷ lệ cố định của thu nhập mỗi tháng cho mục tiêu dài hạn.  
+- Thái Âm sáng ở Tài Bạch hợp lối kiếm tiền đều đặn: bạn thường tích lũy tốt và thích sự an toàn hơn mạo hiểm. Nên trích định kỳ một tỷ lệ cố định của thu nhập mỗi tháng cho mục tiêu dài hạn.  
   _↳ TB-S08-TOT · Tài Bạch · Thái Âm · Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn) · Tam hợp phái Việt_
 
 ### Cung hợp chiếu

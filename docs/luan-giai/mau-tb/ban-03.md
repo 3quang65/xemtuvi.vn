@@ -34,9 +34,9 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
   _↳ KHUNG-tai-bach-CC-TuPhuVuTuong-PHA · Tài Bạch · Tử Vi+Thiên Phủ+Vũ Khúc+Thiên Tướng+Kình Dương+Đà La+Địa Không · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Cách kiếm và giữ tiền
-- Liêm Trinh tại Tài Bạch: về tiền bạc, bạn có xu hướng kiếm tiền tốt trong môi trường cạnh tranh, sôi động; tiến chậm nhưng chắc và có nguyên tắc rõ. Nên chọn lĩnh vực có cạnh tranh nhưng luật chơi minh bạch để phát huy sức bền của mình.  
+- Liêm Trinh sáng tại Tài Bạch hợp môi trường cạnh tranh, sôi động: bạn thường tiến chậm nhưng chắc và giữ nguyên tắc rõ. Nên chọn lĩnh vực có cạnh tranh nhưng luật chơi minh bạch để phát huy sức bền của mình.  
   _↳ TB-S06-TOT · Tài Bạch · Liêm Trinh · Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn) · Tam hợp phái Việt_
-- Thiên Phủ tại Tài Bạch: về tiền bạc, bạn có xu hướng giỏi giữ của, chi tiêu chừng mực và tích lũy bền; Thiên Phủ được xem là sao chủ kho. Nên chia tài sản thành ba ngăn rõ ràng: dự phòng, mục tiêu gần, mục tiêu xa.  
+- Thiên Phủ là sao chủ kho, sáng ở Tài Bạch thì bạn thường giỏi giữ của, chi tiêu chừng mực và tích lũy bền. Nên chia tài sản thành ba ngăn rõ ràng: tiền khẩn cấp, mục tiêu gần, mục tiêu xa.  
   _↳ TB-S07-TOT · Tài Bạch · Thiên Phủ · Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn) · Tam hợp phái Việt_
 
 ### Tứ hóa

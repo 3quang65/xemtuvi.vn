@@ -36,7 +36,7 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 ### Cách kiếm và giữ tiền
 - Thân cư Tài Bạch: càng về sau, chuyện tiền bạc và cách quản lý nguồn lực càng ảnh hưởng nhiều đến hướng đi của bạn; nên sớm tập thói quen quản lý tài chính để nền này vững dần.  
   _↳ KHUNG-tai-bach-THAN-CU · Tài Bạch · — · Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương) · Tam hợp phái Việt_
-- Thiên Cơ tại Tài Bạch: về tiền bạc, bạn có xu hướng kiếm tiền bằng trí óc, tính toán và sự linh hoạt, nhưng cũng dễ hao tâm sức vì nghĩ nhiều. Nên chọn một nguồn thu phụ dựa trên chuyên môn và đặt giới hạn thời gian cho nó để không quá sức.  
+- Thiên Cơ sáng tại Tài Bạch là lá số của người kiếm tiền bằng trí óc: bạn thường dựa vào tính toán và sự linh hoạt, đổi lại dễ hao tâm sức vì nghĩ nhiều. Nên chọn một nguồn thu phụ dựa trên chuyên môn và đặt giới hạn thời gian cho nó để không quá sức.  
   _↳ TB-S02-TOT · Tài Bạch · Thiên Cơ · Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn) · Tam hợp phái Việt_
 
 ### Tứ hóa

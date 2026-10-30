@@ -36,10 +36,10 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
   _↳ KHUNG-tai-bach-CC-TuPha-PHA3-ham · Tài Bạch · Tử Vi+Phá Quân+Kình Dương · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Cách kiếm và giữ tiền
-- Vũ Khúc tại Tài Bạch: về tiền bạc, bạn có xu hướng thực tế, quyết đoán và giữ kỷ luật tài chính tốt; Vũ Khúc là tài tinh nên đây là vị trí thuận cho việc kiếm và giữ tiền. Nên dành sẵn một khoản cố định mỗi năm cho học hỏi và các mối quan hệ, để kỷ luật không thành quá cứng.  
+- Vũ Khúc là tài tinh, sáng ở Tài Bạch là vị trí thuận cho việc kiếm và giữ tiền: bạn thường thực tế, quyết đoán, giữ kỷ luật tài chính tốt, dù có khi phải bền bỉ một thời gian mới thấy rõ kết quả. Nên dành sẵn một khoản cố định mỗi năm cho học hỏi và các mối quan hệ, để kỷ luật không thành quá cứng.  
   _↳ TB-S04-TOT · Tài Bạch · Vũ Khúc · Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn) · Tam hợp phái Việt_
-- Thất Sát tại Tài Bạch khi kém sáng: về tiền bạc, bạn có xu hướng tài chính hay eo hẹp, dễ quyết nhanh rồi phải xoay xở. Nên chờ ba ngày trước mọi quyết định tiền bạc lớn hơn một tháng thu nhập.  
-  _↳ TB-S13-HAM · Tài Bạch · Thất Sát · Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
+- Với Thất Sát kém sáng tại Tài Bạch, giai đoạn đầu bạn thường phải tự xoay xở, hay eo hẹp hơn mong muốn; tính quyết nhanh, dám làm là thế mạnh khi đi kèm cân nhắc. Nên chờ ba ngày trước mọi quyết định tiền bạc lớn hơn một tháng thu nhập.  
+  _↳ TB-S13-HAM · Tài Bạch · Thất Sát · Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn) · Tam hợp phái Việt_
 
 ### Tứ hóa
 - Liêm Trinh mang Hóa Lộc ở Quan Lộc (cung tam hợp của Tài Bạch) ảnh hưởng đến cách kiếm tiền và giữ tiền: mở thêm nguồn thu và cơ hội tích lũy, nên chủ động nắm bắt và giữ kỷ luật chi tiêu.  

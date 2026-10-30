@@ -36,9 +36,9 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
   _↳ KHUNG-tai-bach-CC-KhongKiepChieu · Tài Bạch · Địa Không+Địa Kiếp · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Cách kiếm và giữ tiền
-- Thái Dương tại Tài Bạch: về tiền bạc, bạn có xu hướng kiếm tiền thuận khi làm việc công khai, được nhiều người biết đến, và sẵn lòng chi cho người khác. Nên xây dựng uy tín cá nhân rõ ràng (hồ sơ năng lực, sản phẩm mang tên mình) vì nguồn thu của bạn thường gắn với danh tiếng.  
+- Thái Dương sáng ở Tài Bạch gắn thu nhập với danh tiếng: bạn thường kiếm tiền thuận khi làm việc công khai, được nhiều người biết đến, và sẵn lòng chi cho người khác. Nên xây dựng uy tín cá nhân rõ ràng (hồ sơ năng lực, sản phẩm mang tên mình) để nguồn thu có chỗ dựa lâu dài.  
   _↳ TB-S03-TOT · Tài Bạch · Thái Dương · Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn) · Tam hợp phái Việt_
-- Thiên Lương tại Tài Bạch: về tiền bạc, bạn có xu hướng giữ tài chính vững, ít phải lo về sinh kế và hay nghĩ xa cho người thân. Nên lập kế hoạch tài chính sớm cho các mốc lớn của gia đình như học hành của con, chăm sóc cha mẹ.  
+- Thiên Lương sáng ở Tài Bạch thường giữ cho tài chính vững: bạn ít phải lo về sinh kế và hay nghĩ xa cho người thân. Nên lập kế hoạch tài chính sớm cho các mốc lớn của gia đình như học hành của con, chăm sóc cha mẹ.  
   _↳ TB-S12-TOT · Tài Bạch · Thiên Lương · Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn) · Tam hợp phái Việt_
 
 ### Cung hợp chiếu
