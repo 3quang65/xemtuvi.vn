@@ -54,3 +54,21 @@ test('phá cách theo CC-08: không gọi "thế X ... thành cách"/"có khuy�
   assert.ok(gap >= 3, `bộ lá số mẫu chỉ có ${gap} cách rơi vào phá cách, test chưa đủ sức`);
   assert.deepEqual(loi, []);
 });
+
+test('đoạn trùng giữa các bài = 0: câu >= 30 ký tự không xuất hiện ở hai chuyên đề khác nhau', async () => {
+  const gap = [];
+  for (const tc of TC) {
+    const ls = lapLaSo(tc.input);
+    const chu = new Map(); // câu → chuyên đề đầu tiên
+    for (const cd of CD) {
+      const bai = await AI.sinhLuanGiai(ls, cd, { boQuaCache: true });
+      for (const m of bai.muc) for (const d of m.nhanDinh) {
+        for (const c of d.text.split(/(?<=[.!?])\s+/).filter((x) => x.length >= 30)) {
+          if (chu.has(c) && chu.get(c) !== cd) gap.push(`${tc.id}: ${chu.get(c)}/${cd}: ${c.slice(0, 80)}`);
+          else chu.set(c, cd);
+        }
+      }
+    }
+  }
+  assert.equal(gap.length, 0, `${gap.length} câu trùng:\n${gap.slice(0, 8).join('\n')}`);
+});

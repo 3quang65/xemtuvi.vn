@@ -120,7 +120,9 @@ type QuyTacVan = QuyTacBan2 & { cungVan?: string };
 const QUY_TAC_VAN = quyTacVanJson as unknown as QuyTacVan[];
 const TU_CAM = tuCamJson as unknown as TuCamCauHinh;
 const PROMPT = fs.readFileSync(path.join(process.cwd(), 'src/lib/luan-giai/ai/prompt-he-thong.md'), 'utf8');
-export const PHIEN_BAN_QUY_TAC = bam(JSON.stringify([QUY_TAC, QUY_TAC_2, QUY_TAC_VAN, CHUYEN_DE, TU_CAM, PROMPT])).slice(0, 12);
+/** Tăng khi đổi cách ghép/lọc câu (không đổi quy tắc) để bản lưu cũ không bị dùng lại. */
+const PHIEN_BAN_BO_GHEP = 'ghep-3';
+export const PHIEN_BAN_QUY_TAC = bam(JSON.stringify([QUY_TAC, QUY_TAC_2, QUY_TAC_VAN, CHUYEN_DE, TU_CAM, PROMPT, PHIEN_BAN_BO_GHEP])).slice(0, 12);
 
 export function nhaCungCapDangDung(yeuCau: TuyChon['nhaCungCap']): 'stub' | 'claude' | string {
   if (typeof yeuCau === 'object' && yeuCau) return yeuCau.ten;
@@ -209,6 +211,48 @@ function khopBan2(ls: LaSo, q: QuyTacBan2): KetQuaKhop | null {
   };
 }
 
+/** Câu đuôi theo độ sáng của bộ quy tắc cũ (quy-tac.json, lặp ở 42 quy tắc mỗi mức). Gộp: mỗi mức tối đa một lần mỗi bài, lời theo chuyên đề. */
+const DUOI_DO_SANG: { re: RegExp; muc: 'trung-binh' | 'kem'; loi: Record<string, string> }[] = [
+  {
+    re: /\s*Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh\.?/,
+    muc: 'trung-binh',
+    loi: {
+      menh: 'Các sao ở độ sáng trung bình trong bài này cho kết quả tùy vào mức rèn luyện bản thân và hoàn cảnh.',
+      'quan-loc': 'Các sao ở độ sáng trung bình trong bài này cho kết quả tùy vào mức rèn luyện nghề và môi trường làm việc.',
+      'phu-the': 'Các sao ở độ sáng trung bình trong bài này cho kết quả tùy vào sự vun đắp của hai người và hoàn cảnh.',
+      'tai-bach': 'Các sao ở độ sáng trung bình trong bài này cho kết quả tùy vào kỷ luật tài chính và hoàn cảnh.',
+      'dien-trach': 'Các sao ở độ sáng trung bình trong bài này cho kết quả tùy vào sự vun vén của gia đình và hoàn cảnh.',
+    },
+  },
+  {
+    re: /\s*Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm\.?/,
+    muc: 'kem',
+    loi: {
+      menh: 'Với các sao kém sáng nêu trong bài, nên bù bằng sự chuẩn bị kỹ và học hỏi thêm về chính mình.',
+      'quan-loc': 'Với các sao kém sáng nêu trong bài, nên bù bằng sự chuẩn bị kỹ và học thêm kỹ năng cho công việc.',
+      'phu-the': 'Với các sao kém sáng nêu trong bài, nên bù bằng sự kiên nhẫn và trao đổi cởi mở trong quan hệ.',
+      'tai-bach': 'Với các sao kém sáng nêu trong bài, nên bù bằng kế hoạch tài chính cẩn trọng và kiến thức quản lý tiền.',
+      'dien-trach': 'Với các sao kém sáng nêu trong bài, nên bù bằng sự chuẩn bị kỹ và hỏi ý người có kinh nghiệm về nhà đất.',
+    },
+  },
+];
+
+/**
+ * Gỡ câu đuôi độ sáng khỏi nhận định; lần đầu mỗi mức trong bài thì thay bằng một câu chung theo chuyên đề (`da` ghi các mức đã nói).
+ */
+export function gopDuoiDoSang(text: string, da: Set<string>, chuyenDe: string): string {
+  let kq = text;
+  for (const d of DUOI_DO_SANG) {
+    if (!d.re.test(kq)) continue;
+    kq = kq.replace(d.re, '').trim();
+    if (!da.has(d.muc)) {
+      da.add(d.muc);
+      kq = `${kq} ${d.loi[chuyenDe] ?? d.loi.menh}`;
+    }
+  }
+  return kq;
+}
+
 /**
  * Một bài không được nói hai lần cùng một câu (T-a4504a/T-080e3a): câu từ 30 ký tự trở lên đã xuất hiện ở nhận định trước
  * thì bỏ khỏi nhận định sau; nhận định chỉ còn lại rỗng thì bỏ hẳn.
@@ -279,11 +323,13 @@ export async function sinhLuanGiai(ls: LaSo, chuyenDe: ChuyenDeMa, tuyChon: TuyC
   const muc = cfg.muc.map((m) => ({ id: m.id, tieuDe: m.tieuDe, nhanDinh: [] as { n: NhanDinh; u: number }[] }));
   const mucDau = muc.find((m) => m.id !== 'cach-cuc') ?? muc[0];
   const daCo = new Set<string>();
+  const daDuoiDoSang = new Set<string>();
   for (const c of cau) {
     const x = theoId.get(c.id);
     if (!x || daCo.has(c.id)) continue;
-    const text = locTuCam(c.text, TU_CAM);
-    if (text === null) continue;
+    const loc = locTuCam(c.text, TU_CAM);
+    if (loc === null) continue;
+    const text = gopDuoiDoSang(loc, daDuoiDoSang, chuyenDe);
     daCo.add(c.id);
     const dich = muc.find((m) => m.id === x.q.muc) ?? mucDau;
     dich.nhanDinh.push({
