@@ -86,7 +86,7 @@ Mỗi mảng gồm hai lớp: **nền** (cung chức năng gốc, một câu, d�
 ## 8. Điều cấm riêng cho vận năm (NAM-CAM)
 
 Toàn bộ VAN-CAM-01 đến 09 áp dụng nguyên cho năm và tháng. Thêm:
-- **[NAM-CAM-01]** Không dùng "sao hạn" theo tuổi (La Hầu, Kế Đô, Thái Bạch…, phép Cửu Diệu), "hạn tam tai", "kim lâu", "phạm Thái Tuế": không thuộc Tử Vi Đẩu Số và gắn với cúng sao, giải hạn. — *Nguồn: CHUNG-PHAI-03 (chỉ dùng phương pháp tam hợp Tử Vi); VAN-CAM-02; quy ước sản phẩm `~/xemtuvi.vn/CLAUDE.md`* · **máy đọc: chắc**
+- **[NAM-CAM-01]** Không dùng "sao hạn" theo tuổi (La Hầu, Kế Đô, Thái Bạch…, phép Cửu Diệu), "hạn tam tai", "kim lâu", "phạm Thái Tuế": không thuộc Tử Vi Đẩu Số và thường đi kèm các nghi lễ "hóa giải vận hạn" mà sản phẩm không dùng (xem VAN-CAM-02). — *Nguồn: CHUNG-PHAI-03 (chỉ dùng phương pháp tam hợp Tử Vi); VAN-CAM-02; quy ước sản phẩm `~/xemtuvi.vn/CLAUDE.md`* · **máy đọc: chắc**
 - **[NAM-CAM-02]** TT có câu "大小二限相遇作死限斷" (đại tiểu hạn gặp nhau đoán là hạn chết) và các câu "限到其人尋死路", "其年入墓中" ở Lộc Tồn, Thiên Mã nhập hạn gặp Không Kiếp + Thái Tuế: **không dùng** dưới mọi hình thức. Trùng cung luận theo NAM-PP-08. — *Nguồn: TT2 (定男女竹蘿三限; 祿存入限; 天馬入限) (đã đọc); VAN-CAM-01* · **máy đọc: chắc**
 - **[NAM-CAM-03]** Không viết "năm tuổi phải cẩn thận", "đầu năm nên đi lễ giải", "tháng cô hồn"; không gắn bài năm với lời mời mua gói "hóa giải". Phần xem trước miễn phí chỉ nêu chủ đề năm và một điểm thuận. — *Nguồn: VAN-CAM-02; `~/xemtuvi.vn/CLAUDE.md`* · **máy đọc: chắc**
 - **[NAM-CAM-04]** Đầu bài ghi "Nội dung do hệ thống tạo dựa trên lá số, mang tính tham khảo để hiểu mình, không thay lời khuyên chuyên môn (y tế, tài chính, pháp lý)". — *Nguồn: hồ sơ vị trí luan-giai (giới hạn: ghi rõ nội dung do AI tạo)* · **máy đọc: chắc**
