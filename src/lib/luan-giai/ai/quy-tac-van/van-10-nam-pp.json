@@ -1,0 +1,2284 @@
+[
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-12-AA",
+  "loai": "SP",
+  "maNghienCuu": [
+   "VAN-PP-12"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang",
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang",
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh"
+   }
+  ],
+  "muc": "thuan-loi",
+  "noiDung": "Chính tinh của vận cùng nhóm Tử Phủ Vũ Tướng với chính tinh Mệnh (nhân hòa): môi trường 10 năm hợp với khí chất gốc nên dễ phát huy thế mạnh.",
+  "nguonChiTiet": "NL (tập 2, tr. 135–136, nhân hòa); TB (Phần 3, §1.1)"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-12-AA-VCD",
+  "loai": "SP",
+  "maNghienCuu": [
+   "VAN-PP-12"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ],
+    "toiThieu": 1,
+    "viTri": "xung"
+   },
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang",
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang",
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "xung"
+   }
+  ],
+  "muc": "thuan-loi",
+  "noiDung": "Chính tinh của vận (mượn từ cung xung chiếu, lực nhẹ hơn sao tọa thủ) cùng nhóm Tử Phủ Vũ Tướng với chính tinh Mệnh (nhân hòa): môi trường 10 năm hợp với khí chất gốc nên dễ phát huy thế mạnh.",
+  "nguonChiTiet": "NL (tập 2, tr. 135–136, nhân hòa); TB (Phần 3, §1.1)"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-14-AB",
+  "loai": "SP",
+  "maNghienCuu": [
+   "VAN-PP-14"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang",
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng",
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh"
+   }
+  ],
+  "muc": "chu-y",
+  "noiDung": "Mệnh gốc thuộc nhóm Tử Phủ Vũ Tướng, còn môi trường vận thuộc nhóm Sát Phá Liêm Tham: thuận lợi đi kèm nhiều biến động, nên có kế hoạch dự phòng.",
+  "nguonChiTiet": "KL (B.1); TB (Phần 3, §2.4.1, tr. 250)"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-14-AB-VCD",
+  "loai": "SP",
+  "maNghienCuu": [
+   "VAN-PP-14"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang"
+    ],
+    "toiThieu": 1,
+    "viTri": "xung"
+   },
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang",
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng",
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "xung"
+   }
+  ],
+  "muc": "chu-y",
+  "noiDung": "Mệnh gốc thuộc nhóm Tử Phủ Vũ Tướng, còn môi trường vận (mượn từ cung xung chiếu, lực nhẹ hơn sao tọa thủ) thuộc nhóm Sát Phá Liêm Tham: thuận lợi đi kèm nhiều biến động, nên có kế hoạch dự phòng.",
+  "nguonChiTiet": "KL (B.1); TB (Phần 3, §2.4.1, tr. 250)"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-12-AC",
+  "loai": "SP",
+  "maNghienCuu": [
+   "VAN-PP-12"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang",
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng",
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh"
+   }
+  ],
+  "muc": "chu-y",
+  "noiDung": "Mệnh gốc thuộc nhóm Tử Phủ Vũ Tướng, còn môi trường vận thuộc nhóm Cơ Nguyệt Đồng Lương Cự Nhật (khác nhóm): bạn cần thời gian thích nghi với nhịp sống và cách làm mới.",
+  "nguonChiTiet": "NL (tập 2, tr. 135–136, nhân hòa); TB (Phần 3, §1.1)"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-12-AC-VCD",
+  "loai": "SP",
+  "maNghienCuu": [
+   "VAN-PP-12"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "xung"
+   },
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang",
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng",
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang"
+    ],
+    "toiThieu": 1,
+    "viTri": "xung"
+   }
+  ],
+  "muc": "chu-y",
+  "noiDung": "Mệnh gốc thuộc nhóm Tử Phủ Vũ Tướng, còn môi trường vận (mượn từ cung xung chiếu, lực nhẹ hơn sao tọa thủ) thuộc nhóm Cơ Nguyệt Đồng Lương Cự Nhật (khác nhóm): bạn cần thời gian thích nghi với nhịp sống và cách làm mới.",
+  "nguonChiTiet": "NL (tập 2, tr. 135–136, nhân hòa); TB (Phần 3, §1.1)"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-15-BA",
+  "loai": "SP",
+  "maNghienCuu": [
+   "VAN-PP-15"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng",
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang",
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh"
+   }
+  ],
+  "muc": "chu-y",
+  "noiDung": "Mệnh gốc thuộc nhóm sao ưa hành động (Sát Phá Liêm Tham), còn môi trường vận thuộc nhóm Tử Phủ Vũ Tướng: đời sống khá đủ đầy nhưng khó bứt phá như ý, bạn cần thích nghi với nhịp khác hơn.",
+  "nguonChiTiet": "KL (B.1); TB (Phần 3, §2.4.1)"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-15-BA-VCD",
+  "loai": "SP",
+  "maNghienCuu": [
+   "VAN-PP-15"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ],
+    "toiThieu": 1,
+    "viTri": "xung"
+   },
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng",
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang",
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "xung"
+   }
+  ],
+  "muc": "chu-y",
+  "noiDung": "Mệnh gốc thuộc nhóm sao ưa hành động (Sát Phá Liêm Tham), còn môi trường vận (mượn từ cung xung chiếu, lực nhẹ hơn sao tọa thủ) thuộc nhóm Tử Phủ Vũ Tướng: đời sống khá đủ đầy nhưng khó bứt phá như ý, bạn cần thích nghi với nhịp khác hơn.",
+  "nguonChiTiet": "KL (B.1); TB (Phần 3, §2.4.1)"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-12-BB",
+  "loai": "SP",
+  "maNghienCuu": [
+   "VAN-PP-12"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng",
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng",
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh"
+   }
+  ],
+  "muc": "thuan-loi",
+  "noiDung": "Chính tinh của vận cùng nhóm Sát Phá Liêm Tham với chính tinh Mệnh (nhân hòa): môi trường 10 năm hợp với khí chất gốc nên dễ phát huy thế mạnh.",
+  "nguonChiTiet": "NL (tập 2, tr. 135–136, nhân hòa); TB (Phần 3, §1.1)"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-12-BB-VCD",
+  "loai": "SP",
+  "maNghienCuu": [
+   "VAN-PP-12"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang"
+    ],
+    "toiThieu": 1,
+    "viTri": "xung"
+   },
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng",
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng",
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "xung"
+   }
+  ],
+  "muc": "thuan-loi",
+  "noiDung": "Chính tinh của vận (mượn từ cung xung chiếu, lực nhẹ hơn sao tọa thủ) cùng nhóm Sát Phá Liêm Tham với chính tinh Mệnh (nhân hòa): môi trường 10 năm hợp với khí chất gốc nên dễ phát huy thế mạnh.",
+  "nguonChiTiet": "NL (tập 2, tr. 135–136, nhân hòa); TB (Phần 3, §1.1)"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-15-BC",
+  "loai": "SP",
+  "maNghienCuu": [
+   "VAN-PP-15"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng",
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng",
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh"
+   }
+  ],
+  "muc": "chu-y",
+  "noiDung": "Mệnh gốc thuộc nhóm sao ưa hành động (Sát Phá Liêm Tham), còn môi trường vận thuộc nhóm Cơ Nguyệt Đồng Lương Cự Nhật: đời sống khá đủ đầy nhưng khó bứt phá như ý, bạn cần thích nghi với nhịp khác hơn.",
+  "nguonChiTiet": "KL (B.1); TB (Phần 3, §2.4.1)"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-15-BC-VCD",
+  "loai": "SP",
+  "maNghienCuu": [
+   "VAN-PP-15"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "xung"
+   },
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng",
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng",
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang"
+    ],
+    "toiThieu": 1,
+    "viTri": "xung"
+   }
+  ],
+  "muc": "chu-y",
+  "noiDung": "Mệnh gốc thuộc nhóm sao ưa hành động (Sát Phá Liêm Tham), còn môi trường vận (mượn từ cung xung chiếu, lực nhẹ hơn sao tọa thủ) thuộc nhóm Cơ Nguyệt Đồng Lương Cự Nhật: đời sống khá đủ đầy nhưng khó bứt phá như ý, bạn cần thích nghi với nhịp khác hơn.",
+  "nguonChiTiet": "KL (B.1); TB (Phần 3, §2.4.1)"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-12-CA",
+  "loai": "SP",
+  "maNghienCuu": [
+   "VAN-PP-12"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng",
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang",
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh"
+   }
+  ],
+  "muc": "chu-y",
+  "noiDung": "Mệnh gốc thuộc nhóm Cơ Nguyệt Đồng Lương Cự Nhật, còn môi trường vận thuộc nhóm Tử Phủ Vũ Tướng (khác nhóm): bạn cần thời gian thích nghi với nhịp sống và cách làm mới.",
+  "nguonChiTiet": "NL (tập 2, tr. 135–136, nhân hòa); TB (Phần 3, §1.1)"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-12-CA-VCD",
+  "loai": "SP",
+  "maNghienCuu": [
+   "VAN-PP-12"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ],
+    "toiThieu": 1,
+    "viTri": "xung"
+   },
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng",
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang",
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "xung"
+   }
+  ],
+  "muc": "chu-y",
+  "noiDung": "Mệnh gốc thuộc nhóm Cơ Nguyệt Đồng Lương Cự Nhật, còn môi trường vận (mượn từ cung xung chiếu, lực nhẹ hơn sao tọa thủ) thuộc nhóm Tử Phủ Vũ Tướng (khác nhóm): bạn cần thời gian thích nghi với nhịp sống và cách làm mới.",
+  "nguonChiTiet": "NL (tập 2, tr. 135–136, nhân hòa); TB (Phần 3, §1.1)"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-14-CB",
+  "loai": "SP",
+  "maNghienCuu": [
+   "VAN-PP-14"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng",
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng",
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh"
+   }
+  ],
+  "muc": "chu-y",
+  "noiDung": "Mệnh gốc thuộc nhóm Cơ Nguyệt Đồng Lương Cự Nhật, còn môi trường vận thuộc nhóm Sát Phá Liêm Tham: thuận lợi đi kèm nhiều biến động, nên có kế hoạch dự phòng.",
+  "nguonChiTiet": "KL (B.1); TB (Phần 3, §2.4.1, tr. 250)"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-14-CB-VCD",
+  "loai": "SP",
+  "maNghienCuu": [
+   "VAN-PP-14"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang"
+    ],
+    "toiThieu": 1,
+    "viTri": "xung"
+   },
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng",
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng",
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "xung"
+   }
+  ],
+  "muc": "chu-y",
+  "noiDung": "Mệnh gốc thuộc nhóm Cơ Nguyệt Đồng Lương Cự Nhật, còn môi trường vận (mượn từ cung xung chiếu, lực nhẹ hơn sao tọa thủ) thuộc nhóm Sát Phá Liêm Tham: thuận lợi đi kèm nhiều biến động, nên có kế hoạch dự phòng.",
+  "nguonChiTiet": "KL (B.1); TB (Phần 3, §2.4.1, tr. 250)"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-12-CC",
+  "loai": "SP",
+  "maNghienCuu": [
+   "VAN-PP-12"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng",
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng",
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh"
+   }
+  ],
+  "muc": "thuan-loi",
+  "noiDung": "Chính tinh của vận cùng nhóm Cơ Nguyệt Đồng Lương Cự Nhật với chính tinh Mệnh (nhân hòa): môi trường 10 năm hợp với khí chất gốc nên dễ phát huy thế mạnh.",
+  "nguonChiTiet": "NL (tập 2, tr. 135–136, nhân hòa); TB (Phần 3, §1.1)"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-12-CC-VCD",
+  "loai": "SP",
+  "maNghienCuu": [
+   "VAN-PP-12"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương",
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "xung"
+   },
+   {
+    "voChinhDieu": true,
+    "viTri": "chinh"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng",
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh"
+   },
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng",
+     "Thất Sát",
+     "Phá Quân",
+     "Liêm Trinh",
+     "Tham Lang"
+    ],
+    "toiThieu": 1,
+    "viTri": "xung"
+   }
+  ],
+  "muc": "thuan-loi",
+  "noiDung": "Chính tinh của vận (mượn từ cung xung chiếu, lực nhẹ hơn sao tọa thủ) cùng nhóm Cơ Nguyệt Đồng Lương Cự Nhật với chính tinh Mệnh (nhân hòa): môi trường 10 năm hợp với khí chất gốc nên dễ phát huy thế mạnh.",
+  "nguonChiTiet": "NL (tập 2, tr. 135–136, nhân hòa); TB (Phần 3, §1.1)"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-07-SANG-TửVi",
+  "loai": "C",
+  "maNghienCuu": [
+   "VAN-PP-07"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": false,
+    "viTri": "chinh"
+   },
+   {
+    "sao": [
+     "Tử Vi"
+    ],
+    "viTri": "xung",
+    "doSang": [
+     "Miếu",
+     "Vượng",
+     "Đắc"
+    ]
+   }
+  ],
+  "muc": "thuan-loi",
+  "noiDung": "Tử Vi đắc địa ở cung xung chiếu của vận: thế đối diện có sao sáng hỗ trợ, thuận lợi từ bên ngoài đến đều đặn dù lực nhẹ hơn sao tọa thủ.",
+  "nguonChiTiet": "KL (Giải đoán vận hạn, A.4); CHUNG-PP-06"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-07-HAM-TửVi",
+  "loai": "C",
+  "maNghienCuu": [
+   "VAN-PP-07"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": false,
+    "viTri": "chinh"
+   },
+   {
+    "sao": [
+     "Tử Vi"
+    ],
+    "viTri": "xung",
+    "doSang": [
+     "Hãm"
+    ]
+   }
+  ],
+  "muc": "chu-y",
+  "noiDung": "Tử Vi hãm ở cung xung chiếu của vận: tác động từ bên ngoài kém thuận hơn, nên chủ động dựa vào điểm mạnh sẵn có.",
+  "nguonChiTiet": "KL (Giải đoán vận hạn, A.4); CHUNG-PP-06"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-07-SANG-ThiênPhủ",
+  "loai": "C",
+  "maNghienCuu": [
+   "VAN-PP-07"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": false,
+    "viTri": "chinh"
+   },
+   {
+    "sao": [
+     "Thiên Phủ"
+    ],
+    "viTri": "xung",
+    "doSang": [
+     "Miếu",
+     "Vượng",
+     "Đắc"
+    ]
+   }
+  ],
+  "muc": "thuan-loi",
+  "noiDung": "Thiên Phủ đắc địa ở cung xung chiếu của vận: thế đối diện có sao sáng hỗ trợ, thuận lợi từ bên ngoài đến đều đặn dù lực nhẹ hơn sao tọa thủ.",
+  "nguonChiTiet": "KL (Giải đoán vận hạn, A.4); CHUNG-PP-06"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-07-HAM-ThiênPhủ",
+  "loai": "C",
+  "maNghienCuu": [
+   "VAN-PP-07"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": false,
+    "viTri": "chinh"
+   },
+   {
+    "sao": [
+     "Thiên Phủ"
+    ],
+    "viTri": "xung",
+    "doSang": [
+     "Hãm"
+    ]
+   }
+  ],
+  "muc": "chu-y",
+  "noiDung": "Thiên Phủ hãm ở cung xung chiếu của vận: tác động từ bên ngoài kém thuận hơn, nên chủ động dựa vào điểm mạnh sẵn có.",
+  "nguonChiTiet": "KL (Giải đoán vận hạn, A.4); CHUNG-PP-06"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-07-SANG-VũKhúc",
+  "loai": "C",
+  "maNghienCuu": [
+   "VAN-PP-07"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": false,
+    "viTri": "chinh"
+   },
+   {
+    "sao": [
+     "Vũ Khúc"
+    ],
+    "viTri": "xung",
+    "doSang": [
+     "Miếu",
+     "Vượng",
+     "Đắc"
+    ]
+   }
+  ],
+  "muc": "thuan-loi",
+  "noiDung": "Vũ Khúc đắc địa ở cung xung chiếu của vận: thế đối diện có sao sáng hỗ trợ, thuận lợi từ bên ngoài đến đều đặn dù lực nhẹ hơn sao tọa thủ.",
+  "nguonChiTiet": "KL (Giải đoán vận hạn, A.4); CHUNG-PP-06"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-07-HAM-VũKhúc",
+  "loai": "C",
+  "maNghienCuu": [
+   "VAN-PP-07"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": false,
+    "viTri": "chinh"
+   },
+   {
+    "sao": [
+     "Vũ Khúc"
+    ],
+    "viTri": "xung",
+    "doSang": [
+     "Hãm"
+    ]
+   }
+  ],
+  "muc": "chu-y",
+  "noiDung": "Vũ Khúc hãm ở cung xung chiếu của vận: tác động từ bên ngoài kém thuận hơn, nên chủ động dựa vào điểm mạnh sẵn có.",
+  "nguonChiTiet": "KL (Giải đoán vận hạn, A.4); CHUNG-PP-06"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-07-SANG-ThiênTướng",
+  "loai": "C",
+  "maNghienCuu": [
+   "VAN-PP-07"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": false,
+    "viTri": "chinh"
+   },
+   {
+    "sao": [
+     "Thiên Tướng"
+    ],
+    "viTri": "xung",
+    "doSang": [
+     "Miếu",
+     "Vượng",
+     "Đắc"
+    ]
+   }
+  ],
+  "muc": "thuan-loi",
+  "noiDung": "Thiên Tướng đắc địa ở cung xung chiếu của vận: thế đối diện có sao sáng hỗ trợ, thuận lợi từ bên ngoài đến đều đặn dù lực nhẹ hơn sao tọa thủ.",
+  "nguonChiTiet": "KL (Giải đoán vận hạn, A.4); CHUNG-PP-06"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-07-HAM-ThiênTướng",
+  "loai": "C",
+  "maNghienCuu": [
+   "VAN-PP-07"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": false,
+    "viTri": "chinh"
+   },
+   {
+    "sao": [
+     "Thiên Tướng"
+    ],
+    "viTri": "xung",
+    "doSang": [
+     "Hãm"
+    ]
+   }
+  ],
+  "muc": "chu-y",
+  "noiDung": "Thiên Tướng hãm ở cung xung chiếu của vận: tác động từ bên ngoài kém thuận hơn, nên chủ động dựa vào điểm mạnh sẵn có.",
+  "nguonChiTiet": "KL (Giải đoán vận hạn, A.4); CHUNG-PP-06"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-07-SANG-ThấtSát",
+  "loai": "C",
+  "maNghienCuu": [
+   "VAN-PP-07"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": false,
+    "viTri": "chinh"
+   },
+   {
+    "sao": [
+     "Thất Sát"
+    ],
+    "viTri": "xung",
+    "doSang": [
+     "Miếu",
+     "Vượng",
+     "Đắc"
+    ]
+   }
+  ],
+  "muc": "thuan-loi",
+  "noiDung": "Thất Sát đắc địa ở cung xung chiếu của vận: thế đối diện có sao sáng hỗ trợ, thuận lợi từ bên ngoài đến đều đặn dù lực nhẹ hơn sao tọa thủ.",
+  "nguonChiTiet": "KL (Giải đoán vận hạn, A.4); CHUNG-PP-06"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-07-HAM-ThấtSát",
+  "loai": "C",
+  "maNghienCuu": [
+   "VAN-PP-07"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": false,
+    "viTri": "chinh"
+   },
+   {
+    "sao": [
+     "Thất Sát"
+    ],
+    "viTri": "xung",
+    "doSang": [
+     "Hãm"
+    ]
+   }
+  ],
+  "muc": "chu-y",
+  "noiDung": "Thất Sát hãm ở cung xung chiếu của vận: tác động từ bên ngoài kém thuận hơn, nên chủ động dựa vào điểm mạnh sẵn có.",
+  "nguonChiTiet": "KL (Giải đoán vận hạn, A.4); CHUNG-PP-06"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-07-SANG-PháQuân",
+  "loai": "C",
+  "maNghienCuu": [
+   "VAN-PP-07"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": false,
+    "viTri": "chinh"
+   },
+   {
+    "sao": [
+     "Phá Quân"
+    ],
+    "viTri": "xung",
+    "doSang": [
+     "Miếu",
+     "Vượng",
+     "Đắc"
+    ]
+   }
+  ],
+  "muc": "thuan-loi",
+  "noiDung": "Phá Quân đắc địa ở cung xung chiếu của vận: thế đối diện có sao sáng hỗ trợ, thuận lợi từ bên ngoài đến đều đặn dù lực nhẹ hơn sao tọa thủ.",
+  "nguonChiTiet": "KL (Giải đoán vận hạn, A.4); CHUNG-PP-06"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-07-HAM-PháQuân",
+  "loai": "C",
+  "maNghienCuu": [
+   "VAN-PP-07"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": false,
+    "viTri": "chinh"
+   },
+   {
+    "sao": [
+     "Phá Quân"
+    ],
+    "viTri": "xung",
+    "doSang": [
+     "Hãm"
+    ]
+   }
+  ],
+  "muc": "chu-y",
+  "noiDung": "Phá Quân hãm ở cung xung chiếu của vận: tác động từ bên ngoài kém thuận hơn, nên chủ động dựa vào điểm mạnh sẵn có.",
+  "nguonChiTiet": "KL (Giải đoán vận hạn, A.4); CHUNG-PP-06"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-07-SANG-LiêmTrinh",
+  "loai": "C",
+  "maNghienCuu": [
+   "VAN-PP-07"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": false,
+    "viTri": "chinh"
+   },
+   {
+    "sao": [
+     "Liêm Trinh"
+    ],
+    "viTri": "xung",
+    "doSang": [
+     "Miếu",
+     "Vượng",
+     "Đắc"
+    ]
+   }
+  ],
+  "muc": "thuan-loi",
+  "noiDung": "Liêm Trinh đắc địa ở cung xung chiếu của vận: thế đối diện có sao sáng hỗ trợ, thuận lợi từ bên ngoài đến đều đặn dù lực nhẹ hơn sao tọa thủ.",
+  "nguonChiTiet": "KL (Giải đoán vận hạn, A.4); CHUNG-PP-06"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-07-HAM-LiêmTrinh",
+  "loai": "C",
+  "maNghienCuu": [
+   "VAN-PP-07"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": false,
+    "viTri": "chinh"
+   },
+   {
+    "sao": [
+     "Liêm Trinh"
+    ],
+    "viTri": "xung",
+    "doSang": [
+     "Hãm"
+    ]
+   }
+  ],
+  "muc": "chu-y",
+  "noiDung": "Liêm Trinh hãm ở cung xung chiếu của vận: tác động từ bên ngoài kém thuận hơn, nên chủ động dựa vào điểm mạnh sẵn có.",
+  "nguonChiTiet": "KL (Giải đoán vận hạn, A.4); CHUNG-PP-06"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-07-SANG-ThamLang",
+  "loai": "C",
+  "maNghienCuu": [
+   "VAN-PP-07"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": false,
+    "viTri": "chinh"
+   },
+   {
+    "sao": [
+     "Tham Lang"
+    ],
+    "viTri": "xung",
+    "doSang": [
+     "Miếu",
+     "Vượng",
+     "Đắc"
+    ]
+   }
+  ],
+  "muc": "thuan-loi",
+  "noiDung": "Tham Lang đắc địa ở cung xung chiếu của vận: thế đối diện có sao sáng hỗ trợ, thuận lợi từ bên ngoài đến đều đặn dù lực nhẹ hơn sao tọa thủ.",
+  "nguonChiTiet": "KL (Giải đoán vận hạn, A.4); CHUNG-PP-06"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-07-HAM-ThamLang",
+  "loai": "C",
+  "maNghienCuu": [
+   "VAN-PP-07"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": false,
+    "viTri": "chinh"
+   },
+   {
+    "sao": [
+     "Tham Lang"
+    ],
+    "viTri": "xung",
+    "doSang": [
+     "Hãm"
+    ]
+   }
+  ],
+  "muc": "chu-y",
+  "noiDung": "Tham Lang hãm ở cung xung chiếu của vận: tác động từ bên ngoài kém thuận hơn, nên chủ động dựa vào điểm mạnh sẵn có.",
+  "nguonChiTiet": "KL (Giải đoán vận hạn, A.4); CHUNG-PP-06"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-07-SANG-ThiênCơ",
+  "loai": "C",
+  "maNghienCuu": [
+   "VAN-PP-07"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": false,
+    "viTri": "chinh"
+   },
+   {
+    "sao": [
+     "Thiên Cơ"
+    ],
+    "viTri": "xung",
+    "doSang": [
+     "Miếu",
+     "Vượng",
+     "Đắc"
+    ]
+   }
+  ],
+  "muc": "thuan-loi",
+  "noiDung": "Thiên Cơ đắc địa ở cung xung chiếu của vận: thế đối diện có sao sáng hỗ trợ, thuận lợi từ bên ngoài đến đều đặn dù lực nhẹ hơn sao tọa thủ.",
+  "nguonChiTiet": "KL (Giải đoán vận hạn, A.4); CHUNG-PP-06"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-07-HAM-ThiênCơ",
+  "loai": "C",
+  "maNghienCuu": [
+   "VAN-PP-07"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": false,
+    "viTri": "chinh"
+   },
+   {
+    "sao": [
+     "Thiên Cơ"
+    ],
+    "viTri": "xung",
+    "doSang": [
+     "Hãm"
+    ]
+   }
+  ],
+  "muc": "chu-y",
+  "noiDung": "Thiên Cơ hãm ở cung xung chiếu của vận: tác động từ bên ngoài kém thuận hơn, nên chủ động dựa vào điểm mạnh sẵn có.",
+  "nguonChiTiet": "KL (Giải đoán vận hạn, A.4); CHUNG-PP-06"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-07-SANG-TháiÂm",
+  "loai": "C",
+  "maNghienCuu": [
+   "VAN-PP-07"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": false,
+    "viTri": "chinh"
+   },
+   {
+    "sao": [
+     "Thái Âm"
+    ],
+    "viTri": "xung",
+    "doSang": [
+     "Miếu",
+     "Vượng",
+     "Đắc"
+    ]
+   }
+  ],
+  "muc": "thuan-loi",
+  "noiDung": "Thái Âm đắc địa ở cung xung chiếu của vận: thế đối diện có sao sáng hỗ trợ, thuận lợi từ bên ngoài đến đều đặn dù lực nhẹ hơn sao tọa thủ.",
+  "nguonChiTiet": "KL (Giải đoán vận hạn, A.4); CHUNG-PP-06"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-07-HAM-TháiÂm",
+  "loai": "C",
+  "maNghienCuu": [
+   "VAN-PP-07"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": false,
+    "viTri": "chinh"
+   },
+   {
+    "sao": [
+     "Thái Âm"
+    ],
+    "viTri": "xung",
+    "doSang": [
+     "Hãm"
+    ]
+   }
+  ],
+  "muc": "chu-y",
+  "noiDung": "Thái Âm hãm ở cung xung chiếu của vận: tác động từ bên ngoài kém thuận hơn, nên chủ động dựa vào điểm mạnh sẵn có.",
+  "nguonChiTiet": "KL (Giải đoán vận hạn, A.4); CHUNG-PP-06"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-07-SANG-ThiênĐồng",
+  "loai": "C",
+  "maNghienCuu": [
+   "VAN-PP-07"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": false,
+    "viTri": "chinh"
+   },
+   {
+    "sao": [
+     "Thiên Đồng"
+    ],
+    "viTri": "xung",
+    "doSang": [
+     "Miếu",
+     "Vượng",
+     "Đắc"
+    ]
+   }
+  ],
+  "muc": "thuan-loi",
+  "noiDung": "Thiên Đồng đắc địa ở cung xung chiếu của vận: thế đối diện có sao sáng hỗ trợ, thuận lợi từ bên ngoài đến đều đặn dù lực nhẹ hơn sao tọa thủ.",
+  "nguonChiTiet": "KL (Giải đoán vận hạn, A.4); CHUNG-PP-06"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-07-HAM-ThiênĐồng",
+  "loai": "C",
+  "maNghienCuu": [
+   "VAN-PP-07"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": false,
+    "viTri": "chinh"
+   },
+   {
+    "sao": [
+     "Thiên Đồng"
+    ],
+    "viTri": "xung",
+    "doSang": [
+     "Hãm"
+    ]
+   }
+  ],
+  "muc": "chu-y",
+  "noiDung": "Thiên Đồng hãm ở cung xung chiếu của vận: tác động từ bên ngoài kém thuận hơn, nên chủ động dựa vào điểm mạnh sẵn có.",
+  "nguonChiTiet": "KL (Giải đoán vận hạn, A.4); CHUNG-PP-06"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-07-SANG-ThiênLương",
+  "loai": "C",
+  "maNghienCuu": [
+   "VAN-PP-07"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": false,
+    "viTri": "chinh"
+   },
+   {
+    "sao": [
+     "Thiên Lương"
+    ],
+    "viTri": "xung",
+    "doSang": [
+     "Miếu",
+     "Vượng",
+     "Đắc"
+    ]
+   }
+  ],
+  "muc": "thuan-loi",
+  "noiDung": "Thiên Lương đắc địa ở cung xung chiếu của vận: thế đối diện có sao sáng hỗ trợ, thuận lợi từ bên ngoài đến đều đặn dù lực nhẹ hơn sao tọa thủ.",
+  "nguonChiTiet": "KL (Giải đoán vận hạn, A.4); CHUNG-PP-06"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-07-HAM-ThiênLương",
+  "loai": "C",
+  "maNghienCuu": [
+   "VAN-PP-07"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": false,
+    "viTri": "chinh"
+   },
+   {
+    "sao": [
+     "Thiên Lương"
+    ],
+    "viTri": "xung",
+    "doSang": [
+     "Hãm"
+    ]
+   }
+  ],
+  "muc": "chu-y",
+  "noiDung": "Thiên Lương hãm ở cung xung chiếu của vận: tác động từ bên ngoài kém thuận hơn, nên chủ động dựa vào điểm mạnh sẵn có.",
+  "nguonChiTiet": "KL (Giải đoán vận hạn, A.4); CHUNG-PP-06"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-07-SANG-CựMôn",
+  "loai": "C",
+  "maNghienCuu": [
+   "VAN-PP-07"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": false,
+    "viTri": "chinh"
+   },
+   {
+    "sao": [
+     "Cự Môn"
+    ],
+    "viTri": "xung",
+    "doSang": [
+     "Miếu",
+     "Vượng",
+     "Đắc"
+    ]
+   }
+  ],
+  "muc": "thuan-loi",
+  "noiDung": "Cự Môn đắc địa ở cung xung chiếu của vận: thế đối diện có sao sáng hỗ trợ, thuận lợi từ bên ngoài đến đều đặn dù lực nhẹ hơn sao tọa thủ.",
+  "nguonChiTiet": "KL (Giải đoán vận hạn, A.4); CHUNG-PP-06"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-07-HAM-CựMôn",
+  "loai": "C",
+  "maNghienCuu": [
+   "VAN-PP-07"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": false,
+    "viTri": "chinh"
+   },
+   {
+    "sao": [
+     "Cự Môn"
+    ],
+    "viTri": "xung",
+    "doSang": [
+     "Hãm"
+    ]
+   }
+  ],
+  "muc": "chu-y",
+  "noiDung": "Cự Môn hãm ở cung xung chiếu của vận: tác động từ bên ngoài kém thuận hơn, nên chủ động dựa vào điểm mạnh sẵn có.",
+  "nguonChiTiet": "KL (Giải đoán vận hạn, A.4); CHUNG-PP-06"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-07-SANG-TháiDương",
+  "loai": "C",
+  "maNghienCuu": [
+   "VAN-PP-07"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": false,
+    "viTri": "chinh"
+   },
+   {
+    "sao": [
+     "Thái Dương"
+    ],
+    "viTri": "xung",
+    "doSang": [
+     "Miếu",
+     "Vượng",
+     "Đắc"
+    ]
+   }
+  ],
+  "muc": "thuan-loi",
+  "noiDung": "Thái Dương đắc địa ở cung xung chiếu của vận: thế đối diện có sao sáng hỗ trợ, thuận lợi từ bên ngoài đến đều đặn dù lực nhẹ hơn sao tọa thủ.",
+  "nguonChiTiet": "KL (Giải đoán vận hạn, A.4); CHUNG-PP-06"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-PP-07-HAM-TháiDương",
+  "loai": "C",
+  "maNghienCuu": [
+   "VAN-PP-07"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": false,
+    "viTri": "chinh"
+   },
+   {
+    "sao": [
+     "Thái Dương"
+    ],
+    "viTri": "xung",
+    "doSang": [
+     "Hãm"
+    ]
+   }
+  ],
+  "muc": "chu-y",
+  "noiDung": "Thái Dương hãm ở cung xung chiếu của vận: tác động từ bên ngoài kém thuận hơn, nên chủ động dựa vào điểm mạnh sẵn có.",
+  "nguonChiTiet": "KL (Giải đoán vận hạn, A.4); CHUNG-PP-06"
+ }
+]

@@ -14,7 +14,8 @@ const AI = require('../src/lib/luan-giai/ai/index.ts');
 const CASES = [...fs.readFileSync(path.join(__dirname, '../docs/luan-giai/dai-van/du-lieu.md'), 'utf8').matchAll(/Đầu vào: `(\{.*\})`/g)].map((m) => ({ input: JSON.parse(m[1]) }));
 assert.equal(CASES.length, 10);
 const TU_CAM = JSON.parse(fs.readFileSync(path.join(__dirname, '../src/lib/luan-giai/ai/tu-cam.json'), 'utf8'));
-const QV = JSON.parse(fs.readFileSync(path.join(__dirname, '../src/lib/luan-giai/ai/quy-tac-van/van-10-nam.json'), 'utf8'));
+const docQV = (t) => JSON.parse(fs.readFileSync(path.join(__dirname, '../src/lib/luan-giai/ai/quy-tac-van/', t), 'utf8'));
+const QV = [...docQV('van-10-nam.json'), ...docQV('van-10-nam-sp.json'), ...docQV('van-10-nam-pp.json')];
 const chuan = (s) => s.toLowerCase().replace(/\s+/g, '');
 const tatCa = (ls, ten) => { const c = ls.cung.find((x) => x.ten === ten); return [...c.chinhTinh, ...c.catTinh, ...c.hungTinh, ...c.phuTinh]; };
 // Năm âm lịch xem cố định = 2026 (dữ liệu mẫu DV sinh với năm xem 2026).
@@ -85,4 +86,77 @@ test('Ba chuyên đề cũ không đổi: Mệnh vẫn có nhận định', asyn
   const bai = await AI.sinhLuanGiai(ls, 'menh', { boQuaCache: true });
   assert.ok(bai.muc.flatMap((m) => m.nhanDinh).length >= 5);
   assert.equal(bai.van, undefined);
+});
+
+// Nhóm VAN-SP (sao phụ ở vận, T-3d77b2): điều kiện máy đọc từ docs/nghien-cuu/luan-giai/dai-van.md mục 3.
+test('VAN-SP: có ≥ 20 quy tắc, id VAN-SP-, mục hợp lệ, mã nghiên cứu có thật trong tài liệu', () => {
+  const sp = QV.filter((q) => q.id.startsWith('VAN-SP-'));
+  assert.ok(sp.length >= 20, `chỉ có ${sp.length}`);
+  const md = fs.readFileSync(path.join(__dirname, '../docs/nghien-cuu/luan-giai/dai-van.md'), 'utf8');
+  const hopLe = new Set(['thuan-loi', 'chu-y', 'xung-quanh', 'goi-y']);
+  for (const q of sp) {
+    assert.ok(hopLe.has(q.muc), `${q.id} mục ${q.muc}`);
+    assert.ok(q.dieuKien.length, `${q.id} phải có điều kiện`);
+    for (const m of q.maNghienCuu) assert.ok(md.includes(`[${m}]`), `${q.id}: ${m} không có trong tài liệu`);
+  }
+});
+
+test('Mục chuyên đề van-10-nam theo cấu trúc DV: chu-de, thuan-loi, chu-y, xung-quanh, goi-y', () => {
+  const cd = JSON.parse(fs.readFileSync(path.join(__dirname, '../src/lib/luan-giai/ai/chuyen-de.json'), 'utf8'))['van-10-nam'];
+  assert.deepEqual(cd.muc.map((m) => m.id), ['chu-de', 'thuan-loi', 'chu-y', 'xung-quanh', 'goi-y']);
+  for (const q of QV) assert.ok(cd.muc.some((m) => m.id === q.muc), `${q.id} mục ${q.muc} không tồn tại`);
+});
+
+test('10 mẫu: mỗi bài có ≥ 1 nhận định ở mục thuan-loi; sao VAN-SP nằm đúng cung tam phương của vận', async () => {
+  for (const [i, tc] of CASES.entries()) {
+    const ls = lapLaSo(tc.input);
+    const bai = await AI.sinhLuanGiai(ls, 'van-10-nam', { boQuaCache: true, namXem: NAM_XEM });
+    const tl = bai.muc.find((m) => m.id === 'thuan-loi');
+    assert.ok(tl && tl.nhanDinh.length >= 1, `DV${i + 1} thiếu mục thuận lợi`);
+    const goc = ls.cung.find((c) => c.ten === bai.van.cung);
+    const tp = [0, 6, 4, 8].map((d) => ls.cung.find((c) => c.chi === (goc.chi + d) % 12));
+    for (const d of bai.muc.flatMap((m) => m.nhanDinh).filter((x) => x.thamChieu.quyTacId.startsWith('VAN-SP-'))) {
+      const co = tp.flatMap((c) => [...c.chinhTinh, ...c.catTinh, ...c.hungTinh, ...c.phuTinh]);
+      for (const s of d.thamChieu.sao) assert.ok(co.some((x) => x.ten === s), `DV${i + 1} ${d.thamChieu.quyTacId}: ${s} không ở tam phương vận`);
+    }
+  }
+});
+
+test('Độ dài bài sinh ≥ 80% bản Hạnh (DV01–DV10), trung bình ≥ 85%', async () => {
+  const tl = [];
+  for (const [i, tc] of CASES.entries()) {
+    const ma = 'DV' + String(i + 1).padStart(2, '0');
+    const md = fs.readFileSync(path.join(__dirname, `../docs/luan-giai/dai-van/${ma}.md`), 'utf8').replace(/<!--.*?-->/g, '');
+    const bai = await AI.sinhLuanGiai(lapLaSo(tc.input), 'van-10-nam', { boQuaCache: true, namXem: NAM_XEM });
+    const len = bai.muc.flatMap((m) => m.nhanDinh).map((n) => n.text).join(' ').length;
+    tl.push(len / md.length);
+    assert.ok(len / md.length >= 0.8, `${ma}: ${(len / md.length * 100).toFixed(0)}%`);
+  }
+  assert.ok(tl.reduce((a, b) => a + b, 0) / tl.length >= 0.85, 'trung bình < 85%');
+});
+
+// Nhân hòa (VAN-PP-12/14/15): chính tinh vận cùng nhóm hay khác nhóm chính tinh Mệnh (tính độc lập trong test).
+const NHOM = {
+  A: ['Tử Vi', 'Thiên Phủ', 'Vũ Khúc', 'Thiên Tướng'],
+  B: ['Thất Sát', 'Phá Quân', 'Liêm Trinh', 'Tham Lang'],
+  C: ['Thiên Cơ', 'Thái Âm', 'Thiên Đồng', 'Thiên Lương', 'Cự Môn', 'Thái Dương'],
+};
+const nhomDon = (c) => {
+  const g = new Set(c.chinhTinh.map((s) => Object.keys(NHOM).find((k) => NHOM[k].includes(s.ten))));
+  return g.size === 1 ? [...g][0] : null;
+};
+test('Nhân hòa VAN-PP: khớp đúng khi Mệnh và vận (hoặc cung xung nếu vô chính diệu) đều thuộc đúng một nhóm', async () => {
+  let dem = 0;
+  for (const [i, tc] of CASES.entries()) {
+    const ls = lapLaSo(tc.input);
+    const bai = await AI.sinhLuanGiai(ls, 'van-10-nam', { boQuaCache: true, namXem: NAM_XEM });
+    const van = ls.cung.find((c) => c.ten === bai.van.cung);
+    const nguon = van.chinhTinh.length ? van : ls.cung.find((c) => c.chi === (van.chi + 6) % 12);
+    const nm = nhomDon(ls.cung.find((c) => c.ten === 'Mệnh'));
+    const nv = nhomDon(nguon);
+    const co = bai.muc.flatMap((m) => m.nhanDinh).filter((x) => /^VAN-PP-1[245]-/.test(x.thamChieu.quyTacId));
+    assert.equal(co.length, nm && nv ? 1 : 0, `DV${i + 1}: Mệnh ${nm} vận ${nv}`);
+    if (co.length) { dem++; assert.ok(co[0].thamChieu.cungLienQuan.includes('Mệnh')); }
+  }
+  assert.ok(dem >= 4, `chỉ ${dem}/10 mẫu có nhân hòa`);
 });

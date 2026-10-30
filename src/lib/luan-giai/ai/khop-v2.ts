@@ -38,6 +38,8 @@ export interface DieuKien {
   giapHoa?: [string, string];
   /** Chỉ khớp cung có đúng tên này (vd Phúc Đức: vô chính diệu nên gặp Tuần, kỵ Triệt). */
   tenCung?: string;
+  /** Tính vị trí từ cung có tên này thay vì cung gốc (vd quy tắc đại vận so với chính tinh cung Mệnh: nhân hòa VAN-PP-12). */
+  tuCung?: string;
   /** Với `rai`: mọi sao trong `sao` đều có mặt VÀ cùng thuộc các độ sáng này (vd ba sao chủ cách đều Hãm). */
   deuDoSang?: DoSang[];
 }
@@ -134,7 +136,9 @@ function giapHoaKhop(ls: LaSo, goc: Cung, hoa: [string, string]): string[] | nul
 }
 
 /** Một điều kiện → tên các sao khớp (mảng rỗng nếu điều kiện không đòi sao); null nếu không khớp. */
-export function khopDieuKien(ls: LaSo, goc: Cung, k: DieuKien): string[] | null {
+export function khopDieuKien(ls: LaSo, gocQT: Cung, k: DieuKien): string[] | null {
+  const goc = k.tuCung ? ls.cung.find((c) => c.ten === k.tuCung) : gocQT;
+  if (!goc) return null;
   if (k.gioiTinh && ls.gioiTinh !== k.gioiTinh) return null;
   if (k.canNam && !k.canNam.includes(ls.canChi.nam.split(' ')[0])) return null;
   if (k.phaCach) {
@@ -182,7 +186,8 @@ export function khopQuyTac(ls: LaSo, q: QuyTacV2): string[] | null {
 }
 
 /** Các cung (trong vị trí của điều kiện) thực sự chứa yếu tố khớp: dùng điền tên cung vào câu luận. Chỉ gọi khi điều kiện đã khớp. */
-export function cungKhopDieuKien(ls: LaSo, goc: Cung, k: DieuKien): Cung[] {
+export function cungKhopDieuKien(ls: LaSo, gocQT: Cung, k: DieuKien): Cung[] {
+  const goc = k.tuCung ? ls.cung.find((c) => c.ten === k.tuCung) ?? gocQT : gocQT;
   if (k.phaCach || k.satDac !== undefined) return cungTheoViTri(ls, goc, 'tam-phuong').filter((c) => saoCua(c).some(k.satDac !== undefined ? laSatDac : laPha));
   if (k.giapHoa) return cungTheoViTri(ls, goc, 'giap');
   const ds = cungTheoViTri(ls, goc, k.viTri);

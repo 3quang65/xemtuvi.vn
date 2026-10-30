@@ -198,19 +198,24 @@
     "huongDan": "Cung đại vận đang đi và việc thuộc cung đó"
    },
    {
-    "id": "chinh-tinh",
-    "tieuDe": "Chính tinh của vận",
-    "huongDan": "Chính tinh tại cung vận và độ sáng"
+    "id": "thuan-loi",
+    "tieuDe": "Thuận lợi",
+    "huongDan": "Chính tinh, Tứ hóa và cát tinh hội về cung vận"
    },
    {
-    "id": "tu-hoa",
-    "tieuDe": "Tứ hóa lá số gốc",
-    "huongDan": "Hóa Lộc, Quyền, Khoa, Kỵ bản mệnh trong thế tam phương của vận"
+    "id": "chu-y",
+    "tieuDe": "Điều cần chú ý",
+    "huongDan": "Sao hãm, sát tinh và điểm cần cẩn trọng trong 10 năm"
    },
    {
-    "id": "tuan-triet",
-    "tieuDe": "Tuần, Triệt",
-    "huongDan": "Ảnh hưởng của Tuần, Triệt tại cung vận"
+    "id": "xung-quanh",
+    "tieuDe": "Ảnh hưởng xung quanh",
+    "huongDan": "Tuần, Triệt, vòng Thái Tuế và thế của các cung hợp chiếu"
+   },
+   {
+    "id": "goi-y",
+    "tieuDe": "Gợi ý",
+    "huongDan": "Cách tận dụng thuận lợi và cân bằng điểm cần chú ý"
    }
   ]
  }

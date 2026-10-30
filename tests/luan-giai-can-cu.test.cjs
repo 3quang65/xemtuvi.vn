@@ -22,7 +22,7 @@ test('mọi nhận định bài Bản thân đều có dòng căn cứ có cung'
   const bai = await AI.sinhLuanGiai(ls, 'menh', { boQuaCache: true });
   for (const m of bai.muc) for (const n of m.nhanDinh) assert.match(dongCanCu(n.thamChieu), /^Căn cứ: .*cung .*nguồn .*trường phái /);
 });
-// Lá số Phúc kiểm (ky-thuat/kiem-tra-luan-giai-tron-la-so.md): giờ ô thứ 6 = gio 4; 16+12+16+5 = 49 nhận định.
+// Lá số Phúc kiểm (ky-thuat/kiem-tra-luan-giai-tron-la-so.md): giờ ô thứ 6 = gio 4; tổng 66 nhận định (Vận 10 năm tăng sau khi thêm nhóm VAN-SP, VAN-PP, T-3d77b2).
 test('L-6e89d7: mọi nhận định 4 chuyên đề gói Trọn lá số có căn cứ sao hoặc yếu tố (gồm VAN-CUNG cấp cung)', async () => {
   const { lapLaSo } = nap('lib/tuvi/index.ts');
   const AI = nap('lib/luan-giai/ai/index.ts');
@@ -51,5 +51,5 @@ test('L-6e89d7: mọi nhận định 4 chuyên đề gói Trọn lá số có c�
       }
     }
   }
-  assert.equal(dem, 49, `có ${dem} nhận định`); assert.ok(dem >= 49, `chỉ có ${dem} nhận định`);
+  assert.equal(dem, 66, `có ${dem} nhận định`);
 });

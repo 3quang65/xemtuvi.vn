@@ -12,6 +12,8 @@ import { kiemTraMaSauViet, locTuCam, type TuCamCauHinh } from './loc';
 import { cungKhopDieuKien, khopDieuKien, khopQuyTac, type QuyTacV2 } from './khop-v2';
 import khungJson from './quy-tac-khung.json';
 import quyTacVanJson from './quy-tac-van/van-10-nam.json';
+import quyTacVanSpJson from './quy-tac-van/van-10-nam-sp.json';
+import quyTacVanPpJson from './quy-tac-van/van-10-nam-pp.json';
 import { namAmHienTai } from '../../tuvi';
 
 export { xoaBoNho };
@@ -117,7 +119,7 @@ function napBan2(): QuyTacBan2[] {
 const QUY_TAC_2 = napBan2();
 /** Quy tắc đại vận (VAN-): cung gốc là cung vận, điền khi sinh bài. `cungVan` giới hạn quy tắc chỉ dùng khi vận ở đúng cung đó ("*" = mọi cung). */
 type QuyTacVan = QuyTacBan2 & { cungVan?: string };
-const QUY_TAC_VAN = quyTacVanJson as unknown as QuyTacVan[];
+const QUY_TAC_VAN = [...(quyTacVanJson as unknown as QuyTacVan[]), ...(quyTacVanSpJson as unknown as QuyTacVan[]), ...(quyTacVanPpJson as unknown as QuyTacVan[])];
 const TU_CAM = tuCamJson as unknown as TuCamCauHinh;
 const PROMPT = fs.readFileSync(path.join(process.cwd(), 'src/lib/luan-giai/ai/prompt-he-thong.md'), 'utf8');
 /** Tăng khi đổi cách ghép/lọc câu (không đổi quy tắc) để bản lưu cũ không bị dùng lại. */
