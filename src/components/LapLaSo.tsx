@@ -1,8 +1,10 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { canhGio, kiemTraThongTin, lapLaSo, namAmHienTai, type LaSo, type ThongTinSinh } from '@/lib/tuvi';
 import LaSoBan from './LaSoBan';
+import TomTatMienPhi from './TomTatMienPhi';
+import { docThongTinSinh, guiSuKien, luuThongTinSinh } from '@/lib/phien';
 
 
 type FormState = {
@@ -28,6 +30,15 @@ export default function LapLaSo() {
   const [loi, setLoi] = useState<string | null>(null);
   const [laSo, setLaSo] = useState<LaSo | null>(null);
   const ketQuaRef = useRef<HTMLDivElement>(null);
+
+  // Quay lại từ các bước sau: dựng lại lá số từ thông tin đã nhớ tạm trong tab này
+  useEffect(() => {
+    const daLuu = docThongTinSinh();
+    if (daLuu) {
+      try { setLaSo(lapLaSo(daLuu)); return; } catch { /* thông tin hỏng: coi như chưa có */ }
+    }
+    guiSuKien('vao_form');
+  }, []);
 
   const namSo = Number(f.nam);
   const hienMienNam = namSo >= 1959 && namSo <= 1975;
@@ -55,6 +66,8 @@ export default function LapLaSo() {
     if (thongBao) { setLoi(thongBao); return; }
     try {
       setLaSo(lapLaSo(t as ThongTinSinh));
+      luuThongTinSinh(t as ThongTinSinh);
+      guiSuKien('lap_la_so');
       setLoi(null);
       requestAnimationFrame(() => ketQuaRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }));
     } catch (err) {
@@ -71,7 +84,7 @@ export default function LapLaSo() {
             Nhập ngày giờ sinh để xem lá số đủ 12 cung theo cách an sao Việt Nam. Miễn phí, không cần tài khoản.
           </p>
           <p className="ghi-chu-rieng-tu">
-            Thông tin sinh chỉ được tính ngay trên máy của bạn, không gửi đi và không lưu lại.
+            Thông tin sinh chỉ được tính ngay trên máy của bạn, không gửi lên máy chủ; trình duyệt chỉ nhớ tạm trong tab này và mất khi bạn đóng tab.
           </p>
         </div>
 
@@ -140,7 +153,14 @@ export default function LapLaSo() {
         </form>
       </section>
 
-      <div ref={ketQuaRef}>{laSo && <LaSoBan key={JSON.stringify(laSo.duong) + laSo.gio.dongHo + laSo.gioiTinh} laSo={laSo} namHienTai={namAmHienTai()} />}</div>
+      <div ref={ketQuaRef}>
+        {laSo && (
+          <>
+            <LaSoBan key={JSON.stringify(laSo.duong) + laSo.gio.dongHo + laSo.gioiTinh} laSo={laSo} namHienTai={namAmHienTai()} />
+            <TomTatMienPhi laSo={laSo} />
+          </>
+        )}
+      </div>
     </>
   );
 }
