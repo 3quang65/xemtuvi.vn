@@ -1,6 +1,6 @@
 // Nội dung trợ giúp tự phục vụ (cskh/noi-dung-tro-giup_v1.md, chữ đã sửa ở mục 5). Một chỗ duy nhất cho chữ, trang chỉ hiển thị.
 // Giá chỉ chèn qua giaCongBo() (goi.ts): cờ công bố giá tắt thì không có số nào. Không chứa mã lỗi kỹ thuật.
-import { CONG_BO_GIA, GOI, giaCongBo, goiDangBan } from './goi';
+import { CONG_BO_GIA, GOI, LUU_NGUYET_SAN_SANG, giaCongBo, goiDangBan, laGoiVan2027 } from './goi';
 
 export const DONG_AI = 'Nội dung luận giải trên xemtuvi.vn do AI tạo, mang tính tham khảo. Tử Vi là một góc nhìn để bạn hiểu mình hơn, quyết định luôn là của bạn.';
 export const DONG_AI_NGAN = 'Nội dung do AI tạo, mang tính tham khảo. Tử Vi là một góc nhìn để bạn hiểu mình hơn, quyết định luôn là của bạn.';
@@ -80,6 +80,27 @@ export function tinXacNhanDon(o: { maDon: string; tenGoi: string; maGoi: string 
       'Gặp trục trặc: bấm "Báo lỗi", mã đơn đã được điền sẵn. Mình ghi nhận và chuyển đội xử lý.',
     ],
     ghiChu: DONG_AI_NGAN,
+  };
+}
+
+/**
+ * Nhắc sau khi mua gói Vận 2027 (P19). Chỉ thông tin có thật: không giá, không hạn chót, không câu ép mua.
+ * - Mua lẻ: gợi ý mở Trọn lá số (gói gộp chỉ áp khi mua cùng lúc, nên không hứa tiết kiệm ở đây).
+ * - Mua gói gộp: báo gói đã gồm cả hai, không nhắc mua thêm.
+ * - Nhắc lưu nguyệt chỉ có khi cờ LUU_NGUYET_SAN_SANG bật (P18 xong).
+ */
+export interface NhacVanNam { combo: LienKet | null; dongCombo: string; luuNguyet: string | null }
+export function nhacSauMuaVanNam(maGoi: string, luuNguyetSanSang: boolean = LUU_NGUYET_SAN_SANG): NhacVanNam | null {
+  if (!laGoiVan2027(maGoi)) return null;
+  const gop = maGoi === 'tron-la-so-kem-van-nam';
+  return {
+    combo: gop ? null : { nhan: 'Xem các gói', href: '/chon-goi' },
+    dongCombo: gop
+      ? 'Gói của bạn đã gồm cả Trọn lá số (năm chủ đề và đại vận 10 năm) lẫn Vận năm 2027.'
+      : 'Muốn xem thêm năm chủ đề và đại vận 10 năm của lá số này? Bạn có thể mở Trọn lá số ở màn chọn gói, không bắt buộc.',
+    luuNguyet: luuNguyetSanSang
+      ? 'Vận từng tháng âm lịch: nếu bạn đồng ý nhận tin ở trang Vận năm 2027, mình gửi nội dung vận tháng theo email. Bạn hủy được bất cứ lúc nào.'
+      : null,
   };
 }
 

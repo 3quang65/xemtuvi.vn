@@ -6,7 +6,7 @@ import { CONG_BO_GIA, dongHanBan, giaHienThi, HOAN_TIEN, layChuDe, type Goi } fr
 import { useGia } from '@/lib/useGia';
 import { docThongTinSinh, guiSuKien } from '@/lib/phien';
 import { useLaSoDaLuu } from '@/lib/useLaSoDaLuu';
-import { linkBaoLoi, maDonHienThi, tinXacNhanDon } from '@/lib/tro-giup';
+import { linkBaoLoi, maDonHienThi, nhacSauMuaVanNam, tinXacNhanDon } from '@/lib/tro-giup';
 import ThongBaoLoi from './ThongBaoLoi';
 import DangNhapMa from './DangNhapMa';
 
@@ -66,6 +66,7 @@ export default function ThanhToan() {
 
   if (xong) {
     const tin = tinXacNhanDon({ maDon: maDonHienThi(xong.id), tenGoi: xong.tenGoi, maGoi: xong.maGoi });
+    const nhac = nhacSauMuaVanNam(xong.maGoi);
     return (
       <section className="trang-buoc" aria-labelledby="tin-xac-nhan">
         <h1 id="tin-xac-nhan">{tin.tieuDe}</h1>
@@ -81,6 +82,12 @@ export default function ThanhToan() {
             <a href="/luan-giai" className="nut-chinh nut-lien-ket">Xem luận giải của tôi</a>
             <a href={linkBaoLoi({ maDon: tin.maDon, goi: xong.maGoi })} className="nut-phu nut-lien-ket">Báo lỗi / góp ý</a>
           </div>
+          {nhac && (
+            <div className="nhac-van-nam" data-testid="nhac-van-nam">
+              <p>{nhac.dongCombo}{nhac.combo && <> <a href={nhac.combo.href}>{nhac.combo.nhan}</a></>}</p>
+              {nhac.luuNguyet && <p data-testid="nhac-luu-nguyet">{nhac.luuNguyet} <a href="/van-nam-2027">Trang Vận năm 2027</a></p>}
+            </div>
+          )}
           <p className="tt-ghi-chu">{tin.ghiChu}</p>
         </div>
       </section>

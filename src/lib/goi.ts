@@ -58,6 +58,11 @@ export const MO_BAN_VAN_TU = '2026-12-15'; // Vận 2027 lẻ và gói gộp cù
 export const CO_VAN_2027_DA_QUA_THU = () => process.env.NOI_DUNG_VAN_2027_DA_QUA_THU === '1';
 export const cuaBanVan2027Mo = (bayGio: number = Date.now(), coThu: boolean = CO_VAN_2027_DA_QUA_THU()) =>
   coThu && bayGio >= Date.parse(`${MO_BAN_VAN_TU}T00:00:00+07:00`);
+/**
+ * Cờ nhắc lưu nguyệt ở trang thành công Vận 2027. TẮT cho đến khi P18 xong (nội dung Vận tháng 1–2/2027 theo tháng âm đã được Hạnh viết và Minh xác nhận).
+ * Bật = đổi thành true sau khi Minh báo P18 xong.
+ */
+export const LUU_NGUYET_SAN_SANG = false;
 export const laGoiVan2027 = (ma: string) => ma === 'van-nam-2027' || ma === 'tron-la-so-kem-van-nam';
 
 /** Bảng giá nhánh thử: mã gói -> giá (đồng). Gói không có trong bảng giữ giá hiện hành. */
