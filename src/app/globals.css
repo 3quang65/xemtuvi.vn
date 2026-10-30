@@ -354,4 +354,7 @@ a { color: inherit; }
 .hoi-tra-loi .can-cu { display: block; margin-top: 4px; color: var(--muc-nhat); }
 .hoi-lich-su { display: grid; gap: 8px; }
 .hoi-lich-su h3 { font-size: 1.05rem; margin: 8px 0 0; }
-.hoi-lich-su summary { cursor: pointer; min-height: 32px; font-weight: 500; }
+.hoi-lich-su summary { cursor: pointer; min-height: 44px; display: flex; align-items: center; gap: 6px; font-weight: 500; }
+.hoi-lich-su details { padding-top: 0; padding-bottom: 0; }
+.hoi-lich-su details[open] > .hoi-tra-loi { padding-bottom: 12px; }
+.hoi-goi-y .nut-phu:disabled { background: var(--nen-sau); color: var(--muc-nhat); border-color: var(--vien-dam); cursor: not-allowed; }
