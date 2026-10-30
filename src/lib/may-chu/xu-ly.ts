@@ -6,7 +6,7 @@ import { luanGiaiChoKhach } from './luan-giai-may-chu';
 import { chuanHoa, huyLienHe, lamSachNguon, luuLienHe } from './lien-he';
 import { trangCua } from '../su-kien';
 import { ghiSuKien } from '../ghi-su-kien';
-import { daDungMa, dungMa, chuDeMoi, kiemMa } from './ma-moi';
+import { daDungMa, dungMa, chuDeMoi, kiemMa, nguonDaDung } from './ma-moi';
 import { ghiLoi } from './nhat-ky';
 import { cookieDat, cookieXoa, cungNguon, docCookie, docPhien, taoPhien, xoaPhien } from './phien';
 
@@ -141,10 +141,14 @@ export const maMoiVao = (req: Request, m: MayChu) => chay(req, async () => {
 
 /** GET /api/ma-moi/kiem?ma= : khung "mời mở miễn phí" dùng để biết hiện gì (đã dùng chưa, chuyên đề nào được chọn). */
 export function maMoiKiem(req: Request, m: MayChu) {
-  const kq = kiemMa(m.db, new URL(req.url).searchParams.get('ma'));
+  const ma = new URL(req.url).searchParams.get('ma');
+  let kq = kiemMa(m.db, ma);
   const id = nguoiDung(req, m);
+  const daDung = id ? daDungMa(m.db, id) : false;
+  const nguonCu = id && !kq.hopLe ? nguonDaDung(m.db, id, ma) : null; // mã đã hết lượt vì chính người này dùng: vẫn hợp lệ để hiện Góp ý
+  if (nguonCu) kq = { hopLe: true, nguon: nguonCu };
   const gopY = process.env.GOP_Y_URL?.trim();
-  return json({ hopLe: kq.hopLe, ...(kq.hopLe ? { nguon: kq.nguon, ...(gopY && /^https:\/\//.test(gopY) ? { gopYUrl: gopY } : {}) } : { ly: kq.ly }), chuDe: chuDeMoi(), dangNhap: !!id, daDung: id ? daDungMa(m.db, id) : false });
+  return json({ hopLe: kq.hopLe, ...(kq.hopLe ? { nguon: kq.nguon, ...(gopY && /^https:\/\//.test(gopY) ? { gopYUrl: gopY } : {}) } : { ly: kq.ly }), chuDe: chuDeMoi(), dangNhap: !!id, daDung });
 }
 
 /** POST /api/ma-moi/dung {ma, laSoId, chuDe, phien}: mở một chuyên đề miễn phí. */

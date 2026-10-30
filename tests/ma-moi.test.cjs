@@ -146,3 +146,17 @@ test('báo cáo theo nguồn: đếm đúng phiên khác nhau; phiên ngoài mã
   });
   assert.deepEqual(tinhBaoCao(dongs, { ngay: '2026-11-25' }).anh, { vao: 1, lap: 0, mo: 0, gopY: 0 });
 });
+
+test('/kiem: người đã dùng mã (hết lượt) vẫn thấy hopLe + nguon để hiện Góp ý; người khác thì không', async () => {
+  process.env.GOP_Y_URL = 'https://forms.example/gop-y';
+  try {
+    const [ma] = mm.taoMa(M.db, { nguon: 'cd-3d', soLuong: 1, gioiHan: 1 });
+    const a = await khach('k@example.vn'), b = await khach('l@example.vn');
+    assert.equal((await dung(a, ma, 'ban-than')).status, 200);
+    const ka = await (await x.maMoiKiem(yc('/api/ma-moi/kiem?ma=' + ma, { cookie: a.cookie }), M)).json();
+    assert.deepEqual([ka.hopLe, ka.nguon, ka.daDung, ka.gopYUrl], [true, 'cd-3d', true, 'https://forms.example/gop-y']);
+    const kb = await (await x.maMoiKiem(yc('/api/ma-moi/kiem?ma=' + ma, { cookie: b.cookie }), M)).json();
+    assert.equal(kb.hopLe, false);
+    assert.equal(kb.gopYUrl, undefined);
+  } finally { delete process.env.GOP_Y_URL; }
+});

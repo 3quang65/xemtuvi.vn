@@ -63,3 +63,10 @@ export function dungMa(db: Csdl, nguoiDungId: number, v: { ma: unknown; laSoId: 
     return { donId, nguon: kq.nguon, chuDe: v.chuDe as string };
   })();
 }
+
+/** Nguồn của mã mà chính người này đã dùng (để nút Góp ý vẫn hiện khi mã đã hết lượt). */
+export function nguonDaDung(db: Csdl, nguoiDungId: number, maTho: unknown): string | null {
+  const ma = chuanMa(maTho);
+  const h = ma ? db.prepare('SELECT m.nguon FROM ma_moi_dung d JOIN ma_moi m ON m.ma=d.ma WHERE d.nguoi_dung_id=? AND d.ma=?').get(nguoiDungId, ma) as { nguon: string } | undefined : undefined;
+  return h?.nguon ?? null;
+}
