@@ -6,6 +6,9 @@ import LaSoBan from './LaSoBan';
 import TomTatMienPhi from './TomTatMienPhi';
 import LienHe from './LienHe';
 import { docThongTinSinh, ghiNguon, guiSuKien, luuThongTinSinh } from '@/lib/phien';
+import { noiTen, phanLoaiLoiNhap, type LoiNhap, type OLoi } from '@/lib/loi-nhap';
+import { linkBaoLoi } from '@/lib/tro-giup';
+import ThongBaoLoi from './ThongBaoLoi';
 
 
 type FormState = {
@@ -28,7 +31,8 @@ export default function LapLaSo() {
   const [f, setF] = useState<FormState>({
     ten: '', gioiTinh: '', lich: 'duong', ngay: '', thang: '', nam: '', gio: '', phut: '', giuNgayTyMuon: false, mienNam: false, nhuan: false,
   });
-  const [loi, setLoi] = useState<string | null>(null);
+  const [loi, setLoi] = useState<LoiNhap | null>(null); // E01–E03: hiện ngay dưới ô liên quan
+  const [hong, setHong] = useState<ThongTinSinh | null>(null); // E04: lập lá số lỗi phía mình; giữ lại thông tin để thử lại
   const [laSo, setLaSo] = useState<LaSo | null>(null);
   const [tt, setTt] = useState<ThongTinSinh | null>(null);
   const ketQuaRef = useRef<HTMLDivElement>(null);
@@ -38,7 +42,7 @@ export default function LapLaSo() {
     ghiNguon();
     const daLuu = docThongTinSinh();
     if (daLuu) {
-      try { setLaSo(lapLaSo(daLuu)); setTt(daLuu); return; } catch { /* thông tin hỏng: coi như chưa có */ }
+      try { setLaSo(lapLaSo(daLuu)); setTt(daLuu); return; } catch { setHong(daLuu); return; } // E04: giữ thông tin để bấm thử lại
     }
     guiSuKien('vao_form');
   }, []);
@@ -49,6 +53,24 @@ export default function LapLaSo() {
   const hienTyMuon = f.gio === '23' || (hienMienNam && f.mienNam && f.gio === '0');
 
   const doi = <K extends keyof FormState>(k: K, v: FormState[K]) => setF((s) => ({ ...s, [k]: v }));
+
+  /** Lập lá số từ thông tin đã kiểm. Lỗi do ngày âm lịch không tồn tại: báo E02; lỗi khác là phía mình: E04, giữ thông tin để thử lại. */
+  function lapTu(t: ThongTinSinh) {
+    try {
+      setLaSo(lapLaSo(t));
+      setTt(t);
+      setHong(null);
+      luuThongTinSinh(t);
+      guiSuKien('lap_la_so');
+      setLoi(null);
+      requestAnimationFrame(() => ketQuaRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }));
+    } catch {
+      setLaSo(null); setTt(null);
+      if (t.lich === 'am') { setHong(null); setLoi({ ma: 'E02', o: 'ngay' }); return; }
+      luuThongTinSinh(t); // tải lại trong cùng thẻ vẫn còn
+      setHong(t);
+    }
+  }
 
   function lap(e: React.FormEvent) {
     e.preventDefault();
@@ -65,19 +87,20 @@ export default function LapLaSo() {
       mienNamTruoc1975: hienMienNam && f.mienNam,
       quyUoc: hienTyMuon && f.giuNgayTyMuon ? { gioTyMuon: 'giuNgay' } : undefined,
     };
-    const thongBao = kiemTraThongTin(t);
-    if (thongBao) { setLoi(thongBao); return; }
-    try {
-      setLaSo(lapLaSo(t as ThongTinSinh));
-      setTt(t as ThongTinSinh);
-      luuThongTinSinh(t as ThongTinSinh);
-      guiSuKien('lap_la_so');
-      setLoi(null);
-      requestAnimationFrame(() => ketQuaRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }));
-    } catch (err) {
-      setLoi(err instanceof Error ? err.message : 'Không lập được lá số với thông tin này.');
-    }
+    const l = phanLoaiLoiNhap(t) ?? (kiemTraThongTin(t) ? ({ ma: 'E02', o: 'ngay' } as LoiNhap) : null);
+    if (l) { setLoi(l); setHong(null); requestAnimationFrame(() => document.getElementById(`loi-${l.o}`)?.scrollIntoView({ block: 'center' })); return; }
+    lapTu(t as ThongTinSinh);
   }
+
+  /** Đưa con trỏ về ô cần sửa. */
+  const veO = (o: OLoi) => document.getElementById(`o-${o}`)?.focus();
+  const moTa = (o: OLoi) => (loi?.o === o ? `loi-${o}` : undefined);
+  const loiO = (o: OLoi) => loi && loi.o === o ? (
+    <ThongBaoLoi
+      id={`loi-${o}`} ma={loi.ma} bien={{ tenOThieu: loi.thieu ? noiTen(loi.thieu) : undefined }}
+      nut={{ 'dien-tiep': () => veO(o), 'sua-ngay': () => veO('ngay'), 'sua-gio': () => veO('gio'), 'cach-tim-gio': '/tro-giup#cau-2' }}
+    />
+  ) : null;
 
   function doiQuyUoc(p: Partial<QuyUoc>) {
     if (!tt) return;
@@ -111,9 +134,10 @@ export default function LapLaSo() {
           <fieldset className="o">
             <legend>Giới tính</legend>
             <div className="chon-doi">
-              <label><input type="radio" name="gt" checked={f.gioiTinh === 'nu'} onChange={() => doi('gioiTinh', 'nu')} /> Nữ</label>
-              <label><input type="radio" name="gt" checked={f.gioiTinh === 'nam'} onChange={() => doi('gioiTinh', 'nam')} /> Nam</label>
+              <label><input id="o-gioiTinh" type="radio" name="gt" aria-describedby={moTa('gioiTinh')} checked={f.gioiTinh === 'nu'} onChange={() => doi('gioiTinh', 'nu')} /> Nữ</label>
+              <label><input type="radio" name="gt" aria-describedby={moTa('gioiTinh')} checked={f.gioiTinh === 'nam'} onChange={() => doi('gioiTinh', 'nam')} /> Nam</label>
             </div>
+            {loiO('gioiTinh')}
           </fieldset>
 
           <fieldset className="o">
@@ -123,11 +147,11 @@ export default function LapLaSo() {
               <label><input type="radio" name="lich" checked={f.lich === 'am'} onChange={() => doi('lich', 'am')} /> Âm lịch</label>
             </div>
             <div className="ba-o">
-              <input inputMode="numeric" placeholder="Ngày" aria-label="Ngày sinh" value={f.ngay}
+              <input id="o-ngay" inputMode="numeric" placeholder="Ngày" aria-label="Ngày sinh" aria-describedby={moTa('ngay')} aria-invalid={loi?.o === 'ngay'} value={f.ngay}
                 onChange={(e) => doi('ngay', e.target.value.replace(/\D/g, '').slice(0, 2))} />
-              <input inputMode="numeric" placeholder="Tháng" aria-label="Tháng sinh" value={f.thang}
+              <input inputMode="numeric" placeholder="Tháng" aria-label="Tháng sinh" aria-describedby={moTa('ngay')} aria-invalid={loi?.o === 'ngay'} value={f.thang}
                 onChange={(e) => doi('thang', e.target.value.replace(/\D/g, '').slice(0, 2))} />
-              <input inputMode="numeric" placeholder="Năm" aria-label="Năm sinh" value={f.nam}
+              <input inputMode="numeric" placeholder="Năm" aria-label="Năm sinh" aria-describedby={moTa('ngay')} aria-invalid={loi?.o === 'ngay'} value={f.nam}
                 onChange={(e) => doi('nam', e.target.value.replace(/\D/g, '').slice(0, 4))} />
             </div>
             {f.lich === 'am' && (
@@ -135,16 +159,17 @@ export default function LapLaSo() {
                 <input type="checkbox" checked={f.nhuan} onChange={(e) => doi('nhuan', e.target.checked)} /> Tháng nhuận
               </label>
             )}
+            {loiO('ngay')}
           </fieldset>
 
           <fieldset className="o">
             <legend>Giờ sinh <em>(theo giấy khai sinh)</em></legend>
             <div className="hai-o">
-              <select aria-label="Giờ sinh" value={f.gio} onChange={(e) => doi('gio', e.target.value)}>
+              <select id="o-gio" aria-label="Giờ sinh" aria-describedby={moTa('gio')} aria-invalid={loi?.o === 'gio'} value={f.gio} onChange={(e) => doi('gio', e.target.value)}>
                 <option value="">Giờ</option>
                 {GIO.map((g) => <option key={g} value={g}>{g} giờ · {canhGio(g)}</option>)}
               </select>
-              <input inputMode="numeric" placeholder="Phút" aria-label="Phút sinh" value={f.phut}
+              <input inputMode="numeric" placeholder="Phút" aria-label="Phút sinh" aria-describedby={moTa('gio')} value={f.phut}
                 onChange={(e) => doi('phut', e.target.value.replace(/\D/g, '').slice(0, 2))} />
             </div>
             {hienMienNam && (
@@ -159,15 +184,17 @@ export default function LapLaSo() {
                 Giữ ngày sinh cũ (mặc định giờ 23h tính sang ngày hôm sau)
               </label>
             )}
+            {loiO('gio')}
           </fieldset>
-
-          {loi && <p className="bao-loi" role="alert">{loi}</p>}
 
           <button type="submit" className="nut-chinh">Lập lá số</button>
         </form>
       </section>
 
       <div ref={ketQuaRef}>
+        {hong && !laSo && (
+          <ThongBaoLoi ma="E04" nut={{ 'tai-lai': () => lapTu(hong), 'gui-bao-loi': linkBaoLoi({ tinhHuong: 'E04' }) }} />
+        )}
         {laSo && (
           <>
             <LaSoBan key={JSON.stringify(laSo.duong) + laSo.gio.dongHo + laSo.gioiTinh} laSo={laSo} namHienTai={namAmHienTai()} onDoiQuyUoc={doiQuyUoc} />

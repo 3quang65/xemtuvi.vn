@@ -287,3 +287,19 @@ a { color: inherit; }
 .bai-luan .can-cu { display: block; margin-top: 4px; overflow-wrap: anywhere; color: var(--chu-phu, inherit); }
 .lh-khoi { display: grid; gap: 8px; }
 .toi-xac-nhan { display: grid; gap: 12px; }
+
+/* ---------- Trợ giúp, thông báo lỗi thân thiện, báo lỗi ---------- */
+.tro-giup .cau-hoi { display: grid; gap: 6px; scroll-margin-top: 16px; padding-top: 8px; }
+.tro-giup .cau-hoi h3 { font-size: 1rem; margin: 0; }
+.tro-giup .cau-hoi p { margin: 0; }
+.tro-giup .khoi-buoc { scroll-margin-top: 16px; }
+.tro-giup .dong-ai { margin: 0; font-size: 0.95rem; color: var(--muc-nhat); }
+.thong-bao-loi { display: grid; gap: 8px; padding: 12px 14px; border-radius: 10px; background: #fbf1f1; border: 1px solid var(--sen); color: var(--muc); scroll-margin-top: 16px; }
+.thong-bao-loi p { margin: 0; font-size: 0.95rem; }
+.thong-bao-loi .tbl-tieu-de { font-weight: 600; color: var(--sen); }
+.tbl-nut { display: flex; flex-wrap: wrap; gap: 8px; }
+.tbl-nut .nut-chinh, .tbl-nut .nut-phu { min-height: 44px; padding: 0 18px; font-size: 0.95rem; }
+.bao-loi-form textarea { width: 100%; font: inherit; color: inherit; background: var(--giay); border: 1px solid var(--vien-dam); border-radius: 10px; padding: 10px 12px; resize: vertical; }
+.bao-loi-form textarea:focus { border-color: var(--ngoc); outline: none; box-shadow: 0 0 0 3px rgba(106, 61, 115, 0.2); }
+.bao-loi-ok { margin: 0; color: var(--ngoc-dam); font-size: 0.95rem; }
+.o[aria-invalid="true"] input, input[aria-invalid="true"], select[aria-invalid="true"] { border-color: var(--sen); }

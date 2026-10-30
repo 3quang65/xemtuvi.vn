@@ -7,6 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: `${GOC}/`, changeFrequency: 'weekly', priority: 1 },
     { url: `${GOC}/lp/van-nam-2027`, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${GOC}/tro-giup`, changeFrequency: 'monthly', priority: 0.5 },
     { url: `${GOC}/van-nam-2027`, changeFrequency: 'weekly', priority: 0.8 },
     ...tatCaBai().map((b) => ({ url: GOC + b.duongDan, lastModified: b.ngayCapNhat, changeFrequency: 'monthly' as const, priority: 0.6 })),
   ];

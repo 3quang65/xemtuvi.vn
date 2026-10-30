@@ -103,6 +103,7 @@ export default function ChonGoi() {
       </div>
       <p className="tt-ghi-chu">{GHI_CHU_AI}</p>
       <p className="cam-ket">{HOAN_TIEN}</p>
+      <p className="tt-ghi-chu"><a href="/tro-giup">Trợ giúp</a></p>
     </section>
   );
 }
