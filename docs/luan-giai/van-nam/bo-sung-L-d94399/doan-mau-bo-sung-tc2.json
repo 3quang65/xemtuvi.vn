@@ -1,0 +1,27 @@
+[
+ {
+  "maMau": "TC-25",
+  "chuDe": "tai-chinh",
+  "maHuong": [
+   "NAM-TT-02"
+  ],
+  "cau": "Khi một cơ hội kiếm tiền có nhiều người cùng nhắm, viết trước giới hạn bạn chấp nhận (tiền, thời gian) và lý do nó đáng theo; chạm giới hạn thì dừng lại cân nhắc.",
+  "thuocDo": "Ghi các cơ hội đã cân nhắc; 100% có giới hạn và lý do viết trước; không có dịp thì ghi \"không có\"",
+  "thoiHanThang": 3,
+  "dieuKien": {
+   "NAM-TT-02": {
+    "quyTacId": [
+     "NAM-TT-02"
+    ]
+   }
+  },
+  "truongPhai": "Tam hợp phái Việt",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Đặc tả an sao xemtuvi.vn"
+  ],
+  "nguonChiTiet": "Bám NAM-TT-02 (Kình Dương của năm đi cùng Lưu Thái Tuế: sức ép cạnh tranh, đòi hỏi quyết nhanh; \"chọn đúng việc đáng tranh\"); căn cứ: TT q.2 安流祿流羊流陀訣, 安擎羊陀羅二星訣; SPEC 7.4; VAN-SP-08",
+  "ghiChu": "Việc L-22d5c7. Mẫu thứ hai bám NAM-TT-02 cho mảng Tài chính khi Tài Bạch là Lưu Thái Tuế: TC-24 đã dùng ở đoạn tổng quan (mỗi mẫu một lần mỗi bài) nên đoạn NAM-TT-02 trong mảng Tài chính bị loại vì thiếu (d). TC-24 nói vế 'quyết nhanh' (xin thêm thời gian); TC-25 nói vế 'cạnh tranh / việc đáng tranh' (đặt giới hạn trước) để không lặp ý trong cùng bài. Không đổi mã quy tắc. Khi nạp vào src/.../viec-nen-lam.json: chỉ lấy 7 trường maMau, chuDe, maHuong, cau, thuocDo, thoiHanThang, dieuKien; đặt ngay sau TC-24; test 4-phan đổi 82 -> 83."
+ }
+]
