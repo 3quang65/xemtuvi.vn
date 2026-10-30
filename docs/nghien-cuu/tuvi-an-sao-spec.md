@@ -4,8 +4,8 @@ Phiên bản: 30/10/2026 · Người soạn: Agent Nghiên cứu Tử vi · Tr�
 
 Tài liệu đi kèm:
 
-- `/home/claude/docs/tuvi-test-cases.json`: 11 lá số kiểm thử, máy đọc được, kèm bộ test lịch và test sao lưu.
-- `/home/claude/docs/tuvi-ref-engine.py`: engine tham chiếu viết độc lập theo đúng đặc tả này (Python, không thư viện ngoài). Hàm `chart(nam, thang, ngay, gio, phut, gioiTinh, late_ty, leap_rule, tz_rule)` trả về toàn bộ vị trí sao. Lập trình viên có thể dùng nó làm "đáp án" khi viết engine thật.
+- `~/xemtuvi.vn/docs/nghien-cuu/tuvi-test-cases.json`: 11 lá số kiểm thử, máy đọc được, kèm bộ test lịch và test sao lưu.
+- `~/xemtuvi.vn/docs/nghien-cuu/tuvi-ref-engine.py`: engine tham chiếu viết độc lập theo đúng đặc tả này (Python, không thư viện ngoài). Hàm `chart(nam, thang, ngay, gio, phut, gioiTinh, late_ty, leap_rule, tz_rule)` trả về toàn bộ vị trí sao. Lập trình viên có thể dùng nó làm "đáp án" khi viết engine thật.
 
 Bản đối chiếu chính: engine trong repo `xemboi.vn` (`src/lib/core/tuvi-raw.js`, `lich-raw.js`, `thayba-raw.js`), port từ TuViMCP/ansaotuvi theo sách cụ Thiên Lương. Bản đối chiếu thứ hai: thư viện iztro (phái Trung Quốc, đọc qua mã nguồn và bộ test công khai). Kết quả đối chiếu tự động trên 3.000 lá số ngẫu nhiên nằm ở mục 11.
 
@@ -85,7 +85,7 @@ Tham số múi giờ ⚠:
 
 Bảng các khoảng ngày (1930–2049) mà lịch Việt (UTC+7) và lịch Trung Quốc (UTC+8) khác nhau, sinh từ engine tham chiếu. Một engine dùng thư viện lịch Trung Quốc (như iztro với `lunar-lite`) sẽ ra lá số sai ở các ngày này:
 
-| Khoảng ngày dương | Ngày đầu, theo lịch VN (ngày tháng năm) | Ngày đầu, theo lịch TQ (ngày tháng năm) |
+| Khoảng ngày dương | Ngày đầu khoảng, theo lịch VN (ngày tháng năm) | Ngày cuối khoảng, theo lịch TQ (ngày tháng năm) |
 |---|---|---|
 | 22/07/1933-20/08/1933 | 1 6 1933  | 29 6 1933  |
 | 17/11/1933-16/12/1933 | 1 10 1933  | 29 10 1933  |
@@ -136,6 +136,8 @@ Bảng các khoảng ngày (1930–2049) mà lịch Việt (UTC+7) và lịch Tr
 | 15/12/2039-13/01/2040 | 1 11 2039  | 29 11 2039  |
 | 26/08/2041-24/09/2041 | 1 8 2041  | 29 8 2041  |
 | 26/10/2049-24/11/2049 | 1 10 2049  | 29 10 2049  |
+
+Ghi chú 1987: Việt Nam nhuận tháng 7 (26/07 = 1/7; 24/08 = 1/7 nhuận; 23/09 = 1/8), Trung Quốc nhuận tháng 6 (26/07 = 1/6 nhuận; 24/08 = 1/7; 23/09 = 1/8). Vì vậy 02/09/1987 là 10/7 nhuận ở Việt Nam nhưng 10/7 thường ở Trung Quốc. Đối chiếu ngoài: xemlicham.com và baolamdong.vn (lịch Việt), lunar-python và lunardate (lịch Trung Quốc). Dòng 1987 ở bảng trên không đánh dấu nhuận.
 
 Các trường hợp đã kiểm chứng với nguồn báo chí (VnExpress "Lịch sai do dịch sách Trung Quốc", RFA 07/02/2007):
 
@@ -749,7 +751,7 @@ Ngoài bảng trên, repo còn:
 
 ## 12. Bộ lá số kiểm thử
 
-Dữ liệu đầy đủ (vị trí 100 sao, Tràng Sinh, đại vận, tiểu hạn, Tuần Triệt, Mệnh chủ, Thân chủ, các biến thể quy ước, danh sách trường repo đang lệch) nằm trong `/home/claude/docs/tuvi-test-cases.json`. Bảng dưới tóm tắt Mệnh, Thân, cục và 14 chính tinh. Ngày giờ là giờ chuẩn UTC+7.
+Dữ liệu đầy đủ (vị trí 100 sao, Tràng Sinh, đại vận, tiểu hạn, Tuần Triệt, Mệnh chủ, Thân chủ, các biến thể quy ước, danh sách trường repo đang lệch) nằm trong `~/xemtuvi.vn/docs/nghien-cuu/tuvi-test-cases.json`. Bảng dưới tóm tắt Mệnh, Thân, cục và 14 chính tinh. Ngày giờ là giờ chuẩn UTC+7.
 
 | ID | Sinh (dương lịch) | Âm lịch | Mệnh | Thân | Cục | 14 chính tinh |
 |---|---|---|---|---|---|---|

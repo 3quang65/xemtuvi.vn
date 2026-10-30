@@ -1,5 +1,5 @@
 {
- "moTa": "Bộ test case an sao Tử Vi phái Việt cho engine xemtuvi.vn. Kỳ vọng sinh từ engine tham chiếu theo đặc tả /home/claude/docs/tuvi-an-sao-spec.md, đối chiếu với engine repo xemboi.vn và nguồn ngoài ghi trong nguonDoiChieu. Chỉ số địa chi: tên tiếng Việt Tý…Hợi.",
+ "moTa": "Bộ test case an sao Tử Vi phái Việt cho engine xemtuvi.vn. Kỳ vọng sinh từ engine tham chiếu theo đặc tả ~/xemtuvi.vn/docs/nghien-cuu/tuvi-an-sao-spec.md, đối chiếu với engine repo xemboi.vn và nguồn ngoài ghi trong nguonDoiChieu. Chỉ số địa chi: tên tiếng Việt Tý…Hợi.",
  "phienBan": "2026-10-30",
  "ghiChuDung": "Trường repoXemboi.lech liệt kê chỗ engine src/lib/core/tuvi-raw.js hiện khác kỳ vọng. Các trường saoKhac có thể chạy kiểm thử từng sao; sao chưa có trong engine thì bỏ qua hoặc đánh dấu TODO.",
  "testIztroTuViTheoGio": {
@@ -2851,7 +2851,7 @@
   },
   {
    "id": "TC09",
-   "ten": "Nữ Đinh Mão 02/09/1987 15h (năm nhuận tháng 6 lịch Việt)",
+   "ten": "Nữ Đinh Mão 02/09/1987 15h (năm nhuận tháng 7 lịch Việt; 10/7 nhuận)",
    "input": {
     "lich": "duong",
     "muiGio": "UTC+7 (giờ địa phương Việt Nam)",
