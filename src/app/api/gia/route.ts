@@ -1,4 +1,4 @@
-import { goiTheoBang } from '@/lib/goi';
+import { cuaBanVan2027Mo, goiTheoBang } from '@/lib/goi';
 import { cauHinhThuGia, nhanhCuaYeuCau } from '@/lib/may-chu/thu-gia';
 
 export const dynamic = 'force-dynamic';
@@ -10,7 +10,7 @@ export async function GET(req: Request) {
   const bang = n && n.nhanh === 'thu' && cfg ? cfg.bang : undefined;
   const { goi, vanNam } = goiTheoBang(bang);
   const gia = Object.fromEntries([...goi, ...vanNam].map((g) => [g.ma, g.gia]));
-  return new Response(JSON.stringify({ nhanh: n?.nhanh ?? null, thu: n?.thu ?? null, thuDangBat: !!cfg, gia }), {
+  return new Response(JSON.stringify({ nhanh: n?.nhanh ?? null, thu: n?.thu ?? null, thuDangBat: !!cfg, vanNamMo: cuaBanVan2027Mo(), gia }), {
     headers: { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'private, no-store', ...(n?.setCookie ? { 'Set-Cookie': n.setCookie } : {}) },
   });
 }
