@@ -156,9 +156,12 @@ test('Nhân hòa VAN-PP: khớp theo nhóm của sao chủ Mệnh và sao chủ 
     const van = ls.cung.find((c) => c.ten === bai.van.cung);
     const nm = nhomChu(ls, ls.cung.find((c) => c.ten === 'Mệnh'));
     const nv = nhomChu(ls, van);
-    const co = bai.muc.flatMap((m) => m.nhanDinh).filter((x) => /^VAN-PP-1[245]-/.test(x.thamChieu.quyTacId));
-    const mong = nm && nv && !(nm.nhom === nv.nhom && nv.sang === 'Hãm') ? 1 : 0;
+    // Câu nhân hòa: PP-12/14/15, và PP-16 cho Mệnh Vũ Tướng / Cự Nhật (thay PP-14). PP-16-VAN-* (xét riêng cung vận) và PP-16-VT-A (đi kèm PP-12-AA) không tính.
+    // Phiếu Thư #6: cùng nhóm mà sao vận chưa sáng (Bình/Hãm) vẫn có câu, nhưng là câu "lực yếu" (-YEU), không khen "(nhân hòa)".
+    const co = bai.muc.flatMap((m) => m.nhanDinh).filter((x) => /^VAN-PP-1[2456]-/.test(x.thamChieu.quyTacId) && !/^VAN-PP-16-(VAN-|VT-A$)/.test(x.thamChieu.quyTacId));
+    const mong = nm && nv ? 1 : 0;
     assert.equal(co.length, mong, `DV${i + 1}: Mệnh ${nm?.nhom} vận ${nv?.nhom} (${nv?.sang})`);
+    if (co.length && nm.nhom === nv.nhom && !['Miếu', 'Vượng', 'Đắc'].includes(nv.sang)) assert.ok(!co[0].text.includes('(nhân hòa)'), `DV${i + 1}: khen nhân hòa khi sao vận ${nv.sang}`);
     if (co.length) { dem++; assert.ok(co[0].thamChieu.cungLienQuan.includes('Mệnh')); }
   }
   assert.ok(dem >= 4, `chỉ ${dem}/10 mẫu có nhân hòa`);

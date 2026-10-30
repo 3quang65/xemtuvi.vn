@@ -45,7 +45,7 @@ async function chay() {
     const fs_ = new Set(ids.filter((x) => SANG.test(x)).map(hoVan));
     if (ids.filter((x) => HAM.test(x)).some((x) => fs_.has(hoVan(x)))) st.mauThuan++;
     if (ids.some((x) => /SP-11-PQ/.test(x)) && tp.flatMap(tatCa).some((s) => s.ten === 'Phá Quân' && !DAC.includes(s.dacTinhTen))) st.pqHam++;
-    if (ids.some((x) => /^VAN-PP-1[245]/.test(x))) st.nhanHoa++;
+    if (ids.some((x) => /^VAN-PP-1[2456]/.test(x))) st.nhanHoa++;
     if (ids.some((x) => /^VAN-PP-12-(AA|BB|CC)(-VCD)?$/.test(x))) {
       const nguon = van.chinhTinh.length ? van : tp[2];
       const tot = ['Miếu', 'Vượng', 'Đắc', 'Bình', 'Hãm'];
