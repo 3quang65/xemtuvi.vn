@@ -14,6 +14,7 @@ import khungJson from './quy-tac-khung.json';
 import quyTacVanJson from './quy-tac-van/van-10-nam.json';
 import quyTacVanSpJson from './quy-tac-van/van-10-nam-sp.json';
 import quyTacVanPpJson from './quy-tac-van/van-10-nam-pp.json';
+import { tongHop, type NhanDinhTH } from './tong-hop';
 import { namAmHienTai } from '../../tuvi';
 
 export { xoaBoNho };
@@ -85,6 +86,8 @@ export interface TuyChon {
   /** Hàm gọi mô hình thật, chỉ dùng khi bật "claude". Chưa truyền thì tự về stub. */
   goiClaude?: (promptHeThong: string, duLieu: string) => Promise<string>;
   boQuaCache?: boolean;
+  /** Bật lớp tổng hợp (Tóm lại, gộp sao, dung hòa; L-28bc46). Mặc định tắt vì các câu này chưa có mã quy tắc thật; bật thì không dùng cache. */
+  tongHop?: boolean;
   /** Năm âm lịch cần xem (chỉ chuyên đề "van-10-nam"); mặc định năm âm lịch hiện tại. */
   namXem?: number;
 }
@@ -132,7 +135,7 @@ const PROMPT = fs.readFileSync(path.join(process.cwd(), 'src/lib/luan-giai/ai/pr
  */
 export const LA_CAU_C = /^(ML|QL|PT)-S\d+-C\d+(-HAM)?$/;
 /** Tăng khi đổi cách ghép/lọc câu (không đổi quy tắc) để bản lưu cũ không bị dùng lại. */
-const PHIEN_BAN_BO_GHEP = 'ghep-8';
+const PHIEN_BAN_BO_GHEP = 'ghep-9';
 export const PHIEN_BAN_QUY_TAC = bam(JSON.stringify([QUY_TAC, QUY_TAC_2, QUY_TAC_VAN, CHUYEN_DE, TU_CAM, PROMPT, PHIEN_BAN_BO_GHEP])).slice(0, 12);
 
 export function nhaCungCapDangDung(yeuCau: TuyChon['nhaCungCap']): 'stub' | 'claude' | string {
@@ -320,13 +323,14 @@ export async function sinhLuanGiai(ls: LaSo, chuyenDe: ChuyenDeMa, tuyChon: TuyC
   const cfg = CHUYEN_DE[chuyenDe];
   if (!cfg) throw new Error(`Chuyên đề không hợp lệ: ${chuyenDe}`);
   const laVan = chuyenDe === 'van-10-nam';
+  const bat = !!tuyChon.tongHop && !laVan;
   const dv = laVan ? timDaiVan(ls, tuyChon.namXem ?? namAmHienTai()) : null;
   if (laVan && !dv) {
     // Chưa tới tuổi vào đại vận (nhỏ hơn số cục): không có gì để luận.
     return { chuyenDe, van: null, muc: [], ghiChu: GHI_CHU, phienBan: PHIEN_BAN_QUY_TAC };
   }
   const khoa = dv ? khoaVan(ls, dv.thongTin.cung) : khoaCache(ls, chuyenDe, PHIEN_BAN_QUY_TAC);
-  if (!tuyChon.boQuaCache) {
+  if (!tuyChon.boQuaCache && !bat) {
     const co = doc<LuanGiai>(khoa);
     if (co) return co;
   }
@@ -364,9 +368,14 @@ export async function sinhLuanGiai(ls: LaSo, chuyenDe: ChuyenDeMa, tuyChon: TuyC
       if (LA_CAU_C.test(x.q.id) && c2.some((y) => y.sao.some((t) => x.sao.includes(t)) && y.cungLienQuan?.includes(x.cungGoc))) khopDs.splice(i, 1);
     }
   }
+  // Pool tổng hợp: mọi nhận định đã khớp, kể cả câu bị tắt ở bài này (sao vẫn có trên lá số, Tóm lại/gộp có thể nhắc).
+  const poolTH = laVan ? [] : [...khopDs];
   // Câu sao phụ dùng chung lạc đề với bài tình cảm (Phiếu 3c, T-a4504a vòng 3): tắt đến khi Hạnh viết bản Phu Thê.
   const tat = TAT_O_BAI[chuyenDe];
   if (tat) for (let i = khopDs.length - 1; i >= 0; i--) if (tat.has(khopDs[i].q.id)) khopDs.splice(i, 1);
+  // Lớp tổng hợp (L-28bc46): Tóm lại, gộp sao cùng cung, câu dung hòa. Không áp cho chuyên đề Vận 10 năm.
+  const th = bat ? tongHop(ls, chuyenDe, cfg.cungChinh, poolTH, khopDs) : null;
+  if (th?.bo.size) for (let i = khopDs.length - 1; i >= 0; i--) if (th.bo.has(khopDs[i].q.id)) khopDs.splice(i, 1);
   const theoId = new Map(khopDs.map((x) => [x.q.id, x]));
 
   // Câu cấp cho nhà cung cấp; mặc định "stub" ghép thẳng từ quy tắc.
@@ -410,12 +419,23 @@ export async function sinhLuanGiai(ls: LaSo, chuyenDe: ChuyenDeMa, tuyChon: TuyC
     });
   }
 
+  const choPhep = (n: NhanDinhTH): NhanDinh | null => {
+    const loc = locTuCam(n.text, TU_CAM);
+    return loc === null ? null : { ...n, text: loc };
+  };
+  for (const x of th?.them ?? []) {
+    const n = choPhep(x.n);
+    if (n) (muc.find((m) => m.id === x.muc) ?? mucDau).nhanDinh.push({ u: -1, n });
+  }
+
   // Cách cục (mục đầu) xếp theo mức ưu tiên giảm dần; thứ tự ghép còn lại giữ nguyên.
   const mucRa = muc.map((m) => ({ id: m.id, tieuDe: m.tieuDe, nhanDinh: [...m.nhanDinh].sort((a, b) => b.u - a.u).map((x) => x.n) }));
 
   boCauLap(mucRa);
+  const tomLai = (th?.tomLai ?? []).map(choPhep).filter((n): n is NhanDinh => n !== null);
+  if (tomLai.length) mucRa.unshift({ id: 'tom-lai', tieuDe: 'Tóm lại', nhanDinh: tomLai });
 
   const kq: LuanGiai = { chuyenDe, ...(dv ? { van: dv.thongTin } : {}), muc: mucRa.filter((m) => m.nhanDinh.length), ghiChu: GHI_CHU, phienBan: PHIEN_BAN_QUY_TAC };
-  if (!tuyChon.boQuaCache && dung === 'stub') ghi(khoa, kq);
+  if (!tuyChon.boQuaCache && !bat && dung === 'stub') ghi(khoa, kq);
   return kq;
 }
