@@ -334,3 +334,9 @@ a { color: inherit; }
 .ks-nut { display: flex; flex-wrap: wrap; gap: 12px; }
 .ks-nut > button, .ks-dong { min-height: 48px; min-width: 44px; padding: 0 24px; }
 @media (min-width: 641px) { .luoi-goi.khu-van-nam, .khu-van-nam .luoi-goi { grid-template-columns: 1fr 1fr; align-items: start; } }
+/* Vận năm trả phí: đoạn đủ 4 phần (căn cứ, nhận định, nguồn, việc nên làm + cách đo). */
+.doan-4-phan { display: grid; gap: 6px; border: 1px solid var(--vien); border-radius: 14px; padding: 12px 14px; margin: 10px 0; background: var(--giay); overflow-wrap: anywhere; }
+.doan-4-phan p { margin: 0; }
+.doan-4-phan .doan-can-cu { color: var(--muc-nhat); font-size: 0.95rem; }
+.doan-4-phan .doan-nguon { color: var(--muc-nhat); font-size: 0.88rem; }
+.doan-4-phan .doan-viec { background: var(--ngoc-nhat); border-radius: 10px; padding: 8px 10px; }
