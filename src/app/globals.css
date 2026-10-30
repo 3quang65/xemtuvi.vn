@@ -182,6 +182,7 @@ a { color: inherit; }
 .tt-doan { margin: 0; padding: 12px 14px; background: var(--ngoc-nhat); color: var(--ngoc-dam); border-radius: 10px; }
 .tt-doan p { margin: 0 0 6px; }
 .tt-doan footer { font-size: 0.82rem; }
+.tt-dan { margin: 0; font-size: 0.95rem; color: var(--ngoc-dam); }
 .tt-ghi-chu { margin: 0; font-size: 0.88rem; color: var(--muc-nhat); }
 
 .trang-buoc { max-width: 640px; margin: 0 auto; padding: 24px 0 56px; display: grid; gap: 16px; }

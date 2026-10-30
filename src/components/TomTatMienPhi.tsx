@@ -3,10 +3,10 @@
 import Link from 'next/link';
 import { useEffect, useMemo } from 'react';
 import type { LaSo } from '@/lib/tuvi';
-import { nhanDinh, saoCuaQuyTac, tomTatMienPhi } from '@/lib/luan-giai';
+import { tomTatMienPhi } from '@/lib/luan-giai';
 import { guiSuKien } from '@/lib/phien';
 
-/** Tóm tắt miễn phí: nạp âm + cục, chính tinh thủ Mệnh, Thân cư, 1–2 đoạn luận lấy nguyên văn từ bộ quy tắc. */
+/** Tóm tắt miễn phí: nạp âm + cục, chính tinh thủ Mệnh, Thân cư, rồi các nhận định riêng của lá số (chính tinh, Tứ hóa, Tuần/Triệt, sao phụ tại Mệnh, Thân cư). */
 export default function TomTatMienPhi({ laSo, choMua = true }: { laSo: LaSo; choMua?: boolean }) {
   const t = useMemo(() => tomTatMienPhi(laSo), [laSo]);
   useEffect(() => { if (choMua) guiSuKien('xem_tom_tat'); }, [choMua]);
@@ -28,17 +28,14 @@ export default function TomTatMienPhi({ laSo, choMua = true }: { laSo: LaSo; cho
         <div><dt>Thân cư</dt><dd>cung {t.thanCu}</dd></div>
       </dl>
 
-      {t.doan.length > 0 ? (
-        t.doan.map((d) => (
-          <blockquote key={d.ma} className="tt-doan">
-            <p>{saoCuaQuyTac(d.ma) && <strong>{saoCuaQuyTac(d.ma)} tại Mệnh: </strong>}{nhanDinh(d.cau)}</p>
-            {d.nguon.length > 0 && <footer>Nguồn: {d.nguon.join(', ')}</footer>}
-          </blockquote>
-        ))
-      ) : (
-        <p className="tt-ghi-chu">Phần luận chi tiết cho chính tinh và độ sáng này nằm trong bản luận giải chuyên sâu.</p>
-      )}
-      <p className="tt-ghi-chu">Đoạn trên do hệ thống chọn từ bộ quy tắc luận giải theo sao và độ sáng, chưa xét các sao khác trong lá số.</p>
+      {t.cau.map((c, i) => (
+        <blockquote key={i} className="tt-doan">
+          <p><strong>{c.nhan}: </strong>{c.y}</p>
+          {c.nguon.length > 0 && <footer>Nguồn: {c.nguon.join(', ')}</footer>}
+        </blockquote>
+      ))}
+      <p className="tt-dan">{t.dan}</p>
+      <p className="tt-ghi-chu">{t.ghiChu}</p>
 
       {choMua && (
         <Link href="/chon-goi" className="nut-chinh nut-lien-ket" onClick={() => guiSuKien('bam_xem_sau')}>

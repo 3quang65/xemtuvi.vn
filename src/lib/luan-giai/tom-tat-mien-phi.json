@@ -1,0 +1,1160 @@
+{
+ "_ghiChu": "Câu tóm tắt miễn phí (Hạnh, việc L-e8523f, 30/10/2026). Trường ma: mã quy tắc trong docs/nghien-cuu/luan-giai-12-cung.md. Chưa qua kiểm duyệt Thư.",
+ "chinhTinh": {
+  "Tử Vi": {
+   "M": {
+    "y": "bạn chững chạc, trung hậu, tự trọng cao và dễ được tin cậy; nhận vai trò dẫn dắt ở việc mình hiểu rõ, tố chất ấy sẽ lộ ra rất tự nhiên.",
+    "ma": [
+     "MENH-TV-01",
+     "CHUNG-CT-TV-01"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "V": {
+    "y": "bạn nghiêm cẩn, mong được tôn trọng và có khí chất người đứng đầu khá rõ; sức mạnh ấy phát huy trọn khi bên cạnh có bạn bè, người cộng sự cùng chí hướng.",
+    "ma": [
+     "MENH-TV-01",
+     "CHUNG-CT-TV-01"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "Đ": {
+    "y": "bạn điềm đạm, đàng hoàng và có trách nhiệm, tuy uy thế chưa rực như mức miếu vượng; tích lũy năng lực từng bước thì lời nói của bạn sẽ ngày càng có trọng lượng.",
+    "ma": [
+     "MENH-TV-01",
+     "CHUNG-PP-04"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "B": {
+    "y": "bạn có tố chất dẫn dắt nhưng sách gọi thế này là vua thiếu bề tôi, dễ tự gánh nhiều việc; hãy xây quanh mình một nhóm người tin cậy.",
+    "ma": [
+     "MENH-TV-02"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "H": {
+    "y": "uy lực của sao giảm, bạn mong được ghi nhận nhưng thường thiếu người phò tá; biết nhờ giúp đúng lúc, đúng người thì khí chất lãnh đạo mới bộc lộ.",
+    "ma": [
+     "MENH-TV-02"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư",
+     "Bảng độ sáng phái Việt dòng sách Thiên Lương (đặc tả an sao xemtuvi.vn, mục 6): sao này không có mức độ sáng này, lời viết theo mức gần nhất"
+    ]
+   }
+  },
+  "Liêm Trinh": {
+   "M": {
+    "y": "bạn liêm khiết, thẳng thắn, có nguyên tắc rõ và một sức hút rất riêng; ở nơi có quy chuẩn minh bạch, bạn thường là người được tin giao trách nhiệm đầu tiên.",
+    "ma": [
+     "MENH-LT-01",
+     "MENH-LT-04"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "V": {
+    "y": "bạn sống có nguyên tắc, làm gì cũng nghiêm túc và có duyên với người đối diện; mục tiêu cụ thể, đo được sẽ biến kỷ luật ấy thành kết quả rõ.",
+    "ma": [
+     "MENH-LT-01",
+     "MENH-LT-04"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "Đ": {
+    "y": "bạn thẳng thắn, kỷ luật nhưng đôi lúc khắt khe với chính mình; cho phép bản thân linh hoạt hơn, tinh thần trách nhiệm sẽ thành điểm tựa thay vì áp lực.",
+    "ma": [
+     "MENH-LT-01"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "B": {
+    "y": "bạn có nguyên tắc nhưng sức kiềm chế chưa thật vững, dễ cứng giọng khi bị phản bác; một người bạn điềm tĩnh hay người hướng dẫn bên cạnh giúp bạn giữ thăng bằng.",
+    "ma": [
+     "MENH-LT-01",
+     "MENH-LT-02",
+     "MENH-LT-03"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư",
+     "Bảng độ sáng phái Việt dòng sách Thiên Lương (đặc tả an sao xemtuvi.vn, mục 6): sao này không có mức độ sáng này, lời viết theo mức gần nhất"
+    ]
+   },
+   "H": {
+    "y": "bạn thẳng tính nhưng dễ tranh luận gay gắt, khắt khe với người khác và sớm muốn tự lập; một kỹ năng chuyên sâu cùng lời nói mềm hơn sẽ mở đường cho bạn.",
+    "ma": [
+     "MENH-LT-02"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   }
+  },
+  "Thiên Đồng": {
+   "M": {
+    "y": "bạn hiền hòa, nhân hậu, vui vẻ và hay gặp may nhờ được lòng người; vì dễ hài lòng, hãy tự đặt một mục tiêu đủ thử thách để tài năng không bị phí.",
+    "ma": [
+     "MENH-TD-01",
+     "CHUNG-CT-TD-01"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "V": {
+    "y": "bạn mềm mỏng, dễ mến, biết tận hưởng và sở thích hay đổi theo thời gian; giữ lấy một hai đam mê lâu dài, sự dễ thích nghi sẽ thành thế mạnh thật.",
+    "ma": [
+     "MENH-TD-01"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "Đ": {
+    "y": "bạn nhân hậu, cư xử nhẹ nhàng nhưng đôi khi ngại va chạm hoặc ngại việc khó; chia mục tiêu thành từng bước nhỏ để động lực đều hơn qua mỗi tuần.",
+    "ma": [
+     "MENH-TD-01",
+     "CHUNG-CT-TD-01"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "B": {
+    "y": "bạn hiền lành nhưng động lực lên xuống theo hoàn cảnh, hay chọn đường an toàn; có người đồng hành hoặc một lịch cố định, bạn dễ đi đến cùng việc đã bắt đầu.",
+    "ma": [
+     "MENH-TD-01",
+     "MENH-TD-02"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư",
+     "Bảng độ sáng phái Việt dòng sách Thiên Lương (đặc tả an sao xemtuvi.vn, mục 6): sao này không có mức độ sáng này, lời viết theo mức gần nhất"
+    ]
+   },
+   "H": {
+    "y": "bạn vẫn nhân hậu nhưng tâm trạng dễ thất thường, có lúc vướng thị phi không đáng; giữ kế hoạch rõ ràng, hứa ít làm nhiều để người khác tin cậy bạn hơn.",
+    "ma": [
+     "MENH-TD-02"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   }
+  },
+  "Vũ Khúc": {
+   "M": {
+    "y": "bạn cương nghị, quyết đoán, rất thực tế và có khiếu quản lý tiền từ sớm; tính độc lập khiến bạn ít bộc lộ tình cảm, nên hãy chủ động chia sẻ với người thân.",
+    "ma": [
+     "MENH-VK-01",
+     "MENH-VK-03"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "V": {
+    "y": "bạn thẳng thắn, kỷ luật, biến nỗ lực thành thành quả cụ thể và đứng vững trước áp lực; chỉ cần đừng để sự cứng rắn khiến người gần mình thấy xa cách.",
+    "ma": [
+     "MENH-VK-01",
+     "MENH-VK-04"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư",
+     "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+    ]
+   },
+   "Đ": {
+    "y": "bạn có óc thực tế, giỏi tính toán mà không phô trương; tiết kiệm đều đặn và ghi chép chi tiêu từ bây giờ, tiềm năng tài chính ấy sẽ lớn dần theo năm tháng.",
+    "ma": [
+     "MENH-VK-01",
+     "CHUNG-CT-VK-01"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "B": {
+    "y": "bạn có tính cương, đầu óc thực tế nhưng đôi khi quyết theo cảm hứng nhất thời; dừng lại một nhịp trước khi chi tiêu hay hứa hẹn là thói quen đáng rèn.",
+    "ma": [
+     "MENH-VK-01",
+     "MENH-VK-02"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư",
+     "Bảng độ sáng phái Việt dòng sách Thiên Lương (đặc tả an sao xemtuvi.vn, mục 6): sao này không có mức độ sáng này, lời viết theo mức gần nhất"
+    ]
+   },
+   "H": {
+    "y": "bạn có sức làm nhưng dễ cứng nhắc, chi tiêu bốc đồng nên thành quả khó giữ lâu; một nghề chuyên môn vững tay cùng kỷ luật tiền bạc lập sớm là hướng hợp nhất.",
+    "ma": [
+     "MENH-VK-02"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   }
+  },
+  "Thái Dương": {
+   "M": {
+    "y": "bạn tỏa sáng, thông minh, rộng rãi, muốn cống hiến và dễ được nhiều người biết đến; giữ sự nóng tính trong tầm kiểm soát thì uy tín ấy bền theo thời gian.",
+    "ma": [
+     "MENH-TDU-01",
+     "CHUNG-CT-TDU-01"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "V": {
+    "y": "bạn nhiệt tình, cởi mở, có uy và thích giúp người, thường là người khởi xướng trong nhóm; dành sức cho vài việc quan trọng thay vì nhận hết mọi lời nhờ cậy.",
+    "ma": [
+     "MENH-TDU-01"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "Đ": {
+    "y": "bạn sáng dạ, tốt bụng, muốn được ghi nhận dù ánh sáng chưa rực như mức miếu vượng; kiên trì chứng minh bằng việc làm cụ thể sẽ đưa bạn đến vị trí xứng đáng.",
+    "ma": [
+     "MENH-TDU-01",
+     "CHUNG-PP-04"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "B": {
+    "y": "bạn có lòng nhiệt thành nhưng lúc hăng hái lúc chùng xuống, dễ hụt hơi giữa chừng; làm theo nhịp đều và chọn mục tiêu vừa sức để ngọn lửa ấy cháy lâu.",
+    "ma": [
+     "MENH-TDU-01",
+     "MENH-TDU-02"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư",
+     "Bảng độ sáng phái Việt dòng sách Thiên Lương (đặc tả an sao xemtuvi.vn, mục 6): sao này không có mức độ sáng này, lời viết theo mức gần nhất"
+    ]
+   },
+   "H": {
+    "y": "ánh sáng của sao giảm nên bạn dễ khởi đầu siêng năng rồi nản, việc theo đuổi có lúc thăng trầm; giữ nhịp bền bỉ và mạnh dạn tìm môi trường mới thường thuận hơn.",
+    "ma": [
+     "MENH-TDU-02",
+     "MENH-TDU-04"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư",
+     "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+    ]
+   }
+  },
+  "Thiên Cơ": {
+   "M": {
+    "y": "bạn sáng suốt, khéo léo, nhiều ý tưởng, tính hơi gấp nhưng tốt bụng; những việc cần phân tích, lập kế hoạch, tư vấn là nơi trí óc bạn tỏa sáng nhất.",
+    "ma": [
+     "MENH-TCO-01",
+     "CHUNG-CT-TCO-01"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "V": {
+    "y": "bạn nhanh trí, linh hoạt, thích tìm hiểu và hay nghĩ ra cách làm mới; muốn ý tưởng thành kết quả, hãy chốt một kế hoạch và theo nó đủ lâu trước khi đổi hướng.",
+    "ma": [
+     "MENH-TCO-01",
+     "CHUNG-HOA-TCO-01"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư",
+     "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+    ]
+   },
+   "Đ": {
+    "y": "bạn chu đáo, xoay xở tốt nhưng đôi khi nghĩ nhiều mà chậm quyết; tập đặt hạn chót cho bản thân, sự khéo léo của bạn sẽ được người khác nhìn thấy rõ hơn.",
+    "ma": [
+     "MENH-TCO-01",
+     "MENH-TRANH-04"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "B": {
+    "y": "bạn có ý tưởng nhưng dễ đổi ý và phân tán sức vào nhiều việc cùng lúc; ghi ra ba ưu tiên mỗi tuần để biết nên dồn sức vào đâu trước.",
+    "ma": [
+     "MENH-TCO-01",
+     "MENH-TCO-02"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư",
+     "Bảng độ sáng phái Việt dòng sách Thiên Lương (đặc tả an sao xemtuvi.vn, mục 6): sao này không có mức độ sáng này, lời viết theo mức gần nhất"
+    ]
+   },
+   "H": {
+    "y": "bạn khéo tay, nhanh ý nhưng thành quả dễ dở dang vì hay đổi hướng hoặc lo nghĩ quá nhiều; dồn sức vào một kỹ năng thực hành, tránh dàn trải để tiến chắc hơn.",
+    "ma": [
+     "MENH-TCO-02"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   }
+  },
+  "Thiên Phủ": {
+   "M": {
+    "y": "bạn ôn hòa, nhân hậu, học rộng, biết xoay xở và thường là chỗ dựa cho người xung quanh; năng lực giữ gìn, tổ chức này hợp với việc chăm lo nền tảng lâu dài.",
+    "ma": [
+     "MENH-TP-01"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "V": {
+    "y": "bạn điềm tĩnh, chu toàn, có óc quản lý và gặp chuyện khó thường tìm được cách gỡ; điều duy nhất cần lưu tâm là đừng tính quá kỹ đến mức lỡ cơ hội.",
+    "ma": [
+     "MENH-TP-01",
+     "MENH-TRANH-05"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "Đ": {
+    "y": "bạn hiền hậu, cẩn thận, thích ổn định và biết tích lũy từng chút; nền tảng ấy vững nhất khi bạn mạnh dạn học điều mới thay vì chỉ giữ những gì đang có.",
+    "ma": [
+     "MENH-TP-01"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "B": {
+    "y": "bạn biết giữ gìn nhưng sức tích lũy chưa mạnh như khi sao sáng, nguồn lực dễ hao qua khoản nhỏ; quản lý chi tiêu chặt và có quỹ dự phòng sẽ an tâm hơn.",
+    "ma": [
+     "MENH-TP-02"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+    ]
+   },
+   "H": {
+    "y": "bạn chuộng an toàn, hay lo cho nền tảng nhưng lúc khó dễ thiếu tự tin vào sức xoay xở; bắt đầu từ những kế hoạch nhỏ, rõ ràng để dần tin vào chính mình.",
+    "ma": [
+     "MENH-TP-02"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Bảng độ sáng phái Việt dòng sách Thiên Lương (đặc tả an sao xemtuvi.vn, mục 6): sao này không có mức độ sáng này, lời viết theo mức gần nhất"
+    ]
+   }
+  },
+  "Thái Âm": {
+   "M": {
+    "y": "bạn dịu dàng, tinh tế, thông minh, có khiếu văn chương nghệ thuật và biết vun vén tích lũy; một không gian yên tĩnh để sáng tạo là nơi bạn phát huy trọn vẹn nhất.",
+    "ma": [
+     "MENH-TA-01"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "V": {
+    "y": "bạn ôn hòa, giàu cảm xúc, có óc thẩm mỹ và chu đáo với người thân; thời gian cho nghệ thuật hay việc vun vén nhà cửa nuôi dưỡng năng lượng tích cực trong bạn.",
+    "ma": [
+     "MENH-TA-01"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "Đ": {
+    "y": "bạn nhân hậu, nhạy cảm, cẩn thận chuyện tiền bạc và đôi lúc giữ cảm xúc cho riêng mình; nói ra mong muốn rõ hơn để người khác hỗ trợ bạn đúng lúc.",
+    "ma": [
+     "MENH-TA-01"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "B": {
+    "y": "bạn nhạy cảm, dễ xúc động và hay do dự khi phải chọn lựa; viết suy nghĩ ra giấy rồi hỏi thêm một người tin cậy, quyết định của bạn sẽ sáng suốt hơn.",
+    "ma": [
+     "MENH-TA-01",
+     "MENH-TA-02"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư",
+     "Bảng độ sáng phái Việt dòng sách Thiên Lương (đặc tả an sao xemtuvi.vn, mục 6): sao này không có mức độ sáng này, lời viết theo mức gần nhất"
+    ]
+   },
+   "H": {
+    "y": "bạn vẫn hiền hậu nhưng dễ nhầm lẫn khi vội, tiền bạc khó giữ nếu thiếu kế hoạch; cân nhắc kỹ chuyện tiền và mạnh dạn mở rộng môi trường sống sẽ thuận hơn.",
+    "ma": [
+     "MENH-TA-02"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   }
+  },
+  "Tham Lang": {
+   "M": {
+    "y": "bạn tràn đầy năng lượng, nhiều mong muốn, giao tiếp khéo và lắm tài lẻ; dồn sự ham học hỏi vào một mục tiêu lớn, bạn có thể tạo ra thành quả nổi bật.",
+    "ma": [
+     "MENH-THL-01",
+     "CHUNG-CT-THL-01"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "V": {
+    "y": "bạn năng động, có sức hút và thích trải nghiệm nhiều điều mới; giữ một hướng đi chính bên cạnh các sở thích phụ để năng lượng dồi dào ấy không bị phân tán.",
+    "ma": [
+     "MENH-THL-01"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "Đ": {
+    "y": "bạn hoạt bát, thích kết nối và khám phá, nhưng thành quả cần thời gian tích lũy; đầu tư lâu dài cho vài mối quan hệ và kỹ năng chọn lọc sẽ đưa bạn xa.",
+    "ma": [
+     "MENH-THL-01",
+     "CHUNG-PP-04"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "B": {
+    "y": "bạn nhiều hứng thú nhưng dễ đổi mục tiêu khi gặp thứ hấp dẫn hơn; một kế hoạch dài hạn chia mốc rõ ràng là chiếc neo giữ sự tập trung cho bạn.",
+    "ma": [
+     "MENH-THL-01",
+     "MENH-THL-02"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư",
+     "Bảng độ sáng phái Việt dòng sách Thiên Lương (đặc tả an sao xemtuvi.vn, mục 6): sao này không có mức độ sáng này, lời viết theo mức gần nhất"
+    ]
+   },
+   "H": {
+    "y": "bạn nhanh nhẹn nhưng thiếu kiên nhẫn, làm vội nên đôi khi khéo quá hóa vụng, dễ sa vào thú vui; kỷ luật hằng ngày cùng một mục tiêu dài hạn là điều bạn cần.",
+    "ma": [
+     "MENH-THL-02"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   }
+  },
+  "Cự Môn": {
+   "M": {
+    "y": "bạn ăn nói sắc sảo, lập luận chặt, có uy về lời nói và tấm lòng nhân hậu; những lĩnh vực dùng ngôn ngữ như thuyết trình, giảng giải, tư vấn rất hợp với bạn.",
+    "ma": [
+     "MENH-CM-01"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "V": {
+    "y": "bạn có tư duy phản biện, thích đào đến gốc vấn đề và nói có sức thuyết phục; dùng sự sắc sảo để xây dựng thay vì bắt lỗi, bạn sẽ được quý mến hơn.",
+    "ma": [
+     "MENH-CM-01",
+     "CHUNG-CT-CM-01"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "Đ": {
+    "y": "bạn quan sát kỹ, thích hỏi cho rõ và nói có lý lẽ, đôi khi thẳng quá khiến người nghe chạnh lòng; chọn lời mềm hơn lúc góp ý để ý kiến được đón nhận.",
+    "ma": [
+     "MENH-CM-01"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "B": {
+    "y": "bạn có khả năng lý luận nhưng dễ hoài nghi và hay tranh cãi chuyện nhỏ; kiểm chứng thông tin trước khi kết luận sẽ tránh được nhiều hiểu lầm không đáng có.",
+    "ma": [
+     "MENH-CM-01",
+     "MENH-CM-02"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư",
+     "Bảng độ sáng phái Việt dòng sách Thiên Lương (đặc tả an sao xemtuvi.vn, mục 6): sao này không có mức độ sáng này, lời viết theo mức gần nhất"
+    ]
+   },
+   "H": {
+    "y": "bạn hay suy xét, dễ nghi ngờ, học nhiều mà chưa sâu và đôi khi vướng thị phi vì lời nói; thận trọng khi phát biểu, theo một chuyên môn đến nơi để được tin.",
+    "ma": [
+     "MENH-CM-02",
+     "MENH-CM-03"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư",
+     "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+    ]
+   }
+  },
+  "Thiên Tướng": {
+   "M": {
+    "y": "bạn đôn hậu, can đảm, chững chạc, yêu cái đẹp và thường được tin giao việc quan trọng; khả năng làm dịu căng thẳng của bạn là món quà để kết nối mọi người.",
+    "ma": [
+     "MENH-TT-01"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "V": {
+    "y": "bạn đáng tin, có trách nhiệm, hay đứng ra bênh vực lẽ phải và sống tươm tất gọn gàng; vai trò người điều phối trong nhóm là nơi bạn dễ được nể trọng.",
+    "ma": [
+     "MENH-TT-01"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "Đ": {
+    "y": "bạn chu đáo, giữ chữ tín, có gu thẩm mỹ nhưng đôi lúc ngại đứng ra quyết định thay người khác; nhận dần trách nhiệm vừa sức để sự tự tin lớn lên tự nhiên.",
+    "ma": [
+     "MENH-TT-01"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "B": {
+    "y": "bạn tốt bụng, đáng tin nhưng dễ bị cuốn theo ý người khác và thiếu thế chủ động; xác định rõ giới hạn của mình trước khi nhận lời là thói quen nên tập sớm.",
+    "ma": [
+     "MENH-TT-01",
+     "MENH-TT-02"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư",
+     "Bảng độ sáng phái Việt dòng sách Thiên Lương (đặc tả an sao xemtuvi.vn, mục 6): sao này không có mức độ sáng này, lời viết theo mức gần nhất"
+    ]
+   },
+   "H": {
+    "y": "thế chủ động của sao giảm, bạn có thiện chí nhưng dễ nhận vai trò vượt sức hoặc lỡ lời hứa; chuẩn bị kỹ trước khi nhận trọng trách để giữ được uy tín.",
+    "ma": [
+     "MENH-TT-02"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   }
+  },
+  "Thiên Lương": {
+   "M": {
+    "y": "bạn nhân hậu, khoan dung, ngay thẳng và biết quyền biến, thường gặp khó rồi tìm được lối ra; tấm lòng muốn che chở người khác khiến bạn hợp vai trò người hướng dẫn.",
+    "ma": [
+     "MENH-TL-01"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "V": {
+    "y": "bạn chín chắn sớm, thích giúp đỡ và hay được nhờ cho lời khuyên; giữ ranh giới hợp lý để không ôm việc của người khác, bạn sẽ có thêm thời gian cho chính mình.",
+    "ma": [
+     "MENH-TL-01",
+     "CHUNG-CT-TL-01"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "Đ": {
+    "y": "bạn hiền hậu, có chính kiến, biết lắng nghe nhưng đôi khi cẩn thận quá mức; mạnh dạn thử việc mới bên cạnh sự chừng mực sẵn có sẽ làm bạn trưởng thành nhanh hơn.",
+    "ma": [
+     "MENH-TL-01",
+     "MENH-TRANH-03"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "B": {
+    "y": "bạn tốt bụng nhưng dễ dao động giữa nhiều lựa chọn, khuyên người thì dễ mà tự quyết cho mình lại khó; viết mục tiêu ra và tự theo dõi giúp bạn kiên định hơn.",
+    "ma": [
+     "MENH-TL-01",
+     "MENH-TL-02"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư",
+     "Bảng độ sáng phái Việt dòng sách Thiên Lương (đặc tả an sao xemtuvi.vn, mục 6): sao này không có mức độ sáng này, lời viết theo mức gần nhất"
+    ]
+   },
+   "H": {
+    "y": "bạn vẫn nhân hậu nhưng hay đổi ý, ham vui và thích dịch chuyển nên việc dễ bỏ dở giữa chừng; chọn một hướng rõ ràng rồi theo đến cùng là chìa khóa của bạn.",
+    "ma": [
+     "MENH-TL-02"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+    ]
+   }
+  },
+  "Thất Sát": {
+   "M": {
+    "y": "bạn can đảm, quyết liệt, có mưu lược và thích tự mở đường hơn đi lối mòn; những vai trò khai phá, cầm trịch trong nhóm là nơi bản lĩnh ấy được rèn rõ nhất.",
+    "ma": [
+     "MENH-TS-01",
+     "CHUNG-CT-TS-01"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "V": {
+    "y": "bạn mạnh mẽ, dứt khoát, dám đi đầu khi người khác còn chần chừ; lắng nghe trước khi hành động sẽ làm sự quyết đoán ấy cho kết quả tốt hơn.",
+    "ma": [
+     "MENH-TS-01",
+     "MENH-TRANH-01"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "Đ": {
+    "y": "bạn có cá tính mạnh, ý chí tự lập nhưng cần va chạm thực tế mới bộc lộ hết năng lực; môi trường được tự chủ cùng sự kiên nhẫn sẽ đưa bạn tiến bền.",
+    "ma": [
+     "MENH-TS-01"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "B": {
+    "y": "bạn quyết đoán nhưng đôi khi vội vàng, dễ va chạm khi ý mình khác người; chậm lại một nhịp và tính trước phương án dự phòng thì thành quả mới giữ được.",
+    "ma": [
+     "MENH-TS-01",
+     "MENH-TS-02"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư",
+     "Bảng độ sáng phái Việt dòng sách Thiên Lương (đặc tả an sao xemtuvi.vn, mục 6): sao này không có mức độ sáng này, lời viết theo mức gần nhất"
+    ]
+   },
+   "H": {
+    "y": "bạn dễ bốc đồng, nóng giận, hay làm trước khi tính kỹ nên thành quả lên xuống; luyện kiềm chế cảm xúc, cân nhắc rủi ro sẽ biến sự gan dạ thành sức mạnh thật.",
+    "ma": [
+     "MENH-TS-02",
+     "MENH-TRANH-02"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   }
+  },
+  "Phá Quân": {
+   "M": {
+    "y": "bạn can đảm, dám nghĩ dám làm và không ngại phá cách cũ để làm tốt hơn; bạn tiến nhanh nhất khi được giao những việc cần khai phá hoặc cải tổ.",
+    "ma": [
+     "MENH-PQ-01"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "V": {
+    "y": "bạn mạnh mẽ, thích thay đổi và có sức bật lớn sau mỗi lần vấp; kế hoạch tiền bạc cùng vài cam kết lâu dài giữ cho tinh thần đổi mới không thành xáo trộn.",
+    "ma": [
+     "MENH-PQ-01",
+     "MENH-TRANH-03"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   },
+   "Đ": {
+    "y": "bạn thích cải tiến và làm theo cách riêng, nhưng cần thời gian để người khác hiểu ý tưởng của mình; làm thử ở quy mô nhỏ trước là cách hay để được ủng hộ.",
+    "ma": [
+     "MENH-PQ-01",
+     "MENH-TRANH-03"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư",
+     "Bảng độ sáng phái Việt dòng sách Thiên Lương (đặc tả an sao xemtuvi.vn, mục 6): sao này không có mức độ sáng này, lời viết theo mức gần nhất"
+    ]
+   },
+   "B": {
+    "y": "bạn ưa đổi mới nhưng đôi khi bỏ điều cũ trước khi điều mới kịp thành hình; hoàn thành dứt điểm từng việc rồi mới chuyển hướng để kết quả được tích lũy dần.",
+    "ma": [
+     "MENH-PQ-01",
+     "MENH-PQ-02"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư",
+     "Bảng độ sáng phái Việt dòng sách Thiên Lương (đặc tả an sao xemtuvi.vn, mục 6): sao này không có mức độ sáng này, lời viết theo mức gần nhất"
+    ]
+   },
+   "H": {
+    "y": "bạn thích thay đổi, ngại gò bó và dễ hao tán sức lực lẫn tiền bạc; tự lập sớm, chi tiêu có kế hoạch, kiên nhẫn khi làm nhóm để phát huy sự dũng cảm.",
+    "ma": [
+     "MENH-PQ-02",
+     "MENH-PQ-03"
+    ],
+    "nguon": [
+     "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "Tử Vi Đẩu Số Toàn Thư"
+    ]
+   }
+  }
+ },
+ "thanCu": {
+  "Mệnh": {
+   "y": "từ tuổi trưởng thành, bạn càng sống đúng với bản chất ở cung Mệnh, điều tự rèn hôm nay định hình con đường về sau; đầu tư cho chính mình là ưu tiên hàng đầu.",
+   "ma": [
+    "MENH-YN-05",
+    "MENH-YN-06",
+    "MENH-YN-07"
+   ],
+   "nguon": [
+    "Tử Vi Đẩu Số Toàn Thư",
+    "Trung Châu phái, Vương Đình Chi (bản dịch Nguyên tắc luận đoán 12 cung)",
+    "Tổng hợp phái Việt hiện đại (nhóm Nghiên cứu xemtuvi.vn)"
+   ]
+  },
+  "Phu Thê": {
+   "y": "từ tuổi trưởng thành, người bạn đời và các mối quan hệ gắn bó ảnh hưởng lớn đến hướng đi của bạn, không phải là phụ thuộc; người cùng giá trị sống rất đáng chọn.",
+   "ma": [
+    "MENH-YN-08",
+    "PHU-TRANH-07"
+   ],
+   "nguon": [
+    "Khoa Học Huyền Bí số 74, Trần Việt Sơn thuật kinh nghiệm cụ Thái Dương",
+    "Trung Châu phái, Vương Đình Chi (bản dịch Nguyên tắc luận đoán 12 cung)",
+    "Tử Vi Đẩu Số Toàn Thư"
+   ]
+  },
+  "Tài Bạch": {
+   "y": "từ tuổi trưởng thành, cách kiếm và giữ tiền trở thành trục chính của đời sống, bạn hay lấy tài chính để tự đánh giá mình; học quản lý tiền sớm để chủ động hơn.",
+   "ma": [
+    "MENH-YN-06",
+    "MENH-YN-08"
+   ],
+   "nguon": [
+    "Tử Vi Đẩu Số Toàn Thư",
+    "Trung Châu phái, Vương Đình Chi (bản dịch Nguyên tắc luận đoán 12 cung)",
+    "Tổng hợp phái Việt hiện đại (nhóm Nghiên cứu xemtuvi.vn)"
+   ]
+  },
+  "Thiên Di": {
+   "y": "từ tuổi trưởng thành, môi trường bên ngoài và những người gặp ngoài xã hội tác động nhiều đến bạn; mạnh dạn ra ngoài, mở rộng giao thiệp thường mang lại cơ hội tốt.",
+   "ma": [
+    "MENH-YN-06",
+    "MENH-YN-08"
+   ],
+   "nguon": [
+    "Tử Vi Đẩu Số Toàn Thư",
+    "Trung Châu phái, Vương Đình Chi (bản dịch Nguyên tắc luận đoán 12 cung)",
+    "Tổng hợp phái Việt hiện đại (nhóm Nghiên cứu xemtuvi.vn)"
+   ]
+  },
+  "Quan Lộc": {
+   "y": "từ tuổi trưởng thành, công việc và vai trò xã hội là nơi bạn đặt nhiều tâm sức, tìm thấy giá trị bản thân; chọn nghề hợp tính cách rất đáng đầu tư thời gian.",
+   "ma": [
+    "MENH-YN-06",
+    "MENH-YN-08"
+   ],
+   "nguon": [
+    "Tử Vi Đẩu Số Toàn Thư",
+    "Trung Châu phái, Vương Đình Chi (bản dịch Nguyên tắc luận đoán 12 cung)",
+    "Tổng hợp phái Việt hiện đại (nhóm Nghiên cứu xemtuvi.vn)"
+   ]
+  },
+  "Phúc Đức": {
+   "y": "từ tuổi trưởng thành, đời sống tinh thần, nếp nhà và sự bình an nội tâm chi phối nhiều lựa chọn của bạn; sở thích riêng, gắn kết gia đình là nguồn sức mạnh bền.",
+   "ma": [
+    "MENH-YN-03",
+    "MENH-YN-06",
+    "MENH-YN-08"
+   ],
+   "nguon": [
+    "Tử Vi Đẩu Số Toàn Thư",
+    "Trung Châu phái, Vương Đình Chi (bản dịch Nguyên tắc luận đoán 12 cung)",
+    "Tổng hợp phái Việt hiện đại (nhóm Nghiên cứu xemtuvi.vn)"
+   ]
+  }
+ },
+ "tuHoa": {
+  "Hóa Lộc": {
+   "y": "những nét tốt của {sao} được khơi mở thành thuận lợi, bạn dễ được đón nhận và có thêm cơ hội; dùng may mắn ấy để học hỏi, kết nối thay vì tiêu tán.",
+   "ma": [
+    "MENH-HOA-01",
+    "CHUNG-HOA-02",
+    "CHUNG-HOA-06"
+   ],
+   "nguon": [
+    "Tử Vi Đẩu Số Toàn Thư",
+    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+    "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+   ]
+  },
+  "Hóa Quyền": {
+   "y": "bạn có thêm sức mạnh và tính chủ động theo cách của {sao}, thích tự quyết và dễ được giao vai trò dẫn dắt; biết lắng nghe góp ý thì sự tín nhiệm mới bền.",
+   "ma": [
+    "MENH-HOA-02",
+    "CHUNG-HOA-02",
+    "CHUNG-HOA-06"
+   ],
+   "nguon": [
+    "Tử Vi Đẩu Số Toàn Thư",
+    "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+   ]
+  },
+  "Hóa Khoa": {
+   "y": "bạn sáng dạ, ham học, dễ được ghi nhận nhờ phẩm chất của {sao} và lúc khó thường có người chỉ dẫn; chăm chút việc học là con đường nâng uy tín tốt nhất.",
+   "ma": [
+    "MENH-HOA-03",
+    "CHUNG-HOA-02",
+    "CHUNG-SP-14"
+   ],
+   "nguon": [
+    "Tử Vi Đẩu Số Toàn Thư",
+    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+    "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+   ]
+  },
+  "Hóa Kỵ": {
+   "y": "nét của {sao} dễ thành điều bạn bận tâm, có lúc lo nghĩ nhiều hoặc việc phải làm lại mới thông; sách gốc khuyên chỉ cầu bảy phần, kỳ vọng vừa phải sẽ nhẹ lòng.",
+   "ma": [
+    "MENH-HOA-04",
+    "CHUNG-HOA-03",
+    "CHUNG-HOA-06"
+   ],
+   "nguon": [
+    "Tử Vi Đẩu Số Toàn Thư",
+    "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+   ]
+  }
+ },
+ "tuanTriet": {
+  "Tuần": {
+   "y": "nét nổi bật của Mệnh thường bộc lộ chậm, kín đáo thời trẻ và rõ dần về sau; sao sáng bớt sức còn sao yếu được che chắn, nên bền bỉ là lợi thế lớn.",
+   "ma": [
+    "CHUNG-TUAN-02",
+    "CHUNG-TUAN-07",
+    "CHUNG-TUAN-09"
+   ],
+   "nguon": [
+    "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
+    "Tử Vi Kiến Giải, Đặng Xuân Xuyến (bài Tuần Triệt và những dấu hỏi)",
+    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+   ]
+  },
+  "Triệt": {
+   "y": "đầu đời bạn có thể gặp nhiều việc phải bắt đầu lại hoặc chưa như ý, rồi nhẹ dần; mặt mạnh lẫn mặt vướng đều dịu đi, tự lực từng bước sẽ đi xa.",
+   "ma": [
+    "CHUNG-TUAN-02",
+    "CHUNG-TUAN-06",
+    "CHUNG-TUAN-07",
+    "CHUNG-TUAN-09"
+   ],
+   "nguon": [
+    "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
+    "Tử Vi Kiến Giải, Đặng Xuân Xuyến (bài Tuần Triệt và những dấu hỏi)",
+    "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+   ]
+  }
+ },
+ "phuTinh": {
+  "Kình Dương": {
+   "y": "bạn quả quyết, nhanh nhẹn và dám đương đầu, đôi khi kèm tính nóng hoặc hơi liều; biết dừng lại cân nhắc thì sự gan dạ này thành lợi thế lúc cần quyết nhanh.",
+   "ma": [
+    "MENH-SP-06",
+    "CHUNG-SP-02",
+    "CHUNG-SP-03"
+   ],
+   "nguon": [
+    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+    "Tử Vi Đẩu Số Toàn Thư"
+   ]
+  },
+  "Đà La": {
+   "y": "bạn bền bỉ, lì và ít khi bỏ cuộc, nhưng có lúc chậm hoặc giữ ý kiến của mình quá lâu; cởi mở với cách làm khác để sức kiên trì đi đúng hướng.",
+   "ma": [
+    "MENH-SP-06",
+    "CHUNG-SP-02"
+   ],
+   "nguon": [
+    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+    "Tổng hợp phái Việt hiện đại (nhóm Nghiên cứu xemtuvi.vn)"
+   ]
+  },
+  "Hỏa Tinh": {
+   "y": "bạn làm gì cũng nhanh, mạnh và nhiệt, có thể bứt phá trong thời gian ngắn nhưng dễ nóng vội; chờ một nhịp trước khi phản ứng để năng lượng ấy đi đúng chỗ.",
+   "ma": [
+    "MENH-SP-07",
+    "CHUNG-SP-02"
+   ],
+   "nguon": [
+    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+    "Tử Vi Đẩu Số Toàn Thư"
+   ]
+  },
+  "Linh Tinh": {
+   "y": "bạn nhạy bén, phản ứng nhanh, có sức bật ngầm nhưng hay giữ bực bội trong lòng lâu; một hoạt động giải tỏa đều đặn như chạy bộ, vẽ, viết rất có ích.",
+   "ma": [
+    "MENH-SP-07",
+    "CHUNG-SP-02"
+   ],
+   "nguon": [
+    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+    "Tổng hợp phái Việt hiện đại (nhóm Nghiên cứu xemtuvi.vn)"
+   ]
+  },
+  "Địa Không": {
+   "y": "bạn có lối nghĩ khác thường và nhiều ý tưởng bất ngờ, nhưng kết quả có lúc lên xuống thất thường; tránh mạo hiểm theo cảm hứng và giữ một khoản dự phòng cho mình.",
+   "ma": [
+    "MENH-SP-08",
+    "CHUNG-SP-02"
+   ],
+   "nguon": [
+    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+    "Tử Vi Đẩu Số Toàn Thư"
+   ]
+  },
+  "Địa Kiếp": {
+   "y": "bạn dám nghĩ dám làm, có thể tiến rất nhanh nhưng dễ hụt khi chủ quan, sách ví như thuyền giữa sóng; chọn bước đi chắc tay, tránh đầu cơ để giữ thành quả.",
+   "ma": [
+    "MENH-SP-08",
+    "CHUNG-SP-02"
+   ],
+   "nguon": [
+    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+    "Tử Vi Đẩu Số Toàn Thư"
+   ]
+  },
+  "Tả Phù": {
+   "y": "bạn rộng lượng, dễ gần và thường có người sẵn lòng giúp, nhất là khi bạn chủ động nhờ; sao này làm cả cung mạnh thêm, nên vun đắp quan hệ tin cậy từ sớm.",
+   "ma": [
+    "MENH-SP-01",
+    "CHUNG-SP-01"
+   ],
+   "nguon": [
+    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+    "Tử Vi Đẩu Số Toàn Thư"
+   ]
+  },
+  "Hữu Bật": {
+   "y": "bạn tốt bụng, biết hỗ trợ người khác và cũng hay nhận lại sự trợ giúp đúng lúc; tham gia hoạt động nhóm là dịp để bạn tìm được những người đồng hành đáng quý.",
+   "ma": [
+    "MENH-SP-01",
+    "CHUNG-SP-01"
+   ],
+   "nguon": [
+    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+    "Tử Vi Đẩu Số Toàn Thư"
+   ]
+  },
+  "Văn Xương": {
+   "y": "bạn thông minh, hiếu học, yêu chữ nghĩa và diễn đạt mạch lạc; đọc nhiều, viết đều đặn sẽ biến sự ham hiểu biết thành năng lực nổi bật của bạn.",
+   "ma": [
+    "MENH-SP-02",
+    "CHUNG-SP-01"
+   ],
+   "nguon": [
+    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+    "Tử Vi Đẩu Số Toàn Thư"
+   ]
+  },
+  "Văn Khúc": {
+   "y": "bạn có năng khiếu nghệ thuật, ăn nói duyên dáng và cảm thụ tốt âm nhạc, văn chương; nuôi dưỡng một môn nghệ thuật lâu dài cho bạn cách thể hiện bản thân tự tin.",
+   "ma": [
+    "MENH-SP-02",
+    "CHUNG-SP-01"
+   ],
+   "nguon": [
+    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+    "Tử Vi Đẩu Số Toàn Thư"
+   ]
+  },
+  "Thiên Khôi": {
+   "y": "bạn sáng dạ, đàng hoàng và dễ được người lớn tuổi, người có uy tín nâng đỡ; mạnh dạn xin lời khuyên từ thầy cô, người đi trước sẽ mở ra nhiều cánh cửa.",
+   "ma": [
+    "MENH-SP-03",
+    "CHUNG-SP-01"
+   ],
+   "nguon": [
+    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+    "Tử Vi Đẩu Số Toàn Thư"
+   ]
+  },
+  "Thiên Việt": {
+   "y": "bạn lanh lợi, có duyên gặp quý nhân và hay được giúp đúng lúc trong học hành, thi cử; thái độ cầu thị, biết ơn khiến sự giúp đỡ ấy tìm đến thường xuyên hơn.",
+   "ma": [
+    "MENH-SP-03",
+    "CHUNG-SP-01"
+   ],
+   "nguon": [
+    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+    "Tử Vi Đẩu Số Toàn Thư"
+   ]
+  },
+  "Lộc Tồn": {
+   "y": "bạn thận trọng, biết giữ gìn và tích lũy, sống nhân hậu nhưng đôi khi khép kín; mở lòng chia sẻ, hợp tác với người khác để sự ổn định không biến thành cô đơn.",
+   "ma": [
+    "MENH-SP-04",
+    "CHUNG-SP-04"
+   ],
+   "nguon": [
+    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+    "Tử Vi Đẩu Số Toàn Thư"
+   ]
+  },
+  "Thiên Mã": {
+   "y": "bạn năng động, đa tài, thích di chuyển và trải nghiệm môi trường mới; khi có định hướng rõ, sự xông xáo này giúp bạn nắm cơ hội nhanh hơn người khác.",
+   "ma": [
+    "MENH-SP-05",
+    "CHUNG-SP-05"
+   ],
+   "nguon": [
+    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+    "Tử Vi Đẩu Số Toàn Thư"
+   ]
+  },
+  "Đào Hoa": {
+   "y": "bạn có sức hút tự nhiên, dễ gây thiện cảm và được nhiều người yêu mến; dùng sự duyên dáng ấy cho những mối quan hệ chân thành sẽ mang lại niềm vui bền lâu.",
+   "ma": [
+    "CHUNG-SP-06"
+   ],
+   "nguon": [
+    "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+    "Tổng hợp phái Việt hiện đại (nhóm Nghiên cứu xemtuvi.vn)"
+   ]
+  },
+  "Hồng Loan": {
+   "y": "bạn cởi mở, vui vẻ và giàu tình cảm, coi trọng sự đồng điệu tinh thần hơn vẻ ngoài; giữ sự chân thành trong cách đối đãi, bạn sẽ có những người bạn tri kỷ.",
+   "ma": [
+    "CHUNG-SP-06"
+   ],
+   "nguon": [
+    "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+    "Tổng hợp phái Việt hiện đại (nhóm Nghiên cứu xemtuvi.vn)"
+   ]
+  },
+  "Thiên Hình": {
+   "y": "bạn cứng cỏi, có kỷ luật, phân định đúng sai rõ, đôi khi nghiêm khắc với bản thân lẫn người khác; lời nói mềm hơn sẽ khiến nguyên tắc của bạn dễ được tiếp nhận.",
+   "ma": [
+    "PHUMAU-SP-07",
+    "CHUNG-SP-08"
+   ],
+   "nguon": [
+    "Tử Vi Đẩu Số Toàn Thư",
+    "Tổng hợp phái Việt hiện đại (nhóm Nghiên cứu xemtuvi.vn)"
+   ]
+  },
+  "Thiên Không": {
+   "y": "bạn có chiều sâu nội tâm, cần khoảng lặng riêng và không đặt nặng hình thức; đời sống tinh thần cho bạn sự sáng suốt, miễn là vẫn bắt tay làm ý tưởng thành thật.",
+   "ma": [
+    "MENH-SP-09"
+   ],
+   "nguon": [
+    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+    "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+    "Tổng hợp phái Việt hiện đại (nhóm Nghiên cứu xemtuvi.vn)"
+   ]
+  }
+ },
+ "voChinhDieu": {
+  "y": "cung này mượn {saoXung} từ Thiên Di chiếu sang, lực nhẹ hơn sao đóng tại chỗ; bạn linh hoạt, nhạy với môi trường, nên nơi học tập và người đồng hành tốt rất quan trọng.",
+  "ma": [
+   "MENH-CC-09",
+   "CHUNG-VCD-01",
+   "MENH-TRANH-06"
+  ],
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
+   "Tử Vi Đẩu Số Toàn Thư"
+  ]
+ }
+}
