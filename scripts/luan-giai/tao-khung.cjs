@@ -58,7 +58,7 @@ for (const [cd, c] of Object.entries(CD)) {
         id: `KHUNG-${cd}-HOA-Lộc-HT-${b.id}-${vt}`, chuyenDe: cd, cung: c.cung, loai: 'HOA',
         maNghienCuu: ['MENH-HOA-01', 'TAI-CC-08', 'CHUNG-SP-02'], dieuKien: [{ hoa: 'Hóa Lộc', viTri: vt, cungCoSao: b.co }],
         khong: b.khong.map((ds) => ({ hoa: 'Hóa Lộc', viTri: vt, cungCoSao: ds })), muc: MUC_HOA,
-        noiDung: `{sao} mang Hóa Lộc ở {cung} (${VT[vt]} của ${c.cung}) nhưng có ${b.ten} đồng cung, nên cái lợi dễ hao tán về ${c.chuDe}: ${HAO_TAN[cd]}.`,
+        noiDung: `{sao} mang Hóa Lộc ở {cung} (${VT[vt]} của ${c.cung}) nhưng có ${b.ten} đồng cung, nên cái lợi dễ hao tán: ${HAO_TAN[cd]}.`,
         nguon: [TT, TB], nguonChiTiet: 'TT (Hóa Lộc: gặp Kiếp, Không thì hao tán); TB (Hóa Lộc)', truongPhai: TP, yeuTo: [],
       });
     }
@@ -99,7 +99,7 @@ for (const [cd, c] of Object.entries(CD)) {
   them({
     id: `KHUNG-${cd}-GIAP-KhoaQuyen-Ky`, chuyenDe: cd, cung: c.cung, loai: 'HOA',
     maNghienCuu: ['CHUNG-PP-09', 'CHUNG-CC-10'], dieuKien: [gk, ky], muc: MUC_HOA,
-    noiDung: `${c.cung} nằm giữa hai cung kề mang Hóa Khoa và Hóa Quyền (thế giáp cát), nhưng chính cung có Hóa Kỵ tọa thủ nên lợi ích từ thế giáp giảm đi: có người uy tín sẵn lòng giúp bạn về ${c.chuDe}, nhưng bạn cần chủ động đón nhận.`,
+    noiDung: `${c.cung} nằm giữa hai cung kề mang Hóa Khoa và Hóa Quyền (thế giáp cát), nhưng chính cung có Hóa Kỵ tọa thủ nên lợi ích từ thế giáp giảm đi: có người uy tín sẵn lòng giúp, nhưng bạn cần chủ động đón nhận.`,
     nguon: [TT, TB], nguonChiTiet: 'TT (Luận cách tinh số cao hạ, tam giáp); TB (Hóa Kỵ)', truongPhai: TP, yeuTo: ['Giáp Khoa Quyền'],
   });
 }
@@ -128,10 +128,22 @@ for (const [cd, c] of Object.entries(CD)) {
   for (const [sao, [ma, y]] of Object.entries(KY_SAO)) {
     them({
       id: `KHUNG-${cd}-KY-${ID_SAO_KY(sao)}`, chuyenDe: cd, cung: c.cung, loai: 'HOA',
-      maNghienCuu: [...(cd === 'menh' ? ['MENH-HOA-04'] : []), 'CHUNG-HOA-03', 'CHUNG-HOA-06', ma], dieuKien: [{ sao: [sao], hoa: 'Hóa Kỵ', viTri: 'chinh' }], muc: MUC_HOA,
+      maNghienCuu: [...(cd === 'menh' ? ['MENH-HOA-04'] : []), 'CHUNG-HOA-03', 'CHUNG-HOA-06', ma], dieuKien: [{ sao: [sao], hoa: 'Hóa Kỵ', viTri: 'chinh' }],
+      khong: [{ tuan: true, viTri: 'chinh' }, { triet: true, viTri: 'chinh' }], muc: MUC_HOA,
       noiDung: `Hóa Kỵ ở ${c.cung} hóa vào ${sao}: ${y}. ${KY_DUOI[cd]}`,
       nguon: [TT, KL], nguonChiTiet: 'TT (quyển 2, Hóa Kỵ); KL (Sao Tứ hóa)', truongPhai: TP, yeuTo: [],
     });
+    // CHUNG-TUAN-06: Kỵ cùng cung với Tuần / Triệt thì mặt vướng nhẹ hơn.
+    for (const [k, ten, mo] of [['tuan', 'Tuần', 'đến chậm'], ['triet', 'Triệt', 'rõ sớm rồi nhẹ dần']]) {
+      them({
+        id: `KHUNG-${cd}-KY-${ID_SAO_KY(sao)}-${ten}`, chuyenDe: cd, cung: c.cung, loai: 'HOA',
+        maNghienCuu: [...(cd === 'menh' ? ['MENH-HOA-04'] : []), 'CHUNG-HOA-03', 'CHUNG-HOA-06', 'CHUNG-TUAN-06', ma],
+        dieuKien: [{ sao: [sao], hoa: 'Hóa Kỵ', viTri: 'chinh' }, { [k]: true, viTri: 'chinh' }],
+        ...(k === 'triet' ? { khong: [{ tuan: true, viTri: 'chinh' }] } : {}), muc: MUC_HOA,
+        noiDung: `Hóa Kỵ ở ${c.cung} hóa vào ${sao}: ${y}. ${ten} đóng cùng ${c.cung} làm mặt vướng này nhẹ hơn và ${mo}. ${KY_DUOI[cd]}`,
+        nguon: [TT, KL], nguonChiTiet: 'TT (quyển 2, Hóa Kỵ); KL (Sao Tứ hóa; Tuần Triệt)', truongPhai: TP, yeuTo: [],
+      });
+    }
   }
 }
 
@@ -207,11 +219,12 @@ for (const [cd, c] of Object.entries(CD)) {
       nguon: [NL, KL], nguonChiTiet: 'NL, KL (Tuần Triệt)', truongPhai: TP, yeuTo: [],
     });
   }
+  const DH_VIEC = { 'Hóa Lộc': 'giữ một khoản dự phòng trước khi mở hướng mới', 'Hóa Quyền': 'bàn với người cùng làm trước khi chốt quyết định lớn', 'Hóa Khoa': 'nhờ người có kinh nghiệm góp ý trước khi chốt' };
   for (const hoa of ['Hóa Lộc', 'Hóa Quyền', 'Hóa Khoa']) {
     them({
       id: `KHUNG-${cd}-DH-${hoa.split(' ')[1]}-Ky`, chuyenDe: cd, cung: c.cung, loai: 'YN',
       maNghienCuu: ['CHUNG-HOA-07', 'CHUNG-PP-11'], dieuKien: [{ hoa, viTri: 'tam-phuong' }, { hoa: 'Hóa Kỵ', viTri: 'tam-phuong' }], muc: MUC_HOA,
-      noiDung: `Tam phương của ${c.cung} vừa có ${hoa} vừa có Hóa Kỵ: thuận lợi và điểm vướng cùng tồn tại, kết quả có lúc lên lúc xuống; nên tận dụng mặt thuận, giữ nhịp đều, dự phòng và chủ động xử lý chỗ vướng thay vì chỉ nhìn một chiều.`,
+      noiDung: `Tam phương của ${c.cung} có cả ${hoa} lẫn Hóa Kỵ ({sao}): thuận lợi và điểm vướng cùng có, nên ${DH_VIEC[hoa]}.`,
       nguon: [TT, KL], nguonChiTiet: 'TT (quyển 2, Hóa Kỵ); KL (Hóa Kỵ)', truongPhai: TP, yeuTo: [],
     });
   }
@@ -266,7 +279,13 @@ const UNG = {
 };
 // Phá cách mức 3 (CHUNG-CC-08): chỉ nói "có dáng dấp của cách …", không gọi như thế mạnh.
 // GHI CHÚ (chờ Đức chốt): lý do "yếu tố hung ở tứ chính nặng" theo CC-08; SP-03 coi sát tinh đắc địa hội bộ Sát Phá Tham là trợ lực. Chưa đổi cách đọc sát tinh đắc địa.
-const PHA3 = (ten, ud, cung) => `Có dáng dấp của thế ${ten}: ${ud}; nhưng yếu tố hung ở tứ chính (bốn cung chiếu vào ${cung}) nặng nên chưa thể coi là cách vững, cần nỗ lực nhiều hơn để phát huy.`;
+const CUA_BAN = { menh: 'hướng đi của bạn', 'quan-loc': 'công việc của bạn', 'phu-the': 'chuyện tình cảm của bạn', 'tai-bach': 'chuyện tiền bạc của bạn', 'dien-trach': 'chuyện nhà cửa của bạn' };
+const PHA3_LY = {
+  ham: 'nhưng {pha} hãm ngay tại cung này (tứ chính gồm cung này và ba cung chiếu về) nên chưa thể coi là cách vững',
+  ky: 'nhưng {pha} hóa Kỵ ngay trong sao tạo cách nên chưa thể coi là cách vững',
+  diem: 'nhưng nhiều yếu tố hung ({pha}) hội ở tứ chính (cung này và ba cung chiếu về) nên chưa thể coi là cách vững',
+};
+const PHA3 = (ten, ud, ly, ung) => `Có dáng dấp của thế ${ten}: ${ud}; ${PHA3_LY[ly]}. ${ung}`;
 const nguonCc = [TT, TB];
 const ccBase = (cd, c, ten, ma, dk, noiDung, o) => ({
   id: `KHUNG-${cd}-CC-${ten.normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/gi, 'd').replace(/[^A-Za-z0-9]+/g, '')}${o.hau}`,
@@ -279,30 +298,47 @@ for (const [cd, c] of Object.entries(CD)) {
   // Hỏa Tham / Linh Tham: thành cách khi Tham Lang miếu hoặc vượng; ngược lại chỉ luận "Tham Lang gặp Hỏa/Linh" (CHUNG-CC-09).
   for (const [s, n, hau] of [['Hỏa Tinh', 'Hỏa Tham', 'Hoa'], ['Linh Tinh', 'Linh Tham', 'Linh']]) {
     const dk = (ds) => [{ sao: ['Tham Lang', s], doSang: ds, viTri: 'tam-phuong' }];
-    const base = (cl) => ({ id: `KHUNG-${cd}-CC-HoaThamLinhTham-${hau}${cl}`, ten: 'Hỏa Tham / Linh Tham' });
-    them(ccBase(cd, c, 'Hỏa Tham / Linh Tham', HOA_THAM.ma, dk(['Miếu', 'Vượng']), `${dau}Tham Lang sáng đồng cung ${s}, tạo thế ${n}: ${HOA_THAM.ud[cd]}.`, { hau: `-${hau}`, uuTien: 100 }));
-    them(ccBase(cd, c, 'Hỏa Tham / Linh Tham', HOA_THAM.ma, dk(['Đắc', 'Bình', 'Hãm']), `${dau}Tham Lang đồng cung ${s} nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách ${n}: ${HOA_THAM.udPha[cd]}.`, { hau: `-${hau}-PHA`, uuTien: 90, pha: true }));
+    const tham = (ds) => ({ sao: ['Tham Lang', s], doSang: ds, viTri: 'tam-phuong' });
+    const hoaHam = { sao: [s], doSang: ['Hãm'], viTri: 'tam-phuong' };
+    them(ccBase(cd, c, 'Hỏa Tham / Linh Tham', HOA_THAM.ma, [tham(['Miếu', 'Vượng'])], `${dau}Tham Lang sáng đồng cung ${s}, tạo thế ${n}: ${HOA_THAM.ud[cd]}.`, { hau: `-${hau}`, uuTien: 100 }));
+    const phaDs = ['Đắc', 'Bình', 'Hãm'];
+    them(ccBase(cd, c, 'Hỏa Tham / Linh Tham', HOA_THAM.ma, [tham(phaDs)], `${dau}Tham Lang đồng cung ${s} nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách ${n}: ${HOA_THAM.udPha[cd]}.`, { hau: `-${hau}-PHA`, uuTien: 90, pha: true, khong: [hoaHam] }));
+    // CHUNG-CC-09: Hỏa/Linh cũng hãm thì nói cả hai đều hãm.
+    them(ccBase(cd, c, 'Hỏa Tham / Linh Tham', HOA_THAM.ma, [tham(phaDs), hoaHam], `${dau}Tham Lang và ${s} đều hãm, nên chưa đủ điều kiện gọi trọn cách ${n}: ${HOA_THAM.udPha[cd]}.`, { hau: `-${hau}-PHA-HAM`, uuTien: 90, pha: true }));
   }
   for (const cach of CACH) {
-    const ud = cach.ud[cd];
+    // Nhật Nguyệt: chọn đúng nhánh cùng sáng / có sao kém sáng theo lá số (Phiếu 3c).
+    const SANG = { sao: cach.dk[0].sao, rai: true, deuDoSang: ['Miếu', 'Vượng', 'Đắc'], viTri: 'tam-phuong' };
+    const bien = cach.ten === 'Nhật Nguyệt'
+      ? (([p0, p1]) => [
+        { tag: '-SANG', ud: p0.replace(/^cùng sáng thì /, 'cả hai sao đều sáng nên ').replace(/^cùng sáng là /, 'cả hai sao đều sáng, đây là '), dkx: [SANG], kx: [] },
+        { tag: '-KEM', ud: p1.replace(/^nếu một trong hai kém sáng thì /, 'có sao kém sáng nên ').replace(/^kém sáng thì /, 'có sao kém sáng nên '), dkx: [], kx: [SANG] },
+      ])(cach.ud[cd].split('; '))
+      : [{ tag: '', ud: cach.ud[cd], dkx: [], kx: [] }];
     // Ba mức theo CC-08 (điểm phá; Sát Phá Tham: sát tinh đắc địa = 0, TRANH-13): thành cách / có khuyết (điểm > 0) / phá cách (mức 3).
     const saoCach = [...new Set(cach.dk.flatMap((k) => k.sao))];
     const phaCach = (tuMuc) => ({ phaCach: { tuMuc, saoCach, ...(cach.ten === 'Sát Phá Tham' ? { dacLaTroLuc: true } : {}) } });
     const khong0 = cach.khong0 ?? [];
-    them(ccBase(cd, c, cach.ten, cach.ma, cach.dk, `${dau}${cach.core}: ${ud}${cach.them ? `; ${cach.them}` : ''}.`, { hau: '', uuTien: 100, khong: [phaCach(2), ...khong0] }));
-    them(ccBase(cd, c, cach.ten, cach.ma, [...cach.dk, phaCach(2)], `${dau}${cach.core} (thành cách nhưng có khuyết): ${ud}; ${cach.khu}.`, { hau: '-PHA', uuTien: 90, pha: true, khong: [phaCach(3), ...khong0] }));
-    them(ccBase(cd, c, cach.ten, cach.ma, [...cach.dk, phaCach(3)], dau + PHA3(cach.ten, ud, c.cung), { hau: '-PHA3', uuTien: 85, pha: true, ...(khong0.length ? { khong: khong0 } : {}) }));
+    for (const { tag, ud, dkx, kx } of bien) {
+      const dk0 = [...cach.dk, ...dkx];
+      them(ccBase(cd, c, cach.ten, cach.ma, dk0, `${dau}${cach.core}: ${ud}${cach.them ? `; ${cach.them}` : ''}.`, { hau: tag, uuTien: 100, khong: [phaCach(2), ...khong0, ...kx] }));
+      them(ccBase(cd, c, cach.ten, cach.ma, [...dk0, phaCach(2)], `${dau}${cach.core} (thành cách nhưng có khuyết): ${ud}; ${cach.khu}.`, { hau: `${tag}-PHA`, uuTien: 90, pha: true, khong: [phaCach(3), ...khong0, ...kx] }));
+      for (const ly of ['ham', 'ky', 'diem']) {
+        const dkp = { phaCach: { ...phaCach(3).phaCach, lyDo: ly } };
+        them(ccBase(cd, c, cach.ten, cach.ma, [...dk0, dkp], dau + PHA3(cach.ten, ud, ly, UNG[cach.kieu][cd]), { hau: `${tag}-PHA3-${ly}`, uuTien: 85, pha: true, ...((khong0.length || kx.length) ? { khong: [...khong0, ...kx] } : {}) }));
+      }
+    }
     if (cach.ten === 'Sát Phá Tham') { // Phiếu 3: cả ba sao chủ cách đều hãm thì nêu rõ (một câu mỗi bài)
       them({ id: `KHUNG-${cd}-CC-SatPhaTham-DeuHam`, chuyenDe: cd, cung: c.cung, loai: 'CC', maNghienCuu: ['CHUNG-CC-02', 'CHUNG-CC-08'],
         dieuKien: [{ ...cach.dk[0], deuDoSang: ['Hãm'] }], cachCuc: cach.ten, uuTien: 75, muc: 'cach-cuc',
-        noiDung: `Cả ba sao chủ cách Sát Phá Tham (Thất Sát, Phá Quân, Tham Lang) đều hãm, nên khi luận ${c.chuDe}, nhịp biến động thiên về thử thách và cần nhiều lần điều chỉnh hơn.`,
+        noiDung: `Cả ba sao chủ cách Sát Phá Tham (Thất Sát, Phá Quân, Tham Lang) đều hãm, nên ${CUA_BAN[cd]} thường nhiều thử thách hơn và cần nhiều lần điều chỉnh.`,
         nguon: nguonCc, nguonChiTiet: 'TT (Luận cách tinh số cao hạ); TB', truongPhai: TP, yeuTo: [`Cách ${cach.ten}`] });
     }
     if (cach.ten === 'Sát Phá Tham') { // TRANH-13: từ ba sát tinh đắc địa mà thiếu Lộc → thêm một câu, không hạ mức
       them({ id: `KHUNG-${cd}-CC-SatPhaTham-TRANH13`, chuyenDe: cd, cung: c.cung, loai: 'CC', maNghienCuu: ['CHUNG-CC-08', 'CHUNG-TRANH-13'],
         dieuKien: [...cach.dk, { satDac: 3, viTri: 'tam-phuong' }], khong: [{ sao: ['Lộc Tồn'], viTri: 'tam-phuong' }, { hoa: 'Hóa Lộc', viTri: 'tam-phuong' }],
         cachCuc: cach.ten, uuTien: 80, muc: 'cach-cuc',
-        noiDung: `Thế Sát Phá Tham có từ ba sát tinh đắc địa hội trong tam phương mà chưa có Lộc đi kèm, nên sức bứt phá lớn, cần nhịp nghỉ và tích lũy để không làm rồi lại đổ (khi luận ${c.chuDe}).`,
+        noiDung: `Thế Sát Phá Tham có từ ba sát tinh đắc địa hội trong tam phương mà chưa có Lộc đi kèm, nên sức bứt phá lớn, cần nhịp nghỉ và tích lũy để ${CUA_BAN[cd]} không làm rồi lại đổ.`,
         nguon: nguonCc, nguonChiTiet: 'TB; KL (Sát Phá Tham, sát tinh đắc địa); mức cần chuyên gia duyệt (TRANH-13)', truongPhai: TP, yeuTo: [`Cách ${cach.ten}`] });
     }
   }

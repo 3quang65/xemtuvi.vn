@@ -32,8 +32,8 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 ### Cách cục
 - Thiên Cơ, Thái Âm, Thiên Đồng, Thiên Lương cùng hội trong tam phương, tạo thế Cơ Nguyệt Đồng Lương (thành cách nhưng có khuyết): trong tình cảm, bạn nghĩ nhiều, trọng sự hòa thuận và êm ấm hơn là kịch tính; cần chủ động hơn để không dừng ở lối quen.  
   _↳ KHUNG-phu-the-CC-CoNguyetdongLuong-PHA · Phu Thê · Thiên Cơ+Thái Âm+Thiên Đồng+Thiên Lương+Linh Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
-- Thái Dương và Thái Âm cùng hội trong tam phương, tạo thế Nhật Nguyệt (thành cách nhưng có khuyết): cùng sáng thì quan hệ ấm áp, quan tâm hai chiều; kém sáng thì cần chủ động hỏi han nhau; cần bền bỉ và tự tạo cơ hội để phát huy ánh sáng của hai sao.  
-  _↳ KHUNG-phu-the-CC-NhatNguyet-PHA · Phu Thê · Thái Dương+Thái Âm+Linh Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
+- Thái Dương và Thái Âm cùng hội trong tam phương, tạo thế Nhật Nguyệt (thành cách nhưng có khuyết): cả hai sao đều sáng nên quan hệ ấm áp, quan tâm hai chiều; cần bền bỉ và tự tạo cơ hội để phát huy ánh sáng của hai sao.  
+  _↳ KHUNG-phu-the-CC-NhatNguyet-SANG-PHA · Phu Thê · Thái Dương+Thái Âm+Linh Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Cách yêu và gắn bó
 - Thái Âm tại Phu Thê: dịu dàng, nhạy cảm, cần không gian chia sẻ cảm xúc.  
@@ -50,8 +50,6 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
   _↳ PT-S12-C6 · Phúc Đức · Thiên Lương · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
 
 ### Tứ hóa
-- Hóa Lộc tại Phu Thê mở ra cơ hội và nguồn lực, nên chủ động nắm bắt.  
-  _↳ PT-HOA-0 · Phu Thê · Thái Âm · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
 - Thiên Đồng mang Hóa Quyền ở Phúc Đức (cung tam hợp của Phu Thê) ảnh hưởng đến chuyện tình cảm và hôn nhân: thêm mong muốn giữ vai trò chủ động trong quan hệ, nên lắng nghe để hai bên cùng cân bằng.  
   _↳ KHUNG-phu-the-HOA-Quyền-tam-hop · Phu Thê · Thiên Đồng · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 - Thiên Cơ mang Hóa Khoa ở Thiên Di (cung tam hợp của Phu Thê) ảnh hưởng đến chuyện tình cảm và hôn nhân: thêm sự tinh tế, nhã nhặn và được người xung quanh quý trọng trong quan hệ.  
@@ -66,9 +64,5 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
   _↳ KHUNG-phu-the-TRIET-tam-hop · Phu Thê · — · Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương) · Tam hợp phái Việt_
 - Linh Tinh ở Phúc Đức (cung tam hợp của Phu Thê) ảnh hưởng đến chuyện tình cảm và hôn nhân: nhạy bén nhưng dễ căng thẳng, nên giữ nhịp nghỉ ngơi.  
   _↳ KHUNG-phu-the-SP-LinhTinh-tam-hop · Phu Thê · Linh Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
-- Thiên Không ở Quan Lộc (cung xung chiếu của Phu Thê) ảnh hưởng đến chuyện tình cảm và hôn nhân: ý nghĩ thoáng, nhiều ý tưởng nhưng khó nắm chắc, nên cụ thể hóa bằng kế hoạch.  
-  _↳ KHUNG-phu-the-SP-ThiênKhông-xung · Phu Thê · Thiên Không · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
-- Lộc Tồn ở Thiên Di (cung tam hợp của Phu Thê) ảnh hưởng đến chuyện tình cảm và hôn nhân: biết tích lũy, thận trọng với tài chính, nên linh hoạt vừa đủ để không bỏ lỡ cơ hội.  
-  _↳ KHUNG-phu-the-SP-LộcTồn-tam-hop · Phu Thê · Lộc Tồn · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 > Luận giải do hệ thống xemtuvi.vn tạo tự động từ các quy tắc Tử Vi có ghi nguồn; nội dung mang tính tham khảo, giúp hiểu mình và định hướng, không phải lời đoán chắc về tương lai.

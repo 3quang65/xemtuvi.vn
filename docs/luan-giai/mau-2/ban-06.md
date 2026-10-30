@@ -29,10 +29,6 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 
 ## Bài luận giải (đúng như khách nhận)
 
-### Cách cục
-- Địa Không và Địa Kiếp cùng hội chiếu vào Phu Thê (thế Không Kiếp chiếu): sát tinh thành cặp hội vào tứ chính làm bức tranh nhiều biến đổi hơn; nên thực tế hóa ý tưởng, cân nhắc trước khi đổi hướng và giữ dự phòng.  
-  _↳ KHUNG-phu-the-CC-KhongKiepChieu · Phu Thê · Địa Không+Địa Kiếp · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
-
 ### Cách yêu và gắn bó
 - Thiên Cơ tại Phu Thê: thích trao đổi nhiều, quan hệ bền khi hai bên cùng chia sẻ.  
   _↳ PT-S02-TOT · Phu Thê · Thiên Cơ · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) · tam hợp phái Việt_
@@ -58,8 +54,6 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
   _↳ PT-TT-TUẦN · Phu Thê · — · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) · tam hợp phái Việt_
 - Hữu Bật đồng cung Phu Thê: được giúp đỡ đúng lúc, quan hệ thuận.  
   _↳ PT-PS-1 · Phu Thê · Hữu Bật · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
-- Thiên Việt đồng cung Phu Thê: có sự nâng đỡ, cơ hội từ người đi trước.  
-  _↳ PT-PS-5 · Phu Thê · Thiên Việt · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
 - Thiên Mã đồng cung Phu Thê: năng động, thích di chuyển và thay đổi.  
   _↳ PT-PS-7 · Phu Thê · Thiên Mã · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
 - Triệt đóng ở Thiên Di (cung tam hợp của Phu Thê): Triệt chỉ tác động hai cung nó tách đôi, không chiếu sang Phu Thê, nhưng các sao tại Thiên Di bị giảm cường độ nên phần đóng góp của cung này cho chuyện tình cảm và hôn nhân dịu hơn; ảnh hưởng thường rõ hơn ở giai đoạn đầu đời rồi nhẹ dần, mỗi người cảm nhận khác nhau tùy hoàn cảnh và nỗ lực.  
@@ -70,8 +64,6 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
   _↳ KHUNG-phu-the-SP-ĐàLa-xung · Phu Thê · Đà La · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 - Hỏa Tinh ở Phúc Đức (cung tam hợp của Phu Thê) ảnh hưởng đến chuyện tình cảm và hôn nhân: nhiệt huyết, phản ứng nhanh, nên tiết chế cảm xúc.  
   _↳ KHUNG-phu-the-SP-HỏaTinh-tam-hop · Phu Thê · Hỏa Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
-- Địa Không ở Quan Lộc (cung xung chiếu của Phu Thê) ảnh hưởng đến chuyện tình cảm và hôn nhân: hay nghĩ khác lạ, cần thực tế hóa ý tưởng.  
-  _↳ KHUNG-phu-the-SP-ĐịaKhông-xung · Phu Thê · Địa Không · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 - Địa Kiếp ở Quan Lộc (cung xung chiếu của Phu Thê) ảnh hưởng đến chuyện tình cảm và hôn nhân: hay muốn đổi hướng, nên cân nhắc trước khi quyết.  
   _↳ KHUNG-phu-the-SP-ĐịaKiếp-xung · Phu Thê · Địa Kiếp · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 

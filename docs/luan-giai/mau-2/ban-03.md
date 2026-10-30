@@ -30,11 +30,11 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 ## Bài luận giải (đúng như khách nhận)
 
 ### Cách cục
-- Tham Lang đồng cung Hỏa Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Hỏa Tham: xem là cảm xúc đến nhanh và nóng trong quan hệ, cần tiết chế khi hai người bất đồng.  
-  _↳ KHUNG-phu-the-CC-HoaThamLinhTham-Hoa-PHA · Phu Thê · Tham Lang+Hỏa Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
-- Có dáng dấp của thế Sát Phá Tham: quan hệ tình cảm có nhịp nhanh, cảm xúc mạnh, dễ đến dễ đi nếu thiếu nền tin cậy; nhưng yếu tố hung ở tứ chính (bốn cung chiếu vào Phu Thê) nặng nên chưa thể coi là cách vững, cần nỗ lực nhiều hơn để phát huy.  
-  _↳ KHUNG-phu-the-CC-SatPhaTham-PHA3 · Phu Thê · Thất Sát+Phá Quân+Tham Lang+Hỏa Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
-- Cả ba sao chủ cách Sát Phá Tham (Thất Sát, Phá Quân, Tham Lang) đều hãm, nên khi luận chuyện tình cảm và hôn nhân, nhịp biến động thiên về thử thách và cần nhiều lần điều chỉnh hơn.  
+- Tham Lang và Hỏa Tinh đều hãm, nên chưa đủ điều kiện gọi trọn cách Hỏa Tham: xem là cảm xúc đến nhanh và nóng trong quan hệ, cần tiết chế khi hai người bất đồng.  
+  _↳ KHUNG-phu-the-CC-HoaThamLinhTham-Hoa-PHA-HAM · Phu Thê · Tham Lang+Hỏa Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
+- Có dáng dấp của thế Sát Phá Tham: quan hệ tình cảm có nhịp nhanh, cảm xúc mạnh, dễ đến dễ đi nếu thiếu nền tin cậy; nhưng Hỏa Tinh hãm ngay tại cung này (tứ chính gồm cung này và ba cung chiếu về) nên chưa thể coi là cách vững. Trong tình cảm, nhịp quan hệ dễ lên xuống; trước khi gắn bó lâu dài, hãy cùng nói rõ điều mỗi người cần, và khi nóng thì hẹn lúc khác nói.  
+  _↳ KHUNG-phu-the-CC-SatPhaTham-PHA3-ham · Phu Thê · Thất Sát+Phá Quân+Tham Lang+Hỏa Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
+- Cả ba sao chủ cách Sát Phá Tham (Thất Sát, Phá Quân, Tham Lang) đều hãm, nên chuyện tình cảm của bạn thường nhiều thử thách hơn và cần nhiều lần điều chỉnh.  
   _↳ KHUNG-phu-the-CC-SatPhaTham-DeuHam · Phu Thê · Thất Sát+Phá Quân+Tham Lang · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Cách yêu và gắn bó
@@ -54,8 +54,6 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
   _↳ KHUNG-phu-the-HOA-Khoa-xung · Phu Thê · Tử Vi · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Sao phụ
-- Thiên Khôi đồng cung Phu Thê: dễ gặp quý nhân, người hướng dẫn.  
-  _↳ PT-PS-4 · Phu Thê · Thiên Khôi · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
 - Hỏa Tinh đồng cung Phu Thê: nhiệt huyết, phản ứng nhanh, nên tiết chế cảm xúc.  
   _↳ PT-PS-10 · Phu Thê · Hỏa Tinh · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
 - Đào Hoa đồng cung Phu Thê: sức hút cá nhân, nên cân bằng giữa duyên và nguyên tắc.  
@@ -66,9 +64,5 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
   _↳ KHUNG-phu-the-TRIET-xung · Phu Thê · — · Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương) · Tam hợp phái Việt_
 - Kình Dương ở Phúc Đức (cung tam hợp của Phu Thê) ảnh hưởng đến chuyện tình cảm và hôn nhân: nghị lực mạnh, quyết liệt, nên kiểm soát sự nóng vội.  
   _↳ KHUNG-phu-the-SP-KìnhDương-tam-hop · Phu Thê · Kình Dương · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
-- Địa Kiếp ở Thiên Di (cung tam hợp của Phu Thê) ảnh hưởng đến chuyện tình cảm và hôn nhân: hay muốn đổi hướng, nên cân nhắc trước khi quyết.  
-  _↳ KHUNG-phu-the-SP-ĐịaKiếp-tam-hop · Phu Thê · Địa Kiếp · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
-- Thiên Không đồng cung Phu Thê: ý nghĩ thoáng, nhiều ý tưởng nhưng khó nắm chắc, nên cụ thể hóa bằng kế hoạch.  
-  _↳ KHUNG-phu-the-SP-ThienKhong-chinh · Phu Thê · Thiên Không · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 > Luận giải do hệ thống xemtuvi.vn tạo tự động từ các quy tắc Tử Vi có ghi nguồn; nội dung mang tính tham khảo, giúp hiểu mình và định hướng, không phải lời đoán chắc về tương lai.

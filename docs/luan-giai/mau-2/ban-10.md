@@ -30,8 +30,8 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 ## Bài luận giải (đúng như khách nhận)
 
 ### Cách cục
-- Có dáng dấp của thế Tử Phá: vừa coi trọng vị thế vừa thích đổi mới, đời sống nhiều chuyển biến; nhưng yếu tố hung ở tứ chính (bốn cung chiếu vào Mệnh) nặng nên chưa thể coi là cách vững, cần nỗ lực nhiều hơn để phát huy.  
-  _↳ KHUNG-menh-CC-TuPha-PHA3 · Mệnh · Tử Vi+Phá Quân+Địa Kiếp+Địa Không · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
+- Có dáng dấp của thế Tử Phá: vừa coi trọng vị thế vừa thích đổi mới, đời sống nhiều chuyển biến; nhưng Địa Kiếp hãm ngay tại cung này (tứ chính gồm cung này và ba cung chiếu về) nên chưa thể coi là cách vững. Với bản thân, đời sống nhiều chuyển biến; nên chọn một mục tiêu chính mỗi giai đoạn để không dàn trải.  
+  _↳ KHUNG-menh-CC-TuPha-PHA3-ham · Mệnh · Tử Vi+Phá Quân+Địa Kiếp · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Tổng quan bản thân
 - Thiên Tướng tại Mệnh: công bằng, biết giúp đỡ, giữ chữ tín.  

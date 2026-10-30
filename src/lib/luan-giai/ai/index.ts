@@ -9,7 +9,7 @@ import quyTacJson from './quy-tac.json';
 import tuCamJson from './tu-cam.json';
 import { bam, doc, ghi, thongKe, xoaBoNho } from './cache';
 import { kiemTraMaSauViet, locTuCam, type TuCamCauHinh } from './loc';
-import { cungKhopDieuKien, khopQuyTac, type QuyTacV2 } from './khop-v2';
+import { cungKhopDieuKien, khopDieuKien, khopQuyTac, type QuyTacV2 } from './khop-v2';
 import khungJson from './quy-tac-khung.json';
 import quyTacVanJson from './quy-tac-van/van-10-nam.json';
 import { namAmHienTai } from '../../tuvi';
@@ -121,7 +121,7 @@ const QUY_TAC_VAN = quyTacVanJson as unknown as QuyTacVan[];
 const TU_CAM = tuCamJson as unknown as TuCamCauHinh;
 const PROMPT = fs.readFileSync(path.join(process.cwd(), 'src/lib/luan-giai/ai/prompt-he-thong.md'), 'utf8');
 /** Tăng khi đổi cách ghép/lọc câu (không đổi quy tắc) để bản lưu cũ không bị dùng lại. */
-const PHIEN_BAN_BO_GHEP = 'ghep-4';
+const PHIEN_BAN_BO_GHEP = 'ghep-5';
 export const PHIEN_BAN_QUY_TAC = bam(JSON.stringify([QUY_TAC, QUY_TAC_2, QUY_TAC_VAN, CHUYEN_DE, TU_CAM, PROMPT, PHIEN_BAN_BO_GHEP])).slice(0, 12);
 
 export function nhaCungCapDangDung(yeuCau: TuyChon['nhaCungCap']): 'stub' | 'claude' | string {
@@ -204,7 +204,10 @@ function khopBan2(ls: LaSo, q: QuyTacBan2): KetQuaKhop | null {
   if (sao === null) return null;
   const goc = ls.cung.find((c) => c.ten === q.cung)!;
   const cung = [...new Set(q.dieuKien.flatMap((k) => cungKhopDieuKien(ls, goc, k).map((c) => c.ten)))];
-  const cau = q.noiDung.replaceAll('{sao}', sao.join(', ')).replaceAll('{cung}', cung.join(' và '));
+  // {pha}: tên yếu tố quyết định mức phá cách (điều kiện phaCach), vd "Hỏa Tinh".
+  const dkPha = q.dieuKien.find((k) => k.phaCach);
+  const pha = dkPha ? khopDieuKien(ls, goc, dkPha) ?? [] : [];
+  const cau = q.noiDung.replaceAll('{pha}', pha.join(', ')).replaceAll('{sao}', sao.join(', ')).replaceAll('{cung}', cung.join(' và '));
   return {
     sao, yeuTo: q.yeuTo ?? [], cungLienQuan: cung, cau, uuTien: q.uuTien ?? 0, cungGoc: q.cung,
     q: { id: q.id, chuyenDe: q.chuyenDe, muc: q.muc, nguon: q.nguon.join('; '), truongPhai: q.truongPhai },
@@ -272,6 +275,15 @@ export function boCauLap<T extends { text: string }>(muc: { nhanDinh: T[] }[]): 
   }
 }
 
+/** Câu tắt theo chuyên đề (lời khuyên công việc/sao phụ lạc đề bài tình cảm). Danh sách ở docs/nghien-cuu/bang-cham-chat-luong.md, Phiếu 3c. */
+export const TAT_O_BAI: Record<string, Set<string>> = {
+  'phu-the': new Set([
+    'PT-PS-4', 'PT-PS-5', 'PT-HOA-0',
+    'KHUNG-phu-the-SP-ThienKhong-chinh', 'KHUNG-phu-the-SP-ĐịaKiếp-tam-hop', 'KHUNG-phu-the-SP-ĐịaKhông-xung',
+    'KHUNG-phu-the-SP-ThiênKhông-xung', 'KHUNG-phu-the-SP-LộcTồn-tam-hop', 'KHUNG-phu-the-CC-KhongKiepChieu',
+  ]),
+};
+
 export async function sinhLuanGiai(ls: LaSo, chuyenDe: ChuyenDeMa, tuyChon: TuyChon = {}): Promise<LuanGiai> {
   const cfg = CHUYEN_DE[chuyenDe];
   if (!cfg) throw new Error(`Chuyên đề không hợp lệ: ${chuyenDe}`);
@@ -307,6 +319,9 @@ export async function sinhLuanGiai(ls: LaSo, chuyenDe: ChuyenDeMa, tuyChon: TuyC
     const chung = new Set(QUY_TAC.filter((q) => q.chuyenDe === chuyenDe && !q.sao.length && q.dieuKien?.hoa === 'Hóa Kỵ').map((q) => q.id));
     for (let i = khopDs.length - 1; i >= 0; i--) if (chung.has(khopDs[i].q.id)) khopDs.splice(i, 1);
   }
+  // Câu sao phụ dùng chung lạc đề với bài tình cảm (Phiếu 3c, T-a4504a vòng 3): tắt đến khi Hạnh viết bản Phu Thê.
+  const tat = TAT_O_BAI[chuyenDe];
+  if (tat) for (let i = khopDs.length - 1; i >= 0; i--) if (tat.has(khopDs[i].q.id)) khopDs.splice(i, 1);
   const theoId = new Map(khopDs.map((x) => [x.q.id, x]));
 
   // Câu cấp cho nhà cung cấp; mặc định "stub" ghép thẳng từ quy tắc.

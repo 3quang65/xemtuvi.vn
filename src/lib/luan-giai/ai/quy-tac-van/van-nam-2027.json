@@ -738,7 +738,7 @@
   ],
   "muc": "tong-quan",
   "phan": "thai-tue",
-  "noiDung": "Năm Đinh Mùi, Lưu Thái Tuế đến cung Mùi, trên lá số của bạn là cung Tật Ách. Vì vậy trọng điểm của năm thường xoay quanh sức khỏe, nhịp sống và cách bạn đối diện áp lực; không phải mọi việc trong năm đều thuộc chủ đề này, nhưng đây là nơi bạn nên dồn sự chú ý.",
+  "noiDung": "Năm Đinh Mùi, Lưu Thái Tuế đến cung Mùi, trên lá số của bạn là cung Tật Ách. Vì vậy trọng điểm của năm thường xoay quanh sức khỏe, nhịp sống và cách bạn đối diện áp lực; không phải mọi việc trong năm đều thuộc chủ đề này, nhưng đây là nơi bạn nên dồn sự chú ý. Khi có dấu hiệu bất thường về sức khỏe, bạn nên hỏi ý kiến bác sĩ.",
   "nguon": [
    "Đặc tả an sao xemtuvi.vn",
    "Tư liệu web: iztro \"运限\"",
@@ -770,7 +770,7 @@
   ],
   "muc": "tong-quan",
   "phan": "tieu-han",
-  "noiDung": "Tiểu hạn năm nay của bạn ở cung Tật Ách, nên phần việc riêng dễ được khơi lên là sức khỏe, nhịp sống và cách bạn đối diện áp lực.",
+  "noiDung": "Tiểu hạn năm nay của bạn ở cung Tật Ách, nên phần việc riêng dễ được khơi lên là sức khỏe, nhịp sống và cách bạn đối diện áp lực. Khi có dấu hiệu bất thường về sức khỏe, bạn nên hỏi ý kiến bác sĩ.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Đặc tả an sao xemtuvi.vn",
@@ -801,7 +801,7 @@
    }
   ],
   "muc": "thang",
-  "noiDung": "Tháng này đi qua cung Tật Ách: chủ đề nổi lên là sức khỏe, nhịp sống và cách bạn đối diện áp lực.",
+  "noiDung": "Tháng này đi qua cung Tật Ách: chủ đề nổi lên là sức khỏe, nhịp sống và cách bạn đối diện áp lực. Khi có dấu hiệu bất thường về sức khỏe, bạn nên hỏi ý kiến bác sĩ.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Đặc tả an sao xemtuvi.vn"
@@ -1605,7 +1605,7 @@
   ],
   "muc": "tong-quan",
   "phan": "tieu-han",
-  "noiDung": "Văn Xương hoặc Văn Khúc của năm ở ngay cung tiểu hạn, tam phương có thêm quý nhân và sao trợ lực: Toàn Thư coi đây là năm thuận cho thi cử, lấy bằng, được công nhận chuyên môn. Thuận không có nghĩa là chắc chắn, phần chuẩn bị vẫn là của bạn.",
+  "noiDung": "Văn Xương hoặc Văn Khúc của năm ở ngay cung tiểu hạn, tam phương có thêm quý nhân và sao trợ lực: Toàn Thư coi đây là năm thuận cho thi cử, lấy bằng, được công nhận chuyên môn. Thuận là có lợi thế, còn kết quả vẫn đến từ phần chuẩn bị của bạn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -2069,7 +2069,7 @@
   ],
   "muc": "tong-quan",
   "phan": "thai-tue",
-  "noiDung": "Văn Xương hoặc Văn Khúc của năm ở ngay cung Lưu Thái Tuế, tam phương có thêm quý nhân và sao trợ lực: Toàn Thư coi đây là năm thuận cho thi cử, lấy bằng, được công nhận chuyên môn. Thuận không có nghĩa là chắc chắn, phần chuẩn bị vẫn là của bạn.",
+  "noiDung": "Văn Xương hoặc Văn Khúc của năm ở ngay cung Lưu Thái Tuế, tam phương có thêm quý nhân và sao trợ lực: Toàn Thư coi đây là năm thuận cho thi cử, lấy bằng, được công nhận chuyên môn. Thuận là có lợi thế, còn kết quả vẫn đến từ phần chuẩn bị của bạn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -3226,7 +3226,7 @@
    }
   ],
   "muc": "suc-khoe",
-  "noiDung": "Năm nay cung Tật Ách không có yếu tố của năm chạm trực tiếp, nên mảng này chủ yếu đi theo nền sẵn có trên lá số; đó là năm để giữ nhịp đều hơn là chờ biến chuyển.",
+  "noiDung": "Năm nay cung Tật Ách không có yếu tố của năm chạm trực tiếp, nên mảng này chủ yếu đi theo nền sẵn có trên lá số; đó là năm để giữ nhịp đều hơn là chờ biến chuyển. Khi có dấu hiệu bất thường về sức khỏe, bạn nên hỏi ý kiến bác sĩ.",
   "nguon": [
    "Tư liệu web: iztro \"运限\""
   ],
@@ -3249,7 +3249,7 @@
   ],
   "dieuKien": [],
   "muc": "suc-khoe",
-  "noiDung": "Phần sức khỏe trên lá số chỉ cho biết nhịp sống nên giữ, không thay cho khám bệnh. Giữ giấc ngủ, vận động đều và khám sức khỏe định kỳ là nền cho cả năm.",
+  "noiDung": "Phần sức khỏe trên lá số chỉ cho biết nhịp sống nên giữ, không thay cho khám bệnh. Giữ giấc ngủ, vận động đều và khám sức khỏe định kỳ là nền cho cả năm. Khi có dấu hiệu bất thường về sức khỏe, bạn nên hỏi ý kiến bác sĩ.",
   "nguon": [
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
   ],

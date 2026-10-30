@@ -4,6 +4,8 @@ import type { Cung, LaSo, Sao } from '@/lib/tuvi';
 
 export type ViTri = 'chinh' | 'xung' | 'tam-hop' | 'tam-phuong' | 'hop-chieu' | 'giap';
 export type DoSang = 'Miếu' | 'Vượng' | 'Đắc' | 'Bình' | 'Hãm';
+/** Yếu tố quyết định mức 3 (thứ tự ưu tiên): sát tinh/Hóa Kỵ hãm tọa thủ, Hóa Kỵ hóa vào sao tạo cách, cộng điểm >= 4. */
+export type LyDoPha = 'ham' | 'ky' | 'diem';
 export type LoaiQuyTac = 'YN' | 'CT' | 'C' | 'SP' | 'CC' | 'HOA' | 'TUAN' | 'TRIET' | 'VCD';
 
 export interface DieuKien {
@@ -27,7 +29,7 @@ export interface DieuKien {
    * cung chính, hoặc Hóa Kỵ hóa vào một sao tạo cách (`saoCach`), hoặc tổng điểm phá >= 4. Mức 2 (có khuyết): điểm phá > 0.
    * `dacLaTroLuc`: ngoại lệ Sát Phá Tham (TRANH-13), sát tinh đắc địa tính 0 điểm.
    */
-  phaCach?: { tuMuc: 2 | 3; saoCach?: string[]; dacLaTroLuc?: boolean };
+  phaCach?: { tuMuc: 2 | 3; saoCach?: string[]; dacLaTroLuc?: boolean; lyDo?: LyDoPha };
   /** Số sát tinh đắc địa tối thiểu trong tam phương (TRANH-13: sát tinh đắc địa nhiều mà thiếu Lộc). */
   satDac?: number;
   /** Cung chứa yếu tố khớp phải có đủ các sao này (vd Hóa Lộc đồng cung Địa Kiếp). T-a4504a vòng 2. */
@@ -101,7 +103,7 @@ const laSatDac = (s: Sao) => SAT_TINH.includes(s.ten) && !!s.dacTinhTen && DAC_D
  * tam hợp tính 1; Tuần, Triệt chỉ tính khi đóng ở chính cung (không chiếu, CHUNG-TP-04), 2 điểm mỗi yếu tố.
  * Sát tinh đắc địa tính 0 khi `dacLaTroLuc`.
  */
-export function mucCachCuc(ls: LaSo, goc: Cung, saoCach: string[] = [], dacLaTroLuc = false): { muc: 1 | 2 | 3; ten: string[] } {
+export function mucCachCuc(ls: LaSo, goc: Cung, saoCach: string[] = [], dacLaTroLuc = false): { muc: 1 | 2 | 3; ten: string[]; lyDo?: LyDoPha; tenLyDo: string[] } {
   const tinh = (s: Sao) => laPha(s) && !(dacLaTroLuc && laSatDac(s));
   const ten = new Set<string>();
   let diem = (goc.tuan ? 2 : 0) + (goc.triet ? 2 : 0);
@@ -111,10 +113,11 @@ export function mucCachCuc(ls: LaSo, goc: Cung, saoCach: string[] = [], dacLaTro
     pha.forEach((s) => ten.add(s.ten));
     diem += (c === goc ? 2 : 1) * pha.length;
   }
-  const hamToaThu = saoCua(goc).some((s) => laPha(s) && s.dacTinhTen === 'Hãm');
-  const kyVaoCach = tp.some((c) => saoCua(c).some((s) => saoCach.includes(s.ten) && s.hoa === 'Hóa Kỵ'));
-  const muc = hamToaThu || kyVaoCach || diem >= 4 ? 3 : diem > 0 ? 2 : 1;
-  return { muc, ten: [...ten] };
+  const ham = saoCua(goc).filter((s) => laPha(s) && s.dacTinhTen === 'Hãm').map((s) => s.ten);
+  const ky = tp.flatMap((c) => saoCua(c).filter((s) => saoCach.includes(s.ten) && s.hoa === 'Hóa Kỵ').map((s) => s.ten));
+  const lyDo: LyDoPha | undefined = ham.length ? 'ham' : ky.length ? 'ky' : diem >= 4 ? 'diem' : undefined;
+  const tenLyDo = lyDo === 'ham' ? ham : lyDo === 'ky' ? ky : lyDo === 'diem' ? [...ten] : [];
+  return { muc: lyDo ? 3 : diem > 0 ? 2 : 1, ten: [...ten], lyDo, tenLyDo };
 }
 
 /** Thế giáp bởi hai hóa (Khoa–Quyền, CC-10): hai cung kề, mỗi cung mang một hóa. Trả về tên sao mang hóa; null nếu không giáp. */
@@ -133,7 +136,9 @@ export function khopDieuKien(ls: LaSo, goc: Cung, k: DieuKien): string[] | null 
   if (k.canNam && !k.canNam.includes(ls.canChi.nam.split(' ')[0])) return null;
   if (k.phaCach) {
     const r = mucCachCuc(ls, goc, k.phaCach.saoCach, k.phaCach.dacLaTroLuc);
-    return r.muc >= k.phaCach.tuMuc ? r.ten : null;
+    if (r.muc < k.phaCach.tuMuc) return null;
+    if (k.phaCach.lyDo) return r.lyDo === k.phaCach.lyDo ? r.tenLyDo : null;
+    return r.ten;
   }
   if (k.satDac !== undefined) {
     const n = cungTheoViTri(ls, goc, 'tam-phuong').flatMap((c) => saoCua(c).filter(laSatDac).map((s) => s.ten));
