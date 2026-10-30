@@ -1,6 +1,8 @@
 // In phễu mua từ các file sự kiện. Chạy: node tools/pheu.cjs  (DATA_DIR=… để đổi thư mục)
 //   --nguon        thêm bảng theo nhóm nguồn khách (dac-ta-do-luong_v1.md mục 2–3)
 //   --nguon        còn in bảng theo utm_source / utm_medium / utm_content và dòng mua lại theo khách (mã thiết bị ẩn danh)
+//   --tu=<giờ> --den=<giờ>  chỉ tính sự kiện trong khoảng (vd 2026-12-15T09:00; không múi giờ = giờ Việt Nam); đo 24 giờ đầu
+//   --chi=<nhóm>:<đồng>  chi ads của nhóm nguồn (lặp được, vd --chi=paid:2000000) → CPA = chi ÷ đơn thanh_toan_xong cùng nhóm/khung giờ
 //   --md           in bảng theo nhóm nguồn dạng Markdown (dán vào docs/)
 //   --nhanh        báo cáo thử nghiệm giá theo nhánh (thu-gia_v1.md): phiên chon_goi, đơn, doanh thu/phiên, tỉ trọng gói, bao_loi, theo nhóm nguồn; kèm --md để dán vào docs/
 //   --nhanh --bootstrap=10000 --hat=<số>  thêm chênh lệch (nhánh thử − gốc) + khoảng 95% bằng bootstrap: doanh thu/phiên, tỉ lệ trả tiền, tỉ lệ gói năm (thu-gia_v2.md mục 5 ý 3); hạt cố định → lặp lại y hệt
@@ -117,16 +119,23 @@ const NGUONG = { lap: 0.25, chon: 0.10, tra: 0.12 }; // cảnh báo khi thấp h
 const CHUA_RO = 'chưa rõ'; // phiên không có vao_trang (dữ liệu trước khi bật đo nguồn)
 
 /** Gộp theo nhóm nguồn: mỗi phiên thuộc nhóm của vao_trang đầu tiên; cùng phiên chỉ đếm 1 lần cho mỗi sự kiện. */
-function tinhTheoNguon(dongs) {
-  const nhomCuaPhien = new Map();
-  for (const d of dongs) if (d.ten === 'vao_trang' && !nhomCuaPhien.has(d.phien) && NHOM_NGUON.includes(d.nhom)) nhomCuaPhien.set(d.phien, d.nhom);
+function tinhTheoNguon(dongs, { chi = {} } = {}) {
+  const nhomCuaPhien = new Map(), nhomCuaThietBi = new Map();
+  for (const d of dongs) if (d.ten === 'vao_trang' && NHOM_NGUON.includes(d.nhom)) {
+    if (!nhomCuaPhien.has(d.phien)) nhomCuaPhien.set(d.phien, d.nhom);
+    if (d.thietBi) nhomCuaThietBi.set(d.thietBi, d.nhom); // vao_trang gần nhất của thiết bị (dòng sau ghi đè)
+  }
+  // Phiên không có vao_trang: bao_loi tự mang `nhom` (máy chủ ghi); không thì tra theo thiết bị; không ra mới 'chưa rõ'.
+  const nhomDong = (d) => nhomCuaPhien.get(d.phien) || (d.ten === 'bao_loi' && NHOM_NGUON.includes(d.nhom) ? d.nhom : null) || (d.ten === 'bao_loi' && d.thietBi ? nhomCuaThietBi.get(d.thietBi) : null) || CHUA_RO;
   const tap = {};
-  const lay = (n) => (tap[n] = tap[n] || { vao: new Set(), lap: new Set(), xemGia: new Set(), chon: new Set(), tra: new Set(), dangKy: new Set(), loi: new Set() });
-  const KHOA = { vao_trang: 'vao', lap_la_so: 'lap', vao_chon_goi: 'xemGia', chon_goi: 'chon', thanh_toan_xong: 'tra', dang_ky_thanh_vien: 'dangKy', bao_loi: 'loi' };
+  const lay = (n) => (tap[n] = tap[n] || { vao: new Set(), lap: new Set(), tomTat: new Set(), xemGia: new Set(), chon: new Set(), vaoTT: new Set(), tra: new Set(), dangKy: new Set(), loi: new Set(), don: 0, donGoi: {} });
+  const KHOA = { vao_trang: 'vao', lap_la_so: 'lap', xem_tom_tat: 'tomTat', vao_chon_goi: 'xemGia', chon_goi: 'chon', vao_thanh_toan: 'vaoTT', thanh_toan_xong: 'tra', dang_ky_thanh_vien: 'dangKy', bao_loi: 'loi' };
   for (const d of dongs) {
     const k = KHOA[d.ten];
     if (!k) continue;
-    const g = lay(nhomCuaPhien.get(d.phien) || CHUA_RO);
+    const nhom = nhomDong(d);
+    const g = lay(nhom);
+    if (k === 'tra') { g.don++; if (d.goi) g.donGoi[d.goi] = (g.donGoi[d.goi] || 0) + 1; }
     g[k].add(d.phien);
     if (k !== 'vao' && !nhomCuaPhien.has(d.phien)) g.vao.add(d.phien); // phiên cũ không có vao_trang: dùng sự kiện đầu làm mẫu số
   }
@@ -138,9 +147,10 @@ function tinhTheoNguon(dongs) {
     const phien = g.vao.size;
     ra[n] = {
       phien, tiLePhien: chia(phien, tong), duMau: phien >= MAU_TOI_THIEU,
-      lap: g.lap.size, xemGia: g.xemGia.size, chon: g.chon.size, tra: g.tra.size, dangKy: g.dangKy.size, baoLoi: g.loi.size,
+      lap: g.lap.size, tomTat: g.tomTat.size, xemGia: g.xemGia.size, chon: g.chon.size, vaoTT: g.vaoTT.size, tra: g.tra.size, dangKy: g.dangKy.size, baoLoi: g.loi.size,
+      don: g.don, donGoi: g.donGoi, baoLoiTrenDon: chia(g.loi.size, g.don), chi: chi[n] === undefined ? null : chi[n],
       lapTrenVao: chia(g.lap.size, phien), chonTrenLap: chia(g.chon.size, g.lap.size), traTrenChon: chia(g.tra.size, g.chon.size),
-      cpa: null, // chỉ số 5: cần số chi ads nhập tay; chưa chạy ads
+      cpa: chi[n] > 0 && g.don ? chi[n] / g.don : null, // chỉ số 5: chi ads nhập tay (--chi=<nhóm>:<đồng>) ÷ số đơn thanh_toan_xong cùng nhóm, cùng khung giờ
     };
   }
   const direct = ra.direct && tong ? ra.direct.phien / tong : 0;
@@ -156,11 +166,52 @@ function tinhTheoNguon(dongs) {
 }
 
 function bangNguon(t, md) {
-  const dau = ['Nhóm nguồn', '1. Phiên', '% tổng', '2. Truy cập → lập lá số', '3. Lập → chọn gói', '4. Chọn → trả tiền', '5. CPA ads'];
+  const dau = ['Nhóm nguồn', '1. Phiên', '% tổng', '2. Truy cập → lập lá số', '3. Lập → chọn gói', '4. Chọn → trả tiền', '5. CPA ads',
+    'Lá số', 'Xem tóm tắt', 'Xem giá', 'Chọn', 'Vào thanh toán', 'Xong (đơn)', 'Đăng ký TV', 'Báo lỗi', 'Báo lỗi / đơn', 'Chi ads'];
   const o = (r, k) => (r.duMau ? pct(r[k]) : r.phien ? 'chưa đủ mẫu' : '—');
-  const hang = Object.entries(t.nhom).map(([n, r]) => [n, String(r.phien), r.tiLePhien === null ? '—' : pct(r.tiLePhien), o(r, 'lapTrenVao'), o(r, 'chonTrenLap'), o(r, 'traTrenChon'), 'n/a']);
+  const so = (r, k) => (r.phien ? String(r[k]) : '—');
+  const d = (x) => Math.round(x).toLocaleString('vi-VN') + 'đ';
+  const hang = Object.entries(t.nhom).map(([n, r]) => [n, String(r.phien), r.tiLePhien === null ? '—' : pct(r.tiLePhien), o(r, 'lapTrenVao'), o(r, 'chonTrenLap'), o(r, 'traTrenChon'),
+    r.cpa !== null && r.cpa !== undefined ? d(r.cpa) : r.chi ? 'chưa có đơn' : 'n/a',
+    so(r, 'lap'), so(r, 'tomTat'), so(r, 'xemGia'), so(r, 'chon'), so(r, 'vaoTT'), so(r, 'don'), so(r, 'dangKy'), so(r, 'baoLoi'),
+    r.phien ? (r.baoLoiTrenDon === null ? (r.baoLoi ? 'có lỗi, 0 đơn' : '—') : pct(r.baoLoiTrenDon)) : '—', r.chi ? d(r.chi) : '—']);
   if (md) return ['| ' + dau.join(' | ') + ' |', '|' + dau.map(() => '---').join('|') + '|', ...hang.map((h) => '| ' + h.join(' | ') + ' |')].join('\n');
-  return [dau, ...hang].map((h) => h.map((c, i) => (i === 0 ? c.padEnd(10) : c.padStart(i === 3 ? 24 : i > 3 ? 18 : 8))).join(' ')).join('\n');
+  return [dau, ...hang].map((h) => h.map((c, i) => (i === 0 ? c.padEnd(10) : c.padStart(Math.max(8, dau[i].length)))).join(' ')).join('\n');
+}
+
+/** Đơn thanh_toan_xong theo gói × nhóm nguồn; `riengGoi` (vd 'van-nam-2027') chỉ in gói đó. */
+function bangDonGoi(t, { md = false, riengGoi = null } = {}) {
+  const goi = riengGoi ? [riengGoi] : MA_GOI;
+  const dau = ['Nhóm nguồn', ...goi, 'Tổng đơn'];
+  const hang = Object.entries(t.nhom).filter(([, r]) => r.phien).map(([n, r]) => [n, ...goi.map((g) => String(r.donGoi[g] || 0)), String(riengGoi ? r.donGoi[riengGoi] || 0 : r.don)]);
+  if (md) return ['| ' + dau.join(' | ') + ' |', '|' + dau.map(() => '---').join('|') + '|', ...hang.map((h) => '| ' + h.join(' | ') + ' |')].join('\n');
+  return [dau, ...hang].map((h) => h.map((c, i) => (i === 0 ? c.padEnd(10) : c.padStart(Math.max(8, dau[i].length)))).join(' ')).join('\n');
+}
+
+/** '2026-12-15T09:00' hoặc '2026-12-15 09:00' (không múi giờ → giờ Việt Nam, +07); trả mili-giây hoặc null. */
+function docGio(x) {
+  if (!x) return null;
+  const c = /^\d{4}-\d{2}-\d{2}[T ]\d{2}:\d{2}(:\d{2})?$/.test(x) ? x.replace(' ', 'T') + '+07:00' : x;
+  const v = Date.parse(c);
+  return isNaN(v) ? null : v;
+}
+
+/** Giữ dòng có `t` trong [tu, den); dòng không có `t` bỏ khi có lọc. */
+function locGio(dongs, tu, den) {
+  if (tu === null && den === null) return dongs;
+  return dongs.filter((d) => typeof d.t === 'number' && (tu === null || d.t >= tu) && (den === null || d.t < den));
+}
+
+/** '--chi=paid:500000' (lặp được) → { paid: 500000 }; nhóm lạ hoặc số không dương → ném lỗi để khỏi tính CPA sai. */
+function docChi(args) {
+  const ra = {};
+  for (const a of args.filter((x) => x.startsWith('--chi='))) {
+    const [n, v] = a.slice(6).split(':');
+    const dong = Number(String(v).replace(/[._,]/g, ''));
+    if (!NHOM_NGUON.includes(n) || !(dong > 0)) throw new Error(`--chi sai: "${a}" (dạng --chi=<nhóm>:<đồng>, nhóm thuộc ${NHOM_NGUON.join('/')})`);
+    ra[n] = (ra[n] || 0) + dong;
+  }
+  return ra;
 }
 
 // ---- Theo utm_source / utm_medium / utm_content ----
@@ -507,7 +558,12 @@ if (require.main === module) {
     console.log((giaLap ? 'SỐ GIẢ LẬP (không phải số thật)\n' : '') + bangKhaoSat(tinhKhaoSat(ds, { theoTuan: co('--tuan') }), co('--md')));
     process.exit(0);
   }
-  const dongs = giaLap ? taoGiaLap(Number(tham('--hat')) || 7, co('--nhanh')) : docThat();
+  const tu = docGio(tham('--tu')), den = docGio(tham('--den'));
+  if ((tham('--tu') && tu === null) || (tham('--den') && den === null)) { console.error('--tu/--den dạng 2026-12-15T09:00 (không múi giờ = giờ Việt Nam)'); process.exit(1); }
+  let chi;
+  try { chi = docChi(process.argv); } catch (e) { console.error(e.message); process.exit(1); }
+  const dongs = locGio(giaLap ? taoGiaLap(Number(tham('--hat')) || 7, co('--nhanh')) : docThat(), tu, den);
+  if (tu !== null || den !== null) console.log(`(lọc giờ: từ ${tham('--tu') || '…'} đến ${tham('--den') || '…'}; còn ${dongs.length} dòng)`);
   const ghi = tham('--ghi');
   if (giaLap && ghi) {
     fs.mkdirSync(ghi, { recursive: true });
@@ -520,16 +576,20 @@ if (require.main === module) {
     const lan = Number(tham('--bootstrap'));
     if (lan > 0) console.log('\nKhoảng tin cậy 95% (bootstrap)\n' + (co('--md') ? '\n' : '') + bangBootstrap(bootstrap(phienChonGoi(dongs).hang, { lan, hat: Number(tham('--hat')) || 7 }), co('--md')));
   } else if (co('--md')) {
-    console.log(bangNguon(tinhTheoNguon(dongs), true));
+    console.log(bangNguon(tinhTheoNguon(dongs, { chi }), true));
     console.log('\n' + bangUtm(tinhTheoUtm(dongs), true));
     console.log('\n' + dongMuaLai(tinhMuaLai(dongs)));
   } else {
     console.log((giaLap ? 'SỐ GIẢ LẬP (không phải số thật) · ' : 'Thư mục: ' + thuMucMacDinh() + ' · ') + dongs.length + ' dòng');
     in_(tinhPheu(dongs));
     if (co('--nguon') || giaLap) {
-      const t = tinhTheoNguon(dongs);
+      const t = tinhTheoNguon(dongs, { chi });
       console.log('\nTheo nhóm nguồn (tổng ' + t.tong + ' phiên; < ' + MAU_TOI_THIEU + ' phiên/nhóm: chưa đủ mẫu)');
       console.log(bangNguon(t, false));
+      console.log('\nĐơn thanh_toan_xong theo gói × nhóm nguồn');
+      console.log(bangDonGoi(t));
+      console.log('\nRiêng van-nam-2027 theo nhóm nguồn');
+      console.log(bangDonGoi(t, { riengGoi: 'van-nam-2027' }));
       console.log(t.canhBao.length ? 'Cảnh báo:\n  ' + t.canhBao.join('\n  ') : 'Cảnh báo: không có');
       console.log('\nTheo utm_source / utm_medium / utm_content (< ' + MAU_TOI_THIEU + ' phiên: chưa đủ mẫu)');
       console.log(bangUtm(tinhTheoUtm(dongs), false));
@@ -538,4 +598,4 @@ if (require.main === module) {
   }
 }
 
-module.exports = { loaiTruThu, docLoaiTru, tinhKhaoSat, bangKhaoSat, taoGiaLapKhaoSat, MAU_KHAO_SAT, phienChonGoi, bootstrap, bangBootstrap, csvNhanh, tinhTheoNhanh, bangNhanh, tinhPheu, docThuMuc, tinhTheoNguon, bangNguon, taoGiaLap, tinhTheoUtm, bangUtm, tinhMuaLai, dongMuaLai };
+module.exports = { loaiTruThu, docLoaiTru, tinhKhaoSat, bangKhaoSat, taoGiaLapKhaoSat, MAU_KHAO_SAT, phienChonGoi, bootstrap, bangBootstrap, csvNhanh, tinhTheoNhanh, bangNhanh, tinhPheu, docThuMuc, tinhTheoNguon, bangNguon, bangDonGoi, docGio, locGio, docChi, taoGiaLap, tinhTheoUtm, bangUtm, tinhMuaLai, dongMuaLai };

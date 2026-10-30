@@ -5,7 +5,7 @@ const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
 const { kiemTraSuKien, nhomNguon, TEN_SU_KIEN, CHI_MAY_CHU, trangCua } = require('../src/lib/su-kien.js');
-const { tinhPheu, docThuMuc, tinhTheoNguon, taoGiaLap } = require('../tools/pheu.cjs');
+const { tinhPheu, docThuMuc, tinhTheoNguon, taoGiaLap, bangNguon, bangDonGoi, docGio, locGio, docChi } = require('../tools/pheu.cjs');
 
 test('Sự kiện hợp lệ: đủ 22 tên (3 tên chỉ máy chủ ghi, 3 tên khảo sát có test riêng), phiên 16–32 ký tự', () => {
   assert.equal(TEN_SU_KIEN.length, 22);
@@ -235,4 +235,41 @@ test('bảng utm_content tách theo bộ UTM; mua lại tính theo thiết bị,
   const m = tinhMuaLai([don('P1', 'tbKhachMot', 0), don('P2', 'tbKhachMot', 10), don('P3', 'tbKhachHai', 0)]);
   assert.equal(m.khach, 2); assert.equal(m.muaLai, 1); assert.equal(m.ngayTrungVi, 10);
   assert.ok(!dongMuaLai(m).includes('tbKhach'));
+});
+
+test('Đo 24 giờ đầu: bước 3/vào thanh toán theo nguồn, bao_loi gắn nguồn, CPA, đơn theo gói, lọc giờ', () => {
+  const T0 = Date.parse('2026-12-15T00:00:00+07:00'), H = 3600_000;
+  const ds = [];
+  const them = (t, ten, phien, extra = {}) => ds.push({ t, ten, phien, ...extra });
+  // phiên p1 (paid): vào → lá số → tóm tắt → thanh toán → xong (Vận 2027); thiết bị d1
+  them(T0 + H, 'vao_trang', 'p1', { nhom: 'paid', thietBi: 'd1' });
+  for (const [i, ten] of ['lap_la_so', 'xem_tom_tat', 'vao_chon_goi', 'chon_goi', 'vao_thanh_toan'].entries()) them(T0 + H + i + 1, ten, 'p1');
+  them(T0 + 2 * H, 'thanh_toan_xong', 'p1', { goi: 'van-nam-2027' });
+  // bao_loi ở phiên sau, không có vao_trang: tra theo thiết bị d1 → paid; một dòng khác tự mang nhom=social
+  them(T0 + 3 * H, 'bao_loi', 'p9', { thietBi: 'd1' });
+  them(T0 + 3 * H, 'bao_loi', 'p8', { nhom: 'social' });
+  // sau 24 giờ: bị lọc
+  them(T0 + 30 * H, 'vao_trang', 'p2', { nhom: 'paid', thietBi: 'd2' });
+  them(T0 + 30 * H, 'thanh_toan_xong', 'p2', { goi: 'tron-la-so' });
+  const dong24 = locGio(ds, T0, T0 + 24 * H);
+  assert.equal(dong24.length, ds.length - 2);
+  const t = tinhTheoNguon(dong24, { chi: docChi(['--chi=paid:600000']) });
+  const p = t.nhom.paid;
+  assert.deepEqual([p.lap, p.tomTat, p.xemGia, p.chon, p.vaoTT, p.tra, p.don, p.baoLoi], [1, 1, 1, 1, 1, 1, 1, 1]);
+  assert.equal(p.cpa, 600000);
+  assert.equal(p.baoLoiTrenDon, 1);
+  assert.equal(t.nhom.social.baoLoi, 1);
+  assert.equal(t.nhom['chưa rõ'], undefined); // không còn rơi vào 'chưa rõ'
+  assert.deepEqual(p.donGoi, { 'van-nam-2027': 1 });
+  assert.match(bangNguon(t, false), /600\.000đ/);
+  assert.match(bangDonGoi(t, { riengGoi: 'van-nam-2027' }), /paid +1 +1/);
+  assert.equal(tinhTheoNguon(dong24).nhom.paid.cpa, null); // không nhập chi: không tự bịa CPA
+});
+
+test('docChi/docGio: nhập sai thì báo lỗi; giờ không múi giờ = +07', () => {
+  assert.deepEqual(docChi(['--chi=paid:1.500.000', '--chi=paid:500000']), { paid: 2000000 });
+  assert.throws(() => docChi(['--chi=facebook:100']));
+  assert.throws(() => docChi(['--chi=paid:0']));
+  assert.equal(docGio('2026-12-15T09:00'), Date.parse('2026-12-15T09:00:00+07:00'));
+  assert.equal(docGio('xyz'), null);
 });
