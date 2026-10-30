@@ -14,7 +14,7 @@ const { kiemTraSuKien } = require('../src/lib/su-kien.js');
 const { tinhBaoCao } = require('../tools/ma-moi.cjs');
 const { docThuMuc } = require('../tools/pheu.cjs');
 
-process.env.DANG_NHAP_THU = '1';
+process.env.DANG_NHAP_THU = '1'; process.env.EMAIL_THU_CHO_PHEP = '@example.vn';
 process.env.DATA_DIR = fs.mkdtempSync(path.join(os.tmpdir(), 'moi-'));
 delete process.env.VAN_NAM_THU;
 const M = { db: moCsdl(':memory:'), khoa: taoBoKhoa('khoa-tam-chi-dung-cho-test-0123456789') };

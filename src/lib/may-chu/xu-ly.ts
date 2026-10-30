@@ -1,4 +1,7 @@
 // Xử lý HTTP cho các API (route.ts chỉ gọi vào đây). Nhận MayChu để test được bằng CSDL tạm.
+import { readFileSync } from 'node:fs';
+import path from 'node:path';
+import { thuMucDuLieu } from './ma-hoa';
 import { kiemTraThongTin, type ThongTinSinh } from '../tuvi';
 import type { MayChu } from './csdl';
 import * as dv from './dich-vu';
@@ -36,10 +39,19 @@ const PHIEN_DO = /^[A-Za-z0-9_-]{16,32}$/;
 const nguoiDung = (req: Request, m: MayChu) => docPhien(m.db, docCookie(req));
 const canDangNhap = () => loi(401, 'chua_dang_nhap', 'Cần đăng nhập.');
 
+/** Danh sách email được đăng nhập thử: biến EMAIL_THU_CHO_PHEP (phân cách bằng dấu phẩy) hoặc tệp ~/xemtuvi-data/email-thu.txt (mỗi dòng một email). Mục bắt đầu bằng @ cho cả tên miền. Rỗng = không ai được vào. Không nằm trong repo. */
+function emailDuocThu(email: string): boolean {
+  let ds = process.env.EMAIL_THU_CHO_PHEP || '';
+  if (!ds) { try { ds = readFileSync(process.env.EMAIL_THU_FILE || path.join(thuMucDuLieu(), 'email-thu.txt'), 'utf8'); } catch { /* không có tệp = rỗng */ } }
+  const e = email.trim().toLowerCase();
+  return ds.split(/[,\s]+/).map((x) => x.trim().toLowerCase()).filter(Boolean).some((x) => (x.startsWith('@') ? e.endsWith(x) && e.indexOf('@') === e.length - x.length : e === x));
+}
+
 export const dangNhap = (req: Request, m: MayChu) => chay(req, async () => {
   if (process.env.DANG_NHAP_THU !== '1') return loi(404, 'tat', 'Đăng nhập thử đang tắt.');
   const b = await doc(req);
   if (!b || typeof b.email !== 'string') return loi(400, 'du_lieu_sai', 'Thiếu email.');
+  if (!emailDuocThu(b.email)) return loi(403, 'dang_thu_nghiem', 'Tính năng đang thử nghiệm, chưa mở cho email này.');
   const truoc = dv.coNguoiDung(m.db, b.email);
   const id = dv.dangNhapThu(m.db, b.email);
   return json({ ok: true, moi: !truoc }, 200, { 'Set-Cookie': cookieDat(taoPhien(m.db, id)) });

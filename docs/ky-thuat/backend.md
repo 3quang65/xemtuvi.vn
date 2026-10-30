@@ -55,7 +55,7 @@ Mục tiêu: tài khoản, đơn mua, quyền xem nằm trên máy chủ. Khách
 - Cổng thanh toán thật, đăng nhập Google/Zalo thật (T-950bdc, cần anh tạo ứng dụng — miễn phí), gọi Claude thật cho luận giải (**cần duyệt chi**: ước lượng sẽ trình riêng theo số lượt sinh/ngày, có bộ nhớ đệm nên mỗi lá số × chuyên đề chỉ tốn một lần).
 
 ## 9. Cờ giai đoạn thử: phải tắt trước khi chạy chính thức
-- `DANG_NHAP_THU=1` (khai trong `ecosystem.config.cjs`) cho đăng nhập KHÔNG xác minh danh tính: ai nhập email nào cũng vào được tài khoản đó. Chỉ chấp nhận khi site còn `SITE_NOINDEX=1` (không lên công cụ tìm kiếm) và chưa có khách thật.
+- `DANG_NHAP_THU=1` (khai trong `ecosystem.config.cjs`) cho đăng nhập KHÔNG xác minh danh tính: ai nhập email nào cũng vào được tài khoản đó. Từ 30/10 (L-29b466) chỉ email trong danh sách cho phép mới vào được, email khác nhận 403 `dang_thu_nghiem`; danh sách ở `EMAIL_THU_CHO_PHEP` (phẩy) hoặc `~/xemtuvi-data/email-thu.txt` (mỗi dòng một email, `@tenmien` cho cả miền; ngoài repo; rỗng = chặn hết; sửa tệp có hiệu lực ngay, không cần khởi động lại). Chỉ chấp nhận khi site còn `SITE_NOINDEX=1` (không lên công cụ tìm kiếm) và chưa có khách thật.
 - Trước khi chạy chính thức: bỏ `DANG_NHAP_THU` (đấu OAuth thật), đổi `CONG_THANH_TOAN` khỏi `gia_lap`, bỏ `SITE_NOINDEX`; `pm2 delete xemtuvi && pm2 start ecosystem.config.cjs && pm2 save`; kiểm `POST /api/dang-nhap` phải trả 404. Ghi vào danh sách siết bảo mật.
 - Khởi động đúng: luôn `pm2 start ecosystem.config.cjs` (pm2 restart giữ biến cũ, không nạp lại cờ mới; cần `pm2 delete` rồi start). Khóa đọc từ `~/xemtuvi-data/.env` theo HOME của user chạy app (`claude`).
 

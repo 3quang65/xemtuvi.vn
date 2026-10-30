@@ -10,7 +10,7 @@ const { moCsdl } = nap('lib/may-chu/csdl.ts');
 const { taoBoKhoa } = nap('lib/may-chu/ma-hoa.ts');
 const x = nap('lib/may-chu/xu-ly.ts');
 
-process.env.DANG_NHAP_THU = '1';
+process.env.DANG_NHAP_THU = '1'; process.env.EMAIL_THU_CHO_PHEP = '@example.vn';
 process.env.CONG_THANH_TOAN = 'gia_lap';
 process.env.NHAT_KY_DIR = fs.mkdtempSync(path.join(os.tmpdir(), 'nhat-ky-'));
 const M = { db: moCsdl(':memory:'), khoa: taoBoKhoa('khoa-tam-chi-dung-cho-test-0123456789') };

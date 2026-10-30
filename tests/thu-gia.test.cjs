@@ -19,7 +19,7 @@ const apiSuKien = nap('app/api/su-kien/route.ts');
 const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'thu-gia-'));
 process.env.THU_GIA_FILE = path.join(tmp, 'thu-gia.json');
 process.env.DATA_DIR = path.join(tmp, 'su-kien');
-process.env.DANG_NHAP_THU = '1';
+process.env.DANG_NHAP_THU = '1'; process.env.EMAIL_THU_CHO_PHEP = '@example.vn,@x.vn,@b.vn,@test.vn';
 process.env.CONG_THANH_TOAN = 'gia_lap';
 const M = { db: moCsdl(':memory:'), khoa: taoBoKhoa('khoa-tam-chi-dung-cho-test-0123456789') };
 const HOST = 'xemtuvi.test';

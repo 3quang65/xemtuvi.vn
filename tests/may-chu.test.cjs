@@ -11,6 +11,7 @@ const ph = nap('lib/may-chu/phien.ts');
 const { tra } = require('./_goi-ts.cjs');
 
 process.env.DANG_NHAP_THU = '1';
+process.env.EMAIL_THU_CHO_PHEP = '@example.vn';
 process.env.CONG_THANH_TOAN = 'gia_lap';
 const M = { db: moCsdl(':memory:'), khoa: taoBoKhoa('khoa-tam-chi-dung-cho-test-0123456789') };
 const HOST = 'xemtuvi.test';
