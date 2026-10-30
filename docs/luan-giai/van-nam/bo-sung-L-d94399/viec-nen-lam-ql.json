@@ -15,8 +15,7 @@
    "QUAN-TV-05": {
     "quyTacId": [
      "QL-S01-TOT",
-     "QL-S01-BINH",
-     "QL-S01-HAM"
+     "QL-S01-BINH"
     ],
     "cung": [
      "Quan Lộc"
@@ -25,13 +24,22 @@
      [
       "Tử Vi"
      ]
+    ],
+    "khongSaoTrongCung": [
+     "hoa:Hóa Kỵ",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh",
+     "Địa Không",
+     "Địa Kiếp"
     ]
    }
   },
   "dang": "ii",
   "tongHop": true,
   "nguonChiTiet": "Bám QUAN-TV-05: Vai trò điều hành, cần đội ngũ phụ tá mới phát huy hết (TT 卷一·問紫微: 「三宮最要左右守衛」); QL-S01: 'sớm xây vài cộng sự đáng tin'",
-  "ghiChu": "Việc L-5e7bce. Mẫu phát huy cho đoạn nền Quan Lộc (NAM-MANG-07). Khi nạp vào src/.../viec-nen-lam.json chỉ lấy 8 trường maMau, chuDe, maHuong, maPhatHuy, cau, thuocDo, thoiHanThang, dieuKien."
+  "ghiChu": "Việc L-5e7bce (sửa theo phiếu Thư L-5e7bce). Mẫu cho đoạn nền Quan Lộc theo NAM-MANG-07. Khi nạp vào src/.../viec-nen-lam.json chỉ lấy các trường máy đọc: maMau, chuDe, maHuong, maPhatHuy (nếu có), cau, thuocDo, thoiHanThang, dieuKien, tuoiTu (nếu có). Trường dieuKien mới: khongSaoTrongCung (không sao nào trong danh sách có ở cung của đoạn), catTinhTamPhuong (có/không lục cát tinh ở Quan Lộc, Mệnh, Tài Bạch, Phu Thê) — bộ ghép cần đọc thêm. Chỉ nhận đoạn sáng/bình (TOT, BINH); đoạn hãm (HAM) giữ câu dẫn (phiếu Thư Đ1, Đ3); không dùng khi Quan Lộc có Hóa Kỵ hoặc sát tinh gốc (S3: dùng CV-39…CV-43)."
  },
  {
   "maMau": "CV-24",
@@ -49,8 +57,7 @@
    "QUAN-TCO-04": {
     "quyTacId": [
      "QL-S02-TOT",
-     "QL-S02-BINH",
-     "QL-S02-HAM"
+     "QL-S02-BINH"
     ],
     "cung": [
      "Quan Lộc"
@@ -59,19 +66,28 @@
      [
       "Thiên Cơ"
      ]
+    ],
+    "khongSaoTrongCung": [
+     "hoa:Hóa Kỵ",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh",
+     "Địa Không",
+     "Địa Kiếp"
     ]
    }
   },
   "dang": "ii",
   "tongHop": true,
   "nguonChiTiet": "Bám QUAN-TCO-04: Tư duy phân tích, lên kế hoạch, thích cải tiến quy trình (TB tr. 160, §8.6); QL-S02: 'ghi lại sáng kiến của mình để được ghi nhận'",
-  "ghiChu": "Việc L-5e7bce. Mẫu phát huy cho đoạn nền Quan Lộc (NAM-MANG-07). Khi nạp vào src/.../viec-nen-lam.json chỉ lấy 8 trường maMau, chuDe, maHuong, maPhatHuy, cau, thuocDo, thoiHanThang, dieuKien."
+  "ghiChu": "Việc L-5e7bce (sửa theo phiếu Thư L-5e7bce). Mẫu cho đoạn nền Quan Lộc theo NAM-MANG-07. Khi nạp vào src/.../viec-nen-lam.json chỉ lấy các trường máy đọc: maMau, chuDe, maHuong, maPhatHuy (nếu có), cau, thuocDo, thoiHanThang, dieuKien, tuoiTu (nếu có). Trường dieuKien mới: khongSaoTrongCung (không sao nào trong danh sách có ở cung của đoạn), catTinhTamPhuong (có/không lục cát tinh ở Quan Lộc, Mệnh, Tài Bạch, Phu Thê) — bộ ghép cần đọc thêm. Chỉ nhận đoạn sáng/bình (TOT, BINH); đoạn hãm (HAM) giữ câu dẫn (phiếu Thư Đ1, Đ3); không dùng khi Quan Lộc có Hóa Kỵ hoặc sát tinh gốc (S3: dùng CV-39…CV-43)."
  },
  {
   "maMau": "CV-25",
   "chuDe": "cong-viec",
   "maHuong": [
-   "QUAN-TDU-05"
+   "QUAN-TDU-05/sáng"
   ],
   "maPhatHuy": [
    "QUAN-TDU-05"
@@ -80,11 +96,10 @@
   "thuocDo": "3 lần chia sẻ trong 3 tháng, mỗi lần một dòng góp ý",
   "thoiHanThang": 3,
   "dieuKien": {
-   "QUAN-TDU-05": {
+   "QUAN-TDU-05/sáng": {
     "quyTacId": [
      "QL-S03-TOT",
-     "QL-S03-BINH",
-     "QL-S03-HAM"
+     "QL-S03-BINH"
     ],
     "cung": [
      "Quan Lộc"
@@ -93,13 +108,22 @@
      [
       "Thái Dương"
      ]
+    ],
+    "khongSaoTrongCung": [
+     "hoa:Hóa Kỵ",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh",
+     "Địa Không",
+     "Địa Kiếp"
     ]
    }
   },
   "dang": "ii",
   "tongHop": true,
-  "nguonChiTiet": "Bám QUAN-TDU-05: Hợp công việc xuất hiện, truyền đạt, thích được ghi nhận (TT 卷一·問太陽; WQ5)",
-  "ghiChu": "Việc L-5e7bce. Mẫu phát huy cho đoạn nền Quan Lộc (NAM-MANG-07). Khi nạp vào src/.../viec-nen-lam.json chỉ lấy 8 trường maMau, chuDe, maHuong, maPhatHuy, cau, thuocDo, thoiHanThang, dieuKien."
+  "nguonChiTiet": "Bám QUAN-TDU-05 vế sáng: 'Thái Dương sáng thì nổi bật sớm', hợp công việc xuất hiện, truyền đạt (TT 卷一·問太陽; WQ5). Vế hãm ('chọn chuyên môn sâu, bền bỉ') không dùng mẫu này.",
+  "ghiChu": "Việc L-5e7bce (sửa theo phiếu Thư L-5e7bce). Mẫu cho đoạn nền Quan Lộc theo NAM-MANG-07. Khi nạp vào src/.../viec-nen-lam.json chỉ lấy các trường máy đọc: maMau, chuDe, maHuong, maPhatHuy (nếu có), cau, thuocDo, thoiHanThang, dieuKien, tuoiTu (nếu có). Trường dieuKien mới: khongSaoTrongCung (không sao nào trong danh sách có ở cung của đoạn), catTinhTamPhuong (có/không lục cát tinh ở Quan Lộc, Mệnh, Tài Bạch, Phu Thê) — bộ ghép cần đọc thêm. Chỉ nhận đoạn sáng/bình (TOT, BINH); đoạn hãm (HAM) giữ câu dẫn (phiếu Thư Đ1, Đ3); không dùng khi Quan Lộc có Hóa Kỵ hoặc sát tinh gốc (S3: dùng CV-39…CV-43)."
  },
  {
   "maMau": "CV-26",
@@ -110,15 +134,14 @@
   "maPhatHuy": [
    "QUAN-VK-04"
   ],
-  "cau": "Đặt cho việc chính của bạn một con số đo được (số việc xong, số khách, số giờ); cuối mỗi tuần ghi số đạt và so với tuần trước.",
+  "cau": "Đặt cho việc chính của bạn một con số đo được (số việc xong, số bài, số giờ); cuối mỗi tuần ghi số đạt và so với tuần trước.",
   "thuocDo": "≥ 10/12 tuần có số ghi",
   "thoiHanThang": 3,
   "dieuKien": {
    "QUAN-VK-04": {
     "quyTacId": [
      "QL-S04-TOT",
-     "QL-S04-BINH",
-     "QL-S04-HAM"
+     "QL-S04-BINH"
     ],
     "cung": [
      "Quan Lộc"
@@ -127,13 +150,22 @@
      [
       "Vũ Khúc"
      ]
+    ],
+    "khongSaoTrongCung": [
+     "hoa:Hóa Kỵ",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh",
+     "Địa Không",
+     "Địa Kiếp"
     ]
    }
   },
   "dang": "ii",
   "tongHop": true,
   "nguonChiTiet": "Bám QUAN-VK-04: Hợp môi trường có chỉ tiêu, đo kết quả rõ (KL Vũ khúc; TB tr. 159, §8.4)",
-  "ghiChu": "Việc L-5e7bce. Mẫu phát huy cho đoạn nền Quan Lộc (NAM-MANG-07). Khi nạp vào src/.../viec-nen-lam.json chỉ lấy 8 trường maMau, chuDe, maHuong, maPhatHuy, cau, thuocDo, thoiHanThang, dieuKien."
+  "ghiChu": "Việc L-5e7bce (sửa theo phiếu Thư L-5e7bce). Mẫu cho đoạn nền Quan Lộc theo NAM-MANG-07. Khi nạp vào src/.../viec-nen-lam.json chỉ lấy các trường máy đọc: maMau, chuDe, maHuong, maPhatHuy (nếu có), cau, thuocDo, thoiHanThang, dieuKien, tuoiTu (nếu có). Trường dieuKien mới: khongSaoTrongCung (không sao nào trong danh sách có ở cung của đoạn), catTinhTamPhuong (có/không lục cát tinh ở Quan Lộc, Mệnh, Tài Bạch, Phu Thê) — bộ ghép cần đọc thêm. Chỉ nhận đoạn sáng/bình (TOT, BINH); đoạn hãm (HAM) giữ câu dẫn (phiếu Thư Đ1, Đ3); không dùng khi Quan Lộc có Hóa Kỵ hoặc sát tinh gốc (S3: dùng CV-39…CV-43)."
  },
  {
   "maMau": "CV-27",
@@ -151,8 +183,7 @@
    "QUAN-TD-04": {
     "quyTacId": [
      "QL-S05-TOT",
-     "QL-S05-BINH",
-     "QL-S05-HAM"
+     "QL-S05-BINH"
     ],
     "cung": [
      "Quan Lộc"
@@ -161,13 +192,22 @@
      [
       "Thiên Đồng"
      ]
+    ],
+    "khongSaoTrongCung": [
+     "hoa:Hóa Kỵ",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh",
+     "Địa Không",
+     "Địa Kiếp"
     ]
    }
   },
   "dang": "ii",
   "tongHop": true,
   "nguonChiTiet": "Bám QUAN-TD-04: Thiên Đồng thích thay đổi, cải tiến (KL: 'Thiên đồng và canh cải'; TB tr. 158–159, §8.3); QL-S05: 'đặt mục tiêu theo quý để giữ động lực'",
-  "ghiChu": "Việc L-5e7bce. Mẫu phát huy cho đoạn nền Quan Lộc (NAM-MANG-07). Khi nạp vào src/.../viec-nen-lam.json chỉ lấy 8 trường maMau, chuDe, maHuong, maPhatHuy, cau, thuocDo, thoiHanThang, dieuKien."
+  "ghiChu": "Việc L-5e7bce (sửa theo phiếu Thư L-5e7bce). Mẫu cho đoạn nền Quan Lộc theo NAM-MANG-07. Khi nạp vào src/.../viec-nen-lam.json chỉ lấy các trường máy đọc: maMau, chuDe, maHuong, maPhatHuy (nếu có), cau, thuocDo, thoiHanThang, dieuKien, tuoiTu (nếu có). Trường dieuKien mới: khongSaoTrongCung (không sao nào trong danh sách có ở cung của đoạn), catTinhTamPhuong (có/không lục cát tinh ở Quan Lộc, Mệnh, Tài Bạch, Phu Thê) — bộ ghép cần đọc thêm. Chỉ nhận đoạn sáng/bình (TOT, BINH); đoạn hãm (HAM) giữ câu dẫn (phiếu Thư Đ1, Đ3); không dùng khi Quan Lộc có Hóa Kỵ hoặc sát tinh gốc (S3: dùng CV-39…CV-43)."
  },
  {
   "maMau": "CV-28",
@@ -185,8 +225,7 @@
    "QUAN-LT-05": {
     "quyTacId": [
      "QL-S06-TOT",
-     "QL-S06-BINH",
-     "QL-S06-HAM"
+     "QL-S06-BINH"
     ],
     "cung": [
      "Quan Lộc"
@@ -195,13 +234,22 @@
      [
       "Liêm Trinh"
      ]
+    ],
+    "khongSaoTrongCung": [
+     "hoa:Hóa Kỵ",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh",
+     "Địa Không",
+     "Địa Kiếp"
     ]
    }
   },
   "dang": "ii",
   "tongHop": true,
   "nguonChiTiet": "Bám QUAN-LT-05: Nguyên tắc, hợp môi trường có luật lệ rõ; giữ cân bằng giữa tham vọng và liêm chính (TB tr. 158; TT 卷一·問廉貞)",
-  "ghiChu": "Việc L-5e7bce. Mẫu phát huy cho đoạn nền Quan Lộc (NAM-MANG-07). Khi nạp vào src/.../viec-nen-lam.json chỉ lấy 8 trường maMau, chuDe, maHuong, maPhatHuy, cau, thuocDo, thoiHanThang, dieuKien."
+  "ghiChu": "Việc L-5e7bce (sửa theo phiếu Thư L-5e7bce). Mẫu cho đoạn nền Quan Lộc theo NAM-MANG-07. Khi nạp vào src/.../viec-nen-lam.json chỉ lấy các trường máy đọc: maMau, chuDe, maHuong, maPhatHuy (nếu có), cau, thuocDo, thoiHanThang, dieuKien, tuoiTu (nếu có). Trường dieuKien mới: khongSaoTrongCung (không sao nào trong danh sách có ở cung của đoạn), catTinhTamPhuong (có/không lục cát tinh ở Quan Lộc, Mệnh, Tài Bạch, Phu Thê) — bộ ghép cần đọc thêm. Chỉ nhận đoạn sáng/bình (TOT, BINH); đoạn hãm (HAM) giữ câu dẫn (phiếu Thư Đ1, Đ3); không dùng khi Quan Lộc có Hóa Kỵ hoặc sát tinh gốc (S3: dùng CV-39…CV-43)."
  },
  {
   "maMau": "CV-29",
@@ -219,8 +267,7 @@
    "QUAN-TP-03": {
     "quyTacId": [
      "QL-S07-TOT",
-     "QL-S07-BINH",
-     "QL-S07-HAM"
+     "QL-S07-BINH"
     ],
     "cung": [
      "Quan Lộc"
@@ -229,13 +276,22 @@
      [
       "Thiên Phủ"
      ]
+    ],
+    "khongSaoTrongCung": [
+     "hoa:Hóa Kỵ",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh",
+     "Địa Không",
+     "Địa Kiếp"
     ]
    }
   },
   "dang": "ii",
   "tongHop": true,
   "nguonChiTiet": "Bám QUAN-TP-03: Ổn định, giỏi giữ và quản lý nguồn lực (KL Thiên phủ: 'có tài tổ chức'; TT 卷一·問天府)",
-  "ghiChu": "Việc L-5e7bce. Mẫu phát huy cho đoạn nền Quan Lộc (NAM-MANG-07). Khi nạp vào src/.../viec-nen-lam.json chỉ lấy 8 trường maMau, chuDe, maHuong, maPhatHuy, cau, thuocDo, thoiHanThang, dieuKien."
+  "ghiChu": "Việc L-5e7bce (sửa theo phiếu Thư L-5e7bce). Mẫu cho đoạn nền Quan Lộc theo NAM-MANG-07. Khi nạp vào src/.../viec-nen-lam.json chỉ lấy các trường máy đọc: maMau, chuDe, maHuong, maPhatHuy (nếu có), cau, thuocDo, thoiHanThang, dieuKien, tuoiTu (nếu có). Trường dieuKien mới: khongSaoTrongCung (không sao nào trong danh sách có ở cung của đoạn), catTinhTamPhuong (có/không lục cát tinh ở Quan Lộc, Mệnh, Tài Bạch, Phu Thê) — bộ ghép cần đọc thêm. Chỉ nhận đoạn sáng/bình (TOT, BINH); đoạn hãm (HAM) giữ câu dẫn (phiếu Thư Đ1, Đ3); không dùng khi Quan Lộc có Hóa Kỵ hoặc sát tinh gốc (S3: dùng CV-39…CV-43)."
  },
  {
   "maMau": "CV-30",
@@ -253,8 +309,7 @@
    "QUAN-TA-04": {
     "quyTacId": [
      "QL-S08-TOT",
-     "QL-S08-BINH",
-     "QL-S08-HAM"
+     "QL-S08-BINH"
     ],
     "cung": [
      "Quan Lộc"
@@ -263,13 +318,22 @@
      [
       "Thái Âm"
      ]
+    ],
+    "khongSaoTrongCung": [
+     "hoa:Hóa Kỵ",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh",
+     "Địa Không",
+     "Địa Kiếp"
     ]
    }
   },
   "dang": "ii",
   "tongHop": true,
   "nguonChiTiet": "Bám QUAN-TA-04: Tinh tế, chu đáo, có khiếu thẩm mỹ; hợp môi trường tôn trọng sự tỉ mỉ (KL Thái âm; TB tr. 160, §8.8)",
-  "ghiChu": "Việc L-5e7bce. Mẫu phát huy cho đoạn nền Quan Lộc (NAM-MANG-07). Khi nạp vào src/.../viec-nen-lam.json chỉ lấy 8 trường maMau, chuDe, maHuong, maPhatHuy, cau, thuocDo, thoiHanThang, dieuKien."
+  "ghiChu": "Việc L-5e7bce (sửa theo phiếu Thư L-5e7bce). Mẫu cho đoạn nền Quan Lộc theo NAM-MANG-07. Khi nạp vào src/.../viec-nen-lam.json chỉ lấy các trường máy đọc: maMau, chuDe, maHuong, maPhatHuy (nếu có), cau, thuocDo, thoiHanThang, dieuKien, tuoiTu (nếu có). Trường dieuKien mới: khongSaoTrongCung (không sao nào trong danh sách có ở cung của đoạn), catTinhTamPhuong (có/không lục cát tinh ở Quan Lộc, Mệnh, Tài Bạch, Phu Thê) — bộ ghép cần đọc thêm. Chỉ nhận đoạn sáng/bình (TOT, BINH); đoạn hãm (HAM) giữ câu dẫn (phiếu Thư Đ1, Đ3); không dùng khi Quan Lộc có Hóa Kỵ hoặc sát tinh gốc (S3: dùng CV-39…CV-43)."
  },
  {
   "maMau": "CV-31",
@@ -287,8 +351,7 @@
    "QUAN-THL-04": {
     "quyTacId": [
      "QL-S09-TOT",
-     "QL-S09-BINH",
-     "QL-S09-HAM"
+     "QL-S09-BINH"
     ],
     "cung": [
      "Quan Lộc"
@@ -297,13 +360,23 @@
      [
       "Tham Lang"
      ]
+    ],
+    "khongSaoTrongCung": [
+     "hoa:Hóa Kỵ",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh",
+     "Địa Không",
+     "Địa Kiếp"
     ]
    }
   },
   "dang": "ii",
   "tongHop": true,
   "nguonChiTiet": "Bám QUAN-THL-04: Năng động, giao tiếp giỏi; cần kỷ luật để không phân tán (TB tr. 161, §8.9; TT 卷一·問貪狼); QL-S09: 'tận dụng duyên giao tiếp… đặt mục tiêu rõ'",
-  "ghiChu": "Việc L-5e7bce. Mẫu phát huy cho đoạn nền Quan Lộc (NAM-MANG-07). Khi nạp vào src/.../viec-nen-lam.json chỉ lấy 8 trường maMau, chuDe, maHuong, maPhatHuy, cau, thuocDo, thoiHanThang, dieuKien."
+  "ghiChu": "Việc L-5e7bce (sửa theo phiếu Thư L-5e7bce). Mẫu cho đoạn nền Quan Lộc theo NAM-MANG-07. Khi nạp vào src/.../viec-nen-lam.json chỉ lấy các trường máy đọc: maMau, chuDe, maHuong, maPhatHuy (nếu có), cau, thuocDo, thoiHanThang, dieuKien, tuoiTu (nếu có). Trường dieuKien mới: khongSaoTrongCung (không sao nào trong danh sách có ở cung của đoạn), catTinhTamPhuong (có/không lục cát tinh ở Quan Lộc, Mệnh, Tài Bạch, Phu Thê) — bộ ghép cần đọc thêm. Chỉ nhận đoạn sáng/bình (TOT, BINH); đoạn hãm (HAM) giữ câu dẫn (phiếu Thư Đ1, Đ3); không dùng khi Quan Lộc có Hóa Kỵ hoặc sát tinh gốc (S3: dùng CV-39…CV-43). tuoiTu 18: 'người trong nghề' và việc tự làm quen người mới không hợp người dưới 18 (phiếu Thư G1).",
+  "tuoiTu": 18
  },
  {
   "maMau": "CV-32",
@@ -321,8 +394,7 @@
    "QUAN-CM-03": {
     "quyTacId": [
      "QL-S10-TOT",
-     "QL-S10-BINH",
-     "QL-S10-HAM"
+     "QL-S10-BINH"
     ],
     "cung": [
      "Quan Lộc"
@@ -331,13 +403,22 @@
      [
       "Cự Môn"
      ]
+    ],
+    "khongSaoTrongCung": [
+     "hoa:Hóa Kỵ",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh",
+     "Địa Không",
+     "Địa Kiếp"
     ]
    }
   },
   "dang": "ii",
   "tongHop": true,
   "nguonChiTiet": "Bám QUAN-CM-03: Làm việc bằng lời nói và lập luận; cần chú ý cách nói (KL Cự môn; TB tr. 161, §8.10)",
-  "ghiChu": "Việc L-5e7bce. Mẫu phát huy cho đoạn nền Quan Lộc (NAM-MANG-07). Khi nạp vào src/.../viec-nen-lam.json chỉ lấy 8 trường maMau, chuDe, maHuong, maPhatHuy, cau, thuocDo, thoiHanThang, dieuKien."
+  "ghiChu": "Việc L-5e7bce (sửa theo phiếu Thư L-5e7bce). Mẫu cho đoạn nền Quan Lộc theo NAM-MANG-07. Khi nạp vào src/.../viec-nen-lam.json chỉ lấy các trường máy đọc: maMau, chuDe, maHuong, maPhatHuy (nếu có), cau, thuocDo, thoiHanThang, dieuKien, tuoiTu (nếu có). Trường dieuKien mới: khongSaoTrongCung (không sao nào trong danh sách có ở cung của đoạn), catTinhTamPhuong (có/không lục cát tinh ở Quan Lộc, Mệnh, Tài Bạch, Phu Thê) — bộ ghép cần đọc thêm. Chỉ nhận đoạn sáng/bình (TOT, BINH); đoạn hãm (HAM) giữ câu dẫn (phiếu Thư Đ1, Đ3); không dùng khi Quan Lộc có Hóa Kỵ hoặc sát tinh gốc (S3: dùng CV-39…CV-43)."
  },
  {
   "maMau": "CV-33",
@@ -355,8 +436,7 @@
    "QUAN-TT-04": {
     "quyTacId": [
      "QL-S11-TOT",
-     "QL-S11-BINH",
-     "QL-S11-HAM"
+     "QL-S11-BINH"
     ],
     "cung": [
      "Quan Lộc"
@@ -365,13 +445,22 @@
      [
       "Thiên Tướng"
      ]
+    ],
+    "khongSaoTrongCung": [
+     "hoa:Hóa Kỵ",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh",
+     "Địa Không",
+     "Địa Kiếp"
     ]
    }
   },
   "dang": "ii",
   "tongHop": true,
   "nguonChiTiet": "Bám QUAN-TT-04: Người điều phối, 'phó tướng' đáng tin, giữ chuẩn mực (TT 卷一·問天相: 「佐帝之位」)",
-  "ghiChu": "Việc L-5e7bce. Mẫu phát huy cho đoạn nền Quan Lộc (NAM-MANG-07). Khi nạp vào src/.../viec-nen-lam.json chỉ lấy 8 trường maMau, chuDe, maHuong, maPhatHuy, cau, thuocDo, thoiHanThang, dieuKien."
+  "ghiChu": "Việc L-5e7bce (sửa theo phiếu Thư L-5e7bce). Mẫu cho đoạn nền Quan Lộc theo NAM-MANG-07. Khi nạp vào src/.../viec-nen-lam.json chỉ lấy các trường máy đọc: maMau, chuDe, maHuong, maPhatHuy (nếu có), cau, thuocDo, thoiHanThang, dieuKien, tuoiTu (nếu có). Trường dieuKien mới: khongSaoTrongCung (không sao nào trong danh sách có ở cung của đoạn), catTinhTamPhuong (có/không lục cát tinh ở Quan Lộc, Mệnh, Tài Bạch, Phu Thê) — bộ ghép cần đọc thêm. Chỉ nhận đoạn sáng/bình (TOT, BINH); đoạn hãm (HAM) giữ câu dẫn (phiếu Thư Đ1, Đ3); không dùng khi Quan Lộc có Hóa Kỵ hoặc sát tinh gốc (S3: dùng CV-39…CV-43)."
  },
  {
   "maMau": "CV-34",
@@ -389,8 +478,7 @@
    "QUAN-TL-04": {
     "quyTacId": [
      "QL-S12-TOT",
-     "QL-S12-BINH",
-     "QL-S12-HAM"
+     "QL-S12-BINH"
     ],
     "cung": [
      "Quan Lộc"
@@ -399,13 +487,22 @@
      [
       "Thiên Lương"
      ]
+    ],
+    "khongSaoTrongCung": [
+     "hoa:Hóa Kỵ",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh",
+     "Địa Không",
+     "Địa Kiếp"
     ]
    }
   },
   "dang": "ii",
   "tongHop": true,
   "nguonChiTiet": "Bám QUAN-TL-04: Người che chở, hướng dẫn, thích giúp đỡ (TT 卷一·問天梁; TB tr. 162, §8.12)",
-  "ghiChu": "Việc L-5e7bce. Mẫu phát huy cho đoạn nền Quan Lộc (NAM-MANG-07). Khi nạp vào src/.../viec-nen-lam.json chỉ lấy 8 trường maMau, chuDe, maHuong, maPhatHuy, cau, thuocDo, thoiHanThang, dieuKien."
+  "ghiChu": "Việc L-5e7bce (sửa theo phiếu Thư L-5e7bce). Mẫu cho đoạn nền Quan Lộc theo NAM-MANG-07. Khi nạp vào src/.../viec-nen-lam.json chỉ lấy các trường máy đọc: maMau, chuDe, maHuong, maPhatHuy (nếu có), cau, thuocDo, thoiHanThang, dieuKien, tuoiTu (nếu có). Trường dieuKien mới: khongSaoTrongCung (không sao nào trong danh sách có ở cung của đoạn), catTinhTamPhuong (có/không lục cát tinh ở Quan Lộc, Mệnh, Tài Bạch, Phu Thê) — bộ ghép cần đọc thêm. Chỉ nhận đoạn sáng/bình (TOT, BINH); đoạn hãm (HAM) giữ câu dẫn (phiếu Thư Đ1, Đ3); không dùng khi Quan Lộc có Hóa Kỵ hoặc sát tinh gốc (S3: dùng CV-39…CV-43)."
  },
  {
   "maMau": "CV-35",
@@ -423,8 +520,7 @@
    "QUAN-TS-04": {
     "quyTacId": [
      "QL-S13-TOT",
-     "QL-S13-BINH",
-     "QL-S13-HAM"
+     "QL-S13-BINH"
     ],
     "cung": [
      "Quan Lộc"
@@ -433,13 +529,22 @@
      [
       "Thất Sát"
      ]
+    ],
+    "khongSaoTrongCung": [
+     "hoa:Hóa Kỵ",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh",
+     "Địa Không",
+     "Địa Kiếp"
     ]
    }
   },
   "dang": "ii",
   "tongHop": true,
   "nguonChiTiet": "Bám QUAN-TS-04: Quyết đoán, chịu áp lực, thích thử thách, làm độc lập (TT 卷二·九官祿); QL-S13: 'xử lý việc khó, kèm mốc kiểm tra rõ'",
-  "ghiChu": "Việc L-5e7bce. Mẫu phát huy cho đoạn nền Quan Lộc (NAM-MANG-07). Khi nạp vào src/.../viec-nen-lam.json chỉ lấy 8 trường maMau, chuDe, maHuong, maPhatHuy, cau, thuocDo, thoiHanThang, dieuKien."
+  "ghiChu": "Việc L-5e7bce (sửa theo phiếu Thư L-5e7bce). Mẫu cho đoạn nền Quan Lộc theo NAM-MANG-07. Khi nạp vào src/.../viec-nen-lam.json chỉ lấy các trường máy đọc: maMau, chuDe, maHuong, maPhatHuy (nếu có), cau, thuocDo, thoiHanThang, dieuKien, tuoiTu (nếu có). Trường dieuKien mới: khongSaoTrongCung (không sao nào trong danh sách có ở cung của đoạn), catTinhTamPhuong (có/không lục cát tinh ở Quan Lộc, Mệnh, Tài Bạch, Phu Thê) — bộ ghép cần đọc thêm. Chỉ nhận đoạn sáng/bình (TOT, BINH); đoạn hãm (HAM) giữ câu dẫn (phiếu Thư Đ1, Đ3); không dùng khi Quan Lộc có Hóa Kỵ hoặc sát tinh gốc (S3: dùng CV-39…CV-43)."
  },
  {
   "maMau": "CV-36",
@@ -457,8 +562,7 @@
    "QUAN-PQ-04": {
     "quyTacId": [
      "QL-S14-TOT",
-     "QL-S14-BINH",
-     "QL-S14-HAM"
+     "QL-S14-BINH"
     ],
     "cung": [
      "Quan Lộc"
@@ -467,48 +571,398 @@
      [
       "Phá Quân"
      ]
+    ],
+    "khongSaoTrongCung": [
+     "hoa:Hóa Kỵ",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh",
+     "Địa Không",
+     "Địa Kiếp"
     ]
    }
   },
   "dang": "ii",
   "tongHop": true,
   "nguonChiTiet": "Bám QUAN-PQ-04: Phá cũ lập mới; nên có đối tác giữ ổn định (TB tr. 163, §8.14; TT 卷二·九官祿)",
-  "ghiChu": "Việc L-5e7bce. Mẫu phát huy cho đoạn nền Quan Lộc (NAM-MANG-07). Khi nạp vào src/.../viec-nen-lam.json chỉ lấy 8 trường maMau, chuDe, maHuong, maPhatHuy, cau, thuocDo, thoiHanThang, dieuKien."
+  "ghiChu": "Việc L-5e7bce (sửa theo phiếu Thư L-5e7bce). Mẫu cho đoạn nền Quan Lộc theo NAM-MANG-07. Khi nạp vào src/.../viec-nen-lam.json chỉ lấy các trường máy đọc: maMau, chuDe, maHuong, maPhatHuy (nếu có), cau, thuocDo, thoiHanThang, dieuKien, tuoiTu (nếu có). Trường dieuKien mới: khongSaoTrongCung (không sao nào trong danh sách có ở cung của đoạn), catTinhTamPhuong (có/không lục cát tinh ở Quan Lộc, Mệnh, Tài Bạch, Phu Thê) — bộ ghép cần đọc thêm. Chỉ nhận đoạn sáng/bình (TOT, BINH); đoạn hãm (HAM) giữ câu dẫn (phiếu Thư Đ1, Đ3); không dùng khi Quan Lộc có Hóa Kỵ hoặc sát tinh gốc (S3: dùng CV-39…CV-43)."
  },
  {
   "maMau": "CV-37",
   "chuDe": "cong-viec",
   "maHuong": [
-   "QUAN-CC-01",
-   "CHUNG-VCD-02"
-  ],
-  "maPhatHuy": [
-   "QUAN-CC-01"
+   "CHUNG-VCD-02/không cát tinh"
   ],
   "cau": "Ghi ra ba việc bạn làm tốt và hay được nhờ nhất, trong công việc hoặc việc học; chọn một việc và mỗi tuần dành một buổi để làm sâu hơn.",
   "thuocDo": "Có danh sách ba việc; ≥ 10/12 tuần có buổi làm sâu",
   "thoiHanThang": 3,
   "dieuKien": {
-   "QUAN-CC-01": {
+   "CHUNG-VCD-02/không cát tinh": {
     "quyTacId": [
      "QL-VCD"
     ],
     "cung": [
      "Quan Lộc"
+    ],
+    "catTinhTamPhuong": false,
+    "khongSaoTrongCung": [
+     "hoa:Hóa Kỵ",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh",
+     "Địa Không",
+     "Địa Kiếp"
     ]
-   },
-   "CHUNG-VCD-02": {
+   }
+  },
+  "dang": "i",
+  "tongHop": true,
+  "nguonChiTiet": "Bám CHUNG-VCD-02 vế 'không cát tinh': 'cần xây nền tảng' (TT, Cốt tủy phú, đã trung tính hóa); cùng lời khuyên của QL-VCD 'chọn hướng mình làm tốt nhất để theo lâu dài'. QUAN-CC-01 giữ trong maNghienCuu (phương pháp mượn sao xung chiếu), không làm mã bám (phiếu Thư Đ4).",
+  "ghiChu": "Việc L-5e7bce (sửa theo phiếu Thư L-5e7bce). Mẫu cho đoạn nền Quan Lộc theo NAM-MANG-07. Khi nạp vào src/.../viec-nen-lam.json chỉ lấy các trường máy đọc: maMau, chuDe, maHuong, maPhatHuy (nếu có), cau, thuocDo, thoiHanThang, dieuKien, tuoiTu (nếu có). Trường dieuKien mới: khongSaoTrongCung (không sao nào trong danh sách có ở cung của đoạn), catTinhTamPhuong (có/không lục cát tinh ở Quan Lộc, Mệnh, Tài Bạch, Phu Thê) — bộ ghép cần đọc thêm. Vế 'có cát tinh' dùng CV-38."
+ },
+ {
+  "maMau": "CV-38",
+  "chuDe": "cong-viec",
+  "maHuong": [
+   "CHUNG-VCD-02/có cát tinh"
+  ],
+  "cau": "Ghi tên hai, ba người từng giúp hoặc chỉ dẫn bạn trong công việc hoặc việc học; mỗi tháng chủ động hỏi một người một góp ý cụ thể cho bước tiếp theo.",
+  "thuocDo": "3 lần hỏi trong 3 tháng, mỗi lần ghi một dòng góp ý",
+  "thoiHanThang": 3,
+  "dieuKien": {
+   "CHUNG-VCD-02/có cát tinh": {
     "quyTacId": [
      "QL-VCD"
     ],
     "cung": [
      "Quan Lộc"
+    ],
+    "catTinhTamPhuong": true,
+    "khongSaoTrongCung": [
+     "hoa:Hóa Kỵ",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh",
+     "Địa Không",
+     "Địa Kiếp"
     ]
    }
   },
   "dang": "ii",
   "tongHop": true,
-  "nguonChiTiet": "Bám QUAN-CC-01 (Quan Lộc vô chính diệu lấy chính tinh xung chiếu mà luận; TB tr. 166–167, §8.45) và CHUNG-VCD-02 ('cần xây nền tảng, dễ chịu ảnh hưởng môi trường'; TT, đã trung tính hóa); QL-VCD: 'chọn hướng mình làm tốt nhất để theo lâu dài'",
-  "ghiChu": "Việc L-5e7bce. Không nhắc 'công danh khó hiển đạt' của QUAN-CC-01 (sách gốc diễn đạt nặng): mẫu chỉ phát huy ý 'chọn hướng làm tốt nhất'. Khi nạp chỉ lấy 8 trường như trên."
+  "nguonChiTiet": "Bám CHUNG-VCD-02 vế 'có cát tinh hội chiếu ở tam phương vẫn có thể tốt' (TT, Luận cách tinh số cao hạ: 「財官二宮有吉星拱照」); nghĩa nhóm cát tinh theo CHUNG-SP-01 (trợ lực, học vấn, quý nhân). Phần (b) phải có câu B3 'có cát tinh' của NAM-MANG-07.",
+  "ghiChu": "Việc L-5e7bce (sửa theo phiếu Thư L-5e7bce). Mẫu cho đoạn nền Quan Lộc theo NAM-MANG-07. Khi nạp vào src/.../viec-nen-lam.json chỉ lấy các trường máy đọc: maMau, chuDe, maHuong, maPhatHuy (nếu có), cau, thuocDo, thoiHanThang, dieuKien, tuoiTu (nếu có). Trường dieuKien mới: khongSaoTrongCung (không sao nào trong danh sách có ở cung của đoạn), catTinhTamPhuong (có/không lục cát tinh ở Quan Lộc, Mệnh, Tài Bạch, Phu Thê) — bộ ghép cần đọc thêm.",
+  "maPhatHuy": [
+   "CHUNG-VCD-02"
+  ]
+ },
+ {
+  "maMau": "CV-39",
+  "chuDe": "cong-viec",
+  "maHuong": [
+   "QUAN-HOA-03"
+  ],
+  "cau": "Trước mỗi việc quan trọng trong công việc hoặc việc học, viết ra ba điều cần chuẩn bị và người cần được báo; báo xong, chuẩn bị đủ rồi mới bắt đầu.",
+  "thuocDo": "Ghi các việc quan trọng; ≥ 4/5 việc có danh sách và tin báo trước",
+  "thoiHanThang": 2,
+  "dieuKien": {
+   "QUAN-HOA-03": {
+    "quyTacId": [
+     "QL-S01-TOT",
+     "QL-S01-BINH",
+     "QL-S02-TOT",
+     "QL-S02-BINH",
+     "QL-S03-TOT",
+     "QL-S03-BINH",
+     "QL-S04-TOT",
+     "QL-S04-BINH",
+     "QL-S05-TOT",
+     "QL-S05-BINH",
+     "QL-S06-TOT",
+     "QL-S06-BINH",
+     "QL-S07-TOT",
+     "QL-S07-BINH",
+     "QL-S08-TOT",
+     "QL-S08-BINH",
+     "QL-S09-TOT",
+     "QL-S09-BINH",
+     "QL-S10-TOT",
+     "QL-S10-BINH",
+     "QL-S11-TOT",
+     "QL-S11-BINH",
+     "QL-S12-TOT",
+     "QL-S12-BINH",
+     "QL-S13-TOT",
+     "QL-S13-BINH",
+     "QL-S14-TOT",
+     "QL-S14-BINH",
+     "QL-VCD"
+    ],
+    "cung": [
+     "Quan Lộc"
+    ],
+    "saoTrongCung": [
+     [
+      "hoa:Hóa Kỵ"
+     ]
+    ]
+   }
+  },
+  "dang": "i",
+  "tongHop": true,
+  "nguonChiTiet": "Bám QUAN-HOA-03 (Hóa Kỵ ở Quan Lộc: hay gặp chuyện phiền lòng; TB tr. 164, §8.19) qua lời khuyên của đoạn QL-HOA-3 'nên chuẩn bị kỹ và giao tiếp rõ ràng'. Phần (b) phải có câu QL-HOA-3.",
+  "ghiChu": "Việc L-5e7bce (sửa theo phiếu Thư L-5e7bce). Mẫu cho đoạn nền Quan Lộc theo NAM-MANG-07. Khi nạp vào src/.../viec-nen-lam.json chỉ lấy các trường máy đọc: maMau, chuDe, maHuong, maPhatHuy (nếu có), cau, thuocDo, thoiHanThang, dieuKien, tuoiTu (nếu có). Trường dieuKien mới: khongSaoTrongCung (không sao nào trong danh sách có ở cung của đoạn), catTinhTamPhuong (có/không lục cát tinh ở Quan Lộc, Mệnh, Tài Bạch, Phu Thê) — bộ ghép cần đọc thêm."
+ },
+ {
+  "maMau": "CV-40",
+  "chuDe": "cong-viec",
+  "maHuong": [
+   "QUAN-SP-06"
+  ],
+  "cau": "Khi muốn làm gấp một việc chưa có trong kế hoạch, ghi một dòng lý do và để qua một buổi rồi mới làm.",
+  "thuocDo": "Ghi các lần; ≥ 4/5 lần có dòng lý do và chờ một buổi",
+  "thoiHanThang": 2,
+  "dieuKien": {
+   "QUAN-SP-06": {
+    "quyTacId": [
+     "QL-S01-TOT",
+     "QL-S01-BINH",
+     "QL-S02-TOT",
+     "QL-S02-BINH",
+     "QL-S03-TOT",
+     "QL-S03-BINH",
+     "QL-S04-TOT",
+     "QL-S04-BINH",
+     "QL-S05-TOT",
+     "QL-S05-BINH",
+     "QL-S06-TOT",
+     "QL-S06-BINH",
+     "QL-S07-TOT",
+     "QL-S07-BINH",
+     "QL-S08-TOT",
+     "QL-S08-BINH",
+     "QL-S09-TOT",
+     "QL-S09-BINH",
+     "QL-S10-TOT",
+     "QL-S10-BINH",
+     "QL-S11-TOT",
+     "QL-S11-BINH",
+     "QL-S12-TOT",
+     "QL-S12-BINH",
+     "QL-S13-TOT",
+     "QL-S13-BINH",
+     "QL-S14-TOT",
+     "QL-S14-BINH",
+     "QL-VCD"
+    ],
+    "cung": [
+     "Quan Lộc"
+    ],
+    "saoTrongCung": [
+     [
+      "Kình Dương"
+     ]
+    ],
+    "khongSaoTrongCung": [
+     "hoa:Hóa Kỵ"
+    ]
+   }
+  },
+  "dang": "i",
+  "tongHop": true,
+  "nguonChiTiet": "Bám QUAN-SP-06 (Kình Dương ở Quan Lộc; TT 卷二·九官祿, TB §8.32–8.33) qua lời khuyên đoạn QL-PS-8 'cần kiểm soát sự nóng vội'. Phần (b) phải có câu QL-PS-8.",
+  "ghiChu": "Việc L-5e7bce (sửa theo phiếu Thư L-5e7bce). Mẫu cho đoạn nền Quan Lộc theo NAM-MANG-07. Khi nạp vào src/.../viec-nen-lam.json chỉ lấy các trường máy đọc: maMau, chuDe, maHuong, maPhatHuy (nếu có), cau, thuocDo, thoiHanThang, dieuKien, tuoiTu (nếu có). Trường dieuKien mới: khongSaoTrongCung (không sao nào trong danh sách có ở cung của đoạn), catTinhTamPhuong (có/không lục cát tinh ở Quan Lộc, Mệnh, Tài Bạch, Phu Thê) — bộ ghép cần đọc thêm."
+ },
+ {
+  "maMau": "CV-41",
+  "chuDe": "cong-viec",
+  "maHuong": [
+   "QUAN-SP-07/Đà La"
+  ],
+  "cau": "Với một việc bạn đang để chậm, chọn một bước nhỏ làm được trong 20 phút và làm ngay trong ngày; mỗi tuần làm như vậy ít nhất hai lần.",
+  "thuocDo": "≥ 6/8 tuần có ít nhất hai bước nhỏ đã làm",
+  "thoiHanThang": 2,
+  "dieuKien": {
+   "QUAN-SP-07/Đà La": {
+    "quyTacId": [
+     "QL-S01-TOT",
+     "QL-S01-BINH",
+     "QL-S02-TOT",
+     "QL-S02-BINH",
+     "QL-S03-TOT",
+     "QL-S03-BINH",
+     "QL-S04-TOT",
+     "QL-S04-BINH",
+     "QL-S05-TOT",
+     "QL-S05-BINH",
+     "QL-S06-TOT",
+     "QL-S06-BINH",
+     "QL-S07-TOT",
+     "QL-S07-BINH",
+     "QL-S08-TOT",
+     "QL-S08-BINH",
+     "QL-S09-TOT",
+     "QL-S09-BINH",
+     "QL-S10-TOT",
+     "QL-S10-BINH",
+     "QL-S11-TOT",
+     "QL-S11-BINH",
+     "QL-S12-TOT",
+     "QL-S12-BINH",
+     "QL-S13-TOT",
+     "QL-S13-BINH",
+     "QL-S14-TOT",
+     "QL-S14-BINH",
+     "QL-VCD"
+    ],
+    "cung": [
+     "Quan Lộc"
+    ],
+    "saoTrongCung": [
+     [
+      "Đà La"
+     ]
+    ],
+    "khongSaoTrongCung": [
+     "hoa:Hóa Kỵ",
+     "Kình Dương"
+    ]
+   }
+  },
+  "dang": "i",
+  "tongHop": true,
+  "nguonChiTiet": "Bám QUAN-SP-07 vế Đà La ('độc thủ thì bình thường'; TT 卷二·九官祿) qua lời khuyên đoạn QL-PS-9 'dễ chần chừ, cần chủ động hơn'. Phần (b) phải có câu QL-PS-9.",
+  "ghiChu": "Việc L-5e7bce (sửa theo phiếu Thư L-5e7bce). Mẫu cho đoạn nền Quan Lộc theo NAM-MANG-07. Khi nạp vào src/.../viec-nen-lam.json chỉ lấy các trường máy đọc: maMau, chuDe, maHuong, maPhatHuy (nếu có), cau, thuocDo, thoiHanThang, dieuKien, tuoiTu (nếu có). Trường dieuKien mới: khongSaoTrongCung (không sao nào trong danh sách có ở cung của đoạn), catTinhTamPhuong (có/không lục cát tinh ở Quan Lộc, Mệnh, Tài Bạch, Phu Thê) — bộ ghép cần đọc thêm."
+ },
+ {
+  "maMau": "CV-42",
+  "chuDe": "cong-viec",
+  "maHuong": [
+   "QUAN-SP-07/Hỏa Linh"
+  ],
+  "cau": "Sau mỗi 90 phút làm việc hoặc học liên tục, nghỉ 10 phút rời chỗ ngồi; ngày nào thấy căng, ghi một dòng điều gì làm mình căng.",
+  "thuocDo": "≥ 4/5 ngày mỗi tuần có nghỉ đủ, trong 8 tuần",
+  "thoiHanThang": 2,
+  "dieuKien": {
+   "QUAN-SP-07/Hỏa Linh": {
+    "quyTacId": [
+     "QL-S01-TOT",
+     "QL-S01-BINH",
+     "QL-S02-TOT",
+     "QL-S02-BINH",
+     "QL-S03-TOT",
+     "QL-S03-BINH",
+     "QL-S04-TOT",
+     "QL-S04-BINH",
+     "QL-S05-TOT",
+     "QL-S05-BINH",
+     "QL-S06-TOT",
+     "QL-S06-BINH",
+     "QL-S07-TOT",
+     "QL-S07-BINH",
+     "QL-S08-TOT",
+     "QL-S08-BINH",
+     "QL-S09-TOT",
+     "QL-S09-BINH",
+     "QL-S10-TOT",
+     "QL-S10-BINH",
+     "QL-S11-TOT",
+     "QL-S11-BINH",
+     "QL-S12-TOT",
+     "QL-S12-BINH",
+     "QL-S13-TOT",
+     "QL-S13-BINH",
+     "QL-S14-TOT",
+     "QL-S14-BINH",
+     "QL-VCD"
+    ],
+    "cung": [
+     "Quan Lộc"
+    ],
+    "saoTrongCung": [
+     [
+      "Hỏa Tinh",
+      "Linh Tinh"
+     ]
+    ],
+    "khongSaoTrongCung": [
+     "hoa:Hóa Kỵ",
+     "Kình Dương",
+     "Đà La"
+    ]
+   }
+  },
+  "dang": "i",
+  "tongHop": true,
+  "nguonChiTiet": "Bám QUAN-SP-07 vế Hỏa Tinh, Linh Tinh (TT 卷二·九官祿: 火星「早年成敗」, 鈴星「獨守旺宮吉」) qua lời khuyên đoạn QL-PS-10 'nên tiết chế cảm xúc', QL-PS-11 'nên giữ nhịp nghỉ ngơi'. Chỉ nếp làm việc, không nêu sức khỏe. Phần (b) phải có câu QL-PS-10/11.",
+  "ghiChu": "Việc L-5e7bce (sửa theo phiếu Thư L-5e7bce). Mẫu cho đoạn nền Quan Lộc theo NAM-MANG-07. Khi nạp vào src/.../viec-nen-lam.json chỉ lấy các trường máy đọc: maMau, chuDe, maHuong, maPhatHuy (nếu có), cau, thuocDo, thoiHanThang, dieuKien, tuoiTu (nếu có). Trường dieuKien mới: khongSaoTrongCung (không sao nào trong danh sách có ở cung của đoạn), catTinhTamPhuong (có/không lục cát tinh ở Quan Lộc, Mệnh, Tài Bạch, Phu Thê) — bộ ghép cần đọc thêm."
+ },
+ {
+  "maMau": "CV-43",
+  "chuDe": "cong-viec",
+  "maHuong": [
+   "QUAN-SP-08"
+  ],
+  "cau": "Với mỗi ý định đổi hướng hay ý tưởng mới trong công việc hoặc việc học, viết nửa trang: bước đầu tiên, điều cần có, điều có thể mất; chờ 3 ngày rồi mới quyết.",
+  "thuocDo": "100% ý định đổi hướng trong 3 tháng có bản nửa trang; không có thì ghi \"không có\"",
+  "thoiHanThang": 3,
+  "dieuKien": {
+   "QUAN-SP-08": {
+    "quyTacId": [
+     "QL-S01-TOT",
+     "QL-S01-BINH",
+     "QL-S02-TOT",
+     "QL-S02-BINH",
+     "QL-S03-TOT",
+     "QL-S03-BINH",
+     "QL-S04-TOT",
+     "QL-S04-BINH",
+     "QL-S05-TOT",
+     "QL-S05-BINH",
+     "QL-S06-TOT",
+     "QL-S06-BINH",
+     "QL-S07-TOT",
+     "QL-S07-BINH",
+     "QL-S08-TOT",
+     "QL-S08-BINH",
+     "QL-S09-TOT",
+     "QL-S09-BINH",
+     "QL-S10-TOT",
+     "QL-S10-BINH",
+     "QL-S11-TOT",
+     "QL-S11-BINH",
+     "QL-S12-TOT",
+     "QL-S12-BINH",
+     "QL-S13-TOT",
+     "QL-S13-BINH",
+     "QL-S14-TOT",
+     "QL-S14-BINH",
+     "QL-VCD"
+    ],
+    "cung": [
+     "Quan Lộc"
+    ],
+    "saoTrongCung": [
+     [
+      "Địa Không",
+      "Địa Kiếp"
+     ]
+    ],
+    "khongSaoTrongCung": [
+     "hoa:Hóa Kỵ",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ]
+   }
+  },
+  "dang": "i",
+  "tongHop": true,
+  "nguonChiTiet": "Bám QUAN-SP-08 (sát tinh ở Quan Lộc; TB tr. 163–164, §8.14) qua lời khuyên đoạn QL-PS-12 'cần thực tế hóa ý tưởng', QL-PS-13 'nên cân nhắc trước khi quyết'. Phần (b) phải có câu QL-PS-12/13.",
+  "ghiChu": "Việc L-5e7bce (sửa theo phiếu Thư L-5e7bce). Mẫu cho đoạn nền Quan Lộc theo NAM-MANG-07. Khi nạp vào src/.../viec-nen-lam.json chỉ lấy các trường máy đọc: maMau, chuDe, maHuong, maPhatHuy (nếu có), cau, thuocDo, thoiHanThang, dieuKien, tuoiTu (nếu có). Trường dieuKien mới: khongSaoTrongCung (không sao nào trong danh sách có ở cung của đoạn), catTinhTamPhuong (có/không lục cát tinh ở Quan Lộc, Mệnh, Tài Bạch, Phu Thê) — bộ ghép cần đọc thêm."
  }
 ]

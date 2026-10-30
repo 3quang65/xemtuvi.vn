@@ -1,0 +1,127 @@
+diff --git a/src/lib/luan-giai/ai/nen-quan-loc.ts b/src/lib/luan-giai/ai/nen-quan-loc.ts
+new file mode 100644
+index 0000000..bbf765e
+--- /dev/null
++++ b/src/lib/luan-giai/ai/nen-quan-loc.ts
+@@ -0,0 +1,65 @@
++// GIẢ LẬP NAM-MANG-07 (việc L-5e7bce, Hạnh) — chỉ chạy trên bản sao tạm để đo; Tùng viết bản thật.
++import type { Cung, LaSo, Sao } from '@/lib/tuvi';
++import quyTac1 from './quy-tac.json';
++import maNC12 from './quy-tac-van/ma-nghien-cuu-12-cung.json';
++import nguonMa from './quy-tac-van/nguon-ma-12-cung.json';
++import { lamSachCau } from './index';
++
++const Q1 = quyTac1 as unknown as { id: string; noiDung: string; nguon: string }[];
++const MA = maNC12 as Record<string, string[]>;
++const NG = nguonMa as Record<string, string[]>;
++export const SAT = ['Kình Dương', 'Đà La', 'Hỏa Tinh', 'Linh Tinh', 'Địa Không', 'Địa Kiếp'];
++const PS_ID: Record<string, string> = { 'Kình Dương': 'QL-PS-8', 'Đà La': 'QL-PS-9', 'Hỏa Tinh': 'QL-PS-10', 'Linh Tinh': 'QL-PS-11', 'Địa Không': 'QL-PS-12', 'Địa Kiếp': 'QL-PS-13' };
++export const CAT = ['Tả Phù', 'Hữu Bật', 'Văn Xương', 'Văn Khúc', 'Thiên Khôi', 'Thiên Việt'];
++const CHAN_DUOI_18 = /^QL-S04-|^QL-S07-BINH$|^QL-S14-(BINH|HAM)$/;
++const saoCua = (c: Cung): Sao[] => [...c.chinhTinh, ...c.catTinh, ...c.hungTinh, ...c.phuTinh];
++const noi = (id: string) => lamSachCau(Q1.find((q) => q.id === id)!.noiDung);
++const tenSao = (s: Sao) => {
++  const t = [s.dacTinhTen?.toLowerCase(), s.hoa].filter(Boolean).join(', ');
++  return t ? `${s.ten} (${t})` : s.ten;
++};
++export function catTinhTamPhuong(ls: LaSo): string[] {
++  return ['Quan Lộc', 'Mệnh', 'Tài Bạch', 'Phu Thê'].flatMap((ten) => {
++    const c = ls.cung.find((x) => x.ten === ten)!;
++    return saoCua(c).filter((s) => CAT.includes(s.ten)).map((s) => `${s.ten} ở ${c.ten}`);
++  });
++}
++
++export function nenQuanLoc(ls: LaSo, namXem: number, nen: { quyTacId: string; text: string; nguon: string }) {
++  const tuoi = namXem - ls.duong.nam;
++  const id = nen.quyTacId;
++  if (tuoi < 15 || /-HAM$/.test(id) || (tuoi < 18 && CHAN_DUOI_18.test(id)) || !MA[id]) return null;
++  const g = ls.cung.find((c) => c.ten === 'Quan Lộc')!;
++  const ma = [...MA[id]];
++  const cau = [id === 'QL-VCD' && tuoi >= 30 ? nen.text.replace('nên thử vài vai trò khác nhau giai đoạn đầu rồi chọn hướng', 'nên chọn hướng') : nen.text];
++  const tt = [g.tuan ? 'Tuần' : '', g.triet ? 'Triệt' : ''].filter(Boolean);
++  const ky = saoCua(g).filter((s) => s.hoa === 'Hóa Kỵ');
++  const sat = SAT.filter((t) => saoCua(g).some((s) => s.ten === t));
++  const a: string[] = [];
++  if (g.chinhTinh.length) a.push(g.chinhTinh.map(tenSao).join(', '));
++  const kyPhu = ky.filter((s) => !g.chinhTinh.includes(s));
++  if (kyPhu.length) a.push(kyPhu.map((s) => `${s.ten} (Hóa Kỵ)`).join(', '));
++  if (sat.length) a.push(sat.join(', '));
++  if (tt.length) a.push('có ' + tt.join(' và '));
++  if (!g.chinhTinh.length) {
++    const doi = ls.cung[(g.chi + 6) % 12];
++    a.unshift('vô chính diệu');
++    a.push(`mượn ${doi.chinhTinh.map(tenSao).join(', ')} ở ${doi.ten} (${doi.tenChi})`);
++    cau.push(`Vì cung không có chính tinh, phần này mượn ${doi.chinhTinh.map((s) => s.ten).join(', ')} từ cung ${doi.ten} để luận, lực yếu hơn sao đóng ngay tại cung.`);
++    const cat = catTinhTamPhuong(ls);
++    if (cat.length) {
++      a.push(`cát tinh hội về: ${cat.join(', ')}`);
++      cau.push(`Có ${cat.join(', ')} hội về (nhóm sao trợ lực, học vấn, quý nhân), nên thế này vẫn có thể tốt.`);
++      ma.push('CHUNG-SP-01');
++    } else cau.push('Tam phương không có cát tinh hội về, nên việc chính là xây nền tảng vững trước.');
++    if (tt.length) cau.push(`Cung vô chính diệu gặp ${tt.join(' và ')} được phái Việt coi là thế thuận hơn: lúc đầu thường chậm, về sau rõ dần; khi việc tiến nhanh, nên giữ nhịp đều.`);
++  } else if (tt.length) {
++    if (ky.length || sat.length) { cau.push(`Cung Quan Lộc có ${tt.join(' và ')}: cả mặt mạnh lẫn mặt cần chú ý đều dịu đi, ít bứt phá lớn mà cũng ít vấp lớn.`); ma.push('CHUNG-TUAN-02', 'CHUNG-TUAN-06'); }
++    else { cau.push(`Cung Quan Lộc có ${tt.join(' và ')}: những nét trên thường bộc lộ chậm hơn, thuận lợi đến chậm và cần tự lực.`); ma.push('CHUNG-TUAN-02', 'CHUNG-TUAN-05'); }
++  }
++  if (ky.length) { cau.push(noi('QL-HOA-3')); ma.push(...MA['QL-HOA-3']); }
++  for (const s of sat) { cau.push(noi(PS_ID[s])); ma.push(...MA[PS_ID[s]]); }
++  const maU = [...new Set(ma)];
++  const nguon = [...new Set([nen.nguon, ...maU.flatMap((m) => NG[m] ?? [])])].join('; ');
++  return { text: cau.join(' '), canCu: `Cung Quan Lộc (${g.tenChi}): ${a.join('; ')}.`, nguon, maNghienCuu: maU };
++}
+diff --git a/src/lib/luan-giai/ai/van-nam.ts b/src/lib/luan-giai/ai/van-nam.ts
+index b82e879..08e702e 100644
+--- a/src/lib/luan-giai/ai/van-nam.ts
++++ b/src/lib/luan-giai/ai/van-nam.ts
+@@ -12,6 +12,7 @@ import tuCamJson from './tu-cam.json';
+ import quyTacVanJson from './quy-tac-van/van-10-nam.json';
+ import viecJson from './quy-tac-van/viec-nen-lam.json';
+ import ghiChuPhaiJson from './quy-tac-van/ghi-chu-truong-phai.json';
++import { nenQuanLoc, catTinhTamPhuong } from './nen-quan-loc';
+ import { GHI_CHU, PHIEN_BAN_QUY_TAC, khoaCache, maNghienCuuCua, sinhLuanGiai } from './index';
+ 
+ export const MA_VAN_NAM = 'van-nam-2027';
+@@ -59,6 +60,8 @@ interface DieuKienViec {
+   saoTrongCung?: string[][];
+   /** Có sao khớp của đoạn mang hóa gốc này. */
+   saoKhopHoaGoc?: string;
++  khongSaoTrongCung?: string[];
++  catTinhTamPhuong?: boolean;
+ }
+ interface MauViec {
+   maMau: string;
+@@ -501,6 +504,11 @@ function dieuKienViecDung(n: Ngu, nd: NhanDinhNam, c: Cung, dk?: DieuKienViec):
+     };
+     if (!dk.saoTrongCung.every((nhom) => nhom.some(co))) return false;
+   }
++  if (dk.khongSaoTrongCung) {
++    const co = (tok: string) => { const [loai, ten = ''] = tok.split(':'); return ds.some((x) => (loai === 'hoa' ? x.hoa === ten : x.ten === tok)); };
++    if (dk.khongSaoTrongCung.some(co)) return false;
++  }
++  if (dk.catTinhTamPhuong !== undefined && (catTinhTamPhuong(n.ls).length > 0) !== dk.catTinhTamPhuong) return false;
+   if (dk.saoKhopHoaGoc) {
+     const goc = nd.thamChieu.sao.some((ten) => n.ls.cung.some((cc) => saoCua(cc).some((x) => x.ten === ten && x.hoa === dk.saoKhopHoaGoc)));
+     if (!goc) return false;
+@@ -598,7 +606,7 @@ function lamGiauMuc(n: Ngu, muc: BaiVanNam['muc']): { muc: BaiVanNam['muc']; doa
+         doanCho.push({ quyTacId: id, cung: nd.thamChieu.cung, lyDo: 'thiếu (d): không mẫu việc nào bám mã nghiên cứu của đoạn' });
+         return [];
+       }
+-      const canCu = canCuDong(n, dayDu);
++      const canCu = nd.canCu ?? canCuDong(n, dayDu);
+       if (!canCu) {
+         doanCho.push({ quyTacId: id, cung: nd.thamChieu.cung, lyDo: 'thiếu (a): không dựng được căn cứ' });
+         return [];
+@@ -625,6 +633,13 @@ async function taoBai(ls: LaSo, namXem: number, boQuaCache?: boolean): Promise<{
+     const loai = ({ 'su-nghiep': 'quan-loc', 'tinh-cam': 'phu-the' } as Record<string, 'quan-loc' | 'phu-the'>)[m.id];
+     if (!loai) return m;
+     const nen = (await sinhLuanGiai(ls, loai, { boQuaCache })).muc.find((x) => x.id === 'phong-cach')?.nhanDinh[0];
++    if (nen && m.id === 'su-nghiep' && m.nhanDinh.every((x) => x.phan !== 'nam-nay' || /^NAM-MANG-01-/.test(x.thamChieu.quyTacId))) {
++      const r = nenQuanLoc(ls, namXem, { quyTacId: nen.thamChieu.quyTacId, text: nen.text, nguon: nen.thamChieu.nguon });
++      if (r) {
++        const dan = m.nhanDinh.filter((x) => x.phan === 'nam-nay'), con = m.nhanDinh.filter((x) => x.phan !== 'nam-nay');
++        return { ...m, nhanDinh: [...dan, { text: r.text, phan: 'nen', canCu: r.canCu, thamChieu: { quyTacId: nen.thamChieu.quyTacId, sao: nen.thamChieu.sao, cung: 'Quan Lộc', nguon: r.nguon, truongPhai: nen.thamChieu.truongPhai, maNghienCuu: r.maNghienCuu } }, ...con] };
++      }
++    }
+     return nen ? { ...m, nhanDinh: [{ text: nen.text, phan: 'nen', thamChieu: { quyTacId: nen.thamChieu.quyTacId, sao: nen.thamChieu.sao, cung: nen.thamChieu.cung, nguon: nen.thamChieu.nguon, truongPhai: nen.thamChieu.truongPhai } }, ...m.nhanDinh] } : m;
+   }));
+   const { muc: mucDu, doanCho } = lamGiauMuc(n, mucNen);

@@ -36,10 +36,16 @@ function main() {
   // giữ 14 bản gần nhất trên máy (xoay vòng bản tự sinh)
   const ds = fs.readdirSync(DIR).filter((f) => /^xemtuvi-\d{4}-\d{2}-\d{2}\.db\.gz$/.test(f)).sort();
   for (const f of ds.slice(0, Math.max(0, ds.length - GIU))) fs.rmSync(path.join(DIR, f), { force: true });
+  // bản tự sinh trước khi xóa dữ liệu khách: giữ tối đa 14 ngày (ngoại lệ dữ liệu khách của quy định không xóa)
+  const han = Date.now() - GIU * 86400_000;
+  for (const f of fs.readdirSync(DIR).filter((f) => /^xemtuvi-truoc-xoa-.*\.db$/.test(f))) {
+    const p = path.join(DIR, f);
+    if (fs.statSync(p).mtimeMs < han) fs.rmSync(p, { force: true });
+  }
   if (process.env.BO_QUA_DRIVE) { console.log('[sao-luu] ok (chỉ máy): ' + dich); return 0; }
   const r = spawnSync('rclone', ['copy', dich, DRIVE], { encoding: 'utf8', timeout: 600_000 });
   if (r.status !== 0) { canhBao('tải lên Drive lỗi: ' + String(r.stderr).slice(-150)); return 2; }
-  const x = spawnSync('rclone', ['delete', DRIVE, '--min-age', GIU_DRIVE, '--include', 'xemtuvi-*.db.gz'], { encoding: 'utf8', timeout: 600_000 });
+  const x = spawnSync('rclone', ['delete', DRIVE, '--max-depth', '1', '--min-age', GIU_DRIVE, '--include', 'xemtuvi-*.db.gz'], { encoding: 'utf8', timeout: 600_000 });
   if (x.status !== 0) { canhBao('xóa bản quá ' + GIU_DRIVE + ' trên Drive lỗi: ' + String(x.stderr).slice(-150)); return 3; }
   console.log('[sao-luu] ok: ' + dich + ' -> ' + DRIVE);
   return 0;
