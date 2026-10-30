@@ -24,6 +24,9 @@ type DieuKienNam = DieuKien & {
   saoLuu?: string[];
   luuHoa?: string;
   chiNamSinh?: string[];
+  canNamSinh?: string[];
+  /** Đúng khi ít nhất một điều kiện con đúng (bản 1.1). */
+  motTrong?: DieuKienNam[];
   khongCoYeuToNam?: boolean;
   nhom?: string[][];
 };
@@ -147,12 +150,15 @@ interface Ngu {
   ls: LaSo; // đã mở rộng
   ln: LuuNien;
   chiNamSinh: string;
+  canNamSinh: string;
 }
 
 /** Một điều kiện lớp năm tại cung gốc g → tên sao khớp (có thể rỗng); null nếu không khớp. */
 function khopMotDieuKien(n: Ngu, g: Cung, k: DieuKienNam): string[] | null {
   if (k.tenCung && !k.tenCung.includes(g.ten)) return null;
   if (k.chiNamSinh && !k.chiNamSinh.includes(n.chiNamSinh)) return null;
+  if (k.canNamSinh && !k.canNamSinh.includes(n.canNamSinh)) return null;
+  if (k.motTrong && !k.motTrong.some((m) => khopMotDieuKien(n, g, m) !== null)) return null;
   if (k.trung) {
     const chi = { 'dai-van': n.ln.daiVan, 'tieu-han': n.ln.tieuHan, 'thai-tue': n.ln.luuThaiTue };
     if (!k.trung.every((l) => chi[l] === g.chi)) return null;
@@ -178,7 +184,7 @@ function khopMotDieuKien(n: Ngu, g: Cung, k: DieuKienNam): string[] | null {
     return [];
   }
   // Chuyển điều kiện riêng của lớp năm sang điều kiện bản 2 trên lá số mở rộng.
-  const { tenCung: _a, trung: _b, saoLuu, luuHoa, chiNamSinh: _c, khongCoYeuToNam: _d, nhom: _e, ...chuan } = k;
+  const { tenCung: _a, trung: _b, saoLuu, luuHoa, chiNamSinh: _c, canNamSinh: _f, motTrong: _g, khongCoYeuToNam: _d, nhom: _e, ...chuan } = k;
   const std: DieuKien = { ...chuan };
   if (saoLuu) {
     std.sao = [...(std.sao ?? []), ...saoLuu];
@@ -309,7 +315,7 @@ export function kiemTraNamXem(namXem: number, ls: LaSo): void {
 
 function ghepBai(ls: LaSo, namXem: number) {
   const ln = luuNien(ls, namXem, true);
-  const n: Ngu = { ls: moRong(ls, ln), ln, chiNamSinh: ls.canChi.nam.split(' ')[1] };
+  const n: Ngu = { ls: moRong(ls, ln), ln, chiNamSinh: ls.canChi.nam.split(' ')[1], canNamSinh: ls.canChi.nam.split(' ')[0] };
   const cungN = (chi: number) => n.ls.cung[chi];
 
   // Mọi đoạn khớp của các lớp (trừ tháng).
