@@ -236,6 +236,20 @@ Cột "Bám quy tắc" (`maHuong`): đoạn có một trong các mã này trong 
 | CV-06 | MENH-TS-02, MENH-LT-02, CHUNG-SP-11 | Khi gặp tin nhắn hay ý kiến khiến bạn bực, chờ ít nhất 2 giờ rồi mới trả lời. | Ghi các lần gặp; ≥ 4/5 lần có chờ | 1 tháng |
 | CV-07 | *QUAN-SP-03, CHUNG-SP-01* | Mỗi tháng hẹn một người đi trước trong nghề, hỏi một câu cụ thể về việc bạn đang làm. | 3 cuộc hẹn trong 3 tháng | 3 tháng |
 | CV-08 | VAN-SP-06/thận trọng (chỉ khi Xương/Khúc hóa Kỵ hoặc gặp Kình, Đà, Kỵ tại Quan Lộc hoặc tại cung trọng điểm năm mang chủ đề công việc) | Nhờ một đồng nghiệp hoặc người được phép xem nội dung đọc soát văn bản gửi ra ngoài mang tên bạn (hợp đồng, báo cáo, đề xuất) trước khi gửi. | 100% văn bản loại này trong 3 tháng có người đọc soát | 3 tháng |
+| CV-09 | NAM-TT-06 (chỉ khi L. Tang Môn, L. Bạch Hổ, L. Thiên Khốc hoặc L. Thiên Hư ở ngay Quan Lộc; câu không nhắc tang, tai nạn); dạng i | Đặt một giờ kết thúc ngày làm việc và giữ ít nhất 4 ngày mỗi tuần; việc chưa xong ghi vào danh sách cho sáng hôm sau. | ≥ 6/8 tuần giữ đủ 4 ngày | 2 tháng |
+| CV-10 | NAM-HOA-07 (đoạn NAM-HOA-KY-SANG/-HAM: Kỵ năm vào Cự Môn, lời khuyên "chốt/viết rõ thỏa thuận"); dạng i | Với mỗi việc được giao hoặc nhận thêm, nhắn lại cho {nguoiLienQuan} ba điều: phạm vi, hạn, người duyệt, và xin xác nhận. | 100% việc mới trong 2 tháng có tin xác nhận | 2 tháng |
+| CV-11 | NAM-HOA-08/Kỵ-Lộc (chỉ đoạn NAM-HOA-08-KY-LOC(-CANH): Kỵ gốc nhận Lộc năm, lời khuyên "chủ động gỡ"; tuổi Canh không nhắc Trung Châu); dạng i | Viết ra một điểm vướng lâu nay trong công việc; mỗi tháng làm một bước để gỡ: hỏi người liên quan, đề xuất cách làm, hoặc sắp lại việc. | 3 bước trong 3 tháng, mỗi bước ghi một dòng | 3 tháng |
+| CV-12 | NAM-HOA-04/hãm (chỉ đoạn NAM-HOA-LOC-HAM: "cần thêm công sức"); dạng i | Chọn một việc chính ở chỗ làm; mỗi thứ Sáu ghi một dòng tiến độ để thấy kết quả tích lũy. | ≥ 10/12 tuần có dòng ghi | 3 tháng |
+| CV-13 | NAM-HOA-05/hãm (chỉ đoạn NAM-HOA-QUYEN-HAM: "nên chọn việc chính để giữ"); dạng i | Mỗi sáng thứ Hai viết ra một việc chính của tuần và làm xong việc đó trước khi nhận thêm việc vụn. | ≥ 10/12 tuần việc chính xong trong tuần | 3 tháng |
+| CV-14 | *NAM-HOA-06/sáng* (chỉ đoạn NAM-HOA-KHOA-SANG: "kế hoạch, tay nghề được ghi nhận; thuận học thêm"); dạng ii | Mỗi tháng gửi {nguoiLienQuan} một đề xuất ngắn, nửa trang, về một cách làm tốt hơn mà bạn đã thử. | 3 đề xuất trong 3 tháng | 3 tháng |
+| CV-15 | NAM-HOA-06/hãm (chỉ đoạn NAM-HOA-KHOA-HAM: "kiên trì hoàn thiện thay vì vội trình bày"); dạng i | Trước khi trình bày một kết quả, tự rà theo ba điểm cần hoàn thiện bạn viết sẵn, sửa xong mới gửi. | 100% bản trình bày trong 2 tháng có bước rà | 2 tháng |
+| CV-16 | *NAM-HOA-05/sáng* (chỉ đoạn NAM-HOA-QUYEN-SANG: "quyền nhờ khéo léo, hòa nhã"); dạng ii | Trước mỗi đề xuất quan trọng, hỏi ý một người sẽ chịu ảnh hưởng và ghi điều họ lo vào bản đề xuất. | ≥ 3 đề xuất trong 3 tháng có bước hỏi ý | 3 tháng |
+| CV-17 | *NAM-LUU-03* (L. Thiên Khôi/Việt ở cung của đoạn: "người có vị thế nâng đỡ, giới thiệu"); dạng ii | Ghi tên ba người có vị thế trong nghề từng giúp hoặc có thể giới thiệu bạn; mỗi tháng chủ động kể với một người về việc bạn đang làm. | 3 lần trong 3 tháng | 3 tháng |
+| CV-18 | NAM-LUU-02 (L. Thiên Mã + L. Đà La: "chọn hướng rõ trước khi xê dịch, kiên nhẫn với thủ tục"); dạng i | Trước khi nhận việc mới, chuyển bộ phận hay đi công tác dài, viết một trang: lý do, điều được, điều mất, giấy tờ cần làm. | 100% thay đổi trong 3 tháng có trang này; không có thay đổi thì ghi "không có" | 3 tháng |
+| CV-19 | NAM-HOA-04/hãm (chỉ đoạn NAM-HOA-LOC-HAM: "cần thêm công sức"); dạng i | Chia việc chính đang làm thành các bước nhỏ; mỗi tuần làm xong một bước và đánh dấu vào danh sách. | ≥ 10/12 tuần xong một bước | 3 tháng |
+| CV-20 | NAM-HOA-08/Kỵ-Lộc (chỉ đoạn NAM-HOA-08-KY-LOC(-CANH): Kỵ gốc nhận Lộc năm, lời khuyên "chủ động gỡ"; tuổi Canh không nhắc Trung Châu); dạng i | Hẹn {nguoiLienQuan} một buổi nói thẳng về một việc lâu nay còn vướng giữa hai bên, mang theo một cách gỡ bạn đề xuất. | 1 buổi trong 2 tháng, có một dòng ghi kết quả | 2 tháng |
+| CV-21 | NAM-LUU-02 (L. Thiên Mã + L. Đà La: "chọn hướng rõ trước khi xê dịch, kiên nhẫn với thủ tục"); dạng i | Với mỗi thủ tục, giấy tờ công việc đang chờ, ghi ngày nộp và một ngày hỏi lại; đến ngày đó mới hỏi. | 100% thủ tục đang chờ trong 3 tháng có ngày hỏi lại | 3 tháng |
+| CV-22 | NAM-TT-02 (đoạn NAM-TT-02: "chọn đúng việc đáng tranh, giữ bình tĩnh khi bàn bạc"); dạng i | Khi phải quyết nhanh ở chỗ làm, dành 10 phút viết hai phương án và một rủi ro của mỗi phương án rồi mới quyết. | Ghi các lần phải quyết nhanh; ≥ 4/5 lần có 10 phút viết | 2 tháng |
 
 **Tài chính (`tai-chinh`)**
 
@@ -248,6 +262,23 @@ Cột "Bám quy tắc" (`maHuong`): đoạn có một trong các mã này trong 
 | TC-05 | NAM-LUU-01, DIEN-HOA-04 | Trước khi ký hay chuyển tiền cho giao dịch lớn, đọc lại toàn bộ giấy tờ và hỏi một người có chuyên môn. | 100% giao dịch lớn trong 3 tháng có bước này; không phát sinh giao dịch lớn thì ghi "không có" | 3 tháng |
 | TC-06 | *TAI-PQ-01, TAI-HOA-02, TAI-SP-03* | Liệt kê các nguồn thu hiện có; chọn một nguồn bạn làm tốt nhất và dành thêm một buổi mỗi tuần cho nó. | ≥ 8/12 tuần có buổi này | 3 tháng |
 | TC-07 | VAN-SP-06/thận trọng, NAM-LUU-04-SAT (chỉ khi Xương/Khúc gốc hoặc của năm ở Tài Bạch, hãm hoặc gặp Kình, Đà, Hóa Kỵ; cấm thêm động từ quyết định: tất toán, gia hạn, đổi, vay, mua, bán) | Gom giấy tờ tài chính đang có vào một chỗ, đọc lại từng tờ, đánh dấu điều chưa rõ để hỏi người có chuyên môn. | Xong danh mục (có/không); 100% điều đánh dấu được hỏi | 1 tháng |
+| TC-08 | *NAM-LUU-03* (L. Thiên Khôi/Việt ở cung của đoạn: "người có vị thế nâng đỡ, giới thiệu"); dạng ii | Hẹn hỏi một người có chuyên môn mà bạn tin một câu cụ thể về cách bạn đang ghi chép, sắp xếp thu chi; ghi lại ba điều rút ra. | 1 buổi hỏi trong 3 tháng, có ghi 3 điều | 3 tháng |
+| TC-09 | NAM-TT-06 (chỉ khi L. Tang Môn, L. Bạch Hổ, L. Thiên Khốc hoặc L. Thiên Hư ở ngay Tài Bạch; câu không nhắc tang, tai nạn); dạng i | Đặt một khung 20 phút cố định mỗi tuần để xem lại thu chi của tuần, chọn lúc bạn không mệt. | ≥ 10/12 tuần có buổi xem lại | 3 tháng |
+| TC-10 | NAM-HOA-07 (đoạn NAM-HOA-KY-SANG/-HAM: Kỵ năm vào Cự Môn, lời khuyên "chốt/viết rõ thỏa thuận"); dạng i | Chốt mỗi thỏa thuận có tiền (giá, hạn, phần của mỗi bên) bằng tin nhắn hoặc văn bản trước khi chuyển hay nhận tiền. | 100% thỏa thuận mới trong 3 tháng có bản chữ | 3 tháng |
+| TC-11 | NAM-HOA-08/Lộc-Kỵ (chỉ đoạn NAM-HOA-08-LOC-KY: lời khuyên "chốt điều khoản, tránh hứa miệng"); dạng i | Trước khi nhận một việc có tiền công, ghi rõ điều khoản (khối lượng, mức trả, hạn trả) và gửi bên kia xác nhận. | 100% việc mới nhận trong 3 tháng có điều khoản đã xác nhận | 3 tháng |
+| TC-12 | NAM-HOA-08/Kỵ-Lộc (chỉ đoạn NAM-HOA-08-KY-LOC(-CANH): Kỵ gốc nhận Lộc năm, lời khuyên "chủ động gỡ"; tuổi Canh không nhắc Trung Châu); dạng i | Viết ra một việc tiền bạc còn vướng lâu nay (khoản chưa rõ, giấy tờ chưa xong); mỗi tháng làm một bước để làm rõ, cần thì hỏi người có chuyên môn. | 3 bước trong 3 tháng, mỗi bước ghi một dòng | 3 tháng |
+| TC-13 | NAM-HOA-04/sáng (chỉ đoạn NAM-HOA-LOC-SANG: "chu đáo, mềm dẻo, tích góp"); dạng i | Cùng người trong nhà lập danh sách chi tiêu gia đình cho tháng tới, mỗi nhóm một {mức bạn tự chọn}; cuối tháng xem lại. | 3/3 tháng có danh sách và một lần xem lại | 3 tháng |
+| TC-14 | NAM-HOA-04/hãm (chỉ đoạn NAM-HOA-LOC-HAM: "cần thêm công sức"); dạng i | Chọn một nguồn thu đang có; cuối mỗi tháng ghi số giờ bạn bỏ vào và số thu được để thấy kết quả tích lũy. | 3/3 tháng có dòng ghi | 3 tháng |
+| TC-15 | NAM-HOA-05/hãm (chỉ đoạn NAM-HOA-QUYEN-HAM: "nên chọn việc chính để giữ"); dạng i | Liệt kê các việc tiền bạc bạn đang lo; mỗi tuần chọn một việc chính, làm xong trước khi mở việc khác. | ≥ 10/12 tuần việc chính xong | 3 tháng |
+| TC-16 | NAM-HOA-06/sáng (chỉ đoạn NAM-HOA-KHOA-SANG: "kế hoạch, tay nghề được ghi nhận; thuận học thêm"); dạng i | Đọc một cuốn sách hoặc học một khóa ngắn về quản lý tiền cá nhân; ghi ba điều sẽ áp dụng và làm thử một điều. | Xong sách hoặc khóa, có 1 điều đã làm thử | 3 tháng |
+| TC-17 | *NAM-HOA-05/sáng* (chỉ đoạn NAM-HOA-QUYEN-SANG: "quyền nhờ khéo léo, hòa nhã"); dạng ii | Khi cần bàn chuyện tiền với {nguoiLienQuan}, gửi trước nội dung muốn bàn và hỏi ý họ trước khi nêu đề xuất của bạn. | ≥ 2 lần áp dụng trong 3 tháng; không có dịp thì ghi "không có" | 3 tháng |
+| TC-18 | NAM-HOA-05/hãm (chỉ đoạn NAM-HOA-QUYEN-HAM: "nên chọn việc chính để giữ"); dạng i | Cuối mỗi tháng ghi ba việc tiền bạc quan trọng nhất của tháng sau, xếp thứ tự và làm theo thứ tự đó. | 3/3 tháng có danh sách xếp thứ tự | 3 tháng |
+| TC-19 | NAM-HOA-07 (đoạn NAM-HOA-KY-SANG/-HAM: Kỵ năm vào Cự Môn, lời khuyên "chốt/viết rõ thỏa thuận"); dạng i | Trước khi bàn chuyện tiền với ai, viết sẵn ba ý chính muốn nói; sau buổi bàn, nhắn lại điều đã thống nhất. | ≥ 3/4 lần bàn có ba ý viết trước và tin nhắn lại | 3 tháng |
+| TC-20 | *NAM-LUU-03* (L. Thiên Khôi/Việt ở cung của đoạn: "người có vị thế nâng đỡ, giới thiệu"); dạng ii | Ghi tên những người đã giúp hoặc giới thiệu cho bạn việc có thu nhập; mỗi tháng chủ động cảm ơn hoặc cập nhật một người. | 3 lần trong 3 tháng | 3 tháng |
+| TC-21 | *NAM-HOA-04/sáng* (chỉ đoạn NAM-HOA-LOC-SANG: "chu đáo, mềm dẻo, tích góp"); dạng ii | Mỗi lần có khoản thu thêm, ghi ngay một dòng và để {phần bạn tự chọn} vào khoản tích góp riêng của gia đình. | 100% khoản thu thêm trong 3 tháng có ghi | 3 tháng |
+| TC-22 | NAM-HOA-08/Kỵ-Lộc (chỉ đoạn NAM-HOA-08-KY-LOC(-CANH): Kỵ gốc nhận Lộc năm, lời khuyên "chủ động gỡ"; tuổi Canh không nhắc Trung Châu); dạng i | Hẹn người liên quan một buổi nói rõ một khoản tiền còn chưa rõ giữa hai bên, rồi ghi lại kết quả bằng tin nhắn. | 1 buổi trong 2 tháng, có tin nhắn ghi kết quả | 2 tháng |
+| TC-23 | *NAM-HOA-06/sáng* (chỉ đoạn NAM-HOA-KHOA-SANG: "kế hoạch, tay nghề được ghi nhận; thuận học thêm"); dạng ii | Viết kế hoạch tiền bạc một trang cho 3 tháng tới (thu, chi, mục tiêu) và xem lại vào cuối mỗi tháng. | Có bản kế hoạch, 3/3 lần xem lại | 3 tháng |
+| TC-24 | NAM-TT-02 (đoạn NAM-TT-02: "chọn đúng việc đáng tranh, giữ bình tĩnh khi bàn bạc"); dạng i | Khi bị thúc quyết nhanh một việc tiền bạc, xin thêm ít nhất một ngày và ghi ra điều bạn cần hỏi thêm. | Ghi các lần bị thúc; ≥ 4/5 lần có xin thêm thời gian | 3 tháng |
 
 **Tình cảm (`tinh-cam`)**
 
@@ -259,6 +290,20 @@ Cột "Bám quy tắc" (`maHuong`): đoạn có một trong các mã này trong 
 | TT-04 | PHU-PQ-02, PHU-LT-02, PHU-YN-05 | Đang tìm hiểu ai đó: viết ba giá trị sống bạn cần ở người đồng hành; sau mỗi lần gặp, ghi người đó khớp mấy điều. | Có danh sách + ghi chép sau mỗi lần gặp | 3 tháng |
 | TT-05 | PHU-YN-05, PHU-TS-02 | Trước khi tiến xa hơn, cùng nói chuyện về ba chủ đề thực tế: tiền bạc, nơi ở, kế hoạch vài năm tới. | Đủ 3 buổi, mỗi buổi một chủ đề | 3 tháng |
 | TT-06 | MENH-VK-03 | Mỗi tuần chủ động kể với {nguoiLienQuan} một điều bạn đang nghĩ hay lo, không đợi được hỏi. | ≥ 10/12 tuần có | 3 tháng |
+| TT-07 | VAN-SP-06/thận trọng, NAM-LUU-04-SAT (chỉ khi Xương/Khúc gốc hoặc của năm ở Phu Thê gặp Kình, Đà, Hóa Kỵ hoặc Xương hãm; cấm thêm động từ quyết định); dạng i | Gom giấy tờ chung của bạn với {nguoiLienQuan} hoặc của gia đình vào một chỗ, cùng đọc lại, đánh dấu điều chưa rõ để hỏi người có chuyên môn. | Xong danh mục (có/không); 100% điều đánh dấu được hỏi | 1 tháng |
+| TT-08 | NAM-TT-06 (chỉ khi L. Tang Môn, L. Bạch Hổ, L. Thiên Khốc hoặc L. Thiên Hư ở ngay Phu Thê; câu không nhắc tang, tai nạn); dạng i | Mỗi tuần dành 15 phút hỏi {nguoiLienQuan} điều gì làm họ mệt nhất trong tuần, chỉ nghe, chưa góp ý. | ≥ 10/12 tuần có | 3 tháng |
+| TT-09 | *NAM-LUU-03* (L. Thiên Khôi/Việt ở cung của đoạn: "người có vị thế nâng đỡ, giới thiệu"); dạng ii | Mỗi tháng cùng {nguoiLienQuan} dành một buổi gặp người thân hoặc bạn bè mà cả hai quý trọng. | 3 buổi trong 3 tháng | 3 tháng |
+| TT-10 | *NAM-LUU-05* (chỉ đoạn NAM-LUU-05-PHU: "thuận gặp gỡ và vun đắp"); dạng ii | Mỗi tháng cùng {nguoiLienQuan} làm một việc lần đầu làm cùng nhau: một món ăn, một nơi chưa tới, hay một lớp học ngắn. | 3 việc mới trong 3 tháng | 3 tháng |
+| TT-11 | NAM-HOA-07 (đoạn NAM-HOA-KY-SANG/-HAM: Kỵ năm vào Cự Môn, lời khuyên "chốt/viết rõ thỏa thuận"); dạng i | Khi hai người thống nhất một việc chung (lịch, tiền, việc nhà), một người nhắn lại bằng chữ điều đã thống nhất trong ngày. | ≥ 4/5 việc thống nhất có tin nhắn lại | 2 tháng |
+| TT-12 | NAM-HOA-08/Kỵ-Lộc (chỉ đoạn NAM-HOA-08-KY-LOC(-CANH): Kỵ gốc nhận Lộc năm, lời khuyên "chủ động gỡ"; tuổi Canh không nhắc Trung Châu); dạng i | Chọn một chuyện cũ hai người hay né, hẹn một buổi lúc cả hai thoải mái để nói; mỗi người nói hết ý rồi mới bàn cách làm. | 1 buổi trong 2 tháng, có một dòng ghi điều đã thống nhất | 2 tháng |
+| TT-13 | *NAM-HOA-04/sáng* (chỉ đoạn NAM-HOA-LOC-SANG: "chu đáo, mềm dẻo, tích góp"); dạng ii | Mỗi tuần làm một việc chu đáo nhỏ cho {nguoiLienQuan} mà không cần được nhắc, rồi ghi lại một dòng. | ≥ 10/12 tuần có | 3 tháng |
+| TT-14 | *NAM-HOA-05/sáng* (chỉ đoạn NAM-HOA-QUYEN-SANG: "quyền nhờ khéo léo, hòa nhã"); dạng ii | Khi muốn đề nghị một điều với {nguoiLienQuan}, hỏi ý người ấy trước rồi mới nói mong muốn của bạn. | Ghi các lần đề nghị; ≥ 3/4 lần có hỏi ý trước | 2 tháng |
+| TT-15 | NAM-HOA-05/hãm (chỉ đoạn NAM-HOA-QUYEN-HAM: "nên chọn việc chính để giữ"); dạng i | Cùng {nguoiLienQuan} liệt kê các việc chung đang dồn; mỗi tháng chọn một việc chính để làm xong trước. | 3/3 tháng có việc chính xong | 3 tháng |
+| TT-16 | NAM-HOA-06/hãm (chỉ đoạn NAM-HOA-KHOA-HAM: "kiên trì hoàn thiện thay vì vội trình bày"); dạng i | Khi muốn nói một điều quan trọng với {nguoiLienQuan}, viết nháp trước, để qua một ngày rồi mới nói. | Ghi các lần; ≥ 3/4 lần có nháp và chờ một ngày | 2 tháng |
+| TT-17 | *NAM-HOA-06/sáng* (chỉ đoạn NAM-HOA-KHOA-SANG: "kế hoạch, tay nghề được ghi nhận; thuận học thêm"); dạng ii | Cùng {nguoiLienQuan} viết một kế hoạch chung 3 tháng: một việc muốn làm, một nơi muốn đến, một thói quen muốn giữ. | Có kế hoạch, mỗi tháng xem lại một lần | 3 tháng |
+| TT-18 | *NAM-LUU-03* (L. Thiên Khôi/Việt ở cung của đoạn: "người có vị thế nâng đỡ, giới thiệu"); dạng ii | Khi phân vân một chuyện tình cảm, hỏi ý một người lớn bạn tin, rồi tự viết ra quyết định và lý do của mình. | Mỗi lần phân vân có một lần hỏi và một dòng viết; không phát sinh thì ghi "không có" | 3 tháng |
+| TT-19 | VAN-SP-06/thận trọng, NAM-LUU-04-SAT (chỉ khi Xương/Khúc gốc hoặc của năm ở Phu Thê gặp Kình, Đà, Hóa Kỵ hoặc Xương hãm; cấm thêm động từ quyết định); dạng i | Trước khi ký hay gửi giấy tờ liên quan đến cả hai người, cùng {nguoiLienQuan} đọc lại từng trang và ghi điều chưa rõ. | 100% giấy tờ chung trong 3 tháng có bước đọc lại; không có thì ghi "không có" | 3 tháng |
+| TT-20 | NAM-HOA-07 (đoạn NAM-HOA-KY-SANG/-HAM: Kỵ năm vào Cự Môn, lời khuyên "chốt/viết rõ thỏa thuận"); dạng i | Khi có hiểu lầm, mỗi người viết một câu: mình đã hiểu người kia nói gì; đọc cho nhau nghe rồi mới bàn tiếp. | Ghi các lần hiểu lầm; ≥ 3/4 lần dùng cách này | 2 tháng |
 
 **Sức khỏe và nếp sống (`suc-khoe`)** — chỉ nếp sống và khám định kỳ; không nêu bộ phận, bệnh, thuốc, chế độ ăn (cổng an toàn).
 
@@ -268,6 +313,8 @@ Cột "Bám quy tắc" (`maHuong`): đoạn có một trong các mã này trong 
 | SK-02 | TAT-LT-02 | Chọn một giờ đi ngủ cố định và giữ ít nhất 5 đêm mỗi tuần. | ≥ 6/8 tuần đạt 5 đêm | 2 tháng |
 | SK-03 | TAT-TV-02, PHUC-YN-01 | Mỗi ngày làm việc, dành 15 phút nghỉ không màn hình vào cùng một khung giờ. | ≥ 4/5 ngày mỗi tuần, trong 8 tuần | 2 tháng |
 | SK-04 | NAM-MANG-05, TAT-SP-04 | Ghi một dòng mỗi tối về mức năng lượng trong ngày (1–5); cuối tháng xem tuần nào thấp và vì sao. | ≥ 20 ngày ghi/tháng; 1 lần xem lại mỗi tháng | 3 tháng |
+| SK-05 | *NAM-LUU-02* (L. Thiên Mã + L. Đà La: "chọn hướng rõ trước khi xê dịch, kiên nhẫn với thủ tục"); dạng iii | Trong những tuần có chuyến đi hoặc đổi lịch sinh hoạt, giữ giờ đi ngủ cố định ít nhất 5 đêm. | Ghi các tuần có thay đổi; ≥ 3/4 tuần giữ được | 2 tháng |
+| SK-06 | NAM-TT-06 (chỉ khi L. Tang Môn, L. Bạch Hổ, L. Thiên Khốc hoặc L. Thiên Hư ở ngay Tật Ách; câu không nhắc tang, tai nạn); dạng i | Chọn một buổi trong tuần không xếp việc, dành cho nghỉ ngơi hoặc vận động nhẹ. | ≥ 10/12 tuần giữ được | 3 tháng |
 
 **Học tập (`hoc-tap`)**
 
@@ -276,6 +323,7 @@ Cột "Bám quy tắc" (`maHuong`): đoạn có một trong các mã này trong 
 | HT-01 | NAM-TH-04 (chỉ khi đủ điều kiện), *CHUNG-SP-01, MENH-HOA-03* | Chọn một kỹ năng hoặc chứng chỉ, chia lộ trình 12 tuần, học 3 buổi mỗi tuần. | ≥ 30/36 buổi | 3 tháng |
 | HT-02 | MENH-CM-02, MENH-TCO-02 | Chọn một chủ đề duy nhất và học xong một khóa hoặc một cuốn sách trước khi mở cái mới. | Hoàn thành 1 khóa/1 cuốn, không mở mới giữa chừng | 3 tháng |
 | HT-03 | *QUAN-HOA-02, TAI-HOA-03* | Mỗi tháng viết hoặc chia sẻ một bài ngắn về điều bạn giỏi trong chuyên môn. | 3 bài trong 3 tháng | 3 tháng |
+| HT-04 | NAM-HOA-06/sáng (chỉ đoạn NAM-HOA-KHOA-SANG: "kế hoạch, tay nghề được ghi nhận; thuận học thêm"); dạng i | Chọn một khóa học hoặc chứng chỉ gắn với lĩnh vực này, ghi ngày bắt đầu và học 2 buổi mỗi tuần. | ≥ 20/24 buổi trong 3 tháng | 3 tháng |
 
 **Gia đạo (`gia-dao`)**
 
@@ -286,6 +334,9 @@ Cột "Bám quy tắc" (`maHuong`): đoạn có một trong các mã này trong 
 | GD-03 | HUYNH-CC-04 | Khi cả nhà bàn chuyện chung, gửi trước nội dung cần bàn; trong buổi, mỗi người nói hết ý rồi mới quyết. | Áp dụng ở ≥ 2 buổi bàn chuyện chung | 3 tháng |
 | GD-04 | DIEN-HOA-04 | Gom giấy tờ nhà ở vào một chỗ (bản giấy và bản chụp), kiểm tên, ngày, chỗ còn thiếu. | Xong danh mục, có/không | 1 tháng |
 | GD-05 | *DIEN-HOA-03, PHUC-YN-01* | Chọn một góc trong nhà để sắp lại thành chỗ nghỉ ngơi hoặc làm việc yên tĩnh. | Xong trong tháng, dùng ≥ 3 lần/tuần | 1 tháng |
+| GD-06 | NAM-TT-02 (đoạn NAM-TT-02: "chọn đúng việc đáng tranh, giữ bình tĩnh khi bàn bạc"); dạng i | Khi trong nhà bàn chuyện dễ căng, người nghe nhắc lại ý vừa nghe trước khi nói ý của mình. | Áp dụng ở ≥ 3 lần bàn chuyện trong 2 tháng | 2 tháng |
+
+**Mẫu CV-09…CV-22, HT-04, TC-08…TC-24, TT-07…TT-20, SK-05, SK-06, GD-06** (việc L-2381a4, Hạnh 30/10/2026): **đề xuất, chờ Thư duyệt**; bản JSON `docs/luan-giai/van-nam/bo-sung-L-d94399/viec-nen-lam-bo-sung.json`, giải trình `bo-sung-viec-L-d94399.md`. Mã bám đều là mã nội dung đã có nguồn trong `van-nam/QUY-TAC.md`, không mã mới cần Đức kiểm.
 
 Bổ sung mẫu mới: Hạnh đề xuất qua Minh; mẫu nào bám quy tắc chưa có thì chờ Đức kiểm nguồn, không thêm thẳng vào bảng.
 
