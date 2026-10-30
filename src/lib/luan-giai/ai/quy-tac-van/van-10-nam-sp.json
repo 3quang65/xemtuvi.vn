@@ -731,12 +731,50 @@
     "viTri": "tam-phuong",
     "doSang": [
      "Hãm"
-    ]
+    ],
+    "tuoiVanTuMin": 16
    }
   ],
   "muc": "goi-y",
   "noiDung": "Với giấy tờ và hợp đồng, nên rà soát kỹ từng văn bản trước khi ký.",
   "nguonChiTiet": "TT (q.2, 文昌入限); TB (§3.2.22)"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-SP-06-GY-HS",
+  "loai": "SP",
+  "maNghienCuu": [
+   "VAN-SP-06"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Văn Xương",
+     "Văn Khúc"
+    ],
+    "toiThieu": 1,
+    "viTri": "tam-phuong",
+    "doSang": [
+     "Hãm"
+    ]
+   }
+  ],
+  "muc": "goi-y",
+  "noiDung": "Với bài vở, bài thi và giấy tờ ở trường, nên đọc kỹ đề, kiểm tra lại từng chi tiết trước khi nộp; khi trao đổi với thầy cô, bạn bè, nói rõ ý để tránh hiểu lầm.",
+  "nguonChiTiet": "TT (q.2, 文昌入限); TB (§3.2.22)",
+  "khong": [
+   {
+    "viTri": "chinh",
+    "tuoiVanTuMin": 16
+   }
+  ],
+  "ghiChu": "Biến thể cho vận bắt đầu dưới 16 tuổi (tuổi đi học): giữ nghĩa gốc của sao, đổi bối cảnh sang học tập, sinh hoạt (phiếu Thư v2, P1 #1)."
  },
  {
   "chuyenDe": "van-10-nam",
@@ -1777,7 +1815,8 @@
      "Miếu",
      "Vượng",
      "Đắc"
-    ]
+    ],
+    "tuoiVanTuMin": 16
    }
   ],
   "khong": [
@@ -1804,7 +1843,86 @@
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
   ],
   "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-SP-15-SANG-HS",
+  "loai": "SP",
+  "maNghienCuu": [
+   "VAN-SP-15"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Đại Hao",
+     "Tiểu Hao"
+    ],
+    "toiThieu": 1,
+    "viTri": "tam-phuong",
+    "doSang": [
+     "Miếu",
+     "Vượng",
+     "Đắc"
+    ]
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Đại Hao",
+     "Tiểu Hao"
+    ],
+    "toiThieu": 1,
+    "viTri": "tam-phuong",
+    "doSang": [
+     "Hãm"
+    ]
+   },
+   {
+    "viTri": "chinh",
+    "tuoiVanTuMin": 16
+   }
+  ],
+  "muc": "thuan-loi",
+  "noiDung": "{sao} sáng sủa trong tam phương vận: giai đoạn nhiều đổi mới như chuyển trường, chuyển chỗ ở hoặc có dịp đi xa nhà; dễ được ghi nhận nhanh nhờ sự năng động, nhưng sức lực cũng tiêu hao nhanh nên cần giữ nhịp học và nghỉ.",
+  "nguonChiTiet": "TB (§3.2.29, tr. 262: \"Sáng sủa tốt đẹp: hoạnh phát danh tài\")",
+  "ghiChu": "Biến thể cho vận bắt đầu dưới 16 tuổi (tuổi đi học): giữ nghĩa gốc của sao, đổi bối cảnh sang học tập, sinh hoạt (phiếu Thư v2, P1 #1)."
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
   "id": "VAN-SP-15-HAM",
+  "loai": "SP",
+  "maNghienCuu": [
+   "VAN-SP-15"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Đại Hao",
+     "Tiểu Hao"
+    ],
+    "toiThieu": 1,
+    "viTri": "tam-phuong",
+    "doSang": [
+     "Hãm"
+    ],
+    "tuoiVanTuMin": 16
+   }
+  ],
+  "muc": "chu-y",
+  "noiDung": "{sao} hãm, cùng hội về vận: dễ chi tiêu vượt dự tính, dễ tin nhầm người và tâm trạng hay mệt.",
+  "nguonChiTiet": "TB (§3.2.29, tr. 262)"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-SP-15-HAM-HS",
   "loai": "SP",
   "maNghienCuu": [
    "VAN-SP-15"
@@ -1823,8 +1941,15 @@
    }
   ],
   "muc": "chu-y",
-  "noiDung": "{sao} hãm, cùng hội về vận: dễ chi tiêu vượt dự tính, dễ tin nhầm người và tâm trạng hay mệt.",
-  "nguonChiTiet": "TB (§3.2.29, tr. 262)"
+  "noiDung": "{sao} hãm trong tam phương vận: sức lực và thời gian dễ dàn trải vào nhiều việc, đồ dùng hay thất lạc, dễ tin nhầm bạn và tâm trạng hay mệt.",
+  "nguonChiTiet": "TB (§3.2.29, tr. 262)",
+  "khong": [
+   {
+    "viTri": "chinh",
+    "tuoiVanTuMin": 16
+   }
+  ],
+  "ghiChu": "Biến thể cho vận bắt đầu dưới 16 tuổi (tuổi đi học): giữ nghĩa gốc của sao, đổi bối cảnh sang học tập, sinh hoạt (phiếu Thư v2, P1 #1)."
  },
  {
   "chuyenDe": "van-10-nam",
@@ -1848,12 +1973,49 @@
     "viTri": "tam-phuong",
     "doSang": [
      "Hãm"
-    ]
+    ],
+    "tuoiVanTuMin": 16
    }
   ],
   "muc": "goi-y",
   "noiDung": "Nên kiểm tra kỹ giao dịch, đặt hạn mức chi tiêu rõ ràng và giữ nhịp nghỉ ngơi đều.",
   "nguonChiTiet": "TB (§3.2.29, tr. 262)"
+ },
+ {
+  "chuyenDe": "van-10-nam",
+  "cung": "Vận",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "truongPhai": "Tam hợp phái Việt",
+  "id": "VAN-SP-15-GY-HS",
+  "loai": "SP",
+  "maNghienCuu": [
+   "VAN-SP-15"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Đại Hao",
+     "Tiểu Hao"
+    ],
+    "toiThieu": 1,
+    "viTri": "tam-phuong",
+    "doSang": [
+     "Hãm"
+    ]
+   }
+  ],
+  "muc": "goi-y",
+  "noiDung": "Nên giữ gìn đồ dùng cá nhân, chia thời gian học và chơi rõ ràng, chọn bạn để tâm sự và ngủ nghỉ đủ giấc.",
+  "nguonChiTiet": "TB (§3.2.29, tr. 262)",
+  "khong": [
+   {
+    "viTri": "chinh",
+    "tuoiVanTuMin": 16
+   }
+  ],
+  "ghiChu": "Biến thể cho vận bắt đầu dưới 16 tuổi (tuổi đi học): giữ nghĩa gốc của sao, đổi bối cảnh sang học tập, sinh hoạt (phiếu Thư v2, P1 #1)."
  },
  {
   "chuyenDe": "van-10-nam",
