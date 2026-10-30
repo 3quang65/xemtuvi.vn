@@ -2,13 +2,13 @@ import Link from 'next/link';
 import { CONG_BO_GIA, dinhDangGia, dongGoiGop, type Goi } from '@/lib/goi';
 import { useGia } from '@/lib/useGia';
 import type { XemTruocVanNam } from '@/lib/luan-giai/ai/van-nam';
-import { XEM_TRUOC } from '@/lib/van-nam-noi-dung';
+import { moKhoaTheoCong, XEM_TRUOC } from '@/lib/van-nam-noi-dung';
 
 /**
  * Bản xem trước từ lá số thật (máy chủ đã cắt: không nội dung tháng, không mã quy tắc).
- * Phần khóa mờ chỉ là chữ giữ chỗ cố định, không chứa nội dung trả phí.
+ * Phần khóa mờ chỉ là chữ giữ chỗ cố định, không chứa nội dung trả phí. moBan=false (cổng đóng): không hứa "mua".
  */
-export function VanNamXemTruoc({ xt, mau = false }: { xt: XemTruocVanNam; mau?: boolean }) {
+export function VanNamXemTruoc({ xt, mau = false, moBan }: { xt: XemTruocVanNam; mau?: boolean; moBan: boolean }) {
   return (
     <div className="doan-khoa">
       <h2>{XEM_TRUOC.tieuDe} {xt.canChi}</h2>
@@ -18,7 +18,7 @@ export function VanNamXemTruoc({ xt, mau = false }: { xt: XemTruocVanNam; mau?: 
       {xt.thaiTue.map((c, i) => <p key={`t${i}`} className="doan-ro">{c}</p>)}
       {xt.diemThuan && <p className="doan-ro">{xt.diemThuan}</p>}
       <p className="doan-mo" aria-hidden="true">{XEM_TRUOC.khoa}</p>
-      <p className="khoa-nhan">{XEM_TRUOC.moKhoa}</p>
+      <p className="khoa-nhan">{moKhoaTheoCong(moBan)}</p>
       <p className="doan-nguon">{xt.ghiChu}</p>
     </div>
   );

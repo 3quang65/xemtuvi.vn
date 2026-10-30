@@ -13,6 +13,7 @@ import { KhungMoiMo, NutGopY } from './KhungMoi';
 import type { BaiVanNam, XemTruocVanNam } from '@/lib/luan-giai/ai/van-nam';
 import { VanNamBai } from './VanNamBai';
 import { VanNamNutMua, VanNamXemTruoc } from './VanNamXemTruoc';
+import { useGia } from '@/lib/useGia';
 import ThongBaoLoi from './ThongBaoLoi';
 import KhaoSatDangTien from './KhaoSatDangTien';
 import DangNhapMa from './DangNhapMa';
@@ -78,12 +79,13 @@ function BaiLuan({ laSoId, chuDe, maDon, goi }: { laSoId: number; chuDe: string;
 /** Vận năm: máy chủ quyết định đã mua hay chưa (bài đầy đủ hoặc bản xem trước), giao diện chỉ hiển thị. */
 function VanNam({ laSoId, maDon, daCoTron }: { laSoId: number; maDon: number | null; daCoTron: boolean }) {
   const { kq, taiLai } = useTai<{ daMua: true; bai: BaiVanNam } | { daMua: false; xemTruoc: XemTruocVanNam }>(`/api/luan-giai?laSo=${laSoId}&chuDe=van-nam-2027`);
+  const vanNamMo = useGia().vanNam.length > 0; // cổng mở bán Vận 2027 (cùng nguồn với nút mua)
   if (!kq) return <p className="dang-tai" role="status">Đang tải…</p>;
   if (kq === 'loi' || kq === 'chua-mo') return <LoiNoiDung ma="E08" maDon={maDon} goi="van-nam-2027" taiLai={taiLai} />;
   if (kq.daMua) return <><VanNamBai bai={kq.bai} /><KhaoSatDangTien key={`${laSoId}-van-nam`} bai="van-nam-2027" goi="van-nam-2027" /></>;
   return (
     <div className="khu-van-nam">
-      <VanNamXemTruoc xt={kq.xemTruoc} />
+      <VanNamXemTruoc xt={kq.xemTruoc} moBan={vanNamMo} />
       <VanNamNutMua laSoId={laSoId} daCoTron={daCoTron} />
     </div>
   );

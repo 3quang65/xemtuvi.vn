@@ -68,6 +68,9 @@ export const laGoiVan2027 = (ma: string) => ma === 'van-nam-2027' || ma === 'tro
 /** Bảng giá nhánh thử: mã gói -> giá (đồng). Gói không có trong bảng giữ giá hiện hành. */
 export type BangGia = Partial<Record<MaGoi, number>>;
 
+/** Chủ đề đang bán lẻ (3 trong 5 chủ đề của Trọn lá số). Tài chính, Gia đạo chỉ có trong Trọn lá số; mở bán lẻ khi nội dung qua Thư duyệt. */
+const CHU_DE_DANG_BAN: MaChuDe[] = ['ban-than', 'tinh-cam', 'su-nghiep'];
+
 /** Ba thẻ gói chính. Không truyền bảng = giá hiện hành. So sánh dưới giá tự tính từ giá đang dùng. */
 function dungGoi(bang?: BangGia): Goi[] {
   const gia = (ma: MaGoi, mac: number) => bang?.[ma] ?? mac;
@@ -80,7 +83,7 @@ function dungGoi(bang?: BangGia): Goi[] {
     },
     {
       ma: 'tron-la-so', ten: 'Trọn lá số', gia: giaTron, donVi: 'một lần', chinh: true, nhan: 'Khuyên dùng',
-      soSanh: [`Mua lẻ năm chủ đề: ${dinhDangGia(5 * gia('mot-chu-de', 29000))}. Trọn lá số có thêm phần đại vận.`],
+      soSanh: [`Mua lẻ ${CHU_DE_DANG_BAN.length} chủ đề: ${dinhDangGia(CHU_DE_DANG_BAN.length * gia('mot-chu-de', 29000))}. Trọn lá số có thêm Tài chính, Gia đạo và đại vận 10 năm.`], // L-2d61c5 B11: lẻ chỉ bán 3 chủ đề, không so với 5
       quyenLoi: ['Luận năm chủ đề: Bản thân, Tình cảm, Sự nghiệp, Tài chính, Gia đạo, và đại vận 10 năm', 'Mỗi nhận định ghi sao, cung và nguồn sách', XEM_LAI],
     },
     {
@@ -153,8 +156,6 @@ export const CHU_DE_TAT_CA: { ma: MaChuDe; ten: string }[] = [
   { ma: 'tinh-cam', ten: 'Tình cảm' },
   { ma: 'su-nghiep', ten: 'Sự nghiệp' },
 ];
-/** Chủ đề đang bán lẻ (khớp ba cung của Trọn lá số). Hai chủ đề còn lại mở bán khi nội dung qua Thư duyệt. */
-const CHU_DE_DANG_BAN: MaChuDe[] = ['ban-than', 'tinh-cam', 'su-nghiep'];
 export const CHU_DE = CHU_DE_TAT_CA.filter((c) => CHU_DE_DANG_BAN.includes(c.ma));
 
 /** Cam kết hiện ở màn chọn gói và thanh toán. Một chỗ duy nhất, mọi trang đọc từ đây. */

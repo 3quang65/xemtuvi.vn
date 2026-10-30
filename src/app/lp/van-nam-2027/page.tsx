@@ -6,7 +6,7 @@ import { VanNamXemTruoc } from '@/components/VanNamXemTruoc';
 import { CONG_BO_GIA, GOI_VAN_NAM, khuVanNam } from '@/lib/goi';
 import { lapLaSo } from '@/lib/tuvi';
 import { xemTruocVanNam } from '@/lib/luan-giai/ai/van-nam';
-import { LA_SO_MAU, LP, TEN_NAM } from '@/lib/van-nam-noi-dung';
+import { buocLp, LA_SO_MAU, LP, TEN_NAM } from '@/lib/van-nam-noi-dung';
 
 // Trang bán hàng, cho phép lập chỉ mục. Không có dữ liệu khách: lá số tính trên trình duyệt, nội dung trả phí ở /luan-giai (noindex).
 export const metadata: Metadata = {
@@ -35,7 +35,7 @@ export default function TrangVanNam2027() {
             {LP.loiIch.map((l) => <li key={l.ten}><strong>{l.ten}</strong><span>{l.moTa}</span></li>)}
           </ul>
           <h2>Xem trước một đoạn</h2>
-          <VanNamXemTruoc xt={xt} mau />
+          <VanNamXemTruoc xt={xt} mau moBan={goiBan.length > 0} />
           {goiBan.length > 0 && (
             <>
               <h2>Giá</h2>
@@ -47,7 +47,7 @@ export default function TrangVanNam2027() {
             </>
           )}
           <h2>Ba bước</h2>
-          <ol className="ba-buoc">{LP.buoc.map((b) => <li key={b}>{b}</li>)}</ol>
+          <ol className="ba-buoc">{buocLp(goiBan.length > 0).map((b) => <li key={b}>{b}</li>)}</ol>
           <LpVanNamNut nhan={LP.nutLap} />
           <p className="tt-ghi-chu">{LP.luuY}</p>
         </section>

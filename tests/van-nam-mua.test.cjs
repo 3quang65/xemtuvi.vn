@@ -153,12 +153,28 @@ test('trang đích: nội dung ở một file, meta mô tả, không từ cấm'
   assert.match(page, /description/);
 });
 
+test('L-2d61c5 B12: /lp và bản xem trước không hứa "mua" khi cổng mở bán đóng', () => {
+  const nd = nap('lib/van-nam-noi-dung.ts');
+  assert.deepEqual(nd.buocLp(true), nd.LP.buoc);
+  assert.equal(nd.buocLp(false).length, 3);
+  assert.ok(nd.buocLp(false).every((b) => !/mua lẻ hoặc gộp/.test(b) || /Khi Vận năm 2027 mở bán/.test(b)), nd.buocLp(false).join(' | '));
+  assert.equal(nd.moKhoaTheoCong(true), nd.XEM_TRUOC.moKhoa);
+  assert.doesNotMatch(nd.moKhoaTheoCong(false), /mua/);
+  assert.match(nd.moKhoaTheoCong(false), /mở bán/);
+  const page = fs.readFileSync(path.join(__dirname, '../src/app/lp/van-nam-2027/page.tsx'), 'utf8');
+  assert.match(page, /buocLp\(goiBan\.length > 0\)/);
+  assert.match(page, /moBan=\{goiBan\.length > 0\}/);
+  assert.doesNotMatch(page, /LP\.buoc\.map/);
+});
+
 test('L-f91bef: lời hứa khớp sản phẩm thật, chủ đề lẻ chỉ 3, gói gộp dừng bán sau 6/2/2027', () => {
   const chu = [...goi.GOI, ...goi.GOI_VAN_NAM].flatMap((g) => g.quyenLoi).join(' | ');
   assert.ok(!/12 cung|bất cứ lúc nào/.test(chu), chu);
   assert.match(goi.layGoi('tron-la-so').quyenLoi[0], /^Luận năm chủ đề: Bản thân, Tình cảm, Sự nghiệp, Tài chính, Gia đạo, và đại vận 10 năm$/);
-  assert.deepEqual(goi.layGoi('tron-la-so').soSanh, ['Mua lẻ năm chủ đề: 145.000đ. Trọn lá số có thêm phần đại vận.']);
-  assert.match(goi.layGoi('tron-la-so', { 'mot-chu-de': 39000 }).soSanh[0], /195\.000đ/);
+  // L-2d61c5 B11: lẻ chỉ bán 3 chủ đề nên so sánh phải là 3 × 29.000, không phải 5 × 29.000
+  assert.deepEqual(goi.layGoi('tron-la-so').soSanh, ['Mua lẻ 3 chủ đề: 87.000đ. Trọn lá số có thêm Tài chính, Gia đạo và đại vận 10 năm.']);
+  assert.match(goi.layGoi('tron-la-so', { 'mot-chu-de': 39000 }).soSanh[0], /117\.000đ/);
+  assert.doesNotMatch(goi.layGoi('tron-la-so').soSanh[0], /năm chủ đề|145\.000/);
   assert.deepEqual(goi.CHU_DE.map((c) => c.ma), ['ban-than', 'tinh-cam', 'su-nghiep']);
   assert.equal(goi.CHU_DE_TAT_CA.length, 3); // L-1786cd: tên hai chủ đề chưa bán nằm ở KhungMoi, không ở goi.ts
   assert.equal(goi.layChuDe('tai-chinh'), undefined);

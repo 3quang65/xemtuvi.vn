@@ -13,7 +13,7 @@ export const LP = {
     { ten: 'Ghi rõ nguồn và trường phái', moTa: 'Mỗi nhận định nêu sao, cung và sách nguồn. Sách nói khác nhau thì ghi rõ theo sách nào.' },
     { ten: 'Xem lại bất cứ lúc nào', moTa: 'Đăng nhập ở máy nào cũng xem lại được phần đã mua.' },
   ],
-  buoc: ['Lập lá số miễn phí (ngày, giờ sinh), không cần tài khoản.', 'Chọn Vận năm 2027, mua lẻ hoặc gộp với Trọn lá số.', 'Đăng nhập, thanh toán rồi đọc bài đầy đủ.'],
+  buoc: ['Lập lá số miễn phí (ngày, giờ sinh), không cần tài khoản.', 'Chọn Vận năm 2027, mua lẻ hoặc gộp với Trọn lá số.', 'Đăng nhập, thanh toán rồi đọc bài đầy đủ.'], // khi cổng mở bán; cổng đóng dùng buocLp(false)
   nutLap: 'Lập lá số để xem Vận năm 2027',
   luuY: 'Nội dung mang tính tham khảo văn hóa và tự tìm hiểu bản thân, không thay thế ý kiến chuyên môn khi bạn quyết định việc lớn.',
 };
@@ -26,5 +26,11 @@ export const XEM_TRUOC = {
   ghiChuMau: 'Đây là bản xem trước tính từ một lá số mẫu, không phải lá số của bạn.',
   tieuDe: 'Tổng quan năm',
   khoa: 'Bốn mảng sự nghiệp, tài chính, tình cảm, sức khỏe và gợi ý cho từng tháng trong năm, mỗi nhận định ghi rõ sao, cung và sách nguồn, được trình bày ở đây khi bạn mở Vận năm 2027.',
-  moKhoa: 'Phần còn lại, bốn mảng và 12 tháng mở khi bạn mua Vận năm 2027.',
+  moKhoa: 'Phần còn lại, bốn mảng và 12 tháng mở khi bạn mua Vận năm 2027.', // khi cổng mở bán
+  moKhoaChuaBan: 'Phần còn lại, bốn mảng và 12 tháng, sẽ mở khi Vận năm 2027 mở bán.', // cổng đóng: không nói "mua"
 };
+
+/** L-2d61c5 B12: chữ phụ thuộc cổng mở bán. Cổng đóng (chưa tới 15/12 hoặc nội dung chưa qua Thư) thì không hứa mua được. */
+export const BUOC_CHUA_BAN = ['Lập lá số miễn phí (ngày, giờ sinh), không cần tài khoản.', 'Xem trước tổng quan năm Đinh Mùi tính từ lá số của chính bạn.', 'Khi Vận năm 2027 mở bán: đăng nhập, chọn mua lẻ hoặc gộp với Trọn lá số, rồi đọc bài đầy đủ.'];
+export const buocLp = (moBan: boolean) => (moBan ? LP.buoc : BUOC_CHUA_BAN);
+export const moKhoaTheoCong = (moBan: boolean) => (moBan ? XEM_TRUOC.moKhoa : XEM_TRUOC.moKhoaChuaBan);
