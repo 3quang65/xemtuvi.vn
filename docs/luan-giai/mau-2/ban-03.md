@@ -30,10 +30,12 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 ## Bài luận giải (đúng như khách nhận)
 
 ### Cách cục
-- Với Phu Thê: Tham Lang đồng cung Hỏa Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Hỏa Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc và chọn một mục tiêu chính. Trong tình cảm, nhịp quan hệ dễ lên xuống; trước khi gắn bó lâu dài, hãy cùng nói rõ điều mỗi người cần.  
+- Tham Lang đồng cung Hỏa Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Hỏa Tham: xem là cảm xúc đến nhanh và nóng trong quan hệ, cần tiết chế khi hai người bất đồng.  
   _↳ KHUNG-phu-the-CC-HoaThamLinhTham-Hoa-PHA · Phu Thê · Tham Lang+Hỏa Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
-- Với Phu Thê: có dáng dấp của thế Sát Phá Tham (thiên về hành động, khai phá, thay đổi), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy.  
-  _↳ KHUNG-phu-the-CC-SatPhaTham-PHA3 · Phu Thê · Thất Sát+Phá Quân+Tham Lang+Hỏa Tinh+Kình Dương+Địa Kiếp · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
+- Có dáng dấp của thế Sát Phá Tham: quan hệ tình cảm có nhịp nhanh, cảm xúc mạnh, dễ đến dễ đi nếu thiếu nền tin cậy; nhưng yếu tố hung ở tứ chính (bốn cung chiếu vào Phu Thê) nặng nên chưa thể coi là cách vững, cần nỗ lực nhiều hơn để phát huy.  
+  _↳ KHUNG-phu-the-CC-SatPhaTham-PHA3 · Phu Thê · Thất Sát+Phá Quân+Tham Lang+Hỏa Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
+- Cả ba sao chủ cách Sát Phá Tham (Thất Sát, Phá Quân, Tham Lang) đều hãm, nên khi luận chuyện tình cảm và hôn nhân, nhịp biến động thiên về thử thách và cần nhiều lần điều chỉnh hơn.  
+  _↳ KHUNG-phu-the-CC-SatPhaTham-DeuHam · Phu Thê · Thất Sát+Phá Quân+Tham Lang · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Cách yêu và gắn bó
 - Tham Lang tại Phu Thê: thu hút, thích sự mới mẻ, nên đặt mục tiêu chung rõ ràng với bạn đời. Với các sao kém sáng nêu trong bài, nên bù bằng sự kiên nhẫn và trao đổi cởi mở trong quan hệ.  

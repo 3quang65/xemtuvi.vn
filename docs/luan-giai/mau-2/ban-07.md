@@ -30,10 +30,10 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 ## Bài luận giải (đúng như khách nhận)
 
 ### Cách cục
-- Với Mệnh: có dáng dấp của thế Sát Phá Tham (thiên về hành động, khai phá, thay đổi), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Với bản thân, đời sống nhiều chuyển biến; nên chọn một mục tiêu chính mỗi giai đoạn để không dàn trải.  
-  _↳ KHUNG-menh-CC-SatPhaTham-PHA3 · Mệnh · Thất Sát+Phá Quân+Tham Lang+Đà La+Kình Dương · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
-- Với Mệnh: có dáng dấp của thế Tử Phá (vừa coi trọng vị thế vừa thích đổi mới), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy.  
-  _↳ KHUNG-menh-CC-TuPha-PHA3 · Mệnh · Tử Vi+Phá Quân+Đà La+Kình Dương · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
+- Thất Sát, Phá Quân, Tham Lang cùng hội trong tam phương, tạo thế Sát Phá Tham (thành cách nhưng có khuyết): chủ động hành động, dám khai phá và chấp nhận thay đổi, nhịp sống nhiều chuyển biến; nhịp biến động cao hơn nên cần cân nhắc kỹ trước quyết định lớn.  
+  _↳ KHUNG-menh-CC-SatPhaTham-PHA · Mệnh · Thất Sát+Phá Quân+Tham Lang+Kình Dương · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
+- Tử Vi và Phá Quân đồng cung, tạo thế Tử Phá (thành cách nhưng có khuyết): vừa coi trọng vị thế vừa thích đổi mới, đời sống nhiều chuyển biến; cần cân nhắc kỹ trước quyết định lớn.  
+  _↳ KHUNG-menh-CC-TuPha-PHA · Mệnh · Tử Vi+Phá Quân+Đà La+Kình Dương · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Tổng quan bản thân
 - Tử Vi tại Mệnh: thích giữ vai trò dẫn dắt, coi trọng thể diện và sự tự chủ.  

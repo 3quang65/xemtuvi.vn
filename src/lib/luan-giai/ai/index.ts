@@ -121,7 +121,7 @@ const QUY_TAC_VAN = quyTacVanJson as unknown as QuyTacVan[];
 const TU_CAM = tuCamJson as unknown as TuCamCauHinh;
 const PROMPT = fs.readFileSync(path.join(process.cwd(), 'src/lib/luan-giai/ai/prompt-he-thong.md'), 'utf8');
 /** Tăng khi đổi cách ghép/lọc câu (không đổi quy tắc) để bản lưu cũ không bị dùng lại. */
-const PHIEN_BAN_BO_GHEP = 'ghep-3';
+const PHIEN_BAN_BO_GHEP = 'ghep-4';
 export const PHIEN_BAN_QUY_TAC = bam(JSON.stringify([QUY_TAC, QUY_TAC_2, QUY_TAC_VAN, CHUYEN_DE, TU_CAM, PROMPT, PHIEN_BAN_BO_GHEP])).slice(0, 12);
 
 export function nhaCungCapDangDung(yeuCau: TuyChon['nhaCungCap']): 'stub' | 'claude' | string {
@@ -302,6 +302,11 @@ export async function sinhLuanGiai(ls: LaSo, chuyenDe: ChuyenDeMa, tuyChon: TuyC
       return r ? [r] : [];
     }),
   ];
+  // Có câu "Hóa Kỵ hóa vào <sao>" (bộ khung) thì bỏ câu chung "Hóa Kỵ tại <cung> là điểm nhạy cảm" của bộ quy tắc cũ (T-a4504a vòng 2).
+  if (khopDs.some((x) => /^KHUNG-[a-z-]+-KY-/.test(x.q.id))) {
+    const chung = new Set(QUY_TAC.filter((q) => q.chuyenDe === chuyenDe && !q.sao.length && q.dieuKien?.hoa === 'Hóa Kỵ').map((q) => q.id));
+    for (let i = khopDs.length - 1; i >= 0; i--) if (chung.has(khopDs[i].q.id)) khopDs.splice(i, 1);
+  }
   const theoId = new Map(khopDs.map((x) => [x.q.id, x]));
 
   // Câu cấp cho nhà cung cấp; mặc định "stub" ghép thẳng từ quy tắc.

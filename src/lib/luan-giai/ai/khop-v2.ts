@@ -23,10 +23,19 @@ export interface DieuKien {
   /** Can năm sinh, vd ["Đinh"]. */
   canNam?: string[];
   /**
-   * Phá cách mức 3 theo CHUNG-CC-08: khớp khi (a) sát tinh hoặc Hóa Kỵ hãm tọa thủ cung chính, hoặc (b) Hóa Kỵ hóa vào
-   * một trong các sao tạo cách (mảng này), hoặc (c) tổng điểm phá tam phương >= 4. Chỉ cần đặt mảng (rỗng nếu không xét b).
+   * Mức thành/phá cách theo CHUNG-CC-08 của cung gốc: khớp khi mức >= `tuMuc`. Mức 3 (phá cách): sát tinh hoặc Hóa Kỵ hãm tọa thủ
+   * cung chính, hoặc Hóa Kỵ hóa vào một sao tạo cách (`saoCach`), hoặc tổng điểm phá >= 4. Mức 2 (có khuyết): điểm phá > 0.
+   * `dacLaTroLuc`: ngoại lệ Sát Phá Tham (TRANH-13), sát tinh đắc địa tính 0 điểm.
    */
-  phaCachMuc3?: string[];
+  phaCach?: { tuMuc: 2 | 3; saoCach?: string[]; dacLaTroLuc?: boolean };
+  /** Số sát tinh đắc địa tối thiểu trong tam phương (TRANH-13: sát tinh đắc địa nhiều mà thiếu Lộc). */
+  satDac?: number;
+  /** Cung chứa yếu tố khớp phải có đủ các sao này (vd Hóa Lộc đồng cung Địa Kiếp). T-a4504a vòng 2. */
+  cungCoSao?: string[];
+  /** Thế giáp: hai cung kề cung gốc, mỗi cung một trong hai hóa này (Khoa–Quyền, CC-10). Mọi giá trị khác của điều kiện bị bỏ qua. */
+  giapHoa?: [string, string];
+  /** Với `rai`: mọi sao trong `sao` đều có mặt VÀ cùng thuộc các độ sáng này (vd ba sao chủ cách đều Hãm). */
+  deuDoSang?: DoSang[];
 }
 
 export interface QuyTacV2 {
@@ -49,7 +58,11 @@ export interface QuyTacV2 {
   ghiChu?: string;
 }
 
-const saoCua = (c: Cung): Sao[] => [...c.chinhTinh, ...c.catTinh, ...c.hungTinh, ...c.phuTinh];
+/** Sao của cung, loại trùng theo tên (sát tinh có thể nằm cả hungTinh lẫn phuTinh). */
+const saoCua = (c: Cung): Sao[] => {
+  const thay = new Set<string>();
+  return [...c.chinhTinh, ...c.catTinh, ...c.hungTinh, ...c.phuTinh].filter((s) => !thay.has(s.ten) && !!thay.add(s.ten));
+};
 
 export function cungTheoViTri(ls: LaSo, goc: Cung, viTri: ViTri = 'chinh'): Cung[] {
   const theoChi = (d: number) => ls.cung.find((c) => c.chi === (goc.chi + d + 12) % 12)!;
@@ -68,6 +81,7 @@ function cungDat(c: Cung, k: DieuKien, dau?: Sao): boolean {
   if (k.tuan !== undefined && c.tuan !== k.tuan) return false;
   if (k.triet !== undefined && c.triet !== k.triet) return false;
   if (k.voChinhDieu !== undefined && (c.chinhTinh.length === 0) !== k.voChinhDieu) return false;
+  if (k.cungCoSao && !k.cungCoSao.every((t) => saoCua(c).some((s) => s.ten === t))) return false;
   if (k.doSang && !(dau?.dacTinhTen && k.doSang.includes(dau.dacTinhTen))) return false;
   if (k.hoa) {
     if (dau) { if (dau.hoa !== k.hoa) return false; }
@@ -77,36 +91,61 @@ function cungDat(c: Cung, k: DieuKien, dau?: Sao): boolean {
 }
 
 const SAT_TINH = ['Địa Không', 'Địa Kiếp', 'Kình Dương', 'Đà La', 'Hỏa Tinh', 'Linh Tinh'];
+const DAC_DIA = ['Miếu', 'Vượng', 'Đắc'];
 
 const laPha = (s: Sao) => SAT_TINH.includes(s.ten) || s.hoa === 'Hóa Kỵ';
+const laSatDac = (s: Sao) => SAT_TINH.includes(s.ten) && !!s.dacTinhTen && DAC_DIA.includes(s.dacTinhTen);
 
 /**
- * Điểm phá cách theo CC-08: yếu tố phá (sát tinh, Không Kiếp, Hóa Kỵ) tọa thủ cung chính tính 2, ở xung chiếu / tam hợp tính 1;
- * Tuần, Triệt chỉ tính khi đóng ở chính cung (không chiếu, CHUNG-TP-04), 2 điểm mỗi yếu tố.
+ * Mức theo CC-08 và tên các yếu tố phá. Điểm: yếu tố phá (sát tinh, Không Kiếp, Hóa Kỵ) tọa thủ cung chính tính 2, ở xung chiếu /
+ * tam hợp tính 1; Tuần, Triệt chỉ tính khi đóng ở chính cung (không chiếu, CHUNG-TP-04), 2 điểm mỗi yếu tố.
+ * Sát tinh đắc địa tính 0 khi `dacLaTroLuc`.
  */
-export function phaCachMuc3(ls: LaSo, goc: Cung, saoCach: string[]): string[] | null {
+export function mucCachCuc(ls: LaSo, goc: Cung, saoCach: string[] = [], dacLaTroLuc = false): { muc: 1 | 2 | 3; ten: string[] } {
+  const tinh = (s: Sao) => laPha(s) && !(dacLaTroLuc && laSatDac(s));
   const ten = new Set<string>();
   let diem = (goc.tuan ? 2 : 0) + (goc.triet ? 2 : 0);
-  for (const c of cungTheoViTri(ls, goc, 'tam-phuong')) {
-    const pha = saoCua(c).filter(laPha);
+  const tp = cungTheoViTri(ls, goc, 'tam-phuong');
+  for (const c of tp) {
+    const pha = saoCua(c).filter(tinh);
     pha.forEach((s) => ten.add(s.ten));
     diem += (c === goc ? 2 : 1) * pha.length;
   }
   const hamToaThu = saoCua(goc).some((s) => laPha(s) && s.dacTinhTen === 'Hãm');
-  const kyVaoCach = cungTheoViTri(ls, goc, 'tam-phuong').some((c) => saoCua(c).some((s) => saoCach.includes(s.ten) && s.hoa === 'Hóa Kỵ'));
-  return hamToaThu || kyVaoCach || diem >= 4 ? [...ten] : null;
+  const kyVaoCach = tp.some((c) => saoCua(c).some((s) => saoCach.includes(s.ten) && s.hoa === 'Hóa Kỵ'));
+  const muc = hamToaThu || kyVaoCach || diem >= 4 ? 3 : diem > 0 ? 2 : 1;
+  return { muc, ten: [...ten] };
+}
+
+/** Thế giáp bởi hai hóa (Khoa–Quyền, CC-10): hai cung kề, mỗi cung mang một hóa. Trả về tên sao mang hóa; null nếu không giáp. */
+function giapHoaKhop(ls: LaSo, goc: Cung, hoa: [string, string]): string[] | null {
+  const [a, b] = cungTheoViTri(ls, goc, 'giap');
+  const lay = (c: Cung, h: string) => saoCua(c).filter((s) => s.hoa === h).map((s) => s.ten);
+  const x = [lay(a, hoa[0]), lay(b, hoa[1])];
+  const y = [lay(a, hoa[1]), lay(b, hoa[0])];
+  const ok = (v: string[][]) => v[0].length > 0 && v[1].length > 0;
+  return ok(x) ? [...x[0], ...x[1]] : ok(y) ? [...y[0], ...y[1]] : null;
 }
 
 /** Một điều kiện → tên các sao khớp (mảng rỗng nếu điều kiện không đòi sao); null nếu không khớp. */
 export function khopDieuKien(ls: LaSo, goc: Cung, k: DieuKien): string[] | null {
   if (k.gioiTinh && ls.gioiTinh !== k.gioiTinh) return null;
   if (k.canNam && !k.canNam.includes(ls.canChi.nam.split(' ')[0])) return null;
-  if (k.phaCachMuc3) return phaCachMuc3(ls, goc, k.phaCachMuc3);
+  if (k.phaCach) {
+    const r = mucCachCuc(ls, goc, k.phaCach.saoCach, k.phaCach.dacLaTroLuc);
+    return r.muc >= k.phaCach.tuMuc ? r.ten : null;
+  }
+  if (k.satDac !== undefined) {
+    const n = cungTheoViTri(ls, goc, 'tam-phuong').flatMap((c) => saoCua(c).filter(laSatDac).map((s) => s.ten));
+    return n.length >= k.satDac ? n : null;
+  }
+  if (k.giapHoa) return giapHoaKhop(ls, goc, k.giapHoa);
   const ds = cungTheoViTri(ls, goc, k.viTri);
   const sao = k.sao ?? [];
   if (k.rai || k.toiThieu !== undefined) {
     const co = sao.filter((t) => ds.some((c) => saoCua(c).some((s) => s.ten === t)));
     if (co.length < (k.toiThieu ?? sao.length)) return null;
+    if (k.deuDoSang && !sao.every((t) => ds.some((c) => saoCua(c).some((s) => s.ten === t && s.dacTinhTen && k.deuDoSang!.includes(s.dacTinhTen))))) return null;
     return ds.some((c) => cungDat(c, { ...k, doSang: undefined, hoa: undefined })) ? co : null;
   }
   for (const c of ds) {
@@ -136,7 +175,8 @@ export function khopQuyTac(ls: LaSo, q: QuyTacV2): string[] | null {
 
 /** Các cung (trong vị trí của điều kiện) thực sự chứa yếu tố khớp: dùng điền tên cung vào câu luận. Chỉ gọi khi điều kiện đã khớp. */
 export function cungKhopDieuKien(ls: LaSo, goc: Cung, k: DieuKien): Cung[] {
-  if (k.phaCachMuc3) return cungTheoViTri(ls, goc, 'tam-phuong').filter((c) => saoCua(c).some(laPha));
+  if (k.phaCach || k.satDac !== undefined) return cungTheoViTri(ls, goc, 'tam-phuong').filter((c) => saoCua(c).some(k.satDac !== undefined ? laSatDac : laPha));
+  if (k.giapHoa) return cungTheoViTri(ls, goc, 'giap');
   const ds = cungTheoViTri(ls, goc, k.viTri);
   const sao = k.sao ?? [];
   if (k.rai || k.toiThieu !== undefined) return ds.filter((c) => saoCua(c).some((s) => sao.includes(s.ten)));

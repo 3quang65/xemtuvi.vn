@@ -30,10 +30,10 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 ## Bài luận giải (đúng như khách nhận)
 
 ### Cách cục
-- Với Phu Thê: có dáng dấp của thế Cơ Nguyệt Đồng Lương (thiên về trí tuệ, chuyên môn, công việc ổn định), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Trong tình cảm, bạn thiên về suy nghĩ kỹ; hãy chia sẻ điều mình nghĩ thay vì giữ trong lòng.  
-  _↳ KHUNG-phu-the-CC-CoNguyetdongLuong-PHA3 · Phu Thê · Thiên Cơ+Thái Âm+Thiên Đồng+Thiên Lương+Linh Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
-- Với Phu Thê: có dáng dấp của thế Nhật Nguyệt (chủ hiển đạt khi cả hai sao cùng sáng), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Trong tình cảm, bạn trân trọng sự bền vững; hãy nói rõ kỳ vọng để hai người cùng đi đường dài.  
-  _↳ KHUNG-phu-the-CC-NhatNguyet-PHA3 · Phu Thê · Thái Dương+Thái Âm+Linh Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
+- Thiên Cơ, Thái Âm, Thiên Đồng, Thiên Lương cùng hội trong tam phương, tạo thế Cơ Nguyệt Đồng Lương (thành cách nhưng có khuyết): trong tình cảm, bạn nghĩ nhiều, trọng sự hòa thuận và êm ấm hơn là kịch tính; cần chủ động hơn để không dừng ở lối quen.  
+  _↳ KHUNG-phu-the-CC-CoNguyetdongLuong-PHA · Phu Thê · Thiên Cơ+Thái Âm+Thiên Đồng+Thiên Lương+Linh Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
+- Thái Dương và Thái Âm cùng hội trong tam phương, tạo thế Nhật Nguyệt (thành cách nhưng có khuyết): cùng sáng thì quan hệ ấm áp, quan tâm hai chiều; kém sáng thì cần chủ động hỏi han nhau; cần bền bỉ và tự tạo cơ hội để phát huy ánh sáng của hai sao.  
+  _↳ KHUNG-phu-the-CC-NhatNguyet-PHA · Phu Thê · Thái Dương+Thái Âm+Linh Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Cách yêu và gắn bó
 - Thái Âm tại Phu Thê: dịu dàng, nhạy cảm, cần không gian chia sẻ cảm xúc.  

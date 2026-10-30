@@ -30,7 +30,7 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 ## Bài luận giải (đúng như khách nhận)
 
 ### Cách cục
-- Với Quan Lộc: có dáng dấp của thế Nhật Nguyệt (chủ hiển đạt khi cả hai sao cùng sáng), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Trong công việc, hợp vị trí cần tính tổ chức và trách nhiệm; nên tìm môi trường có quy trình rõ.  
+- Có dáng dấp của thế Nhật Nguyệt: cùng sáng thì công việc có tiếng, được cấp trên lẫn đồng nghiệp tin; kém sáng thì cần bền bỉ hơn; nhưng yếu tố hung ở tứ chính (bốn cung chiếu vào Quan Lộc) nặng nên chưa thể coi là cách vững, cần nỗ lực nhiều hơn để phát huy.  
   _↳ KHUNG-quan-loc-CC-NhatNguyet-PHA3 · Quan Lộc · Thái Dương+Thái Âm+Đà La+Địa Không+Linh Tinh+Địa Kiếp · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Phong cách làm việc
@@ -50,8 +50,8 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
   _↳ QL-S12-C5 · Mệnh · Thiên Lương · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
 
 ### Tứ hóa
-- Thái Dương mang Hóa Lộc ở Mệnh (cung tam hợp của Quan Lộc) ảnh hưởng đến công việc và sự nghiệp: mở thêm cơ hội và nguồn lực cho công việc, nên chủ động nắm bắt.  
-  _↳ KHUNG-quan-loc-HOA-Lộc-tam-hop · Quan Lộc · Thái Dương · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
+- Thái Dương mang Hóa Lộc ở Mệnh (cung tam hợp của Quan Lộc) nhưng có Địa Kiếp đồng cung, nên cái lợi dễ hao tán về công việc và sự nghiệp: cơ hội việc có nhưng dễ đổi hướng hoặc hụt giữa chừng; nên đặt mốc rõ và giữ phần việc chắc tay.  
+  _↳ KHUNG-quan-loc-HOA-Lộc-HT-Kiep-tam-hop · Quan Lộc · Thái Dương · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 - Thiên Đồng mang Hóa Khoa ở Phu Thê (cung xung chiếu của Quan Lộc) ảnh hưởng đến công việc và sự nghiệp: thêm danh tiếng tốt, cơ hội học hỏi và quý nhân trong công việc.  
   _↳ KHUNG-quan-loc-HOA-Khoa-xung · Quan Lộc · Thiên Đồng · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 - Thái Âm mang Hóa Kỵ ở Tài Bạch (cung tam hợp của Quan Lộc) ảnh hưởng đến công việc và sự nghiệp: là điểm cần đầu tư công sức trong công việc và dễ vướng bận; nên làm rõ mục tiêu, giữ giao tiếp rõ ràng.  

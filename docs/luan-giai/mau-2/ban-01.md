@@ -30,10 +30,10 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 ## Bài luận giải (đúng như khách nhận)
 
 ### Cách cục
-- Với Mệnh: Tham Lang đồng cung Hỏa Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Hỏa Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc và chọn một mục tiêu chính. Với bản thân, đời sống nhiều chuyển biến; nên chọn một mục tiêu chính mỗi giai đoạn để không dàn trải.  
+- Tham Lang đồng cung Hỏa Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Hỏa Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc khi quyết định.  
   _↳ KHUNG-menh-CC-HoaThamLinhTham-Hoa-PHA · Mệnh · Tham Lang+Hỏa Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
-- Với Mệnh: có dáng dấp của thế Sát Phá Tham (thiên về hành động, khai phá, thay đổi), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy.  
-  _↳ KHUNG-menh-CC-SatPhaTham-PHA3 · Mệnh · Thất Sát+Phá Quân+Tham Lang+Hỏa Tinh+Địa Kiếp · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
+- Có dáng dấp của thế Sát Phá Tham: chủ động hành động, dám khai phá và chấp nhận thay đổi, nhịp sống nhiều chuyển biến; nhưng yếu tố hung ở tứ chính (bốn cung chiếu vào Mệnh) nặng nên chưa thể coi là cách vững, cần nỗ lực nhiều hơn để phát huy.  
+  _↳ KHUNG-menh-CC-SatPhaTham-PHA3 · Mệnh · Thất Sát+Phá Quân+Tham Lang+Địa Kiếp · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Tổng quan bản thân
 - Tham Lang tại Mệnh: đa tài, nhiều ham muốn học hỏi, giỏi giao tiếp.  
@@ -48,10 +48,12 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
   _↳ ML-S14-C3 · Tài Bạch · Phá Quân · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
 
 ### Tứ hóa
-- Hóa Kỵ tại Mệnh là điểm nhạy cảm, dễ băn khoăn hoặc vướng mắc, nên chuẩn bị kỹ và giao tiếp rõ ràng.  
-  _↳ ML-HOA-3 · Mệnh · Tham Lang · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
-- Phá Quân mang Hóa Lộc ở Tài Bạch (cung tam hợp của Mệnh) ảnh hưởng đến tính cách và hướng đi của bạn: mở thêm cơ hội và nguồn lực cho bản thân, nên chủ động nắm bắt.  
-  _↳ KHUNG-menh-HOA-Lộc-tam-hop · Mệnh · Phá Quân · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
+- Phá Quân mang Hóa Lộc ở Tài Bạch (cung tam hợp của Mệnh) nhưng có Địa Kiếp đồng cung, nên cái lợi dễ hao tán về tính cách và hướng đi của bạn: cơ hội có mở ra nhưng dễ hụt hoặc tan nhanh nếu hành động vội; nên chia việc thành bước nhỏ và chốt phần chắc trước.  
+  _↳ KHUNG-menh-HOA-Lộc-HT-Kiep-tam-hop · Mệnh · Phá Quân · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
+- Mệnh nằm giữa hai cung kề mang Hóa Khoa và Hóa Quyền (thế giáp cát), nhưng chính cung có Hóa Kỵ tọa thủ nên lợi ích từ thế giáp giảm đi: có người uy tín sẵn lòng giúp bạn về tính cách và hướng đi của bạn, nhưng bạn cần chủ động đón nhận.  
+  _↳ KHUNG-menh-GIAP-KhoaQuyen-Ky · Mệnh · Thái Âm+Cự Môn+Tham Lang · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
+- Hóa Kỵ ở Mệnh hóa vào Tham Lang: mong muốn nhiều, kỳ vọng cao nên dễ thấy chưa thỏa; chạy theo ham muốn hay tiền bạc quá thì mệt. Đây là điểm cần đầu tư công sức nơi bản thân; đặt kỳ vọng vừa phải ("làm việc chỉ cầu bảy phần") và chuẩn bị kỹ sẽ nhẹ gánh hơn.  
+  _↳ KHUNG-menh-KY-ThamLang · Mệnh · Tham Lang · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương) · Tam hợp phái Việt_
 - Tam phương của Mệnh vừa có Hóa Lộc vừa có Hóa Kỵ: thuận lợi và điểm vướng cùng tồn tại, kết quả có lúc lên lúc xuống; nên tận dụng mặt thuận, giữ nhịp đều, dự phòng và chủ động xử lý chỗ vướng thay vì chỉ nhìn một chiều.  
   _↳ KHUNG-menh-DH-Lộc-Ky · Mệnh · Phá Quân+Tham Lang · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương) · Tam hợp phái Việt_
 
