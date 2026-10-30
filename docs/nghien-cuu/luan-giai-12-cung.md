@@ -266,7 +266,7 @@ Ghi chú: các trích dẫn TT ở trên ghi theo âm Hán Việt của nguyên 
 #### Liêm Trinh
 - **[MENH-LT-01]** Miếu ở Thìn, Tuất (M), vượng ở Tý, Ngọ, Dần, Thân (V), đắc ở Sửu, Mùi (Đ): liêm khiết, thẳng thắn, có tố chất làm việc trong môi trường kỷ luật hoặc quản lý. — *Nguồn: TB (WM4, "Liêm Trinh": "Liêm khiết, thẳng thắn"); TT (WM6, 命宫·廉贞: "入庙武职贵"; "六甲生人命坐寅申者上格")*
 - **[MENH-LT-02]** Hãm ở Tỵ, Hợi, Mão, Dậu (H): tính cứng, dễ tranh luận gay gắt, khắt khe. Hợp nghề chuyên môn hoặc tay nghề, thường sớm tự lập xa gia đình. Nên học cách mềm mỏng khi va chạm. — *Nguồn: TB (WM4: hãm "khắc nghiệt"); TT (WM6: "性硬浮荡，好忿争"; "巳亥陷宫弃祖孤单，巧艺")*
-- **[MENH-LT-03]** Liêm Trinh rất cần Thiên Tướng đồng cung, vì Tướng hóa giải phần khắc nghiệt và nóng nảy của Liêm. — *Nguồn: TT (WM6: "此星最喜天相同宫能化其恶"); TB (WM4 và WM5 tr.54, mục Thiên Tướng: "Chế được tính khắc nghiệt nóng nảy của Liêm")*
+- **[MENH-LT-03]** Liêm Trinh rất cần Thiên Tướng đồng cung, vì Tướng chế bớt phần khắc nghiệt và nóng nảy của Liêm. — *Nguồn: TT (WM6: "此星最喜天相同宫能化其恶"); TB (WM4 và WM5 tr.54, mục Thiên Tướng: "Chế được tính khắc nghiệt nóng nảy của Liêm")*
 - **[MENH-LT-04]** Liêm miếu, vượng, đắc thủ Mệnh hoặc Thân còn mang tính "đào hoa thứ hai", tức có duyên, có sức hút. — *Nguồn: TB (WM4: "gọi là Đào Hoa thứ hai"); TT (WM6, phần tổng luận: "廉真…在身命为次桃花")*
 
 #### Thiên Đồng

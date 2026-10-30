@@ -1,5 +1,6 @@
 import type { LaSo } from '@/lib/tuvi';
 import { chonDoanMenh, type DoanLuan } from './chon-doan';
+import { chonDoanMau, type DoanMau } from './doan-mau';
 import duLieu from './menh-chinh-tinh.json';
 
 export interface TomTatMienPhi {
@@ -41,5 +42,12 @@ export function saoCuaQuyTac(ma: string): string | null {
   return null;
 }
 
-/** Đoạn mẫu cho màn chọn gói (ví dụ minh họa, không phải lá số của khách). */
+export { tachDoanMau, type DoanMau } from './doan-mau';
+
+/** Đoạn mẫu màn chọn gói lấy từ chính lá số (Quan Lộc / Phu Thê); null nếu không có quy tắc khớp. */
+export function doanMauCuaLaSo(ls: LaSo): DoanMau | null {
+  return chonDoanMau(ls.cung.map((c) => ({ ten: c.ten, chi: c.chi, tenChi: c.tenChi, chinhTinh: c.chinhTinh.map((s) => s.ten) })));
+}
+
+/** Đoạn mẫu dự phòng khi lá số không có quy tắc khớp (ví dụ minh họa, không phải lá số của khách). */
 export const DOAN_MAU = (duLieu.menh['Thái Âm'] ?? []).find((r) => r.ma === 'MENH-TA-01')!;

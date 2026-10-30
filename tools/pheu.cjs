@@ -59,13 +59,16 @@ function tinhPheu(dongs) {
   }
   const phien = Object.fromEntries(TEN_SU_KIEN.map((t) => [t, phienTheoSk[t].size]));
   const xong = [...phienTheoSk.thanh_toan_xong];
-  const soMan = xong.map((p) => trangTheoPhien.get(p).size);
+  const soMan = xong.map((p) => [...trangTheoPhien.get(p)].filter((t) => t !== 'luan-giai').length);
   return {
     phien,
     tiLe: {
       lapTrenVao: chia(phien.lap_la_so, phien.vao_form),
       bamTrenLap: chia(phien.bam_xem_sau, phien.lap_la_so),
       muaTrenBam: chia(phien.thanh_toan_xong, phien.bam_xem_sau),
+      chonTrenChaoBan: chia(phien.chon_goi, phien.vao_chon_goi), // bấm mua trên màn chào bán
+      boThanhToan: phien.vao_thanh_toan ? 1 - phien.thanh_toan_xong / phien.vao_thanh_toan : null,
+      baoLoiTrenDon: chia(phien.bao_loi, phien.thanh_toan_xong),
     },
     bac: tinhBac(dongs),
     soManTrungBinh: soMan.length ? soMan.reduce((a, b) => a + b, 0) / soMan.length : null,
@@ -81,6 +84,9 @@ function in_(p) {
   console.log('  lap_la_so / vao_form          ' + pct(p.tiLe.lapTrenVao) + '  (mục tiêu ≥ 70%)');
   console.log('  bam_xem_sau / lap_la_so       ' + pct(p.tiLe.bamTrenLap));
   console.log('  thanh_toan_xong / bam_xem_sau ' + pct(p.tiLe.muaTrenBam));
+  console.log('  chon_goi / vao_chon_goi       ' + pct(p.tiLe.chonTrenChaoBan) + '  (bấm mua trên màn chào bán)');
+  console.log('  bỏ giữa chừng ở thanh toán    ' + pct(p.tiLe.boThanhToan) + '  (1 − thanh_toan_xong / vao_thanh_toan)');
+  console.log('  bao_loi / thanh_toan_xong     ' + pct(p.tiLe.baoLoiTrenDon) + '  (khiếu nại: ' + p.phien.bao_loi + ' phiên)');
   const b = p.bac;
   console.log('Lựa chọn từng bậc (mỗi phiên lấy lần cuối)  · trên đơn (' + b.soDon + ') | trên chon_goi (' + b.soChon + ')');
   for (const ma of MA_GOI) console.log('  ' + ma.padEnd(16) + pct(b.tiLeTrenDon[ma]).padEnd(18) + pct(b.tiLeTrenChon[ma]));

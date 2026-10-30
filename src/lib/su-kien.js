@@ -4,6 +4,7 @@ const TRANG = {
   xem_tom_tat: 'tom-tat', bam_xem_sau: 'tom-tat',
   vao_chon_goi: 'chon-goi', chon_goi: 'chon-goi',
   vao_thanh_toan: 'thanh-toan', dang_nhap: 'thanh-toan', thanh_toan_xong: 'thanh-toan',
+  bao_loi: 'luan-giai', // khách báo không xem được đủ phần đã mua (đếm khiếu nại); sau khi mua nên không tính vào 4 màn
 };
 const { MA_GOI, MA_CHU_DE } = require('./goi-ma.js');
 const TEN_SU_KIEN = Object.keys(TRANG);
@@ -11,7 +12,7 @@ const TEN_SU_KIEN = Object.keys(TRANG);
 /** Màn hình (trong tối đa 4 màn) mà sự kiện thuộc về; máy chủ tự suy ra, không tin máy khách. */
 function trangCua(ten) { return TRANG[ten]; }
 
-const CO_GOI = ['chon_goi', 'vao_thanh_toan', 'thanh_toan_xong'];
+const CO_GOI = ['chon_goi', 'vao_thanh_toan', 'thanh_toan_xong', 'bao_loi'];
 
 /** Nhận {ten, phien} và (chỉ với CO_GOI) thêm goi, chuDe; trả về bản sạch hoặc null nếu có bất kỳ điều gì sai. */
 function kiemTraSuKien(b) {

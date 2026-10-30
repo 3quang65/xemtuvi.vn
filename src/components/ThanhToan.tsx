@@ -2,7 +2,7 @@
 
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { dinhDangGia, layChuDe, layGoi } from '@/lib/goi';
+import { dinhDangGia, HOAN_TIEN, layChuDe, layGoi } from '@/lib/goi';
 import { docTaiKhoanThu, guiSuKien, luuGoiDaMo, taoTaiKhoanThu, type NhaCungCap, type TaiKhoanThu } from '@/lib/phien';
 import { useLaSoDaLuu } from '@/lib/useLaSoDaLuu';
 
@@ -52,6 +52,7 @@ export default function ThanhToan() {
         </dl>
         <button type="button" className="nut-chinh" disabled={!tk} onClick={thanhToan}>Thanh toán (giả lập)</button>
         {!tk && <p className="tt-ghi-chu">Chọn tài khoản ở trên để thanh toán.</p>}
+        <p className="cam-ket">{HOAN_TIEN}</p>
       </div>
     </section>
   );

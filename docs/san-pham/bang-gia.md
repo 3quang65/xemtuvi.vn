@@ -42,3 +42,9 @@ Thanh toán giả lập chỉ đo ý định, tỉ lệ thật sẽ thấp hơn 
 | Trọn lá số 40–55%, đơn TB ≥ 90k | Giữ; vòng sau thử 99k vs 129k cho gói chính |
 | Gói năm < 3% | Sửa quyền lợi gói năm (thêm lá số người thân, bỏ hỏi đáp…) hoặc thử 199k |
 | Gói năm ≥ 10% | Tín hiệu tốt cho khoảng trống thị trường → ưu tiên làm nội dung lưu nguyệt |
+
+## Màn chào bán "đáng tin" (L-8ad80c)
+- **Đoạn mẫu từ chính lá số khách** (`src/lib/luan-giai/doan-mau.js`, dữ liệu `doan-mau.json` sinh bởi `tools/tao-du-lieu-luan-giai.cjs`): ưu tiên "Thiên hướng và phong cách" ở Quan Lộc (trung tính, không mở đầu bằng câu nặng), rồi quy tắc riêng Phu Thê, rồi Quan Lộc. Chỉ nhận điều kiện máy đọc chắc chắn (sao đơn đúng chi, cặp sao); điều kiện có sát tinh, Tuần Triệt… bỏ qua để không áp sai. Độ phủ ≈ 87% lá số; còn lại dùng ví dụ minh họa có ghi rõ.
+- **Nhãn phương pháp/nguồn** và **câu hoàn tiền**: hằng `PHUONG_PHAP`, `HOAN_TIEN` trong `src/lib/goi.ts` (một chỗ, mọi trang đọc từ đó).
+- **Cấm** "hóa giải/giải hạn" và cấm ghi số tiền ngoài `goi.ts`: kiểm bằng `tests/man-chao-ban.test.cjs`.
+- **Đo**: `node tools/pheu.cjs` in `chon_goi / vao_chon_goi` (bấm mua trên màn chào bán), tỉ lệ bỏ giữa chừng ở thanh toán, `bao_loi / thanh_toan_xong` (khiếu nại, nút "Báo lỗi" ở trang luận giải).

@@ -1,24 +1,40 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { useEffect, useId, useState } from 'react';
-import { DOAN_MAU, nhanDinh } from '@/lib/luan-giai';
-import { CHU_DE, dinhDangGia, GOI, type Goi, type MaChuDe } from '@/lib/goi';
+import { useEffect, useId, useMemo, useState } from 'react';
+import type { LaSo } from '@/lib/tuvi';
+import { DOAN_MAU, doanMauCuaLaSo, tachDoanMau } from '@/lib/luan-giai';
+import { CHU_DE, dinhDangGia, GOI, HOAN_TIEN, PHUONG_PHAP, type Goi, type MaChuDe } from '@/lib/goi';
 import { guiSuKien } from '@/lib/phien';
 import { useLaSoDaLuu } from '@/lib/useLaSoDaLuu';
 
-/** Đoạn mẫu: câu đầu đọc được, phần sau bị làm mờ (trạng thái khóa). */
-function DoanKhoa() {
-  const cau = 'Thái Âm sáng tại Mệnh: ' + nhanDinh(DOAN_MAU.cau);
-  const cat = cau.indexOf(',', cau.indexOf(': ')) + 1; // hiện vài chữ đầu của nhận định, mờ phần còn lại
+/** Đoạn mẫu lấy từ chính lá số của khách: câu đầu đọc được, phần sau làm mờ. Không có quy tắc khớp thì dùng ví dụ minh họa. */
+function DoanKhoa({ laSo }: { laSo: LaSo }) {
+  const mau = useMemo(() => doanMauCuaLaSo(laSo), [laSo]);
+  const { ro, mo } = tachDoanMau(mau ? mau.cau : DOAN_MAU.cau);
   return (
     <div className="doan-khoa">
-      <h2>Một đoạn trong luận giải chuyên sâu</h2>
-      <p className="tt-ghi-chu">Ví dụ minh họa với sao Thái Âm tại Mệnh, không phải lá số của bạn.</p>
-      <p className="doan-ro">{cau.slice(0, cat)}</p>
-      <p className="doan-mo" aria-hidden="true">{cau.slice(cat)}</p>
-      <p className="khoa-nhan">Phần còn lại mở khi bạn chọn một gói bên dưới.</p>
+      <h2>Một đoạn trong luận giải {mau ? 'lá số của bạn' : 'chuyên sâu'}</h2>
+      {mau ? (
+        <p className="tt-ghi-chu">Cung {mau.cung} của bạn ở {mau.tenChi}, có {mau.chinhTinh.join(', ')}.</p>
+      ) : (
+        <p className="tt-ghi-chu">Ví dụ minh họa với sao Thái Âm tại Mệnh, không phải lá số của bạn.</p>
+      )}
+      <p className="doan-ro">{mau ? ro : `Thái Âm sáng tại Mệnh: ${ro}`}</p>
+      <p className="doan-mo" aria-hidden="true">{mo}</p>
+      <p className="doan-nguon">Quy tắc {mau ? mau.ma : DOAN_MAU.ma} · Nguồn: {(mau ? mau.nguon : DOAN_MAU.nguon).join(', ')}</p>
+      <p className="khoa-nhan">Phần còn lại và 11 cung khác mở khi bạn chọn một gói bên dưới.</p>
     </div>
+  );
+}
+
+/** Nhãn phương pháp và nguồn: khách biết bản luận theo trường phái nào trước khi trả tiền. */
+function PhuongPhap() {
+  return (
+    <details className="phuong-phap" open>
+      <summary>Luận theo trường phái nào, dựa vào sách gì</summary>
+      <ul>{PHUONG_PHAP.map((p) => <li key={p}>{p}</li>)}</ul>
+    </details>
   );
 }
 
@@ -65,7 +81,8 @@ export default function ChonGoi() {
     <section className="trang-buoc">
       <h1>Chọn gói luận giải</h1>
       <p className="tt-ghi-chu">Luận giải chuyên sâu cho lá số bạn vừa lập. Bản thử: chưa thu tiền thật.</p>
-      <DoanKhoa />
+      <DoanKhoa laSo={laSo} />
+      <PhuongPhap />
       <ul className="luoi-goi">
         {GOI.map((g) => (
           <TheGoi key={g.ma} g={g} onChon={(x, chuDe) => {
@@ -74,6 +91,7 @@ export default function ChonGoi() {
           }} />
         ))}
       </ul>
+      <p className="cam-ket">{HOAN_TIEN}</p>
     </section>
   );
 }

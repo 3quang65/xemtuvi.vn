@@ -7,8 +7,8 @@ const path = require('node:path');
 const { kiemTraSuKien, TEN_SU_KIEN, trangCua } = require('../src/lib/su-kien.js');
 const { tinhPheu, docThuMuc } = require('../tools/pheu.cjs');
 
-test('Sự kiện hợp lệ: đủ 9 tên, phiên 16–32 ký tự', () => {
-  assert.equal(TEN_SU_KIEN.length, 9);
+test('Sự kiện hợp lệ: đủ 10 tên, phiên 16–32 ký tự', () => {
+  assert.equal(TEN_SU_KIEN.length, 10);
   for (const ten of TEN_SU_KIEN) assert.deepEqual(kiemTraSuKien({ ten, phien: 'a1b2c3d4e5f6a7b8' }), { ten, phien: 'a1b2c3d4e5f6a7b8' });
 });
 
@@ -23,8 +23,9 @@ test('Từ chối: trường lạ, tên lạ, phiên sai độ dài/ký tự, kh
   for (const x of [null, 'x', 5, [], undefined]) assert.equal(kiemTraSuKien(x), null);
 });
 
-test('Màn hình của từng sự kiện: đúng 4 màn', () => {
-  assert.equal(new Set(TEN_SU_KIEN.map(trangCua)).size, 4);
+test('Màn hình của từng sự kiện: 4 màn mua + trang luận giải (báo lỗi)', () => {
+  assert.equal(new Set(TEN_SU_KIEN.map(trangCua)).size, 5);
+  assert.equal(trangCua('bao_loi'), 'luan-giai');
   assert.equal(trangCua('thanh_toan_xong'), 'thanh-toan');
 });
 
@@ -50,10 +51,25 @@ test('Tính phễu: số phiên, tỉ lệ, số màn trung bình', () => {
   assert.equal(p.soManTrungBinh, 4);
 });
 
+test('Chỉ số màn chào bán: bấm mua, bỏ thanh toán, khiếu nại; báo lỗi không tính thêm màn', () => {
+  const ds = [
+    ...DAY.map((t) => dong('A', t)), dong('A', 'bao_loi'),
+    ...DAY.slice(0, 7).map((t) => dong('B', t)), // vào thanh toán rồi bỏ
+    ...DAY.slice(0, 5).map((t) => dong('C', t)), // xem màn chào bán, không bấm
+  ];
+  const p = tinhPheu(ds);
+  assert.equal(p.tiLe.chonTrenChaoBan, 2 / 3);
+  assert.equal(p.tiLe.boThanhToan, 1 / 2);
+  assert.equal(p.tiLe.baoLoiTrenDon, 1);
+  assert.equal(p.soManTrungBinh, 4);
+  assert.deepEqual(kiemTraSuKien({ ten: 'bao_loi', phien: 'a'.repeat(16), goi: 'tron-la-so' }), { ten: 'bao_loi', phien: 'a'.repeat(16), goi: 'tron-la-so' });
+});
+
 test('Không có dữ liệu: không chia cho 0', () => {
   const p = tinhPheu([]);
   assert.equal(p.tiLe.lapTrenVao, null);
   assert.equal(p.soManTrungBinh, null);
+  assert.equal(p.tiLe.boThanhToan, null);
 });
 
 test('Đọc thư mục: bỏ dòng hỏng, gộp nhiều file', () => {

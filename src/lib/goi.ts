@@ -48,5 +48,13 @@ export const CHU_DE: { ma: MaChuDe; ten: string }[] = [
   { ma: 'gia-dao', ten: 'Gia đạo' },
 ];
 
+/** Cam kết hiện ở màn chọn gói và thanh toán. Một chỗ duy nhất, mọi trang đọc từ đây. */
+export const HOAN_TIEN = 'Hoàn 100% nếu lỗi kỹ thuật khiến bạn không xem được đủ phần đã mua. Không hoàn vì nội dung không hợp ý.';
+export const PHUONG_PHAP = [
+  'An sao và độ sáng theo cách Việt Nam (phái Việt): Tuần, Triệt và Tứ hóa năm Canh, Nhâm khác một số sách Trung Quốc.',
+  'Luận theo phương pháp tam hợp, dựa trên Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), đối chiếu sách gốc Tử Vi Đẩu Số Toàn Thư. Sách nói khác nhau thì ghi rõ theo sách nào.',
+  'Mỗi nhận định ghi mã quy tắc, sao, cung và sách nguồn. Nội dung do hệ thống tạo từ bộ quy tắc, không phải lời phán của thầy.',
+];
+
 export const layGoi = (ma: string | null | undefined) => GOI.find((g) => g.ma === ma);
 export const layChuDe = (ma: string | null | undefined) => CHU_DE.find((c) => c.ma === ma);
