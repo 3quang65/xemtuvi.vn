@@ -2,7 +2,7 @@
 
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
-import { CONG_BO_GIA, giaHienThi, HOAN_TIEN, layChuDe, type Goi } from '@/lib/goi';
+import { CONG_BO_GIA, dongHanBan, giaHienThi, HOAN_TIEN, layChuDe, type Goi } from '@/lib/goi';
 import { useGia } from '@/lib/useGia';
 import { docThongTinSinh, guiSuKien } from '@/lib/phien';
 import { useLaSoDaLuu } from '@/lib/useLaSoDaLuu';
@@ -106,7 +106,7 @@ export default function ThanhToan() {
       <div className="khoi-buoc">
         <h2>2. Đơn hàng</h2>
         <dl className="tt-dong don">
-          <div><dt>Gói</dt><dd>{goi.ten}</dd></div>
+          <div><dt>Gói</dt><dd>{goi.ten}{CONG_BO_GIA && dongHanBan(goi) && <span className="tt-ghi-chu" style={{ display: 'block' }}>{dongHanBan(goi)}</span>}</dd></div>
           {chuDe && goi.ma === 'mot-chu-de' && <div><dt>Chủ đề</dt><dd>{chuDe.ten}</dd></div>}
           <div><dt>Thời hạn</dt><dd>{goi.donVi}</dd></div>
           {CONG_BO_GIA && tru > 0 && <div><dt>Đã trừ</dt><dd>{giaHienThi(tru)}</dd></div>}
