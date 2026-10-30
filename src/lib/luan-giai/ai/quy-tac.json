@@ -5699,7 +5699,7 @@
     "Hãm"
    ]
   },
-  "noiDung": "Tử Vi tại Tài Bạch khi kém sáng: về tiền bạc, bạn vẫn có xu hướng muốn tự quyết, nhưng nguồn thu dễ không vượng như mong đợi. Nên hỏi ý một người am hiểu tài chính trước các quyết định lớn thay vì tự quyết một mình.",
+  "noiDung": "Tử Vi tại Tài Bạch khi đồng cung sát tinh (Kình Dương, Đà La, Hỏa Tinh, Linh Tinh, Địa Không, Địa Kiếp): về tiền bạc, bạn vẫn có xu hướng muốn tự quyết, nhưng nguồn thu dễ không vượng như mong đợi. Nên hỏi ý một người am hiểu tài chính trước các quyết định lớn thay vì tự quyết một mình.",
   "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
   "truongPhai": "Tam hợp phái Việt",
   "muc": "phong-cach",
@@ -5771,6 +5771,7 @@
   "muc": "phong-cach",
   "maNghienCuu": [
    "TAI-TCO-02",
+   "TAI-TCO-03",
    "CHUNG-CT-TCO-01"
   ]
  },
@@ -5853,13 +5854,14 @@
     "Đắc"
    ]
   },
-  "noiDung": "Vũ Khúc tại Tài Bạch: về tiền bạc, bạn có xu hướng thực tế, quyết đoán và giữ kỷ luật tài chính tốt; Vũ Khúc là tài tinh, vì vậy đây là vị trí thuận cho việc kiếm và giữ tiền. Nên dành sẵn một khoản cố định mỗi năm cho học hỏi và các mối quan hệ, để kỷ luật không thành quá cứng.",
+  "noiDung": "Vũ Khúc tại Tài Bạch: về tiền bạc, bạn có xu hướng thực tế, quyết đoán và giữ kỷ luật tài chính tốt; Vũ Khúc là tài tinh, vì vậy đây là vị trí thuận cho việc kiếm và giữ tiền, dù có khi phải bền bỉ một thời gian mới thấy rõ kết quả. Nên dành sẵn một khoản cố định mỗi năm cho học hỏi và các mối quan hệ, để kỷ luật không thành quá cứng.",
   "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
   "truongPhai": "Tam hợp phái Việt",
   "muc": "phong-cach",
   "maNghienCuu": [
    "TAI-VK-01",
    "TAI-VK-02",
+   "TAI-VK-03",
    "TAI-YN-04",
    "CHUNG-CT-VK-01"
   ]
@@ -6096,7 +6098,7 @@
     "Hãm"
    ]
   },
-  "noiDung": "Thiên Phủ tại Tài Bạch khi kém sáng: về tiền bạc, bạn vẫn có xu hướng giữ của, nhưng tài chính dễ có lúc thành lúc bại, chưa thật ổn định. Nên kiểm lại quỹ khẩn cấp mỗi khi chuẩn bị một khoản chi lớn.",
+  "noiDung": "Thiên Phủ tại Tài Bạch khi đồng cung sát tinh (Kình Dương, Đà La, Hỏa Tinh, Linh Tinh, Địa Không, Địa Kiếp): về tiền bạc, bạn vẫn có xu hướng giữ của, nhưng tài chính dễ có lúc thành lúc bại, chưa thật ổn định. Nên kiểm lại quỹ khẩn cấp mỗi khi chuẩn bị một khoản chi lớn.",
   "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
   "truongPhai": "Tam hợp phái Việt",
   "muc": "phong-cach",
@@ -6227,12 +6229,14 @@
     "Hãm"
    ]
   },
-  "noiDung": "Tham Lang tại Tài Bạch khi kém sáng: về tiền bạc, bạn có xu hướng dễ chi nhiều cho vui chơi, hưởng thụ khiến tài chính hay eo hẹp. Nên rủ một người bạn tin cậy cùng đặt mục tiêu tiết kiệm và kiểm tra nhau hằng tháng.",
+  "noiDung": "Tham Lang tại Tài Bạch khi kém sáng: về tiền bạc, bạn có xu hướng dễ chi nhiều cho vui chơi, hưởng thụ, vì vậy tài chính khó dư nếu thiếu kỷ luật chi tiêu. Nên rủ một người bạn tin cậy cùng đặt mục tiêu tiết kiệm và kiểm tra nhau hằng tháng.",
   "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
   "truongPhai": "Tam hợp phái Việt",
   "muc": "phong-cach",
   "maNghienCuu": [
    "TAI-THL-02",
+   "TAI-LT-02",
+   "TAI-TRANH-01",
    "CHUNG-CT-THL-01"
   ]
  },
@@ -6446,7 +6450,7 @@
    ]
   },
   "noiDung": "Thất Sát tại Tài Bạch: về tiền bạc, bạn có xu hướng trước ít sau nhiều, đến tuổi trung niên kiếm tiền nhanh hơn, có lúc có khoản thu bất ngờ. Nên xác định mức thu tối thiểu cần có mỗi tháng và chỉ nhận rủi ro mới khi đã giữ được mức này.",
-  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
   "truongPhai": "Tam hợp phái Việt",
   "muc": "phong-cach",
   "maNghienCuu": [
@@ -6467,7 +6471,7 @@
    ]
   },
   "noiDung": "Thất Sát tại Tài Bạch: về tiền bạc, bạn có xu hướng quyết đoán, dám làm, thu nhập đến theo đợt nhiều hơn là đều đặn. Nên chia mỗi khoản thu theo đợt thành phần chi cho từng tháng tới trước khi tiêu.",
-  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
   "truongPhai": "Tam hợp phái Việt",
   "muc": "phong-cach",
   "maNghienCuu": [
@@ -6487,12 +6491,13 @@
     "Hãm"
    ]
   },
-  "noiDung": "Thất Sát tại Tài Bạch khi kém sáng: về tiền bạc, bạn có xu hướng tài chính hay eo hẹp, dễ quyết nhanh rồi phải xoay xở. Nên chờ ba ngày trước mọi quyết định tiền bạc lớn hơn một tháng thu nhập.",
-  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+  "noiDung": "Thất Sát tại Tài Bạch khi kém sáng: về tiền bạc, bạn có xu hướng quyết nhanh, dám làm, nhưng giai đoạn đầu thường phải tự xoay xở và tài chính hay eo hẹp hơn mong muốn. Nên chờ ba ngày trước mọi quyết định tiền bạc lớn hơn một tháng thu nhập.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
   "truongPhai": "Tam hợp phái Việt",
   "muc": "phong-cach",
   "maNghienCuu": [
    "TAI-TS-02",
+   "TAI-VK-03",
    "CHUNG-CT-TS-01"
   ]
  },
@@ -6552,12 +6557,14 @@
     "Hãm"
    ]
   },
-  "noiDung": "Phá Quân tại Tài Bạch khi kém sáng: về tiền bạc, bạn có xu hướng kiếm tiền vất vả hơn, dễ chi nhiều hơn thu; sách cho rằng hợp nghề thủ công, mỹ thuật. Nên theo dõi chênh lệch thu chi mỗi tháng và cắt khoản chi lớn nhất khi chênh lệch âm.",
+  "noiDung": "Phá Quân tại Tài Bạch khi kém sáng: về tiền bạc, bạn có xu hướng kiếm tiền vất vả hơn và dễ chi nhiều hơn thu. Nên theo dõi chênh lệch thu chi mỗi tháng và cắt khoản chi lớn nhất khi chênh lệch âm.",
   "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
   "truongPhai": "Tam hợp phái Việt",
   "muc": "phong-cach",
   "maNghienCuu": [
    "TAI-PQ-02",
+   "TAI-LT-03",
+   "TAI-VK-04",
    "CHUNG-CT-PQ-01"
   ]
  }
