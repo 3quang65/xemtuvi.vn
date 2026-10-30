@@ -152,7 +152,7 @@ test('trang đích: nội dung ở một file, meta mô tả, không từ cấm'
 test('L-f91bef: lời hứa khớp sản phẩm thật, chủ đề lẻ chỉ 3, gói gộp dừng bán sau 6/2/2027', () => {
   const chu = [...goi.GOI, ...goi.GOI_VAN_NAM].flatMap((g) => g.quyenLoi).join(' | ');
   assert.ok(!/12 cung|bất cứ lúc nào/.test(chu), chu);
-  assert.match(goi.layGoi('tron-la-so').quyenLoi[0], /ba cung trọng yếu/);
+  assert.match(goi.layGoi('tron-la-so').quyenLoi[0], /Luận 5 chủ đề: Bản thân, Tình cảm, Sự nghiệp, Tài chính, Gia đạo/);
   assert.deepEqual(goi.CHU_DE.map((c) => c.ma), ['ban-than', 'tinh-cam', 'su-nghiep']);
   assert.equal(goi.CHU_DE_TAT_CA.length, 3); // L-1786cd: tên hai chủ đề chưa bán nằm ở KhungMoi, không ở goi.ts
   assert.equal(goi.layChuDe('tai-chinh'), undefined);

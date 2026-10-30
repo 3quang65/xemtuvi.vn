@@ -65,7 +65,7 @@ function dungGoi(bang?: BangGia): Goi[] {
     },
     {
       ma: 'tron-la-so', ten: 'Trọn lá số', gia: giaTron, donVi: 'một lần', chinh: true, nhan: 'Khuyên dùng',
-      quyenLoi: ['Luận ba cung trọng yếu (Mệnh, Quan Lộc, Phu Thê) và vận 10 năm hiện tại (đại vận)', 'Mỗi nhận định ghi sao, cung và trường phái', XEM_LAI],
+      quyenLoi: ['Luận 5 chủ đề: Bản thân, Tình cảm, Sự nghiệp, Tài chính, Gia đạo và vận 10 năm', 'Mỗi nhận định ghi sao, cung và trường phái', XEM_LAI],
     },
     {
       ma: 'thanh-vien-nam', ten: 'Thành viên năm', gia: giaNam, donVi: 'một năm', chinh: false,
@@ -90,7 +90,7 @@ function dungGoiVanNam(bang?: BangGia): Goi[] {
     {
       ma: 'tron-la-so-kem-van-nam', ten: 'Trọn lá số + Vận năm 2027', gia: bang?.['tron-la-so-kem-van-nam'] ?? GIA_TRON_LA_SO_KEM_VAN_NAM, donVi: 'một lần', chinh: true, nhan: 'Gộp tiết kiệm hơn',
       banDen: BAN_DEN_GOI_GOP,
-      quyenLoi: ['Toàn bộ Trọn lá số: ba cung trọng yếu và vận 10 năm', 'Cộng luận Vận năm 2027', 'Mỗi nhận định ghi sao, cung và trường phái', XEM_LAI],
+      quyenLoi: ['Toàn bộ Trọn lá số: 5 chủ đề và vận 10 năm', 'Cộng luận Vận năm 2027', 'Mỗi nhận định ghi sao, cung và trường phái', XEM_LAI],
     },
   ];
 }

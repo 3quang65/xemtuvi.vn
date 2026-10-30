@@ -3,7 +3,7 @@
 import { MA_VAN_NAM, type MaChuDe, type MaGoi } from './goi';
 
 export interface QuyenGiaoDien { loai: string; chuDe: string | null; laSoId: number | null }
-export const CHU_DE_TRON: MaChuDe[] = ['ban-than', 'tinh-cam', 'su-nghiep', 'van-10-nam' as MaChuDe];
+export const CHU_DE_TRON: MaChuDe[] = ['ban-than', 'tinh-cam', 'su-nghiep', 'tai-chinh', 'gia-dao', 'van-10-nam' as MaChuDe];
 const SO_LA_SO_THANH_VIEN = 3;
 
 /** Vận năm 2027 của lá số này: mua lẻ/gộp (van_nam) hoặc thành viên năm. Trọn lá số một mình thì không. */

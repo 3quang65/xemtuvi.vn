@@ -10,7 +10,7 @@ test('không quyền → null', () => {
   assert.equal(tongHopQuyen([], 1, [1]), null);
   assert.equal(tongHopQuyen([q('tron_la_so', 2)], 1, [1, 2]), null);
 });
-test('trọn lá số rồi mua thêm chủ đề: vẫn đủ 4 chủ đề (L2)', () => {
+test('trọn lá số rồi mua thêm chủ đề: vẫn đủ 5 chủ đề + vận 10 năm (L2)', () => {
   const r = tongHopQuyen([q('tron_la_so', 1), q('chu_de', 1, 'su-nghiep')], 1, [1]);
   assert.equal(r.goi, 'tron-la-so');
   assert.deepEqual(r.dsChuDe, CHU_DE_TRON);
@@ -41,4 +41,12 @@ test('L1/L2: LuanGiai không phụ thuộc sessionStorage và không dùng quy�
   assert.doesNotMatch(src, /useLaSoDaLuu/);
   assert.doesNotMatch(src, /\.at\(-1\)/);
   assert.match(src, /\/api\/la-so/);
+});
+
+test('B1: trọn lá số và thành viên có đủ 5 chủ đề + vận 10 năm, thêm vận năm nếu có', () => {
+  const nam = ['ban-than', 'tinh-cam', 'su-nghiep', 'tai-chinh', 'gia-dao', 'van-10-nam'];
+  assert.deepEqual(CHU_DE_TRON, nam);
+  assert.deepEqual(tongHopQuyen([q('tron_la_so', 1)], 1, [1]).dsChuDe, nam);
+  assert.deepEqual(tongHopQuyen([q('thanh_vien', null)], 1, [1]).dsChuDe, [...nam, 'van-nam-2027']); // thành viên có sẵn vận năm
+  assert.deepEqual(tongHopQuyen([q('tron_la_so', 1), q('van_nam', 1)], 1, [1]).dsChuDe, [...nam, 'van-nam-2027']);
 });
