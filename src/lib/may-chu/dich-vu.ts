@@ -173,7 +173,7 @@ export function coQuyenXem(db: Csdl, nguoiDungId: number, laSoId: number, chuDe:
       : q.laSoId === laSoId && ((q.loai === 'tron_la_so' && chuDe !== MA_VAN_NAM) || (chuDe !== null && q.chuDe === chuDe)));
 }
 
-/** Xóa tài khoản và dữ liệu: lá số, quyền xem, lượt dùng mã mời, phiên, cờ đồng ý nhận tin (theo tài khoản và theo email), liên hệ trả lời báo lỗi.
+/** Xóa tài khoản và dữ liệu: lá số, quyền xem, lượt dùng mã mời, phiên, cờ đồng ý nhận tin (theo tài khoản và theo email), liên hệ trả lời báo lỗi, hỏi đáp về lá số.
  *  Đơn hàng giữ lại, ẩn danh: bỏ liên kết lá số, tài khoản chỉ còn dòng rỗng (không email, không mã ngoài). */
 export function xoaTaiKhoan(db: Csdl, nguoiDungId: number): void {
   db.transaction(() => {
@@ -182,6 +182,7 @@ export function xoaTaiKhoan(db: Csdl, nguoiDungId: number): void {
     db.prepare('UPDATE don_hang SET la_so_id=NULL WHERE nguoi_dung_id=?').run(nguoiDungId);
     db.prepare('DELETE FROM quyen_xem WHERE nguoi_dung_id=?').run(nguoiDungId);
     db.prepare('DELETE FROM ma_moi_dung WHERE nguoi_dung_id=?').run(nguoiDungId);
+    db.prepare('DELETE FROM hoi_dap WHERE nguoi_dung_id=?').run(nguoiDungId); // câu hỏi/trả lời mã hóa; xóa trước la_so vì có khóa ngoại
     db.prepare('DELETE FROM la_so WHERE nguoi_dung_id=?').run(nguoiDungId);
     db.prepare('DELETE FROM phien WHERE nguoi_dung_id=?').run(nguoiDungId);
     const e = nd.email?.toLowerCase() ?? null;

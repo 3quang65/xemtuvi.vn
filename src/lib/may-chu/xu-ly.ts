@@ -6,6 +6,7 @@ import { kiemTraThongTin, type ThongTinSinh } from '../tuvi';
 import type { MayChu } from './csdl';
 import * as dv from './dich-vu';
 import { luanGiaiChoKhach } from './luan-giai-may-chu';
+import { hoiLaSo, lichSuHoi } from './hoi-dap';
 import { choPhepToanSite, choPhepTheoNguon, kiemTraBaoLoi, luuBaoLoi } from './bao-loi';
 import { chuanHoa, huyLienHe, lamSachNguon, luuLienHe } from './lien-he';
 import { huyNhanTin, luuNhanTin } from './nhan-tin';
@@ -201,6 +202,29 @@ export async function luanGiai(req: Request, m: MayChu) {
     return loi(500, 'loi_may_chu', 'Chưa tạo được luận giải, vui lòng thử lại.');
   }
 }
+
+/** GET /api/hoi-dap?laSoId= : lịch sử hỏi đáp, số câu còn lại, ngày làm mới. Chỉ Thành viên năm (lá số trong 3 lá số đầu); khác 403. */
+export function hoiDapDoc(req: Request, m: MayChu) {
+  const id = nguoiDung(req, m); if (!id) return canDangNhap();
+  const laSo = Number(new URL(req.url).searchParams.get('laSoId'));
+  if (!Number.isInteger(laSo) || laSo <= 0) return loi(400, 'du_lieu_sai', 'Thiếu lá số.');
+  try { return json(lichSuHoi(m.db, m.khoa, id, laSo)); } catch (e) {
+    if (e instanceof dv.LoiNghiepVu) return loi(e.trangThai, e.ma, e.message);
+    throw e;
+  }
+}
+
+/** POST /api/hoi-dap {laSoId, cau}: trả lời ghép từ nhận định có mã quy tắc; chỉ trừ lượt khi trả lời được. Câu 6 trong tháng → 429 het_luot. */
+export const hoiDapGhi = (req: Request, m: MayChu) => chay(req, async () => {
+  const id = nguoiDung(req, m); if (!id) return canDangNhap();
+  const b = await doc(req);
+  if (!b || !Number.isInteger(b.laSoId)) return loi(400, 'du_lieu_sai', 'Dữ liệu không hợp lệ.');
+  try { return json(await hoiLaSo(m.db, m.khoa, id, b.laSoId as number, b.cau)); } catch (e) {
+    if (e instanceof dv.LoiNghiepVu) return loi(e.trangThai, e.ma, e.message);
+    ghiLoi('loi', '/api/hoi-dap', 'tra_loi_that_bai', e instanceof Error ? e.message : 'không rõ'); // không ghi câu hỏi/câu trả lời
+    return loi(500, 'loi_may_chu', 'Chưa trả lời được, vui lòng thử lại. Lượt hỏi của bạn không bị trừ.');
+  }
+});
 
 /** POST /api/lien-he {loai, giaTri, dongY:true, nguon?}: không đồng ý (khác đúng true) thì không lưu gì. */
 export const lienHeGhi = (req: Request, m: MayChu) => chay(req, async () => {
