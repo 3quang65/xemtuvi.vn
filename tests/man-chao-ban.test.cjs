@@ -52,7 +52,8 @@ const docSrc = (dir) => fs.readdirSync(dir, { withFileTypes: true }).flatMap((e)
   return e.isDirectory() ? docSrc(p) : /\.(tsx?|json)$/.test(e.name) ? [p] : [];
 });
 const SRC = path.join(__dirname, '../src');
-const GIAO_DIEN = docSrc(SRC).filter((f) => !f.includes(`${path.sep}tuvi${path.sep}`));
+// tu-cam.json là danh sách từ bị CẤM (không hiện cho khách) nên phải liệt kê chính các từ đó.
+const GIAO_DIEN = docSrc(SRC).filter((f) => !f.includes(`${path.sep}tuvi${path.sep}`) && !f.endsWith('tu-cam.json'));
 
 test('Một nguồn giá: không trang nào ghi số tiền ngoài src/lib/goi.ts', () => {
   for (const f of GIAO_DIEN) {
