@@ -104,7 +104,7 @@ export function taoDon(db: Csdl, nguoiDungId: number, v: { maGoi: unknown; chuDe
   const goi = layGoi(typeof v.maGoi === 'string' ? v.maGoi : null, v.bang);
   if (!goi) throw new LoiNghiepVu('goi_sai', 'Gói không tồn tại.');
   if (goi.an && process.env.MO_GOI_AN !== '1') throw new LoiNghiepVu('goi_an', 'Gói này chưa mở bán.'); // MO_GOI_AN=1 chỉ để chạy test luồng nâng gói
-  if (laGoiVan2027(goi.ma) && !cuaBanVan2027Mo(bayGio)) throw new LoiNghiepVu('chua_mo_ban', 'Gói này chưa mở bán.');
+  if (laGoiVan2027(goi.ma) && !cuaBanVan2027Mo(bayGio, undefined, goi.ma)) throw new LoiNghiepVu('chua_mo_ban', 'Gói này chưa mở bán.');
   if (!conHanBan(goi, bayGio)) throw new LoiNghiepVu('het_han_ban', 'Gói này đã dừng bán.');
   let chuDe: string | null = null;
   if (goi.ma === 'mot-chu-de') {
