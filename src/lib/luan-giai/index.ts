@@ -144,8 +144,10 @@ function cauCuaLaSo(ls: LaSo, namXem = new Date().getFullYear()): { cau: CauTomT
     return c.chinhTinh.length ? `${lietKe(c.chinhTinh.map((s) => s.ten))} ở ${ten}` : `${ten} vô chính diệu`;
   };
   const dan = `Bản chuyên sâu xét tiếp thế tam hợp chiếu về Mệnh: ${moTa('Quan Lộc')}, ${moTa('Tài Bạch')}, ${moTa('Thiên Di')} (xung chiếu), cùng đại vận từng giai đoạn.`;
-  const daXet = [...new Set(cau.map((c) => c.nhan.replace(/ \(.*?\)/g, '').replace(/^Mượn /, '').replace(/ (thủ|đi cùng|đồng cung|án ngữ|từ|tại).*$/, '')))];
-  const ghiChu = `Các câu trên do hệ thống chọn từ bộ quy tắc luận giải theo ${lietKe(daXet)} trong lá số của bạn; chưa xét hợp chiếu và vận hạn.`;
+  // Bỏ phần ngoặc kể cả ngoặc lồng, vd "Thân cư Tài Bạch (Vũ Khúc (Miếu))": bỏ ngoặc trong trước để không sót ')'.
+  const boNgoac = (s: string) => { let t = s; while (/ ?\([^()]*\)/.test(t)) t = t.replace(/ ?\([^()]*\)/g, ''); return t; };
+  const daXet = [...new Set(cau.map((c) => boNgoac(c.nhan).replace(/^Mượn /, '').replace(/ (thủ|đi cùng|đồng cung|án ngữ|từ|tại).*$/, '')))];
+  const ghiChu = `Các câu trên do hệ thống chọn từ bộ quy tắc luận giải theo ${lietKe(daXet)} trong lá số của bạn. Phần tóm tắt chỉ đọc cung Mệnh và cung an Thân, chưa xét đủ thế tam hợp chiếu; diễn biến từng giai đoạn 10 năm xem ở mục Vận 10 năm.`;
   return { cau, dan, ghiChu };
 }
 
