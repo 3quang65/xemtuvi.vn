@@ -84,7 +84,6 @@ test('bao-loi lien-he: ô khách điền > liên hệ đã đồng ý; đã hủ
 });
 
 test('HTTP: gửi có/không liên hệ rồi đọc được bằng lệnh', async () => {
-  bl.xoaBoDemNguon();
   const M = { db: moCsdl(':memory:'), khoa: taoBoKhoa('khoa-tam-chi-dung-cho-test-0123456789') };
   const post = (b) => new Request('https://t.test/api/bao-loi', { method: 'POST', headers: { host: 't.test', origin: 'https://t.test', 'content-type': 'application/json', 'x-forwarded-for': '2.2.2.2' }, body: JSON.stringify(b) });
   assert.equal((await x.baoLoiGhi(post({ ...OK, lienHe: '0912345678' }), M)).status, 201);

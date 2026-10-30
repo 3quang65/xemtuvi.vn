@@ -39,7 +39,7 @@ test('kiemTraBaoLoi: thiếu/ngắn/quá dài/mã đơn lạ bị từ chối; t
 });
 
 test('HTTP: lưu đúng; sai nguồn 403; dữ liệu sai 400, không lưu', async () => {
-  bl.xoaBoDemNguon();
+  bl.xoaBoDemNguon(M.db);
   const r = await x.baoLoiGhi(post(OK), M);
   assert.equal(r.status, 201);
   const d = M.db.prepare('SELECT * FROM bao_loi').get();
@@ -51,17 +51,32 @@ test('HTTP: lưu đúng; sai nguồn 403; dữ liệu sai 400, không lưu', asy
 });
 
 test('chống gửi dồn: nguồn thứ 6 trong 10 phút bị 429; nguồn khác vẫn gửi được; hết cửa sổ gửi lại được', async () => {
-  bl.xoaBoDemNguon();
+  bl.xoaBoDemNguon(M.db);
   const truoc = dem();
   for (let i = 0; i < 5; i++) assert.equal((await x.baoLoiGhi(post(OK, { ip: '9.9.9.9' }), M)).status, 201);
   const r = await x.baoLoiGhi(post(OK, { ip: '9.9.9.9' }), M);
   assert.equal(r.status, 429);
   assert.equal(dem(), truoc + 5);
   assert.equal((await x.baoLoiGhi(post(OK, { ip: '8.8.8.8' }), M)).status, 201);
-  assert.equal(bl.choPhepTheoNguon('7.7.7.7', 0), true);
-  for (let i = 0; i < 4; i++) bl.choPhepTheoNguon('7.7.7.7', 1000 + i);
-  assert.equal(bl.choPhepTheoNguon('7.7.7.7', 5000), false);
-  assert.equal(bl.choPhepTheoNguon('7.7.7.7', 11 * 60_000), true);
+  const db = M.db;
+  assert.equal(bl.choPhepTheoNguon(db, '7.7.7.7', 0), true);
+  for (let i = 0; i < 4; i++) bl.choPhepTheoNguon(db, '7.7.7.7', 1000 + i);
+  assert.equal(bl.choPhepTheoNguon(db, '7.7.7.7', 5000), false);
+  assert.equal(bl.choPhepTheoNguon(db, '7.7.7.7', 11 * 60_000), true);
+});
+
+test('bộ đếm chống gửi dồn bền qua restart: mở lại cùng tệp DB vẫn đếm; không lưu địa chỉ gốc', () => {
+  const os = require('node:os'); const fs = require('node:fs'); const path = require('node:path');
+  const tep = path.join(fs.mkdtempSync(path.join(os.tmpdir(), 'nguon-')), 'a.db');
+  const db1 = moCsdl(tep);
+  for (let i = 0; i < 5; i++) assert.equal(bl.choPhepTheoNguon(db1, '5.5.5.5', 1000 + i), true);
+  db1.close();
+  const db2 = moCsdl(tep); // như khởi động lại tiến trình
+  assert.equal(bl.choPhepTheoNguon(db2, '5.5.5.5', 2000), false);
+  assert.equal(bl.choPhepTheoNguon(db2, '6.6.6.6', 2000), true);
+  assert.ok(!JSON.stringify(db2.prepare('SELECT * FROM nguon_gui').all()).includes('5.5.5.5'));
+  assert.equal(bl.choPhepTheoNguon(db2, '5.5.5.5', 11 * 60_000), true);
+  db2.close();
 });
 
 test('trần toàn site: đủ 200 báo lỗi trong giờ thì từ chối', () => {

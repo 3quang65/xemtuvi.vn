@@ -47,16 +47,23 @@ export function nhomCauHoi(cong: boolean = CONG_BO_GIA): Nhom[] {
 // ---------- Tám thông báo lỗi ----------
 export type MaLoi = 'E01' | 'E02' | 'E03' | 'E04' | 'E05' | 'E06' | 'E07' | 'E08';
 export type HanhDong = 'dien-tiep' | 'sua-ngay' | 'sua-gio' | 'cach-tim-gio' | 'tai-lai' | 'gui-bao-loi' | 'thu-lai' | 'xem-luan-giai' | 'xem-don';
-export interface Bien { tenOThieu?: string; maDon?: string; tenGoi?: string }
+export interface Bien { tenOThieu?: string; maDon?: string; tenGoi?: string; lich?: 'duong' | 'am'; nhuan?: boolean }
 export interface ThongBaoLoi { tieuDe: string; noiDung: string; nut: { nhan: string; hanhDong: HanhDong }[] }
 
 const nut = (nhan: string, hanhDong: HanhDong) => ({ nhan, hanhDong });
 const donCuaToi = (b: Bien) => (b.maDon ? `Đơn ${b.maDon}` : 'Đơn của bạn');
 
+/** E02 nói đúng loại lịch khách đang nhập: tháng nhuận âm lịch, âm lịch thường, hoặc dương lịch (mặc định). */
+function noiDungE02(b: Bien): string {
+  if (b.lich === 'am' && b.nhuan) return 'Năm này không có tháng nhuận như bạn đã chọn (âm lịch chỉ nhuận một số năm). Bạn bỏ chọn "Tháng nhuận" hoặc kiểm tra lại tháng, năm giúp mình nhé.';
+  if (b.lich === 'am') return 'Ngày âm lịch bạn vừa nhập chưa khớp (mỗi tháng âm lịch chỉ có 29 hoặc 30 ngày, năm cần trong khoảng 1900–2100). Bạn kiểm tra lại ngày, tháng, năm giúp mình nhé.';
+  return 'Ngày bạn vừa nhập chưa khớp lịch dương (ví dụ ngày 31 của tháng 4, hoặc năm ngoài khoảng 1900–2100). Bạn kiểm tra lại ngày, tháng, năm giúp mình nhé.';
+}
+
 export function thongBaoLoi(ma: MaLoi, b: Bien = {}): ThongBaoLoi {
   switch (ma) {
     case 'E01': return { tieuDe: 'Còn một chút thông tin nữa', noiDung: `Mình cần thêm ${b.tenOThieu || 'thông tin còn thiếu'} để lập lá số cho bạn. Các ô khác bạn đã nhập vẫn được giữ nguyên.`, nut: [nut('Điền tiếp', 'dien-tiep')] };
-    case 'E02': return { tieuDe: 'Mình chưa đọc được ngày này', noiDung: 'Ngày bạn vừa nhập chưa khớp lịch dương (ví dụ ngày 31 của tháng 4, hoặc năm ngoài khoảng 1900–2100). Bạn kiểm tra lại ngày, tháng, năm giúp mình nhé.', nut: [nut('Sửa ngày sinh', 'sua-ngay')] };
+    case 'E02': return { tieuDe: 'Mình chưa đọc được ngày này', noiDung: noiDungE02(b), nut: [nut('Sửa ngày sinh', 'sua-ngay')] };
     case 'E03': return { tieuDe: 'Giờ sinh chưa đúng khung', noiDung: 'Giờ sinh cần nằm trong khoảng từ 00:00 đến 23:59. Nếu bạn không nhớ chính xác, thử hỏi người nhà hoặc xem giấy khai sinh. Giờ sinh quyết định cung Mệnh nên mình muốn bạn có số liệu đúng nhất.', nut: [nut('Sửa giờ sinh', 'sua-gio'), nut('Cách tìm giờ sinh', 'cach-tim-gio')] };
     case 'E04': return { tieuDe: 'Lá số chưa hiện ra được', noiDung: 'Có trục trặc khi lập lá số, lỗi nằm ở phía chúng mình chứ không phải thông tin của bạn. Bạn thử tải lại một lần; dữ liệu đã nhập vẫn được giữ khi bạn tải lại trong cùng thẻ. Nếu vẫn chưa hiện, gửi báo lỗi để mình ghi nhận và chuyển đội xử lý.', nut: [nut('Tải lại', 'tai-lai'), nut('Gửi báo lỗi', 'gui-bao-loi')] };
     case 'E05': return { tieuDe: 'Bước mua thử chưa hoàn tất', noiDung: 'Bước thanh toán thử bị gián đoạn. Chưa có khoản tiền thật nào bị trừ, vì đây là bước giả lập. Bạn đợi vài giây rồi thử lại một lần; nếu vẫn lỗi, gửi báo lỗi kèm ảnh chụp màn hình.', nut: [nut('Thử lại', 'thu-lai'), nut('Gửi báo lỗi', 'gui-bao-loi')] };

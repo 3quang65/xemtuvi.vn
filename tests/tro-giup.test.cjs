@@ -47,6 +47,16 @@ test('tám thông báo: đủ E01–E08, không mã lỗi kỹ thuật, không h
   }
 });
 
+test('E02 nói đúng tình huống: tháng nhuận âm lịch không nhắc lịch dương', () => {
+  const nhuan = tg.thongBaoLoi('E02', { lich: 'am', nhuan: true }).noiDung;
+  assert.match(nhuan, /tháng nhuận/i); assert.doesNotMatch(nhuan, /lịch dương/);
+  const am = tg.thongBaoLoi('E02', { lich: 'am' }).noiDung;
+  assert.match(am, /âm lịch/); assert.doesNotMatch(am, /lịch dương/);
+  assert.match(tg.thongBaoLoi('E02', { lich: 'duong' }).noiDung, /lịch dương/);
+  const l = ln.phanLoaiLoiNhap({ gioiTinh: 'nam', lich: 'am', nhuan: true, ngay: 31, thang: 4, nam: 1990, gio: 5 });
+  assert.deepEqual([l.ma, l.lich, l.nhuan], ['E02', 'am', true]);
+});
+
 test('E02 ghi năm 1900–2100 và không nhắc lại ngày khách nhập; E08 dùng câu đã sửa', () => {
   assert.match(tg.thongBaoLoi('E02').noiDung, /1900–2100/);
   assert.doesNotMatch(tg.thongBaoLoi('E02').noiDung, /\d{1,2}\/\d{1,2}/);

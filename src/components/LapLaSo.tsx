@@ -66,7 +66,7 @@ export default function LapLaSo() {
       requestAnimationFrame(() => ketQuaRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }));
     } catch {
       setLaSo(null); setTt(null);
-      if (t.lich === 'am') { setHong(null); setLoi({ ma: 'E02', o: 'ngay' }); return; }
+      if (t.lich === 'am') { setHong(null); setLoi({ ma: 'E02', o: 'ngay', lich: 'am', nhuan: !!t.nhuan }); return; }
       luuThongTinSinh(t); // tải lại trong cùng thẻ vẫn còn
       setHong(t);
     }
@@ -87,7 +87,7 @@ export default function LapLaSo() {
       mienNamTruoc1975: hienMienNam && f.mienNam,
       quyUoc: hienTyMuon && f.giuNgayTyMuon ? { gioTyMuon: 'giuNgay' } : undefined,
     };
-    const l = phanLoaiLoiNhap(t) ?? (kiemTraThongTin(t) ? ({ ma: 'E02', o: 'ngay' } as LoiNhap) : null);
+    const l = phanLoaiLoiNhap(t) ?? (kiemTraThongTin(t) ? ({ ma: 'E02', o: 'ngay', lich: t.lich === 'am' ? 'am' : 'duong', nhuan: t.lich === 'am' && !!t.nhuan } as LoiNhap) : null);
     if (l) { setLoi(l); setHong(null); requestAnimationFrame(() => document.getElementById(`loi-${l.o}`)?.scrollIntoView({ block: 'center' })); return; }
     lapTu(t as ThongTinSinh);
   }
@@ -97,7 +97,7 @@ export default function LapLaSo() {
   const moTa = (o: OLoi) => (loi?.o === o ? `loi-${o}` : undefined);
   const loiO = (o: OLoi) => loi && loi.o === o ? (
     <ThongBaoLoi
-      id={`loi-${o}`} ma={loi.ma} bien={{ tenOThieu: loi.thieu ? noiTen(loi.thieu) : undefined }}
+      id={`loi-${o}`} ma={loi.ma} bien={{ tenOThieu: loi.thieu ? noiTen(loi.thieu) : undefined, lich: loi.lich, nhuan: loi.nhuan }}
       nut={{ 'dien-tiep': () => veO(o), 'sua-ngay': () => veO('ngay'), 'sua-gio': () => veO('gio'), 'cach-tim-gio': '/tro-giup#cau-2' }}
     />
   ) : null;

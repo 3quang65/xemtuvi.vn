@@ -3,7 +3,7 @@
 import type { ThongTinSinh } from './tuvi';
 
 export type OLoi = 'gioiTinh' | 'ngay' | 'gio';
-export interface LoiNhap { ma: 'E01' | 'E02' | 'E03'; o: OLoi; thieu?: string[] }
+export interface LoiNhap { ma: 'E01' | 'E02' | 'E03'; o: OLoi; thieu?: string[]; lich?: 'duong' | 'am'; nhuan?: boolean }
 
 const co = (n: unknown) => typeof n === 'number' && Number.isFinite(n) && n !== 0;
 
@@ -15,10 +15,11 @@ export function phanLoaiLoiNhap(t: Partial<ThongTinSinh>): LoiNhap | null {
   if (thieu.length) return { ma: 'E01', o: thieu[0].o, thieu: thieu.map((x) => x.ten) };
 
   const { ngay, thang, nam, gio } = t as { ngay: number; thang: number; nam: number; gio: number };
-  if (!Number.isInteger(nam) || nam < 1900 || nam > 2100 || !Number.isInteger(thang) || thang < 1 || thang > 12 || !Number.isInteger(ngay) || ngay < 1 || ngay > 31) return { ma: 'E02', o: 'ngay' };
+  const e02 = (): LoiNhap => ({ ma: 'E02', o: 'ngay', lich: t.lich === 'am' ? 'am' : 'duong', nhuan: t.lich === 'am' && !!t.nhuan });
+  if (!Number.isInteger(nam) || nam < 1900 || nam > 2100 || !Number.isInteger(thang) || thang < 1 || thang > 12 || !Number.isInteger(ngay) || ngay < 1 || ngay > 31) return e02();
   if (t.lich === 'duong') {
-    if (new Date(Date.UTC(nam, thang - 1, ngay)).getUTCDate() !== ngay) return { ma: 'E02', o: 'ngay' };
-  } else if (ngay > 30) return { ma: 'E02', o: 'ngay' };
+    if (new Date(Date.UTC(nam, thang - 1, ngay)).getUTCDate() !== ngay) return e02();
+  } else if (ngay > 30) return e02();
   if (!Number.isInteger(gio) || gio < 0 || gio > 23) return { ma: 'E03', o: 'gio' };
   if (t.phut != null && (!Number.isInteger(t.phut) || t.phut < 0 || t.phut > 59)) return { ma: 'E03', o: 'gio' };
   return null;

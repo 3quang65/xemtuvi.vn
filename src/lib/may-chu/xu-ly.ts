@@ -289,7 +289,7 @@ export const maMoiDung = (req: Request, m: MayChu) => chay(req, async () => {
   return json({ ok: true, chuDe: kq.chuDe });
 });
 
-/** Nguồn gửi để chống gửi dồn: địa chỉ do Cloudflare/nginx đặt; chỉ dùng làm khóa đếm trong bộ nhớ, không lưu. */
+/** Nguồn gửi để chống gửi dồn: địa chỉ do Cloudflare/nginx đặt; chỉ lưu dạng băm làm khóa đếm (bảng nguon_gui), không lưu địa chỉ gốc. */
 const nguonGui = (req: Request) => req.headers.get('cf-connecting-ip') ?? req.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ?? 'khong-ro';
 
 /** POST /api/bao-loi {moTa, maDon?, goi?, thietBi?, gioKhach?, tinhHuong?}: lưu báo lỗi/góp ý. Không nhận ngày giờ sinh. */
@@ -297,7 +297,7 @@ export const baoLoiGhi = (req: Request, m: MayChu) => chay(req, async () => {
   const b = await doc(req);
   const kq = kiemTraBaoLoi(b);
   if (!kq.ok) return json({ loi: 'du_lieu_sai', truong: kq.truong, thongDiep: kq.thongDiep }, 400);
-  if (!choPhepTheoNguon(nguonGui(req)) || !choPhepToanSite(m.db)) return loi(429, 'gui_don', 'Bạn gửi hơi nhanh. Chờ ít phút rồi gửi lại giúp mình nhé.');
+  if (!choPhepTheoNguon(m.db, nguonGui(req)) || !choPhepToanSite(m.db)) return loi(429, 'gui_don', 'Bạn gửi hơi nhanh. Chờ ít phút rồi gửi lại giúp mình nhé.');
   luuBaoLoi(m.db, kq.v, nguoiDung(req, m));
   return json({ ok: true }, 201);
 });

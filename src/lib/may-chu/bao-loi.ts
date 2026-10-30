@@ -1,5 +1,6 @@
 // Báo lỗi / góp ý của khách (trang /tro-giup#bao-loi). Kiểm dữ liệu, giới hạn độ dài, chống gửi dồn.
 // Cố ý KHÔNG có trường ngày giờ sinh; trường nào ngoài danh sách bị bỏ.
+import { createHash } from 'node:crypto';
 import type { Csdl } from './csdl';
 import { chuanHoa } from './lien-he';
 
@@ -49,17 +50,22 @@ export function kiemTraBaoLoi(b: unknown): KetQuaKiem {
   };
 }
 
-/** Bộ đếm theo nguồn (trong bộ nhớ tiến trình; mất khi khởi động lại là chấp nhận được). */
-const lanGui = new Map<string, number[]>();
-export function choPhepTheoNguon(nguon: string, bayGio = Date.now()): boolean {
-  const moc = bayGio - TOC_DO.cuaSoNguon;
-  const ds = (lanGui.get(nguon) ?? []).filter((t) => t > moc);
-  if (ds.length >= TOC_DO.moiNguon) { lanGui.set(nguon, ds); return false; }
-  ds.push(bayGio); lanGui.set(nguon, ds);
-  if (lanGui.size > 5000) for (const [k, v] of lanGui) if (!v.some((t) => t > moc)) lanGui.delete(k);
-  return true;
+/**
+ * Bộ đếm theo nguồn, lưu bảng nguon_gui (bền qua khởi động lại). Chỉ lưu băm SHA-256 của nguồn, không lưu địa chỉ gốc;
+ * dòng quá cửa sổ bị xóa mỗi lần kiểm.
+ */
+const bamNguon = (nguon: string) => createHash('sha256').update(nguon).digest('hex').slice(0, 32);
+export function choPhepTheoNguon(db: Csdl, nguon: string, bayGio = Date.now()): boolean {
+  const k = bamNguon(nguon);
+  return db.transaction(() => {
+    db.prepare('DELETE FROM nguon_gui WHERE luc <= ?').run(bayGio - TOC_DO.cuaSoNguon);
+    const n = (db.prepare('SELECT COUNT(*) n FROM nguon_gui WHERE khoa = ?').get(k) as { n: number }).n;
+    if (n >= TOC_DO.moiNguon) return false;
+    db.prepare('INSERT INTO nguon_gui (khoa, luc) VALUES (?, ?)').run(k, bayGio);
+    return true;
+  }).immediate();
 }
-export const xoaBoDemNguon = () => lanGui.clear();
+export const xoaBoDemNguon = (db: Csdl) => { db.prepare('DELETE FROM nguon_gui').run(); };
 
 export function choPhepToanSite(db: Csdl, bayGio = Date.now()): boolean {
   const n = (db.prepare('SELECT COUNT(*) n FROM bao_loi WHERE tao_luc > ?').get(bayGio - TOC_DO.cuaSoSite) as { n: number }).n;
