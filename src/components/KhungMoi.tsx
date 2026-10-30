@@ -2,12 +2,12 @@
 
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { CHU_DE } from '@/lib/goi';
+import { CHU_DE_TAT_CA } from '@/lib/goi';
 import DangNhapMa from './DangNhapMa';
 import { docMaMoi, docThongTinSinh, guiSuKien, maPhien } from '@/lib/phien';
 
 interface Kiem { hopLe: boolean; nguon?: string; gopYUrl?: string; chuDe: string[]; dangNhap: boolean; daDung: boolean }
-const TEN: Record<string, string> = { ...Object.fromEntries(CHU_DE.map((c) => [c.ma, c.ten])), 'van-nam-2027': 'Vận năm 2027 (Bản thử)' };
+const TEN: Record<string, string> = { ...Object.fromEntries(CHU_DE_TAT_CA.map((c) => [c.ma, c.ten])), 'van-nam-2027': 'Vận năm 2027 (Bản thử)' };
 
 async function api<T>(duong: string, body?: unknown): Promise<T> {
   const r = await fetch(duong, body === undefined ? { cache: 'no-store' } : { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });

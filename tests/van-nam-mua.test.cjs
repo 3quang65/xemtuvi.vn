@@ -148,3 +148,24 @@ test('trang đích: nội dung ở một file, meta mô tả, không từ cấm'
   const page = fs.readFileSync(path.join(__dirname, '../src/app/lp/van-nam-2027/page.tsx'), 'utf8');
   assert.match(page, /description/);
 });
+
+test('L-f91bef: lời hứa khớp sản phẩm thật, chủ đề lẻ chỉ 3, gói gộp dừng bán sau 6/2/2027', () => {
+  const chu = [...goi.GOI, ...goi.GOI_VAN_NAM].flatMap((g) => g.quyenLoi).join(' | ');
+  assert.ok(!/12 cung|bất cứ lúc nào/.test(chu), chu);
+  assert.match(goi.layGoi('tron-la-so').quyenLoi[0], /ba cung trọng yếu/);
+  assert.deepEqual(goi.CHU_DE.map((c) => c.ma), ['ban-than', 'tinh-cam', 'su-nghiep']);
+  assert.equal(goi.CHU_DE_TAT_CA.length, 5);
+  assert.equal(goi.layChuDe('tai-chinh'), undefined);
+  const gop = goi.layGoi('tron-la-so-kem-van-nam');
+  assert.equal(gop.banDen, '2027-02-06');
+  assert.ok(goi.conHanBan(gop, Date.parse('2027-02-06T23:59:00+07:00')));
+  assert.ok(!goi.conHanBan(gop, Date.parse('2027-02-07T00:00:00+07:00')));
+  assert.equal(goi.goiDangBan(goi.GOI_VAN_NAM, Date.parse('2027-02-07T08:00:00+07:00')).length, 1);
+  assert.match(goi.DIEU_KIEN_XEM_LAI, /365 ngày/);
+});
+
+test('máy chủ từ chối gói gộp sau ngày dừng, từ chối chủ đề lẻ chưa bán', () => {
+  const nd = M.db.prepare("INSERT INTO nguoi_dung (nha_cung_cap, ma_ngoai, email, tao_luc) VALUES ('thu','hh','hh@example.vn',0)").run().lastInsertRowid;
+  assert.throws(() => dv.taoDon(M.db, Number(nd), { maGoi: 'tron-la-so-kem-van-nam', laSoId: 1 }, 'gia_lap', Date.parse('2027-02-07T00:00:01+07:00')), /dừng bán/);
+  assert.throws(() => dv.taoDon(M.db, Number(nd), { maGoi: 'mot-chu-de', chuDe: 'gia-dao', laSoId: 1 }), /chủ đề hợp lệ/);
+});

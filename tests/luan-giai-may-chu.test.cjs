@@ -86,10 +86,10 @@ test('trọn lá số: mọi chuyên đề có nội dung, kể cả Tài chính
   assert.ok(tc.muc.length && gd.muc.length, 'có ít nhất một mục luận');
 });
 
-test('mua lẻ Tài chính: người đã mua xem được (200), người chưa mua bị chặn (403)', async () => {
-  const a = await khach('tc-mua@example.vn', 'mot-chu-de', { chuDe: 'tai-chinh' });
-  assert.equal((await lay(a, 'tai-chinh')).status, 200);
-  assert.equal((await lay(a, 'gia-dao')).status, 403);
+test('mua lẻ chủ đề đang bán: người đã mua xem được (200), chủ đề khác bị chặn (403)', async () => {
+  const a = await khach('tc-mua@example.vn', 'mot-chu-de', { chuDe: 'su-nghiep' });
+  assert.equal((await lay(a, 'su-nghiep')).status, 200);
+  assert.equal((await lay(a, 'tinh-cam')).status, 403);
 });
 
 test('bộ nhớ đệm: lưu mã hóa, lần hai đọc từ đệm, kết quả giống hệt', async () => {

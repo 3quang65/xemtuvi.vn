@@ -13,6 +13,7 @@ export interface Goi {
   nhan?: string; // nhãn trên thẻ gói
   an?: boolean; // gói ẩn: không hiện ở /chon-goi, /tro-giup; máy chủ không nhận đơn (dữ liệu giữ nguyên)
   soSanh?: string[]; // so sánh có thật, hiện dưới giá
+  banDen?: string; // ngày dừng bán 'YYYY-MM-DD' (hết ngày đó, giờ Việt Nam): sau đó ẩn và máy chủ không nhận đơn
   quyenLoi: string[];
 }
 
@@ -33,10 +34,18 @@ export const giaHienThi = (d: number, cong: boolean = CONG_BO_GIA) => (cong ? di
 /** Trần số tiền trừ khi nâng lên Thành viên năm (bằng giá Trọn lá số, vì gói năm đã gồm Trọn lá số). */
 export const TRAN_TRU_NANG_GOI = GIA_TRON_LA_SO;
 
+/** Điều kiện xem lại phần đã mua (L-f91bef): dùng chung cho trang tài khoản, email, trang giá. */
+export const DIEU_KIEN_XEM_LAI =
+  'Phần đã mua gắn với tài khoản và lá số của bạn. Mở một chủ đề, Trọn lá số, Vận năm 2027: xem lại không giới hạn thời gian mỗi khi đăng nhập. ' +
+  'Thành viên năm: xem trong 365 ngày kể từ ngày thanh toán, áp dụng cho 3 lá số đầu tiên trong tài khoản. ' +
+  'Nếu bạn xóa tài khoản, lá số và quyền xem bị xóa theo, không khôi phục được.';
+const XEM_LAI = 'Xem lại không thời hạn khi đăng nhập tài khoản';
+
 // Chuyên đề "Vận năm 2027" (mã chuyên đề van-nam-2027). Giá nháp, CHỜ An/anh chốt. Không giá gạch, không đếm ngược.
 export const MA_VAN_NAM = 'van-nam-2027';
 export const GIA_VAN_NAM_2027 = 39000; // mua lẻ cho một lá số
 export const GIA_TRON_LA_SO_KEM_VAN_NAM = 129000; // gộp Trọn lá số + Vận năm 2027 cho cùng một lá số
+export const BAN_DEN_GOI_GOP = '2027-02-06'; // gói gộp bán 15/12/2026–6/2/2027 (gia-van-nam-2027_v2)
 
 /** Bảng giá nhánh thử: mã gói -> giá (đồng). Gói không có trong bảng giữ giá hiện hành. */
 export type BangGia = Partial<Record<MaGoi, number>>;
@@ -49,11 +58,11 @@ function dungGoi(bang?: BangGia): Goi[] {
   return [
     {
       ma: 'mot-chu-de', ten: 'Mở một chủ đề', gia: gia('mot-chu-de', 29000), donVi: 'một lần', chinh: false,
-      quyenLoi: ['Luận sâu một chủ đề bạn chọn', 'Ghi rõ sao, cung và nguồn sách'],
+      quyenLoi: ['Luận sâu một chủ đề bạn chọn: Bản thân, Tình cảm hoặc Sự nghiệp', 'Ghi rõ sao, cung và nguồn sách', XEM_LAI],
     },
     {
       ma: 'tron-la-so', ten: 'Trọn lá số', gia: giaTron, donVi: 'một lần', chinh: true, nhan: 'Khuyên dùng',
-      quyenLoi: ['Luận đủ 12 cung và vận 10 năm hiện tại (đại vận)', 'Mỗi nhận định ghi sao, cung và trường phái', 'Xem lại bất cứ lúc nào'],
+      quyenLoi: ['Luận ba cung trọng yếu (Mệnh, Quan Lộc, Phu Thê) và vận 10 năm hiện tại (đại vận)', 'Mỗi nhận định ghi sao, cung và trường phái', XEM_LAI],
     },
     {
       ma: 'thanh-vien-nam', ten: 'Thành viên năm', gia: giaNam, donVi: 'một năm', chinh: false,
@@ -74,11 +83,12 @@ function dungGoiVanNam(bang?: BangGia): Goi[] {
   return [
     {
       ma: 'van-nam-2027', ten: 'Vận năm 2027 (Đinh Mùi)', gia: bang?.['van-nam-2027'] ?? GIA_VAN_NAM_2027, donVi: 'một lần', chinh: false,
-      quyenLoi: ['Luận năm Đinh Mùi cho lá số của bạn: tổng quan, bốn mảng, 12 tháng', 'Ghi rõ sao, cung và nguồn sách', 'Xem lại bất cứ lúc nào'],
+      quyenLoi: ['Luận năm Đinh Mùi cho lá số của bạn: tổng quan, bốn mảng, 12 tháng', 'Ghi rõ sao, cung và nguồn sách', XEM_LAI],
     },
     {
       ma: 'tron-la-so-kem-van-nam', ten: 'Trọn lá số + Vận năm 2027', gia: bang?.['tron-la-so-kem-van-nam'] ?? GIA_TRON_LA_SO_KEM_VAN_NAM, donVi: 'một lần', chinh: true, nhan: 'Gộp tiết kiệm hơn',
-      quyenLoi: ['Toàn bộ Trọn lá số: 12 cung và vận 10 năm', 'Cộng luận Vận năm 2027', 'Mỗi nhận định ghi sao, cung và trường phái'],
+      banDen: BAN_DEN_GOI_GOP,
+      quyenLoi: ['Toàn bộ Trọn lá số: ba cung trọng yếu và vận 10 năm', 'Cộng luận Vận năm 2027', 'Mỗi nhận định ghi sao, cung và trường phái'],
     },
   ];
 }
@@ -90,13 +100,17 @@ export const GOI_VAN_NAM: Goi[] = dungGoiVanNam();
 /** Gói và giá theo nhánh thử; bảng rỗng/không có = giá hiện hành (xem src/lib/may-chu/thu-gia.ts). */
 export const goiTheoBang = (bang?: BangGia) => ({ goi: dungGoi(bang), vanNam: dungGoiVanNam(bang) });
 
-export const CHU_DE: { ma: MaChuDe; ten: string }[] = [
+/** Tên mọi chủ đề có mã (kể cả chủ đề chưa bán), để hiện tên ở khung mã mời, lịch sử. */
+export const CHU_DE_TAT_CA: { ma: MaChuDe; ten: string }[] = [
   { ma: 'ban-than', ten: 'Bản thân' },
   { ma: 'tinh-cam', ten: 'Tình cảm' },
   { ma: 'su-nghiep', ten: 'Sự nghiệp' },
   { ma: 'tai-chinh', ten: 'Tài chính' },
   { ma: 'gia-dao', ten: 'Gia đạo' },
 ];
+/** Chủ đề đang bán lẻ (khớp ba cung của Trọn lá số). Tài chính, Gia đạo mở bán khi nội dung qua Thư duyệt. */
+const CHU_DE_DANG_BAN: MaChuDe[] = ['ban-than', 'tinh-cam', 'su-nghiep'];
+export const CHU_DE = CHU_DE_TAT_CA.filter((c) => CHU_DE_DANG_BAN.includes(c.ma));
 
 /** Cam kết hiện ở màn chọn gói và thanh toán. Một chỗ duy nhất, mọi trang đọc từ đây. */
 export const GHI_CHU_AI = 'Nội dung luận giải do AI tạo từ bộ quy tắc Tử Vi phái Việt, có ghi nguồn.';
@@ -113,8 +127,11 @@ export const layGoi = (ma: string | null | undefined, bang?: BangGia) => {
 };
 export const layChuDe = (ma: string | null | undefined) => CHU_DE.find((c) => c.ma === ma);
 
-/** Chỉ giữ gói đang bán (bỏ gói ẩn). */
-export const goiDangBan = (ds: Goi[]) => ds.filter((g) => !g.an);
+/** Gói còn trong hạn bán: không có banDen, hoặc chưa qua hết ngày banDen theo giờ Việt Nam (UTC+7). */
+export const conHanBan = (g: Goi, bayGio: number = Date.now()) => !g.banDen || bayGio < Date.parse(`${g.banDen}T23:59:59.999+07:00`);
+
+/** Chỉ giữ gói đang bán (bỏ gói ẩn, gói đã qua ngày dừng). */
+export const goiDangBan = (ds: Goi[], bayGio: number = Date.now()) => ds.filter((g) => !g.an && conHanBan(g, bayGio));
 
 /** Giá của gói để chèn vào câu chữ: chỉ trả chuỗi khi cờ công bố giá bật, ngược lại null (người gọi bỏ cả cụm có giá). */
 export function giaCongBo(ma: string | null | undefined, cong: boolean = CONG_BO_GIA, bang?: BangGia): string | null {

@@ -1,5 +1,5 @@
 // Nghiệp vụ: người dùng, lá số, đơn, quyền xem. Chỉ làm việc với CSDL; không biết gì về HTTP.
-import { layChuDe, layGoi, MA_VAN_NAM, TRAN_TRU_NANG_GOI, type BangGia, type MaGoi } from '../goi';
+import { conHanBan, layChuDe, layGoi, MA_VAN_NAM, TRAN_TRU_NANG_GOI, type BangGia, type MaGoi } from '../goi';
 import type { Csdl } from './csdl';
 import { bamMa, chuanHoaMa, DO_DAI_MA, kiemMaKhoiPhuc, sinhMa } from './ma-khoi-phuc';
 import { giaiMaJson, khoaTim, maHoaJson, type BoKhoa } from './ma-hoa';
@@ -92,6 +92,7 @@ export function taoDon(db: Csdl, nguoiDungId: number, v: { maGoi: unknown; chuDe
   const goi = layGoi(typeof v.maGoi === 'string' ? v.maGoi : null, v.bang);
   if (!goi) throw new LoiNghiepVu('goi_sai', 'Gói không tồn tại.');
   if (goi.an && process.env.MO_GOI_AN !== '1') throw new LoiNghiepVu('goi_an', 'Gói này chưa mở bán.'); // MO_GOI_AN=1 chỉ để chạy test luồng nâng gói
+  if (!conHanBan(goi, bayGio)) throw new LoiNghiepVu('het_han_ban', 'Gói này đã dừng bán.');
   let chuDe: string | null = null;
   if (goi.ma === 'mot-chu-de') {
     const cd = layChuDe(typeof v.chuDe === 'string' ? v.chuDe : null);
