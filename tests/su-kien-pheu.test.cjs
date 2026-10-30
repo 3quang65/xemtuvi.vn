@@ -224,3 +224,15 @@ test('Số giả lập: đủ 8 nhóm, ổn định theo hạt, ≥ 3 nhóm đ�
   for (const r of du) for (const k of ['phien', 'tiLePhien', 'lapTrenVao', 'chonTrenLap', 'traTrenChon']) assert.notEqual(r[k], null);
   assert.equal(Object.keys(a.nhom).length, 8);
 });
+
+test('bảng utm_content tách theo bộ UTM; mua lại tính theo thiết bị, không lộ mã', () => {
+  const { tinhTheoUtm, tinhMuaLai, dongMuaLai } = require('../tools/pheu.cjs');
+  const v = (phien, content) => ({ t: 1, ten: 'vao_trang', phien, nhom: 'paid', utm_source: 'meta', utm_medium: 'cpc', ...(content ? { utm_content: content } : {}) });
+  const u = tinhTheoUtm([v('A', 'video-a'), v('B', 'anh-b'), v('C'), { ...dong('A', 'lap_la_so') }]);
+  assert.deepEqual(Object.keys(u).sort(), ['meta / cpc / (không có)', 'meta / cpc / anh-b', 'meta / cpc / video-a']);
+  assert.equal(u['meta / cpc / video-a'].lap, 1);
+  const don = (phien, thietBi, ngay) => ({ t: 1 + ngay * 86400000, ten: 'thanh_toan_xong', phien, thietBi });
+  const m = tinhMuaLai([don('P1', 'tbKhachMot', 0), don('P2', 'tbKhachMot', 10), don('P3', 'tbKhachHai', 0)]);
+  assert.equal(m.khach, 2); assert.equal(m.muaLai, 1); assert.equal(m.ngayTrungVi, 10);
+  assert.ok(!dongMuaLai(m).includes('tbKhach'));
+});

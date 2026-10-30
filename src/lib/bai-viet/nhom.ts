@@ -15,7 +15,7 @@ export interface Nhom {
 }
 
 export const NHOM: Record<string, Nhom> = {
-  'van-nam-2027': { thuMuc: 'van-nam-2027', ten: 'Vận năm 2027', hopLe: [...TUOI.map((t) => `tuoi-${t}`), 'theo-menh'] },
+  'van-nam-2027': { thuMuc: 'van-nam-2027', ten: 'Vận năm 2027', hopLe: [...TUOI.map((t) => `tuoi-${t}`), 'theo-menh', '12-thang', 'su-nghiep', 'tai-chinh', 'tinh-duyen', 'nu-gioi'] },
   cung: { thuMuc: 'cung', ten: 'Mười hai cung', hopLe: CUNG },
   sao: { thuMuc: 'sao', ten: 'Mười bốn chính tinh', hopLe: SAO },
   'chu-de': { thuMuc: 'chu-de', ten: 'Chủ đề', hopLe: CHU_DE },

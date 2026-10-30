@@ -1,5 +1,6 @@
 // In phễu mua từ các file sự kiện. Chạy: node tools/pheu.cjs  (DATA_DIR=… để đổi thư mục)
 //   --nguon        thêm bảng theo nhóm nguồn khách (dac-ta-do-luong_v1.md mục 2–3)
+//   --nguon        còn in bảng theo utm_source / utm_medium / utm_content và dòng mua lại theo khách (mã thiết bị ẩn danh)
 //   --md           in bảng theo nhóm nguồn dạng Markdown (dán vào docs/)
 //   --nhanh        báo cáo thử nghiệm giá theo nhánh (thu-gia_v1.md): phiên chon_goi, đơn, doanh thu/phiên, tỉ trọng gói, bao_loi, theo nhóm nguồn; kèm --md để dán vào docs/
 //   --nhanh --bootstrap=10000 --hat=<số>  thêm chênh lệch (nhánh thử − gốc) + khoảng 95% bằng bootstrap: doanh thu/phiên, tỉ lệ trả tiền, tỉ lệ gói năm (thu-gia_v2.md mục 5 ý 3); hạt cố định → lặp lại y hệt
@@ -162,6 +163,71 @@ function bangNguon(t, md) {
   return [dau, ...hang].map((h) => h.map((c, i) => (i === 0 ? c.padEnd(10) : c.padStart(i === 3 ? 24 : i > 3 ? 18 : 8))).join(' ')).join('\n');
 }
 
+// ---- Theo utm_source / utm_medium / utm_content ----
+const KHONG_UTM = '(không có)';
+/** Mỗi phiên thuộc bộ UTM của vao_trang đầu tiên (thiếu trường ghi '(không có)'). Chỉ dùng giá trị đã qua MAU_UTM, không chứa thông tin cá nhân. */
+function tinhTheoUtm(dongs) {
+  const bo = new Map();
+  for (const d of dongs) if (d.ten === 'vao_trang' && !bo.has(d.phien)) bo.set(d.phien, [d.utm_source, d.utm_medium, d.utm_content].map((x) => x || KHONG_UTM).join(' / '));
+  const KHOA = { vao_trang: 'vao', lap_la_so: 'lap', chon_goi: 'chon', thanh_toan_xong: 'tra' };
+  const tap = {};
+  for (const d of dongs) {
+    const k = KHOA[d.ten];
+    if (!k || !bo.has(d.phien)) continue; // phiên không có vao_trang: không biết UTM, đã có ở bảng nhóm nguồn mục 'chưa rõ'
+    const g = (tap[bo.get(d.phien)] = tap[bo.get(d.phien)] || { vao: new Set(), lap: new Set(), chon: new Set(), tra: new Set() });
+    g[k].add(d.phien);
+  }
+  const ra = {};
+  for (const [khoa, g] of Object.entries(tap)) {
+    const phien = g.vao.size;
+    ra[khoa] = { phien, duMau: phien >= MAU_TOI_THIEU, lap: g.lap.size, chon: g.chon.size, tra: g.tra.size, lapTrenVao: chia(g.lap.size, phien), chonTrenLap: chia(g.chon.size, g.lap.size), traTrenChon: chia(g.tra.size, g.chon.size) };
+  }
+  return ra;
+}
+
+function bangUtm(t, md) {
+  const dau = ['utm_source / utm_medium / utm_content', 'Phiên', 'Truy cập → lập', 'Lập → chọn gói', 'Chọn → trả tiền'];
+  const o = (r, k) => (r.duMau ? pct(r[k]) : 'chưa đủ mẫu');
+  const hang = Object.entries(t).sort((a, b) => b[1].phien - a[1].phien || (a[0] < b[0] ? -1 : 1)).map(([k, r]) => [k, String(r.phien), o(r, 'lapTrenVao'), o(r, 'chonTrenLap'), o(r, 'traTrenChon')]);
+  if (!hang.length) return 'Chưa có vao_trang để tách theo UTM.';
+  if (md) return ['| ' + dau.join(' | ') + ' |', '|' + dau.map(() => '---').join('|') + '|', ...hang.map((h) => '| ' + h.join(' | ') + ' |')].join('\n');
+  return [dau, ...hang].map((h) => h.map((c, i) => (i === 0 ? c.padEnd(40) : c.padStart(i === 1 ? 7 : 18))).join(' ')).join('\n');
+}
+
+// ---- Mua lại theo khách ----
+const NGAY_MS = 86400000;
+/**
+ * Khách = mã thiết bị ẩn danh (`thietBi`, cookie bên thứ nhất). Sự kiện hiện chưa mang mã tài khoản nên không nối được thiết bị khác của cùng một người;
+ * khi có mã khách thì thay khóa ở đây. Mỗi phiên thanh_toan_xong tính một đơn. Chỉ trả số tổng hợp, không trả mã thiết bị, email hay SĐT.
+ */
+function tinhMuaLai(dongs) {
+  const donTheoKhach = new Map();
+  for (const [phien, d] of lanCuoi(dongs, 'thanh_toan_xong')) {
+    if (!d.thietBi) continue;
+    if (!donTheoKhach.has(d.thietBi)) donTheoKhach.set(d.thietBi, []);
+    donTheoKhach.get(d.thietBi).push(d.t || 0);
+  }
+  const khach = donTheoKhach.size;
+  const khoang = [];
+  let muaLai = 0;
+  for (const ts of donTheoKhach.values()) {
+    if (ts.length < 2) continue;
+    muaLai++;
+    ts.sort((a, b) => a - b);
+    for (let i = 1; i < ts.length; i++) khoang.push((ts[i] - ts[i - 1]) / NGAY_MS);
+  }
+  khoang.sort((a, b) => a - b);
+  const trungVi = khoang.length ? (khoang.length % 2 ? khoang[(khoang.length - 1) / 2] : (khoang[khoang.length / 2 - 1] + khoang[khoang.length / 2]) / 2) : null;
+  return { khach, muaLai, tiLe: chia(muaLai, khach), soKhoang: khoang.length, ngayTrungVi: trungVi, ngayTrungBinh: tb(khoang), duMau: khach >= MAU_TOI_THIEU };
+}
+
+function dongMuaLai(m) {
+  if (!m.khach) return 'Mua lại theo khách: chưa có đơn.';
+  const mau = m.duMau ? '' : ` (chưa đủ mẫu: < ${MAU_TOI_THIEU} khách có đơn)`;
+  return `Mua lại theo khách (mã thiết bị ẩn danh): ${m.muaLai}/${m.khach} khách có ≥ 2 đơn = ${pct(m.tiLe)}; số ngày giữa 2 đơn liền nhau: ` +
+    (m.soKhoang ? `trung vị ${m.ngayTrungVi.toFixed(1)}, trung bình ${m.ngayTrungBinh.toFixed(1)} (${m.soKhoang} khoảng)` : 'chưa có') + mau;
+}
+
 // ---- Theo nhánh thử giá (thu-gia_v1.md mục 1, 5) ----
 /** Nhóm nguồn của từng phiên (vao_trang đầu tiên). */
 function nhomCuaPhien(dongs) {
@@ -321,7 +387,8 @@ function taoGiaLap(hat = 7, coNhanh = false) {
     for (let i = 0; i < soPhien; i++) {
       const phien = 'gl' + String(++n).padStart(14, '0');
       const them = (ten, x) => ra.push({ t: 1, ten, phien, trang: trangCua(ten), thietBi: 'tb' + phien.slice(2), ...x });
-      them('vao_trang', { ...(src ? { utm_source: src, utm_medium: med } : {}), ...(ref ? { ref } : {}), dich: '/', may: r() < 0.7 ? 'dien-thoai' : 'may-tinh', nhom });
+      const content = (src && i % 3 !== 0) ? ['video-a', 'anh-b'][i % 2] : null; // theo số thứ tự, không dùng bộ ngẫu nhiên (giữ nguyên số giả lập cũ)
+      them('vao_trang', { ...(src ? { utm_source: src, utm_medium: med } : {}), ...(content ? { utm_content: content } : {}), ...(ref ? { ref } : {}), dich: '/', may: r() < 0.7 ? 'dien-thoai' : 'may-tinh', nhom });
       if (r() >= a) continue;
       them('vao_form'); them('lap_la_so'); them('xem_tom_tat');
       if (r() < 0.8) them('bam_xem_sau');
@@ -334,6 +401,13 @@ function taoGiaLap(hat = 7, coNhanh = false) {
       if (r() < c / 0.8) { them('dang_nhap'); them('thanh_toan_xong', { goi: 'tron-la-so', gia: 99000 }); }
     }
   }
+  // Khách mua lại giả lập: cứ 6 phiên trả tiền thì phiên thứ 6 dùng lại thiết bị của phiên trước, cách 3–22 ngày (không dùng bộ ngẫu nhiên)
+  const tra = [...new Set(ra.filter((d) => d.ten === 'thanh_toan_xong').map((d) => d.phien))];
+  tra.forEach((p, k) => {
+    if (k === 0 || k % 6) return;
+    const truoc = ra.find((d) => d.phien === tra[k - 1]).thietBi;
+    for (const d of ra) if (d.phien === p) { d.thietBi = truoc; d.t = 1 + (3 + (k % 20)) * NGAY_MS; }
+  });
   return ra;
 }
 
@@ -447,6 +521,8 @@ if (require.main === module) {
     if (lan > 0) console.log('\nKhoảng tin cậy 95% (bootstrap)\n' + (co('--md') ? '\n' : '') + bangBootstrap(bootstrap(phienChonGoi(dongs).hang, { lan, hat: Number(tham('--hat')) || 7 }), co('--md')));
   } else if (co('--md')) {
     console.log(bangNguon(tinhTheoNguon(dongs), true));
+    console.log('\n' + bangUtm(tinhTheoUtm(dongs), true));
+    console.log('\n' + dongMuaLai(tinhMuaLai(dongs)));
   } else {
     console.log((giaLap ? 'SỐ GIẢ LẬP (không phải số thật) · ' : 'Thư mục: ' + thuMucMacDinh() + ' · ') + dongs.length + ' dòng');
     in_(tinhPheu(dongs));
@@ -455,8 +531,11 @@ if (require.main === module) {
       console.log('\nTheo nhóm nguồn (tổng ' + t.tong + ' phiên; < ' + MAU_TOI_THIEU + ' phiên/nhóm: chưa đủ mẫu)');
       console.log(bangNguon(t, false));
       console.log(t.canhBao.length ? 'Cảnh báo:\n  ' + t.canhBao.join('\n  ') : 'Cảnh báo: không có');
+      console.log('\nTheo utm_source / utm_medium / utm_content (< ' + MAU_TOI_THIEU + ' phiên: chưa đủ mẫu)');
+      console.log(bangUtm(tinhTheoUtm(dongs), false));
+      console.log('\n' + dongMuaLai(tinhMuaLai(dongs)));
     }
   }
 }
 
-module.exports = { loaiTruThu, docLoaiTru, tinhKhaoSat, bangKhaoSat, taoGiaLapKhaoSat, MAU_KHAO_SAT, phienChonGoi, bootstrap, bangBootstrap, csvNhanh, tinhTheoNhanh, bangNhanh, tinhPheu, docThuMuc, tinhTheoNguon, bangNguon, taoGiaLap };
+module.exports = { loaiTruThu, docLoaiTru, tinhKhaoSat, bangKhaoSat, taoGiaLapKhaoSat, MAU_KHAO_SAT, phienChonGoi, bootstrap, bangBootstrap, csvNhanh, tinhTheoNhanh, bangNhanh, tinhPheu, docThuMuc, tinhTheoNguon, bangNguon, taoGiaLap, tinhTheoUtm, bangUtm, tinhMuaLai, dongMuaLai };
