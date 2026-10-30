@@ -5,6 +5,7 @@ const TRANG = {
   xem_tom_tat: 'tom-tat', bam_xem_sau: 'tom-tat',
   vao_chon_goi: 'chon-goi', chon_goi: 'chon-goi',
   vao_thanh_toan: 'thanh-toan', dang_nhap: 'thanh-toan', dang_ky_thanh_vien: 'thanh-toan', thanh_toan_xong: 'thanh-toan', // dang_ky_thanh_vien = tài khoản tạo lần đầu, tách khỏi dang_nhap
+  dang_ky_nhan_tin: 'lp', // đăng ký nhận tin ở /van-nam-2027; KHÔNG ghi email vào sự kiện
   xem_lp_van_nam: 'lp', bam_lap_la_so_lp: 'lp', // trang đích /lp/van-nam-2027
   vao_moi: 'form', dung_ma_moi: 'luan-giai', bam_gop_y: 'luan-giai', // bản thử khách mời (ban-thu-khach-moi.md)
   bao_loi: 'luan-giai', // khách báo không xem được đủ phần đã mua (đếm khiếu nại); sau khi mua nên không tính vào 4 màn
@@ -12,7 +13,7 @@ const TRANG = {
 const { MA_GOI, MA_CHU_DE } = require('./goi-ma.js');
 const TEN_SU_KIEN = Object.keys(TRANG);
 // Chỉ máy chủ được ghi (kèm nguon tra từ mã mời); máy khách gửi lên /api/su-kien thì bị từ chối.
-const CHI_MAY_CHU = ['vao_moi', 'dung_ma_moi'];
+const CHI_MAY_CHU = ['vao_moi', 'dung_ma_moi', 'dang_ky_nhan_tin'];
 
 /** Màn hình (trong tối đa 4 màn) mà sự kiện thuộc về; máy chủ tự suy ra, không tin máy khách. */
 function trangCua(ten) { return TRANG[ten]; }

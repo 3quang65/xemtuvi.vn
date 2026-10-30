@@ -10,7 +10,7 @@ export default function robots(): MetadataRoute.Robots {
   // Không có trang nào chứa dữ liệu sinh của khách; mọi lá số chỉ tính trên trình duyệt.
   return {
     rules: [
-      { userAgent: '*', allow: '/', disallow: ['/api/', '/luan-giai', '/thanh-toan', '/tai-khoan/', '/la-so/', '/ket-qua/'] },
+      { userAgent: '*', allow: '/', disallow: ['/api/', '/luan-giai', '/thanh-toan', '/chon-goi', '/tai-khoan/', '/la-so/', '/ket-qua/'] },
     ],
     sitemap: 'https://xemtuvi.vn/sitemap.xml',
   };

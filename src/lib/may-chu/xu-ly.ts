@@ -4,6 +4,7 @@ import type { MayChu } from './csdl';
 import * as dv from './dich-vu';
 import { luanGiaiChoKhach } from './luan-giai-may-chu';
 import { chuanHoa, huyLienHe, lamSachNguon, luuLienHe } from './lien-he';
+import { huyNhanTin, luuNhanTin } from './nhan-tin';
 import { trangCua } from '../su-kien';
 import { ghiSuKien } from '../ghi-su-kien';
 import { daDungMa, dungMa, chuDeMoi, kiemMa, nguonDaDung } from './ma-moi';
@@ -29,6 +30,7 @@ async function chay(req: Request, f: () => Promise<Response> | Response): Promis
   }
 }
 
+const PHIEN_DO = /^[A-Za-z0-9_-]{16,32}$/;
 const nguoiDung = (req: Request, m: MayChu) => docPhien(m.db, docCookie(req));
 const canDangNhap = () => loi(401, 'chua_dang_nhap', 'Cần đăng nhập.');
 
@@ -121,14 +123,25 @@ export const lienHeGhi = (req: Request, m: MayChu) => chay(req, async () => {
   return json({ ok: true, duongHuy: `/huy-dang-ky?ma=${maHuy}` });
 });
 
-/** POST /api/lien-he/huy {ma}: hủy đăng ký nhận tin. */
+/** POST /api/nhan-tin {email, dongY:true, nguon?}: đăng ký nhận tin Vận 2027; chưa tích đồng ý thì không lưu gì. Chỉ ghi sự kiện dang_ky_nhan_tin, không có email. */
+export const nhanTinGhi = (req: Request, m: MayChu) => chay(req, async () => {
+  const b = await doc(req);
+  if (!b) return loi(400, 'du_lieu_sai', 'Dữ liệu không hợp lệ.');
+  if (b.dongY !== true) return loi(400, 'chua_dong_y', 'Cần tích đồng ý nhận tin trước khi gửi.');
+  const lh = chuanHoa('email', b.email);
+  if (!lh) return loi(400, 'lien_he_sai', 'Email chưa đúng.');
+  const { maHuy } = luuNhanTin(m.db, { email: lh.giaTri, nguon: lamSachNguon(b.nguon) });
+  if (typeof b.phien === 'string' && PHIEN_DO.test(b.phien)) await ghiSuKien({ ten: 'dang_ky_nhan_tin', phien: b.phien, trang: trangCua('dang_ky_nhan_tin') });
+  return json({ ok: true, duongHuy: `/huy-dang-ky?ma=${maHuy}` });
+});
+
+/** POST /api/lien-he/huy {ma}: hủy đăng ký nhận tin (mã của liên hệ lá số hoặc của nhận tin Vận 2027). */
 export const lienHeHuy = (req: Request, m: MayChu) => chay(req, async () => {
   const b = await doc(req);
-  if (!b || typeof b.ma !== 'string' || !huyLienHe(m.db, b.ma)) return loi(404, 'khong_co', 'Liên kết hủy không đúng hoặc đã hết hiệu lực.');
+  if (!b || typeof b.ma !== 'string' || !(huyLienHe(m.db, b.ma) || huyNhanTin(m.db, b.ma))) return loi(404, 'khong_co', 'Liên kết hủy không đúng hoặc đã hết hiệu lực.');
   return json({ ok: true });
 });
 
-const PHIEN_DO = /^[A-Za-z0-9_-]{16,32}$/;
 
 /** POST /api/ma-moi/vao {ma, phien}: mã hợp lệ → ghi vao_moi kèm nguon lấy từ mã (không tin máy khách). Mã sai trả 200 hopLe:false để trang báo nhẹ nhàng. */
 export const maMoiVao = (req: Request, m: MayChu) => chay(req, async () => {

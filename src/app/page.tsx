@@ -1,5 +1,9 @@
 import LapLaSo from '@/components/LapLaSo';
+import type { Metadata } from 'next';
 import { ChanTrang, DauTrang } from '@/components/Khung';
+import { schemaToChuc } from '@/lib/bai-viet/schema';
+
+export const metadata: Metadata = { alternates: { canonical: '/' } };
 
 export default function TrangChu() {
   return (
@@ -23,6 +27,7 @@ export default function TrangChu() {
         </section>
       </main>
 
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaToChuc()) }} />
       <ChanTrang />
     </>
   );
