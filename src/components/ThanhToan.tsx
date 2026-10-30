@@ -42,7 +42,7 @@ export default function ThanhToan() {
   const [bamTrung, setBamTrung] = useState(false); // E06
   const [xong, setXong] = useState<{ id: number; tenGoi: string; maGoi: string } | null>(null); // tin xác nhận 3.1
 
-  useEffect(() => { if (laSo && !hopLe) router.replace(laSoMay ? '/luan-giai' : '/chon-goi'); }, [laSo, hopLe, router, laSoMay]);
+  useEffect(() => { if (laSo && bangGia.san && !hopLe) router.replace(laSoMay ? '/luan-giai' : '/chon-goi'); }, [laSo, hopLe, router, laSoMay, bangGia.san]); // chờ bảng giá tải xong, tránh đẩy nhầm khi gói Vận 2027 chưa có trong danh sách
   useEffect(() => { if (laSo && hopLe) { guiSuKien('vao_thanh_toan', suKien); goiApi<{ dangNhap: boolean; email?: string; quyen?: QuyenGiaoDien[]; laSoIds?: number[] }>('/api/toi').then((t) => {
       setEmail(t.dangNhap ? t.email ?? null : null);
       // Đã có Trọn lá số của lá số này: không bán gói gộp, chuyển sang gói Vận năm 2027 lẻ.
