@@ -1,979 +1,981 @@
 [
- {
-  "maMau": "CV-09",
-  "chuDe": "cong-viec",
-  "maHuong": [
-   "NAM-TT-06"
-  ],
-  "cau": "Đặt một giờ kết thúc ngày làm việc và giữ ít nhất 4 ngày mỗi tuần; việc chưa xong ghi vào danh sách cho sáng hôm sau.",
-  "thuocDo": "≥ 6/8 tuần giữ đủ 4 ngày",
-  "thoiHanThang": 2,
-  "dieuKien": {
-   "NAM-TT-06": {
-    "quyTacId": [
-     "NAM-TT-06"
+  {
+    "maMau": "CV-09",
+    "chuDe": "cong-viec",
+    "maHuong": [
+      "NAM-TT-06"
     ],
-    "cung": [
-     "Quan Lộc"
+    "cau": "Đặt một giờ kết thúc ngày làm việc và giữ ít nhất 4 ngày mỗi tuần; việc chưa xong ghi vào danh sách cho sáng hôm sau.",
+    "thuocDo": "≥ 6/8 tuần giữ đủ 4 ngày",
+    "thoiHanThang": 2,
+    "dieuKien": {
+      "NAM-TT-06": {
+        "quyTacId": [
+          "NAM-TT-06"
+        ],
+        "cung": [
+          "Quan Lộc"
+        ],
+        "saoTrongCung": [
+          [
+            "L. Thiên Khốc",
+            "L. Thiên Hư",
+            "L. Tang Môn",
+            "L. Bạch Hổ"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "maMau": "CV-10",
+    "chuDe": "cong-viec",
+    "maHuong": [
+      "NAM-HOA-07"
     ],
-    "saoTrongCung": [
-     [
-      "L. Thiên Khốc",
-      "L. Thiên Hư",
-      "L. Tang Môn",
-      "L. Bạch Hổ"
-     ]
-    ]
-   }
-  }
- },
- {
-  "maMau": "CV-10",
-  "chuDe": "cong-viec",
-  "maHuong": [
-   "NAM-HOA-07"
-  ],
-  "cau": "Với mỗi việc được giao hoặc nhận thêm, nhắn lại cho {nguoiLienQuan} ba điều: phạm vi, hạn, người duyệt, và xin xác nhận.",
-  "thuocDo": "100% việc mới trong 2 tháng có tin xác nhận",
-  "thoiHanThang": 2,
-  "dieuKien": {
-   "NAM-HOA-07": {
-    "quyTacId": [
-     "NAM-HOA-KY-SANG",
-     "NAM-HOA-KY-HAM"
-    ]
-   }
-  }
- },
- {
-  "maMau": "CV-11",
-  "chuDe": "cong-viec",
-  "maHuong": [
-   "NAM-HOA-08/Kỵ-Lộc"
-  ],
-  "cau": "Viết ra một điểm vướng lâu nay trong công việc; mỗi tháng làm một bước để gỡ: hỏi người liên quan, đề xuất cách làm, hoặc sắp lại việc.",
-  "thuocDo": "3 bước trong 3 tháng, mỗi bước ghi một dòng",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "NAM-HOA-08/Kỵ-Lộc": {
-    "quyTacId": [
-     "NAM-HOA-08-KY-LOC",
-     "NAM-HOA-08-KY-LOC-CANH"
-    ]
-   }
-  }
- },
- {
-  "maMau": "CV-12",
-  "chuDe": "cong-viec",
-  "maHuong": [
-   "NAM-HOA-04/hãm"
-  ],
-  "cau": "Chọn một việc chính ở chỗ làm; mỗi thứ Sáu ghi một dòng tiến độ để thấy kết quả tích lũy.",
-  "thuocDo": "≥ 10/12 tuần có dòng ghi",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "NAM-HOA-04/hãm": {
-    "quyTacId": [
-     "NAM-HOA-LOC-HAM"
-    ]
-   }
-  }
- },
- {
-  "maMau": "CV-13",
-  "chuDe": "cong-viec",
-  "maHuong": [
-   "NAM-HOA-05/hãm"
-  ],
-  "cau": "Mỗi sáng thứ Hai viết ra một việc chính của tuần và làm xong việc đó trước khi nhận thêm việc vụn.",
-  "thuocDo": "≥ 10/12 tuần việc chính xong trong tuần",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "NAM-HOA-05/hãm": {
-    "quyTacId": [
-     "NAM-HOA-QUYEN-HAM"
-    ]
-   }
-  }
- },
- {
-  "maMau": "CV-14",
-  "chuDe": "cong-viec",
-  "maHuong": [
-   "NAM-HOA-06/sáng"
-  ],
-  "cau": "Mỗi tháng gửi {nguoiLienQuan} một đề xuất ngắn, nửa trang, về một cách làm tốt hơn mà bạn đã thử.",
-  "thuocDo": "3 đề xuất trong 3 tháng",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "NAM-HOA-06/sáng": {
-    "quyTacId": [
-     "NAM-HOA-KHOA-SANG"
-    ]
-   }
+    "cau": "Với mỗi việc được giao hoặc nhận thêm, nhắn lại cho {nguoiLienQuan} ba điều: phạm vi, hạn, người duyệt, và xin xác nhận.",
+    "thuocDo": "100% việc mới trong 2 tháng có tin xác nhận",
+    "thoiHanThang": 2,
+    "dieuKien": {
+      "NAM-HOA-07": {
+        "quyTacId": [
+          "NAM-HOA-KY-SANG",
+          "NAM-HOA-KY-HAM"
+        ]
+      }
+    }
   },
-  "maPhatHuy": [
-   "NAM-HOA-06"
-  ],
-  "tuoiTu": 18
- },
- {
-  "maMau": "CV-15",
-  "chuDe": "cong-viec",
-  "maHuong": [
-   "NAM-HOA-06/hãm"
-  ],
-  "cau": "Trước khi trình bày một kết quả, tự rà theo ba điểm cần hoàn thiện bạn viết sẵn, sửa xong mới gửi.",
-  "thuocDo": "100% bản trình bày trong 2 tháng có bước rà",
-  "thoiHanThang": 2,
-  "dieuKien": {
-   "NAM-HOA-06/hãm": {
-    "quyTacId": [
-     "NAM-HOA-KHOA-HAM"
-    ]
-   }
-  }
- },
- {
-  "maMau": "CV-16",
-  "chuDe": "cong-viec",
-  "maHuong": [
-   "NAM-HOA-05/sáng"
-  ],
-  "cau": "Trước mỗi đề xuất quan trọng, hỏi ý một người sẽ chịu ảnh hưởng và ghi điều họ lo vào bản đề xuất.",
-  "thuocDo": "≥ 3 đề xuất trong 3 tháng có bước hỏi ý",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "NAM-HOA-05/sáng": {
-    "quyTacId": [
-     "NAM-HOA-QUYEN-SANG"
-    ]
-   }
-  },
-  "maPhatHuy": [
-   "NAM-HOA-05"
-  ]
- },
- {
-  "maMau": "CV-17",
-  "chuDe": "cong-viec",
-  "maHuong": [
-   "NAM-LUU-03"
-  ],
-  "cau": "Ghi tên ba người có vị thế trong nghề từng giúp hoặc có thể giới thiệu bạn; mỗi tháng chủ động kể với một người về việc bạn đang làm.",
-  "thuocDo": "3 lần trong 3 tháng",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "NAM-LUU-03": {
-    "quyTacId": [
-     "NAM-LUU-03"
-    ]
-   }
-  },
-  "maPhatHuy": [
-   "NAM-LUU-03"
-  ]
- },
- {
-  "maMau": "CV-18",
-  "chuDe": "cong-viec",
-  "maHuong": [
-   "NAM-LUU-02"
-  ],
-  "cau": "Trước khi nhận việc mới, chuyển bộ phận hay đi công tác dài, viết một trang: lý do, điều được, điều mất, giấy tờ cần làm.",
-  "thuocDo": "100% thay đổi trong 3 tháng có trang này; không có thay đổi thì ghi \"không có\"",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "NAM-LUU-02": {
-    "quyTacId": [
-     "NAM-LUU-02"
-    ]
-   }
-  }
- },
- {
-  "maMau": "HT-04",
-  "chuDe": "hoc-tap",
-  "maHuong": [
-   "NAM-HOA-06/sáng"
-  ],
-  "cau": "Chọn một khóa học hoặc chứng chỉ gắn với lĩnh vực này, ghi ngày bắt đầu và học 2 buổi mỗi tuần.",
-  "thuocDo": "≥ 20/24 buổi trong 3 tháng",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "NAM-HOA-06/sáng": {
-    "quyTacId": [
-     "NAM-HOA-KHOA-SANG"
-    ]
-   }
-  }
- },
- {
-  "maMau": "TC-08",
-  "chuDe": "tai-chinh",
-  "maHuong": [
-   "NAM-LUU-03"
-  ],
-  "cau": "Hẹn hỏi một người có chuyên môn mà bạn tin một câu cụ thể về cách bạn đang ghi chép, sắp xếp thu chi; ghi lại ba điều rút ra.",
-  "thuocDo": "1 buổi hỏi trong 3 tháng, có ghi 3 điều",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "NAM-LUU-03": {
-    "quyTacId": [
-     "NAM-LUU-03"
-    ]
-   }
-  },
-  "maPhatHuy": [
-   "NAM-LUU-03"
-  ]
- },
- {
-  "maMau": "TC-09",
-  "chuDe": "tai-chinh",
-  "maHuong": [
-   "NAM-TT-06"
-  ],
-  "cau": "Đặt một khung 20 phút cố định mỗi tuần để xem lại thu chi của tuần, chọn lúc bạn không mệt.",
-  "thuocDo": "≥ 10/12 tuần có buổi xem lại",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "NAM-TT-06": {
-    "quyTacId": [
-     "NAM-TT-06"
+  {
+    "maMau": "CV-11",
+    "chuDe": "cong-viec",
+    "maHuong": [
+      "NAM-HOA-08/Kỵ-Lộc"
     ],
-    "cung": [
-     "Tài Bạch"
+    "cau": "Viết ra một điểm vướng lâu nay trong công việc; mỗi tháng làm một bước để gỡ: hỏi người liên quan, đề xuất cách làm, hoặc sắp lại việc.",
+    "thuocDo": "3 bước trong 3 tháng, mỗi bước ghi một dòng",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "NAM-HOA-08/Kỵ-Lộc": {
+        "quyTacId": [
+          "NAM-HOA-08-KY-LOC",
+          "NAM-HOA-08-KY-LOC-CANH"
+        ]
+      }
+    }
+  },
+  {
+    "maMau": "CV-12",
+    "chuDe": "cong-viec",
+    "maHuong": [
+      "NAM-HOA-04/hãm"
     ],
-    "saoTrongCung": [
-     [
-      "L. Thiên Khốc",
-      "L. Thiên Hư",
-      "L. Tang Môn",
-      "L. Bạch Hổ"
-     ]
-    ]
-   }
-  }
- },
- {
-  "maMau": "TC-10",
-  "chuDe": "tai-chinh",
-  "maHuong": [
-   "NAM-HOA-07"
-  ],
-  "cau": "Chốt mỗi thỏa thuận có tiền (giá, hạn, phần của mỗi bên) bằng tin nhắn hoặc văn bản trước khi chuyển hay nhận tiền.",
-  "thuocDo": "100% thỏa thuận mới trong 3 tháng có bản chữ",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "NAM-HOA-07": {
-    "quyTacId": [
-     "NAM-HOA-KY-SANG",
-     "NAM-HOA-KY-HAM"
-    ]
-   }
+    "cau": "Chọn một việc chính ở chỗ làm; mỗi thứ Sáu ghi một dòng tiến độ để thấy kết quả tích lũy.",
+    "thuocDo": "≥ 10/12 tuần có dòng ghi",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "NAM-HOA-04/hãm": {
+        "quyTacId": [
+          "NAM-HOA-LOC-HAM"
+        ]
+      }
+    }
   },
-  "tuoiTu": 18
- },
- {
-  "maMau": "TC-11",
-  "chuDe": "tai-chinh",
-  "maHuong": [
-   "NAM-HOA-08/Lộc-Kỵ"
-  ],
-  "cau": "Trước khi nhận một việc có tiền công, ghi rõ điều khoản (khối lượng, mức trả, hạn trả) và gửi bên kia xác nhận.",
-  "thuocDo": "100% việc mới nhận trong 3 tháng có điều khoản đã xác nhận",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "NAM-HOA-08/Lộc-Kỵ": {
-    "quyTacId": [
-     "NAM-HOA-08-LOC-KY"
-    ]
-   }
-  }
- },
- {
-  "maMau": "TC-12",
-  "chuDe": "tai-chinh",
-  "maHuong": [
-   "NAM-HOA-08/Kỵ-Lộc"
-  ],
-  "cau": "Viết ra một việc tiền bạc còn vướng lâu nay (khoản chưa rõ, giấy tờ chưa xong); mỗi tháng làm một bước để làm rõ, cần thì hỏi người có chuyên môn.",
-  "thuocDo": "3 bước trong 3 tháng, mỗi bước ghi một dòng",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "NAM-HOA-08/Kỵ-Lộc": {
-    "quyTacId": [
-     "NAM-HOA-08-KY-LOC",
-     "NAM-HOA-08-KY-LOC-CANH"
-    ]
-   }
-  }
- },
- {
-  "maMau": "TC-13",
-  "chuDe": "tai-chinh",
-  "maHuong": [
-   "NAM-HOA-04/sáng"
-  ],
-  "cau": "Cùng người trong nhà lập danh sách chi tiêu gia đình cho tháng tới, mỗi nhóm một {mức bạn tự chọn}; cuối tháng xem lại.",
-  "thuocDo": "3/3 tháng có danh sách và một lần xem lại",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "NAM-HOA-04/sáng": {
-    "quyTacId": [
-     "NAM-HOA-LOC-SANG"
-    ]
-   }
-  },
-  "maPhatHuy": [
-   "NAM-HOA-04"
-  ],
-  "tuoiTu": 18
- },
- {
-  "maMau": "TC-14",
-  "chuDe": "tai-chinh",
-  "maHuong": [
-   "NAM-HOA-04/hãm"
-  ],
-  "cau": "Chọn một nguồn thu đang có; cuối mỗi tháng ghi số giờ bạn bỏ vào và số thu được để thấy kết quả tích lũy.",
-  "thuocDo": "3/3 tháng có dòng ghi",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "NAM-HOA-04/hãm": {
-    "quyTacId": [
-     "NAM-HOA-LOC-HAM"
-    ]
-   }
-  }
- },
- {
-  "maMau": "TC-15",
-  "chuDe": "tai-chinh",
-  "maHuong": [
-   "NAM-HOA-05/hãm"
-  ],
-  "cau": "Liệt kê các việc tiền bạc bạn đang lo; mỗi tuần chọn một việc chính, làm xong trước khi mở việc khác.",
-  "thuocDo": "≥ 10/12 tuần việc chính xong",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "NAM-HOA-05/hãm": {
-    "quyTacId": [
-     "NAM-HOA-QUYEN-HAM"
-    ]
-   }
-  }
- },
- {
-  "maMau": "TC-16",
-  "chuDe": "tai-chinh",
-  "maHuong": [
-   "NAM-HOA-06/sáng"
-  ],
-  "cau": "Đọc một cuốn sách hoặc học một khóa ngắn về quản lý tiền cá nhân; ghi ba điều sẽ áp dụng và làm thử một điều.",
-  "thuocDo": "Xong sách hoặc khóa, có 1 điều đã làm thử",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "NAM-HOA-06/sáng": {
-    "quyTacId": [
-     "NAM-HOA-KHOA-SANG"
-    ]
-   }
-  }
- },
- {
-  "maMau": "TC-17",
-  "chuDe": "tai-chinh",
-  "maHuong": [
-   "NAM-HOA-05/sáng"
-  ],
-  "cau": "Khi cần bàn chuyện tiền với {nguoiLienQuan}, gửi trước nội dung muốn bàn và hỏi ý họ trước khi nêu đề xuất của bạn.",
-  "thuocDo": "≥ 2 lần áp dụng trong 3 tháng; không có dịp thì ghi \"không có\"",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "NAM-HOA-05/sáng": {
-    "quyTacId": [
-     "NAM-HOA-QUYEN-SANG"
-    ]
-   }
-  },
-  "maPhatHuy": [
-   "NAM-HOA-05"
-  ]
- },
- {
-  "maMau": "TT-07",
-  "chuDe": "tinh-cam",
-  "maHuong": [
-   "VAN-SP-06/thận trọng",
-   "NAM-LUU-04-SAT"
-  ],
-  "cau": "Gom giấy tờ chung của bạn với {nguoiLienQuan} hoặc của gia đình vào một chỗ, cùng đọc lại, đánh dấu điều chưa rõ để hỏi người có chuyên môn.",
-  "thuocDo": "Xong danh mục (có/không); 100% điều đánh dấu được hỏi",
-  "thoiHanThang": 1,
-  "dieuKien": {
-   "VAN-SP-06/thận trọng": {
-    "saoTrongCung": [
-     [
-      "Văn Xương",
-      "Văn Khúc",
-      "L. Văn Xương",
-      "L. Văn Khúc"
-     ],
-     [
-      "Kình Dương",
-      "Đà La",
-      "L. Kình Dương",
-      "L. Đà La",
-      "hoa:Hóa Kỵ",
-      "luuHoa:Hóa Kỵ"
-     ]
-    ]
-   },
-   "NAM-LUU-04-SAT": {
-    "quyTacId": [
-     "NAM-LUU-04-SAT"
-    ]
-   }
-  },
-  "tuoiTu": 18
- },
- {
-  "maMau": "TT-08",
-  "chuDe": "tinh-cam",
-  "maHuong": [
-   "NAM-TT-06"
-  ],
-  "cau": "Mỗi tuần dành 15 phút hỏi {nguoiLienQuan} điều gì làm họ mệt nhất trong tuần, chỉ nghe, chưa góp ý.",
-  "thuocDo": "≥ 10/12 tuần có",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "NAM-TT-06": {
-    "quyTacId": [
-     "NAM-TT-06"
+  {
+    "maMau": "CV-13",
+    "chuDe": "cong-viec",
+    "maHuong": [
+      "NAM-HOA-05/hãm"
     ],
-    "cung": [
-     "Phu Thê"
+    "cau": "Mỗi sáng thứ Hai viết ra một việc chính của tuần và làm xong việc đó trước khi nhận thêm việc vụn.",
+    "thuocDo": "≥ 10/12 tuần việc chính xong trong tuần",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "NAM-HOA-05/hãm": {
+        "quyTacId": [
+          "NAM-HOA-QUYEN-HAM"
+        ]
+      }
+    }
+  },
+  {
+    "maMau": "CV-14",
+    "chuDe": "cong-viec",
+    "maHuong": [
+      "NAM-HOA-06/sáng"
     ],
-    "saoTrongCung": [
-     [
-      "L. Thiên Khốc",
-      "L. Thiên Hư",
-      "L. Tang Môn",
-      "L. Bạch Hổ"
-     ]
-    ]
-   }
-  }
- },
- {
-  "maMau": "TT-09",
-  "chuDe": "tinh-cam",
-  "maHuong": [
-   "NAM-LUU-03"
-  ],
-  "cau": "Mỗi tháng cùng {nguoiLienQuan} dành một buổi gặp người thân hoặc bạn bè mà cả hai quý trọng.",
-  "thuocDo": "3 buổi trong 3 tháng",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "NAM-LUU-03": {
-    "quyTacId": [
-     "NAM-LUU-03"
-    ]
-   }
-  },
-  "maPhatHuy": [
-   "NAM-LUU-03"
-  ]
- },
- {
-  "maMau": "TT-10",
-  "chuDe": "tinh-cam",
-  "maHuong": [
-   "NAM-LUU-05"
-  ],
-  "cau": "Mỗi tháng cùng {nguoiLienQuan} làm một việc lần đầu làm cùng nhau: một món ăn, một nơi chưa tới, hay một lớp học ngắn.",
-  "thuocDo": "3 việc mới trong 3 tháng",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "NAM-LUU-05": {
-    "quyTacId": [
-     "NAM-LUU-05-PHU"
-    ]
-   }
-  },
-  "maPhatHuy": [
-   "NAM-LUU-05"
-  ]
- },
- {
-  "maMau": "TT-11",
-  "chuDe": "tinh-cam",
-  "maHuong": [
-   "NAM-HOA-07"
-  ],
-  "cau": "Khi hai người thống nhất một việc chung (lịch, tiền, việc nhà), một người nhắn lại bằng chữ điều đã thống nhất trong ngày.",
-  "thuocDo": "≥ 4/5 việc thống nhất có tin nhắn lại",
-  "thoiHanThang": 2,
-  "dieuKien": {
-   "NAM-HOA-07": {
-    "quyTacId": [
-     "NAM-HOA-KY-SANG",
-     "NAM-HOA-KY-HAM"
-    ]
-   }
-  },
-  "tuoiTu": 18
- },
- {
-  "maMau": "TT-12",
-  "chuDe": "tinh-cam",
-  "maHuong": [
-   "NAM-HOA-08/Kỵ-Lộc"
-  ],
-  "cau": "Chọn một chuyện cũ hai người hay né, hẹn một buổi lúc cả hai thoải mái để nói; mỗi người nói hết ý rồi mới bàn cách làm.",
-  "thuocDo": "1 buổi trong 2 tháng, có một dòng ghi điều đã thống nhất",
-  "thoiHanThang": 2,
-  "dieuKien": {
-   "NAM-HOA-08/Kỵ-Lộc": {
-    "quyTacId": [
-     "NAM-HOA-08-KY-LOC",
-     "NAM-HOA-08-KY-LOC-CANH"
-    ]
-   }
-  }
- },
- {
-  "maMau": "TT-13",
-  "chuDe": "tinh-cam",
-  "maHuong": [
-   "NAM-HOA-04/sáng"
-  ],
-  "cau": "Mỗi tuần làm một việc chu đáo nhỏ cho {nguoiLienQuan} mà không cần được nhắc, rồi ghi lại một dòng.",
-  "thuocDo": "≥ 10/12 tuần có",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "NAM-HOA-04/sáng": {
-    "quyTacId": [
-     "NAM-HOA-LOC-SANG"
-    ]
-   }
-  },
-  "maPhatHuy": [
-   "NAM-HOA-04"
-  ]
- },
- {
-  "maMau": "TT-14",
-  "chuDe": "tinh-cam",
-  "maHuong": [
-   "NAM-HOA-05/sáng"
-  ],
-  "cau": "Khi muốn đề nghị một điều với {nguoiLienQuan}, hỏi ý người ấy trước rồi mới nói mong muốn của bạn.",
-  "thuocDo": "Ghi các lần đề nghị; ≥ 3/4 lần có hỏi ý trước",
-  "thoiHanThang": 2,
-  "dieuKien": {
-   "NAM-HOA-05/sáng": {
-    "quyTacId": [
-     "NAM-HOA-QUYEN-SANG"
-    ]
-   }
-  },
-  "maPhatHuy": [
-   "NAM-HOA-05"
-  ]
- },
- {
-  "maMau": "TT-15",
-  "chuDe": "tinh-cam",
-  "maHuong": [
-   "NAM-HOA-05/hãm"
-  ],
-  "cau": "Cùng {nguoiLienQuan} liệt kê các việc chung đang dồn; mỗi tháng chọn một việc chính để làm xong trước.",
-  "thuocDo": "3/3 tháng có việc chính xong",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "NAM-HOA-05/hãm": {
-    "quyTacId": [
-     "NAM-HOA-QUYEN-HAM"
-    ]
-   }
-  }
- },
- {
-  "maMau": "TT-16",
-  "chuDe": "tinh-cam",
-  "maHuong": [
-   "NAM-HOA-06/hãm"
-  ],
-  "cau": "Khi muốn nói một điều quan trọng với {nguoiLienQuan}, viết nháp trước, để qua một ngày rồi mới nói.",
-  "thuocDo": "Ghi các lần; ≥ 3/4 lần có nháp và chờ một ngày",
-  "thoiHanThang": 2,
-  "dieuKien": {
-   "NAM-HOA-06/hãm": {
-    "quyTacId": [
-     "NAM-HOA-KHOA-HAM"
-    ]
-   }
-  }
- },
- {
-  "maMau": "TT-17",
-  "chuDe": "tinh-cam",
-  "maHuong": [
-   "NAM-HOA-06/sáng"
-  ],
-  "cau": "Cùng {nguoiLienQuan} viết một kế hoạch chung 3 tháng: một việc muốn làm, một nơi muốn đến, một thói quen muốn giữ.",
-  "thuocDo": "Có kế hoạch, mỗi tháng xem lại một lần",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "NAM-HOA-06/sáng": {
-    "quyTacId": [
-     "NAM-HOA-KHOA-SANG"
-    ]
-   }
-  },
-  "maPhatHuy": [
-   "NAM-HOA-06"
-  ]
- },
- {
-  "maMau": "SK-05",
-  "chuDe": "suc-khoe",
-  "maHuong": [
-   "NAM-LUU-02"
-  ],
-  "cau": "Trong những tuần có chuyến đi hoặc đổi lịch sinh hoạt, giữ giờ đi ngủ cố định ít nhất 5 đêm.",
-  "thuocDo": "Ghi các tuần có thay đổi; ≥ 3/4 tuần giữ được",
-  "thoiHanThang": 2,
-  "dieuKien": {
-   "NAM-LUU-02": {
-    "quyTacId": [
-     "NAM-LUU-02"
-    ]
-   }
-  }
- },
- {
-  "maMau": "SK-06",
-  "chuDe": "suc-khoe",
-  "maHuong": [
-   "NAM-TT-06"
-  ],
-  "cau": "Chọn một buổi trong tuần không xếp việc, dành cho nghỉ ngơi hoặc vận động nhẹ.",
-  "thuocDo": "≥ 10/12 tuần giữ được",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "NAM-TT-06": {
-    "quyTacId": [
-     "NAM-TT-06"
+    "cau": "Mỗi tháng gửi {nguoiLienQuan} một đề xuất ngắn, nửa trang, về một cách làm tốt hơn mà bạn đã thử.",
+    "thuocDo": "3 đề xuất trong 3 tháng",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "NAM-HOA-06/sáng": {
+        "quyTacId": [
+          "NAM-HOA-KHOA-SANG"
+        ]
+      }
+    },
+    "maPhatHuy": [
+      "NAM-HOA-06"
     ],
-    "cung": [
-     "Tật Ách"
+    "tuoiTu": 18
+  },
+  {
+    "maMau": "CV-15",
+    "chuDe": "cong-viec",
+    "maHuong": [
+      "NAM-HOA-06/hãm"
     ],
-    "saoTrongCung": [
-     [
-      "L. Thiên Khốc",
-      "L. Thiên Hư",
-      "L. Tang Môn",
-      "L. Bạch Hổ"
-     ]
-    ]
-   }
-  }
- },
- {
-  "maMau": "CV-19",
-  "chuDe": "cong-viec",
-  "maHuong": [
-   "NAM-HOA-04/hãm"
-  ],
-  "cau": "Chia việc chính đang làm thành các bước nhỏ; mỗi tuần làm xong một bước và đánh dấu vào danh sách.",
-  "thuocDo": "≥ 10/12 tuần xong một bước",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "NAM-HOA-04/hãm": {
-    "quyTacId": [
-     "NAM-HOA-LOC-HAM"
-    ]
-   }
-  }
- },
- {
-  "maMau": "CV-20",
-  "chuDe": "cong-viec",
-  "maHuong": [
-   "NAM-HOA-08/Kỵ-Lộc"
-  ],
-  "cau": "Hẹn {nguoiLienQuan} một buổi nói thẳng về một việc lâu nay còn vướng giữa hai bên, mang theo một cách gỡ bạn đề xuất.",
-  "thuocDo": "1 buổi trong 2 tháng, có một dòng ghi kết quả",
-  "thoiHanThang": 2,
-  "dieuKien": {
-   "NAM-HOA-08/Kỵ-Lộc": {
-    "quyTacId": [
-     "NAM-HOA-08-KY-LOC",
-     "NAM-HOA-08-KY-LOC-CANH"
-    ]
-   }
-  }
- },
- {
-  "maMau": "CV-21",
-  "chuDe": "cong-viec",
-  "maHuong": [
-   "NAM-LUU-02"
-  ],
-  "cau": "Với mỗi thủ tục, giấy tờ công việc đang chờ, ghi ngày nộp và một ngày hỏi lại; đến ngày đó mới hỏi.",
-  "thuocDo": "100% thủ tục đang chờ trong 3 tháng có ngày hỏi lại",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "NAM-LUU-02": {
-    "quyTacId": [
-     "NAM-LUU-02"
-    ]
-   }
-  }
- },
- {
-  "maMau": "TC-18",
-  "chuDe": "tai-chinh",
-  "maHuong": [
-   "NAM-HOA-05/hãm"
-  ],
-  "cau": "Cuối mỗi tháng ghi ba việc tiền bạc quan trọng nhất của tháng sau, xếp thứ tự và làm theo thứ tự đó.",
-  "thuocDo": "3/3 tháng có danh sách xếp thứ tự",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "NAM-HOA-05/hãm": {
-    "quyTacId": [
-     "NAM-HOA-QUYEN-HAM"
-    ]
-   }
-  }
- },
- {
-  "maMau": "TC-19",
-  "chuDe": "tai-chinh",
-  "maHuong": [
-   "NAM-HOA-07"
-  ],
-  "cau": "Trước khi bàn chuyện tiền với ai, viết sẵn ba ý chính muốn nói; sau buổi bàn, nhắn lại điều đã thống nhất.",
-  "thuocDo": "≥ 3/4 lần bàn có ba ý viết trước và tin nhắn lại",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "NAM-HOA-07": {
-    "quyTacId": [
-     "NAM-HOA-KY-SANG",
-     "NAM-HOA-KY-HAM"
-    ]
-   }
-  }
- },
- {
-  "maMau": "TC-20",
-  "chuDe": "tai-chinh",
-  "maHuong": [
-   "NAM-LUU-03"
-  ],
-  "cau": "Ghi tên những người đã giúp hoặc giới thiệu cho bạn việc có thu nhập; mỗi tháng chủ động cảm ơn hoặc cập nhật một người.",
-  "thuocDo": "3 lần trong 3 tháng",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "NAM-LUU-03": {
-    "quyTacId": [
-     "NAM-LUU-03"
-    ]
-   }
+    "cau": "Trước khi trình bày một kết quả, tự rà theo ba điểm cần hoàn thiện bạn viết sẵn, sửa xong mới gửi.",
+    "thuocDo": "100% bản trình bày trong 2 tháng có bước rà",
+    "thoiHanThang": 2,
+    "dieuKien": {
+      "NAM-HOA-06/hãm": {
+        "quyTacId": [
+          "NAM-HOA-KHOA-HAM"
+        ]
+      }
+    }
   },
-  "maPhatHuy": [
-   "NAM-LUU-03"
-  ]
- },
- {
-  "maMau": "TC-21",
-  "chuDe": "tai-chinh",
-  "maHuong": [
-   "NAM-HOA-04/sáng"
-  ],
-  "cau": "Mỗi lần có khoản thu thêm ngoài thu nhập thường kỳ, để riêng ngay {phần bạn tự chọn} của khoản đó vào một chỗ tích góp.",
-  "thuocDo": "Ghi các khoản thu thêm; ≥ 4/5 khoản đã để riêng phần tích góp; không có khoản nào thì ghi \"không có\"",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "NAM-HOA-04/sáng": {
-    "quyTacId": [
-     "NAM-HOA-LOC-SANG"
-    ]
-   }
+  {
+    "maMau": "CV-16",
+    "chuDe": "cong-viec",
+    "maHuong": [
+      "NAM-HOA-05/sáng"
+    ],
+    "cau": "Trước mỗi đề xuất quan trọng, hỏi ý một người sẽ chịu ảnh hưởng và ghi điều họ lo vào bản đề xuất.",
+    "thuocDo": "≥ 3 đề xuất trong 3 tháng có bước hỏi ý",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "NAM-HOA-05/sáng": {
+        "quyTacId": [
+          "NAM-HOA-QUYEN-SANG"
+        ]
+      }
+    },
+    "maPhatHuy": [
+      "NAM-HOA-05"
+    ],
+    "tuoiTu": 18
   },
-  "maPhatHuy": [
-   "NAM-HOA-04"
-  ]
- },
- {
-  "maMau": "TC-22",
-  "chuDe": "tai-chinh",
-  "maHuong": [
-   "NAM-HOA-08/Kỵ-Lộc"
-  ],
-  "cau": "Hẹn người liên quan một buổi nói rõ một khoản tiền còn chưa rõ giữa hai bên, rồi ghi lại kết quả bằng tin nhắn.",
-  "thuocDo": "1 buổi trong 2 tháng, có tin nhắn ghi kết quả",
-  "thoiHanThang": 2,
-  "dieuKien": {
-   "NAM-HOA-08/Kỵ-Lộc": {
-    "quyTacId": [
-     "NAM-HOA-08-KY-LOC",
-     "NAM-HOA-08-KY-LOC-CANH"
+  {
+    "maMau": "CV-17",
+    "chuDe": "cong-viec",
+    "maHuong": [
+      "NAM-LUU-03"
+    ],
+    "cau": "Ghi tên ba người có vị thế trong nghề từng giúp hoặc có thể giới thiệu bạn; mỗi tháng chủ động kể với một người về việc bạn đang làm.",
+    "thuocDo": "3 lần trong 3 tháng",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "NAM-LUU-03": {
+        "quyTacId": [
+          "NAM-LUU-03"
+        ]
+      }
+    },
+    "maPhatHuy": [
+      "NAM-LUU-03"
     ]
-   }
   },
-  "tuoiTu": 18
- },
- {
-  "maMau": "TC-23",
-  "chuDe": "tai-chinh",
-  "maHuong": [
-   "NAM-HOA-06/sáng"
-  ],
-  "cau": "Viết kế hoạch tiền bạc một trang cho 3 tháng tới (thu, chi, mục tiêu) và xem lại vào cuối mỗi tháng.",
-  "thuocDo": "Có bản kế hoạch, 3/3 lần xem lại",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "NAM-HOA-06/sáng": {
-    "quyTacId": [
-     "NAM-HOA-KHOA-SANG"
-    ]
-   }
+  {
+    "maMau": "CV-18",
+    "chuDe": "cong-viec",
+    "maHuong": [
+      "NAM-LUU-02"
+    ],
+    "cau": "Trước khi nhận việc mới, chuyển bộ phận hay đi công tác dài, viết một trang: lý do, điều được, điều mất, giấy tờ cần làm.",
+    "thuocDo": "100% thay đổi trong 3 tháng có trang này; không có thay đổi thì ghi \"không có\"",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "NAM-LUU-02": {
+        "quyTacId": [
+          "NAM-LUU-02"
+        ]
+      }
+    },
+    "tuoiTu": 18
   },
-  "maPhatHuy": [
-   "NAM-HOA-06"
-  ]
- },
- {
-  "maMau": "TT-18",
-  "chuDe": "tinh-cam",
-  "maHuong": [
-   "NAM-LUU-03"
-  ],
-  "cau": "Khi phân vân một chuyện tình cảm, hỏi ý một người từng trải mà bạn tin, rồi tự viết ra quyết định và lý do của mình.",
-  "thuocDo": "Mỗi lần phân vân có một lần hỏi và một dòng viết; không phát sinh thì ghi \"không có\"",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "NAM-LUU-03": {
-    "quyTacId": [
-     "NAM-LUU-03"
-    ]
-   }
+  {
+    "maMau": "HT-04",
+    "chuDe": "hoc-tap",
+    "maHuong": [
+      "NAM-HOA-06/sáng"
+    ],
+    "cau": "Chọn một khóa học hoặc chứng chỉ gắn với lĩnh vực này, ghi ngày bắt đầu và học 2 buổi mỗi tuần.",
+    "thuocDo": "≥ 20/24 buổi trong 3 tháng",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "NAM-HOA-06/sáng": {
+        "quyTacId": [
+          "NAM-HOA-KHOA-SANG"
+        ]
+      }
+    }
   },
-  "maPhatHuy": [
-   "NAM-LUU-03"
-  ]
- },
- {
-  "maMau": "TT-19",
-  "chuDe": "tinh-cam",
-  "maHuong": [
-   "VAN-SP-06/thận trọng",
-   "NAM-LUU-04-SAT"
-  ],
-  "cau": "Trước khi ký hay gửi giấy tờ liên quan đến cả hai người, cùng {nguoiLienQuan} đọc lại từng trang và ghi điều chưa rõ.",
-  "thuocDo": "100% giấy tờ chung trong 3 tháng có bước đọc lại; không có thì ghi \"không có\"",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "VAN-SP-06/thận trọng": {
-    "saoTrongCung": [
-     [
-      "Văn Xương",
-      "Văn Khúc",
-      "L. Văn Xương",
-      "L. Văn Khúc"
-     ],
-     [
-      "Kình Dương",
-      "Đà La",
-      "L. Kình Dương",
-      "L. Đà La",
-      "hoa:Hóa Kỵ",
-      "luuHoa:Hóa Kỵ"
-     ]
+  {
+    "maMau": "TC-08",
+    "chuDe": "tai-chinh",
+    "maHuong": [
+      "NAM-LUU-03"
+    ],
+    "cau": "Hẹn hỏi một người có chuyên môn mà bạn tin một câu cụ thể về cách bạn đang ghi chép, sắp xếp thu chi; ghi lại ba điều rút ra.",
+    "thuocDo": "1 buổi hỏi trong 3 tháng, có ghi 3 điều",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "NAM-LUU-03": {
+        "quyTacId": [
+          "NAM-LUU-03"
+        ]
+      }
+    },
+    "maPhatHuy": [
+      "NAM-LUU-03"
     ]
-   },
-   "NAM-LUU-04-SAT": {
-    "quyTacId": [
-     "NAM-LUU-04-SAT"
-    ]
-   }
   },
-  "tuoiTu": 18
- },
- {
-  "maMau": "TT-20",
-  "chuDe": "tinh-cam",
-  "maHuong": [
-   "NAM-HOA-07"
-  ],
-  "cau": "Khi có hiểu lầm, mỗi người viết một câu: mình đã hiểu người kia nói gì; đọc cho nhau nghe rồi mới bàn tiếp.",
-  "thuocDo": "Ghi các lần hiểu lầm; ≥ 3/4 lần dùng cách này",
-  "thoiHanThang": 2,
-  "dieuKien": {
-   "NAM-HOA-07": {
-    "quyTacId": [
-     "NAM-HOA-KY-SANG",
-     "NAM-HOA-KY-HAM"
+  {
+    "maMau": "TC-09",
+    "chuDe": "tai-chinh",
+    "maHuong": [
+      "NAM-TT-06"
+    ],
+    "cau": "Đặt một khung 20 phút cố định mỗi tuần để xem lại thu chi của tuần, chọn lúc bạn không mệt.",
+    "thuocDo": "≥ 10/12 tuần có buổi xem lại",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "NAM-TT-06": {
+        "quyTacId": [
+          "NAM-TT-06"
+        ],
+        "cung": [
+          "Tài Bạch"
+        ],
+        "saoTrongCung": [
+          [
+            "L. Thiên Khốc",
+            "L. Thiên Hư",
+            "L. Tang Môn",
+            "L. Bạch Hổ"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "maMau": "TC-10",
+    "chuDe": "tai-chinh",
+    "maHuong": [
+      "NAM-HOA-07"
+    ],
+    "cau": "Chốt mỗi thỏa thuận có tiền (giá, hạn, phần của mỗi bên) bằng tin nhắn hoặc văn bản trước khi chuyển hay nhận tiền.",
+    "thuocDo": "100% thỏa thuận mới trong 3 tháng có bản chữ",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "NAM-HOA-07": {
+        "quyTacId": [
+          "NAM-HOA-KY-SANG",
+          "NAM-HOA-KY-HAM"
+        ]
+      }
+    },
+    "tuoiTu": 18
+  },
+  {
+    "maMau": "TC-11",
+    "chuDe": "tai-chinh",
+    "maHuong": [
+      "NAM-HOA-08/Lộc-Kỵ"
+    ],
+    "cau": "Trước khi nhận một việc có tiền công, ghi rõ điều khoản (khối lượng, mức trả, hạn trả) và gửi bên kia xác nhận.",
+    "thuocDo": "100% việc mới nhận trong 3 tháng có điều khoản đã xác nhận",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "NAM-HOA-08/Lộc-Kỵ": {
+        "quyTacId": [
+          "NAM-HOA-08-LOC-KY"
+        ]
+      }
+    }
+  },
+  {
+    "maMau": "TC-12",
+    "chuDe": "tai-chinh",
+    "maHuong": [
+      "NAM-HOA-08/Kỵ-Lộc"
+    ],
+    "cau": "Viết ra một việc tiền bạc còn vướng lâu nay (khoản chưa rõ, giấy tờ chưa xong); mỗi tháng làm một bước để làm rõ, cần thì hỏi người có chuyên môn.",
+    "thuocDo": "3 bước trong 3 tháng, mỗi bước ghi một dòng",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "NAM-HOA-08/Kỵ-Lộc": {
+        "quyTacId": [
+          "NAM-HOA-08-KY-LOC",
+          "NAM-HOA-08-KY-LOC-CANH"
+        ]
+      }
+    }
+  },
+  {
+    "maMau": "TC-13",
+    "chuDe": "tai-chinh",
+    "maHuong": [
+      "NAM-HOA-04/sáng"
+    ],
+    "cau": "Cùng người trong nhà lập danh sách chi tiêu gia đình cho tháng tới, mỗi nhóm một {mức bạn tự chọn}; cuối tháng xem lại.",
+    "thuocDo": "3/3 tháng có danh sách và một lần xem lại",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "NAM-HOA-04/sáng": {
+        "quyTacId": [
+          "NAM-HOA-LOC-SANG"
+        ]
+      }
+    },
+    "maPhatHuy": [
+      "NAM-HOA-04"
+    ],
+    "tuoiTu": 18
+  },
+  {
+    "maMau": "TC-14",
+    "chuDe": "tai-chinh",
+    "maHuong": [
+      "NAM-HOA-04/hãm"
+    ],
+    "cau": "Chọn một nguồn thu đang có; cuối mỗi tháng ghi số giờ bạn bỏ vào và số thu được để thấy kết quả tích lũy.",
+    "thuocDo": "3/3 tháng có dòng ghi",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "NAM-HOA-04/hãm": {
+        "quyTacId": [
+          "NAM-HOA-LOC-HAM"
+        ]
+      }
+    }
+  },
+  {
+    "maMau": "TC-15",
+    "chuDe": "tai-chinh",
+    "maHuong": [
+      "NAM-HOA-05/hãm"
+    ],
+    "cau": "Liệt kê các việc tiền bạc bạn đang lo; mỗi tuần chọn một việc chính, làm xong trước khi mở việc khác.",
+    "thuocDo": "≥ 10/12 tuần việc chính xong",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "NAM-HOA-05/hãm": {
+        "quyTacId": [
+          "NAM-HOA-QUYEN-HAM"
+        ]
+      }
+    }
+  },
+  {
+    "maMau": "TC-16",
+    "chuDe": "tai-chinh",
+    "maHuong": [
+      "NAM-HOA-06/sáng"
+    ],
+    "cau": "Đọc một cuốn sách hoặc học một khóa ngắn về quản lý tiền cá nhân; ghi ba điều sẽ áp dụng và làm thử một điều.",
+    "thuocDo": "Xong sách hoặc khóa, có 1 điều đã làm thử",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "NAM-HOA-06/sáng": {
+        "quyTacId": [
+          "NAM-HOA-KHOA-SANG"
+        ]
+      }
+    }
+  },
+  {
+    "maMau": "TC-17",
+    "chuDe": "tai-chinh",
+    "maHuong": [
+      "NAM-HOA-05/sáng"
+    ],
+    "cau": "Khi cần bàn chuyện tiền với {nguoiLienQuan}, gửi trước nội dung muốn bàn và hỏi ý họ trước khi nêu đề xuất của bạn.",
+    "thuocDo": "≥ 2 lần áp dụng trong 3 tháng; không có dịp thì ghi \"không có\"",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "NAM-HOA-05/sáng": {
+        "quyTacId": [
+          "NAM-HOA-QUYEN-SANG"
+        ]
+      }
+    },
+    "maPhatHuy": [
+      "NAM-HOA-05"
     ]
-   }
+  },
+  {
+    "maMau": "TT-07",
+    "chuDe": "tinh-cam",
+    "maHuong": [
+      "VAN-SP-06/thận trọng",
+      "NAM-LUU-04-SAT"
+    ],
+    "cau": "Gom giấy tờ chung của bạn với {nguoiLienQuan} hoặc của gia đình vào một chỗ, cùng đọc lại, đánh dấu điều chưa rõ để hỏi người có chuyên môn.",
+    "thuocDo": "Xong danh mục (có/không); 100% điều đánh dấu được hỏi",
+    "thoiHanThang": 1,
+    "dieuKien": {
+      "VAN-SP-06/thận trọng": {
+        "saoTrongCung": [
+          [
+            "Văn Xương",
+            "Văn Khúc",
+            "L. Văn Xương",
+            "L. Văn Khúc"
+          ],
+          [
+            "Kình Dương",
+            "Đà La",
+            "L. Kình Dương",
+            "L. Đà La",
+            "hoa:Hóa Kỵ",
+            "luuHoa:Hóa Kỵ"
+          ]
+        ]
+      },
+      "NAM-LUU-04-SAT": {
+        "quyTacId": [
+          "NAM-LUU-04-SAT"
+        ]
+      }
+    },
+    "tuoiTu": 18
+  },
+  {
+    "maMau": "TT-08",
+    "chuDe": "tinh-cam",
+    "maHuong": [
+      "NAM-TT-06"
+    ],
+    "cau": "Mỗi tuần dành 15 phút hỏi {nguoiLienQuan} điều gì làm họ mệt nhất trong tuần, chỉ nghe, chưa góp ý.",
+    "thuocDo": "≥ 10/12 tuần có",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "NAM-TT-06": {
+        "quyTacId": [
+          "NAM-TT-06"
+        ],
+        "cung": [
+          "Phu Thê"
+        ],
+        "saoTrongCung": [
+          [
+            "L. Thiên Khốc",
+            "L. Thiên Hư",
+            "L. Tang Môn",
+            "L. Bạch Hổ"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "maMau": "TT-09",
+    "chuDe": "tinh-cam",
+    "maHuong": [
+      "NAM-LUU-03"
+    ],
+    "cau": "Mỗi tháng cùng {nguoiLienQuan} dành một buổi gặp người thân hoặc bạn bè mà cả hai quý trọng.",
+    "thuocDo": "3 buổi trong 3 tháng",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "NAM-LUU-03": {
+        "quyTacId": [
+          "NAM-LUU-03"
+        ]
+      }
+    },
+    "maPhatHuy": [
+      "NAM-LUU-03"
+    ]
+  },
+  {
+    "maMau": "TT-10",
+    "chuDe": "tinh-cam",
+    "maHuong": [
+      "NAM-LUU-05"
+    ],
+    "cau": "Mỗi tháng cùng {nguoiLienQuan} làm một việc lần đầu làm cùng nhau: một món ăn, một nơi chưa tới, hay một lớp học ngắn.",
+    "thuocDo": "3 việc mới trong 3 tháng",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "NAM-LUU-05": {
+        "quyTacId": [
+          "NAM-LUU-05-PHU"
+        ]
+      }
+    },
+    "maPhatHuy": [
+      "NAM-LUU-05"
+    ]
+  },
+  {
+    "maMau": "TT-11",
+    "chuDe": "tinh-cam",
+    "maHuong": [
+      "NAM-HOA-07"
+    ],
+    "cau": "Khi hai người thống nhất một việc chung (lịch, tiền, việc nhà), một người nhắn lại bằng chữ điều đã thống nhất trong ngày.",
+    "thuocDo": "≥ 4/5 việc thống nhất có tin nhắn lại",
+    "thoiHanThang": 2,
+    "dieuKien": {
+      "NAM-HOA-07": {
+        "quyTacId": [
+          "NAM-HOA-KY-SANG",
+          "NAM-HOA-KY-HAM"
+        ]
+      }
+    },
+    "tuoiTu": 18
+  },
+  {
+    "maMau": "TT-12",
+    "chuDe": "tinh-cam",
+    "maHuong": [
+      "NAM-HOA-08/Kỵ-Lộc"
+    ],
+    "cau": "Chọn một chuyện cũ hai người hay né, hẹn một buổi lúc cả hai thoải mái để nói; mỗi người nói hết ý rồi mới bàn cách làm.",
+    "thuocDo": "1 buổi trong 2 tháng, có một dòng ghi điều đã thống nhất",
+    "thoiHanThang": 2,
+    "dieuKien": {
+      "NAM-HOA-08/Kỵ-Lộc": {
+        "quyTacId": [
+          "NAM-HOA-08-KY-LOC",
+          "NAM-HOA-08-KY-LOC-CANH"
+        ]
+      }
+    }
+  },
+  {
+    "maMau": "TT-13",
+    "chuDe": "tinh-cam",
+    "maHuong": [
+      "NAM-HOA-04/sáng"
+    ],
+    "cau": "Mỗi tuần làm một việc chu đáo nhỏ cho {nguoiLienQuan} mà không cần được nhắc, rồi ghi lại một dòng.",
+    "thuocDo": "≥ 10/12 tuần có",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "NAM-HOA-04/sáng": {
+        "quyTacId": [
+          "NAM-HOA-LOC-SANG"
+        ]
+      }
+    },
+    "maPhatHuy": [
+      "NAM-HOA-04"
+    ]
+  },
+  {
+    "maMau": "TT-14",
+    "chuDe": "tinh-cam",
+    "maHuong": [
+      "NAM-HOA-05/sáng"
+    ],
+    "cau": "Khi muốn đề nghị một điều với {nguoiLienQuan}, hỏi ý người ấy trước rồi mới nói mong muốn của bạn.",
+    "thuocDo": "Ghi các lần đề nghị; ≥ 3/4 lần có hỏi ý trước",
+    "thoiHanThang": 2,
+    "dieuKien": {
+      "NAM-HOA-05/sáng": {
+        "quyTacId": [
+          "NAM-HOA-QUYEN-SANG"
+        ]
+      }
+    },
+    "maPhatHuy": [
+      "NAM-HOA-05"
+    ]
+  },
+  {
+    "maMau": "TT-15",
+    "chuDe": "tinh-cam",
+    "maHuong": [
+      "NAM-HOA-05/hãm"
+    ],
+    "cau": "Cùng {nguoiLienQuan} liệt kê các việc chung đang dồn; mỗi tháng chọn một việc chính để làm xong trước.",
+    "thuocDo": "3/3 tháng có việc chính xong",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "NAM-HOA-05/hãm": {
+        "quyTacId": [
+          "NAM-HOA-QUYEN-HAM"
+        ]
+      }
+    }
+  },
+  {
+    "maMau": "TT-16",
+    "chuDe": "tinh-cam",
+    "maHuong": [
+      "NAM-HOA-06/hãm"
+    ],
+    "cau": "Khi muốn nói một điều quan trọng với {nguoiLienQuan}, viết nháp trước, để qua một ngày rồi mới nói.",
+    "thuocDo": "Ghi các lần; ≥ 3/4 lần có nháp và chờ một ngày",
+    "thoiHanThang": 2,
+    "dieuKien": {
+      "NAM-HOA-06/hãm": {
+        "quyTacId": [
+          "NAM-HOA-KHOA-HAM"
+        ]
+      }
+    }
+  },
+  {
+    "maMau": "TT-17",
+    "chuDe": "tinh-cam",
+    "maHuong": [
+      "NAM-HOA-06/sáng"
+    ],
+    "cau": "Cùng {nguoiLienQuan} viết một kế hoạch chung 3 tháng: một việc muốn làm, một nơi muốn đến, một thói quen muốn giữ.",
+    "thuocDo": "Có kế hoạch, mỗi tháng xem lại một lần",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "NAM-HOA-06/sáng": {
+        "quyTacId": [
+          "NAM-HOA-KHOA-SANG"
+        ]
+      }
+    },
+    "maPhatHuy": [
+      "NAM-HOA-06"
+    ]
+  },
+  {
+    "maMau": "SK-05",
+    "chuDe": "suc-khoe",
+    "maHuong": [
+      "NAM-LUU-02"
+    ],
+    "cau": "Trong những tuần có chuyến đi hoặc đổi lịch sinh hoạt, giữ giờ đi ngủ cố định ít nhất 5 đêm.",
+    "thuocDo": "Ghi các tuần có thay đổi; ≥ 3/4 tuần giữ được",
+    "thoiHanThang": 2,
+    "dieuKien": {
+      "NAM-LUU-02": {
+        "quyTacId": [
+          "NAM-LUU-02"
+        ]
+      }
+    }
+  },
+  {
+    "maMau": "SK-06",
+    "chuDe": "suc-khoe",
+    "maHuong": [
+      "NAM-TT-06"
+    ],
+    "cau": "Chọn một buổi trong tuần không xếp việc, dành cho nghỉ ngơi hoặc vận động nhẹ.",
+    "thuocDo": "≥ 10/12 tuần giữ được",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "NAM-TT-06": {
+        "quyTacId": [
+          "NAM-TT-06"
+        ],
+        "cung": [
+          "Tật Ách"
+        ],
+        "saoTrongCung": [
+          [
+            "L. Thiên Khốc",
+            "L. Thiên Hư",
+            "L. Tang Môn",
+            "L. Bạch Hổ"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "maMau": "CV-19",
+    "chuDe": "cong-viec",
+    "maHuong": [
+      "NAM-HOA-04/hãm"
+    ],
+    "cau": "Chia việc chính đang làm thành các bước nhỏ; mỗi tuần làm xong một bước và đánh dấu vào danh sách.",
+    "thuocDo": "≥ 10/12 tuần xong một bước",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "NAM-HOA-04/hãm": {
+        "quyTacId": [
+          "NAM-HOA-LOC-HAM"
+        ]
+      }
+    }
+  },
+  {
+    "maMau": "CV-20",
+    "chuDe": "cong-viec",
+    "maHuong": [
+      "NAM-HOA-08/Kỵ-Lộc"
+    ],
+    "cau": "Hẹn {nguoiLienQuan} một buổi nói thẳng về một việc lâu nay còn vướng giữa hai bên, mang theo một cách gỡ bạn đề xuất.",
+    "thuocDo": "1 buổi trong 2 tháng, có một dòng ghi kết quả",
+    "thoiHanThang": 2,
+    "dieuKien": {
+      "NAM-HOA-08/Kỵ-Lộc": {
+        "quyTacId": [
+          "NAM-HOA-08-KY-LOC",
+          "NAM-HOA-08-KY-LOC-CANH"
+        ]
+      }
+    }
+  },
+  {
+    "maMau": "CV-21",
+    "chuDe": "cong-viec",
+    "maHuong": [
+      "NAM-LUU-02"
+    ],
+    "cau": "Với mỗi thủ tục, giấy tờ công việc đang chờ, ghi ngày nộp và một ngày hỏi lại; đến ngày đó mới hỏi.",
+    "thuocDo": "100% thủ tục đang chờ trong 3 tháng có ngày hỏi lại",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "NAM-LUU-02": {
+        "quyTacId": [
+          "NAM-LUU-02"
+        ]
+      }
+    }
+  },
+  {
+    "maMau": "TC-18",
+    "chuDe": "tai-chinh",
+    "maHuong": [
+      "NAM-HOA-05/hãm"
+    ],
+    "cau": "Cuối mỗi tháng ghi ba việc tiền bạc quan trọng nhất của tháng sau, xếp thứ tự và làm theo thứ tự đó.",
+    "thuocDo": "3/3 tháng có danh sách xếp thứ tự",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "NAM-HOA-05/hãm": {
+        "quyTacId": [
+          "NAM-HOA-QUYEN-HAM"
+        ]
+      }
+    }
+  },
+  {
+    "maMau": "TC-19",
+    "chuDe": "tai-chinh",
+    "maHuong": [
+      "NAM-HOA-07"
+    ],
+    "cau": "Trước khi bàn chuyện tiền với ai, viết sẵn ba ý chính muốn nói; sau buổi bàn, nhắn lại điều đã thống nhất.",
+    "thuocDo": "≥ 3/4 lần bàn có ba ý viết trước và tin nhắn lại",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "NAM-HOA-07": {
+        "quyTacId": [
+          "NAM-HOA-KY-SANG",
+          "NAM-HOA-KY-HAM"
+        ]
+      }
+    }
+  },
+  {
+    "maMau": "TC-20",
+    "chuDe": "tai-chinh",
+    "maHuong": [
+      "NAM-LUU-03"
+    ],
+    "cau": "Ghi tên những người đã giúp hoặc giới thiệu cho bạn việc có thu nhập; mỗi tháng chủ động cảm ơn hoặc cập nhật một người.",
+    "thuocDo": "3 lần trong 3 tháng",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "NAM-LUU-03": {
+        "quyTacId": [
+          "NAM-LUU-03"
+        ]
+      }
+    },
+    "maPhatHuy": [
+      "NAM-LUU-03"
+    ]
+  },
+  {
+    "maMau": "TC-21",
+    "chuDe": "tai-chinh",
+    "maHuong": [
+      "NAM-HOA-04/sáng"
+    ],
+    "cau": "Mỗi lần có khoản thu thêm ngoài thu nhập thường kỳ, để riêng ngay {phần bạn tự chọn} của khoản đó vào một chỗ tích góp.",
+    "thuocDo": "Ghi các khoản thu thêm; ≥ 4/5 khoản đã để riêng phần tích góp; không có khoản nào thì ghi \"không có\"",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "NAM-HOA-04/sáng": {
+        "quyTacId": [
+          "NAM-HOA-LOC-SANG"
+        ]
+      }
+    },
+    "maPhatHuy": [
+      "NAM-HOA-04"
+    ]
+  },
+  {
+    "maMau": "TC-22",
+    "chuDe": "tai-chinh",
+    "maHuong": [
+      "NAM-HOA-08/Kỵ-Lộc"
+    ],
+    "cau": "Hẹn người liên quan một buổi nói rõ một khoản tiền còn chưa rõ giữa hai bên, rồi ghi lại kết quả bằng tin nhắn.",
+    "thuocDo": "1 buổi trong 2 tháng, có tin nhắn ghi kết quả",
+    "thoiHanThang": 2,
+    "dieuKien": {
+      "NAM-HOA-08/Kỵ-Lộc": {
+        "quyTacId": [
+          "NAM-HOA-08-KY-LOC",
+          "NAM-HOA-08-KY-LOC-CANH"
+        ]
+      }
+    },
+    "tuoiTu": 18
+  },
+  {
+    "maMau": "TC-23",
+    "chuDe": "tai-chinh",
+    "maHuong": [
+      "NAM-HOA-06/sáng"
+    ],
+    "cau": "Viết kế hoạch tiền bạc một trang cho 3 tháng tới (thu, chi, mục tiêu) và xem lại vào cuối mỗi tháng.",
+    "thuocDo": "Có bản kế hoạch, 3/3 lần xem lại",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "NAM-HOA-06/sáng": {
+        "quyTacId": [
+          "NAM-HOA-KHOA-SANG"
+        ]
+      }
+    },
+    "maPhatHuy": [
+      "NAM-HOA-06"
+    ]
+  },
+  {
+    "maMau": "TT-18",
+    "chuDe": "tinh-cam",
+    "maHuong": [
+      "NAM-LUU-03"
+    ],
+    "cau": "Khi phân vân một chuyện tình cảm, hỏi ý một người từng trải mà bạn tin, rồi tự viết ra quyết định và lý do của mình.",
+    "thuocDo": "Mỗi lần phân vân có một lần hỏi và một dòng viết; không phát sinh thì ghi \"không có\"",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "NAM-LUU-03": {
+        "quyTacId": [
+          "NAM-LUU-03"
+        ]
+      }
+    },
+    "maPhatHuy": [
+      "NAM-LUU-03"
+    ]
+  },
+  {
+    "maMau": "TT-19",
+    "chuDe": "tinh-cam",
+    "maHuong": [
+      "VAN-SP-06/thận trọng",
+      "NAM-LUU-04-SAT"
+    ],
+    "cau": "Trước khi ký hay gửi giấy tờ liên quan đến cả hai người, cùng {nguoiLienQuan} đọc lại từng trang và ghi điều chưa rõ.",
+    "thuocDo": "100% giấy tờ chung trong 3 tháng có bước đọc lại; không có thì ghi \"không có\"",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "VAN-SP-06/thận trọng": {
+        "saoTrongCung": [
+          [
+            "Văn Xương",
+            "Văn Khúc",
+            "L. Văn Xương",
+            "L. Văn Khúc"
+          ],
+          [
+            "Kình Dương",
+            "Đà La",
+            "L. Kình Dương",
+            "L. Đà La",
+            "hoa:Hóa Kỵ",
+            "luuHoa:Hóa Kỵ"
+          ]
+        ]
+      },
+      "NAM-LUU-04-SAT": {
+        "quyTacId": [
+          "NAM-LUU-04-SAT"
+        ]
+      }
+    },
+    "tuoiTu": 18
+  },
+  {
+    "maMau": "TT-20",
+    "chuDe": "tinh-cam",
+    "maHuong": [
+      "NAM-HOA-07"
+    ],
+    "cau": "Khi có hiểu lầm, mỗi người viết một câu: mình đã hiểu người kia nói gì; đọc cho nhau nghe rồi mới bàn tiếp.",
+    "thuocDo": "Ghi các lần hiểu lầm; ≥ 3/4 lần dùng cách này",
+    "thoiHanThang": 2,
+    "dieuKien": {
+      "NAM-HOA-07": {
+        "quyTacId": [
+          "NAM-HOA-KY-SANG",
+          "NAM-HOA-KY-HAM"
+        ]
+      }
+    }
+  },
+  {
+    "maMau": "CV-22",
+    "chuDe": "cong-viec",
+    "maHuong": [
+      "NAM-TT-02"
+    ],
+    "cau": "Khi phải quyết nhanh ở chỗ làm, dành 10 phút viết hai phương án và một rủi ro của mỗi phương án rồi mới quyết.",
+    "thuocDo": "Ghi các lần phải quyết nhanh; ≥ 4/5 lần có 10 phút viết",
+    "thoiHanThang": 2,
+    "dieuKien": {
+      "NAM-TT-02": {
+        "quyTacId": [
+          "NAM-TT-02"
+        ]
+      }
+    }
+  },
+  {
+    "maMau": "TC-24",
+    "chuDe": "tai-chinh",
+    "maHuong": [
+      "NAM-TT-02"
+    ],
+    "cau": "Khi bị thúc quyết nhanh một việc tiền bạc, xin thêm ít nhất một ngày và ghi ra điều bạn cần hỏi thêm.",
+    "thuocDo": "Ghi các lần bị thúc; ≥ 4/5 lần có xin thêm thời gian",
+    "thoiHanThang": 3,
+    "dieuKien": {
+      "NAM-TT-02": {
+        "quyTacId": [
+          "NAM-TT-02"
+        ]
+      }
+    }
+  },
+  {
+    "maMau": "GD-06",
+    "chuDe": "gia-dao",
+    "maHuong": [
+      "NAM-TT-02"
+    ],
+    "cau": "Khi trong nhà bàn chuyện dễ căng, người nghe nhắc lại ý vừa nghe trước khi nói ý của mình.",
+    "thuocDo": "Áp dụng ở ≥ 3 lần bàn chuyện trong 2 tháng",
+    "thoiHanThang": 2,
+    "dieuKien": {
+      "NAM-TT-02": {
+        "quyTacId": [
+          "NAM-TT-02"
+        ]
+      }
+    }
   }
- },
- {
-  "maMau": "CV-22",
-  "chuDe": "cong-viec",
-  "maHuong": [
-   "NAM-TT-02"
-  ],
-  "cau": "Khi phải quyết nhanh ở chỗ làm, dành 10 phút viết hai phương án và một rủi ro của mỗi phương án rồi mới quyết.",
-  "thuocDo": "Ghi các lần phải quyết nhanh; ≥ 4/5 lần có 10 phút viết",
-  "thoiHanThang": 2,
-  "dieuKien": {
-   "NAM-TT-02": {
-    "quyTacId": [
-     "NAM-TT-02"
-    ]
-   }
-  }
- },
- {
-  "maMau": "TC-24",
-  "chuDe": "tai-chinh",
-  "maHuong": [
-   "NAM-TT-02"
-  ],
-  "cau": "Khi bị thúc quyết nhanh một việc tiền bạc, xin thêm ít nhất một ngày và ghi ra điều bạn cần hỏi thêm.",
-  "thuocDo": "Ghi các lần bị thúc; ≥ 4/5 lần có xin thêm thời gian",
-  "thoiHanThang": 3,
-  "dieuKien": {
-   "NAM-TT-02": {
-    "quyTacId": [
-     "NAM-TT-02"
-    ]
-   }
-  }
- },
- {
-  "maMau": "GD-06",
-  "chuDe": "gia-dao",
-  "maHuong": [
-   "NAM-TT-02"
-  ],
-  "cau": "Khi trong nhà bàn chuyện dễ căng, người nghe nhắc lại ý vừa nghe trước khi nói ý của mình.",
-  "thuocDo": "Áp dụng ở ≥ 3 lần bàn chuyện trong 2 tháng",
-  "thoiHanThang": 2,
-  "dieuKien": {
-   "NAM-TT-02": {
-    "quyTacId": [
-     "NAM-TT-02"
-    ]
-   }
-  }
- }
 ]
