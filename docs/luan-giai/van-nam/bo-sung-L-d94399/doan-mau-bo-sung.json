@@ -1,0 +1,56 @@
+[
+ {
+  "chuyenDe": "van-nam",
+  "namXem": 2027,
+  "truongPhai": "Tam hợp phái Việt",
+  "khong": [],
+  "tongHop": true,
+  "id": "NAM-MANG-06-PHU",
+  "lop": "cung-goc",
+  "cung": "Phu Thê",
+  "loai": "SP",
+  "maNghienCuu": [
+   "VAN-SP-10",
+   "NAM-MANG-04"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ],
+    "toiThieu": 1,
+    "doSang": [
+     "Hãm"
+    ]
+   },
+   {
+    "motTrong": [
+     {
+      "trung": [
+       "dai-van"
+      ]
+     },
+     {
+      "trung": [
+       "tieu-han"
+      ]
+     },
+     {
+      "trung": [
+       "thai-tue"
+      ]
+     }
+    ]
+   }
+  ],
+  "muc": "tinh-cam",
+  "noiDung": "{sao} ở thế hãm tại cung Phu Thê, mà năm nay cung này lại là cung hạn (đại vận, tiểu hạn hoặc Lưu Thái Tuế): chuyện tình cảm, với người đồng hành hay người bạn đang tìm hiểu, dễ có lúc nóng lời hoặc có việc bất ngờ xen vào kế hoạch chung. Nên giữ bình tĩnh khi trao đổi, để điều cần bàn sang lúc cả hai đã dịu.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "nguonChiTiet": "VAN-SP-10 (c) (TT q.2 火鈴二星入限: \"火鈴限陷\"; KL A.4); áp cho cung hạn của năm: NAM-MANG-04, NAM-MANG-01 (tổng hợp)",
+  "ghiChu": "Việc L-2381a4. Sao hãm: không viết câu thuận. Bỏ ý \"mất đồ, quan tai\" của sách (VAN-SP-10 (c) đã trung tính hóa; không nói kiện tụng). PHU-SP-06 chỉ mô tả, giữ làm mã phụ trong mã ẩn, không đưa vào maNghienCuu để TT-01 bám đúng VAN-SP-10/hãm. ⚑ tổng hợp: Đức cần kiểm việc áp câu nhập hạn của đại vận sang cung hạn năm."
+ }
+]
