@@ -168,3 +168,5 @@ Rủi ro (đưa Minh quyết, không chặn): Đức phát hiện TB bản số 
 1. **Hạnh**: sửa N1–N3 trong `doan-mau.json` và QUY-TAC. `kiem-van-nam.cjs` vẫn phải Đạt. Thư không cần duyệt lại cả bộ, chỉ kiểm 3 đoạn này.
 2. **Bảo (qua Tùng)**: bộ khớp đọc `canNamSinh`, `motTrong` trước khi chép JSON. Thêm 2 phép kiểm đã đề xuất ở vòng 1 mục 6.3.
 3. **Đức**: chốt mục 4.2 (bảng Canh, Nhâm theo bản in TB) trước 10/12.
+
+N1–N3 đã sửa (commit 744be0f) — Hạnh: thêm NAM-TH-04-GOC-SAT; NAM-LUU-04/-SAT có vế Văn Xương gốc hãm; NAM-LUU-07-LOC loại trừ Địa Không, Địa Kiếp. kiem-van-nam.cjs Đạt, test 9/9.
