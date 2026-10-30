@@ -77,3 +77,26 @@ Phần làm tốt: bỏ được ba đuôi "Độ sáng tốt/trung bình/kém�
 - Tiền tố mới "soi sang thêm nét" (42 câu) và "tiếp thêm nét" (84 câu) vẫn là tiền tố chung. Có 42 câu ghép thành câu không xuôi, ví dụ `QL-S04-C4` "soi sang thêm nét hợp việc cần kỷ luật…" (nét + "hợp…"). Đề xuất: khi phần sau bắt đầu bằng "hợp/mạnh về/có phong thái" thì bỏ chữ "nét" ("tiếp thêm thế mạnh: hợp việc…"). Đây là lý do Giọng 8, chưa lên 9.
 - `menh-chinh-tinh.json` dòng 444 "Thiên Lương ở Ngọ: đường công danh trong sạch, hiển đạt." vẫn khẳng định cứng (câu chưa sửa ở vòng 1): nên viết "có xu hướng…".
 - Mục 5 (câu đầu quy tắc `-HAM`, `PHU-TA-01`) vẫn để đợt sau, như Hạnh đã ghi.
+
+## 8. Chấm lại vòng 3 (commit 77296fb, việc L-167bf9, Thư, 30/10/2026)
+
+**Kết luận: ĐẠT.** Giọng **9**/10, An toàn **10**/10 (cả hai ≥ 9). Chấm trên bản đúng commit 77296fb (worktree tách riêng), không tính phần người khác đang sửa dở trong thư mục làm việc.
+
+| Mục (vòng 2 "Còn lại" và mục 5) | Kiểm đo của Thư | Kết quả |
+|---|---|---|
+| Tiền tố "soi sang/tiếp thêm nét" ghép không xuôi | So `quy-tac.json` trước/sau theo id: 82 quy tắc đổi = 28 `-HAM` + 54 câu tiền tố (`QL-S01..14-C3/C4/C5` 42, `ML-S06/S13-C1..C3` 6, `PT-S01/S12-C1/C2/C6` 6). Quét "thêm nét" + (hợp, mạnh về, có phong thái, cần, nghiêng về, có nguyên tắc, mạnh mẽ, sự, tính, thế mạnh, mong muốn, xu hướng) = **0**. 72 câu "thêm nét" còn lại đều là nét + tính từ (`ML-S01-C1` "nét thích giữ vai trò dẫn dắt", `PT-S06-C2` "nét sống tình cảm sâu sắc"): xuôi. Đọc 12 câu: `QL-S01-C4`, `QL-S03-C4`, `QL-S04-C4`, `QL-S05-C3`, `QL-S07-C5`, `QL-S10-C3`, `QL-S13-C3`, `QL-S14-C4`, `ML-S06-C1`, `ML-S13-C3`, `PT-S01-C2`, `PT-S12-C6` | Đã sửa |
+| Câu đầu `ML-Sxx-HAM`, `PT-Sxx-HAM` (mục 5) | 28/28 câu mở bằng "… khi kém sáng: bạn vẫn …, nhưng …", không còn dùng chung câu với bản sáng. Đọc 8 câu: `ML-S01`, `ML-S03`, `ML-S09`, `ML-S13`, `PT-S03`, `PT-S09`, `PT-S10`, `PT-S14` (-HAM): mặt cần chú ý nêu ngay câu đầu, có lời khuyên cụ thể. `QL-Sxx-HAM` đã đúng từ trước (14/14 tả mặt kém sáng) | Đã sửa |
+| `PHU-TA-01` | "Người bạn đời thường hiền hòa, có vị thế, và hai người dễ nể trọng, hỗ trợ nhau": trung tính giới; "Người nam thường/người nữ thường" = 0 | Đã sửa |
+| `MENH-TL-03` Thiên Lương Ngọ; Nhật Nguyệt khung | "đường công danh có xu hướng trong sạch, dễ được ghi nhận"; 5 câu Nhật Nguyệt `quy-tac-khung.json` + `tao-khung.cjs` đổi "chủ hiển đạt" → "có xu hướng được ghi nhận và có chỗ đứng"; khung và script khớp nhau | Đã sửa |
+| `tom-tat-mien-phi.json` câu khẳng định | 715 chuỗi, 268 đổi. Đọc 14 câu đổi (Tử Vi M, Thiên Đồng V, Thái Dương Đ, Thiên Phủ B, Tham Lang B, Thiên Tướng H trẻ em, Phá Quân M trẻ em, Thân cư Thiên Di, Đà La, Văn Khúc H trẻ em, VCD xung Tuần Triệt trẻ em, cách cục 8, 19, 30) và toàn bộ tóm tắt 11 lá số mẫu (`do-tom-tat.cjs`): không còn câu tính cách/vận khẳng định cứng | Đã sửa |
+| Đơn điệu "có xu hướng" | "có xu hướng" ở 74 chuỗi, không chuỗi nào lặp 2 lần; trong bài khách thấy (11 lá số mẫu, 6–8 câu/bài): **0–2 lần/bài**, 7/11 bài 0 lần. Phần trẻ em dùng "bé thường", phụ tinh dùng "bạn thường", nên cách mở câu đã xen kẽ. Không đơn điệu | Đạt |
+| Quét từ nặng (8 file luận giải, gồm Vận 10 năm, Vận 2027) | giải hạn, hóa giải, bùa, cúng, trừ tà, yểm, tai ương, chết, yểu, khắc chồng/vợ, phá sản, chắc chắn, nhất định sẽ, phú quý, giàu sang, hiển hách, hiển đạt, song toàn, lưỡng toàn, rất nổi tiếng, xui xẻo, góp thêm sắc thái, bổ sung xu hướng: **0**. "tai họa" 3 lần chỉ nằm ở `ghiChu` nội bộ `van-nam-2027.json` (ghi câu bị cấm), không đến khách | Sạch |
+| Câu nhắc bác sĩ | `node scripts/luan-giai/dem-cau-van-nam.cjs`: 480 bài, **480/480 đúng 1 câu**; Mệnh, Phu Thê ≤ 1, Quan Lộc, Vận 10 năm 0 | Giữ đúng |
+| Test | `node --test tests/*.test.cjs` trên commit: 413 test, 405 pass, 0 fail | Đạt |
+
+Ghi chú số liệu: Hạnh báo 46 câu tiền tố, máy đếm 54 câu tiền tố đổi; không ảnh hưởng kết luận vì không còn câu ghép sai.
+
+**Còn lại, không chặn (P2, Hạnh, đợt sau):**
+- 5 chuỗi tóm tắt có hai chữ "thường" làm từ rào trong cùng câu: `thanCu.Thiên Di.y`, `tuanTriet.Triệt.ham.y` ("thường giảm bớt… thường lùi xa dần"), `phuTinh.Tả Phù.y`, `phuTinh.Thiên Khôi.y`, `cachCuc[14].treEm`. Lá số TC10 có 6 chữ "thường" trong 8 câu. Nên giữ một chữ cho mỗi câu.
+- 5 chuỗi "có xu hướng" + cụm danh từ đọc gượng: `chinhTinh.Tham Lang.B.y` "có xu hướng nhiều hứng thú", `chinhTinh.Thiên Phủ.B.y` "có xu hướng biết giữ gìn", `cachCuc[4].y` "nhiều mong muốn", `cachCuc[9].y` "nhiều ham muốn", `cachCuc[21].y` "nhiều mưu trí". Nên viết "bạn thường có nhiều hứng thú…", "bạn biết giữ gìn…".
+- Trùng nguyên văn giữa các lá số trong tóm tắt: 17/80 câu (21,3%), chủ yếu câu cuối cố định và câu phụ tinh dùng chung (Đào Hoa, Địa Kiếp H, Văn Khúc H). Đây là chỉ số theo dõi, không phải lỗi giọng.
