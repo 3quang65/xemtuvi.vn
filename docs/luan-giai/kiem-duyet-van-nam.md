@@ -96,3 +96,75 @@ Kết quả: truy 13 ý, có 10 ý khớp (77%). 3 ý không khớp là lỗi 1,
 2. **Đức (qua Minh):** chốt Q2 (問流年昌曲), Q5 (問天梁), Q6 (định nghĩa "xa Tam Không"), các điểm 1, 2, 3, 4, 5 ở mục 5.
 3. **Bảo (qua Tùng, không gấp):** `kiem-van-nam.cjs` thêm hai phép kiểm. (a) Đoạn có `truongPhai` khác phái Việt mà dựa trên hóa của can Canh hoặc Nhâm thì báo lỗi (bắt được lỗi 1, Q1). (b) Đoạn "thuận" về Xương Khúc (NAM-LUU-04, NAM-TH-04) mà cung có Kình, Đà hoặc Hóa Kỵ thì cảnh báo (bắt được lỗi 2, Q3).
 4. **Lỗi lặp lại so với vòng đại vận:** lại gặp dạng "chọn bản tốt khi điều kiện của bản cần thận trọng đã có" (DV09 trước đây, nay là lỗi 2 và 4). Đề xuất Hạnh thêm vào bước tự kiểm: với mỗi câu thuận, tìm xem quy tắc cặp (b) có đủ điều kiện không.
+
+## Vòng 2
+
+- Người chấm: Thư. Ngày 30/10/2026. Đối tượng: bản sửa của Hạnh, commit 859159b (`QUY-TAC.md`, `doan-mau.json`, `DINH-DANG.md`, `VN01.md`–`VN03.md`). Đối chiếu: kết luận nguồn của Đức `van-nam/kiem-nguon-duc.md` (commit b6d4eda) và `du-lieu.md`.
+- Phạm vi: chỉ duyệt lại lỗi vòng 1, chấm lại đủ VN02, kiểm các đoạn bị đổi ở VN01 và VN03, quét từ cấm toàn bộ thư mục `van-nam/`.
+- `node tools/kiem-van-nam.cjs`: Đạt (87 đoạn JSON, 46 quy tắc NAM, 3 bài đủ khung, không từ cấm, mọi mã có thật).
+
+### 1. Kết luận
+
+**ĐẠT.** Không còn lỗi nặng. VN02 đạt **9,00/10** (An toàn 10). Cả 3 lỗi nặng và 11 lỗi nhẹ của vòng 1 đã sửa đúng, khớp kết luận của Đức. Quy tắc tuổi Đinh đã có (NAM-HOA-08(d), NAM-LUU-07, NAM-CAM-02). Còn **3 lỗi nhẹ mới trong `doan-mau.json`** (N1–N3). Ba lỗi này không nằm trong bài mẫu nhưng **phải sửa trước khi chép JSON sang engine**, vì máy ghép đoạn sẽ ra câu "thuận" mà thiếu vế thận trọng (cùng dạng lỗi 2 ở vòng 1).
+
+### 2. Lỗi vòng 1, trạng thái
+
+| # | Lỗi vòng 1 | Mức | Đã sửa | Bằng chứng |
+|---|---|---|---|---|
+| 1 | VN02 gán nhãn Trung Châu cho Thái Âm Kỵ gốc tuổi Canh | Nặng | **Đạt** | Tổng quan, Sự nghiệp, T10 đổi thành "cách xét tổng hợp", có câu "theo bảng Tứ hóa xemtuvi.vn dùng; can Canh khác bảng giữa các sách". Ghi chú trường phái: KL, NL cho Âm Kỵ; TT, Trung Châu cho Đồng Kỵ, đúng Đức Q1. Bài không còn chữ "Trung Châu". |
+| 2 | VN02 Tài chính: Xương Việt "thuận hơn thường lệ" trong khi cung có Kình, Hỏa hãm | Nặng | **Đạt** | Viết hai mặt: Thiên Việt giúp, Văn Xương gặp Kình Dương và Hỏa Tinh hãm nên giấy tờ dễ nhầm. T2 viết cùng hướng. Đối chiếu du-lieu VN02, Tài Bạch Dậu: đúng. |
+| 5 | VN02 khuyên dồn thủ tục, tái cơ cấu khoản vay vào năm nay | Nhẹ (An toàn) | **Đạt** | Gợi ý mới: "Rà lại giấy tờ…; việc vay, gia hạn hay thay đổi khoản vay thì hỏi người làm chuyên môn". NAM-LUU-04 có thêm câu cấm dùng sao lưu làm căn cứ chọn thời điểm cho việc tài chính, pháp lý. |
+| 3 | VN01 dùng NAM-TH-04 khi Xương Khúc chỉ ở cung xung chiếu | Nhẹ | **Đạt** | Bài ghi rõ "chưa phải năm thi cử thuận theo sách". Điểm thuận chuyển sang Hóa Khoa của năm ở cung Thái Tuế (NAM-HOA-06): đúng dữ liệu, vì Thiên Cơ ở Mùi nhận Lưu Khoa. Gợi ý đổi thành "lên kế hoạch từ đầu năm". |
+| 4 | VN02 T5 thiếu VAN-CT-TV-02 | Nhẹ | **Đạt** | Đã thêm "cung đối diện có Tham Lang hãm (trong Triệt)". Đối chiếu: Nô Bộc Ngọ có Tham Lang (H) và Triệt. |
+| 6 | VN03 câu khẳng định "năm tài lộc dồi dào" | Nhẹ | **Đạt** | Đổi thành "thường cho thấy năm có nguồn lợi…". |
+| 7 | VN03 T12 bỏ sót Triệt | Nhẹ | **Đạt** | Đã thêm "Triệt làm năng lượng này đến chậm". |
+| 8 | VN01 gán cách chia vai Thái Tuế/tiểu hạn cho phái Việt | Nhẹ | **Đạt** | Ghi chú đổi đúng mẫu NAM-TRANH-01: "đây là cách đọc của xemtuvi.vn; sách Việt như Tân Biên, Khảo Luận lấy tiểu hạn làm cung năm chính". VN02, VN03 cùng câu. |
+| Q1 | NAM-HOA-08(a) gắn Trung Châu cho cả tuổi Ất và tuổi Canh | Nặng | **Đạt** | QUY-TAC ghi trường phái "tổng hợp", câu cho khách không dẫn Trung Châu. JSON tách `NAM-HOA-08-KY-LOC` (`canNamSinh: Ất`) và `-CANH` (`canNamSinh: Canh`, nguồn KL, NL, ghi chú "không được gắn nhãn Trung Châu"). DINH-DANG có ghi cho Kỹ thuật rằng engine chưa đọc `canNamSinh`/`motTrong`: đúng, đây là điều kiện trước khi chép JSON. |
+| Q2 | NAM-TH-04 chữ và JSON lệch nhau (tại cung hay tam phương) | Nhẹ | **Đạt** | Theo Đức Q2: Xương Khúc của năm phải ở tại cung, các nhóm khác cần ≥ 2 ở tam phương. JSON: `saoLuu` `viTri: "chinh"`, `toiThieu: 2`. Có thêm `-SAT`, `-TT-SAT` và `-GOC` (⚑). Tính lại VN02 (L. Khúc tại Tỵ, ≥ 2 nhóm, có Đà và Kỵ thì dùng bản SAT) và VN03 (L. Xương tại Dậu, cung sạch, ≥ 2 nhóm thì dùng bản thuận): cả hai đúng. |
+| Q3 | NAM-LUU-04 thiếu vế loại trừ | Nhẹ | **Đạt** (còn lệch nhỏ, xem N2) | JSON có `khong` (Kình, Đà gốc/lưu, Hóa Kỵ, lưu Hóa Kỵ) và đoạn `NAM-LUU-04-SAT`. VN01 T11 (Huynh Đệ Dậu không có Kình, Đà, Kỵ) giữ bản thuận: đúng. |
+| Q4 | Thiếu quy tắc tuổi Đinh | Nhẹ | **Đạt** | NAM-HOA-08(c)(d): viết hai lớp, cấm "gấp đôi", không kết luận cát hung. JSON có đủ 4 đoạn trùng hóa (`KY-KY`, `LOC-LOC`, `QUYEN-QUYEN`, `KHOA-KHOA`, `canNamSinh: Đinh`). NAM-LUU-07 (tuổi Đinh **và Kỷ**, theo Đức Q4b) viết giọng trung tính. NAM-CAM-02 cấm câu 羊陀迭並…十生九死 và câu TB "tai họa khủng khiếp". |
+| Q5 | NAM-TT-03 "Thiên Lương ở Sửu" dễ hiểu sai | Nhẹ | **Đạt** | Đã viết "tùy lá số có Thiên Lương ở đó hay không", nguyên văn đối chiếu 2 bản, gắn ⚑ tổng hợp ở phần áp cho Lưu Thái Tuế. VN01, VN03 đổi thành "Toàn Thư có câu…; áp vào năm…". |
+| Q6 | "Xa Tam Không" chưa định nghĩa | Nhẹ | **Đạt** | Đức chốt theo TB (Tuần Triệt tính tại cung, Không Kiếp tính cả tam phương). VN02 giữ TP-01, thêm vế "Tuần ở Tử Tức nên phần hỗ trợ đến chậm". Đối chiếu: Thìn sạch, Thân và Tý không có Thiên Không, Địa Không. Đúng. |
+
+### 3. Chấm lại VN02
+
+| Đúng | Sâu | Giọng | An toàn | **TB** | Kết quả |
+|---|---|---|---|---|---|
+| 9 | 8 | 9 | 10 | **9,00** | **Đạt** (vòng 1: 7,75) |
+
+- Đúng: đối chiếu lại từng cung với `du-lieu.md`: Thái Tuế Mùi, tiểu hạn Tỵ, Tài Bạch Dậu, Phu Thê Hợi, Tật Ách Thân, 12 tháng. Sao, độ sáng, Tuần Triệt, sao lưu đều khớp. Áp NAM-TH-04-SAT đúng điều kiện mới. Không còn chỗ dẫn sai trường phái. Trừ 1 điểm vì phần Tứ hóa can Canh vẫn phụ thuộc bảng đang tranh luận (xem mục 5, rủi ro).
+- Sâu: đã thêm Tang Môn ở Tài Bạch, TV-02 ở T5, Tuần ở xung chiếu cung vận. Vẫn chưa đọc Thiên Không tại cung Thái Tuế, Hồng Loan ở Tật Ách (do bộ quy tắc chưa có câu, bài đã ghi rõ), nên giữ 8.
+- Giọng: hai mặt rõ, gợi ý cụ thể, không hứa kết quả.
+- An toàn: không còn lời khuyên chọn thời điểm cho hành động tài chính, có câu "hỏi người làm chuyên môn". Ghi chú không tính lỗi: câu T2 "chưa quyết khoản lớn" chấp nhận được vì là lời nhắc thận trọng; nếu sửa thì nên viết "quyết khoản lớn sau khi đọc kỹ giấy tờ" cho đồng bộ với mảng Tài chính.
+
+VN01, VN03 (chỉ kiểm các đoạn bị đổi): **Đạt**, giữ điểm vòng 1. Đoạn bối cảnh mới của VN01 tách TV-02 và TP-02 đúng dữ liệu (Thất Sát ở Dần; Đà La, Địa Kiếp ở Thìn; Tuần tại Thân). Câu Thiên Hình, Thiên Hư của VN03 ở mảng Tình cảm viết trung tính. Đoạn NAM-TH-04 của VN03 ở Thiên Di Dậu đủ điều kiện mới, và đoạn NAM-TH-04-GOC ở Thái Tuế có kèm câu rà văn bản.
+
+### 4. Lỗi nhẹ mới (trong JSON; Hạnh sửa, không chặn bài mẫu, **chặn việc chép JSON sang engine**)
+
+| # | Mã | Lỗi | Cách sửa |
+|---|---|---|---|
+| N1 | `NAM-TH-04-GOC` (JSON) | Không có vế loại trừ, cũng không có bản SAT. Năm 2027, Kình Dương của năm luôn ở Mùi, nên khi đoạn này dùng cho cung Thái Tuế thì **luôn** gặp Kình. Máy sẽ ra câu "thuận cho học hành" mà không có câu rà văn bản. Hiện chỉ ghi ở `ghiChu`, máy không đọc trường này. VN03 viết tay nên đúng, còn máy ghép thì sai. | Thêm `NAM-TH-04-GOC-SAT`: cùng `khong`/`motTrong` như NAM-TH-04 và câu "giấy tờ dễ nhầm, rà soát kỹ". Đoạn GOC gốc thêm `khong` tương ứng. |
+| N2 | `NAM-LUU-04`, `-SAT` (JSON) | QUY-TAC có vế loại trừ "Văn Xương gốc hãm cùng cung", còn `khong` và `motTrong` trong JSON không có. Chữ và máy lại lệch nhau, cùng dạng Q2 ở vòng 1. | Thêm điều kiện Văn Xương gốc hãm vào `motTrong` ở cả hai đoạn. |
+| N3 | `NAM-LUU-07-LOC` (JSON, QUY-TAC) | Không có vế loại trừ Địa Không, Địa Kiếp tại cung. Đoạn này mâu thuẫn với `NAM-LUU-01-KHONG` khi tuổi Đinh, Kỷ có Không/Kiếp ở Ngọ: hai đoạn cùng khớp, một đoạn nói "rõ hơn thường lệ", đoạn kia nói ngược lại. TB P3 §4.3 cũng chỉ nói hanh thông khi "gặp nhiều sao sáng sủa tốt đẹp". | Thêm `khong: Địa Không, Địa Kiếp` để nhường cho NAM-LUU-01-KHONG. QUY-TAC ghi cùng điều kiện. |
+
+Ghi chú (không tính lỗi): các đoạn HOA-08 của tuổi Ất, Tân, Đinh còn ghi "Trung Châu phái" trong trường `nguon`. Chấp nhận được, vì bảng Tứ hóa của ba can này giống nhau ở mọi phái và câu cho khách không dẫn tên. Nếu trang hiển thị trường `nguon` cho khách thì đổi thành "Tổng hợp (nguyên tắc Trung Châu nói cho đại vận)".
+
+### 5. Hai điểm Đức còn giữ ⚑: cách xử lý
+
+| Điểm | Xử lý | Lý do |
+|---|---|---|
+| Q4a: hóa năm trùng hóa gốc (tuổi Đinh) | **Giữ đoạn, giữ ghi chú nguồn** (`truongPhai: "tổng hợp"`, `tongHop: true`, ⚑ trong QUY-TAC). Không thêm câu dẫn sách cho khách. | Câu đã viết hai lớp, trung tính, không kết luận cát hung, nên rủi ro thấp. Bỏ ghi chú thì mất dấu vết rằng đoạn này chưa có nguồn trực tiếp. |
+| M5-2: nguồn trực tiếp cho hóa chồng ở lớp lưu niên | **Giữ ghi chú nguồn**: câu cho khách ghi "cách xét tổng hợp"; ghi chú trường phái cuối bài nói rõ đây là mượn nguyên tắc vốn nói cho đại vận (VN02, VN03 đã làm). | Ba sách Việt không dùng lưu tứ hóa. Nói rõ điều này là đúng định vị "tin cậy học thuật". |
+
+Rủi ro (đưa Minh quyết, không chặn): Đức phát hiện TB bản số hóa ghi Canh hóa Kỵ Thiên Đồng, Nhâm hóa Khoa Tả Phù (kiem-nguon-duc.md mục 4.2). Nếu Đức đối chiếu ảnh quét bản in rồi đổi bảng Canh trong SPEC, VN02 phải viết lại toàn bộ phần Thái Âm Kỵ gốc. Đề xuất chờ Đức chốt mục 4.2 trước khi đưa VN02 làm bài mẫu công khai ngày 10/12.
+
+### 6. Từ cấm (quét toàn thư mục `van-nam/`)
+
+- VN01–VN03 và trường `noiDung` của 87 đoạn JSON: **0 từ cấm** (giải hạn, bùa, cúng, hóa giải, phạm Thái Tuế, năm hạn, tai họa, tai ương, khủng khiếp, chết, gấp đôi…). "Chắc chắn" chỉ xuất hiện trong câu phủ định "Thuận không có nghĩa là chắc chắn": đạt.
+- Các từ nặng chỉ có trong tệp nội bộ (QUY-TAC mục CAM, kiem-nguon-duc.md, TU-KIEM), và đều nằm trong ngữ cảnh **cấm dùng**. Đạt.
+
+### 7. Việc tiếp theo
+
+1. **Hạnh**: sửa N1–N3 trong `doan-mau.json` và QUY-TAC. `kiem-van-nam.cjs` vẫn phải Đạt. Thư không cần duyệt lại cả bộ, chỉ kiểm 3 đoạn này.
+2. **Bảo (qua Tùng)**: bộ khớp đọc `canNamSinh`, `motTrong` trước khi chép JSON. Thêm 2 phép kiểm đã đề xuất ở vòng 1 mục 6.3.
+3. **Đức**: chốt mục 4.2 (bảng Canh, Nhâm theo bản in TB) trước 10/12.
