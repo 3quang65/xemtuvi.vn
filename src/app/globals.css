@@ -303,3 +303,7 @@ a { color: inherit; }
 .bao-loi-form textarea:focus { border-color: var(--ngoc); outline: none; box-shadow: 0 0 0 3px rgba(106, 61, 115, 0.2); }
 .bao-loi-ok { margin: 0; color: var(--ngoc-dam); font-size: 0.95rem; }
 .o[aria-invalid="true"] input, input[aria-invalid="true"], select[aria-invalid="true"] { border-color: var(--sen); }
+
+/* Ô nhập đăng nhập thử (email, mã khôi phục) và ô gõ XOA */
+.khoi-buoc input[type="email"], .khoi-buoc input[type="text"], .lien-he input[type="text"] { width: 100%; min-height: 44px; padding: 0 12px; font: inherit; font-size: 1rem; border: 1px solid var(--vien-dam); border-radius: 10px; background: var(--giay); }
+.khoi-buoc input[type="email"]:focus, .khoi-buoc input[type="text"]:focus { border-color: var(--ngoc); outline: none; box-shadow: 0 0 0 3px rgba(106, 61, 115, 0.2); }
