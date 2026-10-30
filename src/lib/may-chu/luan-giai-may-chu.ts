@@ -1,6 +1,8 @@
 // Luận giải trả phí sinh và khóa phía máy chủ. Chỉ gọi qua src/lib/luan-giai/ai/index.ts, nhà cung cấp `stub`.
 import { lapLaSo, namAmHienTai, type ThongTinSinh } from '@/lib/tuvi';
 import { khoaCache, PHIEN_BAN_QUY_TAC, sinhLuanGiai, timDaiVan, type ChuyenDeMa, type LuanGiai } from '@/lib/luan-giai/ai';
+import { MA_VAN_NAM } from '@/lib/goi';
+import { baiVanNamGiaLap } from '@/lib/van-nam-mau';
 import type { Csdl } from './csdl';
 import { coQuyenXem, LoiNghiepVu } from './dich-vu';
 import { giaiMaJson, khoaTim, maHoaJson, type BoKhoa } from './ma-hoa';
@@ -10,9 +12,13 @@ const CHUYEN_DE_CUA_CHU_DE: Record<string, ChuyenDeMa | null> = {
   'ban-than': 'menh', 'tinh-cam': 'phu-the', 'su-nghiep': 'quan-loc', 'tai-chinh': null, 'gia-dao': null,
   'van-10-nam': 'van-10-nam', // chỉ gói trọn lá số / thành viên
 };
-export const CHU_DE_HOP_LE = Object.keys(CHUYEN_DE_CUA_CHU_DE);
+export const CHU_DE_HOP_LE = [...Object.keys(CHUYEN_DE_CUA_CHU_DE), MA_VAN_NAM];
 
 export async function luanGiaiChoKhach(db: Csdl, k: BoKhoa, nguoiDungId: number, laSoId: number, chuDe: string, bayGio = Date.now()): Promise<LuanGiai> {
+  if (chuDe === MA_VAN_NAM) {
+    if (!coQuyenXem(db, nguoiDungId, laSoId, MA_VAN_NAM, bayGio)) throw new LoiNghiepVu('chua_mua', 'Bạn chưa mở phần này.', 403);
+    return baiVanNamGiaLap(); // TODO: thay bằng hàm sinh thật của B1 (src/lib/luan-giai) khi có
+  }
   if (!(chuDe in CHUYEN_DE_CUA_CHU_DE)) throw new LoiNghiepVu('chu_de_sai', 'Chủ đề không hợp lệ.');
   // Kiểm quyền TRƯỚC mọi việc khác; sai quyền không được biết chủ đề có nội dung hay không.
   if (!coQuyenXem(db, nguoiDungId, laSoId, chuDe === 'van-10-nam' ? null : chuDe, bayGio)) throw new LoiNghiepVu('chua_mua', 'Bạn chưa mở phần này.', 403);

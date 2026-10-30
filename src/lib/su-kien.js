@@ -4,6 +4,7 @@ const TRANG = {
   xem_tom_tat: 'tom-tat', bam_xem_sau: 'tom-tat',
   vao_chon_goi: 'chon-goi', chon_goi: 'chon-goi',
   vao_thanh_toan: 'thanh-toan', dang_nhap: 'thanh-toan', thanh_toan_xong: 'thanh-toan',
+  xem_lp_van_nam: 'lp', bam_lap_la_so_lp: 'lp', // trang đích /lp/van-nam-2027
   bao_loi: 'luan-giai', // khách báo không xem được đủ phần đã mua (đếm khiếu nại); sau khi mua nên không tính vào 4 màn
 };
 const { MA_GOI, MA_CHU_DE } = require('./goi-ma.js');

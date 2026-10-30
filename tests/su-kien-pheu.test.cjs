@@ -7,8 +7,8 @@ const path = require('node:path');
 const { kiemTraSuKien, TEN_SU_KIEN, trangCua } = require('../src/lib/su-kien.js');
 const { tinhPheu, docThuMuc } = require('../tools/pheu.cjs');
 
-test('Sự kiện hợp lệ: đủ 11 tên, phiên 16–32 ký tự', () => {
-  assert.equal(TEN_SU_KIEN.length, 11);
+test('Sự kiện hợp lệ: đủ 13 tên, phiên 16–32 ký tự', () => {
+  assert.equal(TEN_SU_KIEN.length, 13);
   for (const ten of TEN_SU_KIEN) assert.deepEqual(kiemTraSuKien({ ten, phien: 'a1b2c3d4e5f6a7b8' }), { ten, phien: 'a1b2c3d4e5f6a7b8' });
 });
 
@@ -24,7 +24,7 @@ test('Từ chối: trường lạ, tên lạ, phiên sai độ dài/ký tự, kh
 });
 
 test('Màn hình của từng sự kiện: 4 màn mua + trang luận giải (báo lỗi)', () => {
-  assert.equal(new Set(TEN_SU_KIEN.map(trangCua)).size, 5);
+  assert.equal(new Set(TEN_SU_KIEN.map(trangCua)).size, 6);
   assert.equal(trangCua('bao_loi'), 'luan-giai');
   assert.equal(trangCua('thanh_toan_xong'), 'thanh-toan');
 });
@@ -85,7 +85,7 @@ const { MA_GOI, MA_CHU_DE } = require('../src/lib/goi-ma.js');
 const PH = 'a1b2c3d4e5f6a7b8';
 
 test('Khoá goi/chuDe hợp lệ chỉ cho chon_goi, vao_thanh_toan, thanh_toan_xong', () => {
-  assert.deepEqual(MA_GOI, ['mot-chu-de', 'tron-la-so', 'thanh-vien-nam']);
+  assert.deepEqual(MA_GOI, ['mot-chu-de', 'tron-la-so', 'thanh-vien-nam', 'van-nam-2027', 'tron-la-so-kem-van-nam']);
   assert.deepEqual(MA_CHU_DE, ['ban-than', 'tinh-cam', 'su-nghiep', 'tai-chinh', 'gia-dao']);
   for (const ten of ['chon_goi', 'vao_thanh_toan', 'thanh_toan_xong']) {
     for (const goi of MA_GOI) assert.deepEqual(kiemTraSuKien({ ten, phien: PH, goi }), { ten, phien: PH, goi });
@@ -129,9 +129,9 @@ test('Tỉ lệ từng bậc, đơn trung bình (lần cuối mỗi phiên), gó
   ];
   const p = tinhPheu(ds);
   assert.equal(p.bac.soDon, 4);
-  assert.deepEqual(p.bac.tiLeTrenDon, { 'mot-chu-de': 2 / 4, 'tron-la-so': 1 / 4, 'thanh-vien-nam': 1 / 4 });
+  assert.deepEqual(p.bac.tiLeTrenDon, { 'mot-chu-de': 2 / 4, 'tron-la-so': 1 / 4, 'thanh-vien-nam': 1 / 4, 'van-nam-2027': 0, 'tron-la-so-kem-van-nam': 0 });
   assert.equal(p.bac.soChon, 5);
-  assert.deepEqual(p.bac.tiLeTrenChon, { 'mot-chu-de': 2 / 5, 'tron-la-so': 2 / 5, 'thanh-vien-nam': 1 / 5 });
+  assert.deepEqual(p.bac.tiLeTrenChon, { 'mot-chu-de': 2 / 5, 'tron-la-so': 2 / 5, 'thanh-vien-nam': 1 / 5, 'van-nam-2027': 0, 'tron-la-so-kem-van-nam': 0 });
   assert.equal(p.bac.donTrungBinh, (99000 + 29000 + 29000 + 299000) / 4);
   assert.equal(p.bac.tiLeGoiNam, 1 / 4);
   assert.deepEqual(p.bac.chuDe, { 'tinh-cam': 1, 'su-nghiep': 1 }); // theo lần chọn cuối mỗi phiên

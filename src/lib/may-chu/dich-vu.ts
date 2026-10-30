@@ -1,5 +1,5 @@
 // Nghiệp vụ: người dùng, lá số, đơn, quyền xem. Chỉ làm việc với CSDL; không biết gì về HTTP.
-import { layChuDe, layGoi, type MaGoi } from '../goi';
+import { layChuDe, layGoi, MA_VAN_NAM, type MaGoi } from '../goi';
 import type { Csdl } from './csdl';
 import { giaiMaJson, khoaTim, maHoaJson, type BoKhoa } from './ma-hoa';
 
@@ -8,7 +8,7 @@ export const TOI_DA_LA_SO = 20;
 export const LA_SO_THANH_VIEN = 3; // thành viên năm: tối đa 3 lá số (bang-gia.md)
 
 export type Cong = 'gia_lap';
-export interface Quyen { id: number; loai: 'chu_de' | 'tron_la_so' | 'thanh_vien'; laSoId: number | null; chuDe: string | null; tuLuc: number; denLuc: number | null }
+export interface Quyen { id: number; loai: 'chu_de' | 'tron_la_so' | 'thanh_vien' | 'van_nam'; laSoId: number | null; chuDe: string | null; tuLuc: number; denLuc: number | null }
 export class LoiNghiepVu extends Error { constructor(public ma: string, thongDiep: string, public trangThai = 400) { super(thongDiep); } }
 
 export function dangNhapThu(db: Csdl, email: string, bayGio = Date.now()): number {
@@ -72,9 +72,13 @@ export function xacNhanDaTra(db: Csdl, donId: number, cong: string, maGiaoDich: 
     if (don.trangThai === 'da_tra') return { daCapMoi: false };
     if (don.trangThai !== 'cho') throw new LoiNghiepVu('don_khong_cho', 'Đơn không ở trạng thái chờ thanh toán.', 409);
     db.prepare("UPDATE don_hang SET trang_thai='da_tra', cong=?, ma_giao_dich_cong=?, tra_luc=? WHERE id=?").run(cong, maGiaoDich, bayGio, donId);
-    const loai = don.maGoi === 'thanh-vien-nam' ? 'thanh_vien' : don.maGoi === 'tron-la-so' ? 'tron_la_so' : 'chu_de';
-    db.prepare('INSERT INTO quyen_xem (nguoi_dung_id, la_so_id, loai, chu_de, tu_luc, den_luc, don_hang_id) VALUES (?,?,?,?,?,?,?)')
-      .run(don.nguoiDungId, loai === 'thanh_vien' ? null : don.laSoId, loai, don.chuDe, bayGio, loai === 'thanh_vien' ? bayGio + 365 * NGAY : null, donId);
+    const them = db.prepare('INSERT INTO quyen_xem (nguoi_dung_id, la_so_id, loai, chu_de, tu_luc, den_luc, don_hang_id) VALUES (?,?,?,?,?,?,?)');
+    // Gói gộp cấp hai quyền (Trọn lá số + Vận năm); các gói khác một quyền.
+    const loaiCap: Quyen['loai'][] = don.maGoi === 'thanh-vien-nam' ? ['thanh_vien'] : don.maGoi === 'tron-la-so' ? ['tron_la_so']
+      : don.maGoi === 'van-nam-2027' ? ['van_nam'] : don.maGoi === 'tron-la-so-kem-van-nam' ? ['tron_la_so', 'van_nam'] : ['chu_de'];
+    for (const loai of loaiCap) {
+      them.run(don.nguoiDungId, loai === 'thanh_vien' ? null : don.laSoId, loai, loai === 'van_nam' ? MA_VAN_NAM : don.chuDe, bayGio, loai === 'thanh_vien' ? bayGio + 365 * NGAY : null, donId);
+    }
     return { daCapMoi: true };
   })();
 }
@@ -90,5 +94,5 @@ export function coQuyenXem(db: Csdl, nguoiDungId: number, laSoId: number, chuDe:
   const dau = (db.prepare('SELECT id FROM la_so WHERE nguoi_dung_id=? ORDER BY id LIMIT ?').all(nguoiDungId, LA_SO_THANH_VIEN) as { id: number }[]).map((r) => r.id);
   return dsQuyen(db, nguoiDungId, bayGio).some((q) =>
     q.loai === 'thanh_vien' ? dau.includes(laSoId)
-      : q.laSoId === laSoId && (q.loai === 'tron_la_so' || (chuDe !== null && q.chuDe === chuDe)));
+      : q.laSoId === laSoId && ((q.loai === 'tron_la_so' && chuDe !== MA_VAN_NAM) || (chuDe !== null && q.chuDe === chuDe)));
 }
