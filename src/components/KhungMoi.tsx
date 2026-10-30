@@ -82,7 +82,7 @@ export function NutGopY() {
   try { const u = new URL(url); u.searchParams.set('nguon', moi.kiem.nguon ?? ''); dich = u.toString(); } catch { return null; }
   return (
     <div className="gop-y">
-      <p className="tt-ghi-chu">Bạn thấy bản luận thế nào? Góp ý 6 câu ngắn giúp chúng mình hoàn thiện sản phẩm.</p>
+      <p className="tt-ghi-chu">Bạn thấy bản luận thế nào? Góp ý 8 câu ngắn giúp chúng mình hoàn thiện sản phẩm.</p>
       <a className="nut-phu nut-lien-ket" href={dich} target="_blank" rel="noopener noreferrer" onClick={() => guiSuKien('bam_gop_y')}>Góp ý</a>
     </div>
   );
