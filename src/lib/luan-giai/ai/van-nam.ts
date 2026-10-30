@@ -353,7 +353,8 @@ function ghepBai(ls: LaSo, namXem: number) {
       daTo = true;
       return true;
     });
-    if (TOI_DA[phan]) ds = ds.slice(0, TOI_DA[phan]);
+    // Đoạn theo bảng Tứ hóa can năm sinh (NAM-HOA-08-*) luôn giữ, không tính vào giới hạn của phần.
+    if (TOI_DA[phan]) { const rieng = ds.filter((k) => /^NAM-HOA-08-/.test(k.q.id)); ds = [...rieng, ...ds.filter((k) => !rieng.includes(k)).slice(0, TOI_DA[phan])]; }
     phanRa.push(...gom(ds, phan));
   }
   phanRa.push(...gom([tomLai(n)], 'tom-lai'));
