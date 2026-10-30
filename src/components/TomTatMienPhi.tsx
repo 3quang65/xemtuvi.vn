@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useEffect, useMemo } from 'react';
 import type { LaSo } from '@/lib/tuvi';
-import { tomTatMienPhi } from '@/lib/luan-giai';
+import { nhanDinh, saoCuaQuyTac, tomTatMienPhi } from '@/lib/luan-giai';
 import { guiSuKien } from '@/lib/phien';
 
 /** Tóm tắt miễn phí: nạp âm + cục, chính tinh thủ Mệnh, Thân cư, 1–2 đoạn luận lấy nguyên văn từ bộ quy tắc. */
@@ -31,7 +31,7 @@ export default function TomTatMienPhi({ laSo, choMua = true }: { laSo: LaSo; cho
       {t.doan.length > 0 ? (
         t.doan.map((d) => (
           <blockquote key={d.ma} className="tt-doan">
-            <p>{d.cau}</p>
+            <p>{saoCuaQuyTac(d.ma) && <strong>{saoCuaQuyTac(d.ma)} tại Mệnh: </strong>}{nhanDinh(d.cau)}</p>
             <footer>Quy tắc {d.ma}{d.nguon.length > 0 && <> · Nguồn: {d.nguon.join(', ')}</>}</footer>
           </blockquote>
         ))

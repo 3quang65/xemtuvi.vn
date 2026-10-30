@@ -4,6 +4,8 @@
 const DU_LIEU = require('./menh-chinh-tinh.json');
 
 const TOI_DA = 2;
+// Quy tắc chỉ đúng khi có thêm sao đi kèm (Kình, Đà, Hỏa, Linh…); hàm chưa xét sao phụ nên bỏ qua.
+const CAN_SAO_KEM = new Set(['MENH-TS-02', 'MENH-TT-02']);
 
 /** chinhTinh: [{ten, dacTinh}], dacTinh là M | V | Đ | B | H khớp chữ cái trong ngoặc của quy tắc. */
 function chonDoanMenh(chinhTinh, duLieu) {
@@ -13,10 +15,10 @@ function chonDoanMenh(chinhTinh, duLieu) {
   }
   const doan = [];
   for (const s of chinhTinh.slice(0, TOI_DA)) {
-    const r = (dl.menh[s.ten] || []).find((x) => x.dacTinh.includes(s.dacTinh));
+    const r = (dl.menh[s.ten] || []).find((x) => x.dacTinh.includes(s.dacTinh) && !CAN_SAO_KEM.has(x.ma));
     if (r) doan.push(r);
   }
   return { voChinhDieu: false, doan };
 }
 
-module.exports = { chonDoanMenh, TOI_DA };
+module.exports = { chonDoanMenh, TOI_DA, CAN_SAO_KEM };

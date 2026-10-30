@@ -2,15 +2,15 @@
 
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
-import { DOAN_MAU } from '@/lib/luan-giai';
+import { DOAN_MAU, nhanDinh } from '@/lib/luan-giai';
 import { dinhDangGia, GOI, type Goi } from '@/lib/goi';
 import { guiSuKien } from '@/lib/phien';
 import { useLaSoDaLuu } from '@/lib/useLaSoDaLuu';
 
 /** Đoạn mẫu: câu đầu đọc được, phần sau bị làm mờ (trạng thái khóa). */
 function DoanKhoa() {
-  const cau = DOAN_MAU.cau;
-  const cat = cau.indexOf(': ') + 2; // hiện phần mô tả độ sáng, mờ phần luận
+  const cau = 'Thái Âm sáng tại Mệnh: ' + nhanDinh(DOAN_MAU.cau);
+  const cat = cau.indexOf(',', cau.indexOf(': ')) + 1; // hiện vài chữ đầu của nhận định, mờ phần còn lại
   return (
     <div className="doan-khoa">
       <h2>Một đoạn trong luận giải chuyên sâu</h2>

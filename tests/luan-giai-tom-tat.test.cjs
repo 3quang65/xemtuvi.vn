@@ -46,3 +46,8 @@ test('Dữ liệu: đủ 14 chính tinh, không còn ghi chú nội bộ, mã kh
   assert.equal(new Set(tatCa.map((r) => r.ma)).size, tatCa.length);
   for (const r of tatCa) assert.doesNotMatch(r.cau, /đã trung tính hóa|⚑/);
 });
+
+test('Quy tắc cần sao đi kèm không hiện khi chưa xét sao phụ: Thất Sát hãm, Thiên Tướng hãm → không đoạn', () => {
+  assert.equal(chonDoanMenh([{ ten: 'Thất Sát', dacTinh: 'H' }]).doan.length, 0);
+  assert.equal(chonDoanMenh([{ ten: 'Thiên Tướng', dacTinh: 'H' }]).doan.length, 0);
+});

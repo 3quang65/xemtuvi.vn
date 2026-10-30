@@ -29,5 +29,17 @@ export function tomTatMienPhi(ls: LaSo): TomTatMienPhi {
   };
 }
 
+/** Bỏ vế điều kiện độ sáng đầu câu ("Miếu ở Dần, Thân (M), …: ") để khách đọc thẳng phần nhận định. */
+export function nhanDinh(cau: string): string {
+  const i = cau.indexOf(': ');
+  return /^(Miếu|Vượng|Đắc|Bình|Hãm)/.test(cau) && i > 0 ? cau.slice(i + 2) : cau;
+}
+
+/** Tên chính tinh của một quy tắc (theo mã), để ghi trước đoạn luận. */
+export function saoCuaQuyTac(ma: string): string | null {
+  for (const [ten, ds] of Object.entries(duLieu.menh)) if (ds.some((r) => r.ma === ma)) return ten;
+  return null;
+}
+
 /** Đoạn mẫu cho màn chọn gói (ví dụ minh họa, không phải lá số của khách). */
 export const DOAN_MAU = (duLieu.menh['Thái Âm'] ?? []).find((r) => r.ma === 'MENH-TA-01')!;
