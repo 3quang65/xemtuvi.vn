@@ -92,18 +92,38 @@ function dungGoi(bang?: BangGia): Goi[] {
 
 /** Hai gói vận năm: bán ở khu "Vận năm 2027", không nằm trong ba thẻ gói chính (GOI). */
 function dungGoiVanNam(bang?: BangGia): Goi[] {
+  const giaVan = bang?.['van-nam-2027'] ?? GIA_VAN_NAM_2027;
+  const giaTron = bang?.['tron-la-so'] ?? GIA_TRON_LA_SO;
+  const giaGop = bang?.['tron-la-so-kem-van-nam'] ?? GIA_TRON_LA_SO_KEM_VAN_NAM;
+  const tong = giaTron + giaVan;
+  const tiet = tong - giaGop;
   return [
     {
-      ma: 'van-nam-2027', ten: 'Vận năm 2027 (Đinh Mùi)', gia: bang?.['van-nam-2027'] ?? GIA_VAN_NAM_2027, donVi: 'một lần', chinh: false,
+      ma: 'van-nam-2027', ten: 'Vận năm 2027 (Đinh Mùi)', gia: giaVan, donVi: 'một lần', chinh: false,
       quyenLoi: ['Luận năm Đinh Mùi cho lá số của bạn: tổng quan, bốn mảng, 12 tháng', 'Ghi rõ sao, cung và nguồn sách', XEM_LAI],
     },
     {
-      ma: 'tron-la-so-kem-van-nam', ten: 'Trọn lá số + Vận năm 2027', gia: bang?.['tron-la-so-kem-van-nam'] ?? GIA_TRON_LA_SO_KEM_VAN_NAM, donVi: 'một lần', chinh: true, nhan: 'Gộp tiết kiệm hơn',
+      ma: 'tron-la-so-kem-van-nam', ten: 'Trọn lá số + Vận năm 2027', gia: giaGop, donVi: 'một lần', chinh: true, nhan: 'Gộp tiết kiệm hơn',
+      soSanh: tiet > 0 ? [`Mua riêng ${dinhDangGia(tong)}`, `tiết kiệm ${dinhDangGia(tiet)}`] : undefined, // tiết kiệm <= 0 thì không hiện, tránh câu sai
       banDen: BAN_DEN_GOI_GOP,
       quyenLoi: ['Toàn bộ Trọn lá số: 5 chủ đề và vận 10 năm', 'Cộng luận Vận năm 2027', 'Mỗi nhận định ghi sao, cung và trường phái', XEM_LAI],
     },
   ];
 }
+
+/** '2027-02-06' -> '6/2/2027' (ngày/tháng/năm, không số 0 đầu). */
+export const ngayVN = (iso: string) => { const [n, t, d] = iso.split('-').map(Number); return `${d}/${t}/${n}`; };
+/** Dòng hạn bán dưới thẻ gói; null khi gói không có hạn. */
+export const dongHanBan = (g: Goi) => (g.banDen ? `Bán đến hết ${ngayVN(g.banDen)}` : null);
+/** Dòng dưới nút ở trang luận giải: 'Gói gộp: mua riêng … · tiết kiệm … · bán đến hết …'; null nếu thiếu số hoặc hạn. */
+export const dongGoiGop = (g: Goi) =>
+  g.soSanh && g.banDen ? `Gói gộp: ${g.soSanh[0].charAt(0).toLowerCase()}${g.soSanh[0].slice(1)} · ${g.soSanh[1]} · bán đến hết ${ngayVN(g.banDen)}` : null;
+/** Khu bán Vận 2027: rỗng khi cổng mở bán đóng (trước MO_BAN_VAN_TU hoặc cờ nội dung chưa qua Thư), còn lại là gói còn hạn. */
+export const khuVanNam = (ds: Goi[], bayGio: number = Date.now(), coThu: boolean = CO_VAN_2027_DA_QUA_THU()) =>
+  cuaBanVan2027Mo(bayGio, coThu) ? goiDangBan(ds, bayGio) : [];
+/** Chữ dẫn dưới h2 khu Vận: còn thẻ gộp thì nhắc mua lẻ hoặc gộp. */
+export const chuDanVanNam = (ds: Goi[]) =>
+  'Luận riêng năm 2027 cho lá số này.' + (ds.some((g) => g.ma === 'tron-la-so-kem-van-nam') ? ' Mua lẻ hoặc gộp với Trọn lá số.' : '');
 
 /** Giá hiện hành (chính thức). Thử nghiệm giá không đổi các hằng này mà dùng goiTheoBang(). */
 export const GOI: Goi[] = dungGoi();
