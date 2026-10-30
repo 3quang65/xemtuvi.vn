@@ -123,7 +123,7 @@ Vũ Khúc, Thiên Tướng sáng cùng Lộc Tồn cho thấy nền thể trạn
 
 **Việc nên làm (3 tháng):** Nếu đã hơn 12 tháng chưa khám sức khỏe tổng quát, đặt lịch khám trong 3 tháng tới. **Cách đo:** đã đặt lịch / đã khám (có/không).
 
-<!-- quy tắc: TAT-VK-01, TAT-TT-01, TAT-VK-02/Vũ Tướng ("nên chú ý vấn đề âm thầm, khám định kỳ"), TAT-SP-04, CHUNG-SP-17, NAM-MANG-05; L. Hồng Loan ở Tật Ách: chưa có quy tắc, không luận; việc: SK-01 bám TAT-VK-02/Vũ Tướng; dạng i; tongHop -->
+<!-- quy tắc: TAT-VK-01, TAT-TT-01, TAT-VK-02/Vũ Tướng ("nên chú ý vấn đề âm thầm, khám định kỳ"), TAT-SP-04, CHUNG-SP-17, NAM-MANG-05; L. Hồng Loan ở Tật Ách: không có nguồn (L-a21be5, xem dòng trạng thái dưới NAM-MANG-05), không luận; việc: SK-01 bám TAT-VK-02/Vũ Tướng; dạng i; tongHop -->
 Tự chấm (sau phiếu Thư): Đúng 5 · Sâu 4 · Cụ thể 4 · Áp dụng 5 · Giọng 5 = **23/25**. (Đã bỏ câu nội bộ "bộ quy tắc chưa có câu riêng", chuyển vào mã ẩn. Sâu 4: chưa cân Hóa Quyền gốc, Tang Môn, Thiên Riêu cùng cung.)
 
 ---
@@ -169,7 +169,7 @@ Thiên Lương chủ về che chở, nâng đỡ: người đồng hành thườ
 
 **Việc nên làm (3 tháng):** Đặt một buổi cố định mỗi tuần cho hai người, không điện thoại, không bàn việc. **Cách đo:** ≥ 10/12 tuần giữ được.
 
-<!-- quy tắc: CHUNG-CT-TL-01, PHU-TL (chưa có quy tắc cho Thiên Lương tại Sửu: nền chỉ dựa trên tính chất sao), NAM-MANG-04, NAM-TT-03 (⚑ tổng hợp), VAN-CT-TL-01, CHUNG-TUAN-05, CHUNG-SP-08, NAM-TT-06 ("dành thời gian, giữ nhịp nghỉ"); việc: TT-02 bám NAM-TT-06/L. Thiên Hư tại Phu Thê ("dành thời gian"); dạng i; tongHop -->
+<!-- quy tắc: CHUNG-CT-TL-01, PHU-TL-03 (Thiên Lương Sửu, Đ, đơn thủ: chỉ có câu chung của sao, TB tr. 212, TT 妻妾; không có câu riêng cho Sửu, L-a21be5), NAM-MANG-04, NAM-TT-03 (⚑ tổng hợp), VAN-CT-TL-01, CHUNG-TUAN-05, CHUNG-SP-08, NAM-TT-06 ("dành thời gian, giữ nhịp nghỉ"); việc: TT-02 bám NAM-TT-06/L. Thiên Hư tại Phu Thê ("dành thời gian"); dạng i; tongHop -->
 Tự chấm: Đúng 5 · Sâu 4 · Cụ thể 4 · Áp dụng 5 · Giọng 5 = **23/25**. (Cụ thể 4 và Sâu 4: bộ quy tắc Phu Thê chưa có câu riêng cho Thiên Lương tại Sửu, nền chỉ dựa trên tính chất sao.)
 
 ### Đoạn 12 · Bảng 12 tháng (rút gọn theo khung mục 7.2) — VN03
