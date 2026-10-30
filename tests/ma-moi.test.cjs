@@ -89,7 +89,7 @@ test('mã không cấp quyền cho lá số người khác; chủ đề sai; ch�
   const r = await dung(a, ma, 'ban-than', b.laSoId);
   assert.equal(r.status, 403);
   assert.equal(M.db.prepare('SELECT COUNT(*) n FROM ma_moi_dung WHERE ma=?').get(ma).n, 0); // không đốt lượt
-  assert.equal((await dung(a, ma, 'tai-chinh')).status, 400); // chưa có nội dung: không đốt mã
+  assert.equal((await dung(a, ma, 'khong-co')).status, 400); // chủ đề không có: không đốt mã
   assert.equal((await dung(a, ma, 'van-nam-2027')).status, 400); // cờ VAN_NAM_THU chưa bật
   assert.equal((await dung(a, ma, 'van-10-nam')).status, 400);
   assert.equal((await dung({ cookie: '', laSoId: a.laSoId }, ma, 'ban-than')).status, 401);

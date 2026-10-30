@@ -19,6 +19,8 @@ const CD = {
   menh: { cung: 'Mệnh', chuDe: 'tính cách và hướng đi của bạn', hau: ' Đây là nét nền trong cách bạn hành xử và chọn hướng đi.', mucCl: 'cung-lien-quan' },
   'quan-loc': { cung: 'Quan Lộc', chuDe: 'công việc và sự nghiệp', hau: ' Trong công việc, nên chọn môi trường và vai trò hợp với xu hướng này.', mucCl: 'cung-lien-quan' },
   'phu-the': { cung: 'Phu Thê', chuDe: 'chuyện tình cảm và hôn nhân', hau: ' Trong tình cảm, xu hướng này ảnh hưởng đến cách bạn chọn và gìn giữ mối quan hệ.', mucCl: 'cung-lien-quan' },
+  'tai-bach': { cung: 'Tài Bạch', chuDe: 'cách kiếm tiền và giữ tiền', hau: ' Về tiền bạc, xu hướng này ảnh hưởng đến cách bạn kiếm, tiêu và tích lũy.', mucCl: 'cung-lien-quan' },
+  'dien-trach': { cung: 'Điền Trạch', chuDe: 'nhà cửa và gia đạo', hau: ' Trong gia đạo, xu hướng này ảnh hưởng đến nếp nhà và cách bạn vun vén tổ ấm.', mucCl: 'cung-lien-quan' },
 };
 const VT = { xung: 'cung xung chiếu', 'tam-hop': 'cung tam hợp' };
 const MUC_HOA = 'tu-hoa';
@@ -29,10 +31,10 @@ const them = (q) => ra.push({ phaCach: undefined, ...q });
 
 // --- Tứ hóa ở cung xung chiếu / tam hợp (hóa ở chính cung do quy-tac.json lo).
 const HOA = {
-  'Hóa Lộc': { menh: 'mở thêm cơ hội và nguồn lực cho bản thân, nên chủ động nắm bắt', 'quan-loc': 'mở thêm cơ hội và nguồn lực cho công việc, nên chủ động nắm bắt', 'phu-the': 'thêm duyên và điều kiện thuận lợi để vun đắp quan hệ, nên chủ động trân trọng' },
-  'Hóa Quyền': { menh: 'tăng khả năng dẫn dắt và quyết định, cần giữ sự cân bằng', 'quan-loc': 'tăng quyền chủ động và vai trò dẫn dắt trong công việc, cần giữ sự cân bằng với người cùng làm', 'phu-the': 'thêm mong muốn giữ vai trò chủ động trong quan hệ, nên lắng nghe để hai bên cùng cân bằng' },
-  'Hóa Khoa': { menh: 'thêm sự thanh nhã, danh tiếng tốt và người giúp đỡ đúng lúc', 'quan-loc': 'thêm danh tiếng tốt, cơ hội học hỏi và quý nhân trong công việc', 'phu-the': 'thêm sự tinh tế, nhã nhặn và được người xung quanh quý trọng trong quan hệ' },
-  'Hóa Kỵ': { menh: 'là lĩnh vực cần đầu tư công sức và dễ vướng bận; nên nhìn rõ mong muốn của mình và chủ động chuẩn bị', 'quan-loc': 'là điểm cần đầu tư công sức trong công việc và dễ vướng bận; nên làm rõ mục tiêu, giữ giao tiếp rõ ràng', 'phu-the': 'là điểm cần đầu tư công sức trong quan hệ và dễ để tâm; nên trao đổi thẳng thắn và kiên nhẫn' },
+  'Hóa Lộc': { menh: 'mở thêm cơ hội và nguồn lực cho bản thân, nên chủ động nắm bắt', 'quan-loc': 'mở thêm cơ hội và nguồn lực cho công việc, nên chủ động nắm bắt', 'phu-the': 'thêm duyên và điều kiện thuận lợi để vun đắp quan hệ, nên chủ động trân trọng', 'tai-bach': 'mở thêm nguồn thu và cơ hội tích lũy, nên chủ động nắm bắt và giữ kỷ luật chi tiêu', 'dien-trach': 'thêm điều kiện thuận lợi cho nhà cửa và sự gắn kết trong nhà, nên chủ động vun vén' },
+  'Hóa Quyền': { menh: 'tăng khả năng dẫn dắt và quyết định, cần giữ sự cân bằng', 'quan-loc': 'tăng quyền chủ động và vai trò dẫn dắt trong công việc, cần giữ sự cân bằng với người cùng làm', 'phu-the': 'thêm mong muốn giữ vai trò chủ động trong quan hệ, nên lắng nghe để hai bên cùng cân bằng', 'tai-bach': 'tăng khả năng tự quyết và quản lý tiền bạc, cần cân nhắc kỹ trước các khoản lớn', 'dien-trach': 'thêm vai trò quán xuyến việc nhà và quyết định chuyện chung, nên bàn bạc để cả nhà cùng đồng thuận' },
+  'Hóa Khoa': { menh: 'thêm sự thanh nhã, danh tiếng tốt và người giúp đỡ đúng lúc', 'quan-loc': 'thêm danh tiếng tốt, cơ hội học hỏi và quý nhân trong công việc', 'phu-the': 'thêm sự tinh tế, nhã nhặn và được người xung quanh quý trọng trong quan hệ', 'tai-bach': 'thêm uy tín trong chuyện tiền bạc và người hiểu biết giúp đỡ khi cần, nên giữ sự minh bạch', 'dien-trach': 'thêm nếp nhà nền nã, giấy tờ nhà cửa rõ ràng và được họ hàng quý trọng' },
+  'Hóa Kỵ': { menh: 'là lĩnh vực cần đầu tư công sức và dễ vướng bận; nên nhìn rõ mong muốn của mình và chủ động chuẩn bị', 'quan-loc': 'là điểm cần đầu tư công sức trong công việc và dễ vướng bận; nên làm rõ mục tiêu, giữ giao tiếp rõ ràng', 'phu-the': 'là điểm cần đầu tư công sức trong quan hệ và dễ để tâm; nên trao đổi thẳng thắn và kiên nhẫn', 'tai-bach': 'là điểm cần để tâm trong tiền bạc và dễ vướng bận; nên ghi chép thu chi, giữ dự phòng và tránh quyết vội', 'dien-trach': 'là điểm cần đầu tư công sức trong việc nhà và dễ để tâm; nên giữ giấy tờ rõ ràng, trao đổi thẳng thắn với người trong nhà' },
 };
 for (const [cd, c] of Object.entries(CD)) {
   for (const [hoa, ys] of Object.entries(HOA)) {
@@ -192,6 +194,8 @@ for (const [cd, c] of Object.entries(CD)) {
     nguon: nguonCc, nguonChiTiet: 'TT (Luận cách tinh số cao hạ)', truongPhai: TP, yeuTo: ['Cách Không Kiếp giáp / chiếu'] });
 }
 
+// --- Kiểm tại chỗ: mỗi chuyên đề có câu Tứ hóa riêng.
+for (const [hoa, ys] of Object.entries(HOA)) for (const cd of Object.keys(CD)) if (!ys[cd]) { console.error(`thiếu câu ${hoa} cho ${cd}`); process.exit(1); }
 // --- Kiểm tại chỗ: mã nghiên cứu có thật, id không trùng, câu đủ dài.
 const loi = [];
 const ids = new Set();

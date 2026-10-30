@@ -75,11 +75,20 @@ test('tham số sai: 400', async () => {
   assert.equal((await x.luanGiai(yc('/api/luan-giai?chuDe=ban-than', { cookie: k.cookie }), M)).status, 400);
 });
 
-test('trọn lá số: mọi chuyên đề có nội dung; chủ đề chưa có chuyên đề trả 404', async () => {
+test('trọn lá số: mọi chuyên đề có nội dung, kể cả Tài chính và Gia đạo', async () => {
   const k = await khach('tron@example.vn', 'tron-la-so');
-  for (const cd of ['ban-than', 'tinh-cam', 'su-nghiep']) assert.equal((await lay(k, cd)).status, 200, cd);
+  for (const cd of ['ban-than', 'tinh-cam', 'su-nghiep', 'tai-chinh', 'gia-dao']) assert.equal((await lay(k, cd)).status, 200, cd);
   assert.equal((await lay(k, 'van-10-nam')).status, 200);
-  assert.equal((await lay(k, 'tai-chinh')).status, 404);
+  const tc = await j(await lay(k, 'tai-chinh')), gd = await j(await lay(k, 'gia-dao'));
+  assert.equal(tc.chuyenDe, 'tai-bach');
+  assert.equal(gd.chuyenDe, 'dien-trach');
+  assert.ok(tc.muc.length && gd.muc.length, 'có ít nhất một mục luận');
+});
+
+test('mua lẻ Tài chính: người đã mua xem được (200), người chưa mua bị chặn (403)', async () => {
+  const a = await khach('tc-mua@example.vn', 'mot-chu-de', { chuDe: 'tai-chinh' });
+  assert.equal((await lay(a, 'tai-chinh')).status, 200);
+  assert.equal((await lay(a, 'gia-dao')).status, 403);
 });
 
 test('bộ nhớ đệm: lưu mã hóa, lần hai đọc từ đệm, kết quả giống hệt', async () => {

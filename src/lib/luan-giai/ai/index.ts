@@ -1,4 +1,4 @@
-// Sinh luận giải theo chuyên đề (Mệnh, Quan Lộc, Phu Thê): mỗi nhận định truy về một quy tắc có nguồn.
+// Sinh luận giải theo chuyên đề (Mệnh, Quan Lộc, Phu Thê, Tài Bạch, Điền Trạch): mỗi nhận định truy về một quy tắc có nguồn.
 // Nhận định chỉ sinh từ quy tắc KHỚP với lá số. Nhà cung cấp mặc định "stub" (không mạng);
 // "claude" chỉ bật khi LUANGIAI_AI=claude VÀ có hàm gọi được truyền vào (khung, chưa nối API thật).
 import fs from 'node:fs';
@@ -17,7 +17,7 @@ import { namAmHienTai } from '../../tuvi';
 export { xoaBoNho };
 export const thongKeCache = thongKe;
 
-export type ChuyenDeMa = 'menh' | 'quan-loc' | 'phu-the' | 'van-10-nam';
+export type ChuyenDeMa = 'menh' | 'quan-loc' | 'phu-the' | 'tai-bach' | 'dien-trach' | 'van-10-nam';
 
 export interface QuyTac {
   id: string;

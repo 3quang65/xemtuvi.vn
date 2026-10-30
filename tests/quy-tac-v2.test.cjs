@@ -16,7 +16,9 @@ const DIR = path.join(GOC, 'src/lib/luan-giai/ai/quy-tac-v2');
 const TU_CAM = JSON.parse(fs.readFileSync(path.join(GOC, 'src/lib/luan-giai/ai/tu-cam.json'), 'utf8'));
 const NC = fs.readFileSync(path.join(GOC, 'docs/nghien-cuu/luan-giai-12-cung.md'), 'utf8');
 const MA_NC = new Set([...NC.matchAll(/^- \*\*\[([A-Z]+(?:-[A-Z0-9]+)+)\]\*\*/gm)].map((m) => m[1]));
-const CHUYEN_DE = ['menh', 'quan-loc', 'phu-the'];
+const CHUYEN_DE = ['menh', 'quan-loc', 'phu-the', 'tai-bach', 'dien-trach'];
+// Cách cục của mọi chuyên đề sinh ở bộ khung (scripts/luan-giai/tao-khung.cjs), không soạn tay trong quy-tac-v2/.
+const KHUNG = JSON.parse(fs.readFileSync(path.join(GOC, 'src/lib/luan-giai/ai/quy-tac-khung.json'), 'utf8'));
 const SACH = ['Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)', 'Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)', 'Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)',
   'Tử Vi Chỉ Nam (Song An Đỗ Văn Lưu)', 'Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)', 'Tử Vi Hàm Số (Nguyễn Phát Lộc)', 'Trung Châu phái (Vương Đình Chi)',
   'Phi tinh – Tứ Hóa phái', 'Đặc tả an sao xemtuvi.vn'];
@@ -81,8 +83,8 @@ tt('định dạng từng quy tắc hợp lệ', () => {
 });
 
 tt(`mỗi chuyên đề ≥ ${MIN} quy tắc`, () => {
-  for (const cd of CHI_TEP ? CD_CO : CHUYEN_DE) {
-    const n = QT.filter((q) => q.chuyenDe === cd).length;
+  for (const cd of CD_CO) {
+    const n = [...QT, ...KHUNG].filter((q) => q.chuyenDe === cd).length; // tính cả phần khung (Tứ hóa, sát tinh hợp chiếu, cách cục)
     assert.ok(n >= MIN, `${cd}: ${n} quy tắc`);
   }
 });
@@ -100,8 +102,8 @@ tt('100% có mã nghiên cứu thật và ≥ 1 nguồn đúng tên; 0 "Thái Th
 });
 
 tt('đủ 10 cách cục ưu tiên mỗi chuyên đề, mỗi cách có quy tắc phá cách', { skip: CHI_TEP && !CHI_TEP.includes('cach-cuc.json') }, () => {
-  for (const cd of CHI_TEP ? CD_CO : CHUYEN_DE) {
-    const cc = QT.filter((q) => q.chuyenDe === cd && q.loai === 'CC');
+  for (const cd of CD_CO) {
+    const cc = [...QT, ...KHUNG].filter((q) => q.chuyenDe === cd && q.loai === 'CC');
     for (const ten of CACH_CUC) {
       assert.ok(cc.some((q) => q.cachCuc === ten && !q.phaCach), `${cd}: thiếu cách ${ten}`);
       assert.ok(cc.some((q) => q.cachCuc === ten && q.phaCach), `${cd}: cách ${ten} thiếu phá cách`);
@@ -111,7 +113,7 @@ tt('đủ 10 cách cục ưu tiên mỗi chuyên đề, mỗi cách có quy tắ
 
 tt('Tuần, Triệt tách riêng; câu sạch từ cấm và không có đuôi khuôn', () => {
   const loi = [];
-  for (const cd of CHI_TEP && !CHI_TEP.some((f) => f !== 'cach-cuc.json') ? [] : CHI_TEP ? CD_CO : CHUYEN_DE) {
+  for (const cd of CHI_TEP && !CHI_TEP.some((f) => f !== 'cach-cuc.json') ? [] : CD_CO) {
     const tuan = new Set(QT.filter((q) => q.chuyenDe === cd && q.loai === 'TUAN').map((q) => q.noiDung));
     const triet = QT.filter((q) => q.chuyenDe === cd && q.loai === 'TRIET');
     if (!tuan.size || !triet.length) loi.push(`${cd}: thiếu TUAN hoặc TRIET`);

@@ -600,6 +600,406 @@
   "yeuTo": []
  },
  {
+  "id": "KHUNG-tai-bach-HOA-Lộc-xung",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "HOA",
+  "maNghienCuu": [
+   "CHUNG-HOA-02",
+   "CHUNG-HOA-03"
+  ],
+  "dieuKien": [
+   {
+    "hoa": "Hóa Lộc",
+    "viTri": "xung"
+   }
+  ],
+  "muc": "tu-hoa",
+  "noiDung": "{sao} mang Hóa Lộc ở {cung} (cung xung chiếu của Tài Bạch) ảnh hưởng đến cách kiếm tiền và giữ tiền: mở thêm nguồn thu và cơ hội tích lũy, nên chủ động nắm bắt và giữ kỷ luật chi tiêu.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Thái Vi phú); TB (Tứ hóa)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-tai-bach-HOA-Lộc-tam-hop",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "HOA",
+  "maNghienCuu": [
+   "CHUNG-HOA-02",
+   "CHUNG-HOA-03"
+  ],
+  "dieuKien": [
+   {
+    "hoa": "Hóa Lộc",
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "tu-hoa",
+  "noiDung": "{sao} mang Hóa Lộc ở {cung} (cung tam hợp của Tài Bạch) ảnh hưởng đến cách kiếm tiền và giữ tiền: mở thêm nguồn thu và cơ hội tích lũy, nên chủ động nắm bắt và giữ kỷ luật chi tiêu.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Thái Vi phú); TB (Tứ hóa)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-tai-bach-HOA-Quyền-xung",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "HOA",
+  "maNghienCuu": [
+   "CHUNG-HOA-02",
+   "CHUNG-HOA-03"
+  ],
+  "dieuKien": [
+   {
+    "hoa": "Hóa Quyền",
+    "viTri": "xung"
+   }
+  ],
+  "muc": "tu-hoa",
+  "noiDung": "{sao} mang Hóa Quyền ở {cung} (cung xung chiếu của Tài Bạch) ảnh hưởng đến cách kiếm tiền và giữ tiền: tăng khả năng tự quyết và quản lý tiền bạc, cần cân nhắc kỹ trước các khoản lớn.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Thái Vi phú); TB (Tứ hóa)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-tai-bach-HOA-Quyền-tam-hop",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "HOA",
+  "maNghienCuu": [
+   "CHUNG-HOA-02",
+   "CHUNG-HOA-03"
+  ],
+  "dieuKien": [
+   {
+    "hoa": "Hóa Quyền",
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "tu-hoa",
+  "noiDung": "{sao} mang Hóa Quyền ở {cung} (cung tam hợp của Tài Bạch) ảnh hưởng đến cách kiếm tiền và giữ tiền: tăng khả năng tự quyết và quản lý tiền bạc, cần cân nhắc kỹ trước các khoản lớn.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Thái Vi phú); TB (Tứ hóa)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-tai-bach-HOA-Khoa-xung",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "HOA",
+  "maNghienCuu": [
+   "CHUNG-HOA-02",
+   "CHUNG-HOA-03"
+  ],
+  "dieuKien": [
+   {
+    "hoa": "Hóa Khoa",
+    "viTri": "xung"
+   }
+  ],
+  "muc": "tu-hoa",
+  "noiDung": "{sao} mang Hóa Khoa ở {cung} (cung xung chiếu của Tài Bạch) ảnh hưởng đến cách kiếm tiền và giữ tiền: thêm uy tín trong chuyện tiền bạc và người hiểu biết giúp đỡ khi cần, nên giữ sự minh bạch.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Thái Vi phú); TB (Tứ hóa)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-tai-bach-HOA-Khoa-tam-hop",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "HOA",
+  "maNghienCuu": [
+   "CHUNG-HOA-02",
+   "CHUNG-HOA-03"
+  ],
+  "dieuKien": [
+   {
+    "hoa": "Hóa Khoa",
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "tu-hoa",
+  "noiDung": "{sao} mang Hóa Khoa ở {cung} (cung tam hợp của Tài Bạch) ảnh hưởng đến cách kiếm tiền và giữ tiền: thêm uy tín trong chuyện tiền bạc và người hiểu biết giúp đỡ khi cần, nên giữ sự minh bạch.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Thái Vi phú); TB (Tứ hóa)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-tai-bach-HOA-Kỵ-xung",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "HOA",
+  "maNghienCuu": [
+   "CHUNG-HOA-02",
+   "CHUNG-HOA-03"
+  ],
+  "dieuKien": [
+   {
+    "hoa": "Hóa Kỵ",
+    "viTri": "xung"
+   }
+  ],
+  "muc": "tu-hoa",
+  "noiDung": "{sao} mang Hóa Kỵ ở {cung} (cung xung chiếu của Tài Bạch) ảnh hưởng đến cách kiếm tiền và giữ tiền: là điểm cần để tâm trong tiền bạc và dễ vướng bận; nên ghi chép thu chi, giữ dự phòng và tránh quyết vội.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Thái Vi phú); TB (Tứ hóa)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-tai-bach-HOA-Kỵ-tam-hop",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "HOA",
+  "maNghienCuu": [
+   "CHUNG-HOA-02",
+   "CHUNG-HOA-03"
+  ],
+  "dieuKien": [
+   {
+    "hoa": "Hóa Kỵ",
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "tu-hoa",
+  "noiDung": "{sao} mang Hóa Kỵ ở {cung} (cung tam hợp của Tài Bạch) ảnh hưởng đến cách kiếm tiền và giữ tiền: là điểm cần để tâm trong tiền bạc và dễ vướng bận; nên ghi chép thu chi, giữ dự phòng và tránh quyết vội.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Thái Vi phú); TB (Tứ hóa)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-dien-trach-HOA-Lộc-xung",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "HOA",
+  "maNghienCuu": [
+   "CHUNG-HOA-02",
+   "CHUNG-HOA-03"
+  ],
+  "dieuKien": [
+   {
+    "hoa": "Hóa Lộc",
+    "viTri": "xung"
+   }
+  ],
+  "muc": "tu-hoa",
+  "noiDung": "{sao} mang Hóa Lộc ở {cung} (cung xung chiếu của Điền Trạch) ảnh hưởng đến nhà cửa và gia đạo: thêm điều kiện thuận lợi cho nhà cửa và sự gắn kết trong nhà, nên chủ động vun vén.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Thái Vi phú); TB (Tứ hóa)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-dien-trach-HOA-Lộc-tam-hop",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "HOA",
+  "maNghienCuu": [
+   "CHUNG-HOA-02",
+   "CHUNG-HOA-03"
+  ],
+  "dieuKien": [
+   {
+    "hoa": "Hóa Lộc",
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "tu-hoa",
+  "noiDung": "{sao} mang Hóa Lộc ở {cung} (cung tam hợp của Điền Trạch) ảnh hưởng đến nhà cửa và gia đạo: thêm điều kiện thuận lợi cho nhà cửa và sự gắn kết trong nhà, nên chủ động vun vén.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Thái Vi phú); TB (Tứ hóa)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-dien-trach-HOA-Quyền-xung",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "HOA",
+  "maNghienCuu": [
+   "CHUNG-HOA-02",
+   "CHUNG-HOA-03"
+  ],
+  "dieuKien": [
+   {
+    "hoa": "Hóa Quyền",
+    "viTri": "xung"
+   }
+  ],
+  "muc": "tu-hoa",
+  "noiDung": "{sao} mang Hóa Quyền ở {cung} (cung xung chiếu của Điền Trạch) ảnh hưởng đến nhà cửa và gia đạo: thêm vai trò quán xuyến việc nhà và quyết định chuyện chung, nên bàn bạc để cả nhà cùng đồng thuận.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Thái Vi phú); TB (Tứ hóa)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-dien-trach-HOA-Quyền-tam-hop",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "HOA",
+  "maNghienCuu": [
+   "CHUNG-HOA-02",
+   "CHUNG-HOA-03"
+  ],
+  "dieuKien": [
+   {
+    "hoa": "Hóa Quyền",
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "tu-hoa",
+  "noiDung": "{sao} mang Hóa Quyền ở {cung} (cung tam hợp của Điền Trạch) ảnh hưởng đến nhà cửa và gia đạo: thêm vai trò quán xuyến việc nhà và quyết định chuyện chung, nên bàn bạc để cả nhà cùng đồng thuận.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Thái Vi phú); TB (Tứ hóa)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-dien-trach-HOA-Khoa-xung",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "HOA",
+  "maNghienCuu": [
+   "CHUNG-HOA-02",
+   "CHUNG-HOA-03"
+  ],
+  "dieuKien": [
+   {
+    "hoa": "Hóa Khoa",
+    "viTri": "xung"
+   }
+  ],
+  "muc": "tu-hoa",
+  "noiDung": "{sao} mang Hóa Khoa ở {cung} (cung xung chiếu của Điền Trạch) ảnh hưởng đến nhà cửa và gia đạo: thêm nếp nhà nền nã, giấy tờ nhà cửa rõ ràng và được họ hàng quý trọng.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Thái Vi phú); TB (Tứ hóa)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-dien-trach-HOA-Khoa-tam-hop",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "HOA",
+  "maNghienCuu": [
+   "CHUNG-HOA-02",
+   "CHUNG-HOA-03"
+  ],
+  "dieuKien": [
+   {
+    "hoa": "Hóa Khoa",
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "tu-hoa",
+  "noiDung": "{sao} mang Hóa Khoa ở {cung} (cung tam hợp của Điền Trạch) ảnh hưởng đến nhà cửa và gia đạo: thêm nếp nhà nền nã, giấy tờ nhà cửa rõ ràng và được họ hàng quý trọng.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Thái Vi phú); TB (Tứ hóa)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-dien-trach-HOA-Kỵ-xung",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "HOA",
+  "maNghienCuu": [
+   "CHUNG-HOA-02",
+   "CHUNG-HOA-03"
+  ],
+  "dieuKien": [
+   {
+    "hoa": "Hóa Kỵ",
+    "viTri": "xung"
+   }
+  ],
+  "muc": "tu-hoa",
+  "noiDung": "{sao} mang Hóa Kỵ ở {cung} (cung xung chiếu của Điền Trạch) ảnh hưởng đến nhà cửa và gia đạo: là điểm cần đầu tư công sức trong việc nhà và dễ để tâm; nên giữ giấy tờ rõ ràng, trao đổi thẳng thắn với người trong nhà.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Thái Vi phú); TB (Tứ hóa)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-dien-trach-HOA-Kỵ-tam-hop",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "HOA",
+  "maNghienCuu": [
+   "CHUNG-HOA-02",
+   "CHUNG-HOA-03"
+  ],
+  "dieuKien": [
+   {
+    "hoa": "Hóa Kỵ",
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "tu-hoa",
+  "noiDung": "{sao} mang Hóa Kỵ ở {cung} (cung tam hợp của Điền Trạch) ảnh hưởng đến nhà cửa và gia đạo: là điểm cần đầu tư công sức trong việc nhà và dễ để tâm; nên giữ giấy tờ rõ ràng, trao đổi thẳng thắn với người trong nhà.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Thái Vi phú); TB (Tứ hóa)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
   "id": "KHUNG-menh-TUAN-xung",
   "chuyenDe": "menh",
   "cung": "Mệnh",
@@ -925,6 +1325,230 @@
   ],
   "muc": "phu-tinh",
   "noiDung": "Triệt đóng ở {cung} (cung tam hợp của Phu Thê): Triệt chỉ tác động hai cung nó tách đôi, không chiếu sang Phu Thê, nhưng các sao tại {cung} bị giảm cường độ nên phần đóng góp của cung này cho chuyện tình cảm và hôn nhân dịu hơn; ảnh hưởng thường rõ hơn ở giai đoạn đầu đời rồi nhẹ dần, mỗi người cảm nhận khác nhau tùy hoàn cảnh và nỗ lực.",
+  "nguon": [
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "nguonChiTiet": "NL (tập 1, Tuần Triệt); KL (Tuần Triệt)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Triệt"
+  ]
+ },
+ {
+  "id": "KHUNG-tai-bach-TUAN-xung",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "TUAN",
+  "maNghienCuu": [
+   "CHUNG-TP-04",
+   "CHUNG-TUAN-02",
+   "CHUNG-TUAN-09"
+  ],
+  "dieuKien": [
+   {
+    "tuan": true,
+    "viTri": "xung"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Tuần đóng ở {cung} (cung xung chiếu của Tài Bạch): Tuần chỉ tác động hai cung nó đứng giữa, không chiếu sang Tài Bạch, nhưng các sao tại {cung} bị giảm cường độ nên phần đóng góp của cung này cho cách kiếm tiền và giữ tiền đến chậm và dịu hơn; ảnh hưởng thường rõ dần về sau, mỗi người cảm nhận khác nhau tùy hoàn cảnh và nỗ lực.",
+  "nguon": [
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "nguonChiTiet": "NL (tập 1, Tuần Triệt); KL (Tuần Triệt)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Tuần"
+  ]
+ },
+ {
+  "id": "KHUNG-tai-bach-TUAN-tam-hop",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "TUAN",
+  "maNghienCuu": [
+   "CHUNG-TP-04",
+   "CHUNG-TUAN-02",
+   "CHUNG-TUAN-09"
+  ],
+  "dieuKien": [
+   {
+    "tuan": true,
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Tuần đóng ở {cung} (cung tam hợp của Tài Bạch): Tuần chỉ tác động hai cung nó đứng giữa, không chiếu sang Tài Bạch, nhưng các sao tại {cung} bị giảm cường độ nên phần đóng góp của cung này cho cách kiếm tiền và giữ tiền đến chậm và dịu hơn; ảnh hưởng thường rõ dần về sau, mỗi người cảm nhận khác nhau tùy hoàn cảnh và nỗ lực.",
+  "nguon": [
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "nguonChiTiet": "NL (tập 1, Tuần Triệt); KL (Tuần Triệt)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Tuần"
+  ]
+ },
+ {
+  "id": "KHUNG-tai-bach-TRIET-xung",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "TRIET",
+  "maNghienCuu": [
+   "CHUNG-TP-04",
+   "CHUNG-TUAN-02",
+   "CHUNG-TUAN-09"
+  ],
+  "dieuKien": [
+   {
+    "triet": true,
+    "viTri": "xung"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Triệt đóng ở {cung} (cung xung chiếu của Tài Bạch): Triệt chỉ tác động hai cung nó tách đôi, không chiếu sang Tài Bạch, nhưng các sao tại {cung} bị giảm cường độ nên phần đóng góp của cung này cho cách kiếm tiền và giữ tiền dịu hơn; ảnh hưởng thường rõ hơn ở giai đoạn đầu đời rồi nhẹ dần, mỗi người cảm nhận khác nhau tùy hoàn cảnh và nỗ lực.",
+  "nguon": [
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "nguonChiTiet": "NL (tập 1, Tuần Triệt); KL (Tuần Triệt)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Triệt"
+  ]
+ },
+ {
+  "id": "KHUNG-tai-bach-TRIET-tam-hop",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "TRIET",
+  "maNghienCuu": [
+   "CHUNG-TP-04",
+   "CHUNG-TUAN-02",
+   "CHUNG-TUAN-09"
+  ],
+  "dieuKien": [
+   {
+    "triet": true,
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Triệt đóng ở {cung} (cung tam hợp của Tài Bạch): Triệt chỉ tác động hai cung nó tách đôi, không chiếu sang Tài Bạch, nhưng các sao tại {cung} bị giảm cường độ nên phần đóng góp của cung này cho cách kiếm tiền và giữ tiền dịu hơn; ảnh hưởng thường rõ hơn ở giai đoạn đầu đời rồi nhẹ dần, mỗi người cảm nhận khác nhau tùy hoàn cảnh và nỗ lực.",
+  "nguon": [
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "nguonChiTiet": "NL (tập 1, Tuần Triệt); KL (Tuần Triệt)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Triệt"
+  ]
+ },
+ {
+  "id": "KHUNG-dien-trach-TUAN-xung",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "TUAN",
+  "maNghienCuu": [
+   "CHUNG-TP-04",
+   "CHUNG-TUAN-02",
+   "CHUNG-TUAN-09"
+  ],
+  "dieuKien": [
+   {
+    "tuan": true,
+    "viTri": "xung"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Tuần đóng ở {cung} (cung xung chiếu của Điền Trạch): Tuần chỉ tác động hai cung nó đứng giữa, không chiếu sang Điền Trạch, nhưng các sao tại {cung} bị giảm cường độ nên phần đóng góp của cung này cho nhà cửa và gia đạo đến chậm và dịu hơn; ảnh hưởng thường rõ dần về sau, mỗi người cảm nhận khác nhau tùy hoàn cảnh và nỗ lực.",
+  "nguon": [
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "nguonChiTiet": "NL (tập 1, Tuần Triệt); KL (Tuần Triệt)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Tuần"
+  ]
+ },
+ {
+  "id": "KHUNG-dien-trach-TUAN-tam-hop",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "TUAN",
+  "maNghienCuu": [
+   "CHUNG-TP-04",
+   "CHUNG-TUAN-02",
+   "CHUNG-TUAN-09"
+  ],
+  "dieuKien": [
+   {
+    "tuan": true,
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Tuần đóng ở {cung} (cung tam hợp của Điền Trạch): Tuần chỉ tác động hai cung nó đứng giữa, không chiếu sang Điền Trạch, nhưng các sao tại {cung} bị giảm cường độ nên phần đóng góp của cung này cho nhà cửa và gia đạo đến chậm và dịu hơn; ảnh hưởng thường rõ dần về sau, mỗi người cảm nhận khác nhau tùy hoàn cảnh và nỗ lực.",
+  "nguon": [
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "nguonChiTiet": "NL (tập 1, Tuần Triệt); KL (Tuần Triệt)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Tuần"
+  ]
+ },
+ {
+  "id": "KHUNG-dien-trach-TRIET-xung",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "TRIET",
+  "maNghienCuu": [
+   "CHUNG-TP-04",
+   "CHUNG-TUAN-02",
+   "CHUNG-TUAN-09"
+  ],
+  "dieuKien": [
+   {
+    "triet": true,
+    "viTri": "xung"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Triệt đóng ở {cung} (cung xung chiếu của Điền Trạch): Triệt chỉ tác động hai cung nó tách đôi, không chiếu sang Điền Trạch, nhưng các sao tại {cung} bị giảm cường độ nên phần đóng góp của cung này cho nhà cửa và gia đạo dịu hơn; ảnh hưởng thường rõ hơn ở giai đoạn đầu đời rồi nhẹ dần, mỗi người cảm nhận khác nhau tùy hoàn cảnh và nỗ lực.",
+  "nguon": [
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "nguonChiTiet": "NL (tập 1, Tuần Triệt); KL (Tuần Triệt)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Triệt"
+  ]
+ },
+ {
+  "id": "KHUNG-dien-trach-TRIET-tam-hop",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "TRIET",
+  "maNghienCuu": [
+   "CHUNG-TP-04",
+   "CHUNG-TUAN-02",
+   "CHUNG-TUAN-09"
+  ],
+  "dieuKien": [
+   {
+    "triet": true,
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Triệt đóng ở {cung} (cung tam hợp của Điền Trạch): Triệt chỉ tác động hai cung nó tách đôi, không chiếu sang Điền Trạch, nhưng các sao tại {cung} bị giảm cường độ nên phần đóng góp của cung này cho nhà cửa và gia đạo dịu hơn; ảnh hưởng thường rõ hơn ở giai đoạn đầu đời rồi nhẹ dần, mỗi người cảm nhận khác nhau tùy hoàn cảnh và nỗ lực.",
   "nguon": [
    "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
    "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
@@ -2307,6 +2931,920 @@
   "yeuTo": []
  },
  {
+  "id": "KHUNG-tai-bach-SP-KìnhDương-xung",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "CHUNG-SP-02",
+   "CHUNG-TP-06"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Kình Dương"
+    ],
+    "viTri": "xung"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Kình Dương ở {cung} (cung xung chiếu của Tài Bạch) ảnh hưởng đến cách kiếm tiền và giữ tiền: nghị lực mạnh, quyết liệt, nên kiểm soát sự nóng vội.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB (sao phụ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-tai-bach-SP-KìnhDương-tam-hop",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "CHUNG-SP-02",
+   "CHUNG-TP-06"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Kình Dương"
+    ],
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Kình Dương ở {cung} (cung tam hợp của Tài Bạch) ảnh hưởng đến cách kiếm tiền và giữ tiền: nghị lực mạnh, quyết liệt, nên kiểm soát sự nóng vội.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB (sao phụ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-tai-bach-SP-ĐàLa-xung",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "CHUNG-SP-02",
+   "CHUNG-TP-06"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Đà La"
+    ],
+    "viTri": "xung"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Đà La ở {cung} (cung xung chiếu của Tài Bạch) ảnh hưởng đến cách kiếm tiền và giữ tiền: kiên trì, bền bỉ nhưng dễ chần chừ, nên chủ động hơn.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB (sao phụ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-tai-bach-SP-ĐàLa-tam-hop",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "CHUNG-SP-02",
+   "CHUNG-TP-06"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Đà La"
+    ],
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Đà La ở {cung} (cung tam hợp của Tài Bạch) ảnh hưởng đến cách kiếm tiền và giữ tiền: kiên trì, bền bỉ nhưng dễ chần chừ, nên chủ động hơn.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB (sao phụ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-tai-bach-SP-HỏaTinh-xung",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "CHUNG-SP-02",
+   "CHUNG-TP-06"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Hỏa Tinh"
+    ],
+    "viTri": "xung"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Hỏa Tinh ở {cung} (cung xung chiếu của Tài Bạch) ảnh hưởng đến cách kiếm tiền và giữ tiền: nhiệt huyết, phản ứng nhanh, nên tiết chế cảm xúc.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB (sao phụ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-tai-bach-SP-HỏaTinh-tam-hop",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "CHUNG-SP-02",
+   "CHUNG-TP-06"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Hỏa Tinh"
+    ],
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Hỏa Tinh ở {cung} (cung tam hợp của Tài Bạch) ảnh hưởng đến cách kiếm tiền và giữ tiền: nhiệt huyết, phản ứng nhanh, nên tiết chế cảm xúc.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB (sao phụ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-tai-bach-SP-LinhTinh-xung",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "CHUNG-SP-02",
+   "CHUNG-TP-06"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Linh Tinh"
+    ],
+    "viTri": "xung"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Linh Tinh ở {cung} (cung xung chiếu của Tài Bạch) ảnh hưởng đến cách kiếm tiền và giữ tiền: nhạy bén nhưng dễ căng thẳng, nên giữ nhịp nghỉ ngơi.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB (sao phụ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-tai-bach-SP-LinhTinh-tam-hop",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "CHUNG-SP-02",
+   "CHUNG-TP-06"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Linh Tinh"
+    ],
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Linh Tinh ở {cung} (cung tam hợp của Tài Bạch) ảnh hưởng đến cách kiếm tiền và giữ tiền: nhạy bén nhưng dễ căng thẳng, nên giữ nhịp nghỉ ngơi.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB (sao phụ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-tai-bach-SP-ĐịaKhông-xung",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "CHUNG-SP-02",
+   "CHUNG-TP-06"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Địa Không"
+    ],
+    "viTri": "xung"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Địa Không ở {cung} (cung xung chiếu của Tài Bạch) ảnh hưởng đến cách kiếm tiền và giữ tiền: hay nghĩ khác lạ, cần thực tế hóa ý tưởng.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB (sao phụ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-tai-bach-SP-ĐịaKhông-tam-hop",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "CHUNG-SP-02",
+   "CHUNG-TP-06"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Địa Không"
+    ],
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Địa Không ở {cung} (cung tam hợp của Tài Bạch) ảnh hưởng đến cách kiếm tiền và giữ tiền: hay nghĩ khác lạ, cần thực tế hóa ý tưởng.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB (sao phụ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-tai-bach-SP-ĐịaKiếp-xung",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "CHUNG-SP-02",
+   "CHUNG-TP-06"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Địa Kiếp"
+    ],
+    "viTri": "xung"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Địa Kiếp ở {cung} (cung xung chiếu của Tài Bạch) ảnh hưởng đến cách kiếm tiền và giữ tiền: hay muốn đổi hướng, nên cân nhắc trước khi quyết.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB (sao phụ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-tai-bach-SP-ĐịaKiếp-tam-hop",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "CHUNG-SP-02",
+   "CHUNG-TP-06"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Địa Kiếp"
+    ],
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Địa Kiếp ở {cung} (cung tam hợp của Tài Bạch) ảnh hưởng đến cách kiếm tiền và giữ tiền: hay muốn đổi hướng, nên cân nhắc trước khi quyết.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB (sao phụ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-tai-bach-SP-ThiênKhông-xung",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "CHUNG-TP-04",
+   "CHUNG-VCD-03"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Không"
+    ],
+    "viTri": "xung"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Thiên Không ở {cung} (cung xung chiếu của Tài Bạch) ảnh hưởng đến cách kiếm tiền và giữ tiền: ý nghĩ thoáng, nhiều ý tưởng nhưng khó nắm chắc, nên cụ thể hóa bằng kế hoạch.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB (sao phụ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-tai-bach-SP-ThiênKhông-tam-hop",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "CHUNG-TP-04",
+   "CHUNG-VCD-03"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Không"
+    ],
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Thiên Không ở {cung} (cung tam hợp của Tài Bạch) ảnh hưởng đến cách kiếm tiền và giữ tiền: ý nghĩ thoáng, nhiều ý tưởng nhưng khó nắm chắc, nên cụ thể hóa bằng kế hoạch.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB (sao phụ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-tai-bach-SP-LộcTồn-xung",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "CHUNG-SP-04"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Lộc Tồn"
+    ],
+    "viTri": "xung"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Lộc Tồn ở {cung} (cung xung chiếu của Tài Bạch) ảnh hưởng đến cách kiếm tiền và giữ tiền: biết tích lũy, thận trọng với tài chính, nên linh hoạt vừa đủ để không bỏ lỡ cơ hội.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB (sao phụ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-tai-bach-SP-LộcTồn-tam-hop",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "CHUNG-SP-04"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Lộc Tồn"
+    ],
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Lộc Tồn ở {cung} (cung tam hợp của Tài Bạch) ảnh hưởng đến cách kiếm tiền và giữ tiền: biết tích lũy, thận trọng với tài chính, nên linh hoạt vừa đủ để không bỏ lỡ cơ hội.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB (sao phụ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-tai-bach-SP-ThienKhong-chinh",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "CHUNG-TP-04",
+   "CHUNG-VCD-03"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Không"
+    ],
+    "viTri": "chinh"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Thiên Không đồng cung Tài Bạch: ý nghĩ thoáng, nhiều ý tưởng nhưng khó nắm chắc, nên cụ thể hóa bằng kế hoạch.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú, không vong); TB (sao phụ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-dien-trach-SP-KìnhDương-xung",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "CHUNG-SP-02",
+   "CHUNG-TP-06"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Kình Dương"
+    ],
+    "viTri": "xung"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Kình Dương ở {cung} (cung xung chiếu của Điền Trạch) ảnh hưởng đến nhà cửa và gia đạo: nghị lực mạnh, quyết liệt, nên kiểm soát sự nóng vội.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB (sao phụ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-dien-trach-SP-KìnhDương-tam-hop",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "CHUNG-SP-02",
+   "CHUNG-TP-06"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Kình Dương"
+    ],
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Kình Dương ở {cung} (cung tam hợp của Điền Trạch) ảnh hưởng đến nhà cửa và gia đạo: nghị lực mạnh, quyết liệt, nên kiểm soát sự nóng vội.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB (sao phụ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-dien-trach-SP-ĐàLa-xung",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "CHUNG-SP-02",
+   "CHUNG-TP-06"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Đà La"
+    ],
+    "viTri": "xung"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Đà La ở {cung} (cung xung chiếu của Điền Trạch) ảnh hưởng đến nhà cửa và gia đạo: kiên trì, bền bỉ nhưng dễ chần chừ, nên chủ động hơn.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB (sao phụ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-dien-trach-SP-ĐàLa-tam-hop",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "CHUNG-SP-02",
+   "CHUNG-TP-06"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Đà La"
+    ],
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Đà La ở {cung} (cung tam hợp của Điền Trạch) ảnh hưởng đến nhà cửa và gia đạo: kiên trì, bền bỉ nhưng dễ chần chừ, nên chủ động hơn.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB (sao phụ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-dien-trach-SP-HỏaTinh-xung",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "CHUNG-SP-02",
+   "CHUNG-TP-06"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Hỏa Tinh"
+    ],
+    "viTri": "xung"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Hỏa Tinh ở {cung} (cung xung chiếu của Điền Trạch) ảnh hưởng đến nhà cửa và gia đạo: nhiệt huyết, phản ứng nhanh, nên tiết chế cảm xúc.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB (sao phụ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-dien-trach-SP-HỏaTinh-tam-hop",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "CHUNG-SP-02",
+   "CHUNG-TP-06"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Hỏa Tinh"
+    ],
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Hỏa Tinh ở {cung} (cung tam hợp của Điền Trạch) ảnh hưởng đến nhà cửa và gia đạo: nhiệt huyết, phản ứng nhanh, nên tiết chế cảm xúc.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB (sao phụ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-dien-trach-SP-LinhTinh-xung",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "CHUNG-SP-02",
+   "CHUNG-TP-06"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Linh Tinh"
+    ],
+    "viTri": "xung"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Linh Tinh ở {cung} (cung xung chiếu của Điền Trạch) ảnh hưởng đến nhà cửa và gia đạo: nhạy bén nhưng dễ căng thẳng, nên giữ nhịp nghỉ ngơi.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB (sao phụ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-dien-trach-SP-LinhTinh-tam-hop",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "CHUNG-SP-02",
+   "CHUNG-TP-06"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Linh Tinh"
+    ],
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Linh Tinh ở {cung} (cung tam hợp của Điền Trạch) ảnh hưởng đến nhà cửa và gia đạo: nhạy bén nhưng dễ căng thẳng, nên giữ nhịp nghỉ ngơi.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB (sao phụ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-dien-trach-SP-ĐịaKhông-xung",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "CHUNG-SP-02",
+   "CHUNG-TP-06"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Địa Không"
+    ],
+    "viTri": "xung"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Địa Không ở {cung} (cung xung chiếu của Điền Trạch) ảnh hưởng đến nhà cửa và gia đạo: hay nghĩ khác lạ, cần thực tế hóa ý tưởng.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB (sao phụ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-dien-trach-SP-ĐịaKhông-tam-hop",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "CHUNG-SP-02",
+   "CHUNG-TP-06"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Địa Không"
+    ],
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Địa Không ở {cung} (cung tam hợp của Điền Trạch) ảnh hưởng đến nhà cửa và gia đạo: hay nghĩ khác lạ, cần thực tế hóa ý tưởng.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB (sao phụ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-dien-trach-SP-ĐịaKiếp-xung",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "CHUNG-SP-02",
+   "CHUNG-TP-06"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Địa Kiếp"
+    ],
+    "viTri": "xung"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Địa Kiếp ở {cung} (cung xung chiếu của Điền Trạch) ảnh hưởng đến nhà cửa và gia đạo: hay muốn đổi hướng, nên cân nhắc trước khi quyết.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB (sao phụ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-dien-trach-SP-ĐịaKiếp-tam-hop",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "CHUNG-SP-02",
+   "CHUNG-TP-06"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Địa Kiếp"
+    ],
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Địa Kiếp ở {cung} (cung tam hợp của Điền Trạch) ảnh hưởng đến nhà cửa và gia đạo: hay muốn đổi hướng, nên cân nhắc trước khi quyết.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB (sao phụ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-dien-trach-SP-ThiênKhông-xung",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "CHUNG-TP-04",
+   "CHUNG-VCD-03"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Không"
+    ],
+    "viTri": "xung"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Thiên Không ở {cung} (cung xung chiếu của Điền Trạch) ảnh hưởng đến nhà cửa và gia đạo: ý nghĩ thoáng, nhiều ý tưởng nhưng khó nắm chắc, nên cụ thể hóa bằng kế hoạch.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB (sao phụ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-dien-trach-SP-ThiênKhông-tam-hop",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "CHUNG-TP-04",
+   "CHUNG-VCD-03"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Không"
+    ],
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Thiên Không ở {cung} (cung tam hợp của Điền Trạch) ảnh hưởng đến nhà cửa và gia đạo: ý nghĩ thoáng, nhiều ý tưởng nhưng khó nắm chắc, nên cụ thể hóa bằng kế hoạch.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB (sao phụ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-dien-trach-SP-LộcTồn-xung",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "CHUNG-SP-04"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Lộc Tồn"
+    ],
+    "viTri": "xung"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Lộc Tồn ở {cung} (cung xung chiếu của Điền Trạch) ảnh hưởng đến nhà cửa và gia đạo: biết tích lũy, thận trọng với tài chính, nên linh hoạt vừa đủ để không bỏ lỡ cơ hội.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB (sao phụ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-dien-trach-SP-LộcTồn-tam-hop",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "CHUNG-SP-04"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Lộc Tồn"
+    ],
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Lộc Tồn ở {cung} (cung tam hợp của Điền Trạch) ảnh hưởng đến nhà cửa và gia đạo: biết tích lũy, thận trọng với tài chính, nên linh hoạt vừa đủ để không bỏ lỡ cơ hội.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB (sao phụ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-dien-trach-SP-ThienKhong-chinh",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "CHUNG-TP-04",
+   "CHUNG-VCD-03"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Không"
+    ],
+    "viTri": "chinh"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Thiên Không đồng cung Điền Trạch: ý nghĩ thoáng, nhiều ý tưởng nhưng khó nắm chắc, nên cụ thể hóa bằng kế hoạch.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú, không vong); TB (sao phụ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
   "id": "KHUNG-menh-VCD-xung",
   "chuyenDe": "menh",
   "cung": "Mệnh",
@@ -2458,6 +3996,114 @@
   ],
   "muc": "cung-lien-quan",
   "noiDung": "{cung} (cung tam hợp của Phu Thê) không có chính tinh (vô chính diệu): khi luận chuyện tình cảm và hôn nhân, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; phái Việt coi gặp Tuần hoặc Triệt là thuận hơn.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB, NL (vô chính diệu)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Vô Chính Diệu"
+  ]
+ },
+ {
+  "id": "KHUNG-tai-bach-VCD-xung",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "VCD",
+  "maNghienCuu": [
+   "CHUNG-VCD-01",
+   "CHUNG-VCD-03"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": true,
+    "viTri": "xung"
+   }
+  ],
+  "muc": "cung-lien-quan",
+  "noiDung": "{cung} (cung xung chiếu của Tài Bạch) không có chính tinh (vô chính diệu): khi luận cách kiếm tiền và giữ tiền, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; phái Việt coi gặp Tuần hoặc Triệt là thuận hơn.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB, NL (vô chính diệu)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Vô Chính Diệu"
+  ]
+ },
+ {
+  "id": "KHUNG-tai-bach-VCD-tam-hop",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "VCD",
+  "maNghienCuu": [
+   "CHUNG-VCD-01",
+   "CHUNG-VCD-03"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": true,
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "cung-lien-quan",
+  "noiDung": "{cung} (cung tam hợp của Tài Bạch) không có chính tinh (vô chính diệu): khi luận cách kiếm tiền và giữ tiền, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; phái Việt coi gặp Tuần hoặc Triệt là thuận hơn.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB, NL (vô chính diệu)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Vô Chính Diệu"
+  ]
+ },
+ {
+  "id": "KHUNG-dien-trach-VCD-xung",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "VCD",
+  "maNghienCuu": [
+   "CHUNG-VCD-01",
+   "CHUNG-VCD-03"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": true,
+    "viTri": "xung"
+   }
+  ],
+  "muc": "cung-lien-quan",
+  "noiDung": "{cung} (cung xung chiếu của Điền Trạch) không có chính tinh (vô chính diệu): khi luận nhà cửa và gia đạo, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; phái Việt coi gặp Tuần hoặc Triệt là thuận hơn.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ); TB, NL (vô chính diệu)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Vô Chính Diệu"
+  ]
+ },
+ {
+  "id": "KHUNG-dien-trach-VCD-tam-hop",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "VCD",
+  "maNghienCuu": [
+   "CHUNG-VCD-01",
+   "CHUNG-VCD-03"
+  ],
+  "dieuKien": [
+   {
+    "voChinhDieu": true,
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "cung-lien-quan",
+  "noiDung": "{cung} (cung tam hợp của Điền Trạch) không có chính tinh (vô chính diệu): khi luận nhà cửa và gia đạo, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; phái Việt coi gặp Tuần hoặc Triệt là thuận hơn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -2895,6 +4541,296 @@
   ],
   "muc": "tu-hoa",
   "noiDung": "Tam phương của Phu Thê vừa có Hóa Khoa vừa có Hóa Kỵ: thuận lợi và điểm vướng cùng tồn tại, kết quả có lúc lên lúc xuống; nên tận dụng mặt thuận, giữ nhịp đều, dự phòng và chủ động xử lý chỗ vướng thay vì chỉ nhìn một chiều.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "nguonChiTiet": "TT (quyển 2, Hóa Kỵ); KL (Hóa Kỵ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-tai-bach-DH-Tuần-Ky",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "YN",
+  "maNghienCuu": [
+   "CHUNG-TUAN-06",
+   "CHUNG-TUAN-02"
+  ],
+  "dieuKien": [
+   {
+    "tuan": true,
+    "viTri": "chinh"
+   },
+   {
+    "hoa": "Hóa Kỵ",
+    "viTri": "tam-phuong"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Tài Bạch có Tuần trong khi tam phương có Hóa Kỵ: Tuần làm cả mặt mạnh lẫn mặt vướng đều dịu đi, nên biên độ hẹp lại, ít bứt phá lớn nhưng cũng ít vấp lớn; điểm mạnh cần thời gian để bộc lộ, điểm vướng cũng nhẹ hơn.",
+  "nguon": [
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "nguonChiTiet": "NL, KL (Tuần Triệt)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-tai-bach-DH-Triệt-Ky",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "YN",
+  "maNghienCuu": [
+   "CHUNG-TUAN-06",
+   "CHUNG-TUAN-02"
+  ],
+  "dieuKien": [
+   {
+    "triet": true,
+    "viTri": "chinh"
+   },
+   {
+    "hoa": "Hóa Kỵ",
+    "viTri": "tam-phuong"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Tài Bạch có Triệt trong khi tam phương có Hóa Kỵ: Triệt làm cả mặt mạnh lẫn mặt vướng đều dịu đi, nên biên độ hẹp lại, ít bứt phá lớn nhưng cũng ít vấp lớn; điểm mạnh cần thời gian để bộc lộ, điểm vướng cũng nhẹ hơn.",
+  "nguon": [
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "nguonChiTiet": "NL, KL (Tuần Triệt)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-tai-bach-DH-Lộc-Ky",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "YN",
+  "maNghienCuu": [
+   "CHUNG-HOA-07",
+   "CHUNG-PP-11"
+  ],
+  "dieuKien": [
+   {
+    "hoa": "Hóa Lộc",
+    "viTri": "tam-phuong"
+   },
+   {
+    "hoa": "Hóa Kỵ",
+    "viTri": "tam-phuong"
+   }
+  ],
+  "muc": "tu-hoa",
+  "noiDung": "Tam phương của Tài Bạch vừa có Hóa Lộc vừa có Hóa Kỵ: thuận lợi và điểm vướng cùng tồn tại, kết quả có lúc lên lúc xuống; nên tận dụng mặt thuận, giữ nhịp đều, dự phòng và chủ động xử lý chỗ vướng thay vì chỉ nhìn một chiều.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "nguonChiTiet": "TT (quyển 2, Hóa Kỵ); KL (Hóa Kỵ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-tai-bach-DH-Quyền-Ky",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "YN",
+  "maNghienCuu": [
+   "CHUNG-HOA-07",
+   "CHUNG-PP-11"
+  ],
+  "dieuKien": [
+   {
+    "hoa": "Hóa Quyền",
+    "viTri": "tam-phuong"
+   },
+   {
+    "hoa": "Hóa Kỵ",
+    "viTri": "tam-phuong"
+   }
+  ],
+  "muc": "tu-hoa",
+  "noiDung": "Tam phương của Tài Bạch vừa có Hóa Quyền vừa có Hóa Kỵ: thuận lợi và điểm vướng cùng tồn tại, kết quả có lúc lên lúc xuống; nên tận dụng mặt thuận, giữ nhịp đều, dự phòng và chủ động xử lý chỗ vướng thay vì chỉ nhìn một chiều.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "nguonChiTiet": "TT (quyển 2, Hóa Kỵ); KL (Hóa Kỵ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-tai-bach-DH-Khoa-Ky",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "YN",
+  "maNghienCuu": [
+   "CHUNG-HOA-07",
+   "CHUNG-PP-11"
+  ],
+  "dieuKien": [
+   {
+    "hoa": "Hóa Khoa",
+    "viTri": "tam-phuong"
+   },
+   {
+    "hoa": "Hóa Kỵ",
+    "viTri": "tam-phuong"
+   }
+  ],
+  "muc": "tu-hoa",
+  "noiDung": "Tam phương của Tài Bạch vừa có Hóa Khoa vừa có Hóa Kỵ: thuận lợi và điểm vướng cùng tồn tại, kết quả có lúc lên lúc xuống; nên tận dụng mặt thuận, giữ nhịp đều, dự phòng và chủ động xử lý chỗ vướng thay vì chỉ nhìn một chiều.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "nguonChiTiet": "TT (quyển 2, Hóa Kỵ); KL (Hóa Kỵ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-dien-trach-DH-Tuần-Ky",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "YN",
+  "maNghienCuu": [
+   "CHUNG-TUAN-06",
+   "CHUNG-TUAN-02"
+  ],
+  "dieuKien": [
+   {
+    "tuan": true,
+    "viTri": "chinh"
+   },
+   {
+    "hoa": "Hóa Kỵ",
+    "viTri": "tam-phuong"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Điền Trạch có Tuần trong khi tam phương có Hóa Kỵ: Tuần làm cả mặt mạnh lẫn mặt vướng đều dịu đi, nên biên độ hẹp lại, ít bứt phá lớn nhưng cũng ít vấp lớn; điểm mạnh cần thời gian để bộc lộ, điểm vướng cũng nhẹ hơn.",
+  "nguon": [
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "nguonChiTiet": "NL, KL (Tuần Triệt)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-dien-trach-DH-Triệt-Ky",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "YN",
+  "maNghienCuu": [
+   "CHUNG-TUAN-06",
+   "CHUNG-TUAN-02"
+  ],
+  "dieuKien": [
+   {
+    "triet": true,
+    "viTri": "chinh"
+   },
+   {
+    "hoa": "Hóa Kỵ",
+    "viTri": "tam-phuong"
+   }
+  ],
+  "muc": "phu-tinh",
+  "noiDung": "Điền Trạch có Triệt trong khi tam phương có Hóa Kỵ: Triệt làm cả mặt mạnh lẫn mặt vướng đều dịu đi, nên biên độ hẹp lại, ít bứt phá lớn nhưng cũng ít vấp lớn; điểm mạnh cần thời gian để bộc lộ, điểm vướng cũng nhẹ hơn.",
+  "nguon": [
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "nguonChiTiet": "NL, KL (Tuần Triệt)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-dien-trach-DH-Lộc-Ky",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "YN",
+  "maNghienCuu": [
+   "CHUNG-HOA-07",
+   "CHUNG-PP-11"
+  ],
+  "dieuKien": [
+   {
+    "hoa": "Hóa Lộc",
+    "viTri": "tam-phuong"
+   },
+   {
+    "hoa": "Hóa Kỵ",
+    "viTri": "tam-phuong"
+   }
+  ],
+  "muc": "tu-hoa",
+  "noiDung": "Tam phương của Điền Trạch vừa có Hóa Lộc vừa có Hóa Kỵ: thuận lợi và điểm vướng cùng tồn tại, kết quả có lúc lên lúc xuống; nên tận dụng mặt thuận, giữ nhịp đều, dự phòng và chủ động xử lý chỗ vướng thay vì chỉ nhìn một chiều.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "nguonChiTiet": "TT (quyển 2, Hóa Kỵ); KL (Hóa Kỵ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-dien-trach-DH-Quyền-Ky",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "YN",
+  "maNghienCuu": [
+   "CHUNG-HOA-07",
+   "CHUNG-PP-11"
+  ],
+  "dieuKien": [
+   {
+    "hoa": "Hóa Quyền",
+    "viTri": "tam-phuong"
+   },
+   {
+    "hoa": "Hóa Kỵ",
+    "viTri": "tam-phuong"
+   }
+  ],
+  "muc": "tu-hoa",
+  "noiDung": "Tam phương của Điền Trạch vừa có Hóa Quyền vừa có Hóa Kỵ: thuận lợi và điểm vướng cùng tồn tại, kết quả có lúc lên lúc xuống; nên tận dụng mặt thuận, giữ nhịp đều, dự phòng và chủ động xử lý chỗ vướng thay vì chỉ nhìn một chiều.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "nguonChiTiet": "TT (quyển 2, Hóa Kỵ); KL (Hóa Kỵ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": []
+ },
+ {
+  "id": "KHUNG-dien-trach-DH-Khoa-Ky",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "YN",
+  "maNghienCuu": [
+   "CHUNG-HOA-07",
+   "CHUNG-PP-11"
+  ],
+  "dieuKien": [
+   {
+    "hoa": "Hóa Khoa",
+    "viTri": "tam-phuong"
+   },
+   {
+    "hoa": "Hóa Kỵ",
+    "viTri": "tam-phuong"
+   }
+  ],
+  "muc": "tu-hoa",
+  "noiDung": "Tam phương của Điền Trạch vừa có Hóa Khoa vừa có Hóa Kỵ: thuận lợi và điểm vướng cùng tồn tại, kết quả có lúc lên lúc xuống; nên tận dụng mặt thuận, giữ nhịp đều, dự phòng và chủ động xử lý chỗ vướng thay vì chỉ nhìn một chiều.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
@@ -5875,6 +7811,1994 @@
   "uuTien": 70,
   "muc": "cach-cuc",
   "noiDung": "Địa Không và Địa Kiếp cùng hội chiếu vào Phu Thê (thế Không Kiếp chiếu): sát tinh thành cặp hội vào tứ chính làm bức tranh nhiều biến đổi hơn; nên thực tế hóa ý tưởng, cân nhắc trước khi đổi hướng và giữ dự phòng.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Không Kiếp giáp / chiếu"
+  ]
+ },
+ {
+  "id": "KHUNG-tai-bach-CC-TuPhuVuTuong",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-01",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Tử Phủ Vũ Tướng",
+  "uuTien": 100,
+  "muc": "cach-cuc",
+  "noiDung": "Tử Vi, Thiên Phủ, Vũ Khúc, Thiên Tướng cùng hội trong tam phương, tạo thế Tử Phủ Vũ Tướng: thiên về ổn định, quản lý, tổ chức và tài chính; phát huy tốt khi có thêm Tả Phù, Hữu Bật và Tam Hóa.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Tử Phủ Vũ Tướng"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-tai-bach-CC-TuPhuVuTuong-PHA",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-01",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   },
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Tử Phủ Vũ Tướng",
+  "uuTien": 90,
+  "muc": "cach-cuc",
+  "noiDung": "Thế Tử Phủ Vũ Tướng có đủ sao nhưng tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): xu hướng ổn định, quản lý, tổ chức vẫn còn, cần thêm nỗ lực và sự cẩn trọng để giữ vững.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Tử Phủ Vũ Tướng"
+  ]
+ },
+ {
+  "id": "KHUNG-tai-bach-CC-SatPhaTham",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-02",
+   "MENH-CC-07"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thất Sát",
+     "Phá Quân",
+     "Tham Lang"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Sát Phá Tham",
+  "uuTien": 100,
+  "muc": "cach-cuc",
+  "noiDung": "Thất Sát, Phá Quân, Tham Lang cùng hội trong tam phương, tạo thế Sát Phá Tham: thiên về hành động, khai phá và thay đổi, hợp môi trường cạnh tranh và đi xa; hợp hơn khi các sát tinh đắc địa.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Sát Phá Tham"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-tai-bach-CC-SatPhaTham-PHA",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-02",
+   "MENH-CC-07"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thất Sát",
+     "Phá Quân",
+     "Tham Lang"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   },
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Sát Phá Tham",
+  "uuTien": 90,
+  "muc": "cach-cuc",
+  "noiDung": "Thế Sát Phá Tham có đủ sao và tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): nhịp biến động cao hơn, nên chọn mục tiêu rõ và tránh dàn trải sức lực.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Sát Phá Tham"
+  ]
+ },
+ {
+  "id": "KHUNG-tai-bach-CC-CoNguyetdongLuong",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-03",
+   "MENH-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Cơ Nguyệt Đồng Lương",
+  "uuTien": 100,
+  "muc": "cach-cuc",
+  "noiDung": "Thiên Cơ, Thái Âm, Thiên Đồng, Thiên Lương cùng hội trong tam phương, tạo thế Cơ Nguyệt Đồng Lương: thiên về trí tuệ, chuyên môn, công việc ổn định trong tổ chức (hành chính, giáo dục, dịch vụ, nghiên cứu); hợp thêm Tam Hóa, Văn Xương, Văn Khúc.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Cơ Nguyệt Đồng Lương"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-tai-bach-CC-CoNguyetdongLuong-PHA",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-03",
+   "MENH-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   },
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Cơ Nguyệt Đồng Lương",
+  "uuTien": 90,
+  "muc": "cach-cuc",
+  "noiDung": "Thế Cơ Nguyệt Đồng Lương có đủ sao nhưng tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): xu hướng ổn định, chuyên môn vẫn còn, cần chủ động hơn để không dừng ở lối quen.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Cơ Nguyệt Đồng Lương"
+  ]
+ },
+ {
+  "id": "KHUNG-tai-bach-CC-CuNhat",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-04",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "viTri": "tam-phuong"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Cự Nhật",
+  "uuTien": 100,
+  "muc": "cach-cuc",
+  "noiDung": "Cự Môn và Thái Dương đồng cung, tạo thế Cự Nhật: thiên về ngôn luận, truyền đạt, ngoại giao và danh tiếng; Thái Dương sáng thì Cự Môn bớt thị phi.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Cự Nhật"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-tai-bach-CC-CuNhat-PHA",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-04",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "viTri": "tam-phuong"
+   },
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Cự Nhật",
+  "uuTien": 90,
+  "muc": "cach-cuc",
+  "noiDung": "Thế Cự Nhật (Cự Môn và Thái Dương đồng cung) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): thế mạnh ngôn luận, truyền đạt vẫn còn, cần giữ lời nói rõ ràng để tránh hiểu lầm.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Cự Nhật"
+  ]
+ },
+ {
+  "id": "KHUNG-tai-bach-CC-HoaThamLinhTham-Hoa",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-09",
+   "MENH-CC-06"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tham Lang",
+     "Hỏa Tinh"
+    ],
+    "doSang": [
+     "Miếu",
+     "Vượng"
+    ],
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Hỏa Tham / Linh Tham",
+  "uuTien": 100,
+  "muc": "cach-cuc",
+  "noiDung": "Tham Lang sáng đồng cung Hỏa Tinh, tạo thế Hỏa Tham: năng lượng bứt phá mạnh, có uy danh, hợp kinh doanh và những lĩnh vực cạnh tranh.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Hỏa Tham / Linh Tham"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-tai-bach-CC-HoaThamLinhTham-Hoa-PHA",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-09",
+   "MENH-CC-06"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tham Lang",
+     "Hỏa Tinh"
+    ],
+    "doSang": [
+     "Đắc",
+     "Bình",
+     "Hãm"
+    ],
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Hỏa Tham / Linh Tham",
+  "uuTien": 90,
+  "muc": "cach-cuc",
+  "noiDung": "Tham Lang đồng cung Hỏa Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Hỏa Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc và chọn một mục tiêu chính.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Hỏa Tham / Linh Tham"
+  ]
+ },
+ {
+  "id": "KHUNG-tai-bach-CC-HoaThamLinhTham-Linh",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-09",
+   "MENH-CC-06"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tham Lang",
+     "Linh Tinh"
+    ],
+    "doSang": [
+     "Miếu",
+     "Vượng"
+    ],
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Hỏa Tham / Linh Tham",
+  "uuTien": 100,
+  "muc": "cach-cuc",
+  "noiDung": "Tham Lang sáng đồng cung Linh Tinh, tạo thế Linh Tham: năng lượng bứt phá mạnh, có uy danh, hợp kinh doanh và những lĩnh vực cạnh tranh.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Hỏa Tham / Linh Tham"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-tai-bach-CC-HoaThamLinhTham-Linh-PHA",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-09",
+   "MENH-CC-06"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tham Lang",
+     "Linh Tinh"
+    ],
+    "doSang": [
+     "Đắc",
+     "Bình",
+     "Hãm"
+    ],
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Hỏa Tham / Linh Tham",
+  "uuTien": 90,
+  "muc": "cach-cuc",
+  "noiDung": "Tham Lang đồng cung Linh Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Linh Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc và chọn một mục tiêu chính.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Hỏa Tham / Linh Tham"
+  ]
+ },
+ {
+  "id": "KHUNG-tai-bach-CC-TuPha",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-07",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Phá Quân"
+    ],
+    "viTri": "tam-phuong"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Tử Phá",
+  "uuTien": 100,
+  "muc": "cach-cuc",
+  "noiDung": "Tử Vi và Phá Quân đồng cung, tạo thế Tử Phá: vừa coi trọng vị thế vừa thích đổi mới, đời sống nhiều chuyển biến, hợp con đường tự thân lập nghiệp.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Tử Phá"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-tai-bach-CC-TuPha-PHA",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-07",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Phá Quân"
+    ],
+    "viTri": "tam-phuong"
+   },
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Tử Phá",
+  "uuTien": 90,
+  "muc": "cach-cuc",
+  "noiDung": "Thế Tử Phá (Tử Vi và Phá Quân đồng cung) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): xu hướng đổi mới và chuyển biến cao hơn, nên chọn hướng đi rõ và cân nhắc kỹ trước quyết định lớn.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Tử Phá"
+  ]
+ },
+ {
+  "id": "KHUNG-tai-bach-CC-CoLuong",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "MENH-TCO-03",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thiên Lương"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   },
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Cơ Lương",
+  "uuTien": 100,
+  "muc": "cach-cuc",
+  "noiDung": "Thiên Cơ và Thiên Lương hội trong tam phương, tạo thế Cơ Lương: giỏi bàn mưu lược và phân tích, hợp công việc cần suy xét kỹ.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Cơ Lương"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-tai-bach-CC-CoLuong-PHA",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "MENH-TCO-03",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thiên Lương"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   },
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Cơ Lương",
+  "uuTien": 90,
+  "muc": "cach-cuc",
+  "noiDung": "Thế Cơ Lương (Thiên Cơ và Thiên Lương hội trong tam phương) có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): khả năng phân tích, bàn mưu vẫn còn, cần chủ động hành động để ý tưởng thành kết quả.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Cơ Lương"
+  ]
+ },
+ {
+  "id": "KHUNG-tai-bach-CC-NhatNguyet",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-05",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thái Dương",
+     "Thái Âm"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Nhật Nguyệt",
+  "uuTien": 100,
+  "muc": "cach-cuc",
+  "noiDung": "Thái Dương và Thái Âm cùng hội trong tam phương, tạo thế Nhật Nguyệt: cùng sáng là cách tốt, chủ hiển đạt; nếu một trong hai kém sáng thì cần thêm nỗ lực và sự bền bỉ.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Nhật Nguyệt"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-tai-bach-CC-NhatNguyet-PHA",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-05",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thái Dương",
+     "Thái Âm"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   },
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Nhật Nguyệt",
+  "uuTien": 90,
+  "muc": "cach-cuc",
+  "noiDung": "Thế Nhật Nguyệt (Thái Dương và Thái Âm cùng hội trong tam phương) có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): cần bền bỉ và tự tạo cơ hội để phát huy được ánh sáng của hai sao.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Nhật Nguyệt"
+  ]
+ },
+ {
+  "id": "KHUNG-tai-bach-CC-Thamdao",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-SP-06",
+   "CHUNG-CT-THL-01"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tham Lang",
+     "Đào Hoa"
+    ],
+    "viTri": "tam-phuong"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Tham Đào",
+  "uuTien": 100,
+  "muc": "cach-cuc",
+  "noiDung": "Tham Lang đồng cung Đào Hoa, tạo thế Tham Đào: sức hút và duyên giao tiếp lớn, nhiều ham muốn và thích cái mới; nên cân bằng giữa duyên và nguyên tắc cá nhân.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Tham Đào"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-tai-bach-CC-Thamdao-PHA",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-SP-06",
+   "CHUNG-CT-THL-01"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tham Lang",
+     "Đào Hoa"
+    ],
+    "viTri": "tam-phuong"
+   },
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Tham Đào",
+  "uuTien": 90,
+  "muc": "cach-cuc",
+  "noiDung": "Thế Tham Đào (Tham Lang đồng cung Đào Hoa) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): sức hút vẫn còn, nên rõ ràng về điều mình muốn để tránh phân tán.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Tham Đào"
+  ]
+ },
+ {
+  "id": "KHUNG-tai-bach-CC-KhongKiepGiap",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-TP-06",
+   "CHUNG-SP-02"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp"
+    ],
+    "rai": true,
+    "viTri": "giap"
+   }
+  ],
+  "cachCuc": "Không Kiếp giáp / chiếu",
+  "uuTien": 80,
+  "muc": "cach-cuc",
+  "noiDung": "Địa Không và Địa Kiếp nằm ở hai cung kề Tài Bạch (thế Không Kiếp giáp): dễ nghĩ khác lạ và muốn đổi hướng, hữu ích khi biến thành sáng tạo có kế hoạch; nên thực tế hóa ý tưởng và cân nhắc kỹ trước quyết định lớn.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ, \"tam giáp\")",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Không Kiếp giáp / chiếu"
+  ]
+ },
+ {
+  "id": "KHUNG-tai-bach-CC-KhongKiepChieu",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-TP-06",
+   "CHUNG-SP-02"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp"
+    ],
+    "rai": true,
+    "viTri": "hop-chieu"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp"
+    ],
+    "rai": true,
+    "viTri": "giap"
+   }
+  ],
+  "cachCuc": "Không Kiếp giáp / chiếu",
+  "uuTien": 70,
+  "muc": "cach-cuc",
+  "noiDung": "Địa Không và Địa Kiếp cùng hội chiếu vào Tài Bạch (thế Không Kiếp chiếu): sát tinh thành cặp hội vào tứ chính làm bức tranh nhiều biến đổi hơn; nên thực tế hóa ý tưởng, cân nhắc trước khi đổi hướng và giữ dự phòng.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ)",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Không Kiếp giáp / chiếu"
+  ]
+ },
+ {
+  "id": "KHUNG-dien-trach-CC-TuPhuVuTuong",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-01",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Tử Phủ Vũ Tướng",
+  "uuTien": 100,
+  "muc": "cach-cuc",
+  "noiDung": "Tử Vi, Thiên Phủ, Vũ Khúc, Thiên Tướng cùng hội trong tam phương, tạo thế Tử Phủ Vũ Tướng: thiên về ổn định, quản lý, tổ chức và tài chính; phát huy tốt khi có thêm Tả Phù, Hữu Bật và Tam Hóa.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Tử Phủ Vũ Tướng"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-dien-trach-CC-TuPhuVuTuong-PHA",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-01",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   },
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Tử Phủ Vũ Tướng",
+  "uuTien": 90,
+  "muc": "cach-cuc",
+  "noiDung": "Thế Tử Phủ Vũ Tướng có đủ sao nhưng tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): xu hướng ổn định, quản lý, tổ chức vẫn còn, cần thêm nỗ lực và sự cẩn trọng để giữ vững.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Tử Phủ Vũ Tướng"
+  ]
+ },
+ {
+  "id": "KHUNG-dien-trach-CC-SatPhaTham",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-02",
+   "MENH-CC-07"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thất Sát",
+     "Phá Quân",
+     "Tham Lang"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Sát Phá Tham",
+  "uuTien": 100,
+  "muc": "cach-cuc",
+  "noiDung": "Thất Sát, Phá Quân, Tham Lang cùng hội trong tam phương, tạo thế Sát Phá Tham: thiên về hành động, khai phá và thay đổi, hợp môi trường cạnh tranh và đi xa; hợp hơn khi các sát tinh đắc địa.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Sát Phá Tham"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-dien-trach-CC-SatPhaTham-PHA",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-02",
+   "MENH-CC-07"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thất Sát",
+     "Phá Quân",
+     "Tham Lang"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   },
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Sát Phá Tham",
+  "uuTien": 90,
+  "muc": "cach-cuc",
+  "noiDung": "Thế Sát Phá Tham có đủ sao và tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): nhịp biến động cao hơn, nên chọn mục tiêu rõ và tránh dàn trải sức lực.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Sát Phá Tham"
+  ]
+ },
+ {
+  "id": "KHUNG-dien-trach-CC-CoNguyetdongLuong",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-03",
+   "MENH-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Cơ Nguyệt Đồng Lương",
+  "uuTien": 100,
+  "muc": "cach-cuc",
+  "noiDung": "Thiên Cơ, Thái Âm, Thiên Đồng, Thiên Lương cùng hội trong tam phương, tạo thế Cơ Nguyệt Đồng Lương: thiên về trí tuệ, chuyên môn, công việc ổn định trong tổ chức (hành chính, giáo dục, dịch vụ, nghiên cứu); hợp thêm Tam Hóa, Văn Xương, Văn Khúc.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Cơ Nguyệt Đồng Lương"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-dien-trach-CC-CoNguyetdongLuong-PHA",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-03",
+   "MENH-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   },
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Cơ Nguyệt Đồng Lương",
+  "uuTien": 90,
+  "muc": "cach-cuc",
+  "noiDung": "Thế Cơ Nguyệt Đồng Lương có đủ sao nhưng tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): xu hướng ổn định, chuyên môn vẫn còn, cần chủ động hơn để không dừng ở lối quen.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Cơ Nguyệt Đồng Lương"
+  ]
+ },
+ {
+  "id": "KHUNG-dien-trach-CC-CuNhat",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-04",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "viTri": "tam-phuong"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Cự Nhật",
+  "uuTien": 100,
+  "muc": "cach-cuc",
+  "noiDung": "Cự Môn và Thái Dương đồng cung, tạo thế Cự Nhật: thiên về ngôn luận, truyền đạt, ngoại giao và danh tiếng; Thái Dương sáng thì Cự Môn bớt thị phi.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Cự Nhật"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-dien-trach-CC-CuNhat-PHA",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-04",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "viTri": "tam-phuong"
+   },
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Cự Nhật",
+  "uuTien": 90,
+  "muc": "cach-cuc",
+  "noiDung": "Thế Cự Nhật (Cự Môn và Thái Dương đồng cung) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): thế mạnh ngôn luận, truyền đạt vẫn còn, cần giữ lời nói rõ ràng để tránh hiểu lầm.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Cự Nhật"
+  ]
+ },
+ {
+  "id": "KHUNG-dien-trach-CC-HoaThamLinhTham-Hoa",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-09",
+   "MENH-CC-06"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tham Lang",
+     "Hỏa Tinh"
+    ],
+    "doSang": [
+     "Miếu",
+     "Vượng"
+    ],
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Hỏa Tham / Linh Tham",
+  "uuTien": 100,
+  "muc": "cach-cuc",
+  "noiDung": "Tham Lang sáng đồng cung Hỏa Tinh, tạo thế Hỏa Tham: năng lượng bứt phá mạnh, có uy danh, hợp kinh doanh và những lĩnh vực cạnh tranh.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Hỏa Tham / Linh Tham"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-dien-trach-CC-HoaThamLinhTham-Hoa-PHA",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-09",
+   "MENH-CC-06"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tham Lang",
+     "Hỏa Tinh"
+    ],
+    "doSang": [
+     "Đắc",
+     "Bình",
+     "Hãm"
+    ],
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Hỏa Tham / Linh Tham",
+  "uuTien": 90,
+  "muc": "cach-cuc",
+  "noiDung": "Tham Lang đồng cung Hỏa Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Hỏa Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc và chọn một mục tiêu chính.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Hỏa Tham / Linh Tham"
+  ]
+ },
+ {
+  "id": "KHUNG-dien-trach-CC-HoaThamLinhTham-Linh",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-09",
+   "MENH-CC-06"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tham Lang",
+     "Linh Tinh"
+    ],
+    "doSang": [
+     "Miếu",
+     "Vượng"
+    ],
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Hỏa Tham / Linh Tham",
+  "uuTien": 100,
+  "muc": "cach-cuc",
+  "noiDung": "Tham Lang sáng đồng cung Linh Tinh, tạo thế Linh Tham: năng lượng bứt phá mạnh, có uy danh, hợp kinh doanh và những lĩnh vực cạnh tranh.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Hỏa Tham / Linh Tham"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-dien-trach-CC-HoaThamLinhTham-Linh-PHA",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-09",
+   "MENH-CC-06"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tham Lang",
+     "Linh Tinh"
+    ],
+    "doSang": [
+     "Đắc",
+     "Bình",
+     "Hãm"
+    ],
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Hỏa Tham / Linh Tham",
+  "uuTien": 90,
+  "muc": "cach-cuc",
+  "noiDung": "Tham Lang đồng cung Linh Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Linh Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc và chọn một mục tiêu chính.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Hỏa Tham / Linh Tham"
+  ]
+ },
+ {
+  "id": "KHUNG-dien-trach-CC-TuPha",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-07",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Phá Quân"
+    ],
+    "viTri": "tam-phuong"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Tử Phá",
+  "uuTien": 100,
+  "muc": "cach-cuc",
+  "noiDung": "Tử Vi và Phá Quân đồng cung, tạo thế Tử Phá: vừa coi trọng vị thế vừa thích đổi mới, đời sống nhiều chuyển biến, hợp con đường tự thân lập nghiệp.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Tử Phá"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-dien-trach-CC-TuPha-PHA",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-07",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Phá Quân"
+    ],
+    "viTri": "tam-phuong"
+   },
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Tử Phá",
+  "uuTien": 90,
+  "muc": "cach-cuc",
+  "noiDung": "Thế Tử Phá (Tử Vi và Phá Quân đồng cung) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): xu hướng đổi mới và chuyển biến cao hơn, nên chọn hướng đi rõ và cân nhắc kỹ trước quyết định lớn.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Tử Phá"
+  ]
+ },
+ {
+  "id": "KHUNG-dien-trach-CC-CoLuong",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "MENH-TCO-03",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thiên Lương"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   },
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Cơ Lương",
+  "uuTien": 100,
+  "muc": "cach-cuc",
+  "noiDung": "Thiên Cơ và Thiên Lương hội trong tam phương, tạo thế Cơ Lương: giỏi bàn mưu lược và phân tích, hợp công việc cần suy xét kỹ.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Cơ Lương"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-dien-trach-CC-CoLuong-PHA",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "MENH-TCO-03",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thiên Lương"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   },
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Cơ Lương",
+  "uuTien": 90,
+  "muc": "cach-cuc",
+  "noiDung": "Thế Cơ Lương (Thiên Cơ và Thiên Lương hội trong tam phương) có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): khả năng phân tích, bàn mưu vẫn còn, cần chủ động hành động để ý tưởng thành kết quả.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Cơ Lương"
+  ]
+ },
+ {
+  "id": "KHUNG-dien-trach-CC-NhatNguyet",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-05",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thái Dương",
+     "Thái Âm"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Nhật Nguyệt",
+  "uuTien": 100,
+  "muc": "cach-cuc",
+  "noiDung": "Thái Dương và Thái Âm cùng hội trong tam phương, tạo thế Nhật Nguyệt: cùng sáng là cách tốt, chủ hiển đạt; nếu một trong hai kém sáng thì cần thêm nỗ lực và sự bền bỉ.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Nhật Nguyệt"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-dien-trach-CC-NhatNguyet-PHA",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-05",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thái Dương",
+     "Thái Âm"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   },
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Nhật Nguyệt",
+  "uuTien": 90,
+  "muc": "cach-cuc",
+  "noiDung": "Thế Nhật Nguyệt (Thái Dương và Thái Âm cùng hội trong tam phương) có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): cần bền bỉ và tự tạo cơ hội để phát huy được ánh sáng của hai sao.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Nhật Nguyệt"
+  ]
+ },
+ {
+  "id": "KHUNG-dien-trach-CC-Thamdao",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-SP-06",
+   "CHUNG-CT-THL-01"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tham Lang",
+     "Đào Hoa"
+    ],
+    "viTri": "tam-phuong"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Tham Đào",
+  "uuTien": 100,
+  "muc": "cach-cuc",
+  "noiDung": "Tham Lang đồng cung Đào Hoa, tạo thế Tham Đào: sức hút và duyên giao tiếp lớn, nhiều ham muốn và thích cái mới; nên cân bằng giữa duyên và nguyên tắc cá nhân.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Tham Đào"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-dien-trach-CC-Thamdao-PHA",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-SP-06",
+   "CHUNG-CT-THL-01"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tham Lang",
+     "Đào Hoa"
+    ],
+    "viTri": "tam-phuong"
+   },
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp",
+     "Kình Dương",
+     "Đà La",
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ],
+    "toiThieu": 2,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Tham Đào",
+  "uuTien": 90,
+  "muc": "cach-cuc",
+  "noiDung": "Thế Tham Đào (Tham Lang đồng cung Đào Hoa) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): sức hút vẫn còn, nên rõ ràng về điều mình muốn để tránh phân tán.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Tham Đào"
+  ]
+ },
+ {
+  "id": "KHUNG-dien-trach-CC-KhongKiepGiap",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-TP-06",
+   "CHUNG-SP-02"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp"
+    ],
+    "rai": true,
+    "viTri": "giap"
+   }
+  ],
+  "cachCuc": "Không Kiếp giáp / chiếu",
+  "uuTien": 80,
+  "muc": "cach-cuc",
+  "noiDung": "Địa Không và Địa Kiếp nằm ở hai cung kề Điền Trạch (thế Không Kiếp giáp): dễ nghĩ khác lạ và muốn đổi hướng, hữu ích khi biến thành sáng tạo có kế hoạch; nên thực tế hóa ý tưởng và cân nhắc kỹ trước quyết định lớn.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Luận cách tinh số cao hạ, \"tam giáp\")",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Không Kiếp giáp / chiếu"
+  ]
+ },
+ {
+  "id": "KHUNG-dien-trach-CC-KhongKiepChieu",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-TP-06",
+   "CHUNG-SP-02"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp"
+    ],
+    "rai": true,
+    "viTri": "hop-chieu"
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Địa Không",
+     "Địa Kiếp"
+    ],
+    "rai": true,
+    "viTri": "giap"
+   }
+  ],
+  "cachCuc": "Không Kiếp giáp / chiếu",
+  "uuTien": 70,
+  "muc": "cach-cuc",
+  "noiDung": "Địa Không và Địa Kiếp cùng hội chiếu vào Điền Trạch (thế Không Kiếp chiếu): sát tinh thành cặp hội vào tứ chính làm bức tranh nhiều biến đổi hơn; nên thực tế hóa ý tưởng, cân nhắc trước khi đổi hướng và giữ dự phòng.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"

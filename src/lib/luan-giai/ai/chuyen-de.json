@@ -107,6 +107,83 @@
    }
   ]
  },
+ "tai-bach": {
+  "ten": "Tài Bạch",
+  "cungChinh": "Tài Bạch",
+  "cungLienQuan": [
+   "xung chiếu: Phúc Đức",
+   "tam hợp: Mệnh",
+   "tam hợp: Quan Lộc"
+  ],
+  "muc": [
+   {
+    "id": "cach-cuc",
+    "tieuDe": "Cách cục",
+    "huongDan": "Thế sao nổi bật trong tam phương, nêu trước các nhận định từng sao"
+   },
+   {
+    "id": "phong-cach",
+    "tieuDe": "Cách kiếm và giữ tiền",
+    "huongDan": "Chính tinh tại Tài Bạch"
+   },
+   {
+    "id": "cung-lien-quan",
+    "tieuDe": "Cung hợp chiếu",
+    "huongDan": "Mệnh, Quan Lộc, Phúc Đức"
+   },
+   {
+    "id": "tu-hoa",
+    "tieuDe": "Tứ hóa",
+    "huongDan": "Điểm nhấn tài chính"
+   },
+   {
+    "id": "phu-tinh",
+    "tieuDe": "Sao hỗ trợ và cần lưu ý",
+    "huongDan": "Sao phụ"
+   }
+  ]
+ },
+ "dien-trach": {
+  "ten": "Gia đạo",
+  "cungChinh": "Điền Trạch",
+  "cungLienQuan": [
+   "xung chiếu: Tử Tức",
+   "tam hợp: Huynh Đệ",
+   "tam hợp: Tật Ách"
+  ],
+  "muc": [
+   {
+    "id": "cach-cuc",
+    "tieuDe": "Cách cục",
+    "huongDan": "Thế sao nổi bật trong tam phương, nêu trước các nhận định từng sao"
+   },
+   {
+    "id": "phong-cach",
+    "tieuDe": "Nhà cửa và nếp nhà",
+    "huongDan": "Chính tinh tại Điền Trạch"
+   },
+   {
+    "id": "nguoi-than",
+    "tieuDe": "Cha mẹ, anh chị em, con cái",
+    "huongDan": "Chính tinh tại Phụ Mẫu, Huynh Đệ, Tử Tức"
+   },
+   {
+    "id": "cung-lien-quan",
+    "tieuDe": "Cung hợp chiếu",
+    "huongDan": "Tử Tức, Huynh Đệ, Tật Ách"
+   },
+   {
+    "id": "tu-hoa",
+    "tieuDe": "Tứ hóa",
+    "huongDan": "Điểm nhấn trong gia đạo"
+   },
+   {
+    "id": "phu-tinh",
+    "tieuDe": "Sao phụ",
+    "huongDan": "Sao hỗ trợ và cần lưu ý"
+   }
+  ]
+ },
  "van-10-nam": {
   "ten": "Vận 10 năm",
   "cungChinh": "Vận",
