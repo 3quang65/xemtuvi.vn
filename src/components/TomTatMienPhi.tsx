@@ -32,7 +32,7 @@ export default function TomTatMienPhi({ laSo, choMua = true }: { laSo: LaSo; cho
         t.doan.map((d) => (
           <blockquote key={d.ma} className="tt-doan">
             <p>{saoCuaQuyTac(d.ma) && <strong>{saoCuaQuyTac(d.ma)} tại Mệnh: </strong>}{nhanDinh(d.cau)}</p>
-            <footer>Quy tắc {d.ma}{d.nguon.length > 0 && <> · Nguồn: {d.nguon.join(', ')}</>}</footer>
+            {d.nguon.length > 0 && <footer>Nguồn: {d.nguon.join(', ')}</footer>}
           </blockquote>
         ))
       ) : (

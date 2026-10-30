@@ -12,7 +12,7 @@ const AI = require('../src/lib/luan-giai/ai/index.ts');
 const { locTuCam, kiemTraMaSauViet } = require('../src/lib/luan-giai/ai/loc.ts');
 const TC = require('../docs/nghien-cuu/tuvi-test-cases.json').cases.slice(0, 5);
 const DIR = path.join(__dirname, '../src/lib/luan-giai/ai');
-const QT = JSON.parse(fs.readFileSync(path.join(DIR, 'quy-tac.json'), 'utf8'));
+const QT = [...JSON.parse(fs.readFileSync(path.join(DIR, 'quy-tac.json'), 'utf8')), ...JSON.parse(fs.readFileSync(path.join(DIR, 'quy-tac-khung.json'), 'utf8'))];
 const TU_CAM = JSON.parse(fs.readFileSync(path.join(DIR, 'tu-cam.json'), 'utf8'));
 const CHUYEN_DE = ['menh', 'quan-loc', 'phu-the'];
 const chuan = (s) => s.toLowerCase().replace(/\s+/g, '');
@@ -36,8 +36,9 @@ for (const tc of TC) {
         assert.ok(q, `quy tắc ${d.thamChieu.quyTacId} không tồn tại`);
         assert.equal(d.thamChieu.cung, q.cung);
         assert.ok(d.thamChieu.nguon && d.thamChieu.truongPhai);
-        const sao = tatCa(ls, d.thamChieu.cung);
-        assert.ok(sao, `cung ${d.thamChieu.cung} không có trong lá số`);
+        assert.ok(tatCa(ls, d.thamChieu.cung), `cung ${d.thamChieu.cung} không có trong lá số`);
+        // Quy tắc bản 2 ghi rõ cung hợp chiếu chứa sao (cungLienQuan); quy tắc cũ: sao nằm ngay ở cung đang luận.
+        const sao = (d.thamChieu.cungLienQuan ?? [d.thamChieu.cung]).flatMap((c) => tatCa(ls, c) ?? []);
         for (const s of d.thamChieu.sao) assert.ok(sao.some((x) => x.ten === s), `${s} không ở cung ${d.thamChieu.cung}`);
       }
       const het = chuan(JSON.stringify(bai));

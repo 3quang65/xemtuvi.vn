@@ -9,6 +9,11 @@
   ],
   "muc": [
    {
+    "id": "cach-cuc",
+    "tieuDe": "Cách cục",
+    "huongDan": "Thế sao nổi bật trong tam phương, nêu trước các nhận định từng sao"
+   },
+   {
     "id": "tong-quan",
     "tieuDe": "Tổng quan bản thân",
     "huongDan": "Nét tính cách cốt lõi từ chính tinh tại Mệnh"
@@ -40,6 +45,11 @@
   ],
   "muc": [
    {
+    "id": "cach-cuc",
+    "tieuDe": "Cách cục",
+    "huongDan": "Thế sao nổi bật trong tam phương, nêu trước các nhận định từng sao"
+   },
+   {
     "id": "phong-cach",
     "tieuDe": "Phong cách làm việc",
     "huongDan": "Chính tinh tại Quan Lộc"
@@ -70,6 +80,11 @@
    "tam hợp: Thiên Di"
   ],
   "muc": [
+   {
+    "id": "cach-cuc",
+    "tieuDe": "Cách cục",
+    "huongDan": "Thế sao nổi bật trong tam phương, nêu trước các nhận định từng sao"
+   },
    {
     "id": "phong-cach",
     "tieuDe": "Cách yêu và gắn bó",

@@ -106,3 +106,15 @@ export function khopQuyTac(ls: LaSo, q: QuyTacV2): string[] | null {
   for (const k of q.khong ?? []) if (khopDieuKien(ls, goc, k) !== null) return null;
   return [...sao];
 }
+
+/** Các cung (trong vị trí của điều kiện) thực sự chứa yếu tố khớp: dùng điền tên cung vào câu luận. Chỉ gọi khi điều kiện đã khớp. */
+export function cungKhopDieuKien(ls: LaSo, goc: Cung, k: DieuKien): Cung[] {
+  const ds = cungTheoViTri(ls, goc, k.viTri);
+  const sao = k.sao ?? [];
+  if (k.rai || k.toiThieu !== undefined) return ds.filter((c) => saoCua(c).some((s) => sao.includes(s.ten)));
+  return ds.filter((c) => {
+    const tat = saoCua(c);
+    if (!sao.every((t) => tat.some((s) => s.ten === t))) return false;
+    return cungDat(c, k, sao[0] ? tat.find((s) => s.ten === sao[0]) : undefined);
+  });
+}

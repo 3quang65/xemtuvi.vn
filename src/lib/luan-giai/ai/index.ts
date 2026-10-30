@@ -9,6 +9,8 @@ import quyTacJson from './quy-tac.json';
 import tuCamJson from './tu-cam.json';
 import { bam, doc, ghi, thongKe, xoaBoNho } from './cache';
 import { kiemTraMaSauViet, locTuCam, type TuCamCauHinh } from './loc';
+import { cungKhopDieuKien, khopQuyTac, type QuyTacV2 } from './khop-v2';
+import khungJson from './quy-tac-khung.json';
 
 export { xoaBoNho };
 export const thongKeCache = thongKe;
@@ -35,7 +37,17 @@ interface ChuyenDeCauHinh {
 
 export interface NhanDinh {
   text: string;
-  thamChieu: { quyTacId: string; sao: string[]; cung: string; nguon: string; truongPhai: string };
+  thamChieu: {
+    quyTacId: string;
+    sao: string[];
+    cung: string;
+    nguon: string;
+    truongPhai: string;
+    /** Cung thực sự chứa yếu tố khớp (chỉ quy tắc bản 2: sao ở cung hợp chiếu). Thiếu thì sao nằm ở `cung`. */
+    cungLienQuan?: string[];
+    /** Yếu tố không phải sao: Tuần, Triệt, Vô Chính Diệu, "Cách <tên>". */
+    yeuTo?: string[];
+  };
 }
 export interface LuanGiai {
   chuyenDe: ChuyenDeMa;
@@ -63,11 +75,34 @@ export interface TuyChon {
 export const GHI_CHU =
   'Luận giải do hệ thống xemtuvi.vn tạo tự động từ các quy tắc Tử Vi có ghi nguồn; nội dung mang tính tham khảo, giúp hiểu mình và định hướng, không phải lời đoán chắc về tương lai.';
 
+/** Quy tắc bản 2 (định dạng máy đọc, docs/luan-giai/quy-tac-v2/DINH-DANG.md) kèm vài trường của bộ ghép. */
+type QuyTacBan2 = QuyTacV2 & { yeuTo?: string[] };
+
 const CHUYEN_DE = chuyenDeJson as unknown as Record<string, ChuyenDeCauHinh>;
-const QUY_TAC = quyTacJson as unknown as QuyTac[];
+
+/** Bỏ đuôi khuôn của bộ quy tắc cũ (kiem-duyet-1.md, mục 5.7): "góp thêm sắc thái…", "Độ sáng tốt, nên phát huy chủ động". */
+export function lamSachCau(cau: string): string {
+  let kq = cau
+    .replace(/,?\s*góp thêm sắc thái cho chuyên đề [^.]*\.?/g, '.')
+    .replace(/\s*Độ sáng tốt, nên phát huy chủ động\.?/g, '')
+    .replace(/\.\.+/g, '.')
+    .trim();
+  if (kq && !/[.!?]$/.test(kq)) kq += '.';
+  return kq;
+}
+const QUY_TAC = (quyTacJson as unknown as QuyTac[]).map((q) => ({ ...q, noiDung: lamSachCau(q.noiDung) }));
+
+/** Quy tắc bản 2: thư mục quy-tac-v2/ (Hạnh soạn) cộng bộ khung sinh bằng scripts/luan-giai/tao-khung.cjs. */
+function napBan2(): QuyTacBan2[] {
+  const dir = path.join(process.cwd(), 'src/lib/luan-giai/ai/quy-tac-v2');
+  const tep = fs.existsSync(dir) ? fs.readdirSync(dir).filter((f) => f.endsWith('.json')).sort() : [];
+  const tuThuMuc = tep.flatMap((f) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')) as QuyTacBan2[]);
+  return [...(khungJson as unknown as QuyTacBan2[]), ...tuThuMuc];
+}
+const QUY_TAC_2 = napBan2();
 const TU_CAM = tuCamJson as unknown as TuCamCauHinh;
 const PROMPT = fs.readFileSync(path.join(process.cwd(), 'src/lib/luan-giai/ai/prompt-he-thong.md'), 'utf8');
-export const PHIEN_BAN_QUY_TAC = bam(JSON.stringify([QUY_TAC, CHUYEN_DE, TU_CAM, PROMPT])).slice(0, 12);
+export const PHIEN_BAN_QUY_TAC = bam(JSON.stringify([QUY_TAC, QUY_TAC_2, CHUYEN_DE, TU_CAM, PROMPT])).slice(0, 12);
 
 export function nhaCungCapDangDung(yeuCau: TuyChon['nhaCungCap']): 'stub' | 'claude' | string {
   if (typeof yeuCau === 'object' && yeuCau) return yeuCau.ten;
@@ -84,8 +119,18 @@ function tatCaSao(ls: LaSo, tenCung: string): { sao: Sao[]; tuan: boolean; triet
   return c ? { sao: [...c.chinhTinh, ...c.catTinh, ...c.hungTinh, ...c.phuTinh], tuan: c.tuan, triet: c.triet } : null;
 }
 
-/** Quy tắc khớp lá số → danh sách sao thực sự khớp (rỗng nếu quy tắc không đòi sao); null nếu không khớp. */
-function khop(ls: LaSo, q: QuyTac): string[] | null {
+interface KetQuaKhop {
+  sao: string[];
+  yeuTo: string[];
+  cungLienQuan?: string[];
+  cau: string;
+  uuTien: number;
+  cungGoc: string;
+  q: { id: string; chuyenDe: string; muc?: string; nguon: string; truongPhai: string };
+}
+
+/** Quy tắc cũ khớp lá số → danh sách sao thực sự khớp (rỗng nếu quy tắc không đòi sao) và yếu tố Tuần/Triệt/Vô chính diệu; null nếu không khớp. */
+function khop(ls: LaSo, q: QuyTac): { sao: string[]; yeuTo: string[] } | null {
   const c = ls.cung.find((x) => x.ten === q.cung);
   const t = tatCaSao(ls, q.cung);
   if (!c || !t) return null;
@@ -95,6 +140,7 @@ function khop(ls: LaSo, q: QuyTac): string[] | null {
   const dau = q.sao[0] ? co(q.sao[0]) : undefined;
   if (k.doSang && !(dau?.dacTinhTen && k.doSang.includes(dau.dacTinhTen))) return null;
   let saoKhop = [...q.sao];
+  const yeuTo: string[] = [];
   if (k.hoa) {
     if (dau) { if (dau.hoa !== k.hoa) return null; }
     else {
@@ -107,8 +153,22 @@ function khop(ls: LaSo, q: QuyTac): string[] | null {
     else if (k.cungCo === 'Triệt') { if (!t.triet) return null; }
     else if (k.cungCo === 'Vô Chính Diệu') { if (c.chinhTinh.length) return null; }
     else if (!co(k.cungCo)) return null;
+    if (['Tuần', 'Triệt', 'Vô Chính Diệu'].includes(k.cungCo)) yeuTo.push(k.cungCo);
   }
-  return saoKhop;
+  return { sao: saoKhop, yeuTo };
+}
+
+/** Quy tắc bản 2 khớp lá số → câu đã điền tên sao, tên cung; null nếu không khớp. */
+function khopBan2(ls: LaSo, q: QuyTacBan2): KetQuaKhop | null {
+  const sao = khopQuyTac(ls, q);
+  if (sao === null) return null;
+  const goc = ls.cung.find((c) => c.ten === q.cung)!;
+  const cung = [...new Set(q.dieuKien.flatMap((k) => cungKhopDieuKien(ls, goc, k).map((c) => c.ten)))];
+  const cau = q.noiDung.replaceAll('{sao}', sao.join(', ')).replaceAll('{cung}', cung.join(' và '));
+  return {
+    sao, yeuTo: q.yeuTo ?? [], cungLienQuan: cung, cau, uuTien: q.uuTien ?? 0, cungGoc: q.cung,
+    q: { id: q.id, chuyenDe: q.chuyenDe, muc: q.muc, nguon: q.nguon.join('; '), truongPhai: q.truongPhai },
+  };
 }
 
 export async function sinhLuanGiai(ls: LaSo, chuyenDe: ChuyenDeMa, tuyChon: TuyChon = {}): Promise<LuanGiai> {
@@ -120,13 +180,20 @@ export async function sinhLuanGiai(ls: LaSo, chuyenDe: ChuyenDeMa, tuyChon: TuyC
     if (co) return co;
   }
 
-  const khopDs = QUY_TAC.filter((q) => q.chuyenDe === chuyenDe)
-    .map((q) => ({ q, sao: khop(ls, q) }))
-    .filter((x): x is { q: QuyTac; sao: string[] } => x.sao !== null);
+  const khopDs: KetQuaKhop[] = [
+    ...QUY_TAC.filter((q) => q.chuyenDe === chuyenDe).flatMap((q) => {
+      const r = khop(ls, q);
+      return r ? [{ ...r, cau: q.noiDung, uuTien: 0, cungGoc: q.cung, q }] : [];
+    }),
+    ...QUY_TAC_2.filter((q) => q.chuyenDe === chuyenDe).flatMap((q) => {
+      const r = khopBan2(ls, q);
+      return r ? [r] : [];
+    }),
+  ];
   const theoId = new Map(khopDs.map((x) => [x.q.id, x]));
 
   // Câu cấp cho nhà cung cấp; mặc định "stub" ghép thẳng từ quy tắc.
-  const cap: CauCap[] = khopDs.map((x) => ({ id: x.q.id, noiDung: x.q.noiDung }));
+  const cap: CauCap[] = khopDs.map((x) => ({ id: x.q.id, noiDung: x.cau }));
   let cau: { text: string; id: string }[] = cap.map((c) => ({ text: c.noiDung, id: c.id }));
   const ncc = tuyChon.nhaCungCap;
   const dung = nhaCungCapDangDung(ncc);
@@ -141,8 +208,8 @@ export async function sinhLuanGiai(ls: LaSo, chuyenDe: ChuyenDeMa, tuyChon: TuyC
     }
   }
 
-  const muc = cfg.muc.map((m) => ({ id: m.id, tieuDe: m.tieuDe, nhanDinh: [] as NhanDinh[] }));
-  const mucDau = muc[0];
+  const muc = cfg.muc.map((m) => ({ id: m.id, tieuDe: m.tieuDe, nhanDinh: [] as { n: NhanDinh; u: number }[] }));
+  const mucDau = muc.find((m) => m.id !== 'cach-cuc') ?? muc[0];
   const daCo = new Set<string>();
   for (const c of cau) {
     const x = theoId.get(c.id);
@@ -152,12 +219,22 @@ export async function sinhLuanGiai(ls: LaSo, chuyenDe: ChuyenDeMa, tuyChon: TuyC
     daCo.add(c.id);
     const dich = muc.find((m) => m.id === x.q.muc) ?? mucDau;
     dich.nhanDinh.push({
-      text,
-      thamChieu: { quyTacId: x.q.id, sao: x.sao, cung: x.q.cung, nguon: x.q.nguon, truongPhai: x.q.truongPhai },
+      u: x.uuTien,
+      n: {
+        text,
+        thamChieu: {
+          quyTacId: x.q.id, sao: x.sao, cung: x.cungGoc, nguon: x.q.nguon, truongPhai: x.q.truongPhai,
+          ...(x.cungLienQuan ? { cungLienQuan: x.cungLienQuan } : {}),
+          ...(x.yeuTo.length ? { yeuTo: x.yeuTo } : {}),
+        },
+      },
     });
   }
 
-  const kq: LuanGiai = { chuyenDe, muc: muc.filter((m) => m.nhanDinh.length), ghiChu: GHI_CHU, phienBan: PHIEN_BAN_QUY_TAC };
+  // Cách cục (mục đầu) xếp theo mức ưu tiên giảm dần; thứ tự ghép còn lại giữ nguyên.
+  const mucRa = muc.map((m) => ({ id: m.id, tieuDe: m.tieuDe, nhanDinh: [...m.nhanDinh].sort((a, b) => b.u - a.u).map((x) => x.n) }));
+
+  const kq: LuanGiai = { chuyenDe, muc: mucRa.filter((m) => m.nhanDinh.length), ghiChu: GHI_CHU, phienBan: PHIEN_BAN_QUY_TAC };
   if (!tuyChon.boQuaCache && dung === 'stub') ghi(khoa, kq);
   return kq;
 }
