@@ -30,12 +30,12 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 ## Bài luận giải (đúng như khách nhận)
 
 ### Cách cục
-- Thế Tử Phá (Tử Vi và Phá Quân đồng cung) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): xu hướng đổi mới và chuyển biến cao hơn, nên chọn hướng đi rõ và cân nhắc kỹ trước quyết định lớn.  
-  _↳ KHUNG-menh-CC-TuPha-PHA · Mệnh · Tử Vi+Phá Quân+Địa Không+Địa Kiếp · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
+- Với Mệnh: có dáng dấp của thế Tử Phá (vừa coi trọng vị thế vừa thích đổi mới), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Với bản thân, đời sống nhiều chuyển biến; nên chọn một mục tiêu chính mỗi giai đoạn để không dàn trải.  
+  _↳ KHUNG-menh-CC-TuPha-PHA3 · Mệnh · Tử Vi+Phá Quân+Địa Kiếp+Địa Không · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Tổng quan bản thân
 - Thiên Tướng tại Mệnh: công bằng, biết giúp đỡ, giữ chữ tín.  
-  _↳ ML-S11-TOT · Mệnh · Thiên Tướng · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc) · tam hợp phái Việt_
+  _↳ ML-S11-TOT · Mệnh · Thiên Tướng · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) · tam hợp phái Việt_
 
 ### Cung hợp chiếu
 - Tử Vi ở cung Thiên Di (xung chiếu với Mệnh): bổ sung xu hướng thích giữ vai trò dẫn dắt, coi trọng thể diện và sự tự chủ.  
@@ -53,7 +53,7 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 
 ### Cát hung tinh đi kèm
 - Triệt đóng tại Mệnh: các đặc điểm của cung thường biểu hiện chậm hoặc kín đáo hơn, nên kiên nhẫn và nhìn theo giai đoạn.  
-  _↳ ML-TT-TRIỆT · Mệnh · — · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc) · tam hợp phái Việt_
+  _↳ ML-TT-TRIỆT · Mệnh · — · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) · tam hợp phái Việt_
 - Thiên Khôi đồng cung Mệnh: dễ gặp quý nhân, người hướng dẫn.  
   _↳ ML-PS-4 · Mệnh · Thiên Khôi · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
 - Địa Kiếp đồng cung Mệnh: hay muốn đổi hướng, nên cân nhắc trước khi quyết.  

@@ -30,16 +30,14 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 ## Bài luận giải (đúng như khách nhận)
 
 ### Cách cục
-- Thế Sát Phá Tham có đủ sao và tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): nhịp biến động cao hơn, nên chọn mục tiêu rõ và tránh dàn trải sức lực.  
-  _↳ KHUNG-phu-the-CC-SatPhaTham-PHA · Phu Thê · Thất Sát+Phá Quân+Tham Lang+Địa Kiếp+Kình Dương+Hỏa Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
-- Tham Lang đồng cung Hỏa Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Hỏa Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc và chọn một mục tiêu chính.  
+- Với Phu Thê: Tham Lang đồng cung Hỏa Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Hỏa Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc và chọn một mục tiêu chính. Trong tình cảm, nhịp quan hệ dễ lên xuống; trước khi gắn bó lâu dài, hãy cùng nói rõ điều mỗi người cần.  
   _↳ KHUNG-phu-the-CC-HoaThamLinhTham-Hoa-PHA · Phu Thê · Tham Lang+Hỏa Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
-- Thế Tham Đào (Tham Lang đồng cung Đào Hoa) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): sức hút vẫn còn, nên rõ ràng về điều mình muốn để tránh phân tán.  
-  _↳ KHUNG-phu-the-CC-Thamdao-PHA · Phu Thê · Tham Lang+Đào Hoa+Địa Kiếp+Kình Dương+Hỏa Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
+- Với Phu Thê: có dáng dấp của thế Sát Phá Tham (thiên về hành động, khai phá, thay đổi), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy.  
+  _↳ KHUNG-phu-the-CC-SatPhaTham-PHA3 · Phu Thê · Thất Sát+Phá Quân+Tham Lang+Hỏa Tinh+Kình Dương+Địa Kiếp · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Cách yêu và gắn bó
-- Tham Lang tại Phu Thê: thu hút, thích sự mới mẻ, nên đặt mục tiêu chung rõ ràng với bạn đời. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.  
-  _↳ PT-S09-HAM · Phu Thê · Tham Lang · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc) · tam hợp phái Việt_
+- Tham Lang tại Phu Thê: thu hút, thích sự mới mẻ, nên đặt mục tiêu chung rõ ràng với bạn đời. Với các sao kém sáng nêu trong bài, nên bù bằng sự kiên nhẫn và trao đổi cởi mở trong quan hệ.  
+  _↳ PT-S09-HAM · Phu Thê · Tham Lang · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) · tam hợp phái Việt_
 
 ### Cung hợp chiếu
 - Tử Vi ở cung Quan Lộc (xung chiếu với Phu Thê): bổ sung xu hướng cần một người bạn đời tôn trọng sự chủ động và cùng bàn bạc.  

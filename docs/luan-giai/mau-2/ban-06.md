@@ -35,7 +35,7 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 
 ### Cách yêu và gắn bó
 - Thiên Cơ tại Phu Thê: thích trao đổi nhiều, quan hệ bền khi hai bên cùng chia sẻ.  
-  _↳ PT-S02-TOT · Phu Thê · Thiên Cơ · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc) · tam hợp phái Việt_
+  _↳ PT-S02-TOT · Phu Thê · Thiên Cơ · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) · tam hợp phái Việt_
 
 ### Cung hợp chiếu
 - Thiên Đồng ở cung Thiên Di (tam hợp với Phu Thê): bổ sung xu hướng nhẹ nhàng, dễ thông cảm, quan hệ cần thêm sự chủ động.  
@@ -55,7 +55,7 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 
 ### Sao phụ
 - Tuần đóng tại Phu Thê: các đặc điểm của cung thường biểu hiện chậm hoặc kín đáo hơn, nên kiên nhẫn và nhìn theo giai đoạn.  
-  _↳ PT-TT-TUẦN · Phu Thê · — · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc) · tam hợp phái Việt_
+  _↳ PT-TT-TUẦN · Phu Thê · — · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) · tam hợp phái Việt_
 - Hữu Bật đồng cung Phu Thê: được giúp đỡ đúng lúc, quan hệ thuận.  
   _↳ PT-PS-1 · Phu Thê · Hữu Bật · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
 - Thiên Việt đồng cung Phu Thê: có sự nâng đỡ, cơ hội từ người đi trước.  

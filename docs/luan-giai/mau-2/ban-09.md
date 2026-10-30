@@ -30,14 +30,14 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 ## Bài luận giải (đúng như khách nhận)
 
 ### Cách cục
-- Thiên Cơ, Thái Âm, Thiên Đồng, Thiên Lương cùng hội trong tam phương, tạo thế Cơ Nguyệt Đồng Lương: thiên về trí tuệ, chuyên môn, công việc ổn định trong tổ chức (hành chính, giáo dục, dịch vụ, nghiên cứu); hợp thêm Tam Hóa, Văn Xương, Văn Khúc.  
-  _↳ KHUNG-phu-the-CC-CoNguyetdongLuong · Phu Thê · Thiên Cơ+Thái Âm+Thiên Đồng+Thiên Lương · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
-- Thái Dương và Thái Âm cùng hội trong tam phương, tạo thế Nhật Nguyệt: cùng sáng là cách tốt, chủ hiển đạt; nếu một trong hai kém sáng thì cần thêm nỗ lực và sự bền bỉ.  
-  _↳ KHUNG-phu-the-CC-NhatNguyet · Phu Thê · Thái Dương+Thái Âm · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
+- Với Phu Thê: có dáng dấp của thế Cơ Nguyệt Đồng Lương (thiên về trí tuệ, chuyên môn, công việc ổn định), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Trong tình cảm, bạn thiên về suy nghĩ kỹ; hãy chia sẻ điều mình nghĩ thay vì giữ trong lòng.  
+  _↳ KHUNG-phu-the-CC-CoNguyetdongLuong-PHA3 · Phu Thê · Thiên Cơ+Thái Âm+Thiên Đồng+Thiên Lương+Linh Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
+- Với Phu Thê: có dáng dấp của thế Nhật Nguyệt (chủ hiển đạt khi cả hai sao cùng sáng), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Trong tình cảm, bạn trân trọng sự bền vững; hãy nói rõ kỳ vọng để hai người cùng đi đường dài.  
+  _↳ KHUNG-phu-the-CC-NhatNguyet-PHA3 · Phu Thê · Thái Dương+Thái Âm+Linh Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Cách yêu và gắn bó
 - Thái Âm tại Phu Thê: dịu dàng, nhạy cảm, cần không gian chia sẻ cảm xúc.  
-  _↳ PT-S08-TOT · Phu Thê · Thái Âm · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc) · tam hợp phái Việt_
+  _↳ PT-S08-TOT · Phu Thê · Thái Âm · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) · tam hợp phái Việt_
 
 ### Cung hợp chiếu
 - Thiên Cơ ở cung Thiên Di (tam hợp với Phu Thê): bổ sung xu hướng thích trao đổi nhiều, quan hệ bền khi hai bên cùng chia sẻ.  
@@ -59,7 +59,7 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 
 ### Sao phụ
 - Tuần đóng tại Phu Thê: các đặc điểm của cung thường biểu hiện chậm hoặc kín đáo hơn, nên kiên nhẫn và nhìn theo giai đoạn.  
-  _↳ PT-TT-TUẦN · Phu Thê · — · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc) · tam hợp phái Việt_
+  _↳ PT-TT-TUẦN · Phu Thê · — · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) · tam hợp phái Việt_
 - Tả Phù đồng cung Phu Thê: có người hỗ trợ, dễ hợp tác.  
   _↳ PT-PS-0 · Phu Thê · Tả Phù · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
 - Triệt đóng ở Phúc Đức (cung tam hợp của Phu Thê): Triệt chỉ tác động hai cung nó tách đôi, không chiếu sang Phu Thê, nhưng các sao tại Phúc Đức bị giảm cường độ nên phần đóng góp của cung này cho chuyện tình cảm và hôn nhân dịu hơn; ảnh hưởng thường rõ hơn ở giai đoạn đầu đời rồi nhẹ dần, mỗi người cảm nhận khác nhau tùy hoàn cảnh và nỗ lực.  

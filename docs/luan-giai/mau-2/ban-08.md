@@ -30,8 +30,8 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 ## Bài luận giải (đúng như khách nhận)
 
 ### Cách cục
-- Thế Nhật Nguyệt (Thái Dương và Thái Âm cùng hội trong tam phương) có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): cần bền bỉ và tự tạo cơ hội để phát huy được ánh sáng của hai sao.  
-  _↳ KHUNG-quan-loc-CC-NhatNguyet-PHA · Quan Lộc · Thái Dương+Thái Âm+Địa Không+Địa Kiếp+Đà La+Linh Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
+- Với Quan Lộc: có dáng dấp của thế Nhật Nguyệt (chủ hiển đạt khi cả hai sao cùng sáng), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Trong công việc, hợp vị trí cần tính tổ chức và trách nhiệm; nên tìm môi trường có quy trình rõ.  
+  _↳ KHUNG-quan-loc-CC-NhatNguyet-PHA3 · Quan Lộc · Thái Dương+Thái Âm+Đà La+Địa Không+Linh Tinh+Địa Kiếp · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Phong cách làm việc
 - Quan Lộc không có chính tinh: tính cách linh hoạt, chịu ảnh hưởng nhiều từ cung xung chiếu và hoàn cảnh, nên xem kỹ các cung hợp chiếu.  
@@ -63,7 +63,7 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 
 ### Sao hỗ trợ và thử thách
 - Triệt đóng tại Quan Lộc: các đặc điểm của cung thường biểu hiện chậm hoặc kín đáo hơn, nên kiên nhẫn và nhìn theo giai đoạn.  
-  _↳ QL-TT-TRIỆT · Quan Lộc · — · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc) · tam hợp phái Việt_
+  _↳ QL-TT-TRIỆT · Quan Lộc · — · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) · tam hợp phái Việt_
 - Thiên Việt đồng cung Quan Lộc: có sự nâng đỡ, cơ hội từ người đi trước.  
   _↳ QL-PS-5 · Quan Lộc · Thiên Việt · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
 - Đà La đồng cung Quan Lộc: kiên trì nhưng dễ chần chừ, cần chủ động hơn.  

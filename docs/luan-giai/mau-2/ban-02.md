@@ -31,7 +31,7 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 
 ### Phong cách làm việc
 - Thiên Đồng tại Quan Lộc: hợp môi trường hợp tác, ít áp lực đối đầu, cần thêm động lực.  
-  _↳ QL-S05-TOT · Quan Lộc · Thiên Đồng · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc) · tam hợp phái Việt_
+  _↳ QL-S05-TOT · Quan Lộc · Thiên Đồng · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) · tam hợp phái Việt_
 
 ### Cung hợp chiếu
 - Thiên Cơ ở cung Tài Bạch (tam hợp với Quan Lộc): bổ sung xu hướng mạnh về phân tích, lập kế hoạch, hợp công việc cần tư duy.  

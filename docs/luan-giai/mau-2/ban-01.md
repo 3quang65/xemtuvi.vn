@@ -30,14 +30,14 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 ## Bài luận giải (đúng như khách nhận)
 
 ### Cách cục
-- Thế Sát Phá Tham có đủ sao và tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): nhịp biến động cao hơn, nên chọn mục tiêu rõ và tránh dàn trải sức lực.  
-  _↳ KHUNG-menh-CC-SatPhaTham-PHA · Mệnh · Thất Sát+Phá Quân+Tham Lang+Địa Kiếp+Hỏa Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
-- Tham Lang đồng cung Hỏa Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Hỏa Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc và chọn một mục tiêu chính.  
+- Với Mệnh: Tham Lang đồng cung Hỏa Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Hỏa Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc và chọn một mục tiêu chính. Với bản thân, đời sống nhiều chuyển biến; nên chọn một mục tiêu chính mỗi giai đoạn để không dàn trải.  
   _↳ KHUNG-menh-CC-HoaThamLinhTham-Hoa-PHA · Mệnh · Tham Lang+Hỏa Tinh · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
+- Với Mệnh: có dáng dấp của thế Sát Phá Tham (thiên về hành động, khai phá, thay đổi), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy.  
+  _↳ KHUNG-menh-CC-SatPhaTham-PHA3 · Mệnh · Thất Sát+Phá Quân+Tham Lang+Hỏa Tinh+Địa Kiếp · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Tổng quan bản thân
 - Tham Lang tại Mệnh: đa tài, nhiều ham muốn học hỏi, giỏi giao tiếp.  
-  _↳ ML-S09-TOT · Mệnh · Tham Lang · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc) · tam hợp phái Việt_
+  _↳ ML-S09-TOT · Mệnh · Tham Lang · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) · tam hợp phái Việt_
 
 ### Cung hợp chiếu
 - Liêm Trinh ở cung Thiên Di (xung chiếu với Mệnh): bổ sung xu hướng có nguyên tắc, cá tính rõ nét, giàu cảm xúc bên trong.  
@@ -57,7 +57,7 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 
 ### Cát hung tinh đi kèm
 - Tuần đóng tại Mệnh: các đặc điểm của cung thường biểu hiện chậm hoặc kín đáo hơn, nên kiên nhẫn và nhìn theo giai đoạn.  
-  _↳ ML-TT-TUẦN · Mệnh · — · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc) · tam hợp phái Việt_
+  _↳ ML-TT-TUẦN · Mệnh · — · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) · tam hợp phái Việt_
 - Hỏa Tinh đồng cung Mệnh: nhiệt huyết, phản ứng nhanh, nên tiết chế cảm xúc.  
   _↳ ML-PS-10 · Mệnh · Hỏa Tinh · Tử Vi Đẩu Số Toàn Thư · tam hợp phái Việt_
 - Hồng Loan đồng cung Mệnh: duyên giao tiếp tốt, dễ gây thiện cảm.  

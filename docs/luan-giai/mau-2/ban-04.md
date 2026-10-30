@@ -30,14 +30,14 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 ## Bài luận giải (đúng như khách nhận)
 
 ### Cách cục
-- Thế Tử Phủ Vũ Tướng có đủ sao nhưng tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): xu hướng ổn định, quản lý, tổ chức vẫn còn, cần thêm nỗ lực và sự cẩn trọng để giữ vững.  
-  _↳ KHUNG-menh-CC-TuPhuVuTuong-PHA · Mệnh · Tử Vi+Thiên Phủ+Vũ Khúc+Thiên Tướng+Địa Không+Địa Kiếp · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
+- Với Mệnh: có dáng dấp của thế Tử Phủ Vũ Tướng (thiên về ổn định, quản lý, tổ chức), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Với bản thân, đây là điểm tựa để sống nề nếp và giữ vai trò đáng tin trong nhóm.  
+  _↳ KHUNG-menh-CC-TuPhuVuTuong-PHA3 · Mệnh · Tử Vi+Thiên Phủ+Vũ Khúc+Thiên Tướng+Địa Không+Địa Kiếp · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 - Địa Không và Địa Kiếp cùng hội chiếu vào Mệnh (thế Không Kiếp chiếu): sát tinh thành cặp hội vào tứ chính làm bức tranh nhiều biến đổi hơn; nên thực tế hóa ý tưởng, cân nhắc trước khi đổi hướng và giữ dự phòng.  
   _↳ KHUNG-menh-CC-KhongKiepChieu · Mệnh · Địa Không+Địa Kiếp · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Tổng quan bản thân
-- Tử Vi tại Mệnh: thích giữ vai trò dẫn dắt, coi trọng thể diện và sự tự chủ. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.  
-  _↳ ML-S01-BINH · Mệnh · Tử Vi · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc) · tam hợp phái Việt_
+- Tử Vi tại Mệnh: thích giữ vai trò dẫn dắt, coi trọng thể diện và sự tự chủ. Các sao ở độ sáng trung bình trong bài này cho kết quả tùy vào mức rèn luyện bản thân và hoàn cảnh.  
+  _↳ ML-S01-BINH · Mệnh · Tử Vi · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) · tam hợp phái Việt_
 
 ### Cung hợp chiếu
 - Vũ Khúc ở cung Tài Bạch (tam hợp với Mệnh): bổ sung xu hướng thực tế, quyết đoán, coi trọng kỷ luật tài chính.  

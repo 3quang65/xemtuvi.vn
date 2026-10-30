@@ -30,12 +30,12 @@ Ký hiệu đặc tính sao: M = miếu, V = vượng, Đ = đắc địa, B = b
 ## Bài luận giải (đúng như khách nhận)
 
 ### Cách cục
-- Thiên Cơ và Thiên Lương hội trong tam phương, tạo thế Cơ Lương: giỏi bàn mưu lược và phân tích, hợp công việc cần suy xét kỹ.  
+- Với Quan Lộc: Thiên Cơ và Thiên Lương hội trong tam phương, tạo thế Cơ Lương: giỏi bàn mưu lược và phân tích, hợp công việc cần suy xét kỹ. Trong công việc, hợp nghề cần phân tích và chuyên môn; nên chủ động nhận việc để năng lực được thấy.  
   _↳ KHUNG-quan-loc-CC-CoLuong · Quan Lộc · Thiên Cơ+Thiên Lương · Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) · Tam hợp phái Việt_
 
 ### Phong cách làm việc
 - Thiên Cơ tại Quan Lộc: mạnh về phân tích, lập kế hoạch, hợp công việc cần tư duy.  
-  _↳ QL-S02-TOT · Quan Lộc · Thiên Cơ · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc) · tam hợp phái Việt_
+  _↳ QL-S02-TOT · Quan Lộc · Thiên Cơ · Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) · tam hợp phái Việt_
 
 ### Cung hợp chiếu
 - Thiên Đồng ở cung Mệnh (tam hợp với Quan Lộc): bổ sung xu hướng hợp môi trường hợp tác, ít áp lực đối đầu, cần thêm động lực.  
