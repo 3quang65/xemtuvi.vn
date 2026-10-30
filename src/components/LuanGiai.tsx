@@ -16,6 +16,7 @@ import { VanNamNutMua, VanNamXemTruoc } from './VanNamXemTruoc';
 import { useGia } from '@/lib/useGia';
 import ThongBaoLoi from './ThongBaoLoi';
 import KhaoSatDangTien from './KhaoSatDangTien';
+import HoiLaSo from './HoiLaSo';
 import DangNhapMa from './DangNhapMa';
 import { linkBaoLoi, maDonHienThi } from '@/lib/tro-giup';
 
@@ -188,6 +189,7 @@ export default function LuanGiai() {
       ) : (
         <p className="khoi-buoc">Chưa tìm thấy lá số đã lưu cho gói này.</p>
       )}
+      <HoiLaSo laSoId={laSoId} thanhVien={quyen!.goi === 'thanh-vien-nam'} />
       {laSoVe && <TomTatMienPhi laSo={laSoVe} choMua={false} />}
       <NutGopY />
       <div className="bao-loi">
