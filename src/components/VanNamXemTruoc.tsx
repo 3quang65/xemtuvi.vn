@@ -1,17 +1,24 @@
 import Link from 'next/link';
 import { dinhDangGia, GOI_VAN_NAM } from '@/lib/goi';
+import type { XemTruocVanNam } from '@/lib/luan-giai/ai/van-nam';
 import { XEM_TRUOC } from '@/lib/van-nam-noi-dung';
 
-/** Bản xem trước: đoạn đầu rõ, đoạn sau làm mờ (cùng mẫu khóa .doan-khoa với màn chọn gói). Không chứa nội dung trả phí. */
-export function VanNamXemTruoc() {
+/**
+ * Bản xem trước từ lá số thật (máy chủ đã cắt: không nội dung tháng, không mã quy tắc).
+ * Phần khóa mờ chỉ là chữ giữ chỗ cố định, không chứa nội dung trả phí.
+ */
+export function VanNamXemTruoc({ xt, mau = false }: { xt: XemTruocVanNam; mau?: boolean }) {
   return (
     <div className="doan-khoa">
-      <h2>{XEM_TRUOC.tieuDe}</h2>
-      <p className="tt-ghi-chu">{XEM_TRUOC.ghiChu}</p>
-      <p className="doan-ro">{XEM_TRUOC.ro}</p>
-      <p className="doan-mo" aria-hidden="true">{XEM_TRUOC.mo}</p>
-      <p className="doan-nguon">{XEM_TRUOC.nguon}</p>
-      <p className="khoa-nhan">Phần còn lại, bốn mảng và 12 tháng mở khi bạn mua Vận năm 2027.</p>
+      <h2>{XEM_TRUOC.tieuDe} {xt.canChi}</h2>
+      {mau && <p className="tt-ghi-chu">{XEM_TRUOC.ghiChuMau}</p>}
+      <p className="tt-ghi-chu">Từ {xt.dauBai.tuNgay} đến {xt.dauBai.denNgay} (dương lịch)</p>
+      {xt.dauBai.cau.map((c, i) => <p key={`d${i}`} className="doan-ro">{c}</p>)}
+      {xt.thaiTue.map((c, i) => <p key={`t${i}`} className="doan-ro">{c}</p>)}
+      {xt.diemThuan && <p className="doan-ro">{xt.diemThuan}</p>}
+      <p className="doan-mo" aria-hidden="true">{XEM_TRUOC.khoa}</p>
+      <p className="khoa-nhan">{XEM_TRUOC.moKhoa}</p>
+      <p className="doan-nguon">{xt.ghiChu}</p>
     </div>
   );
 }

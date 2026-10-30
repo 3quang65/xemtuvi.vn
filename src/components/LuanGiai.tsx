@@ -8,6 +8,8 @@ import { lapLaSo, type LaSo, type ThongTinSinh } from '@/lib/tuvi';
 import { coVanNam, laSoMacDinh, tongHopQuyen, type QuyenGiaoDien } from '@/lib/quyen-xem';
 import type { LuanGiai as BaiLuanGiai } from '@/lib/luan-giai/ai';
 import TomTatMienPhi from './TomTatMienPhi';
+import type { BaiVanNam, XemTruocVanNam } from '@/lib/luan-giai/ai/van-nam';
+import { VanNamBai } from './VanNamBai';
 import { VanNamNutMua, VanNamXemTruoc } from './VanNamXemTruoc';
 
 const TEN_CHU_DE: Record<string, string> = { 'ban-than': 'Bản thân', 'tinh-cam': 'Tình cảm', 'su-nghiep': 'Sự nghiệp', 'tai-chinh': 'Tài chính', 'gia-dao': 'Gia đạo', 'van-10-nam': 'Vận 10 năm', 'van-nam-2027': 'Vận năm 2027' };
@@ -42,11 +44,24 @@ function BaiLuan({ laSoId, chuDe }: { laSoId: number; chuDe: string }) {
   );
 }
 
-/** Chuyên đề chưa mua: bản xem trước + phần khóa mờ + nút mua (không tải nội dung trả phí). */
-function VanNamKhoa({ laSoId }: { laSoId: number }) {
+/** Vận năm: máy chủ quyết định đã mua hay chưa (bài đầy đủ hoặc bản xem trước), giao diện chỉ hiển thị. */
+function VanNam({ laSoId }: { laSoId: number }) {
+  const [kq, setKq] = useState<{ daMua: true; bai: BaiVanNam } | { daMua: false; xemTruoc: XemTruocVanNam } | 'loi' | null>(null);
+  useEffect(() => {
+    let huy = false;
+    setKq(null);
+    fetch(`/api/luan-giai?laSo=${laSoId}&chuDe=van-nam-2027`, { cache: 'no-store' })
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
+      .then((b) => { if (!huy) setKq(b); })
+      .catch(() => { if (!huy) setKq('loi'); });
+    return () => { huy = true; };
+  }, [laSoId]);
+  if (!kq) return <p className="dang-tai" role="status">Đang tải…</p>;
+  if (kq === 'loi') return <p role="alert">Chưa tải được phần này. Bạn thử lại sau ít phút nhé.</p>;
+  if (kq.daMua) return <VanNamBai bai={kq.bai} />;
   return (
     <div className="khu-van-nam">
-      <VanNamXemTruoc />
+      <VanNamXemTruoc xt={kq.xemTruoc} />
       <VanNamNutMua laSoId={laSoId} />
     </div>
   );
@@ -135,7 +150,7 @@ export default function LuanGiai() {
         <h1>Luận giải chuyên sâu</h1>
         <p>{dsLaSo.length ? 'Lá số này chưa mở gói nào.' : 'Tài khoản này chưa có lá số hay gói nào.'}</p>
         {dsLaSo.length > 1 && <ChonLaSo ds={dsLaSo} id={laSoId} doi={(id) => { setLaSoId(id); setChon(null); }} />}
-        {laSoId !== null && <VanNamKhoa laSoId={laSoId} />}
+        {laSoId !== null && <VanNam laSoId={laSoId} />}
         <Link href={dsLaSo.length ? '/chon-goi' : '/'} className="nut-chinh nut-lien-ket">{dsLaSo.length ? 'Chọn gói luận giải' : 'Lập lá số miễn phí'}</Link>
       </section>
     );
@@ -154,7 +169,7 @@ export default function LuanGiai() {
               ))}
             </div>
           )}
-          {chonHopLe === 'van-nam-2027' && !daMuaVanNam ? <VanNamKhoa laSoId={laSoId} /> : <BaiLuan laSoId={laSoId} chuDe={chonHopLe} />}
+          {chonHopLe === 'van-nam-2027' ? <VanNam laSoId={laSoId} /> : <BaiLuan laSoId={laSoId} chuDe={chonHopLe} />}
         </>
       ) : (
         <p className="khoi-buoc">Chưa tìm thấy lá số đã lưu cho gói này.</p>

@@ -18,11 +18,13 @@ export const LP = {
   luuY: 'Nội dung mang tính tham khảo văn hóa và tự tìm hiểu bản thân, không thay thế ý kiến chuyên môn khi bạn quyết định việc lớn.',
 };
 
-/** Bản xem trước (bài mẫu giả lập, không phải lá số của khách): đoạn rõ + đoạn khóa mờ. */
+/** Lá số mẫu cho trang /lp (không phải của khách): bản xem trước được tính thật từ lá số này ở máy chủ. */
+export const LA_SO_MAU = { lich: 'duong', ngay: 15, thang: 8, nam: 1995, gio: 10, phut: 30, gioiTinh: 'nu' } as const;
+
+/** Chữ cố định của bản xem trước (không phải nội dung luận): nhãn, phần khóa mờ giữ chỗ. */
 export const XEM_TRUOC = {
-  ghiChu: 'Bài mẫu giả lập, không phải lá số của bạn.',
-  tieuDe: 'Tổng quan năm Đinh Mùi',
-  ro: 'Năm Đinh Mùi, Lưu Thái Tuế đến một cung trên lá số và kéo sự chú ý của bạn về lĩnh vực của cung đó. Đây là năm hợp để sắp xếp lại ưu tiên, làm việc đều tay hơn là chạy theo cơ hội nhất thời.',
-  mo: 'Sao lưu chiếu về cung này mang theo hướng thuận cho việc học thêm và hợp tác lâu dài; Tứ hóa của năm chồng lên đại vận bạn đang đi nên có hai tháng cần đi chậm lại để cân nhắc kỹ trước khi quyết định việc lớn. Phần còn lại gồm bốn mảng và 12 tháng.',
-  nguon: 'Quy tắc NAM-TT-01 · Nguồn: Tử Vi Đẩu Số Tân Biên; Tử Vi Đẩu Số Toàn Thư',
+  ghiChuMau: 'Đây là bản xem trước tính từ một lá số mẫu, không phải lá số của bạn.',
+  tieuDe: 'Tổng quan năm',
+  khoa: 'Bốn mảng sự nghiệp, tài chính, tình cảm, sức khỏe và gợi ý cho từng tháng trong năm, mỗi nhận định ghi rõ sao, cung và sách nguồn, được trình bày ở đây khi bạn mở Vận năm 2027.',
+  moKhoa: 'Phần còn lại, bốn mảng và 12 tháng mở khi bạn mua Vận năm 2027.',
 };

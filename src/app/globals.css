@@ -281,3 +281,6 @@ a { color: inherit; }
 .khu-van-nam { display: grid; gap: 12px; }
 .trang-buoc h2 { font-size: 1.15rem; }
 .khu-chon-goi { display: grid; gap: 24px; }
+.van-nam-thang { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.van-nam-thang li { border: 1px solid var(--vien); border-radius: 12px; padding: 10px 12px; overflow-wrap: anywhere; }
+.van-nam-thang li p { margin: 4px 0 0; }
