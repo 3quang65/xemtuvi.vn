@@ -68,6 +68,8 @@ interface MauViec {
   cau: string;
   thuocDo: string;
   thoiHanThang: number;
+  /** Bỏ qua mẫu khi tuổi người xem (năm xem − năm sinh dương) nhỏ hơn số này. */
+  tuoiTu?: number;
   dieuKien?: Record<string, DieuKienViec>;
 }
 /** Việc nên làm (phần d): khách thấy cau, thuocDo, thoiHanThang; maMau và maHuong là mã ẩn. */
@@ -414,7 +416,10 @@ function ghepBai(ls: LaSo, namXem: number) {
     const tuTongQuan = tatCa.filter((k) => k.q.muc === 'tong-quan' && k.q.lop === 'cung-goc' && rieng3.has(k.cung.ten)).sort(xepHang);
     // Cung của mảng chính là Lưu Thái Tuế / tiểu hạn: câu chủ đề của lớp đó (NAM-TT-01, NAM-TH-01).
     const lopCung = tatCa.filter((k) => laNen(k) && k.cung.ten === g.ten);
-    let namNay = [...new Map([...namNayRieng, ...lopCung, ...tuTongQuan].map((k) => [k.q.id + '|' + k.cung.ten, k])).values()].slice(0, TOI_DA_NAM_NAY);
+    // Cung của mảng là Lưu Thái Tuế / tiểu hạn: kéo thêm đoạn của lớp đó tại cung này (NAM-TT-02, VAN-CT-*...), trừ câu dẫn đã có ở lopCung.
+    const lopNam: (Lop | null)[] = [ln.luuThaiTue === g.chi ? 'thai-tue' : null, ln.tieuHan === g.chi ? 'tieu-han' : null];
+    const theoLop = tatCa.filter((k) => !laNen(k) && k.cung.ten === g.ten && lopNam.includes(k.q.lop)).sort(xepHang);
+    let namNay = [...new Map([...namNayRieng, ...lopCung, ...tuTongQuan, ...theoLop].map((k) => [k.q.id + '|' + k.cung.ten, k])).values()].slice(0, TOI_DA_NAM_NAY);
     if (!namNay.length) {
       // Không có yếu tố nào chạm trực tiếp: dùng câu NAM-MANG-01 (nền của lá số, giữ nhịp đều).
       const q = QUY_TAC.find((x) => /^NAM-MANG-01-.+-NEN$/.test(x.id) && x.muc === m.id && x.cung === g.ten);
@@ -515,13 +520,16 @@ function chonViec(n: Ngu, nd: NhanDinhNam, mucId: string, daDung: Set<string>): 
   const chuDe = mucId === 'tong-quan'
     ? [...(CHU_DE_THEO_CUNG[c.ten] ?? []), ...(/^NAM-TH-04/.test(nd.thamChieu.quyTacId) ? ['hoc-tap'] : [])]
     : CHU_DE_THEO_MANG[mucId] ?? [];
-  let tot: { m: MauViec; ma: string; bac: number; thu: number } | null = null;
+  const tuoi = n.ln.namXem - n.ls.duong.nam;
+  const uuHocTap = tuoi < 18 && mucId === 'su-nghiep'; // dưới 18: Sự nghiệp ưu tiên chủ đề học tập
+  let tot: { m: MauViec; ma: string; bac: number; thu: number; hocTap: number } | null = null;
   MAU_VIEC.forEach((m, thu) => {
-    if (daDung.has(m.maMau) || !chuDe.includes(m.chuDe)) return;
+    if (daDung.has(m.maMau) || !chuDe.includes(m.chuDe) || (m.tuoiTu !== undefined && tuoi < m.tuoiTu)) return;
+    const hocTap = uuHocTap && m.chuDe !== 'hoc-tap' ? 1 : 0;
     for (const ma of m.maHuong) {
       if (!tap.has(ma.split('/')[0]) || !dieuKienViecDung(n, nd, c, m.dieuKien?.[ma])) continue;
       const bac = bacMa(ma);
-      if (!tot || bac < tot.bac || (bac === tot.bac && thu < tot.thu)) tot = { m, ma, bac, thu };
+      if (!tot || hocTap < tot.hocTap || (hocTap === tot.hocTap && (bac < tot.bac || (bac === tot.bac && thu < tot.thu)))) tot = { m, ma, bac, thu, hocTap };
     }
   });
   const t = tot as { m: MauViec; ma: string } | null;

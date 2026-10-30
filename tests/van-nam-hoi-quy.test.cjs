@@ -168,9 +168,9 @@ test('quyền xem: chưa mua Vận năm (không mua gì / một chủ đề / tr
 });
 
 // ---------------------------------------------------------------- (4) từ cấm trên toàn bộ nội dung nguồn
-test('từ cấm: 88 đoạn nguồn và bài mẫu VN01–VN03 không chứa từ cấm', () => {
+test('từ cấm: 89 đoạn nguồn và bài mẫu VN01–VN03 không chứa từ cấm', () => {
   const doan = JSON.parse(fs.readFileSync(DIR + 'doan-mau.json', 'utf8'));
-  assert.equal(doan.length, 88);
+  assert.equal(doan.length, 89);
   assert.deepEqual(fs.readFileSync(DIR + 'doan-mau.json'), fs.readFileSync(path.join(__dirname, '../src/lib/luan-giai/ai/quy-tac-van/van-nam-2027.json')), 'bộ nạp khác doan-mau.json');
   for (const d of doan) khongTuCam(d.noiDung, d.id);
   for (const f of ['VN01.md', 'VN02.md', 'VN03.md']) khongTuCam(fs.readFileSync(DIR + f, 'utf8'), f);
