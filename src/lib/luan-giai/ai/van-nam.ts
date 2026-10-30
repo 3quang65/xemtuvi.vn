@@ -12,6 +12,7 @@ import tuCamJson from './tu-cam.json';
 import quyTacVanJson from './quy-tac-van/van-10-nam.json';
 import viecJson from './quy-tac-van/viec-nen-lam.json';
 import ghiChuPhaiJson from './quy-tac-van/ghi-chu-truong-phai.json';
+import { nenQuanLoc, nenVcd, catTinhTamPhuong } from './nen-quan-loc';
 import { GHI_CHU, PHIEN_BAN_QUY_TAC, khoaCache, maNghienCuuCua, sinhLuanGiai } from './index';
 
 export const MA_VAN_NAM = 'van-nam-2027';
@@ -59,6 +60,10 @@ interface DieuKienViec {
   saoTrongCung?: string[][];
   /** Có sao khớp của đoạn mang hóa gốc này. */
   saoKhopHoaGoc?: string;
+  /** Không được có sao nào trong danh sách (tên sao hoặc "hoa:Hóa Kỵ") ở cung của đoạn. */
+  khongSaoTrongCung?: string[];
+  /** Tam phương Quan Lộc có (true) hoặc không có (false) cát tinh hội về. */
+  catTinhTamPhuong?: boolean;
 }
 interface MauViec {
   maMau: string;
@@ -501,6 +506,11 @@ function dieuKienViecDung(n: Ngu, nd: NhanDinhNam, c: Cung, dk?: DieuKienViec): 
     };
     if (!dk.saoTrongCung.every((nhom) => nhom.some(co))) return false;
   }
+  if (dk.khongSaoTrongCung) {
+    const co = (tok: string) => { const [loai, ten = ''] = tok.split(':'); return ds.some((x) => (loai === 'hoa' ? x.hoa === ten : x.ten === tok)); };
+    if (dk.khongSaoTrongCung.some(co)) return false;
+  }
+  if (dk.catTinhTamPhuong !== undefined && (catTinhTamPhuong(n.ls).length > 0) !== dk.catTinhTamPhuong) return false;
   if (dk.saoKhopHoaGoc) {
     const goc = nd.thamChieu.sao.some((ten) => n.ls.cung.some((cc) => saoCua(cc).some((x) => x.ten === ten && x.hoa === dk.saoKhopHoaGoc)));
     if (!goc) return false;
@@ -598,7 +608,7 @@ function lamGiauMuc(n: Ngu, muc: BaiVanNam['muc']): { muc: BaiVanNam['muc']; doa
         doanCho.push({ quyTacId: id, cung: nd.thamChieu.cung, lyDo: 'thiếu (d): không mẫu việc nào bám mã nghiên cứu của đoạn' });
         return [];
       }
-      const canCu = canCuDong(n, dayDu);
+      const canCu = nd.canCu ?? canCuDong(n, dayDu);
       if (!canCu) {
         doanCho.push({ quyTacId: id, cung: nd.thamChieu.cung, lyDo: 'thiếu (a): không dựng được căn cứ' });
         return [];
@@ -624,9 +634,17 @@ async function taoBai(ls: LaSo, namXem: number, boQuaCache?: boolean): Promise<{
   const mucNen = await Promise.all(muc.map(async (m) => {
     const loai = ({ 'su-nghiep': 'quan-loc', 'tinh-cam': 'phu-the' } as Record<string, 'quan-loc' | 'phu-the'>)[m.id];
     if (!loai) return m;
-    const nen = (await sinhLuanGiai(ls, loai, { boQuaCache })).muc.find((x) => x.id === 'phong-cach')?.nhanDinh[0];
+    // Quan Lộc vô chính diệu không còn QL-VCD ở mục phong-cach (nhường KHUNG-quan-loc-VCD-chinh*): lấy thẳng QL-VCD (nenVcd).
+    const nen = (await sinhLuanGiai(ls, loai, { boQuaCache })).muc.find((x) => x.id === 'phong-cach')?.nhanDinh[0] ?? (loai === 'quan-loc' ? nenVcd(ls) : undefined);
     // Đoạn nền độ sáng Hãm: câu đầu còn tả như sao sáng (Đ5), nên không chèn làm câu dẫn; mảng giữ nhận định năm.
     if (nen && /-HAM$/.test(nen.thamChieu.quyTacId ?? '')) return m;
+    if (nen && m.id === 'su-nghiep' && m.nhanDinh.every((x) => x.phan !== 'nam-nay' || /^NAM-MANG-01-/.test(x.thamChieu.quyTacId))) {
+      const r = nenQuanLoc(ls, namXem, { quyTacId: nen.thamChieu.quyTacId, text: nen.text, nguon: nen.thamChieu.nguon });
+      if (r) {
+        const dan = m.nhanDinh.filter((x) => x.phan === 'nam-nay'), con = m.nhanDinh.filter((x) => x.phan !== 'nam-nay');
+        return { ...m, nhanDinh: [...dan, { text: r.text, phan: 'nen', canCu: r.canCu, thamChieu: { quyTacId: nen.thamChieu.quyTacId, sao: nen.thamChieu.sao, cung: 'Quan Lộc', nguon: r.nguon, truongPhai: nen.thamChieu.truongPhai, maNghienCuu: r.maNghienCuu } }, ...con] };
+      }
+    }
     return nen ? { ...m, nhanDinh: [{ text: nen.text, phan: 'nen', thamChieu: { quyTacId: nen.thamChieu.quyTacId, sao: nen.thamChieu.sao, cung: nen.thamChieu.cung, nguon: nen.thamChieu.nguon, truongPhai: nen.thamChieu.truongPhai } }, ...m.nhanDinh] } : m;
   }));
   const { muc: mucDu, doanCho } = lamGiauMuc(n, mucNen);
