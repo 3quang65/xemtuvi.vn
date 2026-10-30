@@ -121,7 +121,7 @@ const QUY_TAC_VAN = quyTacVanJson as unknown as QuyTacVan[];
 const TU_CAM = tuCamJson as unknown as TuCamCauHinh;
 const PROMPT = fs.readFileSync(path.join(process.cwd(), 'src/lib/luan-giai/ai/prompt-he-thong.md'), 'utf8');
 /** Tăng khi đổi cách ghép/lọc câu (không đổi quy tắc) để bản lưu cũ không bị dùng lại. */
-const PHIEN_BAN_BO_GHEP = 'ghep-6';
+const PHIEN_BAN_BO_GHEP = 'ghep-7';
 export const PHIEN_BAN_QUY_TAC = bam(JSON.stringify([QUY_TAC, QUY_TAC_2, QUY_TAC_VAN, CHUYEN_DE, TU_CAM, PROMPT, PHIEN_BAN_BO_GHEP])).slice(0, 12);
 
 export function nhaCungCapDangDung(yeuCau: TuyChon['nhaCungCap']): 'stub' | 'claude' | string {
@@ -210,8 +210,14 @@ function khopBan2(ls: LaSo, q: QuyTacBan2): KetQuaKhop | null {
   const dkDac = q.dieuKien.find((k) => k.satDac !== undefined);
   const dac = dkDac ? khopDieuKien(ls, goc, dkDac) ?? [] : [];
   const cau = q.noiDung.replaceAll('{dac}', dac.join(', ')).replaceAll('{pha}', pha.join(', ')).replaceAll('{sao}', sao.join(', ')).replaceAll('{cung}', cung.join(' và '));
+  // Quy tắc cấp cung (không điều kiện, vd VAN-CUNG-*): căn cứ là chính tinh tọa thủ cung gốc; vô chính diệu thì
+  // mượn chính tinh cung xung chiếu (như VAN-CT-VCD-01) và ghi yếu tố Vô Chính Diệu (L-6e89d7).
+  const capCung = !q.dieuKien.length && !sao.length && !q.yeuTo?.length;
+  const vcd = capCung && !goc.chinhTinh.length;
+  const xung = ls.cung.find((c) => c.chi === (goc.chi + 6) % 12)!;
   return {
-    sao, yeuTo: q.yeuTo ?? [], cungLienQuan: cung, cau, uuTien: q.uuTien ?? 0, cungGoc: q.cung,
+    sao: capCung ? (vcd ? xung : goc).chinhTinh.map((s) => s.ten) : sao,
+    yeuTo: vcd ? ['Vô Chính Diệu'] : q.yeuTo ?? [], cungLienQuan: capCung ? (vcd ? [goc.ten, xung.ten] : [goc.ten]) : cung, cau, uuTien: q.uuTien ?? 0, cungGoc: q.cung,
     q: { id: q.id, chuyenDe: q.chuyenDe, muc: q.muc, nguon: q.nguon.join('; '), truongPhai: q.truongPhai },
   };
 }

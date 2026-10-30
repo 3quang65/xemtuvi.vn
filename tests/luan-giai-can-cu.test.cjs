@@ -22,3 +22,34 @@ test('mọi nhận định bài Bản thân đều có dòng căn cứ có cung'
   const bai = await AI.sinhLuanGiai(ls, 'menh', { boQuaCache: true });
   for (const m of bai.muc) for (const n of m.nhanDinh) assert.match(dongCanCu(n.thamChieu), /^Căn cứ: .*cung .*nguồn .*trường phái /);
 });
+// Lá số Phúc kiểm (ky-thuat/kiem-tra-luan-giai-tron-la-so.md): giờ ô thứ 6 = gio 4; 16+12+16+5 = 49 nhận định.
+test('L-6e89d7: mọi nhận định 4 chuyên đề gói Trọn lá số có căn cứ sao hoặc yếu tố (gồm VAN-CUNG cấp cung)', async () => {
+  const { lapLaSo } = nap('lib/tuvi/index.ts');
+  const AI = nap('lib/luan-giai/ai/index.ts');
+  const ls = lapLaSo({ lich: 'duong', ngay: 15, thang: 8, nam: 1995, gio: 4, phut: 30, gioiTinh: 'nu' });
+  let dem = 0;
+  for (const cd of ['menh', 'phu-the', 'quan-loc', 'van-10-nam']) {
+    const bai = await AI.sinhLuanGiai(ls, cd, { boQuaCache: true, namXem: 2026 });
+    for (const m of bai.muc) for (const n of m.nhanDinh) {
+      dem++;
+      const t = n.thamChieu;
+      assert.ok(t.sao.length || t.yeuTo?.length, `${cd} ${t.quyTacId} thiếu sao/yếu tố`);
+      assert.match(dongCanCu(t), /^Căn cứ: (sao|yếu tố) /);
+      if (/^VAN-CUNG-/.test(t.quyTacId)) assert.ok(t.sao.length, `${t.quyTacId} phải có sao`);
+    }
+    if (cd === 'van-10-nam') {
+      const vc = bai.muc.flatMap((m) => m.nhanDinh).filter((n) => /^VAN-CUNG-/.test(n.thamChieu.quyTacId));
+      assert.ok(vc.length >= 2, 'phải có VAN-CUNG-00 và câu riêng cung vận');
+      // Phúc Đức vô chính diệu: mượn chính tinh cung xung chiếu, ghi yếu tố Vô Chính Diệu.
+      const cung = ls.cung.find((c) => c.ten === bai.van.cung);
+      assert.equal(cung.chinhTinh.length, 0);
+      const xung = ls.cung.find((c) => c.chi === (cung.chi + 6) % 12);
+      for (const n of vc) {
+        assert.deepEqual(n.thamChieu.sao, xung.chinhTinh.map((s) => s.ten));
+        assert.ok(n.thamChieu.sao.length && n.thamChieu.yeuTo.includes('Vô Chính Diệu'));
+        assert.match(dongCanCu(n.thamChieu), /^Căn cứ: sao .+; yếu tố Vô Chính Diệu; cung Phúc Đức/);
+      }
+    }
+  }
+  assert.equal(dem, 49, `có ${dem} nhận định`); assert.ok(dem >= 49, `chỉ có ${dem} nhận định`);
+});
