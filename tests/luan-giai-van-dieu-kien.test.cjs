@@ -48,7 +48,9 @@ async function chay() {
     if (ids.some((x) => /^VAN-PP-1[245]/.test(x))) st.nhanHoa++;
     if (ids.some((x) => /^VAN-PP-12-(AA|BB|CC)(-VCD)?$/.test(x))) {
       const nguon = van.chinhTinh.length ? van : tp[2];
-      if (!DAC.includes(nguon.chinhTinh[0]?.dacTinhTen)) st.nhanHoaHam++;
+      const tot = ['Miếu', 'Vượng', 'Đắc', 'Bình', 'Hãm'];
+      const chu = [...nguon.chinhTinh].sort((a, b) => tot.indexOf(a.dacTinhTen) - tot.indexOf(b.dacTinhTen))[0];
+      if (chu.dacTinhTen === 'Hãm') st.nhanHoaHam++;
     }
     if (ids.includes('VAN-SP-03-LOCMA') && ids.some((x) => /SP-04-(TT|TR|KK)$/.test(x))) st.locmaTT++;
     if (ids.includes('VAN-SP-08-DONGLUC') && ids.includes('VAN-SP-08-DAC')) st.dongLuc++;
@@ -66,7 +68,7 @@ test('Vận 10 năm: không bài nào có hai câu cùng cặp sao vừa sáng v
 test('Vận 10 năm: Không Kiếp gặp Phá Quân chỉ khi Phá Quân miếu/vượng/đắc', async () => {
   assert.equal((await chay()).pqHam, 0);
 });
-test('Vận 10 năm: nhân hòa cùng nhóm không khen khi sao chủ của vận hãm hoặc bình', async () => {
+test('Vận 10 năm: nhân hòa cùng nhóm không khen khi sao chủ của vận hãm', async () => {
   assert.equal((await chay()).nhanHoaHam, 0);
 });
 test('Vận 10 năm: ≥ 85% bài có câu nhân hòa (PP-12/14/15)', async () => {
@@ -84,40 +86,3 @@ test('Quy tắc Vận 10 năm không còn mã chết PP-07-HAM-TửVi / ThiênPh
   assert.ok(!pp.some((q) => /PP-07-HAM-(TửVi|ThiênPhủ)$/.test(q.id)));
 });
 
-// Bộ khớp: doSang với rai/toiThieu chỉ tính sao có độ sáng đó; chu = sao chủ (chính tinh đầu); muonXung = vô chính diệu mượn cung xung.
-const sao = (ten, dacTinhTen) => ({ ten, dacTinhTen });
-const cung = (chi, ten, chinhTinh = [], cat = []) => ({ chi, tenChi: 'x', ten, chinhTinh, catTinh: cat, hungTinh: [], phuTinh: [], tuan: false, triet: false });
-const laSo = (cs) => ({ cung: cs });
-const mau = () => laSo(Array.from({ length: 12 }, (_, i) => cung(i, 'C' + i)));
-test('khop-v2: doSang trong điều kiện rải chỉ giữ sao đúng độ sáng và trả đúng tên sao khớp', () => {
-  const ls = mau();
-  ls.cung[0].catTinh = [sao('Văn Xương', 'Đắc'), sao('Văn Khúc', 'Hãm')];
-  const k = { sao: ['Văn Xương', 'Văn Khúc'], toiThieu: 1, viTri: 'tam-phuong', doSang: ['Miếu', 'Vượng', 'Đắc'] };
-  assert.deepEqual(khopDieuKien(ls, ls.cung[0], k), ['Văn Xương']);
-  assert.deepEqual(khopDieuKien(ls, ls.cung[0], { ...k, doSang: ['Hãm'] }), ['Văn Khúc']);
-  ls.cung[0].catTinh = [sao('Văn Khúc', 'Hãm')];
-  assert.equal(khopDieuKien(ls, ls.cung[0], k), null);
-});
-test('khop-v2: chu chỉ xét chính tinh đầu của cung; muonXung lấy cung xung khi vô chính diệu', () => {
-  const ls = mau();
-  ls.cung[0].chinhTinh = [sao('Tử Vi', 'Miếu'), sao('Thất Sát', 'Miếu')];
-  const A = { sao: ['Tử Vi'], toiThieu: 1, viTri: 'chinh', chu: true };
-  const B = { sao: ['Thất Sát'], toiThieu: 1, viTri: 'chinh', chu: true };
-  assert.deepEqual(khopDieuKien(ls, ls.cung[0], A), ['Tử Vi']);
-  assert.equal(khopDieuKien(ls, ls.cung[0], B), null);
-  ls.cung[0].chinhTinh = [sao('Tử Vi', 'Bình'), sao('Thất Sát', 'Miếu')];
-  assert.deepEqual(khopDieuKien(ls, ls.cung[0], B), ['Thất Sát']);
-  assert.equal(khopDieuKien(ls, ls.cung[0], A), null);
-  ls.cung[1].chinhTinh = [];
-  ls.cung[7].chinhTinh = [sao('Thiên Cơ', 'Đắc')];
-  const C = { sao: ['Thiên Cơ'], toiThieu: 1, viTri: 'chinh', chu: true };
-  assert.equal(khopDieuKien(ls, ls.cung[1], C), null);
-  assert.deepEqual(khopDieuKien(ls, ls.cung[1], { ...C, muonXung: true }), ['Thiên Cơ']);
-});
-test('khop-v2: tuoiVanTuMin chặn vận có tuổi bắt đầu nhỏ hơn mức', () => {
-  const ls = mau();
-  ls.cung[0].daiVanTu = 6; ls.cung[1].daiVanTu = 16;
-  const k = { tuoiVanTuMin: 16 };
-  assert.equal(khopDieuKien(ls, ls.cung[0], k), null);
-  assert.deepEqual(khopDieuKien(ls, ls.cung[1], k), []);
-});

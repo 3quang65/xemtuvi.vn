@@ -141,21 +141,24 @@ const NHOM = {
   B: ['Thất Sát', 'Phá Quân', 'Liêm Trinh', 'Tham Lang'],
   C: ['Thiên Cơ', 'Thái Âm', 'Thiên Đồng', 'Thiên Lương', 'Cự Môn', 'Thái Dương'],
 };
-const nhomDon = (c) => {
-  const g = new Set(c.chinhTinh.map((s) => Object.keys(NHOM).find((k) => NHOM[k].includes(s.ten))));
-  return g.size === 1 ? [...g][0] : null;
+// Sao chủ của cung = chính tinh sáng nhất (bằng nhau thì sao đứng trước); Mệnh/vận vô chính diệu mượn chính tinh cung xung (L-eabb8d).
+const THU_TU = ['Miếu', 'Vượng', 'Đắc', 'Bình', 'Hãm'];
+const nhomChu = (ls, c) => {
+  const nguon = c.chinhTinh.length ? c : ls.cung.find((x) => x.chi === (c.chi + 6) % 12);
+  const chu = [...nguon.chinhTinh].sort((a, b) => THU_TU.indexOf(a.dacTinhTen) - THU_TU.indexOf(b.dacTinhTen))[0];
+  return chu ? { nhom: Object.keys(NHOM).find((k) => NHOM[k].includes(chu.ten)), sang: chu.dacTinhTen } : null;
 };
-test('Nhân hòa VAN-PP: khớp đúng khi Mệnh và vận (hoặc cung xung nếu vô chính diệu) đều thuộc đúng một nhóm', async () => {
+test('Nhân hòa VAN-PP: khớp theo nhóm của sao chủ Mệnh và sao chủ vận (mượn cung xung nếu vô chính diệu); cùng nhóm mà sao vận hãm thì không khen', async () => {
   let dem = 0;
   for (const [i, tc] of CASES.entries()) {
     const ls = lapLaSo(tc.input);
     const bai = await AI.sinhLuanGiai(ls, 'van-10-nam', { boQuaCache: true, namXem: NAM_XEM });
     const van = ls.cung.find((c) => c.ten === bai.van.cung);
-    const nguon = van.chinhTinh.length ? van : ls.cung.find((c) => c.chi === (van.chi + 6) % 12);
-    const nm = nhomDon(ls.cung.find((c) => c.ten === 'Mệnh'));
-    const nv = nhomDon(nguon);
+    const nm = nhomChu(ls, ls.cung.find((c) => c.ten === 'Mệnh'));
+    const nv = nhomChu(ls, van);
     const co = bai.muc.flatMap((m) => m.nhanDinh).filter((x) => /^VAN-PP-1[245]-/.test(x.thamChieu.quyTacId));
-    assert.equal(co.length, nm && nv ? 1 : 0, `DV${i + 1}: Mệnh ${nm} vận ${nv}`);
+    const mong = nm && nv && !(nm.nhom === nv.nhom && nv.sang === 'Hãm') ? 1 : 0;
+    assert.equal(co.length, mong, `DV${i + 1}: Mệnh ${nm?.nhom} vận ${nv?.nhom} (${nv?.sang})`);
     if (co.length) { dem++; assert.ok(co[0].thamChieu.cungLienQuan.includes('Mệnh')); }
   }
   assert.ok(dem >= 4, `chỉ ${dem}/10 mẫu có nhân hòa`);

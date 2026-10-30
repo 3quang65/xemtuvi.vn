@@ -22,7 +22,9 @@
     ],
     "toiThieu": 1,
     "viTri": "chinh",
-    "tuCung": "Mệnh"
+    "tuCung": "Mệnh",
+    "chu": true,
+    "muonXung": true
    },
    {
     "sao": [
@@ -32,42 +34,14 @@
      "Thiên Tướng"
     ],
     "toiThieu": 1,
-    "viTri": "chinh"
-   }
-  ],
-  "khong": [
-   {
-    "sao": [
-     "Thất Sát",
-     "Phá Quân",
-     "Liêm Trinh",
-     "Tham Lang",
-     "Thiên Cơ",
-     "Thái Âm",
-     "Thiên Đồng",
-     "Thiên Lương",
-     "Cự Môn",
-     "Thái Dương"
-    ],
-    "toiThieu": 1,
     "viTri": "chinh",
-    "tuCung": "Mệnh"
-   },
-   {
-    "sao": [
-     "Thất Sát",
-     "Phá Quân",
-     "Liêm Trinh",
-     "Tham Lang",
-     "Thiên Cơ",
-     "Thái Âm",
-     "Thiên Đồng",
-     "Thiên Lương",
-     "Cự Môn",
-     "Thái Dương"
-    ],
-    "toiThieu": 1,
-    "viTri": "chinh"
+    "chu": true,
+    "doSang": [
+     "Miếu",
+     "Vượng",
+     "Đắc",
+     "Bình"
+    ]
    }
   ],
   "muc": "thuan-loi",
@@ -97,7 +71,9 @@
     ],
     "toiThieu": 1,
     "viTri": "chinh",
-    "tuCung": "Mệnh"
+    "tuCung": "Mệnh",
+    "chu": true,
+    "muonXung": true
    },
    {
     "sao": [
@@ -107,46 +83,18 @@
      "Thiên Tướng"
     ],
     "toiThieu": 1,
-    "viTri": "xung"
+    "viTri": "xung",
+    "chu": true,
+    "doSang": [
+     "Miếu",
+     "Vượng",
+     "Đắc",
+     "Bình"
+    ]
    },
    {
     "voChinhDieu": true,
     "viTri": "chinh"
-   }
-  ],
-  "khong": [
-   {
-    "sao": [
-     "Thất Sát",
-     "Phá Quân",
-     "Liêm Trinh",
-     "Tham Lang",
-     "Thiên Cơ",
-     "Thái Âm",
-     "Thiên Đồng",
-     "Thiên Lương",
-     "Cự Môn",
-     "Thái Dương"
-    ],
-    "toiThieu": 1,
-    "viTri": "chinh",
-    "tuCung": "Mệnh"
-   },
-   {
-    "sao": [
-     "Thất Sát",
-     "Phá Quân",
-     "Liêm Trinh",
-     "Tham Lang",
-     "Thiên Cơ",
-     "Thái Âm",
-     "Thiên Đồng",
-     "Thiên Lương",
-     "Cự Môn",
-     "Thái Dương"
-    ],
-    "toiThieu": 1,
-    "viTri": "xung"
    }
   ],
   "muc": "thuan-loi",
@@ -176,7 +124,9 @@
     ],
     "toiThieu": 1,
     "viTri": "chinh",
-    "tuCung": "Mệnh"
+    "tuCung": "Mệnh",
+    "chu": true,
+    "muonXung": true
    },
    {
     "sao": [
@@ -186,42 +136,8 @@
      "Tham Lang"
     ],
     "toiThieu": 1,
-    "viTri": "chinh"
-   }
-  ],
-  "khong": [
-   {
-    "sao": [
-     "Thất Sát",
-     "Phá Quân",
-     "Liêm Trinh",
-     "Tham Lang",
-     "Thiên Cơ",
-     "Thái Âm",
-     "Thiên Đồng",
-     "Thiên Lương",
-     "Cự Môn",
-     "Thái Dương"
-    ],
-    "toiThieu": 1,
     "viTri": "chinh",
-    "tuCung": "Mệnh"
-   },
-   {
-    "sao": [
-     "Tử Vi",
-     "Thiên Phủ",
-     "Vũ Khúc",
-     "Thiên Tướng",
-     "Thiên Cơ",
-     "Thái Âm",
-     "Thiên Đồng",
-     "Thiên Lương",
-     "Cự Môn",
-     "Thái Dương"
-    ],
-    "toiThieu": 1,
-    "viTri": "chinh"
+    "chu": true
    }
   ],
   "muc": "chu-y",
@@ -251,7 +167,9 @@
     ],
     "toiThieu": 1,
     "viTri": "chinh",
-    "tuCung": "Mệnh"
+    "tuCung": "Mệnh",
+    "chu": true,
+    "muonXung": true
    },
    {
     "sao": [
@@ -261,46 +179,12 @@
      "Tham Lang"
     ],
     "toiThieu": 1,
-    "viTri": "xung"
+    "viTri": "xung",
+    "chu": true
    },
    {
     "voChinhDieu": true,
     "viTri": "chinh"
-   }
-  ],
-  "khong": [
-   {
-    "sao": [
-     "Thất Sát",
-     "Phá Quân",
-     "Liêm Trinh",
-     "Tham Lang",
-     "Thiên Cơ",
-     "Thái Âm",
-     "Thiên Đồng",
-     "Thiên Lương",
-     "Cự Môn",
-     "Thái Dương"
-    ],
-    "toiThieu": 1,
-    "viTri": "chinh",
-    "tuCung": "Mệnh"
-   },
-   {
-    "sao": [
-     "Tử Vi",
-     "Thiên Phủ",
-     "Vũ Khúc",
-     "Thiên Tướng",
-     "Thiên Cơ",
-     "Thái Âm",
-     "Thiên Đồng",
-     "Thiên Lương",
-     "Cự Môn",
-     "Thái Dương"
-    ],
-    "toiThieu": 1,
-    "viTri": "xung"
    }
   ],
   "muc": "chu-y",
@@ -330,28 +214,12 @@
     ],
     "toiThieu": 1,
     "viTri": "chinh",
-    "tuCung": "Mệnh"
+    "tuCung": "Mệnh",
+    "chu": true,
+    "muonXung": true
    },
    {
     "sao": [
-     "Thiên Cơ",
-     "Thái Âm",
-     "Thiên Đồng",
-     "Thiên Lương",
-     "Cự Môn",
-     "Thái Dương"
-    ],
-    "toiThieu": 1,
-    "viTri": "chinh"
-   }
-  ],
-  "khong": [
-   {
-    "sao": [
-     "Thất Sát",
-     "Phá Quân",
-     "Liêm Trinh",
-     "Tham Lang",
      "Thiên Cơ",
      "Thái Âm",
      "Thiên Đồng",
@@ -361,21 +229,7 @@
     ],
     "toiThieu": 1,
     "viTri": "chinh",
-    "tuCung": "Mệnh"
-   },
-   {
-    "sao": [
-     "Tử Vi",
-     "Thiên Phủ",
-     "Vũ Khúc",
-     "Thiên Tướng",
-     "Thất Sát",
-     "Phá Quân",
-     "Liêm Trinh",
-     "Tham Lang"
-    ],
-    "toiThieu": 1,
-    "viTri": "chinh"
+    "chu": true
    }
   ],
   "muc": "chu-y",
@@ -405,7 +259,9 @@
     ],
     "toiThieu": 1,
     "viTri": "chinh",
-    "tuCung": "Mệnh"
+    "tuCung": "Mệnh",
+    "chu": true,
+    "muonXung": true
    },
    {
     "sao": [
@@ -417,44 +273,12 @@
      "Thái Dương"
     ],
     "toiThieu": 1,
-    "viTri": "xung"
+    "viTri": "xung",
+    "chu": true
    },
    {
     "voChinhDieu": true,
     "viTri": "chinh"
-   }
-  ],
-  "khong": [
-   {
-    "sao": [
-     "Thất Sát",
-     "Phá Quân",
-     "Liêm Trinh",
-     "Tham Lang",
-     "Thiên Cơ",
-     "Thái Âm",
-     "Thiên Đồng",
-     "Thiên Lương",
-     "Cự Môn",
-     "Thái Dương"
-    ],
-    "toiThieu": 1,
-    "viTri": "chinh",
-    "tuCung": "Mệnh"
-   },
-   {
-    "sao": [
-     "Tử Vi",
-     "Thiên Phủ",
-     "Vũ Khúc",
-     "Thiên Tướng",
-     "Thất Sát",
-     "Phá Quân",
-     "Liêm Trinh",
-     "Tham Lang"
-    ],
-    "toiThieu": 1,
-    "viTri": "xung"
    }
   ],
   "muc": "chu-y",
@@ -484,7 +308,9 @@
     ],
     "toiThieu": 1,
     "viTri": "chinh",
-    "tuCung": "Mệnh"
+    "tuCung": "Mệnh",
+    "chu": true,
+    "muonXung": true
    },
    {
     "sao": [
@@ -494,42 +320,8 @@
      "Thiên Tướng"
     ],
     "toiThieu": 1,
-    "viTri": "chinh"
-   }
-  ],
-  "khong": [
-   {
-    "sao": [
-     "Tử Vi",
-     "Thiên Phủ",
-     "Vũ Khúc",
-     "Thiên Tướng",
-     "Thiên Cơ",
-     "Thái Âm",
-     "Thiên Đồng",
-     "Thiên Lương",
-     "Cự Môn",
-     "Thái Dương"
-    ],
-    "toiThieu": 1,
     "viTri": "chinh",
-    "tuCung": "Mệnh"
-   },
-   {
-    "sao": [
-     "Thất Sát",
-     "Phá Quân",
-     "Liêm Trinh",
-     "Tham Lang",
-     "Thiên Cơ",
-     "Thái Âm",
-     "Thiên Đồng",
-     "Thiên Lương",
-     "Cự Môn",
-     "Thái Dương"
-    ],
-    "toiThieu": 1,
-    "viTri": "chinh"
+    "chu": true
    }
   ],
   "muc": "chu-y",
@@ -559,7 +351,9 @@
     ],
     "toiThieu": 1,
     "viTri": "chinh",
-    "tuCung": "Mệnh"
+    "tuCung": "Mệnh",
+    "chu": true,
+    "muonXung": true
    },
    {
     "sao": [
@@ -569,46 +363,12 @@
      "Thiên Tướng"
     ],
     "toiThieu": 1,
-    "viTri": "xung"
+    "viTri": "xung",
+    "chu": true
    },
    {
     "voChinhDieu": true,
     "viTri": "chinh"
-   }
-  ],
-  "khong": [
-   {
-    "sao": [
-     "Tử Vi",
-     "Thiên Phủ",
-     "Vũ Khúc",
-     "Thiên Tướng",
-     "Thiên Cơ",
-     "Thái Âm",
-     "Thiên Đồng",
-     "Thiên Lương",
-     "Cự Môn",
-     "Thái Dương"
-    ],
-    "toiThieu": 1,
-    "viTri": "chinh",
-    "tuCung": "Mệnh"
-   },
-   {
-    "sao": [
-     "Thất Sát",
-     "Phá Quân",
-     "Liêm Trinh",
-     "Tham Lang",
-     "Thiên Cơ",
-     "Thái Âm",
-     "Thiên Đồng",
-     "Thiên Lương",
-     "Cự Môn",
-     "Thái Dương"
-    ],
-    "toiThieu": 1,
-    "viTri": "xung"
    }
   ],
   "muc": "chu-y",
@@ -638,7 +398,9 @@
     ],
     "toiThieu": 1,
     "viTri": "chinh",
-    "tuCung": "Mệnh"
+    "tuCung": "Mệnh",
+    "chu": true,
+    "muonXung": true
    },
    {
     "sao": [
@@ -648,42 +410,14 @@
      "Tham Lang"
     ],
     "toiThieu": 1,
-    "viTri": "chinh"
-   }
-  ],
-  "khong": [
-   {
-    "sao": [
-     "Tử Vi",
-     "Thiên Phủ",
-     "Vũ Khúc",
-     "Thiên Tướng",
-     "Thiên Cơ",
-     "Thái Âm",
-     "Thiên Đồng",
-     "Thiên Lương",
-     "Cự Môn",
-     "Thái Dương"
-    ],
-    "toiThieu": 1,
     "viTri": "chinh",
-    "tuCung": "Mệnh"
-   },
-   {
-    "sao": [
-     "Tử Vi",
-     "Thiên Phủ",
-     "Vũ Khúc",
-     "Thiên Tướng",
-     "Thiên Cơ",
-     "Thái Âm",
-     "Thiên Đồng",
-     "Thiên Lương",
-     "Cự Môn",
-     "Thái Dương"
-    ],
-    "toiThieu": 1,
-    "viTri": "chinh"
+    "chu": true,
+    "doSang": [
+     "Miếu",
+     "Vượng",
+     "Đắc",
+     "Bình"
+    ]
    }
   ],
   "muc": "thuan-loi",
@@ -713,7 +447,9 @@
     ],
     "toiThieu": 1,
     "viTri": "chinh",
-    "tuCung": "Mệnh"
+    "tuCung": "Mệnh",
+    "chu": true,
+    "muonXung": true
    },
    {
     "sao": [
@@ -723,46 +459,18 @@
      "Tham Lang"
     ],
     "toiThieu": 1,
-    "viTri": "xung"
+    "viTri": "xung",
+    "chu": true,
+    "doSang": [
+     "Miếu",
+     "Vượng",
+     "Đắc",
+     "Bình"
+    ]
    },
    {
     "voChinhDieu": true,
     "viTri": "chinh"
-   }
-  ],
-  "khong": [
-   {
-    "sao": [
-     "Tử Vi",
-     "Thiên Phủ",
-     "Vũ Khúc",
-     "Thiên Tướng",
-     "Thiên Cơ",
-     "Thái Âm",
-     "Thiên Đồng",
-     "Thiên Lương",
-     "Cự Môn",
-     "Thái Dương"
-    ],
-    "toiThieu": 1,
-    "viTri": "chinh",
-    "tuCung": "Mệnh"
-   },
-   {
-    "sao": [
-     "Tử Vi",
-     "Thiên Phủ",
-     "Vũ Khúc",
-     "Thiên Tướng",
-     "Thiên Cơ",
-     "Thái Âm",
-     "Thiên Đồng",
-     "Thiên Lương",
-     "Cự Môn",
-     "Thái Dương"
-    ],
-    "toiThieu": 1,
-    "viTri": "xung"
    }
   ],
   "muc": "thuan-loi",
@@ -792,28 +500,12 @@
     ],
     "toiThieu": 1,
     "viTri": "chinh",
-    "tuCung": "Mệnh"
+    "tuCung": "Mệnh",
+    "chu": true,
+    "muonXung": true
    },
    {
     "sao": [
-     "Thiên Cơ",
-     "Thái Âm",
-     "Thiên Đồng",
-     "Thiên Lương",
-     "Cự Môn",
-     "Thái Dương"
-    ],
-    "toiThieu": 1,
-    "viTri": "chinh"
-   }
-  ],
-  "khong": [
-   {
-    "sao": [
-     "Tử Vi",
-     "Thiên Phủ",
-     "Vũ Khúc",
-     "Thiên Tướng",
      "Thiên Cơ",
      "Thái Âm",
      "Thiên Đồng",
@@ -823,21 +515,7 @@
     ],
     "toiThieu": 1,
     "viTri": "chinh",
-    "tuCung": "Mệnh"
-   },
-   {
-    "sao": [
-     "Tử Vi",
-     "Thiên Phủ",
-     "Vũ Khúc",
-     "Thiên Tướng",
-     "Thất Sát",
-     "Phá Quân",
-     "Liêm Trinh",
-     "Tham Lang"
-    ],
-    "toiThieu": 1,
-    "viTri": "chinh"
+    "chu": true
    }
   ],
   "muc": "chu-y",
@@ -867,7 +545,9 @@
     ],
     "toiThieu": 1,
     "viTri": "chinh",
-    "tuCung": "Mệnh"
+    "tuCung": "Mệnh",
+    "chu": true,
+    "muonXung": true
    },
    {
     "sao": [
@@ -879,44 +559,12 @@
      "Thái Dương"
     ],
     "toiThieu": 1,
-    "viTri": "xung"
+    "viTri": "xung",
+    "chu": true
    },
    {
     "voChinhDieu": true,
     "viTri": "chinh"
-   }
-  ],
-  "khong": [
-   {
-    "sao": [
-     "Tử Vi",
-     "Thiên Phủ",
-     "Vũ Khúc",
-     "Thiên Tướng",
-     "Thiên Cơ",
-     "Thái Âm",
-     "Thiên Đồng",
-     "Thiên Lương",
-     "Cự Môn",
-     "Thái Dương"
-    ],
-    "toiThieu": 1,
-    "viTri": "chinh",
-    "tuCung": "Mệnh"
-   },
-   {
-    "sao": [
-     "Tử Vi",
-     "Thiên Phủ",
-     "Vũ Khúc",
-     "Thiên Tướng",
-     "Thất Sát",
-     "Phá Quân",
-     "Liêm Trinh",
-     "Tham Lang"
-    ],
-    "toiThieu": 1,
-    "viTri": "xung"
    }
   ],
   "muc": "chu-y",
@@ -948,7 +596,9 @@
     ],
     "toiThieu": 1,
     "viTri": "chinh",
-    "tuCung": "Mệnh"
+    "tuCung": "Mệnh",
+    "chu": true,
+    "muonXung": true
    },
    {
     "sao": [
@@ -958,40 +608,8 @@
      "Thiên Tướng"
     ],
     "toiThieu": 1,
-    "viTri": "chinh"
-   }
-  ],
-  "khong": [
-   {
-    "sao": [
-     "Tử Vi",
-     "Thiên Phủ",
-     "Vũ Khúc",
-     "Thiên Tướng",
-     "Thất Sát",
-     "Phá Quân",
-     "Liêm Trinh",
-     "Tham Lang"
-    ],
-    "toiThieu": 1,
     "viTri": "chinh",
-    "tuCung": "Mệnh"
-   },
-   {
-    "sao": [
-     "Thất Sát",
-     "Phá Quân",
-     "Liêm Trinh",
-     "Tham Lang",
-     "Thiên Cơ",
-     "Thái Âm",
-     "Thiên Đồng",
-     "Thiên Lương",
-     "Cự Môn",
-     "Thái Dương"
-    ],
-    "toiThieu": 1,
-    "viTri": "chinh"
+    "chu": true
    }
   ],
   "muc": "chu-y",
@@ -1023,7 +641,9 @@
     ],
     "toiThieu": 1,
     "viTri": "chinh",
-    "tuCung": "Mệnh"
+    "tuCung": "Mệnh",
+    "chu": true,
+    "muonXung": true
    },
    {
     "sao": [
@@ -1033,44 +653,12 @@
      "Thiên Tướng"
     ],
     "toiThieu": 1,
-    "viTri": "xung"
+    "viTri": "xung",
+    "chu": true
    },
    {
     "voChinhDieu": true,
     "viTri": "chinh"
-   }
-  ],
-  "khong": [
-   {
-    "sao": [
-     "Tử Vi",
-     "Thiên Phủ",
-     "Vũ Khúc",
-     "Thiên Tướng",
-     "Thất Sát",
-     "Phá Quân",
-     "Liêm Trinh",
-     "Tham Lang"
-    ],
-    "toiThieu": 1,
-    "viTri": "chinh",
-    "tuCung": "Mệnh"
-   },
-   {
-    "sao": [
-     "Thất Sát",
-     "Phá Quân",
-     "Liêm Trinh",
-     "Tham Lang",
-     "Thiên Cơ",
-     "Thái Âm",
-     "Thiên Đồng",
-     "Thiên Lương",
-     "Cự Môn",
-     "Thái Dương"
-    ],
-    "toiThieu": 1,
-    "viTri": "xung"
    }
   ],
   "muc": "chu-y",
@@ -1102,26 +690,12 @@
     ],
     "toiThieu": 1,
     "viTri": "chinh",
-    "tuCung": "Mệnh"
+    "tuCung": "Mệnh",
+    "chu": true,
+    "muonXung": true
    },
    {
     "sao": [
-     "Thất Sát",
-     "Phá Quân",
-     "Liêm Trinh",
-     "Tham Lang"
-    ],
-    "toiThieu": 1,
-    "viTri": "chinh"
-   }
-  ],
-  "khong": [
-   {
-    "sao": [
-     "Tử Vi",
-     "Thiên Phủ",
-     "Vũ Khúc",
-     "Thiên Tướng",
      "Thất Sát",
      "Phá Quân",
      "Liêm Trinh",
@@ -1129,28 +703,29 @@
     ],
     "toiThieu": 1,
     "viTri": "chinh",
-    "tuCung": "Mệnh"
-   },
-   {
-    "sao": [
-     "Tử Vi",
-     "Thiên Phủ",
-     "Vũ Khúc",
-     "Thiên Tướng",
-     "Thiên Cơ",
-     "Thái Âm",
-     "Thiên Đồng",
-     "Thiên Lương",
-     "Cự Môn",
-     "Thái Dương"
-    ],
-    "toiThieu": 1,
-    "viTri": "chinh"
+    "chu": true
    }
   ],
   "muc": "chu-y",
   "noiDung": "Mệnh gốc thuộc nhóm Cơ Nguyệt Đồng Lương Cự Nhật, còn môi trường vận thuộc nhóm Sát Phá Liêm Tham: thuận lợi đi kèm nhiều biến động, nên có kế hoạch dự phòng.",
-  "nguonChiTiet": "KL (B.1); TB (Phần 3, §2.4.1, tr. 250)"
+  "nguonChiTiet": "KL (B.1); TB (Phần 3, §2.4.1, tr. 250)",
+  "khong": [
+   {
+    "sao": [
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "toiThieu": 1,
+    "viTri": "chinh",
+    "tuCung": "Mệnh",
+    "chu": true,
+    "muonXung": true,
+    "cungCoSao": [
+     "Cự Môn",
+     "Thái Dương"
+    ]
+   }
+  ]
  },
  {
   "chuyenDe": "van-10-nam",
@@ -1177,7 +752,9 @@
     ],
     "toiThieu": 1,
     "viTri": "chinh",
-    "tuCung": "Mệnh"
+    "tuCung": "Mệnh",
+    "chu": true,
+    "muonXung": true
    },
    {
     "sao": [
@@ -1187,49 +764,34 @@
      "Tham Lang"
     ],
     "toiThieu": 1,
-    "viTri": "xung"
+    "viTri": "xung",
+    "chu": true
    },
    {
     "voChinhDieu": true,
     "viTri": "chinh"
    }
   ],
+  "muc": "chu-y",
+  "noiDung": "Mệnh gốc thuộc nhóm Cơ Nguyệt Đồng Lương Cự Nhật, còn môi trường vận (mượn từ cung xung chiếu, lực nhẹ hơn sao tọa thủ) thuộc nhóm Sát Phá Liêm Tham: thuận lợi đi kèm nhiều biến động, nên có kế hoạch dự phòng.",
+  "nguonChiTiet": "KL (B.1); TB (Phần 3, §2.4.1, tr. 250)",
   "khong": [
    {
     "sao": [
-     "Tử Vi",
-     "Thiên Phủ",
-     "Vũ Khúc",
-     "Thiên Tướng",
-     "Thất Sát",
-     "Phá Quân",
-     "Liêm Trinh",
-     "Tham Lang"
-    ],
-    "toiThieu": 1,
-    "viTri": "chinh",
-    "tuCung": "Mệnh"
-   },
-   {
-    "sao": [
-     "Tử Vi",
-     "Thiên Phủ",
-     "Vũ Khúc",
-     "Thiên Tướng",
-     "Thiên Cơ",
-     "Thái Âm",
-     "Thiên Đồng",
-     "Thiên Lương",
      "Cự Môn",
      "Thái Dương"
     ],
     "toiThieu": 1,
-    "viTri": "xung"
+    "viTri": "chinh",
+    "tuCung": "Mệnh",
+    "chu": true,
+    "muonXung": true,
+    "cungCoSao": [
+     "Cự Môn",
+     "Thái Dương"
+    ]
    }
-  ],
-  "muc": "chu-y",
-  "noiDung": "Mệnh gốc thuộc nhóm Cơ Nguyệt Đồng Lương Cự Nhật, còn môi trường vận (mượn từ cung xung chiếu, lực nhẹ hơn sao tọa thủ) thuộc nhóm Sát Phá Liêm Tham: thuận lợi đi kèm nhiều biến động, nên có kế hoạch dự phòng.",
-  "nguonChiTiet": "KL (B.1); TB (Phần 3, §2.4.1, tr. 250)"
+  ]
  },
  {
   "chuyenDe": "van-10-nam",
@@ -1256,7 +818,9 @@
     ],
     "toiThieu": 1,
     "viTri": "chinh",
-    "tuCung": "Mệnh"
+    "tuCung": "Mệnh",
+    "chu": true,
+    "muonXung": true
    },
    {
     "sao": [
@@ -1268,38 +832,14 @@
      "Thái Dương"
     ],
     "toiThieu": 1,
-    "viTri": "chinh"
-   }
-  ],
-  "khong": [
-   {
-    "sao": [
-     "Tử Vi",
-     "Thiên Phủ",
-     "Vũ Khúc",
-     "Thiên Tướng",
-     "Thất Sát",
-     "Phá Quân",
-     "Liêm Trinh",
-     "Tham Lang"
-    ],
-    "toiThieu": 1,
     "viTri": "chinh",
-    "tuCung": "Mệnh"
-   },
-   {
-    "sao": [
-     "Tử Vi",
-     "Thiên Phủ",
-     "Vũ Khúc",
-     "Thiên Tướng",
-     "Thất Sát",
-     "Phá Quân",
-     "Liêm Trinh",
-     "Tham Lang"
-    ],
-    "toiThieu": 1,
-    "viTri": "chinh"
+    "chu": true,
+    "doSang": [
+     "Miếu",
+     "Vượng",
+     "Đắc",
+     "Bình"
+    ]
    }
   ],
   "muc": "thuan-loi",
@@ -1331,7 +871,9 @@
     ],
     "toiThieu": 1,
     "viTri": "chinh",
-    "tuCung": "Mệnh"
+    "tuCung": "Mệnh",
+    "chu": true,
+    "muonXung": true
    },
    {
     "sao": [
@@ -1343,42 +885,18 @@
      "Thái Dương"
     ],
     "toiThieu": 1,
-    "viTri": "xung"
+    "viTri": "xung",
+    "chu": true,
+    "doSang": [
+     "Miếu",
+     "Vượng",
+     "Đắc",
+     "Bình"
+    ]
    },
    {
     "voChinhDieu": true,
     "viTri": "chinh"
-   }
-  ],
-  "khong": [
-   {
-    "sao": [
-     "Tử Vi",
-     "Thiên Phủ",
-     "Vũ Khúc",
-     "Thiên Tướng",
-     "Thất Sát",
-     "Phá Quân",
-     "Liêm Trinh",
-     "Tham Lang"
-    ],
-    "toiThieu": 1,
-    "viTri": "chinh",
-    "tuCung": "Mệnh"
-   },
-   {
-    "sao": [
-     "Tử Vi",
-     "Thiên Phủ",
-     "Vũ Khúc",
-     "Thiên Tướng",
-     "Thất Sát",
-     "Phá Quân",
-     "Liêm Trinh",
-     "Tham Lang"
-    ],
-    "toiThieu": 1,
-    "viTri": "xung"
    }
   ],
   "muc": "thuan-loi",
@@ -1425,37 +943,6 @@
    "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
   ],
   "truongPhai": "Tam hợp phái Việt",
-  "id": "VAN-PP-07-HAM-TửVi",
-  "loai": "C",
-  "maNghienCuu": [
-   "VAN-PP-07"
-  ],
-  "dieuKien": [
-   {
-    "voChinhDieu": false,
-    "viTri": "chinh"
-   },
-   {
-    "sao": [
-     "Tử Vi"
-    ],
-    "viTri": "xung",
-    "doSang": [
-     "Hãm"
-    ]
-   }
-  ],
-  "muc": "chu-y",
-  "noiDung": "Tử Vi hãm ở cung xung chiếu của vận: tác động từ bên ngoài kém thuận hơn, nên chủ động dựa vào điểm mạnh sẵn có.",
-  "nguonChiTiet": "KL (Giải đoán vận hạn, A.4); CHUNG-PP-06"
- },
- {
-  "chuyenDe": "van-10-nam",
-  "cung": "Vận",
-  "nguon": [
-   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
-  ],
-  "truongPhai": "Tam hợp phái Việt",
   "id": "VAN-PP-07-SANG-ThiênPhủ",
   "loai": "C",
   "maNghienCuu": [
@@ -1480,37 +967,6 @@
   ],
   "muc": "thuan-loi",
   "noiDung": "Thiên Phủ đắc địa ở cung xung chiếu của vận: thế đối diện có sao sáng hỗ trợ, thuận lợi từ bên ngoài đến đều đặn dù lực nhẹ hơn sao tọa thủ.",
-  "nguonChiTiet": "KL (Giải đoán vận hạn, A.4); CHUNG-PP-06"
- },
- {
-  "chuyenDe": "van-10-nam",
-  "cung": "Vận",
-  "nguon": [
-   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
-  ],
-  "truongPhai": "Tam hợp phái Việt",
-  "id": "VAN-PP-07-HAM-ThiênPhủ",
-  "loai": "C",
-  "maNghienCuu": [
-   "VAN-PP-07"
-  ],
-  "dieuKien": [
-   {
-    "voChinhDieu": false,
-    "viTri": "chinh"
-   },
-   {
-    "sao": [
-     "Thiên Phủ"
-    ],
-    "viTri": "xung",
-    "doSang": [
-     "Hãm"
-    ]
-   }
-  ],
-  "muc": "chu-y",
-  "noiDung": "Thiên Phủ hãm ở cung xung chiếu của vận: tác động từ bên ngoài kém thuận hơn, nên chủ động dựa vào điểm mạnh sẵn có.",
   "nguonChiTiet": "KL (Giải đoán vận hạn, A.4); CHUNG-PP-06"
  },
  {
