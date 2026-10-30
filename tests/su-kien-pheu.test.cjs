@@ -63,3 +63,69 @@ test('Đọc thư mục: bỏ dòng hỏng, gộp nhiều file', () => {
   assert.equal(docThuMuc(d).length, 2);
   assert.deepEqual(docThuMuc(path.join(d, 'khong-co')), []);
 });
+
+// ---------- Bảng giá: đo lựa chọn từng bậc ----------
+const { MA_GOI, MA_CHU_DE } = require('../src/lib/goi-ma.js');
+const PH = 'a1b2c3d4e5f6a7b8';
+
+test('Khoá goi/chuDe hợp lệ chỉ cho chon_goi, vao_thanh_toan, thanh_toan_xong', () => {
+  assert.deepEqual(MA_GOI, ['mot-chu-de', 'tron-la-so', 'thanh-vien-nam']);
+  assert.deepEqual(MA_CHU_DE, ['ban-than', 'tinh-cam', 'su-nghiep', 'tai-chinh', 'gia-dao']);
+  for (const ten of ['chon_goi', 'vao_thanh_toan', 'thanh_toan_xong']) {
+    for (const goi of MA_GOI) assert.deepEqual(kiemTraSuKien({ ten, phien: PH, goi }), { ten, phien: PH, goi });
+    for (const chuDe of MA_CHU_DE) {
+      assert.deepEqual(kiemTraSuKien({ ten, phien: PH, goi: 'mot-chu-de', chuDe }), { ten, phien: PH, goi: 'mot-chu-de', chuDe });
+    }
+  }
+});
+
+test('Từ chối goi/chuDe sai: mã lạ, chuDe với gói khác, chuDe không goi, sự kiện khác, giá từ máy khách', () => {
+  const ok = { ten: 'chon_goi', phien: PH };
+  assert.equal(kiemTraSuKien({ ...ok, goi: 'goi-la' }), null);
+  assert.equal(kiemTraSuKien({ ...ok, goi: 5 }), null);
+  assert.equal(kiemTraSuKien({ ...ok, goi: 'mot-chu-de', chuDe: 'xay-nha' }), null);
+  assert.equal(kiemTraSuKien({ ...ok, goi: 'tron-la-so', chuDe: 'tinh-cam' }), null);
+  assert.equal(kiemTraSuKien({ ...ok, goi: 'thanh-vien-nam', chuDe: 'tinh-cam' }), null);
+  assert.equal(kiemTraSuKien({ ...ok, chuDe: 'tinh-cam' }), null);
+  assert.equal(kiemTraSuKien({ ...ok, goi: 'tron-la-so', gia: 1 }), null);
+  for (const ten of ['vao_form', 'lap_la_so', 'xem_tom_tat', 'bam_xem_sau', 'vao_chon_goi', 'dang_nhap']) {
+    assert.equal(kiemTraSuKien({ ten, phien: PH, goi: 'tron-la-so' }), null, ten);
+  }
+});
+
+test('Giá tra từ goi.ts: đúng bảng giá 29k / 99k / 299k', () => {
+  const { tra } = require('./_goi-ts.cjs');
+  assert.deepEqual(tra(), { 'mot-chu-de': 29000, 'tron-la-so': 99000, 'thanh-vien-nam': 299000 });
+});
+
+const dg = (phien, ten, goi, gia, chuDe) => ({ t: 1, ten, phien, trang: trangCua(ten), goi, gia, chuDe });
+
+test('Tỉ lệ từng bậc, đơn trung bình (lần cuối mỗi phiên), gói năm, chủ đề nhiều nhất', () => {
+  const ds = [
+    // A: đổi ý từ chủ đề sang trọn lá số, mua trọn lá số
+    dg('A', 'chon_goi', 'mot-chu-de', undefined, 'tinh-cam'), dg('A', 'chon_goi', 'tron-la-so'),
+    dg('A', 'thanh_toan_xong', 'tron-la-so', 99000), dg('A', 'thanh_toan_xong', 'tron-la-so', 99000),
+    dg('B', 'chon_goi', 'mot-chu-de', undefined, 'tinh-cam'), dg('B', 'thanh_toan_xong', 'mot-chu-de', 29000, 'tinh-cam'),
+    dg('C', 'chon_goi', 'mot-chu-de', undefined, 'su-nghiep'), dg('C', 'thanh_toan_xong', 'mot-chu-de', 29000, 'su-nghiep'),
+    dg('D', 'chon_goi', 'thanh-vien-nam'), dg('D', 'thanh_toan_xong', 'thanh-vien-nam', 299000),
+    dg('E', 'chon_goi', 'tron-la-so'), // chọn nhưng chưa mua
+    dong('F', 'vao_form'),
+  ];
+  const p = tinhPheu(ds);
+  assert.equal(p.bac.soDon, 4);
+  assert.deepEqual(p.bac.tiLeTrenDon, { 'mot-chu-de': 2 / 4, 'tron-la-so': 1 / 4, 'thanh-vien-nam': 1 / 4 });
+  assert.equal(p.bac.soChon, 5);
+  assert.deepEqual(p.bac.tiLeTrenChon, { 'mot-chu-de': 2 / 5, 'tron-la-so': 2 / 5, 'thanh-vien-nam': 1 / 5 });
+  assert.equal(p.bac.donTrungBinh, (99000 + 29000 + 29000 + 299000) / 4);
+  assert.equal(p.bac.tiLeGoiNam, 1 / 4);
+  assert.deepEqual(p.bac.chuDe, { 'tinh-cam': 1, 'su-nghiep': 1 }); // theo lần chọn cuối mỗi phiên
+  assert.equal(p.bac.chuDeNhieuNhat, 'tinh-cam');
+});
+
+test('Không có đơn: tỉ lệ bậc và đơn TB là null, không chia cho 0', () => {
+  const p = tinhPheu([dong('A', 'vao_form')]);
+  assert.equal(p.bac.tiLeTrenDon['tron-la-so'], null);
+  assert.equal(p.bac.donTrungBinh, null);
+  assert.equal(p.bac.tiLeGoiNam, null);
+  assert.equal(p.bac.chuDeNhieuNhat, null);
+});

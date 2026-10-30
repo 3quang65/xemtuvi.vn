@@ -202,6 +202,11 @@ a { color: inherit; }
 .the-goi h3 { font-size: 1.15rem; }
 .gia { margin: 0; color: var(--muc-nhat); }
 .gia strong { font-size: 1.5rem; color: var(--muc); }
+.so-sanh { margin: 0; font-size: 0.92rem; font-weight: 500; color: var(--ngoc-dam); }
+.chon-chu-de { border: 0; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.chon-chu-de legend { font-weight: 600; font-size: 0.95rem; padding: 0; margin-bottom: 6px; }
+.chon-chu-de label { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 12px; border: 1px solid var(--vien); border-radius: 999px; background: var(--giay); cursor: pointer; }
+.chon-chu-de label:has(input:checked) { border-color: var(--ngoc); background: var(--ngoc-nhat); font-weight: 600; }
 .quyen-loi { margin: 0; padding-left: 1.1em; font-size: 0.95rem; }
 
 .khoi-buoc { display: grid; gap: 12px; background: var(--giay); border: 1px solid var(--vien); border-radius: 16px; padding: 18px; }

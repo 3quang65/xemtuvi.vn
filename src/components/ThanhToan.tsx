@@ -2,7 +2,7 @@
 
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { dinhDangGia, layGoi } from '@/lib/goi';
+import { dinhDangGia, layChuDe, layGoi } from '@/lib/goi';
 import { docTaiKhoanThu, guiSuKien, luuGoiDaMo, taoTaiKhoanThu, type NhaCungCap, type TaiKhoanThu } from '@/lib/phien';
 import { useLaSoDaLuu } from '@/lib/useLaSoDaLuu';
 
@@ -10,16 +10,20 @@ const TEN_NCC: Record<NhaCungCap, string> = { google: 'Google', zalo: 'Zalo' };
 
 export default function ThanhToan() {
   const router = useRouter();
-  const goi = layGoi(useSearchParams().get('goi'));
+  const tham = useSearchParams();
+  const goi = layGoi(tham.get('goi'));
+  const chuDe = layChuDe(tham.get('chuDe'));
+  const hopLe = !!goi && (goi.ma !== 'mot-chu-de' || !!chuDe); // gói chủ đề bắt buộc có chủ đề
+  const suKien = { goi: goi?.ma, chuDe: goi?.ma === 'mot-chu-de' ? chuDe?.ma : undefined };
   const laSo = useLaSoDaLuu();
   const [tk, setTk] = useState<TaiKhoanThu | null>(null);
 
-  useEffect(() => { if (laSo && !goi) router.replace('/chon-goi'); }, [laSo, goi, router]);
-  useEffect(() => { if (laSo && goi) { setTk(docTaiKhoanThu()); guiSuKien('vao_thanh_toan'); } }, [laSo, goi]);
-  if (!laSo || !goi) return <p className="dang-tai" role="status">Đang tải…</p>;
+  useEffect(() => { if (laSo && !hopLe) router.replace('/chon-goi'); }, [laSo, hopLe, router]);
+  useEffect(() => { if (laSo && hopLe) { setTk(docTaiKhoanThu()); guiSuKien('vao_thanh_toan', suKien); } }, [laSo, hopLe]); // eslint-disable-line react-hooks/exhaustive-deps
+  if (!laSo || !hopLe || !goi) return <p className="dang-tai" role="status">Đang tải…</p>;
 
   function dangNhap(ncc: NhaCungCap) { setTk(taoTaiKhoanThu(ncc)); guiSuKien('dang_nhap'); }
-  function thanhToan() { luuGoiDaMo(goi!.ma); guiSuKien('thanh_toan_xong'); router.push('/luan-giai'); }
+  function thanhToan() { luuGoiDaMo(goi!.ma, suKien.chuDe); guiSuKien('thanh_toan_xong', suKien); router.push('/luan-giai'); }
 
   return (
     <section className="trang-buoc">
@@ -42,6 +46,7 @@ export default function ThanhToan() {
         <h2>2. Đơn hàng</h2>
         <dl className="tt-dong don">
           <div><dt>Gói</dt><dd>{goi.ten}</dd></div>
+          {chuDe && goi.ma === 'mot-chu-de' && <div><dt>Chủ đề</dt><dd>{chuDe.ten}</dd></div>}
           <div><dt>Thời hạn</dt><dd>{goi.donVi}</dd></div>
           <div><dt>Tổng</dt><dd><strong>{dinhDangGia(goi.gia)}</strong></dd></div>
         </dl>

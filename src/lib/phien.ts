@@ -34,8 +34,8 @@ export function taoTaiKhoanThu(nhaCungCap: NhaCungCap): TaiKhoanThu {
   ghi('local', K_TK, tk);
   return tk;
 }
-export const docGoiDaMo = () => doc<{ ma: string; luc: number }>('local', K_GOI);
-export const luuGoiDaMo = (ma: string) => ghi('local', K_GOI, { ma, luc: Date.now() });
+export const docGoiDaMo = () => doc<{ ma: string; chuDe?: string; luc: number }>('local', K_GOI);
+export const luuGoiDaMo = (ma: string, chuDe?: string) => ghi('local', K_GOI, { ma, ...(chuDe ? { chuDe } : {}), luc: Date.now() });
 
 function maNgauNhien(doDai: number): string {
   const b = new Uint8Array(Math.ceil(doDai / 2));
@@ -52,9 +52,9 @@ function maPhien(): string {
 }
 
 /** Gửi sự kiện đo phễu. Không bao giờ làm hỏng giao diện. */
-export function guiSuKien(ten: string) {
+export function guiSuKien(ten: string, tuyChon?: { goi?: string; chuDe?: string }) {
   try {
-    const body = new Blob([JSON.stringify({ ten, phien: maPhien() })], { type: 'application/json' });
+    const body = new Blob([JSON.stringify({ ten, phien: maPhien(), ...(tuyChon?.goi ? { goi: tuyChon.goi } : {}), ...(tuyChon?.chuDe ? { chuDe: tuyChon.chuDe } : {}) })], { type: 'application/json' });
     if (!navigator.sendBeacon('/api/su-kien', body)) {
       void fetch('/api/su-kien', { method: 'POST', body, keepalive: true }).catch(() => {});
     }

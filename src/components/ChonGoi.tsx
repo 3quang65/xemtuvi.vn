@@ -1,9 +1,9 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { useEffect } from 'react';
+import { useEffect, useId, useState } from 'react';
 import { DOAN_MAU, nhanDinh } from '@/lib/luan-giai';
-import { dinhDangGia, GOI, type Goi } from '@/lib/goi';
+import { CHU_DE, dinhDangGia, GOI, type Goi, type MaChuDe } from '@/lib/goi';
 import { guiSuKien } from '@/lib/phien';
 import { useLaSoDaLuu } from '@/lib/useLaSoDaLuu';
 
@@ -22,15 +22,34 @@ function DoanKhoa() {
   );
 }
 
-function TheGoi({ g, onChon }: { g: Goi; onChon: (g: Goi) => void }) {
+function TheGoi({ g, onChon }: { g: Goi; onChon: (g: Goi, chuDe?: MaChuDe) => void }) {
+  const [chuDe, setChuDe] = useState<MaChuDe | null>(null);
+  const ten = useId();
+  const canChuDe = g.ma === 'mot-chu-de';
   return (
     <li className={`the-goi ${g.chinh ? 'noi-bat' : ''}`}>
-      {g.chinh && <span className="nhan-chinh">Gói chính</span>}
+      {g.nhan && <span className="nhan-chinh">{g.nhan}</span>}
       <h3>{g.ten}</h3>
       <p className="gia"><strong>{dinhDangGia(g.gia)}</strong> <span>/ {g.donVi}</span></p>
+      {g.soSanh && <p className="so-sanh">{g.soSanh.join(' · ')}</p>}
       <ul className="quyen-loi">{g.quyenLoi.map((q) => <li key={q}>{q}</li>)}</ul>
-      <button type="button" className={g.chinh ? 'nut-chinh' : 'nut-phu'} onClick={() => onChon(g)}>
-        Chọn gói này
+      {canChuDe && (
+        <fieldset className="chon-chu-de">
+          <legend>Chọn chủ đề</legend>
+          {CHU_DE.map((c) => (
+            <label key={c.ma}>
+              <input type="radio" name={ten} value={c.ma} checked={chuDe === c.ma} onChange={() => setChuDe(c.ma)} />
+              <span>{c.ten}</span>
+            </label>
+          ))}
+        </fieldset>
+      )}
+      <button
+        type="button" className={g.chinh ? 'nut-chinh' : 'nut-phu'}
+        disabled={canChuDe && !chuDe}
+        onClick={() => onChon(g, canChuDe ? chuDe ?? undefined : undefined)}
+      >
+        {canChuDe && !chuDe ? 'Chọn một chủ đề trước' : 'Chọn gói này'}
       </button>
     </li>
   );
@@ -49,7 +68,10 @@ export default function ChonGoi() {
       <DoanKhoa />
       <ul className="luoi-goi">
         {GOI.map((g) => (
-          <TheGoi key={g.ma} g={g} onChon={(x) => { guiSuKien('chon_goi'); router.push(`/thanh-toan?goi=${x.ma}`); }} />
+          <TheGoi key={g.ma} g={g} onChon={(x, chuDe) => {
+            guiSuKien('chon_goi', { goi: x.ma, chuDe });
+            router.push(`/thanh-toan?goi=${x.ma}${chuDe ? `&chuDe=${chuDe}` : ''}`);
+          }} />
         ))}
       </ul>
     </section>

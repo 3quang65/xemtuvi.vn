@@ -47,6 +47,22 @@ const tran = (p) => p.evaluate(() => document.documentElement.scrollWidth - inne
   await p.screenshot({ path: `${out}/luong-mua-5-luan-giai.png`, fullPage: true });
   console.log('đích: /luan-giai | tràn ngang:', t, '| có chữ "đang chuẩn bị":', await p.getByText('đang chuẩn bị').count() > 0);
 
+  // Gói chủ đề: chọn chủ đề ngay trong thẻ gói, rồi sang thanh toán; thiếu/sai chủ đề → về /chon-goi
+  await p.goto(url + '/chon-goi'); await p.waitForSelector('.the-goi');
+  const nutCD = p.locator('.the-goi', { hasText: 'Mở một chủ đề' }).getByRole('button', { name: 'Chọn một chủ đề trước' });
+  console.log('chưa chọn chủ đề → nút bị khóa:', await nutCD.isDisabled() ? 'OK' : 'LỖI'); if (!await nutCD.isDisabled()) fail = 1;
+  await p.getByLabel('Tình cảm').check();
+  await p.locator('.the-goi', { hasText: 'Mở một chủ đề' }).getByRole('button', { name: 'Chọn gói này' }).click();
+  await p.waitForURL('**/thanh-toan?goi=mot-chu-de&chuDe=tinh-cam'); await p.waitForSelector('.khoi-buoc');
+  const coCD = await p.locator('.don').getByText('Tình cảm').count(); console.log('thanh toán hiện chủ đề:', coCD ? 'OK' : 'LỖI'); if (!coCD) fail = 1;
+  await p.screenshot({ path: `${out}/luong-mua-6-thanh-toan-chu-de.png` });
+  await p.getByRole('button', { name: 'Thanh toán (giả lập)' }).click(); await p.waitForURL('**/luan-giai'); await p.waitForSelector('.da-dang-nhap');
+  const daMo = await p.locator('.da-dang-nhap').innerText(); console.log('luận giải:', daMo, daMo.includes('Tình cảm') ? 'OK' : 'LỖI'); if (!daMo.includes('Tình cảm')) fail = 1;
+  for (const u of ['/thanh-toan?goi=mot-chu-de', '/thanh-toan?goi=mot-chu-de&chuDe=xay-nha']) {
+    await p.goto(url + u); await p.waitForURL('**/chon-goi'); console.log('chuDe thiếu/sai:', u, '→ /chon-goi OK');
+  }
+  const nhanKD = await p.locator('.the-goi.noi-bat .nhan-chinh').innerText(); console.log('nhãn gói giữa:', nhanKD, nhanKD === 'Khuyên dùng' ? 'OK' : 'LỖI'); if (nhanKD !== 'Khuyên dùng') fail = 1;
+
   // Đã đăng nhập thử rồi → lần sau bỏ bước chọn tài khoản
   await p.goto(url + '/thanh-toan?goi=thanh-vien-nam'); await p.waitForSelector('.khoi-buoc');
   const conNutDN = await p.getByRole('button', { name: 'Tiếp tục với Google' }).count();
