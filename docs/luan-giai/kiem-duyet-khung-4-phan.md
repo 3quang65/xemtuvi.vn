@@ -161,3 +161,54 @@ Ký hiệu: **[B]** sửa bắt buộc (đoạn trượt hoặc lỗi hiện ra 
 - 12/12 đoạn đủ 4 phần, 0 đoạn trượt cổng an toàn, TB Cụ thể 4,75, TB Áp dụng 4,75, mọi đoạn ≥ 22/25: **đạt ngưỡng nghiệm thu L-fd4220**.
 - Theo bảng chấm: **10/12 đạt; đoạn 4 (Đúng 4) và đoạn 5 (Sâu 3) trượt**, chưa dùng làm mẫu lên site. Hạnh sửa các mục [B] ở đoạn 1, 4, 5, 6, 8, 10; Thư chấm lại riêng các đoạn đó.
 - Quy định "việc nên làm" (mục 1): Thư đề nghị Minh chép vào khung mục 6. Mẫu: TC-07 duyệt có điều kiện; CV-08 duyệt có điều kiện, sửa câu; mã bám mới cho CV-02 (2 mã, chỉ vế Kỵ) và TT-02 (NAM-TT-06, chỉ khi sao ở ngay Phu Thê) duyệt. Cột SK-04 phải đổi mã bám.
+
+---
+
+## Vòng 2 (chấm lại bản sửa, commit 0d636b2)
+
+Thư kiểm ngày 30/10/2026. Bắt buộc chấm lại: đoạn 1, 4, 5, 6, 8, 10. Xem nhanh: đoạn 2, 3, 7, 9, 11, 12 (Hạnh sửa thêm). Đối chiếu lại du-lieu.md. Độ dài đếm bằng máy: (a) ≤ 35, (b) 70–109, (d) ≤ 32 chữ, đều trong giới hạn. Lọc từ cấm: không có. **Cổng an toàn: cả 12 đoạn qua.**
+
+### Đối chiếu các lỗi [B] của vòng 1
+
+| Đoạn | Lỗi vòng 1 | Bản sửa | Kết quả |
+|---|---|---|---|
+| 1 | Giọng: lời dặn nội bộ lọt ra bài, "Kỵ gốc" chưa giải thích | "Thiên Cơ ở đây mang hai dấu: dấu Hóa Kỵ có từ lá số gốc… dấu Hóa Khoa của riêng năm 2027…" | Đã sửa |
+| 4 | Đúng: xếp Thái Dương vào nhóm cứu giải; mã bám TAT-YN-03 | Chỉ Lộc Tồn, Tả Phù là sao giúp hồi phục (TAT-SP-04, SP-02); cân Văn Xương hãm gặp Đà La của năm (TAT-SP-03); thêm cung tiểu hạn đối diện mang Hóa Kỵ của năm; mã bám NAM-MANG-05 + NAM-LUU-02 | Đã sửa, đúng sách và lá số |
+| 5 | Sâu 3: thiếu Kình Dương năm, Địa Kiếp, Linh Tinh, Khoa gốc, Quyền năm ở Thiên Đồng | Đã thêm đủ, cân hai phía (CHUNG-HOA-08, MENH-CM-03: Khoa làm Kỵ nhẹ đi; NAM-HOA-05: gỡ việc bằng khéo léo) | Đã sửa |
+| 6 | Giọng: "Kỵ gốc", "Lộc của năm" | Giải thích "dấu Hóa Lộc của riêng năm 2027 (dấu thuận lợi)", "dấu Hóa Kỵ có từ lá số gốc (điểm vướng lâu nay)" | Đã sửa |
+| 8 | Giọng: câu nội bộ "bộ quy tắc chưa có câu riêng" | Đổi thành "Năm nay ít yếu tố của năm chạm vào cung này…", ghi chú chuyển vào mã ẩn | Đã sửa |
+| 10 | Áp dụng: nhờ bạn ngoài đọc văn bản công việc | Câu CV-08 đã sửa theo điều kiện duyệt | Đã sửa |
+
+Mục nên sửa đã làm: đoạn 2 (cách đo TC-05 "không có"), 3 (câu nền Tử Phủ, Tuần), 7 (CHUNG-HOA-05: lộc đến chậm), 9 ("chi tiêu gia đình"), 11 ("cung Lưu Thái Tuế"), 12 (T12 bám đúng NAM-LUU-02 "kiên nhẫn với thủ tục").
+
+### Còn lại, nên sửa (không đổi điểm đạt)
+
+- Đoạn 5: bản sửa bỏ **Triệt tại cung Mùi** khỏi (a), (b). Triệt ở chính cung trọng điểm làm cả sức ép lẫn phần tốt dịu đi (VAN-SP-12, CHUNG-TUAN-02). Thêm lại nửa câu, vd "Triệt ở cung này làm cả hai phía dịu đi". Sâu giữ 4 vì phần còn lại đã đủ lớp.
+- Đoạn 4: (a) và tiêu đề không còn nêu chính tinh **Thái Dương (miếu)**. Vẫn nêu tên sao trong (a) cho khách khỏi thấy thiếu, chỉ không luận ý TAT-TDU-01.
+- Đoạn 3: chưa thêm nhánh cho người chưa có ai (dùng TT-04), Áp dụng giữ 4. Đoạn 12: T1 vẫn gắn quy tắc lỏng, Áp dụng giữ 4.
+
+### Bảng điểm vòng 2
+
+| Đoạn | Bài · mảng | Đúng | Sâu | Cụ thể | Áp dụng | Giọng | Tổng | Vòng 1 | Kết luận |
+|---|---|---|---|---|---|---|---|---|---|
+| 1 | VN01 · Tổng quan | 5 | 4 | 5 | 5 | 5 | 24 | 23 | Đạt |
+| 2 | VN01 · Tài chính | 5 | 4 | 5 | 5 | 5 | 24 | 24 | Đạt |
+| 3 | VN01 · Tình cảm | 5 | 4 | 5 | 4 | 5 | 23 | 23 | Đạt |
+| 4 | VN01 · Sức khỏe | 5 | 4 | 4 | 5 | 5 | 23 | 22 trượt | **Đạt** |
+| 5 | VN02 · Tổng quan | 5 | 4 | 5 | 5 | 4 | 23 | 22 trượt | **Đạt** |
+| 6 | VN02 · Sự nghiệp | 5 | 4 | 5 | 5 | 5 | 24 | 23 | Đạt |
+| 7 | VN02 · Tài chính | 5 | 4 | 5 | 5 | 5 | 24 | 24 | Đạt |
+| 8 | VN02 · Sức khỏe | 5 | 4 | 4 | 5 | 5 | 23 | 22 | Đạt |
+| 9 | VN03 · Tổng quan | 5 | 4 | 5 | 5 | 5 | 24 | 24 | Đạt |
+| 10 | VN03 · Sự nghiệp | 5 | 4 | 5 | 5 | 5 | 24 | 23 | Đạt |
+| 11 | VN03 · Tình cảm | 5 | 4 | 4 | 5 | 5 | 23 | 23 | Đạt |
+| 12 | VN03 · Bảng 12 tháng | 5 | 4 | 5 | 4 | 5 | 23 | 23 | Đạt |
+| **TB** | | **5,00** | **4,00** | **4,75** | **4,83** | **4,92** | **23,5** | 23,0 | **12/12 đạt** |
+
+Nghiệm thu L-fd4220: 12/12 đủ (a)–(d); TB Cụ thể 4,75, TB Áp dụng 4,83; mọi đoạn ≥ 23/25; 0 đoạn trượt cổng; theo bảng chấm không tiêu chí nào < 4, Đúng = 5 ở mọi đoạn. **Đạt.**
+
+### Kiểm khung `khung-doan-tra-phi.md` mục 6.0, 6.1 (bản 1.1)
+
+- **6.0**: chép đúng và đủ mục 1 của phiếu này (5 điều, ví dụ không hợp lệ, biến thể, mã ẩn). Quy tắc 6 của mục 6 đã đổi theo dạng mã ẩn mới. Không phản đối.
+- **6.1**: CV-02 (thêm 2 mã, chỉ vế Kỵ), CV-08, TC-05 (cách đo "không có"), TC-07, TT-02 (NAM-TT-06 có điều kiện), SK-01 (thêm NAM-MANG-05), SK-04 (đổi sang NAM-MANG-05, TAT-SP-04): khớp kết luận mục 2.
+- **Sửa một chỗ trước khi Minh chốt**: ở dòng **TC-07**, câu "Cấm thêm động từ quyết định (tất toán, gia hạn, đổi, vay, mua, bán)." đang nằm **trong cột câu mẫu**. Bộ ghép lấy cột này in ra cho khách thì câu cấm sẽ hiện trong bài. Chuyển câu này sang cột "Bám quy tắc" (phần điều kiện) hoặc ghi chú dưới bảng. Sau khi chuyển, Thư không phản đối danh mục.
