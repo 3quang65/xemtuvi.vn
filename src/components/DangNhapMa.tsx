@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { guiSuKien } from '@/lib/phien';
 
 interface KetQua { moi?: boolean; maKhoiPhuc?: string }
@@ -13,6 +13,9 @@ export default function DangNhapMa({ idEmail, nhanEmail, thamSoDangKy, khiXong }
   const [dang, setDang] = useState(false);
   const [moi, setMoi] = useState<string | null>(null);
   const [daChep, setDaChep] = useState(false);
+  const [cfg, setCfg] = useState<{ google: boolean; thu: boolean }>({ google: false, thu: true }); // chưa biết: giữ hành vi cũ
+  useEffect(() => { fetch('/api/dang-nhap/cau-hinh').then((r) => r.json()).then((d) => setCfg({ google: !!d.google, thu: !!d.thu })).catch(() => {}); }, []);
+  const veGoogle = () => '/api/dang-nhap/google?ve=' + encodeURIComponent(window.location.pathname + window.location.search);
 
   async function vao() {
     setBao(''); setDang(true);
@@ -44,12 +47,20 @@ export default function DangNhapMa({ idEmail, nhanEmail, thamSoDangKy, khiXong }
   }
   return (
     <>
+      {cfg.google && (
+        <>
+          <a className="nut-chinh" href="/api/dang-nhap/google" onClick={(e) => { e.preventDefault(); window.location.href = veGoogle(); }}>Đăng nhập bằng Google</a>
+          {cfg.thu && <p className="tt-ghi-chu">Hoặc dùng email thử nghiệm:</p>}
+        </>
+      )}
+      {cfg.thu && (<>
       <label htmlFor={idEmail}>{nhanEmail}</label>
       <input id={idEmail} type="email" inputMode="email" autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} />
       <label htmlFor={idEmail + '-ma'}>Mã khôi phục (nếu bạn đã có tài khoản)</label>
       <input id={idEmail + '-ma'} type="text" autoComplete="off" autoCapitalize="characters" spellCheck={false} maxLength={14} value={ma} onChange={(e) => setMa(e.target.value)} />
       <p className="tt-ghi-chu">Email mới thì để trống ô mã, hệ thống sẽ cấp mã cho bạn.</p>
       <button type="button" className="nut-chinh" disabled={dang || !email} onClick={vao}>Tiếp tục</button>
+      </>)}
       {bao && <p role="alert">{bao}</p>}
     </>
   );

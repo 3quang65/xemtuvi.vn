@@ -15,3 +15,11 @@ Chưa làm. Chỉ đánh giá; phụ thuộc T-f60b6a (phiên + CSDL) trong L-ad
 
 ## Khuyến nghị
 A, làm sau T-f60b6a. Việc anh phải làm (khi tới lượt, Minh soạn hướng dẫn từng bước): tạo ứng dụng Google Cloud + Zalo Developers, đưa Client ID/Secret vào VPS qua Sơn (không vào repo). Zalo là điểm chậm nhất → đề xuất anh nộp đăng ký Zalo sớm. Bản chính thức tắt `DANG_NHAP_THU`.
+
+## Đã làm: Google OAuth, phương án A (L-5520be, 30/10/2026)
+- Mã: `src/lib/may-chu/google-oauth.ts` (state, PKCE S256, nonce, đổi mã, kiểm id_token), `xu-ly.ts` (`googleBatDau`, `googleVe`, `cauHinhDangNhap`), `dich-vu.ts` (`dangNhapGoogle`). Đường dẫn: `GET /api/dang-nhap/google?ve=/trang`, `GET /api/dang-nhap/google/callback`, `GET /api/dang-nhap/cau-hinh`; trang lỗi `/dang-nhap-loi`. Zalo chưa làm.
+- An toàn: cookie `xtv_oauth` (HttpOnly, Secure, Lax, 10 phút, chỉ gửi tới `/api/dang-nhap/google`) giữ state+verifier+nonce, xóa sau mỗi lần về; state so bằng `timingSafeEqual`; **chỉ nhận email có `email_verified === true`**; kiểm iss, aud, azp, exp, nonce; `ve` chỉ nhận đường dẫn nội bộ. Tài khoản định danh bằng `sub` của Google (không phải email).
+- Gộp: tài khoản thử cùng email được chuyển sang Google (giữ lá số, đơn, quyền); từ đó không vào bằng mã khôi phục nữa.
+- Bật/tắt: không có `GOOGLE_CLIENT_ID` + `GOOGLE_CLIENT_SECRET` thì nút ẩn, đường dẫn trả 404. Hai khóa đặt trong `~/xemtuvi-data/.env` (hoặc biến môi trường), không vào repo. `GOOGLE_REDIRECT_URI` tùy chọn (mặc định `https://<host>/api/dang-nhap/google/callback`). Danh sách `EMAIL_THU_CHO_PHEP` chỉ áp cho đăng nhập thử, không áp cho Google (email đã được Google xác minh).
+- Việc anh làm ở Google Cloud: tạo OAuth client loại Web, Authorized redirect URI = `https://<tên miền bản thử>/api/dang-nhap/google/callback`, màn xin quyền chỉ `openid email profile`, chế độ Testing + thêm email khách mời làm Test user (tối đa 100) HOẶC Publish (xin email/tên không cần duyệt nặng; cần trang quyền riêng tư).
+- Test: `tests/dang-nhap-google.test.cjs` (13 ca).

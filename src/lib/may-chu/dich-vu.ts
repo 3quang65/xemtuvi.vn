@@ -31,6 +31,18 @@ export function dangNhapThu(db: Csdl, email: string, bayGio = Date.now()): numbe
   return (db.prepare('SELECT id FROM nguoi_dung WHERE nha_cung_cap=? AND ma_ngoai=?').get('thu', e) as { id: number }).id;
 }
 
+/** Lấy/tạo tài khoản theo định danh Google (`sub` bất biến). Email đã được Google xác minh (kiểm ở google-oauth.ts). Tài khoản thử cùng email được chuyển sang Google (giữ lá số, đơn, quyền) và mất đường đăng nhập bằng mã khôi phục. */
+export function dangNhapGoogle(db: Csdl, sub: string, email: string, bayGio = Date.now()): { id: number; moi: boolean } {
+  const e = chuanEmail(email);
+  return db.transaction(() => {
+    const co = db.prepare('SELECT id FROM nguoi_dung WHERE nha_cung_cap=? AND ma_ngoai=?').get('google', sub) as { id: number } | undefined;
+    if (co) { db.prepare('UPDATE nguoi_dung SET email=? WHERE id=?').run(e, co.id); return { id: co.id, moi: false }; }
+    const thu = db.prepare('SELECT id FROM nguoi_dung WHERE nha_cung_cap=? AND ma_ngoai=?').get('thu', e) as { id: number } | undefined;
+    if (thu) { db.prepare("UPDATE nguoi_dung SET nha_cung_cap='google', ma_ngoai=?, ma_khoi_phuc=NULL WHERE id=?").run(sub, thu.id); return { id: thu.id, moi: false }; }
+    return { id: Number(db.prepare('INSERT INTO nguoi_dung (nha_cung_cap, ma_ngoai, email, tao_luc) VALUES (?,?,?,?)').run('google', sub, e, bayGio).lastInsertRowid), moi: true };
+  })();
+}
+
 /** Tạo tài khoản thử cho email chưa có; trả mã khôi phục dạng rõ đúng một lần (CSDL chỉ giữ băm). Email đã có → LoiNghiepVu. */
 export function taoTaiKhoanThu(db: Csdl, email: string, bayGio = Date.now()): { id: number; maKhoiPhuc: string } {
   const e = chuanEmail(email);

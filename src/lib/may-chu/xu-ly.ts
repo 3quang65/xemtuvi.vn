@@ -15,6 +15,7 @@ import { daDungMa, dungMa, chuDeMoi, kiemMa, nguonDaDung } from './ma-moi';
 import { ghiLoi } from './nhat-ky';
 import { bangGiaCuaYeuCau } from './thu-gia';
 import { biChan, ghiSai, xoaSaiCuaEmail } from './ma-khoi-phuc';
+import * as gg from './google-oauth';
 import { cookieDat, cookieXoa, cungNguon, docCookie, docPhien, taoPhien, xoaPhien } from './phien';
 
 const DAU = { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'private, no-store' };
@@ -67,6 +68,49 @@ export const dangNhap = (req: Request, m: MayChu) => chay(req, async () => {
   ghiSai(m.db, e, ip);
   return loi(401, 'sai_thong_tin', 'Email hoặc mã khôi phục chưa đúng.');
 });
+
+/** GET /api/dang-nhap/cau-hinh: giao diện biết nên hiện nút nào. */
+export const cauHinhDangNhap = () => json({ google: !!gg.cauHinhGoogle(), thu: process.env.DANG_NHAP_THU === '1' });
+
+function redirectUri(req: Request): string {
+  const goc = process.env.GOOGLE_REDIRECT_URI?.trim();
+  if (goc) return goc;
+  const host = req.headers.get('x-forwarded-host') ?? req.headers.get('host') ?? '';
+  return `https://${host}/api/dang-nhap/google/callback`;
+}
+const chuyen = (url: string, cookie: string) => new Response(null, { status: 302, headers: { Location: url, 'Set-Cookie': cookie, 'Cache-Control': 'private, no-store' } });
+
+/** GET /api/dang-nhap/google?ve=/duong-dan: sinh state + PKCE + nonce (cookie HttpOnly 10 phút) rồi chuyển sang Google. */
+export function googleBatDau(req: Request) {
+  const cfg = gg.cauHinhGoogle();
+  if (!cfg) return loi(404, 'tat', 'Đăng nhập Google chưa bật.');
+  const { url, cookie } = gg.batDau(cfg, redirectUri(req), new URL(req.url).searchParams.get('ve'));
+  return chuyen(url, cookie);
+}
+
+/** GET /api/dang-nhap/google/callback?code&state: kiểm state khớp cookie, đổi mã (PKCE), chỉ nhận email Google đã xác minh, rồi tạo phiên. */
+export async function googleVe(req: Request, m: MayChu, f?: gg.Fetch): Promise<Response> {
+  const cfg = gg.cauHinhGoogle();
+  if (!cfg) return loi(404, 'tat', 'Đăng nhập Google chưa bật.');
+  const q = new URL(req.url).searchParams;
+  const p = gg.docPhienOauth(docCookie(req, gg.TEN_COOKIE_OAUTH));
+  const quayLai = (ma: string) => chuyen(`/dang-nhap-loi?ma=${ma}`, gg.cookieOauthXoa()); // xóa cookie dù thành công hay thất bại: dùng một lần
+  const state = q.get('state'), code = q.get('code');
+  if (!p || !state || !gg.soSanhAnToan(state, p.state)) return quayLai('state_sai');
+  if (q.get('error') || !code) return quayLai('huy');
+  try {
+    const hs = await gg.doiMa(cfg, redirectUri(req), code, p, f);
+    const { id } = dv.dangNhapGoogle(m.db, hs.sub, hs.email);
+    const ph = new Headers({ Location: gg.veAnToan(p.ve), 'Cache-Control': 'private, no-store' });
+    ph.append('Set-Cookie', cookieDat(taoPhien(m.db, id)));
+    ph.append('Set-Cookie', gg.cookieOauthXoa());
+    return new Response(null, { status: 302, headers: ph });
+  } catch (e) {
+    if (e instanceof gg.LoiGoogle) return quayLai(e.ma);
+    ghiLoi('loi', '/api/dang-nhap/google', 'google_that_bai', e instanceof Error ? e.message : 'không rõ');
+    return quayLai('loi_may_chu');
+  }
+}
 
 export const dangXuat = (req: Request, m: MayChu) => chay(req, () => {
   xoaPhien(m.db, docCookie(req));
