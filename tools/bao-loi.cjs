@@ -1,4 +1,5 @@
 // Công cụ CSKH đọc báo lỗi của khách (docs/ky-thuat/cskh-cong-cu.md). Không in ngày giờ sinh (bảng không có).
+//   node tools/bao-loi.cjs [--tu YYYY-MM-DD] [--chua-xu-ly]   (không lệnh con = tất cả; tương đương moi = --chua-xu-ly, tat-ca)
 //   node tools/bao-loi.cjs moi|tat-ca [--tu YYYY-MM-DD]
 //   node tools/bao-loi.cjs danh-dau <id> da-xu-ly
 //   node tools/bao-loi.cjs lien-he <id> --nguoi <tên người tra>
@@ -71,10 +72,11 @@ function moDb() {
 
 function chay(argv) {
   const o = thamSo(argv);
-  const [lenh, a, b] = o._;
+  const [lenh0, a, b] = o._;
+  const lenh = lenh0 ?? (o['chua-xu-ly'] ? 'moi' : 'tat-ca');
   if (lenh === 'moi' || lenh === 'tat-ca') {
     if (o.tu && !/^\d{4}-\d{2}-\d{2}$/.test(o.tu)) throw new Error('tu dạng YYYY-MM-DD');
-    inDs(dsBaoLoi(moDb().db, { tatCa: lenh === 'tat-ca', tu: o.tu }));
+    inDs(dsBaoLoi(moDb().db, { tatCa: lenh === 'tat-ca' && !o['chua-xu-ly'], tu: o.tu }));
   } else if (lenh === 'danh-dau') {
     const id = soId(a); danhDau(moDb().db, id, b); console.log(`Đã đánh dấu #${id}: đã xử lý.`);
   } else if (lenh === 'lien-he') {
@@ -83,7 +85,7 @@ function chay(argv) {
     if (!lh) console.log('Không có liên hệ đã đồng ý cho báo lỗi này. KHÔNG tìm cách khác để liên lạc; ghi nhận "không liên hệ được".');
     else console.log(`${lh.loai === 'email' ? 'Email' : 'Zalo'}: ${lh.giaTri}\n(${lh.nguon}; chỉ dùng để trả lời báo lỗi này. Đã ghi nhật ký tra.)`);
   } else {
-    console.log('Dùng: moi|tat-ca [--tu YYYY-MM-DD] | danh-dau <id> da-xu-ly | lien-he <id> --nguoi <tên>');
+    console.log('Dùng: [moi|tat-ca] [--tu YYYY-MM-DD] [--chua-xu-ly] | danh-dau <id> da-xu-ly | lien-he <id> --nguoi <tên>');
     process.exitCode = 1;
   }
 }

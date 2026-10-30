@@ -15,6 +15,7 @@ Cửa sổ thử 16/11–30/11/2026 (Minh chốt 30/10, khớp kế hoạch kinh
 - Công cụ phát mã: `node tools/ma-moi.cjs tao --nguon tuvivn --so-luong 40 --gioi-han 1` và `... bao-cao`.
 - **Phát mã (Sơn chạy `tao`)**: theo danh sách nguồn Hoàng gửi, mỗi nguồn một lệnh (`--nguon` đúng mã nguồn, `--so-luong` theo danh sách, `--gioi-han 1`, `--het-han` theo cửa sổ thử). Không ghi tên khách vào `--ghi-chu`. In ra `mã<TAB>đường dẫn`, gửi lại Hoàng.
 - **Tra mã (Ngân)**: `node tools/ma-moi.cjs ds` in mã, nguồn, giới hạn, đã dùng, hết hạn, tình trạng (dùng được / hết lượt / hết hạn). Không in tên khách, không in ghi chú. Xem `docs/ky-thuat/cskh-cong-cu.md`.
+- **Đọc báo lỗi (Ngân, 4 lần/ngày)**: `node tools/bao-loi.cjs --chua-xu-ly [--tu YYYY-MM-DD]` in mã, giờ VN, mô tả, mã đơn, gói, thiết bị, có/không liên hệ (không có ngày giờ sinh). `node tools/bao-loi.cjs lien-he <mã> --nguoi Ngân` in email/Zalo (ô khách tự điền, hoặc liên hệ đã đồng ý của tài khoản) và ghi nhật ký mỗi lần tra; `danh-dau <mã> da-xu-ly` khi xong. Form `/tro-giup#bao-loi` có ô tùy chọn 'Email hoặc Zalo để mình trả lời' (migration `010`).
 
 ## Đo theo nguồn
 - Thêm sự kiện: `vao_moi` (vào bằng mã), `dung_ma_moi` (mở chuyên đề), `bam_gop_y`. Giữ quy tắc `su-kien.js`: máy chủ kiểm, không dữ liệu cá nhân; `nguon` lấy từ mã ở máy chủ, không tin máy khách.
