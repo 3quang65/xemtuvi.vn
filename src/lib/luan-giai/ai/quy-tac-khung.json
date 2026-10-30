@@ -4872,12 +4872,20 @@
     ],
     "toiThieu": 2,
     "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ]
    }
   ],
   "cachCuc": "Tử Phủ Vũ Tướng",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Tử Vi, Thiên Phủ, Vũ Khúc, Thiên Tướng cùng hội trong tam phương, tạo thế Tử Phủ Vũ Tướng: thiên về ổn định, quản lý, tổ chức và tài chính; phát huy tốt khi có thêm Tả Phù, Hữu Bật và Tam Hóa.",
+  "noiDung": "Với Mệnh: Tử Vi, Thiên Phủ, Vũ Khúc, Thiên Tướng cùng hội trong tam phương, tạo thế Tử Phủ Vũ Tướng: thiên về ổn định, quản lý, tổ chức và tài chính; phát huy tốt khi có thêm Tả Phù, Hữu Bật và Tam Hóa. Với bản thân, đây là điểm tựa để sống nề nếp và giữ vai trò đáng tin trong nhóm.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -4922,10 +4930,64 @@
     "viTri": "tam-phuong"
    }
   ],
+  "khong": [
+   {
+    "phaCachMuc3": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ]
+   }
+  ],
   "cachCuc": "Tử Phủ Vũ Tướng",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Tử Phủ Vũ Tướng có đủ sao nhưng tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): xu hướng ổn định, quản lý, tổ chức vẫn còn, cần thêm nỗ lực và sự cẩn trọng để giữ vững.",
+  "noiDung": "Với Mệnh: Thế Tử Phủ Vũ Tướng có đủ sao nhưng tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): xu hướng ổn định, quản lý, tổ chức vẫn còn, cần thêm nỗ lực và sự cẩn trọng để giữ vững. Với bản thân, đây là điểm tựa để sống nề nếp và giữ vai trò đáng tin trong nhóm.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Tử Phủ Vũ Tướng"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-menh-CC-TuPhuVuTuong-PHA3",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-01",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ]
+   }
+  ],
+  "cachCuc": "Tử Phủ Vũ Tướng",
+  "uuTien": 85,
+  "muc": "cach-cuc",
+  "noiDung": "Với Mệnh: có dáng dấp của thế Tử Phủ Vũ Tướng (thiên về ổn định, quản lý, tổ chức), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Với bản thân, đây là điểm tựa để sống nề nếp và giữ vai trò đáng tin trong nhóm.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -4968,12 +5030,19 @@
     ],
     "toiThieu": 2,
     "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Thất Sát",
+     "Phá Quân",
+     "Tham Lang"
+    ]
    }
   ],
   "cachCuc": "Sát Phá Tham",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Thất Sát, Phá Quân, Tham Lang cùng hội trong tam phương, tạo thế Sát Phá Tham: thiên về hành động, khai phá và thay đổi, hợp môi trường cạnh tranh và đi xa; hợp hơn khi các sát tinh đắc địa.",
+  "noiDung": "Với Mệnh: Thất Sát, Phá Quân, Tham Lang cùng hội trong tam phương, tạo thế Sát Phá Tham: thiên về hành động, khai phá và thay đổi, hợp môi trường cạnh tranh và đi xa; hợp hơn khi các sát tinh đắc địa. Với bản thân, đời sống nhiều chuyển biến; nên chọn một mục tiêu chính mỗi giai đoạn để không dàn trải.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -5017,10 +5086,61 @@
     "viTri": "tam-phuong"
    }
   ],
+  "khong": [
+   {
+    "phaCachMuc3": [
+     "Thất Sát",
+     "Phá Quân",
+     "Tham Lang"
+    ]
+   }
+  ],
   "cachCuc": "Sát Phá Tham",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Sát Phá Tham có đủ sao và tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): nhịp biến động cao hơn, nên chọn mục tiêu rõ và tránh dàn trải sức lực.",
+  "noiDung": "Với Mệnh: Thế Sát Phá Tham có đủ sao và tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): nhịp biến động cao hơn, nên chọn mục tiêu rõ và tránh dàn trải sức lực. Với bản thân, đời sống nhiều chuyển biến; nên chọn một mục tiêu chính mỗi giai đoạn để không dàn trải.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Sát Phá Tham"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-menh-CC-SatPhaTham-PHA3",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-02",
+   "MENH-CC-07"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thất Sát",
+     "Phá Quân",
+     "Tham Lang"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Thất Sát",
+     "Phá Quân",
+     "Tham Lang"
+    ]
+   }
+  ],
+  "cachCuc": "Sát Phá Tham",
+  "uuTien": 85,
+  "muc": "cach-cuc",
+  "noiDung": "Với Mệnh: có dáng dấp của thế Sát Phá Tham (thiên về hành động, khai phá, thay đổi), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Với bản thân, đời sống nhiều chuyển biến; nên chọn một mục tiêu chính mỗi giai đoạn để không dàn trải.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -5064,12 +5184,20 @@
     ],
     "toiThieu": 2,
     "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương"
+    ]
    }
   ],
   "cachCuc": "Cơ Nguyệt Đồng Lương",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Thiên Cơ, Thái Âm, Thiên Đồng, Thiên Lương cùng hội trong tam phương, tạo thế Cơ Nguyệt Đồng Lương: thiên về trí tuệ, chuyên môn, công việc ổn định trong tổ chức (hành chính, giáo dục, dịch vụ, nghiên cứu); hợp thêm Tam Hóa, Văn Xương, Văn Khúc.",
+  "noiDung": "Với Mệnh: Thiên Cơ, Thái Âm, Thiên Đồng, Thiên Lương cùng hội trong tam phương, tạo thế Cơ Nguyệt Đồng Lương: thiên về trí tuệ, chuyên môn, công việc ổn định trong tổ chức (hành chính, giáo dục, dịch vụ, nghiên cứu); hợp thêm Tam Hóa, Văn Xương, Văn Khúc. Với bản thân, mạnh ở suy xét và chuyên môn; nên biến ý tưởng thành việc làm cụ thể theo từng bước.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -5114,10 +5242,64 @@
     "viTri": "tam-phuong"
    }
   ],
+  "khong": [
+   {
+    "phaCachMuc3": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương"
+    ]
+   }
+  ],
   "cachCuc": "Cơ Nguyệt Đồng Lương",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Cơ Nguyệt Đồng Lương có đủ sao nhưng tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): xu hướng ổn định, chuyên môn vẫn còn, cần chủ động hơn để không dừng ở lối quen.",
+  "noiDung": "Với Mệnh: Thế Cơ Nguyệt Đồng Lương có đủ sao nhưng tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): xu hướng ổn định, chuyên môn vẫn còn, cần chủ động hơn để không dừng ở lối quen. Với bản thân, mạnh ở suy xét và chuyên môn; nên biến ý tưởng thành việc làm cụ thể theo từng bước.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Cơ Nguyệt Đồng Lương"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-menh-CC-CoNguyetdongLuong-PHA3",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-03",
+   "MENH-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương"
+    ]
+   }
+  ],
+  "cachCuc": "Cơ Nguyệt Đồng Lương",
+  "uuTien": 85,
+  "muc": "cach-cuc",
+  "noiDung": "Với Mệnh: có dáng dấp của thế Cơ Nguyệt Đồng Lương (thiên về trí tuệ, chuyên môn, công việc ổn định), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Với bản thân, mạnh ở suy xét và chuyên môn; nên biến ý tưởng thành việc làm cụ thể theo từng bước.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -5158,12 +5340,18 @@
     ],
     "toiThieu": 2,
     "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Cự Môn",
+     "Thái Dương"
+    ]
    }
   ],
   "cachCuc": "Cự Nhật",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Cự Môn và Thái Dương đồng cung, tạo thế Cự Nhật: thiên về ngôn luận, truyền đạt, ngoại giao và danh tiếng; Thái Dương sáng thì Cự Môn bớt thị phi.",
+  "noiDung": "Với Mệnh: Cự Môn và Thái Dương đồng cung, tạo thế Cự Nhật: thiên về ngôn luận, truyền đạt, ngoại giao và danh tiếng; Thái Dương sáng thì Cự Môn bớt thị phi. Với bản thân, mạnh ở lời nói và truyền đạt; nên giữ lời rõ ràng, tránh nói khi đang nóng.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -5205,10 +5393,57 @@
     "viTri": "tam-phuong"
    }
   ],
+  "khong": [
+   {
+    "phaCachMuc3": [
+     "Cự Môn",
+     "Thái Dương"
+    ]
+   }
+  ],
   "cachCuc": "Cự Nhật",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Cự Nhật (Cự Môn và Thái Dương đồng cung) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): thế mạnh ngôn luận, truyền đạt vẫn còn, cần giữ lời nói rõ ràng để tránh hiểu lầm.",
+  "noiDung": "Với Mệnh: Thế Cự Nhật (Cự Môn và Thái Dương đồng cung) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): thế mạnh ngôn luận, truyền đạt vẫn còn, cần giữ lời nói rõ ràng để tránh hiểu lầm. Với bản thân, mạnh ở lời nói và truyền đạt; nên giữ lời rõ ràng, tránh nói khi đang nóng.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Cự Nhật"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-menh-CC-CuNhat-PHA3",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-04",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Cự Môn",
+     "Thái Dương"
+    ]
+   }
+  ],
+  "cachCuc": "Cự Nhật",
+  "uuTien": 85,
+  "muc": "cach-cuc",
+  "noiDung": "Với Mệnh: có dáng dấp của thế Cự Nhật (thiên về ngôn luận, truyền đạt), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Với bản thân, mạnh ở lời nói và truyền đạt; nên giữ lời rõ ràng, tránh nói khi đang nóng.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -5244,7 +5479,7 @@
   "cachCuc": "Hỏa Tham / Linh Tham",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Tham Lang sáng đồng cung Hỏa Tinh, tạo thế Hỏa Tham: năng lượng bứt phá mạnh, có uy danh, hợp kinh doanh và những lĩnh vực cạnh tranh.",
+  "noiDung": "Với Mệnh: Tham Lang sáng đồng cung Hỏa Tinh, tạo thế Hỏa Tham: năng lượng bứt phá mạnh, có uy danh, hợp kinh doanh và những lĩnh vực cạnh tranh. Với bản thân, đời sống nhiều chuyển biến; nên chọn một mục tiêu chính mỗi giai đoạn để không dàn trải.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -5282,7 +5517,7 @@
   "cachCuc": "Hỏa Tham / Linh Tham",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Tham Lang đồng cung Hỏa Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Hỏa Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc và chọn một mục tiêu chính.",
+  "noiDung": "Với Mệnh: Tham Lang đồng cung Hỏa Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Hỏa Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc và chọn một mục tiêu chính. Với bản thân, đời sống nhiều chuyển biến; nên chọn một mục tiêu chính mỗi giai đoạn để không dàn trải.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -5318,7 +5553,7 @@
   "cachCuc": "Hỏa Tham / Linh Tham",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Tham Lang sáng đồng cung Linh Tinh, tạo thế Linh Tham: năng lượng bứt phá mạnh, có uy danh, hợp kinh doanh và những lĩnh vực cạnh tranh.",
+  "noiDung": "Với Mệnh: Tham Lang sáng đồng cung Linh Tinh, tạo thế Linh Tham: năng lượng bứt phá mạnh, có uy danh, hợp kinh doanh và những lĩnh vực cạnh tranh. Với bản thân, đời sống nhiều chuyển biến; nên chọn một mục tiêu chính mỗi giai đoạn để không dàn trải.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -5356,7 +5591,7 @@
   "cachCuc": "Hỏa Tham / Linh Tham",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Tham Lang đồng cung Linh Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Linh Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc và chọn một mục tiêu chính.",
+  "noiDung": "Với Mệnh: Tham Lang đồng cung Linh Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Linh Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc và chọn một mục tiêu chính. Với bản thân, đời sống nhiều chuyển biến; nên chọn một mục tiêu chính mỗi giai đoạn để không dàn trải.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -5397,12 +5632,18 @@
     ],
     "toiThieu": 2,
     "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Tử Vi",
+     "Phá Quân"
+    ]
    }
   ],
   "cachCuc": "Tử Phá",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Tử Vi và Phá Quân đồng cung, tạo thế Tử Phá: vừa coi trọng vị thế vừa thích đổi mới, đời sống nhiều chuyển biến, hợp con đường tự thân lập nghiệp.",
+  "noiDung": "Với Mệnh: Tử Vi và Phá Quân đồng cung, tạo thế Tử Phá: vừa coi trọng vị thế vừa thích đổi mới, đời sống nhiều chuyển biến, hợp con đường tự thân lập nghiệp. Với bản thân, đời sống nhiều chuyển biến; nên chọn một mục tiêu chính mỗi giai đoạn để không dàn trải.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -5444,10 +5685,57 @@
     "viTri": "tam-phuong"
    }
   ],
+  "khong": [
+   {
+    "phaCachMuc3": [
+     "Tử Vi",
+     "Phá Quân"
+    ]
+   }
+  ],
   "cachCuc": "Tử Phá",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Tử Phá (Tử Vi và Phá Quân đồng cung) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): xu hướng đổi mới và chuyển biến cao hơn, nên chọn hướng đi rõ và cân nhắc kỹ trước quyết định lớn.",
+  "noiDung": "Với Mệnh: Thế Tử Phá (Tử Vi và Phá Quân đồng cung) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): xu hướng đổi mới và chuyển biến cao hơn, nên chọn hướng đi rõ và cân nhắc kỹ trước quyết định lớn. Với bản thân, đời sống nhiều chuyển biến; nên chọn một mục tiêu chính mỗi giai đoạn để không dàn trải.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Tử Phá"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-menh-CC-TuPha-PHA3",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-07",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Phá Quân"
+    ],
+    "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Tử Vi",
+     "Phá Quân"
+    ]
+   }
+  ],
+  "cachCuc": "Tử Phá",
+  "uuTien": 85,
+  "muc": "cach-cuc",
+  "noiDung": "Với Mệnh: có dáng dấp của thế Tử Phá (vừa coi trọng vị thế vừa thích đổi mới), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Với bản thân, đời sống nhiều chuyển biến; nên chọn một mục tiêu chính mỗi giai đoạn để không dàn trải.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -5491,6 +5779,12 @@
     "viTri": "tam-phuong"
    },
    {
+    "phaCachMuc3": [
+     "Thiên Cơ",
+     "Thiên Lương"
+    ]
+   },
+   {
     "sao": [
      "Thiên Cơ",
      "Thái Âm",
@@ -5504,7 +5798,7 @@
   "cachCuc": "Cơ Lương",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Thiên Cơ và Thiên Lương hội trong tam phương, tạo thế Cơ Lương: giỏi bàn mưu lược và phân tích, hợp công việc cần suy xét kỹ.",
+  "noiDung": "Với Mệnh: Thiên Cơ và Thiên Lương hội trong tam phương, tạo thế Cơ Lương: giỏi bàn mưu lược và phân tích, hợp công việc cần suy xét kỹ. Với bản thân, mạnh ở suy xét và chuyên môn; nên biến ý tưởng thành việc làm cụ thể theo từng bước.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -5549,6 +5843,12 @@
   ],
   "khong": [
    {
+    "phaCachMuc3": [
+     "Thiên Cơ",
+     "Thiên Lương"
+    ]
+   },
+   {
     "sao": [
      "Thiên Cơ",
      "Thái Âm",
@@ -5562,7 +5862,59 @@
   "cachCuc": "Cơ Lương",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Cơ Lương (Thiên Cơ và Thiên Lương hội trong tam phương) có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): khả năng phân tích, bàn mưu vẫn còn, cần chủ động hành động để ý tưởng thành kết quả.",
+  "noiDung": "Với Mệnh: Thế Cơ Lương (Thiên Cơ và Thiên Lương hội trong tam phương) có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): khả năng phân tích, bàn mưu vẫn còn, cần chủ động hành động để ý tưởng thành kết quả. Với bản thân, mạnh ở suy xét và chuyên môn; nên biến ý tưởng thành việc làm cụ thể theo từng bước.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Cơ Lương"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-menh-CC-CoLuong-PHA3",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "loai": "CC",
+  "maNghienCuu": [
+   "MENH-TCO-03",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thiên Lương"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Thiên Cơ",
+     "Thiên Lương"
+    ]
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Cơ Lương",
+  "uuTien": 85,
+  "muc": "cach-cuc",
+  "noiDung": "Với Mệnh: có dáng dấp của thế Cơ Lương (giỏi bàn mưu và phân tích), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Với bản thân, mạnh ở suy xét và chuyên môn; nên biến ý tưởng thành việc làm cụ thể theo từng bước.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -5604,12 +5956,18 @@
     ],
     "toiThieu": 2,
     "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Thái Dương",
+     "Thái Âm"
+    ]
    }
   ],
   "cachCuc": "Nhật Nguyệt",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Thái Dương và Thái Âm cùng hội trong tam phương, tạo thế Nhật Nguyệt: cùng sáng là cách tốt, chủ hiển đạt; nếu một trong hai kém sáng thì cần thêm nỗ lực và sự bền bỉ.",
+  "noiDung": "Với Mệnh: Thái Dương và Thái Âm cùng hội trong tam phương, tạo thế Nhật Nguyệt: cùng sáng là cách tốt, chủ hiển đạt; nếu một trong hai kém sáng thì cần thêm nỗ lực và sự bền bỉ. Với bản thân, đây là điểm tựa để sống nề nếp và giữ vai trò đáng tin trong nhóm.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -5652,10 +6010,18 @@
     "viTri": "tam-phuong"
    }
   ],
+  "khong": [
+   {
+    "phaCachMuc3": [
+     "Thái Dương",
+     "Thái Âm"
+    ]
+   }
+  ],
   "cachCuc": "Nhật Nguyệt",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Nhật Nguyệt (Thái Dương và Thái Âm cùng hội trong tam phương) có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): cần bền bỉ và tự tạo cơ hội để phát huy được ánh sáng của hai sao.",
+  "noiDung": "Với Mệnh: Thế Nhật Nguyệt (Thái Dương và Thái Âm cùng hội trong tam phương) có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): cần bền bỉ và tự tạo cơ hội để phát huy được ánh sáng của hai sao. Với bản thân, đây là điểm tựa để sống nề nếp và giữ vai trò đáng tin trong nhóm.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -5667,86 +6033,35 @@
   ]
  },
  {
-  "id": "KHUNG-menh-CC-Thamdao",
-  "chuyenDe": "menh",
-  "cung": "Mệnh",
-  "loai": "CC",
-  "maNghienCuu": [
-   "CHUNG-SP-06",
-   "CHUNG-CT-THL-01"
-  ],
-  "dieuKien": [
-   {
-    "sao": [
-     "Tham Lang",
-     "Đào Hoa"
-    ],
-    "viTri": "tam-phuong"
-   }
-  ],
-  "khong": [
-   {
-    "sao": [
-     "Địa Không",
-     "Địa Kiếp",
-     "Kình Dương",
-     "Đà La",
-     "Hỏa Tinh",
-     "Linh Tinh"
-    ],
-    "toiThieu": 2,
-    "viTri": "tam-phuong"
-   }
-  ],
-  "cachCuc": "Tham Đào",
-  "uuTien": 100,
-  "muc": "cach-cuc",
-  "noiDung": "Tham Lang đồng cung Đào Hoa, tạo thế Tham Đào: sức hút và duyên giao tiếp lớn, nhiều ham muốn và thích cái mới; nên cân bằng giữa duyên và nguyên tắc cá nhân.",
-  "nguon": [
-   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
-   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
-  ],
-  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
-  "truongPhai": "Tam hợp phái Việt",
-  "yeuTo": [
-   "Cách Tham Đào"
-  ]
- },
- {
   "phaCach": true,
-  "id": "KHUNG-menh-CC-Thamdao-PHA",
+  "id": "KHUNG-menh-CC-NhatNguyet-PHA3",
   "chuyenDe": "menh",
   "cung": "Mệnh",
   "loai": "CC",
   "maNghienCuu": [
-   "CHUNG-SP-06",
-   "CHUNG-CT-THL-01"
+   "CHUNG-CC-05",
+   "CHUNG-CC-08"
   ],
   "dieuKien": [
    {
     "sao": [
-     "Tham Lang",
-     "Đào Hoa"
+     "Thái Dương",
+     "Thái Âm"
     ],
+    "rai": true,
     "viTri": "tam-phuong"
    },
    {
-    "sao": [
-     "Địa Không",
-     "Địa Kiếp",
-     "Kình Dương",
-     "Đà La",
-     "Hỏa Tinh",
-     "Linh Tinh"
-    ],
-    "toiThieu": 2,
-    "viTri": "tam-phuong"
+    "phaCachMuc3": [
+     "Thái Dương",
+     "Thái Âm"
+    ]
    }
   ],
-  "cachCuc": "Tham Đào",
-  "uuTien": 90,
+  "cachCuc": "Nhật Nguyệt",
+  "uuTien": 85,
   "muc": "cach-cuc",
-  "noiDung": "Thế Tham Đào (Tham Lang đồng cung Đào Hoa) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): sức hút vẫn còn, nên rõ ràng về điều mình muốn để tránh phân tán.",
+  "noiDung": "Với Mệnh: có dáng dấp của thế Nhật Nguyệt (chủ hiển đạt khi cả hai sao cùng sáng), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Với bản thân, đây là điểm tựa để sống nề nếp và giữ vai trò đáng tin trong nhóm.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -5754,7 +6069,7 @@
   "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
   "truongPhai": "Tam hợp phái Việt",
   "yeuTo": [
-   "Cách Tham Đào"
+   "Cách Nhật Nguyệt"
   ]
  },
  {
@@ -5866,12 +6181,20 @@
     ],
     "toiThieu": 2,
     "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ]
    }
   ],
   "cachCuc": "Tử Phủ Vũ Tướng",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Tử Vi, Thiên Phủ, Vũ Khúc, Thiên Tướng cùng hội trong tam phương, tạo thế Tử Phủ Vũ Tướng: thiên về ổn định, quản lý, tổ chức và tài chính; phát huy tốt khi có thêm Tả Phù, Hữu Bật và Tam Hóa.",
+  "noiDung": "Với Quan Lộc: Tử Vi, Thiên Phủ, Vũ Khúc, Thiên Tướng cùng hội trong tam phương, tạo thế Tử Phủ Vũ Tướng: thiên về ổn định, quản lý, tổ chức và tài chính; phát huy tốt khi có thêm Tả Phù, Hữu Bật và Tam Hóa. Trong công việc, hợp vị trí cần tính tổ chức và trách nhiệm; nên tìm môi trường có quy trình rõ.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -5916,10 +6239,64 @@
     "viTri": "tam-phuong"
    }
   ],
+  "khong": [
+   {
+    "phaCachMuc3": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ]
+   }
+  ],
   "cachCuc": "Tử Phủ Vũ Tướng",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Tử Phủ Vũ Tướng có đủ sao nhưng tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): xu hướng ổn định, quản lý, tổ chức vẫn còn, cần thêm nỗ lực và sự cẩn trọng để giữ vững.",
+  "noiDung": "Với Quan Lộc: Thế Tử Phủ Vũ Tướng có đủ sao nhưng tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): xu hướng ổn định, quản lý, tổ chức vẫn còn, cần thêm nỗ lực và sự cẩn trọng để giữ vững. Trong công việc, hợp vị trí cần tính tổ chức và trách nhiệm; nên tìm môi trường có quy trình rõ.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Tử Phủ Vũ Tướng"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-quan-loc-CC-TuPhuVuTuong-PHA3",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-01",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ]
+   }
+  ],
+  "cachCuc": "Tử Phủ Vũ Tướng",
+  "uuTien": 85,
+  "muc": "cach-cuc",
+  "noiDung": "Với Quan Lộc: có dáng dấp của thế Tử Phủ Vũ Tướng (thiên về ổn định, quản lý, tổ chức), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Trong công việc, hợp vị trí cần tính tổ chức và trách nhiệm; nên tìm môi trường có quy trình rõ.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -5962,12 +6339,19 @@
     ],
     "toiThieu": 2,
     "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Thất Sát",
+     "Phá Quân",
+     "Tham Lang"
+    ]
    }
   ],
   "cachCuc": "Sát Phá Tham",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Thất Sát, Phá Quân, Tham Lang cùng hội trong tam phương, tạo thế Sát Phá Tham: thiên về hành động, khai phá và thay đổi, hợp môi trường cạnh tranh và đi xa; hợp hơn khi các sát tinh đắc địa.",
+  "noiDung": "Với Quan Lộc: Thất Sát, Phá Quân, Tham Lang cùng hội trong tam phương, tạo thế Sát Phá Tham: thiên về hành động, khai phá và thay đổi, hợp môi trường cạnh tranh và đi xa; hợp hơn khi các sát tinh đắc địa. Trong công việc, hợp môi trường cạnh tranh và thay đổi; nên thử việc mới có tính toán chứ không bốc đồng.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -6011,10 +6395,61 @@
     "viTri": "tam-phuong"
    }
   ],
+  "khong": [
+   {
+    "phaCachMuc3": [
+     "Thất Sát",
+     "Phá Quân",
+     "Tham Lang"
+    ]
+   }
+  ],
   "cachCuc": "Sát Phá Tham",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Sát Phá Tham có đủ sao và tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): nhịp biến động cao hơn, nên chọn mục tiêu rõ và tránh dàn trải sức lực.",
+  "noiDung": "Với Quan Lộc: Thế Sát Phá Tham có đủ sao và tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): nhịp biến động cao hơn, nên chọn mục tiêu rõ và tránh dàn trải sức lực. Trong công việc, hợp môi trường cạnh tranh và thay đổi; nên thử việc mới có tính toán chứ không bốc đồng.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Sát Phá Tham"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-quan-loc-CC-SatPhaTham-PHA3",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-02",
+   "MENH-CC-07"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thất Sát",
+     "Phá Quân",
+     "Tham Lang"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Thất Sát",
+     "Phá Quân",
+     "Tham Lang"
+    ]
+   }
+  ],
+  "cachCuc": "Sát Phá Tham",
+  "uuTien": 85,
+  "muc": "cach-cuc",
+  "noiDung": "Với Quan Lộc: có dáng dấp của thế Sát Phá Tham (thiên về hành động, khai phá, thay đổi), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Trong công việc, hợp môi trường cạnh tranh và thay đổi; nên thử việc mới có tính toán chứ không bốc đồng.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -6058,12 +6493,20 @@
     ],
     "toiThieu": 2,
     "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương"
+    ]
    }
   ],
   "cachCuc": "Cơ Nguyệt Đồng Lương",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Thiên Cơ, Thái Âm, Thiên Đồng, Thiên Lương cùng hội trong tam phương, tạo thế Cơ Nguyệt Đồng Lương: thiên về trí tuệ, chuyên môn, công việc ổn định trong tổ chức (hành chính, giáo dục, dịch vụ, nghiên cứu); hợp thêm Tam Hóa, Văn Xương, Văn Khúc.",
+  "noiDung": "Với Quan Lộc: Thiên Cơ, Thái Âm, Thiên Đồng, Thiên Lương cùng hội trong tam phương, tạo thế Cơ Nguyệt Đồng Lương: thiên về trí tuệ, chuyên môn, công việc ổn định trong tổ chức (hành chính, giáo dục, dịch vụ, nghiên cứu); hợp thêm Tam Hóa, Văn Xương, Văn Khúc. Trong công việc, hợp nghề cần phân tích và chuyên môn; nên chủ động nhận việc để năng lực được thấy.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -6108,10 +6551,64 @@
     "viTri": "tam-phuong"
    }
   ],
+  "khong": [
+   {
+    "phaCachMuc3": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương"
+    ]
+   }
+  ],
   "cachCuc": "Cơ Nguyệt Đồng Lương",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Cơ Nguyệt Đồng Lương có đủ sao nhưng tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): xu hướng ổn định, chuyên môn vẫn còn, cần chủ động hơn để không dừng ở lối quen.",
+  "noiDung": "Với Quan Lộc: Thế Cơ Nguyệt Đồng Lương có đủ sao nhưng tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): xu hướng ổn định, chuyên môn vẫn còn, cần chủ động hơn để không dừng ở lối quen. Trong công việc, hợp nghề cần phân tích và chuyên môn; nên chủ động nhận việc để năng lực được thấy.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Cơ Nguyệt Đồng Lương"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-quan-loc-CC-CoNguyetdongLuong-PHA3",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-03",
+   "MENH-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương"
+    ]
+   }
+  ],
+  "cachCuc": "Cơ Nguyệt Đồng Lương",
+  "uuTien": 85,
+  "muc": "cach-cuc",
+  "noiDung": "Với Quan Lộc: có dáng dấp của thế Cơ Nguyệt Đồng Lương (thiên về trí tuệ, chuyên môn, công việc ổn định), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Trong công việc, hợp nghề cần phân tích và chuyên môn; nên chủ động nhận việc để năng lực được thấy.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -6152,12 +6649,18 @@
     ],
     "toiThieu": 2,
     "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Cự Môn",
+     "Thái Dương"
+    ]
    }
   ],
   "cachCuc": "Cự Nhật",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Cự Môn và Thái Dương đồng cung, tạo thế Cự Nhật: thiên về ngôn luận, truyền đạt, ngoại giao và danh tiếng; Thái Dương sáng thì Cự Môn bớt thị phi.",
+  "noiDung": "Với Quan Lộc: Cự Môn và Thái Dương đồng cung, tạo thế Cự Nhật: thiên về ngôn luận, truyền đạt, ngoại giao và danh tiếng; Thái Dương sáng thì Cự Môn bớt thị phi. Trong công việc, hợp nghề cần giao tiếp và thuyết phục; nên viết lại thỏa thuận quan trọng cho rõ.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -6199,10 +6702,57 @@
     "viTri": "tam-phuong"
    }
   ],
+  "khong": [
+   {
+    "phaCachMuc3": [
+     "Cự Môn",
+     "Thái Dương"
+    ]
+   }
+  ],
   "cachCuc": "Cự Nhật",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Cự Nhật (Cự Môn và Thái Dương đồng cung) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): thế mạnh ngôn luận, truyền đạt vẫn còn, cần giữ lời nói rõ ràng để tránh hiểu lầm.",
+  "noiDung": "Với Quan Lộc: Thế Cự Nhật (Cự Môn và Thái Dương đồng cung) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): thế mạnh ngôn luận, truyền đạt vẫn còn, cần giữ lời nói rõ ràng để tránh hiểu lầm. Trong công việc, hợp nghề cần giao tiếp và thuyết phục; nên viết lại thỏa thuận quan trọng cho rõ.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Cự Nhật"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-quan-loc-CC-CuNhat-PHA3",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-04",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Cự Môn",
+     "Thái Dương"
+    ]
+   }
+  ],
+  "cachCuc": "Cự Nhật",
+  "uuTien": 85,
+  "muc": "cach-cuc",
+  "noiDung": "Với Quan Lộc: có dáng dấp của thế Cự Nhật (thiên về ngôn luận, truyền đạt), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Trong công việc, hợp nghề cần giao tiếp và thuyết phục; nên viết lại thỏa thuận quan trọng cho rõ.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -6238,7 +6788,7 @@
   "cachCuc": "Hỏa Tham / Linh Tham",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Tham Lang sáng đồng cung Hỏa Tinh, tạo thế Hỏa Tham: năng lượng bứt phá mạnh, có uy danh, hợp kinh doanh và những lĩnh vực cạnh tranh.",
+  "noiDung": "Với Quan Lộc: Tham Lang sáng đồng cung Hỏa Tinh, tạo thế Hỏa Tham: năng lượng bứt phá mạnh, có uy danh, hợp kinh doanh và những lĩnh vực cạnh tranh. Trong công việc, hợp môi trường cạnh tranh và thay đổi; nên thử việc mới có tính toán chứ không bốc đồng.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -6276,7 +6826,7 @@
   "cachCuc": "Hỏa Tham / Linh Tham",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Tham Lang đồng cung Hỏa Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Hỏa Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc và chọn một mục tiêu chính.",
+  "noiDung": "Với Quan Lộc: Tham Lang đồng cung Hỏa Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Hỏa Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc và chọn một mục tiêu chính. Trong công việc, hợp môi trường cạnh tranh và thay đổi; nên thử việc mới có tính toán chứ không bốc đồng.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -6312,7 +6862,7 @@
   "cachCuc": "Hỏa Tham / Linh Tham",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Tham Lang sáng đồng cung Linh Tinh, tạo thế Linh Tham: năng lượng bứt phá mạnh, có uy danh, hợp kinh doanh và những lĩnh vực cạnh tranh.",
+  "noiDung": "Với Quan Lộc: Tham Lang sáng đồng cung Linh Tinh, tạo thế Linh Tham: năng lượng bứt phá mạnh, có uy danh, hợp kinh doanh và những lĩnh vực cạnh tranh. Trong công việc, hợp môi trường cạnh tranh và thay đổi; nên thử việc mới có tính toán chứ không bốc đồng.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -6350,7 +6900,7 @@
   "cachCuc": "Hỏa Tham / Linh Tham",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Tham Lang đồng cung Linh Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Linh Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc và chọn một mục tiêu chính.",
+  "noiDung": "Với Quan Lộc: Tham Lang đồng cung Linh Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Linh Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc và chọn một mục tiêu chính. Trong công việc, hợp môi trường cạnh tranh và thay đổi; nên thử việc mới có tính toán chứ không bốc đồng.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -6391,12 +6941,18 @@
     ],
     "toiThieu": 2,
     "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Tử Vi",
+     "Phá Quân"
+    ]
    }
   ],
   "cachCuc": "Tử Phá",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Tử Vi và Phá Quân đồng cung, tạo thế Tử Phá: vừa coi trọng vị thế vừa thích đổi mới, đời sống nhiều chuyển biến, hợp con đường tự thân lập nghiệp.",
+  "noiDung": "Với Quan Lộc: Tử Vi và Phá Quân đồng cung, tạo thế Tử Phá: vừa coi trọng vị thế vừa thích đổi mới, đời sống nhiều chuyển biến, hợp con đường tự thân lập nghiệp. Trong công việc, hợp môi trường cạnh tranh và thay đổi; nên thử việc mới có tính toán chứ không bốc đồng.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -6438,10 +6994,57 @@
     "viTri": "tam-phuong"
    }
   ],
+  "khong": [
+   {
+    "phaCachMuc3": [
+     "Tử Vi",
+     "Phá Quân"
+    ]
+   }
+  ],
   "cachCuc": "Tử Phá",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Tử Phá (Tử Vi và Phá Quân đồng cung) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): xu hướng đổi mới và chuyển biến cao hơn, nên chọn hướng đi rõ và cân nhắc kỹ trước quyết định lớn.",
+  "noiDung": "Với Quan Lộc: Thế Tử Phá (Tử Vi và Phá Quân đồng cung) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): xu hướng đổi mới và chuyển biến cao hơn, nên chọn hướng đi rõ và cân nhắc kỹ trước quyết định lớn. Trong công việc, hợp môi trường cạnh tranh và thay đổi; nên thử việc mới có tính toán chứ không bốc đồng.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Tử Phá"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-quan-loc-CC-TuPha-PHA3",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-07",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Phá Quân"
+    ],
+    "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Tử Vi",
+     "Phá Quân"
+    ]
+   }
+  ],
+  "cachCuc": "Tử Phá",
+  "uuTien": 85,
+  "muc": "cach-cuc",
+  "noiDung": "Với Quan Lộc: có dáng dấp của thế Tử Phá (vừa coi trọng vị thế vừa thích đổi mới), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Trong công việc, hợp môi trường cạnh tranh và thay đổi; nên thử việc mới có tính toán chứ không bốc đồng.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -6485,6 +7088,12 @@
     "viTri": "tam-phuong"
    },
    {
+    "phaCachMuc3": [
+     "Thiên Cơ",
+     "Thiên Lương"
+    ]
+   },
+   {
     "sao": [
      "Thiên Cơ",
      "Thái Âm",
@@ -6498,7 +7107,7 @@
   "cachCuc": "Cơ Lương",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Thiên Cơ và Thiên Lương hội trong tam phương, tạo thế Cơ Lương: giỏi bàn mưu lược và phân tích, hợp công việc cần suy xét kỹ.",
+  "noiDung": "Với Quan Lộc: Thiên Cơ và Thiên Lương hội trong tam phương, tạo thế Cơ Lương: giỏi bàn mưu lược và phân tích, hợp công việc cần suy xét kỹ. Trong công việc, hợp nghề cần phân tích và chuyên môn; nên chủ động nhận việc để năng lực được thấy.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -6543,6 +7152,12 @@
   ],
   "khong": [
    {
+    "phaCachMuc3": [
+     "Thiên Cơ",
+     "Thiên Lương"
+    ]
+   },
+   {
     "sao": [
      "Thiên Cơ",
      "Thái Âm",
@@ -6556,7 +7171,59 @@
   "cachCuc": "Cơ Lương",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Cơ Lương (Thiên Cơ và Thiên Lương hội trong tam phương) có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): khả năng phân tích, bàn mưu vẫn còn, cần chủ động hành động để ý tưởng thành kết quả.",
+  "noiDung": "Với Quan Lộc: Thế Cơ Lương (Thiên Cơ và Thiên Lương hội trong tam phương) có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): khả năng phân tích, bàn mưu vẫn còn, cần chủ động hành động để ý tưởng thành kết quả. Trong công việc, hợp nghề cần phân tích và chuyên môn; nên chủ động nhận việc để năng lực được thấy.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Cơ Lương"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-quan-loc-CC-CoLuong-PHA3",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "loai": "CC",
+  "maNghienCuu": [
+   "MENH-TCO-03",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thiên Lương"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Thiên Cơ",
+     "Thiên Lương"
+    ]
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Cơ Lương",
+  "uuTien": 85,
+  "muc": "cach-cuc",
+  "noiDung": "Với Quan Lộc: có dáng dấp của thế Cơ Lương (giỏi bàn mưu và phân tích), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Trong công việc, hợp nghề cần phân tích và chuyên môn; nên chủ động nhận việc để năng lực được thấy.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -6598,12 +7265,18 @@
     ],
     "toiThieu": 2,
     "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Thái Dương",
+     "Thái Âm"
+    ]
    }
   ],
   "cachCuc": "Nhật Nguyệt",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Thái Dương và Thái Âm cùng hội trong tam phương, tạo thế Nhật Nguyệt: cùng sáng là cách tốt, chủ hiển đạt; nếu một trong hai kém sáng thì cần thêm nỗ lực và sự bền bỉ.",
+  "noiDung": "Với Quan Lộc: Thái Dương và Thái Âm cùng hội trong tam phương, tạo thế Nhật Nguyệt: cùng sáng là cách tốt, chủ hiển đạt; nếu một trong hai kém sáng thì cần thêm nỗ lực và sự bền bỉ. Trong công việc, hợp vị trí cần tính tổ chức và trách nhiệm; nên tìm môi trường có quy trình rõ.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -6646,10 +7319,18 @@
     "viTri": "tam-phuong"
    }
   ],
+  "khong": [
+   {
+    "phaCachMuc3": [
+     "Thái Dương",
+     "Thái Âm"
+    ]
+   }
+  ],
   "cachCuc": "Nhật Nguyệt",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Nhật Nguyệt (Thái Dương và Thái Âm cùng hội trong tam phương) có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): cần bền bỉ và tự tạo cơ hội để phát huy được ánh sáng của hai sao.",
+  "noiDung": "Với Quan Lộc: Thế Nhật Nguyệt (Thái Dương và Thái Âm cùng hội trong tam phương) có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): cần bền bỉ và tự tạo cơ hội để phát huy được ánh sáng của hai sao. Trong công việc, hợp vị trí cần tính tổ chức và trách nhiệm; nên tìm môi trường có quy trình rõ.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -6661,86 +7342,35 @@
   ]
  },
  {
-  "id": "KHUNG-quan-loc-CC-Thamdao",
-  "chuyenDe": "quan-loc",
-  "cung": "Quan Lộc",
-  "loai": "CC",
-  "maNghienCuu": [
-   "CHUNG-SP-06",
-   "CHUNG-CT-THL-01"
-  ],
-  "dieuKien": [
-   {
-    "sao": [
-     "Tham Lang",
-     "Đào Hoa"
-    ],
-    "viTri": "tam-phuong"
-   }
-  ],
-  "khong": [
-   {
-    "sao": [
-     "Địa Không",
-     "Địa Kiếp",
-     "Kình Dương",
-     "Đà La",
-     "Hỏa Tinh",
-     "Linh Tinh"
-    ],
-    "toiThieu": 2,
-    "viTri": "tam-phuong"
-   }
-  ],
-  "cachCuc": "Tham Đào",
-  "uuTien": 100,
-  "muc": "cach-cuc",
-  "noiDung": "Tham Lang đồng cung Đào Hoa, tạo thế Tham Đào: sức hút và duyên giao tiếp lớn, nhiều ham muốn và thích cái mới; nên cân bằng giữa duyên và nguyên tắc cá nhân.",
-  "nguon": [
-   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
-   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
-  ],
-  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
-  "truongPhai": "Tam hợp phái Việt",
-  "yeuTo": [
-   "Cách Tham Đào"
-  ]
- },
- {
   "phaCach": true,
-  "id": "KHUNG-quan-loc-CC-Thamdao-PHA",
+  "id": "KHUNG-quan-loc-CC-NhatNguyet-PHA3",
   "chuyenDe": "quan-loc",
   "cung": "Quan Lộc",
   "loai": "CC",
   "maNghienCuu": [
-   "CHUNG-SP-06",
-   "CHUNG-CT-THL-01"
+   "CHUNG-CC-05",
+   "CHUNG-CC-08"
   ],
   "dieuKien": [
    {
     "sao": [
-     "Tham Lang",
-     "Đào Hoa"
+     "Thái Dương",
+     "Thái Âm"
     ],
+    "rai": true,
     "viTri": "tam-phuong"
    },
    {
-    "sao": [
-     "Địa Không",
-     "Địa Kiếp",
-     "Kình Dương",
-     "Đà La",
-     "Hỏa Tinh",
-     "Linh Tinh"
-    ],
-    "toiThieu": 2,
-    "viTri": "tam-phuong"
+    "phaCachMuc3": [
+     "Thái Dương",
+     "Thái Âm"
+    ]
    }
   ],
-  "cachCuc": "Tham Đào",
-  "uuTien": 90,
+  "cachCuc": "Nhật Nguyệt",
+  "uuTien": 85,
   "muc": "cach-cuc",
-  "noiDung": "Thế Tham Đào (Tham Lang đồng cung Đào Hoa) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): sức hút vẫn còn, nên rõ ràng về điều mình muốn để tránh phân tán.",
+  "noiDung": "Với Quan Lộc: có dáng dấp của thế Nhật Nguyệt (chủ hiển đạt khi cả hai sao cùng sáng), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Trong công việc, hợp vị trí cần tính tổ chức và trách nhiệm; nên tìm môi trường có quy trình rõ.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -6748,7 +7378,7 @@
   "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
   "truongPhai": "Tam hợp phái Việt",
   "yeuTo": [
-   "Cách Tham Đào"
+   "Cách Nhật Nguyệt"
   ]
  },
  {
@@ -6860,12 +7490,20 @@
     ],
     "toiThieu": 2,
     "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ]
    }
   ],
   "cachCuc": "Tử Phủ Vũ Tướng",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Tử Vi, Thiên Phủ, Vũ Khúc, Thiên Tướng cùng hội trong tam phương, tạo thế Tử Phủ Vũ Tướng: thiên về ổn định, quản lý, tổ chức và tài chính; phát huy tốt khi có thêm Tả Phù, Hữu Bật và Tam Hóa.",
+  "noiDung": "Với Phu Thê: Tử Vi, Thiên Phủ, Vũ Khúc, Thiên Tướng cùng hội trong tam phương, tạo thế Tử Phủ Vũ Tướng: thiên về ổn định, quản lý, tổ chức và tài chính; phát huy tốt khi có thêm Tả Phù, Hữu Bật và Tam Hóa. Trong tình cảm, bạn trân trọng sự bền vững; hãy nói rõ kỳ vọng để hai người cùng đi đường dài.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -6910,10 +7548,64 @@
     "viTri": "tam-phuong"
    }
   ],
+  "khong": [
+   {
+    "phaCachMuc3": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ]
+   }
+  ],
   "cachCuc": "Tử Phủ Vũ Tướng",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Tử Phủ Vũ Tướng có đủ sao nhưng tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): xu hướng ổn định, quản lý, tổ chức vẫn còn, cần thêm nỗ lực và sự cẩn trọng để giữ vững.",
+  "noiDung": "Với Phu Thê: Thế Tử Phủ Vũ Tướng có đủ sao nhưng tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): xu hướng ổn định, quản lý, tổ chức vẫn còn, cần thêm nỗ lực và sự cẩn trọng để giữ vững. Trong tình cảm, bạn trân trọng sự bền vững; hãy nói rõ kỳ vọng để hai người cùng đi đường dài.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Tử Phủ Vũ Tướng"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-phu-the-CC-TuPhuVuTuong-PHA3",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-01",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ]
+   }
+  ],
+  "cachCuc": "Tử Phủ Vũ Tướng",
+  "uuTien": 85,
+  "muc": "cach-cuc",
+  "noiDung": "Với Phu Thê: có dáng dấp của thế Tử Phủ Vũ Tướng (thiên về ổn định, quản lý, tổ chức), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Trong tình cảm, bạn trân trọng sự bền vững; hãy nói rõ kỳ vọng để hai người cùng đi đường dài.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -6956,12 +7648,19 @@
     ],
     "toiThieu": 2,
     "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Thất Sát",
+     "Phá Quân",
+     "Tham Lang"
+    ]
    }
   ],
   "cachCuc": "Sát Phá Tham",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Thất Sát, Phá Quân, Tham Lang cùng hội trong tam phương, tạo thế Sát Phá Tham: thiên về hành động, khai phá và thay đổi, hợp môi trường cạnh tranh và đi xa; hợp hơn khi các sát tinh đắc địa.",
+  "noiDung": "Với Phu Thê: Thất Sát, Phá Quân, Tham Lang cùng hội trong tam phương, tạo thế Sát Phá Tham: thiên về hành động, khai phá và thay đổi, hợp môi trường cạnh tranh và đi xa; hợp hơn khi các sát tinh đắc địa. Trong tình cảm, nhịp quan hệ dễ lên xuống; trước khi gắn bó lâu dài, hãy cùng nói rõ điều mỗi người cần.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -7005,10 +7704,61 @@
     "viTri": "tam-phuong"
    }
   ],
+  "khong": [
+   {
+    "phaCachMuc3": [
+     "Thất Sát",
+     "Phá Quân",
+     "Tham Lang"
+    ]
+   }
+  ],
   "cachCuc": "Sát Phá Tham",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Sát Phá Tham có đủ sao và tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): nhịp biến động cao hơn, nên chọn mục tiêu rõ và tránh dàn trải sức lực.",
+  "noiDung": "Với Phu Thê: Thế Sát Phá Tham có đủ sao và tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): nhịp biến động cao hơn, nên chọn mục tiêu rõ và tránh dàn trải sức lực. Trong tình cảm, nhịp quan hệ dễ lên xuống; trước khi gắn bó lâu dài, hãy cùng nói rõ điều mỗi người cần.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Sát Phá Tham"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-phu-the-CC-SatPhaTham-PHA3",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-02",
+   "MENH-CC-07"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thất Sát",
+     "Phá Quân",
+     "Tham Lang"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Thất Sát",
+     "Phá Quân",
+     "Tham Lang"
+    ]
+   }
+  ],
+  "cachCuc": "Sát Phá Tham",
+  "uuTien": 85,
+  "muc": "cach-cuc",
+  "noiDung": "Với Phu Thê: có dáng dấp của thế Sát Phá Tham (thiên về hành động, khai phá, thay đổi), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Trong tình cảm, nhịp quan hệ dễ lên xuống; trước khi gắn bó lâu dài, hãy cùng nói rõ điều mỗi người cần.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -7052,12 +7802,20 @@
     ],
     "toiThieu": 2,
     "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương"
+    ]
    }
   ],
   "cachCuc": "Cơ Nguyệt Đồng Lương",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Thiên Cơ, Thái Âm, Thiên Đồng, Thiên Lương cùng hội trong tam phương, tạo thế Cơ Nguyệt Đồng Lương: thiên về trí tuệ, chuyên môn, công việc ổn định trong tổ chức (hành chính, giáo dục, dịch vụ, nghiên cứu); hợp thêm Tam Hóa, Văn Xương, Văn Khúc.",
+  "noiDung": "Với Phu Thê: Thiên Cơ, Thái Âm, Thiên Đồng, Thiên Lương cùng hội trong tam phương, tạo thế Cơ Nguyệt Đồng Lương: thiên về trí tuệ, chuyên môn, công việc ổn định trong tổ chức (hành chính, giáo dục, dịch vụ, nghiên cứu); hợp thêm Tam Hóa, Văn Xương, Văn Khúc. Trong tình cảm, bạn thiên về suy nghĩ kỹ; hãy chia sẻ điều mình nghĩ thay vì giữ trong lòng.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -7102,10 +7860,64 @@
     "viTri": "tam-phuong"
    }
   ],
+  "khong": [
+   {
+    "phaCachMuc3": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương"
+    ]
+   }
+  ],
   "cachCuc": "Cơ Nguyệt Đồng Lương",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Cơ Nguyệt Đồng Lương có đủ sao nhưng tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): xu hướng ổn định, chuyên môn vẫn còn, cần chủ động hơn để không dừng ở lối quen.",
+  "noiDung": "Với Phu Thê: Thế Cơ Nguyệt Đồng Lương có đủ sao nhưng tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): xu hướng ổn định, chuyên môn vẫn còn, cần chủ động hơn để không dừng ở lối quen. Trong tình cảm, bạn thiên về suy nghĩ kỹ; hãy chia sẻ điều mình nghĩ thay vì giữ trong lòng.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Cơ Nguyệt Đồng Lương"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-phu-the-CC-CoNguyetdongLuong-PHA3",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-03",
+   "MENH-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương"
+    ]
+   }
+  ],
+  "cachCuc": "Cơ Nguyệt Đồng Lương",
+  "uuTien": 85,
+  "muc": "cach-cuc",
+  "noiDung": "Với Phu Thê: có dáng dấp của thế Cơ Nguyệt Đồng Lương (thiên về trí tuệ, chuyên môn, công việc ổn định), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Trong tình cảm, bạn thiên về suy nghĩ kỹ; hãy chia sẻ điều mình nghĩ thay vì giữ trong lòng.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -7146,12 +7958,18 @@
     ],
     "toiThieu": 2,
     "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Cự Môn",
+     "Thái Dương"
+    ]
    }
   ],
   "cachCuc": "Cự Nhật",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Cự Môn và Thái Dương đồng cung, tạo thế Cự Nhật: thiên về ngôn luận, truyền đạt, ngoại giao và danh tiếng; Thái Dương sáng thì Cự Môn bớt thị phi.",
+  "noiDung": "Với Phu Thê: Cự Môn và Thái Dương đồng cung, tạo thế Cự Nhật: thiên về ngôn luận, truyền đạt, ngoại giao và danh tiếng; Thái Dương sáng thì Cự Môn bớt thị phi. Trong tình cảm, lời nói quyết định không khí; khi nóng, hẹn lúc bình tĩnh để bàn chuyện khó.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -7193,10 +8011,57 @@
     "viTri": "tam-phuong"
    }
   ],
+  "khong": [
+   {
+    "phaCachMuc3": [
+     "Cự Môn",
+     "Thái Dương"
+    ]
+   }
+  ],
   "cachCuc": "Cự Nhật",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Cự Nhật (Cự Môn và Thái Dương đồng cung) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): thế mạnh ngôn luận, truyền đạt vẫn còn, cần giữ lời nói rõ ràng để tránh hiểu lầm.",
+  "noiDung": "Với Phu Thê: Thế Cự Nhật (Cự Môn và Thái Dương đồng cung) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): thế mạnh ngôn luận, truyền đạt vẫn còn, cần giữ lời nói rõ ràng để tránh hiểu lầm. Trong tình cảm, lời nói quyết định không khí; khi nóng, hẹn lúc bình tĩnh để bàn chuyện khó.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Cự Nhật"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-phu-the-CC-CuNhat-PHA3",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-04",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Cự Môn",
+     "Thái Dương"
+    ]
+   }
+  ],
+  "cachCuc": "Cự Nhật",
+  "uuTien": 85,
+  "muc": "cach-cuc",
+  "noiDung": "Với Phu Thê: có dáng dấp của thế Cự Nhật (thiên về ngôn luận, truyền đạt), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Trong tình cảm, lời nói quyết định không khí; khi nóng, hẹn lúc bình tĩnh để bàn chuyện khó.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -7232,7 +8097,7 @@
   "cachCuc": "Hỏa Tham / Linh Tham",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Tham Lang sáng đồng cung Hỏa Tinh, tạo thế Hỏa Tham: năng lượng bứt phá mạnh, có uy danh, hợp kinh doanh và những lĩnh vực cạnh tranh.",
+  "noiDung": "Với Phu Thê: Tham Lang sáng đồng cung Hỏa Tinh, tạo thế Hỏa Tham: năng lượng bứt phá mạnh, có uy danh, hợp kinh doanh và những lĩnh vực cạnh tranh. Trong tình cảm, nhịp quan hệ dễ lên xuống; trước khi gắn bó lâu dài, hãy cùng nói rõ điều mỗi người cần.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -7270,7 +8135,7 @@
   "cachCuc": "Hỏa Tham / Linh Tham",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Tham Lang đồng cung Hỏa Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Hỏa Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc và chọn một mục tiêu chính.",
+  "noiDung": "Với Phu Thê: Tham Lang đồng cung Hỏa Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Hỏa Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc và chọn một mục tiêu chính. Trong tình cảm, nhịp quan hệ dễ lên xuống; trước khi gắn bó lâu dài, hãy cùng nói rõ điều mỗi người cần.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -7306,7 +8171,7 @@
   "cachCuc": "Hỏa Tham / Linh Tham",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Tham Lang sáng đồng cung Linh Tinh, tạo thế Linh Tham: năng lượng bứt phá mạnh, có uy danh, hợp kinh doanh và những lĩnh vực cạnh tranh.",
+  "noiDung": "Với Phu Thê: Tham Lang sáng đồng cung Linh Tinh, tạo thế Linh Tham: năng lượng bứt phá mạnh, có uy danh, hợp kinh doanh và những lĩnh vực cạnh tranh. Trong tình cảm, nhịp quan hệ dễ lên xuống; trước khi gắn bó lâu dài, hãy cùng nói rõ điều mỗi người cần.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -7344,7 +8209,7 @@
   "cachCuc": "Hỏa Tham / Linh Tham",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Tham Lang đồng cung Linh Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Linh Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc và chọn một mục tiêu chính.",
+  "noiDung": "Với Phu Thê: Tham Lang đồng cung Linh Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Linh Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc và chọn một mục tiêu chính. Trong tình cảm, nhịp quan hệ dễ lên xuống; trước khi gắn bó lâu dài, hãy cùng nói rõ điều mỗi người cần.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -7385,12 +8250,18 @@
     ],
     "toiThieu": 2,
     "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Tử Vi",
+     "Phá Quân"
+    ]
    }
   ],
   "cachCuc": "Tử Phá",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Tử Vi và Phá Quân đồng cung, tạo thế Tử Phá: vừa coi trọng vị thế vừa thích đổi mới, đời sống nhiều chuyển biến, hợp con đường tự thân lập nghiệp.",
+  "noiDung": "Với Phu Thê: Tử Vi và Phá Quân đồng cung, tạo thế Tử Phá: vừa coi trọng vị thế vừa thích đổi mới, đời sống nhiều chuyển biến, hợp con đường tự thân lập nghiệp. Trong tình cảm, nhịp quan hệ dễ lên xuống; trước khi gắn bó lâu dài, hãy cùng nói rõ điều mỗi người cần.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -7432,10 +8303,57 @@
     "viTri": "tam-phuong"
    }
   ],
+  "khong": [
+   {
+    "phaCachMuc3": [
+     "Tử Vi",
+     "Phá Quân"
+    ]
+   }
+  ],
   "cachCuc": "Tử Phá",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Tử Phá (Tử Vi và Phá Quân đồng cung) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): xu hướng đổi mới và chuyển biến cao hơn, nên chọn hướng đi rõ và cân nhắc kỹ trước quyết định lớn.",
+  "noiDung": "Với Phu Thê: Thế Tử Phá (Tử Vi và Phá Quân đồng cung) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): xu hướng đổi mới và chuyển biến cao hơn, nên chọn hướng đi rõ và cân nhắc kỹ trước quyết định lớn. Trong tình cảm, nhịp quan hệ dễ lên xuống; trước khi gắn bó lâu dài, hãy cùng nói rõ điều mỗi người cần.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Tử Phá"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-phu-the-CC-TuPha-PHA3",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-07",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Phá Quân"
+    ],
+    "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Tử Vi",
+     "Phá Quân"
+    ]
+   }
+  ],
+  "cachCuc": "Tử Phá",
+  "uuTien": 85,
+  "muc": "cach-cuc",
+  "noiDung": "Với Phu Thê: có dáng dấp của thế Tử Phá (vừa coi trọng vị thế vừa thích đổi mới), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Trong tình cảm, nhịp quan hệ dễ lên xuống; trước khi gắn bó lâu dài, hãy cùng nói rõ điều mỗi người cần.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -7479,6 +8397,12 @@
     "viTri": "tam-phuong"
    },
    {
+    "phaCachMuc3": [
+     "Thiên Cơ",
+     "Thiên Lương"
+    ]
+   },
+   {
     "sao": [
      "Thiên Cơ",
      "Thái Âm",
@@ -7492,7 +8416,7 @@
   "cachCuc": "Cơ Lương",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Thiên Cơ và Thiên Lương hội trong tam phương, tạo thế Cơ Lương: giỏi bàn mưu lược và phân tích, hợp công việc cần suy xét kỹ.",
+  "noiDung": "Với Phu Thê: Thiên Cơ và Thiên Lương hội trong tam phương, tạo thế Cơ Lương: giỏi bàn mưu lược và phân tích, hợp công việc cần suy xét kỹ. Trong tình cảm, bạn thiên về suy nghĩ kỹ; hãy chia sẻ điều mình nghĩ thay vì giữ trong lòng.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -7537,6 +8461,12 @@
   ],
   "khong": [
    {
+    "phaCachMuc3": [
+     "Thiên Cơ",
+     "Thiên Lương"
+    ]
+   },
+   {
     "sao": [
      "Thiên Cơ",
      "Thái Âm",
@@ -7550,7 +8480,59 @@
   "cachCuc": "Cơ Lương",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Cơ Lương (Thiên Cơ và Thiên Lương hội trong tam phương) có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): khả năng phân tích, bàn mưu vẫn còn, cần chủ động hành động để ý tưởng thành kết quả.",
+  "noiDung": "Với Phu Thê: Thế Cơ Lương (Thiên Cơ và Thiên Lương hội trong tam phương) có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): khả năng phân tích, bàn mưu vẫn còn, cần chủ động hành động để ý tưởng thành kết quả. Trong tình cảm, bạn thiên về suy nghĩ kỹ; hãy chia sẻ điều mình nghĩ thay vì giữ trong lòng.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Cơ Lương"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-phu-the-CC-CoLuong-PHA3",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "loai": "CC",
+  "maNghienCuu": [
+   "MENH-TCO-03",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thiên Lương"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Thiên Cơ",
+     "Thiên Lương"
+    ]
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Cơ Lương",
+  "uuTien": 85,
+  "muc": "cach-cuc",
+  "noiDung": "Với Phu Thê: có dáng dấp của thế Cơ Lương (giỏi bàn mưu và phân tích), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Trong tình cảm, bạn thiên về suy nghĩ kỹ; hãy chia sẻ điều mình nghĩ thay vì giữ trong lòng.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -7592,12 +8574,18 @@
     ],
     "toiThieu": 2,
     "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Thái Dương",
+     "Thái Âm"
+    ]
    }
   ],
   "cachCuc": "Nhật Nguyệt",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Thái Dương và Thái Âm cùng hội trong tam phương, tạo thế Nhật Nguyệt: cùng sáng là cách tốt, chủ hiển đạt; nếu một trong hai kém sáng thì cần thêm nỗ lực và sự bền bỉ.",
+  "noiDung": "Với Phu Thê: Thái Dương và Thái Âm cùng hội trong tam phương, tạo thế Nhật Nguyệt: cùng sáng là cách tốt, chủ hiển đạt; nếu một trong hai kém sáng thì cần thêm nỗ lực và sự bền bỉ. Trong tình cảm, bạn trân trọng sự bền vững; hãy nói rõ kỳ vọng để hai người cùng đi đường dài.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -7640,10 +8628,18 @@
     "viTri": "tam-phuong"
    }
   ],
+  "khong": [
+   {
+    "phaCachMuc3": [
+     "Thái Dương",
+     "Thái Âm"
+    ]
+   }
+  ],
   "cachCuc": "Nhật Nguyệt",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Nhật Nguyệt (Thái Dương và Thái Âm cùng hội trong tam phương) có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): cần bền bỉ và tự tạo cơ hội để phát huy được ánh sáng của hai sao.",
+  "noiDung": "Với Phu Thê: Thế Nhật Nguyệt (Thái Dương và Thái Âm cùng hội trong tam phương) có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): cần bền bỉ và tự tạo cơ hội để phát huy được ánh sáng của hai sao. Trong tình cảm, bạn trân trọng sự bền vững; hãy nói rõ kỳ vọng để hai người cùng đi đường dài.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -7655,86 +8651,35 @@
   ]
  },
  {
-  "id": "KHUNG-phu-the-CC-Thamdao",
-  "chuyenDe": "phu-the",
-  "cung": "Phu Thê",
-  "loai": "CC",
-  "maNghienCuu": [
-   "CHUNG-SP-06",
-   "CHUNG-CT-THL-01"
-  ],
-  "dieuKien": [
-   {
-    "sao": [
-     "Tham Lang",
-     "Đào Hoa"
-    ],
-    "viTri": "tam-phuong"
-   }
-  ],
-  "khong": [
-   {
-    "sao": [
-     "Địa Không",
-     "Địa Kiếp",
-     "Kình Dương",
-     "Đà La",
-     "Hỏa Tinh",
-     "Linh Tinh"
-    ],
-    "toiThieu": 2,
-    "viTri": "tam-phuong"
-   }
-  ],
-  "cachCuc": "Tham Đào",
-  "uuTien": 100,
-  "muc": "cach-cuc",
-  "noiDung": "Tham Lang đồng cung Đào Hoa, tạo thế Tham Đào: sức hút và duyên giao tiếp lớn, nhiều ham muốn và thích cái mới; nên cân bằng giữa duyên và nguyên tắc cá nhân.",
-  "nguon": [
-   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
-   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
-  ],
-  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
-  "truongPhai": "Tam hợp phái Việt",
-  "yeuTo": [
-   "Cách Tham Đào"
-  ]
- },
- {
   "phaCach": true,
-  "id": "KHUNG-phu-the-CC-Thamdao-PHA",
+  "id": "KHUNG-phu-the-CC-NhatNguyet-PHA3",
   "chuyenDe": "phu-the",
   "cung": "Phu Thê",
   "loai": "CC",
   "maNghienCuu": [
-   "CHUNG-SP-06",
-   "CHUNG-CT-THL-01"
+   "CHUNG-CC-05",
+   "CHUNG-CC-08"
   ],
   "dieuKien": [
    {
     "sao": [
-     "Tham Lang",
-     "Đào Hoa"
+     "Thái Dương",
+     "Thái Âm"
     ],
+    "rai": true,
     "viTri": "tam-phuong"
    },
    {
-    "sao": [
-     "Địa Không",
-     "Địa Kiếp",
-     "Kình Dương",
-     "Đà La",
-     "Hỏa Tinh",
-     "Linh Tinh"
-    ],
-    "toiThieu": 2,
-    "viTri": "tam-phuong"
+    "phaCachMuc3": [
+     "Thái Dương",
+     "Thái Âm"
+    ]
    }
   ],
-  "cachCuc": "Tham Đào",
-  "uuTien": 90,
+  "cachCuc": "Nhật Nguyệt",
+  "uuTien": 85,
   "muc": "cach-cuc",
-  "noiDung": "Thế Tham Đào (Tham Lang đồng cung Đào Hoa) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): sức hút vẫn còn, nên rõ ràng về điều mình muốn để tránh phân tán.",
+  "noiDung": "Với Phu Thê: có dáng dấp của thế Nhật Nguyệt (chủ hiển đạt khi cả hai sao cùng sáng), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Trong tình cảm, bạn trân trọng sự bền vững; hãy nói rõ kỳ vọng để hai người cùng đi đường dài.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -7742,7 +8687,7 @@
   "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
   "truongPhai": "Tam hợp phái Việt",
   "yeuTo": [
-   "Cách Tham Đào"
+   "Cách Nhật Nguyệt"
   ]
  },
  {
@@ -7854,12 +8799,20 @@
     ],
     "toiThieu": 2,
     "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ]
    }
   ],
   "cachCuc": "Tử Phủ Vũ Tướng",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Tử Vi, Thiên Phủ, Vũ Khúc, Thiên Tướng cùng hội trong tam phương, tạo thế Tử Phủ Vũ Tướng: thiên về ổn định, quản lý, tổ chức và tài chính; phát huy tốt khi có thêm Tả Phù, Hữu Bật và Tam Hóa.",
+  "noiDung": "Với Tài Bạch: Tử Vi, Thiên Phủ, Vũ Khúc, Thiên Tướng cùng hội trong tam phương, tạo thế Tử Phủ Vũ Tướng: thiên về ổn định, quản lý, tổ chức và tài chính; phát huy tốt khi có thêm Tả Phù, Hữu Bật và Tam Hóa. Về tiền bạc, hợp cách tích lũy đều đặn; nên chia quỹ chi tiêu và quỹ dự phòng ngay từ đầu.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -7904,10 +8857,64 @@
     "viTri": "tam-phuong"
    }
   ],
+  "khong": [
+   {
+    "phaCachMuc3": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ]
+   }
+  ],
   "cachCuc": "Tử Phủ Vũ Tướng",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Tử Phủ Vũ Tướng có đủ sao nhưng tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): xu hướng ổn định, quản lý, tổ chức vẫn còn, cần thêm nỗ lực và sự cẩn trọng để giữ vững.",
+  "noiDung": "Với Tài Bạch: Thế Tử Phủ Vũ Tướng có đủ sao nhưng tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): xu hướng ổn định, quản lý, tổ chức vẫn còn, cần thêm nỗ lực và sự cẩn trọng để giữ vững. Về tiền bạc, hợp cách tích lũy đều đặn; nên chia quỹ chi tiêu và quỹ dự phòng ngay từ đầu.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Tử Phủ Vũ Tướng"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-tai-bach-CC-TuPhuVuTuong-PHA3",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-01",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ]
+   }
+  ],
+  "cachCuc": "Tử Phủ Vũ Tướng",
+  "uuTien": 85,
+  "muc": "cach-cuc",
+  "noiDung": "Với Tài Bạch: có dáng dấp của thế Tử Phủ Vũ Tướng (thiên về ổn định, quản lý, tổ chức), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Về tiền bạc, hợp cách tích lũy đều đặn; nên chia quỹ chi tiêu và quỹ dự phòng ngay từ đầu.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -7950,12 +8957,19 @@
     ],
     "toiThieu": 2,
     "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Thất Sát",
+     "Phá Quân",
+     "Tham Lang"
+    ]
    }
   ],
   "cachCuc": "Sát Phá Tham",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Thất Sát, Phá Quân, Tham Lang cùng hội trong tam phương, tạo thế Sát Phá Tham: thiên về hành động, khai phá và thay đổi, hợp môi trường cạnh tranh và đi xa; hợp hơn khi các sát tinh đắc địa.",
+  "noiDung": "Với Tài Bạch: Thất Sát, Phá Quân, Tham Lang cùng hội trong tam phương, tạo thế Sát Phá Tham: thiên về hành động, khai phá và thay đổi, hợp môi trường cạnh tranh và đi xa; hợp hơn khi các sát tinh đắc địa. Về tiền bạc, thu chi dễ biến động; nên giữ một khoản dự phòng và tránh quyết định lớn khi đang nóng vội.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -7999,10 +9013,61 @@
     "viTri": "tam-phuong"
    }
   ],
+  "khong": [
+   {
+    "phaCachMuc3": [
+     "Thất Sát",
+     "Phá Quân",
+     "Tham Lang"
+    ]
+   }
+  ],
   "cachCuc": "Sát Phá Tham",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Sát Phá Tham có đủ sao và tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): nhịp biến động cao hơn, nên chọn mục tiêu rõ và tránh dàn trải sức lực.",
+  "noiDung": "Với Tài Bạch: Thế Sát Phá Tham có đủ sao và tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): nhịp biến động cao hơn, nên chọn mục tiêu rõ và tránh dàn trải sức lực. Về tiền bạc, thu chi dễ biến động; nên giữ một khoản dự phòng và tránh quyết định lớn khi đang nóng vội.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Sát Phá Tham"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-tai-bach-CC-SatPhaTham-PHA3",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-02",
+   "MENH-CC-07"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thất Sát",
+     "Phá Quân",
+     "Tham Lang"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Thất Sát",
+     "Phá Quân",
+     "Tham Lang"
+    ]
+   }
+  ],
+  "cachCuc": "Sát Phá Tham",
+  "uuTien": 85,
+  "muc": "cach-cuc",
+  "noiDung": "Với Tài Bạch: có dáng dấp của thế Sát Phá Tham (thiên về hành động, khai phá, thay đổi), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Về tiền bạc, thu chi dễ biến động; nên giữ một khoản dự phòng và tránh quyết định lớn khi đang nóng vội.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -8046,12 +9111,20 @@
     ],
     "toiThieu": 2,
     "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương"
+    ]
    }
   ],
   "cachCuc": "Cơ Nguyệt Đồng Lương",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Thiên Cơ, Thái Âm, Thiên Đồng, Thiên Lương cùng hội trong tam phương, tạo thế Cơ Nguyệt Đồng Lương: thiên về trí tuệ, chuyên môn, công việc ổn định trong tổ chức (hành chính, giáo dục, dịch vụ, nghiên cứu); hợp thêm Tam Hóa, Văn Xương, Văn Khúc.",
+  "noiDung": "Với Tài Bạch: Thiên Cơ, Thái Âm, Thiên Đồng, Thiên Lương cùng hội trong tam phương, tạo thế Cơ Nguyệt Đồng Lương: thiên về trí tuệ, chuyên môn, công việc ổn định trong tổ chức (hành chính, giáo dục, dịch vụ, nghiên cứu); hợp thêm Tam Hóa, Văn Xương, Văn Khúc. Về tiền bạc, hợp quản lý cẩn trọng; nên ghi chép thu chi và so sánh kỹ trước khi đầu tư.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -8096,10 +9169,64 @@
     "viTri": "tam-phuong"
    }
   ],
+  "khong": [
+   {
+    "phaCachMuc3": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương"
+    ]
+   }
+  ],
   "cachCuc": "Cơ Nguyệt Đồng Lương",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Cơ Nguyệt Đồng Lương có đủ sao nhưng tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): xu hướng ổn định, chuyên môn vẫn còn, cần chủ động hơn để không dừng ở lối quen.",
+  "noiDung": "Với Tài Bạch: Thế Cơ Nguyệt Đồng Lương có đủ sao nhưng tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): xu hướng ổn định, chuyên môn vẫn còn, cần chủ động hơn để không dừng ở lối quen. Về tiền bạc, hợp quản lý cẩn trọng; nên ghi chép thu chi và so sánh kỹ trước khi đầu tư.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Cơ Nguyệt Đồng Lương"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-tai-bach-CC-CoNguyetdongLuong-PHA3",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-03",
+   "MENH-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương"
+    ]
+   }
+  ],
+  "cachCuc": "Cơ Nguyệt Đồng Lương",
+  "uuTien": 85,
+  "muc": "cach-cuc",
+  "noiDung": "Với Tài Bạch: có dáng dấp của thế Cơ Nguyệt Đồng Lương (thiên về trí tuệ, chuyên môn, công việc ổn định), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Về tiền bạc, hợp quản lý cẩn trọng; nên ghi chép thu chi và so sánh kỹ trước khi đầu tư.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -8140,12 +9267,18 @@
     ],
     "toiThieu": 2,
     "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Cự Môn",
+     "Thái Dương"
+    ]
    }
   ],
   "cachCuc": "Cự Nhật",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Cự Môn và Thái Dương đồng cung, tạo thế Cự Nhật: thiên về ngôn luận, truyền đạt, ngoại giao và danh tiếng; Thái Dương sáng thì Cự Môn bớt thị phi.",
+  "noiDung": "Với Tài Bạch: Cự Môn và Thái Dương đồng cung, tạo thế Cự Nhật: thiên về ngôn luận, truyền đạt, ngoại giao và danh tiếng; Thái Dương sáng thì Cự Môn bớt thị phi. Về tiền bạc, thu nhập gắn với danh tiếng và quan hệ; nên ghi rõ điều khoản khi hợp tác.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -8187,10 +9320,57 @@
     "viTri": "tam-phuong"
    }
   ],
+  "khong": [
+   {
+    "phaCachMuc3": [
+     "Cự Môn",
+     "Thái Dương"
+    ]
+   }
+  ],
   "cachCuc": "Cự Nhật",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Cự Nhật (Cự Môn và Thái Dương đồng cung) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): thế mạnh ngôn luận, truyền đạt vẫn còn, cần giữ lời nói rõ ràng để tránh hiểu lầm.",
+  "noiDung": "Với Tài Bạch: Thế Cự Nhật (Cự Môn và Thái Dương đồng cung) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): thế mạnh ngôn luận, truyền đạt vẫn còn, cần giữ lời nói rõ ràng để tránh hiểu lầm. Về tiền bạc, thu nhập gắn với danh tiếng và quan hệ; nên ghi rõ điều khoản khi hợp tác.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Cự Nhật"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-tai-bach-CC-CuNhat-PHA3",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-04",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Cự Môn",
+     "Thái Dương"
+    ]
+   }
+  ],
+  "cachCuc": "Cự Nhật",
+  "uuTien": 85,
+  "muc": "cach-cuc",
+  "noiDung": "Với Tài Bạch: có dáng dấp của thế Cự Nhật (thiên về ngôn luận, truyền đạt), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Về tiền bạc, thu nhập gắn với danh tiếng và quan hệ; nên ghi rõ điều khoản khi hợp tác.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -8226,7 +9406,7 @@
   "cachCuc": "Hỏa Tham / Linh Tham",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Tham Lang sáng đồng cung Hỏa Tinh, tạo thế Hỏa Tham: năng lượng bứt phá mạnh, có uy danh, hợp kinh doanh và những lĩnh vực cạnh tranh.",
+  "noiDung": "Với Tài Bạch: Tham Lang sáng đồng cung Hỏa Tinh, tạo thế Hỏa Tham: năng lượng bứt phá mạnh, có uy danh, hợp kinh doanh và những lĩnh vực cạnh tranh. Về tiền bạc, thu chi dễ biến động; nên giữ một khoản dự phòng và tránh quyết định lớn khi đang nóng vội.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -8264,7 +9444,7 @@
   "cachCuc": "Hỏa Tham / Linh Tham",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Tham Lang đồng cung Hỏa Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Hỏa Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc và chọn một mục tiêu chính.",
+  "noiDung": "Với Tài Bạch: Tham Lang đồng cung Hỏa Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Hỏa Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc và chọn một mục tiêu chính. Về tiền bạc, thu chi dễ biến động; nên giữ một khoản dự phòng và tránh quyết định lớn khi đang nóng vội.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -8300,7 +9480,7 @@
   "cachCuc": "Hỏa Tham / Linh Tham",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Tham Lang sáng đồng cung Linh Tinh, tạo thế Linh Tham: năng lượng bứt phá mạnh, có uy danh, hợp kinh doanh và những lĩnh vực cạnh tranh.",
+  "noiDung": "Với Tài Bạch: Tham Lang sáng đồng cung Linh Tinh, tạo thế Linh Tham: năng lượng bứt phá mạnh, có uy danh, hợp kinh doanh và những lĩnh vực cạnh tranh. Về tiền bạc, thu chi dễ biến động; nên giữ một khoản dự phòng và tránh quyết định lớn khi đang nóng vội.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -8338,7 +9518,7 @@
   "cachCuc": "Hỏa Tham / Linh Tham",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Tham Lang đồng cung Linh Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Linh Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc và chọn một mục tiêu chính.",
+  "noiDung": "Với Tài Bạch: Tham Lang đồng cung Linh Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Linh Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc và chọn một mục tiêu chính. Về tiền bạc, thu chi dễ biến động; nên giữ một khoản dự phòng và tránh quyết định lớn khi đang nóng vội.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -8379,12 +9559,18 @@
     ],
     "toiThieu": 2,
     "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Tử Vi",
+     "Phá Quân"
+    ]
    }
   ],
   "cachCuc": "Tử Phá",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Tử Vi và Phá Quân đồng cung, tạo thế Tử Phá: vừa coi trọng vị thế vừa thích đổi mới, đời sống nhiều chuyển biến, hợp con đường tự thân lập nghiệp.",
+  "noiDung": "Với Tài Bạch: Tử Vi và Phá Quân đồng cung, tạo thế Tử Phá: vừa coi trọng vị thế vừa thích đổi mới, đời sống nhiều chuyển biến, hợp con đường tự thân lập nghiệp. Về tiền bạc, thu chi dễ biến động; nên giữ một khoản dự phòng và tránh quyết định lớn khi đang nóng vội.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -8426,10 +9612,57 @@
     "viTri": "tam-phuong"
    }
   ],
+  "khong": [
+   {
+    "phaCachMuc3": [
+     "Tử Vi",
+     "Phá Quân"
+    ]
+   }
+  ],
   "cachCuc": "Tử Phá",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Tử Phá (Tử Vi và Phá Quân đồng cung) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): xu hướng đổi mới và chuyển biến cao hơn, nên chọn hướng đi rõ và cân nhắc kỹ trước quyết định lớn.",
+  "noiDung": "Với Tài Bạch: Thế Tử Phá (Tử Vi và Phá Quân đồng cung) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): xu hướng đổi mới và chuyển biến cao hơn, nên chọn hướng đi rõ và cân nhắc kỹ trước quyết định lớn. Về tiền bạc, thu chi dễ biến động; nên giữ một khoản dự phòng và tránh quyết định lớn khi đang nóng vội.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Tử Phá"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-tai-bach-CC-TuPha-PHA3",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-07",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Phá Quân"
+    ],
+    "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Tử Vi",
+     "Phá Quân"
+    ]
+   }
+  ],
+  "cachCuc": "Tử Phá",
+  "uuTien": 85,
+  "muc": "cach-cuc",
+  "noiDung": "Với Tài Bạch: có dáng dấp của thế Tử Phá (vừa coi trọng vị thế vừa thích đổi mới), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Về tiền bạc, thu chi dễ biến động; nên giữ một khoản dự phòng và tránh quyết định lớn khi đang nóng vội.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -8473,6 +9706,12 @@
     "viTri": "tam-phuong"
    },
    {
+    "phaCachMuc3": [
+     "Thiên Cơ",
+     "Thiên Lương"
+    ]
+   },
+   {
     "sao": [
      "Thiên Cơ",
      "Thái Âm",
@@ -8486,7 +9725,7 @@
   "cachCuc": "Cơ Lương",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Thiên Cơ và Thiên Lương hội trong tam phương, tạo thế Cơ Lương: giỏi bàn mưu lược và phân tích, hợp công việc cần suy xét kỹ.",
+  "noiDung": "Với Tài Bạch: Thiên Cơ và Thiên Lương hội trong tam phương, tạo thế Cơ Lương: giỏi bàn mưu lược và phân tích, hợp công việc cần suy xét kỹ. Về tiền bạc, hợp quản lý cẩn trọng; nên ghi chép thu chi và so sánh kỹ trước khi đầu tư.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -8531,6 +9770,12 @@
   ],
   "khong": [
    {
+    "phaCachMuc3": [
+     "Thiên Cơ",
+     "Thiên Lương"
+    ]
+   },
+   {
     "sao": [
      "Thiên Cơ",
      "Thái Âm",
@@ -8544,7 +9789,59 @@
   "cachCuc": "Cơ Lương",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Cơ Lương (Thiên Cơ và Thiên Lương hội trong tam phương) có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): khả năng phân tích, bàn mưu vẫn còn, cần chủ động hành động để ý tưởng thành kết quả.",
+  "noiDung": "Với Tài Bạch: Thế Cơ Lương (Thiên Cơ và Thiên Lương hội trong tam phương) có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): khả năng phân tích, bàn mưu vẫn còn, cần chủ động hành động để ý tưởng thành kết quả. Về tiền bạc, hợp quản lý cẩn trọng; nên ghi chép thu chi và so sánh kỹ trước khi đầu tư.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Cơ Lương"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-tai-bach-CC-CoLuong-PHA3",
+  "chuyenDe": "tai-bach",
+  "cung": "Tài Bạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "MENH-TCO-03",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thiên Lương"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Thiên Cơ",
+     "Thiên Lương"
+    ]
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Cơ Lương",
+  "uuTien": 85,
+  "muc": "cach-cuc",
+  "noiDung": "Với Tài Bạch: có dáng dấp của thế Cơ Lương (giỏi bàn mưu và phân tích), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Về tiền bạc, hợp quản lý cẩn trọng; nên ghi chép thu chi và so sánh kỹ trước khi đầu tư.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -8586,12 +9883,18 @@
     ],
     "toiThieu": 2,
     "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Thái Dương",
+     "Thái Âm"
+    ]
    }
   ],
   "cachCuc": "Nhật Nguyệt",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Thái Dương và Thái Âm cùng hội trong tam phương, tạo thế Nhật Nguyệt: cùng sáng là cách tốt, chủ hiển đạt; nếu một trong hai kém sáng thì cần thêm nỗ lực và sự bền bỉ.",
+  "noiDung": "Với Tài Bạch: Thái Dương và Thái Âm cùng hội trong tam phương, tạo thế Nhật Nguyệt: cùng sáng là cách tốt, chủ hiển đạt; nếu một trong hai kém sáng thì cần thêm nỗ lực và sự bền bỉ. Về tiền bạc, hợp cách tích lũy đều đặn; nên chia quỹ chi tiêu và quỹ dự phòng ngay từ đầu.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -8634,10 +9937,18 @@
     "viTri": "tam-phuong"
    }
   ],
+  "khong": [
+   {
+    "phaCachMuc3": [
+     "Thái Dương",
+     "Thái Âm"
+    ]
+   }
+  ],
   "cachCuc": "Nhật Nguyệt",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Nhật Nguyệt (Thái Dương và Thái Âm cùng hội trong tam phương) có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): cần bền bỉ và tự tạo cơ hội để phát huy được ánh sáng của hai sao.",
+  "noiDung": "Với Tài Bạch: Thế Nhật Nguyệt (Thái Dương và Thái Âm cùng hội trong tam phương) có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): cần bền bỉ và tự tạo cơ hội để phát huy được ánh sáng của hai sao. Về tiền bạc, hợp cách tích lũy đều đặn; nên chia quỹ chi tiêu và quỹ dự phòng ngay từ đầu.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -8649,86 +9960,35 @@
   ]
  },
  {
-  "id": "KHUNG-tai-bach-CC-Thamdao",
-  "chuyenDe": "tai-bach",
-  "cung": "Tài Bạch",
-  "loai": "CC",
-  "maNghienCuu": [
-   "CHUNG-SP-06",
-   "CHUNG-CT-THL-01"
-  ],
-  "dieuKien": [
-   {
-    "sao": [
-     "Tham Lang",
-     "Đào Hoa"
-    ],
-    "viTri": "tam-phuong"
-   }
-  ],
-  "khong": [
-   {
-    "sao": [
-     "Địa Không",
-     "Địa Kiếp",
-     "Kình Dương",
-     "Đà La",
-     "Hỏa Tinh",
-     "Linh Tinh"
-    ],
-    "toiThieu": 2,
-    "viTri": "tam-phuong"
-   }
-  ],
-  "cachCuc": "Tham Đào",
-  "uuTien": 100,
-  "muc": "cach-cuc",
-  "noiDung": "Tham Lang đồng cung Đào Hoa, tạo thế Tham Đào: sức hút và duyên giao tiếp lớn, nhiều ham muốn và thích cái mới; nên cân bằng giữa duyên và nguyên tắc cá nhân.",
-  "nguon": [
-   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
-   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
-  ],
-  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
-  "truongPhai": "Tam hợp phái Việt",
-  "yeuTo": [
-   "Cách Tham Đào"
-  ]
- },
- {
   "phaCach": true,
-  "id": "KHUNG-tai-bach-CC-Thamdao-PHA",
+  "id": "KHUNG-tai-bach-CC-NhatNguyet-PHA3",
   "chuyenDe": "tai-bach",
   "cung": "Tài Bạch",
   "loai": "CC",
   "maNghienCuu": [
-   "CHUNG-SP-06",
-   "CHUNG-CT-THL-01"
+   "CHUNG-CC-05",
+   "CHUNG-CC-08"
   ],
   "dieuKien": [
    {
     "sao": [
-     "Tham Lang",
-     "Đào Hoa"
+     "Thái Dương",
+     "Thái Âm"
     ],
+    "rai": true,
     "viTri": "tam-phuong"
    },
    {
-    "sao": [
-     "Địa Không",
-     "Địa Kiếp",
-     "Kình Dương",
-     "Đà La",
-     "Hỏa Tinh",
-     "Linh Tinh"
-    ],
-    "toiThieu": 2,
-    "viTri": "tam-phuong"
+    "phaCachMuc3": [
+     "Thái Dương",
+     "Thái Âm"
+    ]
    }
   ],
-  "cachCuc": "Tham Đào",
-  "uuTien": 90,
+  "cachCuc": "Nhật Nguyệt",
+  "uuTien": 85,
   "muc": "cach-cuc",
-  "noiDung": "Thế Tham Đào (Tham Lang đồng cung Đào Hoa) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): sức hút vẫn còn, nên rõ ràng về điều mình muốn để tránh phân tán.",
+  "noiDung": "Với Tài Bạch: có dáng dấp của thế Nhật Nguyệt (chủ hiển đạt khi cả hai sao cùng sáng), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Về tiền bạc, hợp cách tích lũy đều đặn; nên chia quỹ chi tiêu và quỹ dự phòng ngay từ đầu.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -8736,7 +9996,7 @@
   "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
   "truongPhai": "Tam hợp phái Việt",
   "yeuTo": [
-   "Cách Tham Đào"
+   "Cách Nhật Nguyệt"
   ]
  },
  {
@@ -8848,12 +10108,20 @@
     ],
     "toiThieu": 2,
     "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ]
    }
   ],
   "cachCuc": "Tử Phủ Vũ Tướng",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Tử Vi, Thiên Phủ, Vũ Khúc, Thiên Tướng cùng hội trong tam phương, tạo thế Tử Phủ Vũ Tướng: thiên về ổn định, quản lý, tổ chức và tài chính; phát huy tốt khi có thêm Tả Phù, Hữu Bật và Tam Hóa.",
+  "noiDung": "Với Điền Trạch: Tử Vi, Thiên Phủ, Vũ Khúc, Thiên Tướng cùng hội trong tam phương, tạo thế Tử Phủ Vũ Tướng: thiên về ổn định, quản lý, tổ chức và tài chính; phát huy tốt khi có thêm Tả Phù, Hữu Bật và Tam Hóa. Về nhà cửa, hợp hướng ổn định lâu dài; nên đặt kế hoạch an cư theo từng giai đoạn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -8898,10 +10166,64 @@
     "viTri": "tam-phuong"
    }
   ],
+  "khong": [
+   {
+    "phaCachMuc3": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ]
+   }
+  ],
   "cachCuc": "Tử Phủ Vũ Tướng",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Tử Phủ Vũ Tướng có đủ sao nhưng tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): xu hướng ổn định, quản lý, tổ chức vẫn còn, cần thêm nỗ lực và sự cẩn trọng để giữ vững.",
+  "noiDung": "Với Điền Trạch: Thế Tử Phủ Vũ Tướng có đủ sao nhưng tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): xu hướng ổn định, quản lý, tổ chức vẫn còn, cần thêm nỗ lực và sự cẩn trọng để giữ vững. Về nhà cửa, hợp hướng ổn định lâu dài; nên đặt kế hoạch an cư theo từng giai đoạn.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Tử Phủ Vũ Tướng"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-dien-trach-CC-TuPhuVuTuong-PHA3",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-01",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Vũ Khúc",
+     "Thiên Tướng"
+    ]
+   }
+  ],
+  "cachCuc": "Tử Phủ Vũ Tướng",
+  "uuTien": 85,
+  "muc": "cach-cuc",
+  "noiDung": "Với Điền Trạch: có dáng dấp của thế Tử Phủ Vũ Tướng (thiên về ổn định, quản lý, tổ chức), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Về nhà cửa, hợp hướng ổn định lâu dài; nên đặt kế hoạch an cư theo từng giai đoạn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -8944,12 +10266,19 @@
     ],
     "toiThieu": 2,
     "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Thất Sát",
+     "Phá Quân",
+     "Tham Lang"
+    ]
    }
   ],
   "cachCuc": "Sát Phá Tham",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Thất Sát, Phá Quân, Tham Lang cùng hội trong tam phương, tạo thế Sát Phá Tham: thiên về hành động, khai phá và thay đổi, hợp môi trường cạnh tranh và đi xa; hợp hơn khi các sát tinh đắc địa.",
+  "noiDung": "Với Điền Trạch: Thất Sát, Phá Quân, Tham Lang cùng hội trong tam phương, tạo thế Sát Phá Tham: thiên về hành động, khai phá và thay đổi, hợp môi trường cạnh tranh và đi xa; hợp hơn khi các sát tinh đắc địa. Về nhà cửa, dễ có lần đổi chỗ ở hoặc sửa sang; nên cân nhắc kỹ chi phí trước khi quyết.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -8993,10 +10322,61 @@
     "viTri": "tam-phuong"
    }
   ],
+  "khong": [
+   {
+    "phaCachMuc3": [
+     "Thất Sát",
+     "Phá Quân",
+     "Tham Lang"
+    ]
+   }
+  ],
   "cachCuc": "Sát Phá Tham",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Sát Phá Tham có đủ sao và tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): nhịp biến động cao hơn, nên chọn mục tiêu rõ và tránh dàn trải sức lực.",
+  "noiDung": "Với Điền Trạch: Thế Sát Phá Tham có đủ sao và tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): nhịp biến động cao hơn, nên chọn mục tiêu rõ và tránh dàn trải sức lực. Về nhà cửa, dễ có lần đổi chỗ ở hoặc sửa sang; nên cân nhắc kỹ chi phí trước khi quyết.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Sát Phá Tham"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-dien-trach-CC-SatPhaTham-PHA3",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-02",
+   "MENH-CC-07"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thất Sát",
+     "Phá Quân",
+     "Tham Lang"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Thất Sát",
+     "Phá Quân",
+     "Tham Lang"
+    ]
+   }
+  ],
+  "cachCuc": "Sát Phá Tham",
+  "uuTien": 85,
+  "muc": "cach-cuc",
+  "noiDung": "Với Điền Trạch: có dáng dấp của thế Sát Phá Tham (thiên về hành động, khai phá, thay đổi), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Về nhà cửa, dễ có lần đổi chỗ ở hoặc sửa sang; nên cân nhắc kỹ chi phí trước khi quyết.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -9040,12 +10420,20 @@
     ],
     "toiThieu": 2,
     "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương"
+    ]
    }
   ],
   "cachCuc": "Cơ Nguyệt Đồng Lương",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Thiên Cơ, Thái Âm, Thiên Đồng, Thiên Lương cùng hội trong tam phương, tạo thế Cơ Nguyệt Đồng Lương: thiên về trí tuệ, chuyên môn, công việc ổn định trong tổ chức (hành chính, giáo dục, dịch vụ, nghiên cứu); hợp thêm Tam Hóa, Văn Xương, Văn Khúc.",
+  "noiDung": "Với Điền Trạch: Thiên Cơ, Thái Âm, Thiên Đồng, Thiên Lương cùng hội trong tam phương, tạo thế Cơ Nguyệt Đồng Lương: thiên về trí tuệ, chuyên môn, công việc ổn định trong tổ chức (hành chính, giáo dục, dịch vụ, nghiên cứu); hợp thêm Tam Hóa, Văn Xương, Văn Khúc. Về nhà cửa, bạn cân nhắc kỹ trước khi quyết; nên đặt hạn chốt để không trì hoãn việc lớn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -9090,10 +10478,64 @@
     "viTri": "tam-phuong"
    }
   ],
+  "khong": [
+   {
+    "phaCachMuc3": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương"
+    ]
+   }
+  ],
   "cachCuc": "Cơ Nguyệt Đồng Lương",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Cơ Nguyệt Đồng Lương có đủ sao nhưng tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): xu hướng ổn định, chuyên môn vẫn còn, cần chủ động hơn để không dừng ở lối quen.",
+  "noiDung": "Với Điền Trạch: Thế Cơ Nguyệt Đồng Lương có đủ sao nhưng tam phương có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): xu hướng ổn định, chuyên môn vẫn còn, cần chủ động hơn để không dừng ở lối quen. Về nhà cửa, bạn cân nhắc kỹ trước khi quyết; nên đặt hạn chốt để không trì hoãn việc lớn.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Cơ Nguyệt Đồng Lương"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-dien-trach-CC-CoNguyetdongLuong-PHA3",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-03",
+   "MENH-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương"
+    ]
+   }
+  ],
+  "cachCuc": "Cơ Nguyệt Đồng Lương",
+  "uuTien": 85,
+  "muc": "cach-cuc",
+  "noiDung": "Với Điền Trạch: có dáng dấp của thế Cơ Nguyệt Đồng Lương (thiên về trí tuệ, chuyên môn, công việc ổn định), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Về nhà cửa, bạn cân nhắc kỹ trước khi quyết; nên đặt hạn chốt để không trì hoãn việc lớn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -9134,12 +10576,18 @@
     ],
     "toiThieu": 2,
     "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Cự Môn",
+     "Thái Dương"
+    ]
    }
   ],
   "cachCuc": "Cự Nhật",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Cự Môn và Thái Dương đồng cung, tạo thế Cự Nhật: thiên về ngôn luận, truyền đạt, ngoại giao và danh tiếng; Thái Dương sáng thì Cự Môn bớt thị phi.",
+  "noiDung": "Với Điền Trạch: Cự Môn và Thái Dương đồng cung, tạo thế Cự Nhật: thiên về ngôn luận, truyền đạt, ngoại giao và danh tiếng; Thái Dương sáng thì Cự Môn bớt thị phi. Về nhà cửa, trao đổi trong gia đình là chìa khóa; nên bàn bạc rõ ràng trước các quyết định chung.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -9181,10 +10629,57 @@
     "viTri": "tam-phuong"
    }
   ],
+  "khong": [
+   {
+    "phaCachMuc3": [
+     "Cự Môn",
+     "Thái Dương"
+    ]
+   }
+  ],
   "cachCuc": "Cự Nhật",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Cự Nhật (Cự Môn và Thái Dương đồng cung) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): thế mạnh ngôn luận, truyền đạt vẫn còn, cần giữ lời nói rõ ràng để tránh hiểu lầm.",
+  "noiDung": "Với Điền Trạch: Thế Cự Nhật (Cự Môn và Thái Dương đồng cung) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): thế mạnh ngôn luận, truyền đạt vẫn còn, cần giữ lời nói rõ ràng để tránh hiểu lầm. Về nhà cửa, trao đổi trong gia đình là chìa khóa; nên bàn bạc rõ ràng trước các quyết định chung.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Cự Nhật"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-dien-trach-CC-CuNhat-PHA3",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-04",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Cự Môn",
+     "Thái Dương"
+    ],
+    "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Cự Môn",
+     "Thái Dương"
+    ]
+   }
+  ],
+  "cachCuc": "Cự Nhật",
+  "uuTien": 85,
+  "muc": "cach-cuc",
+  "noiDung": "Với Điền Trạch: có dáng dấp của thế Cự Nhật (thiên về ngôn luận, truyền đạt), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Về nhà cửa, trao đổi trong gia đình là chìa khóa; nên bàn bạc rõ ràng trước các quyết định chung.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -9220,7 +10715,7 @@
   "cachCuc": "Hỏa Tham / Linh Tham",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Tham Lang sáng đồng cung Hỏa Tinh, tạo thế Hỏa Tham: năng lượng bứt phá mạnh, có uy danh, hợp kinh doanh và những lĩnh vực cạnh tranh.",
+  "noiDung": "Với Điền Trạch: Tham Lang sáng đồng cung Hỏa Tinh, tạo thế Hỏa Tham: năng lượng bứt phá mạnh, có uy danh, hợp kinh doanh và những lĩnh vực cạnh tranh. Về nhà cửa, dễ có lần đổi chỗ ở hoặc sửa sang; nên cân nhắc kỹ chi phí trước khi quyết.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -9258,7 +10753,7 @@
   "cachCuc": "Hỏa Tham / Linh Tham",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Tham Lang đồng cung Hỏa Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Hỏa Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc và chọn một mục tiêu chính.",
+  "noiDung": "Với Điền Trạch: Tham Lang đồng cung Hỏa Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Hỏa Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc và chọn một mục tiêu chính. Về nhà cửa, dễ có lần đổi chỗ ở hoặc sửa sang; nên cân nhắc kỹ chi phí trước khi quyết.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -9294,7 +10789,7 @@
   "cachCuc": "Hỏa Tham / Linh Tham",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Tham Lang sáng đồng cung Linh Tinh, tạo thế Linh Tham: năng lượng bứt phá mạnh, có uy danh, hợp kinh doanh và những lĩnh vực cạnh tranh.",
+  "noiDung": "Với Điền Trạch: Tham Lang sáng đồng cung Linh Tinh, tạo thế Linh Tham: năng lượng bứt phá mạnh, có uy danh, hợp kinh doanh và những lĩnh vực cạnh tranh. Về nhà cửa, dễ có lần đổi chỗ ở hoặc sửa sang; nên cân nhắc kỹ chi phí trước khi quyết.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -9332,7 +10827,7 @@
   "cachCuc": "Hỏa Tham / Linh Tham",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Tham Lang đồng cung Linh Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Linh Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc và chọn một mục tiêu chính.",
+  "noiDung": "Với Điền Trạch: Tham Lang đồng cung Linh Tinh nhưng Tham Lang chưa đủ sáng, nên chưa đủ điều kiện gọi trọn cách Linh Tham: xem là năng lượng nhanh và nóng, cần tiết chế cảm xúc và chọn một mục tiêu chính. Về nhà cửa, dễ có lần đổi chỗ ở hoặc sửa sang; nên cân nhắc kỹ chi phí trước khi quyết.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -9373,12 +10868,18 @@
     ],
     "toiThieu": 2,
     "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Tử Vi",
+     "Phá Quân"
+    ]
    }
   ],
   "cachCuc": "Tử Phá",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Tử Vi và Phá Quân đồng cung, tạo thế Tử Phá: vừa coi trọng vị thế vừa thích đổi mới, đời sống nhiều chuyển biến, hợp con đường tự thân lập nghiệp.",
+  "noiDung": "Với Điền Trạch: Tử Vi và Phá Quân đồng cung, tạo thế Tử Phá: vừa coi trọng vị thế vừa thích đổi mới, đời sống nhiều chuyển biến, hợp con đường tự thân lập nghiệp. Về nhà cửa, dễ có lần đổi chỗ ở hoặc sửa sang; nên cân nhắc kỹ chi phí trước khi quyết.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -9420,10 +10921,57 @@
     "viTri": "tam-phuong"
    }
   ],
+  "khong": [
+   {
+    "phaCachMuc3": [
+     "Tử Vi",
+     "Phá Quân"
+    ]
+   }
+  ],
   "cachCuc": "Tử Phá",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Tử Phá (Tử Vi và Phá Quân đồng cung) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): xu hướng đổi mới và chuyển biến cao hơn, nên chọn hướng đi rõ và cân nhắc kỹ trước quyết định lớn.",
+  "noiDung": "Với Điền Trạch: Thế Tử Phá (Tử Vi và Phá Quân đồng cung) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): xu hướng đổi mới và chuyển biến cao hơn, nên chọn hướng đi rõ và cân nhắc kỹ trước quyết định lớn. Về nhà cửa, dễ có lần đổi chỗ ở hoặc sửa sang; nên cân nhắc kỹ chi phí trước khi quyết.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Tử Phá"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-dien-trach-CC-TuPha-PHA3",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "CHUNG-CC-07",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tử Vi",
+     "Phá Quân"
+    ],
+    "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Tử Vi",
+     "Phá Quân"
+    ]
+   }
+  ],
+  "cachCuc": "Tử Phá",
+  "uuTien": 85,
+  "muc": "cach-cuc",
+  "noiDung": "Với Điền Trạch: có dáng dấp của thế Tử Phá (vừa coi trọng vị thế vừa thích đổi mới), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Về nhà cửa, dễ có lần đổi chỗ ở hoặc sửa sang; nên cân nhắc kỹ chi phí trước khi quyết.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -9467,6 +11015,12 @@
     "viTri": "tam-phuong"
    },
    {
+    "phaCachMuc3": [
+     "Thiên Cơ",
+     "Thiên Lương"
+    ]
+   },
+   {
     "sao": [
      "Thiên Cơ",
      "Thái Âm",
@@ -9480,7 +11034,7 @@
   "cachCuc": "Cơ Lương",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Thiên Cơ và Thiên Lương hội trong tam phương, tạo thế Cơ Lương: giỏi bàn mưu lược và phân tích, hợp công việc cần suy xét kỹ.",
+  "noiDung": "Với Điền Trạch: Thiên Cơ và Thiên Lương hội trong tam phương, tạo thế Cơ Lương: giỏi bàn mưu lược và phân tích, hợp công việc cần suy xét kỹ. Về nhà cửa, bạn cân nhắc kỹ trước khi quyết; nên đặt hạn chốt để không trì hoãn việc lớn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -9525,6 +11079,12 @@
   ],
   "khong": [
    {
+    "phaCachMuc3": [
+     "Thiên Cơ",
+     "Thiên Lương"
+    ]
+   },
+   {
     "sao": [
      "Thiên Cơ",
      "Thái Âm",
@@ -9538,7 +11098,59 @@
   "cachCuc": "Cơ Lương",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Cơ Lương (Thiên Cơ và Thiên Lương hội trong tam phương) có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): khả năng phân tích, bàn mưu vẫn còn, cần chủ động hành động để ý tưởng thành kết quả.",
+  "noiDung": "Với Điền Trạch: Thế Cơ Lương (Thiên Cơ và Thiên Lương hội trong tam phương) có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): khả năng phân tích, bàn mưu vẫn còn, cần chủ động hành động để ý tưởng thành kết quả. Về nhà cửa, bạn cân nhắc kỹ trước khi quyết; nên đặt hạn chốt để không trì hoãn việc lớn.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [
+   "Cách Cơ Lương"
+  ]
+ },
+ {
+  "phaCach": true,
+  "id": "KHUNG-dien-trach-CC-CoLuong-PHA3",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "CC",
+  "maNghienCuu": [
+   "MENH-TCO-03",
+   "CHUNG-CC-08"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thiên Lương"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Thiên Cơ",
+     "Thiên Lương"
+    ]
+   }
+  ],
+  "khong": [
+   {
+    "sao": [
+     "Thiên Cơ",
+     "Thái Âm",
+     "Thiên Đồng",
+     "Thiên Lương"
+    ],
+    "rai": true,
+    "viTri": "tam-phuong"
+   }
+  ],
+  "cachCuc": "Cơ Lương",
+  "uuTien": 85,
+  "muc": "cach-cuc",
+  "noiDung": "Với Điền Trạch: có dáng dấp của thế Cơ Lương (giỏi bàn mưu và phân tích), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Về nhà cửa, bạn cân nhắc kỹ trước khi quyết; nên đặt hạn chốt để không trì hoãn việc lớn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -9580,12 +11192,18 @@
     ],
     "toiThieu": 2,
     "viTri": "tam-phuong"
+   },
+   {
+    "phaCachMuc3": [
+     "Thái Dương",
+     "Thái Âm"
+    ]
    }
   ],
   "cachCuc": "Nhật Nguyệt",
   "uuTien": 100,
   "muc": "cach-cuc",
-  "noiDung": "Thái Dương và Thái Âm cùng hội trong tam phương, tạo thế Nhật Nguyệt: cùng sáng là cách tốt, chủ hiển đạt; nếu một trong hai kém sáng thì cần thêm nỗ lực và sự bền bỉ.",
+  "noiDung": "Với Điền Trạch: Thái Dương và Thái Âm cùng hội trong tam phương, tạo thế Nhật Nguyệt: cùng sáng là cách tốt, chủ hiển đạt; nếu một trong hai kém sáng thì cần thêm nỗ lực và sự bền bỉ. Về nhà cửa, hợp hướng ổn định lâu dài; nên đặt kế hoạch an cư theo từng giai đoạn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -9628,10 +11246,18 @@
     "viTri": "tam-phuong"
    }
   ],
+  "khong": [
+   {
+    "phaCachMuc3": [
+     "Thái Dương",
+     "Thái Âm"
+    ]
+   }
+  ],
   "cachCuc": "Nhật Nguyệt",
   "uuTien": 90,
   "muc": "cach-cuc",
-  "noiDung": "Thế Nhật Nguyệt (Thái Dương và Thái Âm cùng hội trong tam phương) có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): cần bền bỉ và tự tạo cơ hội để phát huy được ánh sáng của hai sao.",
+  "noiDung": "Với Điền Trạch: Thế Nhật Nguyệt (Thái Dương và Thái Âm cùng hội trong tam phương) có từ hai sát tinh hội chiếu (thành cách nhưng có khuyết): cần bền bỉ và tự tạo cơ hội để phát huy được ánh sáng của hai sao. Về nhà cửa, hợp hướng ổn định lâu dài; nên đặt kế hoạch an cư theo từng giai đoạn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -9643,86 +11269,35 @@
   ]
  },
  {
-  "id": "KHUNG-dien-trach-CC-Thamdao",
-  "chuyenDe": "dien-trach",
-  "cung": "Điền Trạch",
-  "loai": "CC",
-  "maNghienCuu": [
-   "CHUNG-SP-06",
-   "CHUNG-CT-THL-01"
-  ],
-  "dieuKien": [
-   {
-    "sao": [
-     "Tham Lang",
-     "Đào Hoa"
-    ],
-    "viTri": "tam-phuong"
-   }
-  ],
-  "khong": [
-   {
-    "sao": [
-     "Địa Không",
-     "Địa Kiếp",
-     "Kình Dương",
-     "Đà La",
-     "Hỏa Tinh",
-     "Linh Tinh"
-    ],
-    "toiThieu": 2,
-    "viTri": "tam-phuong"
-   }
-  ],
-  "cachCuc": "Tham Đào",
-  "uuTien": 100,
-  "muc": "cach-cuc",
-  "noiDung": "Tham Lang đồng cung Đào Hoa, tạo thế Tham Đào: sức hút và duyên giao tiếp lớn, nhiều ham muốn và thích cái mới; nên cân bằng giữa duyên và nguyên tắc cá nhân.",
-  "nguon": [
-   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
-   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
-  ],
-  "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
-  "truongPhai": "Tam hợp phái Việt",
-  "yeuTo": [
-   "Cách Tham Đào"
-  ]
- },
- {
   "phaCach": true,
-  "id": "KHUNG-dien-trach-CC-Thamdao-PHA",
+  "id": "KHUNG-dien-trach-CC-NhatNguyet-PHA3",
   "chuyenDe": "dien-trach",
   "cung": "Điền Trạch",
   "loai": "CC",
   "maNghienCuu": [
-   "CHUNG-SP-06",
-   "CHUNG-CT-THL-01"
+   "CHUNG-CC-05",
+   "CHUNG-CC-08"
   ],
   "dieuKien": [
    {
     "sao": [
-     "Tham Lang",
-     "Đào Hoa"
+     "Thái Dương",
+     "Thái Âm"
     ],
+    "rai": true,
     "viTri": "tam-phuong"
    },
    {
-    "sao": [
-     "Địa Không",
-     "Địa Kiếp",
-     "Kình Dương",
-     "Đà La",
-     "Hỏa Tinh",
-     "Linh Tinh"
-    ],
-    "toiThieu": 2,
-    "viTri": "tam-phuong"
+    "phaCachMuc3": [
+     "Thái Dương",
+     "Thái Âm"
+    ]
    }
   ],
-  "cachCuc": "Tham Đào",
-  "uuTien": 90,
+  "cachCuc": "Nhật Nguyệt",
+  "uuTien": 85,
   "muc": "cach-cuc",
-  "noiDung": "Thế Tham Đào (Tham Lang đồng cung Đào Hoa) có từ hai sát tinh hội chiếu ở tam phương (thành cách nhưng có khuyết): sức hút vẫn còn, nên rõ ràng về điều mình muốn để tránh phân tán.",
+  "noiDung": "Với Điền Trạch: có dáng dấp của thế Nhật Nguyệt (chủ hiển đạt khi cả hai sao cùng sáng), nhưng yếu tố hung ở tứ chính nặng nên chưa thể coi là cách vững: cần nỗ lực nhiều hơn để phát huy. Về nhà cửa, hợp hướng ổn định lâu dài; nên đặt kế hoạch an cư theo từng giai đoạn.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -9730,7 +11305,7 @@
   "nguonChiTiet": "TT (Cốt tủy phú; Luận cách tinh số cao hạ); TB",
   "truongPhai": "Tam hợp phái Việt",
   "yeuTo": [
-   "Cách Tham Đào"
+   "Cách Nhật Nguyệt"
   ]
  },
  {

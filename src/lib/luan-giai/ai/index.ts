@@ -209,6 +209,25 @@ function khopBan2(ls: LaSo, q: QuyTacBan2): KetQuaKhop | null {
   };
 }
 
+/**
+ * Một bài không được nói hai lần cùng một câu (T-a4504a/T-080e3a): câu từ 30 ký tự trở lên đã xuất hiện ở nhận định trước
+ * thì bỏ khỏi nhận định sau; nhận định chỉ còn lại rỗng thì bỏ hẳn.
+ */
+export function boCauLap<T extends { text: string }>(muc: { nhanDinh: T[] }[]): void {
+  const daNoi = new Set<string>();
+  for (const m of muc) {
+    m.nhanDinh = m.nhanDinh.flatMap((n) => {
+      const con = n.text.split(/(?<=[.!?])\s+/).filter((c) => {
+        if (c.length < 30) return true;
+        if (daNoi.has(c)) return false;
+        daNoi.add(c);
+        return true;
+      });
+      return con.length ? [{ ...n, text: con.join(' ') }] : [];
+    });
+  }
+}
+
 export async function sinhLuanGiai(ls: LaSo, chuyenDe: ChuyenDeMa, tuyChon: TuyChon = {}): Promise<LuanGiai> {
   const cfg = CHUYEN_DE[chuyenDe];
   if (!cfg) throw new Error(`Chuyên đề không hợp lệ: ${chuyenDe}`);
@@ -282,6 +301,8 @@ export async function sinhLuanGiai(ls: LaSo, chuyenDe: ChuyenDeMa, tuyChon: TuyC
 
   // Cách cục (mục đầu) xếp theo mức ưu tiên giảm dần; thứ tự ghép còn lại giữ nguyên.
   const mucRa = muc.map((m) => ({ id: m.id, tieuDe: m.tieuDe, nhanDinh: [...m.nhanDinh].sort((a, b) => b.u - a.u).map((x) => x.n) }));
+
+  boCauLap(mucRa);
 
   const kq: LuanGiai = { chuyenDe, ...(dv ? { van: dv.thongTin } : {}), muc: mucRa.filter((m) => m.nhanDinh.length), ghiChu: GHI_CHU, phienBan: PHIEN_BAN_QUY_TAC };
   if (!tuyChon.boQuaCache && dung === 'stub') ghi(khoa, kq);

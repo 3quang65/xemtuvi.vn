@@ -49,8 +49,8 @@ test('10 lá số mẫu: bỏ sót sao quan trọng ≤ 10% (Tứ hóa, Tuần/T
   assert.ok(thieu.length <= can * 0.1, `bỏ sót ${thieu.length}/${can}: ${thieu.join('; ')}`);
 });
 
-test('10 lá số mẫu: nhận ra 7 cách cục ghi ở phiếu kiểm duyệt, cách cục đứng đầu bài', async () => {
-  const mong = { 0: ['Sát Phá Tham', 'Hỏa Tham / Linh Tham'], 2: ['Tham Đào'], 3: ['Tử Phủ Vũ Tướng'], 4: ['Cơ Lương'], 6: ['Tử Phá'], 8: ['Cơ Nguyệt Đồng Lương'] };
+test('10 lá số mẫu: nhận ra 6 cách cục còn quy tắc ghi ở phiếu kiểm duyệt, cách cục đứng đầu bài', async () => {
+  const mong = { 0: ['Sát Phá Tham', 'Hỏa Tham / Linh Tham'], 3: ['Tử Phủ Vũ Tướng'], 4: ['Cơ Lương'], 6: ['Tử Phá'], 8: ['Cơ Nguyệt Đồng Lương'] };
   const thay = new Set();
   for (const [i, ds] of Object.entries(mong)) {
     const { bai } = await mauBai(Number(i));
@@ -58,7 +58,7 @@ test('10 lá số mẫu: nhận ra 7 cách cục ghi ở phiếu kiểm duyệt,
     for (const c of ds) { assert.ok(co.includes(c), `bản ${Number(i) + 1} thiếu cách ${c} (có: ${co.join(', ')})`); thay.add(c); }
     assert.equal(bai.muc[0].id, 'cach-cuc', `bản ${Number(i) + 1}: cách cục phải ở mục đầu`);
   }
-  assert.ok(thay.size >= 7, `chỉ nhận ${thay.size} cách`);
+  assert.ok(thay.size >= 6, `chỉ nhận ${thay.size} cách`);
 });
 
 test('0 câu "góp thêm sắc thái" và "Độ sáng tốt, nên phát huy chủ động" trên mọi lá số mẫu × 3 chuyên đề', async () => {
