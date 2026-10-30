@@ -1,0 +1,4763 @@
+[
+ {
+  "id": "ML-S01-TOT",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Tử Vi"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Tử Vi tại Mệnh: thích giữ vai trò dẫn dắt, coi trọng thể diện và sự tự chủ. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S01-BINH",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Tử Vi"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Tử Vi tại Mệnh: thích giữ vai trò dẫn dắt, coi trọng thể diện và sự tự chủ. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S01-HAM",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Tử Vi"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Tử Vi tại Mệnh: thích giữ vai trò dẫn dắt, coi trọng thể diện và sự tự chủ. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S01-C1",
+  "chuyenDe": "menh",
+  "cung": "Thiên Di",
+  "sao": [
+   "Tử Vi"
+  ],
+  "dieuKien": {},
+  "noiDung": "Tử Vi ở cung Thiên Di (xung chiếu với Mệnh): bổ sung xu hướng thích giữ vai trò dẫn dắt, coi trọng thể diện và sự tự chủ, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S01-C2",
+  "chuyenDe": "menh",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Tử Vi"
+  ],
+  "dieuKien": {},
+  "noiDung": "Tử Vi ở cung Quan Lộc (tam hợp với Mệnh): bổ sung xu hướng thích giữ vai trò dẫn dắt, coi trọng thể diện và sự tự chủ, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S01-C3",
+  "chuyenDe": "menh",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Tử Vi"
+  ],
+  "dieuKien": {},
+  "noiDung": "Tử Vi ở cung Tài Bạch (tam hợp với Mệnh): bổ sung xu hướng thích giữ vai trò dẫn dắt, coi trọng thể diện và sự tự chủ, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S02-TOT",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Thiên Cơ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Thiên Cơ tại Mệnh: nhanh nhạy, hay cân nhắc, nhiều ý tưởng. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S02-BINH",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Thiên Cơ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Thiên Cơ tại Mệnh: nhanh nhạy, hay cân nhắc, nhiều ý tưởng. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S02-HAM",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Thiên Cơ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Cơ tại Mệnh: nhanh nhạy, hay cân nhắc, nhiều ý tưởng. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S02-C1",
+  "chuyenDe": "menh",
+  "cung": "Thiên Di",
+  "sao": [
+   "Thiên Cơ"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Cơ ở cung Thiên Di (xung chiếu với Mệnh): bổ sung xu hướng nhanh nhạy, hay cân nhắc, nhiều ý tưởng, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S02-C2",
+  "chuyenDe": "menh",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thiên Cơ"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Cơ ở cung Quan Lộc (tam hợp với Mệnh): bổ sung xu hướng nhanh nhạy, hay cân nhắc, nhiều ý tưởng, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S02-C3",
+  "chuyenDe": "menh",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Thiên Cơ"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Cơ ở cung Tài Bạch (tam hợp với Mệnh): bổ sung xu hướng nhanh nhạy, hay cân nhắc, nhiều ý tưởng, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S03-TOT",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Thái Dương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Thái Dương tại Mệnh: cởi mở, nhiệt thành, thích giúp đỡ người khác. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S03-BINH",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Thái Dương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Thái Dương tại Mệnh: cởi mở, nhiệt thành, thích giúp đỡ người khác. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S03-HAM",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Thái Dương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thái Dương tại Mệnh: cởi mở, nhiệt thành, thích giúp đỡ người khác. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S03-C1",
+  "chuyenDe": "menh",
+  "cung": "Thiên Di",
+  "sao": [
+   "Thái Dương"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thái Dương ở cung Thiên Di (xung chiếu với Mệnh): bổ sung xu hướng cởi mở, nhiệt thành, thích giúp đỡ người khác, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S03-C2",
+  "chuyenDe": "menh",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thái Dương"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thái Dương ở cung Quan Lộc (tam hợp với Mệnh): bổ sung xu hướng cởi mở, nhiệt thành, thích giúp đỡ người khác, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S03-C3",
+  "chuyenDe": "menh",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Thái Dương"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thái Dương ở cung Tài Bạch (tam hợp với Mệnh): bổ sung xu hướng cởi mở, nhiệt thành, thích giúp đỡ người khác, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S04-TOT",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Vũ Khúc"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Vũ Khúc tại Mệnh: thực tế, quyết đoán, coi trọng kỷ luật tài chính. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S04-BINH",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Vũ Khúc"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Vũ Khúc tại Mệnh: thực tế, quyết đoán, coi trọng kỷ luật tài chính. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S04-HAM",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Vũ Khúc"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Vũ Khúc tại Mệnh: thực tế, quyết đoán, coi trọng kỷ luật tài chính. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S04-C1",
+  "chuyenDe": "menh",
+  "cung": "Thiên Di",
+  "sao": [
+   "Vũ Khúc"
+  ],
+  "dieuKien": {},
+  "noiDung": "Vũ Khúc ở cung Thiên Di (xung chiếu với Mệnh): bổ sung xu hướng thực tế, quyết đoán, coi trọng kỷ luật tài chính, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S04-C2",
+  "chuyenDe": "menh",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Vũ Khúc"
+  ],
+  "dieuKien": {},
+  "noiDung": "Vũ Khúc ở cung Quan Lộc (tam hợp với Mệnh): bổ sung xu hướng thực tế, quyết đoán, coi trọng kỷ luật tài chính, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S04-C3",
+  "chuyenDe": "menh",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Vũ Khúc"
+  ],
+  "dieuKien": {},
+  "noiDung": "Vũ Khúc ở cung Tài Bạch (tam hợp với Mệnh): bổ sung xu hướng thực tế, quyết đoán, coi trọng kỷ luật tài chính, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S05-TOT",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Thiên Đồng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Thiên Đồng tại Mệnh: hiền hòa, dễ thích nghi, ưa sự thoải mái. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S05-BINH",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Thiên Đồng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Thiên Đồng tại Mệnh: hiền hòa, dễ thích nghi, ưa sự thoải mái. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S05-HAM",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Thiên Đồng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Đồng tại Mệnh: hiền hòa, dễ thích nghi, ưa sự thoải mái. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S05-C1",
+  "chuyenDe": "menh",
+  "cung": "Thiên Di",
+  "sao": [
+   "Thiên Đồng"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Đồng ở cung Thiên Di (xung chiếu với Mệnh): bổ sung xu hướng hiền hòa, dễ thích nghi, ưa sự thoải mái, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S05-C2",
+  "chuyenDe": "menh",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thiên Đồng"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Đồng ở cung Quan Lộc (tam hợp với Mệnh): bổ sung xu hướng hiền hòa, dễ thích nghi, ưa sự thoải mái, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S05-C3",
+  "chuyenDe": "menh",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Thiên Đồng"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Đồng ở cung Tài Bạch (tam hợp với Mệnh): bổ sung xu hướng hiền hòa, dễ thích nghi, ưa sự thoải mái, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S06-TOT",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Liêm Trinh"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Liêm Trinh tại Mệnh: có nguyên tắc, cá tính rõ nét, giàu cảm xúc bên trong. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S06-BINH",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Liêm Trinh"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Liêm Trinh tại Mệnh: có nguyên tắc, cá tính rõ nét, giàu cảm xúc bên trong. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S06-HAM",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Liêm Trinh"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Liêm Trinh tại Mệnh: có nguyên tắc, cá tính rõ nét, giàu cảm xúc bên trong. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S06-C1",
+  "chuyenDe": "menh",
+  "cung": "Thiên Di",
+  "sao": [
+   "Liêm Trinh"
+  ],
+  "dieuKien": {},
+  "noiDung": "Liêm Trinh ở cung Thiên Di (xung chiếu với Mệnh): bổ sung xu hướng có nguyên tắc, cá tính rõ nét, giàu cảm xúc bên trong, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S06-C2",
+  "chuyenDe": "menh",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Liêm Trinh"
+  ],
+  "dieuKien": {},
+  "noiDung": "Liêm Trinh ở cung Quan Lộc (tam hợp với Mệnh): bổ sung xu hướng có nguyên tắc, cá tính rõ nét, giàu cảm xúc bên trong, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S06-C3",
+  "chuyenDe": "menh",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Liêm Trinh"
+  ],
+  "dieuKien": {},
+  "noiDung": "Liêm Trinh ở cung Tài Bạch (tam hợp với Mệnh): bổ sung xu hướng có nguyên tắc, cá tính rõ nét, giàu cảm xúc bên trong, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S07-TOT",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Thiên Phủ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Thiên Phủ tại Mệnh: ổn định, chu toàn, biết gìn giữ. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S07-BINH",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Thiên Phủ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Thiên Phủ tại Mệnh: ổn định, chu toàn, biết gìn giữ. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S07-HAM",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Thiên Phủ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Phủ tại Mệnh: ổn định, chu toàn, biết gìn giữ. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S07-C1",
+  "chuyenDe": "menh",
+  "cung": "Thiên Di",
+  "sao": [
+   "Thiên Phủ"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Phủ ở cung Thiên Di (xung chiếu với Mệnh): bổ sung xu hướng ổn định, chu toàn, biết gìn giữ, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S07-C2",
+  "chuyenDe": "menh",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thiên Phủ"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Phủ ở cung Quan Lộc (tam hợp với Mệnh): bổ sung xu hướng ổn định, chu toàn, biết gìn giữ, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S07-C3",
+  "chuyenDe": "menh",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Thiên Phủ"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Phủ ở cung Tài Bạch (tam hợp với Mệnh): bổ sung xu hướng ổn định, chu toàn, biết gìn giữ, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S08-TOT",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Thái Âm"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Thái Âm tại Mệnh: tinh tế, giàu cảm xúc, chú ý chi tiết. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S08-BINH",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Thái Âm"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Thái Âm tại Mệnh: tinh tế, giàu cảm xúc, chú ý chi tiết. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S08-HAM",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Thái Âm"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thái Âm tại Mệnh: tinh tế, giàu cảm xúc, chú ý chi tiết. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S08-C1",
+  "chuyenDe": "menh",
+  "cung": "Thiên Di",
+  "sao": [
+   "Thái Âm"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thái Âm ở cung Thiên Di (xung chiếu với Mệnh): bổ sung xu hướng tinh tế, giàu cảm xúc, chú ý chi tiết, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S08-C2",
+  "chuyenDe": "menh",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thái Âm"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thái Âm ở cung Quan Lộc (tam hợp với Mệnh): bổ sung xu hướng tinh tế, giàu cảm xúc, chú ý chi tiết, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S08-C3",
+  "chuyenDe": "menh",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Thái Âm"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thái Âm ở cung Tài Bạch (tam hợp với Mệnh): bổ sung xu hướng tinh tế, giàu cảm xúc, chú ý chi tiết, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S09-TOT",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Tham Lang"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Tham Lang tại Mệnh: đa tài, nhiều ham muốn học hỏi, giỏi giao tiếp. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S09-BINH",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Tham Lang"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Tham Lang tại Mệnh: đa tài, nhiều ham muốn học hỏi, giỏi giao tiếp. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S09-HAM",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Tham Lang"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Tham Lang tại Mệnh: đa tài, nhiều ham muốn học hỏi, giỏi giao tiếp. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S09-C1",
+  "chuyenDe": "menh",
+  "cung": "Thiên Di",
+  "sao": [
+   "Tham Lang"
+  ],
+  "dieuKien": {},
+  "noiDung": "Tham Lang ở cung Thiên Di (xung chiếu với Mệnh): bổ sung xu hướng đa tài, nhiều ham muốn học hỏi, giỏi giao tiếp, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S09-C2",
+  "chuyenDe": "menh",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Tham Lang"
+  ],
+  "dieuKien": {},
+  "noiDung": "Tham Lang ở cung Quan Lộc (tam hợp với Mệnh): bổ sung xu hướng đa tài, nhiều ham muốn học hỏi, giỏi giao tiếp, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S09-C3",
+  "chuyenDe": "menh",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Tham Lang"
+  ],
+  "dieuKien": {},
+  "noiDung": "Tham Lang ở cung Tài Bạch (tam hợp với Mệnh): bổ sung xu hướng đa tài, nhiều ham muốn học hỏi, giỏi giao tiếp, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S10-TOT",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Cự Môn"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Cự Môn tại Mệnh: hay suy xét, lời nói có sức nặng, thích tìm hiểu đến cùng. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S10-BINH",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Cự Môn"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Cự Môn tại Mệnh: hay suy xét, lời nói có sức nặng, thích tìm hiểu đến cùng. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S10-HAM",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Cự Môn"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Cự Môn tại Mệnh: hay suy xét, lời nói có sức nặng, thích tìm hiểu đến cùng. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S10-C1",
+  "chuyenDe": "menh",
+  "cung": "Thiên Di",
+  "sao": [
+   "Cự Môn"
+  ],
+  "dieuKien": {},
+  "noiDung": "Cự Môn ở cung Thiên Di (xung chiếu với Mệnh): bổ sung xu hướng hay suy xét, lời nói có sức nặng, thích tìm hiểu đến cùng, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S10-C2",
+  "chuyenDe": "menh",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Cự Môn"
+  ],
+  "dieuKien": {},
+  "noiDung": "Cự Môn ở cung Quan Lộc (tam hợp với Mệnh): bổ sung xu hướng hay suy xét, lời nói có sức nặng, thích tìm hiểu đến cùng, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S10-C3",
+  "chuyenDe": "menh",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Cự Môn"
+  ],
+  "dieuKien": {},
+  "noiDung": "Cự Môn ở cung Tài Bạch (tam hợp với Mệnh): bổ sung xu hướng hay suy xét, lời nói có sức nặng, thích tìm hiểu đến cùng, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S11-TOT",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Thiên Tướng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Thiên Tướng tại Mệnh: công bằng, biết giúp đỡ, giữ chữ tín. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S11-BINH",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Thiên Tướng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Thiên Tướng tại Mệnh: công bằng, biết giúp đỡ, giữ chữ tín. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S11-HAM",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Thiên Tướng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Tướng tại Mệnh: công bằng, biết giúp đỡ, giữ chữ tín. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S11-C1",
+  "chuyenDe": "menh",
+  "cung": "Thiên Di",
+  "sao": [
+   "Thiên Tướng"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Tướng ở cung Thiên Di (xung chiếu với Mệnh): bổ sung xu hướng công bằng, biết giúp đỡ, giữ chữ tín, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S11-C2",
+  "chuyenDe": "menh",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thiên Tướng"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Tướng ở cung Quan Lộc (tam hợp với Mệnh): bổ sung xu hướng công bằng, biết giúp đỡ, giữ chữ tín, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S11-C3",
+  "chuyenDe": "menh",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Thiên Tướng"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Tướng ở cung Tài Bạch (tam hợp với Mệnh): bổ sung xu hướng công bằng, biết giúp đỡ, giữ chữ tín, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S12-TOT",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Thiên Lương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Thiên Lương tại Mệnh: điềm đạm, có óc che chở, nghĩ xa. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S12-BINH",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Thiên Lương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Thiên Lương tại Mệnh: điềm đạm, có óc che chở, nghĩ xa. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S12-HAM",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Thiên Lương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Lương tại Mệnh: điềm đạm, có óc che chở, nghĩ xa. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S12-C1",
+  "chuyenDe": "menh",
+  "cung": "Thiên Di",
+  "sao": [
+   "Thiên Lương"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Lương ở cung Thiên Di (xung chiếu với Mệnh): bổ sung xu hướng điềm đạm, có óc che chở, nghĩ xa, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S12-C2",
+  "chuyenDe": "menh",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thiên Lương"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Lương ở cung Quan Lộc (tam hợp với Mệnh): bổ sung xu hướng điềm đạm, có óc che chở, nghĩ xa, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S12-C3",
+  "chuyenDe": "menh",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Thiên Lương"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Lương ở cung Tài Bạch (tam hợp với Mệnh): bổ sung xu hướng điềm đạm, có óc che chở, nghĩ xa, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S13-TOT",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Thất Sát"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Thất Sát tại Mệnh: mạnh mẽ, dứt khoát, dám đương đầu thử thách. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S13-BINH",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Thất Sát"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Thất Sát tại Mệnh: mạnh mẽ, dứt khoát, dám đương đầu thử thách. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S13-HAM",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Thất Sát"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thất Sát tại Mệnh: mạnh mẽ, dứt khoát, dám đương đầu thử thách. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S13-C1",
+  "chuyenDe": "menh",
+  "cung": "Thiên Di",
+  "sao": [
+   "Thất Sát"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thất Sát ở cung Thiên Di (xung chiếu với Mệnh): bổ sung xu hướng mạnh mẽ, dứt khoát, dám đương đầu thử thách, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S13-C2",
+  "chuyenDe": "menh",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thất Sát"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thất Sát ở cung Quan Lộc (tam hợp với Mệnh): bổ sung xu hướng mạnh mẽ, dứt khoát, dám đương đầu thử thách, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S13-C3",
+  "chuyenDe": "menh",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Thất Sát"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thất Sát ở cung Tài Bạch (tam hợp với Mệnh): bổ sung xu hướng mạnh mẽ, dứt khoát, dám đương đầu thử thách, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S14-TOT",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Phá Quân"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Phá Quân tại Mệnh: thích đổi mới, dám bứt phá, không ngại làm lại. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S14-BINH",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Phá Quân"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Phá Quân tại Mệnh: thích đổi mới, dám bứt phá, không ngại làm lại. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S14-HAM",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Phá Quân"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Phá Quân tại Mệnh: thích đổi mới, dám bứt phá, không ngại làm lại. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-S14-C1",
+  "chuyenDe": "menh",
+  "cung": "Thiên Di",
+  "sao": [
+   "Phá Quân"
+  ],
+  "dieuKien": {},
+  "noiDung": "Phá Quân ở cung Thiên Di (xung chiếu với Mệnh): bổ sung xu hướng thích đổi mới, dám bứt phá, không ngại làm lại, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S14-C2",
+  "chuyenDe": "menh",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Phá Quân"
+  ],
+  "dieuKien": {},
+  "noiDung": "Phá Quân ở cung Quan Lộc (tam hợp với Mệnh): bổ sung xu hướng thích đổi mới, dám bứt phá, không ngại làm lại, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S14-C3",
+  "chuyenDe": "menh",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Phá Quân"
+  ],
+  "dieuKien": {},
+  "noiDung": "Phá Quân ở cung Tài Bạch (tam hợp với Mệnh): bổ sung xu hướng thích đổi mới, dám bứt phá, không ngại làm lại, góp thêm sắc thái cho chuyên đề Mệnh.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-HOA-0",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [],
+  "dieuKien": {
+   "hoa": "Hóa Lộc"
+  },
+  "noiDung": "Hóa Lộc tại Mệnh mở ra cơ hội và nguồn lực, nên chủ động nắm bắt.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tu-hoa"
+ },
+ {
+  "id": "ML-HOA-1",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [],
+  "dieuKien": {
+   "hoa": "Hóa Quyền"
+  },
+  "noiDung": "Hóa Quyền tại Mệnh tăng khả năng dẫn dắt, quyết định, cần giữ sự cân bằng.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tu-hoa"
+ },
+ {
+  "id": "ML-HOA-2",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [],
+  "dieuKien": {
+   "hoa": "Hóa Khoa"
+  },
+  "noiDung": "Hóa Khoa tại Mệnh thiên về danh tiếng tốt, học hỏi và sự hỗ trợ từ người có hiểu biết.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tu-hoa"
+ },
+ {
+  "id": "ML-HOA-3",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [],
+  "dieuKien": {
+   "hoa": "Hóa Kỵ"
+  },
+  "noiDung": "Hóa Kỵ tại Mệnh là điểm nhạy cảm, dễ băn khoăn hoặc vướng mắc, nên chuẩn bị kỹ và giao tiếp rõ ràng.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tu-hoa"
+ },
+ {
+  "id": "ML-VCD",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [],
+  "dieuKien": {
+   "cungCo": "Vô Chính Diệu"
+  },
+  "noiDung": "Mệnh không có chính tinh: tính cách linh hoạt, chịu ảnh hưởng nhiều từ cung xung chiếu và hoàn cảnh, nên xem kỹ các cung hợp chiếu.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "ML-TT-TUẦN",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [],
+  "dieuKien": {
+   "cungCo": "Tuần"
+  },
+  "noiDung": "Tuần đóng tại Mệnh: các đặc điểm của cung thường biểu hiện chậm hoặc kín đáo hơn, nên kiên nhẫn và nhìn theo giai đoạn.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "ML-TT-TRIỆT",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [],
+  "dieuKien": {
+   "cungCo": "Triệt"
+  },
+  "noiDung": "Triệt đóng tại Mệnh: các đặc điểm của cung thường biểu hiện chậm hoặc kín đáo hơn, nên kiên nhẫn và nhìn theo giai đoạn.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "ML-PS-0",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Tả Phù"
+  ],
+  "dieuKien": {},
+  "noiDung": "Tả Phù đồng cung Mệnh: có người hỗ trợ, dễ hợp tác.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "ML-PS-1",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Hữu Bật"
+  ],
+  "dieuKien": {},
+  "noiDung": "Hữu Bật đồng cung Mệnh: được giúp đỡ đúng lúc, quan hệ thuận.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "ML-PS-2",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Văn Xương"
+  ],
+  "dieuKien": {},
+  "noiDung": "Văn Xương đồng cung Mệnh: thiên về chữ nghĩa, học thuật, lập luận.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "ML-PS-3",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Văn Khúc"
+  ],
+  "dieuKien": {},
+  "noiDung": "Văn Khúc đồng cung Mệnh: có khiếu biểu đạt, nghệ thuật, khéo ăn nói.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "ML-PS-4",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Thiên Khôi"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Khôi đồng cung Mệnh: dễ gặp quý nhân, người hướng dẫn.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "ML-PS-5",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Thiên Việt"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Việt đồng cung Mệnh: có sự nâng đỡ, cơ hội từ người đi trước.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "ML-PS-6",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Lộc Tồn"
+  ],
+  "dieuKien": {},
+  "noiDung": "Lộc Tồn đồng cung Mệnh: biết tích lũy, thận trọng với tài chính.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "ML-PS-7",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Thiên Mã"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Mã đồng cung Mệnh: năng động, thích di chuyển và thay đổi.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "ML-PS-8",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Kình Dương"
+  ],
+  "dieuKien": {},
+  "noiDung": "Kình Dương đồng cung Mệnh: nghị lực mạnh, cần kiểm soát sự nóng vội.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "ML-PS-9",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Đà La"
+  ],
+  "dieuKien": {},
+  "noiDung": "Đà La đồng cung Mệnh: kiên trì nhưng dễ chần chừ, cần chủ động hơn.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "ML-PS-10",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Hỏa Tinh"
+  ],
+  "dieuKien": {},
+  "noiDung": "Hỏa Tinh đồng cung Mệnh: nhiệt huyết, phản ứng nhanh, nên tiết chế cảm xúc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "ML-PS-11",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Linh Tinh"
+  ],
+  "dieuKien": {},
+  "noiDung": "Linh Tinh đồng cung Mệnh: nhạy bén, dễ căng thẳng, nên giữ nhịp nghỉ ngơi.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "ML-PS-12",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Địa Không"
+  ],
+  "dieuKien": {},
+  "noiDung": "Địa Không đồng cung Mệnh: hay nghĩ khác lạ, cần thực tế hóa ý tưởng.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "ML-PS-13",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Địa Kiếp"
+  ],
+  "dieuKien": {},
+  "noiDung": "Địa Kiếp đồng cung Mệnh: hay muốn đổi hướng, nên cân nhắc trước khi quyết.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "ML-PS-14",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Hồng Loan"
+  ],
+  "dieuKien": {},
+  "noiDung": "Hồng Loan đồng cung Mệnh: duyên giao tiếp tốt, dễ gây thiện cảm.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "ML-PS-15",
+  "chuyenDe": "menh",
+  "cung": "Mệnh",
+  "sao": [
+   "Đào Hoa"
+  ],
+  "dieuKien": {},
+  "noiDung": "Đào Hoa đồng cung Mệnh: sức hút cá nhân, nên cân bằng giữa duyên và nguyên tắc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "QL-S01-TOT",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Tử Vi"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Tử Vi tại Quan Lộc: có phong thái điềm tĩnh, hợp vị trí điều phối, cần học cách lắng nghe. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S01-BINH",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Tử Vi"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Tử Vi tại Quan Lộc: có phong thái điềm tĩnh, hợp vị trí điều phối, cần học cách lắng nghe. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S01-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Tử Vi"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Tử Vi tại Quan Lộc: có phong thái điềm tĩnh, hợp vị trí điều phối, cần học cách lắng nghe. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S01-C4",
+  "chuyenDe": "quan-loc",
+  "cung": "Phu Thê",
+  "sao": [
+   "Tử Vi"
+  ],
+  "dieuKien": {},
+  "noiDung": "Tử Vi ở cung Phu Thê (xung chiếu với Quan Lộc): bổ sung xu hướng có phong thái điềm tĩnh, hợp vị trí điều phối, cần học cách lắng nghe, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S01-C5",
+  "chuyenDe": "quan-loc",
+  "cung": "Mệnh",
+  "sao": [
+   "Tử Vi"
+  ],
+  "dieuKien": {},
+  "noiDung": "Tử Vi ở cung Mệnh (tam hợp với Quan Lộc): bổ sung xu hướng có phong thái điềm tĩnh, hợp vị trí điều phối, cần học cách lắng nghe, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S01-C3",
+  "chuyenDe": "quan-loc",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Tử Vi"
+  ],
+  "dieuKien": {},
+  "noiDung": "Tử Vi ở cung Tài Bạch (tam hợp với Quan Lộc): bổ sung xu hướng có phong thái điềm tĩnh, hợp vị trí điều phối, cần học cách lắng nghe, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S02-TOT",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thiên Cơ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Thiên Cơ tại Quan Lộc: mạnh về phân tích, lập kế hoạch, hợp công việc cần tư duy. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S02-BINH",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thiên Cơ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Thiên Cơ tại Quan Lộc: mạnh về phân tích, lập kế hoạch, hợp công việc cần tư duy. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S02-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thiên Cơ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Cơ tại Quan Lộc: mạnh về phân tích, lập kế hoạch, hợp công việc cần tư duy. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S02-C4",
+  "chuyenDe": "quan-loc",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thiên Cơ"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Cơ ở cung Phu Thê (xung chiếu với Quan Lộc): bổ sung xu hướng mạnh về phân tích, lập kế hoạch, hợp công việc cần tư duy, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S02-C5",
+  "chuyenDe": "quan-loc",
+  "cung": "Mệnh",
+  "sao": [
+   "Thiên Cơ"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Cơ ở cung Mệnh (tam hợp với Quan Lộc): bổ sung xu hướng mạnh về phân tích, lập kế hoạch, hợp công việc cần tư duy, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S02-C3",
+  "chuyenDe": "quan-loc",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Thiên Cơ"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Cơ ở cung Tài Bạch (tam hợp với Quan Lộc): bổ sung xu hướng mạnh về phân tích, lập kế hoạch, hợp công việc cần tư duy, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S03-TOT",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thái Dương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Thái Dương tại Quan Lộc: hợp môi trường công khai, có tầm ảnh hưởng, dễ được ghi nhận. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S03-BINH",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thái Dương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Thái Dương tại Quan Lộc: hợp môi trường công khai, có tầm ảnh hưởng, dễ được ghi nhận. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S03-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thái Dương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thái Dương tại Quan Lộc: hợp môi trường công khai, có tầm ảnh hưởng, dễ được ghi nhận. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S03-C4",
+  "chuyenDe": "quan-loc",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thái Dương"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thái Dương ở cung Phu Thê (xung chiếu với Quan Lộc): bổ sung xu hướng hợp môi trường công khai, có tầm ảnh hưởng, dễ được ghi nhận, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S03-C5",
+  "chuyenDe": "quan-loc",
+  "cung": "Mệnh",
+  "sao": [
+   "Thái Dương"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thái Dương ở cung Mệnh (tam hợp với Quan Lộc): bổ sung xu hướng hợp môi trường công khai, có tầm ảnh hưởng, dễ được ghi nhận, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S03-C3",
+  "chuyenDe": "quan-loc",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Thái Dương"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thái Dương ở cung Tài Bạch (tam hợp với Quan Lộc): bổ sung xu hướng hợp môi trường công khai, có tầm ảnh hưởng, dễ được ghi nhận, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S04-TOT",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Vũ Khúc"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Vũ Khúc tại Quan Lộc: hợp việc cần kỷ luật, số liệu và trách nhiệm rõ ràng. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S04-BINH",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Vũ Khúc"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Vũ Khúc tại Quan Lộc: hợp việc cần kỷ luật, số liệu và trách nhiệm rõ ràng. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S04-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Vũ Khúc"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Vũ Khúc tại Quan Lộc: hợp việc cần kỷ luật, số liệu và trách nhiệm rõ ràng. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S04-C4",
+  "chuyenDe": "quan-loc",
+  "cung": "Phu Thê",
+  "sao": [
+   "Vũ Khúc"
+  ],
+  "dieuKien": {},
+  "noiDung": "Vũ Khúc ở cung Phu Thê (xung chiếu với Quan Lộc): bổ sung xu hướng hợp việc cần kỷ luật, số liệu và trách nhiệm rõ ràng, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S04-C5",
+  "chuyenDe": "quan-loc",
+  "cung": "Mệnh",
+  "sao": [
+   "Vũ Khúc"
+  ],
+  "dieuKien": {},
+  "noiDung": "Vũ Khúc ở cung Mệnh (tam hợp với Quan Lộc): bổ sung xu hướng hợp việc cần kỷ luật, số liệu và trách nhiệm rõ ràng, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S04-C3",
+  "chuyenDe": "quan-loc",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Vũ Khúc"
+  ],
+  "dieuKien": {},
+  "noiDung": "Vũ Khúc ở cung Tài Bạch (tam hợp với Quan Lộc): bổ sung xu hướng hợp việc cần kỷ luật, số liệu và trách nhiệm rõ ràng, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S05-TOT",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thiên Đồng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Thiên Đồng tại Quan Lộc: hợp môi trường hợp tác, ít áp lực đối đầu, cần thêm động lực. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S05-BINH",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thiên Đồng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Thiên Đồng tại Quan Lộc: hợp môi trường hợp tác, ít áp lực đối đầu, cần thêm động lực. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S05-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thiên Đồng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Đồng tại Quan Lộc: hợp môi trường hợp tác, ít áp lực đối đầu, cần thêm động lực. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S05-C4",
+  "chuyenDe": "quan-loc",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thiên Đồng"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Đồng ở cung Phu Thê (xung chiếu với Quan Lộc): bổ sung xu hướng hợp môi trường hợp tác, ít áp lực đối đầu, cần thêm động lực, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S05-C5",
+  "chuyenDe": "quan-loc",
+  "cung": "Mệnh",
+  "sao": [
+   "Thiên Đồng"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Đồng ở cung Mệnh (tam hợp với Quan Lộc): bổ sung xu hướng hợp môi trường hợp tác, ít áp lực đối đầu, cần thêm động lực, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S05-C3",
+  "chuyenDe": "quan-loc",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Thiên Đồng"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Đồng ở cung Tài Bạch (tam hợp với Quan Lộc): bổ sung xu hướng hợp môi trường hợp tác, ít áp lực đối đầu, cần thêm động lực, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S06-TOT",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Liêm Trinh"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Liêm Trinh tại Quan Lộc: hợp công việc đòi hỏi nguyên tắc và quản trị, cần mềm dẻo trong giao tiếp. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S06-BINH",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Liêm Trinh"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Liêm Trinh tại Quan Lộc: hợp công việc đòi hỏi nguyên tắc và quản trị, cần mềm dẻo trong giao tiếp. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S06-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Liêm Trinh"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Liêm Trinh tại Quan Lộc: hợp công việc đòi hỏi nguyên tắc và quản trị, cần mềm dẻo trong giao tiếp. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S06-C4",
+  "chuyenDe": "quan-loc",
+  "cung": "Phu Thê",
+  "sao": [
+   "Liêm Trinh"
+  ],
+  "dieuKien": {},
+  "noiDung": "Liêm Trinh ở cung Phu Thê (xung chiếu với Quan Lộc): bổ sung xu hướng hợp công việc đòi hỏi nguyên tắc và quản trị, cần mềm dẻo trong giao tiếp, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S06-C5",
+  "chuyenDe": "quan-loc",
+  "cung": "Mệnh",
+  "sao": [
+   "Liêm Trinh"
+  ],
+  "dieuKien": {},
+  "noiDung": "Liêm Trinh ở cung Mệnh (tam hợp với Quan Lộc): bổ sung xu hướng hợp công việc đòi hỏi nguyên tắc và quản trị, cần mềm dẻo trong giao tiếp, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S06-C3",
+  "chuyenDe": "quan-loc",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Liêm Trinh"
+  ],
+  "dieuKien": {},
+  "noiDung": "Liêm Trinh ở cung Tài Bạch (tam hợp với Quan Lộc): bổ sung xu hướng hợp công việc đòi hỏi nguyên tắc và quản trị, cần mềm dẻo trong giao tiếp, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S07-TOT",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thiên Phủ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Thiên Phủ tại Quan Lộc: hợp công việc quản lý, tích lũy dần, tiến từng bước chắc. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S07-BINH",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thiên Phủ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Thiên Phủ tại Quan Lộc: hợp công việc quản lý, tích lũy dần, tiến từng bước chắc. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S07-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thiên Phủ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Phủ tại Quan Lộc: hợp công việc quản lý, tích lũy dần, tiến từng bước chắc. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S07-C4",
+  "chuyenDe": "quan-loc",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thiên Phủ"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Phủ ở cung Phu Thê (xung chiếu với Quan Lộc): bổ sung xu hướng hợp công việc quản lý, tích lũy dần, tiến từng bước chắc, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S07-C5",
+  "chuyenDe": "quan-loc",
+  "cung": "Mệnh",
+  "sao": [
+   "Thiên Phủ"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Phủ ở cung Mệnh (tam hợp với Quan Lộc): bổ sung xu hướng hợp công việc quản lý, tích lũy dần, tiến từng bước chắc, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S07-C3",
+  "chuyenDe": "quan-loc",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Thiên Phủ"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Phủ ở cung Tài Bạch (tam hợp với Quan Lộc): bổ sung xu hướng hợp công việc quản lý, tích lũy dần, tiến từng bước chắc, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S08-TOT",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thái Âm"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Thái Âm tại Quan Lộc: hợp công việc cần sự cẩn trọng, chăm chút và làm việc âm thầm. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S08-BINH",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thái Âm"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Thái Âm tại Quan Lộc: hợp công việc cần sự cẩn trọng, chăm chút và làm việc âm thầm. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S08-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thái Âm"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thái Âm tại Quan Lộc: hợp công việc cần sự cẩn trọng, chăm chút và làm việc âm thầm. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S08-C4",
+  "chuyenDe": "quan-loc",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thái Âm"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thái Âm ở cung Phu Thê (xung chiếu với Quan Lộc): bổ sung xu hướng hợp công việc cần sự cẩn trọng, chăm chút và làm việc âm thầm, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S08-C5",
+  "chuyenDe": "quan-loc",
+  "cung": "Mệnh",
+  "sao": [
+   "Thái Âm"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thái Âm ở cung Mệnh (tam hợp với Quan Lộc): bổ sung xu hướng hợp công việc cần sự cẩn trọng, chăm chút và làm việc âm thầm, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S08-C3",
+  "chuyenDe": "quan-loc",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Thái Âm"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thái Âm ở cung Tài Bạch (tam hợp với Quan Lộc): bổ sung xu hướng hợp công việc cần sự cẩn trọng, chăm chút và làm việc âm thầm, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S09-TOT",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Tham Lang"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Tham Lang tại Quan Lộc: hợp môi trường năng động, nhiều mối quan hệ, cần giữ tập trung. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S09-BINH",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Tham Lang"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Tham Lang tại Quan Lộc: hợp môi trường năng động, nhiều mối quan hệ, cần giữ tập trung. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S09-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Tham Lang"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Tham Lang tại Quan Lộc: hợp môi trường năng động, nhiều mối quan hệ, cần giữ tập trung. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S09-C4",
+  "chuyenDe": "quan-loc",
+  "cung": "Phu Thê",
+  "sao": [
+   "Tham Lang"
+  ],
+  "dieuKien": {},
+  "noiDung": "Tham Lang ở cung Phu Thê (xung chiếu với Quan Lộc): bổ sung xu hướng hợp môi trường năng động, nhiều mối quan hệ, cần giữ tập trung, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S09-C5",
+  "chuyenDe": "quan-loc",
+  "cung": "Mệnh",
+  "sao": [
+   "Tham Lang"
+  ],
+  "dieuKien": {},
+  "noiDung": "Tham Lang ở cung Mệnh (tam hợp với Quan Lộc): bổ sung xu hướng hợp môi trường năng động, nhiều mối quan hệ, cần giữ tập trung, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S09-C3",
+  "chuyenDe": "quan-loc",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Tham Lang"
+  ],
+  "dieuKien": {},
+  "noiDung": "Tham Lang ở cung Tài Bạch (tam hợp với Quan Lộc): bổ sung xu hướng hợp môi trường năng động, nhiều mối quan hệ, cần giữ tập trung, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S10-TOT",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Cự Môn"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Cự Môn tại Quan Lộc: hợp công việc dùng lời nói, phân tích, tư vấn; cần diễn đạt khéo. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S10-BINH",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Cự Môn"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Cự Môn tại Quan Lộc: hợp công việc dùng lời nói, phân tích, tư vấn; cần diễn đạt khéo. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S10-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Cự Môn"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Cự Môn tại Quan Lộc: hợp công việc dùng lời nói, phân tích, tư vấn; cần diễn đạt khéo. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S10-C4",
+  "chuyenDe": "quan-loc",
+  "cung": "Phu Thê",
+  "sao": [
+   "Cự Môn"
+  ],
+  "dieuKien": {},
+  "noiDung": "Cự Môn ở cung Phu Thê (xung chiếu với Quan Lộc): bổ sung xu hướng hợp công việc dùng lời nói, phân tích, tư vấn; cần diễn đạt khéo, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S10-C5",
+  "chuyenDe": "quan-loc",
+  "cung": "Mệnh",
+  "sao": [
+   "Cự Môn"
+  ],
+  "dieuKien": {},
+  "noiDung": "Cự Môn ở cung Mệnh (tam hợp với Quan Lộc): bổ sung xu hướng hợp công việc dùng lời nói, phân tích, tư vấn; cần diễn đạt khéo, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S10-C3",
+  "chuyenDe": "quan-loc",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Cự Môn"
+  ],
+  "dieuKien": {},
+  "noiDung": "Cự Môn ở cung Tài Bạch (tam hợp với Quan Lộc): bổ sung xu hướng hợp công việc dùng lời nói, phân tích, tư vấn; cần diễn đạt khéo, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S11-TOT",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thiên Tướng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Thiên Tướng tại Quan Lộc: hợp vai trò hỗ trợ, phối hợp, đại diện hoặc cố vấn. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S11-BINH",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thiên Tướng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Thiên Tướng tại Quan Lộc: hợp vai trò hỗ trợ, phối hợp, đại diện hoặc cố vấn. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S11-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thiên Tướng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Tướng tại Quan Lộc: hợp vai trò hỗ trợ, phối hợp, đại diện hoặc cố vấn. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S11-C4",
+  "chuyenDe": "quan-loc",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thiên Tướng"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Tướng ở cung Phu Thê (xung chiếu với Quan Lộc): bổ sung xu hướng hợp vai trò hỗ trợ, phối hợp, đại diện hoặc cố vấn, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S11-C5",
+  "chuyenDe": "quan-loc",
+  "cung": "Mệnh",
+  "sao": [
+   "Thiên Tướng"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Tướng ở cung Mệnh (tam hợp với Quan Lộc): bổ sung xu hướng hợp vai trò hỗ trợ, phối hợp, đại diện hoặc cố vấn, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S11-C3",
+  "chuyenDe": "quan-loc",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Thiên Tướng"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Tướng ở cung Tài Bạch (tam hợp với Quan Lộc): bổ sung xu hướng hợp vai trò hỗ trợ, phối hợp, đại diện hoặc cố vấn, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S12-TOT",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thiên Lương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Thiên Lương tại Quan Lộc: hợp công việc mang tính tư vấn, giáo dục, bảo vệ quyền lợi. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S12-BINH",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thiên Lương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Thiên Lương tại Quan Lộc: hợp công việc mang tính tư vấn, giáo dục, bảo vệ quyền lợi. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S12-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thiên Lương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Lương tại Quan Lộc: hợp công việc mang tính tư vấn, giáo dục, bảo vệ quyền lợi. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S12-C4",
+  "chuyenDe": "quan-loc",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thiên Lương"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Lương ở cung Phu Thê (xung chiếu với Quan Lộc): bổ sung xu hướng hợp công việc mang tính tư vấn, giáo dục, bảo vệ quyền lợi, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S12-C5",
+  "chuyenDe": "quan-loc",
+  "cung": "Mệnh",
+  "sao": [
+   "Thiên Lương"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Lương ở cung Mệnh (tam hợp với Quan Lộc): bổ sung xu hướng hợp công việc mang tính tư vấn, giáo dục, bảo vệ quyền lợi, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S12-C3",
+  "chuyenDe": "quan-loc",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Thiên Lương"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Lương ở cung Tài Bạch (tam hợp với Quan Lộc): bổ sung xu hướng hợp công việc mang tính tư vấn, giáo dục, bảo vệ quyền lợi, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S13-TOT",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thất Sát"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Thất Sát tại Quan Lộc: hợp vị trí tiên phong, việc cần quyết đoán và bản lĩnh. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S13-BINH",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thất Sát"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Thất Sát tại Quan Lộc: hợp vị trí tiên phong, việc cần quyết đoán và bản lĩnh. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S13-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thất Sát"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thất Sát tại Quan Lộc: hợp vị trí tiên phong, việc cần quyết đoán và bản lĩnh. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S13-C4",
+  "chuyenDe": "quan-loc",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thất Sát"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thất Sát ở cung Phu Thê (xung chiếu với Quan Lộc): bổ sung xu hướng hợp vị trí tiên phong, việc cần quyết đoán và bản lĩnh, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S13-C5",
+  "chuyenDe": "quan-loc",
+  "cung": "Mệnh",
+  "sao": [
+   "Thất Sát"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thất Sát ở cung Mệnh (tam hợp với Quan Lộc): bổ sung xu hướng hợp vị trí tiên phong, việc cần quyết đoán và bản lĩnh, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S13-C3",
+  "chuyenDe": "quan-loc",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Thất Sát"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thất Sát ở cung Tài Bạch (tam hợp với Quan Lộc): bổ sung xu hướng hợp vị trí tiên phong, việc cần quyết đoán và bản lĩnh, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S14-TOT",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Phá Quân"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Phá Quân tại Quan Lộc: hợp môi trường nhiều thay đổi, khởi sự, cải tổ. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S14-BINH",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Phá Quân"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Phá Quân tại Quan Lộc: hợp môi trường nhiều thay đổi, khởi sự, cải tổ. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S14-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Phá Quân"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Phá Quân tại Quan Lộc: hợp môi trường nhiều thay đổi, khởi sự, cải tổ. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "QL-S14-C4",
+  "chuyenDe": "quan-loc",
+  "cung": "Phu Thê",
+  "sao": [
+   "Phá Quân"
+  ],
+  "dieuKien": {},
+  "noiDung": "Phá Quân ở cung Phu Thê (xung chiếu với Quan Lộc): bổ sung xu hướng hợp môi trường nhiều thay đổi, khởi sự, cải tổ, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S14-C5",
+  "chuyenDe": "quan-loc",
+  "cung": "Mệnh",
+  "sao": [
+   "Phá Quân"
+  ],
+  "dieuKien": {},
+  "noiDung": "Phá Quân ở cung Mệnh (tam hợp với Quan Lộc): bổ sung xu hướng hợp môi trường nhiều thay đổi, khởi sự, cải tổ, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S14-C3",
+  "chuyenDe": "quan-loc",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Phá Quân"
+  ],
+  "dieuKien": {},
+  "noiDung": "Phá Quân ở cung Tài Bạch (tam hợp với Quan Lộc): bổ sung xu hướng hợp môi trường nhiều thay đổi, khởi sự, cải tổ, góp thêm sắc thái cho chuyên đề Quan Lộc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-HOA-0",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [],
+  "dieuKien": {
+   "hoa": "Hóa Lộc"
+  },
+  "noiDung": "Hóa Lộc tại Quan Lộc mở ra cơ hội và nguồn lực, nên chủ động nắm bắt.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tu-hoa"
+ },
+ {
+  "id": "QL-HOA-1",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [],
+  "dieuKien": {
+   "hoa": "Hóa Quyền"
+  },
+  "noiDung": "Hóa Quyền tại Quan Lộc tăng khả năng dẫn dắt, quyết định, cần giữ sự cân bằng.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tu-hoa"
+ },
+ {
+  "id": "QL-HOA-2",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [],
+  "dieuKien": {
+   "hoa": "Hóa Khoa"
+  },
+  "noiDung": "Hóa Khoa tại Quan Lộc thiên về danh tiếng tốt, học hỏi và sự hỗ trợ từ người có hiểu biết.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tu-hoa"
+ },
+ {
+  "id": "QL-HOA-3",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [],
+  "dieuKien": {
+   "hoa": "Hóa Kỵ"
+  },
+  "noiDung": "Hóa Kỵ tại Quan Lộc là điểm nhạy cảm, dễ băn khoăn hoặc vướng mắc, nên chuẩn bị kỹ và giao tiếp rõ ràng.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tu-hoa"
+ },
+ {
+  "id": "QL-VCD",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [],
+  "dieuKien": {
+   "cungCo": "Vô Chính Diệu"
+  },
+  "noiDung": "Quan Lộc không có chính tinh: tính cách linh hoạt, chịu ảnh hưởng nhiều từ cung xung chiếu và hoàn cảnh, nên xem kỹ các cung hợp chiếu.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "QL-TT-TUẦN",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [],
+  "dieuKien": {
+   "cungCo": "Tuần"
+  },
+  "noiDung": "Tuần đóng tại Quan Lộc: các đặc điểm của cung thường biểu hiện chậm hoặc kín đáo hơn, nên kiên nhẫn và nhìn theo giai đoạn.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "QL-TT-TRIỆT",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [],
+  "dieuKien": {
+   "cungCo": "Triệt"
+  },
+  "noiDung": "Triệt đóng tại Quan Lộc: các đặc điểm của cung thường biểu hiện chậm hoặc kín đáo hơn, nên kiên nhẫn và nhìn theo giai đoạn.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "QL-PS-0",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Tả Phù"
+  ],
+  "dieuKien": {},
+  "noiDung": "Tả Phù đồng cung Quan Lộc: có người hỗ trợ, dễ hợp tác.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "QL-PS-1",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Hữu Bật"
+  ],
+  "dieuKien": {},
+  "noiDung": "Hữu Bật đồng cung Quan Lộc: được giúp đỡ đúng lúc, quan hệ thuận.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "QL-PS-2",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Văn Xương"
+  ],
+  "dieuKien": {},
+  "noiDung": "Văn Xương đồng cung Quan Lộc: thiên về chữ nghĩa, học thuật, lập luận.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "QL-PS-3",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Văn Khúc"
+  ],
+  "dieuKien": {},
+  "noiDung": "Văn Khúc đồng cung Quan Lộc: có khiếu biểu đạt, nghệ thuật, khéo ăn nói.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "QL-PS-4",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thiên Khôi"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Khôi đồng cung Quan Lộc: dễ gặp quý nhân, người hướng dẫn.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "QL-PS-5",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thiên Việt"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Việt đồng cung Quan Lộc: có sự nâng đỡ, cơ hội từ người đi trước.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "QL-PS-6",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Lộc Tồn"
+  ],
+  "dieuKien": {},
+  "noiDung": "Lộc Tồn đồng cung Quan Lộc: biết tích lũy, thận trọng với tài chính.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "QL-PS-7",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thiên Mã"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Mã đồng cung Quan Lộc: năng động, thích di chuyển và thay đổi.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "QL-PS-8",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Kình Dương"
+  ],
+  "dieuKien": {},
+  "noiDung": "Kình Dương đồng cung Quan Lộc: nghị lực mạnh, cần kiểm soát sự nóng vội.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "QL-PS-9",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Đà La"
+  ],
+  "dieuKien": {},
+  "noiDung": "Đà La đồng cung Quan Lộc: kiên trì nhưng dễ chần chừ, cần chủ động hơn.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "QL-PS-10",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Hỏa Tinh"
+  ],
+  "dieuKien": {},
+  "noiDung": "Hỏa Tinh đồng cung Quan Lộc: nhiệt huyết, phản ứng nhanh, nên tiết chế cảm xúc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "QL-PS-11",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Linh Tinh"
+  ],
+  "dieuKien": {},
+  "noiDung": "Linh Tinh đồng cung Quan Lộc: nhạy bén, dễ căng thẳng, nên giữ nhịp nghỉ ngơi.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "QL-PS-12",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Địa Không"
+  ],
+  "dieuKien": {},
+  "noiDung": "Địa Không đồng cung Quan Lộc: hay nghĩ khác lạ, cần thực tế hóa ý tưởng.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "QL-PS-13",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Địa Kiếp"
+  ],
+  "dieuKien": {},
+  "noiDung": "Địa Kiếp đồng cung Quan Lộc: hay muốn đổi hướng, nên cân nhắc trước khi quyết.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "QL-PS-14",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Hồng Loan"
+  ],
+  "dieuKien": {},
+  "noiDung": "Hồng Loan đồng cung Quan Lộc: duyên giao tiếp tốt, dễ gây thiện cảm.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "QL-PS-15",
+  "chuyenDe": "quan-loc",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Đào Hoa"
+  ],
+  "dieuKien": {},
+  "noiDung": "Đào Hoa đồng cung Quan Lộc: sức hút cá nhân, nên cân bằng giữa duyên và nguyên tắc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "PT-S01-TOT",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Tử Vi"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Tử Vi tại Phu Thê: cần một người bạn đời tôn trọng sự chủ động và cùng bàn bạc. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S01-BINH",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Tử Vi"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Tử Vi tại Phu Thê: cần một người bạn đời tôn trọng sự chủ động và cùng bàn bạc. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S01-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Tử Vi"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Tử Vi tại Phu Thê: cần một người bạn đời tôn trọng sự chủ động và cùng bàn bạc. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S01-C2",
+  "chuyenDe": "phu-the",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Tử Vi"
+  ],
+  "dieuKien": {},
+  "noiDung": "Tử Vi ở cung Quan Lộc (xung chiếu với Phu Thê): bổ sung xu hướng cần một người bạn đời tôn trọng sự chủ động và cùng bàn bạc, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S01-C6",
+  "chuyenDe": "phu-the",
+  "cung": "Phúc Đức",
+  "sao": [
+   "Tử Vi"
+  ],
+  "dieuKien": {},
+  "noiDung": "Tử Vi ở cung Phúc Đức (tam hợp với Phu Thê): bổ sung xu hướng cần một người bạn đời tôn trọng sự chủ động và cùng bàn bạc, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S01-C1",
+  "chuyenDe": "phu-the",
+  "cung": "Thiên Di",
+  "sao": [
+   "Tử Vi"
+  ],
+  "dieuKien": {},
+  "noiDung": "Tử Vi ở cung Thiên Di (tam hợp với Phu Thê): bổ sung xu hướng cần một người bạn đời tôn trọng sự chủ động và cùng bàn bạc, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S02-TOT",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thiên Cơ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Thiên Cơ tại Phu Thê: thích trao đổi nhiều, quan hệ bền khi hai bên cùng chia sẻ. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S02-BINH",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thiên Cơ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Thiên Cơ tại Phu Thê: thích trao đổi nhiều, quan hệ bền khi hai bên cùng chia sẻ. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S02-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thiên Cơ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Cơ tại Phu Thê: thích trao đổi nhiều, quan hệ bền khi hai bên cùng chia sẻ. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S02-C2",
+  "chuyenDe": "phu-the",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thiên Cơ"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Cơ ở cung Quan Lộc (xung chiếu với Phu Thê): bổ sung xu hướng thích trao đổi nhiều, quan hệ bền khi hai bên cùng chia sẻ, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S02-C6",
+  "chuyenDe": "phu-the",
+  "cung": "Phúc Đức",
+  "sao": [
+   "Thiên Cơ"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Cơ ở cung Phúc Đức (tam hợp với Phu Thê): bổ sung xu hướng thích trao đổi nhiều, quan hệ bền khi hai bên cùng chia sẻ, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S02-C1",
+  "chuyenDe": "phu-the",
+  "cung": "Thiên Di",
+  "sao": [
+   "Thiên Cơ"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Cơ ở cung Thiên Di (tam hợp với Phu Thê): bổ sung xu hướng thích trao đổi nhiều, quan hệ bền khi hai bên cùng chia sẻ, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S03-TOT",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thái Dương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Thái Dương tại Phu Thê: ấm áp, hào phóng trong tình cảm, nên giữ cân bằng giữa cho và nhận. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S03-BINH",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thái Dương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Thái Dương tại Phu Thê: ấm áp, hào phóng trong tình cảm, nên giữ cân bằng giữa cho và nhận. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S03-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thái Dương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thái Dương tại Phu Thê: ấm áp, hào phóng trong tình cảm, nên giữ cân bằng giữa cho và nhận. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S03-C2",
+  "chuyenDe": "phu-the",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thái Dương"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thái Dương ở cung Quan Lộc (xung chiếu với Phu Thê): bổ sung xu hướng ấm áp, hào phóng trong tình cảm, nên giữ cân bằng giữa cho và nhận, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S03-C6",
+  "chuyenDe": "phu-the",
+  "cung": "Phúc Đức",
+  "sao": [
+   "Thái Dương"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thái Dương ở cung Phúc Đức (tam hợp với Phu Thê): bổ sung xu hướng ấm áp, hào phóng trong tình cảm, nên giữ cân bằng giữa cho và nhận, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S03-C1",
+  "chuyenDe": "phu-the",
+  "cung": "Thiên Di",
+  "sao": [
+   "Thái Dương"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thái Dương ở cung Thiên Di (tam hợp với Phu Thê): bổ sung xu hướng ấm áp, hào phóng trong tình cảm, nên giữ cân bằng giữa cho và nhận, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S04-TOT",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Vũ Khúc"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Vũ Khúc tại Phu Thê: trọng cam kết, thể hiện tình cảm bằng hành động hơn lời nói. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S04-BINH",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Vũ Khúc"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Vũ Khúc tại Phu Thê: trọng cam kết, thể hiện tình cảm bằng hành động hơn lời nói. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S04-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Vũ Khúc"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Vũ Khúc tại Phu Thê: trọng cam kết, thể hiện tình cảm bằng hành động hơn lời nói. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S04-C2",
+  "chuyenDe": "phu-the",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Vũ Khúc"
+  ],
+  "dieuKien": {},
+  "noiDung": "Vũ Khúc ở cung Quan Lộc (xung chiếu với Phu Thê): bổ sung xu hướng trọng cam kết, thể hiện tình cảm bằng hành động hơn lời nói, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S04-C6",
+  "chuyenDe": "phu-the",
+  "cung": "Phúc Đức",
+  "sao": [
+   "Vũ Khúc"
+  ],
+  "dieuKien": {},
+  "noiDung": "Vũ Khúc ở cung Phúc Đức (tam hợp với Phu Thê): bổ sung xu hướng trọng cam kết, thể hiện tình cảm bằng hành động hơn lời nói, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S04-C1",
+  "chuyenDe": "phu-the",
+  "cung": "Thiên Di",
+  "sao": [
+   "Vũ Khúc"
+  ],
+  "dieuKien": {},
+  "noiDung": "Vũ Khúc ở cung Thiên Di (tam hợp với Phu Thê): bổ sung xu hướng trọng cam kết, thể hiện tình cảm bằng hành động hơn lời nói, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S05-TOT",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thiên Đồng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Thiên Đồng tại Phu Thê: nhẹ nhàng, dễ thông cảm, quan hệ cần thêm sự chủ động. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S05-BINH",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thiên Đồng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Thiên Đồng tại Phu Thê: nhẹ nhàng, dễ thông cảm, quan hệ cần thêm sự chủ động. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S05-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thiên Đồng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Đồng tại Phu Thê: nhẹ nhàng, dễ thông cảm, quan hệ cần thêm sự chủ động. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S05-C2",
+  "chuyenDe": "phu-the",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thiên Đồng"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Đồng ở cung Quan Lộc (xung chiếu với Phu Thê): bổ sung xu hướng nhẹ nhàng, dễ thông cảm, quan hệ cần thêm sự chủ động, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S05-C6",
+  "chuyenDe": "phu-the",
+  "cung": "Phúc Đức",
+  "sao": [
+   "Thiên Đồng"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Đồng ở cung Phúc Đức (tam hợp với Phu Thê): bổ sung xu hướng nhẹ nhàng, dễ thông cảm, quan hệ cần thêm sự chủ động, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S05-C1",
+  "chuyenDe": "phu-the",
+  "cung": "Thiên Di",
+  "sao": [
+   "Thiên Đồng"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Đồng ở cung Thiên Di (tam hợp với Phu Thê): bổ sung xu hướng nhẹ nhàng, dễ thông cảm, quan hệ cần thêm sự chủ động, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S06-TOT",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Liêm Trinh"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Liêm Trinh tại Phu Thê: tình cảm sâu sắc, đề cao sự chân thành và ranh giới rõ ràng. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S06-BINH",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Liêm Trinh"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Liêm Trinh tại Phu Thê: tình cảm sâu sắc, đề cao sự chân thành và ranh giới rõ ràng. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S06-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Liêm Trinh"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Liêm Trinh tại Phu Thê: tình cảm sâu sắc, đề cao sự chân thành và ranh giới rõ ràng. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S06-C2",
+  "chuyenDe": "phu-the",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Liêm Trinh"
+  ],
+  "dieuKien": {},
+  "noiDung": "Liêm Trinh ở cung Quan Lộc (xung chiếu với Phu Thê): bổ sung xu hướng tình cảm sâu sắc, đề cao sự chân thành và ranh giới rõ ràng, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S06-C6",
+  "chuyenDe": "phu-the",
+  "cung": "Phúc Đức",
+  "sao": [
+   "Liêm Trinh"
+  ],
+  "dieuKien": {},
+  "noiDung": "Liêm Trinh ở cung Phúc Đức (tam hợp với Phu Thê): bổ sung xu hướng tình cảm sâu sắc, đề cao sự chân thành và ranh giới rõ ràng, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S06-C1",
+  "chuyenDe": "phu-the",
+  "cung": "Thiên Di",
+  "sao": [
+   "Liêm Trinh"
+  ],
+  "dieuKien": {},
+  "noiDung": "Liêm Trinh ở cung Thiên Di (tam hợp với Phu Thê): bổ sung xu hướng tình cảm sâu sắc, đề cao sự chân thành và ranh giới rõ ràng, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S07-TOT",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thiên Phủ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Thiên Phủ tại Phu Thê: coi trọng tổ ấm, biết vun vén, mong một quan hệ bình ổn. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S07-BINH",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thiên Phủ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Thiên Phủ tại Phu Thê: coi trọng tổ ấm, biết vun vén, mong một quan hệ bình ổn. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S07-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thiên Phủ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Phủ tại Phu Thê: coi trọng tổ ấm, biết vun vén, mong một quan hệ bình ổn. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S07-C2",
+  "chuyenDe": "phu-the",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thiên Phủ"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Phủ ở cung Quan Lộc (xung chiếu với Phu Thê): bổ sung xu hướng coi trọng tổ ấm, biết vun vén, mong một quan hệ bình ổn, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S07-C6",
+  "chuyenDe": "phu-the",
+  "cung": "Phúc Đức",
+  "sao": [
+   "Thiên Phủ"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Phủ ở cung Phúc Đức (tam hợp với Phu Thê): bổ sung xu hướng coi trọng tổ ấm, biết vun vén, mong một quan hệ bình ổn, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S07-C1",
+  "chuyenDe": "phu-the",
+  "cung": "Thiên Di",
+  "sao": [
+   "Thiên Phủ"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Phủ ở cung Thiên Di (tam hợp với Phu Thê): bổ sung xu hướng coi trọng tổ ấm, biết vun vén, mong một quan hệ bình ổn, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S08-TOT",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thái Âm"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Thái Âm tại Phu Thê: dịu dàng, nhạy cảm, cần không gian chia sẻ cảm xúc. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S08-BINH",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thái Âm"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Thái Âm tại Phu Thê: dịu dàng, nhạy cảm, cần không gian chia sẻ cảm xúc. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S08-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thái Âm"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thái Âm tại Phu Thê: dịu dàng, nhạy cảm, cần không gian chia sẻ cảm xúc. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S08-C2",
+  "chuyenDe": "phu-the",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thái Âm"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thái Âm ở cung Quan Lộc (xung chiếu với Phu Thê): bổ sung xu hướng dịu dàng, nhạy cảm, cần không gian chia sẻ cảm xúc, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S08-C6",
+  "chuyenDe": "phu-the",
+  "cung": "Phúc Đức",
+  "sao": [
+   "Thái Âm"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thái Âm ở cung Phúc Đức (tam hợp với Phu Thê): bổ sung xu hướng dịu dàng, nhạy cảm, cần không gian chia sẻ cảm xúc, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S08-C1",
+  "chuyenDe": "phu-the",
+  "cung": "Thiên Di",
+  "sao": [
+   "Thái Âm"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thái Âm ở cung Thiên Di (tam hợp với Phu Thê): bổ sung xu hướng dịu dàng, nhạy cảm, cần không gian chia sẻ cảm xúc, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S09-TOT",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Tham Lang"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Tham Lang tại Phu Thê: thu hút, thích sự mới mẻ, nên đặt mục tiêu chung rõ ràng với bạn đời. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S09-BINH",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Tham Lang"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Tham Lang tại Phu Thê: thu hút, thích sự mới mẻ, nên đặt mục tiêu chung rõ ràng với bạn đời. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S09-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Tham Lang"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Tham Lang tại Phu Thê: thu hút, thích sự mới mẻ, nên đặt mục tiêu chung rõ ràng với bạn đời. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S09-C2",
+  "chuyenDe": "phu-the",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Tham Lang"
+  ],
+  "dieuKien": {},
+  "noiDung": "Tham Lang ở cung Quan Lộc (xung chiếu với Phu Thê): bổ sung xu hướng thu hút, thích sự mới mẻ, nên đặt mục tiêu chung rõ ràng với bạn đời, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S09-C6",
+  "chuyenDe": "phu-the",
+  "cung": "Phúc Đức",
+  "sao": [
+   "Tham Lang"
+  ],
+  "dieuKien": {},
+  "noiDung": "Tham Lang ở cung Phúc Đức (tam hợp với Phu Thê): bổ sung xu hướng thu hút, thích sự mới mẻ, nên đặt mục tiêu chung rõ ràng với bạn đời, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S09-C1",
+  "chuyenDe": "phu-the",
+  "cung": "Thiên Di",
+  "sao": [
+   "Tham Lang"
+  ],
+  "dieuKien": {},
+  "noiDung": "Tham Lang ở cung Thiên Di (tam hợp với Phu Thê): bổ sung xu hướng thu hút, thích sự mới mẻ, nên đặt mục tiêu chung rõ ràng với bạn đời, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S10-TOT",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Cự Môn"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Cự Môn tại Phu Thê: cần nói chuyện thẳng thắn nhưng nhẹ nhàng để tránh hiểu lầm. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S10-BINH",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Cự Môn"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Cự Môn tại Phu Thê: cần nói chuyện thẳng thắn nhưng nhẹ nhàng để tránh hiểu lầm. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S10-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Cự Môn"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Cự Môn tại Phu Thê: cần nói chuyện thẳng thắn nhưng nhẹ nhàng để tránh hiểu lầm. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S10-C2",
+  "chuyenDe": "phu-the",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Cự Môn"
+  ],
+  "dieuKien": {},
+  "noiDung": "Cự Môn ở cung Quan Lộc (xung chiếu với Phu Thê): bổ sung xu hướng cần nói chuyện thẳng thắn nhưng nhẹ nhàng để tránh hiểu lầm, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S10-C6",
+  "chuyenDe": "phu-the",
+  "cung": "Phúc Đức",
+  "sao": [
+   "Cự Môn"
+  ],
+  "dieuKien": {},
+  "noiDung": "Cự Môn ở cung Phúc Đức (tam hợp với Phu Thê): bổ sung xu hướng cần nói chuyện thẳng thắn nhưng nhẹ nhàng để tránh hiểu lầm, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S10-C1",
+  "chuyenDe": "phu-the",
+  "cung": "Thiên Di",
+  "sao": [
+   "Cự Môn"
+  ],
+  "dieuKien": {},
+  "noiDung": "Cự Môn ở cung Thiên Di (tam hợp với Phu Thê): bổ sung xu hướng cần nói chuyện thẳng thắn nhưng nhẹ nhàng để tránh hiểu lầm, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S11-TOT",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thiên Tướng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Thiên Tướng tại Phu Thê: biết chăm lo cho người khác, coi trọng sự hài hòa trong quan hệ. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S11-BINH",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thiên Tướng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Thiên Tướng tại Phu Thê: biết chăm lo cho người khác, coi trọng sự hài hòa trong quan hệ. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S11-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thiên Tướng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Tướng tại Phu Thê: biết chăm lo cho người khác, coi trọng sự hài hòa trong quan hệ. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S11-C2",
+  "chuyenDe": "phu-the",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thiên Tướng"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Tướng ở cung Quan Lộc (xung chiếu với Phu Thê): bổ sung xu hướng biết chăm lo cho người khác, coi trọng sự hài hòa trong quan hệ, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S11-C6",
+  "chuyenDe": "phu-the",
+  "cung": "Phúc Đức",
+  "sao": [
+   "Thiên Tướng"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Tướng ở cung Phúc Đức (tam hợp với Phu Thê): bổ sung xu hướng biết chăm lo cho người khác, coi trọng sự hài hòa trong quan hệ, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S11-C1",
+  "chuyenDe": "phu-the",
+  "cung": "Thiên Di",
+  "sao": [
+   "Thiên Tướng"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Tướng ở cung Thiên Di (tam hợp với Phu Thê): bổ sung xu hướng biết chăm lo cho người khác, coi trọng sự hài hòa trong quan hệ, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S12-TOT",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thiên Lương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Thiên Lương tại Phu Thê: nghiêng về vai người chăm sóc, nên để đối phương có không gian riêng. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S12-BINH",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thiên Lương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Thiên Lương tại Phu Thê: nghiêng về vai người chăm sóc, nên để đối phương có không gian riêng. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S12-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thiên Lương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Lương tại Phu Thê: nghiêng về vai người chăm sóc, nên để đối phương có không gian riêng. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S12-C2",
+  "chuyenDe": "phu-the",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thiên Lương"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Lương ở cung Quan Lộc (xung chiếu với Phu Thê): bổ sung xu hướng nghiêng về vai người chăm sóc, nên để đối phương có không gian riêng, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S12-C6",
+  "chuyenDe": "phu-the",
+  "cung": "Phúc Đức",
+  "sao": [
+   "Thiên Lương"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Lương ở cung Phúc Đức (tam hợp với Phu Thê): bổ sung xu hướng nghiêng về vai người chăm sóc, nên để đối phương có không gian riêng, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S12-C1",
+  "chuyenDe": "phu-the",
+  "cung": "Thiên Di",
+  "sao": [
+   "Thiên Lương"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Lương ở cung Thiên Di (tam hợp với Phu Thê): bổ sung xu hướng nghiêng về vai người chăm sóc, nên để đối phương có không gian riêng, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S13-TOT",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thất Sát"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Thất Sát tại Phu Thê: cá tính mạnh, cần học cách mềm mỏng để quan hệ hài hòa. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S13-BINH",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thất Sát"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Thất Sát tại Phu Thê: cá tính mạnh, cần học cách mềm mỏng để quan hệ hài hòa. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S13-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thất Sát"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thất Sát tại Phu Thê: cá tính mạnh, cần học cách mềm mỏng để quan hệ hài hòa. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S13-C2",
+  "chuyenDe": "phu-the",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Thất Sát"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thất Sát ở cung Quan Lộc (xung chiếu với Phu Thê): bổ sung xu hướng cá tính mạnh, cần học cách mềm mỏng để quan hệ hài hòa, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S13-C6",
+  "chuyenDe": "phu-the",
+  "cung": "Phúc Đức",
+  "sao": [
+   "Thất Sát"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thất Sát ở cung Phúc Đức (tam hợp với Phu Thê): bổ sung xu hướng cá tính mạnh, cần học cách mềm mỏng để quan hệ hài hòa, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S13-C1",
+  "chuyenDe": "phu-the",
+  "cung": "Thiên Di",
+  "sao": [
+   "Thất Sát"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thất Sát ở cung Thiên Di (tam hợp với Phu Thê): bổ sung xu hướng cá tính mạnh, cần học cách mềm mỏng để quan hệ hài hòa, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S14-TOT",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Phá Quân"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Phá Quân tại Phu Thê: thích làm mới mối quan hệ, nên duy trì sự ổn định song song với đổi mới. Độ sáng tốt, nên phát huy chủ động.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S14-BINH",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Phá Quân"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Phá Quân tại Phu Thê: thích làm mới mối quan hệ, nên duy trì sự ổn định song song với đổi mới. Độ sáng trung bình, hiệu quả phụ thuộc vào sự rèn luyện và hoàn cảnh.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S14-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Phá Quân"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Phá Quân tại Phu Thê: thích làm mới mối quan hệ, nên duy trì sự ổn định song song với đổi mới. Độ sáng kém, nên bù đắp bằng sự chuẩn bị kỹ và học hỏi thêm.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phong-cach"
+ },
+ {
+  "id": "PT-S14-C2",
+  "chuyenDe": "phu-the",
+  "cung": "Quan Lộc",
+  "sao": [
+   "Phá Quân"
+  ],
+  "dieuKien": {},
+  "noiDung": "Phá Quân ở cung Quan Lộc (xung chiếu với Phu Thê): bổ sung xu hướng thích làm mới mối quan hệ, nên duy trì sự ổn định song song với đổi mới, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S14-C6",
+  "chuyenDe": "phu-the",
+  "cung": "Phúc Đức",
+  "sao": [
+   "Phá Quân"
+  ],
+  "dieuKien": {},
+  "noiDung": "Phá Quân ở cung Phúc Đức (tam hợp với Phu Thê): bổ sung xu hướng thích làm mới mối quan hệ, nên duy trì sự ổn định song song với đổi mới, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S14-C1",
+  "chuyenDe": "phu-the",
+  "cung": "Thiên Di",
+  "sao": [
+   "Phá Quân"
+  ],
+  "dieuKien": {},
+  "noiDung": "Phá Quân ở cung Thiên Di (tam hợp với Phu Thê): bổ sung xu hướng thích làm mới mối quan hệ, nên duy trì sự ổn định song song với đổi mới, góp thêm sắc thái cho chuyên đề Phu Thê.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-HOA-0",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [],
+  "dieuKien": {
+   "hoa": "Hóa Lộc"
+  },
+  "noiDung": "Hóa Lộc tại Phu Thê mở ra cơ hội và nguồn lực, nên chủ động nắm bắt.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tu-hoa"
+ },
+ {
+  "id": "PT-HOA-1",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [],
+  "dieuKien": {
+   "hoa": "Hóa Quyền"
+  },
+  "noiDung": "Hóa Quyền tại Phu Thê tăng khả năng dẫn dắt, quyết định, cần giữ sự cân bằng.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tu-hoa"
+ },
+ {
+  "id": "PT-HOA-2",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [],
+  "dieuKien": {
+   "hoa": "Hóa Khoa"
+  },
+  "noiDung": "Hóa Khoa tại Phu Thê thiên về danh tiếng tốt, học hỏi và sự hỗ trợ từ người có hiểu biết.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tu-hoa"
+ },
+ {
+  "id": "PT-HOA-3",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [],
+  "dieuKien": {
+   "hoa": "Hóa Kỵ"
+  },
+  "noiDung": "Hóa Kỵ tại Phu Thê là điểm nhạy cảm, dễ băn khoăn hoặc vướng mắc, nên chuẩn bị kỹ và giao tiếp rõ ràng.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tu-hoa"
+ },
+ {
+  "id": "PT-VCD",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [],
+  "dieuKien": {
+   "cungCo": "Vô Chính Diệu"
+  },
+  "noiDung": "Phu Thê không có chính tinh: tính cách linh hoạt, chịu ảnh hưởng nhiều từ cung xung chiếu và hoàn cảnh, nên xem kỹ các cung hợp chiếu.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "tong-quan"
+ },
+ {
+  "id": "PT-TT-TUẦN",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [],
+  "dieuKien": {
+   "cungCo": "Tuần"
+  },
+  "noiDung": "Tuần đóng tại Phu Thê: các đặc điểm của cung thường biểu hiện chậm hoặc kín đáo hơn, nên kiên nhẫn và nhìn theo giai đoạn.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "PT-TT-TRIỆT",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [],
+  "dieuKien": {
+   "cungCo": "Triệt"
+  },
+  "noiDung": "Triệt đóng tại Phu Thê: các đặc điểm của cung thường biểu hiện chậm hoặc kín đáo hơn, nên kiên nhẫn và nhìn theo giai đoạn.",
+  "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thúc)",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "PT-PS-0",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Tả Phù"
+  ],
+  "dieuKien": {},
+  "noiDung": "Tả Phù đồng cung Phu Thê: có người hỗ trợ, dễ hợp tác.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "PT-PS-1",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Hữu Bật"
+  ],
+  "dieuKien": {},
+  "noiDung": "Hữu Bật đồng cung Phu Thê: được giúp đỡ đúng lúc, quan hệ thuận.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "PT-PS-2",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Văn Xương"
+  ],
+  "dieuKien": {},
+  "noiDung": "Văn Xương đồng cung Phu Thê: thiên về chữ nghĩa, học thuật, lập luận.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "PT-PS-3",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Văn Khúc"
+  ],
+  "dieuKien": {},
+  "noiDung": "Văn Khúc đồng cung Phu Thê: có khiếu biểu đạt, nghệ thuật, khéo ăn nói.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "PT-PS-4",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thiên Khôi"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Khôi đồng cung Phu Thê: dễ gặp quý nhân, người hướng dẫn.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "PT-PS-5",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thiên Việt"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Việt đồng cung Phu Thê: có sự nâng đỡ, cơ hội từ người đi trước.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "PT-PS-6",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Lộc Tồn"
+  ],
+  "dieuKien": {},
+  "noiDung": "Lộc Tồn đồng cung Phu Thê: biết tích lũy, thận trọng với tài chính.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "PT-PS-7",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thiên Mã"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Mã đồng cung Phu Thê: năng động, thích di chuyển và thay đổi.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "PT-PS-8",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Kình Dương"
+  ],
+  "dieuKien": {},
+  "noiDung": "Kình Dương đồng cung Phu Thê: nghị lực mạnh, cần kiểm soát sự nóng vội.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "PT-PS-9",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Đà La"
+  ],
+  "dieuKien": {},
+  "noiDung": "Đà La đồng cung Phu Thê: kiên trì nhưng dễ chần chừ, cần chủ động hơn.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "PT-PS-10",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Hỏa Tinh"
+  ],
+  "dieuKien": {},
+  "noiDung": "Hỏa Tinh đồng cung Phu Thê: nhiệt huyết, phản ứng nhanh, nên tiết chế cảm xúc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "PT-PS-11",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Linh Tinh"
+  ],
+  "dieuKien": {},
+  "noiDung": "Linh Tinh đồng cung Phu Thê: nhạy bén, dễ căng thẳng, nên giữ nhịp nghỉ ngơi.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "PT-PS-12",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Địa Không"
+  ],
+  "dieuKien": {},
+  "noiDung": "Địa Không đồng cung Phu Thê: hay nghĩ khác lạ, cần thực tế hóa ý tưởng.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "PT-PS-13",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Địa Kiếp"
+  ],
+  "dieuKien": {},
+  "noiDung": "Địa Kiếp đồng cung Phu Thê: hay muốn đổi hướng, nên cân nhắc trước khi quyết.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "PT-PS-14",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Hồng Loan"
+  ],
+  "dieuKien": {},
+  "noiDung": "Hồng Loan đồng cung Phu Thê: duyên giao tiếp tốt, dễ gây thiện cảm.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ },
+ {
+  "id": "PT-PS-15",
+  "chuyenDe": "phu-the",
+  "cung": "Phu Thê",
+  "sao": [
+   "Đào Hoa"
+  ],
+  "dieuKien": {},
+  "noiDung": "Đào Hoa đồng cung Phu Thê: sức hút cá nhân, nên cân bằng giữa duyên và nguyên tắc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư",
+  "truongPhai": "tam hợp phái Việt",
+  "muc": "phu-tinh"
+ }
+]

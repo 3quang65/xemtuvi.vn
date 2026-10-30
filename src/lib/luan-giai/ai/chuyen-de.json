@@ -1,0 +1,95 @@
+{
+ "menh": {
+  "ten": "Mệnh",
+  "cungChinh": "Mệnh",
+  "cungLienQuan": [
+   "xung chiếu: Thiên Di",
+   "tam hợp: Quan Lộc",
+   "tam hợp: Tài Bạch"
+  ],
+  "muc": [
+   {
+    "id": "tong-quan",
+    "tieuDe": "Tổng quan bản thân",
+    "huongDan": "Nét tính cách cốt lõi từ chính tinh tại Mệnh"
+   },
+   {
+    "id": "cung-lien-quan",
+    "tieuDe": "Cung hợp chiếu",
+    "huongDan": "Ảnh hưởng của Thiên Di, Quan Lộc, Tài Bạch"
+   },
+   {
+    "id": "tu-hoa",
+    "tieuDe": "Tứ hóa",
+    "huongDan": "Các điểm nhấn do Hóa Lộc, Quyền, Khoa, Kỵ"
+   },
+   {
+    "id": "phu-tinh",
+    "tieuDe": "Cát hung tinh đi kèm",
+    "huongDan": "Sao phụ làm rõ thêm xu hướng"
+   }
+  ]
+ },
+ "quan-loc": {
+  "ten": "Quan Lộc",
+  "cungChinh": "Quan Lộc",
+  "cungLienQuan": [
+   "xung chiếu: Phu Thê",
+   "tam hợp: Mệnh",
+   "tam hợp: Tài Bạch"
+  ],
+  "muc": [
+   {
+    "id": "phong-cach",
+    "tieuDe": "Phong cách làm việc",
+    "huongDan": "Chính tinh tại Quan Lộc"
+   },
+   {
+    "id": "cung-lien-quan",
+    "tieuDe": "Cung hợp chiếu",
+    "huongDan": "Mệnh, Tài Bạch, Phu Thê"
+   },
+   {
+    "id": "tu-hoa",
+    "tieuDe": "Tứ hóa",
+    "huongDan": "Điểm nhấn sự nghiệp"
+   },
+   {
+    "id": "phu-tinh",
+    "tieuDe": "Sao hỗ trợ và thử thách",
+    "huongDan": "Sao phụ"
+   }
+  ]
+ },
+ "phu-the": {
+  "ten": "Phu Thê",
+  "cungChinh": "Phu Thê",
+  "cungLienQuan": [
+   "xung chiếu: Quan Lộc",
+   "tam hợp: Phúc Đức",
+   "tam hợp: Thiên Di"
+  ],
+  "muc": [
+   {
+    "id": "phong-cach",
+    "tieuDe": "Cách yêu và gắn bó",
+    "huongDan": "Chính tinh tại Phu Thê"
+   },
+   {
+    "id": "cung-lien-quan",
+    "tieuDe": "Cung hợp chiếu",
+    "huongDan": "Quan Lộc, Phúc Đức, Thiên Di"
+   },
+   {
+    "id": "tu-hoa",
+    "tieuDe": "Tứ hóa",
+    "huongDan": "Điểm nhấn trong quan hệ"
+   },
+   {
+    "id": "phu-tinh",
+    "tieuDe": "Sao phụ",
+    "huongDan": "Sao hỗ trợ và cần lưu ý"
+   }
+  ]
+ }
+}
