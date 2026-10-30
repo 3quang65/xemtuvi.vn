@@ -7,6 +7,7 @@ import { DOAN_MAU, doanMauCuaLaSo, tachDoanMau } from '@/lib/luan-giai';
 import { CHU_DE, dinhDangGia, GOI, GOI_VAN_NAM, HOAN_TIEN, PHUONG_PHAP, type Goi, type MaChuDe } from '@/lib/goi';
 import { docYDinh, guiSuKien } from '@/lib/phien';
 import { useLaSoDaLuu } from '@/lib/useLaSoDaLuu';
+import { KhungMoiMo } from './KhungMoi';
 
 /** Đoạn mẫu lấy từ chính lá số của khách: câu đầu đọc được, phần sau làm mờ. Không có quy tắc khớp thì dùng ví dụ minh họa. */
 function DoanKhoa({ laSo }: { laSo: LaSo }) {
@@ -87,6 +88,7 @@ export default function ChonGoi() {
     <section className="trang-buoc">
       <h1>Chọn gói luận giải</h1>
       <p className="tt-ghi-chu">Luận giải chuyên sâu cho lá số bạn vừa lập. Bản thử: chưa thu tiền thật.</p>
+      <KhungMoiMo />
       <DoanKhoa laSo={laSo} />
       <PhuongPhap />
       <div className="khu-chon-goi">

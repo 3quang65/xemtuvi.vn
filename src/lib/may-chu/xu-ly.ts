@@ -143,7 +143,8 @@ export const maMoiVao = (req: Request, m: MayChu) => chay(req, async () => {
 export function maMoiKiem(req: Request, m: MayChu) {
   const kq = kiemMa(m.db, new URL(req.url).searchParams.get('ma'));
   const id = nguoiDung(req, m);
-  return json({ hopLe: kq.hopLe, ...(kq.hopLe ? {} : { ly: kq.ly }), chuDe: chuDeMoi(), dangNhap: !!id, daDung: id ? daDungMa(m.db, id) : false });
+  const gopY = process.env.GOP_Y_URL?.trim();
+  return json({ hopLe: kq.hopLe, ...(kq.hopLe ? { nguon: kq.nguon, ...(gopY && /^https:\/\//.test(gopY) ? { gopYUrl: gopY } : {}) } : { ly: kq.ly }), chuDe: chuDeMoi(), dangNhap: !!id, daDung: id ? daDungMa(m.db, id) : false });
 }
 
 /** POST /api/ma-moi/dung {ma, laSoId, chuDe, phien}: mở một chuyên đề miễn phí. */

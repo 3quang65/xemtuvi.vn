@@ -2,7 +2,7 @@ import { NextResponse, type NextRequest } from 'next/server';
 
 // Trang kết quả (lá số của khách) không bao giờ được index.
 // SITE_NOINDEX=1: bản thử, cấm index toàn site.
-const TRANG_KET_QUA = ['/la-so', '/ket-qua', '/tai-khoan', '/luan-giai', '/chon-goi', '/thanh-toan', '/huy-dang-ky'];
+const TRANG_KET_QUA = ['/la-so', '/ket-qua', '/tai-khoan', '/luan-giai', '/chon-goi', '/thanh-toan', '/huy-dang-ky', '/moi'];
 
 export function middleware(req: NextRequest) {
   const res = NextResponse.next();

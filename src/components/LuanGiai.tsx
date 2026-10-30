@@ -8,6 +8,7 @@ import { lapLaSo, type LaSo, type ThongTinSinh } from '@/lib/tuvi';
 import { coVanNam, laSoMacDinh, tongHopQuyen, type QuyenGiaoDien } from '@/lib/quyen-xem';
 import type { LuanGiai as BaiLuanGiai } from '@/lib/luan-giai/ai';
 import TomTatMienPhi from './TomTatMienPhi';
+import { KhungMoiMo, NutGopY } from './KhungMoi';
 import type { BaiVanNam, XemTruocVanNam } from '@/lib/luan-giai/ai/van-nam';
 import { VanNamBai } from './VanNamBai';
 import { VanNamNutMua, VanNamXemTruoc } from './VanNamXemTruoc';
@@ -150,6 +151,8 @@ export default function LuanGiai() {
         <h1>Luận giải chuyên sâu</h1>
         <p>{dsLaSo.length ? 'Lá số này chưa mở gói nào.' : 'Tài khoản này chưa có lá số hay gói nào.'}</p>
         {dsLaSo.length > 1 && <ChonLaSo ds={dsLaSo} id={laSoId} doi={(id) => { setLaSoId(id); setChon(null); }} />}
+        {laSoId !== null && <KhungMoiMo laSoId={laSoId} />}
+        <NutGopY />
         {laSoId !== null && <VanNam laSoId={laSoId} />}
         <Link href={dsLaSo.length ? '/chon-goi' : '/'} className="nut-chinh nut-lien-ket">{dsLaSo.length ? 'Chọn gói luận giải' : 'Lập lá số miễn phí'}</Link>
       </section>
@@ -175,6 +178,7 @@ export default function LuanGiai() {
         <p className="khoi-buoc">Chưa tìm thấy lá số đã lưu cho gói này.</p>
       )}
       {laSoVe && <TomTatMienPhi laSo={laSoVe} choMua={false} />}
+      <NutGopY />
       <div className="bao-loi">
         {daBao ? (
           <p role="status">Đã ghi nhận. Bản thử chưa thu tiền nên chưa có bước hoàn tiền; khi bán chính thức, lỗi kỹ thuật sẽ được hoàn 100%.</p>

@@ -6,6 +6,7 @@ const K_SINH = 'xtv.sinh';
 const K_PHIEN = 'xtv.phien';
 const K_NGUON = 'xtv.nguon';
 const K_Y_DINH = 'xtv.y-dinh';
+const K_MA_MOI = 'xtv.ma-moi';
 
 const kho = (loai: 'session' | 'local') => (typeof window === 'undefined' ? null : loai === 'session' ? window.sessionStorage : window.localStorage);
 
@@ -38,7 +39,7 @@ function maNgauNhien(doDai: number): string {
   return Array.from(b, (x) => x.toString(16).padStart(2, '0')).join('').slice(0, doDai);
 }
 
-function maPhien(): string {
+export function maPhien(): string {
   const cu = kho('session')?.getItem(K_PHIEN);
   if (cu) return cu;
   const moi = maNgauNhien(24);
@@ -66,3 +67,7 @@ export function ghiNguon() {
   ghi('session', K_NGUON, nguon);
 }
 export const docNguon = () => doc<Record<string, string>>('session', K_NGUON) ?? {};
+
+/** Mã mời của khách (từ /moi/<ma>), chỉ trong tab này. Máy chủ vẫn kiểm lại mỗi lần dùng. */
+export const luuMaMoi = (v: string) => ghi('session', K_MA_MOI, v);
+export const docMaMoi = () => doc<string>('session', K_MA_MOI);
