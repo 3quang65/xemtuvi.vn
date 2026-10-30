@@ -50,7 +50,7 @@ export default function NhanTinVanNam() {
         <input id="nt-email" type="email" inputMode="email" autoComplete="email" maxLength={120} placeholder="ten@example.com" value={email} onChange={(e) => setEmail(e.target.value)} />
         <label className="lh-dong-y">
           <input type="checkbox" checked={dongY} onChange={(e) => setDongY(e.target.checked)} />
-          <span>Tôi đồng ý nhận email về Vận năm 2027 và gợi ý chủ đề từ xemtuvi.vn. Tôi có thể hủy bất cứ lúc nào bằng một lần bấm trong email.</span>
+          <span>Tôi đồng ý nhận email về Vận năm 2027 và gợi ý chủ đề từ xemtuvi.vn. Tôi có thể hủy bất cứ lúc nào qua liên kết hủy trong mỗi email.</span>
         </label>
         {loi && <p className="bao-loi" role="alert">{loi}</p>}
         <button type="submit" className="nut-chinh" disabled={!dongY || !email.trim() || dangGui}>Nhận tin Vận 2027</button>

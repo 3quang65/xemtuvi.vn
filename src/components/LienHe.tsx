@@ -46,7 +46,7 @@ export default function LienHe() {
     return (
       <section className="lien-he" aria-labelledby="lh-tieu-de" role="status">
         <h2 id="lh-tieu-de">Đã ghi nhận</h2>
-        <p>Mình đã ghi nhận lựa chọn của bạn. Khi có bản lá số và nhắc vận tháng, mình sẽ gửi qua {xong.map((x) => (x.loai === 'email' ? 'email' : 'Zalo')).join(' và ')} bạn vừa để lại.</p>
+        <p>Mình đã ghi nhận lựa chọn của bạn. Khi có bản lá số, mình sẽ gửi qua {xong.map((x) => (x.loai === 'email' ? 'email' : 'Zalo')).join(' và ')} bạn vừa để lại.</p>
         <p className="tt-ghi-chu">Đổi ý lúc nào cũng được: {xong.map((x, i) => <span key={x.loai}>{i > 0 && ' · '}<a href={x.duongHuy}>hủy nhận tin qua {x.loai === 'email' ? 'email' : 'Zalo'}</a></span>)}.</p>
       </section>
     );
@@ -54,12 +54,12 @@ export default function LienHe() {
 
   return (
     <section className="lien-he" aria-labelledby="lh-tieu-de">
-      <h2 id="lh-tieu-de">Nhận lá số, nhắc vận tháng và gợi ý/ưu đãi <em>(không bắt buộc)</em></h2>
+      <h2 id="lh-tieu-de">Nhận lá số và gợi ý/ưu đãi <em>(không bắt buộc)</em></h2>
       <form onSubmit={gui} noValidate>
         <div className="lh-khoi">
           <label className="lh-dong-y">
             <input type="checkbox" name="dong-y-email" checked={o.email.tich} onChange={(e) => dat('email', { tich: e.target.checked })} />
-            <span>Gửi bản lá số, nhắc vận tháng và gợi ý chủ đề/ưu đãi cho mình qua <strong>email</strong></span>
+            <span>Gửi bản lá số và gợi ý chủ đề/ưu đãi cho mình qua <strong>email</strong></span>
           </label>
           {o.email.tich && (
             <input aria-label="Email của bạn" value={o.email.giaTri} onChange={(e) => dat('email', { giaTri: e.target.value })} maxLength={120}
@@ -69,7 +69,7 @@ export default function LienHe() {
         <div className="lh-khoi">
           <label className="lh-dong-y">
             <input type="checkbox" name="dong-y-zalo" checked={o.zalo.tich} onChange={(e) => dat('zalo', { tich: e.target.checked })} />
-            <span>Gửi lá số, nhắc vận tháng và gợi ý chủ đề/ưu đãi qua <strong>Zalo</strong> (số điện thoại)</span>
+            <span>Gửi lá số và gợi ý chủ đề/ưu đãi qua <strong>Zalo</strong> (số điện thoại)</span>
           </label>
           {o.zalo.tich && (
             <input aria-label="Số điện thoại Zalo" value={o.zalo.giaTri} onChange={(e) => dat('zalo', { giaTri: e.target.value })} maxLength={20}
@@ -78,7 +78,7 @@ export default function LienHe() {
         </div>
         {loi && <p className="bao-loi" role="alert">{loi}</p>}
         <button type="submit" className="nut-phu" disabled={!duDieuKien || dangGui}>Gửi cho tôi</button>
-        <p className="tt-ghi-chu">Vài email trong tuần đầu, sau đó khoảng 1 email mỗi tháng, thỉnh thoảng có gợi ý chủ đề hoặc ưu đãi từ xemtuvi.vn. Nội dung do AI tạo, mang tính tham khảo. Bạn không tích cũng vẫn xem lá số bình thường. Bạn hủy bất cứ lúc nào bằng một lần bấm trong email, hoặc nhắn &quot;HỦY&quot; qua Zalo; mình xử lý trong 24 giờ. Mình chỉ lưu email hoặc số bạn nhập, không lưu ngày giờ sinh, không bán và không chia sẻ cho bên khác.</p>
+        <p className="tt-ghi-chu">Vài email trong tuần đầu, sau đó khoảng 1 email mỗi tháng, thỉnh thoảng có gợi ý chủ đề hoặc ưu đãi từ xemtuvi.vn. Nội dung do AI tạo, mang tính tham khảo. Bạn không tích cũng vẫn xem lá số bình thường. Bạn hủy bất cứ lúc nào qua liên kết hủy trong mỗi email, hoặc nhắn &quot;HỦY&quot; qua Zalo; mình xử lý trong 24 giờ. Mình chỉ lưu email hoặc số bạn nhập, không lưu ngày giờ sinh, không bán và không chia sẻ cho bên khác.</p>
       </form>
     </section>
   );

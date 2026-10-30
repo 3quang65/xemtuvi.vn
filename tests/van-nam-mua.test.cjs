@@ -156,10 +156,9 @@ test('trang đích: nội dung ở một file, meta mô tả, không từ cấm'
 test('L-f91bef: lời hứa khớp sản phẩm thật, chủ đề lẻ chỉ 3, gói gộp dừng bán sau 6/2/2027', () => {
   const chu = [...goi.GOI, ...goi.GOI_VAN_NAM].flatMap((g) => g.quyenLoi).join(' | ');
   assert.ok(!/12 cung|bất cứ lúc nào/.test(chu), chu);
-  assert.match(goi.layGoi('tron-la-so').quyenLoi[0], /^Luận ba chủ đề: Bản thân \(cung Mệnh\), Sự nghiệp \(cung Quan Lộc\), Tình cảm \(cung Phu Thê\), và đại vận 10 năm$/);
-  assert.doesNotMatch(chu, /5 chủ đề|Tài chính|Gia đạo/);
-  assert.deepEqual(goi.layGoi('tron-la-so').soSanh, ['Mua lẻ ba chủ đề: 87.000đ. Trọn lá số có thêm phần đại vận.']);
-  assert.match(goi.layGoi('tron-la-so', { 'mot-chu-de': 39000 }).soSanh[0], /117\.000đ/);
+  assert.match(goi.layGoi('tron-la-so').quyenLoi[0], /^Luận năm chủ đề: Bản thân, Tình cảm, Sự nghiệp, Tài chính, Gia đạo, và đại vận 10 năm$/);
+  assert.deepEqual(goi.layGoi('tron-la-so').soSanh, ['Mua lẻ năm chủ đề: 145.000đ. Trọn lá số có thêm phần đại vận.']);
+  assert.match(goi.layGoi('tron-la-so', { 'mot-chu-de': 39000 }).soSanh[0], /195\.000đ/);
   assert.deepEqual(goi.CHU_DE.map((c) => c.ma), ['ban-than', 'tinh-cam', 'su-nghiep']);
   assert.equal(goi.CHU_DE_TAT_CA.length, 3); // L-1786cd: tên hai chủ đề chưa bán nằm ở KhungMoi, không ở goi.ts
   assert.equal(goi.layChuDe('tai-chinh'), undefined);
@@ -193,24 +192,18 @@ test('L-f65975: mua riêng 148k, tiết kiệm 19k, tính từ biến và từ b
 test('L-f65975: cổng mở bán Vận 2027 cần cờ Thư và ngày 15/12/2026; gói gộp ẩn sau 6/2/2027', () => {
   const T = (s) => Date.parse(s + '+07:00');
   assert.ok(!goi.cuaBanVan2027Mo(T('2026-12-20T09:00:00'), false), 'cờ tắt thì chưa bán');
-  const G = 'tron-la-so-kem-van-nam';
-  // 9/12: chưa bán gì; 10/12: Vận lẻ bán, gộp chưa; 15/12: cả hai
-  assert.ok(!goi.cuaBanVan2027Mo(T('2026-12-09T23:59:59'), true), '9/12 lẻ chưa bán');
-  assert.ok(!goi.cuaBanVan2027Mo(T('2026-12-09T23:59:59'), true, G), '9/12 gộp chưa bán');
-  assert.ok(goi.cuaBanVan2027Mo(T('2026-12-10T00:00:00'), true), '10/12 lẻ bán');
-  assert.ok(!goi.cuaBanVan2027Mo(T('2026-12-10T00:00:00'), true, G), '10/12 gộp chưa');
-  assert.ok(!goi.cuaBanVan2027Mo(T('2026-12-14T23:59:59'), true, G), '14/12 gộp chưa');
-  assert.ok(goi.cuaBanVan2027Mo(T('2026-12-15T00:00:00'), true, G), '15/12 gộp bán');
-  assert.ok(goi.cuaBanVan2027Mo(T('2026-12-15T00:00:00'), true));
-  assert.ok(!goi.cuaBanVan2027Mo(T('2026-12-20T09:00:00'), false, G), 'cờ tắt thì gộp cũng chưa');
+    // L-ad41bc: lẻ và gộp cùng mở từ 15/12, không còn mốc 10/12
+  assert.ok(!goi.cuaBanVan2027Mo(T('2026-12-14T23:59:59'), true), '14/12 chưa bán');
+  assert.ok(goi.cuaBanVan2027Mo(T('2026-12-15T00:00:00'), true), '15/12 bán');
+  assert.ok(!goi.cuaBanVan2027Mo(T('2026-12-20T09:00:00'), false), 'cờ tắt thì chưa bán');
   const nd = M.db.prepare("INSERT INTO nguoi_dung (nha_cung_cap, ma_ngoai, email, tao_luc) VALUES ('thu','cong','cong@example.vn',0)").run().lastInsertRowid;
   const laSo = (ma) => ({ maGoi: ma, laSoId: undefined });
   const cu = process.env.NOI_DUNG_VAN_2027_DA_QUA_THU;
   delete process.env.NOI_DUNG_VAN_2027_DA_QUA_THU;
   for (const ma of ['van-nam-2027', 'tron-la-so-kem-van-nam']) assert.throws(() => dv.taoDon(M.db, Number(nd), laSo(ma), 'gia_lap', T('2026-12-20T09:00:00')), /chưa mở bán/);
   process.env.NOI_DUNG_VAN_2027_DA_QUA_THU = '1';
-  assert.throws(() => dv.taoDon(M.db, Number(nd), laSo('tron-la-so-kem-van-nam'), 'gia_lap', T('2026-12-10T09:00:00')), /chưa mở bán/);
-  assert.throws(() => dv.taoDon(M.db, Number(nd), laSo('van-nam-2027'), 'gia_lap', T('2026-12-09T09:00:00')), /chưa mở bán/);
+  assert.throws(() => dv.taoDon(M.db, Number(nd), laSo('tron-la-so-kem-van-nam'), 'gia_lap', T('2026-12-14T09:00:00')), /chưa mở bán/);
+  assert.throws(() => dv.taoDon(M.db, Number(nd), laSo('van-nam-2027'), 'gia_lap', T('2026-12-14T09:00:00')), /chưa mở bán/);
   process.env.NOI_DUNG_VAN_2027_DA_QUA_THU = cu;
   assert.throws(() => dv.taoDon(M.db, Number(nd), laSo('van-nam-2027'), 'gia_lap', T('2026-12-01T09:00:00')), /chưa mở bán/);
   assert.equal(goi.goiDangBan(goi.GOI_VAN_NAM, T('2027-02-07T08:00:00')).some((g) => g.ma === 'tron-la-so-kem-van-nam'), false);
