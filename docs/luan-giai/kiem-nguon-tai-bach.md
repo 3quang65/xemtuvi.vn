@@ -93,6 +93,19 @@ TB-S04-TOT và TB-S13-HAM khi chuyển thêm `"khong": [{ "sao": ["Vũ Khúc", "
 ```
 Thiên Phủ thì thay `"Tử Vi"` bằng `"Thiên Phủ"`. Cần Kỹ thuật kiểm `toiThieu` + `viTri: chinh` có đúng nghĩa "đồng cung" không (DINH-DANG ghi `toiThieu` là "rải trong vị trí"; với `chinh` thì là cùng cung).
 
+**A3. Thiên Phủ gặp Địa Không / Địa Kiếp tại Tài Bạch** (TAI-TP-02; phiếu Thư L2-1, #7). Chưa đưa vào `quy-tac.json` vì bộ ghép hiện chỉ chọn theo độ sáng, sẽ gắn nhầm cho mọi lá số Thiên Phủ.
+- Điều kiện: Thiên Phủ tại Tài Bạch **và** Địa Không hoặc Địa Kiếp đồng cung (mọi độ sáng của Thiên Phủ).
+- Khi khớp: dùng câu này **thay** TB-S07-* (TOT/BINH/HAM), không ghép cả hai.
+```json
+{ "id": "TB-S07-KHONGKIEP", "chuyenDe": "tai-bach", "cung": "Tài Bạch", "loai": "CT",
+  "maNghienCuu": ["TAI-TP-02", "CHUNG-CT-TP-01"],
+  "dieuKien": [{ "sao": ["Thiên Phủ"] }, { "sao": ["Địa Không", "Địa Kiếp"], "toiThieu": 1, "viTri": "chinh" }],
+  "noiDung": "Thiên Phủ là sao giữ kho, nhưng khi Địa Không hoặc Địa Kiếp cùng ở Tài Bạch thì kho dễ hở: tiền tích được thường có lúc hao hụt ngoài dự tính, vì vậy tài chính có thành có bại, chưa thật ổn định dù bạn vẫn biết vun vén. Nên để tiền tích lũy ở một tài khoản riêng khó rút nhanh và chờ ít nhất một tuần trước mỗi quyết định chi hoặc đầu tư lớn.",
+  "muc": "phong-cach", "truongPhai": "Tam hợp phái Việt",
+  "nguon": ["Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)", "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"] }
+```
+Khi có A3, B cho Thiên Phủ chỉ còn Kình, Đà, Hỏa, Linh (thêm `"khong": [{ "sao": ["Địa Không", "Địa Kiếp"] }]` vào S07-HAM). Kỹ thuật kiểm `toiThieu` + `viTri: chinh` như mục B.
+
 **C. 12 câu BINH không hiện**: không sai nguồn, giữ. Nếu sau này bảng độ sáng đổi (ví dụ thêm bậc Bình theo nguồn khác) thì dùng được ngay. Nếu Minh muốn bộ gọn hơn thì có thể xóa; không ảnh hưởng đầu ra.
 
 ## Điểm còn tranh cãi
