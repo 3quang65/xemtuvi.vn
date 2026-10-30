@@ -59,3 +59,50 @@ Phần làm tốt (đúng mục tiêu #1): 42/42 câu có đúng 1 gợi ý hàn
 ## 6. Chấm lại
 
 Sau khi sửa #1–#9 và sinh lại 10 bản từ JSON cuối: Thư chạy lại script bỏ sót, đếm "dự phòng"/bài, đọc lại ban-01, 02, 04, 06, 07, 09, 10 và 3 lá số có cặp sao ở #5.
+
+## 7. Chấm lại vòng 2 (commit `a286924`, 30/10/2026)
+
+Phạm vi: chỉ 42 câu `TB-S01-TOT`…`TB-S14-HAM` (lấy từ `git show a286924:src/lib/luan-giai/ai/quy-tac.json`, cây làm việc trùng khớp phần TB-S) và lỗi #3 #4 #5 #6 #7 #10 #14. Các mục #1, #2, #8, #9, #11, #12 thuộc code/câu khung, Minh đã chuyển Kỹ thuật (Tùng): không tính vào kết luận vòng này.
+
+### Kết luận vòng 2
+
+| Tiêu chí | Vòng 1 (42 câu) | Vòng 2 (42 câu) | Ngưỡng | Kết quả |
+|---|---|---|---|---|
+| Đúng | 8 | 8 | ≥ 8 | Đạt |
+| Sâu | 7 | 8 | ≥ 8 | Đạt |
+| Giọng | 7 | **8** | ≥ 8 (bắt buộc) | Đạt |
+| An toàn | 10 | 10 | ≥ 8 | Đạt |
+
+**42 câu TB-S: ĐẠT** (mỗi tiêu chí ≥ 8, Giọng 8). Còn 1 lỗi P1 ở câu (L2-1, liên quan #7) phải sửa trước khi bài Tài Bạch đến khách, nhưng không kéo tiêu chí nào dưới 8 khi chấm riêng 42 câu. Bài khách nhận (10 bản) chưa chấm lại vì phụ thuộc các mục đã chuyển Kỹ thuật.
+
+### Bằng chứng đã chạy
+
+- Mở câu: 0/42 còn "về tiền bạc, bạn"; từ đầu câu có 17 dạng khác nhau (nhiều nhất "Thiên…" 10, là tên sao); cụm 6 chữ sau "Tài Bạch" không lặp lần nào (tối đa 1/42, ngưỡng ≤ 5).
+- "có xu hướng": 8/42, cả 8 đều ghép động từ ("có xu hướng muốn tự quyết", "hay đổi kế hoạch", "đến chậm"…); 0 câu ghép danh từ.
+- Cặp đồng cung: chạy engine trên 2.160 lá số (1950–2009, nữ), ra 29 tổ hợp hai chính tinh × độ sáng thực có. So từng cặp câu: 0 cặp lặp cụm ≥ 4 chữ ngoài phần tên cung ("kém sáng tại Tài Bạch", cặp Nhật Lương hãm).
+- 42/42 câu đúng 1 gợi ý "Nên…", 42 gợi ý khác nhau; 0 "dự phòng"; từ cấm (giải hạn, hóa giải, bùa, cúng, cầu an, tai họa, tai ương, phá sản, nhất định, xui, vận đen, chắc chắn): 0.
+- Bản mẫu `mau-tb` đối chiếu JSON `a286924`: 13/13 lượt TB-S khớp chữ (12 id).
+- Script bỏ sót `mau-tb`: 5/55 (9%, vòng 1 11%); còn sót Hóa Quyền, Lộc Tồn @Tài Bạch (ban-04), Tuần, Hóa Khoa @Tài Bạch (ban-07), Hóa Khoa @Tài Bạch (ban-10): thuộc #8, chuyển Kỹ thuật. Lưu ý: ban-10 hết sót Địa Không chỉ vì câu `TB-S07-BINH` nhắc tên sao trong mệnh đề "khi không gặp…", không phải đã luận (xem L2-1).
+
+### Từng lỗi trong phạm vi
+
+| # | Kết quả | Ghi chú |
+|---|---|---|
+| 3 | **Đã sửa** | Bỏ đầu khuôn; mở theo sao ("Thiên Phủ là sao chủ kho…", "Cự Môn sáng ở Tài Bạch biến lời nói thành công cụ kiếm tiền…"). |
+| 4 | **Đã sửa** | 10/10 câu đã viết lại ("tiền của bạn thường vào nhanh nhưng ra cũng nhanh", "thu chi của bạn thường lên xuống thất thường"…). |
+| 5 | **Đã sửa** | Đồng Cự: không đều/eo hẹp ↔ thị phi tiền chung; Đồng Âm: nhịp làm việc ↔ cảm xúc chi phối; Vũ Phá: chỉ `TB-S04-HAM` còn gợi ý nghề. Gợi ý của các cặp khác nhau. |
+| 6 | **Đã sửa (phần câu)** | `TB-S04-TOT` ("dù có khi phải bền bỉ một thời gian") và `TB-S13-HAM` ("tính quyết nhanh, dám làm là thế mạnh khi đi kèm cân nhắc") đứng cạnh nhau không còn đối nghịch. Phần câu nối riêng, Tuần@Tài Bạch, Hóa Khoa@Tài Bạch ở ban-07: bộ ghép, chuyển Kỹ thuật (cùng #8). |
+| 7 | **Chưa** | Xem L2-1: Hạnh chưa viết câu Thiên Phủ gặp Không/Kiếp; thay bằng mệnh đề điều kiện trong `TB-S07-BINH`. Phần gắn câu (Bảo) chuyển Kỹ thuật. |
+| 10 | **Đã sửa** | 10 bản sinh lại từ `a286924`, 13/13 lượt khớp JSON. |
+| 14 | **Đã sửa** | S06-TOT/S10-TOT và S01-BINH/S07-BINH không còn cụm chung. |
+
+Ngoài phạm vi, chuyển Kỹ thuật (không tính): #1, #2, #8, #9, #11, #12. #13 (P2, Đức): `TB-S01-HAM`, `TB-S07-HAM` vẫn viết theo điều kiện "đồng cung sát tinh" trong khi `dieuKien` là `doSang: Hãm` (hai sao không bao giờ Hãm), nên câu không bao giờ được dùng.
+
+### Lỗi mới
+
+| id | Mức | Vấn đề | Sửa đề nghị |
+|---|---|---|---|
+| L2-1 `TB-S07-BINH` | P1 (Đúng, Giọng) | "khi không gặp Địa Không, Địa Kiếp hay sao hao tán cùng cung, của cải có xu hướng bền lên" là điều kiện viết cho người luận. `dieuKien` chỉ có `doSang: Bình`, nên ban-10 (Địa Không hãm cùng cung) vẫn nhận câu này: khách đọc được ý "bền lên" mà không biết lá số mình có đúng điều kiện bị loại trừ. Script bỏ sót cũng tính nhầm Địa Không là đã nhắc. | Hạnh: bỏ mệnh đề điều kiện khỏi `noiDung`; viết thêm câu riêng "Thiên Phủ gặp Địa Không/Địa Kiếp tại Tài Bạch" (kho dễ hở, gợi ý cụ thể), dùng chung cho mọi độ sáng của Thiên Phủ. Bảo: `dieuKien` đồng cung Không/Kiếp chọn câu này. Nghiệm thu: ban-10 sinh lại có câu Phủ gặp Không, `noiDung` của TB-S07-* không còn chữ "khi không gặp". |
+| L2-2 `TB-S05-TOT`, `TB-S09-TOT` | P2 (Giọng) | Trùng cụm "càng về sau càng khá". Ý "trước ít sau nhiều / đến muộn" lặp ở 6 câu (S03-HAM, S04-HAM, S05-TOT, S09-TOT, S13-TOT, S13-HAM). Hai sao không đồng cung nên không cùng bài; trừ điểm nhẹ ở mức bộ câu. | Giữ "trước ít sau nhiều" cho Thất Sát (đúng sách); đổi S05-TOT, S09-TOT sang nét riêng (Thiên Đồng: tiền đến từ việc mình thích; Tham Lang: tiền theo quan hệ, giai đoạn). |
+| L2-3 `TB-S02-TOT` | P2 (Giọng) | "Thiên Cơ sáng tại Tài Bạch là lá số của người kiếm tiền bằng trí óc": một vị trí sao không phải "lá số". | "…cho thấy bạn kiếm tiền bằng trí óc". |
+| L2-4 `TB-S11-HAM` | P2 (Đúng) | Vẫn "nghề kỹ thuật, công nghệ"; mục 5 vòng 1 đã ghi sách là "kỹ nghệ". | "sách cho rằng hợp nghề kỹ thuật". |
