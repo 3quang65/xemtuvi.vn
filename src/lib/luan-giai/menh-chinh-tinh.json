@@ -1,0 +1,546 @@
+{
+ "menh": {
+  "Tử Vi": [
+   {
+    "ma": "MENH-TV-01",
+    "cau": "Miếu ở Dần, Thân, Tỵ, Ngọ (M), vượng ở Thìn, Tuất (V), đắc ở Sửu, Mùi (Đ): người trung hậu, nghiêm cẩn, chững chạc, có phong thái lãnh đạo.",
+    "dacTinh": [
+     "M",
+     "V",
+     "Đ"
+    ],
+    "nguon": [
+     "Tân Biên",
+     "Toàn Thư"
+    ]
+   },
+   {
+    "ma": "MENH-TV-02",
+    "cau": "Bình ở Tý, Mão, Dậu, Hợi (B), hoặc thiếu Tả Hữu: uy lực giảm, khả năng \"cứu giải\" yếu. TT gọi đây là \"cô quân\" (vua thiếu bề tôi): có tố chất dẫn dắt nhưng thiếu người phò tá. Nên chủ động xây dựng quan hệ và đội ngũ.",
+    "dacTinh": [
+     "B"
+    ],
+    "nguon": [
+     "Tân Biên",
+     "Toàn Thư"
+    ]
+   },
+   {
+    "ma": "MENH-TV-03",
+    "cau": "Gặp Thiên Phủ, Thiên Tướng, Tả Hữu, Xương Khúc, Khôi Việt hội họp: uy tín và quyền hành rõ rệt, tài lộc vững.",
+    "dacTinh": [],
+    "nguon": [
+     "Tân Biên",
+     "Toàn Thư"
+    ]
+   },
+   {
+    "ma": "MENH-TV-04",
+    "cau": "Gặp Kình, Đà, Không, Kiếp hoặc Tuần Triệt: dễ gặp trở ngại, có xu hướng tìm đến đời sống tinh thần, ít màng danh lợi.",
+    "dacTinh": [],
+    "nguon": [
+     "Tân Biên",
+     "Toàn Thư"
+    ]
+   }
+  ],
+  "Liêm Trinh": [
+   {
+    "ma": "MENH-LT-01",
+    "cau": "Miếu ở Thìn, Tuất (M), vượng ở Tý, Ngọ, Dần, Thân (V), đắc ở Sửu, Mùi (Đ): liêm khiết, thẳng thắn, có tố chất làm việc trong môi trường kỷ luật hoặc quản lý.",
+    "dacTinh": [
+     "M",
+     "V",
+     "Đ"
+    ],
+    "nguon": [
+     "Tân Biên",
+     "Toàn Thư"
+    ]
+   },
+   {
+    "ma": "MENH-LT-02",
+    "cau": "Hãm ở Tỵ, Hợi, Mão, Dậu (H): tính cứng, dễ tranh luận gay gắt, khắt khe. Hợp nghề chuyên môn hoặc tay nghề, thường sớm tự lập xa gia đình. Nên học cách mềm mỏng khi va chạm.",
+    "dacTinh": [
+     "H"
+    ],
+    "nguon": [
+     "Tân Biên",
+     "Toàn Thư"
+    ]
+   },
+   {
+    "ma": "MENH-LT-03",
+    "cau": "Liêm Trinh rất cần Thiên Tướng đồng cung, vì Tướng hóa giải phần khắc nghiệt và nóng nảy của Liêm.",
+    "dacTinh": [],
+    "nguon": [
+     "Toàn Thư",
+     "Tân Biên"
+    ]
+   },
+   {
+    "ma": "MENH-LT-04",
+    "cau": "Liêm miếu, vượng, đắc thủ Mệnh hoặc Thân còn mang tính \"đào hoa thứ hai\", tức có duyên, có sức hút.",
+    "dacTinh": [],
+    "nguon": [
+     "Tân Biên",
+     "Toàn Thư"
+    ]
+   }
+  ],
+  "Thiên Đồng": [
+   {
+    "ma": "MENH-TD-01",
+    "cau": "Miếu ở Dần, Thân (M), vượng ở Tý (V), đắc ở Mão, Tỵ, Hợi (Đ): hiền hòa, nhân hậu, vui vẻ, thường gặp may. Ý thích hay thay đổi.",
+    "dacTinh": [
+     "M",
+     "V",
+     "Đ"
+    ],
+    "nguon": [
+     "Tân Biên",
+     "Toàn Thư"
+    ]
+   },
+   {
+    "ma": "MENH-TD-02",
+    "cau": "Hãm ở Ngọ, Dậu, Thìn, Tuất, Sửu, Mùi (H): vẫn nhân hậu nhưng dễ thất thường, dễ vướng thị phi. Nên giữ kế hoạch rõ ràng. Ngoại lệ: Thiên Đồng ở Tuất là cách \"phản bối\", nhưng người tuổi Đinh (được Hóa) lại thành tốt.",
+    "dacTinh": [
+     "H"
+    ],
+    "nguon": [
+     "Tân Biên",
+     "Toàn Thư"
+    ]
+   },
+   {
+    "ma": "MENH-TD-03",
+    "cau": "Đồng Lương ở Dần, Thân, gặp Tả Hữu: tài và quan đều đẹp.",
+    "dacTinh": [],
+    "nguon": [
+     "Toàn Thư",
+     "Khảo Luận"
+    ]
+   }
+  ],
+  "Vũ Khúc": [
+   {
+    "ma": "MENH-VK-01",
+    "cau": "Miếu ở Thìn, Tuất, Sửu, Mùi (M), vượng ở Tý, Ngọ, Dần, Thân (V), đắc ở Mão, Dậu (Đ): cương nghị, quyết đoán, thẳng thắn, giỏi kiếm tiền và tạo tài sản.",
+    "dacTinh": [
+     "M",
+     "V",
+     "Đ"
+    ],
+    "nguon": [
+     "Tân Biên",
+     "Toàn Thư"
+    ]
+   },
+   {
+    "ma": "MENH-VK-02",
+    "cau": "Hãm ở Tỵ, Hợi (H, đồng cung Phá Quân): dễ cứng nhắc, chi tiêu bốc đồng. Hợp nghề chuyên môn hoặc tay nghề. Nên lập kỷ luật tài chính.",
+    "dacTinh": [
+     "H"
+    ],
+    "nguon": [
+     "Tân Biên",
+     "Toàn Thư"
+    ]
+   },
+   {
+    "ma": "MENH-VK-03",
+    "cau": "Vũ Khúc mang tính \"Cô, Quả\": độc lập, ít bộc lộ tình cảm. Nên chủ động chia sẻ trong các mối quan hệ thân thiết.",
+    "dacTinh": [],
+    "nguon": [
+     "Tân Biên",
+     "Toàn Thư",
+     "Khảo Luận"
+    ]
+   },
+   {
+    "ma": "MENH-VK-04",
+    "cau": "Vũ Khúc miếu, vượng, đắc gặp sát tinh thì không đáng lo nhiều.",
+    "dacTinh": [],
+    "nguon": [
+     "Tân Biên",
+     "Toàn Thư",
+     "Khảo Luận"
+    ]
+   }
+  ],
+  "Thái Dương": [
+   {
+    "ma": "MENH-TDU-01",
+    "cau": "Miếu ở Tỵ, Ngọ (M), vượng ở Dần, Mão, Thìn (V), đắc ở Sửu, Mùi (Đ): thông minh, nhân hậu, rộng rãi, hơi nóng tính, có uy.",
+    "dacTinh": [
+     "M",
+     "V",
+     "Đ"
+    ],
+    "nguon": [
+     "Tân Biên",
+     "Toàn Thư"
+    ]
+   },
+   {
+    "ma": "MENH-TDU-02",
+    "cau": "Hãm ở Thân, Dậu, Tuất, Hợi, Tý (H): công việc dễ thăng trầm, lúc đầu siêng rồi sau nản. Rời quê lập nghiệp thì thuận hơn. Nên giữ nhịp bền bỉ.",
+    "dacTinh": [
+     "H"
+    ],
+    "nguon": [
+     "Tân Biên",
+     "Toàn Thư"
+    ]
+   },
+   {
+    "ma": "MENH-TDU-03",
+    "cau": "Sinh ban ngày thì Thái Dương thuận lý, sáng hơn. Sinh ban đêm thì giảm sáng.",
+    "dacTinh": [],
+    "nguon": [
+     "Tân Biên",
+     "Toàn Thư"
+    ]
+   },
+   {
+    "ma": "MENH-TDU-04",
+    "cau": "Thái Dương hãm gặp Tuần Triệt lại sáng hơn. Thái Dương miếu, vượng gặp Tuần Triệt thì bị che.",
+    "dacTinh": [],
+    "nguon": [
+     "Tân Biên",
+     "Khảo Luận"
+    ]
+   }
+  ],
+  "Thiên Cơ": [
+   {
+    "ma": "MENH-TCO-01",
+    "cau": "Miếu ở Thìn, Tuất, Mão, Dậu (M), vượng ở Tỵ, Thân (V), đắc ở Tý, Ngọ, Sửu, Mùi (Đ): sáng suốt, khéo léo, nhiều mưu kế, nhân hậu, tính hơi gấp.",
+    "dacTinh": [
+     "M",
+     "V",
+     "Đ"
+    ],
+    "nguon": [
+     "Tân Biên",
+     "Toàn Thư"
+    ]
+   },
+   {
+    "ma": "MENH-TCO-02",
+    "cau": "Hãm ở Dần, Hợi (H), hoặc gặp Cự Môn kèm Kình Đà Hỏa Linh, Kỵ: thành tựu khó bền, hợp kinh doanh hoặc nghề kỹ thuật khéo tay. Nên tránh dàn trải.",
+    "dacTinh": [
+     "H"
+    ],
+    "nguon": [
+     "Tân Biên",
+     "Toàn Thư"
+    ]
+   },
+   {
+    "ma": "MENH-TCO-03",
+    "cau": "Cơ Lương hội: giỏi bàn mưu lược, phân tích. Bộ Cơ Nguyệt Đồng Lương hợp công việc hành chính hoặc chuyên viên.",
+    "dacTinh": [],
+    "nguon": [
+     "Toàn Thư",
+     "Khảo Luận"
+    ]
+   }
+  ],
+  "Thiên Phủ": [
+   {
+    "ma": "MENH-TP-01",
+    "cau": "Miếu ở Dần, Thân, Tý, Ngọ (M), vượng ở Thìn, Tuất (V), đắc ở Tỵ, Hợi, Mùi (Đ): ôn hòa, nhân hậu, thông minh, học rộng, biết xoay xở, có khả năng giải nguy.",
+    "dacTinh": [
+     "M",
+     "V",
+     "Đ"
+    ],
+    "nguon": [
+     "Tân Biên",
+     "Toàn Thư"
+    ]
+   },
+   {
+    "ma": "MENH-TP-02",
+    "cau": "Bình ở Mão, Dậu, Sửu (B). Gặp Tuần Triệt hoặc Không Kiếp thì như kho bị thủng: tiền khó tích lũy. Nên quản lý tài chính chặt chẽ.",
+    "dacTinh": [
+     "B"
+    ],
+    "nguon": [
+     "Tân Biên",
+     "Toàn Thư"
+    ]
+   },
+   {
+    "ma": "MENH-TP-03",
+    "cau": "Gặp Kình Đà Hỏa Linh: TB cho rằng Phủ chế được (chỉ suy giảm khi gặp đủ cả bốn sao). TT cho rằng dễ thiên về toan tính quá mức. Xem 1.6.",
+    "dacTinh": [],
+    "nguon": [
+     "Tân Biên",
+     "Toàn Thư"
+    ]
+   }
+  ],
+  "Thái Âm": [
+   {
+    "ma": "MENH-TA-01",
+    "cau": "Miếu ở Dậu, Tuất, Hợi (M), vượng ở Thân, Tý (V), đắc ở Sửu, Mùi (Đ): ôn hòa, nhân hậu, thanh tú, thông minh, có khiếu văn chương nghệ thuật. Thuận về nhà đất và tích lũy.",
+    "dacTinh": [
+     "M",
+     "V",
+     "Đ"
+    ],
+    "nguon": [
+     "Tân Biên",
+     "Toàn Thư"
+    ]
+   },
+   {
+    "ma": "MENH-TA-02",
+    "cau": "Hãm ở Dần, Mão, Thìn, Tỵ, Ngọ (H): dễ nhầm lẫn, tài sản khó giữ. Xa quê lập nghiệp thì thuận hơn. Nên cẩn thận khi ra quyết định tài chính.",
+    "dacTinh": [
+     "H"
+    ],
+    "nguon": [
+     "Tân Biên",
+     "Toàn Thư"
+    ]
+   },
+   {
+    "ma": "MENH-TA-03",
+    "cau": "Sinh ban đêm thì Thái Âm thuận lý. Sinh từ mùng 1 đến 15 âm lịch (trăng thượng huyền) càng sáng.",
+    "dacTinh": [],
+    "nguon": [
+     "Tân Biên",
+     "Khảo Luận"
+    ]
+   }
+  ],
+  "Tham Lang": [
+   {
+    "ma": "MENH-THL-01",
+    "cau": "Miếu ở Sửu, Mùi (M), vượng ở Thìn, Tuất (V), đắc ở Dần, Thân (Đ): nhiều ham muốn và năng lượng, giao tế giỏi, có uy và tài lộc. Gặp Hỏa Tinh hoặc Linh Tinh càng mạnh (xem 1.4).",
+    "dacTinh": [
+     "M",
+     "V",
+     "Đ"
+    ],
+    "nguon": [
+     "Tân Biên",
+     "Toàn Thư"
+    ]
+   },
+   {
+    "ma": "MENH-THL-02",
+    "cau": "Hãm ở Tý, Ngọ, Mão, Dậu, Tỵ, Hợi (H): thiếu kiên nhẫn, làm vội nên \"khéo quá hóa vụng\", dễ sa vào thú vui. Nên rèn kỷ luật và chọn mục tiêu dài hạn.",
+    "dacTinh": [
+     "H"
+    ],
+    "nguon": [
+     "Toàn Thư",
+     "Tân Biên"
+    ]
+   },
+   {
+    "ma": "MENH-THL-03",
+    "cau": "Vũ Tham ở tứ mộ (Thìn, Tuất, Sửu, Mùi): phát muộn, ngoài 30 tuổi mới phát. Tham Vũ ở Thân mà Mệnh không có cát tinh thì vất vả hơn.",
+    "dacTinh": [],
+    "nguon": [
+     "Toàn Thư",
+     "Tân Biên"
+    ]
+   }
+  ],
+  "Cự Môn": [
+   {
+    "ma": "MENH-CM-01",
+    "cau": "Miếu ở Mão, Dậu (M), vượng ở Tý, Ngọ, Dần (V), đắc ở Thân, Hợi (Đ): nhân hậu, ăn nói sắc sảo, có uy về lời nói, hợp nghề dùng ngôn ngữ (luật, giảng dạy, tư vấn).",
+    "dacTinh": [
+     "M",
+     "V",
+     "Đ"
+    ],
+    "nguon": [
+     "Tân Biên",
+     "Toàn Thư"
+    ]
+   },
+   {
+    "ma": "MENH-CM-02",
+    "cau": "Hãm ở Thìn, Tuất, Sửu, Mùi, Tỵ (H): hay nghi ngờ, học nhiều nhưng không chuyên sâu, dễ vướng thị phi, ít hợp người. Nên thận trọng lời nói và kiểm chứng trước khi kết luận.",
+    "dacTinh": [
+     "H"
+    ],
+    "nguon": [
+     "Toàn Thư",
+     "Tân Biên"
+    ]
+   },
+   {
+    "ma": "MENH-CM-03",
+    "cau": "Cự Môn hãm gặp Hóa Khoa thì giảm hẳn phần bất lợi.",
+    "dacTinh": [],
+    "nguon": [
+     "Tân Biên",
+     "Khảo Luận"
+    ]
+   }
+  ],
+  "Thiên Tướng": [
+   {
+    "ma": "MENH-TT-01",
+    "cau": "Miếu ở Dần, Thân (M), vượng ở Thìn, Tuất, Tý, Ngọ (V), đắc ở Sửu, Mùi, Tỵ, Hợi (Đ): đôn hậu, can đảm, chững chạc, thích cái đẹp, cơm áo đầy đủ. Chế được sát tinh.",
+    "dacTinh": [
+     "M",
+     "V",
+     "Đ"
+    ],
+    "nguon": [
+     "Tân Biên",
+     "Toàn Thư"
+    ]
+   },
+   {
+    "ma": "MENH-TT-02",
+    "cau": "Hãm ở Mão, Dậu (H), gặp Kình Dương đồng cung hoặc Tuần Triệt: dễ mất thế chủ động, \"ấn tín sứt mẻ\". Nên chuẩn bị kỹ trước khi nhận trọng trách.",
+    "dacTinh": [
+     "H"
+    ],
+    "nguon": [
+     "Tân Biên",
+     "Toàn Thư"
+    ]
+   }
+  ],
+  "Thiên Lương": [
+   {
+    "ma": "MENH-TL-01",
+    "cau": "Miếu ở Ngọ, Thìn, Tuất (M), vượng ở Dần, Mão, Thân (V), đắc ở Sửu, Mùi (Đ): nhân hậu, khoan dung, ngay thẳng, có mưu cơ, biết quyền biến. Có khả năng \"giải\" khó khăn, thường gặp nguy rồi qua.",
+    "dacTinh": [
+     "M",
+     "V",
+     "Đ"
+    ],
+    "nguon": [
+     "Tân Biên",
+     "Toàn Thư"
+    ]
+   },
+   {
+    "ma": "MENH-TL-02",
+    "cau": "Hãm ở Dậu, Tỵ, Hợi (H): vẫn nhân hậu nhưng hay thay đổi, ham chơi, nhiều dịch chuyển. Nên chọn một hướng đi và theo đuổi đến cùng.",
+    "dacTinh": [
+     "H"
+    ],
+    "nguon": [
+     "Tân Biên",
+     "Toàn Thư"
+    ]
+   },
+   {
+    "ma": "MENH-TL-03",
+    "cau": "Thiên Lương ở Ngọ: đường công danh trong sạch, hiển đạt.",
+    "dacTinh": [],
+    "nguon": [
+     "Toàn Thư",
+     "Tân Biên"
+    ]
+   }
+  ],
+  "Thất Sát": [
+   {
+    "ma": "MENH-TS-01",
+    "cau": "Miếu ở Dần, Thân, Tý, Ngọ (M): can đảm, quyết liệt, có mưu lược, hợp vai trò cầm quân hoặc khai phá.",
+    "dacTinh": [
+     "M"
+    ],
+    "nguon": [
+     "Tân Biên",
+     "Toàn Thư"
+    ]
+   },
+   {
+    "ma": "MENH-TS-02",
+    "cau": "Hãm ở Mão, Dậu, Thìn, Tuất (H), thêm Kình Đà Hỏa Linh: dễ bốc đồng, nóng giận, thành quả khó bền. Nên học kiềm chế và quản trị rủi ro.",
+    "dacTinh": [
+     "H"
+    ],
+    "nguon": [
+     "Tân Biên",
+     "Toàn Thư"
+    ]
+   },
+   {
+    "ma": "MENH-TS-03",
+    "cau": "Tử Vi đồng cung với Thất Sát (Tỵ, Hợi) làm Sát được \"hóa quyền\", như vua mang kiếm báu: cá tính mạnh, có năng lực quản lý.",
+    "dacTinh": [],
+    "nguon": [
+     "Tân Biên",
+     "Toàn Thư"
+    ]
+   }
+  ],
+  "Phá Quân": [
+   {
+    "ma": "MENH-PQ-01",
+    "cau": "Miếu ở Tý, Ngọ (M), vượng ở Sửu, Mùi (V), Thìn, Tuất (V theo spec, TB ghi Đ): can đảm, dám đổi mới, mạnh mẽ. Ở Tý, Ngọ thì công danh thăng tiến.",
+    "dacTinh": [
+     "M",
+     "V"
+    ],
+    "nguon": [
+     "Tân Biên",
+     "Toàn Thư"
+    ]
+   },
+   {
+    "ma": "MENH-PQ-02",
+    "cau": "Hãm ở Dần, Thân, Mão, Dậu, Tỵ, Hợi (H): thích thay đổi, khó hợp quần, dễ hao tán. Tự lập xa quê thì phát. Nên có kế hoạch tài chính và kiên nhẫn trong hợp tác.",
+    "dacTinh": [
+     "H"
+    ],
+    "nguon": [
+     "Tân Biên",
+     "Toàn Thư"
+    ]
+   },
+   {
+    "ma": "MENH-PQ-03",
+    "cau": "Phá Quân gặp Tử Vi, Thiên Lương, Thiên Phủ (hoặc Hỷ, Lộc) thì bớt tính phá.",
+    "dacTinh": [],
+    "nguon": [
+     "Toàn Thư",
+     "Tân Biên"
+    ]
+   }
+  ]
+ },
+ "voChinhDieu": [
+  {
+   "ma": "CHUNG-VCD-01",
+   "cau": "Cung không có chính tinh: mượn chính tinh của cung xung chiếu để luận, lực yếu hơn chính tinh tọa thủ; xét thêm tam hợp và sao phụ tại cung.",
+   "dacTinh": [],
+   "nguon": [
+    "Tân Biên",
+    "Nghiệm Lý",
+    "Toàn Thư"
+   ]
+  },
+  {
+   "ma": "CHUNG-VCD-02",
+   "cau": "Vô chính diệu có cát tinh hội chiếu ở tam phương vẫn có thể tốt; vô chính diệu không cát tinh: sách gốc diễn đạt rất nặng (\"Mệnh vô chính diệu…\"), chỉ nói \"cần xây nền tảng, dễ chịu ảnh hưởng môi trường\".",
+   "dacTinh": [],
+   "nguon": [
+    "Toàn Thư"
+   ]
+  },
+  {
+   "ma": "CHUNG-VCD-03",
+   "cau": "Vô chính diệu gặp Tuần hoặc Triệt, hoặc Tam Không (Thiên Không, Địa Không, Tuần/Triệt) là ngoại lệ được phái Việt coi là thuận; Phúc Đức vô chính diệu \"nên gặp Tuần, kỵ Triệt\".",
+   "dacTinh": [],
+   "nguon": []
+  }
+ ]
+}
