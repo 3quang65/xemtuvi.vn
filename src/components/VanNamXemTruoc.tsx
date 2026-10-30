@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { CONG_BO_GIA, dinhDangGia } from '@/lib/goi';
+import { CONG_BO_GIA, dinhDangGia, dongGoiGop, type Goi } from '@/lib/goi';
 import { useGia } from '@/lib/useGia';
 import type { XemTruocVanNam } from '@/lib/luan-giai/ai/van-nam';
 import { XEM_TRUOC } from '@/lib/van-nam-noi-dung';
@@ -28,7 +28,10 @@ export function VanNamXemTruoc({ xt, mau = false }: { xt: XemTruocVanNam; mau?: 
 export function VanNamNutMua({ laSoId }: { laSoId?: number }) {
   const them = laSoId ? `&laSo=${laSoId}` : '';
   const { vanNam } = useGia();
+  if (vanNam.length === 0) return null; // cổng mở bán đóng: không bán Vận 2027
+  const dong = CONG_BO_GIA ? dongGoiGop(vanNam.find((g) => g.ma === 'tron-la-so-kem-van-nam') ?? ({} as Goi)) : null;
   return (
+    <>
     <div className="hai-nut">
       {vanNam.map((g) => (
         <Link key={g.ma} href={`/thanh-toan?goi=${g.ma}${them}`} className={`${g.chinh ? 'nut-chinh' : 'nut-phu'} nut-lien-ket`}>
@@ -36,5 +39,7 @@ export function VanNamNutMua({ laSoId }: { laSoId?: number }) {
         </Link>
       ))}
     </div>
+    {dong && <p className="tt-ghi-chu">{dong}</p>}
+    </>
   );
 }
