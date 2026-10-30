@@ -1,11 +1,13 @@
 'use client';
 
 import { useRouter, useSearchParams } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { dinhDangGia, HOAN_TIEN, layChuDe, type Goi } from '@/lib/goi';
 import { useGia } from '@/lib/useGia';
 import { docThongTinSinh, guiSuKien, type NhaCungCap } from '@/lib/phien';
 import { useLaSoDaLuu } from '@/lib/useLaSoDaLuu';
+import { linkBaoLoi, maDonHienThi, tinXacNhanDon } from '@/lib/tro-giup';
+import ThongBaoLoi from './ThongBaoLoi';
 
 async function goiApi<T>(duong: string, body?: unknown): Promise<T> {
   const r = await fetch(duong, body === undefined ? { cache: 'no-store' } : { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
@@ -31,6 +33,13 @@ export default function ThanhToan() {
   const [tru, setTru] = useState(0); // số được trừ khi nâng lên Thành viên năm (máy chủ tính)
   const [bao, setBao] = useState('');
   const [dangXuLy, setDangXuLy] = useState(false);
+  const dangBam = useRef(false); // chặn bấm trùng ngay tại lần bấm, trước cả khi nút kịp bị khóa
+  const donRef = useRef<number | null>(null); // đơn đã tạo: thử lại dùng lại đơn này, không tạo đơn mới
+  const laSoRef = useRef<number | null>(null);
+  const [donId, setDonId] = useState<number | null>(null);
+  const [loiTT, setLoiTT] = useState(false); // E05
+  const [bamTrung, setBamTrung] = useState(false); // E06
+  const [xong, setXong] = useState<{ id: number; tenGoi: string; maGoi: string } | null>(null); // tin xác nhận 3.1
 
   useEffect(() => { if (laSo && !hopLe) router.replace(laSoMay ? '/luan-giai' : '/chon-goi'); }, [laSo, hopLe, router, laSoMay]);
   useEffect(() => { if (laSo && hopLe) { guiSuKien('vao_thanh_toan', suKien); goiApi<{ dangNhap: boolean; email?: string }>('/api/toi').then((t) => setEmail(t.dangNhap ? t.email ?? null : null)).catch(() => {}); } }, [laSo, hopLe]); // eslint-disable-line react-hooks/exhaustive-deps
@@ -48,13 +57,41 @@ export default function ThanhToan() {
     } catch (e) { setBao((e as Error).message); } finally { setDangXuLy(false); }
   }
   async function thanhToan() {
-    setBao(''); setDangXuLy(true);
+    if (dangBam.current) { setBamTrung(true); return; } // lần bấm thứ hai trở đi: chỉ báo E06, không tạo thêm đơn
+    dangBam.current = true; setBao(''); setLoiTT(false); setBamTrung(false); setDangXuLy(true);
     try {
-      const laSoId = laSoMay ?? (await goiApi<{ id: number }>('/api/la-so', { thongTinSinh: docThongTinSinh() })).id;
-      const don = await goiApi<{ id: number }>('/api/don-hang', { maGoi: goi!.ma, chuDe: suKien.chuDe, laSoId });
-      await goiApi('/api/thanh-toan/gia-lap', { donHangId: don.id });
-      guiSuKien('thanh_toan_xong', suKien); router.push('/luan-giai');
-    } catch (e) { setBao((e as Error).message); setDangXuLy(false); }
+      laSoRef.current ??= laSoMay ?? (await goiApi<{ id: number }>('/api/la-so', { thongTinSinh: docThongTinSinh() })).id;
+      if (donRef.current === null) {
+        donRef.current = (await goiApi<{ id: number }>('/api/don-hang', { maGoi: goi!.ma, chuDe: suKien.chuDe, laSoId: laSoRef.current })).id;
+        setDonId(donRef.current);
+      }
+      await goiApi('/api/thanh-toan/gia-lap', { donHangId: donRef.current });
+      guiSuKien('thanh_toan_xong', suKien);
+      setXong({ id: donRef.current, tenGoi: goi!.ten, maGoi: goi!.ma });
+    } catch { setLoiTT(true); dangBam.current = false; setDangXuLy(false); }
+  }
+
+  if (xong) {
+    const tin = tinXacNhanDon({ maDon: maDonHienThi(xong.id), tenGoi: xong.tenGoi, maGoi: xong.maGoi });
+    return (
+      <section className="trang-buoc" aria-labelledby="tin-xac-nhan">
+        <h1 id="tin-xac-nhan">{tin.tieuDe}</h1>
+        <div className="khoi-buoc" role="status">
+          <p>{tin.dong[0]}</p>
+          <ul className="tin-don">
+            <li>Mã đơn: <strong>{tin.maDon}</strong></li>
+            <li>Gói: <strong>{tin.tenGoi}</strong>{tin.giaGoi && <> · Giá hiển thị: {tin.giaGoi}</>}</li>
+            <li>{tin.dong[1]}</li>
+            <li>{tin.dong[2]}</li>
+          </ul>
+          <div className="hai-nut">
+            <a href="/luan-giai" className="nut-chinh nut-lien-ket">Xem luận giải của tôi</a>
+            <a href={linkBaoLoi({ maDon: tin.maDon, goi: xong.maGoi })} className="nut-phu nut-lien-ket">Báo lỗi / góp ý</a>
+          </div>
+          <p className="tt-ghi-chu">{tin.ghiChu}</p>
+        </div>
+      </section>
+    );
   }
 
   return (
@@ -87,7 +124,14 @@ export default function ThanhToan() {
           {tru > 0 && <div><dt>Đã trừ</dt><dd>{dinhDangGia(tru)}</dd></div>}
           <div><dt>Tổng</dt><dd><strong>{dinhDangGia(goi.gia - tru)}</strong></dd></div>
         </dl>
-        <button type="button" className="nut-chinh" disabled={!email || dangXuLy} onClick={thanhToan}>Thanh toán (giả lập)</button>
+        {loiTT ? (
+          <ThongBaoLoi ma="E05" nut={{ 'thu-lai': thanhToan, 'gui-bao-loi': linkBaoLoi({ goi: goi.ma, maDon: donId ? maDonHienThi(donId) : undefined, tinhHuong: 'E05' }) }} />
+        ) : (
+          <button type="button" className="nut-chinh" disabled={!email || dangXuLy} onClick={thanhToan}>Thanh toán (giả lập)</button>
+        )}
+        {bamTrung && donId !== null && (
+          <ThongBaoLoi ma="E06" bien={{ maDon: maDonHienThi(donId), tenGoi: goi.ten }} nut={{ 'xem-luan-giai': '/luan-giai', 'xem-don': '/toi' }} />
+        )}
         {bao && <p className="bao-loi-nhap" role="alert">{bao}</p>}
         {!email && <p className="tt-ghi-chu">Chọn tài khoản ở trên để thanh toán.</p>}
         {!laSoMay && <p className="ghi-chu-rieng-tu">Khi thanh toán, thông tin sinh của lá số này được lưu (mã hóa) trên máy chủ để bạn xem lại ở máy khác. Trước đó, thông tin chỉ nằm trên trình duyệt của bạn.</p>}
