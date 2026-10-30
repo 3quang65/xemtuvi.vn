@@ -163,3 +163,91 @@ test('Nhân hòa VAN-PP: khớp theo nhóm của sao chủ Mệnh và sao chủ 
   }
   assert.ok(dem >= 4, `chỉ ${dem}/10 mẫu có nhân hòa`);
 });
+
+// ── 4 chỉ số chống quay lại lỗi Vận 10 năm (phiếu Thư, việc L-eabb8d mục 4) ─────────────────────────────────────────
+// Đo ĐỘC LẬP với tests/luan-giai-van-dieu-kien.test.cjs: dựa trên CHỮ trong bài (không dựa mã quy tắc), tam phương tự tính từ chi,
+// chủ tinh vận tự định nghĩa (vận "hãm" khi mọi chính tinh nguồn đều Hãm). 200 lá số = DV01–DV10 + 190 ngẫu nhiên 1965–2009.
+const CHI200 = [...CASES.map((c) => c.input)];
+{
+  let s = 20261030;
+  const r = (n) => { s = (s * 1103515245 + 12345) % 2147483648; return (s >>> 8) % n; };
+  for (let i = 0; i < 190; i++) CHI200.push({ ...CHI200[0], nam: 1965 + r(45), thang: 1 + r(12), ngay: 1 + r(28), gio: r(24), gioiTinh: r(2) ? 'nam' : 'nu', phut: 0 });
+}
+const sao4 = (c) => [...c.chinhTinh, ...c.catTinh, ...c.hungTinh, ...c.phuTinh];
+const CAP_SAO = ['Văn Xương', 'Văn Khúc', 'Hỏa Tinh', 'Linh Tinh', 'Địa Không', 'Địa Kiếp', 'Đại Hao', 'Tiểu Hao', 'Thiên Khốc', 'Thiên Hư'];
+const SANG_T = ['Miếu', 'Vượng', 'Đắc'];
+let do200;
+async function đo200() {
+  if (do200) return do200;
+  const kq = { n: 0, saoLac: [], mauThuan: [], pqHam: [], nhanHoaHam: [], coNhanHoa: 0 };
+  for (const [i, inp] of CHI200.entries()) {
+    const ls = lapLaSo(inp);
+    const bai = await AI.sinhLuanGiai(ls, 'van-10-nam', { boQuaCache: true, namXem: NAM_XEM });
+    if (!bai.van) continue;
+    kq.n++;
+    const nhan = `#${i} ${JSON.stringify({ n: inp.nam, t: inp.thang, d: inp.ngay, g: inp.gio, gt: inp.gioiTinh })}`;
+    const van = ls.cung.find((c) => c.ten === bai.van.cung);
+    const tp = [0, 4, 6, 8].map((o) => ls.cung.find((c) => c.chi === (van.chi + o) % 12));
+    const saoTP = tp.flatMap(sao4);
+    const tenTP = new Set(saoTP.map((x) => x.ten));
+    const cau = bai.muc.flatMap((m) => m.nhanDinh).map((d) => ({ id: d.thamChieu.quyTacId, t: d.text }));
+    const cauSao = cau.filter((c) => /^VAN-SP-/.test(c.id));
+    // (1) mọi tên sao phụ/hung/cát có trong lá số mà bài nêu trong câu VAN-SP- phải nằm trong tam phương vận
+    const moiSao = [...new Set(ls.cung.flatMap((c) => [...c.catTinh, ...c.hungTinh, ...c.phuTinh]).map((x) => x.ten))];
+    // sao thế vào mẫu câu (cặp Xương Khúc, Hỏa Linh, Không Kiếp, Hao, Khốc Hư) mà câu không phải liệt kê phương án ("hoặc", "cùng"):
+    // mọi sao thuộc các cặp ấy được nêu phải có mặt trong tam phương. Câu liệt kê phương án có sao thuộc cặp: cần ≥ 1 sao nêu có mặt.
+    // (Câu cố định kiểu "Hồng Loan, Đào Hoa, Thiên Hỷ cùng các sao đi kèm" nêu tên cả khi chỉ Long Trì/Phượng Các có mặt: ngoài phạm vi phiếu, báo riêng.)
+    for (const c of cauSao) {
+      const nua = moiSao.filter((ten) => c.t.includes(ten));
+      const lac = nua.filter((ten) => !tenTP.has(ten));
+      const lietKe = /hoặc|cùng/.test(c.t);
+      const loi = lietKe ? nua.some((t) => CAP_SAO.includes(t)) && lac.length === nua.length : lac.some((t) => CAP_SAO.includes(t));
+      if (loi) kq.saoLac.push(`${nhan}: ${lac.join(',')} ngoài tam phương — ${c.t.slice(0, 60)}`);
+    }
+    // (2) hai câu cùng nhắc một tên sao, một câu nói sáng/đắc địa, một câu nói hãm
+    const dsSang = cauSao.filter((c) => /(sáng|đắc địa) ở thế/.test(c.t));
+    const dsHam = cauSao.filter((c) => /hãm (ở|trong) /.test(c.t));
+    for (const a of dsSang) for (const b of dsHam) {
+      const chung = moiSao.filter((t) => a.t.includes(t) && b.t.includes(t));
+      if (chung.length) kq.mauThuan.push(`${nhan}: ${chung.join(',')}`);
+    }
+    // câu "sáng" thì ít nhất một sao nêu phải không hãm; câu "hãm" thì ít nhất một sao nêu phải hãm (đối chiếu độ sáng thật)
+    for (const c of cauSao) {
+      const dung = saoTP.filter((x) => c.t.includes(x.ten));
+      if (!dung.length) continue;
+      if (/(sáng|đắc địa) ở thế/.test(c.t) && dung.every((x) => x.dacTinhTen === 'Hãm')) kq.mauThuan.push(`${nhan}: câu sáng nhưng sao hãm — ${c.t.slice(0, 50)}`);
+      if (/hãm (ở|trong) /.test(c.t) && dung.every((x) => SANG_T.includes(x.dacTinhTen))) kq.mauThuan.push(`${nhan}: câu hãm nhưng sao sáng — ${c.t.slice(0, 50)}`);
+    }
+    // (3) câu "Địa Không/Địa Kiếp gặp Phá Quân ... thế ngoại lệ" (khen) chỉ khi Phá Quân trong tam phương không hãm
+    const pq = saoTP.filter((x) => x.ten === 'Phá Quân');
+    if (cau.some((c) => /gặp Phá Quân/.test(c.t) && /ngoại lệ/.test(c.t)) && !(pq.length && pq.every((x) => SANG_T.includes(x.dacTinhTen)))) kq.pqHam.push(nhan);
+    // (4) câu nhân hòa (khen) khi mọi chính tinh nguồn của vận đều Hãm; nguồn = cung vận, trống thì cung xung
+    const nguon = van.chinhTinh.length ? van : tp[2];
+    const nhanHoa = cau.filter((c) => /\(nhân hòa\)/.test(c.t));
+    if (nhanHoa.length && nguon.chinhTinh.length && nguon.chinhTinh.every((x) => x.dacTinhTen === 'Hãm')) kq.nhanHoaHam.push(nhan);
+    // phủ nhân hòa: bài có câu so khí chất Mệnh gốc với môi trường vận (cùng nhóm hoặc khác nhóm)
+    if (cau.some((c) => /\(nhân hòa\)|Mệnh gốc thuộc nhóm/.test(c.t))) kq.coNhanHoa++;
+  }
+  return (do200 = kq);
+}
+test('Vận 10 năm (200 lá số): đo đủ ≥ 195 bài có vận', async (t) => {
+  const k = await đo200();
+  t.diagnostic(`n=${k.n} saoLac=${k.saoLac.length} mauThuan=${k.mauThuan.length} pqHam=${k.pqHam.length} nhanHoaHam=${k.nhanHoaHam.length} coNhanHoa=${k.coNhanHoa}`);
+  assert.ok((await đo200()).n >= 195, `chỉ ${(await đo200()).n}/200`);
+});
+test('Vận 10 năm (200 lá số) chỉ số 1: bài nêu sao không có trong tam phương = 0', async () => {
+  assert.deepEqual((await đo200()).saoLac, []);
+});
+test('Vận 10 năm (200 lá số) chỉ số 2: bài mâu thuẫn sáng/hãm = 0', async () => {
+  assert.deepEqual((await đo200()).mauThuan, []);
+});
+test('Vận 10 năm (200 lá số) chỉ số 3: Phá Quân hãm mà câu Không/Kiếp gặp Phá Quân khen = 0', async () => {
+  assert.deepEqual((await đo200()).pqHam, []);
+});
+test('Vận 10 năm (200 lá số) chỉ số 4: nhân hòa khen khi chính tinh của vận hãm = 0', async () => {
+  assert.deepEqual((await đo200()).nhanHoaHam, []);
+});
+test('Vận 10 năm (200 lá số) chỉ số 5: tỉ lệ bài có câu nhân hòa ≥ 85%', async () => {
+  const k = await đo200();
+  assert.ok(k.coNhanHoa / k.n >= 0.85, `${k.coNhanHoa}/${k.n} = ${((100 * k.coNhanHoa) / k.n).toFixed(1)}%`);
+});
