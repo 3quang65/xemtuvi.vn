@@ -1,0 +1,8 @@
+{
+  "ghiChu": "Sự kiện thử bị bỏ khỏi báo cáo của tools/pheu.cjs (dữ liệu gốc không đổi; xem lại bằng --gom-thu). Sự kiện không mang email nên tài khoản thử được loại qua khoảng giờ và mã phiên.",
+  "emailMau": ["pt-*@example.com"],
+  "phien": [],
+  "khoang": [
+    { "tu": "2026-10-30T00:00:00+07:00", "den": "2026-10-31T00:00:00+07:00", "lyDo": "Ngày kiểm thử trước ra mắt (30/10): toàn bộ là phiên thử" }
+  ]
+}

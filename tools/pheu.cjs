@@ -5,6 +5,7 @@
 //   --nhanh --bootstrap=10000 --hat=<số>  thêm chênh lệch (nhánh thử − gốc) + khoảng 95% bằng bootstrap: doanh thu/phiên, tỉ lệ trả tiền, tỉ lệ gói năm (thu-gia_v2.md mục 5 ý 3); hạt cố định → lặp lại y hệt
 //   --nhanh --csv  xuất CSV (phiên, thiết bị, nhánh, doanh thu) để kiểm lại độc lập
 //   --khao-sat     báo cáo khảo sát 'đáng tiền' theo gói (khao-sat-dang-tien_v1.md mục 3): điểm (a), điểm (c), tỉ lệ trả lời, tỉ lệ bỏ qua; < 30 phản hồi → 'chưa đủ mẫu'; thêm --tuan để tách theo tuần; kèm --gia-lap để ra số mẫu
+//   --gom-thu      gồm cả sự kiện thử (mặc định bỏ theo tools/loai-tru-thu.json; không xóa dữ liệu gốc)
 //   --gia-lap      dùng số giả lập (cố định theo --hat=N, mặc định 7) thay cho thư mục thật; không ghi file
 //   --gia-lap --nhanh  số giả lập có 2 nhánh giá (thử 'a': Trọn lá số 99k so 129k)
 //   --gia-lap --ghi=<thư mục>  ghi số giả lập ra JSONL để thử các công cụ khác
@@ -27,6 +28,26 @@ function docThuMuc(dir) {
     }
   }
   return ra;
+}
+
+const FILE_LOAI_TRU = path.join(__dirname, 'loai-tru-thu.json');
+
+/** Đọc danh sách loại trừ sự kiện thử; thiếu/hỏng thì null (giữ hết, không làm mất số thật). */
+function docLoaiTru(file = FILE_LOAI_TRU) {
+  try { const c = JSON.parse(fs.readFileSync(file, 'utf8')); return c && typeof c === 'object' ? c : null; } catch { return null; }
+}
+
+const khopMau = (mau, chuoi) => typeof chuoi === 'string' && new RegExp('^' + String(mau).replace(/[.+?^${}()|[\]\\]/g, '\\$&').replace(/\*/g, '.*') + '$', 'i').test(chuoi);
+
+/** Tách sự kiện thử khỏi `dongs` theo `cfg` (khoảng giờ, mã phiên, email mẫu). Trả { giu, bo }; không sửa mảng gốc. */
+function loaiTruThu(dongs, cfg) {
+  if (!cfg) return { giu: dongs, bo: 0 };
+  const khoang = (Array.isArray(cfg.khoang) ? cfg.khoang : []).map((k) => [Date.parse(k && k.tu), Date.parse(k && k.den)]).filter(([a, b]) => !isNaN(a) && !isNaN(b));
+  const phien = new Set(Array.isArray(cfg.phien) ? cfg.phien : []);
+  const mau = Array.isArray(cfg.emailMau) ? cfg.emailMau : [];
+  const la = (d) => phien.has(d.phien) || (typeof d.t === 'number' && khoang.some(([a, b]) => d.t >= a && d.t < b)) || mau.some((m) => khopMau(m, d.email));
+  const giu = dongs.filter((d) => !la(d));
+  return { giu, bo: dongs.length - giu.length };
 }
 
 const chia = (a, b) => (b ? a / b : null);
@@ -399,12 +420,20 @@ if (require.main === module) {
   const co = (c) => process.argv.includes(c);
   const tham = (t) => (process.argv.find((a) => a.startsWith(t + '=')) || '').slice(t.length + 1);
   const giaLap = co('--gia-lap');
+  // Dữ liệu thật: bỏ sự kiện thử (loai-tru-thu.json) trừ khi --gom-thu. Số giả lập không lọc.
+  const docThat = () => {
+    const tat = docThuMuc(thuMucMacDinh());
+    if (co('--gom-thu')) { console.log('(--gom-thu: gồm cả sự kiện thử)'); return tat; }
+    const r = loaiTruThu(tat, docLoaiTru());
+    if (r.bo) console.log('(đã bỏ ' + r.bo + ' sự kiện thử theo tools/loai-tru-thu.json; thêm --gom-thu để xem lại)');
+    return r.giu;
+  };
   if (co('--khao-sat')) {
-    const ds = giaLap ? taoGiaLapKhaoSat(Number(tham('--hat')) || 7) : docThuMuc(thuMucMacDinh());
+    const ds = giaLap ? taoGiaLapKhaoSat(Number(tham('--hat')) || 7) : docThat();
     console.log((giaLap ? 'SỐ GIẢ LẬP (không phải số thật)\n' : '') + bangKhaoSat(tinhKhaoSat(ds, { theoTuan: co('--tuan') }), co('--md')));
     process.exit(0);
   }
-  const dongs = giaLap ? taoGiaLap(Number(tham('--hat')) || 7, co('--nhanh')) : docThuMuc(thuMucMacDinh());
+  const dongs = giaLap ? taoGiaLap(Number(tham('--hat')) || 7, co('--nhanh')) : docThat();
   const ghi = tham('--ghi');
   if (giaLap && ghi) {
     fs.mkdirSync(ghi, { recursive: true });
@@ -430,4 +459,4 @@ if (require.main === module) {
   }
 }
 
-module.exports = { tinhKhaoSat, bangKhaoSat, taoGiaLapKhaoSat, MAU_KHAO_SAT, phienChonGoi, bootstrap, bangBootstrap, csvNhanh, tinhTheoNhanh, bangNhanh, tinhPheu, docThuMuc, tinhTheoNguon, bangNguon, taoGiaLap };
+module.exports = { loaiTruThu, docLoaiTru, tinhKhaoSat, bangKhaoSat, taoGiaLapKhaoSat, MAU_KHAO_SAT, phienChonGoi, bootstrap, bangBootstrap, csvNhanh, tinhTheoNhanh, bangNhanh, tinhPheu, docThuMuc, tinhTheoNguon, bangNguon, taoGiaLap };

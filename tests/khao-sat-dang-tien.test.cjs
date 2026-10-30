@@ -120,3 +120,32 @@ test('Quyết định hiện theo vị trí mốc cuối bài: trong khung đợ
   assert.equal(cachHien(null), 'khong');
   assert.equal(cachHien({}), 'khong');
 });
+
+test('Loại trừ sự kiện thử: theo khoảng giờ, mã phiên, email mẫu; --gom-thu giữ lại; không sửa dữ liệu gốc', () => {
+  const { loaiTruThu, tinhKhaoSat: tks } = require('../tools/pheu.cjs');
+  const cfg = {
+    khoang: [{ tu: '2026-10-30T00:00:00+07:00', den: '2026-10-31T00:00:00+07:00' }],
+    phien: ['aaaaaaaaaaaaaaaa'],
+    emailMau: ['pt-*@example.com'],
+  };
+  const t0 = Date.parse('2026-10-30T12:00:00+07:00');
+  const t1 = Date.parse('2026-11-02T12:00:00+07:00');
+  const mk = (o) => ({ ten: 'hien_khao_sat', phien: 'p1', goi: 'tron-la-so', cach: 'cuoi_bai', t: t1, ...o });
+  const ds = [mk({ t: t0 }), mk({ phien: 'aaaaaaaaaaaaaaaa' }), mk({ email: 'pt-an@example.com' }), mk({ email: 'khach@gmail.com' }), mk({})];
+  const goc = JSON.stringify(ds);
+  const r = loaiTruThu(ds, cfg);
+  assert.equal(r.giu.length, 2);
+  assert.equal(r.bo, 3);
+  assert.equal(JSON.stringify(ds), goc);
+  assert.equal(tks(r.giu)['tron-la-so'].hien, 2);
+  assert.equal(loaiTruThu(ds, null).giu.length, 5); // không có danh sách: giữ hết
+  assert.equal(loaiTruThu(ds, { khoang: [{ tu: 'hỏng', den: 'hỏng' }] }).giu.length, 5); // cấu hình hỏng không làm mất số thật
+});
+
+test('Danh sách loại trừ thật bao trùm ngày thử 30/10', () => {
+  const { docLoaiTru, loaiTruThu } = require('../tools/pheu.cjs');
+  const cfg = docLoaiTru();
+  assert.ok(cfg && cfg.emailMau.includes('pt-*@example.com'));
+  const r = loaiTruThu([{ ten: 'hien_khao_sat', phien: 'x', t: Date.parse('2026-10-30T23:59:00+07:00') }, { ten: 'hien_khao_sat', phien: 'y', t: Date.parse('2026-11-01T09:00:00+07:00') }], cfg);
+  assert.equal(r.giu.length, 1);
+});
