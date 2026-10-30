@@ -114,7 +114,7 @@ const CHU_DE_DANG_BAN: MaChuDe[] = ['ban-than', 'tinh-cam', 'su-nghiep'];
 export const CHU_DE = CHU_DE_TAT_CA.filter((c) => CHU_DE_DANG_BAN.includes(c.ma));
 
 /** Cam kết hiện ở màn chọn gói và thanh toán. Một chỗ duy nhất, mọi trang đọc từ đây. */
-export const GHI_CHU_AI = 'Nội dung luận giải do AI tạo từ bộ quy tắc Tử Vi phái Việt, có ghi nguồn.';
+export const GHI_CHU_AI = 'Nội dung luận giải do AI tạo từ lá số an theo phái Việt và bộ quy tắc có ghi nguồn sách; mẫu luận giải được kiểm duyệt trước khi đưa vào sử dụng.';
 export const HOAN_TIEN = 'Hoàn đủ số tiền nếu lỗi kỹ thuật khiến bạn không xem được đủ phần đã mua. Không hoàn vì nội dung không hợp ý.';
 export const PHUONG_PHAP = [
   'An sao và độ sáng theo cách Việt Nam (phái Việt): Tuần, Triệt và Tứ hóa năm Canh, Nhâm khác một số sách Trung Quốc.',
