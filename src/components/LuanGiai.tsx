@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { layChuDe, layGoi } from '@/lib/goi';
-import { docGoiDaMo, guiSuKien } from '@/lib/phien';
+import { guiSuKien } from '@/lib/phien';
 import { useLaSoDaLuu } from '@/lib/useLaSoDaLuu';
 import TomTatMienPhi from './TomTatMienPhi';
 
@@ -13,9 +13,13 @@ export default function LuanGiai() {
   const [chuDe, setChuDe] = useState<ReturnType<typeof layChuDe>>(undefined);
   const [daBao, setDaBao] = useState(false);
   useEffect(() => {
-    const da = docGoiDaMo();
-    setGoi(layGoi(da?.ma) ?? null);
-    setChuDe(da?.ma === 'mot-chu-de' ? layChuDe(da.chuDe) : undefined);
+    // Quyền xem lấy từ máy chủ (đăng nhập ở máy nào cũng thấy).
+    fetch('/api/toi', { cache: 'no-store' }).then((r) => r.json()).then((t: { quyen?: { loai: string; chuDe: string | null }[] }) => {
+      const moi = (t.quyen ?? []).at(-1); // quyền mua gần nhất
+      const ma = moi?.loai === 'thanh_vien' ? 'thanh-vien-nam' : moi?.loai === 'tron_la_so' ? 'tron-la-so' : moi?.loai === 'chu_de' ? 'mot-chu-de' : null;
+      setGoi(layGoi(ma) ?? null);
+      setChuDe(moi?.loai === 'chu_de' ? layChuDe(moi.chuDe) : undefined);
+    }).catch(() => setGoi(null));
   }, []);
   if (!laSo || goi === undefined) return <p className="dang-tai" role="status">Đang tải…</p>;
 

@@ -38,6 +38,7 @@ const tran = (p) => p.evaluate(() => document.documentElement.scrollWidth - inne
   const nutChinh3 = await p.locator('.nut-chinh').count(); if (nutChinh3 !== 1) { fail = 1; console.log('LỖI: chon-goi có', nutChinh3, 'nút chính'); }
   await p.locator('.the-goi.noi-bat .nut-chinh').click(); await p.waitForURL('**/thanh-toan?goi=tron-la-so'); await p.waitForSelector('.khoi-buoc');
   await ghi('thanh-toan', '4-thanh-toan-chua-dang-nhap');
+  await p.getByLabel('Email của bạn').fill('kiem-thu@example.vn');
   await p.getByRole('button', { name: 'Tiếp tục với Google' }).click(); await p.waitForSelector('.da-dang-nhap');
   await p.screenshot({ path: `${out}/luong-mua-4b-thanh-toan-da-dang-nhap.png` });
   const nutChinh4 = await p.locator('.nut-chinh').count(); if (nutChinh4 !== 1) { fail = 1; console.log('LỖI: thanh-toan có', nutChinh4, 'nút chính'); }
@@ -64,7 +65,7 @@ const tran = (p) => p.evaluate(() => document.documentElement.scrollWidth - inne
   const nhanKD = await p.locator('.the-goi.noi-bat .nhan-chinh').innerText(); console.log('nhãn gói giữa:', nhanKD, nhanKD === 'Khuyên dùng' ? 'OK' : 'LỖI'); if (nhanKD !== 'Khuyên dùng') fail = 1;
 
   // Đã đăng nhập thử rồi → lần sau bỏ bước chọn tài khoản
-  await p.goto(url + '/thanh-toan?goi=thanh-vien-nam'); await p.waitForSelector('.khoi-buoc');
+  await p.goto(url + '/thanh-toan?goi=thanh-vien-nam'); await p.waitForSelector('.da-dang-nhap');
   const conNutDN = await p.getByRole('button', { name: 'Tiếp tục với Google' }).count();
   console.log('đã đăng nhập thử → còn nút chọn tài khoản:', conNutDN, conNutDN ? 'LỖI' : 'OK'); if (conNutDN) fail = 1;
 
