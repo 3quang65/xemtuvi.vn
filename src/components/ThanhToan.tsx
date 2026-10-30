@@ -6,6 +6,7 @@ import { CONG_BO_GIA, dongHanBan, giaHienThi, HOAN_TIEN, layChuDe, type Goi } fr
 import { useGia } from '@/lib/useGia';
 import { docThongTinSinh, guiSuKien } from '@/lib/phien';
 import { useLaSoDaLuu } from '@/lib/useLaSoDaLuu';
+import { coTronLaSo, type QuyenGiaoDien } from '@/lib/quyen-xem';
 import { linkBaoLoi, maDonHienThi, nhacSauMuaVanNam, tinXacNhanDon } from '@/lib/tro-giup';
 import ThongBaoLoi from './ThongBaoLoi';
 import DangNhapMa from './DangNhapMa';
@@ -42,7 +43,11 @@ export default function ThanhToan() {
   const [xong, setXong] = useState<{ id: number; tenGoi: string; maGoi: string } | null>(null); // tin xác nhận 3.1
 
   useEffect(() => { if (laSo && !hopLe) router.replace(laSoMay ? '/luan-giai' : '/chon-goi'); }, [laSo, hopLe, router, laSoMay]);
-  useEffect(() => { if (laSo && hopLe) { guiSuKien('vao_thanh_toan', suKien); goiApi<{ dangNhap: boolean; email?: string }>('/api/toi').then((t) => setEmail(t.dangNhap ? t.email ?? null : null)).catch(() => {}); } }, [laSo, hopLe]); // eslint-disable-line react-hooks/exhaustive-deps
+  useEffect(() => { if (laSo && hopLe) { guiSuKien('vao_thanh_toan', suKien); goiApi<{ dangNhap: boolean; email?: string; quyen?: QuyenGiaoDien[]; laSoIds?: number[] }>('/api/toi').then((t) => {
+      setEmail(t.dangNhap ? t.email ?? null : null);
+      // Đã có Trọn lá số của lá số này: không bán gói gộp, chuyển sang gói Vận năm 2027 lẻ.
+      if (ma === 'tron-la-so-kem-van-nam' && laSoMay && coTronLaSo(t.quyen ?? [], laSoMay, t.laSoIds ?? [])) router.replace(`/thanh-toan?goi=van-nam-2027&laSo=${laSoMay}`);
+    }).catch(() => {}); } }, [laSo, hopLe]); // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (!email || goi?.ma !== 'thanh-vien-nam') { setTru(0); return; }
     goiApi<{ tru: number }>('/api/don-hang?maGoi=thanh-vien-nam').then((r) => setTru(r.tru || 0)).catch(() => setTru(0));

@@ -5,7 +5,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { layGoi } from '@/lib/goi';
 import { guiSuKien } from '@/lib/phien';
 import { lapLaSo, type LaSo, type ThongTinSinh } from '@/lib/tuvi';
-import { coVanNam, laSoMacDinh, tongHopQuyen, type QuyenGiaoDien } from '@/lib/quyen-xem';
+import { coTronLaSo, coVanNam, laSoMacDinh, tongHopQuyen, type QuyenGiaoDien } from '@/lib/quyen-xem';
 import type { LuanGiai as BaiLuanGiai } from '@/lib/luan-giai/ai';
 import { dongCanCu } from '@/lib/luan-giai/can-cu';
 import TomTatMienPhi from './TomTatMienPhi';
@@ -76,7 +76,7 @@ function BaiLuan({ laSoId, chuDe, maDon, goi }: { laSoId: number; chuDe: string;
 }
 
 /** Vận năm: máy chủ quyết định đã mua hay chưa (bài đầy đủ hoặc bản xem trước), giao diện chỉ hiển thị. */
-function VanNam({ laSoId, maDon }: { laSoId: number; maDon: number | null }) {
+function VanNam({ laSoId, maDon, daCoTron }: { laSoId: number; maDon: number | null; daCoTron: boolean }) {
   const { kq, taiLai } = useTai<{ daMua: true; bai: BaiVanNam } | { daMua: false; xemTruoc: XemTruocVanNam }>(`/api/luan-giai?laSo=${laSoId}&chuDe=van-nam-2027`);
   if (!kq) return <p className="dang-tai" role="status">Đang tải…</p>;
   if (kq === 'loi' || kq === 'chua-mo') return <LoiNoiDung ma="E08" maDon={maDon} goi="van-nam-2027" taiLai={taiLai} />;
@@ -84,7 +84,7 @@ function VanNam({ laSoId, maDon }: { laSoId: number; maDon: number | null }) {
   return (
     <div className="khu-van-nam">
       <VanNamXemTruoc xt={kq.xemTruoc} />
-      <VanNamNutMua laSoId={laSoId} />
+      <VanNamNutMua laSoId={laSoId} daCoTron={daCoTron} />
     </div>
   );
 }
@@ -144,6 +144,7 @@ export default function LuanGiai() {
   const quyen = toi && toi !== 'loi' && laSoId !== null ? tongHopQuyen(toi.quyen ?? [], laSoId, dsLaSo.map((l) => l.id)) : null;
   const dsChuDe = quyen?.dsChuDe ?? [];
   const daMuaVanNam = !!toi && toi !== 'loi' && laSoId !== null && coVanNam(toi.quyen ?? [], laSoId, dsLaSo.map((l) => l.id));
+  const daCoTron = !!toi && toi !== 'loi' && laSoId !== null && coTronLaSo(toi.quyen ?? [], laSoId, dsLaSo.map((l) => l.id));
   const dsTab = daMuaVanNam || laSoId === null ? dsChuDe : [...dsChuDe, 'van-nam-2027']; // chưa mua vẫn hiện tab, bên trong là bản khóa
   const chonHopLe = chon && dsTab.includes(chon) ? chon : dsTab[0] ?? null;
   const laSoVe = useMemo<LaSo | null>(() => { try { return laSoChon ? lapLaSo(laSoChon.thongTinSinh) : null; } catch { return null; } }, [laSoChon]);
@@ -161,7 +162,7 @@ export default function LuanGiai() {
         {dsLaSo.length > 1 && <ChonLaSo ds={dsLaSo} id={laSoId} doi={(id) => { setLaSoId(id); setChon(null); }} />}
         {laSoId !== null && <KhungMoiMo laSoId={laSoId} />}
         <NutGopY />
-        {laSoId !== null && <VanNam laSoId={laSoId} maDon={maDonGanNhat} />}
+        {laSoId !== null && <VanNam laSoId={laSoId} maDon={maDonGanNhat} daCoTron={daCoTron} />}
         <Link href={dsLaSo.length ? '/chon-goi' : '/'} className="nut-chinh nut-lien-ket">{dsLaSo.length ? 'Chọn gói luận giải' : 'Lập lá số miễn phí'}</Link>
       </section>
     );
@@ -180,7 +181,7 @@ export default function LuanGiai() {
               ))}
             </div>
           )}
-          {chonHopLe === 'van-nam-2027' ? <VanNam laSoId={laSoId} maDon={maDonGanNhat} /> : <BaiLuan laSoId={laSoId} chuDe={chonHopLe} maDon={maDonGanNhat} goi={goi.ma} />}
+          {chonHopLe === 'van-nam-2027' ? <VanNam laSoId={laSoId} maDon={maDonGanNhat} daCoTron={daCoTron} /> : <BaiLuan laSoId={laSoId} chuDe={chonHopLe} maDon={maDonGanNhat} goi={goi.ma} />}
         </>
       ) : (
         <p className="khoi-buoc">Chưa tìm thấy lá số đã lưu cho gói này.</p>

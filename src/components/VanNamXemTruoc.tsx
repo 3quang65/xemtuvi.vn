@@ -25,9 +25,10 @@ export function VanNamXemTruoc({ xt, mau = false }: { xt: XemTruocVanNam; mau?: 
 }
 
 /** Hai nút mua (lẻ, gộp) dẫn tới /thanh-toan. Có laSoId thì mua cho đúng lá số đó (xem ở máy khác cũng được). */
-export function VanNamNutMua({ laSoId }: { laSoId?: number }) {
+export function VanNamNutMua({ laSoId, daCoTron = false }: { laSoId?: number; daCoTron?: boolean }) {
   const them = laSoId ? `&laSo=${laSoId}` : '';
-  const { vanNam } = useGia();
+  const { vanNam: tatCa } = useGia();
+  const vanNam = daCoTron ? tatCa.filter((g) => g.ma !== 'tron-la-so-kem-van-nam') : tatCa; // đã có Trọn lá số: chỉ còn nút lẻ
   if (vanNam.length === 0) return null; // cổng mở bán đóng: không bán Vận 2027
   const dong = CONG_BO_GIA ? dongGoiGop(vanNam.find((g) => g.ma === 'tron-la-so-kem-van-nam') ?? ({} as Goi)) : null;
   return (
