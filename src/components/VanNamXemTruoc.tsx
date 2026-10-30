@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { dinhDangGia } from '@/lib/goi';
+import { CONG_BO_GIA, dinhDangGia } from '@/lib/goi';
 import { useGia } from '@/lib/useGia';
 import type { XemTruocVanNam } from '@/lib/luan-giai/ai/van-nam';
 import { XEM_TRUOC } from '@/lib/van-nam-noi-dung';
@@ -32,7 +32,7 @@ export function VanNamNutMua({ laSoId }: { laSoId?: number }) {
     <div className="hai-nut">
       {vanNam.map((g) => (
         <Link key={g.ma} href={`/thanh-toan?goi=${g.ma}${them}`} className={`${g.chinh ? 'nut-chinh' : 'nut-phu'} nut-lien-ket`}>
-          {g.ten}: {dinhDangGia(g.gia)}
+          {CONG_BO_GIA ? `${g.ten}: ${dinhDangGia(g.gia)}` : g.ten}
         </Link>
       ))}
     </div>
