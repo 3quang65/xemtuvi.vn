@@ -17,7 +17,8 @@
     "sao": [
      "Lộc Tồn"
     ],
-    "viTri": "tam-phuong"
+    "viTri": "tam-phuong",
+    "tuoiVanTuMin": 16
    }
   ],
   "khong": [
@@ -192,14 +193,14 @@
     "sao": [
      "Thiên Mã"
     ],
-    "viTri": "chinh",
+    "viTri": "tam-phuong",
     "tuan": true
    },
    {
     "sao": [
      "Thiên Mã"
     ],
-    "viTri": "chinh",
+    "viTri": "tam-phuong",
     "triet": true
    }
   ],
@@ -245,6 +246,20 @@
     ],
     "toiThieu": 1,
     "viTri": "tam-phuong"
+   },
+   {
+    "sao": [
+     "Thiên Mã"
+    ],
+    "viTri": "tam-phuong",
+    "tuan": true
+   },
+   {
+    "sao": [
+     "Thiên Mã"
+    ],
+    "viTri": "tam-phuong",
+    "triet": true
    }
   ],
   "muc": "thuan-loi",
@@ -508,7 +523,7 @@
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
   ],
   "truongPhai": "Tam hợp phái Việt",
-  "id": "VAN-SP-06-XC-SANG",
+  "id": "VAN-SP-06-SANG",
   "loai": "SP",
   "maNghienCuu": [
    "VAN-SP-06"
@@ -516,8 +531,10 @@
   "dieuKien": [
    {
     "sao": [
-     "Văn Xương"
+     "Văn Xương",
+     "Văn Khúc"
     ],
+    "toiThieu": 1,
     "viTri": "tam-phuong",
     "doSang": [
      "Miếu",
@@ -527,8 +544,21 @@
    }
   ],
   "muc": "thuan-loi",
-  "noiDung": "Văn Xương, Văn Khúc sáng ở thế tam phương của vận: thuận cho học hành, thi cử, viết lách và các việc liên quan giấy tờ.",
-  "nguonChiTiet": "TT (q.2, 文昌入限); TB (§3.2.22, tr. 260)"
+  "noiDung": "{sao} sáng ở thế tam phương của vận: thuận cho học hành, thi cử, viết lách và các việc liên quan giấy tờ.",
+  "nguonChiTiet": "TT (q.2, 文昌入限); TB (§3.2.22, tr. 260)",
+  "khong": [
+   {
+    "sao": [
+     "Văn Xương",
+     "Văn Khúc"
+    ],
+    "toiThieu": 1,
+    "viTri": "tam-phuong",
+    "doSang": [
+     "Hãm"
+    ]
+   }
+  ]
  },
  {
   "chuyenDe": "van-10-nam",
@@ -538,7 +568,7 @@
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
   ],
   "truongPhai": "Tam hợp phái Việt",
-  "id": "VAN-SP-06-XC-HAM",
+  "id": "VAN-SP-06-HAM",
   "loai": "SP",
   "maNghienCuu": [
    "VAN-SP-06"
@@ -546,8 +576,10 @@
   "dieuKien": [
    {
     "sao": [
-     "Văn Xương"
+     "Văn Xương",
+     "Văn Khúc"
     ],
+    "toiThieu": 1,
     "viTri": "tam-phuong",
     "doSang": [
      "Hãm"
@@ -555,7 +587,7 @@
    }
   ],
   "muc": "chu-y",
-  "noiDung": "Văn Xương, Văn Khúc ở thế hãm trong tam phương của vận: dễ nhầm lẫn giấy tờ, thủ tục và lời qua tiếng lại khi trao đổi.",
+  "noiDung": "{sao} ở thế hãm trong tam phương của vận: dễ nhầm lẫn giấy tờ, thủ tục và lời qua tiếng lại khi trao đổi.",
   "nguonChiTiet": "TT (q.2, 文昌入限: \"限遇文昌不得地\"); TB (§3.2.22)"
  },
  {
@@ -566,7 +598,7 @@
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
   ],
   "truongPhai": "Tam hợp phái Việt",
-  "id": "VAN-SP-06-XC-GY",
+  "id": "VAN-SP-06-GY",
   "loai": "SP",
   "maNghienCuu": [
    "VAN-SP-06"
@@ -574,94 +606,10 @@
   "dieuKien": [
    {
     "sao": [
-     "Văn Xương"
-    ],
-    "viTri": "tam-phuong",
-    "doSang": [
-     "Hãm"
-    ]
-   }
-  ],
-  "muc": "goi-y",
-  "noiDung": "Với giấy tờ và hợp đồng, nên rà soát kỹ từng văn bản trước khi ký.",
-  "nguonChiTiet": "TT (q.2, 文昌入限); TB (§3.2.22)"
- },
- {
-  "chuyenDe": "van-10-nam",
-  "cung": "Vận",
-  "nguon": [
-   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
-   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
-  ],
-  "truongPhai": "Tam hợp phái Việt",
-  "id": "VAN-SP-06-KH-SANG",
-  "loai": "SP",
-  "maNghienCuu": [
-   "VAN-SP-06"
-  ],
-  "dieuKien": [
-   {
-    "sao": [
+     "Văn Xương",
      "Văn Khúc"
     ],
-    "viTri": "tam-phuong",
-    "doSang": [
-     "Miếu",
-     "Vượng",
-     "Đắc"
-    ]
-   }
-  ],
-  "muc": "thuan-loi",
-  "noiDung": "Văn Xương, Văn Khúc sáng ở thế tam phương của vận: thuận cho học hành, thi cử, viết lách và các việc liên quan giấy tờ.",
-  "nguonChiTiet": "TT (q.2, 文昌入限); TB (§3.2.22, tr. 260)"
- },
- {
-  "chuyenDe": "van-10-nam",
-  "cung": "Vận",
-  "nguon": [
-   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
-   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
-  ],
-  "truongPhai": "Tam hợp phái Việt",
-  "id": "VAN-SP-06-KH-HAM",
-  "loai": "SP",
-  "maNghienCuu": [
-   "VAN-SP-06"
-  ],
-  "dieuKien": [
-   {
-    "sao": [
-     "Văn Khúc"
-    ],
-    "viTri": "tam-phuong",
-    "doSang": [
-     "Hãm"
-    ]
-   }
-  ],
-  "muc": "chu-y",
-  "noiDung": "Văn Xương, Văn Khúc ở thế hãm trong tam phương của vận: dễ nhầm lẫn giấy tờ, thủ tục và lời qua tiếng lại khi trao đổi.",
-  "nguonChiTiet": "TT (q.2, 文昌入限: \"限遇文昌不得地\"); TB (§3.2.22)"
- },
- {
-  "chuyenDe": "van-10-nam",
-  "cung": "Vận",
-  "nguon": [
-   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
-   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
-  ],
-  "truongPhai": "Tam hợp phái Việt",
-  "id": "VAN-SP-06-KH-GY",
-  "loai": "SP",
-  "maNghienCuu": [
-   "VAN-SP-06"
-  ],
-  "dieuKien": [
-   {
-    "sao": [
-     "Văn Khúc"
-    ],
+    "toiThieu": 1,
     "viTri": "tam-phuong",
     "doSang": [
      "Hãm"
@@ -692,7 +640,8 @@
      "Thiên Việt"
     ],
     "toiThieu": 1,
-    "viTri": "tam-phuong"
+    "viTri": "tam-phuong",
+    "tuoiVanTuMin": 16
    }
   ],
   "muc": "thuan-loi",
@@ -785,6 +734,15 @@
      "Linh Tinh"
     ],
     "toiThieu": 2,
+    "viTri": "tam-phuong"
+   },
+   {
+    "sao": [
+     "Tử Vi",
+     "Thiên Phủ",
+     "Văn Xương"
+    ],
+    "toiThieu": 1,
     "viTri": "tam-phuong"
    }
   ],
@@ -928,7 +886,7 @@
    "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
   ],
   "truongPhai": "Tam hợp phái Việt",
-  "id": "VAN-SP-10A-hỏa",
+  "id": "VAN-SP-10A",
   "loai": "SP",
   "maNghienCuu": [
    "VAN-SP-10"
@@ -936,8 +894,10 @@
   "dieuKien": [
    {
     "sao": [
-     "Hỏa Tinh"
+     "Hỏa Tinh",
+     "Linh Tinh"
     ],
+    "toiThieu": 1,
     "viTri": "tam-phuong",
     "doSang": [
      "Miếu",
@@ -947,8 +907,21 @@
    }
   ],
   "muc": "thuan-loi",
-  "noiDung": "Hỏa Tinh, Linh Tinh đắc địa ở thế tam phương của vận: thêm động lực, việc tiến nhanh và không khí chung khá sôi nổi.",
-  "nguonChiTiet": "TT (q.2, 火星入限: \"火星得地限宮逢，喜氣盈門\"); KL (A.4: hung tinh đắc địa thì tốt)"
+  "noiDung": "{sao} đắc địa ở thế tam phương của vận: thêm động lực, việc tiến nhanh và không khí chung khá sôi nổi.",
+  "nguonChiTiet": "TT (q.2, 火星入限: \"火星得地限宮逢，喜氣盈門\"); KL (A.4: hung tinh đắc địa thì tốt)",
+  "khong": [
+   {
+    "sao": [
+     "Hỏa Tinh",
+     "Linh Tinh"
+    ],
+    "toiThieu": 1,
+    "viTri": "tam-phuong",
+    "doSang": [
+     "Hãm"
+    ]
+   }
+  ]
  },
  {
   "chuyenDe": "van-10-nam",
@@ -1036,7 +1009,7 @@
    "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
   ],
   "truongPhai": "Tam hợp phái Việt",
-  "id": "VAN-SP-10C-hỏa",
+  "id": "VAN-SP-10C",
   "loai": "SP",
   "maNghienCuu": [
    "VAN-SP-10"
@@ -1044,8 +1017,10 @@
   "dieuKien": [
    {
     "sao": [
-     "Hỏa Tinh"
+     "Hỏa Tinh",
+     "Linh Tinh"
     ],
+    "toiThieu": 1,
     "viTri": "tam-phuong",
     "doSang": [
      "Hãm"
@@ -1053,7 +1028,7 @@
    }
   ],
   "muc": "chu-y",
-  "noiDung": "Hỏa Tinh, Linh Tinh hãm ở thế tam phương của vận: dễ va chạm trong lời nói, dễ thất lạc đồ đạc và có việc bất ngờ xen vào.",
+  "noiDung": "{sao} hãm ở thế tam phương của vận: dễ va chạm trong lời nói, dễ thất lạc đồ đạc và có việc bất ngờ xen vào.",
   "nguonChiTiet": "TT (q.2, 火鈴二星入限: \"火鈴限陷\"); KL (A.4)"
  },
  {
@@ -1064,7 +1039,7 @@
    "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
   ],
   "truongPhai": "Tam hợp phái Việt",
-  "id": "VAN-SP-10C-GY-hỏa",
+  "id": "VAN-SP-10C-GY",
   "loai": "SP",
   "maNghienCuu": [
    "VAN-SP-10"
@@ -1072,8 +1047,10 @@
   "dieuKien": [
    {
     "sao": [
-     "Hỏa Tinh"
+     "Hỏa Tinh",
+     "Linh Tinh"
     ],
+    "toiThieu": 1,
     "viTri": "tam-phuong",
     "doSang": [
      "Hãm"
@@ -1083,36 +1060,6 @@
   "muc": "goi-y",
   "noiDung": "Nên giữ bình tĩnh khi trao đổi và cẩn thận với đồ đạc, giấy tờ quan trọng.",
   "nguonChiTiet": "TT (q.2, 火鈴二星入限); KL (A.4)"
- },
- {
-  "chuyenDe": "van-10-nam",
-  "cung": "Vận",
-  "nguon": [
-   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
-   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
-  ],
-  "truongPhai": "Tam hợp phái Việt",
-  "id": "VAN-SP-10A-lin",
-  "loai": "SP",
-  "maNghienCuu": [
-   "VAN-SP-10"
-  ],
-  "dieuKien": [
-   {
-    "sao": [
-     "Linh Tinh"
-    ],
-    "viTri": "tam-phuong",
-    "doSang": [
-     "Miếu",
-     "Vượng",
-     "Đắc"
-    ]
-   }
-  ],
-  "muc": "thuan-loi",
-  "noiDung": "Hỏa Tinh, Linh Tinh đắc địa ở thế tam phương của vận: thêm động lực, việc tiến nhanh và không khí chung khá sôi nổi.",
-  "nguonChiTiet": "TT (q.2, 火星入限: \"火星得地限宮逢，喜氣盈門\"); KL (A.4: hung tinh đắc địa thì tốt)"
  },
  {
   "chuyenDe": "van-10-nam",
@@ -1197,66 +1144,10 @@
   "cung": "Vận",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
-   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
-  ],
-  "truongPhai": "Tam hợp phái Việt",
-  "id": "VAN-SP-10C-lin",
-  "loai": "SP",
-  "maNghienCuu": [
-   "VAN-SP-10"
-  ],
-  "dieuKien": [
-   {
-    "sao": [
-     "Linh Tinh"
-    ],
-    "viTri": "tam-phuong",
-    "doSang": [
-     "Hãm"
-    ]
-   }
-  ],
-  "muc": "chu-y",
-  "noiDung": "Hỏa Tinh, Linh Tinh hãm ở thế tam phương của vận: dễ va chạm trong lời nói, dễ thất lạc đồ đạc và có việc bất ngờ xen vào.",
-  "nguonChiTiet": "TT (q.2, 火鈴二星入限: \"火鈴限陷\"); KL (A.4)"
- },
- {
-  "chuyenDe": "van-10-nam",
-  "cung": "Vận",
-  "nguon": [
-   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
-   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
-  ],
-  "truongPhai": "Tam hợp phái Việt",
-  "id": "VAN-SP-10C-GY-lin",
-  "loai": "SP",
-  "maNghienCuu": [
-   "VAN-SP-10"
-  ],
-  "dieuKien": [
-   {
-    "sao": [
-     "Linh Tinh"
-    ],
-    "viTri": "tam-phuong",
-    "doSang": [
-     "Hãm"
-    ]
-   }
-  ],
-  "muc": "goi-y",
-  "noiDung": "Nên giữ bình tĩnh khi trao đổi và cẩn thận với đồ đạc, giấy tờ quan trọng.",
-  "nguonChiTiet": "TT (q.2, 火鈴二星入限); KL (A.4)"
- },
- {
-  "chuyenDe": "van-10-nam",
-  "cung": "Vận",
-  "nguon": [
-   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
   ],
   "truongPhai": "Tam hợp phái Việt",
-  "id": "VAN-SP-11-kho",
+  "id": "VAN-SP-11",
   "loai": "SP",
   "maNghienCuu": [
    "VAN-SP-11"
@@ -1264,8 +1155,10 @@
   "dieuKien": [
    {
     "sao": [
-     "Địa Không"
+     "Địa Không",
+     "Địa Kiếp"
     ],
+    "toiThieu": 1,
     "viTri": "tam-phuong",
     "doSang": [
      "Hãm",
@@ -1278,11 +1171,16 @@
     "sao": [
      "Phá Quân"
     ],
-    "viTri": "tam-phuong"
+    "viTri": "tam-phuong",
+    "doSang": [
+     "Miếu",
+     "Vượng",
+     "Đắc"
+    ]
    }
   ],
   "muc": "chu-y",
-  "noiDung": "Địa Không, Địa Kiếp ở thế tam phương của vận: giai đoạn có thăng trầm, kế hoạch dễ đổi giữa chừng và tiền bạc dễ hao hụt.",
+  "noiDung": "{sao} ở thế tam phương của vận: giai đoạn có thăng trầm, kế hoạch dễ đổi giữa chừng và tiền bạc dễ hao hụt.",
   "nguonChiTiet": "TT (q.2, 地劫天空同入限: \"劫空二限最乖張\"); TB (§3.2.19, tr. 259)"
  },
  {
@@ -1293,7 +1191,7 @@
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
   ],
   "truongPhai": "Tam hợp phái Việt",
-  "id": "VAN-SP-11-GY-kho",
+  "id": "VAN-SP-11-GY",
   "loai": "SP",
   "maNghienCuu": [
    "VAN-SP-11"
@@ -1301,13 +1199,16 @@
   "dieuKien": [
    {
     "sao": [
-     "Địa Không"
+     "Địa Không",
+     "Địa Kiếp"
     ],
+    "toiThieu": 1,
     "viTri": "tam-phuong",
     "doSang": [
      "Hãm",
      "Bình"
-    ]
+    ],
+    "tuoiVanTuMin": 16
    }
   ],
   "khong": [
@@ -1315,7 +1216,12 @@
     "sao": [
      "Phá Quân"
     ],
-    "viTri": "tam-phuong"
+    "viTri": "tam-phuong",
+    "doSang": [
+     "Miếu",
+     "Vượng",
+     "Đắc"
+    ]
    }
   ],
   "muc": "goi-y",
@@ -1346,86 +1252,17 @@
     "sao": [
      "Phá Quân"
     ],
-    "viTri": "tam-phuong"
+    "viTri": "tam-phuong",
+    "doSang": [
+     "Miếu",
+     "Vượng",
+     "Đắc"
+    ]
    }
   ],
   "muc": "xung-quanh",
   "noiDung": "Địa Không hoặc Địa Kiếp gặp Phá Quân trong thế tam phương của vận: đây là thế ngoại lệ, mưu sự có thể tiến nhanh nếu bạn chủ động đổi mới.",
   "nguonChiTiet": "TB (§3.2.19, tr. 259); KL (A.4: \"Không Kiếp gặp Phá quân\")"
- },
- {
-  "chuyenDe": "van-10-nam",
-  "cung": "Vận",
-  "nguon": [
-   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
-   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
-  ],
-  "truongPhai": "Tam hợp phái Việt",
-  "id": "VAN-SP-11-kie",
-  "loai": "SP",
-  "maNghienCuu": [
-   "VAN-SP-11"
-  ],
-  "dieuKien": [
-   {
-    "sao": [
-     "Địa Kiếp"
-    ],
-    "viTri": "tam-phuong",
-    "doSang": [
-     "Hãm",
-     "Bình"
-    ]
-   }
-  ],
-  "khong": [
-   {
-    "sao": [
-     "Phá Quân"
-    ],
-    "viTri": "tam-phuong"
-   }
-  ],
-  "muc": "chu-y",
-  "noiDung": "Địa Không, Địa Kiếp ở thế tam phương của vận: giai đoạn có thăng trầm, kế hoạch dễ đổi giữa chừng và tiền bạc dễ hao hụt.",
-  "nguonChiTiet": "TT (q.2, 地劫天空同入限: \"劫空二限最乖張\"); TB (§3.2.19, tr. 259)"
- },
- {
-  "chuyenDe": "van-10-nam",
-  "cung": "Vận",
-  "nguon": [
-   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
-   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
-  ],
-  "truongPhai": "Tam hợp phái Việt",
-  "id": "VAN-SP-11-GY-kie",
-  "loai": "SP",
-  "maNghienCuu": [
-   "VAN-SP-11"
-  ],
-  "dieuKien": [
-   {
-    "sao": [
-     "Địa Kiếp"
-    ],
-    "viTri": "tam-phuong",
-    "doSang": [
-     "Hãm",
-     "Bình"
-    ]
-   }
-  ],
-  "khong": [
-   {
-    "sao": [
-     "Phá Quân"
-    ],
-    "viTri": "tam-phuong"
-   }
-  ],
-  "muc": "goi-y",
-  "noiDung": "Nên giữ sẵn phương án dự phòng và tránh vay mượn mạo hiểm trong giai đoạn nhiều biến động.",
-  "nguonChiTiet": "TT (q.2, 地劫天空同入限); TB (§3.2.19)"
  },
  {
   "chuyenDe": "van-10-nam",
@@ -1451,7 +1288,12 @@
     "sao": [
      "Phá Quân"
     ],
-    "viTri": "tam-phuong"
+    "viTri": "tam-phuong",
+    "doSang": [
+     "Miếu",
+     "Vượng",
+     "Đắc"
+    ]
    }
   ],
   "muc": "xung-quanh",
@@ -1573,7 +1415,8 @@
      "Phượng Các"
     ],
     "toiThieu": 2,
-    "viTri": "tam-phuong"
+    "viTri": "tam-phuong",
+    "tuoiVanTuMin": 16
    }
   ],
   "muc": "thuan-loi",
@@ -1587,7 +1430,7 @@
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
   ],
   "truongPhai": "Tam hợp phái Việt",
-  "id": "VAN-SP-15-SANG-đại",
+  "id": "VAN-SP-15-SANG",
   "loai": "SP",
   "maNghienCuu": [
    "VAN-SP-15"
@@ -1595,8 +1438,10 @@
   "dieuKien": [
    {
     "sao": [
-     "Đại Hao"
+     "Đại Hao",
+     "Tiểu Hao"
     ],
+    "toiThieu": 1,
     "viTri": "tam-phuong",
     "doSang": [
      "Miếu",
@@ -1606,8 +1451,21 @@
    }
   ],
   "muc": "thuan-loi",
-  "noiDung": "Đại Hao, Tiểu Hao sáng ở thế tam phương của vận: có thay đổi chỗ ở, công việc hoặc xa nhà; tiền kiếm được nhanh mà chi tiêu cũng nhanh.",
-  "nguonChiTiet": "TB (§3.2.29, tr. 262: \"Sáng sủa tốt đẹp: hoạnh phát danh tài\")"
+  "noiDung": "{sao} sáng ở thế tam phương của vận: có thay đổi chỗ ở, công việc hoặc xa nhà; tiền kiếm được nhanh mà chi tiêu cũng nhanh.",
+  "nguonChiTiet": "TB (§3.2.29, tr. 262: \"Sáng sủa tốt đẹp: hoạnh phát danh tài\")",
+  "khong": [
+   {
+    "sao": [
+     "Đại Hao",
+     "Tiểu Hao"
+    ],
+    "toiThieu": 1,
+    "viTri": "tam-phuong",
+    "doSang": [
+     "Hãm"
+    ]
+   }
+  ]
  },
  {
   "chuyenDe": "van-10-nam",
@@ -1616,7 +1474,7 @@
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
   ],
   "truongPhai": "Tam hợp phái Việt",
-  "id": "VAN-SP-15-HAM-đại",
+  "id": "VAN-SP-15-HAM",
   "loai": "SP",
   "maNghienCuu": [
    "VAN-SP-15"
@@ -1624,8 +1482,10 @@
   "dieuKien": [
    {
     "sao": [
-     "Đại Hao"
+     "Đại Hao",
+     "Tiểu Hao"
     ],
+    "toiThieu": 1,
     "viTri": "tam-phuong",
     "doSang": [
      "Hãm"
@@ -1633,7 +1493,7 @@
    }
   ],
   "muc": "chu-y",
-  "noiDung": "Đại Hao, Tiểu Hao hãm ở thế tam phương của vận: dễ chi tiêu vượt dự tính, dễ tin nhầm người và tâm trạng hay mệt.",
+  "noiDung": "{sao} hãm ở thế tam phương của vận: dễ chi tiêu vượt dự tính, dễ tin nhầm người và tâm trạng hay mệt.",
   "nguonChiTiet": "TB (§3.2.29, tr. 262)"
  },
  {
@@ -1643,7 +1503,7 @@
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
   ],
   "truongPhai": "Tam hợp phái Việt",
-  "id": "VAN-SP-15-GY-đại",
+  "id": "VAN-SP-15-GY",
   "loai": "SP",
   "maNghienCuu": [
    "VAN-SP-15"
@@ -1651,91 +1511,10 @@
   "dieuKien": [
    {
     "sao": [
-     "Đại Hao"
-    ],
-    "viTri": "tam-phuong",
-    "doSang": [
-     "Hãm"
-    ]
-   }
-  ],
-  "muc": "goi-y",
-  "noiDung": "Nên kiểm tra kỹ giao dịch, đặt hạn mức chi tiêu rõ ràng và giữ nhịp nghỉ ngơi đều.",
-  "nguonChiTiet": "TB (§3.2.29, tr. 262)"
- },
- {
-  "chuyenDe": "van-10-nam",
-  "cung": "Vận",
-  "nguon": [
-   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
-  ],
-  "truongPhai": "Tam hợp phái Việt",
-  "id": "VAN-SP-15-SANG-tiể",
-  "loai": "SP",
-  "maNghienCuu": [
-   "VAN-SP-15"
-  ],
-  "dieuKien": [
-   {
-    "sao": [
+     "Đại Hao",
      "Tiểu Hao"
     ],
-    "viTri": "tam-phuong",
-    "doSang": [
-     "Miếu",
-     "Vượng",
-     "Đắc"
-    ]
-   }
-  ],
-  "muc": "thuan-loi",
-  "noiDung": "Đại Hao, Tiểu Hao sáng ở thế tam phương của vận: có thay đổi chỗ ở, công việc hoặc xa nhà; tiền kiếm được nhanh mà chi tiêu cũng nhanh.",
-  "nguonChiTiet": "TB (§3.2.29, tr. 262: \"Sáng sủa tốt đẹp: hoạnh phát danh tài\")"
- },
- {
-  "chuyenDe": "van-10-nam",
-  "cung": "Vận",
-  "nguon": [
-   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
-  ],
-  "truongPhai": "Tam hợp phái Việt",
-  "id": "VAN-SP-15-HAM-tiể",
-  "loai": "SP",
-  "maNghienCuu": [
-   "VAN-SP-15"
-  ],
-  "dieuKien": [
-   {
-    "sao": [
-     "Tiểu Hao"
-    ],
-    "viTri": "tam-phuong",
-    "doSang": [
-     "Hãm"
-    ]
-   }
-  ],
-  "muc": "chu-y",
-  "noiDung": "Đại Hao, Tiểu Hao hãm ở thế tam phương của vận: dễ chi tiêu vượt dự tính, dễ tin nhầm người và tâm trạng hay mệt.",
-  "nguonChiTiet": "TB (§3.2.29, tr. 262)"
- },
- {
-  "chuyenDe": "van-10-nam",
-  "cung": "Vận",
-  "nguon": [
-   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
-  ],
-  "truongPhai": "Tam hợp phái Việt",
-  "id": "VAN-SP-15-GY-tiể",
-  "loai": "SP",
-  "maNghienCuu": [
-   "VAN-SP-15"
-  ],
-  "dieuKien": [
-   {
-    "sao": [
-     "Tiểu Hao"
-    ],
+    "toiThieu": 1,
     "viTri": "tam-phuong",
     "doSang": [
      "Hãm"
@@ -1782,7 +1561,7 @@
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
   ],
   "truongPhai": "Tam hợp phái Việt",
-  "id": "VAN-SP-19-CY-kh",
+  "id": "VAN-SP-19-CY",
   "loai": "SP",
   "maNghienCuu": [
    "VAN-SP-19"
@@ -1790,8 +1569,10 @@
   "dieuKien": [
    {
     "sao": [
-     "Thiên Khốc"
+     "Thiên Khốc",
+     "Thiên Hư"
     ],
+    "toiThieu": 1,
     "viTri": "tam-phuong",
     "doSang": [
      "Bình",
@@ -1800,7 +1581,7 @@
    }
   ],
   "muc": "chu-y",
-  "noiDung": "Thiên Khốc, Thiên Hư ở thế tam phương của vận: tâm trạng dễ chùng, nhiều suy tư; việc thường trước khó sau dễ.",
+  "noiDung": "{sao} ở thế tam phương của vận: tâm trạng dễ chùng, nhiều suy tư; việc thường trước khó sau dễ.",
   "nguonChiTiet": "TB (Phần 3, §3.2.32–3.2.33, tr. 263; Phần 2, §3.29, tr. 42)"
  },
  {
@@ -1811,7 +1592,7 @@
    "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
   ],
   "truongPhai": "Tam hợp phái Việt",
-  "id": "VAN-SP-19-GY-kh",
+  "id": "VAN-SP-19-GY",
   "loai": "SP",
   "maNghienCuu": [
    "VAN-SP-19"
@@ -1819,8 +1600,10 @@
   "dieuKien": [
    {
     "sao": [
-     "Thiên Khốc"
+     "Thiên Khốc",
+     "Thiên Hư"
     ],
+    "toiThieu": 1,
     "viTri": "tam-phuong",
     "doSang": [
      "Bình",
@@ -1840,7 +1623,7 @@
    "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
   ],
   "truongPhai": "Tam hợp phái Việt",
-  "id": "VAN-SP-19-DAC-kh",
+  "id": "VAN-SP-19-DAC",
   "loai": "SP",
   "maNghienCuu": [
    "VAN-SP-19"
@@ -1848,8 +1631,10 @@
   "dieuKien": [
    {
     "sao": [
-     "Thiên Khốc"
+     "Thiên Khốc",
+     "Thiên Hư"
     ],
+    "toiThieu": 1,
     "viTri": "tam-phuong",
     "doSang": [
      "Miếu",
@@ -1859,95 +1644,22 @@
    }
   ],
   "muc": "thuan-loi",
-  "noiDung": "Thiên Khốc, Thiên Hư đắc địa ở thế tam phương của vận: lời nói có sức nặng hơn, phần thuận lợi đến rõ ở nửa sau của vận.",
-  "nguonChiTiet": "TB (Phần 2, §3.29, tr. 42); KL (Khốc Hư, tr. 292)"
- },
- {
-  "chuyenDe": "van-10-nam",
-  "cung": "Vận",
-  "nguon": [
-   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
-  ],
-  "truongPhai": "Tam hợp phái Việt",
-  "id": "VAN-SP-19-CY-hu",
-  "loai": "SP",
-  "maNghienCuu": [
-   "VAN-SP-19"
-  ],
-  "dieuKien": [
+  "noiDung": "{sao} đắc địa ở thế tam phương của vận: lời nói có sức nặng hơn, phần thuận lợi đến rõ ở nửa sau của vận.",
+  "nguonChiTiet": "TB (Phần 2, §3.29, tr. 42); KL (Khốc Hư, tr. 292)",
+  "khong": [
    {
     "sao": [
+     "Thiên Khốc",
      "Thiên Hư"
     ],
+    "toiThieu": 1,
     "viTri": "tam-phuong",
     "doSang": [
      "Bình",
      "Hãm"
     ]
    }
-  ],
-  "muc": "chu-y",
-  "noiDung": "Thiên Khốc, Thiên Hư ở thế tam phương của vận: tâm trạng dễ chùng, nhiều suy tư; việc thường trước khó sau dễ.",
-  "nguonChiTiet": "TB (Phần 3, §3.2.32–3.2.33, tr. 263; Phần 2, §3.29, tr. 42)"
- },
- {
-  "chuyenDe": "van-10-nam",
-  "cung": "Vận",
-  "nguon": [
-   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
-   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
-  ],
-  "truongPhai": "Tam hợp phái Việt",
-  "id": "VAN-SP-19-GY-hu",
-  "loai": "SP",
-  "maNghienCuu": [
-   "VAN-SP-19"
-  ],
-  "dieuKien": [
-   {
-    "sao": [
-     "Thiên Hư"
-    ],
-    "viTri": "tam-phuong",
-    "doSang": [
-     "Bình",
-     "Hãm"
-    ]
-   }
-  ],
-  "muc": "goi-y",
-  "noiDung": "Nên giữ nhịp nghỉ, chia sẻ với người thân và kiên trì qua giai đoạn đầu để đến phần thuận ở nửa sau.",
-  "nguonChiTiet": "TB (Phần 3, §3.2.32–3.2.33); KL (tr. 292)"
- },
- {
-  "chuyenDe": "van-10-nam",
-  "cung": "Vận",
-  "nguon": [
-   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
-   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
-  ],
-  "truongPhai": "Tam hợp phái Việt",
-  "id": "VAN-SP-19-DAC-hu",
-  "loai": "SP",
-  "maNghienCuu": [
-   "VAN-SP-19"
-  ],
-  "dieuKien": [
-   {
-    "sao": [
-     "Thiên Hư"
-    ],
-    "viTri": "tam-phuong",
-    "doSang": [
-     "Miếu",
-     "Vượng",
-     "Đắc"
-    ]
-   }
-  ],
-  "muc": "thuan-loi",
-  "noiDung": "Thiên Khốc, Thiên Hư đắc địa ở thế tam phương của vận: lời nói có sức nặng hơn, phần thuận lợi đến rõ ở nửa sau của vận.",
-  "nguonChiTiet": "TB (Phần 2, §3.29, tr. 42); KL (Khốc Hư, tr. 292)"
+  ]
  },
  {
   "chuyenDe": "van-10-nam",

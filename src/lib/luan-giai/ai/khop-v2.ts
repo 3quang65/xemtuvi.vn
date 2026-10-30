@@ -89,7 +89,6 @@ export function cungTheoViTri(ls: LaSo, goc: Cung, viTri: ViTri = 'chinh'): Cung
 }
 
 function cungDat(c: Cung, k: DieuKien, dau?: Sao): boolean {
-  if (k.tuoiVanTuMin !== undefined && !(c.daiVanTu >= k.tuoiVanTuMin)) return false;
   if (k.tenCung && c.ten !== k.tenCung) return false;
   if (k.chi && !k.chi.includes(c.tenChi)) return false;
   if (k.tuan !== undefined && c.tuan !== k.tuan) return false;
@@ -156,6 +155,7 @@ function giapHoaKhop(ls: LaSo, goc: Cung, hoa: [string, string]): string[] | nul
 export function khopDieuKien(ls: LaSo, gocQT: Cung, k: DieuKien): string[] | null {
   const goc = k.tuCung ? ls.cung.find((c) => c.ten === k.tuCung) : gocQT;
   if (!goc) return null;
+  if (k.tuoiVanTuMin !== undefined && !(goc.daiVanTu >= k.tuoiVanTuMin)) return null;
   if (k.gioiTinh && ls.gioiTinh !== k.gioiTinh) return null;
   if (k.canNam && !k.canNam.includes(ls.canChi.nam.split(' ')[0])) return null;
   if (k.phaCach) {
@@ -174,7 +174,10 @@ export function khopDieuKien(ls: LaSo, gocQT: Cung, k: DieuKien): string[] | nul
   if (k.chu || k.muonXung) {
     const co = ds.flatMap((c) => chinhTinhXet(ls, c, k).sao).filter((s) => sao.includes(s.ten) && (!k.doSang || (!!s.dacTinhTen && k.doSang.includes(s.dacTinhTen))));
     if (co.length < (k.toiThieu ?? 1)) return null;
-    return ds.some((c) => cungDat(c, { ...k, doSang: undefined, hoa: undefined })) ? [...new Set(co.map((s) => s.ten))] : null;
+    // cungCoSao tính trên cung nguồn (đã mượn xung nếu vô chính diệu): vd Mệnh Cự Nhật = Cự Môn, Thái Dương đồng cung.
+    const dat = (c: Cung) => cungDat(c, { ...k, doSang: undefined, hoa: undefined, cungCoSao: undefined })
+      && (!k.cungCoSao || k.cungCoSao.every((t) => saoCua(chinhTinhXet(ls, c, k).cung).some((s) => s.ten === t)));
+    return ds.some(dat) ? [...new Set(co.map((s) => s.ten))] : null;
   }
   if (k.rai || k.toiThieu !== undefined) {
     const dungSang = (s: Sao) => !k.doSang || (!!s.dacTinhTen && k.doSang.includes(s.dacTinhTen));
