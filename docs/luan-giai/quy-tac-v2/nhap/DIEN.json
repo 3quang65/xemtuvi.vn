@@ -1,0 +1,1101 @@
+[
+ {
+  "ma": "DIEN-YN-01",
+  "nhom": "YN",
+  "goc": "Điền Trạch luận về nhà ở, đất đai, bất động sản, tài sản tích lũy lâu dài, việc giữ hay tự tạo cơ nghiệp gia đình, và không khí nơi ở.",
+  "nguonGoc": "TT (卷二 十田宅, các câu \"得祖業 / 自置 / 退祖\" xoay quanh tổ nghiệp và tự tậu); WD7; WD13",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DIEN-YN-02",
+  "nhom": "YN",
+  "goc": "Sao chủ cung Điền Trạch là **Thái Âm** (TT: \"太陰…為田宅主\"); **Thiên Phủ** và **Vũ Khúc** cũng được xem là sao quản tài sản, nhà đất.",
+  "nguonGoc": "TT (卷一 諸星問答論 — Thái Âm, Thiên Phủ \"職掌財帛田宅\", Vũ Khúc \"財帛田宅為專司之所\"); WD7",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DIEN-YN-03",
+  "nhom": "YN",
+  "goc": "Ngôn ngữ luận chính của sách cổ ở cung này là ba trục: có được hưởng nền tảng gia đình (tổ nghiệp) không, có tự tạo dựng được không, và tạo dựng sớm hay muộn (\"先無後有\", \"晚置\"). Bài luận nên diễn đạt theo các trục này thay vì phán \"có/không có nhà\". *(Nhận xét nhóm, không phải quy tắc gốc)*",
+  "nguonGoc": "TT (卷二 十田宅); WD4",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DIEN-YN-04",
+  "nhom": "YN",
+  "goc": "Tam hợp của Điền Trạch là **Tật Ách** và **Huynh Đệ**; cung xung chiếu là **Tử Tức**. Cần xét sao ở ba cung này khi luận Điền Trạch.",
+  "nguonGoc": "spec 2.4 (suy ra từ thứ tự cung); WD7 (xét tam hợp, xung chiếu); NL (Giây liên lạc Bào với Nô: \"Tử và Điền chỉ cần cân nhắc bên nào nặng nhẹ, cung nào khắc cung nào\") (bản quét, đã đọc); NL xác nhận cặp đối xung Tử–Điền, vế tam hợp vẫn suy từ thứ tự cung",
+  "nguon": [
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DIEN-TV-01",
+  "nhom": "TV",
+  "goc": "Tử Vi miếu/vượng (Dần, Thìn, Tỵ, Ngọ, Thân, Tuất): nhà đất thịnh, có khả năng tự tậu và mở rộng; gặp Lộc Tồn/Hóa Lộc càng tốt.",
+  "nguonGoc": "TT (卷二 十田宅: \"紫微茂盛自置旺相\"); WD7; WD13",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tử Vi"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "DIEN-TV-02",
+  "nhom": "TV",
+  "goc": "Tử Vi bình hòa (Tý, Mão, Dậu, Hợi; bảng spec không có ô hãm) hoặc gặp Kình, Đà, Hỏa, Linh, Không, Kiếp: nhà đất có lúc tậu được, có lúc phải chuyển nhượng; nên tích lũy thận trọng, tránh mua bán dồn dập.",
+  "nguonGoc": "TT (\"加羊陀火鈴空劫，有置有去\"); WD7 (\"bình hòa: tài sản vừa phải\"; \"gặp Không Kiếp Kình: hay dời đổi\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tử Vi"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "DIEN-TV-03",
+  "nhom": "TV",
+  "goc": "Tử Vi đồng cung Thiên Phủ (Dần, Thân): rất tốt cho nhà đất, giữ được nền cũ và tự tậu thêm.",
+  "nguonGoc": "TT (Thiên Phủ: \"紫微同大富\"); WD10 (Dần/Thân gặp Thiên Phủ: có phúc tổ tiên); WD13",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tử Vi"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DIEN-TV-04",
+  "nhom": "TV",
+  "goc": "Tử Vi đồng cung Phá Quân: khó giữ nền cũ, dễ thay đổi nơi ở, cơ nghiệp chủ yếu tự tạo. Đồng cung Thiên Tướng: có sẵn cơ nghiệp, nhất là được Tả Hữu, Xương Khúc.",
+  "nguonGoc": "TT (\"破軍同退祖，天相同有見成家業，得左右昌曲\"); WD13 (đồng Phá Quân thì khó giữ)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tử Vi"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DIEN-LT-01",
+  "nhom": "LT",
+  "goc": "Liêm Trinh miếu/vượng (Tý, Dần, Thìn, Ngọ, Thân, Tuất): xu hướng tự tay gây dựng nhà cửa, thích không gian có thẩm mỹ.",
+  "nguonGoc": "WD10 (miếu: tự tay gây dựng gia sản); WD7 (miếu vượng: nhà đẹp)",
+  "nguon": [],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Liêm Trinh"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "DIEN-LT-02",
+  "nhom": "LT",
+  "goc": "Liêm Trinh hãm (Mão, Tỵ, Dậu, Hợi), nhất là gặp Hóa Kỵ hoặc sát tinh: nền tảng gia đình khó giữ nguyên vẹn, dễ phát sinh vướng mắc giấy tờ, tranh chấp nhà đất; nên làm thủ tục pháp lý kỹ. *(sách gốc diễn đạt nặng \"phá tổ\", đã trung tính hóa)*",
+  "nguonGoc": "TT (\"廉貞破祖\"); WD7 (hãm gặp Kỵ, sát: tranh chấp, giấy tờ); WD13",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Liêm Trinh"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "DIEN-LT-03",
+  "nhom": "LT",
+  "goc": "Liêm Trinh đồng Thiên Phủ: giữ được cơ nghiệp có sẵn; đồng Thiên Tướng: trước chưa có, sau mới có; đồng Thất Sát: tự tậu; đồng Tham Lang: có nền gia đình nhưng không bền, cần giữ gìn.",
+  "nguonGoc": "TT (\"天府同守見成家業，天相同先無後有，七殺同自置，貪狼同有祖業不耐久\"); WD13 (đồng Thiên Phủ mới giữ được tổ nghiệp)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Liêm Trinh"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DIEN-TD-01",
+  "nhom": "TD",
+  "goc": "Thiên Đồng miếu/vượng/đắc (Tý, Dần, Mão, Tỵ, Thân, Hợi): thường trước ít sau nhiều, tự gây dựng là chính và về sau khá vững.",
+  "nguonGoc": "TT (\"天同先少後多，自置甚旺\"); WD10 (miếu: tự lập, hậu vận ổn); WD4 (\"Đồng: Sau giàu\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Đồng"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "DIEN-TD-02",
+  "nhom": "TD",
+  "goc": "Thiên Đồng hãm (Sửu, Thìn, Ngọ, Mùi, Dậu, Tuất), gặp Kình Đà, Không Kiếp, Hóa Kỵ: nhà đất đến muộn, dễ phải chuyển chỗ ở; nên ưu tiên ổn định chỗ ở trước rồi mới đầu tư. *(sách gốc nói \"全無\", đã trung tính hóa)*",
+  "nguonGoc": "TT (\"加羊陀火鈴空忌全無\"); WD10 (hãm + sát: trung niên mới có nhà); WD7 (hãm + Kình Đà Kiếp: hay dời đổi)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Đồng"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "DIEN-TD-03",
+  "nhom": "TD",
+  "goc": "Thiên Đồng đồng Thái Âm ở Tý (cả hai sáng): rất tốt cho tài sản nhà đất; đồng Cự Môn: nhà đất ít, không nên vội mua thêm; đồng Thiên Lương: trước hao sau tăng.",
+  "nguonGoc": "TT (\"太陰同入廟大富，巨門同田少，天梁同先退後進\"); WD10 (Tý tốt hơn Ngọ); WD13 (đồng Cự Môn không nên mua thêm)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Đồng"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DIEN-VK-01",
+  "nhom": "VK",
+  "goc": "Vũ Khúc miếu/vượng, nhất là đơn thủ (Thìn, Tuất) hay ở vị trí sáng: dễ được hưởng nền tảng gia đình lớn, có thể có nhiều bất động sản, kể cả cho thuê.",
+  "nguonGoc": "TT (\"武曲單居旺地，得祖父大業\"); WD7 (miếu: nhiều tài sản, cho thuê); WD13",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Vũ Khúc"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "DIEN-VK-02",
+  "nhom": "VK",
+  "goc": "Vũ Khúc hãm (Tỵ, Hợi): trước có hao hụt rồi sau mới thành; nên tích lũy từng bước.",
+  "nguonGoc": "TT (\"陷地退後方成\"); WD7 (hãm: có nhưng khó giữ)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Vũ Khúc"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "DIEN-VK-03",
+  "nhom": "VK",
+  "goc": "Vũ Khúc đồng Phá Quân hoặc gặp Đại Hao: tài sản nhà đất dễ biến động, có cũng khó lâu bền; cần kỷ luật tài chính, tránh vay đòn bẩy lớn. *(sách gốc nói \"破蕩家產\", đã trung tính hóa)*",
+  "nguonGoc": "TT (\"破軍大耗同破蕩家產，有也不耐久\"); WD13 (gặp Phá Quân thì yếu); WD7",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Vũ Khúc"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DIEN-VK-04",
+  "nhom": "VK",
+  "goc": "Vũ Khúc đồng Thiên Phủ: giữ được cơ nghiệp có sẵn; đồng Tham Lang: tậu muộn (sau trung niên), gặp Hỏa/Linh thì rất tốt; đồng Thiên Tướng: trước hao sau có.",
+  "nguonGoc": "TT (\"天府同守見成家業，貪狼同晚置，見火鈴星同極美…天相同先見破後方有\"); WD7 (đồng Tham Lang: tài sản tăng sau trung niên; gặp Hỏa Linh tăng)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Vũ Khúc"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DIEN-TDU-01",
+  "nhom": "TDU",
+  "goc": "Thái Dương miếu/vượng (Dần, Mão, Thìn, Tỵ, Ngọ): có nền tảng gia đình, thời đầu thịnh rồi về sau bình ổn; nhà đất có nhưng hay thay đổi.",
+  "nguonGoc": "TT (\"太陽入廟得祖業，初旺未平\"); TT (卷一 諸星問答論: Thái Dương vượng \"居田宅則得祖父蔭澤\"); WD13 (miếu: nhiều điền sản nhưng hay thay đổi)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Dương"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "DIEN-TDU-02",
+  "nhom": "TDU",
+  "goc": "Thái Dương hãm (Thân, Dậu, Tuất, Hợi, Tý), gặp sát tinh: khó giữ tài sản thừa hưởng, chủ yếu tự gây dựng; không nên kinh doanh địa ốc mạo hiểm. *(sách gốc nói \"全無\", đã trung tính hóa)*",
+  "nguonGoc": "TT (\"陷地逢羊陀火鈴空劫全無\"); WD13 (lạc hãm: không nên kinh doanh địa ốc); WD7 (Tuất/Hợi/Tý: khó sở hữu nhà)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Dương"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "DIEN-TDU-03",
+  "nhom": "TDU",
+  "goc": "Thái Dương đồng Cự Môn ở Dần: nhà đất vượng; ở Thân: khó giữ nền cũ nhưng vẫn có tài sản. Đồng Thái Âm (Sửu, Mùi) gặp cát tinh: nhiều đất đai.",
+  "nguonGoc": "TT (\"巨門同在寅宮旺盛，在申宮退祖，不為無田產…太陰同加吉星田多\"); WD10 (Cự Dương ở Dần tốt hơn Thân; Âm Dương Sửu Mùi thừa kế tốt)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Dương"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "DIEN-TCO-01",
+  "nhom": "TCO",
+  "goc": "Thiên Cơ miếu/vượng (Mão, Thìn, Tỵ, Thân, Dậu, Tuất): xu hướng không giữ nhà cũ mà tự tạo nơi ở mới; nhà đất phát triển theo nỗ lực bản thân.",
+  "nguonGoc": "TT (\"天機退祖新創置\"); WD13 (khó giữ nhà cha mẹ, có thể tự mua); WD7 (Dần/Thân, Mão/Dậu: phát triển tốt)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Cơ"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "DIEN-TCO-02",
+  "nhom": "TCO",
+  "goc": "Thiên Cơ hãm (Dần, Hợi) gặp sát tinh hoặc Hóa Kỵ: hay chuyển dời chỗ ở, nơi ở dễ ồn ào; nên chọn nhà kỹ về môi trường xung quanh.",
+  "nguonGoc": "WD7 (hãm gặp sát: nhiều biến động); WD13 (Hóa Kỵ hay chuyển dời; lạc hãm nhà ồn ào); WD10",
+  "nguon": [],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Cơ"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "DIEN-TCO-03",
+  "nhom": "TCO",
+  "goc": "Cơ Cự ở Mão: có ruộng vườn; ở Dậu: khó giữ tổ nghiệp, trước lớn sau nhỏ. Cơ Lương: tậu được, về già khá giả. Cơ Âm: tự tậu và vượng.",
+  "nguonGoc": "TT (\"巨門同在卯宮有田莊，在酉宮不守祖業，先大後小，天梁同有置晚年富，太陰同自置旺相\"); WD4 (\"Cơ, Cự ở … Mão, Dậu: có nhiều nhà, ruộng\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Cơ"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DIEN-TP-01",
+  "nhom": "TP",
+  "goc": "Thiên Phủ miếu/vượng/đắc: ruộng vườn tốt, vừa giữ được nền cũ vừa tự tậu thêm; là một trong những sao tốt nhất cho cung này.",
+  "nguonGoc": "TT (\"天府田園茂盛，守祖自置旺相\"); WD4 (\"Phủ ở Điền: Khá, hưởng gia tài\"); WD13",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Phủ"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "DIEN-TP-02",
+  "nhom": "TP",
+  "goc": "Thiên Phủ bình hòa (Sửu, Mão, Dậu; bảng spec không có ô hãm) hoặc gặp sát tinh, Không Kiếp, Tuần/Triệt: tài sản ít hơn, có thành có bại; cần quản lý giấy tờ và tránh tranh chấp.",
+  "nguonGoc": "TT (\"見羊陀火鈴空劫更少，有成敗\"); WD4 (\"Phủ gặp Thiên Không hay Địa Không: khó bền gia tài\"; \"Phủ Tuần, Triệt: xấu\"); WD7 (bình hòa: mua được một ít)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Phủ"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "DIEN-TP-03",
+  "nhom": "TP",
+  "goc": "Thiên Phủ đồng Tử Vi: rất giàu về điền sản; đồng Liêm Trinh hoặc Vũ Khúc: giữ được tổ nghiệp và phát triển.",
+  "nguonGoc": "TT (\"紫微同大富，廉貞武曲同守祖業榮昌\"); WD4 (\"Phủ, Tử ngộ Tồn: có nhà đất, hưởng gia tài\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Phủ"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DIEN-TA-01",
+  "nhom": "TA",
+  "goc": "Thái Âm miếu/vượng (Tý, Thân, Dậu, Tuất, Hợi): nhiều nhà đất; đây là sao chủ của cung nên ảnh hưởng mạnh; gặp Tả Hữu, Hóa Quyền, Hóa Lộc, Lộc Tồn càng tốt.",
+  "nguonGoc": "TT (\"太陰入廟田多…同左右權祿及祿存主多田產\"); WD4 (\"Nhật, Nguyệt miếu: có nhiều nhà đất\"); WD13",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Âm"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "DIEN-TA-02",
+  "nhom": "TA",
+  "goc": "Thái Âm hãm (Dần, Mão, Thìn, Tỵ, Ngọ), nhất là gặp Hóa Kỵ và sát tinh: tài sản lúc đầu tạm đủ, về sau dễ giảm; nên tích lũy đều, hạn chế đầu cơ. *(sách gốc nói \"田全無\", đã trung tính hóa)*",
+  "nguonGoc": "TT (\"陷地加忌及羊陀火鈴空劫田全無\"); WD4 (\"Nhật, Nguyệt hãm: tạm đủ, sau sa sút\"); WD13 (hãm địa thì ít)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Âm"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "DIEN-TA-03",
+  "nhom": "TA",
+  "goc": "Thái Âm đồng Thiên Cơ: tự tạo dựng; đồng Thiên Đồng: tay trắng tự tậu.",
+  "nguonGoc": "TT (\"天機同自創置，天同同白手自置\"); WD7 (Dần/Thân: nhà ổn định)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Âm"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DIEN-THL-01",
+  "nhom": "THL",
+  "goc": "Tham Lang miếu/vượng (Sửu, Thìn, Mùi, Tuất; đắc Dần, Thân): có nền tảng gia đình nhưng giữa chừng có hao hụt, rồi tự tậu lại; gặp Tam hóa/Lộc thì có nhiều nhà đất.",
+  "nguonGoc": "TT (\"廟旺有祖業，也去中未自有置\"); WD4 (\"Tham, tam Hoá: có nhà đất\"); WD13 (miếu địa thì có tổ nghiệp)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tham Lang"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "DIEN-THL-02",
+  "nhom": "THL",
+  "goc": "Tham Lang hãm (Tý, Mão, Tỵ, Ngọ, Dậu, Hợi): khó giữ nền cũ, nhà đất ít và đến muộn; trước có vướng mắc rồi sau mới ổn.",
+  "nguonGoc": "TT (\"貪狼陷宮退祖一世田少\"); WD4 (\"Tham: bị kiện hết, sau lại thành\"); WD13 (lạc hãm thì không có tổ nghiệp)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tham Lang"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "DIEN-THL-03",
+  "nhom": "THL",
+  "goc": "Tham Lang gặp Hỏa Tinh hoặc Linh Tinh: giữ được tổ nghiệp và tự tạo thêm, nhưng sách lưu ý về an toàn cháy nổ trong nhà; nên chú ý phòng cháy, điện. *(sách gốc nói \"恐火焚屋宅\", đã trung tính hóa)*",
+  "nguonGoc": "TT (\"見火鈴星守祖業，有自創，但恐火焚屋宅\"); WD13 (đồng Hỏa Linh: tự mua nhiều nhưng nhà hay hư hao); WD7",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tham Lang"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DIEN-CM-01",
+  "nhom": "CM",
+  "goc": "Cự Môn miếu/vượng (Tý, Dần, Mão, Ngọ, Dậu; đắc Thân, Hợi): có thể tậu được nhà đất một cách bất ngờ, nhanh; gặp Lộc thì tự mua được.",
+  "nguonGoc": "TT (\"巨門廟旺橫發置買\"); WD13 (miếu địa gặp Lộc thì tự mua được); WD7 (Mão/Dậu: thành công về bất động sản)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Cự Môn"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "DIEN-CM-02",
+  "nhom": "CM",
+  "goc": "Cự Môn hãm (Sửu, Thìn, Tỵ, Mùi, Tuất): ít được chia phần, dễ vì nhà đất mà sinh thị phi; mua bán nên rõ ràng giấy tờ, tránh góp chung mơ hồ.",
+  "nguonGoc": "TT (\"陷地無分，因田產招非\"); WD4 (\"Cự môn ở cung không miếu, vượng: nhà cửa đổi bán luôn, hay bị kiện, sau mới thành\"); WD13 (lạc hãm thì không nên mua thêm)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Cự Môn"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "DIEN-CM-03",
+  "nhom": "CM",
+  "goc": "Cự Môn đồng Thái Dương: trước chưa có, sau mới có.",
+  "nguonGoc": "TT (\"太陽同先無後有\"); WD10 (Cự Dương ở Dần tốt hơn ở Thân)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Cự Môn"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DIEN-TT-01",
+  "nhom": "TT",
+  "goc": "Thiên Tướng miếu/vượng/đắc: có phần tài sản gia đình, nhà cửa ngăn nắp, có hậu thuẫn; trung niên thường ổn định chỗ ở.",
+  "nguonGoc": "TT (\"天相廟旺有分\"); WD7 (miếu vượng: nhà nề nếp, gia đình hỗ trợ); WD13 (trung niên mới mua ổn định)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Tướng"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "DIEN-TT-02",
+  "nhom": "TT",
+  "goc": "Thiên Tướng hãm (Mão, Dậu): nhà đất ít lúc đầu, có thể mất rồi mua lại; gặp Không Kiếp, Đại Hao thì dễ hao hụt, nên tránh bảo lãnh, thế chấp rủi ro.",
+  "nguonGoc": "WD7 (hãm: ít tài sản, mất rồi mua lại); WD10 (hãm: khó mua nhà đầu đời; Không Kiếp Hao: hao tài); WD13 (gặp Không Kiếp dễ phá)",
+  "nguon": [],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Tướng"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "DIEN-TT-03",
+  "nhom": "TT",
+  "goc": "Thiên Tướng đồng Tử Vi: tự tậu được; đồng Vũ Khúc: ít được chia phần; đồng Liêm Trinh gặp sát tinh: nền tảng gia đình dễ phân tán.",
+  "nguonGoc": "TT (\"紫微同自置，武曲同無分，廉貞加羊陀火鈴空劫飄零祖業\"); WD7",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Tướng"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DIEN-TL-01",
+  "nhom": "TL",
+  "goc": "Thiên Lương miếu/vượng (Dần, Mão, Thìn, Ngọ, Thân, Tuất): thường được hưởng nhà cửa từ gia đình.",
+  "nguonGoc": "TT (\"天梁入廟旺有祖業\"); WD4 (\"Lương: được Tổ để nhà cửa cho\"); WD13",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Lương"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "DIEN-TL-02",
+  "nhom": "TL",
+  "goc": "Thiên Lương hãm (Tỵ, Dậu, Hợi), gặp Hỏa, Kiếp, Kình hoặc Thiên Mã: chỗ ở hay thay đổi, khó ổn định sớm.",
+  "nguonGoc": "WD7 (hãm gặp Hỏa/Kiếp/Kình: bất ổn); WD13 (gặp Thiên Mã và Địa Kiếp: trôi dạt); WD10 (Dần/Thân gặp Thiên Mã: chuyển nhà)",
+  "nguon": [],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Lương"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "DIEN-TL-03",
+  "nhom": "TL",
+  "goc": "Thiên Lương đồng Thiên Đồng: trước khó sau dễ; đồng Thiên Cơ không gặp sát: cuối cùng vẫn có nhà đất.",
+  "nguonGoc": "TT (\"天同同先難後易，天機同不見羊陀火鈴空劫，終有田宅\"); WD4 (\"Đồng, Lương Dần, Thân: nhờ người thành giàu\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Lương"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DIEN-TS-01",
+  "nhom": "TS",
+  "goc": "Thất Sát miếu/vượng/đắc (Tý, Sửu, Dần, Tỵ, Ngọ, Mùi, Thân): ít dựa vào nền cũ, tự lực gây dựng bằng ý chí, về sau ổn định.",
+  "nguonGoc": "WD7 (Dần/Thân: không thừa kế, tự xây, về già ổn; mạnh gặp cát tinh: gây dựng bằng ý chí); WD13 (miếu địa có nhà đất tổ tiên); WD10 (miếu/đắc: thừa kế hoặc tự xây)",
+  "nguon": [],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thất Sát"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "DIEN-TS-02",
+  "nhom": "TS",
+  "goc": "Thất Sát hãm (Mão, Thìn, Dậu, Tuất, Hợi) hoặc gặp sát tinh, Không Kiếp: tài sản dễ biến động, \"có mà như không\"; nên giữ tài sản ở dạng an toàn, tránh quyết định nóng.",
+  "nguonGoc": "WD13 (hãm địa: có mà như không); WD10 (hãm + Tứ Sát: khuynh bại; Không Kiếp: phá tán); WD7 (hãm hoặc gặp sát: hao)",
+  "nguon": [],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thất Sát"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "DIEN-TS-03",
+  "nhom": "TS",
+  "goc": "TT không có mục riêng cho Thất Sát ở Điền Trạch; chỉ nêu Thất Sát đồng Vũ Khúc (\"lòng không mặn mà với nhà đất\") và đồng Liêm Trinh (\"tự tậu\").",
+  "nguonGoc": "TT (卷二 十田宅: mục Vũ Khúc \"七殺同心不欲\", mục Liêm Trinh \"七殺同自置\"); WD10",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thất Sát"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DIEN-PQ-01",
+  "nhom": "PQ",
+  "goc": "Phá Quân miếu/vượng (Tý, Ngọ; vượng Sửu, Thìn, Mùi, Tuất): ở Tý Ngọ giữ được nền cũ và phát triển nhưng có lúc vào lúc ra; nhìn chung \"trước phá sau thành\", hợp sửa sang, cải tạo.",
+  "nguonGoc": "TT (卷二: \"破軍在子午宮守祖業榮昌，但見有進退\"; 卷一: \"田宅遇破軍，先破後成\"); WD4 (\"Phá Quân (miếu): trước không, sau thành\"); WD7 (miếu vượng: cải tạo, đầu tư)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Phá Quân"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "DIEN-PQ-02",
+  "nhom": "PQ",
+  "goc": "Phá Quân hãm (Dần, Mão, Tỵ, Thân, Dậu, Hợi) hoặc gặp Hao, Kỵ, sát tinh: nhà đất khó giữ, dễ bán đi; nên ưu tiên tài sản dễ quản lý, tránh mua bán theo cảm hứng. *(sách gốc nói \"有也盡/全無\", đã trung tính hóa)*",
+  "nguonGoc": "TT (\"加羊陀火鈴退祖田少…耗忌全無\"); WD4 (\"Phá Quân hãm: bán gia tài, có cũng hết\"; \"Hao, Phá Quân: chẳng có gì\"); WD13 (lạc hãm thì phá dỡ nhà cũ)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Phá Quân"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "DIEN-PQ-03",
+  "nhom": "PQ",
+  "goc": "Phá Quân đồng Tử Vi: có cơ nghiệp sẵn; đồng Liêm Trinh: trước hao sau tự tậu.",
+  "nguonGoc": "TT (\"紫微同有見成家業，廉貞同先破後有置\"); WD4 (\"Liêm, Phá: bán hết rồi lại thành\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Phá Quân"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DIEN-SP-01",
+  "nhom": "SP",
+  "goc": "Lộc Tồn ở Điền Trạch: ruộng vườn nhiều, tự tậu; gặp cát tinh thì giữ và phát triển nền cũ; gặp sát, Không Kiếp thì ít đi. Lộc Tồn là một trong ba cung quan trọng nhất của sao này (Mệnh, Điền, Tài).",
+  "nguonGoc": "TT (卷二: \"祿存田園多旺自置…\"; 卷一: Lộc Tồn \"十二宮中惟身命、田宅、財帛為要\"); WD10 (Lộc Tồn: tài sản đất đai)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DIEN-SP-02",
+  "nhom": "SP",
+  "goc": "Tả Phụ, Hữu Bật, Văn Xương, Văn Khúc, Khôi Việt hội cát: nhà cửa đẹp, dễ mua bán, được người giúp; gặp sát tinh thì có vào có ra.",
+  "nguonGoc": "TT (\"文昌會諸吉田園廣置…文曲旺地有分…左輔有祖業\"); WD13 (Xương Khúc Tả Hữu Khôi Việt: nhà đẹp, dễ mua bán); WD10",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DIEN-SP-03",
+  "nhom": "SP",
+  "goc": "Kình Dương, Đà La: sách xếp Điền Trạch vào ba cung kỵ Kình Đà nhất. Kình \"nhập miếu\" (bảng spec: đắc ở Sửu, Thìn, Mùi, Tuất) thì trước hao sau thành; Đà thì vất vả tích lũy, gặp cát tinh trước không sau có.",
+  "nguonGoc": "TT (卷一: Kình Đà \"怕臨兄弟、田宅、父母三宮\"; 卷二: \"擎羊入廟先破後成…陀羅退祖辛勤度日\"); WD4 (\"Kình, Đà: trước có sau hết\"); WD10",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DIEN-SP-04",
+  "nhom": "SP",
+  "goc": "Hỏa Tinh, Linh Tinh: ít dựa vào nền cũ; gặp cát tinh thì trước không sau có. Nhiều nguồn nhắc nên chú ý an toàn điện, lửa trong nhà.",
+  "nguonGoc": "TT (\"火星獨守退祖業，會吉星先無後有…鈴星…入廟加吉星自有置\"); WD13 (Hỏa Linh dễ cháy nhà); WD10 (hỏa tai, điện)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DIEN-SP-05",
+  "nhom": "SP",
+  "goc": "Địa Không, Địa Kiếp: nhà đất dễ biến động, mua nhanh bán nhanh; khi đi cùng sát tinh khác thì sách cổ đánh giá rất bất lợi cho việc giữ tài sản.",
+  "nguonGoc": "TT (nhiều mục: \"加…空劫…全無/有進有退\"); WD13 (Kình Đà Không Kiếp: mua nhanh bán nhanh); WD10 (nhà thường biến động)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DIEN-SP-06",
+  "nhom": "SP",
+  "goc": "Thiên Mã ở Điền Trạch: hay chuyển nhà, có thể có nhà đất xa quê.",
+  "nguonGoc": "WD10 (chuyển nhà, di cư); WD13 (mua đất xa quê hoặc nước ngoài)",
+  "nguon": [],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DIEN-SP-07",
+  "nhom": "SP",
+  "goc": "Đại Hao, Tiểu Hao: hao hụt tài sản, đặc biệt khi đi cùng Phá Quân hoặc Vũ Khúc.",
+  "nguonGoc": "TT (Vũ Khúc \"破軍大耗同破蕩家產\"); WD4 (\"Hao, Phá Quân: chẳng có gì\"); WD7",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DIEN-CC-01",
+  "nhom": "CC",
+  "goc": "**Nhật Nguyệt chiếu bích** (日月照璧): Thái Dương và Thái Âm ở/chiếu cung Điền Trạch, ưa ở mộ khố (Sửu, Mùi); thuộc nhóm cách giàu, chủ tích lũy nhà đất.",
+  "nguonGoc": "TT (卷一 定富局: \"日月照璧 日月臨田宅宮是也，喜居墓庫\"); WD7 (Sửu/Mùi: tích lũy tài sản); WD13 (Nhật Nguyệt cùng sáng chiếu thì nhiều nhà đất)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DIEN-CC-02",
+  "nhom": "CC",
+  "goc": "**Nguyệt sinh thương hải** (月生滄海): Thái Âm ở Tý thủ cung Điền Trạch (bảng spec: Thái Âm Tý vượng); chủ phúc lộc, tài sản thanh nhã.",
+  "nguonGoc": "TT (卷一 定貴局: \"月生滄海 月在子宮守田宅是也\"); WD7 (Thái Âm Tý: thịnh vượng)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DIEN-CC-03",
+  "nhom": "CC",
+  "goc": "**Tài ấm giáp ấn** (財蔭夾印): Thiên Tướng được Vũ Khúc và Thiên Lương giáp hai bên; sách ghi cách này áp dụng cho cả cung Điền Trạch.",
+  "nguonGoc": "TT (卷一: \"財蔭夾印 相守命武梁來夾是也，田宅宮亦然\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": true,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DIEN-CC-04",
+  "nhom": "CC",
+  "goc": "Tài Bạch và Điền Trạch có Tả Phụ, Hữu Bật, lại có Thái Âm, Vũ Khúc đồng độ, không gặp sát tinh: cách người quản lý tài chính, tài sản.",
+  "nguonGoc": "TT (卷一: \"財帛田宅有左右守衛，又與太陰武曲同度，不見惡星，必為財賦之官\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": true,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DIEN-CC-05",
+  "nhom": "CC",
+  "goc": "**Vô chính diệu**: thường ít hưởng nền cũ, tự gây dựng, hay thay đổi chỗ ở; tài sản riêng thường đến muộn. Có Tuần/Triệt án ngữ: đầu khó sau dễ. Nhật Nguyệt sáng hội chiếu: càng về sau càng thuận. Quy tắc chung: lấy chính tinh cung xung chiếu (Tử Tức) làm căn bản, trừ khi có Tuần/Triệt án ngữ.",
+  "nguonGoc": "WD15 (Đặng Xuân Xuyến, dẫn *Tử Vi Chân Truyền*); WD13; WD7 (Nhật Nguyệt miếu vượng chiếu: tốt)",
+  "nguon": [],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DIEN-HOA-01",
+  "nhom": "HOA",
+  "goc": "Hóa Lộc nhập Điền Trạch: gia vận tốt, nhà đất sinh lời; một nguồn lưu ý dễ chuộng tiện nghi xa hoa.",
+  "nguonGoc": "WD13; WD10; WD7 (Hóa Lộc: tài sản tăng)",
+  "nguon": [],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DIEN-HOA-02",
+  "nhom": "HOA",
+  "goc": "Hóa Quyền: có nhiều bất động sản, nắm quyền quản lý tài sản gia đình; người trong nhà dễ tranh ý kiến.",
+  "nguonGoc": "WD13; WD10 (uy tín, quản lý tài sản); WD7",
+  "nguon": [],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DIEN-HOA-03",
+  "nhom": "HOA",
+  "goc": "Hóa Khoa: quản lý tài sản ngăn nắp, nhà cửa nề nếp, dễ giữ của; nơi ở có không khí văn hóa.",
+  "nguonGoc": "WD13; WD10; WD7 (Khoa: tài sản ổn, có văn hóa)",
+  "nguon": [],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DIEN-HOA-04",
+  "nhom": "HOA",
+  "goc": "Hóa Kỵ: dễ vướng thị phi, tranh chấp, giấy tờ về nhà đất; lần mua nhà đầu dễ trục trặc, nên kiểm tra pháp lý kỹ.",
+  "nguonGoc": "TT (Thái Âm, Thiên Đồng \"加…忌…全無\"); WD13; WD10; WD7",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DIEN-TRANH-01",
+  "nhom": "TRANH",
+  "goc": "**Không Kiếp ở Điền Trạch**: TT luôn xếp Không Kiếp vào nhóm làm giảm hoặc mất tài sản; WD4 (KHHB 1973) lại có câu \"Không, Kiếp miếu vượng: phát to\". Mặc định của nhóm: theo TT, diễn đạt \"biến động, mua nhanh bán nhanh\"; ghi chú khả năng \"phát mạnh rồi biến động\".",
+  "nguonGoc": "TT; WD4",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DIEN-TRANH-02",
+  "nhom": "TRANH",
+  "goc": "**Hóa Kỵ ở Điền Trạch**: TT và một số sách Việt coi là xấu (thị phi, hao); riêng KL (sách Việt) lại coi Kỵ ở Điền, Tài là \"giữ được của\". Một số trang theo hướng Tứ Hóa (PT) cho rằng Kỵ \"giữ điền\", tài sản khó bán nhưng cũng khó mất. Chưa có sách PT gốc để đối chiếu.",
+  "nguonGoc": "WD10; WD13; PT (qua WD10, chưa đối chiếu sách); KL (phú: \"Hóa ky Điền, Tài, phản vi giai luận\", tức Kỵ ở Điền, Tài \"lại là tốt vì giữ được của\") (bản quét, đã đọc); KL là sách Việt theo hướng \"giữ của\", dù phần Hóa kỵ ở các cung của KL lại ghi Kỵ ở Tài \"hao tán\"",
+  "nguon": [
+   "Phi tinh – Tứ Hóa phái",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DIEN-TRANH-03",
+  "nhom": "TRANH",
+  "goc": "**Cự Môn**: TT nói miếu vượng thì \"hoành phát\" mua nhà; WD13 lại nói Cự Môn nói chung \"không nên có tổ nghiệp, có thì dễ tranh chấp\". Mặc định: phân theo miếu/hãm như TT.",
+  "nguonGoc": "TT; WD13",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DIEN-TRANH-04",
+  "nhom": "TRANH",
+  "goc": "**Thất Sát**: TT không có mục riêng ở Điền Trạch; quy tắc DIEN-TS-01/02 dựa trên các trang Việt (WD7, WD10, WD13) và không thống nhất (WD13 nói miếu thì có tổ nghiệp; WD7 nói Dần Thân không thừa kế). Cần chuyên gia hoặc bản in TB/NL xác nhận.",
+  "nguonGoc": "TT; WD7; WD13",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DIEN-TRANH-05",
+  "nhom": "TRANH",
+  "goc": "**Thái Dương**: TT nói nhập miếu thì được tổ nghiệp; WD13 lại nói Thái Dương \"không nên thủ\" Điền Trạch, miếu địa cũng hay thay đổi. Hai ý có thể dung hòa (\"có nhưng hay đổi\" như TT \"初旺未平\").",
+  "nguonGoc": "TT; WD13",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DIEN-TRANH-06",
+  "nhom": "TRANH",
+  "goc": "Cách nói cổ \"Tử Vi ở Điền: hà tiện, có của chôn\" (WD4) mang tính hình ảnh; nhóm không dùng nguyên văn, chỉ diễn đạt \"thiên về tích lũy, giữ của\". *(Nhận xét nhóm, không phải quy tắc gốc)*",
+  "nguonGoc": "WD4",
+  "nguon": [],
+  "motNguon": false,
+  "chuaNguon": false
+ }
+]

@@ -1,0 +1,989 @@
+[
+ {
+  "ma": "PHUC-YN-01",
+  "nhom": "YN",
+  "goc": "Phúc Đức luận về mức độ an nhàn hay lao tâm, khả năng hưởng thụ, đời sống tinh thần và sự nâng đỡ của gia đình, họ hàng. Ngôn ngữ chính của TT ở cung này là cặp \"享福/安靜\" (hưởng phúc, an tĩnh) đối với \"勞心費力/不得寧靜\" (lao tâm, không yên).",
+  "nguonGoc": "TT (卷二 十一福德); WD6 (Tử Vi Đại Toàn: cát tinh miếu vượng thì an vui, hung tinh hãm thì phúc mỏng, vất vả); WD8",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUC-YN-02",
+  "nhom": "YN",
+  "goc": "Sao chủ cung Phúc Đức là **Thiên Đồng** (TT: \"天同…為福德宮之主宰\"). Hóa Lộc được gọi là \"thần phúc đức\".",
+  "nguonGoc": "TT (卷一 諸星問答論 — Thiên Đồng; Hóa Lộc \"祿為福德之神\"); WD11 (Thiên Đồng ở Phúc: hưởng phúc khi đồng Thái Âm, Thiên Lương)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUC-YN-03",
+  "nhom": "YN",
+  "goc": "Phúc Đức được coi là cung rất quan trọng, có sức nâng đỡ hoặc kéo giảm các cung khác; TT dặn \"trước hết xem Phúc Đức, rồi xét kỹ Thiên Di\".",
+  "nguonGoc": "TT (卷一: \"第一先看福德，再三細考遷移\"); WD14 (Phúc Đức ảnh hưởng 11 cung còn lại); WD8",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUC-YN-04",
+  "nhom": "YN",
+  "goc": "Cung xung chiếu của Phúc Đức là **Tài Bạch** (TT: \"以福德宮對財帛宮\"); tam hợp là **Thiên Di** và **Phu Thê**. Khi luận cách hưởng thụ cần xem cả cách kiếm tiền (Tài Bạch).",
+  "nguonGoc": "TT (卷三: \"四看福德宮權祿劫空廟陷，以福德宮對財帛宮也\"); spec 2.4 (suy ra tam hợp); WD8 (xét cung đối Tài Bạch)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUC-TV-01",
+  "nhom": "TV",
+  "goc": "Tử Vi miếu/vượng/đắc: phúc dày, an vui, đời sống tinh thần vững; dễ gặp người nâng đỡ.",
+  "nguonGoc": "TT (\"紫微福厚享福安樂\"); WD6 (miếu vượng: phúc thọ); WD8; WD11",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tử Vi"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "PHUC-TV-02",
+  "nhom": "TV",
+  "goc": "Tử Vi bình hòa (Tý, Mão, Dậu, Hợi) hoặc gặp Kình, Đà, Linh, Không, Kiếp, Hóa Kỵ: phúc mỏng hơn, hay lo nghĩ; nên chủ động tạo khoảng nghỉ ngơi, chia sẻ việc.",
+  "nguonGoc": "TT (\"加羊陀鈴空劫福薄\"); WD6 (gặp sát, Không Kiếp, Kỵ: nhiều lo nghĩ); WD8 (hãm/bình gặp sát: lo nghĩ, phúc khí giảm)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tử Vi"
+   ],
+   "doSang": [
+    "Bình"
+   ]
+  }
+ },
+ {
+  "ma": "PHUC-TV-03",
+  "nhom": "TV",
+  "goc": "Tử Vi đồng Thiên Phủ hoặc Thiên Tướng: trọn đời tốt đẹp; đồng Phá Quân: lao tâm, khó yên.",
+  "nguonGoc": "TT (\"天府天相同終身獲吉，破軍同勞心費力不安\"); WD11 (đồng Phủ/Tướng: cát tường; đồng Phá Quân: bất an); WD8 (đồng Thiên Tướng: sung túc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tử Vi"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "PHUC-LT-01",
+  "nhom": "LT",
+  "goc": "Liêm Trinh miếu/vượng hoặc đơn thủ (Dần, Thân): \"trong bận rộn mà sinh phúc\" — người bận việc nhưng tìm được niềm vui từ công việc; có nề nếp.",
+  "nguonGoc": "TT (\"廉貞獨守忙中生福\"); WD8 (miếu: phúc khí ổn, gia đạo có nề nếp); WD14 (đứng một mình trong hoang mang thì có phúc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Liêm Trinh"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "PHUC-LT-02",
+  "nhom": "LT",
+  "goc": "Liêm Trinh hãm (Mão, Tỵ, Dậu, Hợi), nhất là đồng Phá Quân hoặc Tham Lang, gặp sát tinh: hay lao tâm, khó tĩnh; về cuối đời mới như ý. Nên tập thói quen nghỉ ngơi, giảm ôm việc.",
+  "nguonGoc": "TT (\"破軍同不守靜，勞心費力，再加羊陀火鈴勞苦終身，末年如意\"; Tham Lang \"廉貞同福薄\"); WD6 (Liêm Trinh: bận rộn, lo âu); WD11 (đồng Phá Quân lao tâm; Mão Dậu cùng Phá Quân vất vả)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Liêm Trinh"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "PHUC-LT-03",
+  "nhom": "LT",
+  "goc": "Liêm Trinh đồng Thiên Tướng: có phúc thọ; đồng Thiên Phủ: an lạc không lo.",
+  "nguonGoc": "TT (\"天相同有福有壽，天府同安樂無憂\"); WD11; WD8",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Liêm Trinh"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "PHUC-TD-01",
+  "nhom": "TD",
+  "goc": "Thiên Đồng miếu/vượng/đắc (Tý, Dần, Mão, Tỵ, Thân, Hợi): vui vẻ, biết hưởng thụ, tinh thần lạc quan; là sao chủ nên ở đây rất hợp.",
+  "nguonGoc": "TT (\"天同快樂有福有壽\"); WD6 (miếu vượng: vui, có phúc); WD11 (Tý, Tỵ, Hợi tốt)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Đồng"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "PHUC-TD-02",
+  "nhom": "TD",
+  "goc": "Thiên Đồng hãm (Sửu, Thìn, Ngọ, Mùi, Dậu, Tuất) gặp Tứ sát, Không Kiếp: tinh thần dễ dao động, thiếu quyết đoán, đời sống nội tâm nhiều thăng trầm.",
+  "nguonGoc": "WD6 (hãm gặp Tứ sát Không Kiếp: vất vả); WD8 (hãm: dao động, thiếu quyết đoán); WD11 (Dậu, Thìn, Tuất kém)",
+  "nguon": [],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Đồng"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "PHUC-TD-03",
+  "nhom": "TD",
+  "goc": "Thiên Đồng đồng Cự Môn: nhiều lo ít vui; đồng Thái Âm: hưởng phúc; đồng Thiên Lương: thanh nhàn vui vẻ.",
+  "nguonGoc": "TT (\"巨門同多憂少喜，太陰同享福，天梁同清閒快樂\"); WD11; WD8 (đồng Cự Môn: buồn phiền)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Đồng"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "PHUC-VK-01",
+  "nhom": "VK",
+  "goc": "Vũ Khúc miếu/vượng: an nhàn hưởng phúc, có người gánh vác gia đạo.",
+  "nguonGoc": "TT (\"入廟安然享福\"); WD11 (miếu vượng: an nhàn); WD6 (miếu vượng: an thọ); WD8",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Vũ Khúc"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "PHUC-VK-02",
+  "nhom": "VK",
+  "goc": "Vũ Khúc hãm (Tỵ, Hợi — đồng Phá Quân) hoặc gặp sát tinh: lao tâm vì tiền bạc, trách nhiệm; đồng Phá Quân thì \"đông tẩu tây hành\", khó yên một chỗ.",
+  "nguonGoc": "TT (\"武曲勞心費力…破軍同東走西行，不寧靜\"); WD11 (hãm: hao tâm; đồng Phá Quân bất an); WD6 (hãm gặp sát: vất vả)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Vũ Khúc"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "PHUC-VK-03",
+  "nhom": "VK",
+  "goc": "Vũ Khúc đồng Thiên Tướng: về già an khang; đồng Tham Lang: về già hưởng phúc, gặp Hỏa Linh thì an dật; đồng Thất Sát: kém an.",
+  "nguonGoc": "TT (\"天相同老境安康，七殺同欠安康，貪狼同晚年享福，見火鈴星安逸\"); WD11; WD8 (đồng Thất Sát nhiều rủi ro)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Vũ Khúc"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "PHUC-TDU-01",
+  "nhom": "TDU",
+  "goc": "Thái Dương miếu/vượng (Dần, Mão, Thìn, Tỵ, Ngọ): \"trong bận rộn mà phát phúc\"; họ hàng có danh tiếng; sống tích cực.",
+  "nguonGoc": "TT (\"太陽忙中發福\"); WD8 (Dần–Ngọ: an nhàn, họ hàng có danh tiếng); WD11; WD6 (miếu vượng: phúc quý)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Dương"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "PHUC-TDU-02",
+  "nhom": "TDU",
+  "goc": "Thái Dương hãm (Tý, Thân, Dậu, Tuất, Hợi) gặp sát tinh, Kỵ, Hao: dễ nóng nảy, áp lực, bận rộn mà ít thảnh thơi; nên cân bằng công việc – nghỉ ngơi. *(sách gốc nói \"終身不美\", đã trung tính hóa)*",
+  "nguonGoc": "TT (\"加羊陀火鈴空劫忌耗，終身不美之論\"); WD8 (hãm: nóng nảy, áp lực); WD6 (hãm gặp sát: bận rộn)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Dương"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "PHUC-TDU-03",
+  "nhom": "TDU",
+  "goc": "Thái Dương đồng Thái Âm hoặc Thiên Lương: vui vẻ; đồng Cự Môn: phí sức, kém yên. Nữ mệnh có Thái Dương ở Phúc gặp cát tinh: dễ gặp người bạn đời hiền minh.",
+  "nguonGoc": "TT (\"太陰同快樂，巨門同費力欠安，天梁同快樂，女人會吉星招賢明之夫\"); WD11",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Dương"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "PHUC-TCO-01",
+  "nhom": "TCO",
+  "goc": "Thiên Cơ miếu/vượng (Mão, Thìn, Tỵ, Thân, Dậu, Tuất): trước lao sau nhàn; sáng suốt, nhiều suy nghĩ; đồng Thiên Lương hoặc Thái Âm thì an vui.",
+  "nguonGoc": "TT (\"天機先勞後逸…天梁同享福，太陰同主快樂\"); WD14 (\"trước thì lao khổ sau mới được nhàn hạ\"); WD11 (Tỵ Ngọ Mùi, Mão Dậu tốt; đồng Lương hưởng phúc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Cơ"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "PHUC-TCO-02",
+  "nhom": "TCO",
+  "goc": "Thiên Cơ hãm (Dần, Hợi) gặp sát tinh hoặc Hóa Kỵ: hay lo xa, bôn tẩu, khó tĩnh tâm; nên tập trung ít mục tiêu hơn.",
+  "nguonGoc": "TT (\"加羊陀火鈴空劫奔走不得寧靜\"); WD6 (lao tâm, Hóa Kỵ làm nặng thêm); WD8 (hãm: lo xa, bất an)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Cơ"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "PHUC-TCO-03",
+  "nhom": "TCO",
+  "goc": "Thiên Cơ đồng Cự Môn: lao lực, kém yên.",
+  "nguonGoc": "TT (\"巨門同勞力欠安\"); WD11 (đồng Cự Môn: lao lực mới yên)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Cơ"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "PHUC-TP-01",
+  "nhom": "TP",
+  "goc": "Thiên Phủ miếu/vượng/đắc: an tĩnh hưởng phúc, hậu vận thuận.",
+  "nguonGoc": "TT (\"天府安靜享福\"); WD6 (miếu vượng: an thọ); WD8 (phúc tốt, hậu vận thuận); WD11 (Dần Thân Tỵ Hợi Tý Ngọ tốt)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Phủ"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "PHUC-TP-02",
+  "nhom": "TP",
+  "goc": "Thiên Phủ bình hòa (Sửu, Mão, Dậu; bảng spec không có ô hãm) hoặc gặp sát tinh, Không Kiếp, Hóa Kỵ, Tuần/Triệt: ít được hưởng nhàn, phải tự lo nhiều.",
+  "nguonGoc": "TT (\"加羊陀火鈴空劫耗忌勞苦過日\"); WD8 (Sửu Mùi Mão Dậu ít phúc); WD11 (Mão Dậu Sửu Mùi kém; Tuần Triệt Không Kiếp kém)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Phủ"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "PHUC-TP-03",
+  "nhom": "TP",
+  "goc": "Thiên Phủ đồng Tử Vi: vui vẻ; đồng Liêm Trinh: thân an mà tâm bận; đồng Vũ Khúc: sớm vất vả, trung vãn an lạc.",
+  "nguonGoc": "TT (\"紫微同快樂，廉貞同身安心忙，武曲同早年更辛苦，中晚安樂享福\"); WD8 (đồng Tử, Vũ, Liêm: tốt)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Phủ"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "PHUC-TA-01",
+  "nhom": "TA",
+  "goc": "Thái Âm miếu/vượng (Tý, Thân, Dậu, Tuất, Hợi): hưởng phúc, vui vẻ, đời sống tinh thần dịu dàng, tinh tế.",
+  "nguonGoc": "TT (\"太陰入廟享福快樂\"); WD14 (\"nhập miếu là hưởng phúc khoái lạc\"); WD11 (Dậu Tuất Hợi Tý: hưởng phúc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Âm"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "PHUC-TA-02",
+  "nhom": "TA",
+  "goc": "Thái Âm hãm (Dần, Mão, Thìn, Tỵ, Ngọ) hoặc gặp sát tinh: dễ buồn phiền, suy tư, có lúc cô đơn hoặc bi quan; nên có người tâm sự và hoạt động lành mạnh.",
+  "nguonGoc": "TT (\"加羊陀火鈴空劫，有憂有喜，不得安靜\"); WD6 (hãm: cô đơn, bi quan); WD8 (hãm: buồn phiền, suy tư)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Âm"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "PHUC-TA-03",
+  "nhom": "TA",
+  "goc": "Thái Âm đồng Thái Dương: rất đẹp; đồng Thiên Đồng: an tĩnh; đồng Thiên Cơ: tâm bận.",
+  "nguonGoc": "TT (\"太陽同極美…天機同心忙，天同同安靜無憂\"); WD11",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Âm"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "PHUC-THL-01",
+  "nhom": "THL",
+  "goc": "Tham Lang miếu/vượng (Sửu, Thìn, Mùi, Tuất): thích hưởng thụ, lạc quan; đồng Vũ Khúc hoặc Tử Vi thì về già vui vẻ thanh nhàn.",
+  "nguonGoc": "TT (\"紫微同晚年快樂\"; Vũ Khúc \"貪狼同晚年享福\"); WD6 (miếu vượng: thích hưởng lạc); WD8 (Thìn Tuất: an nhàn; đồng Vũ: thanh nhàn)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tham Lang"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "PHUC-THL-02",
+  "nhom": "THL",
+  "goc": "Tham Lang hãm (Tý, Mão, Tỵ, Ngọ, Dậu, Hợi): lao tâm, cảm xúc dễ bất ổn; đồng Liêm Trinh thì phúc mỏng; nên giữ nhịp sống điều độ.",
+  "nguonGoc": "TT (\"貪狼勞心不安，廉貞同福薄\"); WD14 (\"lạc hãm là lao tâm…gặp Liêm Trinh thì phúc bạc\"); WD8 (hãm: bất ổn cảm xúc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tham Lang"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "PHUC-CM-01",
+  "nhom": "CM",
+  "goc": "Cự Môn miếu/vượng (Tý, Dần, Mão, Ngọ, Dậu; đắc Thân, Hợi): có phúc, trí tuệ, được giúp đỡ, nhưng vẫn kèm thị phi; đồng Thiên Đồng thì hưởng phúc.",
+  "nguonGoc": "TT (\"天同同享福\"); WD6 (miếu vượng: có phúc nhưng kèm thị phi); WD8 (miếu: phúc tốt, trí tuệ; Hợi Tý Ngọ tốt)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Cự Môn"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "PHUC-CM-02",
+  "nhom": "CM",
+  "goc": "Cự Môn hãm (Sửu, Thìn, Tỵ, Mùi, Tuất), gặp sát tinh: lao lực kém yên, hay lo; nên học cách buông bớt và giao tiếp rõ ràng.",
+  "nguonGoc": "TT (\"巨門勞力不安…加羊陀火鈴空劫生平多憂\"); WD14 (\"lạc hãm là lao tâm không yên\"); WD6 (hãm: lo lắng, căng thẳng thần kinh)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Cự Môn"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "PHUC-CM-03",
+  "nhom": "CM",
+  "goc": "Cự Môn đồng Thái Dương: có lo có vui; đồng Thiên Cơ: tâm bận không yên.",
+  "nguonGoc": "TT (\"太陽同有憂有喜，天機同心忙不安\"); WD14 (\"cùng với Nhật có buồn có vui\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Cự Môn"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "PHUC-TT-01",
+  "nhom": "TT",
+  "goc": "Thiên Tướng miếu/vượng/đắc: an dật hưởng phúc; đồng Tử Vi vui vẻ.",
+  "nguonGoc": "TT (\"天相安逸享福有壽，紫微同快樂\"); WD14 (\"đắc địa thì được an nhàn hưởng phúc\"); WD11 (đắc địa: an nhàn)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Tướng"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "PHUC-TT-02",
+  "nhom": "TT",
+  "goc": "Thiên Tướng hãm (Mão, Dậu) hoặc gặp sát tinh, Không Kiếp, Tuần/Triệt: tâm không tĩnh, dễ bị thị phi; trẻ vất vả, về già ổn hơn.",
+  "nguonGoc": "TT (\"加羊陀火鈴空劫不得心靜\"); WD8 (Mão Dậu: trẻ vất vả, già ổn); WD11 (Tuần Triệt Không Kiếp: thị phi)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Tướng"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "PHUC-TL-01",
+  "nhom": "TL",
+  "goc": "Thiên Lương miếu/vượng/đắc: an nhàn, phong thái điềm đạm, thích học hỏi; được che chở (Thiên Lương \"hóa khí là ấm\", chủ phúc thọ).",
+  "nguonGoc": "WD6 (miếu vượng: an nhàn, phong thái học giả); WD8 (Tý Ngọ Sửu Mùi tốt: phúc thọ, quý nhân); WD11 (Tý Ngọ tốt); TT (卷一: Thiên Lương \"化氣為蔭為福壽\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Lương"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "PHUC-TL-02",
+  "nhom": "TL",
+  "goc": "Thiên Lương hãm (Tỵ, Dậu, Hợi), gặp sát tinh, Thiên Mã, Hóa Kỵ, Tuần/Triệt: dễ bi quan, dễ có bất đồng; tinh thần hay xa cách gia đình.",
+  "nguonGoc": "WD6 (hãm: tranh chấp, bi quan); WD8 (Tỵ Hợi kém; có sát: xa cách); WD11 (Tỵ Hợi kém; hãm cùng Thiên Mã Hóa Kỵ: suy giảm)",
+  "nguon": [],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Lương"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "PHUC-TL-03",
+  "nhom": "TL",
+  "goc": "TT (卷二 十一福德) không có mục riêng cho Thiên Lương; chỉ có tổ hợp: Lương đồng Thiên Cơ \"hưởng phúc\", đồng Thiên Đồng \"thanh nhàn vui vẻ\", đồng Thái Dương \"vui vẻ\".",
+  "nguonGoc": "TT (mục Thiên Cơ, Thiên Đồng, Thái Dương); WD11 (Cơ Lương, Đồng Lương hưởng phúc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Lương"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "PHUC-TS-01",
+  "nhom": "TS",
+  "goc": "Thất Sát miếu/vượng/đắc: vẫn hưởng phúc; ý chí mạnh, tự lập, thích cạnh tranh; đồng Tử Vi thì trước lao sau nhàn, cuối đời như ý.",
+  "nguonGoc": "TT (\"七殺入廟享福…紫微同先勞後逸，末年方如意遂心\"); WD6 (miếu vượng: năng động, cạnh tranh); WD8 (đắc: ý chí mạnh, tự lập)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thất Sát"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "PHUC-TS-02",
+  "nhom": "TS",
+  "goc": "Thất Sát hãm (Mão, Thìn, Dậu, Tuất, Hợi) gặp Kình Đà Hỏa Linh: lao tâm tốn sức, dễ căng thẳng, cô độc; đồng Vũ Khúc kém an, đồng Liêm Trinh vất vả. Nên có hoạt động giải tỏa thể chất, chia sẻ.",
+  "nguonGoc": "TT (\"陷地加羊陀火鈴勞心費力，武曲同欠安，廉貞同辛勤\"); WD6 (hãm: tiêu cực, ít phúc); WD8 (hãm: căng thẳng, cô độc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thất Sát"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "PHUC-TS-03",
+  "nhom": "TS",
+  "goc": "TT có một câu định kiến nặng nề về nữ mệnh có Thất Sát đơn thủ ở Phúc Đức; nhóm **không dùng** câu này trong bất kỳ bài luận nào (xem PHUC-TRANH-02).",
+  "nguonGoc": "TT (卷二 十一福德; 卷三 女命); WD6 (ghi nhận \"đánh giá khắc nghiệt với nữ\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thất Sát"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "PHUC-PQ-01",
+  "nhom": "PQ",
+  "goc": "Phá Quân miếu/vượng (Tý, Ngọ; vượng Sửu, Thìn, Mùi, Tuất): quyết đoán; gặp Vũ Khúc với Khoa, Quyền, Khôi, Việt là \"tú khí\", văn võ kiêm toàn; đồng Tử Vi thì an lạc.",
+  "nguonGoc": "TT (\"紫微同安樂\"); WD6 (miếu vượng: quyết đoán); WD14 (\"gặp Vũ, Khoa, Quyền, Khôi, Việt là Tú khí ắt Văn Võ kiêm toàn\"); WD11",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Phá Quân"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "PHUC-PQ-02",
+  "nhom": "PQ",
+  "goc": "Phá Quân hãm (Dần, Mão, Tỵ, Thân, Dậu, Hợi) hoặc gặp sát tinh: lao tâm tốn sức, khó yên tĩnh, hay thay đổi; đồng Liêm Trinh vất vả.",
+  "nguonGoc": "TT (\"破軍勞心費力…廉貞同辛勤…加羊陀火鈴空劫操心，不得寧靜\"); WD6 (hãm gặp sát: vất vả); WD8 (hãm: bất ổn, biến động)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Phá Quân"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "PHUC-SP-01",
+  "nhom": "SP",
+  "goc": "Văn Xương, Văn Khúc miếu gặp cát tinh: hưởng phúc vui vẻ, đời sống tinh thần thiên về văn chương, nghệ thuật; hãm gặp sát thì thân tâm khó yên.",
+  "nguonGoc": "TT (\"文昌加吉星入廟享福快樂，陷地遇羊陀火鈴空劫，心身俱不得安靜\"); WD11 (Xương Khúc gặp cát: phát về văn chương)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUC-SP-02",
+  "nhom": "SP",
+  "goc": "Tả Phụ, Hữu Bật: phúc lộc đầy đủ, ít lo, được giúp; gặp sát thì lao tâm.",
+  "nguonGoc": "TT (\"左輔加吉星享福…右弼生平福祿全美，加吉星一生少憂\"); WD11 (Tả Hữu gặp Tử Phủ, Khôi Việt: tốt)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUC-SP-03",
+  "nhom": "SP",
+  "goc": "Lộc Tồn: phúc dày, sống an tĩnh; gặp sát tinh, Không Kiếp thì thân tâm không yên.",
+  "nguonGoc": "TT (\"祿存終身福厚安靜處世\"); WD11 (Lộc Tồn gặp Không Kiếp Tuần Triệt Hao: tán bại)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUC-SP-04",
+  "nhom": "SP",
+  "goc": "Thiên Khôi, Thiên Việt: có quý nhân bầu bạn, vui vẻ.",
+  "nguonGoc": "TT (\"魁鉞有貴人，為伴享福快樂\"); WD11 (có cả hai sao là quý)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUC-SP-05",
+  "nhom": "SP",
+  "goc": "Kình Dương miếu: \"trong động có phúc\" (phúc đến qua hoạt động, bận rộn); hãm: lao tâm. Đà La: cần cù vất vả, gặp cát tinh về già có phúc.",
+  "nguonGoc": "TT (\"擎羊入廟動中有福，陷宮勞心欠力…陀羅獨守辛勤\"); WD11 (Kình miếu có phúc nhưng dễ bị động; Đà đứng một mình vất vả)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUC-SP-06",
+  "nhom": "SP",
+  "goc": "Hỏa Tinh, Linh Tinh: vất vả, kém an; gặp cát tinh thì về già toại chí, bình hòa.",
+  "nguonGoc": "TT (\"火星欠安勞力辛勤，加吉星晚年遂志；鈴星勞苦，加吉星平和\"); WD11 (Hỏa Linh lao khổ, gặp cát giảm)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUC-SP-07",
+  "nhom": "SP",
+  "goc": "Địa Không, Địa Kiếp ở Phúc Đức: bôn ba mà ít sức, khó an nhàn.",
+  "nguonGoc": "TT (卷一: \"福德遇空劫，奔走無力\"); WD8 (sát tinh: tinh thần bất an)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUC-CC-01",
+  "nhom": "CC",
+  "goc": "**Ngọc tụ thiên hương** (玉袖天香): Văn Xương, Văn Khúc ở cung Phúc Đức; được thêm Tử Vi ở Ngọ thì càng đẹp. Chủ đời sống tinh thần thanh nhã, có văn hóa.",
+  "nguonGoc": "TT (卷三: \"昌曲吉星居福德謂之玉袖天香，更得紫微，居午宮妙\"); WD11 (Xương Khúc gặp nhau cùng cát tinh: tốt)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUC-CC-02",
+  "nhom": "CC",
+  "goc": "Sáu cung Mệnh, Thân, Thiên Di, Tài Bạch, Quan Lộc, Phúc Đức đều sáng, hội cát, hóa cát: phú quý, an khang; sáu cung đều hãm, hội hung hóa Kỵ thì đời nhiều vất vả. *(sách gốc nói \"孤寡夭壽\", đã trung tính hóa)*",
+  "nguonGoc": "TT (卷三: \"身命遷移財官福德六宮…俱在成照聚吉化吉，富貴高壽\"); KL (Thế đứng các sao: \"các cung Quan, Di, Tài có nhiều ảnh hưởng đến Mệnh\"; \"Mệnh Phúc xấu và Di, Tật, Vận có hung tinh thì\" rất xấu) (bản quét, đã đọc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUC-CC-03",
+  "nhom": "CC",
+  "goc": "**Vô chính diệu**: quy tắc chung mượn chính tinh cung xung chiếu (Tài Bạch). Có hai ý kiến trái ngược về tốt/xấu (xem PHUC-TRANH-01). Theo Đặng Xuân Xuyến: dễ sống xa họ hàng; rất cần Tuần, không ưa Triệt.",
+  "nguonGoc": "WD15 (dẫn *Tử Vi Chân Truyền*); WD8 (vô chính diệu: xem cung đối, tam hợp; có cát tinh thì phúc khí khá)",
+  "nguon": [],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUC-HOA-01",
+  "nhom": "HOA",
+  "goc": "Hóa Lộc nhập Phúc Đức: phúc khí tốt, có điều kiện hưởng thụ (TT gọi Hóa Lộc là \"thần phúc đức\"); gặp Xương Khúc thì tốt hơn, gặp Kình Đà, Kỵ thì giảm.",
+  "nguonGoc": "TT (卷一: \"祿為福德之神\"); WD11; WD8 (Hóa Lộc mang phúc tài)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUC-HOA-02",
+  "nhom": "HOA",
+  "goc": "Hóa Quyền: ý chí mạnh, chủ động trong đời sống tinh thần; gặp Khôi Việt thì càng tốt.",
+  "nguonGoc": "WD8 (tăng ý chí); WD11 (gặp Khôi Việt, Tham, Vũ: văn võ toàn tài)",
+  "nguon": [],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUC-HOA-03",
+  "nhom": "HOA",
+  "goc": "Hóa Khoa: sáng suốt, tâm thái ôn hòa, giảm phiền muộn.",
+  "nguonGoc": "WD8 (sáng suốt, giảm tai họa); WD11 (gặp Khôi Việt, Xương Khúc: tốt)",
+  "nguon": [],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUC-HOA-04",
+  "nhom": "HOA",
+  "goc": "Hóa Kỵ: dễ lo nghĩ, bất an, khó hài lòng; dù có cát tinh cũng khó trọn vẹn. Nên học cách quản lý cảm xúc, chọn nhịp sống chậm hơn.",
+  "nguonGoc": "TT (nhiều mục \"加…忌耗…勞苦\"); WD8 (Kỵ: lo nghĩ, bất hòa); WD11 (Kỵ là ác khí, gặp Khoa Quyền cũng khó bền)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUC-TRANH-01",
+  "nhom": "TRANH",
+  "goc": "**Phúc vô chính diệu tốt hay xấu**: Đặng Xuân Xuyến (dẫn *Tử Vi Chân Truyền*) cho là dễ xa họ hàng, cần Tuần; một bài sưu tầm kinh nghiệm cụ Thiên Lương (NL) lại cho là rất tốt, nhất là khi Nhật Nguyệt sáng chiếu. Mặc định: luận theo sao xung chiếu và phụ tinh, không phán chung.",
+  "nguonGoc": "WD15; NL (qua WD15, chưa đối chiếu sách)",
+  "nguon": [
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUC-TRANH-02",
+  "nhom": "TRANH",
+  "goc": "**Câu định kiến về nữ mệnh**: TT (卷二 và 卷三) có câu đánh giá miệt thị nữ mệnh có Thất Sát đơn thủ Phúc Đức. Câu này trái với định vị thương hiệu và không có cơ sở; **loại bỏ hoàn toàn**. Thất Sát ở Phúc với nữ mệnh luận như PHUC-TS-01/02. *(Nhận xét nhóm)*",
+  "nguonGoc": "TT; WD6",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUC-TRANH-03",
+  "nhom": "TRANH",
+  "goc": "**Độ sáng lệch bảng spec**: WD11 ghi Thái Âm hãm ở Sửu, Mùi (spec: đắc); Thiên Đồng ở Ngọ tốt (spec: hãm); Phá Quân ở Thân khá (spec: hãm); Cự Môn có chỗ ghi Thân, Dậu kém (spec: Thân đắc, Dậu miếu). Mặc định theo spec.",
+  "nguonGoc": "WD11; spec mục 6",
+  "nguon": [],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUC-TRANH-04",
+  "nhom": "TRANH",
+  "goc": "**Âm phần, mồ mả**: nhiều nguồn Việt (WD14, một phần WD8) luận Phúc Đức theo mộ phần từng đời (mộ ông nội, mộ chú…). Đây là truyền thống có thật trong sách Việt nhưng nhóm **không dùng** theo định vị sản phẩm (không mê tín, không gây sợ); chỉ giữ phần nói về tâm tính, mức an nhàn. *(Nhận xét nhóm)*",
+  "nguonGoc": "WD14; WD8",
+  "nguon": [],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUC-TRANH-05",
+  "nhom": "TRANH",
+  "goc": "**Thiên Lương ở Phúc Đức**: bản TT trên Wikisource không có mục riêng (có thể do thất lạc khi chép); quy tắc PHUC-TL-01/02 dựa vào WD6 (Tử Vi Đại Toàn) và trang Việt. Cần bản in TT/TB đối chiếu.",
+  "nguonGoc": "TT; WD6",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ }
+]

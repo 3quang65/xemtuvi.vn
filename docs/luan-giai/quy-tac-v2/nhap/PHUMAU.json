@@ -1,0 +1,844 @@
+[
+ {
+  "ma": "PHUMAU-YN-01",
+  "nhom": "YN",
+  "goc": "Phụ Mẫu luận về cha mẹ: mức độ hòa hợp, sự che chở thời nhỏ, điều kiện gia đình gốc, và rộng ra là quan hệ với bề trên, người đỡ đầu.",
+  "nguonGoc": "TT (卷二 十二父母); WD9 (quan hệ cha mẹ, bề trên); WD12",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUMAU-YN-02",
+  "nhom": "YN",
+  "goc": "Sao chủ cung Phụ Mẫu là **Thiên Lương** (TT: \"為父母主\", \"父母宮主星\").",
+  "nguonGoc": "TT (卷一 諸星問答論 — Thiên Lương); WD5 (\"Lương ở Phụ mẫu: cha mẹ thọ\" — coi Lương là sao tốt cho cung này)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUMAU-YN-03",
+  "nhom": "YN",
+  "goc": "Khi luận cha mẹ phải xét **Thái Dương là cha, Thái Âm là mẹ** trên toàn lá số (không chỉ trong cung Phụ Mẫu): Thái Dương sáng ở Dần–Ngọ, hãm ở Thân–Tý; Thái Âm sáng ở Thân–Tý, hãm ở Dần–Ngọ.",
+  "nguonGoc": "TT (\"凡看父母以太陽星為父，太陰星為母\"); WD5 (KHHB số 41, Anh Việt: Nhật sáng Dần Mão Thìn Tỵ Ngọ, Nguyệt sáng Thân Dậu Tuất Hợi Tý); WD9 (dẫn TB: xét Nhật Nguyệt toàn lá số)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUMAU-YN-04",
+  "nhom": "YN",
+  "goc": "Tam hợp của Phụ Mẫu là **Nô Bộc** và **Tử Tức**; cung xung chiếu là **Tật Ách**.",
+  "nguonGoc": "spec 2.4 (suy ra); WD9 (cung đối diện Tật Ách)",
+  "nguon": [],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUMAU-TV-01",
+  "nhom": "TV",
+  "goc": "Tử Vi miếu/vượng/đắc: duyên với cha mẹ thuận, cha mẹ có vị thế; đồng Thiên Phủ hoặc Thiên Tướng cũng tốt.",
+  "nguonGoc": "TT (\"紫微無克，天府同亦無刑…天相同無刑\"); WD5 (\"Tử vi hay thiên Phủ: cha mẹ thọ\"); WD12 (nhập miếu có cát: cha mẹ giàu sang)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tử Vi"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "PHUMAU-TV-02",
+  "nhom": "TV",
+  "goc": "Tử Vi bình hòa (Tý, Mão, Dậu, Hợi) hoặc gặp sát tinh, Không Kiếp: hai thế hệ đều cá tính mạnh, dễ bất đồng quan điểm; đồng Phá Quân thì dễ xa cách sớm. *(sách gốc nói \"亦克/早克\", đã trung tính hóa)*",
+  "nguonGoc": "TT (\"加羊陀火鈴空劫亦克…破軍同早克\"); WD12 (hãm/gặp sát: cá tính mạnh, bất đồng; gặp Phá Quân: chia ly); WD9 (hội Phá Quân: xa cách)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tử Vi"
+   ],
+   "doSang": [
+    "Bình"
+   ]
+  }
+ },
+ {
+  "ma": "PHUMAU-LT-01",
+  "nhom": "LT",
+  "goc": "Liêm Trinh miếu/vượng, gặp Thiên Phủ, Hóa Lộc, Xương Khúc: gia đình có nề nếp, cha mẹ có uy tín; đồng Thiên Phủ thì giảm bớt xung khắc.",
+  "nguonGoc": "TT (\"天府同免刑\"); WD9 (đắc gặp Phủ, Lộc, Xương Khúc: nề nếp, uy tín); WD12 (có Phủ Tướng thì giảm hình khắc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Liêm Trinh"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "PHUMAU-LT-02",
+  "nhom": "LT",
+  "goc": "Liêm Trinh hãm (Mão, Tỵ, Dậu, Hợi) hoặc đồng Tham Lang, Thất Sát, Phá Quân, gặp sát tinh: cha mẹ nghiêm khắc, khó bày tỏ tình cảm, dễ có khoảng cách; nhiều sách khuyên tự lập, sống xa nhà sớm thì quan hệ êm hơn. *(sách gốc diễn đạt nặng, đã trung tính hóa)*",
+  "nguonGoc": "TT (\"廉貞難為父母…貪狼同早刑，七殺孤克…破軍同早刑\"); WD5 (\"Liêm ở Phụ mẫu: con phải lánh xa, đỡ khắc cha mẹ\"); WD9 (hãm: nghiêm khắc, khó bộc lộ tình cảm)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Liêm Trinh"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "PHUMAU-TD-01",
+  "nhom": "TD",
+  "goc": "Thiên Đồng miếu/vượng/đắc đơn thủ: cha mẹ ôn hòa, gia đình êm; đồng Thái Âm: cha mẹ đầy đủ, hòa hợp; đồng Thiên Lương (Dần, Thân): cha mẹ khá giả.",
+  "nguonGoc": "TT (\"天同獨守廟旺無刑…太陰同父母雙全，天梁同無刑\"); WD5 (\"Đồng ở Dần, Thân: cha mẹ phú quý, thọ\"); WD9 (đắc: ôn hòa, lạc quan)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Đồng"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "PHUMAU-TD-02",
+  "nhom": "TD",
+  "goc": "Thiên Đồng hãm (Sửu, Thìn, Ngọ, Mùi, Dậu, Tuất) gặp Tứ sát hoặc Hóa Kỵ: thuở nhỏ có thể vất vả, có người nuôi dưỡng/đỡ đầu ngoài cha mẹ; đồng Cự Môn thì kém hòa, cách biệt thế hệ.",
+  "nguonGoc": "TT (\"加四殺重拜父母，巨門同欠和\"); WD9 (hãm: nhiều thay đổi; đồng Cự Môn: xung đột cha con; gặp Hóa Kỵ: xung khắc); WD12 (thơ ấu có thể vất vả)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Đồng"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "PHUMAU-VK-01",
+  "nhom": "VK",
+  "goc": "Vũ Khúc miếu/vượng, gặp Thiên Phủ, Thiên Tướng, Lộc Tồn, Hóa Lộc/Khoa: kinh tế gia đình ổn định, cha mẹ thực tế.",
+  "nguonGoc": "WD12 (nhập miếu có Phủ, Tướng, Hóa Lộc: cha mẹ giàu có); WD9 (đắc gặp Lộc Tồn, Khoa, Phủ: kinh tế ổn); TT (Thiên Phủ mục: \"廉貞武曲同，在廟旺無刑\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Vũ Khúc"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "PHUMAU-VK-02",
+  "nhom": "VK",
+  "goc": "Vũ Khúc hãm (Tỵ, Hợi — đồng Phá Quân) hoặc đồng Thất Sát, Tham Lang, gặp sát tinh: quan hệ cứng rắn, dễ xa cách sớm; sách nói nếu rời nền cũ, tự lập thì nhẹ hơn.",
+  "nguonGoc": "TT (\"武曲克早，退祖業不刑，貪狼同刑克，七殺同有刑\"); WD12 (lạc hãm: dễ xung khắc); WD9 (đồng Sát, Phá: khó hòa hợp)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Vũ Khúc"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "PHUMAU-TDU-01",
+  "nhom": "TDU",
+  "goc": "Thái Dương miếu/vượng (Dần, Mão, Thìn, Tỵ, Ngọ): quan hệ với cha tốt, cha có uy tín; đồng Thiên Lương cũng tốt.",
+  "nguonGoc": "TT (\"太陽入廟無克…天梁同無刑\"); WD12 (nhập miếu có cát: cha giàu có); WD9 (đắc: cha con tốt; đồng Lương ở Mão: hưởng phúc cha mẹ)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Dương"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "PHUMAU-TDU-02",
+  "nhom": "TDU",
+  "goc": "Thái Dương hãm (Tý, Thân, Dậu, Tuất, Hợi), gặp sát tinh: dễ có khoảng cách hoặc bất đồng với cha, cha bận rộn ít gần gũi; nên chủ động vun đắp. *(sách gốc nói \"克父\", đã trung tính hóa)*",
+  "nguonGoc": "TT (\"陷地克父，加羊陀火鈴空劫克父母早\"); WD5 (\"Nhật (hãm) ở Thân: xung khắc, cãi cọ\"); WD9 (hãm: khoảng cách, cha bận rộn)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Dương"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "PHUMAU-TDU-03",
+  "nhom": "TDU",
+  "goc": "Thái Dương đồng Cự Môn gặp sát tinh: dễ tranh luận với cha.",
+  "nguonGoc": "TT (\"巨門同加四殺空劫早克\"); WD9 (đồng Cự Môn: xung đột cha con); WD5 (\"Cự môn ở Dần Thân tại Phụ mẫu\" bất lợi)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Dương"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "PHUMAU-TCO-01",
+  "nhom": "TCO",
+  "goc": "Thiên Cơ miếu/vượng: duyên cha mẹ thuận, cha mẹ có học thức; đồng Thái Âm hoặc Thiên Lương không gặp sát cũng êm.",
+  "nguonGoc": "TT (\"天機廟旺無刑…太陰同免刑，天梁同無刑，俱要無殺\"); WD9 (đắc: cha mẹ có học thức; đồng Âm ít mâu thuẫn; đồng Lương thân thiết)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Cơ"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "PHUMAU-TCO-02",
+  "nhom": "TCO",
+  "goc": "Thiên Cơ hãm (Dần, Hợi) gặp sát tinh: hoàn cảnh gia đình biến động, có thể sống với hai bên gia đình hoặc có cha mẹ nuôi; đồng Cự Môn thì sớm có khoảng cách.",
+  "nguonGoc": "TT (\"陷地逢羊陀火鈴空劫，二姓寄居，重拜父母，或過房入贅…巨門早刑\"); WD12 (gặp sát tinh: gia cảnh không trọn vẹn; gặp Thiên Mã: xa nhà); WD9 (đồng Cự Môn: khó khăn thời thơ ấu)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Cơ"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "PHUMAU-TP-01",
+  "nhom": "TP",
+  "goc": "Thiên Phủ miếu/vượng/đắc: cha mẹ đầy đủ, gia đình ổn định; đồng Tử Vi, hoặc đồng Liêm/Vũ ở vị trí sáng cũng tốt.",
+  "nguonGoc": "TT (\"天府父母雙全，紫微同亦無刑，廉貞武曲同，在廟旺無刑\"); WD5 (\"Phủ: cha mẹ đều thọ\"); WD12 (tương đối tốt, gia đình ổn định)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Phủ"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "PHUMAU-TP-02",
+  "nhom": "TP",
+  "goc": "Thiên Phủ bình hòa (Sửu, Mão, Dậu) hoặc gặp sát tinh, Không Kiếp: kinh tế gia đình có áp lực, nên quan tâm chăm sóc cha mẹ nhiều hơn. *(sách gốc nói \"主傷\", đã trung tính hóa)*",
+  "nguonGoc": "TT (\"加羊陀火鈴空劫主傷\"); WD9 (hãm: áp lực tài chính); WD12 (sát tinh đồng cung: cha mẹ dễ yếu)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Phủ"
+   ],
+   "doSang": [
+    "Bình"
+   ]
+  }
+ },
+ {
+  "ma": "PHUMAU-TA-01",
+  "nhom": "TA",
+  "goc": "Thái Âm miếu/vượng (Tý, Thân, Dậu, Tuất, Hợi): quan hệ với mẹ gần gũi, mẹ chăm lo; đồng Thái Dương không gặp sát: cha mẹ đầy đủ; đồng Thiên Đồng rất đẹp.",
+  "nguonGoc": "TT (\"太陰入廟無克…太陽同無四殺父母雙全，天機同無刑天同同極美\"); WD12 (nhập miếu có cát: mẹ song toàn); WD9 (đắc: mẹ chăm lo)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Âm"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "PHUMAU-TA-02",
+  "nhom": "TA",
+  "goc": "Thái Âm hãm (Dần, Mão, Thìn, Tỵ, Ngọ) hoặc gặp sát tinh, Hóa Kỵ: dễ có khoảng cách hoặc ít thấu hiểu với mẹ, có thể sống xa nhà sớm; nên chủ động chia sẻ. *(sách gốc nói \"克母\", đã trung tính hóa)*",
+  "nguonGoc": "TT (\"加羊陀火鈴克母，不然過房棄祖\"); WD5 (\"Nguyệt (hãm)…: xung, cãi cọ\"); WD9 (hãm: lo âu, ít thấu hiểu)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Âm"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "PHUMAU-THL-01",
+  "nhom": "THL",
+  "goc": "Tham Lang miếu/vượng (Sửu, Thìn, Mùi, Tuất): cha mẹ khá giả, thông minh, giao tiếp cởi mở; đồng Tử Vi không gặp sát thì cha mẹ đầy đủ.",
+  "nguonGoc": "TT (\"紫微同無殺加雙全\"); WD12 (nhập miếu: cha mẹ giàu, thông minh); WD9 (đắc gặp Lộc, Xương Khúc: cởi mở)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tham Lang"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "PHUMAU-THL-02",
+  "nhom": "THL",
+  "goc": "Tham Lang hãm (Tý, Mão, Tỵ, Ngọ, Dậu, Hợi): sớm rời gia đình gốc, có thể có cha mẹ nuôi/đỡ đầu; đồng Liêm Trinh dễ cô đơn, ít được che chở.",
+  "nguonGoc": "TT (\"貪狼陷地早棄祖，重拜過房，入贅，廉貞同早刑主孤單\"); WD12 (lạc hãm: dễ ly tán); WD9 (hãm gặp Kỵ, Không Kiếp: biến động; đồng Liêm: xung khắc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tham Lang"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "PHUMAU-CM-01",
+  "nhom": "CM",
+  "goc": "Cự Môn miếu/vượng, gặp Hóa Lộc, Hóa Quyền, Lộc Tồn, Xương Khúc: cha mẹ có học thức, giao tiếp tốt, ít trắc trở.",
+  "nguonGoc": "WD9 (đắc gặp Lộc, Quyền, Xương Khúc: học thức, giao tiếp tốt); WD12 (gặp Lộc, Quyền, Lộc Tồn thì tốt)",
+  "nguon": [],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Cự Môn"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "PHUMAU-CM-02",
+  "nhom": "CM",
+  "goc": "Cự Môn hãm (Sửu, Thìn, Tỵ, Mùi, Tuất): dễ hiểu lầm, tranh cãi, sớm rời gia đình gốc; đồng Thái Dương ít hòa; gặp sát tinh thì gia đình không trọn vẹn.",
+  "nguonGoc": "TT (\"巨門陷地傷克棄祖過房，太陽同少和…加羊陀火鈴空劫父母不周全\"); WD9 (hãm: hiểu lầm, tranh cãi); WD12 (gặp sát hoặc Kỵ: trắc trở)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Cự Môn"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "PHUMAU-TT-01",
+  "nhom": "TT",
+  "goc": "Thiên Tướng miếu/vượng/đắc: cha mẹ hiền hậu, duyên thuận; đồng Tử Vi cũng tốt.",
+  "nguonGoc": "TT (\"天相廟旺無刑，紫微同無刑克\"); WD5 (\"Thiên Tướng (cũng như Tử Phủ): cha mẹ thọ\"); WD12 (nhập miếu: cha mẹ hiền hậu)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Tướng"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "PHUMAU-TT-02",
+  "nhom": "TT",
+  "goc": "Thiên Tướng hãm (Mão, Dậu) hoặc gặp sát tinh, Không Kiếp, Hình, Kỵ: cha mẹ nghiêm khắc, có áp lực; đồng Liêm Trinh dễ bất đồng; có Khôi Việt, Tả Hữu thì được giảm nhẹ.",
+  "nguonGoc": "TT (\"廉貞同亦刑，加羊陀火鈴空劫早刑\"); WD9 (hãm gặp Kình Đà Không Kỵ: áp lực, nghiêm khắc); WD12 (gặp sát, Hình, Kỵ giảm phúc; Khôi Việt Tả Hữu hóa giải)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Tướng"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "PHUMAU-TL-01",
+  "nhom": "TL",
+  "goc": "Thiên Lương miếu/vượng/đắc (sao chủ cung): cha mẹ nhân hậu, nhiều che chở, gia đình đầm ấm; TT nói Lương ở Phụ Mẫu \"hậu trọng uy…\".",
+  "nguonGoc": "TT (卷一: Thiên Lương \"在父母宮則厚重威…\"); WD5 (\"Lương ở Phụ mẫu: cha mẹ thọ\"); WD9 (đắc: nhân hậu, phúc khí tốt)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Lương"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "PHUMAU-TL-02",
+  "nhom": "TL",
+  "goc": "Thiên Lương hãm (Tỵ, Dậu, Hợi) gặp Kình Đà Hỏa Linh: dễ cô đơn, sớm xa gia đình gốc, có thể được người khác nuôi dưỡng/đỡ đầu. *(sách gốc nói \"孤克…更名寄人\", đã trung tính hóa)*",
+  "nguonGoc": "TT (\"天梁陷地，加羊陀火鈴孤克，棄祖入贅，更名寄人\"); WD9 (hãm gặp Đà, Hỏa, Kiếp, Hình: áp lực); WD12 (hãm: sản nghiệp dễ tiêu tán)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Lương"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "PHUMAU-TL-03",
+  "nhom": "TL",
+  "goc": "Thiên Lương đồng Thiên Cơ: thuận; đồng Thiên Đồng không gặp sát: thuận; đồng Thái Dương: khoảng cách đến muộn.",
+  "nguonGoc": "TT (\"天機同無刑…天同同加四殺有刑，無殺無刑…太陽同克遲\"); WD9 (đồng Thiên Đồng: hòa hợp, trừ khi có Hóa Kỵ)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Lương"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "PHUMAU-TS-01",
+  "nhom": "TS",
+  "goc": "Thất Sát miếu/vượng/đắc gặp Hóa Quyền, Khôi Việt, Tả Hữu: đương số ý chí mạnh, vượt khó; đồng Tử Vi gặp cát tinh thì duyên cha mẹ thuận.",
+  "nguonGoc": "TT (\"紫微同加吉星無刑\"); WD9 (đắc gặp Quyền, Khôi Việt, Tả Hữu: ý chí mạnh); WD12 (Tử Vi, Thiên Tướng hội chiếu: hóa nguy thành an)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thất Sát"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "PHUMAU-TS-02",
+  "nhom": "TS",
+  "goc": "Thất Sát hãm (Mão, Thìn, Dậu, Tuất, Hợi) hoặc đồng Vũ Khúc, Liêm Trinh, gặp sát tinh: sớm tự lập, xa gia đình gốc, tính hai thế hệ dễ va chạm. *(sách gốc nói \"克早離祖，六親骨肉孤獨\", đã trung tính hóa)*",
+  "nguonGoc": "TT (\"七殺克早離祖…武曲同亦刑，廉貞同刑早\"); WD5 (\"Sát, Phá\" bất lợi cho cha mẹ); WD9 (hãm gặp Kình Đà Hỏa Kiếp: nóng tính, bất đồng)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thất Sát"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "PHUMAU-PQ-01",
+  "nhom": "PQ",
+  "goc": "Phá Quân miếu/vượng gặp Hóa Lộc, Hóa Quyền, Tả Hữu: đương số tự lập, vươn lên; đồng Tử Vi thì duyên cha mẹ thuận.",
+  "nguonGoc": "TT (\"紫微同無刑\"); WD9 (đắc gặp Lộc, Quyền, Tả Hữu: tự lập vươn lên); WD12 (ưa Tử Vi và cát tinh)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Phá Quân"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "PHUMAU-PQ-02",
+  "nhom": "PQ",
+  "goc": "Phá Quân hãm (Dần, Mão, Tỵ, Thân, Dậu, Hợi) hoặc đồng Vũ Khúc, Liêm Trinh: sớm xa gia đình gốc; sách cổ nói đổi họ tên, gửi nuôi thì nhẹ hơn — nhóm diễn đạt là \"tự lập sớm, sống xa có thể giúp quan hệ êm hơn\". *(sách gốc diễn đạt nặng, đã trung tính hóa)*",
+  "nguonGoc": "TT (\"破軍克早離祖，更名寄養免刑，武曲同克早，廉貞同亦早克\"); WD5 (\"Sát, Phá: …con nên lánh sớm\"); WD12 (ngại Vũ, Liêm, nhất là Hóa Kỵ)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Phá Quân"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "PHUMAU-SP-01",
+  "nhom": "SP",
+  "goc": "Thiên Khôi, Thiên Việt: cha mẹ có danh vị, gặp cát tinh thì đầy đủ; thường có học thức.",
+  "nguonGoc": "TT (\"魁鉞主父母榮貴同吉星雙全\"); WD12 (cha mẹ có học thức, chức quyền)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUMAU-SP-02",
+  "nhom": "SP",
+  "goc": "Văn Xương, Văn Khúc miếu gặp cát tinh: duyên thuận, cha mẹ có học, yêu nghệ thuật; gặp sát thì có khoảng cách.",
+  "nguonGoc": "TT (\"文昌加吉星入廟無刑…文曲獨守入廟無刑\"); WD12 (cha mẹ có học thức, yêu nghệ thuật)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUMAU-SP-03",
+  "nhom": "SP",
+  "goc": "Tả Phụ, Hữu Bật đơn thủ: duyên thuận, được cha mẹ che chở (Hữu Bật gặp cát tinh); gặp sát tinh thì có thể sống với hai bên gia đình.",
+  "nguonGoc": "TT (\"左輔獨守無刑…右弼獨守無刑，加吉星得父母庇蔭\"); WD12 (cha mẹ khéo léo, giúp đỡ)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUMAU-SP-04",
+  "nhom": "SP",
+  "goc": "Lộc Tồn: duyên thuận, cha mẹ có tài sản; gặp Không Kiếp và sát tinh thì tài sản cha mẹ thời trẻ có hao, đương số thường tự gây dựng.",
+  "nguonGoc": "TT (\"祿存無克，加空劫羊陀火鈴，早年有破父財\"); WD12 (cha mẹ có tài sản; bản thân dễ tự gây dựng hơn hưởng gia sản)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUMAU-SP-05",
+  "nhom": "SP",
+  "goc": "Kình Dương, Đà La: TT xếp Phụ Mẫu vào ba cung kỵ Kình Đà nhất; thời nhỏ dễ vất vả, sớm rời nền cũ, nhất là khi gặp Nhật Nguyệt; gặp nhiều cát tinh thì nhẹ.",
+  "nguonGoc": "TT (卷一: \"怕臨兄弟、田宅、父母三宮\"; 卷二: \"擎羊刑克早會日月重重退祖，加吉星眾免刑…陀羅幼年刑傷\"); WD12 (Kình Đà: bất hòa)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUMAU-SP-06",
+  "nhom": "SP",
+  "goc": "Hỏa Tinh, Linh Tinh: dễ khắc khẩu, sớm tự lập; gặp cát tinh thì bình hòa.",
+  "nguonGoc": "TT (\"火星獨守孤克…加吉星平和；鈴星刑克孤單\"); WD12 (Hỏa Linh: khắc khẩu)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUMAU-SP-07",
+  "nhom": "SP",
+  "goc": "Thiên Hình ở Phụ Mẫu (hoặc thủ Mệnh): gia đình khó trọn vẹn, đương số cứng cỏi; nhập miếu (Dần, Mão, Thân, Dậu theo spec) thì tốt hơn.",
+  "nguonGoc": "TT (卷一: Thiên Hình \"父母兄弟不得全…入廟則吉\"); WD12 (Thiên Hình là sát tinh ở cung này)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUMAU-SP-08",
+  "nhom": "SP",
+  "goc": "Thiên Khốc, Thiên Hư ở Phụ Mẫu: tài sản nhà đất gia đình dễ hao.",
+  "nguonGoc": "TT (卷一: \"哭虛…加臨父母內，破蕩賣田莊\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": true,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUMAU-CC-01",
+  "nhom": "CC",
+  "goc": "**Xét Nhật Nguyệt theo giờ sinh**: nếu Thái Dương và Thái Âm đều hãm, người sinh ban ngày lấy Thái Dương (cha), sinh ban đêm lấy Thái Âm (mẹ) làm chính để luận; sao nào \"phản bối\" (hãm, tối) thì quan hệ với người tương ứng cần chú ý vun đắp hơn. *(sách gốc nói \"先克\", đã trung tính hóa)*",
+  "nguonGoc": "TT (\"如二星具在陷地，只以人之本生時，日生者主父存，夜生者主母在…\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": true,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUMAU-CC-02",
+  "nhom": "CC",
+  "goc": "Thái Dương và Thái Âm đồng cung ở Phụ Mẫu: ở Sửu bất lợi cho phía cha (Thái Dương đắc nhưng kém hơn), ở Mùi bất lợi cho phía mẹ; nhìn chung đồng cung không sát tinh thì cha mẹ đầy đủ.",
+  "nguonGoc": "WD9 (Sửu bất lợi cho cha, Mùi bất lợi cho mẹ); TT (Thái Âm mục: \"太陽同無四殺父母雙全\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUMAU-CC-03",
+  "nhom": "CC",
+  "goc": "**Vô chính diệu**: thường sớm rời quê lập nghiệp, ít dựa vào tài sản cha mẹ; có Tuần/Triệt án ngữ thì vẫn chăm lo được cho cha mẹ nhưng dễ xa nhà sớm. Mượn chính tinh cung xung chiếu (Tật Ách) để luận, xét thêm tam hợp.",
+  "nguonGoc": "WD15 (Đặng Xuân Xuyến, dẫn *Tử Vi Chân Truyền*); WD9 (xem cung đối Tật Ách, tam hợp; nhiều sát tinh, Tuần Triệt: dễ xa cách, tự lập sớm)",
+  "nguon": [],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUMAU-HOA-01",
+  "nhom": "HOA",
+  "goc": "Hóa Lộc nhập Phụ Mẫu: cha mẹ có điều kiện, tuổi nhỏ được chăm chút.",
+  "nguonGoc": "WD12; WD9 (Lộc hỗ trợ cha mẹ/đương số)",
+  "nguon": [],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUMAU-HOA-02",
+  "nhom": "HOA",
+  "goc": "Hóa Quyền: cha mẹ có địa vị, uy quyền, có xu hướng áp đặt; đương số nên trao đổi thẳng thắn.",
+  "nguonGoc": "WD12; WD9",
+  "nguon": [],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUMAU-HOA-03",
+  "nhom": "HOA",
+  "goc": "Hóa Khoa: cha mẹ có học thức, danh tiếng; quan hệ êm.",
+  "nguonGoc": "WD12; WD9",
+  "nguon": [],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUMAU-HOA-04",
+  "nhom": "HOA",
+  "goc": "Hóa Kỵ: dễ bất hòa, hiểu lầm với cha mẹ; với Thái Âm Hóa Kỵ thì chú ý quan hệ với mẹ, Thái Dương Hóa Kỵ thì với cha. *(nguồn có câu \"tai ương, bệnh tật cho cha mẹ\" — không dùng)*",
+  "nguonGoc": "WD12; WD9",
+  "nguon": [],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUMAU-TRANH-01",
+  "nhom": "TRANH",
+  "goc": "**Cơ Âm ở Dần, Thân**: TT nói Thiên Cơ đồng Thái Âm thì \"miễn hình\" (thuận); WD5 (KHHB 41) lại nói Thiên Cơ ở Dần Thân thì bất lợi cho cha mẹ, con nên sống xa. Mặc định: theo TT, ghi chú khả năng sống xa nhà.",
+  "nguonGoc": "TT; WD5",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUMAU-TRANH-02",
+  "nhom": "TRANH",
+  "goc": "**Liêm Phủ và Liêm Tướng**: TT nói Liêm Trinh đồng Thiên Phủ \"miễn hình\"; WD9 lại nói đồng Thiên Phủ \"bất hòa\". Với Liêm Tướng, WD9 nói không hòa thuận/tai ương, còn có trang nói cha mẹ khá giả. Chưa đủ nguồn để chốt.",
+  "nguonGoc": "TT; WD9",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUMAU-TRANH-03",
+  "nhom": "TRANH",
+  "goc": "**Khuyên \"con lánh xa để đỡ khắc\"** (WD5, TT \"過房/更名寄養\"): đây là tư tưởng hóa giải mang tính tập tục. Nhóm không dùng như lời khuyên định mệnh; chỉ diễn đạt \"tự lập sớm có thể hợp với bạn\". *(Nhận xét nhóm)*",
+  "nguonGoc": "WD5; TT",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUMAU-TRANH-04",
+  "nhom": "TRANH",
+  "goc": "**Phụ Mẫu là cung \"văn thư, giấy tờ\"**: một số trang theo phái Tứ Hóa (Khâm Thiên) mở rộng Phụ Mẫu sang giấy tờ, học vấn, cấp trên. Chưa có sách PT gốc để đối chiếu; tạm chỉ dùng nghĩa \"bề trên, người đỡ đầu\".",
+  "nguonGoc": "WD9 (nhắc Khâm Thiên mở rộng); PT (chưa đối chiếu)",
+  "nguon": [
+   "Phi tinh – Tứ Hóa phái"
+  ],
+  "motNguon": true,
+  "chuaNguon": false
+ },
+ {
+  "ma": "PHUMAU-TRANH-05",
+  "nhom": "TRANH",
+  "goc": "**Tang Môn, Bạch Hổ, Thái Tuế cùng Nhật/Nguyệt**: WD5 có câu đoán về biến cố của cha/mẹ. Nhóm không dùng (không dự đoán sinh tử).",
+  "nguonGoc": "WD5",
+  "nguon": [],
+  "motNguon": false,
+  "chuaNguon": false
+ }
+]

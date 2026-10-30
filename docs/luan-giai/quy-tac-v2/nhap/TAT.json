@@ -1,0 +1,1006 @@
+[
+ {
+  "ma": "TAT-YN-01",
+  "nhom": "YN",
+  "goc": "Cung Tật Ách xem thể chất bẩm sinh, vùng cơ thể hay chức năng dễ yếu, khả năng hồi phục. (Sách gốc còn dùng để xem tai ương và \"lúc chết\"; sản phẩm không dùng phần này.)",
+  "nguonGoc": "TB (tr. 181, đoạn mở chương 11); TT (q.2 «六疾厄»); WT9 (\"the body's baseline… recurring conditions\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAT-YN-02",
+  "nhom": "YN",
+  "goc": "Trước khi xét Tật Ách phải xét Mệnh, Thân và Phúc Đức: các cung này sáng đẹp, có phúc tinh, cứu tinh thì Tật Ách xấu cũng không đáng lo; TT dạy xem sao ở Mệnh có hãm và gặp sát, Kỵ không, rồi mới xét Tật Ách.",
+  "nguonGoc": "TB (tr. 181; tr. 234, mục 20.6); TT (q.2 «六疾厄»: \"先看命宫星曜落陷加羊陀火铃空劫化忌守照如何，又看疾厄宫星曜善恶庙旺落陷如何断之\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAT-YN-03",
+  "nhom": "YN",
+  "goc": "Phải cân hai nhóm sao: nhóm \"cứu giải\" (giúp giảm, hồi phục) và nhóm \"tác họa\" (gây yếu); bù trừ hai nhóm mới kết luận.",
+  "nguonGoc": "TB (tr. 181, mục 11.1, 11.2); TT (q.2 «六疾厄»: xét \"善恶庙旺落陷\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAT-YN-04",
+  "nhom": "YN",
+  "goc": "Tật Ách xung chiếu Phụ Mẫu (spec mục 2.4): thể chất có phần thừa hưởng từ cha mẹ; NL coi đây là trục \"nhân quả gia đình\" giữa Phụ Mẫu và Tật Ách. Tam hợp Tật Ách là Huynh Đệ và Điền Trạch.",
+  "nguonGoc": "NL (tr. 129–131, \"Phụ Mẫu liên quan gì tới Tật Ách\"); WT9 (Health–Parents axis, \"inherited body\")",
+  "nguon": [
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAT-YN-05",
+  "nhom": "YN",
+  "goc": "Mỗi sao tượng trưng cho bộ phận, chức năng trong cơ thể; phải kết hợp tính chất sao với biểu tượng để suy ra vùng cần chú ý.",
+  "nguonGoc": "TB (tr. 181; tr. 235, mục 20.6: \"nhận xét biểu tượng những cơ thể trong người bằng các sao\"); WT9 (ngũ hành sao ↔ cơ quan)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAT-TV-01",
+  "nhom": "TV",
+  "goc": "Tử Vi (đơn thủ Tý, Ngọ; Tử Phủ; Tử Sát) là sao cứu giải: thể trạng khá, ít bệnh, có bệnh dễ gặp thầy thuốc.",
+  "nguonGoc": "TB (tr. 181, mục 11.1.1); TT (q.2 «六疾厄»: \"紫微灾少，天府同亦少\"); WT8 (Tử Vi \"hóa giải nhiều tai ương\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tử Vi"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "TAT-TV-02",
+  "nhom": "TV",
+  "goc": "Tử Vi gặp Kình Dương, Linh Tinh: nên chú ý những vấn đề âm thầm, khó tự nhận biết (khám định kỳ); gặp Không Kiếp: chú ý tim mạch và căng thẳng tinh thần; Tử Phá: chú ý khí huyết, tuần hoàn.",
+  "nguonGoc": "TT (q.2 «六疾厄»: \"如加破军血气不和，同羊铃主有暗疾，加空劫主疢疾心气疾\"); WT8 (Tử Vi với Không Kiếp: mắt, dạ dày; với Phá Quân, Kình Dương: thần kinh)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tử Vi"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "TAT-LT-01",
+  "nhom": "LT",
+  "goc": "Liêm Trinh vượng/miếu gặp cát tinh: thể trạng bình hòa. Xu hướng chung của sao: nên chú ý vùng lưng, tay chân, da (thời nhỏ hay mụn nhọt).",
+  "nguonGoc": "TT (q.2 «六疾厄»: \"廉贞襁褓灾疮腰足之疾，入庙加吉和平\"); TB (tr. 182, mục 11.2.1: \"tỳ vết ở chân tay hay ở lưng\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Liêm Trinh"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "TAT-LT-02",
+  "nhom": "LT",
+  "goc": "Liêm Trinh hãm, đồng cung Tham Lang (Tỵ, Hợi): nên chú ý mắt và nghỉ ngơi điều độ *(sách gốc có ý về tai nạn/bệnh nặng; đã lược)*.",
+  "nguonGoc": "TT (q.2 «六疾厄»: \"遇贪狼同，陷地眼疾灾多\"); TB (tr. 182: \"Tham đồng cung: mắt kém\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Liêm Trinh"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TAT-LT-03",
+  "nhom": "LT",
+  "goc": "Liêm Sát, Liêm Phá, Liêm Phủ: TT cho là \"ít tai ương\"; TB lại ghi Liêm Sát mắt kém, Liêm Phá tay chân có vết *(phần nặng đã lược)*. Xem TAT-TRANH-02.",
+  "nguonGoc": "TT (q.2 «六疾厄»: \"七杀破军天府同灾少\"); TB (tr. 182, 185)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Liêm Trinh"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "TAT-TD-01",
+  "nhom": "TD",
+  "goc": "Thiên Đồng miếu/vượng: ít bệnh; xu hướng chung nên chú ý tiêu hóa, bụng.",
+  "nguonGoc": "TT (q.2 «六疾厄»: \"天同入庙灾少\"); TB (tr. 182, mục 11.2.2: \"bộ máy tiêu hóa không được lành mạnh\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Đồng"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "TAT-TD-02",
+  "nhom": "TD",
+  "goc": "Thiên Đồng hãm hoặc gặp Hóa Kỵ: chú ý dạ dày, ruột, gan. Đồng Cự: chú ý tim và cảm xúc (\"tâm khí\"); Đồng Âm gặp Kình, Hỏa: chú ý khí huyết.",
+  "nguonGoc": "TB (tr. 182: \"Cự đồng cung: bệnh tâm khí; Nguyệt đồng cung: bệnh huyết khí; Kỵ đồng cung: đau dạ dày hay ruột gan\"); TT (q.2 «六疾厄»: \"巨门同心气疾，太阴同加羊火血气疾\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Đồng"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TAT-VK-01",
+  "nhom": "VK",
+  "goc": "Vũ Khúc sáng; Vũ Tham ở miếu (Sửu, Mùi): thể trạng khá. Xu hướng chung: chú ý da, tay chân, thời nhỏ hay va chạm nhẹ.",
+  "nguonGoc": "TT (q.2 «六疾厄»: \"武曲襁褓灾迍手足头面有伤…贪狼同庙旺无疾\"); TB (tr. 182, mục 11.2.3: \"Bệnh ngoài da, chân tay có tỳ vết\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Vũ Khúc"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "TAT-VK-02",
+  "nhom": "VK",
+  "goc": "Vũ Khúc gặp Kình, Đà: hay ốm vặt; Vũ Tướng: nên chú ý vấn đề âm thầm, khám định kỳ; Vũ Sát: chú ý tiêu hóa, vùng hậu môn – trực tràng; Vũ Phá (Vũ hãm tại Tỵ, Hợi): chú ý mắt.",
+  "nguonGoc": "TB (tr. 182, 184, 185: \"Tướng đồng cung: có ám tật\", \"Sát đồng cung: bệnh ở bộ máy tiêu hóa… bệnh trĩ\", Phá \"Vũ đồng cung: mắt kém\"); TT (q.2 «六疾厄»: \"羊陀同一生常有灾，天相同招暗疾，七杀同血疾\"; mục 破军 \"武曲同目视疾\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Vũ Khúc"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TAT-VK-03",
+  "nhom": "VK",
+  "goc": "Vũ Tham hãm gặp tứ sát: chú ý mắt, tay chân, vùng hậu môn và da.",
+  "nguonGoc": "TT (q.2 «六疾厄»: \"陷地加四杀，眼手足疾痔疾疯疮\"); TT (q.1 «羊陀火铃四星总论»: \"武曲并贪狼…疾厄若逢之，四时不离着\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": true,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Vũ Khúc"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TAT-TDU-01",
+  "nhom": "TDU",
+  "goc": "Thái Dương (kể cả khi sáng): chú ý vùng đầu, huyết áp, mạch máu (hay nhức đầu).",
+  "nguonGoc": "TB (tr. 183, mục 11.2.4: \"Căng mạch máu, hay nhức đầu\"); TT (q.2 «六疾厄»: \"太阳头风\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Dương"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "TAT-TDU-02",
+  "nhom": "TDU",
+  "goc": "Thái Dương hãm, hoặc gặp Riêu, Đà, Kỵ, hoặc Nhật Nguyệt gặp Hóa Kỵ, Kình Đà: chú ý mắt, nên khám mắt định kỳ *(phần nặng đã lược)*.",
+  "nguonGoc": "TB (tr. 183: \"Sáng sủa, Riêu, Đà, Kỵ: đau mắt\"); TT (q.2 «六疾厄»: \"太阴同加化忌，羊陀主眼目有伤，陷宫亦主目疾欠光明\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Dương"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TAT-TCO-01",
+  "nhom": "TCO",
+  "goc": "Thiên Cơ sáng: thời nhỏ hay ốm vặt; xu hướng chung chú ý da, gân cơ, khớp (tê mỏi).",
+  "nguonGoc": "TT (q.2 «六疾厄»: \"天机襁褓多灾\"); TB (tr. 183, mục 11.2.5: \"Bệnh ngoài da hay bệnh tê thấp\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Cơ"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "TAT-TCO-02",
+  "nhom": "TCO",
+  "goc": "Thiên Cơ hãm (Hợi) hoặc gặp Kình Đà, Hỏa: chú ý vùng đầu mặt, mắt và sức mạnh tay chân.",
+  "nguonGoc": "TT (q.2 «六疾厄»: \"陷地头面破相…加羊火陷宫有目疾，四肢无力\"); TB (tr. 183: \"Kình, Đà: chân tay yếu gân\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Cơ"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TAT-TCO-03",
+  "nhom": "TCO",
+  "goc": "Cơ Cự: chú ý khí huyết; Cơ Lương: chú ý vùng bụng dưới, hệ bài tiết – sinh dục (\"hạ bộ\"); Cơ Âm: chú ý da (mụn nhọt). Hai sách khớp cả ba ý.",
+  "nguonGoc": "TB (tr. 183: \"Cự đồng cung: bệnh khí huyết; Lương đồng cung: bệnh ở hạ bộ; Nguyệt đồng cung: có nhiều mụn nhọt\"); TT (q.2 «六疾厄»: \"巨门同血气疾，天梁同下部疾，太阴同疮灾\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Cơ"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "TAT-TP-01",
+  "nhom": "TP",
+  "goc": "Thiên Phủ là sao cứu giải: ít bệnh, có bệnh thì có cách chữa; NL nói Phủ, Tướng ở Tật Ách thì bệnh thường nhẹ, \"dễ gặp thầy thuốc\".",
+  "nguonGoc": "TT (q.2 «六疾厄»: \"天府灾少临灾有救\"); TB (tr. 181, mục 11.1.1); NL (tr. 131)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Phủ"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "TAT-TP-02",
+  "nhom": "TP",
+  "goc": "Thiên Phủ gặp Kình, Đà, Hỏa, Linh, Không, Kiếp: sức đề kháng giảm, nên chú ý hệ thần kinh – da, dạ dày, khớp; khám định kỳ.",
+  "nguonGoc": "TT (q.2 «六疾厄»: \"加羊陀火铃空劫有疯疾\"); WT8 (Thiên Phủ: dạ dày, tê chân tay, đau khớp)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Phủ"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "TAT-TA-01",
+  "nhom": "TA",
+  "goc": "Thái Âm miếu/vượng: ít bệnh; xu hướng chung chú ý bụng, tiêu hóa.",
+  "nguonGoc": "TT (q.2 «六疾厄»: \"太阴庙旺无灾\"); TB (tr. 183, mục 11.2.6: \"Đau bụng\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Âm"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "TAT-TA-02",
+  "nhom": "TA",
+  "goc": "Thái Âm hãm: dễ mệt vì làm quá sức, nên chú ý hô hấp (phổi); gặp Riêu, Đà, Kỵ hoặc Kình Đà Hỏa Linh: chú ý mắt.",
+  "nguonGoc": "TB (tr. 183: \"Mờ ám: đau phổi; Mờ ám, Riêu, Đà, Kỵ: mắt kém\"); TT (q.2 «六疾厄»: \"陷地灾多主劳伤之症…羊陀火铃眼目疾\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Âm"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TAT-THL-01",
+  "nhom": "THL",
+  "goc": "Tham Lang đắc (Dần, Thân) đơn thủ: chú ý chân; Vũ Tham miếu: ít bệnh.",
+  "nguonGoc": "TB (tr. 183, mục 11.2.7: \"Đơn thủ tại Dần, Thân: bệnh ở chân\"); TT (q.2 «六疾厄» mục 武曲: \"贪狼同庙旺无疾\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tham Lang"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "TAT-THL-02",
+  "nhom": "THL",
+  "goc": "Tham Lang hãm (Tý, Ngọ): nên giữ lối sống điều độ (ăn uống, vui chơi), chú ý gan, hệ sinh sản *(sách gốc có ý về bệnh do chơi bời, tai nạn; đã trung tính hóa và lược)*. TT không có mục Tham Lang đơn thủ ở Tật Ách.",
+  "nguonGoc": "TB (tr. 183–184: \"Đơn thủ tại Tý, Ngọ: chơi bời mà mắc bệnh\"); WT8 (Tham Lang: gan, hệ sinh dục)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tham Lang"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TAT-CM-01",
+  "nhom": "CM",
+  "goc": "Cự Môn: thời trẻ da hay mụn nhọt; chú ý vùng bụng dưới.",
+  "nguonGoc": "TB (tr. 184, mục 11.2.8: \"Bệnh ở hạ bộ… lúc ít tuổi có nhiều mụn nhọt\"); TT (q.2 «六疾厄»: \"巨门少年脓血之厄\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Cự Môn"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "TAT-CM-02",
+  "nhom": "CM",
+  "goc": "Cự Môn gặp Kình Dương, Hỏa Tinh: nên điều độ rượu bia và sinh hoạt; gặp Hóa Kỵ: chú ý tai, mắt; Cự Môn với Kình Đà ở Mệnh hoặc Tật Ách: thể trạng dễ gầy yếu, cần bồi bổ *(phần nặng đã lược)*.",
+  "nguonGoc": "TB (tr. 184: \"Kình, Hỏa đồng cung: bệnh do tửu sắc gây nên\"); TT (q.2 «六疾厄»: \"加羊火酒色之疾，加忌有耳目之忧\"; q.3 «论诸星同垣…»: \"巨门羊陀于身命疾厄羸黄困弱\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Cự Môn"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "TAT-TT-01",
+  "nhom": "TT",
+  "goc": "Thiên Tướng sáng: ít bệnh; xu hướng chung chú ý vùng đầu, mặt, da.",
+  "nguonGoc": "TT (q.2 «六疾厄»: \"天相灾少\"); TB (tr. 184, mục 11.2.9: \"Bệnh ở đầu hay mặt\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Tướng"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "TAT-TT-02",
+  "nhom": "TT",
+  "goc": "Thiên Tướng hãm (Mão, Dậu): chú ý khí huyết và da (sắc mặt kém tươi); hai sách khớp gần nguyên văn.",
+  "nguonGoc": "TB (tr. 184: \"Đơn thủ tại Mão, Dậu: da mặt vàng, có bệnh thuộc về khí huyết hay bệnh ngoài da\"); TT (q.2 «六疾厄»: \"面皮黄肿血气之疾\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Tướng"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TAT-TL-01",
+  "nhom": "TL",
+  "goc": "Thiên Lương sáng là sao cứu giải: giảm bệnh, có bệnh dễ qua; ở Tý, Sửu (đắc) đơn thủ chỉ hay cảm nóng lạnh nhẹ, không đáng lo.",
+  "nguonGoc": "TB (tr. 181, mục 11.1.1; tr. 184, mục 11.2.10); WT8 (Thiên Lương \"giải trừ được bệnh tật\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Lương"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "TAT-TL-02",
+  "nhom": "TL",
+  "goc": "Thiên Lương hãm (Hợi, Tỵ) hoặc gặp Kình Dương, Không Kiếp: bệnh dễ kéo dài, nên chữa dứt điểm; chú ý tỳ vị, tiêu hóa. Đồng Lương gặp tứ sát: chú ý tim, cảm xúc.",
+  "nguonGoc": "TB (tr. 184: Hợi \"mắc bệnh hàn nhiệt\"); WT8 (Kình, Không làm bệnh kéo dài; tỳ vị); TT (q.2 «六疾厄» mục 天同: \"天梁同加四杀心气疾\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Lương"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TAT-TS-01",
+  "nhom": "TS",
+  "goc": "Thất Sát (kể cả miếu): thời nhỏ sức khỏe kém hơn, cần chăm sóc kỹ; lớn lên chú ý vùng hậu môn – trực tràng.",
+  "nguonGoc": "TB (tr. 184, mục 11.2.11: \"lúc ít tuổi sức khỏe rất kém\"); TT (q.2 «六疾厄»: \"七杀幼年多灾，长主痔疾\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thất Sát"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "TAT-TS-02",
+  "nhom": "TS",
+  "goc": "Thất Sát gặp sát tinh, hoặc Vũ Sát: chú ý tiêu hóa, tay chân; gặp Đại Hao/Tiểu Hao, Mộc Dục, Hóa Kỵ: nên khám sức khỏe tổng quát định kỳ *(sách gốc có ý về bệnh nặng, phẫu thuật; đã lược)*.",
+  "nguonGoc": "TB (tr. 184); TT (q.2 «六疾厄»: \"武曲同加四杀手足伤残\" — đã trung tính hóa)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thất Sát"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "TAT-PQ-01",
+  "nhom": "PQ",
+  "goc": "Phá Quân (kể cả miếu Tý, Ngọ): cơ địa \"nóng\", thời nhỏ da hay mụn nhọt, mẩn ngứa; Tử Phá: ít bệnh.",
+  "nguonGoc": "TB (tr. 184, mục 11.2.12: \"Máu nóng, nên lúc ít tuổi có nhiều mụn nhọt, chốc lở\"); TT (q.2 «六疾厄»: \"破军幼年疮癞浓血羸黄…紫微同灾少\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Phá Quân"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "TAT-PQ-02",
+  "nhom": "PQ",
+  "goc": "Phá Quân hãm hoặc gặp Kình, Đà, Hình, Kỵ: dễ căng thẳng, nóng nảy, nên chăm sức khỏe tinh thần; Vũ Phá: chú ý mắt *(sách gốc có ý về tai nạn, tù tội, bệnh tâm thần; đã lược)*.",
+  "nguonGoc": "TB (tr. 185: \"Vũ đồng cung: mắt kém\"; \"Kình, Đà, Hình, Kỵ… có tật ở mắt\"); TT (q.2 «六疾厄»: \"武曲同目视疾\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Phá Quân"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TAT-SP-01",
+  "nhom": "SP",
+  "goc": "Hóa Khoa, Thiên Giải, Địa Giải, Giải Thần: sao cứu giải; có bệnh dễ gặp thầy gặp thuốc.",
+  "nguonGoc": "TB (tr. 181, mục 11.1.2, 11.1.3); KL (Chương Ba, Coi các cung — cung Tật: \"cứu tinh như Thiên giải, Quan Phúc, Giải thần… thì đỡ lo tai nạn\"; mục Hóa Khoa: \"Hóa khoa cứu giải bệnh tật\") (bản quét, đã đọc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAT-SP-02",
+  "nhom": "SP",
+  "goc": "Tả Phù, Hữu Bật: đơn thủ thì bình hòa, lúc cần có người giúp; gặp nhiều sát tinh thì kém đi.",
+  "nguonGoc": "TB (tr. 182, mục 11.1.9); TT (q.2 «六疾厄»: \"左辅独守平和，加吉星灾少…右弼独守逢灾有救，见羊陀火铃空劫灾多\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAT-SP-03",
+  "nhom": "SP",
+  "goc": "Văn Xương, Văn Khúc đơn thủ: ít bệnh; gặp sát tinh thì kém.",
+  "nguonGoc": "TT (q.2 «六疾厄»: \"文昌独守灾少…文曲灾少加吉星一世无灾\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": true,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAT-SP-04",
+  "nhom": "SP",
+  "goc": "Lộc Tồn: sao cứu giải, nhưng gặp nhiều sát tinh thì mất tác dụng; TT nói thời nhỏ hay ốm, gặp cát tinh thì ít bệnh.",
+  "nguonGoc": "TB (tr. 181, mục 11.1.4); TT (q.2 «六疾厄»: \"禄存少年多灾，加吉星灾少\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAT-SP-05",
+  "nhom": "SP",
+  "goc": "Tuần, Triệt án ngữ Tật Ách: nhìn chung giảm bớt bệnh tật.",
+  "nguonGoc": "TB (tr. 182, mục 11.1.10: \"Suốt đời mạnh khỏe\"); NL (tr. 131: Ách có Tuần hay Triệt thì giảm cường độ tật ách)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAT-SP-06",
+  "nhom": "SP",
+  "goc": "Kình Dương: chú ý tai, vùng hậu môn, đau đầu, tay chân thiếu lực; Đà La: thời nhỏ hay đau răng, chú ý răng miệng, vùng đầu mặt.",
+  "nguonGoc": "TB (tr. 185, mục 11.2.13, 11.2.14: Kình \"bệnh ở tai… trĩ\", Đà \"lúc ít tuổi hay đau răng\"); TT (q.2 «六疾厄»: \"陀罗幼年灾，磨唇齿头面…擎羊有头疯之症，或四肢欠力\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAT-SP-07",
+  "nhom": "SP",
+  "goc": "Kình Đà cùng thủ Tật Ách: chú ý mắt.",
+  "nguonGoc": "TT (q.1 «斗数发微论»: \"羊陀守疾厄，眼目昏盲\" — đã trung tính hóa); TB (tr. 185–186, Đà La gặp Riêu Kỵ \"đáng lo ngại nhất là bệnh đau mắt\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAT-SP-08",
+  "nhom": "SP",
+  "goc": "Hỏa Tinh, Linh Tinh: sáng thì thân thể tráng kiện; hãm thì hay sốt, nóng lạnh.",
+  "nguonGoc": "TB (tr. 185, mục 11.2.15); KL (Chương Hai, mục Hỏa Linh: đắc địa \"Sức khỏe dồi dào\", hãm địa nghiêng về hệ thần kinh, chi tiết khác TB) (bản quét, đã đọc); NL (Hùng khí của lục sát tinh: \"Linh Hoả giảm thiểu sức khoẻ\"; NL lưu ý tuổi Kim dù đắc địa vẫn nên giữ sức khỏe) (bản quét, đã đọc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAT-SP-09",
+  "nhom": "SP",
+  "goc": "Địa Không, Địa Kiếp: chú ý máu và da (mụn nhọt).",
+  "nguonGoc": "TB (tr. 186, mục 11.2.16: \"Xấu máu nên hay có mụn nhọt, chốc lở\"); KL lại gắn Không Kiếp ở Tật (mục Hỉ Thần) với vùng hậu môn, không nói máu, da (bản quét, đã đọc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": true,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAT-SP-10",
+  "nhom": "SP",
+  "goc": "Thiên Khốc, Thiên Hư: chú ý phổi (ho), thận, răng; Thiên Riêu, Mộc Dục: chú ý thận, xương khớp (tê thấp).",
+  "nguonGoc": "TB (tr. 187, 188, mục 11.2.24, 11.2.25, 11.2.32, 11.2.35)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": true,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAT-SP-11",
+  "nhom": "SP",
+  "goc": "Đại Hao, Tiểu Hao: chú ý tiêu hóa, bệnh do ăn uống; nên ăn uống điều độ.",
+  "nguonGoc": "TB (tr. 186–187, mục 11.2.21); KL lại cho rằng Song Hao ở Tật \"giải trừ hạn xấu\" (Chương Ba, cung Tật) (bản quét, đã đọc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": true,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAT-SP-12",
+  "nhom": "SP",
+  "goc": "Tang Môn, Bạch Hổ: chú ý khí huyết, tim, xương; nữ giới nên theo dõi kỹ khi mang thai, sinh nở *(phần nặng đã lược)*.",
+  "nguonGoc": "TB (tr. 187, mục 11.2.22, 11.2.23); KL (Phú Ma Thị: \"Ách địa hiểm Thai phùng Bạch hổ\", nữ giới nên đề phòng khi sinh nở *(sách gốc diễn đạt nặng, đã trung tính hóa)*) (bản quét, đã đọc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAT-SP-13",
+  "nhom": "SP",
+  "goc": "Đào Hoa, Hồng Loan: chú ý tim và vùng bụng dưới.",
+  "nguonGoc": "TB (tr. 187, mục 11.2.28)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": true,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAT-SP-14",
+  "nhom": "SP",
+  "goc": "Đế Vượng, Tràng Sinh: ít bệnh; Tràng Sinh gặp nhiều sao xấu thì bệnh lâu khỏi; Dưỡng: bệnh hay kéo dài. Gợi ý: chữa dứt điểm, tái khám.",
+  "nguonGoc": "TB (tr. 181, 189, mục 11.1.5, 11.1.6, 11.2.41); KL (Chương Hai, mục Trường Sinh: \"Chỉ trừ cung Tật khi gặp sao xấu thì bệnh lâu khỏi\"; mục Đế Vượng: \"giải trừ bệnh tật\") (bản quét, đã đọc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAT-CC-01",
+  "nhom": "CC",
+  "goc": "Phủ, Tướng ở Tật Ách (khi Phụ Mẫu có Tử Vi đi cùng Sát, Phá, Tham): bệnh thường nhẹ, thuộc \"nội thương\", dễ gặp thầy thuốc.",
+  "nguonGoc": "NL (tr. 130–131); TT (q.2 «六疾厄»: \"天府灾少临灾有救\", \"天相灾少\")",
+  "nguon": [
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAT-CC-02",
+  "nhom": "CC",
+  "goc": "Tật Ách vô chính diệu, hoặc có Tuần/Triệt: NL coi là thế \"lấy đức chinh phục tai ách\", giảm cường độ.",
+  "nguonGoc": "NL (tr. 131); KL (Chương Hai, mục Tuần Triệt: \"Tuần Triệt đóng ở Tật ngăn trở được bệnh tật\"; cung vô chính diệu có Tuần Triệt \"thì lại tốt\") (bản quét, đã đọc)",
+  "nguon": [
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAT-CC-03",
+  "nhom": "CC",
+  "goc": "Nhật, Nguyệt ở Tật Ách (hoặc Mệnh) gặp Không vong: chú ý mắt và lưng, cột sống *(sách gốc diễn đạt nặng, đã trung tính hóa)*.",
+  "nguonGoc": "TT (q.3 «论诸星同垣…»: \"日月疾厄命宫空腰陀目瞽\"); TB (tr. 183, Thái Dương \"Tuần, Triệt án ngữ: đau mắt\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAT-CC-04",
+  "nhom": "CC",
+  "goc": "Hóa Kỵ và Cự Môn (ám tinh) cùng ở Mệnh, Thân hoặc Tật Ách: thể trạng dễ suy nhược, cần bồi bổ và nghỉ ngơi.",
+  "nguonGoc": "TT (q.1 «太微赋»: \"忌暗同居身命疾厄，沉困尪羸\"; q.1 «重补斗数彀率»: \"巨暗同垣於身命疾厄羸瘦其軀\"); KL lại gắn Cự Môn cùng Hóa Kỵ ở Tật với rủi ro sông nước, không nói suy nhược (Chương Hai, mục Cự Môn) (bản quét, đã đọc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": true,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAT-CC-05",
+  "nhom": "CC",
+  "goc": "Phúc Đức xấu, Tật Ách nhiều sao tác họa, Mệnh gặp nhiều sát tinh, bại tinh: thể chất cần được chăm sóc đặc biệt *(sách gốc: \"chắc chắn là có tàn tật\", đã trung tính hóa)*; ngược lại Phúc Đức tốt thì giảm nhiều.",
+  "nguonGoc": "TB (tr. 234, mục 20.6); TB (tr. 181); KL (Chương Ba, Thế đứng các sao: \"Mệnh Phúc tốt mà Di, Tật, Vận ngộ hung sát cũng đỡ xấu\") (bản quét, đã đọc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAT-HOA-01",
+  "nhom": "HOA",
+  "goc": "Hóa Lộc tại Tật Ách: có tác dụng cứu giải như Hóa Khoa, nhưng gặp nhiều sát tinh thì mất tác dụng.",
+  "nguonGoc": "TB (tr. 181, mục 11.1.4); KL (Chương Ba, cung Tật: \"Cung Tật cần có… Khoa Quyền Lộc\"; mục Hóa Lộc: \"thịnh đạt nếu không gặp sao xấu\") (bản quét, đã đọc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAT-HOA-02",
+  "nhom": "HOA",
+  "goc": "Hóa Quyền: cùng nhiều sao cứu giải thì hồi phục nhanh; cùng nhiều sao tác họa thì bệnh nặng hơn *(đã trung tính hóa)* — nên khám sớm khi có dấu hiệu.",
+  "nguonGoc": "TB (tr. 182, mục 11.1.8)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": true,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAT-HOA-03",
+  "nhom": "HOA",
+  "goc": "Hóa Khoa: cứu giải khá mạnh, \"đau yếu gặp thầy gặp thuốc\".",
+  "nguonGoc": "TB (tr. 181, mục 11.1.2); KL (Chương Hai, mục Hóa Khoa: \"Hóa khoa cứu giải bệnh tật, chế ngự được các sát tinh\") (bản quét, đã đọc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAT-HOA-04",
+  "nhom": "HOA",
+  "goc": "Hóa Kỵ: thể trạng dễ suy nhược, hay đau bụng vặt; nữ nên theo dõi kỹ sức khỏe sinh sản *(phần nặng đã lược)*.",
+  "nguonGoc": "TB (tr. 186, mục 11.2.18); TT (q.1 «斗数准绳»: \"疾厄逢忌定有尪羸\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAT-TRANH-01",
+  "nhom": "TRANH",
+  "goc": "Mức chi tiết: TB gán bệnh, tai nạn rất cụ thể cho từng tổ hợp; nguồn hiện đại WT9 chỉ coi Tật Ách là \"gợi ý, không chẩn đoán\". Nhóm theo WT9: chỉ dùng vùng/chức năng nên chú ý.",
+  "nguonGoc": "TB (tr. 181–189); WT9",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAT-TRANH-02",
+  "nhom": "TRANH",
+  "goc": "Liêm Trinh đồng cung Thất Sát/Phá Quân: TT nói \"ít tai ương\" (七杀破军天府同灾少), TB lại xếp vào nhóm tác họa nặng. Ngược nhau; khi luận dùng mức trung tính (\"nên chú ý mắt, tay chân\").",
+  "nguonGoc": "TT (q.2 «六疾厄»); TB (tr. 182, 185)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAT-TRANH-03",
+  "nhom": "TRANH",
+  "goc": "Tuần, Triệt: TB mục 11.1.10 nói Tuần Triệt án ngữ thì \"suốt đời mạnh khỏe\", nhưng cùng chương lại ghi Tuần Triệt đi với Thái Dương, Thiên Cơ, Thiên Tướng, Thiên Mã là xấu. Tự mâu thuẫn; NL ủng hộ ý \"giảm\". Khi luận: coi Tuần Triệt là làm dịu, không khẳng định.",
+  "nguonGoc": "TB (tr. 182–184, 186); NL (tr. 131)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAT-TRANH-04",
+  "nhom": "TRANH",
+  "goc": "Mục 11.2.42 \"Thiên Khôi\" trong TB lặp nguyên văn mục Thiên Tướng (11.2.9); có thể là lỗi in hoặc lỗi số hóa. **Không dùng.**",
+  "nguonGoc": "TB (tr. 184, 189)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAT-TRANH-05",
+  "nhom": "TRANH",
+  "goc": "TB có các câu \"bệnh ma làm\", \"đau yếu vì ma quỷ phá phách\" (Thiên Cơ gặp Hỏa Linh; Thiên Riêu gặp Hỏa Linh). Đây là nội dung mê tín, **loại khỏi luận giải**.",
+  "nguonGoc": "TB (tr. 183, 188)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAT-TRANH-06",
+  "nhom": "TRANH",
+  "goc": "Thiên Lương, Tham Lang đơn thủ ở Tật Ách: TT không có mục riêng, chỉ có tổ hợp; quy tắc TAT-TL và TAT-THL dựa TB và WT8 (trang hiện đại không ghi sách). Cần NL hoặc CN để kiểm chứng thêm.",
+  "nguonGoc": "TT (q.2 «六疾厄»); TB (tr. 183–184); WT8",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ }
+]

@@ -1,0 +1,1357 @@
+[
+ {
+  "ma": "DI-YN-01",
+  "nhom": "YN",
+  "goc": "Thiên Di cho biết việc giao thiệp bên ngoài, những thuận lợi và trở ngại khi rời nhà. Đây là cung xung chiếu cung Mệnh nên phải xét rất kỹ",
+  "nguonGoc": "TB (tr. 174, §10); TT (卷一·問紫微: 「遷移雖是強宮，更要相佐，有吉星照命，則因人之貴」)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DI-YN-02",
+  "nhom": "YN",
+  "goc": "Thiên Di không chỉ là chuyện đi xa. Cung này còn là \"thế đối diện\" với Mệnh: môi trường xã hội, đối thủ, áp lực bên ngoài. Có Di thì có động lực phấn đấu, không có Di thì đời tẻ lạnh",
+  "nguonGoc": "NL (tr. 132 \"Giàu nhờ bạn, sang vì vợ\"; tr. 190 \"Di – một lực lượng phải để ý\"); KL (8. Cung Di: \"môi trường hay dở, sang hèn cũng xem ở Thiên di\") (bản quét, đã đọc)",
+  "nguon": [
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DI-YN-03",
+  "nhom": "YN",
+  "goc": "Thiên Di là cung mạnh (cường cung) nhưng cần có sao phù tá. Cát tinh từ Di chiếu về Mệnh thì đương số được quý nhân nâng đỡ",
+  "nguonGoc": "TT (卷一·問紫微); TB (tr. 174, §10: \"cần phải nhận xét rất cẩn thận ảnh hưởng của các sao tọa thủ tại cung này\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DI-YN-04",
+  "nhom": "YN",
+  "goc": "Luận Thiên Di phải đọc cùng trục Mệnh–Di và tam hợp của Di (Phu Thê, Phúc Đức). Phái Trung Hoa gọi trục này là 命遷線",
+  "nguonGoc": "TB (tr. 174); WQ5 (trang Thiên Di)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DI-YN-05",
+  "nhom": "YN",
+  "goc": "Gợi ý cách viết bài: Thiên Di nên đọc là \"cách mình xuất hiện trước xã hội, cơ hội khi mở rộng môi trường, đi học/làm xa, hợp tác bên ngoài\", không đọc thành điềm tai nạn *(Nhận xét nhóm, không phải quy tắc gốc)*",
+  "nguonGoc": "NL (tr. 132, 190); TB (tr. 174)",
+  "nguon": [
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DI-TV-01",
+  "nhom": "TV",
+  "goc": "(a) Tử Vi tại Ngọ, hoặc đồng cung Thiên Phủ: ra ngoài thường gặp quý nhân phù trợ, việc hanh thông, càng đi xa càng toại ý",
+  "nguonGoc": "TB (tr. 174, §10.1); TT (卷二·七遷移: 紫微「天府同出入通達」「同左右出外貴人扶持發福」)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tử Vi"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DI-TV-02",
+  "nhom": "TV",
+  "goc": "(b) Tử Vi tại Tý (bình hòa): vẫn được nhiều người giúp nhưng không trọn vẹn như ở Ngọ",
+  "nguonGoc": "TB (tr. 174, §10.1); KL (Tử vi ở các cung: \"phúc lộc lâu dài nếu Tử vi cư Tí Ngọ\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tử Vi"
+   ],
+   "doSang": [
+    "Bình"
+   ]
+  }
+ },
+ {
+  "ma": "DI-TV-03",
+  "nhom": "TV",
+  "goc": "Tử Tướng hoặc Tử Sát: được kính nể, hay gần môi trường có địa vị, lời nói có trọng lượng, ra ngoài có tài lộc",
+  "nguonGoc": "TB (tr. 174, §10.1); TT (卷二·七遷移: 「天相同在外發財」; 七殺「紫微同在外多遂志」)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tử Vi"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DI-TV-04",
+  "nhom": "TV",
+  "goc": "Tử Phá: ra ngoài nhiều hơn ở nhà, được người trên quý mến nhưng dễ gặp người khó chịu. Thường lập nghiệp xa quê *(sách gốc diễn đạt nặng, đã trung tính hóa)*",
+  "nguonGoc": "TB (tr. 174, §10.1); TT (卷二·七遷移: 「破軍同貴人見愛，小人不足」)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tử Vi"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DI-TV-05",
+  "nhom": "TV",
+  "goc": "Tử Tham: ra ngoài hay gặp chuyện phiền lòng, dễ bị người khác dèm pha, quấy rầy. Nên chọn kỹ môi trường và người cộng tác",
+  "nguonGoc": "TB (tr. 174, §10.1); KL (Tử vi ở các cung — Di: \"gặp Phá quân Tham lang thường bị dèm pha, quấy nhiễu\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tử Vi"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DI-LT-01",
+  "nhom": "LT",
+  "goc": "(a) Liêm Trinh đơn thủ tại Dần, Thân (vượng): thường gặp quý nhân, được kính trọng, việc hanh thông. Ra ngoài nhiều, ở nhà ít",
+  "nguonGoc": "TB (tr. 174, §10.2); TT (卷二·七遷移: 廉貞「出外通達近貴，在家日少」); KL (Liêm trinh — Thiên di: \"rất tốt nếu … đơn thủ tại Dần, Thân\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Liêm Trinh"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "DI-LT-02",
+  "nhom": "LT",
+  "goc": "Liêm Phủ, Liêm Tướng: ra ngoài lợi hơn ở nhà, dễ kiếm tiền, được vị nể nhờ phong thái đĩnh đạc",
+  "nguonGoc": "TB (tr. 174, §10.2); TT (卷二·七遷移: 「天相同動中則吉」; 天府「廉貞武曲鬧中取財」)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Liêm Trinh"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DI-LT-03",
+  "nhom": "LT",
+  "goc": "(b) Liêm Tham (đồng cung ở Tỵ Hợi, vị trí hãm): ra ngoài bất lợi, dễ vướng thị phi, kiện tụng; ít gặp người giúp. Nên giữ minh bạch giấy tờ, hợp đồng *(sách gốc diễn đạt nặng, đã trung tính hóa)*",
+  "nguonGoc": "TB (tr. 174, §10.2); TT (卷二·七遷移: 貪狼「廉貞同加四殺，在外艱難」); KL (Liêm trinh — Thiên di)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Liêm Trinh"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "DI-LT-04",
+  "nhom": "LT",
+  "goc": "Liêm Sát, Liêm Phá: TB cho là đi xa không được lợi, nên thận trọng khi đi lại và ở môi trường nguy hiểm. TT lại cho Liêm Sát \"ra ngoài chiêu được tài\" (在外廣招財). Hai sách khác nhau, xem DI-TRANH-03",
+  "nguonGoc": "TB (tr. 174, §10.2); TT (卷二·七遷移); KL (Liêm trinh — Thiên di)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Liêm Trinh"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DI-TD-01",
+  "nhom": "TD",
+  "goc": "(a) Thiên Đồng tại Mão (đắc): càng xa nhà càng hanh thông, không nên ở lâu một chỗ, hay gặp quý nhân",
+  "nguonGoc": "TB (tr. 174, §10.3); TT (卷二·七遷移: 天同「出外遇貴人扶持」)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Đồng"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "DI-TD-02",
+  "nhom": "TD",
+  "goc": "Đồng Lương (Dần Thân, miếu), Đồng Âm tại Tý: luôn có quý nhân phù trợ, được kính trọng, buôn bán thuận",
+  "nguonGoc": "TB (tr. 175, §10.3); TT (卷二·七遷移: 「天梁同貴人見愛」; 太陰「天同同在廟旺地出外白手生財成家」)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Đồng"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "DI-TD-03",
+  "nhom": "TD",
+  "goc": "(b) Thiên Đồng tại Dậu, Thìn, Tuất (hãm): hay phải xa nhà, dễ gặp chuyện phiền lòng, thị phi. Nên chọn việc ổn định, tránh tranh chấp",
+  "nguonGoc": "TB (tr. 174–175, §10.3); TT (卷二·七遷移: 「加羊陀火鈴空劫在外少遂志」)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Đồng"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "DI-TD-04",
+  "nhom": "TD",
+  "goc": "Đồng Âm tại Ngọ (hãm): dễ gặp cạnh tranh, ghen ghét khi ra ngoài. Đồng Cự: hay vướng thị phi, nói dễ quá lời",
+  "nguonGoc": "TB (tr. 175, §10.3); TT (卷二·七遷移: 「巨門同勞心，太陰同辛苦」)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Đồng"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "DI-VK-01",
+  "nhom": "VK",
+  "goc": "(a) Vũ Khúc đơn thủ tại Thìn, Tuất (miếu): buôn bán phát tài, đi xa lợi hơn ở nhà",
+  "nguonGoc": "TB (tr. 175, §10.4); TT (卷一·太微賦: 「財蔭坐於遷移，巨商高賈」); KL (phần phú: \"Vũ khúc Thiên di, cự thương cao mại\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Vũ Khúc"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "DI-VK-02",
+  "nhom": "VK",
+  "goc": "Vũ Phủ, Vũ Tướng: gặp quý nhân, được kính nể, tài lộc vượng. Vũ Tham: buôn lớn, trước khó sau dễ, cạnh tranh gắt",
+  "nguonGoc": "TB (tr. 175, §10.4); TT (卷二·七遷移: 武曲「貪狼同作巨商」; 天相「武曲同在外發財」)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Vũ Khúc"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "DI-VK-03",
+  "nhom": "VK",
+  "goc": "(b) Vũ Phá (Tỵ Hợi, vị trí hãm của Vũ), Vũ Sát: kiếm được tiền nhưng ra ngoài hay phiền lòng, thân tâm khó yên. Nên cẩn trọng khi đi lại và khi làm việc rủi ro cao *(sách gốc diễn đạt nặng, đã trung tính hóa)*",
+  "nguonGoc": "TB (tr. 175, §10.4); TT (卷二·七遷移: 武曲「七殺破軍同身心不得靜守」)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Vũ Khúc"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "DI-TDU-01",
+  "nhom": "TDU",
+  "goc": "(a) Thái Dương tại Dần, Mão, Thìn, Tỵ, Ngọ: gặp quý nhân, ra ngoài được kính trọng, tài lộc dồi dào. Hợp làm việc ở bên ngoài, khó chịu cảnh ngồi yên một chỗ",
+  "nguonGoc": "TB (tr. 175, §10.5); TT (卷二·七遷移: 太陽「宜出外發福不耐靜守」)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Dương"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DI-TDU-02",
+  "nhom": "TDU",
+  "goc": "(b) Thái Dương tại Thân, Dậu, Tuất, Hợi (hãm): ra ngoài dễ bị hiểu lầm, khó được lòng người. Nên cẩn trọng khi đi lại đường thủy *(sách gốc diễn đạt nặng, đã trung tính hóa)*",
+  "nguonGoc": "TB (tr. 175, §10.5); TT (卷二·七遷移: 「加羊陀火鈴空劫在外心身不清閒」)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Dương"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "DI-TDU-03",
+  "nhom": "TDU",
+  "goc": "Nhật Nguyệt đồng cung (Sửu Mùi): ra ngoài lợi hơn ở nhà, gần môi trường có địa vị. Gặp Tuần/Triệt hoặc Hóa Kỵ lại càng tốt (cách đặc biệt của Nhật Nguyệt Sửu Mùi)",
+  "nguonGoc": "TB (tr. 175, §10.5); TT (卷二·七遷移: 太陽「太陰同出外忙中吉」); KL (Thái dương ở các cung — Di: \"Nhật Nguyệt, Tam hóa: phú quí, quyền uy\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Dương"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DI-TDU-04",
+  "nhom": "TDU",
+  "goc": "Thái Dương xa nhà lập nghiệp: TT cho rằng người có Thái Dương ở Thiên Di khó giữ tổ nghiệp, rời gốc lập nghiệp nơi khác (\"移根換葉，出祖為家\")",
+  "nguonGoc": "TT (卷一·問太陽); TB (tr. 175, §10.5)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Dương"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DI-TCO-01",
+  "nhom": "TCO",
+  "goc": "(a) Thiên Cơ tại Tỵ, Ngọ, Mùi: ra ngoài hanh thông, gặp quý nhân. Ở nhà lại dễ có thị phi",
+  "nguonGoc": "TB (tr. 175, §10.6); TT (卷二·七遷移: 天機「出外遇貴居家有是非」)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Cơ"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DI-TCO-02",
+  "nhom": "TCO",
+  "goc": "(b) Thiên Cơ tại Hợi, Tý, Sửu: xa nhà không được yên. TB xếp chung Tý, Sửu (đắc) với Hợi (hãm), xem DI-TRANH-02",
+  "nguonGoc": "TB (tr. 175, §10.6); TT (卷二·七遷移: 「加羊陀火鈴在外多是非身不安靜」)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Cơ"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "DI-TCO-03",
+  "nhom": "TCO",
+  "goc": "Cơ Lương (Thìn Tuất): càng xa nhà càng may, được tôn trọng. Cơ Cự: có tài lộc, có quý nhân nhưng dễ khẩu thiệt. Cơ Âm tại Thân: buôn bán thuận, được mến; tại Dần: không nên xa nhà lâu, dễ bị đố kỵ",
+  "nguonGoc": "TB (tr. 175–176, §10.6); TT (卷二·七遷移: 「巨門同動中則吉，天梁同出外稱意，太陰同忙中吉」); KL (Thiên cơ — Di: \"Cơ Lương hay Cơ Nguyệt đồng cung ở Thân thì may mắn, có quí nhân giúp\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Cơ"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DI-TP-01",
+  "nhom": "TP",
+  "goc": "(a) Thiên Phủ tại Tỵ, Hợi: gặp quý nhân, có tài lộc. Tại Sửu, Mùi, Mão, Dậu: xa nhà lợi và yên thân hơn ở nhà, buôn bán thuận",
+  "nguonGoc": "TB (tr. 176, §10.7); TT (卷二·七遷移: 天府「出外遇貴人扶」)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Phủ"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DI-TP-02",
+  "nhom": "TP",
+  "goc": "Tử Phủ, Liêm Phủ, Vũ Phủ: ra ngoài có quý nhân, tài lộc dễ kiếm. Liêm Phủ, Vũ Phủ hợp kiếm tiền ở môi trường sôi động, kinh doanh lớn",
+  "nguonGoc": "TB (tr. 176, §10.7); TT (卷二·七遷移: 「同紫微發福，廉貞武曲鬧中取財作巨商」)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Phủ"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DI-TP-03",
+  "nhom": "TP",
+  "goc": "(b) Thiên Phủ không có vị trí hãm theo bảng. Gặp Tuần hoặc Không Kiếp thì giảm tốt rõ rệt (\"kho bị mở\", tài lộc ngoài xã hội khó giữ)",
+  "nguonGoc": "KL (Thiên phủ: \"Thiên phủ rất sợ Tuần\"; \"gặp Không Kiếp, Tuần Triệt … tài lộc bị giảm đáng kể\"); TT (卷二·七遷移: 紫微「加羊陀火鈴空劫在外不安靜」)",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": true,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Phủ"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "DI-TA-01",
+  "nhom": "TA",
+  "goc": "(a) Thái Âm tại Dậu, Tuất, Hợi (miếu): được kính trọng, dễ kiếm tiền khi ra ngoài",
+  "nguonGoc": "TB (tr. 176, §10.8); TT (卷二·七遷移: 太陰「入廟出外遇貴發財」)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Âm"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "DI-TA-02",
+  "nhom": "TA",
+  "goc": "(b) Thái Âm tại Mão, Thìn, Tỵ (hãm): ra ngoài dễ gặp chuyện phiền lòng, khó được lòng người. Nên giữ ôn hòa, tránh va chạm",
+  "nguonGoc": "TB (tr. 176, §10.8); TT (卷二·七遷移: 「陷宮招是非」)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Âm"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "DI-TA-03",
+  "nhom": "TA",
+  "goc": "Âm Dương đồng cung: rất tốt khi ra ngoài. Đồng Âm tại Tý: quý nhân phù trợ; tại Ngọ: dễ bị cạnh tranh ghen ghét",
+  "nguonGoc": "TB (tr. 176, §10.8); TT (卷二·七遷移: 「太陽同極美」「天同同在廟旺地出外白手生財成家」)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Âm"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DI-THL-01",
+  "nhom": "THL",
+  "goc": "(a) Tham Lang đơn thủ tại Thìn, Tuất (vượng): dễ kiếm tiền, hay gặp quý nhân",
+  "nguonGoc": "TB (tr. 176, §10.9); KL (Tham lang — Di: \"Ở Thìn Tuất có quí nhân giúp đỡ\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tham Lang"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "DI-THL-02",
+  "nhom": "THL",
+  "goc": "Vũ Tham (Sửu Mùi, miếu): buôn bán lớn, trước khó sau dễ, cạnh tranh gắt",
+  "nguonGoc": "TB (tr. 176, §10.9); TT (卷二·七遷移: 貪狼「武曲同作巨商」); KL (Tham lang — Di: \"Cùng với Vũ khúc thì buôn bán phát tài\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tham Lang"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "DI-THL-03",
+  "nhom": "THL",
+  "goc": "(b) Tham Lang tại Tý, Ngọ (hãm) hoặc Dần, Thân: ra ngoài nhiều vất vả, hay phiền lòng. Nên cẩn trọng khi di chuyển, chọn môi trường lành mạnh *(sách gốc diễn đạt nặng, đã trung tính hóa)*",
+  "nguonGoc": "TB (tr. 176, §10.9); TT (卷二·七遷移: 貪狼「獨守在外勞碌，鬧中橫進財」); KL (Tham lang — Di: \"Kỳ dư với các sao khác đều bất lợi\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tham Lang"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "DI-THL-04",
+  "nhom": "THL",
+  "goc": "Tử Tham, Liêm Tham: may ít rủi nhiều, dễ có người dèm pha, quấy rầy hoặc vướng rắc rối pháp lý. Nên minh bạch, hạn chế giao du phức tạp",
+  "nguonGoc": "TB (tr. 176, §10.9); TT (卷二·七遷移: 「廉貞同加四殺，在外艱難」)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tham Lang"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DI-CM-01",
+  "nhom": "CM",
+  "goc": "(a) Cự Môn tại Tý, Ngọ, Hợi: ra ngoài được vị nể, lời nói được tin, tài lộc dễ kiếm",
+  "nguonGoc": "TB (tr. 177, §10.10); TT (卷一·問巨門 nói chung Cự ở Di \"招是非\" nên TT không ủng hộ trường hợp tốt này, xem DI-TRANH-04); KL lại cho rằng Cự Môn ở Di \"bị khẩu thiệt\", không tách riêng Tý Ngọ Hợi (Cự môn ở các cung — Di) (bản quét, đã đọc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": true,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Cự Môn"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DI-CM-02",
+  "nhom": "CM",
+  "goc": "(b) Cự Môn tại Thìn, Tuất, Tỵ (hãm): hay vướng thị phi, kiện tụng; nên cẩn trọng lời nói và khi đi lại *(sách gốc diễn đạt nặng, đã trung tính hóa)*",
+  "nguonGoc": "TB (tr. 177, §10.10); TT (卷一·問巨門: 「在遷移則招是非」; 卷二·七遷移: 巨門「出外勞心不安，與人不足多是非」); KL (Cự môn — Di: \"bị khẩu thiệt\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Cự Môn"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "DI-CM-03",
+  "nhom": "CM",
+  "goc": "Cự Môn ở Thiên Di nói chung: môi trường bên ngoài nhiều tranh luận, cạnh tranh bằng lời. Nên chọn vai trò dùng lời nói một cách có kiểm soát (đàm phán, tư vấn) *(Nhận xét nhóm, không phải quy tắc gốc)*",
+  "nguonGoc": "TT (卷一·問巨門); TB (tr. 177)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Cự Môn"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DI-TT-01",
+  "nhom": "TT",
+  "goc": "(a) Thiên Tướng tại Tỵ, Hợi, Sửu, Mùi: được kính trọng, tài lộc dễ kiếm, có người trên nâng đỡ",
+  "nguonGoc": "TB (tr. 177, §10.11); TT (卷二·七遷移: 天相「出外貴人提撕」)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Tướng"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DI-TT-02",
+  "nhom": "TT",
+  "goc": "(b) Thiên Tướng tại Mão, Dậu (hãm): xa nhà không được lợi nhiều nhưng vẫn được mến",
+  "nguonGoc": "TB (tr. 177, §10.11); TT (卷二·七遷移: 「廉貞同加羊陀火鈴招是非小人不足」)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": true,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Tướng"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "DI-TT-03",
+  "nhom": "TT",
+  "goc": "Tử Tướng, Liêm Tướng, Vũ Tướng: được vị nể, gần môi trường sang trọng. Vũ Tướng ra ngoài phát tài",
+  "nguonGoc": "TB (tr. 177, §10.11); TT (卷二·七遷移: 「紫微同吉利，武曲同在外發財」)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Tướng"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DI-TL-01",
+  "nhom": "TL",
+  "goc": "(a) Thiên Lương tại Tý, Ngọ: được kính trọng, yêu mến, gần môi trường có địa vị. Tại Sửu, Mùi: gặp quý nhân",
+  "nguonGoc": "TB (tr. 177, §10.12); TT (卷二·七遷移: 天梁「出外近貴貴人成就」); KL (Thiên lương — Di: \"Lương ở Tí Ngọ: được người kính nể, giúp đỡ\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Lương"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DI-TL-02",
+  "nhom": "TL",
+  "goc": "Lương Đồng, Lương Cơ, Lương Nhật tại Mão: được kính nể, càng xa nhà càng may. Cơ Lương hợp đi xa bằng nghề, bằng kỹ năng chuyên môn",
+  "nguonGoc": "TB (tr. 177, §10.12); TT (卷二·七遷移: 「天同同福厚，天機同藝術途中走」); KL (Thiên lương — Di)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Lương"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DI-TL-03",
+  "nhom": "TL",
+  "goc": "(b) Thiên Lương tại Tỵ, Hợi (hãm): hay di chuyển, ít ở một chỗ, có xu hướng lập nghiệp xa quê *(sách gốc diễn đạt nặng, đã trung tính hóa)*",
+  "nguonGoc": "TB (tr. 177, §10.12); KL (Thiên lương — Di: \"Lương Tỵ Hợi: lang thang …\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Lương"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "DI-TS-01",
+  "nhom": "TS",
+  "goc": "(a) Thất Sát tại Dần, Thân: có uy, được kính nể, lời nói được tin, hay lui tới nơi có quyền lực. Ra ngoài nhiều hơn ở nhà",
+  "nguonGoc": "TB (tr. 177, §10.13); TT (卷二·七遷移: 七殺「在外日多，在家日少」); KL (Thất sát — Di: \"vị trí Dần Thân … tốt vì có quí nhân giúp đỡ\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thất Sát"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DI-TS-02",
+  "nhom": "TS",
+  "goc": "Thất Sát tại Tý, Ngọ: được nể và tin nhưng may rủi đi liền nhau. Nên tính kỹ rủi ro khi đi xa, đi lại",
+  "nguonGoc": "TB (tr. 177, §10.13); TT (卷二·七遷移: 「加羊陀火鈴空劫又操心不寧或流蕩天涯」)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thất Sát"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DI-TS-03",
+  "nhom": "TS",
+  "goc": "(b) Thất Sát tại Thìn, Tuất (hãm): ra ngoài bất lợi, thường lập nghiệp xa quê *(sách gốc diễn đạt nặng, đã trung tính hóa)*",
+  "nguonGoc": "TB (tr. 177, §10.13); KL (Thất sát — Di: \"các cung khác đều xấu vì ra ngoài hay gặp tai nạn\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thất Sát"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "DI-TS-04",
+  "nhom": "TS",
+  "goc": "Tử Sát: được kính nể, có tài lộc khi ra ngoài. Vũ Sát, Liêm Sát: có uy nhưng nên đặc biệt cẩn trọng an toàn khi đi lại, tránh môi trường nhiều hung khí *(sách gốc diễn đạt nặng, đã trung tính hóa)*. TT lại cho rằng Vũ Sát \"động thì cát\", Liêm Sát \"ở ngoài sinh tài\"",
+  "nguonGoc": "TB (tr. 178, §10.13); TT (卷二·七遷移)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thất Sát"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DI-PQ-01",
+  "nhom": "PQ",
+  "goc": "(a) Phá Quân tại Tý, Ngọ (miếu): được nể, tài lộc dễ kiếm, nhưng đôi khi gặp rủi ro. TT: nhập miếu thì ra ngoài nổi trội (在外崢嶸)",
+  "nguonGoc": "TB (tr. 178, §10.14); TT (卷二·七遷移: 破軍「入廟在外崢嶸」); KL (Phá quân — Di)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Phá Quân"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "DI-PQ-02",
+  "nhom": "PQ",
+  "goc": "(b) Phá Quân tại Dần, Thân (hãm): ra ngoài vất vả, nên đặc biệt cẩn trọng khi tham gia giao thông. Càng xoay xở tiền bạc liều lĩnh càng dễ gặp rắc rối *(sách gốc diễn đạt nặng, đã trung tính hóa)*",
+  "nguonGoc": "TB (tr. 178, §10.14); TT (卷一·問破軍: 「在遷移奔走無力」); KL (Phá quân — Di: \"Ở Dần Thân: tai nạn xe cộ\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Phá Quân"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "DI-PQ-03",
+  "nhom": "PQ",
+  "goc": "Phá Quân tại Thìn, Tuất: may đi liền với rủi, người kính trọng có mà người ganh ghét cũng nhiều. Thích đi đây đi đó",
+  "nguonGoc": "TB (tr. 178, §10.14); TT (卷二·七遷移: 破軍「出外勞心不寧」)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Phá Quân"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DI-PQ-04",
+  "nhom": "PQ",
+  "goc": "Phá Quân gặp Xương Khúc, Vũ Khúc ở Thiên Di: hợp nghề biểu diễn, nghệ thuật lưu diễn. Gặp sát tinh: bôn ba kiếm sống bằng tay nghề",
+  "nguonGoc": "TT (卷二·七遷移: 「加羊陀火鈴，奔馳巧藝走途中，加文昌文曲武曲相會優伶之人」); KL (phú: \"Vũ Phá tương ngộ Xương, Khúc, thông minh xảo nghệ\") chỉ cùng ý phần tay nghề, ghi cho Mệnh và đọc là kỹ nghệ máy móc, không nói nghề biểu diễn (bản quét, đã đọc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": true,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Phá Quân"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "DI-SP-01",
+  "nhom": "SP",
+  "goc": "Xương, Khúc, Khôi, Việt: gặp nhiều quý nhân, được gần người có chức vị cao",
+  "nguonGoc": "TB (tr. 178, §10.18); TT (卷二·七遷移: 文昌「出外遇貴發達」, 文曲「在外近貴」)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DI-SP-02",
+  "nhom": "SP",
+  "goc": "Tả Phù, Hữu Bật: ra ngoài được nhiều người giúp, nên năng động, không nên ngồi yên",
+  "nguonGoc": "TB (tr. 178, §10.19); TT (卷二·七遷移: 左輔「動中貴人扶持發福」, 右弼「出外遇貴人扶持發達，不宜靜守」)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DI-SP-03",
+  "nhom": "SP",
+  "goc": "Lộc Tồn (và Hóa Lộc): dễ kiếm tiền, may mắn, buôn bán thuận khi ra ngoài",
+  "nguonGoc": "TB (tr. 178, §10.20); TT (卷二·七遷移: 祿存「出外衣祿遂心」)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DI-SP-04",
+  "nhom": "SP",
+  "goc": "Thiên Mã: đi đây đi đó, được mến. Lộc Mã cùng ở Di: buôn bán lưu động rất phát tài",
+  "nguonGoc": "TB (tr. 179, §10.24, §10.29); TT (卷一·問紫微: 「天相祿馬交馳…可為貴論」, câu nói chung về Lộc Mã, không riêng Thiên Di)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DI-SP-05",
+  "nhom": "SP",
+  "goc": "Kình, Đà: ra ngoài nhiều trắc trở. Sáng sủa (đắc ở Thìn Tuất Sửu Mùi): vẫn dễ kiếm tiền, có quý nhân; mờ ám: nhiều thị phi, khó kiếm tiền",
+  "nguonGoc": "TB (tr. 178, §10.14 [đánh số trùng trong sách]); TT (卷二·七遷移: 擎羊「入廟在外衣祿遂心…陷地有成下人多不足」, 陀羅「會吉星在外遇貴得財，陷地…多招是非」)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DI-SP-06",
+  "nhom": "SP",
+  "goc": "Hỏa, Linh: ra ngoài không yên chân, đường xa cô quạnh. Gặp cát tinh thì vẫn có thể kiếm tiền ở môi trường sôi động",
+  "nguonGoc": "TB (tr. 178, §10.16); TT (卷一·斗數發微論: 「火鈴到遷移，長途寂寞」; 卷二·七遷移: 火星「出外不安，加吉星鬧中進財」)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DI-SP-07",
+  "nhom": "SP",
+  "goc": "Không, Kiếp: dễ bị lừa hoặc gặp người mưu lợi. Nên thận trọng trong giao dịch, hợp tác bên ngoài *(sách gốc diễn đạt nặng, đã trung tính hóa)*",
+  "nguonGoc": "TB (tr. 178, §10.17; tr. 179, §10.32); TT (卷二·七遷移: 「加羊陀火鈴空劫在外不安靜」)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DI-SP-08",
+  "nhom": "SP",
+  "goc": "Song Hao: hay phải xa nhà nhưng được nhiều người mến",
+  "nguonGoc": "TB (tr. 179, §10.23); KL lại cho rằng Song Hao, ngoài Mệnh ở Dần Thân Mão Dậu và Tài miếu địa, thì \"phá tán hoàn toàn\" (37. Song Hao) (bản quét, đã đọc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": true,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DI-SP-09",
+  "nhom": "SP",
+  "goc": "Thiên Hình: nên đặc biệt cẩn trọng an toàn giao thông và khi dùng dụng cụ sắc nhọn *(sách gốc diễn đạt nặng, đã trung tính hóa)*",
+  "nguonGoc": "TB (tr. 179, §10.25)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": true,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DI-SP-10",
+  "nhom": "SP",
+  "goc": "Đào, Hồng, Hỷ: dễ gặp duyên khi đi xa (quen người bạn đời ở nơi khác), ra ngoài được nhiều người có cảm tình",
+  "nguonGoc": "TB (tr. 179, §10.26); KL (Đào Hồng ở các cung — Di: \"Đắt đào đắt kép\") (bản quét, đã đọc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DI-SP-11",
+  "nhom": "SP",
+  "goc": "Thái Tuế, Đà La, Hóa Kỵ cùng ở Di: dễ vướng tranh cãi, kiện cáo. Nên lưu giữ giấy tờ rõ ràng",
+  "nguonGoc": "TB (tr. 179, §10.30); KL (Thái tuế ở các cung — Di: \"Miệng tiếng, cãi vã\"; phần Đại tiểu vận: \"Vận Thái tuế mà gặp Đà Ky thì mắc thị phi kiện tụng\") (bản quét, đã đọc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DI-CC-01",
+  "nhom": "CC",
+  "goc": "Vô chính diệu: lấy chính tinh xung chiếu (tức chính tinh cung Mệnh) mà luận như chính tinh tọa thủ",
+  "nguonGoc": "TB (tr. 180, §10.36); TB (tr. 171, quy tắc vô chính diệu ở Nô, cùng nguyên tắc); KL lại phản đối cách này: \"Chẳng lẽ lấy chính tinh của Mệnh… làm sao của cung Di\", coi Di vô chính diệu là \"môi trường thả nổi\" (8. Cung Di) (bản quét, đã đọc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": true,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DI-CC-02",
+  "nhom": "CC",
+  "goc": "\"Tài Ấm tọa Thiên Di\" (Vũ Khúc với Thiên Lương chiếu hoặc ở Thiên Di): hợp buôn bán lớn, kinh doanh bên ngoài",
+  "nguonGoc": "TT (卷一·太微賦: 「財蔭坐於遷移，巨商高賈」; 卷一·重補斗數彀率: 「財蔭居遷移為高商豪客」); KL (phần phú: \"Vũ khúc Thiên di, cự thương cao mại\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DI-CC-03",
+  "nhom": "CC",
+  "goc": "Lộc Tồn ở Mệnh, Thân hoặc Thiên Di tại Tý, Ngọ: tài lộc dồi dào",
+  "nguonGoc": "KL (phú: \"Lộc tồn Tí Ngọ vị, mệnh thân Thiên di phùng chi, lợi lộc nghi\"); TB (tr. 178, §10.20)",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DI-CC-04",
+  "nhom": "CC",
+  "goc": "Lộc Mã giao trì ở Thiên Di: buôn bán lưu động, xuất ngoại làm ăn có lợi",
+  "nguonGoc": "TB (tr. 179, §10.29); TT (卷一·問紫微: 「祿馬交馳」 là quý cách, nói chung, không riêng Thiên Di)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DI-CC-05",
+  "nhom": "CC",
+  "goc": "Tuần/Triệt án ngữ Thiên Di: ra ngoài dễ có chuyện phiền lòng. Gặp Tham, Phá hoặc Thiên Mã cùng Tuần/Triệt thì nên đặc biệt cẩn trọng khi đi lại *(sách gốc diễn đạt nặng, đã trung tính hóa)*",
+  "nguonGoc": "TB (tr. 179, §10.27)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": true,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DI-CC-06",
+  "nhom": "CC",
+  "goc": "Mệnh–Di cùng một \"phe\" chính tinh: phe Tử Phủ Vũ Tướng Sát Phá Liêm Tham hoặc phe Cơ Nguyệt Đồng Lương Cự Nhật. Thế mạnh yếu giữa Mệnh và Di xét theo ngũ hành của sao và của cung (vd Vũ Khúc Kim ở Mệnh khắc Tham Lang Mộc ở Di thì Mệnh thắng thế)",
+  "nguonGoc": "NL (tr. 190–191); KL (phần Đại tiểu vận: \"Thiên di cũng có chính tinh thì phải so bì cao thấp, hơn kém\") (bản quét, đã đọc); KL không nêu cách xét ngũ hành",
+  "nguon": [
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DI-HOA-01",
+  "nhom": "HOA",
+  "goc": "Hóa Lộc ở Thiên Di: dễ kiếm tiền, may mắn khi ra ngoài. Đi lại vì công việc có lợi",
+  "nguonGoc": "TB (tr. 178, §10.20); WQ5 (Hua Lu in Travel palace)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DI-HOA-02",
+  "nhom": "HOA",
+  "goc": "Hóa Khoa, Hóa Quyền ở Thiên Di: được kính trọng, có danh giá bên ngoài, hay được lui tới nơi có địa vị",
+  "nguonGoc": "TB (tr. 178, §10.21); WQ5 (Hua Ke/Hua Quan in Travel palace)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DI-HOA-03",
+  "nhom": "HOA",
+  "goc": "Hóa Kỵ ở Thiên Di: hay vướng thị phi, nhiều chuyện phiền lòng khi ra ngoài. Với Nhật Nguyệt đồng cung thì Kỵ lại làm tốt thêm (DI-TDU-03)",
+  "nguonGoc": "TB (tr. 178–179, §10.22; tr. 175, §10.5); WQ5 (Hua Ji in Travel palace)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DI-HOA-04",
+  "nhom": "HOA",
+  "goc": "Tam hóa (Khoa Quyền Lộc) hội ở Thiên Di cùng Nhật Nguyệt sáng: có địa vị, uy tín ngoài xã hội",
+  "nguonGoc": "KL (Thái dương ở các cung — Di); KL (Thái âm — Di: \"Nhật Nguyệt sáng gặp Tam hóa: được nhiều người quí trọng\")",
+  "nguon": [
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": true,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DI-TRANH-01",
+  "nhom": "TRANH",
+  "goc": "Thái Dương tại Tý: bảng độ sáng ghi **hãm**. TB §10.5 lại ghi \"đơn thủ tại Tý: nhiều người mến phục kính trọng\", tốt hơn mức hãm. Luận theo bảng (hãm), ghi chú rằng TB có mặt tích cực",
+  "nguonGoc": "TB (tr. 175); spec mục 6",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DI-TRANH-02",
+  "nhom": "TRANH",
+  "goc": "Thiên Cơ tại Tý, Sửu: bảng ghi **đắc**, nhưng TB §10.6 xếp chung với Hợi (hãm) là \"xa nhà không được yên thân\". Cần chuyên gia chốt",
+  "nguonGoc": "TB (tr. 175); spec mục 6",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DI-TRANH-03",
+  "nhom": "TRANH",
+  "goc": "Liêm Sát, Vũ Sát ở Di: TB thiên về rủi ro khi đi lại, TT lại thiên về \"ra ngoài sinh tài / động thì cát\". Đề xuất: luận cả hai mặt, cơ hội lớn đi kèm rủi ro, nên làm việc có quy trình an toàn",
+  "nguonGoc": "TB (tr. 174, 178); TT (卷二·七遷移)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DI-TRANH-04",
+  "nhom": "TRANH",
+  "goc": "Cự Môn tại Tý, Ngọ, Hợi: TB cho là tốt (lời nói được tin). TT viết chung \"Cự ở Thiên Di chiêu thị phi\", không tách miếu/hãm. Đề xuất: miếu vượng thì đọc là \"giỏi ăn nói nhưng môi trường nhiều tranh luận\"",
+  "nguonGoc": "TB (tr. 177); TT (卷一·問巨門)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DI-TRANH-05",
+  "nhom": "TRANH",
+  "goc": "TB §10.12 (Thiên Lương) có dòng \"tọa thủ tại Dần, Mão, Thìn, Tỵ, Ngọ…\" trùng nguyên văn dòng của Thái Dương §10.5. Có lẽ là lỗi in hoặc lỗi chép, không dùng",
+  "nguonGoc": "TB (tr. 177)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "DI-TRANH-06",
+  "nhom": "TRANH",
+  "goc": "TB nhiều chỗ nói về \"kết thúc đời ở xa nhà\" và \"tai nạn\". Đã trung tính hóa thành \"xu hướng lập nghiệp xa quê\" và \"nên cẩn trọng an toàn\". TT 卷一 (Thái Dương: 出祖為家) ủng hộ cách đọc \"lập nghiệp xa quê\". Không được viết lại thành dự báo tai nạn",
+  "nguonGoc": "TB (tr. 174–180); TT (卷一·問太陽)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ }
+]

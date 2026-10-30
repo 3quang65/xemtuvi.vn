@@ -1,0 +1,1055 @@
+[
+ {
+  "ma": "TU-YN-01",
+  "nhom": "YN",
+  "goc": "Cung Tử Tức xem về con cái: duyên con, sớm hay muộn, dễ hay vất vả khi nuôi dạy, tính cách con và mức hòa hợp giữa cha mẹ với con.",
+  "nguonGoc": "TB (tr. 198, \"Xem cung Tử Tức để biết rõ con cái\"); TT (q.2 «四子女»)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TU-YN-02",
+  "nhom": "YN",
+  "goc": "Lối luận hiện đại mở rộng cung này sang học trò, người mình dìu dắt và \"sản phẩm\" mình tạo ra (tác phẩm, dự án). Sách cổ Việt không nói điều này; chỉ dùng khi khách chưa có con hoặc hỏi về công việc sáng tạo.",
+  "nguonGoc": "WT10 (Children palace: \"students and disciples\", \"creative output\")",
+  "nguon": [],
+  "motNguon": true,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TU-YN-03",
+  "nhom": "YN",
+  "goc": "Trước khi xét sao tại Tử Tức phải xét cung Phúc Đức (liên quan việc nối dõi) và cung Mệnh, Thân. Tử Tức có nhiều sao xấu nhưng Phúc Đức, Mệnh, Thân sáng đẹp thì không đáng lo; ngược lại Tử Tức đẹp mà Phúc, Mệnh, Thân kém thì cũng giảm. Sách gốc tự nhận các nhận định về số con \"chỉ là tương đối\".",
+  "nguonGoc": "TB (tr. 198); TB (tr. 228, phụ luận); KL (Chương Ba, Coi các cung — cung Phúc: \"Cung Phúc đẹp thì dù các cung khác có xấu cũng không đáng lo\") (bản quét, đã đọc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TU-YN-04",
+  "nhom": "YN",
+  "goc": "Xét thêm cung đối (Điền Trạch) xem có xung phá không; cung Tử Tức không có chính tinh thì lấy sao cung đối mà luận. Theo thứ tự cung ở spec 2.4, tam hợp của Tử Tức là Phụ Mẫu và Nô Bộc, xung chiếu là Điền Trạch.",
+  "nguonGoc": "TT (q.2 «四子女»: \"次看对宫有冲刑否\", \"如本宫无星曜专看对宫\"); WT10 (trục Tử Tức – Điền Trạch)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TU-YN-05",
+  "nhom": "YN",
+  "goc": "Sao lành, sao quý thủ Tử Tức thì con cái đông vui, thành đạt; sát tinh (Kình, Đà, Hỏa, Linh, Không, Kiếp) và Hóa Kỵ thủ cung thì quan hệ cha mẹ – con dễ có \"hình khắc\", nghĩa là xa cách, bất đồng, hoặc nuôi dạy vất vả.",
+  "nguonGoc": "TT (q.2 «四子女»: \"若加羊陀火玲空劫杀忌主生子女有刑克\", \"若善星贵星守子女宫必主其人生子昌盛贵显\"); TT (q.1 «斗数发微论»: \"刑殺守子宮，子難奉老\"); NL (Chính không bằng chiếu, chiếu không bằng giáp — sát tinh ở cung người thân, gồm tử tức: \"Kình Đà thì hình thương xa cách\") (bản quét, đã đọc); KL (Chương Ba, Coi các cung — cung Tử: Long trì, Phượng các, Thiên đức… chủ con \"khá giả, xinh đẹp\"; Hình, Kỵ, Kiếp, Hỏa, Linh bất lợi cho đường con, sách diễn đạt nặng hơn) (bản quét, đã đọc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TU-YN-06",
+  "nhom": "YN",
+  "goc": "Mệnh xấu mà Tử Tức tốt thì về già được nhờ con; Mệnh tốt mà Tử Tức xấu thì về già dễ thiếu chỗ dựa từ con (cổ nhân: \"Mệnh hung nhi cát, do hữu Tử cung cát\").",
+  "nguonGoc": "TB (tr. 228, phụ luận Tử Tức); KL (Chương Ba, Coi các cung — cung Tử: \"Cung Tử tức cũng là hình ảnh đời mình về già\") (bản quét, đã đọc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TU-YN-07",
+  "nhom": "YN",
+  "goc": "Nam Đẩu tinh thủ Tử Tức thiên về con trai, Bắc Đẩu tinh thiên về con gái. TB xếp Thiên Phủ, Thiên Tướng, Thiên Lương, Thất Sát, Thiên Đồng, Thái Dương, Thiên Cơ vào Nam Đẩu; Thái Âm, Tham Lang, Cự Môn, Liêm Trinh, Vũ Khúc, Phá Quân vào Bắc Đẩu; hai sao Nam – Bắc đồng cung thì dương cung thiên trai, âm cung thiên gái.",
+  "nguonGoc": "TB (tr. 198, mục 13.1); TT (q.2 «四子女»: \"三方四正得南斗星多主生男，北斗星多主生女\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TU-TV-01",
+  "nhom": "TV",
+  "goc": "Tử Vi miếu (Ngọ) hoặc bình (Tý) đơn thủ: đông con, con về sau thành đạt, khá giả (TB: Ngọ \"ba trai hai gái\", Tý \"bốn con\"; TT: miếu vượng \"nam tam nữ nhị\", thêm Tả Hữu, Xương Khúc thì đông hơn).",
+  "nguonGoc": "TB (tr. 199, mục 13.2.1); TT (q.2 «四子女»: \"紫微庙旺男三女二，加左右昌曲有五人\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tử Vi"
+   ],
+   "doSang": [
+    "Bình"
+   ]
+  }
+ },
+ {
+  "ma": "TU-TV-02",
+  "nhom": "TV",
+  "goc": "Tử Vi gặp Kình, Đà, Hỏa, Linh, Không, Kiếp: số con giảm, có thể có con muộn hoặc con nuôi, con trưởng là con nuôi.",
+  "nguonGoc": "TT (q.2 «四子女»: \"加羊陀火铃空劫只一双，不然偏室生者多，或招祀子居长\"); TB (tr. 203, mục 13.3.14 Kình Đà Không Kiếp: \"khó nuôi con\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tử Vi"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "TU-TV-03",
+  "nhom": "TV",
+  "goc": "Đồng cung: Tử Phủ đông con (TB \"từ năm con\"; TT \"四五人\"); Tử Tướng khá đông; Tử Sát con khó nuôi lúc nhỏ, lớn lên thường ở xa cha mẹ; Tử Phá ít con, con hay bất đồng với cha mẹ; Tử Tham ít con.",
+  "nguonGoc": "TB (tr. 199, mục 13.2.1); TT (q.2 «四子女»: \"天府同加吉星四五人\", \"破军同三人\"; \"七杀…紫微同再吉星有三人\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tử Vi"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "TU-LT-01",
+  "nhom": "LT",
+  "goc": "Liêm Trinh vượng (Dần, Thân) đơn thủ: ít con (TB \"hai con\"); Liêm Phủ: con khá đông, về sau khá giả (TB \"ba đến năm\"; TT \"quý tử ba người\"); Liêm Tướng: con lúc nhỏ vất vả chăm, lớn lên thành đạt.",
+  "nguonGoc": "TB (tr. 199, mục 13.2.2); TT (q.2 «四子女»: \"廉贞一人，天府同主贵子三人…天相同有二子\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Liêm Trinh"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "TU-LT-02",
+  "nhom": "LT",
+  "goc": "Liêm Trinh hãm (Tỵ, Hợi với Tham Lang; Mão, Dậu với Phá Quân) hoặc gặp Thất Sát: hiếm con, nuôi dạy vất vả, con cần được chăm sóc sức khỏe nhiều; gặp thêm sát tinh thì càng hiếm muộn *(sách gốc diễn đạt nặng, đã trung tính hóa)*.",
+  "nguonGoc": "TB (tr. 199, mục 13.2.2); TT (q.2 «四子女»: \"若贪狼破军七杀同主孤，再加羊陀火铃空劫全无\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Liêm Trinh"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TU-TD-01",
+  "nhom": "TD",
+  "goc": "Thiên Đồng đắc (Mão) đơn thủ, hoặc Đồng Âm tại Tý, Đồng Lương tại Dần: đông con, có con thành đạt nổi trội.",
+  "nguonGoc": "TB (tr. 199–200, mục 13.2.3); TT (q.2 «四子女»: \"天同庙旺五子有贵…太阴同五人\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Đồng"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "TU-TD-02",
+  "nhom": "TD",
+  "goc": "Thiên Đồng hãm (Thìn, Tuất): ít con, nuôi con vất vả; Đồng Âm tại Ngọ (Thái Âm hãm): số con giảm còn khoảng một nửa.",
+  "nguonGoc": "TB (tr. 199–200, mục 13.2.3: Thìn Tuất \"rất khó nuôi con\", Đồng Âm Ngọ \"may mắn lắm mới có hai con\"); TT (q.2 «四子女»: \"在午宫陷地减半\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Đồng"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TU-TD-03",
+  "nhom": "TD",
+  "goc": "Đồng Cự: có con nhưng nuôi vất vả, lớn lên anh chị em dễ bất hòa, mỗi người một nơi; Thiên Đồng hãm (Dậu): ít con, sách nói đổi chỗ ở nhiều thì \"mới có nhiều con\".",
+  "nguonGoc": "TB (tr. 199–200, mục 13.2.3); TT (q.2 «四子女»: \"巨门同三人\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Đồng"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TU-VK-01",
+  "nhom": "VK",
+  "goc": "Vũ Khúc miếu (Thìn, Tuất) đơn thủ: ít con, nhưng con khá giả; Vũ Phủ: ít con, con về sau thành đạt.",
+  "nguonGoc": "TB (tr. 200, mục 13.2.4); TT (q.2 «四子女»: \"武曲主一子\"; mục 天府: \"武曲同二人\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Vũ Khúc"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "TU-VK-02",
+  "nhom": "VK",
+  "goc": "Vũ Khúc hãm (Tỵ, Hợi, đồng cung Phá Quân): ít con, nuôi vất vả; Vũ Sát (Mão, Dậu): hiếm con, cha mẹ – con dễ xa cách *(sách gốc diễn đạt nặng, đã trung tính hóa)*.",
+  "nguonGoc": "TB (tr. 200, mục 13.2.4); TT (q.2 «四子女»: \"破军同主刑，止有一人…七杀同主孤\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Vũ Khúc"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TU-VK-03",
+  "nhom": "VK",
+  "goc": "Vũ Tham: có con muộn thì thuận; Vũ Tướng: sách nói thường có con nuôi trước rồi mới có con ruột. Hai sách khớp nhau ở cả hai ý này.",
+  "nguonGoc": "TB (tr. 200: \"muộn sinh con mới dễ nuôi\", \"nếu có con nuôi, tất thêm con đẻ\"); TT (q.2 «四子女»: \"贪狼晚招二子，天相同先招外子，后亲生一子\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Vũ Khúc"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "TU-TDU-01",
+  "nhom": "TDU",
+  "goc": "Thái Dương sáng (Thìn, Tỵ, Ngọ) đơn thủ: đông con, con thành đạt; Nhật Nguyệt đồng cung: đông con, có con nổi trội.",
+  "nguonGoc": "TB (tr. 200, mục 13.2.5); TT (q.2 «四子女»: \"太阳入庙男三女二晚子贵…太阴同五人\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Dương"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "TU-TDU-02",
+  "nhom": "TDU",
+  "goc": "Thái Dương hãm (Tuất, Hợi, Tý): có con muộn thì thuận, số con ít hơn; gặp thêm sát tinh thì càng ít.",
+  "nguonGoc": "TB (tr. 200: \"muộn sinh con mới dễ nuôi\"); TT (q.2 «四子女»: \"陷地有三子…再加羊陀火铃空劫止留一子\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Dương"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TU-TDU-03",
+  "nhom": "TDU",
+  "goc": "Nhật Cự tại Dần (Thái Dương vượng): con khá giả; Nhật Cự tại Thân (Thái Dương hãm): ít con, muộn thì thuận, con sinh sau thành đạt; Nhật Lương tại Mão tốt hơn tại Dậu.",
+  "nguonGoc": "TB (tr. 200, mục 13.2.5); TT (q.2 «四子女»: \"巨门同三人\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Dương"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "TU-TCO-01",
+  "nhom": "TCO",
+  "goc": "Thiên Cơ sáng (Tỵ, Ngọ, Mùi) đơn thủ: ít con (sách ghi hai).",
+  "nguonGoc": "TB (tr. 200, mục 13.3.6); TT (q.2 «四子女»: \"天机庙旺二人\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Cơ"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "TU-TCO-02",
+  "nhom": "TCO",
+  "goc": "Thiên Cơ ở Hợi (hãm), Tý, Sửu: duyên con mỏng hơn; gặp Kình, Đà, Hỏa, Linh, Không, Kiếp thì càng hiếm muộn.",
+  "nguonGoc": "TB (tr. 200: \"may mắn lắm mới có hai con\"); TT (q.2 «四子女»: \"加羊陀火铃空劫全无子\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Cơ"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TU-TCO-03",
+  "nhom": "TCO",
+  "goc": "Cơ Lương: con khá giả, có con nổi trội (TB \"năm con\"; TT tại Dần \"hai ba người\") — hai sách lệch số, xem TU-TRANH-01. Cơ Cự: ít con, muộn thì thuận. Cơ Âm: TB và TT đều ghi khả năng có \"con dị bào\" (con khác cha hoặc khác mẹ) hoặc con của vợ/chồng trước.",
+  "nguonGoc": "TB (tr. 200–201); TT (q.2 «四子女»: \"或庶生多，巨门一人，天梁同在寅宫有二三人…太阴同二三人\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Cơ"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "TU-TP-01",
+  "nhom": "TP",
+  "goc": "Thiên Phủ đắc (Tỵ, Hợi) đơn thủ: đông con, có con nổi trội; ở Sửu, Mùi, Mão, Dậu: con vừa phải.",
+  "nguonGoc": "TB (tr. 201, mục 13.3.7); TT (q.2 «四子女»: \"天府五人\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Phủ"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "TU-TP-02",
+  "nhom": "TP",
+  "goc": "Thiên Phủ gặp Kình, Đà, Hỏa, Linh, Không, Kiếp: số con giảm; Thiên Phủ một mình thêm Không Kiếp thì sách nói \"cô quân\" (ít nương tựa con).",
+  "nguonGoc": "TT (q.2 «四子女»: mục 天府 \"加羊陀火铃空劫止三人\"; mục 紫微 \"若独守再加空劫孤君\"); TB (tr. 203, mục 13.3.14)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Phủ"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "TU-TA-01",
+  "nhom": "TA",
+  "goc": "Thái Âm miếu (Dậu, Tuất, Hợi): đông con, thiên con gái, sinh con gái đầu thì thuận, có con nổi trội.",
+  "nguonGoc": "TB (tr. 201, mục 13.3.8); TT (q.2 «四子女»: \"太阴女三男二先女后男，庙旺有贵子\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Âm"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "TU-TA-02",
+  "nhom": "TA",
+  "goc": "Thái Âm hãm (Mão, Thìn, Tỵ): con ít hơn, muộn thì thuận; con có thể thiếu quyết đoán, quan hệ với cha mẹ dễ bất đồng.",
+  "nguonGoc": "TB (tr. 201: \"may mắn lắm mới có ba con… thường xung khắc với cha mẹ\"); TT (q.2 «四子女»: \"陷地减半，招软弱之子\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Âm"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TU-THL-01",
+  "nhom": "THL",
+  "goc": "Tham Lang đắc (Dần, Thân) hoặc vượng (Thìn, Tuất): ít con; con có chí, có thể thành đạt nhưng cá tính mạnh, dễ khác quan điểm với cha mẹ.",
+  "nguonGoc": "TB (tr. 201, mục 13.3.9: Dần Thân \"sau con cũng hiển đạt, nhưng không hợp tính với cha mẹ\"); TT (q.2 «四子女»: \"贪狼庙旺二人，早有刑克\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tham Lang"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "TU-THL-02",
+  "nhom": "THL",
+  "goc": "Tham Lang hãm (Tý, Ngọ): ít con, con nhỏ khó chăm, lớn lên khó dạy, cha mẹ cần kiên nhẫn *(sách gốc diễn đạt nặng, đã trung tính hóa)*.",
+  "nguonGoc": "TB (tr. 201, mục 13.3.9); WT6 (Tham Lang hãm \"ít con, khó dạy bảo\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tham Lang"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TU-CM-01",
+  "nhom": "CM",
+  "goc": "Cự Môn sáng (Tý, Ngọ vượng; Hợi đắc) đơn thủ: có con, con sớm xa cha mẹ (đi học, lập nghiệp xa); hai sách lệch về số con (TB \"năm con trở lên\", TT \"hai, trước khó sau dễ\").",
+  "nguonGoc": "TB (tr. 201, mục 13.3.10); TT (q.2 «四子女»: \"巨门入庙二人，先难后易\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Cự Môn"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "TU-CM-02",
+  "nhom": "CM",
+  "goc": "Cự Môn hãm (Thìn, Tuất, Tỵ): ít con, con lớn lên dễ bất đồng với cha mẹ, trong nhà cần chú ý hòa khí; gặp Kình, Đà, Hỏa, Linh thì ít con hơn.",
+  "nguonGoc": "TB (tr. 201); TT (q.2 «四子女»: \"加羊陀火铃子少\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Cự Môn"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TU-TT-01",
+  "nhom": "TT",
+  "goc": "Thiên Tướng đắc (Tỵ, Hợi, Sửu, Mùi) đơn thủ, không gặp Kình Đà Hỏa Linh: con vừa phải và nên người.",
+  "nguonGoc": "TB (tr. 201–202, mục 13.3.11); TT (q.2 «四子女»: \"天相无羊陀火铃同有二子成器\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Tướng"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "TU-TT-02",
+  "nhom": "TT",
+  "goc": "Thiên Tướng hãm (Mão, Dậu) hoặc gặp sát tinh: ít con, muộn thì thuận; TT nói có thể nhận con nuôi trước hoặc có con với người phối ngẫu sau.",
+  "nguonGoc": "TB (tr. 202: \"Nếu muộn sinh mới dễ nuôi\"); TT (q.2 «四子女»: \"有杀先招祀子居长…见羊陀火铃空劫必克，宜偏室生\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Tướng"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TU-TL-01",
+  "nhom": "TL",
+  "goc": "Thiên Lương miếu (Ngọ) hoặc đắc (Tý), đơn thủ: con hiếu, có con nổi trội (TB \"năm con trở lên\"; TT \"hai người\") — lệch số, xem TU-TRANH-01.",
+  "nguonGoc": "TB (tr. 202, mục 13.3.12); TT (q.2 «四子女»: \"天梁庙旺二人\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Lương"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "TU-TL-02",
+  "nhom": "TL",
+  "goc": "Thiên Lương hãm (Tỵ, Hợi): ít con, con lớn lên mỗi người một nơi; gặp Kình, Đà, Hỏa, Linh, Không, Kiếp thì sớm có chuyện xa cách.",
+  "nguonGoc": "TB (tr. 202: \"con cái thường ly tán, phiêu bạt\"); TT (q.2 «四子女»: \"加羊陀火铃空劫早克\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Lương"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TU-TS-01",
+  "nhom": "TS",
+  "goc": "Thất Sát miếu (Dần, Thân, Tý, Ngọ) đơn thủ: ít con nhưng con khá giả, có con nổi trội (TB tại Dần Thân); Tử Sát có cát tinh thì con khá hơn. Bản chất sao là \"cô\", nên số con thường ít.",
+  "nguonGoc": "TB (tr. 202, mục 13.3.13); TT (q.2 «四子女»: \"七杀主孤一人之分，紫微同再吉星有三人\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thất Sát"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "TU-TS-02",
+  "nhom": "TS",
+  "goc": "Thất Sát hãm (Thìn, Tuất) hoặc gặp Kình, Đà, Hỏa, Linh, Không, Kiếp: hiếm con; con có thể cá tính rất mạnh, khó dạy, cần nhiều tâm sức *(sách gốc diễn đạt nặng, đã trung tính hóa)*.",
+  "nguonGoc": "TB (tr. 202); TT (q.2 «四子女»: \"见羊陀火铃空劫全无，纵有不成器\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thất Sát"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TU-PQ-01",
+  "nhom": "PQ",
+  "goc": "Phá Quân miếu (Tý, Ngọ): có con (TB và TT cùng ghi ba), con cương cường, sớm tự lập, thường ở xa cha mẹ.",
+  "nguonGoc": "TB (tr. 202, mục 13.3.14: \"sau còn ba con… thường ở xa cha mẹ\"); TT (q.2 «四子女»: \"破军入庙三人，刚强之子\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Phá Quân"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "TU-PQ-02",
+  "nhom": "PQ",
+  "goc": "Phá Quân hãm (Dần, Thân): ít con, quan hệ cha mẹ – con dễ căng thẳng; gặp Không Kiếp, Hỏa, Đà mà không có sao chế thì càng ít con.",
+  "nguonGoc": "TB (tr. 202: \"dù sinh nhiều sau cũng bị hình khắc\"); TT (q.2 «四子女»: \"无制见空劫火陀少子\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Phá Quân"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TU-PQ-03",
+  "nhom": "PQ",
+  "goc": "Phá Quân vượng (Thìn, Tuất): ít con, con không hợp tính, thường xa cách cha mẹ; Liêm Phá ít con, nuôi vất vả; Vũ Phá ít con.",
+  "nguonGoc": "TB (tr. 202–203); TT (q.2 «四子女»: \"廉贞同一人\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Phá Quân"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "TU-SP-01",
+  "nhom": "SP",
+  "goc": "Tả Phù, Hữu Bật: thêm con; gặp nhiều cát tinh thì có con nổi trội; gặp sát tinh thì giảm.",
+  "nguonGoc": "TB (tr. 203, mục 13.3.19); TT (q.2 «四子女»: \"左辅单居男三女一，见紫微天府诸吉星主贵子…右弼三人加吉星有贵子，见羊陀火铃空劫减半\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TU-SP-02",
+  "nhom": "SP",
+  "goc": "Văn Xương, Văn Khúc: gặp sao sáng thì con thông minh, sớm thành đạt; gặp sao xấu thì nuôi con vất vả.",
+  "nguonGoc": "TB (tr. 203, mục 13.3.17); TT (q.2 «四子女»: \"文昌三人，加吉星更多，有擎陀火铃空劫只可一子之分\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TU-SP-03",
+  "nhom": "SP",
+  "goc": "Thiên Khôi, Thiên Việt: có con nổi trội (quý tử).",
+  "nguonGoc": "TB (tr. 203, mục 13.3.18); TT (q.2 «四子女»: \"魁钺单守主有贵子\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TU-SP-04",
+  "nhom": "SP",
+  "goc": "Lộc Tồn: con ít, muộn tốt hơn sớm, con hay ở xa cha mẹ; TT nói thích hợp nhận con nuôi. Hai sách khớp ý \"cô\".",
+  "nguonGoc": "TB (tr. 203, mục 13.3.20); TT (q.2 «四子女»: \"禄存主孤宜庶出一螟蛉之子\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TU-SP-05",
+  "nhom": "SP",
+  "goc": "Kình Dương, Đà La, Địa Không, Địa Kiếp: con ít, nuôi vất vả, quan hệ cha mẹ – con dễ bất hòa; đi cùng nhiều sao xấu thì hiếm muộn *(sách gốc diễn đạt nặng, đã trung tính hóa)*.",
+  "nguonGoc": "TB (tr. 203, mục 13.3.14); TT (q.2 «四子女»: \"羊陀陷宫孤单，加吉星庙旺有一人，如对宫有吉星多无杀冲，亦有三四人\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TU-SP-06",
+  "nhom": "SP",
+  "goc": "Hỏa Tinh, Linh Tinh: gặp sao sáng thì muộn con nhưng con khá giả; gặp sao xấu thì hiếm con, con ở xa.",
+  "nguonGoc": "TB (tr. 204, mục 13.3.16); TT (q.2 «四子女»: \"火星逢吉同不孤，陷宫加杀刑伤…铃星独守孤单\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TU-SP-07",
+  "nhom": "SP",
+  "goc": "Cô Thần, Quả Tú, Thiên Hình: muộn con, con nhỏ hay ốm vặt.",
+  "nguonGoc": "TB (tr. 204, 205, mục 13.3.25, 13.3.42); KL (Chương Hai, mục Cô Quả ở các cung — Phúc, Tử, Bào: \"hiếm muộn\"; Chương Ba, cung Tử xếp Hình, Cô, Quả vào nhóm bất lợi cho đường con) (bản quét, đã đọc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TU-SP-08",
+  "nhom": "SP",
+  "goc": "Long Trì, Phượng Các: con đẹp, có con nổi trội; Ân Quang, Thiên Quý: có con nuôi hiếu thảo; Hồng Loan: con khéo tay.",
+  "nguonGoc": "TB (tr. 204–205, mục 13.3.37, 13.3.38, 13.3.44); KL (Chương Hai, mục Quang Quý — Tử: \"Con hiếu đễ. Có con nuôi\"; Chương Ba, cung Tử: Long trì, Phượng các chủ con \"khá giả, xinh đẹp\"; không nhắc Hồng Loan) (bản quét, đã đọc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TU-SP-09",
+  "nhom": "SP",
+  "goc": "Tuần, Triệt án ngữ: con đầu lòng vất vả chăm, con lớn khó sống chung một nhà với cha mẹ; sách nói nhiều sao tốt thì số con giảm, nhiều sao xấu thì lại tăng (đảo chiều).",
+  "nguonGoc": "TB (tr. 205, mục 13.3.45); KL lại xếp Tuần, Triệt vào nhóm bất lợi cho đường con (Chương Ba, cung Tử), không nêu đảo chiều (bản quét, đã đọc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": true,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TU-SP-10",
+  "nhom": "SP",
+  "goc": "Đại Hao, Tiểu Hao, Thiên Khốc, Thiên Hư: con hay đi xa, dễ tiêu xài, cha mẹ – con dễ khác ý.",
+  "nguonGoc": "TB (tr. 205, mục 13.3.39, 13.3.40)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": true,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TU-CC-01",
+  "nhom": "CC",
+  "goc": "Vô chính diệu: lấy chính tinh cung xung chiếu (Điền Trạch) mà luận như chính tinh tọa thủ.",
+  "nguonGoc": "TB (tr. 207, mục 13.3.68); TT (q.2 «四子女»: \"如本宫无星曜专看对宫有何星宿\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TU-CC-02",
+  "nhom": "CC",
+  "goc": "Sinh ban ngày mà Thái Âm mờ ám thủ Tử Tức (hoặc Thái Dương chiếu), sinh ban đêm mà Thái Dương mờ ám thủ (hoặc Thái Âm chiếu): duyên con muộn, nuôi con nhỏ vất vả.",
+  "nguonGoc": "TB (tr. 198, mục 13.1); TT (q.2 «四子女»: \"日生最怕太阴临，夜生最怕太阳照，此星若在儿女宫方恐无儿\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TU-CC-03",
+  "nhom": "CC",
+  "goc": "Thái Dương ở dương cung thì con đầu thường là trai; Thái Âm ở âm cung thì con đầu thường là gái; TB nói thêm: Tử Tức dương cung sinh trai đầu, âm cung sinh gái đầu thì \"dễ nuôi\".",
+  "nguonGoc": "TT (q.2 «四子女»: \"若太阳星落在阳宫主先生男，太阴星落在阴宫主先生女\"); TB (tr. 198, mục 13.1)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TU-CC-04",
+  "nhom": "CC",
+  "goc": "Sát tinh thủ Tử Tức mà không có sao chế hóa, không được sinh: duyên con rất mỏng *(sách gốc diễn đạt nặng: \"tuyệt tự\", đã trung tính hóa)*. Tử Tức xấu nhưng tam hợp, Phúc Đức, Mệnh Thân tốt thì vẫn có con, con khá giả.",
+  "nguonGoc": "TT (q.2 «四子女»: \"专看刑杀守本宫无制化相生\"); TB (tr. 199, mục 13.1, đoạn cuối)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TU-CC-05",
+  "nhom": "CC",
+  "goc": "\"Truyền tinh\": cung Tử Tức của cha mẹ và cung Mệnh của con có nhiều sao giống nhau thì cha mẹ – con hợp nhau, về sau được nhờ con; nhiều sao khác nhau (\"bất truyền tinh\") thì ít hợp.",
+  "nguonGoc": "TB (tr. 228, mục 18.2)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": true,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TU-HOA-01",
+  "nhom": "HOA",
+  "goc": "Hóa Lộc tại Tử Tức: con khá giả, về sau được nhờ con.",
+  "nguonGoc": "TB (tr. 203, mục 13.3.21); KL (Chương Hai, mục Hóa Lộc: \"Ở bất luận cung nào, Hóa lộc cũng mang đến thịnh đạt\", nói chung, không riêng Tử Tức) (bản quét, đã đọc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TU-HOA-02",
+  "nhom": "HOA",
+  "goc": "Hóa Quyền: con sớm thành đạt, có chí.",
+  "nguonGoc": "TB (tr. 203, mục 13.3.22)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": true,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TU-HOA-03",
+  "nhom": "HOA",
+  "goc": "Hóa Khoa: con thông minh, học hành tốt.",
+  "nguonGoc": "TB (tr. 203, mục 13.3.23)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": true,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TU-HOA-04",
+  "nhom": "HOA",
+  "goc": "Hóa Kỵ: muộn con, nuôi con nhỏ vất vả, cha mẹ – con dễ bất đồng.",
+  "nguonGoc": "TB (tr. 204, mục 13.3.24); TT (q.2 «四子女»: Kỵ nằm trong nhóm \"主生子女有刑克\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TU-TRANH-01",
+  "nhom": "TRANH",
+  "goc": "Số con: TB và TT lệch nhau ở nhiều sao (Cơ Lương: TB năm, TT hai ba; Thiên Lương miếu: TB năm trở lên, TT hai; Cự Môn sáng: TB năm trở lên, TT hai). Ngoài ra số con ngày nay phụ thuộc lựa chọn của gia đình. Kết luận nhóm: chỉ luận xu hướng, không nêu số.",
+  "nguonGoc": "TB (tr. 200–202); TT (q.2 «四子女»)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TU-TRANH-02",
+  "nhom": "TRANH",
+  "goc": "Độ sáng: bảng spec mục 6 ghi Thiên Đồng ở Tỵ, Hợi là **đắc**, nhưng TB luận Thiên Đồng Tỵ Hợi ở Tử Tức theo hướng xấu (con ly tán). Thiên Cơ ở Tý, Sửu spec ghi **đắc**, nhưng TB xếp chung với Hợi (hãm) vào nhóm yếu. Giữ bảng spec cho độ sáng; khi luận hai vị trí này thì dùng giọng trung tính.",
+  "nguonGoc": "TB (tr. 199–200); spec mục 6",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TU-TRANH-03",
+  "nhom": "TRANH",
+  "goc": "Phạm vi cung: TB và TT chỉ bàn con cái; trang hiện đại WT10 mở sang học trò, sản phẩm sáng tạo. Nên dùng phần mở rộng như lớp nghĩa phụ, ghi rõ là lối hiện đại.",
+  "nguonGoc": "TB (tr. 198); WT10",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TU-TRANH-04",
+  "nhom": "TRANH",
+  "goc": "Những quy tắc TB về sẩy thai, dị tật, \"con là thần nhân giáng thế\", \"con dâm đãng\", và quy tắc vòng Tràng Sinh định đúng số con (mục 13.3.27–13.3.36, 13.3.43, 13.3.47–13.3.67) bị **loại khỏi luận giải** vì hoặc gây sợ, hoặc phán xét đạo đức, hoặc mang tính thần bí.",
+  "nguonGoc": "TB (tr. 204–207)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TU-TRANH-05",
+  "nhom": "TRANH",
+  "goc": "Phân loại Nam/Bắc Đẩu: TB đưa Thái Dương, Thiên Cơ vào Nam Đẩu để suy giới tính con; TT chỉ nói chung \"Nam Đẩu nhiều thì sinh trai\" và tách riêng quy tắc Thái Dương dương cung / Thái Âm âm cung. Chưa có sách thứ ba để chốt.",
+  "nguonGoc": "TB (tr. 198); TT (q.2 «四子女»)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ }
+]

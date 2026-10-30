@@ -1,0 +1,1112 @@
+[
+ {
+  "ma": "TAI-YN-01",
+  "nhom": "YN",
+  "goc": "Cung Tài Bạch xem cách kiếm tiền, nguồn sống (sinh kế), mức sung túc và cách tiêu, giữ tiền.",
+  "nguonGoc": "TB (tr. 190, \"Xem cung Tài Bạch để biết rõ sự giàu nghèo, và sinh kế\"); TT (q.2 «五财帛»); WT11 (\"liquid money and earning capacity\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAI-YN-02",
+  "nhom": "YN",
+  "goc": "Trước khi xét sao tại Tài Bạch phải xét Mệnh, Thân, Phúc Đức, Quan Lộc, Thiên Di. Các cung này đẹp thì Tài Bạch kém cũng không đáng lo; các cung này kém thì Tài Bạch đẹp cũng chưa trọn.",
+  "nguonGoc": "TB (tr. 190); TT (q.3 «论男女命同异»: \"男命先看身命，次看财帛宫禄迁移，俱要庙旺为吉\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAI-YN-03",
+  "nhom": "YN",
+  "goc": "Tam hợp Tài Bạch là Mệnh và Quan Lộc; cung xung chiếu là Phúc Đức. Cần xem Phúc Đức vì đó là cung đối của Tài Bạch (Tài tốt mà Phúc kém: kiếm được tiền nhưng khó thấy an lòng).",
+  "nguonGoc": "TT (q.3 «谈星要论»: \"四看福德宫…以福德宫对财帛宫也\"); WT11 (Wealth–Fortune axis, tam phương Mệnh – Quan – Di); spec mục 2.4",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAI-YN-04",
+  "nhom": "YN",
+  "goc": "Vũ Khúc là \"tài tinh\", chủ cung Tài Bạch; Thiên Phủ chủ kho (tài bạch, điền trạch). Tài Bạch sáng đẹp có tài tinh tọa thủ, Mệnh Thân xa Song Hao và sát tinh thì thường sung túc.",
+  "nguonGoc": "TT (q.1 «诸星问答论» mục 武曲: \"乃财帛宫主\"; mục 天府: \"职掌财帛、田宅、衣禄之神\"); TB (tr. 230, chú \"Tài tinh là tên riêng của Vũ Khúc\"; tr. 234, mục 20.3)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAI-YN-05",
+  "nhom": "YN",
+  "goc": "Tài Bạch là dòng tiền vào ra, Điền Trạch là nơi tích lũy; nên đọc hai cung cùng nhau (Tài mạnh mà Điền yếu: kiếm nhiều nhưng khó tích lũy).",
+  "nguonGoc": "WT11 (\"Caibo is the river, Property is the reservoir\"); TT (q.3 «财宅»: các cách xét chung Tài – Điền)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAI-TV-01",
+  "nhom": "TV",
+  "goc": "Tử Vi miếu (Ngọ) đơn thủ hoặc Tử Tướng: tài lộc dồi dào, có tích lũy; Tử Vi ở Tý (bình): khá nhưng kém hơn ở Ngọ.",
+  "nguonGoc": "TB (tr. 190, mục 12.1); TT (q.2 «五财帛»: \"紫微丰足仓箱…天相同财帛蓄积\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tử Vi"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "TAI-TV-02",
+  "nhom": "TV",
+  "goc": "Tử Vi gặp Kình, Đà, Hỏa, Linh, Không, Kiếp: tài lộc không vượng như thường.",
+  "nguonGoc": "TT (q.2 «五财帛»: \"加羊陀火铃空劫不旺\"); TB (tr. 194–195, mục 12.15–12.17: Kình Đà, Hỏa Linh, Không Kiếp mờ ám thì hao tán)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tử Vi"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "TAI-TV-03",
+  "nhom": "TV",
+  "goc": "Đồng cung: Tử Phủ giàu, giữ của bền, hợp nghề tài chính; Tử Sát kiếm tiền nhanh; Tử Phá buổi đầu chật vật, về sau dễ kiếm.",
+  "nguonGoc": "TB (tr. 190, mục 12.1); TT (q.2 «五财帛»: \"天府同富足终身保守…七杀同加吉财帛横发\", \"破军同先难后易\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tử Vi"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "TAI-LT-01",
+  "nhom": "LT",
+  "goc": "Liêm Trinh vượng (Dần, Thân) đơn thủ: kiếm tiền qua cạnh tranh, môi trường sôi động; giàu chậm nhưng chắc. Liêm Phủ, Liêm Tướng: khá giả, giữ của bền.",
+  "nguonGoc": "TB (tr. 190, mục 12.2); TT (q.2 «五财帛»: \"廉贞在申寅宫闹中生财…天相同富足仓箱\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Liêm Trinh"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "TAI-LT-02",
+  "nhom": "LT",
+  "goc": "Liêm Trinh hãm (Tỵ, Hợi, đồng cung Tham Lang): tài chính dễ lên xuống thất thường, dễ vướng tranh chấp vì tiền; nên giữ giấy tờ, hợp đồng minh bạch *(sách gốc diễn đạt nặng, đã trung tính hóa)*.",
+  "nguonGoc": "TB (tr. 190: \"Hay mắc tai họa vì tiền, nhất là kiện tụng\"); TT (q.2 «五财帛»: \"贪狼生横发横破\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Liêm Trinh"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TAI-LT-03",
+  "nhom": "LT",
+  "goc": "Liêm Phá (Mão, Dậu, Liêm hãm): tiền vào ra thất thường, hay tiêu nhiều nhưng hết lại có; buổi đầu khó, sau dễ hơn. Liêm Sát: kiếm tiền trong môi trường xáo động.",
+  "nguonGoc": "TB (tr. 190, mục 12.2); TT (q.2 «五财帛»: \"陷宫先难后易…七杀同闹中取\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Liêm Trinh"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TAI-TD-01",
+  "nhom": "TD",
+  "goc": "Thiên Đồng đắc (Mão) đơn thủ, hoặc Đồng Âm tại Tý: tay trắng làm nên, càng về sau càng khá; Đồng Lương: kinh doanh ngày càng phát.",
+  "nguonGoc": "TB (tr. 190–191, mục 12.3); TT (q.2 «五财帛»: \"天同白手生财晚发…天梁同财大旺\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Đồng"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "TAI-TD-02",
+  "nhom": "TD",
+  "goc": "Thiên Đồng hãm (Thìn, Tuất): tài chính hay eo hẹp; Dậu (hãm): tiền tụ tán thất thường; Đồng Âm tại Ngọ: phải vất vả, về già mới khá.",
+  "nguonGoc": "TB (tr. 190–191); TT (q.2 «五财帛» mục 太阴: \"陷宫成败不聚\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Đồng"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TAI-TD-03",
+  "nhom": "TD",
+  "goc": "Đồng Cự: tiền tụ tán thất thường, dễ thị phi vì tiền; đi xa, làm ăn nơi khác thì thuận hơn.",
+  "nguonGoc": "TB (tr. 191); TT (q.2 «五财帛»: \"巨门同财气进退\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Đồng"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "TAI-VK-01",
+  "nhom": "VK",
+  "goc": "Vũ Khúc miếu (Thìn, Tuất) đơn thủ: tài lộc lớn; gặp cát hóa thì càng vượng.",
+  "nguonGoc": "TB (tr. 191, mục 12.4); TT (q.2 «五财帛»: \"武曲丰足化吉有巨万家资\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Vũ Khúc"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "TAI-VK-02",
+  "nhom": "VK",
+  "goc": "Vũ Phủ: giàu, giữ của bền; Vũ Tướng: của cải dồi dào, hay gặp người nâng đỡ.",
+  "nguonGoc": "TB (tr. 191); TT (q.2 «五财帛»: \"天相同财帛丰盈，遇贵生财成家\"; q.3 «财宅»: \"紫府武曲居财帛更兼权禄富奢翁\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Vũ Khúc"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "TAI-VK-03",
+  "nhom": "VK",
+  "goc": "Vũ Tham: từ sau khoảng 30 tuổi mới phát; Vũ Sát: tay trắng lập nghiệp, đầu vất vả sau dễ. Hai sách khớp gần như nguyên văn.",
+  "nguonGoc": "TB (tr. 191: \"từ ngoài 30 trở đi, mới giàu\"; \"tay trắng lập nghiệp\"); TT (q.2 «五财帛»: \"七杀同白手生财成家，贪狼同三十年后方发财\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Vũ Khúc"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "TAI-VK-04",
+  "nhom": "VK",
+  "goc": "Vũ Khúc hãm (Tỵ, Hợi, đồng cung Phá Quân): tiền vào tay này ra tay kia, trước ít sau có; hợp ngành sản xuất, thương mại. Gặp Kình, Đà, Hỏa, Linh thì khó tụ, kỵ nhất gặp Không vong.",
+  "nguonGoc": "TB (tr. 191: \"tiền vào tay này sang tay kia, trước không sau có\"); TT (q.2 «五财帛»: \"破军同东来西去先无后有…加羊陀火铃不聚极怕空亡\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Vũ Khúc"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TAI-TDU-01",
+  "nhom": "TDU",
+  "goc": "Thái Dương sáng (Dần đến Ngọ): dễ kiếm tiền, sung túc.",
+  "nguonGoc": "TB (tr. 191, mục 12.5); TT (q.2 «五财帛»: \"太阳入庙丰足\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Dương"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "TAI-TDU-02",
+  "nhom": "TDU",
+  "goc": "Thái Dương hãm (Thân đến Tý): phải vất vả mới đủ dùng, về già mới sung túc.",
+  "nguonGoc": "TB (tr. 191); TT (q.2 «五财帛»: \"陷宫劳碌不遂\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Dương"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TAI-TDU-03",
+  "nhom": "TDU",
+  "goc": "Nhật Nguyệt đồng cung: trước ít sau nhiều; gặp Tả Hữu, cát tinh thì phát khá. Nhật Cự: TB nói tại Dần giàu, tại Thân vất vả; TT nói chung \"sớm thành bại, trung niên chưa đầy\".",
+  "nguonGoc": "TB (tr. 191–192); TT (q.2 «五财帛»: \"太阴同加左右吉星发财不小…巨门同早年成败中未充盈\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Dương"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "TAI-TCO-01",
+  "nhom": "TCO",
+  "goc": "Thiên Cơ sáng (Tỵ, Ngọ, Mùi) đơn thủ: tiền bạc sung túc; bản chất là kiếm tiền bằng trí óc, tính toán, \"lao tâm\".",
+  "nguonGoc": "TB (tr. 191, mục 12.6); TT (q.2 «五财帛»: \"天机劳心费力生财\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Cơ"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "TAI-TCO-02",
+  "nhom": "TCO",
+  "goc": "Thiên Cơ ở Hợi (hãm), Tý, Sửu: kiếm tiền chậm và khó; gặp Kình, Đà, Hỏa, Linh, Không, Kiếp thì một đời có thành có bại.",
+  "nguonGoc": "TB (tr. 191); TT (q.2 «五财帛»: \"加羊陀火铃空劫一生有成有败\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Cơ"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TAI-TCO-03",
+  "nhom": "TCO",
+  "goc": "Cơ Lương: dễ làm giàu nhờ mưu trí, có nguồn thu ngoài; Cơ Cự: giàu nhờ cạnh tranh, hoạt động sôi nổi; Cơ Âm tại Thân tay trắng mà khá, tại Dần thành bại thất thường.",
+  "nguonGoc": "TB (tr. 191); TT (q.2 «五财帛»: \"巨门同闹中求取，天梁同机关巧计生外财，太阴同陷宫成败\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Cơ"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "TAI-TP-01",
+  "nhom": "TP",
+  "goc": "Thiên Phủ đắc (Tỵ, Hợi) đơn thủ: sung túc, giữ của bền; ở Sửu, Mùi, Mão, Dậu: khá nhưng kém hơn.",
+  "nguonGoc": "TB (tr. 191, mục 12.7); TT (q.2 «五财帛»: \"天府富足\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Phủ"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "TAI-TP-02",
+  "nhom": "TP",
+  "goc": "Thiên Phủ gặp Kình, Đà, Hỏa, Linh, Không, Kiếp: có thành có bại, không còn ổn định.",
+  "nguonGoc": "TT (q.2 «五财帛»: \"见羊陀火铃空劫有成败\"); TB (tr. 194–195, mục 12.15–12.17)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Phủ"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "TAI-TA-01",
+  "nhom": "TA",
+  "goc": "Thái Âm miếu (Dậu, Tuất, Hợi): dễ kiếm tiền, tích lũy tốt; Thái Âm cùng Lộc Tồn, Tả Hữu thì rất khá.",
+  "nguonGoc": "TB (tr. 192, mục 12.8); TT (q.2 «五财帛»: \"太阴入庙富足仓箱…禄存兼左右同主大富\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Âm"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "TAI-TA-02",
+  "nhom": "TA",
+  "goc": "Thái Âm hãm (Mão, Thìn, Tỵ): phải vất vả, thành bại khó tụ, về già mới sung túc.",
+  "nguonGoc": "TB (tr. 192); TT (q.2 «五财帛»: \"陷宫成败不聚\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thái Âm"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TAI-THL-01",
+  "nhom": "THL",
+  "goc": "Tham Lang vượng (Thìn, Tuất) đơn thủ: có thể phát nhanh (\"hoạnh phát\"), càng về già càng khá.",
+  "nguonGoc": "TB (tr. 192, mục 12.9); TT (q.2 «五财帛»: \"贪狼庙旺横发\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tham Lang"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "TAI-THL-02",
+  "nhom": "THL",
+  "goc": "Tham Lang hãm (Tý, Ngọ): dễ tiêu xài vì vui chơi, tài chính eo hẹp; nên lập kỷ luật chi tiêu *(sách gốc diễn đạt nặng, đã trung tính hóa)*. Tại Dần, Thân (đắc): tiền vào ra nhanh.",
+  "nguonGoc": "TB (tr. 192: \"hoang phí, chơi bời nên hao tán\"); TT (q.2 «五财帛»: \"陷地贫穷\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tham Lang"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TAI-THL-03",
+  "nhom": "THL",
+  "goc": "Tham Lang gặp Hỏa Tinh: trước 30 tuổi có thành có bại, sau 30 có thể phát nhanh.",
+  "nguonGoc": "TT (q.2 «五财帛»: \"见火星三十年前成败，三十年后横发\"); WT7 (Tham Lang gặp Hỏa, Linh \"giàu nhanh hoặc được của bất ngờ\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Tham Lang"
+   ],
+   "doSang": null
+  }
+ },
+ {
+  "ma": "TAI-CM-01",
+  "nhom": "CM",
+  "goc": "Cự Môn sáng (Tý, Ngọ vượng; Hợi đắc) đơn thủ: tay trắng lập nghiệp, hợp môi trường cạnh tranh, sôi động.",
+  "nguonGoc": "TB (tr. 192, mục 12.10: \"tay trắng lập nghiệp… nhất là trong lúc náo loạn, cạnh tranh\"); TT (q.2 «五财帛»: \"巨门白手生财成家，宜闹中取\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Cự Môn"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "TAI-CM-02",
+  "nhom": "CM",
+  "goc": "Cự Môn hãm (Thìn, Tuất, Tỵ): tiền tụ tán thất thường, dễ thị phi vì tiền; gặp Kình, Đà, Hỏa, Linh, Không, Kiếp thì nhiều đường hao.",
+  "nguonGoc": "TB (tr. 192); TT (q.2 «五财帛»: \"加羊陀火铃空劫破财多端\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Cự Môn"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TAI-TT-01",
+  "nhom": "TT",
+  "goc": "Thiên Tướng đắc (Tỵ, Hợi, Sửu, Mùi) đơn thủ: sung túc, hay có mối lợi tự đến.",
+  "nguonGoc": "TB (tr. 193, mục 12.11); TT (q.2 «五财帛»: \"天相富足\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Tướng"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "TAI-TT-02",
+  "nhom": "TT",
+  "goc": "Thiên Tướng hãm (Mão, Dậu): bình thường, hợp nghề kỹ thuật, công nghệ; gặp Kình, Đà, Hỏa, Linh, Không, Kiếp, Hao, Kỵ thì thành bại, khó tích lũy.",
+  "nguonGoc": "TB (tr. 193: \"bình thường, nên chuyên về công nghệ\"); TT (q.2 «五财帛»: \"加羊陀火铃空劫耗忌，成败无积聚\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Tướng"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TAI-TL-01",
+  "nhom": "TL",
+  "goc": "Thiên Lương miếu (Ngọ), đắc (Tý): tài chính vững, ít phải lo sinh kế.",
+  "nguonGoc": "TB (tr. 193, mục 12.12); TT (q.2 «五财帛»: \"天梁富足入庙上等富贵\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Lương"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "TAI-TL-02",
+  "nhom": "TL",
+  "goc": "Thiên Lương hãm (Tỵ, Hợi): kiếm tiền phải đi nhiều nơi, vất vả, khó giữ của.",
+  "nguonGoc": "TB (tr. 193: \"lang thang nay đây mai đó đi kiếm tiền… không giữ được của\"); TT (q.2 «五财帛»: \"陷宫辛勤求财度日\"); WT7 (hãm \"phiêu bạt, vất vả kiếm tiền\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thiên Lương"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TAI-TS-01",
+  "nhom": "TS",
+  "goc": "Thất Sát miếu (Dần, Thân) đơn thủ: trước ít sau nhiều, đến tuổi trung niên kiếm tiền nhanh; tại Tý, Ngọ (miếu): tụ tán thất thường nhưng hay có khoản thu bất ngờ.",
+  "nguonGoc": "TB (tr. 193, mục 12.13); WT7 (Thất Sát miếu vượng gặp Lộc, Quyền, Khoa \"nguồn tiền tài dồi dào\", \"của bất ngờ\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thất Sát"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "TAI-TS-02",
+  "nhom": "TS",
+  "goc": "Thất Sát hãm (Thìn, Tuất): tài chính hay eo hẹp *(sách gốc: \"suốt đời thiếu thốn\", đã trung tính hóa)*; WT7 nói gặp Tả Hữu, Xương Khúc thì cải thiện. TT không có mục Thất Sát đơn thủ ở Tài Bạch.",
+  "nguonGoc": "TB (tr. 193); WT7",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Thất Sát"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TAI-PQ-01",
+  "nhom": "PQ",
+  "goc": "Phá Quân miếu (Tý, Ngọ) đơn thủ: có tích lũy, kiếm tiền mạnh tay, dám chi để thu lớn; tại Thìn, Tuất (vượng) cũng khá, tụ tán nhưng hết lại có.",
+  "nguonGoc": "TB (tr. 193–194, mục 12.14); TT (q.2 «五财帛»: \"破军在子午宫，多有金银宝贝蓄积，辰戌旺宫亦财盛\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Phá Quân"
+   ],
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  }
+ },
+ {
+  "ma": "TAI-PQ-02",
+  "nhom": "PQ",
+  "goc": "Phá Quân hãm (Dần, Thân): kiếm tiền khó, chi nhiều hơn thu; hợp nghề thủ công, mỹ thuật. Gặp Không Kiếp thì rất eo hẹp.",
+  "nguonGoc": "TB (tr. 194: \"kiếm tiền khó khăn, thu vào ít phóng ra nhiều, nên làm nghề thủ công hay mỹ thuật\"); TT (q.2 «五财帛»: \"陷宫破祖不聚…加空劫极贫\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false,
+  "goiY": {
+   "sao": [
+    "Phá Quân"
+   ],
+   "doSang": [
+    "Hãm"
+   ]
+  }
+ },
+ {
+  "ma": "TAI-SP-01",
+  "nhom": "SP",
+  "goc": "Lộc Tồn: sung túc, dễ có tiền; gặp sát tinh thì trước ít sau có.",
+  "nguonGoc": "TB (tr. 194, mục 12.21); TT (q.2 «五财帛»: \"禄存富足仓箱堆金积玉…羊陀火铃空劫耗忌先无后有\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAI-SP-02",
+  "nhom": "SP",
+  "goc": "Tả Phù, Hữu Bật: dễ làm giàu, hay được người giúp về tiền; gặp sát tinh, Hao, Kỵ thì thành bại không tụ.",
+  "nguonGoc": "TB (tr. 194, mục 12.20); TT (q.2 «五财帛»: \"左辅右弼，诸宫富足，会诸吉星得贵人财，加羊陀火铃空劫耗忌，主成败而不聚\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAI-SP-03",
+  "nhom": "SP",
+  "goc": "Thiên Khôi, Thiên Việt: dễ kiếm tiền, gặp quý nhân; TT nói kiếm tiền theo lối \"thanh cao\".",
+  "nguonGoc": "TB (tr. 194, mục 12.19); TT (q.2 «五财帛»: \"魁钺主清高中生财一生遂意\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAI-SP-04",
+  "nhom": "SP",
+  "goc": "Văn Xương, Văn Khúc: nhiều sao sáng thì khá giả; nhiều sao xấu thì hao, hay phiền vì tiền nhưng vẫn có người giúp.",
+  "nguonGoc": "TB (tr. 194, mục 12.18); TT (q.2 «五财帛»: \"文昌富足仓箱，加吉星财气旺\"; \"文曲…加羊陀火铃空劫…东来西去\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAI-SP-05",
+  "nhom": "SP",
+  "goc": "Kình Dương, Đà La: đắc địa (tứ mộ) thì kiếm tiền trong môi trường cạnh tranh, nhanh; hãm thì hao, phải vất vả xoay xở.",
+  "nguonGoc": "TB (tr. 194, mục 12.15); TT (q.2 «五财帛»: \"擎羊辰戌丑未宫闹中生财，陷地破祖不聚\"; \"陀罗闹中生财，陷宫辛勤求财度日\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAI-SP-06",
+  "nhom": "SP",
+  "goc": "Hỏa Tinh, Linh Tinh: sáng thì phát nhanh nhưng cũng hao nhanh (\"hoạnh phát hoạnh phá\"); hãm thì vất vả.",
+  "nguonGoc": "TB (tr. 194, mục 12.16); TT (q.2 «五财帛»: \"火星独守横发横破，陷宫辛勤\"; \"铃星入庙独守横发，陷地孤寒辛苦度日\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAI-SP-07",
+  "nhom": "SP",
+  "goc": "Địa Không, Địa Kiếp: đắc địa thì có thể lên nhanh nhưng đi xuống bất ngờ, hay đầu tư táo bạo; hãm thì eo hẹp. Nên tránh rủi ro cao *(gợi ý của nhóm)*.",
+  "nguonGoc": "TB (tr. 195, mục 12.17); TT (q.3 «财福»: \"劫空临财福之乡生来贫贱\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAI-SP-08",
+  "nhom": "SP",
+  "goc": "Thiên Mã: dễ kiếm tiền ở phương xa; Lộc Tồn (hoặc Hóa Lộc) gặp Thiên Mã: làm ăn xa, buôn bán phát đạt.",
+  "nguonGoc": "TB (tr. 195–196, mục 12.24, 12.39, 12.44); KL (Chương Ba, Coi các cung — cung Tài: \"Lộc Mã giao trì… thì cũng giàu sang có ngày\"; không nói riêng về phương xa) (bản quét, đã đọc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAI-SP-09",
+  "nhom": "SP",
+  "goc": "Đại Hao, Tiểu Hao: dễ chi tiêu quá tay; sáng thì dễ kiếm nhưng tiêu hết, hãm thì eo hẹp.",
+  "nguonGoc": "TB (tr. 195, mục 12.27); KL (Phú Ma Thị: \"Song Hao thiết kỵ ư tài cung\"; Chương Hai, mục Song Hao — Tài: \"Tán tài\") (bản quét, đã đọc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAI-SP-10",
+  "nhom": "SP",
+  "goc": "Cô Thần, Quả Tú: tiết kiệm, khéo giữ của; Đẩu Quân: giữ của vững; Ân Quang, Thiên Quý: hay có người giúp tiền.",
+  "nguonGoc": "TB (tr. 195, mục 12.25, 12.28, 12.29); KL (Phú Ma Thị: Cô Thần, Quả Tú \"nên đóng ở cung Điền Trạch và cung Tài bạch để giữ của\"; mục Quang Quý — Tài: \"Được người giúp\") (bản quét, đã đọc); NL (Quyền uy của Đẩu Quân: Đẩu Quân \"ở cung điền tài thì giữ gìn điền sản\") (bản quét, đã đọc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+   "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAI-SP-11",
+  "nhom": "SP",
+  "goc": "Tuần, Triệt án ngữ Tài Bạch: cùng nhiều sao tốt thì kiếm tiền khó, vào ra nhanh; cùng nhiều sao xấu thì trước khó sau dễ (đảo chiều).",
+  "nguonGoc": "TB (tr. 195–196, mục 12.34); KL (Chương Hai, mục Tuần Triệt: \"chính tinh tọa chủ vốn xấu, gặp Tuần Triệt sẽ được giải thoát\"; mục Vũ Khúc: Tuần Triệt thuộc \"các sao khắc Vũ khúc ở Tài Điền\") (bản quét, đã đọc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAI-CC-01",
+  "nhom": "CC",
+  "goc": "Nhật Nguyệt giáp Tài: cung Tài Bạch (hoặc Mệnh) có Thái Dương, Thái Âm ở hai cung kẹp hai bên, thêm cát tinh, thì \"không quý cũng giàu\". Ví dụ TT: Tài tại Mùi có Thiên Phủ, Nhật ở Ngọ, Nguyệt ở Thân.",
+  "nguonGoc": "TT (q.3 «财帛»: \"日月夹财加吉曜不贵则富\"; q.1 «定富局»: \"日月夹财…财帛宫亦然\"); TB (tr. 230, mục 19.1.4)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAI-CC-02",
+  "nhom": "CC",
+  "goc": "Tả Hữu giáp hoặc hợp chiếu Tài Bạch, Quan Lộc: cơm áo dồi dào.",
+  "nguonGoc": "TT (q.3 «财帛»: \"左右财官兼夹拱衣禄丰隆\"); TB (tr. 194, mục 12.20)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAI-CC-03",
+  "nhom": "CC",
+  "goc": "Tử Phủ, Vũ Khúc ở Tài Bạch kèm Hóa Quyền, Hóa Lộc: rất giàu. Tử Vi với Tả Hữu ở Tài Bạch: hợp nghề quản lý tài chính.",
+  "nguonGoc": "TT (q.3 «财宅»: \"紫府武曲居财帛更兼权禄富奢翁\"; q.3 «论诸星同垣…»: \"紫微辅弼同宫…在财帛宫则为财赋之官\"); TB (tr. 190–191, mục 12.1, 12.4: \"thường làm quan về tài chính\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAI-CC-04",
+  "nhom": "CC",
+  "goc": "Vũ Khúc hoặc Thái Âm ở Tài Bạch: hợp công việc liên quan tài chính, ngân quỹ.",
+  "nguonGoc": "TT (q.3 «财宅»: \"武曲太阴多居财赋之任…取财帛宫遇武曲或遇太阴星\"); TT (q.1 «诸星问答论» mục 武曲: \"与太阴以互权…财帛田宅为专司之所\"); KL (Chương Hai, mục Vũ Khúc: \"Vũ khúc là Tài bạch tinh… có óc kinh doanh\"; KL không nhắc Thái Âm ở điểm này) (bản quét, đã đọc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAI-CC-05",
+  "nhom": "CC",
+  "goc": "Tài Lộc giáp Mã: Thiên Mã thủ cung, Vũ Khúc và Lộc kẹp hai bên, gặp đất sinh vượng càng tốt. TB áp cho Mệnh, Điền, Tài; TT ghi cho Mệnh.",
+  "nguonGoc": "TT (q.1 «定富局»: \"财禄夹马 马守命武禄来夹是也\"); TB (tr. 230, mục 19.1.6)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAI-CC-06",
+  "nhom": "CC",
+  "goc": "Vũ Khúc sáng ở Tài Bạch tại tứ mộ (Thìn, Tuất, Sửu, Mùi) và Thái Âm sáng chiếu Điền Trạch: cách giàu đẹp nhất theo TB.",
+  "nguonGoc": "TB (tr. 234, mục 20.3)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": true,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAI-CC-07",
+  "nhom": "CC",
+  "goc": "Vô chính diệu: lấy chính tinh xung chiếu (Phúc Đức) mà luận; khó giàu lớn, trừ hai trường hợp: có Tuần/Triệt án ngữ (trước khó sau dễ, về già sung túc), hoặc Nhật Nguyệt cùng sáng xung chiếu hay hợp chiếu (giàu).",
+  "nguonGoc": "TB (tr. 197, mục 12.56); KL đồng ý hai ngoại lệ (mục Nhật Nguyệt — Tài: \"Nhật Nguyệt sáng chiếu rất giầu có\"; mục Tuần Triệt: vô chính diệu có Tuần Triệt \"thì lại tốt\") nhưng (bàn ở cung Di) không tán thành mượn chính tinh cung đối (bản quét, đã đọc)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
+  ],
+  "motNguon": true,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAI-CC-08",
+  "nhom": "CC",
+  "goc": "Không Kiếp ở Tài Bạch hoặc Phúc Đức: tài chính dễ chật vật; Hóa Quyền, Hóa Lộc ở Tài Bạch hoặc Phúc Đức: sớm có điều kiện.",
+  "nguonGoc": "TT (q.3 «财福»: \"权禄守财福之位出世荣华，劫空临财福之乡生来贫贱\"); TB (tr. 194–195, mục 12.17, 12.21, 12.22)",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAI-HOA-01",
+  "nhom": "HOA",
+  "goc": "Hóa Lộc tại Tài Bạch: dễ kiếm tiền, sung túc.",
+  "nguonGoc": "TB (tr. 194, mục 12.21); TT (q.3 «财福»: \"权禄守财福之位出世荣华\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAI-HOA-02",
+  "nhom": "HOA",
+  "goc": "Hóa Quyền: làm giàu nhanh, có quyền chủ động trong tiền bạc, hay gặp người giúp.",
+  "nguonGoc": "TB (tr. 195, mục 12.22); TT (q.3 «财福»)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAI-HOA-03",
+  "nhom": "HOA",
+  "goc": "Hóa Khoa: kiếm tiền nhờ uy tín, danh tiếng; hay gặp người giúp.",
+  "nguonGoc": "TB (tr. 195, mục 12.22)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": true,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAI-HOA-04",
+  "nhom": "HOA",
+  "goc": "Hóa Kỵ: dễ hao tiền, tiền bạc vướng bận; TT nói Kỵ thủ cung thì việc buôn bán, nghề nghiệp \"đều không lợi\", nên chỉ làm \"bảy phần\". Gợi ý: quản lý chi tiêu, tránh đầu tư liều.",
+  "nguonGoc": "TB (tr. 195, mục 12.23: \"Tán tài\"); TT (q.1 «诸星问答论» mục 化忌: \"虽商贾技艺人，皆不宜利…处事只求七分\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAI-TRANH-01",
+  "nhom": "TRANH",
+  "goc": "Tử Tham ở Tài Bạch: TB nói \"được hưởng của hương hỏa, nhưng về sau cũng suy kém\"; TT nói \"hiện thành, gia kế về sau càng đầy\" (紫微同守现成，家计自后更丰盈). Hai sách **ngược nhau** về giai đoạn sau. Khi luận: chỉ nói \"có nền tảng sẵn, cần chủ động duy trì\".",
+  "nguonGoc": "TB (tr. 190, 192); TT (q.2 «五财帛»)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAI-TRANH-02",
+  "nhom": "TRANH",
+  "goc": "Độ sáng: spec mục 6 ghi Thiên Đồng ở Tỵ, Hợi là **đắc**, Thiên Cơ ở Tý, Sửu là **đắc**, nhưng TB luận các vị trí này ở Tài Bạch theo hướng kém (hoang phí; kiếm tiền chậm). Giữ bảng spec, dùng giọng trung tính.",
+  "nguonGoc": "TB (tr. 190–191); spec mục 6",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAI-TRANH-03",
+  "nhom": "TRANH",
+  "goc": "Phạm vi cách cục: TB mở \"Kim Sán Quang Huy\" (Thái Dương ở Ngọ) và \"Nhật Nguyệt chiếu bích\" sang cả cung Điền, Tài; TT chỉ ghi Kim Sán Quang Huy cho Mệnh tại Ngọ, Nhật Nguyệt chiếu bích cho Điền Trạch. Nhóm chỉ dùng hai cách này cho Tài Bạch như yếu tố phụ.",
+  "nguonGoc": "TB (tr. 230, mục 19.1.3, 19.1.5); TT (q.1 «定富局»: \"金灿光辉 太阳单守，命在午宫是也\", \"日月照璧 日月临田宅宫是也\")",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAI-TRANH-04",
+  "nhom": "TRANH",
+  "goc": "TB có nhiều quy tắc phán xét đạo đức (Hình + Lực Sĩ \"hay đi ăn trộm\", Không Kiếp + Tả Hữu \"lừa đảo\", Đào Hồng \"nhờ nhan sắc\", Xương Khúc \"thích đánh bạc\"; mục 12.18, 12.26, 12.36–12.38, 12.52) và câu mở chương \"giàu nhưng chết non\". Nhóm **loại khỏi luận giải**: không suy tư cách đạo đức của khách từ lá số.",
+  "nguonGoc": "TB (tr. 190, 194–197)",
+  "nguon": [
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ },
+ {
+  "ma": "TAI-TRANH-05",
+  "nhom": "TRANH",
+  "goc": "Thất Sát đơn thủ ở Tài Bạch: TT không có mục riêng, chỉ có tổ hợp Tử Sát, Vũ Sát, Liêm Sát; quy tắc TAI-TS-01/02 chủ yếu dựa TB, WT7 chỉ là trang hiện đại không ghi sách. Cần sách thứ ba (NL, CN) để xác nhận.",
+  "nguonGoc": "TT (q.2 «五财帛»); TB (tr. 193); WT7",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "motNguon": false,
+  "chuaNguon": false
+ }
+]
