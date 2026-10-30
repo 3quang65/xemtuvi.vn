@@ -65,6 +65,7 @@ export function truNangGoiCuaToi(db: Csdl, nguoiDungId: number, bang?: BangGia, 
 export function taoDon(db: Csdl, nguoiDungId: number, v: { maGoi: unknown; chuDe?: unknown; laSoId?: unknown; bang?: BangGia }, cong: Cong = 'gia_lap', bayGio = Date.now()) {
   const goi = layGoi(typeof v.maGoi === 'string' ? v.maGoi : null, v.bang);
   if (!goi) throw new LoiNghiepVu('goi_sai', 'Gói không tồn tại.');
+  if (goi.an && process.env.MO_GOI_AN !== '1') throw new LoiNghiepVu('goi_an', 'Gói này chưa mở bán.'); // MO_GOI_AN=1 chỉ để chạy test luồng nâng gói
   let chuDe: string | null = null;
   if (goi.ma === 'mot-chu-de') {
     const cd = layChuDe(typeof v.chuDe === 'string' ? v.chuDe : null);

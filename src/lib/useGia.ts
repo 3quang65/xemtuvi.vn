@@ -2,7 +2,7 @@
 // Giá khách thấy: hỏi /api/gia một lần mỗi lần tải trang (máy chủ quyết định nhánh thử, cookie giữ nhánh theo thiết bị).
 // Lỗi mạng -> giá hiện hành. Khi chưa tải xong, san=false để màn hình chờ, tránh nháy giá cũ rồi đổi.
 import { useEffect, useState } from 'react';
-import { goiTheoBang, type BangGia, type Goi } from './goi';
+import { goiDangBan, goiTheoBang, type BangGia, type Goi } from './goi';
 import { datNhanh } from './phien';
 
 interface TraLoi { nhanh: string | null; gia: BangGia }
@@ -17,5 +17,5 @@ export function useGia(): { san: boolean; goi: Goi[]; vanNam: Goi[] } {
     return () => { huy = true; };
   }, []);
   const { goi, vanNam } = goiTheoBang(kq?.bang);
-  return { san: kq !== null, goi, vanNam };
+  return { san: kq !== null, goi: goiDangBan(goi), vanNam: goiDangBan(vanNam) };
 }

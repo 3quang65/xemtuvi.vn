@@ -1,5 +1,6 @@
 // Nâng lên Thành viên năm: trừ đơn lẻ đã trả trong 30 ngày, trần = giá Trọn lá số (chot-faq-6-8_v1.md mục 8).
 const test = require('node:test');
+process.env.MO_GOI_AN = '1'; // gói Thành viên năm đang ẩn; test này kiểm luồng gói năm nên mở lại
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const os = require('node:os');

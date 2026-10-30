@@ -1,5 +1,6 @@
 // Thử nghiệm giá (thu-gia_v1.md): công tắc, nhánh theo thiết bị, giá do máy chủ tính, sự kiện mang nhanh, báo cáo theo nhánh.
 const test = require('node:test');
+process.env.MO_GOI_AN = '1'; // gói Thành viên năm đang ẩn; test này kiểm luồng gói năm nên mở lại
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const os = require('node:os');

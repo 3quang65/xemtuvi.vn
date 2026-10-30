@@ -11,6 +11,7 @@ export interface Goi {
   donVi: string;
   chinh: boolean;
   nhan?: string; // nhãn trên thẻ gói
+  an?: boolean; // gói ẩn: không hiện ở /chon-goi, /tro-giup; máy chủ không nhận đơn (dữ liệu giữ nguyên)
   soSanh?: string[]; // so sánh có thật, hiện dưới giá
   quyenLoi: string[];
 }
@@ -18,6 +19,12 @@ export interface Goi {
 export const dinhDangGia = (d: number) => d.toLocaleString('vi-VN') + 'đ';
 
 const GIA_TRON_LA_SO = 99000;
+
+/**
+ * Cờ công bố giá ra các chỗ chữ (trang /tro-giup, tin xác nhận đơn). TẮT cho đến khi anh Cường duyệt giá.
+ * Màn chọn gói và thanh toán luôn hiện giá thật (khách cần biết số tiền khi mua); cờ này chỉ chặn các chỗ nhắc giá bằng lời.
+ */
+export const CONG_BO_GIA = false;
 
 /** Trần số tiền trừ khi nâng lên Thành viên năm (bằng giá Trọn lá số, vì gói năm đã gồm Trọn lá số). */
 export const TRAN_TRU_NANG_GOI = GIA_TRON_LA_SO;
@@ -46,6 +53,7 @@ function dungGoi(bang?: BangGia): Goi[] {
     },
     {
       ma: 'thanh-vien-nam', ten: 'Thành viên năm', gia: giaNam, donVi: 'một năm', chinh: false,
+      an: true, // ẩn đến khi vận năm, lưu nguyệt, hỏi đáp hoàn tất (Minh, 30/10). Bỏ dòng này để mở bán lại.
       soSanh: [`≈ ${dinhDangGia(Math.round(giaNam / 12 / 1000) * 1000)}/tháng`, `Mua lẻ 3 lá số đã là ${dinhDangGia(3 * giaTron)}`],
       quyenLoi: [
         'Trọn lá số của bạn',
@@ -100,3 +108,13 @@ export const layGoi = (ma: string | null | undefined, bang?: BangGia) => {
   return goi.find((g) => g.ma === ma) ?? vanNam.find((g) => g.ma === ma);
 };
 export const layChuDe = (ma: string | null | undefined) => CHU_DE.find((c) => c.ma === ma);
+
+/** Chỉ giữ gói đang bán (bỏ gói ẩn). */
+export const goiDangBan = (ds: Goi[]) => ds.filter((g) => !g.an);
+
+/** Giá của gói để chèn vào câu chữ: chỉ trả chuỗi khi cờ công bố giá bật, ngược lại null (người gọi bỏ cả cụm có giá). */
+export function giaCongBo(ma: string | null | undefined, cong: boolean = CONG_BO_GIA, bang?: BangGia): string | null {
+  if (!cong) return null;
+  const g = layGoi(ma, bang);
+  return g ? dinhDangGia(g.gia) : null;
+}

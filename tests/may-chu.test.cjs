@@ -1,5 +1,6 @@
 // Test tích hợp BE2: gọi thẳng các hàm xử lý HTTP với CSDL tạm (không cần mở cổng).
 const test = require('node:test');
+process.env.MO_GOI_AN = '1'; // gói Thành viên năm đang ẩn; test này kiểm luồng gói năm nên mở lại
 const assert = require('node:assert/strict');
 const nap = require('./_nap-ts.cjs');
 const { moCsdl } = nap('lib/may-chu/csdl.ts');
