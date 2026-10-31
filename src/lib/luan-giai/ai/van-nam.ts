@@ -12,6 +12,7 @@ import tuCamJson from './tu-cam.json';
 import quyTacVanJson from './quy-tac-van/van-10-nam.json';
 import viecJson from './quy-tac-van/viec-nen-lam.json';
 import ghiChuPhaiJson from './quy-tac-van/ghi-chu-truong-phai.json';
+import nenCungThangJson from './quy-tac-van/nen-cung-thang.json';
 import { nenQuanLoc, nenVcd, catTinhTamPhuong } from './nen-quan-loc';
 import { GHI_CHU, PHIEN_BAN_QUY_TAC, khoaCache, maNghienCuuCua, sinhLuanGiai } from './index';
 
@@ -125,6 +126,7 @@ export interface BaiVanNam {
   ghiChu: string;
   phienBan: string;
 }
+const NEN_CUNG_THANG = nenCungThangJson as { nen: Record<string, string>; locGapKy: Record<string, string> };
 /** Hóa Kỵ GỐC (từ can năm sinh) tại một cung: chính tinh hoặc sao khác mang Hóa Kỵ. */
 export function coKyGocTaiCung(c: Cung): boolean {
   return [...c.chinhTinh, ...c.catTinh, ...c.phuTinh, ...c.hungTinh].some((s) => s.hoa === 'Hóa Kỵ');
@@ -133,7 +135,8 @@ export function coKyGocTaiCung(c: Cung): boolean {
 /**
  * Câu nền của cung tháng (chỉ nêu dữ kiện engine có, không luận nghĩa): chính tinh và Tứ hóa gốc tại cung;
  * cung vô chính diệu thì nói thẳng là xem chính tinh cung đối chiếu; Lộc lưu gặp Kỵ gốc cùng cung thì nêu rõ.
- * Chữ luận nghĩa theo cung do nhà luận giải viết riêng, ở đây không tự chế.
+ * Chữ luận nghĩa theo cung lấy nguyên văn từ quy-tac-van/nen-cung-thang.json (Hạnh viết; nguồn Tân Biên, Khảo Luận), ở đây không tự chế:
+ * `nen[cung]` đặt sau câu dữ kiện; Lộc lưu gặp Kỵ gốc cùng cung thì thêm `locGapKy[cung]` thay cho câu chung.
  */
 export function cauNenCungThang(c: Cung, doi: Cung, luuLocCungChi = false): string {
   const ten = (s: Sao) => (s.hoa ? `${s.ten} ${s.hoa}` : s.ten);
@@ -144,7 +147,10 @@ export function cauNenCungThang(c: Cung, doi: Cung, luuLocCungChi = false): stri
   if (tinh.length) cau = `Cung ${c.ten} của tháng này có ${tinh.join(', ')}${khac.length ? `, cùng ${khac.join(', ')}` : ''} ngay từ lá số gốc; phần lưu niên tác động lên nền sẵn có ấy.`;
   else if (doi.chinhTinh.length) cau = `Cung ${c.ten} của tháng này vô chính diệu, nên xem chính tinh cung đối chiếu (${doi.chinhTinh.map(ten).join(', ')}) làm nền${khac.length ? `; cung còn có ${khac.join(', ')}` : ''}.`;
   else cau = `Cung ${c.ten} của tháng này vô chính diệu, cung đối chiếu cũng không có chính tinh${khac.length ? `; cung có ${khac.join(', ')}` : ''}.`;
-  if (hoaKy && luuLocCungChi) cau += ' Tháng này có Lộc lưu gặp Hóa Kỵ gốc cùng cung: điểm thuận đi kèm điểm vướng.';
+  const chu = NEN_CUNG_THANG.nen[c.ten];
+  if (chu) cau += ` ${chu}`;
+  const chuKy = NEN_CUNG_THANG.locGapKy[c.ten];
+  if (hoaKy && luuLocCungChi) cau += chuKy ? ` ${chuKy}` : ' Tháng này có Lộc lưu gặp Hóa Kỵ gốc cùng cung: điểm thuận đi kèm điểm vướng.';
   return cau;
 }
 
@@ -173,7 +179,7 @@ function napQuyTac(): QuyTacNam[] {
 }
 const QUY_TAC = napQuyTac();
 /** Tăng số này mỗi khi đổi cách ghép bài để cache cũ không bị dùng lại. */
-const PHIEN_BAN_GHEP = 'gh6-tuan-triet-hai-nhanh';
+const PHIEN_BAN_GHEP = 'gh7-nen-cung-thang';
 const MAU_VIEC = viecJson as unknown as MauViec[];
 const GHI_CHU_PHAI = ghiChuPhaiJson as unknown as Record<string, string>;
 export const PHIEN_BAN_VAN_NAM = bam(JSON.stringify([QUY_TAC, MAU_VIEC, GHI_CHU_PHAI, PHIEN_BAN_QUY_TAC, PHIEN_BAN_GHEP])).slice(0, 12);

@@ -130,7 +130,7 @@ test('cauNenCungThang: nêu chính tinh và Tứ hóa gốc; vô chính diệu n
   assert.match(VN.cauNenCungThang(c('Phu Thê', [sao('Thái Âm', 'Hóa Quyền')]), c('Quan Lộc')), /Phu Thê.*Thái Âm Hóa Quyền/);
   const v = VN.cauNenCungThang(c('Quan Lộc'), c('Phúc Đức', [sao('Thiên Phủ')]));
   assert.match(v, /vô chính diệu.*cung đối chiếu.*Thiên Phủ/);
-  assert.match(VN.cauNenCungThang(c('Điền Trạch', [sao('Thái Âm', 'Hóa Kỵ')]), c('x'), true), /Lộc lưu gặp Hóa Kỵ gốc/);
+  assert.ok(VN.cauNenCungThang(c('Điền Trạch', [sao('Thái Âm', 'Hóa Kỵ')]), c('x'), true).endsWith(NEN.locGapKy['Điền Trạch']));
   assert.ok(!/NAM-/.test(v));
 });
 test('8 lá số: tháng mẫu có câu nêu chính tinh hoặc cung vô chính diệu', () => {
@@ -144,4 +144,34 @@ test('Triệt không "phát huy" (hoi-dap) và MO_TA trang Vận năm không h�
   assert.ok(!/Triệt: cần thời gian để phát huy/.test(hd));
   const pg = fs.readFileSync(__dirname + '/../src/app/van-nam-2027/page.tsx', 'utf8');
   assert.ok(!/ghi rõ sao/.test(pg));
+});
+
+// L-95d072: chữ nền theo cung tháng của Hạnh ghép vào cauNenCungThang.
+const NEN = require('../src/lib/luan-giai/ai/quy-tac-van/nen-cung-thang.json');
+const { locTuCam } = require('../src/lib/luan-giai/ai/loc.ts');
+const TU_CAM = require('../src/lib/luan-giai/ai/tu-cam.json');
+test('nen-cung-thang.json: đủ 12 cung khớp tên cung engine, không từ cấm', () => {
+  const ten = lapLaSo(ND.LA_SO_MAU).cung.map((c) => c.ten).sort();
+  for (const k of ['nen', 'locGapKy']) {
+    assert.deepEqual(Object.keys(NEN[k]).sort(), ten);
+    for (const [cung, chu] of Object.entries(NEN[k])) {
+      assert.ok(chu.trim().length > 20, `${k}/${cung} rỗng`);
+      assert.equal(locTuCam(chu, TU_CAM), chu, `${k}/${cung} dính từ cấm hoặc bị lọc đổi chữ`);
+    }
+  }
+});
+test('cauNenCungThang: câu nền đặt sau câu dữ kiện; Lộc gặp Kỵ gốc dùng locGapKy thay câu chung', () => {
+  const ls = lapLaSo(ND.LA_SO_MAU);
+  const cungKy = ls.cung.find((c) => VN.coKyGocTaiCung(c));
+  assert.ok(cungKy, 'lá số mẫu cần có Kỵ gốc');
+  const doi = ls.cung[(cungKy.chi + 6) % 12];
+  const thuong = VN.cauNenCungThang(cungKy, doi, false);
+  assert.ok(thuong.endsWith(NEN.nen[cungKy.ten]));
+  assert.ok(thuong.indexOf('ngay từ lá số gốc') < thuong.indexOf(NEN.nen[cungKy.ten]) || thuong.indexOf('vô chính diệu') >= 0);
+  const ky = VN.cauNenCungThang(cungKy, doi, true);
+  assert.ok(ky.endsWith(NEN.locGapKy[cungKy.ten]));
+  assert.ok(!ky.includes('điểm thuận đi kèm điểm vướng'));
+  for (const c of ls.cung.filter((x) => !VN.coKyGocTaiCung(x))) {
+    assert.ok(!VN.cauNenCungThang(c, ls.cung[(c.chi + 6) % 12], true).includes(NEN.locGapKy[c.ten]));
+  }
 });
