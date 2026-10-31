@@ -5,8 +5,8 @@ server {
     add_header X-Robots-Tag "noindex, nofollow" always;
     gzip on;
     gzip_types text/css application/javascript application/json image/svg+xml;
-    // Thử kín 16/11: đóng băng luồng nhận khách mới — trả 410 tại nginx, không cần rebuild Next.js.
-    // Áp dụng trước location / (proxy) vì nginx khớp location cụ thể trước.
+    # Thử kín 16/11: đóng băng luồng nhận khách mới — trả 410 tại nginx, không cần rebuild Next.js.
+    # Áp dụng trước location / (proxy) vì nginx khớp location cụ thể trước.
     location ~ ^/moi($|/) {
       return 410 '<!DOCTYPE html><html lang="vi"><head><meta charset="utf-8"><title>Tạm dừng nhận khách mới</title></head><body><h1>Tạm dừng nhận khách mới</h1><p>Chúng mình đang tạm dừng nhận khách mới để chuẩn bị cho bản ra mắt (16/11).</p><p><a href="/">Lập lá số và xem tóm tắt miễn phí</a></p></body></html>';
     }
