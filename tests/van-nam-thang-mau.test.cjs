@@ -31,6 +31,8 @@ test('XEM_TRUOC: không hứa việc nên làm theo tháng / gợi ý cho tháng
   assert.ok(!/việc nên làm theo từng tháng|gợi ý cho các tháng/i.test(het));
   assert.ok(/nhận định/i.test(ND.XEM_TRUOC.ghiChuThang));
   assert.ok(/việc nên làm/i.test(ND.XEM_TRUOC.khoa) || !/việc nên làm/i.test(het));
+  // L-91613b: không hứa sao ở mọi tháng, việc nên làm ở mọi mảng (sai ở 36/96 tháng, 8/32 mảng của 8 lá thử).
+  assert.ok(!/các sao của tháng|ghi rõ sao|mỗi mảng kèm/i.test(het), het);
 });
 
 const LA = [
@@ -80,6 +82,8 @@ test('bản trả phí: không còn "năm nay", "A/B", "nhà cửa, chi tiêu" t
       }
       if (ids.some((i) => /^NAM-HOA-QUYEN/.test(i)) && ids.some((i) => /^NAM-HOA-KY/.test(i))) coCaHai++;
       if (ids.includes('NAM-THANG-04-TUAN-TRIET')) coTuanTriet++;
+      // L-91613b: XEM_TRUOC.ghiChuThang hứa "mỗi tháng có nhận định riêng theo cung của tháng đó".
+      assert.ok(t.nhanDinh.some((x) => x.thamChieu.cung === t.cung && x.thamChieu.nguon), 'tháng ' + t.thang + ' thiếu nhận định theo cung');
     }
     // Tháng nào cung có lưu hóa/sao lưu + Tuần/Triệt thì phải có câu.
     for (const t of bai.thang) {
