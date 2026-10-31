@@ -213,3 +213,17 @@ Nguyên nhân: Lighthouse mở `/chon-goi` không có phiên nên trang chuyển
 - Nhóm TBT cao (750 đến 890 ms, 3/8 lần ở cả hai bản) vẫn còn: nằm trong chunk `1255` (runtime Next) ở tác vụ ~550 ms ngay sau khi `router.replace('/')` dựng lại trang chủ. Đã thử chuyển cứng `window.location.replace('/')`: Lighthouse kẹt ở `/chon-goi`, TBT 9 s, đã bỏ. Muốn hết nhóm này phải bỏ chuyển hướng (ví dụ lưu thông tin sinh bằng cookie để server biết có phiên) - đề xuất, chưa làm.
 - Polyfills: `polyfills-*.js` (112 KB) là bản nomodule của Next, trình duyệt mới không chạy; thử `browserslist` hiện đại: chunk `1255` đổi 28 byte, build font lỗi, đã bỏ.
 - Đo lại: `/tmp/bao-lh.sh` (xen kẽ bản cũ `.next-base` cổng 3911 và bản mới cổng 3912). Không thuộc repo.
+
+## Số đo sau 1706fac (Phúc, L-bf67de) - 3 trang, 9 lần mỗi trang
+Đo 31/10 12:24 đến 12:30 trên https://v3.xemtuvi.vn, tuần tự, mobile, rtt 400, 400 kbps, cpuSlowdown 4 (`/tmp/lh/run27.sh`, bản của run.sh với 9 lần). Load average (1 phút) trước mỗi lần: 2,33 giảm dần còn 0,6 đến 1,3 (đa số < 1,3); sau đo 0,78.
+| Trang | Điểm 9 lần | Trung vị | LCP trung vị (s) | TBT trung vị (ms) | CLS trung vị |
+|---|---|---|---|---|---|
+| `/` | 76, 77, 89, 87, 90, 91, 89, 89, 77 | **89** | 2,15 | 332 | 0,002 |
+| `/chon-goi` | 49, 53, 66, 66, 64, 67, 66, 63, 65 | **65** | 9,27 | 304 | 0,001 |
+| `/cung/phu-the` | 90, 89, 91, 91, 89, 79, 92, 89, 89 | **89** | 2,19 | 265 | 0,052 |
+- LCP thô `/`: 2,14 2,22 2,15 2,87 2,16 2,15 2,22 2,13 2,14; TBT thô: 877 763 336 294 299 264 303 332 808.
+- LCP thô `/chon-goi`: 10,34 9,24 9,32 9,39 9,37 9,09 9,27 9,20 9,22; TBT thô: 837 711 287 244 371 263 271 355 304.
+- LCP thô `/cung/phu-the`: 2,51 2,50 2,18 2,15 2,15 2,19 2,16 2,45 2,51; TBT thô: 265 245 272 268 329 695 230 244 233.
+- KHÔNG ĐẠT: `/chon-goi` trung vị 65 (tiêu chí >= 85; trước đó 85). Khác trước: Lighthouse nay kết thúc ở `/chon-goi` (finalUrl = /chon-goi, không còn chuyển về `/`), LCP mô phỏng 9,3 s ổn định ở cả 9 lần (LCP quan sát thật ~0,9 s: TTFB 275 ms + trễ dựng 638 ms; phần tử LCP là đoạn `p.ghi-chu-rieng-tu` ở `section.mo-dau`). Nhiều khả năng đồ thị phụ thuộc của mô phỏng kéo dài do nạp trễ (dynamic/import) trên trang này; cần Bảo xem. Số 85 trước đây thực chất là số của `/`.
+- `/` đạt (89 >= 85, trước 84); `/cung/phu-the` đạt (89, trước 74). Nhóm chậm 76-77 (TBT 760-880) còn ở 3/9 lần `/`, 1 lần cung.
+- Lá số (`/tmp/flow.mjs`, 3 lần, devtools throttling): bước nạp trang 0,84 / 0,86 / 0,84 (TBT 540-620 ms, LCP 1,4-1,6 s); bước điền 0,99-1; bước lập lá số 0,96 / 0,98 / 0,95 (TBT 117-192 ms, CLS 0); lập xong sau 286-403 ms. Số lần ít hơn 9.
