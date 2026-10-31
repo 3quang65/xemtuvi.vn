@@ -235,6 +235,12 @@ a { color: inherit; }
   .mo-dau { grid-template-columns: 1fr; gap: 24px; padding-top: 24px; }
 }
 @media (max-width: 640px) {
+  /* L-d7cd2b F5: gói Khuyên dùng lên đầu danh sách; thẻ gói đứng trước đoạn mẫu và phương pháp (cột trang-buoc là grid) */
+  .khu-chon-goi { order: 1; }
+  .doan-khoa { order: 2; }
+  .phuong-phap { order: 3; }
+  .khu-chon-goi ~ * { order: 4; }
+  .the-goi.noi-bat { order: -1; }
   /* Bàn tràn hết bề ngang màn hình để mỗi ô cung rộng >= 88px ở 375px */
   .ban { grid-template-rows: repeat(4, minmax(104px, auto)); margin: 0 -16px; border-radius: 0; border-left: 0; border-right: 0; }
   .o-cung { padding: 6px; font-size: 0.72rem; gap: 3px; }
