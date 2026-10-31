@@ -2,7 +2,8 @@
 import { lapLaSo, namAmHienTai, type ThongTinSinh } from '@/lib/tuvi';
 import { khoaCache, PHIEN_BAN_QUY_TAC, sinhLuanGiai, timDaiVan, type ChuyenDeMa, type LuanGiai } from '@/lib/luan-giai/ai';
 import { MA_VAN_NAM } from '@/lib/goi';
-import { PHIEN_BAN_VAN_NAM, sinhVanNam, xemTruocVanNam, type BaiVanNam, type XemTruocVanNam } from '@/lib/luan-giai/ai/van-nam';
+import { PHIEN_BAN_VAN_NAM, sinhVanNam, type BaiVanNam } from '@/lib/luan-giai/ai/van-nam';
+import { xemTruocCoKiemChung, type XemTruocCoKiemChung } from '@/lib/luan-giai/ai/kiem-chung';
 import type { Csdl } from './csdl';
 import { coQuyenXem, laSoCuaToi, LoiNghiepVu } from './dich-vu';
 import { giaiMaJson, khoaTim, maHoaJson, type BoKhoa } from './ma-hoa';
@@ -17,14 +18,14 @@ export const CHU_DE_CO_NOI_DUNG = Object.keys(CHUYEN_DE_CUA_CHU_DE).filter((c) =
 export const CHU_DE_HOP_LE = [...Object.keys(CHUYEN_DE_CUA_CHU_DE), MA_VAN_NAM];
 
 /** Trả lời cho chủ đề Vận năm: đã mua → bài đầy đủ; chưa mua → chỉ bản xem trước (không nội dung tháng, không mã quy tắc). */
-export type VanNamTraVe = { daMua: true; bai: BaiVanNam } | { daMua: false; xemTruoc: XemTruocVanNam };
+export type VanNamTraVe = { daMua: true; bai: BaiVanNam } | { daMua: false; xemTruoc: XemTruocCoKiemChung };
 
 async function vanNamChoKhach(db: Csdl, k: BoKhoa, nguoiDungId: number, laSoId: number, bayGio: number): Promise<VanNamTraVe> {
   // Lá số không phải của người này: 403 như mọi chủ đề, không lộ gì.
   if (!laSoCuaToi(db, nguoiDungId, laSoId)) throw new LoiNghiepVu('chua_mua', 'Bạn chưa mở phần này.', 403);
   const hang = db.prepare('SELECT sinh_ma_hoa FROM la_so WHERE id=?').get(laSoId) as { sinh_ma_hoa: string };
   const ls = lapLaSo(giaiMaJson<ThongTinSinh>(hang.sinh_ma_hoa, k));
-  if (!coQuyenXem(db, nguoiDungId, laSoId, MA_VAN_NAM, bayGio)) return { daMua: false, xemTruoc: xemTruocVanNam(ls) };
+  if (!coQuyenXem(db, nguoiDungId, laSoId, MA_VAN_NAM, bayGio)) return { daMua: false, xemTruoc: xemTruocCoKiemChung(ls) };
   const khoa = khoaTim(`${khoaCache(ls, MA_VAN_NAM, PHIEN_BAN_VAN_NAM)}`, k);
   const co = db.prepare('SELECT noi_dung_ma_hoa FROM luan_giai_luu WHERE khoa_cache=?').get(khoa) as { noi_dung_ma_hoa: string } | undefined;
   if (co) return { daMua: true, bai: giaiMaJson<BaiVanNam>(co.noi_dung_ma_hoa, k) };

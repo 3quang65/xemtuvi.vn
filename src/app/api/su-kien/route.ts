@@ -32,6 +32,7 @@ export async function POST(req: Request) {
   await ghiSuKien({
     ten: sk.ten, phien: sk.phien, trang: trangCua(sk.ten), ...thietBi, ...nguonKhach,
     ...(sk.goi ? { goi: sk.goi, gia: layGoi(sk.goi, bangGiaCuaYeuCau(req))?.gia } : {}), ...(sk.chuDe ? { chuDe: sk.chuDe } : {}),
+    ...(sk.nhom_ab ? { nhom_ab: sk.nhom_ab } : {}), // kiem_chung_xem / xem_truoc_mo / bam_mua: nhóm A/B của phiên (a thấy mục, b không)
     ...(n && (sk.goi || sk.ten === 'bao_loi') ? { nhanh: n.nhanh, thu: n.thu } : {}), // bao_loi không mang gói nhưng vẫn mang nhánh đã lưu theo thiết bị
     ...(sk.ten === 'bao_loi' ? { nhom: nhomNguon(nk) } : {}), // nhóm nguồn first-touch (cookie xtv_nguon; rỗng = direct) để tính khiếu nại theo nguồn dù khác phiên với vao_trang; không ghi UTM thô thêm
   });

@@ -5,7 +5,7 @@ import LpVanNamNut from '@/components/LpVanNamNut';
 import { VanNamXemTruoc } from '@/components/VanNamXemTruoc';
 import { CONG_BO_GIA, GOI_VAN_NAM, khuVanNam } from '@/lib/goi';
 import { lapLaSo } from '@/lib/tuvi';
-import { xemTruocVanNam } from '@/lib/luan-giai/ai/van-nam';
+import { xemTruocCoKiemChung } from '@/lib/luan-giai/ai/kiem-chung';
 import { buocLp, LA_SO_MAU, LP, TEN_NAM } from '@/lib/van-nam-noi-dung';
 
 // Trang bán hàng, cho phép lập chỉ mục. Không có dữ liệu khách: lá số tính trên trình duyệt, nội dung trả phí ở /luan-giai (noindex).
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 export const dynamic = 'force-dynamic';
 
 export default function TrangVanNam2027() {
-  const xt = xemTruocVanNam(lapLaSo({ ...LA_SO_MAU })); // lá số mẫu thật, tính ở máy chủ
+  const xt = xemTruocCoKiemChung(lapLaSo({ ...LA_SO_MAU })); // lá số mẫu thật, tính ở máy chủ
   const goiBan = CONG_BO_GIA ? khuVanNam(GOI_VAN_NAM) : [];
   return (
     <>

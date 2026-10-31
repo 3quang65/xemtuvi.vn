@@ -384,3 +384,9 @@ a { color: inherit; }
 .tab-chu-de { display: flex; flex-wrap: nowrap; gap: 8px; overflow-x: auto; scroll-snap-type: x proximity; padding-bottom: 4px; margin: 0 -16px; padding-inline: 16px; scrollbar-width: none; }
 .tab-chu-de::-webkit-scrollbar { display: none; }
 .tab-chu-de button { flex: 0 0 auto; min-height: 44px; padding: 0 16px; white-space: nowrap; scroll-snap-align: start; }
+
+/* Mục kiểm chứng năm đã qua (thử nghiệm A/B, cờ KIEM_CHUNG_QUA_KHU) */
+.kiem-chung { border-top: 1px dashed var(--vien); padding-top: 10px; display: grid; gap: 6px; }
+.kiem-chung h3 { font-size: 1rem; margin: 0; color: var(--ngoc-dam); }
+.kiem-chung .can-cu { display: block; color: var(--muc-nhat); font-size: 0.85rem; margin-top: 2px; }
+.kc-nam { display: grid; gap: 6px; }
