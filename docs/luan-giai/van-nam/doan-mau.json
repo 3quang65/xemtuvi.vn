@@ -3005,7 +3005,66 @@
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"
   ],
-  "nguonChiTiet": "VAN-SP-07 (TB); TT q.1 問流年昌曲"
+  "nguonChiTiet": "VAN-SP-07 (TB); TT q.1 問流年昌曲",
+  "noiDungTheoCung": {
+   "Mệnh": "Quý nhân của năm ({sao:L. Thiên Khôi|L. Thiên Việt} lưu) ở cung Mệnh: bạn dễ được người trên để ý, nâng đỡ; thuận cho việc học và cho những lúc cần trình bày bản thân.",
+   "Huynh Đệ": "Quý nhân của năm ({sao:L. Thiên Khôi|L. Thiên Việt} lưu) ở cung Huynh Đệ: trong anh chị em hoặc bạn ngang hàng dễ có người ở vị thế tốt, sẵn lòng giới thiệu, hỗ trợ bạn; hợp tác với người cùng trang lứa thuận hơn.",
+   "Phu Thê": "Quý nhân của năm ({sao:L. Thiên Khôi|L. Thiên Việt} lưu) ở cung Phu Thê: người đồng hành dễ được người có vị thế nâng đỡ, hoặc chính họ là chỗ dựa, người giới thiệu tốt cho bạn; nếu đang tìm hiểu, người bạn gặp thường có học, đàng hoàng.",
+   "Tử Tức": "Quý nhân của năm ({sao:L. Thiên Khôi|L. Thiên Việt} lưu) ở cung Tử Tức: con cái, học trò hoặc người nhỏ tuổi bạn chăm lo dễ gặp thầy cô, người hướng dẫn tốt và có dịp thể hiện điểm nổi trội; với sản phẩm sáng tạo của bạn, dễ có người có tiếng nói giới thiệu.",
+   "Tài Bạch": "Quý nhân của năm ({sao:L. Thiên Khôi|L. Thiên Việt} lưu) ở cung Tài Bạch: trong chuyện tiền bạc, bạn dễ gặp người có kinh nghiệm chỉ đường hoặc giới thiệu nguồn thu, theo lối làm ăn đàng hoàng, rõ ràng.",
+   "Tật Ách": "Quý nhân của năm ({sao:L. Thiên Khôi|L. Thiên Việt} lưu) ở cung Tật Ách: khi cần chăm lo sức khỏe, bạn dễ gặp người có chuyên môn tận tâm chỉ dẫn; nên chủ động hỏi ý kiến bác sĩ khi thấy cần.",
+   "Thiên Di": "Quý nhân của năm ({sao:L. Thiên Khôi|L. Thiên Việt} lưu) ở cung Thiên Di: ra ngoài dễ gặp quý nhân, được gần người có vị thế; hợp để đi gặp gỡ, tham dự sự kiện của ngành.",
+   "Nô Bộc": "Quý nhân của năm ({sao:L. Thiên Khôi|L. Thiên Việt} lưu) ở cung Nô Bộc: trong bạn bè, đồng nghiệp có người có học thức, vị thế, sẵn lòng giới thiệu; nên chủ động kết nối với họ.",
+   "Quan Lộc": "Quý nhân của năm ({sao:L. Thiên Khôi|L. Thiên Việt} lưu) ở cung Quan Lộc: bạn dễ được cấp trên hoặc người có kinh nghiệm trong nghề nâng đỡ, giới thiệu; có cơ hội nhận vai trò rõ hơn.",
+   "Điền Trạch": "Quý nhân của năm ({sao:L. Thiên Khôi|L. Thiên Việt} lưu) ở cung Điền Trạch: việc nhà cửa, giấy tờ tài sản dễ có người hiểu việc giúp đỡ, tư vấn; thuận cho việc mua bán hay sắp xếp nhà nếu bạn đã có kế hoạch.",
+   "Phúc Đức": "Quý nhân của năm ({sao:L. Thiên Khôi|L. Thiên Việt} lưu) ở cung Phúc Đức: bạn dễ có người tốt bầu bạn, đời sống tinh thần vui vẻ, nhẹ nhõm hơn.",
+   "Phụ Mẫu": "Quý nhân của năm ({sao:L. Thiên Khôi|L. Thiên Việt} lưu) ở cung Phụ Mẫu: cha mẹ, bậc trên dễ có thêm uy tín; bạn được người dạy dỗ, cấp trên nâng đỡ, thuận cho học hành và giấy tờ."
+  },
+  "maTheoCung": {
+   "Mệnh": [
+    "MENH-SP-03",
+    "VAN-SP-07"
+   ],
+   "Huynh Đệ": [
+    "HUYNH-SP-03",
+    "NAM-THANG-03-HUYNH"
+   ],
+   "Phu Thê": [
+    "PHU-SP-02"
+   ],
+   "Tử Tức": [
+    "TU-SP-03",
+    "VAN-SP-07",
+    "NAM-THANG-03-TU"
+   ],
+   "Tài Bạch": [
+    "TAI-SP-03"
+   ],
+   "Tật Ách": [
+    "CHUNG-SP-01 (tổng hợp: chưa có quy tắc Khôi Việt riêng ở Tật Ách, TAT-TRANH-04 không dùng)"
+   ],
+   "Thiên Di": [
+    "DI-SP-01"
+   ],
+   "Nô Bộc": [
+    "NO-SP-01"
+   ],
+   "Quan Lộc": [
+    "QUAN-SP-02",
+    "VAN-SP-07"
+   ],
+   "Điền Trạch": [
+    "DIEN-SP-02"
+   ],
+   "Phúc Đức": [
+    "PHUC-SP-04"
+   ],
+   "Phụ Mẫu": [
+    "PHUMAU-SP-01",
+    "NAM-THANG-03-PHUMAU"
+   ]
+  },
+  "ghiChu": "Chữ theo cung ở noiDungTheoCung (L-5f6b69), căn cứ ở maTheoCung (mục SP của luan-giai-12-cung.md); Tật Ách là nhận xét tổng hợp từ CHUNG-SP-01."
  },
  {
   "chuyenDe": "van-nam",
