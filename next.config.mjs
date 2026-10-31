@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  // D4: nhúng CSS vào HTML để không chặn vẽ trang (bỏ 1 request CSS 7 KiB).
+  experimental: { inlineCss: true },
   poweredByHeader: false,
   // Triển khai không gián đoạn: build vào thư mục riêng (xem scripts/trien-khai.sh). Mặc định .next.
   distDir: process.env.NEXT_DIST_DIR || '.next',
