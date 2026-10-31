@@ -154,7 +154,9 @@ Các trường hợp đã kiểm chứng với nguồn báo chí (VnExpress "L�
 - Biến thể A: ngày 1–15 của tháng nhuận tính tháng chính, ngày 16 trở đi tính tháng sau (iztro dùng khi bật `fixLeap`).
 - Biến thể B: tháng nhuận tính hẳn là tháng sau.
 
-Tháng nhuận chỉ ảnh hưởng các sao an theo tháng (Mệnh, Thân, Tả Hữu, Hình Riêu, Thiên Giải, Địa Giải, Tam Thai, Bát Tọa, Đẩu Quân…). Tử Vi an theo ngày nên không đổi. TC04 trong file test có cả ba kết quả.
+Tháng nhuận ảnh hưởng các sao an theo tháng (Mệnh, Thân, Tả Hữu, Hình Riêu, Thiên Giải, Địa Giải, Tam Thai, Bát Tọa, Đẩu Quân…) **và có thể đổi luôn vị trí cả 14 chính tinh**. Lý do: đổi tháng thì cung Mệnh đổi; cục lấy theo can chi cung Mệnh (nạp âm) nên cục có thể đổi; Tử Vi an theo **ngày và cục**, nên Tử Vi và các chính tinh theo sau có thể dời chỗ, đại vận cũng đổi tuổi khởi. Không được viết "chính tinh không đổi" trong nội dung cho khách.
+
+Ví dụ cục đổi (nữ, âm 19/4 nhuận Canh Tý, tức 10/6/2020, giờ Thìn): mặc định (tháng 4) Mệnh Sửu, Hỏa Lục Cục, Tử Vi tại Tý; biến thể A/B (tháng 5) Mệnh Dần, Thổ Ngũ Cục, Tử Vi tại Thìn. TC04 trong file test có cả ba kết quả nhưng Tý và Sửu cùng nạp âm nên cục không đổi, không lộ được điểm này; ca cục đổi nằm ở `tests/research-cases.test.cjs` (test "tháng nhuận: cục đổi").
 
 Lưu ý lỗi nhỏ của repo: hàm phụ `thangNhuan(2033)` trả 0, trong khi năm âm 2033 có tháng 11 nhuận (hàm chỉ dò tháng nhuận nằm giữa tháng 11 năm trước và tháng 11 năm đó). Hàm đổi lịch chính vẫn đúng.
 

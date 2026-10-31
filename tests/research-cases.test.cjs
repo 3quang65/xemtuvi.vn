@@ -245,3 +245,13 @@ test('Quy ước mặc định đúng đặc tả mục 10 và được trả k�
   assert.deepEqual(lap(cases[0].input, { khoiViet: 'ansaotuvi', khongCo: 1 }).quyUoc.khoiViet, 'ansaotuvi');
   assert.equal('khongCo' in lap(cases[0].input, { khongCo: 1 }).quyUoc, false);
 });
+
+test('Tháng nhuận: đổi tháng làm đổi cung Mệnh, cục và vị trí Tử Vi (SPEC 1.6)', () => {
+  // Nữ, âm 19/4 nhuận Canh Tý (10/6/2020), giờ Thìn. Mặc định an như tháng 4; biến thể A/B an như tháng 5.
+  const mac = T.anLaSo({ lich: 'am', ngay: 19, thang: 4, nam: 2020, nhuan: true, gio: 8, phut: 0, gioiTinh: 'nu' });
+  const bt = T.anLaSo({ lich: 'am', ngay: 19, thang: 5, nam: 2020, nhuan: false, gio: 8, phut: 0, gioiTinh: 'nu' });
+  const chi = (ls, ten) => ls.cung.find((c) => c.chinhTinh.some((s) => s.ten === ten)).tenChi;
+  const menh = (ls) => ls.cung.find((c) => c.ten === 'Mệnh').tenChi;
+  assert.deepEqual([menh(mac), mac.cuc, chi(mac, 'Tử Vi')], ['Sửu', 'Hỏa Lục Cục', 'Tý']);
+  assert.deepEqual([menh(bt), bt.cuc, chi(bt, 'Tử Vi')], ['Dần', 'Thổ Ngũ Cục', 'Thìn']);
+});
