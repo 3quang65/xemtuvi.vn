@@ -175,3 +175,68 @@ test('cauNenCungThang: câu nền đặt sau câu dữ kiện; Lộc gặp Kỵ 
     assert.ok(!VN.cauNenCungThang(c, ls.cung[(c.chi + 6) % 12], true).includes(NEN.locGapKy[c.ten]));
   }
 });
+
+// L-9d340e: ghép đủ khóa Hạnh (chinhTinh, cachCuc, hoaGop, locTonHoaLoc, saoPhu, thanCu) vào cauNenCungThang.
+const mkSao = (ten, o = {}) => ({ key: o.key ?? ten, ten, hoa: null, dacTinhTen: null, ...o });
+const mkCung = (ten, ct = [], o = {}) => ({ chi: 5, tenChi: 'Tỵ', ten, chinhTinh: ct, catTinh: [], phuTinh: [], hungTinh: [], tuan: false, triet: false, laThan: false, ...o });
+const DOI = mkCung('Thiên Di', [], { chi: 11, tenChi: 'Hợi' });
+
+test('Lộc gặp Kỵ: giữ câu dữ kiện có tên sao rồi mới thêm locGapKy ở cuối', () => {
+  const c = mkCung('Điền Trạch', [mkSao('Thái Âm', { hoa: 'Hóa Kỵ', dacTinhTen: 'Đắc' })]);
+  const t = VN.cauNenCungThang(c, DOI, [{ hoa: 'Hóa Lộc', sao: 'Thiên Đồng', chi: 5 }]);
+  assert.match(t, /Hóa Lộc lưu \(Thiên Đồng\) gặp Thái Âm Hóa Kỵ từ lá số gốc cùng cung Điền Trạch/);
+  assert.ok(t.endsWith(NEN.locGapKy['Điền Trạch']));
+  assert.ok(t.indexOf('Thiên Đồng') < t.indexOf(NEN.locGapKy['Điền Trạch']));
+  assert.ok(t.includes(NEN.nen['Điền Trạch']));
+});
+test('khử trùng Văn Khúc Hóa Kỵ nằm ở cả catTinh và phuTinh', () => {
+  const vk = mkSao('Văn Khúc', { hoa: 'Hóa Kỵ' });
+  const c = mkCung('Mệnh', [mkSao('Thiên Cơ', { dacTinhTen: 'Vượng' })], { catTinh: [vk], phuTinh: [{ ...vk }] });
+  const t = VN.cauNenCungThang(c, DOI);
+  assert.equal(t.split('Văn Khúc Hóa Kỵ').length - 1, 1, t);
+});
+test('Lộc Tồn + Hóa Lộc cùng cung dùng dongCung, không "song Lộc"; chiếu nhau mới dùng xungChieu', () => {
+  assert.ok(!/song Lộc/.test(NEN.locTonHoaLoc.dongCung));
+  const c = mkCung('Tài Bạch', [mkSao('Vũ Khúc', { dacTinhTen: 'Miếu' })], { catTinh: [mkSao('Lộc Tồn')] });
+  const t = VN.cauNenCungThang(c, DOI, [{ hoa: 'Hóa Lộc', sao: 'Vũ Khúc', chi: 5 }]);
+  assert.ok(t.includes('có Lộc Tồn từ lá số gốc lại đón Hóa Lộc của năm'));
+  assert.ok(!/song Lộc/.test(t));
+  const doi = mkCung('Thiên Di', [], { chi: 11, catTinh: [mkSao('Lộc Tồn')] });
+  const x = VN.cauNenCungThang(mkCung('Tài Bạch', [mkSao('Vũ Khúc', { dacTinhTen: 'Miếu' })]), doi, [{ hoa: 'Hóa Lộc', sao: 'Vũ Khúc', chi: 5 }]);
+  assert.ok(x.includes('song Lộc'));
+});
+test('không ghép trùng hóa (Lộc|Lộc...) và Thiên Không đứng một mình', () => {
+  const c = mkCung('Mệnh', [mkSao('Thiên Cơ', { hoa: 'Hóa Lộc', dacTinhTen: 'Vượng' })], { catTinh: [mkSao('Thiên Không')] });
+  const t = VN.cauNenCungThang(c, DOI, [{ hoa: 'Hóa Lộc', sao: 'Thiên Cơ', chi: 5 }]);
+  assert.ok(!/vừa mang Hóa Lộc/.test(t) && !/Thiên Không/.test(t), t);
+});
+test('hóa gộp, cách cục, sao phụ, cung Thân, cung đối chiếu: đủ chữ, không placeholder, không mã', () => {
+  const c = mkCung('Phu Thê', [mkSao('Vũ Khúc', { dacTinhTen: 'Miếu' }), mkSao('Tham Lang', { hoa: 'Hóa Quyền', dacTinhTen: 'Miếu' })],
+    { laThan: true, tuan: true, catTinh: [mkSao('Văn Xương', { dacTinhTen: 'Hãm' })], phuTinh: [mkSao('Thiên Mã')] });
+  const t = VN.cauNenCungThang(c, DOI, [{ hoa: 'Hóa Lộc', sao: 'Tham Lang', chi: 5 }]);
+  assert.ok(t.includes('Vũ Tham đồng cung tại cung Phu Thê'));
+  assert.ok(t.includes('Tham Lang vừa mang Hóa Quyền gốc'), t);
+  assert.ok(t.includes('Thiên Mã tại cung Phu Thê gặp Tuần'));
+  assert.ok(t.includes(NEN.thanCu['Phu Thê']));
+  assert.ok(!t.includes('Văn Xương'), 'tối đa một câu sao phụ');
+  const v = VN.cauNenCungThang(mkCung('Phúc Đức', [], { triet: true }), mkCung('Điền Trạch', [mkSao('Thiên Phủ', { dacTinhTen: 'Hãm' })], { chi: 11 }));
+  assert.ok(v.includes('cung đối chiếu Điền Trạch') && v.includes('Cung Phúc Đức vô chính diệu có Triệt'), v);
+  for (const s of [t, v]) assert.ok(!/[{}]|NAM-|CHUNG-/.test(s), s);
+});
+test('8 lá số x 12 tháng: bài trả phí có đúng câu nền của tháng (khớp xem trước), không placeholder, không mã, qua locTuCam', async () => {
+  for (const inp of LA) {
+    const ls = lapLaSo(inp);
+    const xt = VN.xemTruocVanNam(ls);
+    const bai = await VN.sinhVanNam(ls, { boQuaCache: true });
+    for (const t of bai.thang) {
+      const nen = t.nhanDinh.filter((x) => x.thamChieu.quyTacId === 'NAM-THANG-05-NEN-CUNG');
+      assert.equal(nen.length, 1, 'tháng ' + t.thang + ' thiếu câu nền');
+      assert.ok(!/[{}]|NAM-/.test(nen[0].text), nen[0].text);
+      assert.equal(locTuCam(nen[0].text, TU_CAM), nen[0].text);
+      assert.equal(t.nhanDinh.filter((x) => /^NAM-THANG-03-/.test(x.thamChieu.quyTacId)).length, 1, 'mỗi tháng chỉ 1 câu chủ đề');
+      const ten = nen[0].text.match(/Văn Khúc Hóa Kỵ/g);
+      assert.ok(!ten || ten.length === 1, nen[0].text);
+    }
+    assert.ok(xt.thangMau.cau.includes(bai.thang[xt.thangMau.thang - 1].nhanDinh.find((x) => x.thamChieu.quyTacId === 'NAM-THANG-05-NEN-CUNG').text));
+  }
+});
