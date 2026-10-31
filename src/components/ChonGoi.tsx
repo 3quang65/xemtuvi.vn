@@ -60,7 +60,7 @@ export default function ChonGoi() {
   const gia = useGia(true);
   const [uuTienVanNam, setUuTien] = useState(false);
   useEffect(() => { setUuTien(docYDinh() === 'van-nam-2027'); }, []);
-  if (!coSinh || !gia.san) return <p className="dang-tai" role="status">Đang tải…</p>;
+  if (!coSinh || !gia.san) return <div className="khu-cho-chon-goi"><p className="dang-tai" role="status">Đang tải…</p></div>;
 
   const chonGoi = (x: Goi, chuDe?: MaChuDe) => {
     guiSuKien('chon_goi', { goi: x.ma, chuDe });

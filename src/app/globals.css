@@ -426,3 +426,7 @@ main:has(.ket-qua) .gioi-thieu { display: none; }
 .kiem-chung .can-cu { display: block; color: var(--muc-nhat); font-size: 0.9rem; margin-top: 2px; }
 .kiem-chung .kc-truong-phai { color: var(--muc-nhat); font-size: 0.9rem; }
 .kc-nam { display: grid; gap: 6px; }
+
+/* L-23297f: giữ chỗ cho khu chọn gói (đo thật khi có phiên) để chân trang không bị đẩy xuống khi bảng gói hiện (CLS). */
+.khu-cho-chon-goi { min-height: 2170px; }
+@media (min-width: 641px) { .khu-cho-chon-goi { min-height: 1384px; } }
