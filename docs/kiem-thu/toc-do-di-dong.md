@@ -254,3 +254,9 @@ Sửa: máy chủ chuyển 302 `/chon-goi` -> `/` khi chưa có cờ `xtv_co_sin
 | 1366 | 0,0043 x7; 0,0044 x2 | 0,0043 | 0,0044 |
 
 Kết luận: đạt (<= 0,1) ở cả hai cỡ. Lighthouse chưa chạy.
+
+## Perf /chon-goi CÓ phiên (Phúc, L-23297f, 31/10/2026)
+Đo https://v3.xemtuvi.vn/chon-goi bằng `/tmp/phuc/m.mjs` (cookie `xtv_co_sinh=1` + sessionStorage), 9 lần tuần tự, 3G chậm + CPU 4x, chờ tải VPS < 1 trước mỗi lần (log `/tmp/lh/cgc-log.txt`). URL cuối luôn là /chon-goi.
+Điểm 9 lần: 65, 68, 68, 60, 63, 46, 45, 67, 54 -> **trung vị 63** (tiêu chí >= 85: KHÔNG ĐẠT). TBT 278–777 ms (trung vị 385). Tải trước mỗi lần 0,79–0,98.
+Đính chính: các số "77" và "85" ghi trước đây cho /chon-goi là số của trang chủ `/` (do 302 về `/` khi không có cờ). Bảng gói thật ~63.
+Hướng tiếp (chưa làm, cần Minh duyệt, đụng luồng thử giá): bỏ "Đang tải…" chờ /api/gia hoặc render bảng giá phía máy chủ.
