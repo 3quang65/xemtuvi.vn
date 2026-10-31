@@ -40,9 +40,9 @@ test('khu bán Vận ẩn khi cổng đóng: trước 15/12 hoặc cờ Thư t�
   assert.deepEqual(g.khuVanNam(ds, t('2026-12-20T09:00:00+07:00'), false), []);
   assert.deepEqual(g.khuVanNam(ds, t('2026-12-09T23:00:00+07:00'), true), []);
   assert.deepEqual(g.khuVanNam(ds, t('2026-12-14T23:00:00+07:00'), true), []);
-  assert.equal(g.khuVanNam(ds, t('2026-12-15T00:00:00+07:00'), true).length, 3);
-  assert.deepEqual(g.khuVanNam(ds, t('2027-02-07T09:00:00+07:00'), true).map((x) => x.ma), ['van-nam-2027', 'goi-doi-valentine']);
-  assert.equal(g.khuVanNam(ds, t('2027-02-10T09:00:00+07:00'), true).length, 2);
+  assert.equal(g.khuVanNam(ds, t('2026-12-15T00:00:00+07:00'), true).length, 2);
+  assert.deepEqual(g.khuVanNam(ds, t('2027-02-07T09:00:00+07:00'), true).map((x) => x.ma), ['van-nam-2027']);
+  assert.equal(g.khuVanNam(ds, t('2027-02-10T09:00:00+07:00'), true).length, 1);
   assert.deepEqual(g.khuVanNam(ds, t('2027-02-15T00:00:00+07:00'), true).map((x) => x.ma), ['van-nam-2027']);
 });
 test('chữ dẫn khu Vận: 2 thẻ và 1 thẻ', () => {

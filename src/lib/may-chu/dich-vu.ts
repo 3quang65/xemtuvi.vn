@@ -1,5 +1,5 @@
 // Nghiệp vụ: người dùng, lá số, đơn, quyền xem. Chỉ làm việc với CSDL; không biết gì về HTTP.
-import { conHanBan, cuaBanVan2027Mo, laGoiVan2027, layChuDe, layGoi, MA_VAN_NAM, TRAN_TRU_NANG_GOI, type BangGia, type MaGoi } from '../goi';
+import { GOI_DOI_CHUA_CAP_QUYEN, conHanBan, cuaBanVan2027Mo, laGoiVan2027, layChuDe, layGoi, MA_VAN_NAM, TRAN_TRU_NANG_GOI, type BangGia, type MaGoi } from '../goi';
 import type { Csdl } from './csdl';
 import { bamMa, chuanHoaMa, DO_DAI_MA, kiemMaKhoiPhuc, sinhMa } from './ma-khoi-phuc';
 import { giaiMaJson, khoaTim, maHoaJson, type BoKhoa } from './ma-hoa';
@@ -111,6 +111,7 @@ export function taoDon(db: Csdl, nguoiDungId: number, v: { maGoi: unknown; chuDe
   if (!goi) throw new LoiNghiepVu('goi_sai', 'Gói không tồn tại.');
   if (goi.an && process.env.MO_GOI_AN !== '1') throw new LoiNghiepVu('goi_an', 'Gói này chưa mở bán.'); // MO_GOI_AN=1 chỉ để chạy test luồng nâng gói
   if (laGoiVan2027(goi.ma) && !cuaBanVan2027Mo(bayGio)) throw new LoiNghiepVu('chua_mo_ban', 'Gói này chưa mở bán.');
+  if (goi.ma === 'goi-doi-valentine' && GOI_DOI_CHUA_CAP_QUYEN) throw new LoiNghiepVu('chua_mo_ban', 'Gói này chưa mở bán.'); // chưa có luồng lá số thứ hai và cấp quyền
   if (!conHanBan(goi, bayGio)) throw new LoiNghiepVu('het_han_ban', 'Gói này đã dừng bán.');
   let chuDe: string | null = null;
   if (goi.ma === 'mot-chu-de') {

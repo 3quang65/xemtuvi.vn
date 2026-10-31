@@ -54,6 +54,11 @@ export const GIA_TRON_LA_SO_KEM_VAN_NAM = 129000; // gộp Trọn lá số + V�
 export const BAN_DEN_GOI_GOP = '2027-02-06'; // gói gộp bán 15/12/2026–6/2/2027 (gia-van-nam-2027_v2)
 export const GIA_GOI_DOI = 179000; // gói đôi (dịp Valentine): hai Trọn lá số cho hai lá số riêng, cùng một đơn
 export const BAN_DEN_GOI_DOI = '2027-02-14'; // theo lịch ưu đãi mùa vụ v1 (U2: 7/2–14/2/2027); chưa có ngày bắt đầu bán riêng, hiện chỉ theo cổng chung
+/**
+ * Gói đôi CHƯA cấp quyền: xacNhanDaTra chưa có nhánh cho mã này và chưa có luồng nhập lá số thứ hai, nên bán sẽ thu tiền mà không giao hàng.
+ * Còn true thì taoDon luôn chặn gói đôi (bất kể cổng) và khu bán Vận ẩn nó; chỉ hiện ở xem trước giá. Đổi false chỉ sau khi có luồng lá số thứ hai và cấp quyền.
+ */
+export const GOI_DOI_CHUA_CAP_QUYEN = true;
 export const MO_BAN_VAN_TU = '2026-12-15'; // Vận 2027 lẻ và gói gộp cùng mở từ ngày này (giờ Việt Nam), chốt L-ad41bc
 
 /**
@@ -142,7 +147,7 @@ export const dongGoiGop = (g: Goi) =>
   g.soSanh && g.banDen ? `Gói gộp: ${g.soSanh[0].charAt(0).toLowerCase()}${g.soSanh[0].slice(1)} · ${g.soSanh[1]} · bán đến hết ${ngayVN(g.banDen)}` : null;
 /** Khu bán Vận 2027: cùng một cổng (từ MO_BAN_VAN_TU; cờ nội dung chưa qua Thư thì rỗng), và còn hạn bán. */
 export const khuVanNam = (ds: Goi[], bayGio: number = Date.now(), coThu: boolean = CO_VAN_2027_DA_QUA_THU()) =>
-  cuaBanVan2027Mo(bayGio, coThu) ? goiDangBan(ds, bayGio) : [];
+  cuaBanVan2027Mo(bayGio, coThu) ? goiDangBan(ds, bayGio).filter((g) => !(GOI_DOI_CHUA_CAP_QUYEN && g.ma === 'goi-doi-valentine')) : [];
 /** Chữ dẫn dưới h2 khu Vận: còn thẻ gộp thì nhắc mua lẻ hoặc gộp. */
 export const chuDanVanNam = (ds: Goi[]) =>
   'Luận riêng năm 2027 cho lá số này.' + (ds.some((g) => g.ma === 'tron-la-so-kem-van-nam') ? ' Mua lẻ hoặc gộp với Trọn lá số.' : '');

@@ -25,7 +25,7 @@ test('gói đôi bị cổng như 49k/129k: khu Vận ẩn khi cổng đóng, hi
   const ds = goi.goiTheoBang().vanNam;
   assert.deepEqual(goi.khuVanNam(ds, T('2026-12-14T23:00:00'), true), []);
   assert.deepEqual(goi.khuVanNam(ds, T('2026-12-20T09:00:00'), false), []);
-  assert.deepEqual(goi.khuVanNam(ds, T('2026-12-20T09:00:00'), true).map((g) => g.ma), ['van-nam-2027', 'tron-la-so-kem-van-nam', MA]);
+  assert.deepEqual(goi.khuVanNam(ds, T('2026-12-20T09:00:00'), true).map((g) => g.ma), ['van-nam-2027', 'tron-la-so-kem-van-nam']); // gói đôi chưa cấp quyền: ẩn khỏi khu bán
 });
 
 test('taoDon chặn gói đôi khi cổng đóng', () => {
@@ -49,7 +49,7 @@ test('cờ tắt: như cũ (cổng đóng chỉ còn 2 gói, không nhãn)', () 
   assert.deepEqual(r.goi.map((g) => g.ma), ['mot-chu-de', 'tron-la-so']);
   assert.deepEqual(r.vanNam, []);
   assert.ok(tatCa(r).every((g) => !g.xemThu));
-  assert.deepEqual(hienThi(false, '2026-12-20T09:00:00', true).vanNam.map((g) => g.ma), ['van-nam-2027', 'tron-la-so-kem-van-nam', MA]);
+  assert.deepEqual(hienThi(false, '2026-12-20T09:00:00', true).vanNam.map((g) => g.ma), ['van-nam-2027', 'tron-la-so-kem-van-nam']);
 });
 
 test('cờ bật: đủ 49k/129k/179k/299k, mỗi thẻ gated có nhãn Xem thử, 29k/99k không nhãn', () => {
@@ -64,7 +64,7 @@ test('cờ bật: đủ 49k/129k/179k/299k, mỗi thẻ gated có nhãn Xem th�
 
 test('cờ bật khi cổng đã mở: gói đang bán thật không bị gắn nhãn xem thử', () => {
   const r = hienThi(true, '2026-12-20T09:00:00', true);
-  assert.deepEqual(tatCa(r).filter((g) => g.xemThu).map((g) => g.ma), ['thanh-vien-nam']);
+  assert.deepEqual(tatCa(r).filter((g) => g.xemThu).map((g) => g.ma).sort(), [MA, 'thanh-vien-nam'].sort());
 });
 
 test('cờ bật không gỡ cổng/an trong mã chính: GOI giữ an, taoDon vẫn chặn', () => {
@@ -102,4 +102,18 @@ test('giao diện: thẻ xem thử có nhãn và nút vô hiệu', () => {
   assert.match(cg, /useGia\(true\)/);
   assert.match(fs.readFileSync(__dirname + '/../src/lib/useGia.ts', 'utf8'), /choXemTruoc && kq\?\.xemTruoc/);
   assert.match(cg, /disabled=\{[^}]*g\.xemThu/);
+});
+
+test('cổng đã mở (sau 15/12, cờ Thư bật): taoDon vẫn chặn gói đôi; 49k/129k mua bình thường', () => {
+  assert.equal(goi.GOI_DOI_CHUA_CAP_QUYEN, true);
+  const db = moCsdl(':memory:');
+  const nd = db.prepare("INSERT INTO nguoi_dung (nha_cung_cap, ma_ngoai, email, tao_luc) VALUES ('thu','mo','mo@example.vn',0)").run().lastInsertRowid;
+  const ls = Number(db.prepare("INSERT INTO la_so (nguoi_dung_id, sinh_ma_hoa, khoa_tim, tao_luc) VALUES (?, 'x', 'k', 1)").run(nd).lastInsertRowid);
+  const cu = process.env.NOI_DUNG_VAN_2027_DA_QUA_THU; process.env.NOI_DUNG_VAN_2027_DA_QUA_THU = '1';
+  try {
+    const t = T('2026-12-20T09:00:00');
+    assert.throws(() => dv.taoDon(db, Number(nd), { maGoi: MA, laSoId: ls }, 'gia_lap', t), /chưa mở bán/);
+    for (const [ma, tien] of [['van-nam-2027', 49000], ['tron-la-so-kem-van-nam', 129000]]) assert.equal(dv.taoDon(db, Number(nd), { maGoi: ma, laSoId: ls }, 'gia_lap', t).soTien, tien);
+    assert.throws(() => dv.taoDon(db, Number(nd), { maGoi: MA }, 'gia_lap', T('2027-02-08T09:00:00')), /chưa mở bán/);
+  } finally { if (cu === undefined) delete process.env.NOI_DUNG_VAN_2027_DA_QUA_THU; else process.env.NOI_DUNG_VAN_2027_DA_QUA_THU = cu; }
 });
