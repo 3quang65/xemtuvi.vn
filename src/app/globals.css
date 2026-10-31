@@ -165,6 +165,8 @@ a { color: inherit; }
 .gioi-thieu { max-width: 42em; padding: 32px 0 56px; }
 .gioi-thieu h2 { font-size: 1.5rem; margin-bottom: 12px; }
 .gioi-thieu p { color: var(--muc-nhat); }
+/* L-c8a890 D1: lá số hiện chen vào trên phần giới thiệu sẽ đẩy nó xuống (CLS 0.35); ẩn nó khi đã có lá số, nội dung vẫn có trong HTML cho người chưa lập */
+main:has(.ket-qua) .gioi-thieu { display: none; }
 .chan-trang { border-top: 1px solid var(--vien); padding-top: 20px; padding-bottom: 32px; font-size: 0.85rem; color: var(--muc-nhat); }
 .chan-trang p { max-width: 48em; margin: 0 0 8px; }
 
