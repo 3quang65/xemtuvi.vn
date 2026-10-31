@@ -25,7 +25,8 @@ export const LA_SO_MAU = { lich: 'duong', ngay: 15, thang: 8, nam: 1995, gio: 10
 export const XEM_TRUOC = {
   ghiChuMau: 'Đây là bản xem trước tính từ một lá số mẫu, không phải lá số của bạn.',
   tieuDe: 'Tổng quan năm',
-  khoa: 'Bốn mảng sự nghiệp, tài chính, tình cảm, sức khỏe và gợi ý cho từng tháng trong năm, mỗi nhận định ghi rõ sao, cung và sách nguồn, được trình bày ở đây khi bạn mở Vận năm 2027.',
+  ghiChuThang: 'Đây là một trong 12 tháng. Mười một tháng còn lại, kèm việc nên làm theo từng tháng, nằm trong bài đầy đủ.',
+  khoa: 'Bốn mảng sự nghiệp, tài chính, tình cảm, sức khỏe và gợi ý cho các tháng còn lại, mỗi nhận định ghi rõ sao, cung và sách nguồn, được trình bày ở đây khi bạn mở Vận năm 2027.',
   moKhoa: 'Phần còn lại, bốn mảng và 12 tháng mở khi bạn mua Vận năm 2027.', // khi cổng mở bán
   moKhoaChuaBan: 'Phần còn lại, bốn mảng và 12 tháng, sẽ mở khi Vận năm 2027 mở bán.', // cổng đóng: không nói "mua"
 };

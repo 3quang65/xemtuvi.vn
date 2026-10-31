@@ -128,6 +128,8 @@ export interface XemTruocVanNam {
   thaiTue: string[];
   diemThuan: string | null;
   cungThang: { thang: number; cung: string }[];
+  /** Một tháng mở làm mẫu (L-bb82af): chỉ chữ luận đã lọc từ cấm; không mã quy tắc, không việc nên làm. 11 tháng còn lại chỉ có tên cung ở cungThang. */
+  thangMau: { thang: number; tuNgay: string; cung: string; thangMoc: boolean; cau: string[] } | null;
   ghiChu: string;
   phienBan: string;
 }
@@ -685,8 +687,10 @@ export function xemTruocVanNam(ls: LaSo, tuyChon: { namXem?: number } = {}): Xem
   const namXem = tuyChon.namXem ?? NAM_HOP_LE;
   kiemTraNamXem(namXem, ls);
   const { ln, tatCa, thang, dauBai } = ghepBai(ls, namXem);
-  const van = (k: Khop[]) => k.flatMap((x) => { const t = locTuCam(x.text, TU_CAM); return t ? [t] : []; });
+  const locCau = (ds: string[]) => ds.flatMap((x) => { const t = locTuCam(x, TU_CAM); return t ? [t] : []; });
+  const van = (k: Khop[]) => locCau(k.map((x) => x.text));
   const thaiTue = tatCa.filter((k) => k.q.lop === 'thai-tue' && /^NAM-TT-01-/.test(k.q.id));
+  const tm = thang.map((t) => ({ t, cau: locCau(t.nhanDinh.map((x) => x.text)) })).find((x) => x.cau.length > 0);
   const thuan = DIEM_THUAN.flatMap((id) => tatCa.filter((k) => k.q.id === id))[0];
   return {
     chuyenDe: MA_VAN_NAM, namXem, canChi: ln.canChi,
@@ -694,6 +698,7 @@ export function xemTruocVanNam(ls: LaSo, tuyChon: { namXem?: number } = {}): Xem
     thaiTue: van(thaiTue),
     diemThuan: thuan ? van([thuan])[0] ?? null : null,
     cungThang: thang.map((t) => ({ thang: t.thang, cung: t.cung })),
+    thangMau: tm ? { thang: tm.t.thang, tuNgay: tm.t.tuNgay, cung: tm.t.cung, thangMoc: tm.t.thangMoc, cau: tm.cau } : null,
     ghiChu: GHI_CHU, phienBan: PHIEN_BAN_VAN_NAM,
   };
 }
