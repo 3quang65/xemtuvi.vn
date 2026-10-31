@@ -1,4 +1,5 @@
 import { NextResponse, type NextRequest } from 'next/server';
+import { COOKIE_CO_SINH, canChuyenVeTrangChu } from '@/lib/co-phien';
 import { TEN_COOKIE_NGUON, NGAY_NGUON, moHoaNguon, nguonTuYeuCau } from '@/lib/nguon-khach';
 
 // Trang kết quả (lá số của khách) không bao giờ được index.
@@ -6,6 +7,13 @@ import { TEN_COOKIE_NGUON, NGAY_NGUON, moHoaNguon, nguonTuYeuCau } from '@/lib/n
 const TRANG_KET_QUA = ['/la-so', '/ket-qua', '/tai-khoan', '/luan-giai', '/chon-goi', '/thanh-toan', '/huy-dang-ky', '/moi', '/toi'];
 
 export function middleware(req: NextRequest) {
+  if (req.method === 'GET' && canChuyenVeTrangChu(req.nextUrl.pathname, req.cookies.has(COOKIE_CO_SINH))) {
+    const dich = req.nextUrl.clone(); // theo Host của yêu cầu (nginx chuyển Host nguyên vẹn)
+    dich.pathname = '/'; dich.search = '';
+    const r = NextResponse.redirect(dich, 302);
+    r.headers.set('Cache-Control', 'private, no-store');
+    return r;
+  }
   const res = NextResponse.next();
   const { pathname } = req.nextUrl;
   const ketQua = TRANG_KET_QUA.some((p) => pathname === p || pathname.startsWith(p + '/'));

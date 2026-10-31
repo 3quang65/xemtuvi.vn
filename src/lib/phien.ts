@@ -1,6 +1,7 @@
 // Trạng thái phía trình duyệt: thông tin sinh (sessionStorage, không lên URL/máy chủ),
 // mã phiên đo lường. Tài khoản, đơn, quyền xem nằm trên máy chủ (src/lib/may-chu).
 import type { ThongTinSinh } from '@/lib/tuvi';
+import { chuoiCookieCoSinh } from '@/lib/co-phien';
 
 const K_SINH = 'xtv.sinh';
 const K_PHIEN = 'xtv.phien';
@@ -19,7 +20,10 @@ function ghi(loai: 'session' | 'local', khoa: string, v: unknown) {
   try { kho(loai)?.setItem(khoa, JSON.stringify(v)); } catch { /* trình duyệt chặn lưu: bỏ qua */ }
 }
 
-export const luuThongTinSinh = (t: ThongTinSinh) => ghi('session', K_SINH, t);
+export const luuThongTinSinh = (t: ThongTinSinh) => {
+  ghi('session', K_SINH, t);
+  try { document.cookie = chuoiCookieCoSinh(); } catch { /* chặn cookie: /chon-goi tự chuyển về / như cũ */ }
+};
 export const docThongTinSinh = () => doc<ThongTinSinh>('session', K_SINH);
 
 /** Năm sinh từ công cụ /sinh-con-2027, chỉ trong tab này (không lên URL/máy chủ); form lập lá số lấy một lần để điền sẵn ô năm. */
