@@ -1,6 +1,6 @@
 // Trạng thái phía trình duyệt: thông tin sinh (sessionStorage, không lên URL/máy chủ),
 // mã phiên đo lường. Tài khoản, đơn, quyền xem nằm trên máy chủ (src/lib/may-chu).
-import { lapLaSo, type LaSo, type ThongTinSinh } from '@/lib/tuvi';
+import type { ThongTinSinh } from '@/lib/tuvi';
 
 const K_SINH = 'xtv.sinh';
 const K_PHIEN = 'xtv.phien';
@@ -21,13 +21,6 @@ function ghi(loai: 'session' | 'local', khoa: string, v: unknown) {
 
 export const luuThongTinSinh = (t: ThongTinSinh) => ghi('session', K_SINH, t);
 export const docThongTinSinh = () => doc<ThongTinSinh>('session', K_SINH);
-
-/** Lập lại lá số từ thông tin đã lưu; null nếu chưa có hoặc không lập được. */
-export function laSoDaLuu(): LaSo | null {
-  const t = docThongTinSinh();
-  if (!t) return null;
-  try { return lapLaSo(t); } catch { return null; }
-}
 
 /** Năm sinh từ công cụ /sinh-con-2027, chỉ trong tab này (không lên URL/máy chủ); form lập lá số lấy một lần để điền sẵn ô năm. */
 export const luuNamGoiY = (n: number) => ghi('session', K_NAM_GOI_Y, n);

@@ -9,3 +9,10 @@ const css = doc('src/app/globals.css');
 test('D1: khi lá số hiện, phần giới thiệu bên dưới ẩn đi thay vì bị đẩy xuống (tránh CLS 0.35)', () => {
   assert.match(css, /main:has\(\.ket-qua\)\s+\.gioi-thieu\s*\{[^}]*display:\s*none/);
 });
+
+test('D3: phien.ts (nạp ở layout cho mọi trang) không kéo engine lập lá số vào gói JS', () => {
+  const p = doc('src/lib/phien.ts');
+  assert.doesNotMatch(p, /import\s+(?!type\b)[^;]*from\s+'@\/lib\/tuvi'/);
+  assert.doesNotMatch(p, /lapLaSo\(/);
+  assert.match(doc('src/lib/useLaSoDaLuu.ts'), /lapLaSo/);
+});
