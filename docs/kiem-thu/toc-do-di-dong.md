@@ -59,3 +59,39 @@ Ghi chú H: TTFB 471 ms ở lần đo này (cao hơn hai trang kia ~260 ms), do 
 - CLS lá số: cú dịch duy nhất (0.350) là phần "giới thiệu" ẩn đi ngay sau cú bấm (hadRecentInput=true); Chrome thật/CrUX loại trừ, Lighthouse flow vẫn tính vì bấm bằng puppeteer.
 - Chưa làm: D4 (polyfills, CSS chặn render), D5 (TBT lá số).
 - Cần: đo ngoài VPS (PageSpeed Insights hoặc máy khác, không tốn phí) để có số tin cậy; trong VPS chưa chốt được >= 85 cho /, lá số, /chon-goi.
+
+## Hạ tầng
+
+### Đề xuất tắt Cloudflare Web Analytics cho v3.xemtuvi.vn (Sơn, 31/10, L-05893f)
+Trạng thái: chỉ là đề xuất, chưa đổi gì ở Cloudflare. Mã site không chứa beacon (grep `cloudflareinsights` trong src và cấu hình: không có); script `static.cloudflareinsights.com/beacon.min.js` do Cloudflare tự chèn ở biên (Web Analytics bật kiểu "tự động").
+
+Lợi ích: bớt 1 request bên thứ ba (~4 KiB, cache 1 ngày), hết cảnh báo cache trong Lighthouse; tác động điểm nhỏ.
+
+Các bước cho anh Cường (cần đăng nhập Cloudflare, tự thao tác):
+1. Cloudflare Dashboard, chọn tên miền xemtuvi.vn.
+2. Menu bên trái: Analytics & Logs, rồi Web Analytics.
+3. Tìm site `v3.xemtuvi.vn` (hoặc xemtuvi.vn nếu bật theo zone) trong danh sách, bấm Manage site (biểu tượng ba chấm), chọn Disable / Delete site hoặc tắt "Enable automatic setup" (tên nút có thể khác theo giao diện).
+4. Chờ vài phút, xóa cache trình duyệt, kiểm: `curl -s https://v3.xemtuvi.vn/ | grep -c cloudflareinsights` phải ra 0 và tab Network không còn `beacon.min.js`. Sơn kiểm giúp sau khi anh báo đã đổi.
+5. Hoàn tác: bật lại cùng mục đó (không mất dữ liệu cấu hình khác).
+
+Rủi ro:
+- Mất số liệu lượt truy cập/Core Web Vitals thật từ Cloudflare (dữ liệu cũ có thể không xem được nếu xóa site). Hiện chưa có công cụ đo thay thế ngoài log nginx; nếu cần số liệu thật nên thống nhất với Quân (phân tích) trước khi tắt. Khuyến nghị: chỉ tắt nếu không ai đang xem số liệu này, hoặc tắt sau đợt đo Lighthouse.
+- Chỉ ảnh hưởng v3.xemtuvi.vn nếu thao tác đúng site; KHÔNG đụng site cũ xemtuvi.vn và DNS. Kiểm lại danh sách site trước khi bấm.
+- Không ảnh hưởng HTTPS, cache, WAF, tốc độ tải ngoài ~4 KiB nói trên.
+
+### Job nền ăn CPU trên VPS (đo 09:50 UTC, load 1,5 sau đỉnh 3,5)
+Đang chạy thường trực (không nên dừng): pm2 `xemtuvi` (chính là site đang đo, 1 instance), nginx, `vanphongai/server.mjs` (~7% CPU, dashboard), `dispatcher.mjs` (~2%), litellm, claude `--remote-control Chi` (~1%), pm2 daemon. Ngoài ra các phiên `claude -p` của agent (ví dụ Tùng ~3%) chạy khi có việc.
+
+Cron user claude:
+- `*/5` canh-bao-ha-tang.cjs: nhẹ, giữ.
+- `*/30` loi-hom-nay.cjs --canh-bao: nhẹ, giữ.
+- `0 1,4,7,10,13,16 UTC` tuan-tra-chi.sh: mở một phiên Claude (tối đa 25 phút), NẶNG nhất. Lượt kế 10:00 UTC (17:00 VN).
+- `30 4,10 UTC` danh-gia-giam-doc.sh: một phiên Claude, nặng. Lượt kế 10:30 UTC (17:30 VN).
+- `15 23 UTC` sao-luu-csdl.cjs: nhẹ, ngoài khung đo.
+Systemd: apt-daily 10:26 UTC (khoảng 1 phút, có thể nặng đĩa/CPU), fwupd-refresh 10:23 UTC, sysstat-collect mỗi 10 phút (không đáng kể).
+
+Khuyến nghị để Phúc đo Lighthouse ngoài tải ~30 phút:
+- An toàn tạm dừng: tuan-tra-chi.sh và danh-gia-giam-doc.sh (chỉ là tuần tra/đánh giá định kỳ, bỏ lỡ một lượt không mất dữ liệu; Chi/Kiên chạy bù được). Cách: chọn khung 30 phút KHÔNG chứa 10:00 và 10:30 UTC, ví dụ 10:35 đến 11:05 UTC; hoặc nếu phải đo ngay thì hoãn bằng cách comment 2 dòng cron trong khung đó (Sơn làm khi Tùng đồng ý, khôi phục ngay sau đó). Tránh cả apt-daily 10:26 UTC.
+- Không nên dừng: canh-bao-ha-tang (giám sát sống), sao lưu, pm2 xemtuvi, nginx. Dispatcher/server.mjs: dừng sẽ làm agent không nhận việc, chỉ dừng nếu Tùng chấp thuận, không cần thiết vì CPU thấp.
+- Tạm ngưng giao việc mới cho agent trong khung đo (các phiên `claude -p` đang chạy là nguồn nhiễu chính, không phải cron).
+- Đo thật chuẩn vẫn nên chạy ngoài VPS (PageSpeed Insights).
