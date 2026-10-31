@@ -22,12 +22,15 @@ HIEN_TAI="$(cat .next-slot 2>/dev/null || echo)"
 if [ "$HIEN_TAI" = ".next-a" ]; then MOI=".next-b"; else MOI=".next-a"; fi
 rm -rf "$MOI"
 NEXT_DIST_DIR="$MOI" npm run build
+git rev-parse HEAD > "$MOI/COMMIT"   # quay-lui.sh đọc để biết ô này build từ commit nào; ô cũ (.next-a/.next-b còn lại) giữ nguyên = bản quay lui
 echo "$MOI" > .next-slot
 export NEXT_DIST_DIR="$MOI"
 SITE_NOINDEX="${SITE_NOINDEX:-1}" pm2 startOrReload ecosystem.config.cjs --update-env
 pm2 save
 if [ "${1:-}" != "" ]; then
   MIEN="$1"
+  # Giữ conf nginx trước (quay-lui.sh --nginx dùng lại)
+  [ -f /etc/nginx/sites-available/xemtuvi ] && sudo cp -a /etc/nginx/sites-available/xemtuvi /etc/nginx/sites-available/xemtuvi.truoc
   sed "s/__TEN_MIEN__/$MIEN/g" deploy/nginx.conf.mau | sudo tee /etc/nginx/sites-available/xemtuvi >/dev/null
   sudo ln -sf /etc/nginx/sites-available/xemtuvi /etc/nginx/sites-enabled/xemtuvi
   sudo rm -f /etc/nginx/sites-enabled/default
