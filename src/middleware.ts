@@ -8,9 +8,8 @@ const TRANG_KET_QUA = ['/la-so', '/ket-qua', '/tai-khoan', '/luan-giai', '/chon-
 
 export function middleware(req: NextRequest) {
   if (req.method === 'GET' && canChuyenVeTrangChu(req.nextUrl.pathname, req.cookies.has(COOKIE_CO_SINH))) {
-    const dich = req.nextUrl.clone(); // theo Host của yêu cầu (nginx chuyển Host nguyên vẹn)
-    dich.pathname = '/'; dich.search = '';
-    const r = NextResponse.redirect(dich, 302);
+    // Location tương đối: Next sau nginx thấy host là localhost:3000 nên không dựng URL tuyệt đối từ nextUrl.
+    const r = new NextResponse(null, { status: 302, headers: { Location: '/' } });
     r.headers.set('Cache-Control', 'private, no-store');
     return r;
   }

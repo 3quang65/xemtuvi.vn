@@ -29,6 +29,6 @@ test('cờ phiên không chứa thông tin sinh, đặt khi lưu thông tin sinh
 test('middleware chuyển 302 về / và không cho cache', () => {
   const src = doc('middleware.ts');
   assert.match(src, /canChuyenVeTrangChu/);
-  assert.match(src, /NextResponse\.redirect/);
+  assert.match(src, /status: 302[\s\S]*Location: '\/'/);
   assert.match(src, /no-store/);
 });
