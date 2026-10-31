@@ -1,5 +1,5 @@
 {
- "_cachDung": "Hạnh viết, Bảo ghép (L-95d072 vòng 4). Mã quy tắc chỉ nằm ở _nguon, không đưa ra khách. Chỗ giữ chỗ: {noi} = 'cung <tên>' nếu sao tọa thủ, hoặc 'cung đối chiếu <tên>' nếu cung tháng vô chính diệu (mượn sao); {cung} = tên cung tháng; {sao} = tên sao mang hai hóa; {tt} = 'Tuần', 'Triệt' hoặc 'Tuần và Triệt'. Độ sáng: Miếu/Vượng/Đắc dùng 'sang'; Bình/Hãm dùng 'kem' (Hỏa Linh có riêng 'binh'). Thứ tự gợi ý trong một tháng: câu dữ kiện -> 1 câu cachCuc (nếu khớp) hoặc chinhTinh (sao đầu, hoặc cả hai nếu 2 sao không thành bộ) -> tuanTriet (nếu cung đóng Tuần/Triệt) -> hoaGop (nếu một sao mang hóa gốc và hóa lưu) hoặc locTonHoaLoc -> tối đa 1 câu saoPhu -> thanCu (nếu cung là cung Thân) -> nen -> locGapKy. nen không còn nhắc lại chủ đề cung (đã có NAM-THANG-03), chỉ nói cách đọc sao của cung và một gợi ý.",
+ "_cachDung": "Hạnh viết, Bảo ghép (L-95d072 vòng 4). Mã quy tắc chỉ nằm ở _nguon, không đưa ra khách. Chỗ giữ chỗ: {noi} = 'cung <tên>' nếu sao tọa thủ, hoặc 'cung đối chiếu <tên>' nếu cung tháng vô chính diệu (mượn sao); {cung} = tên cung tháng; {sao} = tên sao mang hai hóa; {tt} = 'Tuần', 'Triệt' hoặc 'Tuần và Triệt'. Độ sáng: Miếu/Vượng/Đắc dùng 'sang'; Bình/Hãm dùng 'kem' (Hỏa Linh có riêng 'binh'). Thứ tự gợi ý trong một tháng: câu dữ kiện -> 1 câu cachCuc (nếu khớp) hoặc chinhTinh (sao đầu, hoặc cả hai nếu 2 sao không thành bộ) -> tuanTriet (nếu cung đóng Tuần/Triệt) -> hoaGop (nếu một sao mang hóa gốc và hóa lưu) hoặc locTonHoaLoc -> tối đa 1 câu saoPhu -> thanCu (nếu cung là cung Thân) -> nen -> locGapKy. nen không còn nhắc lại chủ đề cung (đã có NAM-THANG-03), chỉ nói cách đọc sao của cung và một gợi ý. | Vòng 6 (L-9d340e, Hạnh): (a) saoPhu['Kình Dương'], saoPhu['Đà La'] = {dac, ham, luu, trung, tuanTriet, gapHoaLinh, luuGapHoaLinh}; placeholder {cung}, {tt}, {sao} (= 'Hỏa Tinh'|'Linh Tinh' trong gapHoaLinh). Chọn: sao gốc và sao lưu cùng tên cùng cung -> trung; chỉ sao lưu -> luu (2027: Lưu Kình ở Mùi luôn cùng Thái Tuế, Lưu Đà ở Tỵ luôn cùng Lưu Thiên Mã, nên khi dùng Đà La.luu thì bỏ câu Thiên Mã); chỉ sao gốc -> dac (Đắc/Miếu/Vượng) hoặc ham (Hãm). Cung có Tuần/Triệt -> tuanTriet thay dac/ham (trung, luu giữ nguyên). Cung có thêm Hỏa/Linh -> sao lưu dùng luuGapHoaLinh, sao gốc dùng gapHoaLinh (thay dac/ham/luu) và bỏ câu saoPhu['Hỏa Tinh|Linh Tinh']. Kình/Đà ưu tiên hơn Thiên Mã trong mục sao phụ; cả Kình và Đà cùng có thì lấy Kình, trừ khi Đà là trung. (b) hoaDoiChieu: xem hoaDoiChieu._khoa; dùng ở 5b và nhánh VCD ngay sau câu chính tinh cung đối chiếu; tối đa 1 câu hóa đối chiếu/tháng, ưu tiên gop > Kỵ (xungLoc/goc/luu) > Lộc > Quyền > Khoa; khi có câu này thì không dùng locTonHoaLoc.xungChieu cùng sao. (c) chinhTinhTheoCung: xem chinhTinhTheoCung._khoa; câu _tai/_doi đứng ngay sau câu chinhTinh/cachCuc đầu tiên, 1 lần/tháng.",
  "nen": {
   "Mệnh": "Sao tại Mệnh luôn được đọc cùng cung đối Thiên Di và hai cung tam hợp, nên chúng cho biết nếp phản ứng quen thuộc của bạn; tháng này hợp để để ý mình hay quyết nhanh hay chậm ở việc nào, rồi chỉnh nhịp cho vừa sức.",
   "Phụ Mẫu": "Sách xét chuyện cha mẹ qua cả Thái Dương, Thái Âm trên toàn lá số chứ không riêng cung này, nên những gì cung này cho thấy chỉ là một mặt; tháng này hợp để chủ động hỏi ý người đi trước và rà lại hồ sơ, văn bản trước khi nộp.",
@@ -89,8 +89,8 @@
  "cachCuc": {
   "Vũ Khúc+Tham Lang": "Vũ Tham đồng cung tại {noi}: sự thực tế của Vũ Khúc đi cùng tham vọng của Tham Lang. Sách luận bộ sao này theo hướng trước khó sau dễ, thành quả đến sau một giai đoạn bền bỉ; nên giữ minh bạch, kiên trì thay vì đi đường tắt.",
   "Thái Dương+Thái Âm": {
-   "thuong": "Nhật Nguyệt đồng cung tại {noi}: một sao sáng ban ngày, một sao sáng ban đêm nên cả hai chỉ ở mức vừa. Sách luận cách này là có tài mà lúc đầu chưa toại ý, phần thuận thường đến sau; tháng này hợp kiên nhẫn với điều đang vun và đừng vội so mình với người khác.",
-   "tuanTriet": "Nhật Nguyệt đồng cung tại {noi} lại gặp {tt}: sách coi Nhật Nguyệt ở Sửu, Mùi gặp Tuần hoặc Triệt là thế thuận hơn, phần chưa toại ý ban đầu được gỡ dần. Tháng này hợp tiếp tục việc đang làm hơn là bỏ dở giữa chừng.",
+   "thuong": "Nhật Nguyệt đồng cung tại {noi}: một sao sáng ban ngày, một sao sáng ban đêm nên cả hai chỉ ở mức vừa, phần thuận của cách này thường đến sau khi bạn vun đều tay. Tháng này hợp kiên nhẫn với điều đang vun và đừng vội so mình với người khác.",
+   "tuanTriet": "Nhật Nguyệt đồng cung tại {noi} lại gặp {tt}: sách coi Nhật Nguyệt ở Sửu, Mùi gặp Tuần hoặc Triệt là thế thuận hơn, điểm chưa trọn lúc đầu được gỡ dần. Tháng này hợp tiếp tục việc đang làm hơn là bỏ dở giữa chừng.",
    "hoaKy": "Nhật Nguyệt đồng cung tại {noi} có Hóa Kỵ: ở Sửu, Mùi sách coi Kỵ như mây năm màu làm Nhật Nguyệt sáng thêm, nên điểm vướng ở đây nhẹ hơn thường lệ."
   },
   "Thái Dương+Thiên Lương": {
@@ -113,7 +113,7 @@
   },
   "Quyền|Lộc": {
    "sang": "{sao} vừa mang Hóa Quyền gốc vừa nhận Hóa Lộc của năm: có tiếng nói lại thêm cơ hội, sách xem Quyền gặp Lộc là tổ hợp đẹp; nên dùng sự chủ động để mở việc có lợi chung, không ôm hết về mình.",
-   "kem": "{sao} vừa mang Hóa Quyền gốc vừa nhận Hóa Lộc của năm, nhưng sao chưa sáng nên tác dụng giảm: có tiếng nói và có lợi nhưng ở mức vừa phải; cần kiên trì và dùng quyền mềm mỏng."
+   "kem": "{sao} vừa mang Hóa Quyền gốc vừa nhận Hóa Lộc của năm, nhưng sao chưa sáng nên tiếng nói của bạn cần thời gian mới được lắng nghe; dùng quyền mềm mỏng và kiên trì thì cơ hội tự mở."
   },
   "Lộc|Lộc": {
    "sang": "{sao} có Hóa Lộc gốc lại gặp Hóa Lộc của năm: điểm vốn thuận được mở thêm; nên tận dụng nhưng giữ kế hoạch, đừng để thuận lợi làm mình chủ quan.",
@@ -184,7 +184,25 @@
    "sang": "{sao} sáng tại cung {cung}: thuận học hành, viết lách, giấy tờ.",
    "kem": "{sao} chưa sáng tại cung {cung}: giấy tờ, chữ nghĩa dễ nhầm; nên rà soát kỹ văn bản trước khi gửi."
   },
-  "Thiên Không+Đào Hoa": "Thiên Không cùng Đào Hoa tại cung {cung}: nhiều ý tưởng, khéo tính toán; nên chọn ý khả thi nhất để làm trước."
+  "Thiên Không+Đào Hoa": "Thiên Không cùng Đào Hoa tại cung {cung}: nhiều ý tưởng, khéo tính toán; nên chọn ý khả thi nhất để làm trước.",
+  "Kình Dương": {
+   "dac": "Kình Dương đắc địa tại cung {cung}: thêm sự quả quyết và tinh thần dám làm cho mảng này; sức mạnh đó có ích khi bạn dùng vào việc đúng và giữ lời nói mềm.",
+   "ham": "Kình Dương chưa đắc địa tại cung {cung}: mảng này dễ có cạnh tranh hoặc va chạm thẳng; nên chậm lại một nhịp trước khi phản ứng và chọn việc đáng tranh.",
+   "luu": "Kình Dương của năm đi vào cung {cung}, cũng là cung Thái Tuế của năm: mảng này đòi hỏi quyết nhanh, dễ có tranh luận; nên giữ bình tĩnh và chọn việc đáng tranh.",
+   "trung": "Kình Dương của năm trùng Kình Dương gốc tại cung {cung}: mảng này đòi hỏi bình tĩnh, làm chắc từng bước, tránh quyết vội; đây là điểm cần để ý, không phải kết luận của cả năm.",
+   "tuanTriet": "Kình Dương tại cung {cung} gặp {tt}: sức ép của sao này nhẹ đi rõ, va chạm ít gay gắt hơn; đổi lại, sự quả quyết cũng bớt sắc nên việc cần bạn chủ động hơn.",
+   "gapHoaLinh": "Kình Dương cùng {sao} tại cung {cung}: hai sao đều nhanh và mạnh nên việc ở mảng này dễ gấp, dễ nóng; biết dồn sức vào một việc rõ ràng thì đây thành sức bật, chỉ nên tránh quyết khi đang bực.",
+   "luuGapHoaLinh": "Kình Dương của năm gặp {sao} gốc tại cung {cung}, cũng là cung Thái Tuế của năm: việc ở mảng này dễ gấp và nóng, dễ có tranh luận; dồn sức vào một việc rõ ràng thì thành sức bật, chỉ nên tránh quyết khi đang bực."
+  },
+  "Đà La": {
+   "dac": "Đà La đắc địa tại cung {cung}: bạn bền bỉ, chịu khó theo việc đến cùng; tiến độ có thể chậm nhưng chắc, hợp những việc cần sự nhẫn nại.",
+   "ham": "Đà La chưa đắc địa tại cung {cung}: việc ở mảng này dễ kéo dài, vướng thủ tục hoặc phải làm lại; kiên nhẫn và mềm mỏng là cách giữ nhịp.",
+   "luu": "Đà La cùng Thiên Mã của năm đi vào cung {cung}: mảng này có thay đổi, giấy tờ mới hoặc di chuyển, nhưng tiến độ chậm hơn mong muốn; nên chọn hướng rõ trước khi xê dịch và kiên nhẫn với thủ tục.",
+   "trung": "Đà La của năm trùng Đà La gốc tại cung {cung}: việc ở mảng này cần làm chắc từng bước, chấp nhận đi chậm để khỏi làm lại; đây là điểm cần để ý, không phải kết luận của cả năm.",
+   "tuanTriet": "Đà La tại cung {cung} gặp {tt}: sự chậm trễ, dây dưa của sao này nhẹ đi, việc dễ gỡ hơn khi bạn kiên trì theo đến cùng.",
+   "gapHoaLinh": "Đà La cùng {sao} tại cung {cung}: việc vừa dễ kéo dài vừa dễ khiến bạn sốt ruột; nên chia nhỏ việc, đặt mốc rõ và giữ giọng bình tĩnh khi trao đổi.",
+   "luuGapHoaLinh": "Đà La cùng Thiên Mã của năm gặp {sao} gốc tại cung {cung}: việc có thay đổi nhưng vừa chậm vừa dễ khiến bạn sốt ruột; nên chia nhỏ việc, đặt mốc rõ và giữ giọng bình tĩnh."
+  }
  },
  "thanCu": {
   "thuong": "Cung {cung} cũng là cung Thân của bạn. Sách xem cung Thân là nơi cách sống và lựa chọn của bạn bộc lộ rõ dần theo tuổi, nên chuyện ở cung này thường chạm đến lựa chọn thực tế của bạn nhiều hơn; tháng này hợp nhìn lại một thói quen ở mảng này mà bạn muốn giữ hay đổi.",
@@ -236,6 +254,64 @@
   "saoPhu.Hỏa Tinh|Linh Tinh": "VAN-SP-10 (TT; KL), CHUNG-SP-10 (độ sáng), CHUNG-TUAN-02 (TT 'Sát lạc không vong cánh vô uy lực'); binh: CHUNG-SP-02",
   "saoPhu.Văn Xương|Văn Khúc": "VAN-SP-06 (TT), CHUNG-HOA-XK-01 (KL; TT)",
   "saoPhu.Thiên Không+Đào Hoa": "MENH-SP-09 (TB; W1) — quy tắc ghi cho Mệnh, dùng nghĩa tính cách; Đức cần kiểm. Thiên Không đơn thủ: chưa có quy tắc, không viết.",
-  "thanCu": "MENH-YN-08 (W1; TC W8; KL)"
+  "thanCu": "MENH-YN-08 (W1; TC W8; KL)",
+  "saoPhu.Kình Dương": "dac/ham: CHUNG-SP-10 (bảng độ sáng: đắc Thìn Tuất Sửu Mùi, hãm cung khác), CHUNG-SP-03 (sát tinh đắc có mặt quả quyết), CHUNG-SP-02 (diễn đạt 'cần chú ý'), MENH-SP-06 (TB W4; TT W7, nghĩa tính cách dùng mở rộng cho cung tháng, tổng hợp); luu: NAM-TT-02 (năm 2027 Lưu Kình luôn đồng cung Lưu Thái Tuế ở Mùi), VAN-SP-08; trung: NAM-LUU-07 (TT q.3 〈論羊陀迭並〉 đã trung tính hóa; câu nặng cấm theo NAM-CAM-02), NAM-LUU-06; tuanTriet: CHUNG-TUAN-02 (TT 'Sát lạc không vong cánh vô uy lực'; WC6; WC7); gapHoaLinh: VAN-SP-08 ('Kình hãm gặp thêm sát tinh… tránh quyết định nóng'), MENH-SP-06 (TT '擎羊火星威权出众', mặt sức bật), CHUNG-SP-02 (tổng hợp); luuGapHoaLinh: NAM-TT-02 + VAN-SP-08 + MENH-SP-06 (tổng hợp)",
+  "saoPhu.Đà La": "dac/ham: CHUNG-SP-10, CHUNG-SP-03, CHUNG-SP-02, VAN-SP-09 (TT q.2 陀羅入限: 'tất nhiên nhẫn nại yếu khiêm hòa'); luu: NAM-LUU-02 (năm 2027 Lưu Đà luôn cùng Lưu Thiên Mã ở Tỵ; VAN-SP-03, VAN-SP-09), NAM-LUU-06; trung: NAM-LUU-07 (đã trung tính hóa; NAM-CAM-02 cấm câu nặng); tuanTriet: CHUNG-TUAN-02; gapHoaLinh: VAN-SP-09, CHUNG-SP-02 (tổng hợp); luuGapHoaLinh: NAM-LUU-02 + VAN-SP-09 + CHUNG-SP-02 (tổng hợp)",
+  "hoaDoiChieu.*": "CHUNG-TP-03 (TT Hóa Lộc; Thái Vi phú; KL: Lộc Quyền Khoa hội chiếu cộng dồn, Kỵ hội chiếu nhẹ hơn tọa thủ, 'một điểm vướng đến từ lĩnh vực <cung chứa Kỵ>'), CHUNG-TP-01, CHUNG-TP-02 (xung chiếu chỉ tăng giảm, viết 'được hỗ trợ từ…'/'điểm vướng từ…'), CHUNG-HOA-02 (nghĩa từng hóa), CHUNG-HOA-04 (hóa gốc khác hóa năm), CHUNG-HOA-06 (hóa mang tính sao bị hóa)",
+  "hoaDoiChieu.Kỵ.xungLoc": "CHUNG-TP-03 (TT Thái Vi phú 'Lộc phùng xung phá, cát xứ tàng hung', đã trung tính hóa)",
+  "hoaDoiChieu.gop.Kỵ|Lộc, Kỵ|Quyền, Lộc|Kỵ, Quyền|Kỵ": "CHUNG-HOA-07 (TT q.2 Hóa Kỵ 'tác sự tiến thoái'; KL) + CHUNG-TP-03",
+  "hoaDoiChieu.gop.Kỵ|Khoa, Khoa|Kỵ": "CHUNG-HOA-08 (TT; KL 'Hóa khoa… đệ nhất giải thần') + CHUNG-TP-03",
+  "hoaDoiChieu.gop.Kỵ|Kỵ": "tổng hợp CHUNG-HOA-04, CHUNG-TP-03 (chưa có quy tắc trùng Kỵ riêng; đề xuất Đức kiểm)",
+  "hoaDoiChieu.gopCat": "CHUNG-TP-03 (cát hóa cộng dồn), CHUNG-SP-07 (Tam hóa củng) (tổng hợp)",
+  "hoaDoiChieu._kem": "CHUNG-HOA-05 (TT Phát vi luận; NL: Khoa Quyền Lộc hãm thì 'thành quả đến chậm, cần kiên trì'), CHUNG-PP-04",
+  "chinhTinhTheoCung": "CHUNG-HOA-06 (KL: luận = tính sao × lĩnh vực cung), CHUNG-TP-01/TP-02 (_doi: xung chiếu chỉ tăng giảm); nghĩa từng cung theo *-YN-01 như nen.<cung> (Phụ Mẫu: VAN-CUNG-03 'hồ sơ, văn bản'; Tử Tức: TU-YN-03, nghĩa mở rộng TU-YN-02/TU-TRANH-03 lối hiện đại; Tật Ách: TAT-YN-01, không đoán bệnh)"
+ },
+ "hoaDoiChieu": {
+  "_khoa": "Hóa của chính tinh ở cung ĐỐI CHIẾU của cung tháng. hoaDoiChieu.<hóa>.goc = hóa từ lá số gốc; .luu = hóa của năm 2027; <hóa> ∈ Lộc, Quyền, Khoa, Kỵ. Sao có cả hóa gốc và hóa lưu: dùng gop['<hóa gốc>|<hóa lưu>'] (nếu có khóa) thay cho hai câu lẻ; không có khóa thì dùng gopCat (cả hai cát hóa) hoặc câu .goc rồi .luu. Kỵ.xungLoc thay Kỵ.goc khi cung tháng có Lộc Tồn hoặc Hóa Lộc (gốc hay lưu). Lộc/Quyền/Khoa với sao Bình/Hãm: nối thêm _kem sau câu (bỏ dấu chấm cuối câu trước). Placeholder: {sao}, {doi} = tên cung đối chiếu (không có chữ 'cung'), {cung} = tên cung tháng, {hoaGoc}/{hoaLuu} = 'Lộc'|'Quyền'|'Khoa'.",
+  "Lộc": {
+   "goc": "{sao} ở cung đối chiếu {doi} mang Hóa Lộc từ lá số gốc: cung {cung} được hỗ trợ từ mảng {doi}, cơ hội thường đến khi bạn mở lòng hợp tác.",
+   "luu": "{sao} ở cung đối chiếu {doi} nhận Hóa Lộc của năm: năm nay mảng {doi} chiếu sang cung {cung} thêm một nguồn thuận, hợp đón cơ hội và làm cho ra kết quả."
+  },
+  "Quyền": {
+   "goc": "{sao} ở cung đối chiếu {doi} mang Hóa Quyền từ lá số gốc: cung {cung} có thêm sức chủ động nhờ mảng {doi}, hợp đứng ra quyết những phần mình rành.",
+   "luu": "{sao} ở cung đối chiếu {doi} nhận Hóa Quyền của năm: mảng {doi} góp thêm tiếng nói cho cung {cung}, hợp nhận phần quyết định nhưng vẫn lắng nghe."
+  },
+  "Khoa": {
+   "goc": "{sao} ở cung đối chiếu {doi} mang Hóa Khoa từ lá số gốc: cung {cung} được nâng đỡ bằng uy tín và sự tin cậy; giữ cách làm đàng hoàng thì dễ được giúp.",
+   "luu": "{sao} ở cung đối chiếu {doi} nhận Hóa Khoa của năm: tiếng tốt từ mảng {doi} chiếu sang cung {cung}, hợp trình bày rõ việc mình làm và nhờ người có uy tín góp ý."
+  },
+  "Kỵ": {
+   "goc": "{sao} ở cung đối chiếu {doi} mang Hóa Kỵ từ lá số gốc: cung {cung} có một điểm vướng đến từ mảng {doi}, nhẹ hơn khi Kỵ nằm ngay trong cung; nên nói rõ, làm rõ để gỡ sớm.",
+   "luu": "{sao} ở cung đối chiếu {doi} nhận Hóa Kỵ của năm: năm nay mảng {doi} dễ đem đến một điểm vướng cho cung {cung}; nên giữ lời nói rõ ràng và ghi lại thỏa thuận.",
+   "xungLoc": "{sao} ở cung đối chiếu {doi} mang Hóa Kỵ từ lá số gốc, xung chiếu vào cung {cung} đang có Lộc: sách gọi là Lộc gặp xung, phần lợi có nhưng dễ bị việc từ mảng {doi} kéo bớt; nên tách bạch việc chung, việc riêng và giữ dự phòng."
+  },
+  "gop": {
+   "Kỵ|Lộc": "{sao} ở cung đối chiếu {doi} mang Hóa Kỵ gốc lại nhận Hóa Lộc của năm: điều vốn vướng ở mảng {doi} năm nay có cửa gỡ, nhưng thuận lợi chiếu sang cung {cung} dễ lên xuống; nên giữ nhịp đều và có dự phòng.",
+   "Kỵ|Quyền": "{sao} ở cung đối chiếu {doi} mang Hóa Kỵ gốc lại nhận Hóa Quyền của năm: mảng {doi} vừa có điểm vướng vừa có sức chủ động, nên việc chiếu sang cung {cung} có tiến có lùi; chủ động vừa phải và giữ lời mềm.",
+   "Kỵ|Khoa": "{sao} ở cung đối chiếu {doi} mang Hóa Kỵ gốc lại nhận Hóa Khoa của năm: sách xem Hóa Khoa là sao gỡ rối tốt nhất cho Kỵ, nên điểm vướng từ mảng {doi} năm nay dễ gỡ hơn khi bạn làm đúng cách, có người hiểu chuyện góp ý.",
+   "Kỵ|Kỵ": "{sao} ở cung đối chiếu {doi} vừa mang Hóa Kỵ gốc vừa nhận Hóa Kỵ của năm: điểm vướng từ mảng {doi} rõ hơn mọi năm; nên làm rõ thỏa thuận, chậm lại khi quyết các việc có liên quan tới cung {cung}.",
+   "Lộc|Kỵ": "{sao} ở cung đối chiếu {doi} mang Hóa Lộc gốc lại nhận Hóa Kỵ của năm: phần thuận vốn có ở mảng {doi} năm nay kèm điều cần gỡ, nên việc chiếu sang cung {cung} có tiến có lùi; giữ kế hoạch và dự phòng.",
+   "Quyền|Kỵ": "{sao} ở cung đối chiếu {doi} mang Hóa Quyền gốc lại nhận Hóa Kỵ của năm: tiếng nói vốn có ở mảng {doi} năm nay dễ gặp phản ứng ngược; nên mềm trong cách nói khi việc chạm tới cung {cung}.",
+   "Khoa|Kỵ": "{sao} ở cung đối chiếu {doi} mang Hóa Khoa gốc lại nhận Hóa Kỵ của năm: uy tín vốn có giúp gỡ phần lớn điểm vướng từ mảng {doi}; nên giữ cách làm minh bạch như trước."
+  },
+  "gopCat": "{sao} ở cung đối chiếu {doi} vừa mang Hóa {hoaGoc} gốc vừa nhận Hóa {hoaLuu} của năm: hai lực thuận cùng chiếu sang cung {cung}, hợp tận dụng nhưng vẫn giữ kế hoạch để khỏi chủ quan.",
+  "_kem": ", nhưng vì {sao} chưa sáng nên phần thuận này đến chậm, cần kiên trì."
+ },
+ "chinhTinhTheoCung": {
+  "_khoa": "Vế nối sau câu chinhTinh/cachCuc để câu sao nói đúng chuyên đề cung tháng. Ghép: chọn mẫu _tai (sao tọa thủ cung tháng) hoặc _doi (sao ở cung đối chiếu, gồm cả cung tháng vô chính diệu mượn sao), thay {cung} = tên cung tháng, {mang} = chinhTinhTheoCung[<tên cung tháng>]. Đặt thành một câu riêng ngay sau câu sao; mỗi tháng chỉ dùng 1 lần (sau câu sao đầu tiên).",
+  "_tai": "Ở cung {cung}, nét này thấy rõ {mang}.",
+  "_doi": "Nét này từ cung đối chiếu soi sang cung {cung}, thấy rõ {mang}.",
+  "Mệnh": "trong cách bạn tự nhìn mình và phản ứng trước việc mới",
+  "Phụ Mẫu": "khi bạn trao đổi với cha mẹ, người lớn tuổi, cấp trên và khi lo hồ sơ, văn bản",
+  "Phúc Đức": "trong sự an ổn bên trong, cách bạn nghỉ ngơi và giữ gắn kết với gia đình, họ hàng",
+  "Điền Trạch": "trong việc sắp xếp nhà cửa, chi phí chỗ ở và cách bạn giữ gìn tài sản",
+  "Quan Lộc": "trong cách bạn nhận việc, giữ tiến độ và phối hợp với người cùng làm",
+  "Nô Bộc": "khi bạn làm việc với bạn bè, đồng nghiệp và những người cùng hợp tác",
+  "Thiên Di": "khi bạn ra ngoài, đi lại, gặp người mới hoặc làm việc ở môi trường lạ",
+  "Tật Ách": "trong nhịp sinh hoạt, cách bạn giữ sức và lắng nghe cơ thể mình",
+  "Tài Bạch": "trong cách bạn kiếm tiền, cân nhắc khoản chi và giữ phần dành dụm",
+  "Tử Tức": "trong cách bạn gần gũi con cái, người nhỏ tuổi mình dìu dắt hoặc một dự án của riêng mình",
+  "Phu Thê": "trong cách bạn trò chuyện, nhường nhịn và cùng người thương bàn việc chung",
+  "Huynh Đệ": "khi bạn trao đổi, giúp đỡ hoặc cùng làm việc với anh chị em"
  }
 }
