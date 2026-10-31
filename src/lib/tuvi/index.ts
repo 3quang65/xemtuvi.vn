@@ -72,6 +72,12 @@ export interface ThongTinSinh {
   gio: number; // 0–23, giờ đồng hồ
   phut?: number; // 0–59
   mienNamTruoc1975?: boolean; // sinh ở miền Nam, giờ khai sinh theo đồng hồ UTC+8 (1960–1975)
+  /** Sinh ở nước ngoài, chỉ dùng khi nhập dương lịch: gio/phut là giờ đồng hồ nơi sinh. Loại trừ mienNamTruoc1975. */
+  sinhNuocNgoai?: boolean;
+  /** Múi giờ nơi sinh theo giờ đồng hồ khi đó (−12…+14, bước 0,25; đã gồm giờ mùa hè nếu có). Bắt buộc khi sinhNuocNgoai. */
+  muiGioUTC?: number;
+  /** Tên nước, chỉ để hiển thị/lưu; engine không dùng. */
+  nuoc?: string;
   gioiTinh: 'nam' | 'nu';
   ten?: string;
   quyUoc?: Partial<QuyUoc>;
@@ -100,7 +106,9 @@ export interface LaSo {
   tuan: string;
   triet: string;
   /** Giờ sinh sau khi quy về giờ chuẩn UTC+7 (đặc tả 1.2) */
-  gioChuan: { ngay: number; thang: number; nam: number; gio: string; daQuyDoi: boolean };
+  gioChuan: { ngay: number; thang: number; nam: number; gio: string; daQuyDoi: boolean; nguon?: 'nuocNgoai' };
+  /** Chỉ có khi sinh ở nước ngoài: giờ khai sinh theo đồng hồ nơi sinh, để viết câu quy ước */
+  nuocNgoai: { muiGioUTC: number; ngay: number; thang: number; nam: number; gio: string } | null;
   /** Múi giờ đã dùng để đổi âm lịch (8 với ngày trước 1968) */
   amLichTz: 7 | 8;
   /** Chỉ số nội bộ (0 = Giáp/Tý) để an sao lưu */
@@ -131,6 +139,15 @@ interface Engine {
 const engine = TuViRaw as unknown as Engine;
 const Lich = LichRaw as unknown as { duongSangAm(d: number, m: number, y: number): { nam: number } };
 
+export function muiGioHopLe(m: unknown): m is number {
+  return typeof m === 'number' && Number.isFinite(m) && m >= -12 && m <= 14 && Number.isInteger(m * 4);
+}
+/** "UTC+7", "UTC-5", "UTC+5:30". */
+export function nhanMuiGio(m: number): string {
+  const a = Math.abs(m), h = Math.floor(a), p = Math.round((a - h) * 60);
+  return `UTC${m < 0 ? '-' : '+'}${h}${p ? ':' + String(p).padStart(2, '0') : ''}`;
+}
+
 /** Kiểm tra dữ liệu đầu vào trước khi an sao. Trả về thông báo lỗi tiếng Việt, hoặc null nếu hợp lệ. */
 export function kiemTraThongTin(t: Partial<ThongTinSinh>): string | null {
   const { ngay, thang, nam, gio, gioiTinh } = t;
@@ -140,6 +157,10 @@ export function kiemTraThongTin(t: Partial<ThongTinSinh>): string | null {
   if (!Number.isInteger(ngay) || ngay! < 1 || ngay! > 31) return 'Ngày sinh không hợp lệ.';
   if (!Number.isInteger(gio) || gio! < 0 || gio! > 23) return 'Vui lòng chọn giờ sinh.';
   if (t.phut != null && (!Number.isInteger(t.phut) || t.phut < 0 || t.phut > 59)) return 'Phút sinh cần trong khoảng 0–59.';
+  if (t.sinhNuocNgoai) {
+    if (t.mienNamTruoc1975) return 'Chỉ chọn một trong hai: sinh ở nước ngoài hoặc sinh ở miền Nam trước 1975.';
+    if (t.lich !== 'am' && !muiGioHopLe(t.muiGioUTC)) return 'Vui lòng chọn múi giờ nơi sinh (từ UTC−12 đến UTC+14).';
+  }
   if (t.lich === 'duong') {
     const d = new Date(Date.UTC(nam!, thang! - 1, ngay!));
     if (d.getUTCDate() !== ngay) return 'Ngày dương lịch không tồn tại.';
@@ -160,7 +181,10 @@ export function lapLaSo(t: ThongTinSinh): LaSo {
 export function moTaQuyUoc(ls: LaSo): string[] {
   const ds: string[] = [];
   const g = ls.gioChuan;
-  if (g.daQuyDoi) ds.push(`Giờ khai sinh miền Nam (đồng hồ UTC+8) đã quy về giờ chuẩn: ${g.gio} ngày ${g.ngay}/${g.thang}/${g.nam}.`);
+  if (g.nguon === 'nuocNgoai' && ls.nuocNgoai) {
+    const n = ls.nuocNgoai;
+    ds.push(`Giờ khai sinh ${n.gio} ngày ${n.ngay}/${n.thang}/${n.nam} (${nhanMuiGio(n.muiGioUTC)}) quy về giờ chuẩn UTC+7 = ${g.gio} ngày ${g.ngay}/${g.thang}/${g.nam}.`);
+  } else if (g.daQuyDoi) ds.push(`Giờ khai sinh miền Nam (đồng hồ UTC+8) đã quy về giờ chuẩn: ${g.gio} ngày ${g.ngay}/${g.thang}/${g.nam}.`);
   if (g.gio.startsWith('23:')) {
     ds.push(ls.quyUoc.gioTyMuon === 'ngaySau'
       ? 'Sinh từ 23 giờ: tính sang ngày hôm sau (giờ Tý của ngày mới).'

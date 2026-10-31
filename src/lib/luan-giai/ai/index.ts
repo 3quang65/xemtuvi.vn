@@ -145,6 +145,8 @@ export function nhaCungCapDangDung(yeuCau: TuyChon['nhaCungCap']): 'stub' | 'cla
 
 export function khoaCache(ls: LaSo, chuyenDe: string, phienBan: string): string {
   const sinh = [ls.duong.nam, ls.duong.thang, ls.duong.ngay, ls.gio.dongHo, ls.gioChuan.gio, ls.gioiTinh, JSON.stringify(ls.quyUoc)];
+  // Sinh nước ngoài: hai múi giờ khác nhau 24 giờ (vd. −10 và +14) cho cùng giờ chuẩn nhưng khác ngày; khóa cũ giữ nguyên cho khách trong nước
+  if (ls.gioChuan.nguon === 'nuocNgoai') sinh.push(`nn${ls.gioChuan.nam}-${ls.gioChuan.thang}-${ls.gioChuan.ngay}`);
   return bam([...sinh, chuyenDe, phienBan].join('|'));
 }
 

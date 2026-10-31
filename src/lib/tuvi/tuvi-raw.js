@@ -139,6 +139,7 @@
   /**
    * opts: { lich: 'duong'|'am', ngay, thang, nam, nhuan, gio (0–23), phut (0–59), gioiTinh: 'nam'|'nu', ten,
    *         mienNamTruoc1975: sinh ở miền Nam, giờ khai sinh theo đồng hồ thời đó,
+   *         sinhNuocNgoai + muiGioUTC (−12…+14, bước 0,25): giờ khai sinh theo đồng hồ nơi sinh, quy về UTC+7; chỉ khi lich = 'duong',
    *         quyUoc: một phần của QUY_UOC_MAC_DINH (không bắt buộc) }
    */
   function anLaSo(opts) {
@@ -154,6 +155,14 @@
     var phutSinh = jdCua(duong) * 1440 + (+opts.gio) * 60 + (+opts.phut || 0);
     var daQuyDoi = !!opts.mienNamTruoc1975 && phutSinh >= PHUT_MN_TU && phutSinh < PHUT_MN_DEN;
     if (daQuyDoi) phutSinh -= 60;
+    // Sinh ở nước ngoài (chỉ khi nhập dương lịch): UTC+7 = giờ địa phương − muiGioUTC + 7; hai cờ loại trừ nhau
+    var nuocNgoai = !!opts.sinhNuocNgoai && opts.lich !== 'am';
+    if (opts.sinhNuocNgoai && opts.mienNamTruoc1975) throw new Error('Không thể chọn cùng lúc sinh ở nước ngoài và sinh ở miền Nam trước 1975 (hai lựa chọn loại trừ nhau)');
+    if (nuocNgoai) {
+      if (typeof opts.muiGioUTC !== 'number' || !isFinite(opts.muiGioUTC) || opts.muiGioUTC < -12 || opts.muiGioUTC > 14) throw new Error('Múi giờ nơi sinh cần trong khoảng UTC−12 đến UTC+14');
+      phutSinh -= Math.round((opts.muiGioUTC - 7) * 60);
+      daQuyDoi = true;
+    }
     var ngayChuan = L.jdToDate(Math.floor(phutSinh / 1440)), gioChuan = Math.floor(phutSinh % 1440 / 60), phutChuan = phutSinh % 60;
     // Ngày dùng để đổi âm lịch và tính can chi ngày: giờ Tý muộn (23h) thuộc ngày hôm sau
     var jdLich = Math.floor(phutSinh / 1440) + (gioChuan === 23 && qu.gioTyMuon === 'ngaySau' ? 1 : 0);
@@ -317,7 +326,11 @@
       menhChu: qu.menhChu === 'cungMenh' ? MENH_CHU[cungMenh - 1] : MENH_CHU[chiNam - 1], thanChu: THAN_CHU[chiNam - 1],
       menhChuCach: { theoChiNam: MENH_CHU[chiNam - 1], theoCungMenh: MENH_CHU[cungMenh - 1] },
       tuan: CHI[tuan1 - 1] + '–' + CHI[tuan2 - 1], triet: CHI[triet[0] - 1] + '–' + CHI[triet[1] - 1],
-      gioChuan: { ngay: ngayChuan[0], thang: ngayChuan[1], nam: ngayChuan[2], gio: hhmm(gioChuan, phutChuan), daQuyDoi: daQuyDoi },
+      // nguon chỉ có khi sinh nước ngoài (miền Nam giữ nguyên hình dạng cũ); nuocNgoai giữ giờ nhập để viết câu quy ước
+      gioChuan: nuocNgoai
+        ? { ngay: ngayChuan[0], thang: ngayChuan[1], nam: ngayChuan[2], gio: hhmm(gioChuan, phutChuan), daQuyDoi: true, nguon: 'nuocNgoai' }
+        : { ngay: ngayChuan[0], thang: ngayChuan[1], nam: ngayChuan[2], gio: hhmm(gioChuan, phutChuan), daQuyDoi: daQuyDoi },
+      nuocNgoai: nuocNgoai ? { muiGioUTC: opts.muiGioUTC, ngay: duong.ngay, thang: duong.thang, nam: duong.nam, gio: hhmm(+opts.gio, +opts.phut || 0) } : null,
       amLichTz: tzAm,
       chiSo: { canNam: canNam - 1, chiNam: chiNam - 1, thang: tt, gio: h },   // dùng cho anLuuNien
       quyUoc: qu,
