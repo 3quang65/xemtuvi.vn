@@ -245,17 +245,22 @@ a { color: inherit; }
   .ban { grid-template-rows: repeat(4, minmax(104px, auto)); margin: 0 -16px; border-radius: 0; border-left: 0; border-right: 0; }
   .o-cung { padding: 6px; font-size: 0.72rem; gap: 3px; }
   .phu-tinh, .sao-luu, .cung-chan > span:not(.van-nay) { display: none; }
-  .nam-xem { margin-top: 6px; font-size: 0.72rem; gap: 4px; }
-  .nam-xem button { width: 36px; height: 36px; }
+  .nam-xem { margin-top: 6px; font-size: 0.875rem; gap: 4px; }
+  .nam-xem button { width: 44px; height: 44px; min-height: 44px; }
   .cung-dau { flex-direction: column; gap: 0; }
-  .cung-dau strong { font-size: 0.8rem; }
-  .chinh-tinh { font-size: 0.74rem; }
+  .cung-dau strong { font-size: 0.875rem; }
+  .chinh-tinh { font-size: 0.875rem; }
+  .sao sup { display: none; }
   .thien-ban { padding: 10px; }
-  .thien-ban dl { grid-template-columns: 1fr; gap: 0; font-size: 0.72rem; }
+  .thien-ban dl { grid-template-columns: 1fr; gap: 0; font-size: 0.875rem; }
   .thien-ban dt { display: none; }
   /* Trên điện thoại chỉ giữ ngày sinh, âm lịch, bản mệnh, cục; tứ trụ và mệnh/thân chủ xem ở bản rộng */
   .thien-ban dd:nth-of-type(3), .thien-ban dd:nth-of-type(n+7) { display: none; }
   .ten-duong-so { font-size: 0.95rem; margin-bottom: 4px; }
+  /* L-d7cd2b F3: chữ thân >= 16px, ô bấm >= 44px */
+  .tt-ghi-chu, .ghi-chu-rieng-tu { font-size: 1rem; }
+  .chon-doi label, .chon-doi.nho label { min-height: 44px; }
+  .lk-nho { min-height: 44px; display: inline-flex; align-items: center; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -369,3 +374,8 @@ a { color: inherit; }
 .hoi-lich-su details { padding-top: 0; padding-bottom: 0; }
 .hoi-lich-su details[open] > .hoi-tra-loi { padding-bottom: 12px; }
 .hoi-goi-y .nut-phu:disabled { background: var(--nen-sau); color: var(--muc-nhat); border-color: var(--vien-dam); cursor: not-allowed; }
+
+/* L-d7cd2b F6: tab chuyên đề của bài trả phí cuộn ngang một hàng để nội dung bài bắt đầu ngay trong màn hình đầu */
+.tab-chu-de { display: flex; flex-wrap: nowrap; gap: 8px; overflow-x: auto; scroll-snap-type: x proximity; padding-bottom: 4px; margin: 0 -16px; padding-inline: 16px; scrollbar-width: none; }
+.tab-chu-de::-webkit-scrollbar { display: none; }
+.tab-chu-de button { flex: 0 0 auto; min-height: 44px; padding: 0 16px; white-space: nowrap; scroll-snap-align: start; }

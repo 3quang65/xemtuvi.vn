@@ -7,7 +7,7 @@ import { useGia } from '@/lib/useGia';
 import { docThongTinSinh, guiSuKien } from '@/lib/phien';
 import { useLaSoDaLuu } from '@/lib/useLaSoDaLuu';
 import { coTronLaSo, type QuyenGiaoDien } from '@/lib/quyen-xem';
-import { linkBaoLoi, maDonHienThi, nhacSauMuaVanNam, tinXacNhanDon } from '@/lib/tro-giup';
+import { linkBaoLoi, maDonHienThi } from '@/lib/tro-giup';
 import ThongBaoLoi from './ThongBaoLoi';
 import DangNhapMa from './DangNhapMa';
 
@@ -40,7 +40,6 @@ export default function ThanhToan() {
   const [donId, setDonId] = useState<number | null>(null);
   const [loiTT, setLoiTT] = useState(false); // E05
   const [bamTrung, setBamTrung] = useState(false); // E06
-  const [xong, setXong] = useState<{ id: number; tenGoi: string; maGoi: string } | null>(null); // tin xác nhận 3.1
 
   useEffect(() => { if (laSo && bangGia.san && !hopLe) router.replace(laSoMay ? '/luan-giai' : '/chon-goi'); }, [laSo, hopLe, router, laSoMay, bangGia.san]); // chờ bảng giá tải xong, tránh đẩy nhầm khi gói Vận 2027 chưa có trong danh sách
   useEffect(() => { if (laSo && hopLe) { guiSuKien('vao_thanh_toan', suKien); goiApi<{ dangNhap: boolean; email?: string; quyen?: QuyenGiaoDien[]; laSoIds?: number[] }>('/api/toi').then((t) => {
@@ -65,38 +64,8 @@ export default function ThanhToan() {
       }
       await goiApi('/api/thanh-toan/gia-lap', { donHangId: donRef.current });
       guiSuKien('thanh_toan_xong', suKien);
-      setXong({ id: donRef.current, tenGoi: goi!.ten, maGoi: goi!.ma });
+      router.replace('/luan-giai'); // vào thẳng bài đã mua; replace để nút Quay lại không về form thanh toán (tránh mua trùng)
     } catch { setLoiTT(true); dangBam.current = false; setDangXuLy(false); }
-  }
-
-  if (xong) {
-    const tin = tinXacNhanDon({ maDon: maDonHienThi(xong.id), tenGoi: xong.tenGoi, maGoi: xong.maGoi });
-    const nhac = nhacSauMuaVanNam(xong.maGoi);
-    return (
-      <section className="trang-buoc" aria-labelledby="tin-xac-nhan">
-        <h1 id="tin-xac-nhan">{tin.tieuDe}</h1>
-        <div className="khoi-buoc" role="status">
-          <p>{tin.dong[0]}</p>
-          <ul className="tin-don">
-            <li>Mã đơn: <strong>{tin.maDon}</strong></li>
-            <li>Gói: <strong>{tin.tenGoi}</strong>{tin.giaGoi && <> · Giá hiển thị: {tin.giaGoi}</>}</li>
-            <li>{tin.dong[1]}</li>
-            <li>{tin.dong[2]}</li>
-          </ul>
-          <div className="hai-nut">
-            <a href="/luan-giai" className="nut-chinh nut-lien-ket">Xem luận giải của tôi</a>
-            <a href={linkBaoLoi({ maDon: tin.maDon, goi: xong.maGoi })} className="nut-phu nut-lien-ket">Báo lỗi / góp ý</a>
-          </div>
-          {nhac && (
-            <div className="nhac-van-nam" data-testid="nhac-van-nam">
-              <p>{nhac.dongCombo}{nhac.combo && <> <a href={nhac.combo.href}>{nhac.combo.nhan}</a></>}</p>
-              {nhac.luuNguyet && <p data-testid="nhac-luu-nguyet">{nhac.luuNguyet} <a href="/van-nam-2027">Trang Vận năm 2027</a></p>}
-            </div>
-          )}
-          <p className="tt-ghi-chu">{tin.ghiChu}</p>
-        </div>
-      </section>
-    );
   }
 
   return (

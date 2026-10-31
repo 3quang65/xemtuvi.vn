@@ -192,7 +192,7 @@ export default function LuanGiai() {
       {chonHopLe ? (
         <>
           {dsTab.length > 1 && (
-            <div role="tablist" aria-label="Chuyên đề">
+            <div role="tablist" aria-label="Chuyên đề" className="tab-chu-de">
               {dsTab.map((c) => (
                 <button key={c} type="button" role="tab" aria-selected={c === chonHopLe} className={c === chonHopLe ? 'nut-chinh' : 'nut-phu'} onClick={() => setChon(c)}>{TEN_CHU_DE[c] ?? c}</button>
               ))}
