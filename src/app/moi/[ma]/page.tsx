@@ -4,8 +4,27 @@ import MoiVao from '@/components/MoiVao';
 
 export const metadata: Metadata = { title: 'Lời mời dùng thử — xemtuvi.vn', robots: { index: false, follow: false } };
 
+/** Thử kín 16/11: cờ KHẨN tắt hoàn toàn luồng nhận khách mới qua mã mời.
+ * Bật `THU_KIN_MOI_TAT=1` → /moi/* trả 410 "Tạm dừng nhận khách mới"; giữ nguyên
+ * luồng miễn phí: lập lá số + xem tóm tắt, không cần tài khoản.
+ */
+const THU_KIN_MOI_TAT = process.env.THU_KIN_MOI_TAT === '1';
+
 export default async function TrangMoi({ params }: { params: Promise<{ ma: string }> }) {
   const { ma } = await params;
+  if (THU_KIN_MOI_TAT) {
+    return (
+      <>
+        <DauTrang />
+        <main className="trang-buoc">
+          <h1>Tạm dừng nhận khách mới</h1>
+          <p>Chúng mình đang tạm dừng nhận khách mới để chuẩn bị cho bản ra mắt (16/11).</p>
+          <p>Bạn vẫn có thể <a href="/">lập lá số và xem tóm tắt miễn phí</a>, không cần tài khoản.</p>
+        </main>
+        <ChanTrang />
+      </>
+    );
+  }
   return (
     <>
       <DauTrang />

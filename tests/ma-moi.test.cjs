@@ -111,17 +111,21 @@ test('Vận năm 2027 chỉ chọn được khi cờ VAN_NAM_THU=1', async () =>
   } finally { delete process.env.VAN_NAM_THU; }
 });
 
-test('/vao: mã đúng ghi vao_moi kèm nguon từ máy chủ; mã sai trả hopLe:false và không ghi', async () => {
+test('/vao: guest (chưa đăng nhập) bị chặn 401; mã đúng ghi vao_moi kèm nguon; mã sai trả hopLe:false và không ghi', async () => {
   const [ma] = mm.taoMa(M.db, { nguon: 'cd-3c', soLuong: 1, gioiHan: 3 });
-  const truoc = docDong().length;
-  const sai = await (await x.maMoiVao(yc('/api/ma-moi/vao', { method: 'POST', body: { ma: 'KHONGCO1', phien: PH } }), M)).json();
+  // Chưa đăng nhập → bị chặn (thử kín 16/11: buộc tạo tài khoản để dùng mã mời).
+  let sai = await (await x.maMoiVao(yc('/api/ma-moi/vao', { method: 'POST', body: { ma: 'KHONGCO1', phien: PH } }), M)).json();
   assert.deepEqual(sai, { hopLe: false, ly: 'sai' });
-  assert.equal(docDong().length, truoc);
-  const ok = await x.maMoiVao(yc('/api/ma-moi/vao', { method: 'POST', body: { ma, phien: PH, nguon: 'gia-mao' } }), M);
+  let guest = await x.maMoiVao(yc('/api/ma-moi/vao', { method: 'POST', body: { ma, phien: PH } }), M);
+  assert.equal(guest.status, 401);
+  const truoc = docDong().length;
+  const a = await khach('i@example.vn');
+  const ok = await x.maMoiVao(yc('/api/ma-moi/vao', { method: 'POST', body: { ma, phien: PH }, cookie: a.cookie }), M);
   assert.deepEqual(await ok.json(), { hopLe: true });
   const dong = docDong().at(-1);
   assert.equal(dong.ten, 'vao_moi'); assert.equal(dong.nguon, 'cd-3c'); assert.equal(dong.phien, PH);
-  assert.equal((await x.maMoiVao(yc('/api/ma-moi/vao', { method: 'POST', body: { ma, phien: 'ngan' } }), M)).status, 400);
+  assert.equal(docDong().length, truoc + 1);
+  assert.equal((await x.maMoiVao(yc('/api/ma-moi/vao', { method: 'POST', body: { ma, phien: 'ngan' }, cookie: a.cookie }), M)).status, 400);
 });
 
 test('sự kiện: vao_moi/dung_ma_moi không nhận từ máy khách; bam_gop_y nhận, không kèm nguon', () => {

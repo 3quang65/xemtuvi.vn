@@ -257,12 +257,17 @@ export const lienHeHuy = (req: Request, m: MayChu) => chay(req, async () => {
 });
 
 
-/** POST /api/ma-moi/vao {ma, phien}: mã hợp lệ → ghi vao_moi kèm nguon lấy từ mã (không tin máy khách). Mã sai trả 200 hopLe:false để trang báo nhẹ nhàng. */
+/** POST /api/ma-moi/vao {ma, phien}: mã hợp lệ → ghi vao_moi kèm nguon lấy từ mã (không tin máy khách).
+ * Thử kín 16/11: khách chưa đăng nhập (guest) không được dùng mã mời 0đ — buộc tạo tài khoản để lưu/xem sâu.
+ * Mã sai trả 200 hopLe:false để trang báo nhẹ nhàng.
+ */
 export const maMoiVao = (req: Request, m: MayChu) => chay(req, async () => {
   const b = await doc(req);
   if (!b || typeof b.phien !== 'string' || !PHIEN_DO.test(b.phien)) return loi(400, 'du_lieu_sai', 'Dữ liệu không hợp lệ.');
   const kq = kiemMa(m.db, b.ma);
   if (!kq.hopLe) return json({ hopLe: false, ly: kq.ly });
+  // Thử kín 16/11: khách chưa đăng nhập (guest) không được dùng mã mời 0đ — buộc tạo tài khoản để lưu/xem sâu.
+  const id = nguoiDung(req, m); if (!id) return canDangNhap();
   await ghiSuKien({ ten: 'vao_moi', phien: b.phien, trang: trangCua('vao_moi'), nguon: kq.nguon });
   return json({ hopLe: true });
 });
