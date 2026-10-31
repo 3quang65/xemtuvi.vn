@@ -2,13 +2,15 @@
 
 Đo ngày 31/10/2026 trên https://v3.xemtuvi.vn bởi Phúc. Lighthouse 13.6, mobile (Moto G Power, 412px), mô phỏng 3G chậm (RTT 400ms, 400 kbps) + CPU chậm 4x. Mỗi trang chạy 3 lần, ghi trung vị. Mục tiêu nghiệm thu: Performance >= 85.
 
-| # | Trang | Performance | LCP (ms) | CLS | TBT (ms) | Sau (Perf trung vị 5 lần) |
+| # | Trang | Performance | LCP (ms) | CLS | TBT (ms) | Sau (Perf trung vị 9 lần) |
 |---|-------|------------:|---------:|----:|---------:|----------------|
-| 1 | `/` trang chủ | 84 | 2140 | 0 | 409 | 78 (89, 90, 60, 78, 59); LCP 2096; CLS 0; TBT 338 |
-| 2 | `/` form đã điền (1) | 84 | 2140 | 0 | 0 | như hàng 1; TBT khi điền 0 đến 77 (3 lần) |
-| 3 | lá số sau khi lập (2) | 56 | n/a | 0.350 | 327 | 60 đến 64 (3 lần); CLS vẫn 0.350 (xem ghi chú dưới); TBT 184 đến 240 |
-| 4 | `/chon-goi` | 63 | 4531 | 0 | 323 | 76 (76, 74, 59, 85, 87); LCP 2113; CLS 0; TBT 356 |
-| 5 | `/cung/phu-the` | 74 | 2118 | 0 | 728 | 90 (86, 59, 92, 90, 91); LCP 2099; CLS 0; TBT 253 |
+| 1 | `/` trang chủ | 84 | 2140 | 0 | 409 | 89 (khoảng 77 đến 90); LCP trung vị 2,16 s; CLS 0,001; TBT 340 |
+| 2 | `/` form đã điền (1) | 84 | 2140 | 0 | 0 | 99 (99 đến 100); CLS 0; TBT khi điền 79 |
+| 3 | lá số sau khi lập (2) | 56 | n/a | 0.350 | 327 | 95 (85 đến 97); CLS 0; TBT 190 |
+| 4 | `/chon-goi` | 63 | 4531 | 0 | 323 | 77 (70 đến 89); LCP trung vị 2,12 s; CLS 0,006; TBT 795 |
+| 5 | `/cung/phu-the` | 74 | 2118 | 0 | 728 | 91 (78 đến 92); LCP trung vị 2,15 s; CLS 0,034; TBT 265 |
+
+Cột "Sau": trung vị 9 lần tuần tự, số thô ở mục "Số đo sau D4 (Phúc, 9 lần)" cuối file.
 
 (1) Form và lá số cùng URL `/` (trạng thái trong trình duyệt, không có URL riêng). Hàng 2: Performance và LCP là của lần tải `/` (trùng hàng 1, vì lần tải chưa có dữ liệu điền); TBT và CLS đo trong lúc điền ngày, tháng, năm, giờ sinh, giới tính (Lighthouse timespan, trung vị 3 lần).
 (2) Hàng 3: đo timespan từ lúc bấm "Lập lá số" đến khi lá số hiện. Lighthouse không có LCP cho tương tác nên ghi n/a; điểm 56 là điểm timespan (chỉ gồm TBT, CLS), trung vị 3 lần (62, 55, 56). Thời gian bấm đến thấy lá số: 405 đến 599 ms.
