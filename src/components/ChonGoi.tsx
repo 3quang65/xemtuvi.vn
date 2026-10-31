@@ -3,7 +3,8 @@
 import { useRouter } from 'next/navigation';
 import { useEffect, useId, useMemo, useState } from 'react';
 import type { LaSo } from '@/lib/tuvi';
-import { DOAN_MAU, doanMauCuaLaSo, tachDoanMau } from '@/lib/luan-giai';
+import { chonDoanMau, tachDoanMau } from '@/lib/luan-giai/doan-mau';
+import { DOAN_MAU } from '@/lib/luan-giai/doan-du-phong';
 import { CHU_DE, chuDanVanNam, CONG_BO_GIA, CONG_BO_HOAN_TIEN, DIEU_KIEN_XEM_LAI, GHI_CHU_AI, HOAN_TIEN, PHUONG_PHAP, type Goi, type MaChuDe } from '@/lib/goi';
 import { docYDinh, guiSuKien } from '@/lib/phien';
 import { useGia } from '@/lib/useGia';
@@ -13,7 +14,7 @@ import { ThanGoi } from './ThanGoi';
 
 /** Đoạn mẫu lấy từ chính lá số của khách: câu đầu đọc được, phần sau làm mờ. Không có quy tắc khớp thì dùng ví dụ minh họa. */
 function DoanKhoa({ laSo }: { laSo: LaSo }) {
-  const mau = useMemo(() => doanMauCuaLaSo(laSo), [laSo]);
+  const mau = useMemo(() => chonDoanMau(laSo.cung.map((c) => ({ ten: c.ten, chi: c.chi, tenChi: c.tenChi, chinhTinh: c.chinhTinh.map((s) => s.ten) }))), [laSo]);
   const { ro, mo } = tachDoanMau(mau ? mau.cau : DOAN_MAU.cau);
   return (
     <div className="doan-khoa">
