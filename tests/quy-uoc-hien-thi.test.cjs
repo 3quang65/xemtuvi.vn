@@ -37,3 +37,11 @@ test('miền Nam trước 1975: quy về giờ chuẩn mặc định; tắt thì
 test('lá số thường không có dòng quy ước', () => {
   assert.deepEqual(moTaQuyUoc(lapLaSo({ lich: 'duong', gioiTinh: 'nu', ngay: 8, thang: 3, nam: 1996, gio: 14 })), []);
 });
+
+test('L-529450 (Phúc): nút quay lại miền Nam không mất khi lá số dựng lại (coMienNam giữ ở LapLaSo, không ở state của LaSoBan)', () => {
+  const fs = require('node:fs'), path = require('node:path');
+  const lap = fs.readFileSync(path.join(__dirname, '../src/components/LapLaSo.tsx'), 'utf8');
+  const ban = fs.readFileSync(path.join(__dirname, '../src/components/LaSoBan.tsx'), 'utf8');
+  assert.match(lap, /coMienNam=\{coMienNam\}/);
+  assert.doesNotMatch(ban, /useState\(laSo\.gioChuan\.daQuyDoi\)/);
+});

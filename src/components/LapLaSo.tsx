@@ -39,6 +39,7 @@ export default function LapLaSo() {
   const [hong, setHong] = useState<ThongTinSinh | null>(null); // E04: lập lá số lỗi phía mình; giữ lại thông tin để thử lại
   const [laSo, setLaSo] = useState<LaSo | null>(null);
   const [tt, setTt] = useState<ThongTinSinh | null>(null);
+  const [coMienNam, setCoMienNam] = useState(false); // khách đã chọn miền Nam lúc lập; giữ qua lần bấm 'xem theo cách khác' để còn nút quay lại
   const ketQuaRef = useRef<HTMLDivElement>(null);
 
   // Quay lại từ các bước sau: dựng lại lá số từ thông tin đã nhớ tạm trong tab này
@@ -46,7 +47,7 @@ export default function LapLaSo() {
     ghiNguon();
     const daLuu = docThongTinSinh();
     if (daLuu) {
-      try { setLaSo(lapLaSo(daLuu)); setTt(daLuu); return; } catch { setHong(daLuu); return; } // E04: giữ thông tin để bấm thử lại
+      try { setLaSo(lapLaSo(daLuu)); setTt(daLuu); setCoMienNam(!!daLuu.mienNamTruoc1975); return; } catch { setHong(daLuu); return; } // E04: giữ thông tin để bấm thử lại
     }
     guiSuKien('vao_form');
   }, []);
@@ -70,13 +71,14 @@ export default function LapLaSo() {
     try {
       setLaSo(lapLaSo(t));
       setTt(t);
+      setCoMienNam(!!t.mienNamTruoc1975);
       setHong(null);
       luuThongTinSinh(t);
       guiSuKien('lap_la_so');
       setLoi(null);
       requestAnimationFrame(() => ketQuaRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }));
     } catch {
-      setLaSo(null); setTt(null);
+      setLaSo(null); setTt(null); setCoMienNam(false);
       if (t.lich === 'am') { setHong(null); setLoi({ ma: 'E02', o: 'ngay', lich: 'am', nhuan: !!t.nhuan }); return; }
       luuThongTinSinh(t); // tải lại trong cùng thẻ vẫn còn
       setHong(t);
@@ -249,7 +251,7 @@ export default function LapLaSo() {
         )}
         {laSo && (
           <>
-            <LaSoBan key={JSON.stringify(laSo.duong) + laSo.gio.dongHo + laSo.gioChuan.gio + laSo.gioiTinh} laSo={laSo} namHienTai={namAmHienTai()} onDoiQuyUoc={doiQuyUoc} onDoiMienNam={doiMienNam} />
+            <LaSoBan key={JSON.stringify(laSo.duong) + laSo.gio.dongHo + laSo.gioChuan.gio + laSo.gioiTinh} laSo={laSo} namHienTai={namAmHienTai()} onDoiQuyUoc={doiQuyUoc} coMienNam={coMienNam} onDoiMienNam={doiMienNam} />
             <TomTatMienPhi laSo={laSo} />
             <LienHe />
           </>

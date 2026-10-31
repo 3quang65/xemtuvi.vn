@@ -123,8 +123,7 @@ function CachKhac({ laSo, coMienNam, onDoiQuyUoc, onDoiMienNam }: { laSo: LaSo; 
   );
 }
 
-export default function LaSoBan({ laSo, namHienTai, onDoiQuyUoc, onDoiMienNam }: { laSo: LaSo; namHienTai: number; onDoiQuyUoc: (p: Partial<QuyUoc>) => void; onDoiMienNam: (b: boolean) => void }) {
-  const [coMienNam] = useState(laSo.gioChuan.daQuyDoi);
+export default function LaSoBan({ laSo, namHienTai, coMienNam, onDoiQuyUoc, onDoiMienNam }: { laSo: LaSo; namHienTai: number; coMienNam: boolean; onDoiQuyUoc: (p: Partial<QuyUoc>) => void; onDoiMienNam: (b: boolean) => void }) {
   const cungMenh = laSo.cung.find((c) => c.ten === 'Mệnh')!;
   const [chon, setChon] = useState<number>(cungMenh.chi);
   const [namXem, setNamXem] = useState(Math.max(namHienTai, laSo.am.nam));
