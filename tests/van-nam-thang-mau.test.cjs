@@ -258,3 +258,44 @@ test('tháng mẫu: 8 lá đều có từ 3 câu; lá C có Lộc Tồn, không 
   assert.match(c, /Lộc Tồn/);
   assert.doesNotMatch(c, /song Lộc/);
 });
+
+// L-9d340e vòng 6: Kình/Đà (B4), hóa cung đối chiếu (B5), chinhTinhTheoCung (H3).
+async function nenCacThang(inp) {
+  const bai = await VN.sinhVanNam(lapLaSo(inp), { boQuaCache: true });
+  return bai.thang.map((t) => t.nhanDinh.filter((x) => x.thamChieu.quyTacId === 'NAM-THANG-05-NEN-CUNG').map((x) => x.text).join(' '));
+}
+test('B4: Kình/Đà gốc, lưu, trùng, Tuần Triệt, gặp Hỏa Linh có câu riêng; mỗi tháng tối đa một câu Kình/Đà', async () => {
+  const B = (await nenCacThang(LA[1]))[3], E = (await nenCacThang(LA[4]))[0], F = (await nenCacThang(LA[5]))[6], C = (await nenCacThang(LA[2]))[9];
+  assert.match(B, /Đà La của năm trùng Đà La gốc tại cung Phu Thê/);
+  assert.match(C, /Đà La cùng Thiên Mã của năm đi vào cung Quan Lộc/);
+  assert.ok(!/Thiên Mã tại cung/.test(C), 'Đà lưu thay câu Thiên Mã');
+  assert.match(E, /Kình Dương tại cung Nô Bộc gặp Triệt/);
+  assert.match(F, /Kình Dương của năm gặp Hỏa Tinh gốc tại cung Huynh Đệ/);
+  assert.ok(!/Hỏa Tinh (đắc địa|chưa đắc địa|tại cung)/.test(F), 'bỏ câu Hỏa/Linh riêng');
+  for (const inp of LA) for (const t of await nenCacThang(inp)) {
+    assert.ok((t.match(/Kình Dương (đắc|chưa|của năm|tại|cùng)|Đà La (đắc|chưa|của năm|tại|cùng)/g) || []).length <= 1, t);
+  }
+});
+test('B5: hóa của chính tinh ở cung đối chiếu; tối đa một câu mỗi tháng', async () => {
+  const A = await nenCacThang(LA[0]), H = await nenCacThang(LA[7]), D = await nenCacThang(LA[3]);
+  assert.ok(A.some((t) => /Hóa Kỵ gốc lại nhận Hóa Lộc của năm/.test(t)));
+  assert.ok(H.some((t) => /ở cung đối chiếu [^:]+ mang Hóa Lộc từ lá số gốc/.test(t)));
+  assert.ok(D.some((t) => /cung đối chiếu Phu Thê mang Hóa Khoa từ lá số gốc/.test(t)));
+  for (const inp of LA) for (const t of await nenCacThang(inp)) {
+    assert.ok((t.match(/ở cung đối chiếu [^:]{2,20} (mang|nhận|vừa mang) Hóa/g) || []).length <= 1, t);
+  }
+});
+test('H3: chinhTinhTheoCung đúng một lần mỗi tháng, ngay sau câu sao đầu; không "{" trong chữ', async () => {
+  let co = 0;
+  for (const inp of LA) for (const t of await nenCacThang(inp)) {
+    const n = (t.match(/Ở cung [^,]+, nét này thấy rõ|Nét này từ cung đối chiếu soi sang/g) || []).length;
+    assert.ok(n <= 1, t); co += n;
+    assert.ok(!/[{}]/.test(t), t);
+  }
+  assert.ok(co > 0, 'ít tháng có câu theo cung: ' + co);
+});
+test('PHIEN_BAN_VAN_NAM đổi theo khóa nen-cung-thang (băm có nenCungThangJson)', () => {
+  const src = fs.readFileSync(require.resolve('../src/lib/luan-giai/ai/van-nam.ts'), 'utf8');
+  assert.match(src, /PHIEN_BAN_GHEP, nenCungThangJson\]/);
+  assert.match(src, /gh9-nen-cung-thang-v6/);
+});
