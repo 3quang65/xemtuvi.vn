@@ -147,8 +147,8 @@ export const laSoGhi = (req: Request, m: MayChu) => chay(req, async () => {
   const e = kiemTraThongTin(t);
   if (e) return loi(400, 'sinh_sai', e);
   // Chỉ giữ các trường đã biết, không lưu rác từ trình duyệt.
-  const { lich, ngay, thang, nam, nhuan, gio, phut, mienNamTruoc1975, gioiTinh, ten, quyUoc } = t;
-  const sach = Object.fromEntries(Object.entries({ lich, ngay, thang, nam, nhuan, gio, phut, mienNamTruoc1975, gioiTinh, ten: typeof ten === 'string' ? ten.slice(0, 60) : undefined, quyUoc }).filter(([, v]) => v !== undefined));
+  const { lich, ngay, thang, nam, nhuan, gio, phut, mienNamTruoc1975, sinhNuocNgoai, muiGioUTC, nuoc, gioiTinh, ten, quyUoc } = t;
+  const sach = Object.fromEntries(Object.entries({ lich, ngay, thang, nam, nhuan, gio, phut, mienNamTruoc1975, sinhNuocNgoai, muiGioUTC, nuoc: typeof nuoc === 'string' ? nuoc.slice(0, 40) : undefined, gioiTinh, ten: typeof ten === 'string' ? ten.slice(0, 60) : undefined, quyUoc }).filter(([, v]) => v !== undefined));
   return json({ id: dv.luuLaSo(m.db, m.khoa, id, sach, typeof ten === 'string' ? ten : undefined) });
 });
 
