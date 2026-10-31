@@ -88,6 +88,7 @@ export default function ChonGoi() {
       <KhungMoiMo />
       <DoanKhoa laSo={laSo} />
       <PhuongPhap />
+      <p className="tt-ghi-chu">Luận giải dựa trên 948 quy tắc có ghi nguồn — xem <a href="/phuong-phap">Phương pháp &amp; nguồn</a>.</p>
       <div className="khu-chon-goi">
         {gia.vanNam.length > 0 && (
           <section className="khu-van-nam" id="van-nam-2027" aria-labelledby="tieu-de-van-nam" style={uuTienVanNam ? { order: -1 } : undefined}>
