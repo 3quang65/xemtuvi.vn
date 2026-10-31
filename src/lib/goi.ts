@@ -15,6 +15,7 @@ export interface Goi {
   soSanh?: string[]; // so sánh có thật, hiện dưới giá
   banDen?: string; // ngày dừng bán 'YYYY-MM-DD' (hết ngày đó, giờ Việt Nam): sau đó ẩn và máy chủ không nhận đơn
   quyenLoi: string[];
+  xemThu?: boolean; // chỉ gắn ở chế độ xem trước giá (XEM_TRUOC_GIA): thẻ hiện để xem, chưa mở bán, nút mua vô hiệu
 }
 
 export const dinhDangGia = (d: number) => d.toLocaleString('vi-VN') + 'đ';
@@ -51,6 +52,8 @@ export const MA_VAN_NAM = 'van-nam-2027';
 export const GIA_VAN_NAM_2027 = 49000; // mua lẻ cho một lá số
 export const GIA_TRON_LA_SO_KEM_VAN_NAM = 129000; // gộp Trọn lá số + Vận năm 2027 cho cùng một lá số
 export const BAN_DEN_GOI_GOP = '2027-02-06'; // gói gộp bán 15/12/2026–6/2/2027 (gia-van-nam-2027_v2)
+export const GIA_GOI_DOI = 179000; // gói đôi (dịp Valentine): hai Trọn lá số cho hai lá số riêng, cùng một đơn
+export const BAN_DEN_GOI_DOI = '2027-02-14'; // theo lịch ưu đãi mùa vụ v1 (U2: 7/2–14/2/2027); chưa có ngày bắt đầu bán riêng, hiện chỉ theo cổng chung
 export const MO_BAN_VAN_TU = '2026-12-15'; // Vận 2027 lẻ và gói gộp cùng mở từ ngày này (giờ Việt Nam), chốt L-ad41bc
 
 /**
@@ -65,7 +68,7 @@ export const cuaBanVan2027Mo = (bayGio: number = Date.now(), coThu: boolean = CO
  * Bật = đổi thành true sau khi Minh báo P18 xong.
  */
 export const LUU_NGUYET_SAN_SANG = false;
-export const laGoiVan2027 = (ma: string) => ma === 'van-nam-2027' || ma === 'tron-la-so-kem-van-nam';
+export const laGoiVan2027 = (ma: string) => ma === 'van-nam-2027' || ma === 'tron-la-so-kem-van-nam' || ma === 'goi-doi-valentine'; // cùng một cổng mở bán
 
 /** Bảng giá nhánh thử: mã gói -> giá (đồng). Gói không có trong bảng giữ giá hiện hành. */
 export type BangGia = Partial<Record<MaGoi, number>>;
@@ -101,13 +104,15 @@ function dungGoi(bang?: BangGia): Goi[] {
   ];
 }
 
-/** Hai gói vận năm: bán ở khu "Vận năm 2027", không nằm trong ba thẻ gói chính (GOI). */
+/** Ba gói bán ở khu "Vận năm 2027" (Vận lẻ, gói gộp, gói đôi), không nằm trong ba thẻ gói chính (GOI). Cùng một cổng mở bán. */
 function dungGoiVanNam(bang?: BangGia): Goi[] {
   const giaVan = bang?.['van-nam-2027'] ?? GIA_VAN_NAM_2027;
   const giaTron = bang?.['tron-la-so'] ?? GIA_TRON_LA_SO;
   const giaGop = bang?.['tron-la-so-kem-van-nam'] ?? GIA_TRON_LA_SO_KEM_VAN_NAM;
   const tong = giaTron + giaVan;
   const tiet = tong - giaGop;
+  const giaDoi = bang?.['goi-doi-valentine'] ?? GIA_GOI_DOI;
+  const tietDoi = 2 * giaTron - giaDoi;
   return [
     {
       ma: 'van-nam-2027', ten: 'Vận năm 2027 (Đinh Mùi)', gia: giaVan, donVi: 'một lần', chinh: false,
@@ -118,6 +123,12 @@ function dungGoiVanNam(bang?: BangGia): Goi[] {
       soSanh: tiet > 0 ? [`Mua riêng ${dinhDangGia(tong)}`, `tiết kiệm ${dinhDangGia(tiet)}`] : undefined, // tiết kiệm <= 0 thì không hiện, tránh câu sai
       banDen: BAN_DEN_GOI_GOP,
       quyenLoi: ['Toàn bộ Trọn lá số (năm chủ đề và đại vận 10 năm), cộng luận Vận năm 2027', 'Mỗi nhận định ghi sao, cung và nguồn sách', XEM_LAI],
+    },
+    {
+      ma: 'goi-doi-valentine', ten: 'Gói đôi: hai lá số, một đơn', gia: giaDoi, donVi: 'một lần', chinh: false,
+      soSanh: tietDoi > 0 ? [`Mua riêng ${dinhDangGia(2 * giaTron)}`, `tiết kiệm ${dinhDangGia(tietDoi)}`] : undefined,
+      banDen: BAN_DEN_GOI_DOI,
+      quyenLoi: ['Trọn lá số cho hai lá số: của bạn và của một người thân (cần ngày giờ sinh của người thứ hai)', 'Là hai bản luận giải riêng, không so hợp tuổi', 'Mỗi nhận định ghi sao, cung và nguồn sách', XEM_LAI],
     },
   ];
 }
@@ -186,4 +197,22 @@ export function giaCongBo(ma: string | null | undefined, cong: boolean = CONG_BO
   if (!cong) return null;
   const g = layGoi(ma, bang);
   return g ? dinhDangGia(g.gia) : null;
+}
+
+/**
+ * Cờ xem trước giá (env XEM_TRUOC_GIA=1, mặc định TẮT, đọc lúc chạy): chỉ đổi HIỂN THỊ ở /chon-goi. Hiện đủ mọi mức, thẻ chưa mở bán gắn nhãn NHAN_XEM_THU.
+ * Không gỡ cổng cuaBanVan2027Mo hay cờ an: taoDon vẫn chặn đơn gói chưa mở.
+ */
+export const XEM_TRUOC_GIA = () => process.env.XEM_TRUOC_GIA === '1';
+export const NHAN_XEM_THU = 'Xem thử – chưa mở bán';
+
+/** Danh sách thẻ để hiện. Cờ tắt = như cũ (gói đang bán). Cờ bật = đủ mọi gói; gói mà bình thường không hiện thì gắn xemThu. */
+export function goiHienThi(o: { bang?: BangGia; bayGio?: number; vanNamMo: boolean; xemTruoc: boolean }): { goi: Goi[]; vanNam: Goi[] } {
+  const bayGio = o.bayGio ?? Date.now();
+  const { goi, vanNam } = goiTheoBang(o.bang);
+  const goiBan = goiDangBan(goi, bayGio);
+  const vanBan = o.vanNamMo ? khuVanNam(vanNam, bayGio, true) : [];
+  if (!o.xemTruoc) return { goi: goiBan, vanNam: vanBan };
+  const dan = (ds: Goi[], ban: Goi[]) => ds.map((g) => (ban.some((b) => b.ma === g.ma) ? g : { ...g, xemThu: true }));
+  return { goi: dan(goi, goiBan), vanNam: dan(vanNam, vanBan) };
 }

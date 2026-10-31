@@ -49,7 +49,7 @@ test('Giá hiện hành trong goi.ts không đổi; goiTheoBang áp giá nhánh 
   assert.equal(GOI.find((g) => g.ma === 'tron-la-so').gia, 99000);
   assert.equal(GOI.find((g) => g.ma === 'thanh-vien-nam').gia, 299000);
   assert.deepEqual(GOI.find((g) => g.ma === 'thanh-vien-nam').soSanh, ['≈ 25.000đ/tháng', 'Mua lẻ 3 lá số đã là 297.000đ']);
-  assert.equal(GOI_VAN_NAM.length, 2);
+  assert.equal(GOI_VAN_NAM.length, 3);
   const a = goiTheoBang({ 'tron-la-so': 129000 }).goi;
   assert.equal(a.find((g) => g.ma === 'tron-la-so').gia, 129000);
   assert.equal(a.find((g) => g.ma === 'thanh-vien-nam').gia, 299000);

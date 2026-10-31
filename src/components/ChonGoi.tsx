@@ -61,10 +61,10 @@ function TheGoi({ g, onChon }: { g: Goi; onChon: (g: Goi, chuDe?: MaChuDe) => vo
       )}
       <button
         type="button" className={g.chinh ? 'nut-chinh' : 'nut-phu'}
-        disabled={canChuDe && !chuDe}
+        disabled={g.xemThu || (canChuDe && !chuDe)}
         onClick={() => onChon(g, canChuDe ? chuDe ?? undefined : undefined)}
       >
-        {canChuDe && !chuDe ? 'Chọn một chủ đề trước' : 'Chọn gói này'}
+        {g.xemThu ? 'Chưa mở bán' : canChuDe && !chuDe ? 'Chọn một chủ đề trước' : 'Chọn gói này'}
       </button>
     </li>
   );
@@ -74,7 +74,7 @@ export default function ChonGoi() {
   const router = useRouter();
   const laSo = useLaSoDaLuu();
   useEffect(() => { if (laSo) guiSuKien('vao_chon_goi'); }, [laSo]);
-  const gia = useGia();
+  const gia = useGia(true);
   const [uuTienVanNam, setUuTien] = useState(false);
   useEffect(() => { setUuTien(docYDinh() === 'van-nam-2027'); }, []);
   if (!laSo || !gia.san) return <p className="dang-tai" role="status">Đang tải…</p>;

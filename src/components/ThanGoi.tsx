@@ -1,10 +1,11 @@
-import { CONG_BO_GIA, dongHanBan, giaHienThi, type Goi } from '@/lib/goi';
+import { CONG_BO_GIA, dongHanBan, giaHienThi, NHAN_XEM_THU, type Goi } from '@/lib/goi';
 
 /** Thân thẻ gói (nhãn, tên, giá, so sánh, hạn bán, quyền lợi), không hook: dùng chung cho /chon-goi (máy khách) và trang đích (máy chủ). */
 export function ThanGoi({ g, cong = CONG_BO_GIA }: { g: Goi; cong?: boolean }) {
   const hanBan = cong ? dongHanBan(g) : null;
   return (
     <>
+      {g.xemThu && <span className="nhan-chinh nhan-xem-thu">{NHAN_XEM_THU}</span>}
       {g.nhan && <span className="nhan-chinh">{g.nhan}</span>}
       <h3>{g.ten}</h3>
       <p className="gia">{cong ? <><strong>{giaHienThi(g.gia, cong)}</strong> <span>/ {g.donVi}</span></> : <span>{giaHienThi(g.gia, cong)}</span>}</p>

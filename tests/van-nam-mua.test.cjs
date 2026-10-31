@@ -182,7 +182,7 @@ test('L-f91bef: lời hứa khớp sản phẩm thật, chủ đề lẻ chỉ 3
   assert.equal(gop.banDen, '2027-02-06');
   assert.ok(goi.conHanBan(gop, Date.parse('2027-02-06T23:59:00+07:00')));
   assert.ok(!goi.conHanBan(gop, Date.parse('2027-02-07T00:00:00+07:00')));
-  assert.equal(goi.goiDangBan(goi.GOI_VAN_NAM, Date.parse('2027-02-07T08:00:00+07:00')).length, 1);
+  assert.equal(goi.goiDangBan(goi.GOI_VAN_NAM, Date.parse('2027-02-07T08:00:00+07:00')).length, 2);
   // v4 L3: gói năm đang ẩn thì điều kiện không nhắc Thành viên năm; mở lại thì ghép câu 365 ngày
   assert.doesNotMatch(goi.DIEU_KIEN_XEM_LAI, /365 ngày|Thành viên năm/);
   assert.match(goi.dieuKienXemLai(true), /365 ngày kể từ ngày thanh toán, áp dụng cho 3 lá số bạn lập đầu tiên/);
