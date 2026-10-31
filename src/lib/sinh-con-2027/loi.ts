@@ -48,7 +48,7 @@ export function dongNguoi(n: MotNguoi, vai: 'bố' | 'mẹ'): string {
 export const canChiDaDung = (n: MotNguoi) => `${n.namDuong} – ${n.can} ${n.chi}${n.truocTet ? ' (sinh trước Tết)' : ''}`;
 
 export const CAU_TRUONG_PHAI = 'Kết quả được tính tự động theo năm sinh, dựa trên lý thuyết can chi – ngũ hành chung, không phải phép an sao Tử Vi Đẩu Số; muốn hiểu sâu từng người, cần lá số lập theo ngày giờ sinh.';
-export const GHI_CHU_RIENG_TU = 'Năm sinh bạn nhập chỉ được tính ngay trên máy của bạn, không gửi lên máy chủ.';
+export const GHI_CHU_RIENG_TU = 'Năm sinh bạn nhập ở đây chỉ được tính ngay trên máy của bạn, không gửi lên máy chủ.';
 export const GHI_CHU_BE = 'Bé chào đời từ 01/01 đến 05/02/2027 thuộc năm Bính Ngọ, vì Tết Đinh Mùi rơi vào ngày 06/02/2027. Công cụ này dành cho bé sinh từ 06/02/2027 đến 25/01/2028.';
 export const GHI_CHU_BO_QUA_NGAY = 'Kết quả đang tính theo năm dương lịch bạn nhập. Nếu sinh trước Tết năm đó, tuổi âm lịch của bạn thuộc năm trước và kết quả có thể khác: hãy nhập ngày tháng sinh để công cụ tính đúng.';
 

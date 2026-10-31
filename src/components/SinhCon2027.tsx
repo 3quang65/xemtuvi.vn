@@ -129,7 +129,7 @@ export default function SinhCon2027() {
               <a href="/" className="nut-chinh nut-lien-ket" onClick={() => { luuNamGoiY(kq.namMe); guiSuKien('bam_sang_la_so'); }}>{CTA_LA_SO.nut} cho mẹ</a>
             </div>
             <p>{CTA_VAN_2027.dan}</p>
-            <a href="/van-nam-2027" className="nut-phu nut-lien-ket">{CTA_VAN_2027.nut}</a>
+            <a href="/lp/van-nam-2027" className="nut-phu nut-lien-ket">{CTA_VAN_2027.nut}</a>
           </div>
         </section>
       )}
