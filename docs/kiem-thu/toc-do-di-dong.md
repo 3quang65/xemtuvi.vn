@@ -133,3 +133,21 @@ Trang `/chon-goi` (đo 10:08 đến 10:10, cùng cấu hình, tuần tự):
 - Trung vị riêng các lần có LCP < 3 s: **77** (9/9 lần).
 - Điểm thấp (70 đến 77) do TBT cao (787 đến 1377 ms), không do LCP.
 - Tải CPU (load average 1/5/15 phút): trước 2,27 / 2,01 / 2,16; sau 3,37 / 2,87 / 2,48.
+
+Trang `/cung/phu-the` (đo 10:10 đến 10:12, cùng cấu hình, tuần tự):
+| Lần | Điểm | LCP (s) | CLS | TBT (ms) |
+|---|---|---|---|---|
+| 1 | 92 | 2,11 | 0,027 | 259 |
+| 2 | 78 | 2,16 | 0,053 | 759 |
+| 3 | 89 | 2,43 | 0,027 | 265 |
+| 4 | 92 | 2,10 | 0,046 | 250 |
+| 5 | 92 | 2,18 | 0,027 | 226 |
+| 6 | 90 | 2,14 | 0,034 | 302 |
+| 7 | 79 | 2,15 | 0,034 | 719 |
+| 8 | 91 | 2,11 | 0,034 | 284 |
+| 9 | 92 | 2,17 | 0,027 | 229 |
+
+- Trung vị 9 lần: **91** (khoảng 78 đến 92).
+- Trung vị riêng các lần có LCP < 3 s: **91** (9/9 lần).
+- Hai lần thấp (78, 79) do TBT cao (719 đến 759 ms), không do LCP.
+- Tải CPU (load average 1/5/15 phút): trước 3,37 / 2,87 / 2,48; sau 1,32 / 2,23 / 2,29.
