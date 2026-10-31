@@ -352,7 +352,15 @@ function thangMoc(n: Ngu, c: Cung): boolean {
   return [ln.tieuHan, ln.luuThaiTue, ln.daiVan].includes(c.chi) || ln.luuTuHoa.some((h) => h.chi === c.chi && (h.hoa === 'Hóa Lộc' || h.hoa === 'Hóa Kỵ'));
 }
 
-export function kiemTraNamXem(namXem: number, ls: LaSo): void {
+/** Năm đã qua được phép xem ở đường kiểm chứng (src/lib/luan-giai/ai/kiem-chung.ts); mọi đường khác vẫn chỉ nhận 2027. */
+export const NAM_KIEM_CHUNG = [2025, 2026] as const;
+
+export function kiemTraNamXem(namXem: number, ls: LaSo, tuyChon: { kiemChung?: boolean } = {}): void {
+  if (tuyChon.kiemChung) {
+    // Đường kiểm chứng chỉ đọc vị trí lưu niên của engine, không dùng bộ quy tắc 2027 nên không cần kiểm Đinh Mùi.
+    if (!(NAM_KIEM_CHUNG as readonly number[]).includes(namXem)) throw new Error(`Đường kiểm chứng chỉ nhận năm ${NAM_KIEM_CHUNG.join(', ')}, không phải ${namXem}.`);
+    return;
+  }
   if (!Number.isInteger(namXem) || !NAM_CO_QUY_TAC.has(namXem) || !NGAY_THANG[namXem]) {
     throw new Error(`Chuyên đề Vận năm chưa có bộ quy tắc cho năm ${namXem}; hiện chỉ có năm ${NAM_HOP_LE} (${CAN_CHI_HOP_LE}).`);
   }
