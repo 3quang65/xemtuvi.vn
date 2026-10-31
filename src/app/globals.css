@@ -258,9 +258,12 @@ a { color: inherit; }
   .thien-ban dd:nth-of-type(3), .thien-ban dd:nth-of-type(n+7) { display: none; }
   .ten-duong-so { font-size: 0.95rem; margin-bottom: 4px; }
   /* L-d7cd2b F3: chữ thân >= 16px, ô bấm >= 44px */
-  .tt-ghi-chu, .ghi-chu-rieng-tu { font-size: 1rem; }
+  .tt-ghi-chu, .ghi-chu-rieng-tu, .mo-dau-chu .ghi-chu-rieng-tu, .trang-buoc legend, .trang-buoc label, .trang-buoc li, .trang-buoc p, .mo-dau-chu label, .mo-dau-chu legend, .mo-dau-chu p, .lk-nho { font-size: 1rem; }
   .chon-doi label, .chon-doi.nho label { min-height: 44px; }
   .lk-nho { min-height: 44px; display: inline-flex; align-items: center; }
+  main :is(label, legend, em, dt, dd, span, li, p):not(.ban *):not(.nhan-chinh) { font-size: max(1em, 1rem); }
+  footer a, header a { display: inline-flex; align-items: center; min-height: 44px; }
+  .chan-trang, .chan-trang p, .chan-trang a, .nut-lien-ket, .nut-phu, .nut-chinh { font-size: 1rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
