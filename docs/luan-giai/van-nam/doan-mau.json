@@ -2107,7 +2107,7 @@
   ],
   "muc": "tong-quan",
   "phan": "tu-hoa",
-  "noiDung": "Hóa Lộc của năm 2027 (Thái Âm) rơi vào cung {cung}: năm nay lĩnh vực này có nguồn lợi, cơ hội đến nhờ sự chu đáo, mềm dẻo và tích góp; thuận việc nhà cửa, chi tiêu gia đình.",
+  "noiDung": "Hóa Lộc của năm 2027 (Thái Âm) rơi vào cung {cung}: lĩnh vực này có nguồn lợi, cơ hội đến nhờ sự chu đáo, mềm dẻo và tích góp.",
   "nguon": [
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
@@ -2740,7 +2740,7 @@
    }
   ],
   "muc": "tai-chinh",
-  "noiDung": "Lộc Tồn của năm đến cung {cung} nhưng gặp Địa Không/Địa Kiếp: có nguồn lợi nhưng dễ hao hoặc dễ bị hứa hẹn quá mức; nên kiểm tra kỹ từng giao dịch trước khi xuống tiền.",
+  "noiDung": "Lộc Tồn của năm đến cung {cung} nhưng gặp {sao:Địa Không|Địa Kiếp}: có nguồn lợi nhưng dễ hao hoặc dễ bị hứa hẹn quá mức; nên kiểm tra kỹ từng giao dịch trước khi xuống tiền.",
   "nguon": [
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
@@ -2936,7 +2936,7 @@
   ],
   "muc": "tong-quan",
   "phan": "sao-luu",
-  "noiDung": "Quý nhân của năm (Thiên Khôi/Thiên Việt lưu) ở cung {cung}: năm nay bạn dễ được người có vị thế trong lĩnh vực này nâng đỡ, giới thiệu.",
+  "noiDung": "Quý nhân của năm ({sao:L. Thiên Khôi|L. Thiên Việt} lưu) ở cung {cung}: bạn dễ được người có kinh nghiệm hoặc vị thế trong lĩnh vực này nâng đỡ, giới thiệu.",
   "nguon": [
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
    "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)"

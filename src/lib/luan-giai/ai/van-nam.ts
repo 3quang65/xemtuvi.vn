@@ -144,7 +144,7 @@ function napQuyTac(): QuyTacNam[] {
 }
 const QUY_TAC = napQuyTac();
 /** Tăng số này mỗi khi đổi cách ghép bài để cache cũ không bị dùng lại. */
-const PHIEN_BAN_GHEP = 'gh3-4phan';
+const PHIEN_BAN_GHEP = 'gh4-thang-mau';
 const MAU_VIEC = viecJson as unknown as MauViec[];
 const GHI_CHU_PHAI = ghiChuPhaiJson as unknown as Record<string, string>;
 export const PHIEN_BAN_VAN_NAM = bam(JSON.stringify([QUY_TAC, MAU_VIEC, GHI_CHU_PHAI, PHIEN_BAN_QUY_TAC, PHIEN_BAN_GHEP])).slice(0, 12);
@@ -285,8 +285,13 @@ function cungGocCua(n: Ngu, q: QuyTacNam): Cung[] {
   }
 }
 
+/** {sao} = mọi sao khớp; {sao:A|B} = chỉ những sao trong danh sách A|B có thật trên lá số (bỏ tiền tố "L. "), nối bằng " và ". */
 function dien(q: QuyTacNam, sao: string[], g: Cung): string {
-  return q.noiDung.replaceAll('{sao}', sao.join(', ')).replaceAll('{cung}', g.ten);
+  const bo = (s: string) => s.replace(/^L\. /, '');
+  return q.noiDung
+    .replace(/\{sao:([^}]+)\}/g, (_m, ds: string) => { const loc = ds.split('|'); return sao.filter((s) => loc.includes(s)).map(bo).join(' và '); })
+    .replaceAll('{sao}', sao.join(', '))
+    .replaceAll('{cung}', g.ten);
 }
 
 /** Đổi chữ "10 năm / giai đoạn / cung vận" của bộ đại vận thành "năm nay" (NAM-PP-06). */
@@ -352,6 +357,24 @@ function tomLai(n: Ngu): Khop {
 function thangMoc(n: Ngu, c: Cung): boolean {
   const { ln } = n;
   return [ln.tieuHan, ln.luuThaiTue, ln.daiVan].includes(c.chi) || ln.luuTuHoa.some((h) => h.chi === c.chi && (h.hoa === 'Hóa Lộc' || h.hoa === 'Hóa Kỵ'));
+}
+
+/** Cung tháng đóng Tuần/Triệt mà có sao lưu hoặc lưu hóa nhập vào: một câu trung tính (nghĩa Tuần/Triệt theo hoi-dap.ts). */
+function cauTuanTriet(n: Ngu, c: Cung): Khop | null {
+  if (!c.tuan && !c.triet) return null;
+  const ten = (s: string) => s.replace(/^L\. /, '');
+  const luu = n.ln.saoLuu.filter((s) => s.chi === c.chi).map((s) => ten(s.ten));
+  const hoa = n.ln.luuTuHoa.filter((h) => h.chi === c.chi);
+  if (!luu.length && !hoa.length) return null;
+  const dong = c.tuan && c.triet ? 'Tuần và Triệt' : c.tuan ? 'Tuần' : 'Triệt';
+  const ve = [c.tuan ? 'Tuần: việc nên làm chậm, từng bước, tránh nôn nóng' : '', c.triet ? 'Triệt: cần thời gian để phát huy' : ''].filter(Boolean).join('; ');
+  const nhap = [...luu.map((s) => `${s} lưu`), ...hoa.map((h) => `${h.sao} ${h.hoa}`)].join(', ');
+  const text = `Cung ${c.ten} của tháng này đóng ${dong}, nơi ${nhap} nhập vào: các điểm nêu trên đến chậm hơn, rõ dần theo thời gian (${ve}).`;
+  const q: QuyTacNam = {
+    id: 'NAM-THANG-04-TUAN-TRIET', chuyenDe: 'van-nam', lop: 'thang', cung: c.ten, loai: 'YN', muc: 'tong-quan', phan: 'thang', dieuKien: [],
+    noiDung: text, nguon: ['Đặc tả an sao xemtuvi.vn'], truongPhai: 'Tam hợp phái Việt',
+  };
+  return { q, text, sao: [...luu, ...hoa.map((h) => h.sao)], cung: c };
 }
 
 export function kiemTraNamXem(namXem: number, ls: LaSo): void {
@@ -445,8 +468,12 @@ function ghepBai(ls: LaSo, namXem: number) {
       return sao === null ? [] : [{ q, text: dien(q, sao, c), sao, cung: c } as Khop];
     });
     // Một điểm từ sao lưu / lưu hóa tại cung tháng (ưu tiên hóa rồi sao lưu, không dùng câu tô thêm NAM-TT-06).
-    const diem = tatCa.filter((k) => k.cung.chi === chi && k.q.lop === 'cung-goc' && k.q.id !== 'NAM-TT-06' && k.q.muc !== 'su-nghiep' && !/-NHIP$/.test(k.q.id) && !/-NEN$/.test(k.q.id)).sort(xepHang).slice(0, 1);
-    return { thang: i + 1, tuNgay: ngay.thang[i], cung: c.ten, thangMoc: thangMoc(n, c), nhanDinh: gom([...chuDe.slice(0, 1), ...diem]) };
+    const ungVien = tatCa.filter((k) => k.cung.chi === chi && k.q.lop === 'cung-goc' && k.q.id !== 'NAM-TT-06' && k.q.muc !== 'su-nghiep' && !/-NHIP$/.test(k.q.id) && !/-NEN$/.test(k.q.id)).sort(xepHang);
+    // Tháng có cả Hóa Quyền và Hóa Kỵ: nêu cả hai (bản trả phí), không bỏ sót Kỵ như khi chỉ lấy một điểm.
+    const quyen = ungVien.find((k) => /^NAM-HOA-QUYEN/.test(k.q.id)), ky = ungVien.find((k) => /^NAM-HOA-KY/.test(k.q.id));
+    const diem = quyen && ky ? [quyen, ky] : ungVien.slice(0, 1);
+    const tt = cauTuanTriet(n, c);
+    return { thang: i + 1, tuNgay: ngay.thang[i], cung: c.ten, thangMoc: thangMoc(n, c), nhanDinh: gom([...chuDe.slice(0, 1), ...diem, ...(tt ? [tt] : [])]) };
   });
 
   const dauBai = {
@@ -682,6 +709,17 @@ export async function sinhVanNam(ls: LaSo, tuyChon: { namXem?: number; boQuaCach
 /** Điểm thuận ưu tiên cho bản xem trước (NAM-CAM-03: không dùng câu gây lo để kéo mua). */
 const DIEM_THUAN = ['NAM-HOA-LOC-SANG', 'NAM-HOA-KHOA-SANG', 'NAM-HOA-QUYEN-SANG', 'NAM-TH-04', 'NAM-TH-04-TT', 'NAM-LUU-03', 'NAM-LUU-04', 'NAM-LUU-05-PHU', 'NAM-LUU-01', 'NAM-TH-03-LOC', 'NAM-TH-03-KHOA', 'NAM-TH-03-QUYEN'];
 
+export interface UngVienThangMau { thang: number; thangMoc: boolean; coKy: boolean; cau: string[]; coTenSao: boolean }
+/**
+ * Chọn tháng mẫu cho bản xem trước. Bậc ưu tiên: không Hóa Kỵ (NAM-CAM-03) > đủ 2 câu > có câu nêu tên sao > tháng mốc;
+ * hòa bậc thì nhiều câu hơn, rồi tháng sớm hơn. Không tháng nào đạt cả thì lấy tháng tốt nhất còn lại;
+ * null chỉ khi mọi tháng đều không có câu.
+ */
+export function chonThangMau<T extends UngVienThangMau>(ds: T[]): T | null {
+  const diem = (x: T) => (x.coKy ? 0 : 8) + (x.cau.length >= 2 ? 4 : 0) + (x.coTenSao ? 2 : 0) + (x.thangMoc ? 1 : 0);
+  return ds.filter((x) => x.cau.length > 0).reduce<T | null>((tot, x) => (tot === null || diem(x) > diem(tot) || (diem(x) === diem(tot) && x.cau.length > tot.cau.length) ? x : tot), null);
+}
+
 /** Bản xem trước miễn phí: đầu bài + trọng điểm Lưu Thái Tuế + một điểm thuận + tên 12 cung tháng, không nội dung tháng, không mã quy tắc. */
 export function xemTruocVanNam(ls: LaSo, tuyChon: { namXem?: number } = {}): XemTruocVanNam {
   const namXem = tuyChon.namXem ?? NAM_HOP_LE;
@@ -690,7 +728,12 @@ export function xemTruocVanNam(ls: LaSo, tuyChon: { namXem?: number } = {}): Xem
   const locCau = (ds: string[]) => ds.flatMap((x) => { const t = locTuCam(x, TU_CAM); return t ? [t] : []; });
   const van = (k: Khop[]) => locCau(k.map((x) => x.text));
   const thaiTue = tatCa.filter((k) => k.q.lop === 'thai-tue' && /^NAM-TT-01-/.test(k.q.id));
-  const tm = thang.map((t) => ({ t, cau: locCau(t.nhanDinh.map((x) => x.text)) })).find((x) => x.cau.length > 0);
+  const ungVien = thang.map((t) => {
+    const cau = t.nhanDinh.flatMap((x) => { const c = locCau([x.text])[0]; return c ? [{ c, sao: x.thamChieu.sao.map((s) => s.replace(/^L\. /, '')) }] : []; });
+    return { thang: t.thang, thangMoc: t.thangMoc, coKy: ln.luuTuHoa.some((h) => h.hoa === 'Hóa Kỵ' && ln.luuNguyet[t.thang - 1] === h.chi), cau: cau.map((x) => x.c), coTenSao: cau.some((x) => x.sao.some((s) => x.c.includes(s))), goc: t };
+  });
+  const chon = chonThangMau(ungVien);
+  const tm = chon ? { t: chon.goc, cau: chon.cau } : null;
   const thuan = DIEM_THUAN.flatMap((id) => tatCa.filter((k) => k.q.id === id))[0];
   return {
     chuyenDe: MA_VAN_NAM, namXem, canChi: ln.canChi,

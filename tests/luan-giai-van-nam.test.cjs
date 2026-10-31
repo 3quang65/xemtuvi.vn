@@ -102,7 +102,7 @@ test('Khung bài: đầu bài, tổng quan đủ 5 phần + tóm lại, 4 mảng
   const ma = new Set(JSON.parse(fs.readFileSync(path.join(__dirname, '../src/lib/luan-giai/ai/quy-tac-van/van-nam-2027.json'), 'utf8')).map((q) => q.id));
   for (const x of tatCaNd(bai)) {
     assert.ok(x.thamChieu.nguon && x.thamChieu.truongPhai);
-    assert.ok(ma.has(x.thamChieu.quyTacId) || /^(VAN-CT|VAN-CUNG|QL-|PT-|KHUNG-|NAM-PP-10)/.test(x.thamChieu.quyTacId), x.thamChieu.quyTacId);
+    assert.ok(ma.has(x.thamChieu.quyTacId) || /^(VAN-CT|VAN-CUNG|QL-|PT-|KHUNG-|NAM-PP-10|NAM-THANG-04-TUAN-TRIET)/.test(x.thamChieu.quyTacId), x.thamChieu.quyTacId);
   }
 });
 
