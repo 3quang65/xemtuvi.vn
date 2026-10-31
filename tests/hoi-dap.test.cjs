@@ -163,6 +163,34 @@ test('câu hỏi hiểu đúng chuyên đề', () => {
   assert.equal(cd('Hôm nay trời đẹp'), 'khong_khop');
 });
 
+test('bộ chọn luôn có ý chính tinh cung chủ đề (+ Phụ Mẫu với gia đạo), có Tóm lại; không còn đuôi khuôn', async () => {
+  const k = await khach('xetomlại@example.vn', 'thanh-vien-nam');
+  const cac = ['Điểm mạnh và điều cần lưu ý trong tính cách của tôi là gì?', 'Công việc nào hợp với cách làm việc của tôi?', 'Tôi kiếm và giữ tiền theo kiểu nào?', 'Quan hệ với cha mẹ và nhà cửa của tôi có gì đáng chú ý?', 'Năm nay 2027 tôi nên tập trung vào điều gì?', 'Cách yêu của tôi ra sao?', 'Đại vận hiện tại của tôi nổi bật điều gì?'];
+  const gop = (s) => s.toLowerCase().replace(/\s+/g, '');
+  for (let i = 0; i < cac.length; i++) {
+    const t = Date.UTC(2026, 10 + (i > 4 ? 1 : 0), 20);
+    const b = await hd.hoiLaSo(M.db, M.khoa, k.nd, k.laSo, cac[i], t);
+    assert.equal(b.ket_qua, 'tra_loi', cac[i]);
+    assert.ok(b.tra_loi.tom_lai && b.tra_loi.tom_lai.startsWith('Tóm lại: '), cac[i]);
+    assert.ok(b.tra_loi.nhanDinh.length >= 1 && b.tra_loi.nhanDinh.length <= 3, cac[i]);
+    for (const n of b.tra_loi.nhanDinh) {
+      assert.ok(n.quyTacId, `${cac[i]}: thiếu quyTacId`);
+      for (const c of tuCam.tuCam) assert.ok(!gop(n.text).includes(gop(c)), `${cac[i]}: có từ cấm "${c}"`);
+    }
+    const text = (b.tra_loi.nhanDinh.map((n) => n.text).join(' ') + b.tra_loi.tom_lai).toLowerCase();
+    assert.ok(!text.includes('mỗi người cảm nhận'), `${cac[i]}: còn đuôi "mỗi người cảm nhận"`);
+    assert.ok(!/ảnh hưởng đến [^.]*:/.test(text), `${cac[i]}: còn đuôi "ảnh hưởng đến ...:"`);
+  }
+  const k2 = await khach('xetomlai2@example.vn', 'thanh-vien-nam');
+  const t = Date.UTC(2026, 10, 20, 5);
+  const b1 = await hd.hoiLaSo(M.db, M.khoa, k2.nd, k2.laSo, 'Điểm mạnh và điều cần lưu ý trong tính cách của tôi là gì?', t);
+  assert.ok(b1.tra_loi.nhanDinh.some((n) => n.cung === 'Mệnh' && n.sao.includes('Thiên Tướng')), 'câu 1: thiếu chính tinh Mệnh = Thiên Tướng');
+  const b4 = await hd.hoiLaSo(M.db, M.khoa, k2.nd, k2.laSo, 'Tôi kiếm và giữ tiền theo kiểu nào?', t);
+  assert.ok(b4.tra_loi.nhanDinh.some((n) => n.cung === 'Tài Bạch' && n.sao.includes('Thiên Phủ')), 'câu 4: thiếu chính tinh Tài Bạch = Thiên Phủ');
+  const b5 = await hd.hoiLaSo(M.db, M.khoa, k2.nd, k2.laSo, 'Quan hệ với cha mẹ và nhà cửa của tôi có gì đáng chú ý?', t);
+  assert.ok(b5.tra_loi.nhanDinh.some((n) => n.cung === 'Phụ Mẫu'), 'câu 5: thiếu ý Phụ Mẫu');
+});
+
 test('xóa tài khoản xóa hoi_dap', async () => {
   const k = await khach('xoa-hd@example.vn', 'thanh-vien-nam');
   await hoi(k, CAU_TRA_LOI_DUOC);

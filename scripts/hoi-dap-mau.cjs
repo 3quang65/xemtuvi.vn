@@ -38,6 +38,7 @@ const CAU = [
     if (kq.ket_qua === 'tra_loi') {
       ra.push(`**Trả lời:** ${kq.tra_loi.doan_dan}`, '');
       for (const n of kq.tra_loi.nhanDinh) ra.push(`- ${n.text} _${n.canCu}_ — mã \`${n.quyTacId}\``);
+      if (kq.tra_loi.tom_lai) ra.push('', `**${kq.tra_loi.tom_lai}**`);
       ra.push('', `Mã quy tắc: ${kq.tra_loi.nhanDinh.map((n) => '`' + n.quyTacId + '`').join(', ')}`);
     } else {
       ra.push(`**Trả lời:** ${kq.tra_loi.doan_dan}`, '', `Mã quy tắc: \`${kq.tra_loi.ma}\``);

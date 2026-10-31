@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 
 interface NhanDinh { text: string; canCu: string; quyTacId: string }
-interface TraLoi { doan_dan: string; nhanDinh: NhanDinh[]; ghiChu?: string }
+interface TraLoi { doan_dan: string; nhanDinh: NhanDinh[]; ghiChu?: string; tom_lai?: string }
 interface MucLichSu { id: number; luc: number; cau: string; tra_loi: TraLoi }
 interface Luot { con_lai: number; lam_moi: string }
 
@@ -32,6 +32,7 @@ function KhungTraLoi({ t }: { t: TraLoi }) {
           {t.nhanDinh.map((n) => <li key={n.quyTacId}>{n.text}{n.canCu && <small className="can-cu">{n.canCu}</small>}</li>)}
         </ul>
       )}
+      {t.tom_lai && <p><small className="tom-lai">{t.tom_lai}</small></p>}
       {t.ghiChu && <p><small>{t.ghiChu}</small></p>}
     </div>
   );

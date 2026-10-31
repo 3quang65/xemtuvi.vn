@@ -10,6 +10,7 @@ import type { Csdl } from './csdl';
 import { dsQuyen, laSoCuaToi, LA_SO_THANH_VIEN, LoiNghiepVu } from './dich-vu';
 import { CHU_DE_CO_NOI_DUNG, luanGiaiChoKhach } from './luan-giai-may-chu';
 import { giaiMaJson, maHoaJson, type BoKhoa } from './ma-hoa';
+import { lapLaSo, type LaSo, type ThongTinSinh } from '@/lib/tuvi';
 
 export const HAN_MUC_THANG = 5;
 export const DO_DAI_CAU_TOI_DA = 200;
@@ -69,7 +70,7 @@ export function hieuCauHoi(cau: string): Hieu {
 }
 
 export interface NhanDinhTraLoi { text: string; canCu: string; quyTacId: string; sao: string[]; cung: string; nguon: string; truongPhai: string }
-export interface TraLoi { chuDe: ChuDeHoi; doan_dan: string; nhanDinh: NhanDinhTraLoi[]; ghiChu: string }
+export interface TraLoi { chuDe: ChuDeHoi; doan_dan: string; nhanDinh: NhanDinhTraLoi[]; ghiChu: string; tom_lai?: string }
 export interface LuotHoi { con_lai: number; lam_moi: string }
 export type KetQuaHoi =
   | ({ ket_qua: 'tra_loi'; tra_loi: TraLoi } & LuotHoi)
@@ -98,20 +99,152 @@ export function kiemQuyenHoi(db: Csdl, nguoiDungId: number, laSoId: number, bayG
 
 interface UngVien { text: string; ref: NhanDinh['thamChieu']; muc: number }
 
-/** Chọn tối đa 3 nhận định, mỗi mục tối đa 2, ưu tiên câu có nhiều từ trùng với câu hỏi; hòa thì theo thứ tự bài luận (ổn định). */
-function chonNhanDinh(uv: UngVien[], cau: string): NhanDinhTraLoi[] {
-  const tu = new Set(chuanHoa(cau).trim().split(' ').filter((w) => w.length >= 3));
-  const diem = (u: UngVien) => chuanHoa(u.text).trim().split(' ').filter((w) => tu.has(w)).length;
-  const xep = uv.map((u, i) => ({ u, i, d: diem(u) })).sort((a, b) => b.d - a.d || a.i - b.i);
-  const dem = new Map<number, number>(); const chon: typeof xep = [];
-  for (const x of xep) {
-    if (chon.length === 3) break;
-    if ((dem.get(x.u.muc) ?? 0) >= 2) continue;
-    dem.set(x.u.muc, (dem.get(x.u.muc) ?? 0) + 1); chon.push(x);
+/** Chuyển chuyenDe (menh/...) → tên cung (Mệnh/...) và nội dung mô tả theo chuyên đề. */
+const CHUYEN_DE_CUNG: Record<string, string> = {
+  'menh': 'Mệnh', 'phu-the': 'Phu Thê', 'quan-loc': 'Quan Lộc', 'tai-bach': 'Tài Bạch', 'dien-trach': 'Điền Trạch',
+};
+const CHUYEN_DE_MOTA: Record<string, { mau1: string; mau2: string }> = {
+  'menh': { mau1: 'tính cách, cách sống và cách ứng xử', mau2: 'hướng đi' },
+  'phu-the': { mau1: 'cách yêu, gắn bó và quan hệ với người đồng hành', mau2: 'tình cảm' },
+  'quan-loc': { mau1: 'phong cách làm việc, nghề nghiệp và cách đạt thành tựu', mau2: 'sự nghiệp' },
+  'tai-bach': { mau1: 'cách kiếm tiền, giữ tiền và quản lý tài chính', mau2: 'tài chính' },
+  'dien-trach': { mau1: 'nhà cửa, nếp sống và cách vun vén gia đình', mau2: 'gia đạo' },
+};
+
+// Đặc trưng tính cách theo từng chính tinh (dùng để sinh câu chính tinh cung chủ đề).
+const TINH_CHAT: Record<string, string> = {
+  'Thiên Tướng': 'sự chỉn chu, nguyên tắc và biết điều hành, trọng danh dự',
+  'Thiên Phủ': 'sự cẩn trọng, giữ gìn, có khả năng tích lũy và quản lý',
+  'Tử Vi': 'lối lãnh đạo, đề cao khuôn phép, trọng địa vị và uy quyền',
+  'Thái Dương': 'nhiệt tình, công minh, thích lan tỏa và giúp đời',
+  'Thái Âm': 'sự tinh tế, nhạy cảm, vun vén và đề cao an khang',
+  'Vũ Khúc': 'thực tế, quyết đoán, coi trọng hiệu quả và kết quả',
+  'Tham Lang': 'đa diện, khéo léo, ham học hỏi và thích giao tiếp',
+  'Thiên Đồng': 'dễ mến, hài hòa, thích an vui và biết nhường nhịn',
+  'Liêm Trinh': 'nghiêm khắc, nguyên tắc, cầu toàn và coi trọng phẩm hạnh',
+  'Phá Quân': 'sự bùng nổ, đổi mới, dám thay đổi và phá vỡ khuôn mẫu',
+  'Cự Môn': 'nói nhiều, phân tích, thích tranh luận và nghiên cứu',
+};
+
+/** Gỡ đuôi khuôn "ảnh hưởng đến X: ..." và "..., mỗi người cảm nhận khác nhau" khỏi nhận định. */
+function gachDoiKhuon(text: string): string {
+  let t = text.replace(/ ảnh hưởng đến [^.]*:\s*/g, ': ');
+  t = t.replace(/\s*;?\s* ảnh hưởng thường[^.]*mỗi người cảm nhận khác nhau[^.]*\./g, '.');
+  return t.trim();
+}
+
+/** Sinh 1 nhận định về chính tinh tọa thủ cung chủ đề; nếu vô chính diệu thì nêu sao mượn cung đối. */
+function sinhChinhTinhChuDe(ls: LaSo, chuyenDe: string): NhanDinhTraLoi | null {
+  const tenCung = CHUYEN_DE_CUNG[chuyenDe];
+  const mota = CHUYEN_DE_MOTA[chuyenDe];
+  const goc = ls.cung.find((c) => c.ten === tenCung);
+  if (!goc) return null;
+  if (!goc.chinhTinh.length) {
+    // Vô chính diệu: mượn chính tinh cung xung chiếu
+    const xung = ls.cung.find((c) => c.chi === (goc.chi + 6) % 12)!;
+    if (!xung.chinhTinh.length) return null;
+    const sao = xung.chinhTinh.map((s) => s.ten).join(', ');
+    return {
+      text: `${tenCung} vô chính diệu: chính tinh của bạn không tọa thủ cung này, nên mượn chính tinh của cung xung chiếu là ${sao} (${xung.ten}) để luận về việc ${mota.mau1}; phần đóng góp của cung này cho ${mota.mau2} đến chậm và dịu hơn.`,
+      canCu: `yếu tố Vô Chính Diệu; cung ${tenCung}; nguồn Đặc tả an sao xemtuvi.vn; trường phái Tam hợp phái Việt`,
+      quyTacId: `HD-CT-${chuyenDe}-VCD`,
+      sao: xung.chinhTinh.map((s) => s.ten),
+      cung: tenCung,
+      nguon: 'Đặc tả an sao xemtuvi.vn',
+      truongPhai: 'Tam hợp phái Việt',
+    };
   }
-  return chon.sort((a, b) => a.i - b.i).map(({ u }) => ({
-    text: u.text, canCu: dongCanCu(u.ref), quyTacId: u.ref.quyTacId, sao: u.ref.sao, cung: u.ref.cung, nguon: u.ref.nguon, truongPhai: u.ref.truongPhai,
-  }));
+  const danhSachSao = goc.chinhTinh.map((s) => s.ten);
+  const sao = danhSachSao.join(', ');
+  let vanBan: string;
+  if (danhSachSao.length === 1) {
+    const tc = TINH_CHAT[danhSachSao[0]] ?? 'phong cách rõ rệt và định hướng nhất quán';
+    vanBan = `${sao} tọa thủ cung ${tenCung}: việc ${mota.mau1} của bạn mang dấu ấn ${tc} — nên phát huy điều này trong ${mota.mau2}.`;
+  } else {
+    const tc1 = TINH_CHAT[danhSachSao[0]] ?? 'sự chủ động';
+    const tc2 = TINH_CHAT[danhSachSao[1]] ?? 'sự mềm dẻo';
+    vanBan = `${sao} đồng cung ${tenCung}: việc ${mota.mau1} của bạn kết hợp ${tc1} với ${tc2} — nên phối hợp hai hướng này trong ${mota.mau2}.`;
+  }
+  return {
+    text: vanBan,
+    canCu: `yếu tố Chính tinh; cung ${tenCung}; nguồn Đặc tả an sao xemtuvi.vn; trường phái Tam hợp phái Việt`,
+    quyTacId: `HD-CT-${chuyenDe}-CHINH`,
+    sao: danhSachSao,
+    cung: tenCung,
+    nguon: 'Đặc tả an sao xemtuvi.vn',
+    truongPhai: 'Tam hợp phái Việt',
+  };
+}
+
+/** Sinh thêm ý Phụ Mẫu khi chuyên đề Gia đạo và câu hỏi nhắc cha mẹ/bố mẹ/phụ mẫu. */
+function sinhPhuMau(ls: LaSo, cau: string): NhanDinhTraLoi | null {
+  if (!/cha me|bo me|phu mau/i.test(chuanHoa(cau))) return null;
+  const pm = ls.cung.find((c) => c.ten === 'Phụ Mẫu');
+  if (!pm || !pm.chinhTinh.length) return null;
+  const danhSachSao = pm.chinhTinh.map((s) => s.ten);
+  const sao = danhSachSao.join(', ');
+  const tc = TINH_CHAT[danhSachSao[0]] ?? 'sự nghiêm khắc và kỳ vọng';
+  return {
+    text: `${pm.ten} có ${sao}: quan hệ với cha mẹ, người lớn tuổi và cấp trên của bạn mang ảnh hưởng của ${tc} — nên điều chỉnh kỳ vọng và cách đối xử cho hài hòa.`,
+    canCu: `yếu tố Phụ Mẫu; cung Phụ Mẫu; nguồn Đặc tả an sao xemtuvi.vn; trường phái Tam hợp phái Việt`,
+    quyTacId: 'HD-GIAO-PM-CHINH',
+    sao: danhSachSao,
+    cung: 'Phụ Mẫu',
+    nguon: 'Đặc tả an sao xemtuvi.vn',
+    truongPhai: 'Tam hợp phái Việt',
+  };
+}
+
+/** Sinh câu Tóm lại 1–2 dòng: hướng hành động, dung hòa khi có Tuần/Triệt hoặc Hóa trùng cung chủ đề; nếu không có cung (vận 10 năm) thì dựa vào đại vận. */
+function sinhTomLai(ls: LaSo, chuyenDe: string, cau: string): string | null {
+  const tenCung = CHUYEN_DE_CUNG[chuyenDe];
+  const goc = ls.cung.find((c) => c.ten === tenCung);
+  const mota: Record<string, string> = {
+    'menh': 'bản thân', 'phu-the': 'tình cảm', 'quan-loc': 'sự nghiệp', 'tai-bach': 'tài chính', 'dien-trach': 'nhà cửa, gia đạo', 'van-10-nam': 'đại vận đang đi', [MA_VAN_NAM]: 'vận năm này',
+  };
+  if (!goc) {
+    // Vận 10 năm / vận năm: dùng cung đại vận
+    const dv = ls.cung.find((c) => c.daiVan) || ls.cung[0];
+    const parts: string[] = [];
+    if (dv.tuan) parts.push('cung này có Tuần: việc nên làm chậm, từng bước');
+    if (dv.triet) parts.push('cung này có Triệt: cần thời gian để phát huy');
+    return `Tóm lại: ${parts.length ? parts.join('; ') : 'phát huy thuận lợi, tránh điểm yếu của cung đại vận này'} — nên cân nhắc khi ${mota[chuyenDe]}.`;
+  }
+  const parts: string[] = [];
+  if (goc.tuan) parts.push('cung này có Tuần: việc nên làm chậm, từng bước, tránh nôn nóng');
+  if (goc.triet) parts.push('cung này có Triệt: cần thời gian để phát huy, không nên vội');
+  const hoa = goc.chinhTinh.filter((s) => s.hoa).map((s) => `${s.ten} mang ${s.hoa}`);
+  if (hoa.length) parts.push(`${hoa.join(', ')}: nên tập trung vào lĩnh vực này`);
+  if (!parts.length) parts.push('phát huy điểm mạnh của chính tinh và cân bằng các cung hợp chiếu');
+  const huong: Record<string, string> = {
+    'menh': 'về bản thân', 'phu-the': 'trong tình cảm', 'quan-loc': 'về sự nghiệp', 'tai-bach': 'về tài chính', 'dien-trach': 'về nhà cửa, gia đạo', 'van-10-nam': 'về đại vận', [MA_VAN_NAM]: 'về vận năm này',
+  };
+  return `Tóm lại: ${parts.join('; ')} — nên phát huy điều này ${huong[chuyenDe]}.`;
+}
+
+/** Chọn tối đa 3 nhận định: luôn có 1 ý chính tinh cung chủ đề (+ Phụ Mẫu khi hỏi cha mẹ), sau đó là các nhận định khớp câu hỏi. */
+function chonNhanDinh(uv: UngVien[], cau: string, ctx: { chuDe: string; ls: LaSo }): NhanDinhTraLoi[] {
+  // 1. Ý chính tinh cung chủ đề (luôn có 1 ý khi có cung), kèm ý Phụ Mẫu nếu cần.
+  const them: NhanDinhTraLoi[] = [];
+  const ct = sinhChinhTinhChuDe(ctx.ls, ctx.chuDe);
+  if (ct) them.push(ct);
+  if (ctx.chuDe === 'dien-trach') {
+    const pm = sinhPhuMau(ctx.ls, cau);
+    if (pm) them.push(pm);
+  }
+  // 2. Chọn tối đa 3 nhận định khớp câu hỏi (đã được lọc).
+  const con = Math.max(0, 3 - them.length);
+  const khap = uv.slice(0, con);
+  const ds: NhanDinhTraLoi[] = [...them, ...khap.map((u) => ({
+    text: gachDoiKhuon(u.text),
+    canCu: dongCanCu(u.ref),
+    quyTacId: u.ref.quyTacId,
+    sao: u.ref.sao,
+    cung: u.ref.cung,
+    nguon: u.ref.nguon,
+    truongPhai: u.ref.truongPhai,
+  }))];
+  return ds.slice(0, 3);
 }
 
 /** Gom nhận định có mã từ bài luận; lọc lamSachCau + từ cấm; bỏ câu không mã. */
@@ -125,21 +258,31 @@ function ungVien(bai: { muc: { nhanDinh: { text: string; thamChieu: NhanDinh['th
   return kq;
 }
 
+/** chuyenDe của bài luận giải theo chuyenDeHoi; không import CHUYEN_DE_CUA_CHU_DE để tránh vòng import với luan-giai-may-chu. */
+const CHUYEN_DE_MAP: Record<ChuDeHoi, string> = {
+  'ban-than': 'menh', 'tinh-cam': 'phu-the', 'su-nghiep': 'quan-loc', 'tai-chinh': 'tai-bach', 'gia-dao': 'dien-trach', 'van-10-nam': 'van-10-nam', [MA_VAN_NAM]: MA_VAN_NAM,
+};
+
 async function soanTraLoi(db: Csdl, k: BoKhoa, nguoiDungId: number, laSoId: number, chuDe: ChuDeHoi, cau: string, bayGio: number): Promise<TraLoi | null> {
   if (chuDe !== MA_VAN_NAM && chuDe !== 'van-10-nam' && !CHU_DE_CO_NOI_DUNG.includes(chuDe)) return null;
+  const chuyenDe = CHUYEN_DE_MAP[chuDe];
+  // Tải lại lá số để lấy chính tinh cung chủ đề, Tuần/Triệt, Hóa.
+  const hang = db.prepare('SELECT sinh_ma_hoa FROM la_so WHERE id=?').get(laSoId) as { sinh_ma_hoa: string };
+  const ls = lapLaSo(giaiMaJson<ThongTinSinh>(hang.sinh_ma_hoa, k));
   const bai = await luanGiaiChoKhach(db, k, nguoiDungId, laSoId, chuDe, bayGio);
   if ('daMua' in bai) {
     if (!bai.daMua) return null;
     const b: BaiVanNam = bai.bai;
-    const nd = chonNhanDinh(ungVien({ muc: [{ nhanDinh: b.dauBai.nhanDinh }, ...b.muc] }), cau);
-    return nd.length ? { chuDe, doan_dan: `Về vận năm ${b.namXem} (${b.canChi}) trong lá số của bạn, hệ thống xemtuvi.vn thấy những điểm sau:`, nhanDinh: nd, ghiChu: b.ghiChu || GHI_CHU } : null;
+    const nd = chonNhanDinh(ungVien({ muc: [{ nhanDinh: b.dauBai.nhanDinh }, ...b.muc] }), cau, { chuDe: 'van-10-nam', ls });
+    if (!nd.length) return null;
+    return { chuDe, doan_dan: `Về vận năm ${b.namXem} (${b.canChi}) trong lá số của bạn, hệ thống xemtuvi.vn thấy những điểm sau:`, nhanDinh: nd, ghiChu: b.ghiChu || GHI_CHU, tom_lai: sinhTomLai(ls, 'van-10-nam', cau) ?? undefined };
   }
-  const nd = chonNhanDinh(ungVien(bai), cau);
+  const nd = chonNhanDinh(ungVien(bai), cau, { chuDe: chuyenDe, ls });
   if (!nd.length) return null;
   const dan = chuDe === 'van-10-nam' && bai.van
     ? `Về vận 10 năm (đại vận cung ${bai.van.cung}, khoảng năm ${bai.van.namTu}–${bai.van.namDen}) trong lá số của bạn, hệ thống xemtuvi.vn thấy những điểm sau:`
     : `Về chuyên đề ${TEN_CHU_DE[chuDe]} trong lá số của bạn, hệ thống xemtuvi.vn thấy những điểm sau:`;
-  return { chuDe, doan_dan: dan, nhanDinh: nd, ghiChu: bai.ghiChu || GHI_CHU };
+  return { chuDe, doan_dan: dan, nhanDinh: nd, ghiChu: bai.ghiChu || GHI_CHU, tom_lai: sinhTomLai(ls, chuyenDe, cau) ?? undefined };
 }
 
 const KHONG_KHOP = { ma: 'HD-KHONG-KHOP', doan_dan: 'Hệ thống xemtuvi.vn chưa trả lời được câu này. Bạn thử hỏi theo một chuyên đề như bản thân, tình cảm, sự nghiệp, tài chính, gia đạo, vận 10 năm hoặc vận năm 2027. Câu này không bị trừ lượt.', nhanDinh: [] as [] };
@@ -162,7 +305,7 @@ export async function hoiLaSo(db: Csdl, k: BoKhoa, nguoiDungId: number, laSoId: 
   const ghi = db.transaction(() => {
     const n = (db.prepare('SELECT COUNT(*) n FROM hoi_dap WHERE nguoi_dung_id=? AND thang=?').get(nguoiDungId, thang) as { n: number }).n;
     if (n >= HAN_MUC_THANG) throw new LoiNghiepVu('het_luot', `Bạn đã dùng hết ${HAN_MUC_THANG} câu của tháng này. Lượt mới mở từ ngày ${ngayLamMoi(bayGio)}.`, 429);
-    db.prepare('INSERT INTO hoi_dap (nguoi_dung_id, la_so_id, luc, thang, noi_dung_ma_hoa) VALUES (?,?,?,?,?)').run(nguoiDungId, laSoId, bayGio, thang, maHoaJson({ cau, tra_loi: tl }, k));
+    db.prepare('INSERT OR REPLACE INTO hoi_dap (nguoi_dung_id, la_so_id, luc, thang, noi_dung_ma_hoa) VALUES (?,?,?,?,?)').run(nguoiDungId, laSoId, bayGio, thang, maHoaJson({ cau, tra_loi: tl }, k));
   });
   ghi.immediate(); // chiếm khóa ghi ngay từ đầu: hai tiến trình pm2 cùng ở câu 5 chỉ một bên ghi được
   return { ket_qua: 'tra_loi', tra_loi: tl, ...luot() };

@@ -352,6 +352,7 @@ a { color: inherit; }
 .hoi-cau { font-weight: 600; margin: 0 0 8px; }
 .hoi-tra-loi ul { margin: 8px 0; padding-left: 1.1em; display: grid; gap: 10px; }
 .hoi-tra-loi .can-cu { display: block; margin-top: 4px; color: var(--muc-nhat); }
+.hoi-tra-loi .tom-lai { display: block; margin: 10px 0 0; padding: 8px 10px; background: var(--nen-hai); border-radius: 8px; color: var(--chinh-nhat); font-weight: 600; }
 .hoi-lich-su { display: grid; gap: 8px; }
 .hoi-lich-su h3 { font-size: 1.05rem; margin: 8px 0 0; }
 .hoi-lich-su summary { cursor: pointer; min-height: 44px; display: flex; align-items: center; gap: 6px; font-weight: 500; }
