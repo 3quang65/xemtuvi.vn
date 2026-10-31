@@ -27,3 +27,7 @@ const mobile = css.slice(css.indexOf('@media (max-width: 640px)'));
 test('L1: nhãn tứ hóa trong ô bàn >= 0,72rem (11,5px) trên điện thoại', () => {
   assert.match(mobile, /\.ban \.sao \.hoa\s*\{[^}]*font-size:\s*0\.72rem/);
 });
+
+test('L3: nút đổi năm ‹ › giữ rộng 44px, không bị co lại trong hàng flex', () => {
+  assert.match(mobile, /\.nam-xem button\s*\{[^}]*flex:\s*0 0 44px/);
+});

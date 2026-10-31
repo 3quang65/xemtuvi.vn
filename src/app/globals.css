@@ -250,7 +250,7 @@ main:has(.ket-qua) .gioi-thieu { display: none; }
   .o-cung { padding: 6px; font-size: 0.72rem; gap: 3px; }
   .phu-tinh, .sao-luu, .cung-chan > span:not(.van-nay) { display: none; }
   .nam-xem { margin-top: 6px; font-size: 0.875rem; gap: 4px; }
-  .nam-xem button { width: 44px; height: 44px; min-height: 44px; }
+  .nam-xem button { width: 44px; height: 44px; min-height: 44px; flex: 0 0 44px; } /* L-c8a890 L3: không để flex co nút còn 27-30px */
   .cung-dau { flex-direction: column; gap: 0; }
   .cung-dau strong { font-size: 0.875rem; }
   .chinh-tinh { font-size: 0.875rem; }
