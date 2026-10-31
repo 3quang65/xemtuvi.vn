@@ -12,7 +12,7 @@ export const LOI_MUC: Record<Muc, { tieuDe: string; loi: string }> = {
     loi: 'Tuổi bố mẹ và năm Đinh Mùi 2027 có điểm hợp, có điểm khác nhịp, cân bằng như phần lớn các gia đình. Đây là tham khảo văn hóa theo năm sinh, không nói lên điều gì về bé. Năm nào đón con cũng có những điều đáng mong chờ riêng.',
   },
   'can-luu-y': {
-    tieuDe: 'Cần lưu ý',
+    tieuDe: 'Khác nhịp',
     loi: 'Theo can chi, tuổi bố mẹ và năm Đinh Mùi 2027 khác nhịp ở vài điểm. Đây chỉ là một lớp tham khảo văn hóa theo năm sinh; rất nhiều gia đình như vậy vẫn gắn bó, vui vầy. Muốn hiểu mình rõ hơn, bố mẹ có thể xem lá số theo ngày giờ sinh của từng người.',
   },
 };

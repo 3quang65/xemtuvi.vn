@@ -12,9 +12,9 @@ Nguyên tắc lời (áp cho mọi phần dưới): giọng nghiêm túc, gần 
 |---|---|---|---|
 | SC27-M1 | **Thuận** | T ≥ 2 | Theo can chi năm sinh, tuổi bố mẹ và năm Đinh Mùi 2027 có nhiều điểm tương hợp. Đây là một góc tham khảo văn hóa, chỉ dựa trên năm sinh. Điều làm nên một năm đón bé trọn vẹn vẫn là sự sẵn sàng và gắn bó của cả nhà. |
 | SC27-M2 | **Cân bằng** | −1 ≤ T ≤ 1 | Tuổi bố mẹ và năm Đinh Mùi 2027 có điểm hợp, có điểm khác nhịp, cân bằng như phần lớn các gia đình. Đây là tham khảo văn hóa theo năm sinh, không nói lên điều gì về bé. Năm nào đón con cũng có những điều đáng mong chờ riêng. |
-| SC27-M3 | **Cần lưu ý** | T ≤ −2 | Theo can chi, tuổi bố mẹ và năm Đinh Mùi 2027 khác nhịp ở vài điểm. Đây chỉ là một lớp tham khảo văn hóa theo năm sinh; rất nhiều gia đình như vậy vẫn gắn bó, vui vầy. Muốn hiểu mình rõ hơn, bố mẹ có thể xem lá số theo ngày giờ sinh của từng người. |
+| SC27-M3 | **Khác nhịp** | T ≤ −2 | Theo can chi, tuổi bố mẹ và năm Đinh Mùi 2027 khác nhịp ở vài điểm. Đây chỉ là một lớp tham khảo văn hóa theo năm sinh; rất nhiều gia đình như vậy vẫn gắn bó, vui vầy. Muốn hiểu mình rõ hơn, bố mẹ có thể xem lá số theo ngày giờ sinh của từng người. |
 
-Số chữ (đếm bằng `wc -w`): Thuận 51, Cân bằng 51, Cần lưu ý 58 — đều ≤ 60.
+Số chữ (đếm bằng `wc -w`): Thuận 51, Cân bằng 51, Khác nhịp 58 — đều ≤ 60.
 
 ## 2. Dòng quan hệ cho từng người (không gắn mức)
 
