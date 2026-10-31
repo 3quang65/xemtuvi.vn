@@ -37,7 +37,7 @@ export function KiemChungQuaKhu({ kiemChung }: { kiemChung: KiemChungNam[] }) {
           ))}
         </div>
       ))}
-      <p className="doan-nguon">{KIEM_CHUNG_NHAN.truongPhai}</p>
+      <p className="kc-truong-phai">{KIEM_CHUNG_NHAN.truongPhai}</p>
     </section>
   );
 }

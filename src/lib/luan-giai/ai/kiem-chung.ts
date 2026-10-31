@@ -45,7 +45,7 @@ export function kiemChungQuaKhu(ls: LaSo): KiemChungNam[] {
     const ln = luuNien(ls, nam, true);
     const tt = tenCung(ls, ln.luuThaiTue);
     const nhanDinh: NhanDinhKiemChung[] = [{
-      text: `Năm ${nam} (${ln.canChi}): lá số của bạn đặt trọng điểm của năm ở cung ${tt}, liên quan đến ${CHU_DE_CUNG[tt] ?? tt}. Đây là xu hướng theo cách an sao, bạn tự đối chiếu với năm mình đã sống.`,
+      text: `Năm ${nam} (${ln.canChi}): lá số của bạn đặt trọng điểm của năm ở cung ${tt}, liên quan đến ${CHU_DE_CUNG[tt] ?? tt}. Đây là xu hướng theo cách an sao.`,
       canCu: `${NGUON} Lưu Thái Tuế năm ${nam} nằm ở cung ${tt}.`,
     }];
     const loc = ln.luuTuHoa.find((h) => h.hoa === 'Hóa Lộc');
