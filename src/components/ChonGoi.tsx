@@ -84,9 +84,7 @@ export default function ChonGoi() {
     router.push(`/thanh-toan?goi=${x.ma}${chuDe ? `&chuDe=${chuDe}` : ''}`);
   };
   return (
-    <section className="trang-buoc">
-      <h1>Chọn gói luận giải</h1>
-      <p className="tt-ghi-chu">Luận giải chuyên sâu cho lá số bạn vừa lập. Bản thử: chưa thu tiền thật.</p>
+    <>
       <KhungMoiMo />
       <DoanKhoa laSo={laSo} />
       <PhuongPhap />
@@ -104,6 +102,6 @@ export default function ChonGoi() {
       <p className="tt-ghi-chu">{GHI_CHU_AI}</p>
       {CONG_BO_HOAN_TIEN && <p className="cam-ket">{HOAN_TIEN}</p>}
       <p className="tt-ghi-chu"><a href="/tro-giup">Trợ giúp</a></p>
-    </section>
+    </>
   );
 }

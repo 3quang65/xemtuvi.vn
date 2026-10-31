@@ -16,3 +16,9 @@ test('D3: phien.ts (nạp ở layout cho mọi trang) không kéo engine lập l
   assert.doesNotMatch(p, /lapLaSo\(/);
   assert.match(doc('src/lib/useLaSoDaLuu.ts'), /lapLaSo/);
 });
+
+test('D2: tiêu đề và câu dẫn của /chon-goi render từ máy chủ (không chờ hydrate)', () => {
+  const trang = doc('src/app/chon-goi/page.tsx');
+  assert.match(trang, /<h1>Chọn gói luận giải<\/h1>/);
+  assert.doesNotMatch(doc('src/components/ChonGoi.tsx'), /<h1>/);
+});
