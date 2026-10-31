@@ -151,3 +151,36 @@ Trang `/cung/phu-the` (đo 10:10 đến 10:12, cùng cấu hình, tuần tự):
 - Trung vị riêng các lần có LCP < 3 s: **91** (9/9 lần).
 - Hai lần thấp (78, 79) do TBT cao (719 đến 759 ms), không do LCP.
 - Tải CPU (load average 1/5/15 phút): trước 3,37 / 2,87 / 2,48; sau 1,32 / 2,23 / 2,29.
+
+Form đã điền (Lighthouse timespan lúc điền ngày, tháng, năm, giờ sinh, giới tính; đo 10:14 đến 10:19, cùng cấu hình, tuần tự):
+| Lần | Điểm | CLS | TBT (ms) |
+|---|---|---|---|
+| 1 | 99 | 0,000 | 106 |
+| 2 | 99 | 0,000 | 76 |
+| 3 | 100 | 0,000 | 0 |
+| 4 | 99 | 0,000 | 79 |
+| 5 | 99 | 0,000 | 89 |
+| 6 | 99 | 0,000 | 80 |
+| 7 | 100 | 0,000 | 0 |
+| 8 | 100 | 0,000 | 0 |
+| 9 | 99 | 0,000 | 83 |
+
+- Trung vị 9 lần: điểm **99**, TBT **79 ms**, CLS **0** (điểm 99 đến 100, TBT 0 đến 106 ms).
+
+Lá số sau khi lập (timespan từ lúc bấm "Lập lá số" đến khi lá số hiện, cùng đợt):
+| Lần | Điểm | CLS | TBT (ms) | Bấm đến thấy lá số (ms) |
+|---|---|---|---|---|
+| 1 | 92 | 0,000 | 231 | 447 |
+| 2 | 95 | 0,000 | 190 | 388 |
+| 3 | 89 | 0,000 | 292 | 487 |
+| 4 | 97 | 0,000 | 155 | 339 |
+| 5 | 96 | 0,000 | 179 | 375 |
+| 6 | 95 | 0,000 | 189 | 399 |
+| 7 | 85 | 0,000 | 364 | 553 |
+| 8 | 95 | 0,000 | 197 | 392 |
+| 9 | 96 | 0,000 | 179 | 372 |
+
+- Trung vị 9 lần: điểm **95**, TBT **190 ms**, CLS **0** (điểm 85 đến 97, TBT 155 đến 364 ms); bấm đến thấy lá số trung vị 392 ms.
+- CLS lá số trước là 0,350, nay 0 ở cả 9 lần.
+- Lighthouse không có LCP cho timespan nên không ghi.
+- Tải CPU (load average 1/5/15 phút), cả hai bài đo: trước 4,13 / 3,31 / 2,69; sau 1,20 / 1,90 / 2,23 (giữa hai đợt 5 lần và 4 lần: 1,31 / 2,31 / 2,40).
