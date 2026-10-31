@@ -9,8 +9,8 @@ export const LP = {
   dan: 'Một năm mới là dịp để nhìn lại mình và sắp xếp kế hoạch. Bản luận này đọc lá số của riêng bạn, gắn với năm Đinh Mùi, để bạn thấy năm nay nên dồn sức vào đâu.',
   loiIch: [
     { ten: 'Dành riêng cho lá số của bạn', moTa: 'Không phải bài chung cho mọi người cùng tuổi: luận từ vị trí các sao trong lá số của chính bạn.' },
-    { ten: 'Đủ bốn mảng và 12 tháng', moTa: 'Sự nghiệp, tài chính, tình cảm, sức khỏe, kèm gợi ý theo từng tháng để bạn chủ động sắp xếp.' },
-    { ten: 'Ghi rõ nguồn và trường phái', moTa: 'Mỗi nhận định nêu sao, cung và sách nguồn. Sách nói khác nhau thì ghi rõ theo sách nào.' },
+    { ten: 'Đủ bốn mảng và 12 tháng', moTa: 'Sự nghiệp, tài chính, tình cảm, sức khỏe, kèm nhận định cho từng tháng để bạn chủ động sắp xếp.' },
+    { ten: 'Ghi rõ nguồn và trường phái', moTa: 'Bài ghi sách nguồn và trường phái. Sách nói khác nhau thì ghi rõ theo sách nào.' },
     { ten: 'Xem lại bất cứ lúc nào', moTa: 'Đăng nhập ở máy nào cũng xem lại được phần đã mua.' },
   ],
   buoc: ['Lập lá số miễn phí (ngày, giờ sinh), không cần tài khoản.', 'Chọn Vận năm 2027, mua lẻ hoặc gộp với Trọn lá số.', 'Đăng nhập, thanh toán rồi đọc bài đầy đủ.'], // khi cổng mở bán; cổng đóng dùng buocLp(false)
