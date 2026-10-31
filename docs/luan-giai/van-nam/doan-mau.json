@@ -2114,7 +2114,71 @@
    "Tư liệu web: iztro \"运限\""
   ],
   "nguonChiTiet": "CHUNG-HOA (TT, KL); WV1",
-  "ghiChu": "{cung} = tên cung chức năng chứa sao; bộ ghép thay khi xuất."
+  "ghiChu": "Chữ theo cung ở noiDungTheoCung (L-5f6b69), căn cứ từng cung ở maTheoCung (mục HOA của luan-giai-12-cung.md); noiDung chỉ là dự phòng.",
+  "noiDungTheoCung": {
+   "Mệnh": "Hóa Lộc của năm 2027 (Thái Âm, sáng) rơi vào cung Mệnh: bạn dễ có thêm thuận lợi và cơ hội cho chính mình, nhất là khi hành xử khéo léo, mềm dẻo; vị trí đang có cũng dễ được giữ vững.",
+   "Huynh Đệ": "Hóa Lộc của năm 2027 (Thái Âm, sáng) rơi vào cung Huynh Đệ: anh chị em, bạn đồng trang lứa dễ có thêm thuận lợi, và việc hợp tác ngang hàng dễ đem lại lợi cho cả hai khi bạn giữ cách làm việc chu đáo, mềm mỏng.",
+   "Phu Thê": "Hóa Lộc của năm 2027 (Thái Âm, sáng) rơi vào cung Phu Thê: người đồng hành dễ có thêm nguồn lợi, thuận lợi riêng; chuyện chung của hai người cũng êm hơn khi bạn chu đáo, mềm mỏng trong cách trao đổi.",
+   "Tử Tức": "Hóa Lộc của năm 2027 (Thái Âm, sáng) rơi vào cung Tử Tức: con cái hoặc người nhỏ tuổi bạn chăm lo dễ có thêm thuận lợi; công sức bạn dành cho con, cho học trò hay cho một sản phẩm sáng tạo của mình dễ thấy kết quả khi làm đều tay, kiên nhẫn.",
+   "Tài Bạch": "Hóa Lộc của năm 2027 (Thái Âm, sáng) rơi vào cung Tài Bạch: thu nhập dễ dồi dào hơn, nhất là nguồn đến từ tính toán chu đáo và tích góp đều; hợp để lập quỹ dự phòng hoặc một kế hoạch tiết kiệm rõ ràng.",
+   "Tật Ách": "Hóa Lộc của năm 2027 (Thái Âm, sáng) rơi vào cung Tật Ách: đây là dấu hỗ trợ cho sức khỏe, cơ thể dễ hồi phục khi bạn nghỉ ngơi điều độ; nếu cung này có nhiều sát tinh thì tác dụng giảm, nên vẫn giữ thói quen khám định kỳ.",
+   "Thiên Di": "Hóa Lộc của năm 2027 (Thái Âm, sáng) rơi vào cung Thiên Di: ra ngoài, đi lại vì công việc hay mở rộng quan hệ bên ngoài dễ đem lại lợi; bạn dễ được thiện cảm nhờ cách cư xử khéo léo, chu đáo.",
+   "Nô Bộc": "Hóa Lộc của năm 2027 (Thái Âm, sáng) rơi vào cung Nô Bộc: bạn bè, đồng nghiệp dễ đem lại cơ hội và thông tin có lợi; mối quan hệ bền nhờ sự chu đáo của bạn, chỉ nên giữ ranh giới rõ ràng trong việc chung.",
+   "Quan Lộc": "Hóa Lộc của năm 2027 (Thái Âm, sáng) rơi vào cung Quan Lộc: chính công việc là nơi nguồn lợi đến rõ nhất; cách làm cẩn thận, mềm dẻo giúp bạn có thêm thu nhập từ nghề.",
+   "Điền Trạch": "Hóa Lộc của năm 2027 (Thái Âm, sáng) rơi vào cung Điền Trạch: việc nhà cửa, tài sản và tổ ấm thuận hơn; hợp để sắp xếp, chăm sửa nhà hoặc tích góp cho tài sản lâu dài, chỉ nên cân nhắc các khoản chi cho tiện nghi.",
+   "Phúc Đức": "Hóa Lộc của năm 2027 (Thái Âm, sáng) rơi vào cung Phúc Đức: đời sống tinh thần dễ thư thái, có điều kiện nghỉ ngơi và chăm lo cho bản thân; hợp để dành thời gian cho gia đình, dòng họ và những điều nuôi dưỡng bạn.",
+   "Phụ Mẫu": "Hóa Lộc của năm 2027 (Thái Âm, sáng) rơi vào cung Phụ Mẫu: cha mẹ, bậc trên dễ có thêm thuận lợi, bạn cũng dễ nhận sự quan tâm, hỗ trợ từ họ; quan hệ với người dạy dỗ, cấp trên thuận hơn khi bạn chu đáo."
+  },
+  "maTheoCung": {
+   "Mệnh": [
+    "MENH-HOA-01",
+    "CHUNG-HOA-TA-01"
+   ],
+   "Huynh Đệ": [
+    "HUYNH-HOA-01",
+    "CHUNG-HOA-TA-01",
+    "NAM-THANG-03-HUYNH"
+   ],
+   "Phu Thê": [
+    "PHU-HOA-01",
+    "CHUNG-HOA-TA-01"
+   ],
+   "Tử Tức": [
+    "TU-HOA-01",
+    "CHUNG-HOA-TA-01",
+    "NAM-THANG-03-TU"
+   ],
+   "Tài Bạch": [
+    "TAI-HOA-01",
+    "CHUNG-HOA-TA-01"
+   ],
+   "Tật Ách": [
+    "TAT-HOA-01"
+   ],
+   "Thiên Di": [
+    "DI-HOA-01",
+    "CHUNG-HOA-TA-01"
+   ],
+   "Nô Bộc": [
+    "NO-HOA-01",
+    "CHUNG-HOA-TA-01"
+   ],
+   "Quan Lộc": [
+    "QUAN-HOA-02",
+    "QUAN-HOA-01",
+    "CHUNG-HOA-TA-01"
+   ],
+   "Điền Trạch": [
+    "DIEN-HOA-01"
+   ],
+   "Phúc Đức": [
+    "PHUC-HOA-01"
+   ],
+   "Phụ Mẫu": [
+    "PHUMAU-HOA-01",
+    "NAM-THANG-03-PHUMAU"
+   ]
+  }
  },
  {
   "chuyenDe": "van-nam",
