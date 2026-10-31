@@ -11,7 +11,7 @@ xemtuvi.vn luận giải Tử Vi Đẩu Số để bạn hiểu mình và địn
 
 ## Nguồn
 
-Nền tảng là bộ quy tắc nghiên cứu cho 12 cung, gồm 948 quy tắc; mỗi quy tắc có mã riêng và ghi nguồn hoặc lý do chọn. Mỗi câu trong bài luận trên site gắn với một quy tắc có mã và ghi sách nguồn. Hiện site luận các chuyên đề Mệnh, Quan Lộc, Phu Thê, Tài Bạch, Điền Trạch và Vận năm.
+Nền tảng là bộ quy tắc nghiên cứu cho 12 cung, gồm 948 quy tắc; mỗi quy tắc có mã riêng và ghi nguồn hoặc lý do chọn. Mỗi nhận định trong bài luận trên site gắn với một quy tắc có mã và ghi nguồn; câu dẫn và gợi ý việc nên làm được viết dựa trên các quy tắc đó. Hiện site luận các chuyên đề Mệnh, Quan Lộc, Phu Thê, Tài Bạch, Điền Trạch và Vận năm.
 
 Nguồn chính:
 
