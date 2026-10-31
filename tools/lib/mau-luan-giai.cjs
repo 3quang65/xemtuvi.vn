@@ -100,6 +100,8 @@ function kiemTra(m) {
   if (!['duong', 'am'].includes(m.loai)) loi.push('loai phải là duong|am');
   const chu = [m.cauHoi, m.loiGiai].join('\n');
   for (const [re, ten] of RE_RIENG_TU) if (re.test(chu)) loi.push(`chứa ${ten} (cấm dữ liệu khách)`);
+  for (const q of chu.matchAll(/[“«]([^”»]{40,})[”»]|^>\s*(.+)$/gm)) { const t = (q[1] || q[2] || '').trim().split(/\s+/).length; if (t > 40) loi.push(`trích dẫn nguyên văn ${t} từ (>40, cấm đoạn sách dài)`); }
+  if (m.sinh !== undefined && m.sinh !== true) loi.push('sinh chỉ được true hoặc bỏ trống');
   if (m.laSo && (m.laSo.ten || m.laSo.dauVao?.ten)) loi.push('laSo không được chứa tên khách');
   if (m.loai === 'duong') { const low = chu.toLowerCase(); for (const t of tuCam()) if (low.includes(t.toLowerCase())) loi.push(`chứa từ cấm "${t}" (mẫu dương)`); }
   if (typeof m.loiGiai === 'string' && m.loiGiai.trim().length < 80) loi.push('loiGiai quá ngắn (<80 ký tự)');
@@ -151,6 +153,7 @@ function taoMau(o) {
     diem: d ? diemTB(d) : undefined, diemThu: d, loai, phienBanQuyTac: phienBanQuyTac(), phienBanKho: phienBanKho(),
     nguon: o.nguon, nguonGoc: o.nguonGoc, quyenSoHuu: 'xemtuvi.vn',
   };
+  if (o.sinh) m.sinh = true; // câu mở/kết do mô hình sinh (Minh chốt 31/10)
   if (loai === 'am') m.lyDoAm = o.lyDoAm ? o.lyDoAm + ' [' + pl.lyDo.join(',') + ']' : pl.lyDo.join(',');
   if (o.ghiChu) m.ghiChu = o.ghiChu;
   return m;

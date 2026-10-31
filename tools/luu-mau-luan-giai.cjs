@@ -3,7 +3,7 @@
 // Dùng:
 //   node tools/luu-mau-luan-giai.cjs --tu <tệp lời giải> --la-so <TC01|tệp.json|'{"lich":"duong",...}'> \
 //     --dung 8 --sau 7 --giong 8 --an-toan 10 --nguoi-cham thu --nguoi-viet hanh --nguon hanh --nguon-goc claude \
-//     [--chuyen-de menh] [--cau-hoi "…"] [--tang bai|doan] [--ma-quy-tac A,B] [--ty-le-chu-mau 70] [--ly-do-am "…"] [--ngay YYYY-MM-DD] [--thu]
+//     [--chuyen-de menh] [--cau-hoi "…"] [--tang bai|doan] [--ma-quy-tac A,B] [--ty-le-chu-mau 70] [--ly-do-am "…"] [--ngay YYYY-MM-DD] [--sinh] [--thu]
 //   --diem N (không bắt buộc): phải bằng trung bình 4 tiêu chí. Dưới ngưỡng → tự lưu thành mẫu âm (kèm lý do). --thu: chỉ kiểm, không ghi.
 const fs = require('node:fs');
 const path = require('node:path');
@@ -35,7 +35,7 @@ try {
     dauVao: dauVao(a['la-so']), loiGiai: fs.readFileSync(a.tu, 'utf8'), diemThu: d, ngay: a.ngay, tang: a.tang, chuyenDe: a['chuyen-de'],
     cauHoi: a['cau-hoi'], maQuyTac: a['ma-quy-tac'] && a['ma-quy-tac'].split(','), tyLeChuMau: a['ty-le-chu-mau'] === undefined ? null : Number(a['ty-le-chu-mau']),
     nguoiViet: a['nguoi-viet'], nguoiBienTap: a['nguoi-bien-tap'], nguoiCham: a['nguoi-cham'], nguon: a.nguon, nguonGoc: a['nguon-goc'] || 'claude',
-    lyDoAm: a['ly-do-am'], ghiChu: a['ghi-chu'],
+    lyDoAm: a['ly-do-am'], sinh: a.sinh === true, ghiChu: a['ghi-chu'],
   });
   if (a.thu) { L.kiemTra(m); console.log(`[luu-mau] hợp lệ (${m.loai}, diem ${m.diem}), không ghi (--thu)`); process.exit(0); }
   const kq = L.luu(m);

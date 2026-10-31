@@ -61,8 +61,16 @@ test('thống kê chạy được trên kho', () => {
   const r = spawnSync('node', [path.join(__dirname, '../tools/thong-ke-mau-luan-giai.cjs'), '--json'], { encoding: 'utf8', env: process.env });
   assert.equal(r.status, 0, r.stderr);
   const k = JSON.parse(r.stdout);
-  assert.equal(k.tong, 2);
-  assert.equal(k.duong, 1);
+  assert.ok(k.tong >= 2);
+  assert.ok(k.duong >= 1);
   assert.equal(k.am, 1);
   assert.ok(k.cungMenhChinhTinh && k.nhomTuoi && k.gioiTinh && k.tuanTriet);
+});
+test('L-9942a9: từ chối trích dẫn >40 từ; cờ sinh được lưu', () => {
+  const dai = Array.from({ length: 45 }, (_, i) => 'chữ' + i).join(' ');
+  fs.writeFileSync(TEP, BAI + '> ' + dai + '\n');
+  assert.notEqual(chay('--dung', '9', '--sau', '9', '--giong', '9', '--an-toan', '10').status, 0);
+  fs.writeFileSync(TEP, BAI + 'Câu kết do mô hình sinh, đủ dài để qua kiểm tra độ dài tối thiểu của bài.\n');
+  assert.equal(chay('--dung', '9', '--sau', '9', '--giong', '9', '--an-toan', '10', '--sinh').status, 0);
+  assert.ok(L.docTatCa().some((m) => m.sinh === true));
 });

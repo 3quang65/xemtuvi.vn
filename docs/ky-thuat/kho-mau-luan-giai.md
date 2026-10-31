@@ -14,3 +14,5 @@ Dương: TB ≥ 7,5 · không tiêu chí < 6 · Sâu ≥ 6 · An toàn = 10 · �
 ## Trường mỗi dòng
 id, ngay, tang (bai|doan), chuyenDe, laSo (đầu vào + 12 cung sao/độ sáng/Tuần-Triệt/đại vận + `daiVanHienTai`, tuổi mụ tại `ngay`), laSoId, cauHoi, loiGiai, maQuyTac[], tyLeChuMau (null đến khi chạy B1), nguoiViet, nguoiBienTap, nguoiCham, diem (TB 4 tiêu chí), diemThu{dung,sau,giong,anToan}, loai, lyDoAm, phienBanQuyTac (git `src/lib/tuvi`), phienBanKho (git `quy-tac*.json`), nguon (claude|hanh|duc|mau), nguonGoc (sach|nguoi|claude|claude-bien-tap-nguoi), quyenSoHuu.
 Ghi chú: `phienBanQuyTac`/`phienBanKho` của mẫu nạp lại là phiên bản **tại lúc nạp**, không phải lúc viết. `nguon`=`mau` là bài do bộ ghép sinh từ quy tắc Hạnh viết (`nguonGoc`=`claude`).
+
+- L-9942a9: thêm cờ `sinh:true` (--sinh) cho câu mở/kết do mô hình sinh; cấm trích dẫn “…”/«…»/dòng > dài hơn 40 từ; thống kê thêm nguonGoc, tầng dương/âm, tuổi <15 / 18–45 / >45.
