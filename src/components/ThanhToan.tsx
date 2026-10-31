@@ -2,7 +2,7 @@
 
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
-import { CONG_BO_GIA, dongHanBan, giaHienThi, HOAN_TIEN, layChuDe, type Goi } from '@/lib/goi';
+import { CONG_BO_GIA, CONG_BO_HOAN_TIEN, dongHanBan, giaHienThi, HOAN_TIEN, layChuDe, type Goi } from '@/lib/goi';
 import { useGia } from '@/lib/useGia';
 import { docThongTinSinh, guiSuKien } from '@/lib/phien';
 import { useLaSoDaLuu } from '@/lib/useLaSoDaLuu';
@@ -135,7 +135,7 @@ export default function ThanhToan() {
         {bao && <p className="bao-loi-nhap" role="alert">{bao}</p>}
         {!email && <p className="tt-ghi-chu">Chọn tài khoản ở trên để thanh toán.</p>}
         {!laSoMay && <p className="ghi-chu-rieng-tu">Khi thanh toán, thông tin sinh của lá số này được lưu (mã hóa) trên máy chủ để bạn xem lại ở máy khác. Trước đó, thông tin chỉ nằm trên trình duyệt của bạn.</p>}
-        {CONG_BO_GIA && <p className="cam-ket">{HOAN_TIEN}</p>}
+        {CONG_BO_HOAN_TIEN && <p className="cam-ket">{HOAN_TIEN}</p>}
       </div>
     </section>
   );

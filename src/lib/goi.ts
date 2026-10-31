@@ -22,10 +22,12 @@ export const dinhDangGia = (d: number) => d.toLocaleString('vi-VN') + 'đ';
 const GIA_TRON_LA_SO = 99000;
 
 /**
- * Cờ công bố giá: /tro-giup, tin xác nhận đơn, /chon-goi, /thanh-toan. TẮT cho đến khi anh Cường duyệt giá (L-1964d2):
- * chỗ giá hiện CHU_CHUA_CONG_BO, ẩn so sánh giá và câu hoàn tiền. Luồng mua giả lập vẫn chạy (máy chủ vẫn tính giá thật).
+ * Cờ công bố giá: /tro-giup, tin xác nhận đơn, /chon-goi, /thanh-toan. BẬT từ L-d7cd2b (khách đọc thử không thấy giá thì bỏ đi trước nút mua; giá đã duyệt 30/10).
+ * Tắt lại = chỗ giá hiện CHU_CHUA_CONG_BO và ẩn so sánh giá. Luồng mua vẫn giả lập.
  */
-export const CONG_BO_GIA = false;
+export const CONG_BO_GIA = true;
+/** Câu cam kết hoàn tiền gắn với thanh toán thật: TẮT cho đến giai đoạn thu tiền thật (M5). */
+export const CONG_BO_HOAN_TIEN = false;
 export const CHU_CHUA_CONG_BO = 'Sẽ công bố khi ra mắt';
 
 /** Số tiền để hiện trên màn chọn gói/thanh toán: cờ tắt thì chữ trung tính. */
