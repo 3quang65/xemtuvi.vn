@@ -240,3 +240,21 @@ test('8 lá số x 12 tháng: bài trả phí có đúng câu nền của tháng
     assert.ok(xt.thangMau.cau.includes(bai.thang[xt.thangMau.thang - 1].nhanDinh.find((x) => x.thamChieu.quyTacId === 'NAM-THANG-05-NEN-CUNG').text));
   }
 });
+
+// L-9d340e vòng sửa: B1 (Lộc Tồn + hóa gộp), B2 (nhiều câu trước tháng mốc), B3 (cung đối chiếu).
+test('chonThangMau: nhiều câu thắng tháng mốc ít câu; không Kỵ vẫn trên cùng', () => {
+  assert.equal(VN.chonThangMau([U(1, { cau: ['a', 'b', 'c'] }), U(2, { cau: ['a', 'b'], thangMoc: true })]).thang, 1);
+  assert.equal(VN.chonThangMau([U(1, { cau: ['a', 'b', 'c', 'd'], coKy: true }), U(2, { cau: ['a'] })]).thang, 2);
+});
+test('tháng mẫu: 8 lá đều có từ 3 câu; lá C có Lộc Tồn, không có "song Lộc"', () => {
+  const ca = [
+    { lich: 'duong', ngay: 1, thang: 1, nam: 2000, gio: 9, gioiTinh: 'nam' }, { lich: 'duong', ngay: 22, thang: 3, nam: 1988, gio: 3, gioiTinh: 'nu' },
+    { lich: 'duong', ngay: 9, thang: 11, nam: 1975, gio: 17, gioiTinh: 'nam' }, { lich: 'duong', ngay: 30, thang: 6, nam: 2003, gio: 21, gioiTinh: 'nu' },
+    { lich: 'duong', ngay: 14, thang: 2, nam: 1982, gio: 12, gioiTinh: 'nu' }, { lich: 'duong', ngay: 5, thang: 9, nam: 1968, gio: 6, gioiTinh: 'nam' },
+    { lich: 'duong', ngay: 18, thang: 12, nam: 1999, gio: 23, gioiTinh: 'nu' }, ND.LA_SO_MAU,
+  ];
+  for (const inp of ca) assert.ok(VN.xemTruocVanNam(lapLaSo(inp)).thangMau.cau.length >= 3);
+  const c = VN.xemTruocVanNam(lapLaSo(ca[1])).thangMau.cau.join(' ');
+  assert.match(c, /Lộc Tồn/);
+  assert.doesNotMatch(c, /song Lộc/);
+});

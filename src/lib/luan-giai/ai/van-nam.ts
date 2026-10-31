@@ -216,7 +216,9 @@ export function nenCungThang(c: Cung, doi: Cung, luu: boolean | LuuHoaNam = fals
   if (gop) {
     const k = sangKem(gop.s);
     if (k) { them(NEN_CUNG_THANG.hoaGop[gop.key][k], { ...bien, sao: gop.s.ten }); saoDung.push(gop.s.ten); }
-  } else if (coSao(c, 'Lộc Tồn') && luuTai(c, 'Hóa Lộc').length) them(NEN_CUNG_THANG.locTonHoaLoc.dongCung, bien);
+  }
+  // Lộc Tồn + Hóa Lộc vẫn nêu khi đã có câu hóa gộp (hai ý khác nhau); dongCung không gọi "song Lộc".
+  if (coSao(c, 'Lộc Tồn') && luuTai(c, 'Hóa Lộc').length) { them(NEN_CUNG_THANG.locTonHoaLoc.dongCung, bien); saoDung.push('Lộc Tồn'); }
   else if ((coSao(c, 'Lộc Tồn') && luuTai(doi, 'Hóa Lộc').length) || (coSao(doi, 'Lộc Tồn') && luuTai(c, 'Hóa Lộc').length)) them(NEN_CUNG_THANG.locTonHoaLoc.xungChieu, bien);
 
   // 5. Tối đa một câu sao phụ.
@@ -232,6 +234,18 @@ export function nenCungThang(c: Cung, doi: Cung, luu: boolean | LuuHoaNam = fals
     them(tt ? m.tuanTriet : k && SANG.has(k) ? m.dac : k === 'Hãm' ? m.ham : m.binh, { ...bien, sao: hl.ten }); saoDung.push(hl.ten);
   } else if (xk) { them((SP['Văn Xương|Văn Khúc'] as BangChu)[sangKem(xk)!], { ...bien, sao: xk.ten }); saoDung.push(xk.ten); }
   else if (coSao(c, 'Thiên Không') && coSao(c, 'Đào Hoa')) { them(SP['Thiên Không+Đào Hoa'] as string, bien); saoDung.push('Thiên Không', 'Đào Hoa'); }
+
+  // 5b. Cung tháng có chính tinh: tối đa một câu về chính tinh (hoặc Hỏa/Linh) ở cung đối chiếu, dùng khóa sẵn có.
+  if (!vcd) {
+    const tDoi = saoDuyNhat(doi.chinhTinh).find((s) => sangKem(s) && NEN_CUNG_THANG.chinhTinh[s.ten]);
+    const hlDoi = saoDuyNhat(doi.hungTinh.concat(doi.phuTinh)).find((s) => s.ten === 'Hỏa Tinh' || s.ten === 'Linh Tinh');
+    const nDoi = `cung đối chiếu ${doi.ten}`;
+    if (tDoi) { them(NEN_CUNG_THANG.chinhTinh[tDoi.ten][sangKem(tDoi)!], { ...bien, noi: nDoi }); saoDung.push(tDoi.ten); }
+    else if (hlDoi && !hl) {
+      const m = SP['Hỏa Tinh|Linh Tinh'] as BangChu, k = hlDoi.dacTinhTen;
+      them(k && SANG.has(k) ? m.dac : k === 'Hãm' ? m.ham : m.binh, { ...bien, sao: hlDoi.ten, cung: `${doi.ten} (đối chiếu)` }); saoDung.push(hlDoi.ten);
+    }
+  }
 
   // 6. Cung Thân, 7. nen, 8. locGapKy.
   if (c.laThan) them(NEN_CUNG_THANG.thanCu[c.ten] ?? NEN_CUNG_THANG.thanCu.thuong, bien);
@@ -270,7 +284,7 @@ function napQuyTac(): QuyTacNam[] {
 const QUY_TAC = napQuyTac();
 /** Tăng số này mỗi khi đổi cách ghép bài để cache cũ không bị dùng lại. */
 const NGUON_NEN_CUNG = ['Đặc tả an sao xemtuvi.vn', 'Tử Vi Đẩu Số Tân Biên', 'Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)', 'Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)'];
-const PHIEN_BAN_GHEP = 'gh8-nen-cung-thang-v4';
+const PHIEN_BAN_GHEP = 'gh8-nen-cung-thang-v5';
 const MAU_VIEC = viecJson as unknown as MauViec[];
 const GHI_CHU_PHAI = ghiChuPhaiJson as unknown as Record<string, string>;
 export const PHIEN_BAN_VAN_NAM = bam(JSON.stringify([QUY_TAC, MAU_VIEC, GHI_CHU_PHAI, PHIEN_BAN_QUY_TAC, PHIEN_BAN_GHEP])).slice(0, 12);
@@ -862,12 +876,12 @@ const DIEM_THUAN = ['NAM-HOA-LOC-SANG', 'NAM-HOA-KHOA-SANG', 'NAM-HOA-QUYEN-SANG
 
 export interface UngVienThangMau { thang: number; thangMoc: boolean; coKy: boolean; cau: string[]; coTenSao: boolean }
 /**
- * Chọn tháng mẫu cho bản xem trước. Bậc ưu tiên: không Hóa Kỵ, lưu hoặc gốc tại cung tháng (NAM-CAM-03) > đủ 2 câu > có câu nêu tên sao > tháng mốc;
+ * Chọn tháng mẫu cho bản xem trước. Bậc ưu tiên: không Hóa Kỵ, lưu hoặc gốc tại cung tháng (NAM-CAM-03) > nhiều câu hơn (4 điểm mỗi câu) > có câu nêu tên sao > tháng mốc;
  * hòa bậc thì nhiều câu hơn, rồi tháng sớm hơn. Không tháng nào đạt cả thì lấy tháng tốt nhất còn lại;
  * null chỉ khi mọi tháng đều không có câu.
  */
 export function chonThangMau<T extends UngVienThangMau>(ds: T[]): T | null {
-  const diem = (x: T) => (x.coKy ? 0 : 8) + (x.cau.length >= 2 ? 4 : 0) + (x.coTenSao ? 2 : 0) + (x.thangMoc ? 1 : 0);
+  const diem = (x: T) => (x.coKy ? 0 : 100) + x.cau.length * 4 + (x.coTenSao ? 2 : 0) + (x.thangMoc ? 1 : 0);
   return ds.filter((x) => x.cau.length > 0).reduce<T | null>((tot, x) => (tot === null || diem(x) > diem(tot) || (diem(x) === diem(tot) && x.cau.length > tot.cau.length) ? x : tot), null);
 }
 
