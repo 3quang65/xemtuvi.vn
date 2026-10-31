@@ -37,4 +37,11 @@ if [ "${1:-}" != "" ]; then
   sudo nginx -t && sudo systemctl reload nginx
   sudo certbot --nginx -d "$MIEN" --non-interactive --agree-tos --register-unsafely-without-email --redirect
 fi
+# Đồng bộ GitHub: sau khi triển khai xong, đẩy main lên origin; lỗi chỉ CẢNH BÁO (không làm hỏng bản đã chạy). Bỏ qua: DONG_BO_GIT=0.
+if [ "${DONG_BO_GIT:-1}" != "0" ] && [ "$(git rev-parse --abbrev-ref HEAD)" = "main" ]; then
+  git push origin main >/dev/null 2>&1 || echo "CẢNH BÁO: không push được main lên GitHub, kiểm tra mạng/quyền rồi chạy: git push origin main" >&2
+  git fetch -q origin 2>/dev/null || true
+  CHENH="$(git rev-list --count origin/main..main 2>/dev/null || echo 0)"
+  [ "$CHENH" != "0" ] && echo "CẢNH BÁO: main còn trước origin $CHENH commit (chưa lên GitHub)" >&2
+fi
 curl -sI http://127.0.0.1:3000 | head -1
