@@ -70,6 +70,8 @@ test('bản trả phí: không còn "năm nay", "A/B", "nhà cửa, chi tiêu" t
         assert.ok(!/Khôi\/Thiên Việt|Không\/Địa Kiếp|nhà cửa, chi tiêu|\{sao/.test(x.text), x.thamChieu.quyTacId + ': ' + x.text);
         // L-5f6b69: mục tháng nói theo tháng, không câu nào còn "năm nay"/"năm thuận".
         assert.ok(!/năm nay|năm thuận/i.test(x.text), x.thamChieu.quyTacId + ': ' + x.text);
+        // L-91613b: nghĩa học hành/tay nghề chỉ ở Quan Lộc, Mệnh.
+        if (!['Quan Lộc', 'Mệnh'].includes(t.cung)) assert.ok(!/chứng chỉ|tay nghề/.test(x.text), x.thamChieu.quyTacId + '@' + t.cung + ': ' + x.text);
       }
       if (ids.some((i) => /^NAM-HOA-QUYEN/.test(i)) && ids.some((i) => /^NAM-HOA-KY/.test(i))) coCaHai++;
       if (ids.includes('NAM-THANG-04-TUAN-TRIET')) coTuanTriet++;
@@ -92,7 +94,8 @@ test('L-5f6b69: quy tắc có thể vào mục tháng mà chữ còn "năm nay" 
     const thang = q.noiDungThang ?? [q.noiDung, ...Object.values(q.noiDungTheoCung ?? {})].join(' ');
     assert.ok(!/năm nay|năm thuận/i.test(thang), q.id);
   }
-  for (const id of ['NAM-HOA-LOC-SANG', 'NAM-LUU-03']) {
+  // L-91613b: Khoa/Quyền/Kỵ của năm cũng viết riêng theo 12 cung.
+  for (const id of ['NAM-HOA-LOC-SANG', 'NAM-LUU-03', 'NAM-HOA-KHOA-SANG', 'NAM-HOA-KHOA-HAM', 'NAM-HOA-QUYEN-SANG', 'NAM-HOA-QUYEN-HAM', 'NAM-HOA-KY-SANG', 'NAM-HOA-KY-HAM']) {
     const q = Q.find((x) => x.id === id);
     assert.deepEqual(Object.keys(q.noiDungTheoCung).sort(), [...CUNG].sort(), id);
     assert.equal(new Set(Object.values(q.noiDungTheoCung)).size, 12, id + ': chữ trùng giữa các cung');
