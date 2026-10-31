@@ -52,3 +52,18 @@ Số lỗi: **9** (P0: 3 · P1: 4 · P2: 2).
 
 - **Minh** (người viết trang): sửa lỗi #1–#9 theo câu đề xuất hoặc câu tương đương có cùng mức chính xác, rồi nộp lại Thư chấm lần 2. Nghiệm thu: không còn P0/P1; Đúng ≥ 8; An toàn = 10.
 - **Đức/Hạnh** (tài liệu nguồn, không chặn trang): chốt TB "đã đọc bản quét" hay "chưa đối chiếu", vì mục "Hạn chế đã biết" và mục 0.10 đang ghi ngược nhau. Câu ở dòng 17 phụ thuộc kết quả này.
+
+## Lần 2 (commit 8dd9df0, 31/10/2026)
+
+**KHÔNG ĐẠT, còn 1 lỗi P1.** Đúng 7 · Sâu 8 · Giọng 9 · An toàn **10**. 8/9 lỗi lần 1 đã sửa đúng câu đề xuất. Các câu Minh rút gọn thêm (dòng 7, 28, 36–38, 42) không làm sai nghĩa, không thêm lời hứa mới.
+
+| Lỗi lần 1 | Kết quả |
+|---|---|
+| #1 (dòng 14) | Sửa một phần: vế "948 quy tắc… nguồn hoặc lý do chọn" và phạm vi chuyên đề đã đúng; vế "Mỗi câu… ghi sách nguồn" vẫn nói quá, thành lỗi #10 dưới đây |
+| #2, #3, #4, #5, #6, #7, #8, #9 | Đã sửa (dòng 31, 24, 19, 22, 10, 44, 18, 30) |
+
+| # | Dòng | Mức | Tiêu chí | Câu hiện tại | Lý do (bằng chứng) | Câu sửa đề xuất |
+|---|---|---|---|---|---|---|
+| 10 | 14 | P1 | Đúng | "Mỗi câu trong bài luận trên site gắn với một quy tắc có mã và ghi sách nguồn." | Có số liệu kiểm: `quy-tac.json` 363/363 và `quy-tac-khung.json` 665/665 có `nguon`, `van-10-nam*.json`, `van-nam-2027.json` 260/260 có `nguon`. Nhưng bài Vận năm còn câu không lấy từ quy tắc có sách nguồn: `quy-tac-van/viec-nen-lam.json` 104/104 câu gợi ý việc nên làm không có trường `nguon` (chỉ có `maHuong` trỏ tới mã quy tắc); câu nền tháng `nen-cung-thang.json` giữ mã ở `_nguon`, không ghi sách; câu dẫn (`cauDan`) hiển thị không kèm căn cứ (`VanNamBai.tsx` dòng 13). Chữ "mỗi câu" vì thế sai | "Mỗi nhận định trong bài luận trên site gắn với một quy tắc có mã và ghi nguồn; câu dẫn và gợi ý việc nên làm được viết dựa trên các quy tắc đó." |
+
+Nghiệm thu lần 3: sửa dòng 14 theo câu trên (hoặc câu cùng mức chính xác) thì Đúng lên 8. Lúc đó trang **Đạt** (Đúng 8, Sâu 8, Giọng 9, An toàn 10), không cần chấm lại toàn trang, Thư chỉ soát đúng dòng 14.
