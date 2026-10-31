@@ -68,7 +68,8 @@ test('bản trả phí: không còn "năm nay", "A/B", "nhà cửa, chi tiêu" t
       const ids = t.nhanDinh.map((x) => x.thamChieu.quyTacId);
       for (const x of t.nhanDinh) {
         assert.ok(!/Khôi\/Thiên Việt|Không\/Địa Kiếp|nhà cửa, chi tiêu|\{sao/.test(x.text), x.thamChieu.quyTacId + ': ' + x.text);
-        if (['NAM-HOA-LOC-SANG', 'NAM-LUU-03', 'NAM-LUU-01-KHONG'].includes(x.thamChieu.quyTacId)) assert.ok(!/năm nay/.test(x.text), x.text);
+        // L-5f6b69: mục tháng nói theo tháng, không câu nào còn "năm nay"/"năm thuận".
+        assert.ok(!/năm nay|năm thuận/i.test(x.text), x.thamChieu.quyTacId + ': ' + x.text);
       }
       if (ids.some((i) => /^NAM-HOA-QUYEN/.test(i)) && ids.some((i) => /^NAM-HOA-KY/.test(i))) coCaHai++;
       if (ids.includes('NAM-THANG-04-TUAN-TRIET')) coTuanTriet++;
@@ -82,4 +83,21 @@ test('bản trả phí: không còn "năm nay", "A/B", "nhà cửa, chi tiêu" t
   }
   assert.ok(coCaHai >= 1, 'chưa gặp tháng có cả Quyền và Kỵ trong 8 lá');
   assert.ok(coTuanTriet >= 1, 'chưa gặp câu Tuần/Triệt trong 8 lá');
+});
+
+test('L-5f6b69: quy tắc có thể vào mục tháng mà chữ còn "năm nay" thì phải có noiDungThang sạch; chữ theo cung đủ 12 cung', () => {
+  const Q = JSON.parse(fs.readFileSync(require('node:path').join(__dirname, '../src/lib/luan-giai/ai/quy-tac-van/van-nam-2027.json'), 'utf8'));
+  const CUNG = ['Mệnh', 'Phụ Mẫu', 'Phúc Đức', 'Điền Trạch', 'Quan Lộc', 'Nô Bộc', 'Thiên Di', 'Tật Ách', 'Tài Bạch', 'Tử Tức', 'Phu Thê', 'Huynh Đệ'];
+  for (const q of Q.filter((x) => x.lop === 'cung-goc' && x.id !== 'NAM-TT-06' && x.muc !== 'su-nghiep' && !/-NHIP$|-NEN$/.test(x.id))) {
+    const thang = q.noiDungThang ?? [q.noiDung, ...Object.values(q.noiDungTheoCung ?? {})].join(' ');
+    assert.ok(!/năm nay|năm thuận/i.test(thang), q.id);
+  }
+  for (const id of ['NAM-HOA-LOC-SANG', 'NAM-LUU-03']) {
+    const q = Q.find((x) => x.id === id);
+    assert.deepEqual(Object.keys(q.noiDungTheoCung).sort(), [...CUNG].sort(), id);
+    assert.equal(new Set(Object.values(q.noiDungTheoCung)).size, 12, id + ': chữ trùng giữa các cung');
+    for (const c of CUNG) assert.ok(q.maTheoCung[c]?.length, id + ' thiếu mã căn cứ ' + c);
+  }
+  const tu = Q.find((x) => x.id === 'NAM-LUU-03').noiDungTheoCung['Tử Tức'];
+  assert.match(tu, /con cái|học trò/);
 });

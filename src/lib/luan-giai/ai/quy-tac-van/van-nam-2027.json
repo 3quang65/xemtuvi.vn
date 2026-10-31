@@ -2326,7 +2326,8 @@
    "Tư liệu web: iztro \"运限\""
   ],
   "nguonChiTiet": "CHUNG-HOA (TT, KL); WV1",
-  "ghiChu": "{cung} = tên cung chức năng chứa sao; bộ ghép thay khi xuất."
+  "ghiChu": "{cung} = tên cung chức năng chứa sao; bộ ghép thay khi xuất.",
+  "noiDungThang": "Hóa Khoa của năm (Thiên Cơ) ở cung {cung}, tháng này đi qua cung đó: ý tưởng, kế hoạch và tay nghề của bạn ở lĩnh vực này dễ được ghi nhận; tháng thuận để học thêm, hoàn thiện hồ sơ hoặc chứng chỉ."
  },
  {
   "chuyenDe": "van-nam",
@@ -2476,7 +2477,8 @@
    "Tư liệu web: iztro \"运限\""
   ],
   "nguonChiTiet": "VAN-HOA-07 (TC nói cho đại vận, qua WV3); WV1; áp cho năm: tổng hợp",
-  "ghiChu": "Tuổi Ất (Thái Âm Kỵ ở mọi bảng). Tuổi Canh dùng NAM-HOA-08-KY-LOC-CANH."
+  "ghiChu": "Tuổi Ất (Thái Âm Kỵ ở mọi bảng). Tuổi Canh dùng NAM-HOA-08-KY-LOC-CANH.",
+  "noiDungThang": "Thái Âm vốn mang Hóa Kỵ trên lá số gốc và nhận Hóa Lộc của năm; tháng này đi qua cung có sao đó. Theo cách xét tổng hợp (hóa của năm chạm hóa gốc cùng sao), đây là lúc hợp để chủ động gỡ một điểm vướng cũ thay vì né, vì nó có cơ hội chuyển thành có lợi."
  },
  {
   "chuyenDe": "van-nam",
@@ -2515,7 +2517,8 @@
    "Tư liệu web: iztro \"运限\""
   ],
   "nguonChiTiet": "Bảng Canh: KL tr. 363–364, NL tập 3 tr. 194 (Âm Kỵ); TT, TC: Canh Kỵ Thiên Đồng; nguyên tắc chồng hóa: VAN-HOA-07, WV1 (tổng hợp)",
-  "ghiChu": "Phiếu Thư lỗi 1, Q1; Đức Q1. Không được gắn nhãn Trung Châu."
+  "ghiChu": "Phiếu Thư lỗi 1, Q1; Đức Q1. Không được gắn nhãn Trung Châu.",
+  "noiDungThang": "Thái Âm mang Hóa Kỵ trên lá số gốc (theo bảng Tứ hóa xemtuvi.vn dùng; can Canh khác bảng giữa các sách) và nhận Hóa Lộc của năm; tháng này đi qua cung có sao đó. Theo cách xét tổng hợp (hóa của năm chạm hóa gốc cùng sao), đây là lúc hợp để chủ động gỡ một điểm vướng cũ thay vì né, vì nó có cơ hội chuyển thành có lợi."
  },
  {
   "chuyenDe": "van-nam",
@@ -2553,7 +2556,8 @@
    "Trung Châu phái (Vương Đình Chi)",
    "Tư liệu web: iztro \"运限\""
   ],
-  "nguonChiTiet": "VAN-HOA-07 (TC nói cho đại vận); CHUNG-HOA-07; WV1; áp cho năm: tổng hợp (Đức M5-2)"
+  "nguonChiTiet": "VAN-HOA-07 (TC nói cho đại vận); CHUNG-HOA-07; WV1; áp cho năm: tổng hợp (Đức M5-2)",
+  "noiDungThang": "Cự Môn vốn mang Hóa Lộc trên lá số gốc và nhận Hóa Kỵ của năm; tháng này đi qua cung có sao đó. Theo cách xét tổng hợp (hóa của năm chạm hóa gốc cùng sao), lợi ban đầu dễ giảm và dễ vướng vì tiền: trong tháng nên chốt điều khoản rõ ràng trước khi nhận việc, tránh hứa miệng."
  },
  {
   "chuyenDe": "van-nam",
@@ -2591,7 +2595,8 @@
    "Tư liệu web: iztro \"运限\""
   ],
   "nguonChiTiet": "VAN-HOA-07; NAM-HOA-08(c) hai lớp (Đức Q4a: không tìm thấy câu sách)",
-  "ghiChu": "Không viết \"gấp đôi\" (Đức Q4a)."
+  "ghiChu": "Không viết \"gấp đôi\" (Đức Q4a).",
+  "noiDungThang": "Cự Môn mang Hóa Kỵ ở lá số gốc và nhận thêm Hóa Kỵ của năm; tháng này đi qua cung có sao đó. Đọc hai lớp riêng: lĩnh vực này vốn cần đầu tư công sức trong lời nói (gốc), và tháng này chủ đề đó được nhấn mạnh thêm. Nói ít mà rõ, ưu tiên văn bản."
  },
  {
   "chuyenDe": "van-nam",
@@ -2629,7 +2634,8 @@
    "Tư liệu web: iztro \"运限\""
   ],
   "nguonChiTiet": "NAM-HOA-08(d), tuổi Đinh; VAN-HOA-07; WV1 (tổng hợp, Đức Q4a: không tìm thấy câu sách)",
-  "ghiChu": "Tuổi Đinh: bốn hóa năm trùng bốn hóa gốc. Không viết \"gấp đôi\", không kết luận cát hung."
+  "ghiChu": "Tuổi Đinh: bốn hóa năm trùng bốn hóa gốc. Không viết \"gấp đôi\", không kết luận cát hung.",
+  "noiDungThang": "Thái Âm mang Hóa Lộc ở lá số gốc và nhận thêm Hóa Lộc của năm; tháng này đi qua cung có sao đó. Đọc hai lớp riêng: nguồn lợi nhờ sự chu đáo, tích góp vốn là điểm của lá số, và tháng này lĩnh vực của Thái Âm được nhấn mạnh thêm, cả mặt thuận lẫn mặt cần giữ."
  },
  {
   "chuyenDe": "van-nam",
@@ -2667,7 +2673,8 @@
    "Tư liệu web: iztro \"运限\""
   ],
   "nguonChiTiet": "NAM-HOA-08(d), tuổi Đinh; VAN-HOA-07; WV1 (tổng hợp, Đức Q4a: không tìm thấy câu sách)",
-  "ghiChu": "Tuổi Đinh: bốn hóa năm trùng bốn hóa gốc. Không viết \"gấp đôi\", không kết luận cát hung."
+  "ghiChu": "Tuổi Đinh: bốn hóa năm trùng bốn hóa gốc. Không viết \"gấp đôi\", không kết luận cát hung.",
+  "noiDungThang": "Thiên Đồng mang Hóa Quyền ở lá số gốc và nhận thêm Hóa Quyền của năm; tháng này đi qua cung có sao đó. Đọc hai lớp riêng: vai trò chủ động có được nhờ khéo léo, hòa nhã vốn là điểm của lá số, và tháng này lĩnh vực của Thiên Đồng được nhấn mạnh thêm, cả mặt thuận lẫn mặt cần giữ."
  },
  {
   "chuyenDe": "van-nam",
@@ -2705,7 +2712,8 @@
    "Tư liệu web: iztro \"运限\""
   ],
   "nguonChiTiet": "NAM-HOA-08(d), tuổi Đinh; VAN-HOA-07; WV1 (tổng hợp, Đức Q4a: không tìm thấy câu sách)",
-  "ghiChu": "Tuổi Đinh: bốn hóa năm trùng bốn hóa gốc. Không viết \"gấp đôi\", không kết luận cát hung."
+  "ghiChu": "Tuổi Đinh: bốn hóa năm trùng bốn hóa gốc. Không viết \"gấp đôi\", không kết luận cát hung.",
+  "noiDungThang": "Thiên Cơ mang Hóa Khoa ở lá số gốc và nhận thêm Hóa Khoa của năm; tháng này đi qua cung có sao đó. Đọc hai lớp riêng: sự ghi nhận về ý tưởng, tay nghề vốn là điểm của lá số, và tháng này lĩnh vực của Thiên Cơ được nhấn mạnh thêm, cả mặt thuận lẫn mặt cần giữ."
  },
  {
   "chuyenDe": "van-nam",
@@ -2857,7 +2865,8 @@
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
   ],
   "nguonChiTiet": "TT q.3 論羊陀迭並; TB P3 §4.3 tr. 268–269 (sách diễn đạt nặng, đã trung tính hóa)",
-  "ghiChu": "Tuổi Đinh, Kỷ. Cấm câu thơ 羊陀迭並 và câu TB \"tai họa\" (NAM-CAM-02). Có Địa Không/Địa Kiếp tại cung thì nhường cho NAM-LUU-01-KHONG (phiếu Thư vòng 2 N3)."
+  "ghiChu": "Tuổi Đinh, Kỷ. Cấm câu thơ 羊陀迭並 và câu TB \"tai họa\" (NAM-CAM-02). Có Địa Không/Địa Kiếp tại cung thì nhường cho NAM-LUU-01-KHONG (phiếu Thư vòng 2 N3).",
+  "noiDungThang": "Lộc Tồn của năm trùng đúng Lộc Tồn trên lá số gốc ở cung {cung}, tháng này đi qua cung đó: nguồn lợi ở lĩnh vực này rõ hơn thường lệ, thuận cho tích góp đều."
  },
  {
   "chuyenDe": "van-nam",
@@ -2898,7 +2907,8 @@
   ],
   "nguonChiTiet": "TT q.3 論羊陀迭並; TB P3 §4.3 tr. 268–269 (sách diễn đạt nặng, đã trung tính hóa)",
   "phan": "sao-luu",
-  "ghiChu": "Tuổi Đinh, Kỷ. Cấm câu thơ 羊陀迭並 và câu TB \"tai họa\" (NAM-CAM-02)."
+  "ghiChu": "Tuổi Đinh, Kỷ. Cấm câu thơ 羊陀迭並 và câu TB \"tai họa\" (NAM-CAM-02).",
+  "noiDungThang": "Kình Dương của năm trùng Kình Dương trên lá số gốc ở cung {cung}, tháng này đi qua cung đó: lĩnh vực này đòi hỏi bình tĩnh, làm chắc từng bước, tránh quyết vội; sức ép nếu có là để bạn sắp lại thứ tự ưu tiên."
  },
  {
   "chuyenDe": "van-nam",
@@ -2939,7 +2949,8 @@
   ],
   "nguonChiTiet": "TT q.3 論羊陀迭並; TB P3 §4.3 tr. 268–269 (sách diễn đạt nặng, đã trung tính hóa)",
   "phan": "sao-luu",
-  "ghiChu": "Tuổi Đinh, Kỷ. Cấm câu thơ 羊陀迭並 và câu TB \"tai họa\" (NAM-CAM-02)."
+  "ghiChu": "Tuổi Đinh, Kỷ. Cấm câu thơ 羊陀迭並 và câu TB \"tai họa\" (NAM-CAM-02).",
+  "noiDungThang": "Đà La của năm trùng Đà La trên lá số gốc ở cung {cung}, tháng này đi qua cung đó: việc của lĩnh vực này dễ kéo dài hơn dự tính; kiên nhẫn, làm chắc từng bước và tránh quyết vội."
  },
  {
   "chuyenDe": "van-nam",
@@ -3218,7 +3229,8 @@
    "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
    "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
   ],
-  "nguonChiTiet": "VAN-SP-14; PHU-CC-06"
+  "nguonChiTiet": "VAN-SP-14; PHU-CC-06",
+  "noiDungThang": "Hồng Loan, Thiên Hỷ của năm chạm cung Phu Thê, tháng này đi qua cung đó: chuyện tình cảm có không khí vui, thuận gặp gỡ và vun đắp. Sách đòi cả đại vận lẫn tiểu hạn cùng báo mới coi là thời điểm cưới hỏi, nên đây là một yếu tố thuận chứ chưa phải mốc định sẵn."
  },
  {
   "chuyenDe": "van-nam",
@@ -3272,7 +3284,8 @@
    "Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)"
   ],
   "nguonChiTiet": "VAN-SP-10 (c) (TT q.2 火鈴二星入限: \"火鈴限陷\"; KL A.4); áp cho cung hạn của năm: NAM-MANG-04, NAM-MANG-01 (tổng hợp)",
-  "ghiChu": "Việc L-2381a4. Sao hãm: không viết câu thuận. Bỏ ý \"mất đồ, quan tai\" của sách (VAN-SP-10 (c) đã trung tính hóa; không nói kiện tụng). PHU-SP-06 chỉ mô tả, giữ làm mã phụ trong mã ẩn, không đưa vào maNghienCuu để TT-01 bám đúng VAN-SP-10/hãm. ⚑ tổng hợp: Đức cần kiểm việc áp câu nhập hạn của đại vận sang cung hạn năm."
+  "ghiChu": "Việc L-2381a4. Sao hãm: không viết câu thuận. Bỏ ý \"mất đồ, quan tai\" của sách (VAN-SP-10 (c) đã trung tính hóa; không nói kiện tụng). PHU-SP-06 chỉ mô tả, giữ làm mã phụ trong mã ẩn, không đưa vào maNghienCuu để TT-01 bám đúng VAN-SP-10/hãm. ⚑ tổng hợp: Đức cần kiểm việc áp câu nhập hạn của đại vận sang cung hạn năm.",
+  "noiDungThang": "{sao} ở thế hãm tại cung Phu Thê, mà cung này lại là cung hạn (đại vận, tiểu hạn hoặc Lưu Thái Tuế) và tháng này đi qua đó: chuyện tình cảm, với người đồng hành hay người bạn đang tìm hiểu, dễ có lúc nóng lời hoặc có việc bất ngờ xen vào kế hoạch chung. Nên giữ bình tĩnh khi trao đổi, để điều cần bàn sang lúc cả hai đã dịu."
  },
  {
   "chuyenDe": "van-nam",
