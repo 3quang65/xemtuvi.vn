@@ -125,6 +125,29 @@ export interface BaiVanNam {
   ghiChu: string;
   phienBan: string;
 }
+/** Hóa Kỵ GỐC (từ can năm sinh) tại một cung: chính tinh hoặc sao khác mang Hóa Kỵ. */
+export function coKyGocTaiCung(c: Cung): boolean {
+  return [...c.chinhTinh, ...c.catTinh, ...c.phuTinh, ...c.hungTinh].some((s) => s.hoa === 'Hóa Kỵ');
+}
+
+/**
+ * Câu nền của cung tháng (chỉ nêu dữ kiện engine có, không luận nghĩa): chính tinh và Tứ hóa gốc tại cung;
+ * cung vô chính diệu thì nói thẳng là xem chính tinh cung đối chiếu; Lộc lưu gặp Kỵ gốc cùng cung thì nêu rõ.
+ * Chữ luận nghĩa theo cung do nhà luận giải viết riêng, ở đây không tự chế.
+ */
+export function cauNenCungThang(c: Cung, doi: Cung, luuLocCungChi = false): string {
+  const ten = (s: Sao) => (s.hoa ? `${s.ten} ${s.hoa}` : s.ten);
+  const tinh = c.chinhTinh.map(ten);
+  const khac = [...c.catTinh, ...c.phuTinh, ...c.hungTinh].filter((s) => s.hoa).map(ten);
+  const hoaKy = coKyGocTaiCung(c);
+  let cau: string;
+  if (tinh.length) cau = `Cung ${c.ten} của tháng này có ${tinh.join(', ')}${khac.length ? `, cùng ${khac.join(', ')}` : ''} ngay từ lá số gốc; phần lưu niên tác động lên nền sẵn có ấy.`;
+  else if (doi.chinhTinh.length) cau = `Cung ${c.ten} của tháng này vô chính diệu, nên xem chính tinh cung đối chiếu (${doi.chinhTinh.map(ten).join(', ')}) làm nền${khac.length ? `; cung còn có ${khac.join(', ')}` : ''}.`;
+  else cau = `Cung ${c.ten} của tháng này vô chính diệu, cung đối chiếu cũng không có chính tinh${khac.length ? `; cung có ${khac.join(', ')}` : ''}.`;
+  if (hoaKy && luuLocCungChi) cau += ' Tháng này có Lộc lưu gặp Hóa Kỵ gốc cùng cung: điểm thuận đi kèm điểm vướng.';
+  return cau;
+}
+
 /** Bản xem trước miễn phí: không có mã quy tắc, không có nội dung tháng. */
 export interface XemTruocVanNam {
   chuyenDe: typeof MA_VAN_NAM;
@@ -736,7 +759,7 @@ const DIEM_THUAN = ['NAM-HOA-LOC-SANG', 'NAM-HOA-KHOA-SANG', 'NAM-HOA-QUYEN-SANG
 
 export interface UngVienThangMau { thang: number; thangMoc: boolean; coKy: boolean; cau: string[]; coTenSao: boolean }
 /**
- * Chọn tháng mẫu cho bản xem trước. Bậc ưu tiên: không Hóa Kỵ (NAM-CAM-03) > đủ 2 câu > có câu nêu tên sao > tháng mốc;
+ * Chọn tháng mẫu cho bản xem trước. Bậc ưu tiên: không Hóa Kỵ, lưu hoặc gốc tại cung tháng (NAM-CAM-03) > đủ 2 câu > có câu nêu tên sao > tháng mốc;
  * hòa bậc thì nhiều câu hơn, rồi tháng sớm hơn. Không tháng nào đạt cả thì lấy tháng tốt nhất còn lại;
  * null chỉ khi mọi tháng đều không có câu.
  */
@@ -749,13 +772,17 @@ export function chonThangMau<T extends UngVienThangMau>(ds: T[]): T | null {
 export function xemTruocVanNam(ls: LaSo, tuyChon: { namXem?: number } = {}): XemTruocVanNam {
   const namXem = tuyChon.namXem ?? NAM_HOP_LE;
   kiemTraNamXem(namXem, ls);
-  const { ln, tatCa, thang, dauBai } = ghepBai(ls, namXem);
+  const { ln, tatCa, thang, dauBai, n } = ghepBai(ls, namXem);
   const locCau = (ds: string[]) => ds.flatMap((x) => { const t = locTuCam(x, TU_CAM); return t ? [t] : []; });
   const van = (k: Khop[]) => locCau(k.map((x) => x.text));
   const thaiTue = tatCa.filter((k) => k.q.lop === 'thai-tue' && /^NAM-TT-01-/.test(k.q.id));
   const ungVien = thang.map((t) => {
     const cau = t.nhanDinh.flatMap((x) => { const c = locCau([x.text])[0]; return c ? [{ c, sao: x.thamChieu.sao.map((s) => s.replace(/^L\. /, '')) }] : []; });
-    return { thang: t.thang, thangMoc: t.thangMoc, coKy: ln.luuTuHoa.some((h) => h.hoa === 'Hóa Kỵ' && ln.luuNguyet[t.thang - 1] === h.chi), cau: cau.map((x) => x.c), coTenSao: cau.some((x) => x.sao.some((s) => x.c.includes(s))), goc: t };
+    const chi = ln.luuNguyet[t.thang - 1], cg = n.ls.cung[chi];
+    const coKy = ln.luuTuHoa.some((h) => h.hoa === 'Hóa Kỵ' && chi === h.chi) || coKyGocTaiCung(cg);
+    const nen = locCau([cauNenCungThang(cg, n.ls.cung[(chi + 6) % 12], ln.luuTuHoa.some((h) => h.hoa === 'Hóa Lộc' && h.chi === chi))])[0];
+    const dsCau = cau.length && nen ? [...cau.map((x) => x.c), nen] : cau.map((x) => x.c);
+    return { thang: t.thang, thangMoc: t.thangMoc, coKy, cau: dsCau, coTenSao: cau.some((x) => x.sao.some((s) => x.c.includes(s))), goc: t };
   });
   const chon = chonThangMau(ungVien);
   const tm = chon ? { t: chon.goc, cau: chon.cau } : null;

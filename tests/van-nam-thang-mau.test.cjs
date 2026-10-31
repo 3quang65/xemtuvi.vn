@@ -113,3 +113,35 @@ test('L-5f6b69: quy tắc có thể vào mục tháng mà chữ còn "năm nay" 
   const tu = Q.find((x) => x.id === 'NAM-LUU-03').noiDungTheoCung['Tử Tức'];
   assert.match(tu, /con cái|học trò/);
 });
+
+// L-bb82af (phiếu Thư L-5f6b69, lỗi 4-6)
+test('chonThangMau: coKy gồm Kỵ gốc, tránh tháng đó khi còn lựa chọn', () => {
+  assert.equal(VN.chonThangMau([U(1, { coKy: true, thangMoc: true }), U(2)]).thang, 2);
+});
+test('lá D (nam 1975): tháng mẫu không bỏ Kỵ gốc (tránh tháng đó hoặc nêu Lộc gặp Kỵ)', () => {
+  const ls = lapLaSo({ lich: 'duong', ngay: 9, thang: 11, nam: 1975, gio: 17, gioiTinh: 'nam' });
+  const xt = VN.xemTruocVanNam(ls);
+  const cung = ls.cung.find((c) => c.ten === xt.thangMau.cung);
+  assert.ok(!VN.coKyGocTaiCung(cung) || xt.thangMau.cau.some((c) => /Lộc.*Kỵ|Kỵ/.test(c)), JSON.stringify(xt.thangMau));
+});
+test('cauNenCungThang: nêu chính tinh và Tứ hóa gốc; vô chính diệu nói mượn đối cung; không lộ mã', () => {
+  const sao = (ten, hoa = null) => ({ key: ten, ten, hoa });
+  const c = (ten, ct = [], o = {}) => ({ ten, chinhTinh: ct, catTinh: [], phuTinh: [], hungTinh: [], ...o });
+  assert.match(VN.cauNenCungThang(c('Phu Thê', [sao('Thái Âm', 'Hóa Quyền')]), c('Quan Lộc')), /Phu Thê.*Thái Âm Hóa Quyền/);
+  const v = VN.cauNenCungThang(c('Quan Lộc'), c('Phúc Đức', [sao('Thiên Phủ')]));
+  assert.match(v, /vô chính diệu.*cung đối chiếu.*Thiên Phủ/);
+  assert.match(VN.cauNenCungThang(c('Điền Trạch', [sao('Thái Âm', 'Hóa Kỵ')]), c('x'), true), /Lộc lưu gặp Hóa Kỵ gốc/);
+  assert.ok(!/NAM-/.test(v));
+});
+test('8 lá số: tháng mẫu có câu nêu chính tinh hoặc cung vô chính diệu', () => {
+  for (const inp of LA) {
+    const xt = VN.xemTruocVanNam(lapLaSo(inp));
+    assert.ok(xt.thangMau.cau.some((x) => /^Cung .* của tháng này (có|vô chính diệu)/.test(x)), JSON.stringify(inp));
+  }
+});
+test('Triệt không "phát huy" (hoi-dap) và MO_TA trang Vận năm không hứa ghi rõ sao', () => {
+  const hd = fs.readFileSync(__dirname + '/../src/lib/may-chu/hoi-dap.ts', 'utf8');
+  assert.ok(!/Triệt: cần thời gian để phát huy/.test(hd));
+  const pg = fs.readFileSync(__dirname + '/../src/app/van-nam-2027/page.tsx', 'utf8');
+  assert.ok(!/ghi rõ sao/.test(pg));
+});
