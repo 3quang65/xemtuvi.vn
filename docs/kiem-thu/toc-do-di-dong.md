@@ -186,3 +186,22 @@ Lá số sau khi lập (timespan từ lúc bấm "Lập lá số" đến khi lá
 - CLS lá số trước là 0,350, nay 0 ở cả 9 lần.
 - Lighthouse không có LCP cho timespan nên không ghi.
 - Tải CPU (load average 1/5/15 phút), cả hai bài đo: trước 4,13 / 3,31 / 2,69; sau 1,20 / 1,90 / 2,23 (giữa hai đợt 5 lần và 4 lần: 1,31 / 2,31 / 2,40).
+
+## Số đo sau 49faa96 (Phúc, L-23297f) - `/chon-goi`, 9 lần
+Đo 31/10 10:40 đến 10:53, cấu hình như bảng (mobile, rtt 400, 400 kbps, cpuSlowdown 4), tuần tự, URL `/chon-goi` không kèm phiên.
+| Lần | Điểm | LCP (s) | CLS | TBT (ms) |
+|---|---|---|---|---|
+| 1 | 76 | 2,14 | 0,075 | 759 |
+| 2 | 85 | 2,10 | 0,076 | 385 |
+| 3 | 89 | 2,15 | 0,051 | 275 |
+| 4 | 90 | 2,12 | 0,051 | 262 |
+| 5 | 75 | 2,12 | 0,076 | 820 |
+| 6 | 76 | 2,11 | 0,076 | 765 |
+| 7 | 89 | 2,13 | 0,051 | 302 |
+| 8 | 76 | 2,08 | 0,076 | 814 |
+| 9 | 90 | 2,11 | 0,049 | 297 |
+
+- Trung vị: Performance **85** (đạt ngưỡng >= 85, sát ngưỡng; 4/9 lần dưới 85, khoảng 75 đến 90), LCP 2,12 s, CLS 0,075, TBT 385 ms.
+- Hạn chế đo: Lighthouse mở `/chon-goi` không có thông tin sinh trong sessionStorage nên trang tự chuyển về `/` (ChonGoi.tsx dòng 58). Số trên thực chất là của trang `/`, không gồm bảng gói và đoạn mẫu. Thử bơm phiên cho Lighthouse không giữ được (Lighthouse vẫn kết thúc ở `/`).
+- Kiểm tay bằng Playwright (có phiên, không throttle): 375px và 1366px không tràn ngang (scrollWidth = bề rộng); bảng 6 gói hiển thị đủ, giá đúng (129k, 49k, 179k, 99k, 29k, 299k); đoạn mẫu nạp xong, không còn khung chờ.
+- Lỗi CLS (trung bình): khi vào có phiên, chân trang (`chan-trang`) nằm ở y=423 (375px) hoặc 397 (1366px) rồi bị đẩy xuống khi nội dung gói/đoạn mẫu hiện ra: CLS 0,39 (375px), 0,175 (1366px), vượt ngưỡng tốt 0,1. Cần giữ chỗ (min-height) cho khu bảng gói trước khi bảng giá/đoạn mẫu nạp, hoặc ẩn chân trang tới khi sẵn sàng.
