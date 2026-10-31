@@ -38,3 +38,19 @@ Ngưỡng (nội dung miễn phí): An toàn = 10, Đúng ≥ 6, không tiêu ch
 ## Kiểm an toàn
 
 Không có từ cấm (giải hạn, cúng, bùa, hóa giải, xung khắc nặng, đại kỵ), không phán "không nên sinh", không nói sức khỏe, tính cách, giới tính, tương lai của bé, không chọn tháng, không lộ dữ liệu khách (ví dụ dùng năm sinh mẫu). Ba mức đều có câu "tham khảo văn hóa, chỉ dựa trên năm sinh". → An toàn 10.
+
+## Cập nhật 31/10/2026 (việc L-1e52ef): đọc trang thật như khách, chốt KD-SC27-05
+
+Đã mở v3.xemtuvi.vn/sinh-con-2027 (main e1b2fa5) trên 390px và 1280px, nhập ca bố 1961 Tân Sửu + mẹ 1990 Canh Ngọ (mức thấp nhất).
+
+| Hạng mục | Kết quả |
+|---|---|
+| Dòng "Nguồn:" | Không hiện trên trang (chỉ còn ở tài liệu nội bộ). ĐẠT |
+| Chữ "khắc" | Chỉ xuất hiện dạng "Thổ khắc Thủy" / "Thủy khắc Hỏa" (hành với hành); không có "bố/mẹ khắc bé", "khắc con", "con khắc cha mẹ". ĐẠT |
+| Mê tín | Không có giải hạn, cúng, bùa, chọn ngày giờ, phán tốt xấu cho bé; mọi mức có câu "tham khảo văn hóa". ĐẠT |
+| KD-SC27-05 | **ĐỔI** nhãn "Cần lưu ý" thành **"Khác nhịp"** (không dấu "?"). |
+
+Lý do đổi: lời M3 mở bằng "khác nhịp ở vài điểm" nên nhãn khớp lời, hết cảnh mẹ bầu hỏi "lưu ý điều gì?". Không thêm dấu "?": hai nhãn kia là trạng thái (Thuận, Cân bằng), dấu hỏi làm nhãn thành câu hỏi mà lời không trả lời và nghe lo hơn. "Khác nhịp" cũng đã dùng ở dòng từng người (B4, B5) nên giọng thống nhất.
+
+Đã sửa: `src/lib/sinh-con-2027/loi.ts` (tieuDe), `docs/san-pham/sinh-con-2027-loi.md` (mục 1). Giữ nguyên mã nội bộ `can-luu-y` (sự kiện đo không đổi). Chưa sửa `sinh-con-2027-quy-tac.md` mục 5 và `sinh-con-2027-kiem.py` (còn nhãn cũ, thuộc Đức).
+Lưu ý nhỏ không chặn: mức Cân bằng (M2) cũng có chữ "khác nhịp" trong lời; chấp nhận được vì đó là mô tả điểm, không phải nhãn.
