@@ -67,3 +67,12 @@ Số lỗi: **9** (P0: 3 · P1: 4 · P2: 2).
 | 10 | 14 | P1 | Đúng | "Mỗi câu trong bài luận trên site gắn với một quy tắc có mã và ghi sách nguồn." | Có số liệu kiểm: `quy-tac.json` 363/363 và `quy-tac-khung.json` 665/665 có `nguon`, `van-10-nam*.json`, `van-nam-2027.json` 260/260 có `nguon`. Nhưng bài Vận năm còn câu không lấy từ quy tắc có sách nguồn: `quy-tac-van/viec-nen-lam.json` 104/104 câu gợi ý việc nên làm không có trường `nguon` (chỉ có `maHuong` trỏ tới mã quy tắc); câu nền tháng `nen-cung-thang.json` giữ mã ở `_nguon`, không ghi sách; câu dẫn (`cauDan`) hiển thị không kèm căn cứ (`VanNamBai.tsx` dòng 13). Chữ "mỗi câu" vì thế sai | "Mỗi nhận định trong bài luận trên site gắn với một quy tắc có mã và ghi nguồn; câu dẫn và gợi ý việc nên làm được viết dựa trên các quy tắc đó." |
 
 Nghiệm thu lần 3: sửa dòng 14 theo câu trên (hoặc câu cùng mức chính xác) thì Đúng lên 8. Lúc đó trang **Đạt** (Đúng 8, Sâu 8, Giọng 9, An toàn 10), không cần chấm lại toàn trang, Thư chỉ soát đúng dòng 14.
+
+## Lần 3 (commit a3cc7f1, 31/10/2026): kết luận cuối
+
+**ĐẠT.** Đúng 8 · Sâu 8 · Giọng 9 · An toàn 10 (mọi tiêu chí ≥ 8, An toàn = 10).
+
+- Lỗi #10 đã sửa: dòng 14 dùng đúng câu đề xuất. "Mỗi nhận định… ghi nguồn" khớp số liệu (363/363, 665/665, 260/260 quy tắc có `nguon`), và câu dẫn, gợi ý việc nên làm được nói riêng, đúng thực tế.
+- So với 6c1d1e2, a3cc7f1 chỉ đổi 1 dòng (`git diff --stat`: 1 tệp, +1 −1). Các dòng khác giữ như bản đã chấm lần 2.
+- Còn để ngỏ, không chặn trang: Đức/Hạnh chốt Tân Biên đã đọc bản quét hay chưa (mục 5). Nếu đã đọc thì sửa dòng 19 và nộp Thư soát lại dòng đó.
+- Trang được lên site. Có thay đổi nội dung về sau thì phải qua Thư.
