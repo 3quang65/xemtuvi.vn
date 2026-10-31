@@ -95,3 +95,23 @@ Khuyến nghị để Phúc đo Lighthouse ngoài tải ~30 phút:
 - Không nên dừng: canh-bao-ha-tang (giám sát sống), sao lưu, pm2 xemtuvi, nginx. Dispatcher/server.mjs: dừng sẽ làm agent không nhận việc, chỉ dừng nếu Tùng chấp thuận, không cần thiết vì CPU thấp.
 - Tạm ngưng giao việc mới cho agent trong khung đo (các phiên `claude -p` đang chạy là nguồn nhiễu chính, không phải cron).
 - Đo thật chuẩn vẫn nên chạy ngoài VPS (PageSpeed Insights).
+
+## Số đo sau D4 (Phúc, 9 lần)
+Đo 31/10 10:05 đến 10:07, v3.xemtuvi.vn đã nhúng CSS (0 thẻ stylesheet), cấu hình như bảng (mobile, rtt 400, 400 kbps, cpuSlowdown 4), chạy tuần tự.
+Trang `/`:
+| Lần | Điểm | LCP (s) | CLS | TBT (ms) |
+|---|---|---|---|---|
+| 1 | 89 | 2,42 | 0,002 | 259 |
+| 2 | 89 | 2,21 | 0,001 | 312 |
+| 3 | 77 | 2,13 | 0,002 | 839 |
+| 4 | 90 | 2,15 | 0,001 | 300 |
+| 5 | 89 | 2,12 | 0,001 | 340 |
+| 6 | 81 | 2,25 | 0,001 | 533 |
+| 7 | 77 | 2,13 | 0,002 | 811 |
+| 8 | 89 | 2,16 | 0,001 | 336 |
+| 9 | 88 | 2,19 | 0,001 | 353 |
+
+- Trung vị 9 lần: **89** (khoảng 77 đến 90).
+- Trung vị riêng các lần có LCP < 3 s: **89** (9/9 lần; không còn nhóm LCP chậm 4,6 đến 5,5 s).
+- Hai lần thấp (77) do TBT cao (811 đến 839 ms), không do LCP.
+- Tải CPU (load average 1/5/15 phút): trước 3,67 / 2,12 / 2,25; sau 1,37 / 1,75 / 2,09.
