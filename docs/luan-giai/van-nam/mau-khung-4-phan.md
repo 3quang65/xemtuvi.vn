@@ -136,14 +136,14 @@ Tự chấm (sau phiếu Thư): Đúng 5 · Sâu 4 · Cụ thể 4 · Áp dụng
 
 **Căn cứ trên lá số của bạn:** tiểu hạn 2027 ở Thiên Di (Dậu), cũng là cung an Thân; Thái Âm (miếu) cùng Lộc Tồn gốc nhận Hóa Lộc của năm; Văn Xương, Thiên Việt của năm cũng ở đây.
 
-Việc riêng năm nay thường xoay quanh môi trường bên ngoài, đi xa, mối quan hệ mới. Thái Âm miếu ở đây thường cho thấy năm có nguồn lợi, thuận việc nhà cửa, chi tiêu gia đình; nhưng Tân Biên lưu ý hai Lộc cùng cung không mạnh bằng khi chiếu nhau, nên giữ kỳ vọng vừa phải. Văn Xương của năm ở ngay cung hạn, lại có sao tốt chiếu về: năm thuận cho học, thi, hồ sơ, nhất là việc với đối tác ở xa.
+Việc riêng năm nay thường xoay quanh môi trường bên ngoài, đi xa, mối quan hệ mới. Thái Âm miếu nhận Hóa Lộc ở Thiên Di thường cho thấy năm có nguồn lợi khi ra ngoài: đi lại vì công việc, mở rộng quan hệ bên ngoài dễ đem lại lợi, và bạn được thiện cảm nhờ cách cư xử khéo léo, chu đáo; nhưng Tân Biên lưu ý hai Lộc cùng cung không mạnh bằng khi chiếu nhau, nên giữ kỳ vọng vừa phải. Văn Xương của năm ở ngay cung hạn, lại có sao tốt chiếu về: năm thuận cho học, thi, hồ sơ, nhất là việc với đối tác ở xa.
 
 **Nguồn:** Toàn Thư, Tân Biên, Khảo Luận · Tam hợp phái Việt.
 
 **Việc nên làm (3 tháng):** Chọn một kỹ năng hoặc chứng chỉ phục vụ việc với đối tác ở xa (ngoại ngữ, hồ sơ, nghiệp vụ), chia lộ trình 12 tuần, học 3 buổi mỗi tuần. **Cách đo:** ≥ 30/36 buổi.
 
-<!-- quy tắc: NAM-TH-01, NAM-TH-01-DI, VAN-CUNG-09, MENH-YN-08, VAN-CT-TA-01 (giọng xu hướng), NAM-HOA-04, NAM-HOA-09, VAN-SP-02, NAM-LUU-04 (cung Dậu không có Kình, Đà, Kỵ), NAM-TH-04 (L. Văn Xương tại cung tiểu hạn; ≥ 2 nhóm: Khôi Việt, Nhật Nguyệt sáng, Khoa Quyền Lộc, Mã); việc: HT-01 bám NAM-TH-04/tại cung (đủ điều kiện, không vế loại trừ); dạng i; tongHop -->
-Tự chấm (sau phiếu Thư): Đúng 5 · Sâu 4 · Cụ thể 5 · Áp dụng 5 · Giọng 5 = **24/25**. (Đổi "mua sắm" thành "chi tiêu gia đình". Sâu 4: chưa nêu Tang Môn của năm, Thiên Khốc tại cung.)
+<!-- quy tắc: NAM-TH-01, NAM-TH-01-DI, VAN-CUNG-09, MENH-YN-08, VAN-CT-TA-01 (giọng xu hướng), NAM-HOA-04, NAM-HOA-LOC-SANG/Thiên Di (DI-HOA-01, CHUNG-HOA-TA-01; L-5f6b69 bỏ nghĩa nhà cửa không đúng cung), NAM-HOA-09, VAN-SP-02, NAM-LUU-04 (cung Dậu không có Kình, Đà, Kỵ), NAM-TH-04 (L. Văn Xương tại cung tiểu hạn; ≥ 2 nhóm: Khôi Việt, Nhật Nguyệt sáng, Khoa Quyền Lộc, Mã); việc: HT-01 bám NAM-TH-04/tại cung (đủ điều kiện, không vế loại trừ); dạng i; tongHop -->
+Tự chấm (sau phiếu Thư): Đúng 5 · Sâu 4 · Cụ thể 5 · Áp dụng 5 · Giọng 5 = **24/25**. (Đổi "mua sắm" thành "chi tiêu gia đình"; L-5f6b69 thay hẳn bằng nghĩa Thiên Di của Hóa Lộc. Sâu 4: chưa nêu Tang Môn của năm, Thiên Khốc tại cung.)
 
 ### Đoạn 10 · Sự nghiệp — Thiên Cơ (đắc) tại Mùi: Thái Tuế trùng đại vận
 
