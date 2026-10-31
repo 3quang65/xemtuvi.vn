@@ -12,6 +12,7 @@ import { chuanHoa, huyLienHe, lamSachNguon, luuLienHe } from './lien-he';
 import { huyNhanTin, luuNhanTin } from './nhan-tin';
 import { trangCua } from '../su-kien';
 import { ghiSuKien } from '../ghi-su-kien';
+import { capQuyen0dTat, moiTat } from './co-khan';
 import { daDungMa, dungMa, chuDeMoi, kiemMa, nguonDaDung } from './ma-moi';
 import { ghiLoi } from './nhat-ky';
 import { bangGiaCuaYeuCau } from './thu-gia';
@@ -264,6 +265,7 @@ export const lienHeHuy = (req: Request, m: MayChu) => chay(req, async () => {
 export const maMoiVao = (req: Request, m: MayChu) => chay(req, async () => {
   const b = await doc(req);
   if (!b || typeof b.phien !== 'string' || !PHIEN_DO.test(b.phien)) return loi(400, 'du_lieu_sai', 'Dữ liệu không hợp lệ.');
+  if (moiTat()) return loi(410, 'moi_tat', 'Tạm dừng nhận khách mới.');
   const kq = kiemMa(m.db, b.ma);
   if (!kq.hopLe) return json({ hopLe: false, ly: kq.ly });
   // Thử kín 16/11: khách chưa đăng nhập (guest) không được dùng mã mời 0đ — buộc tạo tài khoản để lưu/xem sâu.
@@ -274,6 +276,7 @@ export const maMoiVao = (req: Request, m: MayChu) => chay(req, async () => {
 
 /** GET /api/ma-moi/kiem?ma= : khung "mời mở miễn phí" dùng để biết hiện gì (đã dùng chưa, chuyên đề nào được chọn). */
 export function maMoiKiem(req: Request, m: MayChu) {
+  if (moiTat()) return loi(410, 'moi_tat', 'Tạm dừng nhận khách mới.');
   const ma = new URL(req.url).searchParams.get('ma');
   let kq = kiemMa(m.db, ma);
   const id = nguoiDung(req, m);
@@ -286,6 +289,7 @@ export function maMoiKiem(req: Request, m: MayChu) {
 
 /** POST /api/ma-moi/dung {ma, laSoId, chuDe, phien}: mở một chuyên đề miễn phí. */
 export const maMoiDung = (req: Request, m: MayChu) => chay(req, async () => {
+  if (capQuyen0dTat()) return loi(410, 'cap_quyen_tat', 'Tạm dừng mở miễn phí bằng mã mời.');
   const id = nguoiDung(req, m); if (!id) return canDangNhap();
   const b = await doc(req);
   if (!b || typeof b.phien !== 'string' || !PHIEN_DO.test(b.phien)) return loi(400, 'du_lieu_sai', 'Dữ liệu không hợp lệ.');

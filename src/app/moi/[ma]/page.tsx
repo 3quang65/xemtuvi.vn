@@ -1,18 +1,20 @@
 import type { Metadata } from 'next';
 import { ChanTrang, DauTrang } from '@/components/Khung';
 import MoiVao from '@/components/MoiVao';
+import { moiTat } from '@/lib/may-chu/co-khan';
+
+export const dynamic = 'force-dynamic'; // cờ đọc lúc chạy, không đóng băng lúc build
 
 export const metadata: Metadata = { title: 'Lời mời dùng thử — xemtuvi.vn', robots: { index: false, follow: false } };
 
 /** Thử kín 16/11: cờ KHẨN tắt hoàn toàn luồng nhận khách mới qua mã mời.
- * Bật `THU_KIN_MOI_TAT=1` → /moi/* trả 410 "Tạm dừng nhận khách mới"; giữ nguyên
+ * Bật cờ `THU_KIN_MOI_TAT` (tệp co-khan.json hoặc biến môi trường, xem docs/ky-thuat/co-khan.md) → /moi/* trả 410 "Tạm dừng nhận khách mới"; giữ nguyên
  * luồng miễn phí: lập lá số + xem tóm tắt, không cần tài khoản.
  */
-const THU_KIN_MOI_TAT = process.env.THU_KIN_MOI_TAT === '1';
 
 export default async function TrangMoi({ params }: { params: Promise<{ ma: string }> }) {
   const { ma } = await params;
-  if (THU_KIN_MOI_TAT) {
+  if (moiTat()) {
     return (
       <>
         <DauTrang />
