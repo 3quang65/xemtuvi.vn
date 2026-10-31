@@ -10,12 +10,15 @@ const TRANG = {
   vao_moi: 'form', dung_ma_moi: 'luan-giai', bam_gop_y: 'luan-giai', // bản thử khách mời (ban-thu-khach-moi.md)
   hien_khao_sat: 'luan-giai', tra_loi_khao_sat: 'luan-giai', bo_qua_khao_sat: 'luan-giai', // khảo sát 'đáng tiền' sau bài trả phí (khao-sat-dang-tien_v1.md); không tính vào 4 màn
   xem_ket_qua: 'sinh-con', co_nhap_ngay_thang: 'sinh-con', bam_sang_la_so: 'sinh-con', // công cụ miễn phí /sinh-con-2027; chỉ mang mức (3 giá trị) và có/không nhập ngày tháng, KHÔNG năm sinh
+  kiem_chung_xem: 'luan-giai', xem_truoc_mo: 'luan-giai', bam_mua: 'luan-giai', // thử nghiệm A/B mục kiểm chứng năm đã qua (cờ KIEM_CHUNG_QUA_KHU); kèm nhom_ab, không tính vào 4 màn
   bao_loi: 'luan-giai', // khách báo không xem được đủ phần đã mua (đếm khiếu nại); sau khi mua nên không tính vào 4 màn
 };
 const { MA_GOI, MA_CHU_DE } = require('./goi-ma.js');
 const TEN_SU_KIEN = Object.keys(TRANG);
 const KHAO_SAT = ['hien_khao_sat', 'tra_loi_khao_sat', 'bo_qua_khao_sat'];
 const MA_BAI = [...MA_CHU_DE, 'van-nam-2027']; // mã bài = chuyên đề đã mua (không phải mã lá số, không dữ liệu sinh)
+const AB_KIEM_CHUNG = ['kiem_chung_xem', 'xem_truoc_mo', 'bam_mua']; // chỉ mang nhom_ab ('a' thấy mục, 'b' không)
+const NHOM_AB = ['a', 'b'];
 const CACH_KICH_HOAT = ['cuoi_bai', 'doc_xong'];
 const DIEM = [1, 2, 3, 4, 5];
 // Chỉ máy chủ được ghi (kèm nguon tra từ mã mời); máy khách gửi lên /api/su-kien thì bị từ chối.
@@ -122,7 +125,7 @@ function kiemTraSuKien(b) {
   if (b.ten === 'xem_ket_qua' || b.ten === 'co_nhap_ngay_thang') return kiemSinhCon(b);
   const laVaoTrang = b.ten === 'vao_trang';
   const choPhep = laVaoTrang ? ['ten', 'phien', 'thietBi', ...TRUONG_UTM, 'ref', 'dich', 'may']
-    : CO_GOI.includes(b.ten) ? ['ten', 'phien', 'thietBi', 'goi', 'chuDe', 'nhanh'] : ['ten', 'phien', 'thietBi'];
+    : CO_GOI.includes(b.ten) ? ['ten', 'phien', 'thietBi', 'goi', 'chuDe', 'nhanh'] : AB_KIEM_CHUNG.includes(b.ten) ? ['ten', 'phien', 'thietBi', 'nhom_ab'] : ['ten', 'phien', 'thietBi'];
   const khoa = Object.keys(b);
   if (!khoa.includes('phien') || khoa.some((k) => !choPhep.includes(k))) return null;
   if (typeof b.phien !== 'string' || !/^[A-Za-z0-9_-]{16,32}$/.test(b.phien)) return null;
@@ -130,6 +133,10 @@ function kiemTraSuKien(b) {
   if (khoa.includes('thietBi')) {
     if (typeof b.thietBi !== 'string' || !MAU_THIET_BI.test(b.thietBi)) return null;
     ra.thietBi = b.thietBi;
+  }
+  if (AB_KIEM_CHUNG.includes(b.ten)) {
+    if (!NHOM_AB.includes(b.nhom_ab)) return null;
+    ra.nhom_ab = b.nhom_ab;
   }
   if (laVaoTrang) {
     const n = kiemNguon(b);

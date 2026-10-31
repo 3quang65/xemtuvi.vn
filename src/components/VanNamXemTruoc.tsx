@@ -1,14 +1,16 @@
 import Link from 'next/link';
 import { CONG_BO_GIA, dinhDangGia, dongGoiGop, type Goi } from '@/lib/goi';
 import { useGia } from '@/lib/useGia';
-import type { XemTruocVanNam } from '@/lib/luan-giai/ai/van-nam';
+import type { XemTruocCoKiemChung } from '@/lib/luan-giai/ai/kiem-chung';
+import { guiSuKien } from '@/lib/phien';
+import { KiemChungQuaKhu, nhomKiemChungDaChot } from './KiemChungQuaKhu';
 import { moKhoaTheoCong, XEM_TRUOC } from '@/lib/van-nam-noi-dung';
 
 /**
  * Bản xem trước từ lá số thật (máy chủ đã cắt: chỉ mở một tháng mẫu, không mã quy tắc).
  * Phần khóa mờ chỉ là chữ giữ chỗ cố định, không chứa nội dung trả phí. moBan=false (cổng đóng): không hứa "mua".
  */
-export function VanNamXemTruoc({ xt, mau = false, moBan }: { xt: XemTruocVanNam; mau?: boolean; moBan: boolean }) {
+export function VanNamXemTruoc({ xt, mau = false, moBan }: { xt: XemTruocCoKiemChung; mau?: boolean; moBan: boolean }) {
   return (
     <div className="doan-khoa">
       <h2>{XEM_TRUOC.tieuDe} {xt.canChi}</h2>
@@ -24,6 +26,7 @@ export function VanNamXemTruoc({ xt, mau = false, moBan }: { xt: XemTruocVanNam;
           <p className="tt-ghi-chu">{XEM_TRUOC.ghiChuThang}</p>
         </>
       )}
+      {xt.kiemChung && <KiemChungQuaKhu kiemChung={xt.kiemChung} />}
       <p className="doan-mo" aria-hidden="true">{XEM_TRUOC.khoa}</p>
       <p className="khoa-nhan">{moKhoaTheoCong(moBan)}</p>
       <p className="doan-nguon">{xt.ghiChu}</p>
@@ -42,7 +45,8 @@ export function VanNamNutMua({ laSoId, daCoTron = false }: { laSoId?: number; da
     <>
     <div className="hai-nut">
       {vanNam.map((g) => (
-        <Link key={g.ma} href={`/thanh-toan?goi=${g.ma}${them}`} className={`${g.chinh ? 'nut-chinh' : 'nut-phu'} nut-lien-ket`}>
+        <Link key={g.ma} href={`/thanh-toan?goi=${g.ma}${them}`} className={`${g.chinh ? 'nut-chinh' : 'nut-phu'} nut-lien-ket`}
+          onClick={() => { const nhom = nhomKiemChungDaChot(); if (nhom) guiSuKien('bam_mua', { truong: { nhom_ab: nhom } }); }}>
           {CONG_BO_GIA ? `${g.ten}: ${dinhDangGia(g.gia)}` : g.ten}
         </Link>
       ))}

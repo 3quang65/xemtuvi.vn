@@ -414,3 +414,10 @@ a { color: inherit; }
 /* L-4c7b95: viền lỗi thắng .phieu input[...] (kể cả khi focus) */
 .phieu input[aria-invalid="true"], .phieu input[aria-invalid="true"]:focus, .phieu select[aria-invalid="true"] { border-color: var(--sen); border-width: 2px; }
 .phieu input[aria-invalid="true"]:focus { box-shadow: 0 0 0 3px rgba(168, 52, 79, 0.2); }
+
+/* Mục kiểm chứng năm đã qua (thử nghiệm A/B, cờ KIEM_CHUNG_QUA_KHU) */
+.kiem-chung { border-top: 1px dashed var(--vien); padding-top: 10px; display: grid; gap: 6px; }
+.kiem-chung h3 { font-size: 1rem; margin: 0; color: var(--ngoc-dam); }
+.kiem-chung .can-cu { display: block; color: var(--muc-nhat); font-size: 0.9rem; margin-top: 2px; }
+.kiem-chung .kc-truong-phai { color: var(--muc-nhat); font-size: 0.9rem; }
+.kc-nam { display: grid; gap: 6px; }
