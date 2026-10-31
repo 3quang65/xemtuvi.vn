@@ -17,6 +17,7 @@ import { useGia } from '@/lib/useGia';
 import ThongBaoLoi from './ThongBaoLoi';
 import KhaoSatDangTien from './KhaoSatDangTien';
 import HoiLaSo from './HoiLaSo';
+import { laNgoaiGoiNam, NgoaiGoiNam } from './NgoaiGoiNam';
 import DangNhapMa from './DangNhapMa';
 import { linkBaoLoi, maDonHienThi } from '@/lib/tro-giup';
 
@@ -93,7 +94,7 @@ function VanNam({ laSoId, maDon, daCoTron }: { laSoId: number; maDon: number | n
 }
 
 interface LaSoMay { id: number; tenGoi: string | null; thongTinSinh: ThongTinSinh }
-interface Toi { dangNhap: boolean; quyen?: QuyenGiaoDien[]; laSoIds?: number[]; donGanNhat?: number | null }
+interface Toi { dangNhap: boolean; quyen?: QuyenGiaoDien[]; laSoIds?: number[]; donGanNhat?: number | null; soLaSoThanhVien?: number }
 
 async function layJson<T>(duong: string, body?: unknown): Promise<T> {
   const r = await fetch(duong, body === undefined ? { cache: 'no-store' } : { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
@@ -157,6 +158,19 @@ export default function LuanGiai() {
   if (!toi.dangNhap) return <DangNhap khiXong={() => { setToi(null); setLanTai((n) => n + 1); }} />;
 
   const goi = quyen ? layGoi(quyen.goi) : null;
+  // Có thành viên năm còn hạn nhưng lá số này nằm sau số lá số gói phủ: báo nhẹ, không gọi API nội dung (tránh 403 và E07).
+  const soNam = toi.soLaSoThanhVien ?? 0;
+  const ngoaiGoiNam = laSoId !== null && laNgoaiGoiNam(toi.quyen ?? [], laSoId, dsLaSo.map((l) => l.id), soNam);
+  if (ngoaiGoiNam && laSoId !== null) {
+    return (
+      <section className="trang-buoc">
+        <h1>Luận giải chuyên sâu</h1>
+        {dsLaSo.length > 1 && <ChonLaSo ds={dsLaSo} id={laSoId} doi={(id) => { setLaSoId(id); setChon(null); }} />}
+        <NgoaiGoiNam laSoId={laSoId} soLaSo={soNam} />
+        <NutGopY />
+      </section>
+    );
+  }
   if (!goi || laSoId === null) {
     return (
       <section className="trang-buoc">
