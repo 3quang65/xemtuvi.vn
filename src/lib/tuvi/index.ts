@@ -191,6 +191,7 @@ export function moTaQuyUoc(ls: LaSo): string[] {
       : 'Sinh từ 23 giờ: giữ ngày sinh cũ, chỉ đổi sang giờ Tý (theo lựa chọn của bạn).');
   }
   if (ls.amLichTz === 8) ds.push('Âm lịch trước năm 1968 tính theo lịch thời đó (múi giờ UTC+8).');
+  else if (ls.quyUoc.muiGioLich === 'utc7' && ls.duong.nam < 1968) ds.push('Âm lịch trước năm 1968 tính theo múi giờ UTC+7 như lịch hiện nay (theo lựa chọn của bạn).');
   return ds;
 }
 

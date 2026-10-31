@@ -176,6 +176,8 @@ a { color: inherit; }
   border-radius: 10px; min-height: 52px; padding: 0 16px; cursor: pointer; transition: background 0.15s;
 }
 .nut-phu:hover { background: var(--ngoc-nhat); }
+.cach-khac { display: grid; gap: 10px; margin-top: 12px; max-width: 34em; }
+.cach-khac .nut-phu { min-height: 44px; padding: 8px 16px; text-align: left; }
 
 .tom-tat { background: var(--giay); border: 1px solid var(--vien); border-radius: 18px; box-shadow: var(--bong); padding: 20px; margin: 0 0 48px; display: grid; gap: 14px; }
 .tom-tat h2 { font-size: 1.3rem; }

@@ -96,7 +96,35 @@ function ChiTietCung({ c, ln }: { c: Cung; ln: LuuNien }) {
   );
 }
 
-export default function LaSoBan({ laSo, namHienTai, onDoiQuyUoc }: { laSo: LaSo; namHienTai: number; onDoiQuyUoc: (p: Partial<QuyUoc>) => void }) {
+/** Nút "xem theo cách khác" cho 3 trường hợp hay lệch với trang khác: giờ Tý muộn, trước 1968, miền Nam trước 1975. Giữ ngày giờ khách nhập. */
+function CachKhac({ laSo, coMienNam, onDoiQuyUoc, onDoiMienNam }: { laSo: LaSo; coMienNam: boolean; onDoiQuyUoc: (p: Partial<QuyUoc>) => void; onDoiMienNam: (b: boolean) => void }) {
+  const q = laSo.quyUoc;
+  const nut: { id: string; chu: string; bam: () => void }[] = [];
+  if (laSo.gioChuan.gio.startsWith('23:')) {
+    nut.push(q.gioTyMuon === 'ngaySau'
+      ? { id: 'ty-muon', chu: 'Xem theo cách giữ nguyên ngày sinh (không tính sang ngày hôm sau)', bam: () => onDoiQuyUoc({ gioTyMuon: 'giuNgay' }) }
+      : { id: 'ty-muon', chu: 'Quay lại cách mặc định: tính sang ngày hôm sau', bam: () => onDoiQuyUoc({ gioTyMuon: 'ngaySau' }) });
+  }
+  if (laSo.duong.nam < 1968) {
+    nut.push(q.muiGioLich === 'lichSu'
+      ? { id: 'truoc-1968', chu: 'Xem theo lịch UTC+7 như hiện nay (cách nhiều trang khác dùng)', bam: () => onDoiQuyUoc({ muiGioLich: 'utc7' }) }
+      : { id: 'truoc-1968', chu: 'Quay lại cách mặc định: lịch thời đó (UTC+8)', bam: () => onDoiQuyUoc({ muiGioLich: 'lichSu' }) });
+  }
+  if (coMienNam) {
+    nut.push(laSo.gioChuan.daQuyDoi
+      ? { id: 'mien-nam', chu: 'Xem theo giờ đồng hồ như đã nhập (không quy đổi về giờ chuẩn)', bam: () => onDoiMienNam(false) }
+      : { id: 'mien-nam', chu: 'Quay lại cách mặc định: quy giờ miền Nam về giờ chuẩn', bam: () => onDoiMienNam(true) });
+  }
+  if (nut.length === 0) return null;
+  return (
+    <div className="cach-khac">
+      {nut.map((n) => <button key={n.id} type="button" className="nut-phu" data-cach-khac={n.id} onClick={n.bam}>{n.chu}</button>)}
+    </div>
+  );
+}
+
+export default function LaSoBan({ laSo, namHienTai, onDoiQuyUoc, onDoiMienNam }: { laSo: LaSo; namHienTai: number; onDoiQuyUoc: (p: Partial<QuyUoc>) => void; onDoiMienNam: (b: boolean) => void }) {
+  const [coMienNam] = useState(laSo.gioChuan.daQuyDoi);
   const cungMenh = laSo.cung.find((c) => c.ten === 'Mệnh')!;
   const [chon, setChon] = useState<number>(cungMenh.chi);
   const [namXem, setNamXem] = useState(Math.max(namHienTai, laSo.am.nam));
@@ -106,6 +134,7 @@ export default function LaSoBan({ laSo, namHienTai, onDoiQuyUoc }: { laSo: LaSo;
 
   const d = laSo.duong, a = laSo.am;
   const quyUoc = moTaQuyUoc(laSo);
+  if (coMienNam && !laSo.gioChuan.daQuyDoi) quyUoc.push('Giờ khai sinh miền Nam giữ nguyên theo đồng hồ đã nhập, không quy về giờ chuẩn (theo lựa chọn của bạn).');
   return (
     <section className="ket-qua" aria-label="Lá số tử vi">
       <div className="ban">
@@ -135,11 +164,12 @@ export default function LaSoBan({ laSo, namHienTai, onDoiQuyUoc }: { laSo: LaSo;
       <ChiTietCung c={laSo.cung[chon]} ln={ln} />
 
       <p className="chu-giai">
-        Độ sáng: M Miếu · V Vượng · Đ Đắc · B Bình hòa · H Hãm. Lộc, Quyền, Khoa, Kỵ là tứ hóa theo can năm sinh.
+        Độ sáng: M Miếu · V Vượng · Đ Đắc · B Bình hòa · H Hãm, theo bảng của phái Việt (dòng sách cụ Thiên Lương); vài ô có thể khác bảng của sách hoặc trang khác. Lộc, Quyền, Khoa, Kỵ là tứ hóa theo can năm sinh.
         Sao ghi &quot;L.&quot; là sao lưu và lưu tứ hóa của năm {ln.canChi} ({namXem}), an theo can chi năm xem.
         {vanNay && ` Đại vận đang đi (${namXem}, ${tuoiMu} tuổi mụ) được tô đậm.`}
       </p>
       {quyUoc.length > 0 && <p className="chu-giai">Lá số lập theo: {quyUoc.join(' ')}</p>}
+      <CachKhac laSo={laSo} coMienNam={coMienNam} onDoiQuyUoc={onDoiQuyUoc} onDoiMienNam={onDoiMienNam} />
       <TuyChonTruongPhai quyUoc={laSo.quyUoc} onDoi={onDoiQuyUoc} />
     </section>
   );

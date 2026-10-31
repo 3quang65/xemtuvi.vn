@@ -128,6 +128,16 @@ export default function LapLaSo() {
     } catch { /* giữ lá số hiện tại */ }
   }
 
+  function doiMienNam(b: boolean) {
+    if (!tt) return;
+    const moi: ThongTinSinh = { ...tt, mienNamTruoc1975: b };
+    try {
+      setLaSo(lapLaSo(moi));
+      setTt(moi);
+      luuThongTinSinh(moi);
+    } catch { /* giữ lá số hiện tại */ }
+  }
+
   return (
     <>
       <section className="mo-dau">
@@ -239,7 +249,7 @@ export default function LapLaSo() {
         )}
         {laSo && (
           <>
-            <LaSoBan key={JSON.stringify(laSo.duong) + laSo.gio.dongHo + laSo.gioChuan.gio + laSo.gioiTinh} laSo={laSo} namHienTai={namAmHienTai()} onDoiQuyUoc={doiQuyUoc} />
+            <LaSoBan key={JSON.stringify(laSo.duong) + laSo.gio.dongHo + laSo.gioChuan.gio + laSo.gioiTinh} laSo={laSo} namHienTai={namAmHienTai()} onDoiQuyUoc={doiQuyUoc} onDoiMienNam={doiMienNam} />
             <TomTatMienPhi laSo={laSo} />
             <LienHe />
           </>
