@@ -41,7 +41,7 @@ Nguồn: Wikipedia tiếng Trung mục 地支; Master Sean Chan (trang tam hợp
 | Mã | Hành nạp âm bố/mẹ | Câu B |
 |---|---|---|
 | SC27-B1 | Kim | Kim sinh Thủy, mệnh {bố\|mẹ} sinh ra mệnh Thiên Hà Thủy của bé theo vòng tương sinh |
-| SC27-B2 | Mộc | Thủy sinh Mộc, mệnh của bé và của {bố\|mẹ} nối nhau trên vòng tương sinh |
+| SC27-B2 | Mộc | Thủy sinh Mộc, mệnh Thiên Hà Thủy của bé và mệnh {bố\|mẹ} có quan hệ tương sinh |
 | SC27-B3 | Thủy | cùng hành Thủy với bé, quan hệ bình hòa |
 | SC27-B4 | Thổ | Thổ khắc Thủy, một điểm khác nhịp theo vòng ngũ hành |
 | SC27-B5 | Hỏa | Thủy khắc Hỏa, một điểm khác nhịp theo vòng ngũ hành |
@@ -50,14 +50,14 @@ Nguồn: bảng nạp âm spec an sao mục 3.1; chu trình sinh khắc Wikipedi
 
 ## 3. Câu ghi rõ trường phái (hiện ngay dưới kết quả, chữ nhỏ)
 
-> Kết quả dựa trên lý thuyết can chi – ngũ hành chung theo năm sinh, **không phải phép an sao Tử Vi Đẩu Số**; muốn hiểu sâu từng người, cần lá số lập theo ngày giờ sinh.
+> Kết quả được tính tự động theo năm sinh, dựa trên lý thuyết can chi – ngũ hành chung, **không phải phép an sao Tử Vi Đẩu Số**; muốn hiểu sâu từng người, cần lá số lập theo ngày giờ sinh.
 
 ## 4. Lời mời cuối (hiện ở cả ba mức, chọn một trong hai biến thể)
 
 | Mã | Biến thể | Dòng dẫn | Nút |
 |---|---|---|---|
 | SC27-C1 | Lập lá số | Năm sinh chỉ là lớp ngoài cùng. Lá số Tử Vi theo ngày giờ sinh giúp bạn hiểu mình rõ hơn: điểm mạnh, cách mình yêu thương và chăm lo cho gia đình. | Lập lá số miễn phí |
-| SC27-C2 | Vận 2027 | Năm Đinh Mùi 2027 mở ra những gì cho riêng bố, riêng mẹ? Xem Vận 2027 của từng người để có định hướng rõ ràng cho một năm nhiều thay đổi. | Xem Vận 2027 của bố mẹ |
+| SC27-C2 | Vận 2027 | Năm Đinh Mùi 2027 mở ra những gì cho riêng bố, riêng mẹ? Xem Vận 2027 lập theo lá số ngày giờ sinh của từng người. | Xem Vận 2027 của bố mẹ |
 
 Gợi ý dùng: mặc định SC27-C1; SC27-C2 dùng khi chạy mùa Vận 2027 hoặc thử A/B (Quân đo).
 
@@ -66,7 +66,7 @@ Gợi ý dùng: mặc định SC27-C1; SC27-C2 dùng khi chạy mùa Vận 2027 
 - **Bé sinh 01/01–05/02/2027** (hiện dưới ô chọn hoặc khi khách hỏi):
   > Bé chào đời từ 01/01 đến 05/02/2027 thuộc năm Bính Ngọ, vì Tết Đinh Mùi rơi vào ngày 06/02/2027. Công cụ này dành cho bé sinh từ 06/02/2027 đến 25/01/2028.
 - **Bố/mẹ sinh tháng 1–2 dương lịch, bỏ qua ô ngày tháng** (hiện cạnh can chi đã dùng):
-  > Nếu sinh trước Tết năm đó, kết quả theo năm trước. Bạn có thể nhập ngày tháng sinh để công cụ tính đúng năm âm lịch.
+  > Kết quả đang tính theo năm dương lịch bạn nhập. Nếu sinh trước Tết năm đó, tuổi âm lịch của bạn thuộc năm trước và kết quả có thể khác: hãy nhập ngày tháng sinh để công cụ tính đúng.
 - Luôn hiện lại can chi đã dùng ("Mẹ: 1991 – Canh Ngọ (sinh trước Tết)") để khách tự kiểm (quy tắc mục 4, bước 3).
 
 ## 6. Cần Thư duyệt
