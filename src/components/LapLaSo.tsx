@@ -1,10 +1,9 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { canhGio, kiemTraThongTin, lapLaSo, namAmHienTai, type LaSo, type QuyUoc, type ThongTinSinh } from '@/lib/tuvi';
-import LaSoBan from './LaSoBan';
-import TomTatMienPhi from './TomTatMienPhi';
-import LienHe from './LienHe';
+import dynamic from 'next/dynamic';
+import { canhGio } from '@/lib/tuvi/nhe';
+import type { LaSo, QuyUoc, ThongTinSinh } from '@/lib/tuvi';
 import { docThongTinSinh, ghiNguon, guiSuKien, layNamGoiY, luuThongTinSinh } from '@/lib/phien';
 import { noiTen, phanLoaiLoiNhap, type LoiNhap, type OLoi } from '@/lib/loi-nhap';
 import { linkBaoLoi } from '@/lib/tro-giup';
@@ -29,6 +28,11 @@ type FormState = {
   muiKhac: string; // UTC± tự nhập khi chọn MUI_KHAC
 };
 
+/** Engine an sao (~40 KB) và khối kết quả (lá số, tóm tắt, luận giải mẫu) chỉ nạp khi khách lập lá số hoặc quay lại có phiên: trang đầu gọn, TBT thấp. */
+const napEngine = () => import('@/lib/tuvi');
+const napKetQua = () => import('./KetQuaLaSo');
+const KetQuaLaSo = dynamic(napKetQua, { ssr: false });
+
 const GIO = Array.from({ length: 24 }, (_, i) => i);
 
 export default function LapLaSo() {
@@ -47,7 +51,9 @@ export default function LapLaSo() {
     ghiNguon();
     const daLuu = docThongTinSinh();
     if (daLuu) {
-      try { setLaSo(lapLaSo(daLuu)); setTt(daLuu); setCoMienNam(!!daLuu.mienNamTruoc1975); return; } catch { setHong(daLuu); return; } // E04: giữ thông tin để bấm thử lại
+      void napKetQua();
+      napEngine().then(({ lapLaSo }) => { setLaSo(lapLaSo(daLuu)); setTt(daLuu); setCoMienNam(!!daLuu.mienNamTruoc1975); }).catch(() => setHong(daLuu)); // E04: giữ thông tin để bấm thử lại
+      return;
     }
     const namGoiY = layNamGoiY(); // từ /sinh-con-2027: điền sẵn năm sinh
     if (namGoiY) setF((s) => ({ ...s, nam: String(namGoiY) }));
@@ -69,8 +75,10 @@ export default function LapLaSo() {
   const doi = <K extends keyof FormState>(k: K, v: FormState[K]) => setF((s) => ({ ...s, [k]: v }));
 
   /** Lập lá số từ thông tin đã kiểm. Lỗi do ngày âm lịch không tồn tại: báo E02; lỗi khác là phía mình: E04, giữ thông tin để thử lại. */
-  function lapTu(t: ThongTinSinh) {
+  async function lapTu(t: ThongTinSinh) {
     try {
+      void napKetQua();
+      const { lapLaSo } = await napEngine();
       setLaSo(lapLaSo(t));
       setTt(t);
       setCoMienNam(!!t.mienNamTruoc1975);
@@ -87,7 +95,7 @@ export default function LapLaSo() {
     }
   }
 
-  function lap(e: React.FormEvent) {
+  async function lap(e: React.FormEvent) {
     e.preventDefault();
     const t: Partial<ThongTinSinh> = {
       ten: f.ten.trim(),
@@ -103,7 +111,11 @@ export default function LapLaSo() {
       ...(dungNuocNgoai ? { sinhNuocNgoai: true, muiGioUTC: mui ?? undefined, nuoc: tenNuoc || undefined } : {}),
       quyUoc: hienTyMuon && f.giuNgayTyMuon ? { gioTyMuon: 'giuNgay' } : undefined,
     };
-    const l = phanLoaiLoiNhap(t) ?? (kiemTraThongTin(t) ? ({ ma: 'E02', o: 'ngay', lich: t.lich === 'am' ? 'am' : 'duong', nhuan: t.lich === 'am' && !!t.nhuan } as LoiNhap) : null);
+    let l = phanLoaiLoiNhap(t);
+    if (!l) {
+      const { kiemTraThongTin } = await napEngine();
+      l = kiemTraThongTin(t) ? ({ ma: 'E02', o: 'ngay', lich: t.lich === 'am' ? 'am' : 'duong', nhuan: t.lich === 'am' && !!t.nhuan } as LoiNhap) : null;
+    }
     if (l) { setLoi(l); setHong(null); requestAnimationFrame(() => document.getElementById(`loi-${l.o}`)?.scrollIntoView({ block: 'center' })); return; }
     lapTu(t as ThongTinSinh);
   }
@@ -122,20 +134,22 @@ export default function LapLaSo() {
     />
   )) : null;
 
-  function doiQuyUoc(p: Partial<QuyUoc>) {
+  async function doiQuyUoc(p: Partial<QuyUoc>) {
     if (!tt) return;
     const moi: ThongTinSinh = { ...tt, quyUoc: { ...tt.quyUoc, ...p } };
     try {
+      const { lapLaSo } = await napEngine();
       setLaSo(lapLaSo(moi));
       setTt(moi);
       luuThongTinSinh(moi);
     } catch { /* giữ lá số hiện tại */ }
   }
 
-  function doiMienNam(b: boolean) {
+  async function doiMienNam(b: boolean) {
     if (!tt) return;
     const moi: ThongTinSinh = { ...tt, mienNamTruoc1975: b };
     try {
+      const { lapLaSo } = await napEngine();
       setLaSo(lapLaSo(moi));
       setTt(moi);
       luuThongTinSinh(moi);
@@ -252,11 +266,7 @@ export default function LapLaSo() {
           <ThongBaoLoi ma="E04" nut={{ 'tai-lai': () => lapTu(hong), 'gui-bao-loi': linkBaoLoi({ tinhHuong: 'E04' }) }} />
         )}
         {laSo && (
-          <>
-            <LaSoBan key={JSON.stringify(laSo.duong) + laSo.gio.dongHo + laSo.gioChuan.gio + laSo.gioiTinh} laSo={laSo} namHienTai={namAmHienTai()} onDoiQuyUoc={doiQuyUoc} coMienNam={coMienNam} onDoiMienNam={doiMienNam} />
-            <TomTatMienPhi laSo={laSo} />
-            <LienHe />
-          </>
+          <KetQuaLaSo laSo={laSo} onDoiQuyUoc={doiQuyUoc} coMienNam={coMienNam} onDoiMienNam={doiMienNam} />
         )}
       </div>
     </>

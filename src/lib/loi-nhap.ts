@@ -1,6 +1,7 @@
 // Phân loại lỗi ở form lập lá số thành E01 (thiếu), E02 (ngày sai), E03 (giờ sai) để hiện đúng thông báo dưới đúng ô.
 // Khớp kiemTraThongTin() của engine: trả null khi và chỉ khi engine cũng chấp nhận (có test đối chiếu).
-import { muiGioHopLe, type ThongTinSinh } from './tuvi';
+import { muiGioHopLe } from './tuvi/nhe';
+import type { ThongTinSinh } from './tuvi';
 
 export type OLoi = 'gioiTinh' | 'ngay' | 'gio' | 'muiGio';
 export interface LoiNhap { ma: 'E01' | 'E02' | 'E03'; o: OLoi; thieu?: string[]; lich?: 'duong' | 'am'; nhuan?: boolean }

@@ -1,6 +1,6 @@
 // Danh sách tĩnh các nước/múi giờ Việt kiều hay gặp cho ô "Sinh ở nước ngoài?".
 // Không dùng IANA/Intl: luật giờ mùa hè đổi theo năm nên khách tự chọn múi đúng mùa lúc sinh (nhãn ghi rõ giờ mùa hè/mùa đông).
-import { muiGioHopLe, nhanMuiGio } from './tuvi';
+import { muiGioHopLe, nhanMuiGio } from './tuvi/nhe';
 
 export interface MuiNuoc { id: string; nuoc: string; nhan: string; mui: number }
 
