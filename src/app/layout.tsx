@@ -8,6 +8,7 @@ const sans = Be_Vietnam_Pro({
   weight: ['400', '500', '600'],
   variable: '--font-sans',
   display: 'swap',
+  preload: false,
 });
 
 const serif = Noto_Serif({
@@ -15,6 +16,7 @@ const serif = Noto_Serif({
   weight: ['400', '600'],
   variable: '--font-serif',
   display: 'swap',
+  preload: false,
 });
 
 export const metadata: Metadata = {
