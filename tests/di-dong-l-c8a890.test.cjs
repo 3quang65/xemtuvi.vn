@@ -31,3 +31,8 @@ test('L1: nhãn tứ hóa trong ô bàn >= 0,72rem (11,5px) trên điện thoạ
 test('L3: nút đổi năm ‹ › giữ rộng 44px, không bị co lại trong hàng flex', () => {
   assert.match(mobile, /\.nam-xem button\s*\{[^}]*flex:\s*0 0 44px/);
 });
+
+test('L2: liên kết "Chưa mua? Lập lá số miễn phí" ở /luan-giai dùng lớp vùng bấm 44px', () => {
+  assert.match(doc('src/components/LuanGiai.tsx'), /<Link href="\/" className="lk-nho">Chưa mua\?/);
+  assert.match(mobile, /\.lk-nho\s*\{[^}]*min-height:\s*44px/);
+});

@@ -116,7 +116,7 @@ function DangNhap({ khiXong }: { khiXong: () => void }) {
         <p className="ghi-chu-rieng-tu thu">Bản thử: đăng nhập bằng email và mã khôi phục, không gửi thông tin đến Google hay Zalo.</p>
         <DangNhapMa idEmail="email-xem" nhanEmail="Email bạn đã dùng khi mua" khiXong={khiXong} />
       </div>
-      <p><Link href="/">Chưa mua? Lập lá số miễn phí</Link></p>
+      <p><Link href="/" className="lk-nho">Chưa mua? Lập lá số miễn phí</Link></p>
     </section>
   );
 }
