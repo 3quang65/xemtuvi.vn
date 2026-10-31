@@ -9,7 +9,7 @@ server {
     # Áp dụng trước location / (proxy) vì nginx khớp location cụ thể trước.
     location ~ ^/moi($|/) {
       default_type text/html;
-      return 410 '<!DOCTYPE html><html lang="vi"><head><meta charset="utf-8"><title>Tạm dừng nhận khách mới</title></head><body><h1>Tạm dừng nhận khách mới</h1><p>Chúng mình đang tạm dừng nhận khách mới để chuẩn bị cho bản ra mắt (16/11).</p><p><a href="/">Lập lá số và xem tóm tắt miễn phí</a></p></body></html>';
+      return 410 '<!DOCTYPE html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>body{font-family:system-ui,sans-serif;max-width:32rem;margin:2rem auto;padding:0 1rem;line-height:1.6;color:#222}a{color:#8a2be2}</style><title>Tạm dừng nhận khách mới</title></head><body><h1>Tạm dừng nhận khách mới</h1><p>Chúng mình đang tạm dừng nhận khách mới để chuẩn bị cho bản ra mắt (16/11).</p><p><a href="/">Lập lá số và xem tóm tắt miễn phí</a></p></body></html>';
     }
     location / {
         proxy_pass http://127.0.0.1:3000;
