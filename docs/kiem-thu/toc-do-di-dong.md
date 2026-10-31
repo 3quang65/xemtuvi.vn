@@ -2,13 +2,13 @@
 
 Đo ngày 31/10/2026 trên https://v3.xemtuvi.vn bởi Phúc. Lighthouse 13.6, mobile (Moto G Power, 412px), mô phỏng 3G chậm (RTT 400ms, 400 kbps) + CPU chậm 4x. Mỗi trang chạy 3 lần, ghi trung vị. Mục tiêu nghiệm thu: Performance >= 85.
 
-| # | Trang | Performance | LCP (ms) | CLS | TBT (ms) | Sau (Bảo điền) |
+| # | Trang | Performance | LCP (ms) | CLS | TBT (ms) | Sau (Perf trung vị 5 lần) |
 |---|-------|------------:|---------:|----:|---------:|----------------|
-| 1 | `/` trang chủ | 84 | 2140 | 0 | 409 | |
-| 2 | `/` form đã điền (1) | 84 | 2140 | 0 | 0 | |
-| 3 | lá số sau khi lập (2) | 56 | n/a | 0.350 | 327 | |
-| 4 | `/chon-goi` | 63 | 4531 | 0 | 323 | |
-| 5 | `/cung/phu-the` | 74 | 2118 | 0 | 728 | |
+| 1 | `/` trang chủ | 84 | 2140 | 0 | 409 | 78 (89, 90, 60, 78, 59); LCP 2096; CLS 0; TBT 338 |
+| 2 | `/` form đã điền (1) | 84 | 2140 | 0 | 0 | như hàng 1; TBT khi điền 0 đến 77 (3 lần) |
+| 3 | lá số sau khi lập (2) | 56 | n/a | 0.350 | 327 | 60 đến 64 (3 lần); CLS vẫn 0.350 (xem ghi chú dưới); TBT 184 đến 240 |
+| 4 | `/chon-goi` | 63 | 4531 | 0 | 323 | 76 (76, 74, 59, 85, 87); LCP 2113; CLS 0; TBT 356 |
+| 5 | `/cung/phu-the` | 74 | 2118 | 0 | 728 | 90 (86, 59, 92, 90, 91); LCP 2099; CLS 0; TBT 253 |
 
 (1) Form và lá số cùng URL `/` (trạng thái trong trình duyệt, không có URL riêng). Hàng 2: Performance và LCP là của lần tải `/` (trùng hàng 1, vì lần tải chưa có dữ liệu điền); TBT và CLS đo trong lúc điền ngày, tháng, năm, giờ sinh, giới tính (Lighthouse timespan, trung vị 3 lần).
 (2) Hàng 3: đo timespan từ lúc bấm "Lập lá số" đến khi lá số hiện. Lighthouse không có LCP cho tương tác nên ghi n/a; điểm 56 là điểm timespan (chỉ gồm TBT, CLS), trung vị 3 lần (62, 55, 56). Thời gian bấm đến thấy lá số: 405 đến 599 ms.
@@ -52,3 +52,10 @@ Ghi chú H: TTFB 471 ms ở lần đo này (cao hơn hai trang kia ~260 ms), do 
 
 ## Cách đo lại
 `/tmp/lh/run.sh` (3 trang điều hướng, lighthouse CLI với `--throttling.rttMs=400 --throttling.throughputKbps=400 --throttling.cpuSlowdownMultiplier=4`) và `/tmp/flow.mjs` (form điền + lập lá số, Lighthouse user flow bằng puppeteer-core). Script nằm trong /tmp, không thuộc repo.
+
+## Số đo "sau" (Tùng đo 31/10, sau commit 2b9bd30 và 3932385)
+- Cùng cấu hình như "trước" (mô phỏng 3G chậm, CPU 4x), 5 lần mỗi trang; kết quả lệch hai nhóm: LCP ~2,1 s (điểm 85 đến 92) hoặc ~4,6 đến 5,5 s (điểm 46 đến 60); nhóm chậm chiếm khoảng 1/4 số lần ở mọi trang. Mạng quan sát thật trong cùng lần chạy xong trong ~1 s, nên nhiều khả năng chênh do VPS dùng chung làm nhiễu số liệu đầu vào của mô phỏng.
+- D6 (thêm): bỏ preload 8 file font (commit 3932385), bớt ~110 KB tải sớm; không loại được nhóm chậm.
+- CLS lá số: cú dịch duy nhất (0.350) là phần "giới thiệu" ẩn đi ngay sau cú bấm (hadRecentInput=true); Chrome thật/CrUX loại trừ, Lighthouse flow vẫn tính vì bấm bằng puppeteer.
+- Chưa làm: D4 (polyfills, CSS chặn render), D5 (TBT lá số).
+- Cần: đo ngoài VPS (PageSpeed Insights hoặc máy khác, không tốn phí) để có số tin cậy; trong VPS chưa chốt được >= 85 cho /, lá số, /chon-goi.
