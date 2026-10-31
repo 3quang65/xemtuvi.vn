@@ -88,7 +88,6 @@ export default function SinhCon2027() {
         <OTuoi vai="bố" id="sc-bo" v={bo} doi={setBo} loi={loi.bo} />
         <OTuoi vai="mẹ" id="sc-me" v={me} doi={setMe} loi={loi.me} />
         <button type="submit" className="nut-chinh">Xem kết quả</button>
-        <p className="tt-ghi-chu">Chỉ tính ngay trên máy của bạn, không lưu năm sinh.</p>
       </form>
       {kq && (
         <section ref={ketQuaRef} className="phieu sc-ket-qua" aria-live="polite" aria-labelledby="sc-muc">
