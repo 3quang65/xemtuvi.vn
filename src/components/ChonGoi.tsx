@@ -1,36 +1,16 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { useEffect, useId, useMemo, useState } from 'react';
-import type { LaSo } from '@/lib/tuvi';
-import { chonDoanMau, tachDoanMau } from '@/lib/luan-giai/doan-mau';
-import { DOAN_MAU } from '@/lib/luan-giai/doan-du-phong';
+import dynamic from 'next/dynamic';
+import { useEffect, useId, useState } from 'react';
 import { CHU_DE, chuDanVanNam, CONG_BO_GIA, CONG_BO_HOAN_TIEN, DIEU_KIEN_XEM_LAI, GHI_CHU_AI, HOAN_TIEN, PHUONG_PHAP, type Goi, type MaChuDe } from '@/lib/goi';
-import { docYDinh, guiSuKien } from '@/lib/phien';
+import { docThongTinSinh, docYDinh, guiSuKien } from '@/lib/phien';
 import { useGia } from '@/lib/useGia';
-import { useLaSoDaLuu } from '@/lib/useLaSoDaLuu';
 import { KhungMoiMo } from './KhungMoi';
 import { ThanGoi } from './ThanGoi';
 
-/** Đoạn mẫu lấy từ chính lá số của khách: câu đầu đọc được, phần sau làm mờ. Không có quy tắc khớp thì dùng ví dụ minh họa. */
-function DoanKhoa({ laSo }: { laSo: LaSo }) {
-  const mau = useMemo(() => chonDoanMau(laSo.cung.map((c) => ({ ten: c.ten, chi: c.chi, tenChi: c.tenChi, chinhTinh: c.chinhTinh.map((s) => s.ten) }))), [laSo]);
-  const { ro, mo } = tachDoanMau(mau ? mau.cau : DOAN_MAU.cau);
-  return (
-    <div className="doan-khoa">
-      <h2>Một đoạn trong luận giải {mau ? 'lá số của bạn' : 'chuyên sâu'}</h2>
-      {mau ? (
-        <p className="tt-ghi-chu">Cung {mau.cung} của bạn ở {mau.tenChi}, có {mau.chinhTinh.join(', ')}.</p>
-      ) : (
-        <p className="tt-ghi-chu">Ví dụ minh họa với sao Thái Âm tại Mệnh, không phải lá số của bạn.</p>
-      )}
-      <p className="doan-ro">{mau ? ro : `Thái Âm sáng tại Mệnh: ${ro}`}</p>
-      <p className="doan-mo" aria-hidden="true">{mo}</p>
-      <p className="doan-nguon">Quy tắc {mau ? mau.ma : DOAN_MAU.ma} · Nguồn: {(mau ? mau.nguon : DOAN_MAU.nguon).join(', ')}</p>
-      <p className="khoa-nhan">Phần còn lại và 11 cung khác mở khi bạn chọn một gói bên dưới.</p>
-    </div>
-  );
-}
+/** Đoạn mẫu cần engine lập lá số (~60 KB JS): nạp riêng sau khi bảng gói đã hiện, giữ chỗ để không nhảy bố cục. */
+const DoanKhoa = dynamic(() => import('./DoanKhoa'), { ssr: false, loading: () => <div className="doan-khoa doan-khoa-cho" aria-hidden="true" /> });
 
 /** Nhãn phương pháp và nguồn: khách biết bản luận theo trường phái nào trước khi trả tiền. */
 function PhuongPhap() {
@@ -73,12 +53,14 @@ function TheGoi({ g, onChon }: { g: Goi; onChon: (g: Goi, chuDe?: MaChuDe) => vo
 
 export default function ChonGoi() {
   const router = useRouter();
-  const laSo = useLaSoDaLuu();
-  useEffect(() => { if (laSo) guiSuKien('vao_chon_goi'); }, [laSo]);
+  const [coSinh, setCoSinh] = useState(false);
+  useEffect(() => {
+    if (docThongTinSinh()) { setCoSinh(true); guiSuKien('vao_chon_goi'); } else router.replace('/');
+  }, [router]);
   const gia = useGia(true);
   const [uuTienVanNam, setUuTien] = useState(false);
   useEffect(() => { setUuTien(docYDinh() === 'van-nam-2027'); }, []);
-  if (!laSo || !gia.san) return <p className="dang-tai" role="status">Đang tải…</p>;
+  if (!coSinh || !gia.san) return <p className="dang-tai" role="status">Đang tải…</p>;
 
   const chonGoi = (x: Goi, chuDe?: MaChuDe) => {
     guiSuKien('chon_goi', { goi: x.ma, chuDe });
@@ -87,7 +69,7 @@ export default function ChonGoi() {
   return (
     <>
       <KhungMoiMo />
-      <DoanKhoa laSo={laSo} />
+      <DoanKhoa />
       <PhuongPhap />
       <p className="tt-ghi-chu">Luận giải dựa trên 948 quy tắc có ghi nguồn — xem <a href="/phuong-phap">Phương pháp &amp; nguồn</a>.</p>
       <div className="khu-chon-goi">

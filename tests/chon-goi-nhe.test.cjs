@@ -17,3 +17,9 @@ test('đoạn mẫu dự phòng trùng đúng quy tắc MENH-TA-01 trong dữ li
   assert.equal(dp.cau, goc.cau);
   assert.deepEqual(dp.nguon, goc.nguon);
 });
+
+test('ChonGoi không import engine lập lá số trực tiếp (đoạn mẫu nạp trễ qua DoanKhoa)', () => {
+  const src = fs.readFileSync(path.join(__dirname, '../src/components/ChonGoi.tsx'), 'utf8');
+  assert.doesNotMatch(src, /useLaSoDaLuu|@\/lib\/tuvi/);
+  assert.match(src, /dynamic\(\(\) => import\('\.\/DoanKhoa'\)/);
+});
