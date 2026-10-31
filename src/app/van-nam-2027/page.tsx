@@ -5,7 +5,7 @@ import { docBai, dsMa } from '@/lib/bai-viet/doc';
 import { NHOM } from '@/lib/bai-viet/nhom';
 
 const TIEU_DE = 'Vận năm 2027 theo Tử Vi: đọc theo tuổi và mệnh';
-const MO_TA = 'Tổng hợp vận năm 2027 (Đinh Mùi) theo tuổi và mệnh, mỗi nhận định ghi rõ sao, cung và trường phái. Đăng ký để nhận tin khi có bài mới.';
+const MO_TA = 'Tổng hợp vận năm 2027 (Đinh Mùi) theo tuổi và mệnh, có nêu cung và trường phái. Đăng ký để nhận tin khi có bài mới.';
 
 export const metadata: Metadata = {
   title: `${TIEU_DE} — xemtuvi.vn`,
