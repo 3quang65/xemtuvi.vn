@@ -244,3 +244,13 @@ Sửa: máy chủ chuyển 302 `/chon-goi` -> `/` khi chưa có cờ `xtv_co_sin
 - Lưu ý: `/chon-goi` không cờ nay kết thúc ở `/`, nên số của nó đo trang chủ qua một lần 302 (đúng thiết kế). Bảng gói chưa được Lighthouse đo; cần có cờ `xtv_co_sinh` và sessionStorage.
 - Nhóm chậm còn lại 1 đến 2 lần mỗi trang (76 đến 79, TBT 717 đến 925 ms), tương tự các đợt trước; không kéo trung vị xuống dưới ngưỡng.
 - Lá số (`/tmp/lh/flow.mjs`, 3 lần, devtools throttling): nạp trang 0,85 / 0,82 / 0,91 (TBT 362-740, LCP 1,4-1,7 s); bước điền 0,99-1; bước lập lá số 1,00 / 1,00 / 0,99 (TBT 0-79, CLS 0); lập xong sau 126-279 ms. Số lần ít hơn 9.
+
+## CLS /chon-goi có phiên (Phúc, L-6a9621, 31/10/2026)
+Đo https://v3.xemtuvi.vn/chon-goi, cookie xtv_co_sinh=1 + sessionStorage xtv.sinh, không throttle, Chromium headless, 9 lần/cỡ. URL cuối /chon-goi, thấy 6 thẻ gói (.the-goi), không bị chuyển về /.
+
+| Cỡ | 9 lần | Trung vị | Lớn nhất |
+|---|---|---|---|
+| 375 | 0,0008 x7; 0,0018; 0,0008 (lần thứ 5 là 0,0018) | 0,0008 | 0,0018 |
+| 1366 | 0,0043 x7; 0,0044 x2 | 0,0043 | 0,0044 |
+
+Kết luận: đạt (<= 0,1) ở cả hai cỡ. Lighthouse chưa chạy.
