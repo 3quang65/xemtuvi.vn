@@ -1,11 +1,11 @@
-// Kiểm chứng năm đã qua (2025, 2026): vài nhận định miễn phí về chính lá số để khách tự đối chiếu với năm mình đã sống, trước phần khóa của Vận 2027.
+// Kiểm chứng năm 2025 và 2026: vài nhận định miễn phí về chính lá số để khách tự đối chiếu với năm mình đã sống, trước phần khóa của Vận 2027.
 // Chỉ đọc vị trí lưu niên từ engine (qua src/lib/tuvi/index.ts), không dùng bộ quy tắc / nội dung 2027, không có mã quy tắc trong kết quả.
-// Câu chữ do Hạnh duyệt (docs/san-pham/kiem-chung-mau.md); KIEM_CHUNG_CAU_TAM = true khi còn dùng câu tạm chờ Hạnh/Thư.
+// Câu chữ do Hạnh duyệt (docs/san-pham/kiem-chung-mau.md); KIEM_CHUNG_CAU_TAM = false vì câu chữ đã được Thư duyệt.
 import { luuNien, type LaSo } from '../../tuvi';
 import { kiemTraNamXem, NAM_KIEM_CHUNG, xemTruocVanNam, type XemTruocVanNam } from './van-nam';
 
-/** TẠM – chờ Hạnh/Thư: mọi câu dưới đây là khung tạm. Đổi sang false khi câu của Hạnh đã được Thư duyệt và thay vào CHU_DE_CUNG / MAU_CAU. */
-export const KIEM_CHUNG_CAU_TAM = true;
+/** false: câu chữ đã là bản Thư duyệt (lần 2, 31/10/2026) và đã thay vào CHU_DE_CUNG / MAU_CAU. true chỉ khi quay lại câu tạm. */
+export const KIEM_CHUNG_CAU_TAM = false;
 
 export interface NhanDinhKiemChung { text: string; canCu: string }
 export interface KiemChungNam { nam: number; canChi: string; nhanDinh: NhanDinhKiemChung[] }
@@ -14,46 +14,59 @@ export type XemTruocCoKiemChung = XemTruocVanNam & { kiemChung?: KiemChungNam[] 
 /** Cờ môi trường, mặc định TẮT. Chỉ '1' mới bật. Đọc mỗi lần gọi (không cố định lúc nạp module). */
 export const kiemChungBat = (): boolean => process.env.KIEM_CHUNG_QUA_KHU === '1';
 
-/** TẠM – chờ Hạnh/Thư: chủ đề của từng cung, viết ở mức xu hướng. */
-const CHU_DE_CUNG: Record<string, string> = {
-  'Mệnh': 'cách bạn nhìn nhận và đặt mình trong cuộc sống',
-  'Phụ Mẫu': 'quan hệ với cha mẹ, thầy cô, người bề trên',
-  'Phúc Đức': 'đời sống nội tâm và cảm giác an yên',
-  'Điền Trạch': 'nhà cửa, chỗ ở và tài sản tích lũy',
-  'Quan Lộc': 'công việc và hướng đi sự nghiệp',
-  'Nô Bộc': 'bạn bè, đồng nghiệp và người cùng làm việc',
-  'Thiên Di': 'việc đi lại, môi trường mới và các mối quan hệ bên ngoài',
-  'Tật Ách': 'sức khỏe và nhịp sinh hoạt',
-  'Tài Bạch': 'thu nhập và cách bạn quản lý tiền',
-  'Tử Tức': 'con cái, dự án riêng và những gì bạn vun trồng',
-  'Phu Thê': 'tình cảm và quan hệ gần gũi',
-  'Huynh Đệ': 'anh chị em và những người đồng hành thân thiết',
+/** Chủ đề 12 cung, cụm danh từ ghép sau "những chuyện về …". Câu chữ Hạnh viết, Thư duyệt (docs/san-pham/kiem-chung-mau.md mục 2.2). */
+export const CHU_DE_CUNG: Record<string, string> = {
+  'Mệnh': 'bản thân bạn, cách bạn nhìn nhận mình và những lựa chọn của riêng bạn',
+  'Phụ Mẫu': 'cha mẹ, thầy cô, cấp trên và chuyện học hành, giấy tờ',
+  'Phúc Đức': 'đời sống tinh thần, giá trị sống và sự gắn bó với gia đình, họ hàng',
+  'Điền Trạch': 'nhà cửa, nơi ở, tổ ấm và tài sản tích lũy lâu dài',
+  'Quan Lộc': 'công việc, chuyên môn và vị trí của bạn trong nghề',
+  'Nô Bộc': 'bạn bè, đồng nghiệp, đối tác và mạng lưới quan hệ quanh bạn',
+  'Thiên Di': 'việc đi xa, môi trường mới và cơ hội đến từ bên ngoài',
+  'Tật Ách': 'nhịp sinh hoạt, cách bạn nghỉ ngơi và đối diện áp lực',
+  'Tài Bạch': 'thu nhập, cách kiếm tiền và cách bạn chi tiêu, giữ tiền',
+  'Tử Tức': 'những dự án sáng tạo, việc bạn ấp ủ và người nhỏ tuổi hơn mà bạn chăm lo',
+  'Phu Thê': 'tình cảm, hôn nhân và người đồng hành bên bạn',
+  'Huynh Đệ': 'anh chị em và những người ngang hàng cùng bạn hợp tác',
 };
 
-const NGUON = 'Căn cứ: Lưu Thái Tuế an theo năm âm lịch, tam hợp phái Việt (đặc tả an sao xemtuvi.vn).';
+/** Câu mẫu M2–M6 chép nguyên văn từ kiem-chung-mau.md mục 2.1 (M1, M7 là câu tĩnh nằm ở KIEM_CHUNG_NHAN). */
+export const MAU_CAU = {
+  m2: (nam: number, canChi: string, tt: string, chuDe: string) =>
+    `Năm ${nam} (${canChi}), Lưu Thái Tuế đi vào cung ${tt} trên lá số của bạn. xemtuvi.vn lấy cung này làm trọng điểm năm, nên những chuyện về ${chuDe} thường nổi rõ hơn các mảng khác.`,
+  m3: (nam: number, tt: string) =>
+    `Căn cứ: Lưu Thái Tuế năm ${nam} ở cung có chi trùng chi năm, trên lá số của bạn là cung ${tt}. Lấy cung này làm trọng điểm năm là quy ước của xemtuvi.vn; sách Việt như Tân Biên, Khảo Luận lấy cung tiểu hạn làm cung năm chính. Bài Vận 2027 đọc cả hai cung.`,
+  m4: (nam: number, cl: string, chuDe: string) =>
+    `Cũng trong năm ${nam}, Hóa Lộc của năm ${nam} rơi vào cung ${cl}, nên cơ hội dễ đến hơn qua những chuyện về ${chuDe}. Đây là khả năng nghiêng về; mức độ còn tùy cả lá số và lựa chọn của bạn.`,
+  m5: (nam: number, can: string, sao: string, cl: string) =>
+    `Căn cứ: can ${can} của năm ${nam} cho Hóa Lộc vào sao ${sao}, sao này nằm ở cung ${cl}. Đây là Hóa Lộc của năm, khác Tứ hóa gốc của lá số. Đọc Tứ hóa của năm là quy ước của xemtuvi.vn; sách Việt như Tân Biên, Khảo Luận không dùng lớp này.`,
+  m6: (nam: number, tt: string) =>
+    `Năm ${nam}, Hóa Lộc của năm cũng rơi vào chính cung ${tt}, nên mảng này vừa nổi rõ vừa là nơi cơ hội dễ đến hơn. Đây là khả năng nghiêng về, không phải điều chắc xảy ra.`,
+};
 
 /** Cung (tên) ứng với chi của lưu niên. */
 const tenCung = (ls: LaSo, chi: number | null) => (chi == null ? '' : ls.cung[chi].ten);
 
 /**
- * Nhận định năm đã qua của một lá số. Mỗi năm một câu về trọng điểm (cung Lưu Thái Tuế); năm 2026 thêm một câu về cung hóa lộc của lưu niên.
- * Tổng 3 câu. Nói về xu hướng truy về cung/sao, không khẳng định sự kiện, không đe dọa, không kêu gọi mua.
+ * Nhận định kiểm chứng của một lá số, mỗi năm (2025, 2026): M2 + căn cứ M3 về cung Lưu Thái Tuế; M4 (hoặc M6 khi trùng cung) + căn cứ M5 về Hóa Lộc của năm.
+ * Nói về xu hướng truy về cung/sao, không khẳng định sự kiện, không đe dọa, không kêu gọi mua.
  */
 export function kiemChungQuaKhu(ls: LaSo): KiemChungNam[] {
-  return NAM_KIEM_CHUNG.map((nam, i) => {
+  return NAM_KIEM_CHUNG.map((nam) => {
     kiemTraNamXem(nam, ls, { kiemChung: true });
     const ln = luuNien(ls, nam, true);
     const tt = tenCung(ls, ln.luuThaiTue);
+    const can = ln.canChi.split(' ')[0];
     const nhanDinh: NhanDinhKiemChung[] = [{
-      text: `Năm ${nam} (${ln.canChi}): lá số của bạn đặt trọng điểm của năm ở cung ${tt}, liên quan đến ${CHU_DE_CUNG[tt] ?? tt}. Đây là xu hướng theo cách an sao.`,
-      canCu: `${NGUON} Lưu Thái Tuế năm ${nam} nằm ở cung ${tt}.`,
+      text: MAU_CAU.m2(nam, ln.canChi, tt, CHU_DE_CUNG[tt] ?? tt),
+      canCu: MAU_CAU.m3(nam, tt),
     }];
     const loc = ln.luuTuHoa.find((h) => h.hoa === 'Hóa Lộc');
-    if (i === NAM_KIEM_CHUNG.length - 1 && loc) {
+    if (loc) {
       const cl = tenCung(ls, loc.chi);
       nhanDinh.push({
-        text: `Cũng trong năm ${nam}, nguồn thuận của năm dễ đến qua lĩnh vực của cung ${cl} (${CHU_DE_CUNG[cl] ?? cl}). Đây là khả năng nghiêng về, không phải điều chắc xảy ra.`,
-        canCu: `Căn cứ: Hóa Lộc lưu niên (${loc.sao}) rơi vào cung ${cl}, tam hợp phái Việt (đặc tả an sao xemtuvi.vn).`,
+        text: loc.chi === ln.luuThaiTue ? MAU_CAU.m6(nam, tt) : MAU_CAU.m4(nam, cl, CHU_DE_CUNG[cl] ?? cl),
+        canCu: MAU_CAU.m5(nam, can, loc.sao, cl),
       });
     }
     return { nam, canChi: ln.canChi, nhanDinh };

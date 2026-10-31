@@ -47,6 +47,6 @@ test('Cờ bật: có kiemChung 2025 và 2026, không lộ mã quy tắc, không
     const s = JSON.stringify(d);
     assert.ok(!/NAM-[A-Z]+-|quyTacId|thamChieu|maNghienCuu/.test(s), 'lộ mã quy tắc');
     assert.ok(!('thang' in d.xemTruoc) && !('muc' in d.xemTruoc), 'lộ nội dung tháng/mục trả phí');
-    assert.ok(!JSON.stringify(d.xemTruoc.kiemChung).includes('2027'));
+    assert.ok(!JSON.stringify(d.xemTruoc.kiemChung).replaceAll('Bài Vận 2027 đọc cả hai cung', '').includes('2027')); // M3 (Thư duyệt) nhắc tên bài, không lộ nội dung trả phí
   } finally { delete process.env.KIEM_CHUNG_QUA_KHU; }
 });

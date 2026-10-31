@@ -13,7 +13,7 @@ export function nhomKiemChungDaChot(): NhomKiemChung | null {
 }
 
 /**
- * Mục "đối chiếu với năm đã qua", đặt trước phần khóa. Chỉ được dựng khi máy chủ gửi dữ liệu (cờ KIEM_CHUNG_QUA_KHU bật).
+ * Mục "đối chiếu năm 2025 và 2026", đặt trước phần khóa. Chỉ được dựng khi máy chủ gửi dữ liệu (cờ KIEM_CHUNG_QUA_KHU bật).
  * Nhóm A/B theo mã phiên: A thấy mục, B không. Sự kiện chỉ mang nhóm, không dữ liệu sinh.
  */
 export function KiemChungQuaKhu({ kiemChung }: { kiemChung: KiemChungNam[] }) {
@@ -30,6 +30,7 @@ export function KiemChungQuaKhu({ kiemChung }: { kiemChung: KiemChungNam[] }) {
     <section className="kiem-chung" aria-labelledby="kc-tieu-de" data-nhom="a">
       <h3 id="kc-tieu-de">{KIEM_CHUNG_NHAN.tieuDe}</h3>
       <p className="tt-ghi-chu">{KIEM_CHUNG_NHAN.minhBach}</p>
+      <p className="kc-dau-muc">{KIEM_CHUNG_NHAN.dauMuc}</p>
       {kiemChung.map((n) => (
         <div key={n.nam} className="kc-nam">
           {n.nhanDinh.map((c) => (
@@ -37,6 +38,7 @@ export function KiemChungQuaKhu({ kiemChung }: { kiemChung: KiemChungNam[] }) {
           ))}
         </div>
       ))}
+      <p className="kc-cuoi-muc">{KIEM_CHUNG_NHAN.cuoiMuc}</p>
       <p className="kc-truong-phai">{KIEM_CHUNG_NHAN.truongPhai}</p>
     </section>
   );
