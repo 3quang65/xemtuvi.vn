@@ -232,3 +232,15 @@ Nguyên nhân: Lighthouse mở `/chon-goi` không có phiên nên trang chuyển
 Gốc: không phải do nạp trễ. Sau 2d3189c trang chủ dựng nhanh hơn nên khi `/chon-goi` chuyển về `/` bằng `router.replace` (sau hydrate), đoạn `p.ghi-chu-rieng-tu` của trang chủ vẽ lúc ~0,96 s, lớn hơn phần tử cũ của `/chon-goi` và trở thành ứng viên LCP; bản mô phỏng tính nó theo chuỗi: nạp `/chon-goi` -> hydrate -> `?_rsc` -> chunk trang chủ -> vẽ, ở CPU chậm 4x ra 9,3 s. Trước đó trang chủ vẽ quá trễ nên LCP là phần tử của `/chon-goi` (2,1 s).
 Sửa: máy chủ chuyển 302 `/chon-goi` -> `/` khi chưa có cờ `xtv_co_sinh` (cookie phiên giá trị `1`, đặt khi lưu thông tin sinh; thông tin sinh vẫn chỉ ở sessionStorage). Lighthouse giờ đo thẳng trang `/`. Có cờ mà thiếu sessionStorage (tab khác) vẫn chuyển về `/` ở phía trình duyệt như cũ.
 Đo cục bộ (next start, http, cùng cấu hình, 5 lần): Performance 84, 82, 84, 84, 87 (trung vị 84), LCP 2,53 s, TBT trung vị 389 ms; finalUrl `/`. Cùng cấu hình cục bộ trước sửa: LCP 14 đến 16 s, điểm ~66. Cục bộ không có nén brotli của Cloudflare nên số trên v3 cần Phúc đo lại sau triển khai.
+
+## Số đo sau 0b85919 (Phúc, L-bf67de) - 3 trang, 9 lần mỗi trang
+Đo 31/10 12:50 đến 12:58 trên https://v3.xemtuvi.vn, tuần tự, mobile, rtt 400, 400 kbps, cpuSlowdown 4 (`/tmp/lh/run31.sh`). Xác nhận trước đo: GET `/chon-goi` không cờ trả 302 về `https://v3.xemtuvi.vn/`. Load average (1 phút) trước mỗi lần: 2,29 giảm còn 0,91 (trang 1); 1,45 đến 2,63 (trang 2); 1,26 đến 1,78 rồi 0,95 (trang 3); phần lớn dưới 2,2; sau đo 0,02 đến 1,27.
+| Trang | finalUrl | Điểm 9 lần | Trung vị | LCP trung vị (s) | TBT trung vị (ms) | CLS trung vị |
+|---|---|---|---|---|---|---|
+| `/` | `/` | 91, 84, 76, 92, 91, 91, 86, 91, 91 | **91** | 2,14 | 282 | 0,002 |
+| `/chon-goi` | `/` (302) | 91, 87, 85, 76, 89, 91, 89, 89, 89 | **89** | 2,17 | 327 | 0,002 |
+| `/cung/phu-the` | `/cung/phu-the` | 79, 91, 90, 91, 89, 90, 92, 93, 78 | **90** | 2,16 | 237 | 0,053 |
+- ĐẠT cả 3 tiêu chí (>= 85): `/chon-goi` 89 (trước sửa 65), `/` 91, `/cung/phu-the` 90.
+- Lưu ý: `/chon-goi` không cờ nay kết thúc ở `/`, nên số của nó đo trang chủ qua một lần 302 (đúng thiết kế). Bảng gói chưa được Lighthouse đo; cần có cờ `xtv_co_sinh` và sessionStorage.
+- Nhóm chậm còn lại 1 đến 2 lần mỗi trang (76 đến 79, TBT 717 đến 925 ms), tương tự các đợt trước; không kéo trung vị xuống dưới ngưỡng.
+- Lá số (`/tmp/lh/flow.mjs`, 3 lần, devtools throttling): nạp trang 0,85 / 0,82 / 0,91 (TBT 362-740, LCP 1,4-1,7 s); bước điền 0,99-1; bước lập lá số 1,00 / 1,00 / 0,99 (TBT 0-79, CLS 0); lập xong sau 126-279 ms. Số lần ít hơn 9.
