@@ -323,6 +323,7 @@
   "tuanTriet": "Cung đối chiếu {doi} đóng {ttDoi}: phần ảnh hưởng chiếu sang cung {cung} nhẹ đi hoặc đến chậm hơn; nên xem đây là nền tham khảo, không dựa hẳn vào nó."
  },
  "quyNhanLuuTuoi50": {
+    "tuoiTu": 50,
   "_khoa": "Thay NAM-LUU-03.noiDungTheoCung (van-nam-2027.json) khi tuổi âm năm xem >= 50. Cùng cú pháp {sao:L. Thiên Khôi|L. Thiên Việt} như câu gốc; {cung} không dùng vì câu đã theo cung. Không có khóa cho cung nào thì dùng câu gốc.",
   "Mệnh": "Quý nhân của năm ({sao:L. Thiên Khôi|L. Thiên Việt} lưu) ở cung Mệnh: kinh nghiệm của bạn dễ được người có vị thế để ý và tin cậy; hợp nhận lời mời góp ý, chia sẻ điều mình đã trải qua.",
   "Huynh Đệ": "Quý nhân của năm ({sao:L. Thiên Khôi|L. Thiên Việt} lưu) ở cung Huynh Đệ: anh chị em, bạn lâu năm dễ có người ở vị thế tốt sẵn lòng giúp đỡ; hợp nối lại liên lạc và cùng lo việc chung của gia đình.",

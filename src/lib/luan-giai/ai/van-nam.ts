@@ -482,6 +482,18 @@ function cungGocCua(n: Ngu, q: QuyTacNam): Cung[] {
   }
 }
 
+/**
+ * NAM-LUU-03 (quý nhân Khôi Việt lưu): từ tuổi âm (mụ) tuoiTu trở lên thay noiDungTheoCung bằng bảng quyNhanLuuTuoi50 (nen-cung-thang.json).
+ * Tuổi âm = năm xem − năm âm lịch sinh + 1 (ln.tuoiMu, cùng quy ước đại vận). Cung thiếu khóa dùng câu gốc.
+ */
+const QUY_NHAN_TUOI = nenCungThangJson.quyNhanLuuTuoi50 as unknown as { tuoiTu: number } & Record<string, string | number>;
+export function quyTacTheoTuoi<T extends { id: string; noiDungTheoCung?: Record<string, string> }>(q: T, tuoiMu: number): T {
+  if (q.id !== 'NAM-LUU-03' || tuoiMu < QUY_NHAN_TUOI.tuoiTu) return q;
+  const moi: Record<string, string> = { ...q.noiDungTheoCung };
+  for (const [cung, chu] of Object.entries(QUY_NHAN_TUOI)) if (!cung.startsWith('_') && typeof chu === 'string') moi[cung] = chu;
+  return { ...q, noiDungTheoCung: moi };
+}
+
 /** {sao} = mọi sao khớp; {sao:A|B} = chỉ những sao trong danh sách A|B có thật trên lá số (bỏ tiền tố "L. "), nối bằng " và ". */
 function dien(q: QuyTacNam, sao: string[], g: Cung, thang = false): string {
   const bo = (s: string) => s.replace(/^L\. /, '');
@@ -608,8 +620,9 @@ function ghepBai(ls: LaSo, namXem: number) {
 
   // Mọi đoạn khớp của các lớp (trừ tháng).
   const tatCa: Khop[] = [];
-  for (const q of QUY_TAC) {
-    if (q.lop === 'thang') continue;
+  for (const q0 of QUY_TAC) {
+    if (q0.lop === 'thang') continue;
+    const q = quyTacTheoTuoi(q0, ln.tuoiMu);
     for (const g of cungGocCua(n, q)) {
       const sao = khopQuyTacNam(n, g, q);
       if (sao !== null) tatCa.push({ q, text: dien(q, sao, g), sao, cung: g });
