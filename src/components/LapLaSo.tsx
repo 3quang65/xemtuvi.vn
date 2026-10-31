@@ -5,7 +5,7 @@ import { canhGio, kiemTraThongTin, lapLaSo, namAmHienTai, type LaSo, type QuyUoc
 import LaSoBan from './LaSoBan';
 import TomTatMienPhi from './TomTatMienPhi';
 import LienHe from './LienHe';
-import { docThongTinSinh, ghiNguon, guiSuKien, luuThongTinSinh } from '@/lib/phien';
+import { docThongTinSinh, ghiNguon, guiSuKien, layNamGoiY, luuThongTinSinh } from '@/lib/phien';
 import { noiTen, phanLoaiLoiNhap, type LoiNhap, type OLoi } from '@/lib/loi-nhap';
 import { linkBaoLoi } from '@/lib/tro-giup';
 import ThongBaoLoi from './ThongBaoLoi';
@@ -49,6 +49,8 @@ export default function LapLaSo() {
     if (daLuu) {
       try { setLaSo(lapLaSo(daLuu)); setTt(daLuu); setCoMienNam(!!daLuu.mienNamTruoc1975); return; } catch { setHong(daLuu); return; } // E04: giữ thông tin để bấm thử lại
     }
+    const namGoiY = layNamGoiY(); // từ /sinh-con-2027: điền sẵn năm sinh
+    if (namGoiY) setF((s) => ({ ...s, nam: String(namGoiY) }));
     guiSuKien('vao_form');
   }, []);
 

@@ -7,6 +7,7 @@ const K_PHIEN = 'xtv.phien';
 const K_NGUON = 'xtv.nguon';
 const K_VAO = 'xtv.vao-trang';
 const K_Y_DINH = 'xtv.y-dinh';
+const K_NAM_GOI_Y = 'xtv.nam-goi-y';
 const K_MA_MOI = 'xtv.ma-moi';
 
 const kho = (loai: 'session' | 'local') => (typeof window === 'undefined' ? null : loai === 'session' ? window.sessionStorage : window.localStorage);
@@ -26,6 +27,14 @@ export function laSoDaLuu(): LaSo | null {
   const t = docThongTinSinh();
   if (!t) return null;
   try { return lapLaSo(t); } catch { return null; }
+}
+
+/** Năm sinh từ công cụ /sinh-con-2027, chỉ trong tab này (không lên URL/máy chủ); form lập lá số lấy một lần để điền sẵn ô năm. */
+export const luuNamGoiY = (n: number) => ghi('session', K_NAM_GOI_Y, n);
+export function layNamGoiY(): number | null {
+  const n = doc<number>('session', K_NAM_GOI_Y);
+  try { kho('session')?.removeItem(K_NAM_GOI_Y); } catch { /* bỏ qua */ }
+  return typeof n === 'number' ? n : null;
 }
 
 /** Ý định từ trang đích (ví dụ 'van-nam-2027'): màn chọn gói đưa khu đó lên đầu. */

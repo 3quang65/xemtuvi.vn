@@ -87,14 +87,14 @@ Lưu ý lịch: Tết 1985 Việt Nam là 21/1 (Trung Quốc 20/2), Tết 2007 l
 ## 5. Gộp điểm và ba mức
 
 - Mỗi người: `s = A + B` (từ −2 đến +2). Cả hai: `T = s_bố + s_mẹ` (từ −4 đến +4).
-- **Thuận**: `T ≥ 2`. **Cân bằng**: `−1 ≤ T ≤ 1`. **Cần lưu ý**: `T ≤ −2`.
-- Phân bố kiểm thử (mọi cặp năm 1965–2005, 41 × 41 = 1.681 cặp): Thuận 20%, Cân bằng 73%, Cần lưu ý 7%. Đa số ở mức giữa, đúng định vị không gây lo.
+- **Thuận**: `T ≥ 2`. **Cân bằng**: `−1 ≤ T ≤ 1`. **Khác nhịp**: `T ≤ −2`.
+- Phân bố kiểm thử (mọi cặp năm 1965–2005, 41 × 41 = 1.681 cặp): Thuận 20%, Cân bằng 73%, Khác nhịp 7%. Đa số ở mức giữa, đúng định vị không gây lo.
 - Chỉ dùng mức cho **cả gia đình**; phần từng người chỉ hiện quan hệ ("Bố tuổi Ngọ: lục hợp với Mùi"; "Mẹ mệnh Kim: Kim sinh Thủy"), không gắn nhãn mức cho từng người.
 
 Gợi ý lời (Hạnh viết bản cuối, Thư duyệt; giữ giọng nhẹ, không hứa hẹn):
 - **Thuận**: "Theo can chi năm sinh, tuổi bố mẹ và năm Đinh Mùi 2027 có nhiều điểm tương hợp. Đây là một góc tham khảo văn hóa; điều quan trọng nhất vẫn là sự sẵn sàng của cả nhà."
 - **Cân bằng**: "Tuổi bố mẹ và năm Đinh Mùi 2027 có điểm hợp, có điểm khác nhịp, cân bằng như phần lớn gia đình. Năm sinh không quyết định tính cách hay tương lai của bé."
-- **Cần lưu ý**: "Theo can chi, tuổi bố mẹ và năm Đinh Mùi khác nhịp ở vài điểm. Đây chỉ là một lớp tham khảo; nhiều gia đình như vậy vẫn rất gắn bó. Muốn hiểu sâu hơn, nên xem lá số theo ngày giờ sinh của từng người."
+- **Khác nhịp**: "Theo can chi, tuổi bố mẹ và năm Đinh Mùi khác nhịp ở vài điểm. Đây chỉ là một lớp tham khảo; nhiều gia đình như vậy vẫn rất gắn bó. Muốn hiểu sâu hơn, nên xem lá số theo ngày giờ sinh của từng người."
 - Cuối mọi mức: lời mời lập lá số miễn phí / xem Vận 2027 của bố mẹ.
 
 ## 6. Bảng tra
@@ -178,7 +178,7 @@ Các năm ngoài bảng: dùng công thức mục 2–3 (chu kỳ 60 năm: năm 
 
 ## 7. Điểm chưa chắc và lựa chọn đã làm
 
-1. Bỏ tương hình (Sửu – Tuất – Mùi), tương hại (Tý – Mùi): có trong nguồn 1 mục 2 nhưng dễ gây lo; chỉ đạo chỉ nêu tam hợp, lục hợp, lục xung. Nếu Thư/Minh muốn thêm, phân bố mức sẽ lệch về "Cần lưu ý".
+1. Bỏ tương hình (Sửu – Tuất – Mùi), tương hại (Tý – Mùi): có trong nguồn 1 mục 2 nhưng dễ gây lo; chỉ đạo chỉ nêu tam hợp, lục hợp, lục xung. Nếu Thư/Minh muốn thêm, phân bố mức sẽ lệch về "Khác nhịp".
 2. Không dùng thiên can (ví dụ Đinh hợp Nhâm, Đinh khắc Tân/Quý): có thể là tiêu chí thứ ba; để ngoài cho đơn giản và tránh trùng với B.
 3. Ngưỡng ba mức và tương sinh hai chiều cùng +1 là lựa chọn sản phẩm, không có trong sách.
 4. Nguồn sách cổ cho hợp/xung và sinh khắc **chưa kiểm chứng** nguyên văn; nguồn hiện có: Wikipedia (2 bản), một trang Bát tự, spec nội bộ.
@@ -191,8 +191,8 @@ Các năm ngoài bảng: dùng công thức mục 2–3 (chu kỳ 60 năm: năm 
 | 1 | 1980 Canh Thân, Thạch Lựu **Mộc** | 1984 Giáp Tý, Hải Trung **Kim** | Bố: A 0 (Thân không thuộc), B +1 (Thủy sinh Mộc) → +1. Mẹ: A 0, B +1 (Kim sinh Thủy) → +1 | +2 | Thuận |
 | 2 | 2002 Nhâm Ngọ, Dương Liễu **Mộc** | 1993 Quý Dậu, Kiếm Phong **Kim** | Bố: A +1 (Ngọ – Mùi lục hợp), B +1 → +2. Mẹ: A 0, B +1 → +1 | +3 | Thuận |
 | 3 | 1990 Canh Ngọ, Lộ Bàng **Thổ** | 1992 Nhâm Thân, Kiếm Phong **Kim** | Bố: A +1 (lục hợp), B −1 (Thổ khắc Thủy) → 0. Mẹ: A 0, B +1 → +1 | +1 | Cân bằng |
-| 4 | 1986 Bính Dần, Lô Trung **Hỏa** | 1991 Tân Mùi, Lộ Bàng **Thổ** | Bố: A 0, B −1 (Thủy khắc Hỏa) → −1. Mẹ: A 0 (cùng chi Mùi), B −1 → −1 | −2 | Cần lưu ý |
-| 5 (trước Tết) | 1986 Bính Dần, **Hỏa** | sinh **01/02/1991** dương: trước Tết 15/2/1991 → âm lịch 17/12 **Canh Ngọ 1990**, **Thổ** | Bố: −1. Mẹ: A +1 (lục hợp), B −1 → 0. (Nếu lấy nhầm 1991 Tân Mùi: T = −2, Cần lưu ý) | −1 | Cân bằng |
+| 4 | 1986 Bính Dần, Lô Trung **Hỏa** | 1991 Tân Mùi, Lộ Bàng **Thổ** | Bố: A 0, B −1 (Thủy khắc Hỏa) → −1. Mẹ: A 0 (cùng chi Mùi), B −1 → −1 | −2 | Khác nhịp |
+| 5 (trước Tết) | 1986 Bính Dần, **Hỏa** | sinh **01/02/1991** dương: trước Tết 15/2/1991 → âm lịch 17/12 **Canh Ngọ 1990**, **Thổ** | Bố: −1. Mẹ: A +1 (lục hợp), B −1 → 0. (Nếu lấy nhầm 1991 Tân Mùi: T = −2, Khác nhịp) | −1 | Cân bằng |
 
 Ca 1 là đúng mẫu câu khách hay hỏi ("ck 80 vk 84 sinh 2027 hợp không", `nghien-cuu-thi-truong/mxh/2026-10-31.md`). Ca 5: đổi lịch 01/02/1991 → 17/12/1990 âm, kiểm bằng `solar2lunar` của engine tham chiếu.
 

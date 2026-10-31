@@ -26,7 +26,7 @@ def diem_hanh(h):         # tiêu chí B
     if KHAC[h] == CON_HANH: return -1, f"{h} khắc Thủy"
     if KHAC[CON_HANH] == h: return -1, f"Thủy khắc {h}"
     raise ValueError(h)
-def muc(T): return "Thuận" if T >= 2 else ("Cần lưu ý" if T <= -2 else "Cân bằng")
+def muc(T): return "Thuận" if T >= 2 else ("Khác nhịp" if T <= -2 else "Cân bằng")
 def mot_nguoi(y):
     c, z = canchi(y); h = nap_hanh(c, z)
     a, b = diem_chi(z)[0], diem_hanh(h)[0]
@@ -53,7 +53,7 @@ if __name__ == "__main__":
     # 5 ca mẫu (tính tay trong tài liệu)
     # (năm âm bố, năm âm mẹ, T kỳ vọng, mức kỳ vọng); ca 5: mẹ sinh 01/02/1991 dương = năm âm 1990
     CA = [(1980, 1984, 2, "Thuận"), (2002, 1993, 3, "Thuận"), (1990, 1992, 1, "Cân bằng"),
-          (1986, 1991, -2, "Cần lưu ý"), (1986, 1990, -1, "Cân bằng")]
+          (1986, 1991, -2, "Khác nhịp"), (1986, 1990, -1, "Cân bằng")]
     for yb, ym, T0, M0 in CA:
         b, m, T, M = ket_qua(yb, ym)
         ok = (T, M) == (T0, M0); loi += not ok

@@ -9,7 +9,7 @@ const sc = nap('lib/sinh-con-2027/index.ts');
 
 const GOC = path.join(__dirname, '..');
 const QUY_TAC = fs.readFileSync(path.join(GOC, 'docs/san-pham/sinh-con-2027-quy-tac.md'), 'utf8');
-const MUC_VI = { 'Thuận': 'thuan', 'Cân bằng': 'can-bang', 'Cần lưu ý': 'can-luu-y' };
+const MUC_VI = { 'Thuận': 'thuan', 'Cân bằng': 'can-bang', 'Khác nhịp': 'can-luu-y' };
 
 test('5 ca mẫu mục 8 (ca 5: sinh 01/02/1991 dương = trước Tết, năm âm 1990)', () => {
   const ca = [

@@ -397,3 +397,17 @@ a { color: inherit; }
 .o label { font-size: 0.95rem; }
 .o .nhuan { align-items: flex-start; min-height: 44px; }
 .o .nhuan input[type="checkbox"] { width: 22px; height: 22px; flex: none; margin-top: 2px; accent-color: var(--ngoc); }
+
+/* L-4c7b95: huy hiệu mức (dịu màu, không đỏ; thêm biểu tượng hình để không chỉ dựa vào màu), ghi chú bé, nút CTA */
+.sc-luu-y { margin: 0; padding: 10px 14px; background: var(--ngoc-nhat); border-radius: 10px; color: var(--ngoc-dam); font-size: 0.95rem; line-height: 1.55; }
+.sc-huy-hieu { display: inline-flex; align-items: center; gap: 10px; align-self: start; width: fit-content; padding: 6px 16px; border-radius: 999px; font-size: 1.15rem; border: 1px solid transparent; }
+.sc-bieu-tuong { width: 14px; height: 14px; border-radius: 50%; flex: none; border: 2px solid currentColor; }
+.sc-thuan { background: #e6f2ea; color: #1f5a37; border-color: #b9d9c4; }
+.sc-thuan .sc-bieu-tuong { background: currentColor; }
+.sc-can-bang { background: var(--ngoc-nhat); color: var(--ngoc-dam); border-color: #dcc6e0; }
+.sc-can-bang .sc-bieu-tuong { background: linear-gradient(90deg, currentColor 50%, transparent 50%); }
+.sc-can-luu-y { background: #fbf1dc; color: #7a4b00; border-color: #ecd49b; }
+.sc-can-luu-y .sc-bieu-tuong { background: transparent; border-radius: 3px; transform: rotate(45deg); }
+.sc-cta-nut { display: grid; gap: 10px; }
+.o .bao-loi, .o ~ .bao-loi { scroll-margin-top: 16px; }
+@media (prefers-reduced-motion: reduce) { .sc-ket-qua { scroll-behavior: auto; } }
