@@ -170,9 +170,9 @@ test('L-2d61c5 B12: /lp và bản xem trước không hứa "mua" khi cổng m�
 test('L-f91bef: lời hứa khớp sản phẩm thật, chủ đề lẻ chỉ 3, gói gộp dừng bán sau 6/2/2027', () => {
   const chu = [...goi.GOI, ...goi.GOI_VAN_NAM].flatMap((g) => g.quyenLoi).join(' | ');
   assert.ok(!/12 cung|bất cứ lúc nào/.test(chu), chu);
-  assert.match(goi.layGoi('tron-la-so').quyenLoi[0], /^Luận năm chủ đề: Bản thân, Tình cảm, Sự nghiệp, Tài chính, Gia đạo, và đại vận 10 năm$/);
+  assert.match(goi.layGoi('tron-la-so').quyenLoi[0], /^Luận ba chủ đề: Bản thân, Tình cảm, Sự nghiệp, và đại vận 10 năm$/); // cờ tắt (mặc định)
   // L-2d61c5 B11: lẻ chỉ bán 3 chủ đề nên so sánh phải là 3 × 29.000, không phải 5 × 29.000
-  assert.deepEqual(goi.layGoi('tron-la-so').soSanh, ['Mua lẻ 3 chủ đề: 87.000đ. Trọn lá số có thêm Tài chính, Gia đạo và đại vận 10 năm.']);
+  assert.deepEqual(goi.layGoi('tron-la-so').soSanh, ['Mua lẻ 3 chủ đề: 87.000đ. Trọn lá số có thêm đại vận 10 năm.']);
   assert.match(goi.layGoi('tron-la-so', { 'mot-chu-de': 39000 }).soSanh[0], /117\.000đ/);
   assert.doesNotMatch(goi.layGoi('tron-la-so').soSanh[0], /năm chủ đề|145\.000/);
   assert.deepEqual(goi.CHU_DE.map((c) => c.ma), ['ban-than', 'tinh-cam', 'su-nghiep']);
@@ -246,4 +246,25 @@ test('L-eb6204 B1: đã có Trọn lá số của lá số đó thì không mua 
   assert.equal(coTronLaSo([{ loai: 'chu_de', chuDe: 'ban-than', laSoId: 5 }], 5, [5]), false);
   assert.equal(coTronLaSo([{ loai: 'thanh_vien', chuDe: null, laSoId: null }], 5, [5]), true);
   assert.equal(coTronLaSo([], 5, [5]), false);
+});
+
+test('L-2ac4bf: cờ NOI_DUNG_TAI_CHINH_GIA_DAO_DA_QUA_THU, tắt chỉ nêu ba chủ đề, bật nêu năm chủ đề (thẻ gói, gói gộp, nhắc sau mua)', () => {
+  const tg = nap('lib/tro-giup.ts');
+  const cu = process.env.NOI_DUNG_TAI_CHINH_GIA_DAO_DA_QUA_THU;
+  const doc = () => JSON.stringify([goi.goiTheoBang({}), goi.layGoi('tron-la-so', {}), tg.nhacSauMuaVanNam('van-nam-2027'), tg.nhacSauMuaVanNam('tron-la-so-kem-van-nam')]);
+  try {
+    delete process.env.NOI_DUNG_TAI_CHINH_GIA_DAO_DA_QUA_THU;
+    assert.equal(goi.CO_TAI_CHINH_GIA_DAO_DA_QUA_THU(), false);
+    assert.doesNotMatch(doc(), /Tài chính|Gia đạo|năm chủ đề/);
+    assert.match(doc(), /ba chủ đề/);
+    process.env.NOI_DUNG_TAI_CHINH_GIA_DAO_DA_QUA_THU = '0';
+    assert.doesNotMatch(doc(), /Tài chính|Gia đạo|năm chủ đề/);
+    process.env.NOI_DUNG_TAI_CHINH_GIA_DAO_DA_QUA_THU = '1';
+    assert.equal(goi.CO_TAI_CHINH_GIA_DAO_DA_QUA_THU(), true);
+    assert.match(goi.layGoi('tron-la-so', {}).quyenLoi[0], /^Luận năm chủ đề: Bản thân, Tình cảm, Sự nghiệp, Tài chính, Gia đạo, và đại vận 10 năm$/);
+    assert.match(goi.layGoi('tron-la-so', {}).soSanh[0], /có thêm Tài chính, Gia đạo và đại vận 10 năm/);
+    assert.match(doc(), /năm chủ đề và đại vận 10 năm/);
+  } finally {
+    if (cu === undefined) delete process.env.NOI_DUNG_TAI_CHINH_GIA_DAO_DA_QUA_THU; else process.env.NOI_DUNG_TAI_CHINH_GIA_DAO_DA_QUA_THU = cu;
+  }
 });

@@ -8,7 +8,7 @@ Mặt bằng lần mua đầu của đối thủ 35k–129k; mở lẻ 9k/mục;
 | Bậc | Mã | Giá | Gồm |
 |---|---|---|---|
 | Mở một chủ đề | `mot-chu-de` | **29.000đ** / một lần | Luận sâu 1 chủ đề tự chọn: Bản thân · Tình cảm · Sự nghiệp (Tài chính, Gia đạo mở khi qua kiểm duyệt). Ghi sao, cung, nguồn. |
-| Trọn lá số — **Khuyên dùng** | `tron-la-so` | **99.000đ** / một lần | Ba cung trọng yếu (Mệnh, Quan Lộc, Phu Thê) + vận 10 năm hiện tại (đại vận). Ghi sao, cung, trường phái. Xem lại không giới hạn thời gian khi đăng nhập tài khoản. |
+| Trọn lá số — **Khuyên dùng** | `tron-la-so` | **99.000đ** / một lần | Luận ba chủ đề (Bản thân, Tình cảm, Sự nghiệp) + vận 10 năm (đại vận); Tài chính, Gia đạo chỉ nêu khi cờ `NOI_DUNG_TAI_CHINH_GIA_DAO_DA_QUA_THU=1` (sau khi Thư duyệt). Ghi sao, cung, trường phái. Xem lại không giới hạn thời gian khi đăng nhập tài khoản. |
 | Thành viên năm | `thanh-vien-nam` | **299.000đ** / năm (≈ 25.000đ/tháng) | Trọn lá số của bạn + luận vận năm + lưu nguyệt từng tháng + hỏi đáp về lá số 5 câu/tháng + trọn lá số cho 2 người thân. |
 
 Vận năm 2027 (`van-nam-2027`, giá nháp 39.000đ, chờ duyệt 49.000đ) và gói gộp `tron-la-so-kem-van-nam` 129.000đ, bán đến hết 6/2/2027 (`banDen`, máy chủ từ chối đơn sau ngày đó).

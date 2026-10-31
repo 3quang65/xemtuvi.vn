@@ -81,6 +81,12 @@ export type BangGia = Partial<Record<MaGoi, number>>;
 /** Chủ đề đang bán lẻ (3 trong 5 chủ đề của Trọn lá số). Tài chính, Gia đạo chỉ có trong Trọn lá số; mở bán lẻ khi nội dung qua Thư duyệt. */
 const CHU_DE_DANG_BAN: MaChuDe[] = ['ban-than', 'tinh-cam', 'su-nghiep'];
 
+/** Cờ nội dung Tài chính, Gia đạo đã qua Thư (env NOI_DUNG_TAI_CHINH_GIA_DAO_DA_QUA_THU=1, mặc định TẮT). Tắt: quyền lợi Trọn lá số chỉ nêu ba chủ đề đã duyệt (L-2ac4bf). */
+export const CO_TAI_CHINH_GIA_DAO_DA_QUA_THU = () => process.env.NOI_DUNG_TAI_CHINH_GIA_DAO_DA_QUA_THU === '1';
+/** Chữ quyền lợi chủ đề của Trọn lá số theo cờ; dùng chung cho thẻ gói, FAQ và nhắc sau mua. */
+export const chuDeTronLaSo = (coCo: boolean = CO_TAI_CHINH_GIA_DAO_DA_QUA_THU()) =>
+  coCo ? 'năm chủ đề' : 'ba chủ đề';
+
 /** Ba thẻ gói chính. Không truyền bảng = giá hiện hành. So sánh dưới giá tự tính từ giá đang dùng. */
 function dungGoi(bang?: BangGia): Goi[] {
   const gia = (ma: MaGoi, mac: number) => bang?.[ma] ?? mac;
@@ -93,8 +99,8 @@ function dungGoi(bang?: BangGia): Goi[] {
     },
     {
       ma: 'tron-la-so', ten: 'Trọn lá số', gia: giaTron, donVi: 'một lần', chinh: true, nhan: 'Khuyên dùng',
-      soSanh: [`Mua lẻ ${CHU_DE_DANG_BAN.length} chủ đề: ${dinhDangGia(CHU_DE_DANG_BAN.length * gia('mot-chu-de', 29000))}. Trọn lá số có thêm Tài chính, Gia đạo và đại vận 10 năm.`], // L-2d61c5 B11: lẻ chỉ bán 3 chủ đề, không so với 5
-      quyenLoi: ['Luận năm chủ đề: Bản thân, Tình cảm, Sự nghiệp, Tài chính, Gia đạo, và đại vận 10 năm', 'Mỗi nhận định ghi sao, cung và nguồn sách', XEM_LAI],
+      soSanh: [`Mua lẻ ${CHU_DE_DANG_BAN.length} chủ đề: ${dinhDangGia(CHU_DE_DANG_BAN.length * gia('mot-chu-de', 29000))}. Trọn lá số có thêm ${CO_TAI_CHINH_GIA_DAO_DA_QUA_THU() ? 'Tài chính, Gia đạo và ' : ''}đại vận 10 năm.`], // L-2d61c5 B11: lẻ chỉ bán 3 chủ đề, không so với 5
+      quyenLoi: [CO_TAI_CHINH_GIA_DAO_DA_QUA_THU() ? 'Luận năm chủ đề: Bản thân, Tình cảm, Sự nghiệp, Tài chính, Gia đạo, và đại vận 10 năm' : 'Luận ba chủ đề: Bản thân, Tình cảm, Sự nghiệp, và đại vận 10 năm', 'Mỗi nhận định ghi sao, cung và nguồn sách', XEM_LAI],
     },
     {
       ma: 'thanh-vien-nam', ten: 'Thành viên năm', gia: giaNam, donVi: 'một năm', chinh: false,
@@ -127,7 +133,7 @@ function dungGoiVanNam(bang?: BangGia): Goi[] {
       ma: 'tron-la-so-kem-van-nam', ten: 'Trọn lá số + Vận năm 2027', gia: giaGop, donVi: 'một lần', chinh: true, nhan: 'Gộp tiết kiệm hơn',
       soSanh: tiet > 0 ? [`Mua riêng ${dinhDangGia(tong)}`, `tiết kiệm ${dinhDangGia(tiet)}`] : undefined, // tiết kiệm <= 0 thì không hiện, tránh câu sai
       banDen: BAN_DEN_GOI_GOP,
-      quyenLoi: ['Toàn bộ Trọn lá số (năm chủ đề và đại vận 10 năm), cộng luận Vận năm 2027', 'Mỗi nhận định ghi sao, cung và nguồn sách', XEM_LAI],
+      quyenLoi: [`Toàn bộ Trọn lá số (${chuDeTronLaSo()} và đại vận 10 năm), cộng luận Vận năm 2027`, 'Mỗi nhận định ghi sao, cung và nguồn sách', XEM_LAI],
     },
     {
       ma: 'goi-doi-valentine', ten: 'Gói đôi: hai lá số, một đơn', gia: giaDoi, donVi: 'một lần', chinh: false,
