@@ -54,3 +54,43 @@ Lý do đổi: lời M3 mở bằng "khác nhịp ở vài điểm" nên nhãn k
 
 Đã sửa: `src/lib/sinh-con-2027/loi.ts` (tieuDe), `docs/san-pham/sinh-con-2027-loi.md` (mục 1). Giữ nguyên mã nội bộ `can-luu-y` (sự kiện đo không đổi). Chưa sửa `sinh-con-2027-quy-tac.md` mục 5 và `sinh-con-2027-kiem.py` (còn nhãn cũ, thuộc Đức).
 Lưu ý nhỏ không chặn: mức Cân bằng (M2) cũng có chữ "khác nhịp" trong lời; chấp nhận được vì đó là mô tả điểm, không phải nhãn.
+
+## Cập nhật 31/10/2026 (việc L-741ffd): ghi chú riêng tư và ba nút CTA
+
+Bản kiểm: main ac3c5e9, đọc code thật (không sửa nội dung).
+
+### Kết luận: KHÔNG ĐẠT (1 lỗi chặn KD-SC27-06; các chuỗi còn lại ĐẠT)
+
+| Chuỗi | Đúng | Sâu | Giọng | An toàn | Kết quả |
+|---|---|---|---|---|---|
+| `GHI_CHU_RIENG_TU` (loi.ts:51) | 10 | 8 | 9 | 10 | ĐẠT (góp ý P2 KD-SC27-07) |
+| "Lập lá số miễn phí cho bố / cho mẹ" (SinhCon2027.tsx:128–129, loi.ts:58) | 10 | 8 | 9 | 10 | ĐẠT |
+| "Xem Vận 2027 theo lá số" + lời dẫn C2 (SinhCon2027.tsx:131–132, loi.ts:62–63) | 4 | 7 | 9 | 8 | KHÔNG ĐẠT (KD-SC27-06) |
+| Gộp cả đợt | 7 | 8 | 9 | 9 | KHÔNG ĐẠT đến khi sửa KD-SC27-06 |
+
+(Sâu chấm thấp hơn mức thường vì đây là chữ giao diện ngắn, không phải luận giải; không phải lỗi.)
+
+### Riêng tư: câu "chỉ được tính ngay trên máy của bạn, không gửi lên máy chủ" ĐÚNG với code
+
+| Đường đi của năm sinh | Bằng chứng | Kết quả |
+|---|---|---|
+| Tính kết quả | `SinhCon2027.tsx:84–96`: `danhGia()` chạy trong trình duyệt, không có `fetch` trong component và `src/lib/sinh-con-2027/` | Không gửi |
+| Sự kiện đo | `SinhCon2027.tsx:100–101` chỉ gửi `muc` (3 giá trị) và `co` (có/không nhập ngày); máy chủ chỉ ghi đúng hai trường đó: `src/app/api/su-kien/route.ts:32–33`; danh sách sự kiện `src/lib/su-kien.js:12`. `bam_sang_la_so` (dòng 128–129) không mang trường nào | Không có năm sinh |
+| Bấm nút sang lập lá số | `href="/"` không có query string (SinhCon2027.tsx:128–129); năm đi qua `sessionStorage` khóa `xtv.nam-goi-y` (`src/lib/phien.ts:10, 33`), đọc xong xóa ngay (`phien.ts:34–38`); form điền sẵn ô năm (`LapLaSo.tsx:52–53`) | Không lên URL, không lên máy chủ; Referer chỉ là `/sinh-con-2027` |
+| Lập lá số sau đó | `LapLaSo.tsx:72–79`: `lapLaSo()` chạy trên trình duyệt, lưu `sessionStorage`, sự kiện `lap_la_so` không mang dữ liệu | Không gửi |
+| Cookie / localStorage / analytics bên thứ ba | Không có `localStorage`, `document.cookie`, gtag/fbq/clarity trong luồng này | Không có |
+
+Thông tin sinh chỉ lên máy chủ khi khách tự chọn xem luận giải trả phí ở bước sau (`LuanGiai.tsx:35`). Đó là bước khác, khách tự làm, nên câu hiện tại vẫn đúng.
+
+### Lỗi và góp ý
+
+| Mã | Mức | Vị trí | Vấn đề | Đề xuất |
+|---|---|---|---|---|
+| KD-SC27-06 | P1, chặn | `SinhCon2027.tsx:132` `href="/van-nam-2027"`; lời `loi.ts:62–63` | Lời dẫn hứa "Xem Vận 2027 lập theo lá số ngày giờ sinh của từng người" và nút ghi "theo lá số", nhưng link dẫn tới trang tổng hợp bài viết "đọc theo tuổi và mệnh" (`src/app/van-nam-2027/page.tsx:7`). Trang đó chỉ dẫn tiếp tới bản theo lá số ở dòng 35. Khách bấm vào thấy bài chung theo tuổi, không phải theo lá số: lời hứa sai so với đích đến. | Giữ nguyên chữ, đổi link sang `/lp/van-nam-2027` (trang bán Vận 2027 theo lá số, có ghi "Lập lá số miễn phí trước, chọn gói sau", `src/app/lp/van-nam-2027/page.tsx:42`). Việc này của Bảo (code), không phải người viết lời. Nếu muốn giữ link cũ thì phải đổi chữ: nút "Đọc Vận 2027 theo tuổi", lời dẫn "Đọc các bài Vận năm Đinh Mùi 2027 theo tuổi và mệnh." |
+| KD-SC27-07 | P2, không chặn | `loi.ts:51` | Câu đúng với trang này, nhưng nói tuyệt đối "không gửi lên máy chủ" mà không giới hạn phạm vi. Khách sau đó mua luận giải thì thông tin sinh có lên máy chủ, dễ thấy như mâu thuẫn. | "Năm sinh bạn nhập ở đây chỉ được tính ngay trên máy của bạn, không gửi lên máy chủ." (thêm "ở đây") |
+
+### "Miễn phí" và mê tín
+
+- "Lập lá số miễn phí": đúng. Nút dẫn tới `/` (`src/app/page.tsx:14` là `<LapLaSo />`), lá số lập trên trình duyệt, không cần đăng nhập hay trả tiền, có tóm tắt miễn phí (`TomTatMienPhi.tsx:9`). ĐẠT.
+- "Xem Vận 2027 theo lá số": không nói "miễn phí", nên không hứa quá về giá. Bản theo lá số là gói trả phí, đúng với lời không nhắc giá.
+- Mê tín và từ cấm: không có trong cả 4 chuỗi. ĐẠT.
