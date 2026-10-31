@@ -22,3 +22,8 @@ test('D2: tiêu đề và câu dẫn của /chon-goi render từ máy chủ (kh�
   assert.match(trang, /<h1>Chọn gói luận giải<\/h1>/);
   assert.doesNotMatch(doc('src/components/ChonGoi.tsx'), /<h1>/);
 });
+
+const mobile = css.slice(css.indexOf('@media (max-width: 640px)'));
+test('L1: nhãn tứ hóa trong ô bàn >= 0,72rem (11,5px) trên điện thoại', () => {
+  assert.match(mobile, /\.ban \.sao \.hoa\s*\{[^}]*font-size:\s*0\.72rem/);
+});

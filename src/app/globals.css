@@ -255,6 +255,8 @@ main:has(.ket-qua) .gioi-thieu { display: none; }
   .cung-dau strong { font-size: 0.875rem; }
   .chinh-tinh { font-size: 0.875rem; }
   .sao sup { display: none; }
+  /* L-c8a890 L1: nhãn tứ hóa (Lộc/Quyền/Khoa/Kỵ) 0,7em của 14px = 9,8px, nâng lên mức tối thiểu 11,5px */
+  .ban .sao .hoa { font-size: 0.72rem; padding: 0 3px; margin-left: 2px; }
   .thien-ban { padding: 10px; }
   .thien-ban dl { grid-template-columns: 1fr; gap: 0; font-size: 0.875rem; }
   .thien-ban dt { display: none; }
