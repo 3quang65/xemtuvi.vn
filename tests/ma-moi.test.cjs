@@ -15,6 +15,7 @@ const { kiemTraSuKien } = require('../src/lib/su-kien.js');
 const { tinhBaoCao } = require('../tools/ma-moi.cjs');
 const { docThuMuc } = require('../tools/pheu.cjs');
 
+process.env.CO_KHAN_FILE = '/khong/co/co-khan.json'; // test không phụ thuộc cờ thật trên máy
 process.env.DANG_NHAP_THU = '1'; process.env.EMAIL_THU_CHO_PHEP = '@example.vn';
 process.env.DATA_DIR = fs.mkdtempSync(path.join(os.tmpdir(), 'moi-'));
 delete process.env.VAN_NAM_THU;
