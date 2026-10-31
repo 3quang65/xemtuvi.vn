@@ -207,12 +207,12 @@ function sinhTomLai(ls: LaSo, chuyenDe: string, cau: string): string | null {
     const dv = ls.cung.find((c) => c.daiVan) || ls.cung[0];
     const parts: string[] = [];
     if (dv.tuan) parts.push('cung này có Tuần: việc nên làm chậm, từng bước');
-    if (dv.triet) parts.push('cung này có Triệt: cần thời gian để phát huy');
+    if (dv.triet) parts.push('cung này có Triệt: phần vướng của cung nhẹ đi, không nên vội');
     return `Tóm lại: ${parts.length ? parts.join('; ') : 'phát huy thuận lợi, tránh điểm yếu của cung đại vận này'} — nên cân nhắc khi ${mota[chuyenDe]}.`;
   }
   const parts: string[] = [];
   if (goc.tuan) parts.push('cung này có Tuần: việc nên làm chậm, từng bước, tránh nôn nóng');
-  if (goc.triet) parts.push('cung này có Triệt: cần thời gian để phát huy, không nên vội');
+  if (goc.triet) parts.push('cung này có Triệt: phần vướng của cung nhẹ đi, không nên vội');
   const hoa = goc.chinhTinh.filter((s) => s.hoa).map((s) => `${s.ten} mang ${s.hoa}`);
   if (hoa.length) parts.push(`${hoa.join(', ')}: nên tập trung vào lĩnh vực này`);
   if (!parts.length) parts.push('phát huy điểm mạnh của chính tinh và cân bằng các cung hợp chiếu');

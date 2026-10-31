@@ -5,7 +5,7 @@ import type { XemTruocVanNam } from '@/lib/luan-giai/ai/van-nam';
 import { moKhoaTheoCong, XEM_TRUOC } from '@/lib/van-nam-noi-dung';
 
 /**
- * Bản xem trước từ lá số thật (máy chủ đã cắt: không nội dung tháng, không mã quy tắc).
+ * Bản xem trước từ lá số thật (máy chủ đã cắt: chỉ mở một tháng mẫu, không mã quy tắc).
  * Phần khóa mờ chỉ là chữ giữ chỗ cố định, không chứa nội dung trả phí. moBan=false (cổng đóng): không hứa "mua".
  */
 export function VanNamXemTruoc({ xt, mau = false, moBan }: { xt: XemTruocVanNam; mau?: boolean; moBan: boolean }) {
@@ -17,6 +17,13 @@ export function VanNamXemTruoc({ xt, mau = false, moBan }: { xt: XemTruocVanNam;
       {xt.dauBai.cau.map((c, i) => <p key={`d${i}`} className="doan-ro">{c}</p>)}
       {xt.thaiTue.map((c, i) => <p key={`t${i}`} className="doan-ro">{c}</p>)}
       {xt.diemThuan && <p className="doan-ro">{xt.diemThuan}</p>}
+      {xt.thangMau && (
+        <>
+          <h3>Một tháng làm mẫu: tháng {xt.thangMau.thang} âm lịch, từ {xt.thangMau.tuNgay}</h3>
+          {xt.thangMau.cau.map((c, i) => <p key={`m${i}`} className="doan-ro">{c}</p>)}
+          <p className="tt-ghi-chu">{XEM_TRUOC.ghiChuThang}</p>
+        </>
+      )}
       <p className="doan-mo" aria-hidden="true">{XEM_TRUOC.khoa}</p>
       <p className="khoa-nhan">{moKhoaTheoCong(moBan)}</p>
       <p className="doan-nguon">{xt.ghiChu}</p>

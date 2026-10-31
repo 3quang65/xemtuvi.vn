@@ -102,11 +102,11 @@ test('Khung bài: đầu bài, tổng quan đủ 5 phần + tóm lại, 4 mảng
   const ma = new Set(JSON.parse(fs.readFileSync(path.join(__dirname, '../src/lib/luan-giai/ai/quy-tac-van/van-nam-2027.json'), 'utf8')).map((q) => q.id));
   for (const x of tatCaNd(bai)) {
     assert.ok(x.thamChieu.nguon && x.thamChieu.truongPhai);
-    assert.ok(ma.has(x.thamChieu.quyTacId) || /^(VAN-CT|VAN-CUNG|QL-|PT-|KHUNG-|NAM-PP-10)/.test(x.thamChieu.quyTacId), x.thamChieu.quyTacId);
+    assert.ok(ma.has(x.thamChieu.quyTacId) || /^(VAN-CT|VAN-CUNG|QL-|PT-|KHUNG-|NAM-PP-10|NAM-THANG-04-TUAN-TRIET|NAM-THANG-05-NEN-CUNG)/.test(x.thamChieu.quyTacId), x.thamChieu.quyTacId);
   }
 });
 
-test('Bản xem trước: đầu bài + Thái Tuế + 1 điểm thuận + 12 cung tháng, không nội dung tháng, không mã quy tắc', () => {
+test('Bản xem trước: đầu bài + Thái Tuế + 1 điểm thuận + 12 cung tháng + đúng 1 tháng mẫu, không mã quy tắc', () => {
   const ls = lapLaSo({ lich: 'duong', ngay: 12, thang: 3, nam: 1998, gio: 9, phut: 0, gioiTinh: 'nu' });
   const xt = VN.xemTruocVanNam(ls);
   assert.equal(xt.chuyenDe, 'van-nam-2027');
@@ -118,6 +118,10 @@ test('Bản xem trước: đầu bài + Thái Tuế + 1 điểm thuận + 12 cun
   const json = JSON.stringify(xt);
   assert.ok(!/NAM-|VAN-|quyTacId|thamChieu/.test(json), 'lộ mã quy tắc');
   assert.ok(!('thang' in xt) && !xt.cungThang.some((t) => 'nhanDinh' in t || 'text' in t));
+  // L-bb82af: đúng MỘT tháng mẫu, chỉ chữ luận; không mã, không việc nên làm, không lộ nội dung 11 tháng còn lại.
+  assert.ok(xt.thangMau && xt.thangMau.cau.length >= 1 && xt.thangMau.cau.every((c) => c.trim().length >= 30));
+  assert.deepEqual(Object.keys(xt.thangMau).sort(), ['cau', 'cung', 'thang', 'thangMoc', 'tuNgay']);
+  assert.equal(xt.cungThang[xt.thangMau.thang - 1].cung, xt.thangMau.cung);
   const bai = JSON.stringify(xt.cungThang);
   assert.ok(!/chủ đề nổi lên/.test(bai));
   khongTuCam(xt);

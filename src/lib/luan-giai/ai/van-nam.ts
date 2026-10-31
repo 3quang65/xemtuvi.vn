@@ -12,6 +12,7 @@ import tuCamJson from './tu-cam.json';
 import quyTacVanJson from './quy-tac-van/van-10-nam.json';
 import viecJson from './quy-tac-van/viec-nen-lam.json';
 import ghiChuPhaiJson from './quy-tac-van/ghi-chu-truong-phai.json';
+import nenCungThangJson from './quy-tac-van/nen-cung-thang.json';
 import { nenQuanLoc, nenVcd, catTinhTamPhuong } from './nen-quan-loc';
 import { GHI_CHU, PHIEN_BAN_QUY_TAC, khoaCache, maNghienCuuCua, sinhLuanGiai } from './index';
 
@@ -50,6 +51,12 @@ export interface QuyTacNam {
   uuTien?: number;
   maNghienCuu?: string[];
   tongHop?: boolean;
+  /** Chữ riêng theo cung chức năng (L-5f6b69): có thì thay noiDung khi cung gốc trùng tên. */
+  noiDungTheoCung?: Record<string, string>;
+  /** Mã quy tắc 12 cung làm căn cứ cho từng chữ trong noiDungTheoCung (để duyệt, không đổi cách chọn việc). */
+  maTheoCung?: Record<string, string[]>;
+  /** Chữ dùng ở mục tháng (L-5f6b69): nói theo tháng, không "năm nay". Có thì ưu tiên hơn noiDung/noiDungTheoCung ở tháng. */
+  noiDungThang?: string;
 }
 
 /** Điều kiện máy đọc của một mã bám trong viec-nen-lam.json (xem khung-doan-tra-phi.md, mục 6.0 điều 4). */
@@ -119,6 +126,189 @@ export interface BaiVanNam {
   ghiChu: string;
   phienBan: string;
 }
+type BangChu = Record<string, string>;
+const NEN_CUNG_THANG = nenCungThangJson as unknown as {
+  nen: BangChu; locGapKy: BangChu;
+  chinhTinh: Record<string, BangChu>;
+  cachCuc: Record<string, string | BangChu>;
+  hoaGop: Record<string, BangChu>;
+  locTonHoaLoc: BangChu;
+  saoPhu: Record<string, string | BangChu>;
+  thanCu: BangChu;
+  hoaDoiChieu: Record<string, BangChu> & { gop: BangChu; gopCat: string; _kem: string };
+  chinhTinhTheoCung: BangChu;
+};
+/** Hóa Kỵ GỐC (từ can năm sinh) tại một cung: chính tinh hoặc sao khác mang Hóa Kỵ. */
+export function coKyGocTaiCung(c: Cung): boolean {
+  return [...c.chinhTinh, ...c.catTinh, ...c.phuTinh, ...c.hungTinh].some((s) => s.hoa === 'Hóa Kỵ');
+}
+
+/** Lưu hóa của năm (cả 12 cung); cauNenCungThang tự lọc theo cung tháng và cung đối. `true` = chỉ biết có Lộc lưu tại cung (không tên sao). */
+export type LuuHoaNam = LuuNien['luuTuHoa'];
+const SANG = new Set(['Miếu', 'Vượng', 'Đắc']);
+const dien2 = (mau: string, bien: Record<string, string>) => mau.replace(/\{(\w+)\}/g, (m, k: string) => bien[k] ?? m);
+const tuanTrietTen = (c: Cung) => (c.tuan && c.triet ? 'Tuần và Triệt' : c.tuan ? 'Tuần' : 'Triệt');
+const saoDuyNhat = (ds: Sao[]): Sao[] => [...new Map(ds.map((s) => [s.key || s.ten, s])).values()];
+const tatCaSao = (c: Cung): Sao[] => saoDuyNhat([...c.chinhTinh, ...c.catTinh, ...c.phuTinh, ...c.hungTinh]);
+const coSao = (c: Cung, ten: string) => tatCaSao(c).some((s) => s.ten === ten);
+const sangKem = (s: Sao): 'sang' | 'kem' | null => (s.dacTinhTen ? (SANG.has(s.dacTinhTen) ? 'sang' : 'kem') : null);
+
+/**
+ * Câu nền của cung tháng. Thứ tự (Hạnh, L-95d072 vòng 4): câu dữ kiện (kể cả Lộc gặp Kỵ có tên sao) -> cách cục hoặc chính tinh
+ * -> Tuần/Triệt -> hóa gộp hoặc Lộc Tồn + Hóa Lộc -> tối đa một sao phụ -> cung Thân -> nen -> locGapKy (cuối, khi Lộc lưu gặp Kỵ gốc).
+ * Chữ lấy nguyên văn từ quy-tac-van/nen-cung-thang.json, ở đây chỉ chọn khóa và thay chỗ giữ chỗ. Khóa chưa có nguồn chắc
+ * (trùng hóa Lộc|Lộc, Khoa|Khoa, Quyền|Quyền; Thiên Không đứng một mình) cố ý không ghép.
+ */
+export function nenCungThang(c: Cung, doi: Cung, luu: boolean | LuuHoaNam = false, saoLuu: { ten: string; chi: number }[] = []): { text: string; sao: string[] } {
+  const ten = (s: Sao) => (s.hoa ? `${s.ten} ${s.hoa}` : s.ten);
+  const luuHoa: LuuHoaNam = luu === true ? [{ hoa: 'Hóa Lộc', sao: '', chi: c.chi }] : luu === false ? [] : luu;
+  const luuTai = (x: Cung, hoa?: string) => luuHoa.filter((h) => h.chi === x.chi && (!hoa || h.hoa === hoa));
+  const tinh = saoDuyNhat(c.chinhTinh);
+  const khac = saoDuyNhat([...c.catTinh, ...c.phuTinh, ...c.hungTinh]).filter((s) => s.hoa);
+  const kyGoc = tatCaSao(c).find((s) => s.hoa === 'Hóa Kỵ');
+  const locLuu = luuTai(c, 'Hóa Lộc')[0];
+  const dung: string[] = [];
+  const them = (m: string | undefined, bien: Record<string, string> = {}) => { if (m) dung.push(dien2(m, bien)); };
+  const vcd = tinh.length === 0;
+  const nguon = vcd ? saoDuyNhat(doi.chinhTinh) : tinh;
+  const noi = vcd ? `cung đối chiếu ${doi.ten}` : `cung ${c.ten}`;
+  const tt = c.tuan || c.triet ? tuanTrietTen(c) : '';
+  const bien = { noi, cung: c.ten, tt };
+
+  // 1. Câu dữ kiện.
+  let cau: string;
+  if (tinh.length) cau = `Cung ${c.ten} của tháng này có ${tinh.map(ten).join(', ')}${khac.length ? `, cùng ${khac.map(ten).join(', ')}` : ''} ngay từ lá số gốc; phần lưu niên tác động lên nền sẵn có ấy.`;
+  else if (doi.chinhTinh.length) cau = `Cung ${c.ten} của tháng này vô chính diệu, nên xem chính tinh cung đối chiếu (${saoDuyNhat(doi.chinhTinh).map(ten).join(', ')}) làm nền${khac.length ? `; cung còn có ${khac.map(ten).join(', ')}` : ''}.`;
+  else cau = `Cung ${c.ten} của tháng này vô chính diệu, cung đối chiếu cũng không có chính tinh${khac.length ? `; cung có ${khac.map(ten).join(', ')}` : ''}.`;
+  const locGapKy = !!kyGoc && !!locLuu;
+  if (locGapKy) cau += ` Tháng này có Hóa Lộc lưu${locLuu.sao ? ` (${locLuu.sao})` : ''} gặp ${ten(kyGoc)} từ lá số gốc cùng cung ${c.ten}.`;
+
+  // 2. Cách cục (một câu) hoặc chính tinh.
+  const tenNguon = nguon.map((s) => s.ten);
+  const chiNguon = vcd ? doi.tenChi : c.tenChi;
+  const saoDung: string[] = tenNguon.slice(0, 2);
+  const co = (...t: string[]) => t.every((x) => tenNguon.includes(x));
+  const CC = NEN_CUNG_THANG.cachCuc;
+  let cachCucTuanTriet = false;
+  let mauCach: string | undefined;
+  if (co('Vũ Khúc', 'Tham Lang')) mauCach = CC['Vũ Khúc+Tham Lang'] as string;
+  else if (co('Thái Dương', 'Thái Âm')) {
+    const nn = CC['Thái Dương+Thái Âm'] as BangChu;
+    if (nguon.some((s) => s.hoa === 'Hóa Kỵ')) mauCach = nn.hoaKy;
+    else if (tt) { mauCach = nn.tuanTriet; cachCucTuanTriet = true; } else mauCach = nn.thuong;
+  } else if (co('Thái Dương', 'Thiên Lương') && (chiNguon === 'Mão' || chiNguon === 'Dậu')) mauCach = (CC['Thái Dương+Thiên Lương'] as BangChu)[chiNguon];
+  else if (co('Thái Dương', 'Cự Môn')) mauCach = CC['Thái Dương+Cự Môn'] as string;
+  else if (co('Tử Vi', 'Thiên Phủ')) mauCach = CC['Tử Vi+Thiên Phủ'] as string;
+  // H3: một câu nối chủ đề cung, đặt ngay sau câu sao đầu tiên, mỗi tháng một lần.
+  const TC = NEN_CUNG_THANG.chinhTinhTheoCung;
+  let daTheoCung = false;
+  const chenTheoCung = (mau: string) => {
+    if (daTheoCung || !TC[c.ten]) return;
+    daTheoCung = true; them(mau, { ...bien, mang: TC[c.ten] });
+  };
+  if (mauCach) { them(mauCach, bien); chenTheoCung(vcd ? TC._doi : TC._tai); }
+  else for (const s of nguon.slice(0, 2)) {
+    const k = sangKem(s), m = k ? NEN_CUNG_THANG.chinhTinh[s.ten]?.[k] : undefined;
+    them(m, bien); if (m) chenTheoCung(vcd ? TC._doi : TC._tai);
+  }
+
+  // B5: hóa của chính tinh ở cung đối chiếu (hoaDoiChieu), tối đa một câu mỗi tháng.
+  const HD = NEN_CUNG_THANG.hoaDoiChieu;
+  const coLocCungThang = coSao(c, 'Lộc Tồn') || tatCaSao(c).some((s) => s.hoa === 'Hóa Lộc') || luuTai(c, 'Hóa Lộc').length > 0;
+  const catTen = (h: string) => h.replace(/^Hóa /, '');
+  const ungHoa = saoDuyNhat(doi.chinhTinh).flatMap((s) => {
+    const g = s.hoa ? catTen(s.hoa) : null, ds = luuTai(doi).filter((h) => h.sao === s.ten).map((h) => catTen(h.hoa));
+    const out: { s: Sao; hang: number; mau: string }[] = [];
+    const kem = sangKem(s) === 'kem';
+    const them1 = (hang: number, mau: string | undefined, nhacKem: boolean) => { if (mau) out.push({ s, hang, mau: nhacKem && kem ? mau.replace(/\.$/, '') + HD._kem : mau }); };
+    for (const l of ds.length ? ds : [null]) {
+      if (g && l) {
+        const cat = (x: string) => x !== 'Kỵ';
+        if (HD.gop[`${g}|${l}`]) them1(0, HD.gop[`${g}|${l}`], false);
+        else if (cat(g) && cat(l)) them1(0, HD.gopCat.replace('{hoaGoc}', g).replace('{hoaLuu}', l), true);
+      } else if (g) {
+        them1(g === 'Kỵ' ? 1 : g === 'Lộc' ? 2 : g === 'Quyền' ? 3 : 4, g === 'Kỵ' && coLocCungThang ? HD.Kỵ.xungLoc : HD[g]?.goc, g !== 'Kỵ');
+      } else if (l) them1(l === 'Kỵ' ? 1 : l === 'Lộc' ? 2 : l === 'Quyền' ? 3 : 4, HD[l]?.luu, l !== 'Kỵ');
+    }
+    return out;
+  }).sort((a, b) => a.hang - b.hang)[0];
+  // Mục tháng nói theo tháng (L-5f6b69): khóa hoaDoiChieu còn chữ 'năm nay' nên đổi khi ghép.
+  const themHoaDoi = () => { if (ungHoa) { them(ungHoa.mau.replace(/\bnăm nay\b/g, 'tháng này'), { ...bien, sao: ungHoa.s.ten, doi: doi.ten }); saoDung.push(ungHoa.s.ten); } };
+  if (vcd) themHoaDoi();
+
+  // 3. Tuần/Triệt đóng cung tháng (Nhật Nguyệt gặp Tuần/Triệt đã nằm trong câu cách cục).
+  if (tt && !cachCucTuanTriet) {
+    if (vcd) them(c.ten === 'Phúc Đức' && c.triet ? CC.vcdTriet_PhucDuc as string : CC.vcdTuanTriet as string, bien);
+    else {
+      const s = tinh[0], dt = s.dacTinhTen;
+      const mau = dt === 'Hãm' ? CC.hamTuanTriet : dt === 'Bình' ? CC.binhTuanTriet : dt && SANG.has(dt) ? CC.sangTuanTriet : undefined;
+      them(mau as string | undefined, { ...bien, sao: s.ten });
+    }
+  }
+
+  // 4. Hóa gốc + hóa lưu cùng sao, hoặc Lộc Tồn + Hóa Lộc.
+  const gop = tatCaSao(c).flatMap((s) => (s.hoa ? luuTai(c).filter((h) => h.sao === s.ten).map((h) => ({ s, key: `${s.hoa!.replace(/^Hóa /, '')}|${h.hoa.replace(/^Hóa /, '')}` })) : []))
+    .filter((g) => NEN_CUNG_THANG.hoaGop[g.key] && !['Lộc|Lộc', 'Khoa|Khoa', 'Quyền|Quyền'].includes(g.key))[0];
+  if (gop) {
+    const k = sangKem(gop.s);
+    if (k) { them(NEN_CUNG_THANG.hoaGop[gop.key][k], { ...bien, sao: gop.s.ten }); saoDung.push(gop.s.ten); }
+  }
+  // Lộc Tồn + Hóa Lộc vẫn nêu khi đã có câu hóa gộp (hai ý khác nhau); dongCung không gọi "song Lộc".
+  if (coSao(c, 'Lộc Tồn') && luuTai(c, 'Hóa Lộc').length) { them(NEN_CUNG_THANG.locTonHoaLoc.dongCung, bien); saoDung.push('Lộc Tồn'); }
+  else if ((coSao(c, 'Lộc Tồn') && luuTai(doi, 'Hóa Lộc').some((h) => !ungHoa || h.sao !== ungHoa.s.ten)) || (coSao(doi, 'Lộc Tồn') && luuTai(c, 'Hóa Lộc').length)) them(NEN_CUNG_THANG.locTonHoaLoc.xungChieu, bien);
+
+  // 5. Tối đa một câu sao phụ.
+  const SP = NEN_CUNG_THANG.saoPhu;
+  const dsSao = tatCaSao(c);
+  const mongLoc = dsSao.some((s) => s.ten === 'Lộc Tồn' || s.hoa === 'Hóa Lộc') || luuTai(c, 'Hóa Lộc').length > 0;
+  const khongKiep = dsSao.some((s) => s.ten === 'Địa Không' || s.ten === 'Địa Kiếp');
+  const ma = dsSao.find((s) => s.ten === 'Thiên Mã'), hl = dsSao.find((s) => s.ten === 'Hỏa Tinh' || s.ten === 'Linh Tinh');
+  const xk = dsSao.find((s) => (s.ten === 'Văn Xương' || s.ten === 'Văn Khúc') && sangKem(s));
+  // B4: Kình Dương / Đà La (gốc, lưu, trùng) ưu tiên hơn Thiên Mã và các sao phụ khác; cả hai cùng có thì lấy Kình, trừ khi Đà trùng.
+  const kd = (['Kình Dương', 'Đà La'] as const).map((t) => {
+    const goc = dsSao.find((s) => s.ten === t), l = saoLuu.some((s) => s.chi === c.chi && s.ten.replace(/^L\. /, '') === t);
+    return { t, goc, trang: goc && l ? 'trung' : l ? 'luu' : goc ? 'goc' : null };
+  }).filter((x) => x.trang);
+  const kdChon = kd.length === 2 && kd[1].trang === 'trung' && kd[0].trang !== 'trung' ? kd[1] : kd[0];
+  if (kdChon) {
+    const m = SP[kdChon.t] as BangChu, bk = { ...bien, sao: hl?.ten ?? '' };
+    let mau: string;
+    if (kdChon.trang === 'trung') mau = m.trung;
+    else if (hl) mau = kdChon.trang === 'luu' ? m.luuGapHoaLinh : m.gapHoaLinh;
+    else if (kdChon.trang === 'luu') mau = m.luu;
+    else mau = tt ? m.tuanTriet : sangKem(kdChon.goc!) === 'sang' ? m.dac : m.ham;
+    them(mau, bk); saoDung.push(kdChon.t);
+  } else if (ma) { const m = SP['Thiên Mã'] as BangChu; them(tt || khongKiep ? m.gapKhong : mongLoc ? m.gapLoc : m.thuong, bien); saoDung.push(ma.ten); }
+  else if (hl) {
+    const m = SP['Hỏa Tinh|Linh Tinh'] as BangChu, k = hl.dacTinhTen;
+    them(tt ? m.tuanTriet : k && SANG.has(k) ? m.dac : k === 'Hãm' ? m.ham : m.binh, { ...bien, sao: hl.ten }); saoDung.push(hl.ten);
+  } else if (xk) { them((SP['Văn Xương|Văn Khúc'] as BangChu)[sangKem(xk)!], { ...bien, sao: xk.ten }); saoDung.push(xk.ten); }
+  else if (coSao(c, 'Thiên Không') && coSao(c, 'Đào Hoa')) { them(SP['Thiên Không+Đào Hoa'] as string, bien); saoDung.push('Thiên Không', 'Đào Hoa'); }
+
+  // 5b. Cung tháng có chính tinh: tối đa một câu về chính tinh (hoặc Hỏa/Linh) ở cung đối chiếu, dùng khóa sẵn có.
+  if (!vcd) {
+    const tDoi = saoDuyNhat(doi.chinhTinh).find((s) => sangKem(s) && NEN_CUNG_THANG.chinhTinh[s.ten]);
+    const hlDoi = saoDuyNhat(doi.hungTinh.concat(doi.phuTinh)).find((s) => s.ten === 'Hỏa Tinh' || s.ten === 'Linh Tinh');
+    const nDoi = `cung đối chiếu ${doi.ten}`;
+    if (tDoi) { them(NEN_CUNG_THANG.chinhTinh[tDoi.ten][sangKem(tDoi)!], { ...bien, noi: nDoi }); chenTheoCung(TC._doi); saoDung.push(tDoi.ten); }
+    else if (hlDoi && !hl) {
+      const m = SP['Hỏa Tinh|Linh Tinh'] as BangChu, k = hlDoi.dacTinhTen;
+      them(k && SANG.has(k) ? m.dac : k === 'Hãm' ? m.ham : m.binh, { ...bien, sao: hlDoi.ten, cung: `${doi.ten} (đối chiếu)` }); saoDung.push(hlDoi.ten);
+    }
+    themHoaDoi();
+  }
+
+  // 6. Cung Thân, 7. nen, 8. locGapKy.
+  if (c.laThan) them(NEN_CUNG_THANG.thanCu[c.ten] ?? NEN_CUNG_THANG.thanCu.thuong, bien);
+  them(NEN_CUNG_THANG.nen[c.ten], bien);
+  if (locGapKy) them(NEN_CUNG_THANG.locGapKy[c.ten], bien);
+  return { text: [cau, ...dung].join(' '), sao: [...new Set(saoDung)] };
+}
+/** Chuỗi câu nền của cung tháng (xem nenCungThang). */
+export function cauNenCungThang(c: Cung, doi: Cung, luu: boolean | LuuHoaNam = false, saoLuu: { ten: string; chi: number }[] = []): string {
+  return nenCungThang(c, doi, luu, saoLuu).text;
+}
+
 /** Bản xem trước miễn phí: không có mã quy tắc, không có nội dung tháng. */
 export interface XemTruocVanNam {
   chuyenDe: typeof MA_VAN_NAM;
@@ -128,6 +318,8 @@ export interface XemTruocVanNam {
   thaiTue: string[];
   diemThuan: string | null;
   cungThang: { thang: number; cung: string }[];
+  /** Một tháng mở làm mẫu (L-bb82af): chỉ chữ luận đã lọc từ cấm; không mã quy tắc, không việc nên làm. 11 tháng còn lại chỉ có tên cung ở cungThang. */
+  thangMau: { thang: number; tuNgay: string; cung: string; thangMoc: boolean; cau: string[] } | null;
   ghiChu: string;
   phienBan: string;
 }
@@ -142,10 +334,11 @@ function napQuyTac(): QuyTacNam[] {
 }
 const QUY_TAC = napQuyTac();
 /** Tăng số này mỗi khi đổi cách ghép bài để cache cũ không bị dùng lại. */
-const PHIEN_BAN_GHEP = 'gh3-4phan';
+const NGUON_NEN_CUNG = ['Đặc tả an sao xemtuvi.vn', 'Tử Vi Đẩu Số Tân Biên', 'Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)', 'Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)'];
+const PHIEN_BAN_GHEP = 'gh9-nen-cung-thang-v6';
 const MAU_VIEC = viecJson as unknown as MauViec[];
 const GHI_CHU_PHAI = ghiChuPhaiJson as unknown as Record<string, string>;
-export const PHIEN_BAN_VAN_NAM = bam(JSON.stringify([QUY_TAC, MAU_VIEC, GHI_CHU_PHAI, PHIEN_BAN_QUY_TAC, PHIEN_BAN_GHEP])).slice(0, 12);
+export const PHIEN_BAN_VAN_NAM = bam(JSON.stringify([QUY_TAC, MAU_VIEC, GHI_CHU_PHAI, PHIEN_BAN_QUY_TAC, PHIEN_BAN_GHEP, nenCungThangJson])).slice(0, 12);
 const NAM_CO_QUY_TAC = new Set(QUY_TAC.map((q) => q.namXem ?? NAM_HOP_LE));
 
 // Ngày dương lịch bắt đầu 12 tháng âm lịch và hết năm (engine lịch; test đối chiếu lại bằng engine).
@@ -283,8 +476,14 @@ function cungGocCua(n: Ngu, q: QuyTacNam): Cung[] {
   }
 }
 
-function dien(q: QuyTacNam, sao: string[], g: Cung): string {
-  return q.noiDung.replaceAll('{sao}', sao.join(', ')).replaceAll('{cung}', g.ten);
+/** {sao} = mọi sao khớp; {sao:A|B} = chỉ những sao trong danh sách A|B có thật trên lá số (bỏ tiền tố "L. "), nối bằng " và ". */
+function dien(q: QuyTacNam, sao: string[], g: Cung, thang = false): string {
+  const bo = (s: string) => s.replace(/^L\. /, '');
+  const goc = (thang ? q.noiDungThang : undefined) ?? q.noiDungTheoCung?.[g.ten] ?? q.noiDung;
+  return goc
+    .replace(/\{sao:([^}]+)\}/g, (_m, ds: string) => { const loc = ds.split('|'); return sao.filter((s) => loc.includes(s)).map(bo).join(' và '); })
+    .replaceAll('{sao}', sao.join(', '))
+    .replaceAll('{cung}', g.ten);
 }
 
 /** Đổi chữ "10 năm / giai đoạn / cung vận" của bộ đại vận thành "năm nay" (NAM-PP-06). */
@@ -350,6 +549,42 @@ function tomLai(n: Ngu): Khop {
 function thangMoc(n: Ngu, c: Cung): boolean {
   const { ln } = n;
   return [ln.tieuHan, ln.luuThaiTue, ln.daiVan].includes(c.chi) || ln.luuTuHoa.some((h) => h.chi === c.chi && (h.hoa === 'Hóa Lộc' || h.hoa === 'Hóa Kỵ'));
+}
+
+/** Sao lưu mang tính vướng (sát tinh, bại tinh, Thái Tuế) và nghĩa ngắn để người đọc hiểu; Hóa Kỵ xử lý riêng. */
+const SAO_VUONG: Record<string, string> = {
+  'Kình Dương': 'va chạm, nóng vội', 'Đà La': 'trì trệ, dây dưa', 'Tang Môn': 'chuyện buồn phiền', 'Bạch Hổ': 'căng thẳng, va chạm',
+  'Thiên Khốc': 'buồn lo', 'Thiên Hư': 'hụt hẫng, lo nghĩ', 'Thái Tuế': 'lời ra tiếng vào',
+};
+
+/**
+ * Cung tháng đóng Tuần/Triệt mà có sao lưu hoặc lưu hóa nhập vào (L-91613b, phiếu Thư L-5f6b69 lỗi 2).
+ * Phái Việt: Tuần/Triệt không đổi tính sao, chỉ đổi cường độ (CHUNG-TUAN-02): sao thuận và Lộc/Quyền/Khoa đến chậm, rõ dần;
+ * sát tinh và Hóa Kỵ thì phần vướng nhẹ đi (CHUNG-TUAN-05); cung có cả hai thì nói cả hai chiều (CHUNG-TUAN-06).
+ * Câu tự nêu tên sao nên không dựa vào câu đứng trước ("các điểm nêu trên").
+ */
+function cauTuanTriet(n: Ngu, c: Cung): Khop | null {
+  if (!c.tuan && !c.triet) return null;
+  const ten = (s: string) => s.replace(/^L\. /, '');
+  const luu = n.ln.saoLuu.filter((s) => s.chi === c.chi).map((s) => ten(s.ten));
+  const hoa = n.ln.luuTuHoa.filter((h) => h.chi === c.chi);
+  if (!luu.length && !hoa.length) return null;
+  const dong = c.tuan && c.triet ? 'Tuần và Triệt' : c.tuan ? 'Tuần' : 'Triệt';
+  const noi = (ds: string[]) => (ds.length > 1 ? `${ds.slice(0, -1).join(', ')} và ${ds[ds.length - 1]}` : ds[0]);
+  const thuan = [...luu.filter((s) => !SAO_VUONG[s]).map((s) => `${s} lưu`), ...hoa.filter((h) => h.hoa !== 'Hóa Kỵ').map((h) => `${h.sao} ${h.hoa}`)];
+  const vuong = [...luu.filter((s) => SAO_VUONG[s]).map((s) => `${s} lưu (${SAO_VUONG[s]})`), ...hoa.filter((h) => h.hoa === 'Hóa Kỵ').map((h) => `${h.sao} ${h.hoa} (${h.sao === 'Cự Môn' ? 'hiểu lầm, tranh luận' : 'vướng bận'})`)];
+  const nhip = [c.tuan ? 'làm từng bước, tránh nôn nóng' : '', c.triet ? 'kiên nhẫn chờ kết quả' : ''].filter(Boolean).join(' và ');
+  const cau = [
+    thuan.length ? `phần thuận từ ${noi(thuan)} đến chậm hơn, rõ dần theo thời gian, nên bạn ${nhip}.` : '',
+    vuong.length ? `${thuan.length ? 'Phần vướng từ' : 'phần vướng từ'} ${noi(vuong)} ${thuan.length ? 'cũng ' : ''}nhẹ đi, vì ${dong} làm dịu các sao này.` : '',
+  ].filter(Boolean).join(' ');
+  const text = `Cung ${c.ten} của tháng này đóng ${dong}: ${cau}`;
+  const q: QuyTacNam = {
+    id: 'NAM-THANG-04-TUAN-TRIET', chuyenDe: 'van-nam', lop: 'thang', cung: c.ten, loai: 'YN', muc: 'tong-quan', phan: 'thang', dieuKien: [],
+    noiDung: text, truongPhai: 'Tam hợp phái Việt', maNghienCuu: ['CHUNG-TUAN-02', 'CHUNG-TUAN-05', 'CHUNG-TUAN-06'],
+    nguon: ['Đặc tả an sao xemtuvi.vn', 'Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)', 'Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)'],
+  };
+  return { q, text, sao: [...luu, ...hoa.map((h) => h.sao)], cung: c };
 }
 
 export function kiemTraNamXem(namXem: number, ls: LaSo): void {
@@ -443,8 +678,18 @@ function ghepBai(ls: LaSo, namXem: number) {
       return sao === null ? [] : [{ q, text: dien(q, sao, c), sao, cung: c } as Khop];
     });
     // Một điểm từ sao lưu / lưu hóa tại cung tháng (ưu tiên hóa rồi sao lưu, không dùng câu tô thêm NAM-TT-06).
-    const diem = tatCa.filter((k) => k.cung.chi === chi && k.q.lop === 'cung-goc' && k.q.id !== 'NAM-TT-06' && k.q.muc !== 'su-nghiep' && !/-NHIP$/.test(k.q.id) && !/-NEN$/.test(k.q.id)).sort(xepHang).slice(0, 1);
-    return { thang: i + 1, tuNgay: ngay.thang[i], cung: c.ten, thangMoc: thangMoc(n, c), nhanDinh: gom([...chuDe.slice(0, 1), ...diem]) };
+    const ungVien = tatCa.filter((k) => k.cung.chi === chi && k.q.lop === 'cung-goc' && k.q.id !== 'NAM-TT-06' && k.q.muc !== 'su-nghiep' && !/-NHIP$/.test(k.q.id) && !/-NEN$/.test(k.q.id)).sort(xepHang);
+    // Tháng có cả Hóa Quyền và Hóa Kỵ: nêu cả hai (bản trả phí), không bỏ sót Kỵ như khi chỉ lấy một điểm.
+    const quyen = ungVien.find((k) => /^NAM-HOA-QUYEN/.test(k.q.id)), ky = ungVien.find((k) => /^NAM-HOA-KY/.test(k.q.id));
+    const diem = (quyen && ky ? [quyen, ky] : ungVien.slice(0, 1)).map((k) => ({ ...k, text: dien(k.q, k.sao, k.cung, true) }));
+    const tt = cauTuanTriet(n, c);
+    // Câu nền của cung tháng (cùng một câu ở xem trước và bài trả phí).
+    const nenC = nenCungThang(c, n.ls.cung[(chi + 6) % 12], ln.luuTuHoa, ln.saoLuu);
+    const nenNd = nhanDinh({
+      q: { id: 'NAM-THANG-05-NEN-CUNG', chuyenDe: 'van-nam', lop: 'thang', cung: c.ten, loai: 'YN', muc: 'tong-quan', phan: 'thang', dieuKien: [], noiDung: nenC.text, truongPhai: 'Tam hợp phái Việt', maNghienCuu: [], nguon: NGUON_NEN_CUNG } as QuyTacNam,
+      text: nenC.text, sao: nenC.sao, cung: c,
+    } as Khop);
+    return { thang: i + 1, tuNgay: ngay.thang[i], cung: c.ten, thangMoc: thangMoc(n, c), nhanDinh: [...gom([...chuDe.slice(0, 1), ...diem, ...(tt ? [tt] : [])]), ...(nenNd ? [nenNd] : [])] };
   });
 
   const dauBai = {
@@ -680,13 +925,34 @@ export async function sinhVanNam(ls: LaSo, tuyChon: { namXem?: number; boQuaCach
 /** Điểm thuận ưu tiên cho bản xem trước (NAM-CAM-03: không dùng câu gây lo để kéo mua). */
 const DIEM_THUAN = ['NAM-HOA-LOC-SANG', 'NAM-HOA-KHOA-SANG', 'NAM-HOA-QUYEN-SANG', 'NAM-TH-04', 'NAM-TH-04-TT', 'NAM-LUU-03', 'NAM-LUU-04', 'NAM-LUU-05-PHU', 'NAM-LUU-01', 'NAM-TH-03-LOC', 'NAM-TH-03-KHOA', 'NAM-TH-03-QUYEN'];
 
+export interface UngVienThangMau { thang: number; thangMoc: boolean; coKy: boolean; cau: string[]; coTenSao: boolean }
+/**
+ * Chọn tháng mẫu cho bản xem trước. Bậc ưu tiên: không Hóa Kỵ, lưu hoặc gốc tại cung tháng (NAM-CAM-03) > nhiều câu hơn (4 điểm mỗi câu) > có câu nêu tên sao > tháng mốc;
+ * hòa bậc thì nhiều câu hơn, rồi tháng sớm hơn. Không tháng nào đạt cả thì lấy tháng tốt nhất còn lại;
+ * null chỉ khi mọi tháng đều không có câu.
+ */
+export function chonThangMau<T extends UngVienThangMau>(ds: T[]): T | null {
+  const diem = (x: T) => (x.coKy ? 0 : 100) + x.cau.length * 4 + (x.coTenSao ? 2 : 0) + (x.thangMoc ? 1 : 0);
+  return ds.filter((x) => x.cau.length > 0).reduce<T | null>((tot, x) => (tot === null || diem(x) > diem(tot) || (diem(x) === diem(tot) && x.cau.length > tot.cau.length) ? x : tot), null);
+}
+
 /** Bản xem trước miễn phí: đầu bài + trọng điểm Lưu Thái Tuế + một điểm thuận + tên 12 cung tháng, không nội dung tháng, không mã quy tắc. */
 export function xemTruocVanNam(ls: LaSo, tuyChon: { namXem?: number } = {}): XemTruocVanNam {
   const namXem = tuyChon.namXem ?? NAM_HOP_LE;
   kiemTraNamXem(namXem, ls);
-  const { ln, tatCa, thang, dauBai } = ghepBai(ls, namXem);
-  const van = (k: Khop[]) => k.flatMap((x) => { const t = locTuCam(x.text, TU_CAM); return t ? [t] : []; });
+  const { ln, tatCa, thang, dauBai, n } = ghepBai(ls, namXem);
+  const locCau = (ds: string[]) => ds.flatMap((x) => { const t = locTuCam(x, TU_CAM); return t ? [t] : []; });
+  const van = (k: Khop[]) => locCau(k.map((x) => x.text));
   const thaiTue = tatCa.filter((k) => k.q.lop === 'thai-tue' && /^NAM-TT-01-/.test(k.q.id));
+  const ungVien = thang.map((t) => {
+    const cau = t.nhanDinh.flatMap((x) => { const c = locCau([x.text])[0]; return c ? [{ c, sao: x.thamChieu.sao.map((s) => s.replace(/^L\. /, '')) }] : []; });
+    const chi = ln.luuNguyet[t.thang - 1], cg = n.ls.cung[chi];
+    const coKy = ln.luuTuHoa.some((h) => h.hoa === 'Hóa Kỵ' && chi === h.chi) || coKyGocTaiCung(cg);
+    const dsCau = cau.map((x) => x.c);
+    return { thang: t.thang, thangMoc: t.thangMoc, coKy, cau: dsCau, coTenSao: cau.some((x) => x.sao.some((s) => x.c.includes(s))), goc: t };
+  });
+  const chon = chonThangMau(ungVien);
+  const tm = chon ? { t: chon.goc, cau: chon.cau } : null;
   const thuan = DIEM_THUAN.flatMap((id) => tatCa.filter((k) => k.q.id === id))[0];
   return {
     chuyenDe: MA_VAN_NAM, namXem, canChi: ln.canChi,
@@ -694,6 +960,7 @@ export function xemTruocVanNam(ls: LaSo, tuyChon: { namXem?: number } = {}): Xem
     thaiTue: van(thaiTue),
     diemThuan: thuan ? van([thuan])[0] ?? null : null,
     cungThang: thang.map((t) => ({ thang: t.thang, cung: t.cung })),
+    thangMau: tm ? { thang: tm.t.thang, tuNgay: tm.t.tuNgay, cung: tm.t.cung, thangMoc: tm.t.thangMoc, cau: tm.cau } : null,
     ghiChu: GHI_CHU, phienBan: PHIEN_BAN_VAN_NAM,
   };
 }
