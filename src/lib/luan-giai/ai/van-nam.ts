@@ -137,6 +137,7 @@ const NEN_CUNG_THANG = nenCungThangJson as unknown as {
   thanCu: BangChu;
   hoaDoiChieu: Record<string, BangChu> & { gop: BangChu; gopCat: string; _kem: string };
   chinhTinhTheoCung: BangChu;
+  doiChieu: { kinhLuu: string; tuanTriet: string };
 };
 /** Hóa Kỵ GỐC (từ can năm sinh) tại một cung: chính tinh hoặc sao khác mang Hóa Kỵ. */
 export function coKyGocTaiCung(c: Cung): boolean {
@@ -287,14 +288,19 @@ export function nenCungThang(c: Cung, doi: Cung, luu: boolean | LuuHoaNam = fals
 
   // 5b. Cung tháng có chính tinh: tối đa một câu về chính tinh (hoặc Hỏa/Linh) ở cung đối chiếu, dùng khóa sẵn có.
   if (!vcd) {
-    const tDoi = saoDuyNhat(doi.chinhTinh).find((s) => sangKem(s) && NEN_CUNG_THANG.chinhTinh[s.ten]);
+    // B8: cung đối chiếu có 2 chính tinh thì nêu cả hai (không chỉ .find một sao).
+    const tDoiDs = saoDuyNhat(doi.chinhTinh).filter((s) => sangKem(s) && NEN_CUNG_THANG.chinhTinh[s.ten]).slice(0, 2);
     const hlDoi = saoDuyNhat(doi.hungTinh.concat(doi.phuTinh)).find((s) => s.ten === 'Hỏa Tinh' || s.ten === 'Linh Tinh');
     const nDoi = `cung đối chiếu ${doi.ten}`;
-    if (tDoi) { them(NEN_CUNG_THANG.chinhTinh[tDoi.ten][sangKem(tDoi)!], { ...bien, noi: nDoi }); chenTheoCung(TC._doi); saoDung.push(tDoi.ten); }
-    else if (hlDoi && !hl) {
+    for (const t of tDoiDs) { them(NEN_CUNG_THANG.chinhTinh[t.ten][sangKem(t)!], { ...bien, noi: nDoi }); chenTheoCung(TC._doi); saoDung.push(t.ten); }
+    // B7: Hỏa/Linh, Kình lưu, Tuần/Triệt ở cung đối chiếu vẫn ghép khi đã có câu chính tinh đối chiếu.
+    if (hlDoi && !hl) {
       const m = SP['Hỏa Tinh|Linh Tinh'] as BangChu, k = hlDoi.dacTinhTen;
       them(k && SANG.has(k) ? m.dac : k === 'Hãm' ? m.ham : m.binh, { ...bien, sao: hlDoi.ten, cung: `${doi.ten} (đối chiếu)` }); saoDung.push(hlDoi.ten);
     }
+    const DC = NEN_CUNG_THANG.doiChieu;
+    if (!kdChon && saoLuu.some((x) => x.chi === doi.chi && x.ten.replace(/^L\. /, '') === 'Kình Dương')) { them(DC.kinhLuu, { ...bien, doi: doi.ten }); saoDung.push('Kình Dương'); }
+    if (doi.tuan || doi.triet) them(DC.tuanTriet, { ...bien, doi: doi.ten, ttDoi: tuanTrietTen(doi) });
     themHoaDoi();
   }
 

@@ -313,5 +313,10 @@
   "Tử Tức": "trong cách bạn gần gũi con cái, người nhỏ tuổi mình dìu dắt hoặc một dự án của riêng mình",
   "Phu Thê": "trong cách bạn trò chuyện, nhường nhịn và cùng người thương bàn việc chung",
   "Huynh Đệ": "khi bạn trao đổi, giúp đỡ hoặc cùng làm việc với anh chị em"
+ },
+ "doiChieu": {
+  "_ghiChu": "Bảo ghép tạm (L-1182ed, B7) để có khóa; chữ chờ Hạnh duyệt/viết lại. {doi} = tên cung đối chiếu; {ttDoi} = Tuần, Triệt hoặc Tuần và Triệt.",
+  "kinhLuu": "Kình Dương của năm đóng ở cung đối chiếu {doi}, xung sang cung {cung}: mảng này dễ nghe thêm ý kiến gay gắt từ bên ngoài; nên chậm lại một nhịp trước khi đáp lời.",
+  "tuanTriet": "Cung đối chiếu {doi} đóng {ttDoi}: phần ảnh hưởng chiếu sang cung {cung} nhẹ đi hoặc đến chậm hơn; nên xem đây là nền tham khảo, không dựa hẳn vào nó."
  }
 }

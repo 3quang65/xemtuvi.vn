@@ -299,3 +299,23 @@ test('PHIEN_BAN_VAN_NAM đổi theo khóa nen-cung-thang (băm có nenCungThangJ
   assert.match(src, /PHIEN_BAN_GHEP, nenCungThangJson\]/);
   assert.match(src, /gh9-nen-cung-thang-v6/);
 });
+
+// L-1182ed (B7, B8): cung đối chiếu nêu đủ chính tinh, Hỏa/Linh, Kình lưu, Tuần/Triệt dù đã có câu chính tinh.
+const sao = (ten, extra = {}) => ({ ten, ...extra });
+const cung = (o) => ({ ten: 'Tử Tức', chi: 3, tenChi: 'Dần', chinhTinh: [], catTinh: [], hungTinh: [], phuTinh: [], tuan: false, triet: false, ...o });
+test('B8: cung đối chiếu có 2 chính tinh sáng thì nêu cả hai', () => {
+  const doi = cung({ ten: 'Điền Trạch', chi: 9, chinhTinh: [sao('Vũ Khúc', { dacTinhTen: 'Miếu' }), sao('Thất Sát', { dacTinhTen: 'Miếu' })] });
+  const r = VN.nenCungThang(cung({ ten: 'Tử Tức', chinhTinh: [sao('Thiên Cơ', { dacTinhTen: 'Miếu' })] }), doi);
+  assert.ok(r.sao.includes('Vũ Khúc') && r.sao.includes('Thất Sát'), JSON.stringify(r));
+});
+test('B7: Hỏa Tinh và Tuần ở cung đối chiếu vẫn ghép khi đã có câu chính tinh', () => {
+  const doi = cung({ ten: 'Phu Thê', chi: 9, tuan: true, chinhTinh: [sao('Thái Dương', { dacTinhTen: 'Miếu' })], hungTinh: [sao('Hỏa Tinh', { dacTinhTen: 'Bình' })] });
+  const r = VN.nenCungThang(cung({ ten: 'Huynh Đệ', chinhTinh: [sao('Thiên Cơ', { dacTinhTen: 'Miếu' })] }), doi);
+  assert.ok(r.sao.includes('Hỏa Tinh') && r.sao.includes('Thái Dương'), JSON.stringify(r));
+  assert.ok(/Tuần/.test(r.text) && /đối chiếu Phu Thê/.test(r.text), r.text);
+});
+test('B7: Kình Dương lưu ở cung đối chiếu được nêu', () => {
+  const doi = cung({ ten: 'Huynh Đệ', chi: 9, chinhTinh: [sao('Thái Dương', { dacTinhTen: 'Miếu' })] });
+  const r = VN.nenCungThang(cung({ ten: 'Nô Bộc', chinhTinh: [sao('Thiên Cơ', { dacTinhTen: 'Miếu' })] }), doi, false, [{ ten: 'L. Kình Dương', chi: 9 }]);
+  assert.ok(r.sao.includes('Kình Dương') && /Kình Dương của năm đóng ở cung đối chiếu Huynh Đệ/.test(r.text), r.text);
+});
