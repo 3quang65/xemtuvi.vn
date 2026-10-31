@@ -149,3 +149,25 @@ test('Máy chủ giữ sinhNuocNgoai, muiGioUTC, nuoc khi lưu lá số', async 
   // hai cờ cùng bật: bị từ chối
   assert.equal((await x.laSoGhi(yc('/api/la-so', { thongTinSinh: { ...sinh, mienNamTruoc1975: true } }, cookie), M)).status, 400);
 });
+
+test('Danh sách nước tĩnh: ~25 nước, múi hợp lệ, mùa hè/đông ghi rõ; đọc UTC± nhập tay; dòng xem trước', () => {
+  const d = nap('lib/nuoc-ngoai.ts');
+  assert.ok(new Set(d.DANH_SACH_MUI.map((x) => x.nuoc)).size >= 22);
+  assert.equal(new Set(d.DANH_SACH_MUI.map((x) => x.id)).size, d.DANH_SACH_MUI.length);
+  for (const x of d.DANH_SACH_MUI) assert.ok(tv.muiGioHopLe(x.mui), x.nhan);
+  const my = d.DANH_SACH_MUI.filter((x) => x.nhan.startsWith('Hoa Kỳ · miền Đông'));
+  assert.deepEqual(my.map((x) => x.mui), [-5, -4]);
+  assert.ok(my[0].nhan.includes('giờ mùa đông') && my[1].nhan.includes('giờ mùa hè'));
+  assert.equal(d.DANH_SACH_MUI.find((x) => x.nuoc === 'Ấn Độ').mui, 5.5);
+  for (const [chu, v] of [['-5', -5], ['+5:30', 5.5], ['5,75', 5.75], ['UTC+9', 9], ['−3', -3], ['14', 14]]) assert.equal(d.docMuiGio(chu), v, chu);
+  for (const chu of ['', 'abc', '15', '-13', '5.3', '5:75']) assert.equal(d.docMuiGio(chu), null, chu);
+  assert.equal(d.xemTruocQuyDoi(21, 0, -5, 'Hoa Kỳ').cau, '21:00 Hoa Kỳ = 09:00 Việt Nam (ngày hôm sau)');
+  assert.equal(d.xemTruocQuyDoi(0, 30, 11, 'Úc').cau, '00:30 Úc = 20:30 Việt Nam (ngày hôm trước)');
+  assert.equal(d.xemTruocQuyDoi(4, 10, 5.5, 'Ấn Độ').vn, '05:40');
+  assert.equal(d.xemTruocQuyDoi(3, 30, -5, 'Hoa Kỳ').cau, '03:30 Hoa Kỳ = 15:30 Việt Nam');
+  assert.equal(d.xemTruocQuyDoi(25, 0, 0, 'x'), null);
+  // dòng xem trước khớp engine
+  for (const [g, p, m] of [[21, 0, -5], [0, 30, 11], [4, 10, 5.5], [1, 30, 9]]) {
+    assert.equal(d.xemTruocQuyDoi(g, p, m, 'x').vn, nn(10, 6, 1990, g, p, m).gioChuan.gio);
+  }
+});

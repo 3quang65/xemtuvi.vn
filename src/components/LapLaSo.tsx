@@ -9,6 +9,7 @@ import { docThongTinSinh, ghiNguon, guiSuKien, luuThongTinSinh } from '@/lib/phi
 import { noiTen, phanLoaiLoiNhap, type LoiNhap, type OLoi } from '@/lib/loi-nhap';
 import { linkBaoLoi } from '@/lib/tro-giup';
 import ThongBaoLoi from './ThongBaoLoi';
+import { DANH_SACH_MUI, MUI_KHAC, docMuiGio, xemTruocQuyDoi } from '@/lib/nuoc-ngoai';
 
 
 type FormState = {
@@ -23,13 +24,16 @@ type FormState = {
   giuNgayTyMuon: boolean; // sinh 23h: giữ ngày cũ thay vì sang ngày hôm sau
   mienNam: boolean; // nơi sinh miền Nam trước 1975 (đồng hồ UTC+8)
   nhuan: boolean;
+  nuocNgoai: boolean; // sinh ở nước ngoài (chỉ khi nhập dương lịch); loại trừ với mienNam
+  muiChon: string; // id trong DANH_SACH_MUI, hoặc MUI_KHAC
+  muiKhac: string; // UTC± tự nhập khi chọn MUI_KHAC
 };
 
 const GIO = Array.from({ length: 24 }, (_, i) => i);
 
 export default function LapLaSo() {
   const [f, setF] = useState<FormState>({
-    ten: '', gioiTinh: '', lich: 'duong', ngay: '', thang: '', nam: '', gio: '', phut: '', giuNgayTyMuon: false, mienNam: false, nhuan: false,
+    ten: '', gioiTinh: '', lich: 'duong', ngay: '', thang: '', nam: '', gio: '', phut: '', giuNgayTyMuon: false, mienNam: false, nhuan: false, nuocNgoai: false, muiChon: '', muiKhac: '',
   });
   const [loi, setLoi] = useState<LoiNhap | null>(null); // E01–E03: hiện ngay dưới ô liên quan
   const [hong, setHong] = useState<ThongTinSinh | null>(null); // E04: lập lá số lỗi phía mình; giữ lại thông tin để thử lại
@@ -50,7 +54,14 @@ export default function LapLaSo() {
   const namSo = Number(f.nam);
   const hienMienNam = namSo >= 1959 && namSo <= 1975;
   // Giờ chuẩn có thể rơi vào 23h khi khai sinh 0h ở miền Nam (lùi 1 giờ)
-  const hienTyMuon = f.gio === '23' || (hienMienNam && f.mienNam && f.gio === '0');
+  // Sinh ở nước ngoài chỉ áp dụng khi nhập dương lịch (ngày âm đã là lịch Việt)
+  const dungNuocNgoai = f.lich === 'duong' && f.nuocNgoai;
+  const dong = DANH_SACH_MUI.find((m) => m.id === f.muiChon);
+  const mui: number | null = !dungNuocNgoai ? null : f.muiChon === MUI_KHAC ? docMuiGio(f.muiKhac) : dong ? dong.mui : null;
+  const tenNuoc = f.muiChon === MUI_KHAC ? 'nơi sinh' : dong?.nuoc ?? '';
+  const xemTruoc = mui == null || f.gio === '' ? null : xemTruocQuyDoi(Number(f.gio), f.phut === '' ? 0 : Number(f.phut), mui, tenNuoc);
+  const gioChuanHienTai = dungNuocNgoai ? (xemTruoc ? Number(xemTruoc.vn.slice(0, 2)) : -1) : -1;
+  const hienTyMuon = dungNuocNgoai ? gioChuanHienTai === 23 : f.gio === '23' || (hienMienNam && f.mienNam && f.gio === '0');
 
   const doi = <K extends keyof FormState>(k: K, v: FormState[K]) => setF((s) => ({ ...s, [k]: v }));
 
@@ -84,7 +95,8 @@ export default function LapLaSo() {
       gio: f.gio === '' ? NaN : Number(f.gio),
       phut: f.phut === '' ? 0 : Number(f.phut),
       nhuan: f.lich === 'am' && f.nhuan,
-      mienNamTruoc1975: hienMienNam && f.mienNam,
+      mienNamTruoc1975: !dungNuocNgoai && hienMienNam && f.mienNam,
+      ...(dungNuocNgoai ? { sinhNuocNgoai: true, muiGioUTC: mui ?? undefined, nuoc: tenNuoc || undefined } : {}),
       quyUoc: hienTyMuon && f.giuNgayTyMuon ? { gioTyMuon: 'giuNgay' } : undefined,
     };
     const l = phanLoaiLoiNhap(t) ?? (kiemTraThongTin(t) ? ({ ma: 'E02', o: 'ngay', lich: t.lich === 'am' ? 'am' : 'duong', nhuan: t.lich === 'am' && !!t.nhuan } as LoiNhap) : null);
@@ -95,12 +107,16 @@ export default function LapLaSo() {
   /** Đưa con trỏ về ô cần sửa. */
   const veO = (o: OLoi) => document.getElementById(`o-${o}`)?.focus();
   const moTa = (o: OLoi) => (loi?.o === o ? `loi-${o}` : undefined);
-  const loiO = (o: OLoi) => loi && loi.o === o ? (
+  const loiO = (o: OLoi) => loi && loi.o === o ? (o === 'muiGio' && loi.ma === 'E03' ? (
+    <p id={`loi-${o}`} role="alert" className="loi-muigio">
+      Múi giờ này chưa dùng được. Bạn chọn một nước trong danh sách, hoặc nhập UTC từ −12 đến +14 (ví dụ −5 hoặc +5:30). Chỉ chọn một trong hai: sinh ở nước ngoài hoặc sinh ở miền Nam trước 1975.
+    </p>
+  ) : (
     <ThongBaoLoi
       id={`loi-${o}`} ma={loi.ma} bien={{ tenOThieu: loi.thieu ? noiTen(loi.thieu) : undefined, lich: loi.lich, nhuan: loi.nhuan }}
       nut={{ 'dien-tiep': () => veO(o), 'sua-ngay': () => veO('ngay'), 'sua-gio': () => veO('gio'), 'cach-tim-gio': '/tro-giup#cau-2' }}
     />
-  ) : null;
+  )) : null;
 
   function doiQuyUoc(p: Partial<QuyUoc>) {
     if (!tt) return;
@@ -172,11 +188,37 @@ export default function LapLaSo() {
               <input inputMode="numeric" placeholder="Phút" aria-label="Phút sinh" aria-describedby={moTa('gio')} value={f.phut}
                 onChange={(e) => doi('phut', e.target.value.replace(/\D/g, '').slice(0, 2))} />
             </div>
-            {hienMienNam && (
+            {hienMienNam && !dungNuocNgoai && (
               <label className="nhuan">
-                <input type="checkbox" checked={f.mienNam} onChange={(e) => doi('mienNam', e.target.checked)} />
+                <input type="checkbox" checked={f.mienNam} onChange={(e) => setF((s) => ({ ...s, mienNam: e.target.checked, nuocNgoai: false }))} />
                 Nơi sinh: miền Nam trước 1975 <em>(đồng hồ khi đó nhanh hơn 1 giờ, sẽ tự quy đổi)</em>
               </label>
+            )}
+            {f.lich === 'duong' && (
+              <div className="nuoc-ngoai">
+                <button type="button" className="lk-nho" aria-expanded={f.nuocNgoai} aria-controls="khu-nuoc-ngoai"
+                  onClick={() => setF((s) => ({ ...s, nuocNgoai: !s.nuocNgoai, mienNam: false }))}>
+                  Sinh ở nước ngoài?
+                </button>
+                {f.nuocNgoai && (
+                  <div id="khu-nuoc-ngoai">
+                    <p className="ghi-chu-rieng-tu">
+                      Nhập giờ trên đồng hồ nơi bạn sinh, hệ thống tự quy đổi sang giờ Việt Nam. Nếu nước đó có đổi giờ theo mùa, bạn chọn đúng giờ mùa hè hoặc mùa đông tại thời điểm sinh.
+                    </p>
+                    <select id="o-muiGio" aria-label="Nước và múi giờ nơi sinh" aria-describedby={moTa('muiGio')} aria-invalid={loi?.o === 'muiGio'} value={f.muiChon} onChange={(e) => doi('muiChon', e.target.value)}>
+                      <option value="">Chọn nước nơi bạn sinh</option>
+                      {DANH_SACH_MUI.map((m) => <option key={m.id} value={m.id}>{m.nhan}</option>)}
+                      <option value={MUI_KHAC}>Khác (nhập UTC±)</option>
+                    </select>
+                    {f.muiChon === MUI_KHAC && (
+                      <input inputMode="text" placeholder="UTC± (ví dụ -3 hoặc +5:30)" aria-label="Múi giờ UTC nơi sinh" aria-describedby={moTa('muiGio')} value={f.muiKhac}
+                        onChange={(e) => doi('muiKhac', e.target.value.slice(0, 8))} />
+                    )}
+                    {xemTruoc && <p className="ghi-chu-rieng-tu" aria-live="polite">{xemTruoc.cau}</p>}
+                    {loiO('muiGio')}
+                  </div>
+                )}
+              </div>
             )}
             {hienTyMuon && (
               <label className="nhuan">
@@ -197,7 +239,7 @@ export default function LapLaSo() {
         )}
         {laSo && (
           <>
-            <LaSoBan key={JSON.stringify(laSo.duong) + laSo.gio.dongHo + laSo.gioiTinh} laSo={laSo} namHienTai={namAmHienTai()} onDoiQuyUoc={doiQuyUoc} />
+            <LaSoBan key={JSON.stringify(laSo.duong) + laSo.gio.dongHo + laSo.gioChuan.gio + laSo.gioiTinh} laSo={laSo} namHienTai={namAmHienTai()} onDoiQuyUoc={doiQuyUoc} />
             <TomTatMienPhi laSo={laSo} />
             <LienHe />
           </>

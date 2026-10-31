@@ -75,6 +75,10 @@ a { color: inherit; }
 .chon-doi input { accent-color: var(--ngoc); }
 .chon-doi.nho label { min-height: 36px; font-size: 0.9rem; }
 .chon-doi.nho { margin-bottom: 8px; }
+.nuoc-ngoai { margin-top: 6px; font-size: 0.9rem; }
+.nuoc-ngoai select, .nuoc-ngoai input { width: 100%; margin-top: 6px; }
+.lk-nho { background: none; border: 0; padding: 4px 0; color: inherit; text-decoration: underline; cursor: pointer; font: inherit; min-height: 32px; }
+.loi-muigio { margin: 6px 0 0; font-size: 0.85rem; }
 .nhuan { display: flex; gap: 8px; align-items: center; font-size: 0.9rem; margin-top: 6px; }
 .bao-loi { margin: 0; color: var(--sen); font-size: 0.95rem; }
 .nut-chinh {
