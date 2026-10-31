@@ -8,6 +8,8 @@ const DATA = path.join(HOME, 'xemtuvi-data');
 const DB = process.env.CSDL_TEP || path.join(DATA, 'csdl', 'xemtuvi.db');
 const DIR = process.env.SAO_LUU_DIR || path.join(DATA, 'sao-luu');
 const DRIVE = process.env.SAO_LUU_DRIVE || 'drive:09 Sao lưu (backup)/Cơ sở dữ liệu/';
+const KHO_MAU = process.env.MAU_LUAN_GIAI_DIR || path.join(DATA, 'mau-luan-giai'); // kho mẫu huấn luyện luận giải (L-c8e74f), chỉ dữ liệu lá số, không dữ liệu khách
+const DRIVE_MAU = process.env.SAO_LUU_DRIVE_MAU || 'drive:09 Sao lưu (backup)/Mẫu luận giải/';
 const GIU = 14; // bản giữ trên máy
 const GIU_DRIVE = '30d'; // bản trên Drive quá hạn này bị xóa (khách xóa dữ liệu thì bản sao lưu cũng không tồn tại quá 30 ngày)
 const ngay = new Date(Date.now() + 7 * 3600_000).toISOString().slice(0, 10);
@@ -15,6 +17,17 @@ const ngay = new Date(Date.now() + 7 * 3600_000).toISOString().slice(0, 10);
 function canhBao(nd) {
   console.error('[sao-luu] ' + nd);
   spawnSync('office', ['event', 'Sao lưu CSDL xemtuvi: ' + nd, '--actor', 'Sơn', '--kind', 'canh-bao'], { stdio: 'ignore' });
+}
+// Kho mẫu: nén tar.gz, giữ GIU bản trên máy. Trả đường dẫn bản nén, hoặc null nếu chưa có kho / lỗi (đã cảnh báo).
+function saoLuuKho() {
+  if (!fs.existsSync(KHO_MAU) || !fs.readdirSync(KHO_MAU).some((f) => f.endsWith('.jsonl'))) return null;
+  const dich = path.join(DIR, `mau-luan-giai-${ngay}.tar.gz`);
+  const r = spawnSync('tar', ['-czf', dich, '-C', path.dirname(KHO_MAU), path.basename(KHO_MAU)], { encoding: 'utf8' });
+  if (r.status !== 0) { canhBao('nén kho mẫu luận giải lỗi: ' + String(r.stderr).slice(-150)); return null; }
+  fs.chmodSync(dich, 0o600);
+  const ds = fs.readdirSync(DIR).filter((f) => /^mau-luan-giai-\d{4}-\d{2}-\d{2}\.tar\.gz$/.test(f)).sort();
+  for (const f of ds.slice(0, Math.max(0, ds.length - GIU))) fs.rmSync(path.join(DIR, f), { force: true });
+  return dich;
 }
 function main() {
   if (!fs.existsSync(DB)) { console.log('[sao-luu] chưa có CSDL, bỏ qua: ' + DB); return 0; }
@@ -42,12 +55,18 @@ function main() {
     const p = path.join(DIR, f);
     if (fs.statSync(p).mtimeMs < han) fs.rmSync(p, { force: true });
   }
-  if (process.env.BO_QUA_DRIVE) { console.log('[sao-luu] ok (chỉ máy): ' + dich); return 0; }
+  const kho = saoLuuKho();
+  if (process.env.BO_QUA_DRIVE) { console.log('[sao-luu] ok (chỉ máy): ' + dich + (kho ? ' + ' + kho : '')); return 0; }
   const r = spawnSync('rclone', ['copy', dich, DRIVE], { encoding: 'utf8', timeout: 600_000 });
   if (r.status !== 0) { canhBao('tải lên Drive lỗi: ' + String(r.stderr).slice(-150)); return 2; }
   const x = spawnSync('rclone', ['delete', DRIVE, '--max-depth', '1', '--min-age', GIU_DRIVE, '--include', 'xemtuvi-*.db.gz'], { encoding: 'utf8', timeout: 600_000 });
   if (x.status !== 0) { canhBao('xóa bản quá ' + GIU_DRIVE + ' trên Drive lỗi: ' + String(x.stderr).slice(-150)); return 3; }
-  console.log('[sao-luu] ok: ' + dich + ' -> ' + DRIVE);
+  if (kho) {
+    const u = spawnSync('rclone', ['copy', kho, DRIVE_MAU], { encoding: 'utf8', timeout: 600_000 });
+    if (u.status !== 0) { canhBao('tải kho mẫu luận giải lên Drive lỗi: ' + String(u.stderr).slice(-150)); return 4; }
+    spawnSync('rclone', ['delete', DRIVE_MAU, '--max-depth', '1', '--min-age', GIU_DRIVE, '--include', 'mau-luan-giai-*.tar.gz'], { encoding: 'utf8', timeout: 600_000 });
+  }
+  console.log('[sao-luu] ok: ' + dich + ' -> ' + DRIVE + (kho ? ' + kho mẫu -> ' + DRIVE_MAU : ''));
   return 0;
 }
 try { process.exit(main()); } catch (e) { canhBao('lỗi: ' + e.message); process.exit(1); }
