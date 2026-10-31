@@ -71,6 +71,11 @@ test('bản trả phí: không còn "năm nay", "A/B", "nhà cửa, chi tiêu" t
         // L-5f6b69: mục tháng nói theo tháng, không câu nào còn "năm nay"/"năm thuận".
         assert.ok(!/năm nay|năm thuận/i.test(x.text), x.thamChieu.quyTacId + ': ' + x.text);
         // L-91613b: nghĩa học hành/tay nghề chỉ ở Quan Lộc, Mệnh.
+        // L-91613b: Tuần/Triệt với sát tinh, Kỵ là giảm xấu, không "phát huy"; không trỏ "các điểm nêu trên".
+        if (x.thamChieu.quyTacId === 'NAM-THANG-04-TUAN-TRIET') {
+          assert.ok(!/phát huy|nêu trên/.test(x.text), x.text);
+          if (/Kình Dương|Đà La|Tang Môn|Bạch Hổ|Thiên Khốc|Thiên Hư|Hóa Kỵ/.test(x.text)) assert.ok(/phần vướng .+ nhẹ đi/i.test(x.text), x.text);
+        }
         if (!['Quan Lộc', 'Mệnh'].includes(t.cung)) assert.ok(!/chứng chỉ|tay nghề/.test(x.text), x.thamChieu.quyTacId + '@' + t.cung + ': ' + x.text);
       }
       if (ids.some((i) => /^NAM-HOA-QUYEN/.test(i)) && ids.some((i) => /^NAM-HOA-KY/.test(i))) coCaHai++;

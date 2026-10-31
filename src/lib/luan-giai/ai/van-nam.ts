@@ -150,7 +150,7 @@ function napQuyTac(): QuyTacNam[] {
 }
 const QUY_TAC = napQuyTac();
 /** Tăng số này mỗi khi đổi cách ghép bài để cache cũ không bị dùng lại. */
-const PHIEN_BAN_GHEP = 'gh5-theo-cung-thang';
+const PHIEN_BAN_GHEP = 'gh6-tuan-triet-hai-nhanh';
 const MAU_VIEC = viecJson as unknown as MauViec[];
 const GHI_CHU_PHAI = ghiChuPhaiJson as unknown as Record<string, string>;
 export const PHIEN_BAN_VAN_NAM = bam(JSON.stringify([QUY_TAC, MAU_VIEC, GHI_CHU_PHAI, PHIEN_BAN_QUY_TAC, PHIEN_BAN_GHEP])).slice(0, 12);
@@ -366,7 +366,18 @@ function thangMoc(n: Ngu, c: Cung): boolean {
   return [ln.tieuHan, ln.luuThaiTue, ln.daiVan].includes(c.chi) || ln.luuTuHoa.some((h) => h.chi === c.chi && (h.hoa === 'Hóa Lộc' || h.hoa === 'Hóa Kỵ'));
 }
 
-/** Cung tháng đóng Tuần/Triệt mà có sao lưu hoặc lưu hóa nhập vào: một câu trung tính (nghĩa Tuần/Triệt theo hoi-dap.ts). */
+/** Sao lưu mang tính vướng (sát tinh, bại tinh, Thái Tuế) và nghĩa ngắn để người đọc hiểu; Hóa Kỵ xử lý riêng. */
+const SAO_VUONG: Record<string, string> = {
+  'Kình Dương': 'va chạm, nóng vội', 'Đà La': 'trì trệ, dây dưa', 'Tang Môn': 'chuyện buồn phiền', 'Bạch Hổ': 'căng thẳng, va chạm',
+  'Thiên Khốc': 'buồn lo', 'Thiên Hư': 'hụt hẫng, lo nghĩ', 'Thái Tuế': 'lời ra tiếng vào',
+};
+
+/**
+ * Cung tháng đóng Tuần/Triệt mà có sao lưu hoặc lưu hóa nhập vào (L-91613b, phiếu Thư L-5f6b69 lỗi 2).
+ * Phái Việt: Tuần/Triệt không đổi tính sao, chỉ đổi cường độ (CHUNG-TUAN-02): sao thuận và Lộc/Quyền/Khoa đến chậm, rõ dần;
+ * sát tinh và Hóa Kỵ thì phần vướng nhẹ đi (CHUNG-TUAN-05); cung có cả hai thì nói cả hai chiều (CHUNG-TUAN-06).
+ * Câu tự nêu tên sao nên không dựa vào câu đứng trước ("các điểm nêu trên").
+ */
 function cauTuanTriet(n: Ngu, c: Cung): Khop | null {
   if (!c.tuan && !c.triet) return null;
   const ten = (s: string) => s.replace(/^L\. /, '');
@@ -374,12 +385,19 @@ function cauTuanTriet(n: Ngu, c: Cung): Khop | null {
   const hoa = n.ln.luuTuHoa.filter((h) => h.chi === c.chi);
   if (!luu.length && !hoa.length) return null;
   const dong = c.tuan && c.triet ? 'Tuần và Triệt' : c.tuan ? 'Tuần' : 'Triệt';
-  const ve = [c.tuan ? 'Tuần: việc nên làm chậm, từng bước, tránh nôn nóng' : '', c.triet ? 'Triệt: cần thời gian để phát huy' : ''].filter(Boolean).join('; ');
-  const nhap = [...luu.map((s) => `${s} lưu`), ...hoa.map((h) => `${h.sao} ${h.hoa}`)].join(', ');
-  const text = `Cung ${c.ten} của tháng này đóng ${dong}, nơi ${nhap} nhập vào: các điểm nêu trên đến chậm hơn, rõ dần theo thời gian (${ve}).`;
+  const noi = (ds: string[]) => (ds.length > 1 ? `${ds.slice(0, -1).join(', ')} và ${ds[ds.length - 1]}` : ds[0]);
+  const thuan = [...luu.filter((s) => !SAO_VUONG[s]).map((s) => `${s} lưu`), ...hoa.filter((h) => h.hoa !== 'Hóa Kỵ').map((h) => `${h.sao} ${h.hoa}`)];
+  const vuong = [...luu.filter((s) => SAO_VUONG[s]).map((s) => `${s} lưu (${SAO_VUONG[s]})`), ...hoa.filter((h) => h.hoa === 'Hóa Kỵ').map((h) => `${h.sao} ${h.hoa} (${h.sao === 'Cự Môn' ? 'hiểu lầm, tranh luận' : 'vướng bận'})`)];
+  const nhip = [c.tuan ? 'làm từng bước, tránh nôn nóng' : '', c.triet ? 'kiên nhẫn chờ kết quả' : ''].filter(Boolean).join(' và ');
+  const cau = [
+    thuan.length ? `phần thuận từ ${noi(thuan)} đến chậm hơn, rõ dần theo thời gian, nên bạn ${nhip}.` : '',
+    vuong.length ? `${thuan.length ? 'Phần vướng từ' : 'phần vướng từ'} ${noi(vuong)} ${thuan.length ? 'cũng ' : ''}nhẹ đi, vì ${dong} làm dịu các sao này.` : '',
+  ].filter(Boolean).join(' ');
+  const text = `Cung ${c.ten} của tháng này đóng ${dong}: ${cau}`;
   const q: QuyTacNam = {
     id: 'NAM-THANG-04-TUAN-TRIET', chuyenDe: 'van-nam', lop: 'thang', cung: c.ten, loai: 'YN', muc: 'tong-quan', phan: 'thang', dieuKien: [],
-    noiDung: text, nguon: ['Đặc tả an sao xemtuvi.vn'], truongPhai: 'Tam hợp phái Việt',
+    noiDung: text, truongPhai: 'Tam hợp phái Việt', maNghienCuu: ['CHUNG-TUAN-02', 'CHUNG-TUAN-05', 'CHUNG-TUAN-06'],
+    nguon: ['Đặc tả an sao xemtuvi.vn', 'Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)', 'Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)'],
   };
   return { q, text, sao: [...luu, ...hoa.map((h) => h.sao)], cung: c };
 }
