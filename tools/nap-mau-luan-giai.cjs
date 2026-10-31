@@ -2,7 +2,7 @@
 // Quét lời giải đã được Thư chấm trong docs/luan-giai/ và nạp vào kho mẫu (L-c8e74f). Chạy lại bao nhiêu lần cũng được (trùng id thì bỏ qua).
 // Dùng: node tools/nap-mau-luan-giai.cjs [--thu] [--tu-ngay 2026-10-01]   (cron 23:10 hằng đêm, trước sao lưu 23:15)
 // Nguồn đã hiểu: mau-1, mau-2 (ban-NN.md + bảng điểm kiem-duyet-1/2), dai-van (DVnn + kiem-duyet-dai-van), tom-tat-mien-phi/sau.md (TCnn + kiem-duyet-tom-tat-mien-phi).
-// Không nạp (và lý do) được in cuối: mau-tb (phiếu không có điểm từng bản), van-nam (đầu vào ghi bằng chữ, không có JSON).
+// Thêm van-nam (VN01–03, L-f17d6e). Không nạp (và lý do) được in cuối: mau-tb (phiếu không có điểm từng bản).
 const fs = require('node:fs');
 const path = require('node:path');
 const { execFileSync } = require('node:child_process');
@@ -53,7 +53,16 @@ function themTungBan(thuMuc, tepDiem) {
 themTungBan('mau-1', 'kiem-duyet-1.md');
 themTungBan('mau-2', 'kiem-duyet-2.md');
 bo.push({ nguon: 'mau-tb', ly: 'kiem-duyet-tai-bach-chinh-tinh.md không có điểm từng bản (chỉ kết luận CHƯA ĐẠT, P0 2/P1 7)' });
-bo.push({ nguon: 'van-nam VN01–03', ly: 'đầu vào ghi bằng chữ ("nữ 12/3/1998 9:00"), cần Hạnh/Thư xác nhận giờ sinh trước khi nạp' });
+// Vận năm 2027 (VN01–03): đầu vào JSON trong van-nam/du-lieu.md, điểm 4 tiêu chí trong kiem-duyet-van-nam.md
+{
+  const dl = doc('van-nam/du-lieu.md'), diem = bangDiem(doc('kiem-duyet-van-nam.md'), (k) => (/^VN\d\d$/.test(k) ? k : null));
+  for (const id of Object.keys(diem).sort()) {
+    const khoi = dl.split(/^## /m).find((b) => b.startsWith(id + ' '));
+    const dv = khoi && (khoi.match(/Đầu vào: `(\{.*\})`/) || [])[1];
+    if (!dv) { bo.push({ nguon: id, ly: 'không thấy đầu vào trong van-nam/du-lieu.md' }); continue; }
+    ds.push({ nguon: `van-nam/${id}`, o: { dauVao: JSON.parse(dv), loiGiai: doc(`van-nam/${id}.md`), diemThu: diem[id], ngay: ngayTep(`van-nam/${id}.md`), chuyenDe: 'van-nam', nguoiViet: 'hanh', nguoiCham: 'thu', nguon: 'hanh', nguonGoc: 'claude', ghiChu: 'điểm lần duyệt trong kiem-duyet-van-nam.md' } });
+  }
+}
 
 // Đại vận
 {
