@@ -41,7 +41,7 @@ test('Trường cá nhân bị từ chối ở cả ba sự kiện', () => {
 
 test('Khảo sát thuộc màn luận giải, không phá đếm màn; client không tự tạo tên lạ', () => {
   for (const t of ['hien_khao_sat', 'tra_loi_khao_sat', 'bo_qua_khao_sat']) { assert.equal(trangCua(t), 'luan-giai'); assert.ok(TEN_SU_KIEN.includes(t)); }
-  assert.equal(new Set(TEN_SU_KIEN.map(trangCua)).size, 7);
+  assert.equal(new Set(TEN_SU_KIEN.map(trangCua)).size, 8); // vao, form, tom-tat, chon-goi, thanh-toan, luan-giai, lp, sinh-con
   // phiên đã trả tiền + khảo sát vẫn đếm đúng 4 màn
   const ds = ['vao_form', 'xem_tom_tat', 'vao_chon_goi', 'vao_thanh_toan', 'thanh_toan_xong', 'hien_khao_sat'].map((ten) => ({ t: 1, ten, phien: 'A', trang: trangCua(ten) }));
   assert.equal(tinhPheu(ds).soManTrungBinh, 4);

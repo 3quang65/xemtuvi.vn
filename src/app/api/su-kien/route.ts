@@ -29,6 +29,10 @@ export async function POST(req: Request) {
     await ghiSuKien({ ten, phien, trang: trangCua(ten), ...thietBi, ...nguonKhach, ...nguon, nhom: nhomNguon(sk) });
     return new Response(null, { status: 204 });
   }
+  if (sk.ten === 'xem_ket_qua' || sk.ten === 'co_nhap_ngay_thang') { // công cụ /sinh-con-2027: chỉ mức hoặc có/không nhập ngày tháng
+    await ghiSuKien({ ten: sk.ten, phien: sk.phien, trang: trangCua(sk.ten), ...thietBi, ...nguonKhach, ...(sk.ten === 'xem_ket_qua' ? { muc: sk.muc } : { co: sk.co }) });
+    return new Response(null, { status: 204 });
+  }
   await ghiSuKien({
     ten: sk.ten, phien: sk.phien, trang: trangCua(sk.ten), ...thietBi, ...nguonKhach,
     ...(sk.goi ? { goi: sk.goi, gia: layGoi(sk.goi, bangGiaCuaYeuCau(req))?.gia } : {}), ...(sk.chuDe ? { chuDe: sk.chuDe } : {}),

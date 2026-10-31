@@ -7,9 +7,9 @@ const path = require('node:path');
 const { kiemTraSuKien, nhomNguon, TEN_SU_KIEN, CHI_MAY_CHU, trangCua } = require('../src/lib/su-kien.js');
 const { tinhPheu, docThuMuc, tinhTheoNguon, taoGiaLap, bangNguon, bangDonGoi, docGio, locGio, docChi } = require('../tools/pheu.cjs');
 
-test('Sự kiện hợp lệ: đủ 22 tên (3 tên chỉ máy chủ ghi, 3 tên khảo sát có test riêng), phiên 16–32 ký tự', () => {
-  assert.equal(TEN_SU_KIEN.length, 22);
-  for (const ten of TEN_SU_KIEN.filter((t) => !CHI_MAY_CHU.includes(t) && t !== 'vao_trang' && !t.endsWith('_khao_sat'))) // vao_trang cần thêm dich, may: có test riêng
+test('Sự kiện hợp lệ: đủ 25 tên (3 tên chỉ máy chủ ghi, 3 tên khảo sát và 2 tên /sinh-con-2027 có test riêng), phiên 16–32 ký tự', () => {
+  assert.equal(TEN_SU_KIEN.length, 25);
+  for (const ten of TEN_SU_KIEN.filter((t) => !CHI_MAY_CHU.includes(t) && t !== 'vao_trang' && !t.endsWith('_khao_sat') && !['xem_ket_qua', 'co_nhap_ngay_thang'].includes(t))) // vao_trang cần thêm dich, may: có test riêng
     assert.deepEqual(kiemTraSuKien({ ten, phien: 'a1b2c3d4e5f6a7b8' }), { ten, phien: 'a1b2c3d4e5f6a7b8' });
 });
 
@@ -25,7 +25,7 @@ test('Từ chối: trường lạ, tên lạ, phiên sai độ dài/ký tự, kh
 });
 
 test('Màn hình của từng sự kiện: 4 màn mua + trang luận giải (báo lỗi)', () => {
-  assert.equal(new Set(TEN_SU_KIEN.map(trangCua)).size, 7); // thêm 'vao' (vao_trang)
+  assert.equal(new Set(TEN_SU_KIEN.map(trangCua)).size, 8); // thêm 'vao' (vao_trang) và 'sinh-con'
   assert.equal(trangCua('bao_loi'), 'luan-giai');
   assert.equal(trangCua('thanh_toan_xong'), 'thanh-toan');
 });
@@ -272,4 +272,16 @@ test('docChi/docGio: nhập sai thì báo lỗi; giờ không múi giờ = +07',
   assert.throws(() => docChi(['--chi=paid:0']));
   assert.equal(docGio('2026-12-15T09:00'), Date.parse('2026-12-15T09:00:00+07:00'));
   assert.equal(docGio('xyz'), null);
+});
+
+test('Sự kiện /sinh-con-2027: chỉ nhận mức hoặc có/không, từ chối năm sinh và giá trị lạ', () => {
+  const p = 'a1b2c3d4e5f6a7b8';
+  assert.deepEqual(kiemTraSuKien({ ten: 'xem_ket_qua', phien: p, muc: 'can-bang' }), { ten: 'xem_ket_qua', phien: p, muc: 'can-bang' });
+  assert.deepEqual(kiemTraSuKien({ ten: 'co_nhap_ngay_thang', phien: p, co: false }), { ten: 'co_nhap_ngay_thang', phien: p, co: false });
+  assert.deepEqual(kiemTraSuKien({ ten: 'bam_sang_la_so', phien: p }), { ten: 'bam_sang_la_so', phien: p });
+  for (const x of [
+    { ten: 'xem_ket_qua', phien: p }, { ten: 'xem_ket_qua', phien: p, muc: 'tot' }, { ten: 'xem_ket_qua', phien: p, muc: 'thuan', namBo: 1990 },
+    { ten: 'co_nhap_ngay_thang', phien: p, co: 'true' }, { ten: 'co_nhap_ngay_thang', phien: p }, { ten: 'bam_sang_la_so', phien: p, muc: 'thuan' },
+  ]) assert.equal(kiemTraSuKien(x), null, JSON.stringify(x));
+  assert.equal(trangCua('xem_ket_qua'), 'sinh-con');
 });

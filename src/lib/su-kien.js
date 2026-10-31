@@ -9,6 +9,7 @@ const TRANG = {
   xem_lp_van_nam: 'lp', bam_lap_la_so_lp: 'lp', // trang đích /lp/van-nam-2027
   vao_moi: 'form', dung_ma_moi: 'luan-giai', bam_gop_y: 'luan-giai', // bản thử khách mời (ban-thu-khach-moi.md)
   hien_khao_sat: 'luan-giai', tra_loi_khao_sat: 'luan-giai', bo_qua_khao_sat: 'luan-giai', // khảo sát 'đáng tiền' sau bài trả phí (khao-sat-dang-tien_v1.md); không tính vào 4 màn
+  xem_ket_qua: 'sinh-con', co_nhap_ngay_thang: 'sinh-con', bam_sang_la_so: 'sinh-con', // công cụ miễn phí /sinh-con-2027; chỉ mang mức (3 giá trị) và có/không nhập ngày tháng, KHÔNG năm sinh
   bao_loi: 'luan-giai', // khách báo không xem được đủ phần đã mua (đếm khiếu nại); sau khi mua nên không tính vào 4 màn
 };
 const { MA_GOI, MA_CHU_DE } = require('./goi-ma.js');
@@ -23,6 +24,7 @@ const CHI_MAY_CHU = ['vao_moi', 'dung_ma_moi', 'dang_ky_nhan_tin'];
 /** Màn hình (trong tối đa 4 màn) mà sự kiện thuộc về; máy chủ tự suy ra, không tin máy khách. */
 function trangCua(ten) { return TRANG[ten]; }
 
+const MUC_SINH_CON = ['thuan', 'can-bang', 'can-luu-y']; // mức kết quả của /sinh-con-2027
 const NHANH = ['goc', 'thu']; // nhánh thử nghiệm giá (thu-gia_v1.md); máy chủ mới là bên quyết định nhánh và giá
 const MAU_THIET_BI = /^[A-Za-z0-9_-]{16,32}$/; // mã thiết bị ẩn danh (chuỗi ngẫu nhiên, cookie bên thứ nhất); máy chủ gắn từ cookie
 const CO_GOI = ['chon_goi', 'vao_thanh_toan', 'thanh_toan_xong', 'bao_loi', 'dang_ky_thanh_vien'];
@@ -97,11 +99,27 @@ function kiemKhaoSat(b) {
   return ra;
 }
 
+/** Sự kiện công cụ /sinh-con-2027: xem_ket_qua chỉ mang `muc`, co_nhap_ngay_thang chỉ mang `co` (boolean); không nhận năm sinh hay trường nào khác. */
+function kiemSinhCon(b) {
+  const truong = b.ten === 'xem_ket_qua' ? 'muc' : 'co';
+  const khoa = Object.keys(b);
+  if (!khoa.includes('phien') || !khoa.includes(truong) || khoa.some((k) => !['ten', 'phien', 'thietBi', truong].includes(k))) return null;
+  if (typeof b.phien !== 'string' || !/^[A-Za-z0-9_-]{16,32}$/.test(b.phien)) return null;
+  if (truong === 'muc' ? !MUC_SINH_CON.includes(b.muc) : typeof b.co !== 'boolean') return null;
+  const ra = { ten: b.ten, phien: b.phien, [truong]: b[truong] };
+  if (khoa.includes('thietBi')) {
+    if (typeof b.thietBi !== 'string' || !MAU_THIET_BI.test(b.thietBi)) return null;
+    ra.thietBi = b.thietBi;
+  }
+  return ra;
+}
+
 /** Nhận {ten, phien} và (chỉ với CO_GOI) thêm goi, chuDe, nhanh; thietBi (tùy chọn, kiểm định dạng); trả về bản sạch hoặc null nếu có bất kỳ điều gì sai. */
 function kiemTraSuKien(b) {
   if (!b || typeof b !== 'object' || Array.isArray(b)) return null;
   if (typeof b.ten !== 'string' || !TEN_SU_KIEN.includes(b.ten) || CHI_MAY_CHU.includes(b.ten)) return null;
   if (KHAO_SAT.includes(b.ten)) return kiemKhaoSat(b);
+  if (b.ten === 'xem_ket_qua' || b.ten === 'co_nhap_ngay_thang') return kiemSinhCon(b);
   const laVaoTrang = b.ten === 'vao_trang';
   const choPhep = laVaoTrang ? ['ten', 'phien', 'thietBi', ...TRUONG_UTM, 'ref', 'dich', 'may']
     : CO_GOI.includes(b.ten) ? ['ten', 'phien', 'thietBi', 'goi', 'chuDe', 'nhanh'] : ['ten', 'phien', 'thietBi'];

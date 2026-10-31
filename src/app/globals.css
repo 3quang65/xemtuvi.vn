@@ -384,3 +384,14 @@ a { color: inherit; }
 .tab-chu-de { display: flex; flex-wrap: nowrap; gap: 8px; overflow-x: auto; scroll-snap-type: x proximity; padding-bottom: 4px; margin: 0 -16px; padding-inline: 16px; scrollbar-width: none; }
 .tab-chu-de::-webkit-scrollbar { display: none; }
 .tab-chu-de button { flex: 0 0 auto; min-height: 44px; padding: 0 16px; white-space: nowrap; scroll-snap-align: start; }
+
+/* ---------- Sinh con 2027 (/sinh-con-2027): 1 cột, không cuộn ngang ở 390px ---------- */
+.sc-ket-qua { min-width: 0; overflow-wrap: anywhere; }
+.sc-ket-qua h2, .sc-ket-qua p { margin: 0; }
+.sc-dong { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.sc-dong li { padding: 12px 14px; background: var(--ngoc-nhat); border-radius: 10px; line-height: 1.55; }
+.sc-cta { display: grid; gap: 12px; padding-top: 16px; border-top: 1px solid var(--vien); }
+.sc-cta p { color: var(--muc-nhat); }
+.o label { font-size: 0.95rem; }
+.o .nhuan { align-items: flex-start; min-height: 44px; }
+.o .nhuan input[type="checkbox"] { width: 22px; height: 22px; flex: none; margin-top: 2px; accent-color: var(--ngoc); }
