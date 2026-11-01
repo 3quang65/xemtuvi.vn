@@ -323,6 +323,9 @@ main:has(.ket-qua) .gioi-thieu { display: none; }
 .bai-luan .can-cu { display: block; margin-top: 4px; overflow-wrap: anywhere; color: var(--chu-phu, inherit); }
 .lh-khoi { display: grid; gap: 8px; }
 .toi-xac-nhan { display: grid; gap: 12px; }
+.toi-rong { display: grid; gap: 10px; padding: 16px; border: 1px solid var(--vien-dam); border-radius: 12px; background: var(--nen-sau); }
+.toi-rong h2 { margin: 0; }
+.toi-rong .nut-chinh { display: inline-block; min-height: 44px; }
 
 /* ---------- Trợ giúp, thông báo lỗi thân thiện, báo lỗi ---------- */
 .tro-giup .cau-hoi { display: grid; gap: 6px; scroll-margin-top: 16px; padding-top: 8px; }

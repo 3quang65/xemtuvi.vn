@@ -6,10 +6,22 @@ import { DIEU_KIEN_XEM_LAI } from '@/lib/goi';
 
 type Buoc = 'tai' | 'chua-dang-nhap' | 'loi' | 'xem' | 'hoi' | 'dang-xoa' | 'xong';
 
+/** Trạng thái rỗng: tài khoản đã đăng nhập nhưng chưa lưu lá số nào. */
+export function ToiChuaCoLaSo() {
+  return (
+    <div className="toi-rong" role="region" aria-labelledby="toi-rong-tieu-de">
+      <h2 id="toi-rong-tieu-de">Bạn chưa có lá số nào</h2>
+      <p>Lập lá số chỉ mất một phút: nhập ngày, giờ sinh và giới tính. Lá số được lưu vào tài khoản để bạn xem lại và đọc luận giải bất cứ lúc nào.</p>
+      <p><Link href="/" className="nut-chinh">Lập lá số của tôi</Link></p>
+    </div>
+  );
+}
+
 /** Trang /toi: xem tài khoản và xóa dữ liệu của tôi (gõ XOA để xác nhận). */
 export default function TaiKhoanToi() {
   const [buoc, setBuoc] = useState<Buoc>('tai');
   const [email, setEmail] = useState('');
+  const [soLaSo, setSoLaSo] = useState<number | null>(null);
   const [loi, setLoi] = useState<string | null>(null);
   const [go, setGo] = useState('');
 
@@ -17,7 +29,7 @@ export default function TaiKhoanToi() {
     let huy = false;
     fetch('/api/toi', { cache: 'no-store' })
       .then((r) => r.json())
-      .then((d: { dangNhap?: boolean; email?: string }) => { if (!huy) { setEmail(d.email ?? ''); setBuoc(d.dangNhap ? 'xem' : 'chua-dang-nhap'); } })
+      .then((d: { dangNhap?: boolean; email?: string; laSoIds?: unknown[] }) => { if (!huy) { setEmail(d.email ?? ''); setSoLaSo(Array.isArray(d.laSoIds) ? d.laSoIds.length : null); setBuoc(d.dangNhap ? 'xem' : 'chua-dang-nhap'); } })
       .catch(() => { if (!huy) setBuoc('loi'); });
     return () => { huy = true; };
   }, []);
@@ -42,7 +54,7 @@ export default function TaiKhoanToi() {
     <section className="lien-he" aria-labelledby="toi-tieu-de">
       <h1 id="toi-tieu-de">Tài khoản của tôi</h1>
       <p>Đang đăng nhập: <strong>{email}</strong></p>
-      <p><Link href="/luan-giai">Xem lá số và luận giải của tôi</Link></p>
+      {soLaSo === 0 ? <ToiChuaCoLaSo /> : <p><Link href="/luan-giai">Xem lá số và luận giải của tôi</Link></p>}
       <h2>Xóa dữ liệu của tôi</h2>
       {buoc === 'xem' ? (
         <>
