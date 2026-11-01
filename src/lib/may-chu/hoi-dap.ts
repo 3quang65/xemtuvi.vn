@@ -1,5 +1,6 @@
 // Hỏi đáp về lá số (docs/san-pham/hoi-dap-la-so.md). Không gọi AI/dịch vụ ngoài: câu trả lời ghép từ nhận định có mã quy tắc
 // của bài luận giải đã sinh cho lá số. Hạn mức đếm phía máy chủ, trừ lượt cùng giao dịch với việc ghi câu trả lời.
+import { lamSachVanBan } from '../lam-sach-van-ban';
 import { GHI_CHU, lamSachCau, type NhanDinh } from '@/lib/luan-giai/ai';
 import tuCamJson from '@/lib/luan-giai/ai/tu-cam.json';
 import { locTuCam, type TuCamCauHinh } from '@/lib/luan-giai/ai/loc';
@@ -291,7 +292,8 @@ const KHONG_KHOP = { ma: 'HD-KHONG-KHOP', doan_dan: 'Hệ thống xemtuvi.vn ch�
 export async function hoiLaSo(db: Csdl, k: BoKhoa, nguoiDungId: number, laSoId: number, cauTho: unknown, bayGio = Date.now()): Promise<KetQuaHoi> {
   kiemQuyenHoi(db, nguoiDungId, laSoId, bayGio);
   if (typeof cauTho !== 'string') throw new LoiNghiepVu('cau_sai', 'Bạn hãy nhập câu hỏi.');
-  const cau = cauTho.normalize('NFC').replace(/\s+/g, ' ').trim();
+  if (cauTho.length > DO_DAI_CAU_TOI_DA * 4) throw new LoiNghiepVu('cau_dai', `Câu hỏi tối đa ${DO_DAI_CAU_TOI_DA} ký tự.`);
+  const cau = lamSachVanBan(cauTho, DO_DAI_CAU_TOI_DA + 1);
   if (!cau) throw new LoiNghiepVu('cau_sai', 'Bạn hãy nhập câu hỏi.');
   if (cau.length > DO_DAI_CAU_TOI_DA) throw new LoiNghiepVu('cau_dai', `Câu hỏi tối đa ${DO_DAI_CAU_TOI_DA} ký tự.`);
   const luot = () => conLai(db, nguoiDungId, bayGio);

@@ -7,7 +7,9 @@ export const BAN_CHU_LIEN_HE = 'lap-la-so-v2';
 export type LoaiLienHe = 'email' | 'zalo';
 export const KHOA_NGUON = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'trang', 'ref'] as const;
 
-const RE_EMAIL = /^[^\s@]{1,64}@[^\s@.]+(\.[^\s@.]+)+$/;
+// Không cho ký tự điều khiển (kể cả null byte) và <>"' trong email: chặn chèn HTML/script khi lưu.
+// eslint-disable-next-line no-control-regex
+const RE_EMAIL = /^[^\s@\u0000-\u001F\u007F<>"'`]{1,64}@[^\s@.\u0000-\u001F\u007F<>"'`]+(\.[^\s@.\u0000-\u001F\u007F<>"'`]+)+$/;
 const RE_DT = /^(?:0|\+?84)([35789]\d{8})$/;
 
 /** Chuẩn hóa; trả null nếu không hợp lệ. Email về chữ thường; số về dạng 0xxxxxxxxx. */
