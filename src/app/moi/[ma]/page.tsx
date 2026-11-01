@@ -20,7 +20,7 @@ export default async function TrangMoi({ params }: { params: Promise<{ ma: strin
         <DauTrang />
         <main className="trang-buoc">
           <h1>Tạm dừng nhận khách mới</h1>
-          <p>Chúng mình đang tạm dừng nhận khách mới để chuẩn bị cho bản ra mắt (16/11).</p>
+          <p>Chúng tôi đang tạm dừng nhận khách mới để chuẩn bị cho bản ra mắt (16/11).</p>
           <p>Bạn vẫn có thể <a href="/">lập lá số và xem tóm tắt miễn phí</a>, không cần tài khoản.</p>
         </main>
         <ChanTrang />
