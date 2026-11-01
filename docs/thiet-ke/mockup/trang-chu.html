@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mockup trang chủ xemtuvi.vn (bản nháp chờ duyệt)</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Noto+Serif:ital,wght@0,500;0,600;1,500&display=swap">
+<style>
+:root{--muc:#2b2540;--muc-nhat:#5b536c;--nen:#f8f4ef;--nen-sau:#f1e9e4;--giay:#fffdfb;--vien:#e3d9d3;--vien-dam:#b9acb0;--ngoc:#6a3d73;--ngoc-dam:#52295c;--ngoc-nhat:#f4ebf5;--hoang:#7f5a0f;--sen:#a8344f;--moc:#276b44;--thuy:#28497e;--kim:#5f6573;--tho:#84571a;
+--sans:'Be Vietnam Pro',system-ui,sans-serif;--serif:'Noto Serif',Georgia,serif}
+*{box-sizing:border-box;margin:0}
+body{background:var(--nen);color:var(--muc);font:400 16px/1.6 var(--sans)}
+a{color:inherit}
+.w{max-width:1120px;margin:0 auto;padding:0 16px}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.25}
+h1{font-size:clamp(2.1rem,5vw,3.5rem)} h1 em{font-style:italic;font-weight:500;color:var(--ngoc)}
+h2{font-size:1.5rem;margin-bottom:8px} h2 .han{font-weight:500;color:var(--hoang);margin-right:10px}
+.nut{display:inline-flex;align-items:center;justify-content:center;height:52px;padding:0 24px;border-radius:10px;font:600 1rem var(--sans);text-decoration:none;border:1.5px solid var(--ngoc)}
+.nut.chinh{background:var(--ngoc);color:#fff}.nut.phu{color:var(--ngoc-dam);background:transparent}
+.nut:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #6a3d7355;outline-offset:2px}
+/* đầu trang */
+header .w{display:flex;justify-content:space-between;align-items:center;height:64px}
+.logo{font:600 1.25rem var(--serif);text-decoration:none}.logo b{color:var(--ngoc);font-weight:600}
+nav{display:flex;gap:24px;font-size:.95rem;color:var(--muc-nhat)}nav a{text-decoration:none}
+/* hero */
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding:40px 0 64px}
+.hero p.dan{font-size:1.125rem;color:var(--muc-nhat);margin:16px 0 24px;max-width:34em}
+.hero .hang{display:flex;gap:12px;flex-wrap:wrap}
+.ghichu{margin-top:16px;font-size:.875rem;color:var(--muc-nhat)}
+/* lá số mẫu 4x4 */
+.ban{position:relative;background:var(--giay);border:1.5px solid var(--muc);border-radius:10px;box-shadow:0 1px 2px #2b25400f,0 8px 24px #2b25400f;overflow:hidden}
+.ban .luoi{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:minmax(86px,auto)}
+.cung{border:.5px solid var(--vien-dam);padding:6px 8px;font-size:.78rem;line-height:1.35;display:flex;flex-direction:column;justify-content:space-between}
+.cung .ten{font-weight:600;color:var(--muc-nhat);font-size:.72rem}
+.cung .sao{font-family:var(--serif);font-weight:600;font-size:.82rem}
+.cung.menh{background:var(--ngoc-nhat);box-shadow:inset 0 0 0 2px var(--ngoc)}
+.cung.menh .ten{color:var(--ngoc-dam)}
+.hoa{color:var(--hoa,var(--sen))}.moc{color:var(--moc)}.thuy{color:var(--thuy)}.kim{color:var(--kim)}.tho{color:var(--tho)}
+.tam{grid-column:2/4;grid-row:2/4;background:var(--nen-sau);padding:14px;display:flex;flex-direction:column;justify-content:center;gap:2px;border:.5px solid var(--vien-dam)}
+.tam b{font:600 1rem var(--serif)}.tam span{font-size:.8rem;color:var(--muc-nhat)}
+.chuthich{position:absolute;right:10px;bottom:-1px;transform:translateY(100%)}
+.ban-chu{margin-top:10px;font-size:.8rem;color:var(--muc-nhat);text-align:center}
+/* mục */
+section{padding:56px 0;border-top:1px solid var(--vien)}
+.dan-muc{color:var(--muc-nhat);max-width:38em;margin-bottom:28px}
+.hai-cot{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.the{background:var(--giay);border:1px solid var(--vien);border-radius:14px;padding:24px;box-shadow:0 1px 2px #2b25400f,0 8px 24px #2b25400f}
+.the h3{font-size:1.125rem;margin-bottom:6px}.the p{color:var(--muc-nhat);font-size:.95rem}
+/* 12 cung */
+.cung12{display:flex;flex-wrap:wrap;gap:10px}
+.cung12 a{padding:10px 16px;border:1px solid var(--vien-dam);border-radius:10px;background:var(--giay);text-decoration:none;font-weight:500;min-height:44px;display:inline-flex;align-items:center}
+/* bước */
+.buoc{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.buoc div{display:grid;grid-template-columns:auto 1fr;gap:4px 14px}
+.buoc .so{grid-row:1/3;font:500 2rem/1 var(--serif);color:var(--hoang)}
+.buoc h3{font-size:1.05rem}.buoc p{color:var(--muc-nhat);font-size:.95rem}
+/* vận năm */
+.van{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center;background:var(--ngoc);color:#fff;border-radius:18px;padding:40px}
+.van h2{color:#fff}.van p{color:#efe3f1}.van .nut{background:#fff;color:var(--ngoc-dam);border-color:#fff}
+.van .gia{font:600 2.5rem var(--serif)}.van .gia small{font:400 .9rem var(--sans);color:#efe3f1}
+.van ul{list-style:none;padding:0;margin:14px 0 0;font-size:.9rem;color:#efe3f1}
+/* cam kết */
+.camket{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.camket h3{font-size:1.05rem;margin-bottom:4px}.camket p{font-size:.95rem;color:var(--muc-nhat)}
+footer{border-top:1px solid var(--vien);padding:32px 0 40px;font-size:.85rem;color:var(--muc-nhat)}
+footer .w{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+@media(max-width:760px){
+ nav{display:none}
+ .hero{grid-template-columns:1fr;gap:28px;padding:24px 0 40px}
+ .hero .hang .nut{width:100%}
+ .ban .luoi{grid-auto-rows:minmax(74px,auto)}.cung{padding:4px 5px;font-size:.72rem}.cung .ten{font-size:.7rem}.cung .sao{font-size:.72rem}.cung .phu{display:none}
+ .hai-cot,.buoc,.camket,.van{grid-template-columns:1fr}.van{padding:28px 20px}
+ section{padding:40px 0}
+}
+@media(prefers-reduced-motion:no-preference){.ban{animation:hien .6s ease-out both}@keyframes hien{from{opacity:0;transform:translateY(8px)}}}
+</style></head><body>
+<header><div class="w"><a class="logo" href="#">xem<b>tuvi</b>.vn</a>
+<nav><a href="#">Lập lá số</a><a href="#">Vận năm 2027</a><a href="#">Kiến thức</a><a href="#">Trợ giúp</a></nav></div></header>
+
+<main>
+<div class="w hero">
+ <div>
+  <h1>Cùng ngày sinh, <em>vì sao mỗi người một lối đi?</em></h1>
+  <p class="dan">Lá số Tử Vi cho thấy cách bạn nghĩ, cách bạn chọn và những giai đoạn nên chuẩn bị. Lập miễn phí trong một phút, đọc từng cung bằng lời dễ hiểu, mỗi nhận định đều chỉ ra sao nào, cung nào.</p>
+  <div class="hang"><a class="nut chinh" href="#">Lập lá số miễn phí</a><a class="nut phu" href="#cach">Lá số đọc được gì?</a></div>
+  <p class="ghichu">Không cần đăng ký. Ngày sinh của bạn không được công khai.</p>
+ </div>
+ <div>
+  <div class="ban" role="img" aria-label="Lá số mẫu 4x4 với cung Mệnh được tô màu">
+   <div class="luoi">
+    <div class="cung"><span class="ten">Tỵ · Phụ mẫu</span><span class="sao moc">Thiên Cơ</span><span class="phu ten">Văn Xương</span></div>
+    <div class="cung"><span class="ten">Ngọ · Phúc đức</span><span class="sao hoa">Phá Quân</span><span class="phu ten">Hữu Bật</span></div>
+    <div class="cung"><span class="ten">Mùi · Điền trạch</span><span class="sao tho">Thiên Phủ</span><span class="phu ten">Tả Phụ</span></div>
+    <div class="cung"><span class="ten">Thân · Quan lộc</span><span class="sao kim">Thái Âm</span><span class="phu ten">Lộc Tồn</span></div>
+    <div class="cung menh"><span class="ten">Thìn · Mệnh</span><span class="sao hoa">Tử Vi</span><span class="phu ten">Thiên Tướng</span></div>
+    <div class="tam"><b>Nguyễn Thu Hà</b><span>Nữ · 12/08/1992 · giờ Mão</span><span>Cục: Thủy nhị cục</span></div>
+    <div class="cung"><span class="ten">Dậu · Nô bộc</span><span class="sao thuy">Thiên Đồng</span><span class="phu ten">Hóa Lộc</span></div>
+    <div class="cung"><span class="ten">Mão · Huynh đệ</span><span class="sao thuy">Cự Môn</span><span class="phu ten">Thiên Khôi</span></div>
+    <div class="cung"><span class="ten">Tuất · Thiên di</span><span class="sao hoa">Liêm Trinh</span><span class="phu ten">Hóa Kỵ</span></div>
+    <div class="cung"><span class="ten">Dần · Phu thê</span><span class="sao hoa">Thất Sát</span><span class="phu ten">Địa Không</span></div>
+    <div class="cung"><span class="ten">Sửu · Tử tức</span><span class="sao tho">Thiên Lương</span><span class="phu ten">Thiên Mã</span></div>
+    <div class="cung"><span class="ten">Tý · Tài bạch</span><span class="sao thuy">Thái Dương</span><span class="phu ten">Hóa Khoa</span></div>
+    <div class="cung"><span class="ten">Hợi · Tật ách</span><span class="sao moc">Tham Lang</span><span class="phu ten">Hóa Quyền</span></div>
+   </div>
+  </div>
+  <p class="ban-chu">Lá số mẫu minh họa, không phải người thật.</p>
+ </div>
+</div>
+
+<section id="cach"><div class="w">
+ <h2><span class="han" lang="zh">緣起</span>Vì sao nên xem lá số</h2>
+ <p class="dan-muc">Hai người sinh cùng năm vẫn khác nhau, vì giờ sinh, tháng sinh và vị trí các sao khác nhau. Tử Vi đọc những khác biệt đó theo từng cung.</p>
+ <div class="hai-cot">
+  <div class="the"><h3>Hiểu mình</h3><p>Điểm mạnh, cách ra quyết định, điều dễ làm bạn mệt. Viết bằng ngôn ngữ đời thường, không dọa, không phán.</p></div>
+  <div class="the"><h3>Định hướng</h3><p>Đại vận 10 năm và vận từng năm cho thấy lúc nào hợp để học, đổi việc, xây tổ ấm, lúc nào nên đi chậm.</p></div>
+ </div>
+</div></section>
+
+<section><div class="w">
+ <h2><span class="han" lang="zh">十二宮</span>Mười hai cung, mỗi cung một câu hỏi</h2>
+ <p class="dan-muc">Chọn cung bạn đang quan tâm để xem cách đọc mẫu.</p>
+ <div class="cung12"><a href="#">Mệnh</a><a href="#">Phụ mẫu</a><a href="#">Phúc đức</a><a href="#">Điền trạch</a><a href="#">Quan lộc</a><a href="#">Nô bộc</a><a href="#">Thiên di</a><a href="#">Tật ách</a><a href="#">Tài bạch</a><a href="#">Tử tức</a><a href="#">Phu thê</a><a href="#">Huynh đệ</a></div>
+</div></section>
+
+<section><div class="w">
+ <h2><span class="han" lang="zh">用法</span>Cách dùng</h2>
+ <p class="dan-muc">Ba bước, không cần biết Tử Vi từ trước.</p>
+ <div class="buoc">
+  <div><span class="so" lang="zh">壹</span><h3>Nhập ngày giờ sinh</h3><p>Dương lịch hoặc âm lịch. Không rõ giờ, hệ thống gợi ý cách xử lý.</p></div>
+  <div><span class="so" lang="zh">貳</span><h3>Xem lá số miễn phí</h3><p>Bàn 12 cung, sao nào ở cung nào, độ sáng, đại vận.</p></div>
+  <div><span class="so" lang="zh">叁</span><h3>Đọc luận giải sâu</h3><p>Chọn chuyên đề bạn cần: tình duyên, sự nghiệp, tài chính, vận năm.</p></div>
+ </div>
+</div></section>
+
+<section><div class="w">
+ <div class="van">
+  <div><h2>Vận năm 2027</h2><p>Năm mới đến gần. Xem tháng nào thuận để bắt đầu, tháng nào nên giữ nhịp, dựa trên đúng lá số của bạn.</p>
+   <ul><li>Luận từng tháng, kèm sao và cung được dùng để luận</li><li>Tải về PDF, xem lại trên điện thoại</li></ul></div>
+  <div><div class="gia">49.000đ <small>một lá số</small></div><p style="margin:6px 0 16px">Gộp nhiều chuyên đề: 129.000đ</p><a class="nut" href="#">Xem mẫu Vận 2027</a></div>
+ </div>
+</div></section>
+
+<section><div class="w">
+ <h2><span class="han" lang="zh">敬言</span>Chúng tôi cam kết</h2>
+ <p class="dan-muc" style="margin-bottom:20px">Để bạn yên tâm khi đưa ngày sinh của mình cho chúng tôi.</p>
+ <div class="camket">
+  <div><h3>Có nguồn, có trường phái</h3><p>Nhận định nào cũng chỉ về sao, cung, vận cụ thể. Khi các sách khác nhau, chúng tôi ghi rõ.</p></div>
+  <div><h3>Không dọa, không bán giải hạn</h3><p>Chúng tôi không bán bùa hay cúng bái, cũng không dùng lời gây sợ.</p></div>
+  <div><h3>Dữ liệu của riêng bạn</h3><p>Lá số không công khai và không để Google lập chỉ mục. Phần do hệ thống tạo luôn được ghi rõ.</p></div>
+ </div>
+</div></section>
+</main>
+<footer><div class="w"><span>xemtuvi.vn · Tử Vi để hiểu mình và định hướng, không thay thế tư vấn y tế, pháp lý, tài chính.</span><span>Phương pháp · Quyền riêng tư · Trợ giúp</span></div></footer>
+</body></html>
