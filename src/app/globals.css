@@ -30,7 +30,7 @@ body {
   background: var(--nen);
   color: var(--muc);
   font-family: var(--font-than);
-  font-size: 16px;
+  font-size: 1rem; /* theo cỡ chữ hệ thống, không khóa px (FE9) */
   line-height: 1.6;
 }
 h1, h2, h3, h4 { font-family: var(--font-tieu-de); font-weight: 600; line-height: 1.25; margin: 0; }
@@ -441,5 +441,27 @@ main:has(.ket-qua) .gioi-thieu { display: none; }
 .hero-lp > * { position: relative; z-index: 1; }
 .hero-lp .hero-hoa { position: absolute; right: 24px; top: 0; width: 200px; height: 200px; opacity: .8; z-index: 0; }
 .hero-nam { font: 700 76px/1 var(--font-tieu-de); color: var(--ngoc); letter-spacing: -2px; margin: 72px 0 0; }
-.hero-nam small { display: block; font: 600 14px var(--font-than); letter-spacing: .06em; color: #7f5a0f; margin-bottom: 6px; }
-.trang-buoc .hero-lp h1 { font-size: 22px; max-width: 19em; margin: 0; }
+.hero-nam small { display: block; font: 600 .875rem var(--font-than); letter-spacing: .06em; color: #7f5a0f; margin-bottom: 6px; }
+.trang-buoc .hero-lp h1 { font-size: 1.375rem; max-width: 19em; margin: 0; }
+
+/* FE9 (L-502fe5): chữ lớn + tương phản cao. Cỡ chữ đã tính bằng rem nên theo cài đặt chữ của trình duyệt/hệ điều hành. */
+.trang-buoc p, .trang-buoc li, .bai-doc p { line-height: 1.7; overflow-wrap: anywhere; }
+@media (prefers-contrast: more) {
+  :root {
+    --muc: #14101f;
+    --muc-nhat: #2b2540;
+    --vien: #6f6475;
+    --vien-dam: #4a4152;
+    --ngoc: #4a1f54;
+    --ngoc-dam: #330f3b;
+    --sen: #8a1f38;
+    --hoang: #5c3f05;
+  }
+  a { text-decoration: underline; text-underline-offset: 3px; }
+  .nut-chinh, .nut-phu { border: 2px solid var(--muc); }
+  :focus-visible { outline-width: 3px; }
+}
+@media (forced-colors: active) {
+  .nut-chinh, .nut-phu, input, select, textarea { border: 1px solid ButtonText; }
+  :focus-visible { outline: 3px solid Highlight; }
+}
