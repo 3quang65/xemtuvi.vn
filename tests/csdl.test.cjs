@@ -77,3 +77,29 @@ test('repo không chứa khóa thật', () => {
   try { ra = execFileSync('grep', ['-rlF', '--exclude-dir=node_modules', '--exclude-dir=.next', '--exclude-dir=.git', m[1].replace(/^["']|["']$/g, ''), path.join(__dirname, '..')], { encoding: 'utf8' }); } catch { /* grep thoát 1 = không thấy */ }
   assert.equal(ra.trim(), '');
 });
+
+test('CSDL: PRAGMA đọc lại đúng (WAL, busy_timeout 5000, foreign_keys bật)', () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'xtv-pragma-'));
+  const db = moCsdl(path.join(dir, 'x.db'));
+  assert.equal(db.pragma('journal_mode', { simple: true }), 'wal');
+  assert.equal(db.pragma('busy_timeout', { simple: true }), 5000);
+  assert.equal(db.pragma('foreign_keys', { simple: true }), 1);
+  db.close();
+});
+
+test('CSDL: kiemToanVen im lặng khi ok, cảnh báo khi integrity_check lỗi, không ném', () => {
+  const { kiemToanVen } = nap('lib/may-chu/csdl.ts');
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'xtv-ic-'));
+  const db = moCsdl(path.join(dir, 'x.db'));
+  const nhan = [];
+  assert.equal(kiemToanVen(db, (m) => nhan.push(m)), true);
+  assert.equal(nhan.length, 0);
+  const hong = { pragma: () => [{ integrity_check: 'row 3 missing from index idx_a' }, { integrity_check: 'wrong # of entries' }] };
+  assert.equal(kiemToanVen(hong, (m) => nhan.push(m)), false);
+  assert.equal(nhan.length, 1);
+  assert.match(nhan[0], /row 3 missing/);
+  const no = { pragma: () => { throw new Error('disk I/O error'); } };
+  assert.equal(kiemToanVen(no, (m) => nhan.push(m)), false);
+  assert.equal(nhan.length, 2);
+  db.close();
+});

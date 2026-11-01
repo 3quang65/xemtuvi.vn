@@ -2,6 +2,7 @@
 import Database from 'better-sqlite3';
 import { mkdirSync, readdirSync, readFileSync } from 'node:fs';
 import path from 'node:path';
+import { ghiLoi } from './nhat-ky';
 import { taoBoKhoa, thuMucDuLieu, type BoKhoa } from './ma-hoa';
 
 export type Csdl = Database.Database;
@@ -19,12 +20,25 @@ export function chayMigrations(db: Csdl, thuMuc = THU_MUC_MIGRATIONS()) {
   }
 }
 
+/** Chạy PRAGMA integrity_check; lỗi chỉ cảnh báo vào nhật ký (không chặn khởi động, không ném). Trả true khi 'ok'. */
+export function kiemToanVen(db: Pick<Csdl, 'pragma'>, canhBao: (thongDiep: string) => void = (m) => ghiLoi('canh-bao', 'csdl', 'integrity_check', m)): boolean {
+  try {
+    const kq = (db.pragma('integrity_check') as { integrity_check: string }[]).map((r) => r.integrity_check);
+    if (kq.length === 1 && kq[0] === 'ok') return true;
+    canhBao(`integrity_check lỗi: ${kq.slice(0, 5).join('; ')}`);
+  } catch (e) {
+    canhBao(`integrity_check không chạy được: ${e instanceof Error ? e.message : 'không rõ'}`);
+  }
+  return false;
+}
+
 export function moCsdl(duongDan: string, thuMuc?: string): Csdl {
   if (duongDan !== ':memory:') mkdirSync(path.dirname(duongDan), { recursive: true });
   const db = new Database(duongDan);
   db.pragma('journal_mode = WAL');
   db.pragma('foreign_keys = ON');
   db.pragma('busy_timeout = 5000');
+  if (duongDan !== ':memory:') kiemToanVen(db);
   chayMigrations(db, thuMuc);
   return db;
 }
