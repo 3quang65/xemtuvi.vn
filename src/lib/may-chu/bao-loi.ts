@@ -3,6 +3,7 @@
 import { createHash } from 'node:crypto';
 import type { Csdl } from './csdl';
 import { chuanHoa } from './lien-he';
+import { lamSachVanBan } from '../lam-sach-van-ban';
 
 export const GIOI_HAN_BAO_LOI = { moTa: 1000, moTaToiThieu: 10, maDon: 40, goi: 40, thietBi: 120, gioKhach: 40, lienHe: 120 } as const;
 const TINH_HUONG = new Set(['E04', 'E05', 'E07', 'E08']);
@@ -12,10 +13,7 @@ export const TOC_DO = { moiNguon: 5, cuaSoNguon: 10 * 60_000, toanSite: 200, cua
 export interface BaoLoi { moTa: string; maDon: string; goi: string; thietBi: string; gioKhach: string; tinhHuong: string; lienHe: string }
 export type KetQuaKiem = { ok: true; v: BaoLoi } | { ok: false; truong: keyof BaoLoi | 'chung'; thongDiep: string };
 
-// eslint-disable-next-line no-control-regex
-const KY_TU_DIEU_KHIEN = /[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F]/g;
-const lamSach = (s: string, toiDa: number, nhieuDong = false) =>
-  (nhieuDong ? s.replace(/\r\n?/g, '\n') : s.replace(/\s+/g, ' ')).replace(KY_TU_DIEU_KHIEN, '').trim().slice(0, toiDa);
+const lamSach = lamSachVanBan;
 
 export function kiemTraBaoLoi(b: unknown): KetQuaKiem {
   if (!b || typeof b !== 'object' || Array.isArray(b)) return { ok: false, truong: 'chung', thongDiep: 'Dữ liệu không hợp lệ.' };
@@ -26,7 +24,9 @@ export function kiemTraBaoLoi(b: unknown): KetQuaKiem {
   const moTa = lamSach(o.moTa, GIOI_HAN_BAO_LOI.moTa + 1, true);
   if (moTa.length < GIOI_HAN_BAO_LOI.moTaToiThieu) return { ok: false, truong: 'moTa', thongDiep: 'Bạn mô tả giúp mình điều đã xảy ra nhé (ít nhất vài chữ).' };
   if (moTa.length > GIOI_HAN_BAO_LOI.moTa) return { ok: false, truong: 'moTa', thongDiep: `Phần mô tả dài quá, bạn rút gọn trong ${GIOI_HAN_BAO_LOI.moTa} ký tự giúp mình.` };
-  const maDon = lamSach(chuoi('maDon'), GIOI_HAN_BAO_LOI.maDon);
+  const maDonTho = chuoi('maDon').trim(); // kiểm trên giá trị gốc: có thẻ/ký tự lạ thì từ chối, không lặng lẽ xóa
+  const maDon = lamSach(maDonTho, GIOI_HAN_BAO_LOI.maDon);
+  if (maDonTho && maDonTho !== maDon && !/^[A-Za-z0-9\-_ ]+$/.test(maDonTho)) return { ok: false, truong: 'maDon', thongDiep: 'Mã đơn chỉ gồm chữ không dấu, số và dấu gạch ngang.' };
   if (maDon && !/^[A-Za-z0-9\-_ ]+$/.test(maDon)) return { ok: false, truong: 'maDon', thongDiep: 'Mã đơn chỉ gồm chữ không dấu, số và dấu gạch ngang.' };
   const th = chuoi('tinhHuong');
   // Ô tùy chọn "Email hoặc Zalo để mình trả lời": có '@' thì coi là email, không thì là số Zalo. Chỉ lưu giá trị đã chuẩn hóa.
