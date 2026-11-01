@@ -275,6 +275,11 @@ main:has(.ket-qua) .gioi-thieu { display: none; }
   .chan-trang, .chan-trang p, .chan-trang a, .nut-lien-ket, .nut-phu, .nut-chinh { font-size: 1rem; }
 }
 
+/* L-7ec4be: điện thoại xoay ngang (667x375) rộng >640px nên không dính khối trên; vẫn giữ ô chạm >= 44px */
+@media (max-height: 500px) and (orientation: landscape) {
+  footer a, .ten-trang, .lk-nho { display: inline-flex; align-items: center; min-height: 44px; min-width: 44px; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; transition: none !important; }
 }
