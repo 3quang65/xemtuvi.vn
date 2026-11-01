@@ -1,0 +1,26 @@
+/* Lưới 12 cung responsive: 4×4 ở mọi cỡ; điện thoại thu chữ và ẩn phụ tinh sau nút mở (xem CungO). */
+.xtv-laso { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-rows: repeat(4, minmax(0, auto));
+  gap: var(--xtv-gap); background: var(--xtv-vien-dam); border: 1px solid var(--xtv-vien-dam); border-radius: var(--xtv-r); overflow: hidden; }
+.xtv-cung { background: var(--xtv-giay); padding: 6px; min-width: 0; min-height: 104px; font-size: var(--xtv-co-sao); position: relative; }
+.xtv-cung[data-menh] { background: var(--xtv-ngoc-nhat); }
+.xtv-cung[aria-pressed="true"] { outline: 2px solid var(--xtv-ngoc); outline-offset: -2px; }
+.xtv-cung-ten { font-weight: 600; color: var(--xtv-ngoc-dam); }
+.xtv-cung-chi { color: var(--xtv-muc-nhat); font-size: 0.85em; }
+.xtv-sao { display: block; overflow-wrap: anywhere; line-height: 1.35; }
+.xtv-sao[data-hanh="Kim"] { color: var(--xtv-kim); } .xtv-sao[data-hanh="Mộc"] { color: var(--xtv-moc); }
+.xtv-sao[data-hanh="Thủy"] { color: var(--xtv-thuy); } .xtv-sao[data-hanh="Hỏa"] { color: var(--xtv-hoa); } .xtv-sao[data-hanh="Thổ"] { color: var(--xtv-tho); }
+.xtv-sao[data-loai="chinh"] { font-weight: 600; }
+.xtv-sao[data-sang="Hãm"] { text-decoration: underline dotted; }
+.xtv-trung-tam { grid-area: 2 / 2 / 4 / 4; background: var(--xtv-nen-sau); padding: 12px; min-width: 0; }
+.xtv-trung-tam dl { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: 2px 12px; }
+.xtv-cung[data-chi="0"] { grid-area: 4 / 3; } .xtv-cung[data-chi="1"] { grid-area: 4 / 2; } .xtv-cung[data-chi="2"] { grid-area: 4 / 1; }
+.xtv-cung[data-chi="3"] { grid-area: 3 / 1; } .xtv-cung[data-chi="4"] { grid-area: 2 / 1; } .xtv-cung[data-chi="5"] { grid-area: 1 / 1; }
+.xtv-cung[data-chi="6"] { grid-area: 1 / 2; } .xtv-cung[data-chi="7"] { grid-area: 1 / 3; } .xtv-cung[data-chi="8"] { grid-area: 1 / 4; }
+.xtv-cung[data-chi="9"] { grid-area: 2 / 4; } .xtv-cung[data-chi="10"] { grid-area: 3 / 4; } .xtv-cung[data-chi="11"] { grid-area: 4 / 4; }
+@media (max-width: 640px) {
+  .xtv-laso { margin-inline: -16px; border-radius: 0; border-inline: 0; }
+  .xtv-cung { padding: 4px; min-height: 92px; }
+  .xtv-phu { display: none; } /* phụ tinh xem ở bảng chi tiết khi chạm ô */
+  .xtv-trung-tam dl { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: no-preference) { .xtv-cung { transition: background .15s; } }

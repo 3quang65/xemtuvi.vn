@@ -1,0 +1,14 @@
+/* Design tokens xemtuvi mới — khớp docs/thiet-ke/he-thong-thiet-ke.md (v1). Chỉ khai báo, không style phần tử. */
+.xtv {
+  --xtv-nen: #f8f4ef; --xtv-nen-sau: #f1e9e4; --xtv-giay: #fffdfb;
+  --xtv-muc: #2b2540; --xtv-muc-nhat: #5b536c;
+  --xtv-ngoc: #6a3d73; --xtv-ngoc-dam: #52295c; --xtv-ngoc-nhat: #f4ebf5;
+  --xtv-vien: #e3d9d3; --xtv-vien-dam: #b9acb0;
+  --xtv-sen: #a8344f; --xtv-hoang: #7f5a0f;
+  --xtv-kim: #5f6573; --xtv-moc: #276b44; --xtv-thuy: #28497e; --xtv-hoa: #a8344f; --xtv-tho: #84571a;
+  --xtv-f-than: "Be Vietnam Pro", system-ui, sans-serif;
+  --xtv-f-tieu-de: "Noto Serif", Georgia, serif;
+  --xtv-r: 10px; --xtv-gap: 1px;
+  --xtv-co-sao: clamp(0.72rem, 0.62rem + 0.5vw, 0.9rem);
+  font-family: var(--xtv-f-than); color: var(--xtv-muc);
+}
