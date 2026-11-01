@@ -443,3 +443,12 @@ main:has(.ket-qua) .gioi-thieu { display: none; }
 .hero-nam { font: 700 76px/1 var(--font-tieu-de); color: var(--ngoc); letter-spacing: -2px; margin: 72px 0 0; }
 .hero-nam small { display: block; font: 600 14px var(--font-than); letter-spacing: .06em; color: #7f5a0f; margin-bottom: 6px; }
 .trang-buoc .hero-lp h1 { font-size: 22px; max-width: 19em; margin: 0; }
+
+/* FE13 (L-3ff71c): chuyển bước trong form lập lá số. Tiến = vào từ dưới; lùi (.lui) = vào từ trên. Chỉ opacity/transform. */
+@keyframes buoc-tien { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+@keyframes buoc-lui { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: none; } }
+.buoc-vao { animation: buoc-tien 240ms ease-out both; }
+.buoc-vao.lui { animation-name: buoc-lui; }
+@media (prefers-reduced-motion: reduce) {
+  .buoc-vao, .buoc-vao.lui { animation: none; }
+}

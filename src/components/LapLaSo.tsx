@@ -229,7 +229,7 @@ export default function LapLaSo() {
                   Sinh ở nước ngoài?
                 </button>
                 {f.nuocNgoai && (
-                  <div id="khu-nuoc-ngoai">
+                  <div id="khu-nuoc-ngoai" className="buoc-vao">
                     <p className="ghi-chu-rieng-tu">
                       Nhập giờ trên đồng hồ nơi bạn sinh, hệ thống tự quy đổi sang giờ Việt Nam. Nếu nước đó có đổi giờ theo mùa, bạn chọn đúng giờ mùa hè hoặc mùa đông tại thời điểm sinh.
                     </p>
@@ -261,7 +261,7 @@ export default function LapLaSo() {
         </form>
       </section>
 
-      <div ref={ketQuaRef}>
+      <div ref={ketQuaRef} className="buoc-vao" key={laSo ? 'co-la-so' : hong ? 'loi' : 'trong'}>
         {hong && !laSo && (
           <ThongBaoLoi ma="E04" nut={{ 'tai-lai': () => lapTu(hong), 'gui-bao-loi': linkBaoLoi({ tinhHuong: 'E04' }) }} />
         )}
