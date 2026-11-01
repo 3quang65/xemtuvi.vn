@@ -6,8 +6,8 @@ import { canhGio } from '@/lib/tuvi/nhe';
 import type { LaSo, QuyUoc, ThongTinSinh } from '@/lib/tuvi';
 import { docThongTinSinh, ghiNguon, guiSuKien, layNamGoiY, luuThongTinSinh } from '@/lib/phien';
 import { noiTen, phanLoaiLoiNhap, type LoiNhap, type OLoi } from '@/lib/loi-nhap';
-import { linkBaoLoi } from '@/lib/tro-giup';
-import ThongBaoLoi from './ThongBaoLoi';
+import { linkBaoLoi } from '@/lib/bao-loi-lien-ket';
+
 import { DANH_SACH_MUI, MUI_KHAC, docMuiGio, xemTruocQuyDoi } from '@/lib/nuoc-ngoai';
 
 
@@ -32,6 +32,8 @@ type FormState = {
 const napEngine = () => import('@/lib/tuvi');
 const napKetQua = () => import('./KetQuaLaSo');
 const KetQuaLaSo = dynamic(napKetQua, { ssr: false });
+// Thông báo lỗi chỉ hiện khi có lỗi: nạp khi cần, không tính vào lần tải đầu.
+const ThongBaoLoi = dynamic(() => import('./ThongBaoLoi'), { ssr: false });
 
 const GIO = Array.from({ length: 24 }, (_, i) => i);
 

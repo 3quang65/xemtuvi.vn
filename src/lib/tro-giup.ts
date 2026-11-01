@@ -140,15 +140,8 @@ export function mauEmailXacNhan(o: { ten?: string; maDon: string; tenGoi: string
 // ---------- Mã đơn, liên kết và tự điền biểu mẫu báo lỗi ----------
 export const maDonHienThi = (id: number) => `XTV-${String(id).padStart(6, '0')}`;
 
-export interface ThamSoBaoLoi { maDon: string; goi: string; tinhHuong: string }
-export function linkBaoLoi(o: Partial<ThamSoBaoLoi> = {}): string {
-  const q = new URLSearchParams();
-  if (o.maDon) q.set('don', o.maDon);
-  if (o.goi) q.set('goi', o.goi);
-  if (o.tinhHuong) q.set('th', o.tinhHuong);
-  const s = q.toString();
-  return `/tro-giup${s ? `?${s}` : ''}#bao-loi`;
-}
+export { linkBaoLoi, type ThamSoBaoLoi } from './bao-loi-lien-ket';
+import type { ThamSoBaoLoi } from './bao-loi-lien-ket';
 
 /** Đọc tham số điền sẵn từ địa chỉ; giá trị lạ bị bỏ (không điền ngày giờ sinh dù ai đó gắn vào địa chỉ). */
 export function docThamSoBaoLoi(search: string): ThamSoBaoLoi {
