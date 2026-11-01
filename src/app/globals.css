@@ -430,3 +430,11 @@ main:has(.ket-qua) .gioi-thieu { display: none; }
 /* L-23297f: giữ chỗ cho khu chọn gói (đo thật khi có phiên) để chân trang không bị đẩy xuống khi bảng gói hiện (CLS). */
 .khu-cho-chon-goi { min-height: 2170px; }
 @media (min-width: 641px) { .khu-cho-chon-goi { min-height: 1384px; } }
+
+/* L-bbc989 hướng A: màn đầu /lp/van-nam-2027 */
+.hero-lp { position: relative; overflow: hidden; display: grid; gap: 12px; padding: 0 16px 20px; border-radius: 16px; background: linear-gradient(180deg, #efe3f0, #f8f4ef); }
+.hero-lp > * { position: relative; z-index: 1; }
+.hero-lp .hero-hoa { position: absolute; right: 24px; top: 0; width: 200px; height: 200px; opacity: .8; z-index: 0; }
+.hero-nam { font: 700 76px/1 var(--font-tieu-de); color: var(--ngoc); letter-spacing: -2px; margin: 72px 0 0; }
+.hero-nam small { display: block; font: 600 14px var(--font-than); letter-spacing: .06em; color: #7f5a0f; margin-bottom: 6px; }
+.trang-buoc .hero-lp h1 { font-size: 22px; max-width: 19em; margin: 0; }

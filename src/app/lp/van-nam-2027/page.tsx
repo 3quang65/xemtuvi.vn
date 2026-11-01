@@ -27,9 +27,13 @@ export default function TrangVanNam2027() {
       <DauTrang />
       <main>
         <section className="trang-buoc">
-          <h1>{LP.tieuDe}</h1>
-          <p>{LP.dan}</p>
-          <LpVanNamNut nhan={LP.nutLap} />
+          <div className="hero-lp">
+            <svg className="hero-hoa" viewBox="0 0 300 300" fill="none" stroke="#6a3d73" aria-hidden="true"><rect x="20" y="20" width="260" height="260" rx="6" strokeWidth="1.5" opacity=".5"/><rect x="80" y="80" width="140" height="140" strokeWidth="1.5" opacity=".5"/><path d="M20 20L80 80M280 20L220 80M20 280L80 220M280 280L220 220M80 20v60M150 20v60M220 20v60M80 220v60M150 220v60M220 220v60M20 80h60M20 150h60M20 220h60M220 80h60M220 150h60M220 220h60" strokeWidth="1.2" opacity=".45"/><circle cx="150" cy="150" r="46" strokeWidth="1.5" opacity=".55"/><g fill="#a8344f" stroke="none"><circle cx="150" cy="20" r="5"/><circle cx="220" cy="80" r="4"/><circle cx="80" cy="220" r="4"/></g><g fill="#7f5a0f" stroke="none" opacity=".8"><circle cx="150" cy="150" r="5"/></g></svg>
+            <div className="hero-nam" aria-hidden="true"><small>Năm Đinh Mùi</small>2027</div>
+            <h1>{LP.tieuDe}</h1>
+            <p>{LP.dan}</p>
+            <LpVanNamNut nhan={LP.nutLap} />
+          </div>
           <h2>Bạn nhận được gì</h2>
           <ul className="loi-ich">
             {LP.loiIch.map((l) => <li key={l.ten}><strong>{l.ten}</strong><span>{l.moTa}</span></li>)}
