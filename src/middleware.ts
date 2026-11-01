@@ -1,5 +1,6 @@
 import { NextResponse, type NextRequest } from 'next/server';
 import { COOKIE_CO_SINH, canChuyenVeTrangChu } from '@/lib/co-phien';
+import { canGioiHan, kiemTraYeuCau } from '@/lib/gioi-han-toc-do';
 import { TEN_COOKIE_NGUON, NGAY_NGUON, moHoaNguon, nguonTuYeuCau } from '@/lib/nguon-khach';
 
 // Trang kết quả (lá số của khách) không bao giờ được index.
@@ -14,6 +15,15 @@ export function middleware(req: NextRequest) {
     const r = NextResponse.redirect(new URL('/', `${giao}://${host}`), 302);
     r.headers.set('Cache-Control', 'private, no-store');
     return r;
+  }
+  if (canGioiHan(req.nextUrl.pathname)) {
+    const t = kiemTraYeuCau(req);
+    if (!t.choPhep) {
+      return new NextResponse(JSON.stringify({ loi: 'Bạn thao tác hơi nhanh, vui lòng thử lại sau ít giây.' }), {
+        status: 429,
+        headers: { 'Content-Type': 'application/json; charset=utf-8', 'Retry-After': String(t.retryAfter), 'Cache-Control': 'no-store' },
+      });
+    }
   }
   const res = NextResponse.next();
   const { pathname } = req.nextUrl;
