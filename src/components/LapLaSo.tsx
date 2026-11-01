@@ -35,6 +35,8 @@ const KetQuaLaSo = dynamic(napKetQua, { ssr: false });
 
 const GIO = Array.from({ length: 24 }, (_, i) => i);
 
+const TEN_O: Record<OLoi, string> = { gioiTinh: 'giới tính', ngay: 'ngày sinh', gio: 'giờ sinh', muiGio: 'múi giờ nơi sinh' };
+
 export default function LapLaSo() {
   const [f, setF] = useState<FormState>({
     ten: '', gioiTinh: '', lich: 'duong', ngay: '', thang: '', nam: '', gio: '', phut: '', giuNgayTyMuon: false, mienNam: false, nhuan: false, nuocNgoai: false, muiChon: '', muiKhac: '',
@@ -116,7 +118,7 @@ export default function LapLaSo() {
       const { kiemTraThongTin } = await napEngine();
       l = kiemTraThongTin(t) ? ({ ma: 'E02', o: 'ngay', lich: t.lich === 'am' ? 'am' : 'duong', nhuan: t.lich === 'am' && !!t.nhuan } as LoiNhap) : null;
     }
-    if (l) { setLoi(l); setHong(null); requestAnimationFrame(() => document.getElementById(`loi-${l.o}`)?.scrollIntoView({ block: 'center' })); return; }
+    if (l) { setLoi(l); setHong(null); requestAnimationFrame(() => veO(l.o)); return; }
     lapTu(t as ThongTinSinh);
   }
 
@@ -170,6 +172,7 @@ export default function LapLaSo() {
         </div>
 
         <form className="phieu" onSubmit={lap} noValidate>
+          <div id="loi-tom-tat" className="chi-doc-man" role="status" aria-live="polite">{loi ? `Cần sửa ô ${TEN_O[loi.o]} trước khi lập lá số.` : ''}</div>
           <label className="o">
             <span>Họ tên <em>(không bắt buộc)</em></span>
             <input value={f.ten} onChange={(e) => doi('ten', e.target.value)} maxLength={60} autoComplete="off" />
@@ -178,8 +181,8 @@ export default function LapLaSo() {
           <fieldset className="o">
             <legend>Giới tính</legend>
             <div className="chon-doi">
-              <label><input id="o-gioiTinh" type="radio" name="gt" aria-describedby={moTa('gioiTinh')} checked={f.gioiTinh === 'nu'} onChange={() => doi('gioiTinh', 'nu')} /> Nữ</label>
-              <label><input type="radio" name="gt" aria-describedby={moTa('gioiTinh')} checked={f.gioiTinh === 'nam'} onChange={() => doi('gioiTinh', 'nam')} /> Nam</label>
+              <label><input id="o-gioiTinh" type="radio" name="gt" aria-invalid={loi?.o === 'gioiTinh'} aria-describedby={moTa('gioiTinh')} checked={f.gioiTinh === 'nu'} onChange={() => doi('gioiTinh', 'nu')} /> Nữ</label>
+              <label><input type="radio" name="gt" aria-invalid={loi?.o === 'gioiTinh'} aria-describedby={moTa('gioiTinh')} checked={f.gioiTinh === 'nam'} onChange={() => doi('gioiTinh', 'nam')} /> Nam</label>
             </div>
             {loiO('gioiTinh')}
           </fieldset>
@@ -213,7 +216,7 @@ export default function LapLaSo() {
                 <option value="">Giờ</option>
                 {GIO.map((g) => <option key={g} value={g}>{g} giờ · {canhGio(g)}</option>)}
               </select>
-              <input inputMode="numeric" placeholder="Phút" aria-label="Phút sinh" aria-describedby={moTa('gio')} value={f.phut}
+              <input inputMode="numeric" placeholder="Phút" aria-label="Phút sinh" aria-describedby={moTa('gio')} aria-invalid={loi?.o === 'gio'} value={f.phut}
                 onChange={(e) => doi('phut', e.target.value.replace(/\D/g, '').slice(0, 2))} />
             </div>
             {hienMienNam && !dungNuocNgoai && (

@@ -443,3 +443,4 @@ main:has(.ket-qua) .gioi-thieu { display: none; }
 .hero-nam { font: 700 76px/1 var(--font-tieu-de); color: var(--ngoc); letter-spacing: -2px; margin: 72px 0 0; }
 .hero-nam small { display: block; font: 600 14px var(--font-than); letter-spacing: .06em; color: #7f5a0f; margin-bottom: 6px; }
 .trang-buoc .hero-lp h1 { font-size: 22px; max-width: 19em; margin: 0; }
+.chi-doc-man { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
