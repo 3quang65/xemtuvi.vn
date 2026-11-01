@@ -1,7 +1,10 @@
+import NutCheDo from './NutCheDo';
+
 export function DauTrang() {
   return (
     <header className="dau-trang">
       <a href="/" className="ten-trang">xemtuvi<span>.vn</span></a>
+      <NutCheDo />
     </header>
   );
 }

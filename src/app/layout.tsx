@@ -27,11 +27,15 @@ export const metadata: Metadata = {
   openGraph: { siteName: 'xemtuvi.vn', locale: 'vi_VN', type: 'website' },
 };
 
+/** Đặt data-theme trước khi vẽ để không nháy trắng: lựa chọn đã lưu, nếu chưa có thì theo hệ thống. */
+const DAT_CHE_DO = `try{var c=localStorage.getItem('xtv-che-do');if(c!=='dark'&&c!=='light')c=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.dataset.theme=c}catch(e){}`;
+
 export const viewport: Viewport = { themeColor: '#2B2540' };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="vi" className={`${sans.variable} ${serif.variable}`}>
+    <html lang="vi" className={`${sans.variable} ${serif.variable}`} suppressHydrationWarning>
+      <head><script dangerouslySetInnerHTML={{ __html: DAT_CHE_DO }} /></head>
       <body>
         <DoLuong />
         {children}
