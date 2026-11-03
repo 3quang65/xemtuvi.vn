@@ -16,7 +16,7 @@ export default function TrangChu() {
         <section className="gioi-thieu">
           <h2>Lá số được an như thế nào</h2>
           <p>
-            Lá số được an theo cách của các sách Tử Vi Việt Nam: đổi ngày sinh sang âm lịch theo múi giờ Việt Nam,
+            Lá số được án theo cách của các sách Tử Vi Việt Nam: đổi ngày sinh sang âm lịch theo múi giờ Việt Nam,
             an cung Mệnh – Thân theo tháng và giờ sinh, định Cục theo nạp âm cung Mệnh, rồi an 14 chính tinh,
             các phụ tinh, tứ hóa theo can năm, Tuần – Triệt, vòng Tràng Sinh và đại vận 10 năm.
           </p>
