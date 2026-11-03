@@ -21,7 +21,7 @@ const serif = Noto_Serif({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://xemtuvi.vn'),
-  title: 'Lập lá số tử vi online — xemtuvi.vn',
+  title: 'Lập lá số Tử Vi online — xemtuvi.vn',
   description:
     'Lập lá số Tử Vi Đẩu Số theo cách an sao Việt Nam: 12 cung, chính tinh, phụ tinh, tứ hóa, đại vận. Miễn phí, không cần đăng ký.',
   openGraph: { siteName: 'xemtuvi.vn', locale: 'vi_VN', type: 'website' },

@@ -135,7 +135,7 @@ export default function LaSoBan({ laSo, namHienTai, coMienNam, onDoiQuyUoc, onDo
   const quyUoc = moTaQuyUoc(laSo);
   if (coMienNam && !laSo.gioChuan.daQuyDoi) quyUoc.push('Giờ khai sinh miền Nam giữ nguyên theo đồng hồ đã nhập, không quy về giờ chuẩn (theo lựa chọn của bạn).');
   return (
-    <section className="ket-qua" aria-label="Lá số tử vi">
+    <section className="ket-qua" aria-label="Lá số Tử Vi">
       <div className="ban">
         {laSo.cung.map((c) => (
           <ONhoCung key={c.chi} c={c} chon={chon === c.chi} dangVan={vanNay?.chi === c.chi} ln={ln} onChon={() => setChon(c.chi)} />

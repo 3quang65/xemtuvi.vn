@@ -160,7 +160,7 @@ export default function LapLaSo() {
     <>
       <section className="mo-dau">
         <div className="mo-dau-chu">
-          <h1>Lập lá số tử vi</h1>
+          <h1>Lập lá số Tử Vi</h1>
           <p>
             Nhập ngày giờ sinh để xem lá số đủ 12 cung theo cách an sao Việt Nam. Miễn phí, không cần tài khoản.
           </p>
