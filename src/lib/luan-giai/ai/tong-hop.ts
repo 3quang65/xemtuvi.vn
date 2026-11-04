@@ -60,6 +60,10 @@ const saoCua = (c: Cung): Sao[] => {
   return [...c.chinhTinh, ...c.catTinh, ...c.hungTinh, ...c.phuTinh].filter((s) => !thay.has(s.ten) && !!thay.add(s.ten));
 };
 const hop = (v: string[]) => (v.length <= 1 ? v.join('') : `${v.slice(0, -1).join(', ')} và ${v[v.length - 1]}`);
+// Khối "Tóm lại": mỗi nhận định một câu ≤ 20 từ (3 câu ≤ 60 từ). Lấy phương án đầu vừa giới hạn, hết thì lấy phương án ngắn nhất (cuối danh sách).
+const SO_TU_TOI_DA = 20;
+const demTu = (t: string) => t.trim().split(/\s+/).filter(Boolean).length;
+const ngan = (...ds: string[]) => ds.find((t) => demTu(t) <= SO_TU_TOI_DA) ?? ds[ds.length - 1];
 const duy = <T,>(v: T[]) => [...new Set(v)];
 
 function viTri(goc: Cung, c: Cung): string | null {
@@ -180,19 +184,19 @@ export function tongHop(ls: LaSo, chuyenDe: string, cungChinh: string, pool: Muc
     const m = cc.cau.match(new RegExp(`${ten.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}[^:.;]*:\\s*([^;.]+)`));
     const y = m && m[1].length <= 170 && !m[1].includes('{') ? m[1].trim() : '';
     const phaVua = /-PHA3/.test(cc.q.id), phaNhe = !phaVua && /-PHA/.test(cc.q.id);
-    const text = phaVua ? `Về ${cd}, lá số có dáng dấp của thế ${ten}${y ? ` (${y})` : ''}, nhưng chưa thể coi là cách vững vì có yếu tố cản.`
-      : phaNhe ? `Về ${cd}, nét nổi bật nhất là thế ${ten} thành cách nhưng có khuyết${y ? `: ${y}` : ''}; cần thêm nỗ lực và sự cẩn trọng để giữ vững.`
-      : `Về ${cd}, nét nổi bật nhất là thế ${ten}${y ? `: ${y}` : ''}.`;
+    const text = phaVua ? ngan(`Về ${cd}, lá số có dáng dấp thế ${ten}${y ? ` (${y})` : ''}, nhưng chưa vững vì có yếu tố cản.`, `Về ${cd}, lá số có dáng dấp thế ${ten}, nhưng chưa vững vì có yếu tố cản.`, `Về ${cd}, có dáng dấp thế ${ten} nhưng chưa vững.`)
+      : phaNhe ? ngan(`Về ${cd}, nét nổi bật nhất là thế ${ten} thành cách nhưng có khuyết${y ? `: ${y}` : ''}.`, `Về ${cd}, nổi bật là thế ${ten} thành cách nhưng có khuyết.`, `Về ${cd}, nổi bật là thế ${ten}, có khuyết.`)
+      : ngan(`Về ${cd}, nét nổi bật nhất là thế ${ten}${y ? `: ${y}` : ''}.`, `Về ${cd}, nét nổi bật nhất là thế ${ten}.`, `Về ${cd}, nổi bật là thế ${ten}.`);
     mot('TOM-LAI-CACH-CUC', text, cc.sao, null, cc.q.nguon, [`Cách ${ten}`]);
   } else {
     const chinh = dangCo.filter((x) => x.cungGoc === goc.ten && !x.loai?.match(/^(CC|HOA|SP)$/));
     const ct = goc.chinhTinh;
     if (ct.length && chinh.some((x) => ct.some((s) => x.sao.includes(s.ten)))) {
       const mo = ct.map((s) => (s.dacTinhTen ? `${s.ten} (${s.dacTinhTen})` : s.ten));
-      mot('TOM-LAI-CHINH-TINH', `Về ${cd}, nền của lá số là ${hop(mo)} tọa thủ ${goc.ten}.`, ct.map((s) => s.ten), goc, nguonCua(chinh.filter((x) => ct.some((s) => x.sao.includes(s.ten)))));
+      mot('TOM-LAI-CHINH-TINH', ngan(`Về ${cd}, nền của lá số là ${hop(mo)} tọa thủ ${goc.ten}.`, `Về ${cd}, nền là ${hop(ct.map((s) => s.ten))} tọa thủ ${goc.ten}.`), ct.map((s) => s.ten), goc, nguonCua(chinh.filter((x) => ct.some((s) => x.sao.includes(s.ten)))));
     } else if (!ct.length) {
       const vcd = dangCo.find((x) => /VCD/.test(x.q.id) && x.yeuTo.includes('Vô Chính Diệu') && x.sao.length);
-      if (vcd) mot('TOM-LAI-VO-CHINH-DIEU', `Về ${cd}, ${goc.ten} không có chính tinh nên bài này luận qua cung đối diện (${hop(vcd.sao)}) và các sao phụ tại cung.`, vcd.sao, goc, vcd.q.nguon, ['Vô Chính Diệu']);
+      if (vcd) mot('TOM-LAI-VO-CHINH-DIEU', ngan(`Về ${cd}, ${goc.ten} không có chính tinh nên luận qua cung đối diện (${hop(vcd.sao)}) và sao phụ.`, `Về ${cd}, ${goc.ten} vô chính tinh nên luận qua cung đối diện.`), vcd.sao, goc, vcd.q.nguon, ['Vô Chính Diệu']);
     }
   }
 
@@ -201,10 +205,10 @@ export function tongHop(ls: LaSo, chuyenDe: string, cungChinh: string, pool: Muc
   const manhSang = cacSao.find(({ s, c }) => c.chinhTinh.includes(s) && !!s.dacTinhTen && ['Miếu', 'Vượng'].includes(s.dacTinhTen));
   if (manhHoa) {
     const { s, c } = manhHoa;
-    mot('TOM-LAI-DIEM-MANH', `Điểm mạnh dễ thấy là ${s.ten} mang ${s.hoa} ở ${nhan(goc, c)}: ${Y_HOA[s.hoa!]}, đây là chỗ bạn có thể dựa vào khi định hướng.`, [s.ten], c, nguonCua(itemSao(s.ten, c)));
+    mot('TOM-LAI-DIEM-MANH', ngan(`Điểm mạnh là ${s.ten} mang ${s.hoa} ở ${nhan(goc, c)}: ${Y_HOA[s.hoa!]}.`, `Điểm mạnh là ${s.ten} mang ${s.hoa} ở ${c.ten}: ${Y_HOA[s.hoa!]}.`, `Điểm mạnh là ${s.ten} mang ${s.hoa} ở ${c.ten}.`), [s.ten], c, nguonCua(itemSao(s.ten, c)));
   } else if (manhSang) {
     const { s, c } = manhSang;
-    mot('TOM-LAI-DIEM-MANH', `Điểm mạnh dễ thấy là ${s.ten} sáng (${s.dacTinhTen}) ở ${nhan(goc, c)}, một chỗ dựa tốt khi bạn cân nhắc ${cd}.`, [s.ten], c, nguonCua(itemSao(s.ten, c)));
+    mot('TOM-LAI-DIEM-MANH', ngan(`Điểm mạnh là ${s.ten} sáng (${s.dacTinhTen}) ở ${nhan(goc, c)}, một chỗ dựa tốt.`, `Điểm mạnh là ${s.ten} sáng (${s.dacTinhTen}) ở ${c.ten}.`), [s.ten], c, nguonCua(itemSao(s.ten, c)));
   }
 
   // (3) Điểm cần chú ý: Hóa Kỵ, rồi sát tinh (hãm/bình trước), rồi Tuần/Triệt, rồi chính tinh hãm tọa thủ.
@@ -216,16 +220,16 @@ export function tongHop(ls: LaSo, chuyenDe: string, cungChinh: string, pool: Muc
   const hamChinh = goc.chinhTinh.find((s) => s.dacTinhTen === 'Hãm' && tenTrongPool.has(s.ten));
   if (ky) {
     const { s, c } = ky;
-    mot('TOM-LAI-CAN-CHU-Y', `Điều cần để ý là ${s.ten} mang Hóa Kỵ ở ${nhan(goc, c)}: đây là chỗ dễ vướng bận, nên đặt kỳ vọng vừa phải và chuẩn bị kỹ để nhẹ gánh hơn.`, [s.ten], c, nguonCua(itemSao(s.ten, c)));
+    mot('TOM-LAI-CAN-CHU-Y', ngan(`Cần để ý ${s.ten} mang Hóa Kỵ ở ${nhan(goc, c)}: dễ vướng bận, nên đặt kỳ vọng vừa phải.`, `Cần để ý ${s.ten} mang Hóa Kỵ ở ${c.ten}: nên đặt kỳ vọng vừa phải.`, `Cần để ý ${s.ten} mang Hóa Kỵ ở ${c.ten}.`), [s.ten], c, nguonCua(itemSao(s.ten, c)));
   } else if (satTim) {
     const c = satTim.c;
     const cung = satKhop.filter((x) => x.c === c).map((x) => x.s.ten);
-    mot('TOM-LAI-CAN-CHU-Y', `Điều cần để ý là ${hop(cung)} ở ${nhan(goc, c)}: nhịp thúc đẩy mạnh nhưng dễ nóng vội hoặc đổi hướng, nên cân nhắc trước khi quyết và giữ nhịp nghỉ.`, cung, c, nguonCua(itemSao(cung[0], c)));
+    mot('TOM-LAI-CAN-CHU-Y', ngan(`Cần để ý ${hop(cung)} ở ${nhan(goc, c)}: dễ nóng vội, nên cân nhắc trước khi quyết.`, `Cần để ý ${hop(cung)} ở ${c.ten}: dễ nóng vội, nên cân nhắc.`, `Cần để ý ${hop(cung)} ở ${c.ten}.`), cung, c, nguonCua(itemSao(cung[0], c)));
   } else if (cungTT) {
     const tt = [...(cungTT.tuan ? ['Tuần'] : []), ...(cungTT.triet ? ['Triệt'] : [])];
-    mot('TOM-LAI-CAN-CHU-Y', `Điều cần để ý là ${hop(tt)} đóng ở ${nhan(goc, cungTT)}: phần đóng góp của cung này đến chậm và dịu hơn, nên kiên trì thay vì kỳ vọng kết quả nhanh.`, [], cungTT, NGUON_TUAN, tt);
+    mot('TOM-LAI-CAN-CHU-Y', ngan(`Cần để ý ${hop(tt)} đóng ở ${nhan(goc, cungTT)}: kết quả đến chậm hơn, nên kiên trì.`, `Cần để ý ${hop(tt)} đóng ở ${cungTT.ten}: kết quả đến chậm, nên kiên trì.`, `Cần để ý ${hop(tt)} đóng ở ${cungTT.ten}.`), [], cungTT, NGUON_TUAN, tt);
   } else if (hamChinh) {
-    mot('TOM-LAI-CAN-CHU-Y', `Điều cần để ý là ${hamChinh.ten} hãm ở ${goc.ten}: nên bù bằng sự chuẩn bị kỹ và học hỏi thêm về chính mình.`, [hamChinh.ten], goc, nguonCua(itemSao(hamChinh.ten, goc)));
+    mot('TOM-LAI-CAN-CHU-Y', ngan(`Cần để ý ${hamChinh.ten} hãm ở ${goc.ten}: nên bù bằng sự chuẩn bị kỹ và học hỏi thêm.`, `Cần để ý ${hamChinh.ten} hãm ở ${goc.ten}: nên chuẩn bị kỹ.`), [hamChinh.ten], goc, nguonCua(itemSao(hamChinh.ten, goc)));
   }
   kq.tomLai = cau.filter((x) => x.thamChieu.nguon);
   return kq;
