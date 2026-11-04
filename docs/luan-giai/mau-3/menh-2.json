@@ -1,0 +1,437 @@
+{
+ "chuyenDe": "menh",
+ "laSoMau": "TC03",
+ "moTaLaSo": "Nam, sinh 20/12/1995 dương lịch (Ất Hợi), tuổi mụ 32 năm 2026",
+ "dauBai": {
+  "nhanDinh": [
+   {
+    "text": "Lá số bạn mang dáng thế Tử Phủ Vũ Tướng: Vũ Khúc, Thiên Tướng cùng sáng ở Mệnh làm nền nề nếp, trách nhiệm. Cách chưa trọn vì Mệnh có Đà La hãm, Địa Không; Thiên Di, nơi Thân cư, có Phá Quân hãm, Địa Kiếp.",
+    "phan": "dau-bai",
+    "thamChieu": {
+     "quyTacId": "VIET-TAY-menh-2-dau-bai",
+     "sao": [
+      "Tử Vi",
+      "Thiên Phủ",
+      "Vũ Khúc",
+      "Thiên Tướng",
+      "Đà La",
+      "Địa Không",
+      "Phá Quân",
+      "Địa Kiếp"
+     ],
+     "cung": "Mệnh",
+     "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "truongPhai": "Tam hợp phái Việt",
+     "maNghienCuu": [
+      "KHUNG-menh-CC-TuPhuVuTuong-PHA3-ham",
+      "ML-PS-12",
+      "KHUNG-menh-SP-ĐịaKiếp-xung",
+      "KHUNG-menh-TRIET-tam-hop"
+     ],
+     "nguoiViet": "hanh",
+     "sinh": false,
+     "moTaLaSo": "TC03 (Ất Hợi, Âm Nam): Mệnh Dần có Vũ Khúc (V), Thiên Tướng (M), Đà La (H), Địa Không; Thiên Di Thân có Phá Quân (H), Địa Kiếp, Tuần (Thân–Dậu), Thân cư Thiên Di; Quan Lộc Ngọ có Tử Vi hóa Khoa, Triệt (Ngọ–Mùi)"
+    }
+   }
+  ]
+ },
+ "muc": [
+  {
+   "id": "cach-cuc",
+   "tieuDe": "Cách cục",
+   "nhanDinh": [
+    {
+     "text": "Có dáng dấp của thế Tử Phủ Vũ Tướng: nền nếp, biết tổ chức, giữ vai trò đáng tin trong nhóm và khi cần quyết định; nhưng Đà La hãm ngay tại cung này nên chưa thể coi là cách vững. Với bản thân, đây là điểm tựa để sống nề nếp và giữ vai trò đáng tin trong nhóm.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-menh-CC-TuPhuVuTuong-PHA3-ham",
+      "sao": [
+       "Tử Vi",
+       "Thiên Phủ",
+       "Vũ Khúc",
+       "Thiên Tướng",
+       "Đà La"
+      ],
+      "cung": "Mệnh",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Mệnh",
+       "Quan Lộc",
+       "Tài Bạch",
+       "Thiên Di"
+      ],
+      "yeuTo": [
+       "Cách Tử Phủ Vũ Tướng"
+      ]
+     }
+    },
+    {
+     "text": "Địa Không và Địa Kiếp cùng hội chiếu vào Mệnh (thế Không Kiếp chiếu): sát tinh thành cặp hội vào tứ chính làm bức tranh nhiều biến đổi hơn; nên thực tế hóa ý tưởng, cân nhắc trước khi đổi hướng và giữ dự phòng.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-menh-CC-KhongKiepChieu",
+      "sao": [
+       "Địa Không",
+       "Địa Kiếp"
+      ],
+      "cung": "Mệnh",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Mệnh",
+       "Thiên Di"
+      ],
+      "yeuTo": [
+       "Không Kiếp chiếu"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "tong-quan",
+   "tieuDe": "Tổng quan bản thân",
+   "nhanDinh": [
+    {
+     "text": "Hai chính tinh tại Mệnh nói rõ tính cách nhất.",
+     "phan": "noi",
+     "thamChieu": {
+      "quyTacId": "VIET-TAY-menh-2-noi",
+      "sao": [
+       "Vũ Khúc",
+       "Thiên Tướng"
+      ],
+      "cung": "Mệnh",
+      "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "maNghienCuu": [
+       "ML-S04-TOT",
+       "ML-S11-TOT"
+      ],
+      "nguoiViet": "hanh",
+      "sinh": false,
+      "moTaLaSo": "TC03 (Ất Hợi, Âm Nam): Mệnh Dần có Vũ Khúc (V), Thiên Tướng (M), Đà La (H), Địa Không; Thiên Di Thân có Phá Quân (H), Địa Kiếp, Tuần (Thân–Dậu), Thân cư Thiên Di; Quan Lộc Ngọ có Tử Vi hóa Khoa, Triệt (Ngọ–Mùi)"
+     }
+    },
+    {
+     "text": "Vũ Khúc tại Mệnh: bạn có xu hướng thực tế, quyết đoán, coi trọng kỷ luật tài chính. Tư duy tiền bạc và kỷ luật là lợi thế; nên đặt mục tiêu tài chính theo năm và theo dõi bằng con số. Bạn thử đối chiếu với trải nghiệm của mình xem nét nào đúng, nét nào chưa.",
+     "thamChieu": {
+      "quyTacId": "ML-S04-TOT",
+      "sao": [
+       "Vũ Khúc"
+      ],
+      "cung": "Mệnh",
+      "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "tam hợp phái Việt"
+     }
+    },
+    {
+     "text": "Thiên Tướng tại Mệnh: bạn có xu hướng công bằng, biết giúp đỡ, giữ chữ tín. Bạn dễ được tin giao việc điều phối; nên nhận vai trò kết nối, giữ chuẩn mực cho nhóm.",
+     "thamChieu": {
+      "quyTacId": "ML-S11-TOT",
+      "sao": [
+       "Thiên Tướng"
+      ],
+      "cung": "Mệnh",
+      "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "tam hợp phái Việt"
+     }
+    }
+   ]
+  },
+  {
+   "id": "cung-lien-quan",
+   "tieuDe": "Cung hợp chiếu",
+   "nhanDinh": [
+    {
+     "text": "Cung đối diện và tam hợp bổ thêm cách bạn ra ngoài, dẫn dắt, giữ tiền.",
+     "phan": "noi",
+     "thamChieu": {
+      "quyTacId": "VIET-TAY-menh-2-noi",
+      "sao": [
+       "Phá Quân",
+       "Tử Vi",
+       "Liêm Trinh",
+       "Thiên Phủ"
+      ],
+      "cung": "Mệnh",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư",
+      "truongPhai": "Tam hợp phái Việt",
+      "maNghienCuu": [
+       "ML-S14-HAM",
+       "ML-S01-C2",
+       "ML-S06-C3",
+       "ML-S07-C3"
+      ],
+      "nguoiViet": "hanh",
+      "sinh": false,
+      "moTaLaSo": "TC03 (Ất Hợi, Âm Nam): Mệnh Dần có Vũ Khúc (V), Thiên Tướng (M), Đà La (H), Địa Không; Thiên Di Thân có Phá Quân (H), Địa Kiếp, Tuần (Thân–Dậu), Thân cư Thiên Di; Quan Lộc Ngọ có Tử Vi hóa Khoa, Triệt (Ngọ–Mùi)"
+     }
+    },
+    {
+     "text": "Phá Quân hãm ở Thiên Di (xung chiếu Mệnh, nơi Thân cư): ra môi trường mới, bạn dễ muốn làm lại từ đầu khi cái mới chưa chắc; nét này rõ dần theo tuổi, Tuần làm nó dịu bớt. Trước khi chuyển việc, nên giữ sẵn nguồn thu.",
+     "thamChieu": {
+      "quyTacId": "VIET-TAY-menh-2-pha-quan-thien-di",
+      "sao": [
+       "Phá Quân",
+       "Địa Kiếp"
+      ],
+      "cung": "Mệnh",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "moTaLaSo": "TC03 (Ất Hợi, Âm Nam): Mệnh Dần có Vũ Khúc (V), Thiên Tướng (M), Đà La (H), Địa Không; Thiên Di Thân có Phá Quân (H), Địa Kiếp, Tuần (Thân–Dậu), Thân cư Thiên Di; Quan Lộc Ngọ có Tử Vi hóa Khoa, Triệt (Ngọ–Mùi)",
+      "maNghienCuu": [
+       "ML-S14-HAM",
+       "KHUNG-menh-TUAN-xung"
+      ],
+      "nguoiViet": "hanh",
+      "sinh": false,
+      "cungLienQuan": [
+       "Thiên Di"
+      ],
+      "ghiChu": "Kho chưa có ML-S14-C1-HAM; câu viết tay theo ý ML-S14-HAM."
+     }
+    },
+    {
+     "text": "Tử Vi ở cung Quan Lộc (tam hợp với Mệnh): tiếp thêm nét thích giữ vai trò dẫn dắt, coi trọng thể diện và sự tự chủ. Trong công việc, nét này phát huy khi bạn có quyền tự quyết một phần việc rõ ràng.",
+     "thamChieu": {
+      "quyTacId": "ML-S01-C2",
+      "sao": [
+       "Tử Vi"
+      ],
+      "cung": "Quan Lộc",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư",
+      "truongPhai": "tam hợp phái Việt"
+     }
+    },
+    {
+     "text": "Liêm Trinh ở cung Tài Bạch (tam hợp với Mệnh): tiếp thêm tính nguyên tắc, cá tính rõ nét, giàu cảm xúc bên trong. Về tiền bạc, nên tách bạch tiền chung, tiền riêng và giữ giấy tờ rõ ràng.",
+     "thamChieu": {
+      "quyTacId": "ML-S06-C3",
+      "sao": [
+       "Liêm Trinh"
+      ],
+      "cung": "Tài Bạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư",
+      "truongPhai": "tam hợp phái Việt"
+     }
+    },
+    {
+     "text": "Thiên Phủ ở cung Tài Bạch (tam hợp với Mệnh): tiếp thêm nét ổn định, chu toàn, biết gìn giữ. Về tiền bạc, bạn giỏi giữ của; nên dành một phần nhỏ cho học hỏi, đầu tư vào bản thân để không bỏ lỡ cơ hội.",
+     "thamChieu": {
+      "quyTacId": "ML-S07-C3",
+      "sao": [
+       "Thiên Phủ"
+      ],
+      "cung": "Tài Bạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư",
+      "truongPhai": "tam hợp phái Việt"
+     }
+    }
+   ]
+  },
+  {
+   "id": "tu-hoa",
+   "tieuDe": "Tứ hóa",
+   "nhanDinh": [
+    {
+     "text": "Tứ hóa cho một điểm sáng ở cung công việc.",
+     "phan": "noi",
+     "thamChieu": {
+      "quyTacId": "VIET-TAY-menh-2-noi",
+      "sao": [
+       "Tử Vi"
+      ],
+      "cung": "Mệnh",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "maNghienCuu": [
+       "KHUNG-menh-HOA-Khoa-tam-hop"
+      ],
+      "nguoiViet": "hanh",
+      "sinh": false,
+      "moTaLaSo": "TC03 (Ất Hợi, Âm Nam): Mệnh Dần có Vũ Khúc (V), Thiên Tướng (M), Đà La (H), Địa Không; Thiên Di Thân có Phá Quân (H), Địa Kiếp, Tuần (Thân–Dậu), Thân cư Thiên Di; Quan Lộc Ngọ có Tử Vi hóa Khoa, Triệt (Ngọ–Mùi)"
+     }
+    },
+    {
+     "text": "Tử Vi mang Hóa Khoa ở Quan Lộc (cung tam hợp của Mệnh) ảnh hưởng đến tính cách và hướng đi của bạn: thêm sự thanh nhã, danh tiếng tốt và người giúp đỡ đúng lúc.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-menh-HOA-Khoa-tam-hop",
+      "sao": [
+       "Tử Vi"
+      ],
+      "cung": "Mệnh",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Quan Lộc"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "phu-tinh",
+   "tieuDe": "Cát hung tinh đi kèm",
+   "nhanDinh": [
+    {
+     "text": "Sao phụ cùng Tuần, Triệt giải thích nhịp chậm.",
+     "phan": "noi",
+     "thamChieu": {
+      "quyTacId": "VIET-TAY-menh-2-noi",
+      "sao": [
+       "Đà La",
+       "Địa Không"
+      ],
+      "cung": "Mệnh",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư | Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+      "truongPhai": "Tam hợp phái Việt",
+      "maNghienCuu": [
+       "ML-PS-9",
+       "KHUNG-menh-TUAN-xung",
+       "KHUNG-menh-TRIET-tam-hop"
+      ],
+      "nguoiViet": "hanh",
+      "sinh": false,
+      "moTaLaSo": "TC03 (Ất Hợi, Âm Nam): Mệnh Dần có Vũ Khúc (V), Thiên Tướng (M), Đà La (H), Địa Không; Thiên Di Thân có Phá Quân (H), Địa Kiếp, Tuần (Thân–Dậu), Thân cư Thiên Di; Quan Lộc Ngọ có Tử Vi hóa Khoa, Triệt (Ngọ–Mùi)"
+     }
+    },
+    {
+     "text": "Đà La hãm đồng cung Mệnh: bạn dễ kéo dài quyết định vì lo chưa chắc; nên đặt hạn chót và chia việc lớn thành bước nhỏ.",
+     "thamChieu": {
+      "quyTacId": "VIET-TAY-menh-2-da-la-ham",
+      "sao": [
+       "Đà La"
+      ],
+      "cung": "Mệnh",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "moTaLaSo": "TC03 (Ất Hợi, Âm Nam): Mệnh Dần có Vũ Khúc (V), Thiên Tướng (M), Đà La (H), Địa Không; Thiên Di Thân có Phá Quân (H), Địa Kiếp, Tuần (Thân–Dậu), Thân cư Thiên Di; Quan Lộc Ngọ có Tử Vi hóa Khoa, Triệt (Ngọ–Mùi)",
+      "maNghienCuu": [
+       "ML-PS-9"
+      ],
+      "nguoiViet": "hanh",
+      "sinh": false,
+      "ghiChu": "Thay ML-PS-9 vì câu kho tả nét tích cực (kiên trì) trong khi Đà La Hãm."
+     }
+    },
+    {
+     "text": "Địa Không đồng cung Mệnh: hay nghĩ khác lạ, cần thực tế hóa ý tưởng.",
+     "thamChieu": {
+      "quyTacId": "ML-PS-12",
+      "sao": [
+       "Địa Không"
+      ],
+      "cung": "Mệnh",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư",
+      "truongPhai": "tam hợp phái Việt"
+     }
+    },
+    {
+     "text": "Tuần đóng ở Thiên Di (cung xung chiếu của Mệnh): Tuần chỉ tác động hai cung nó đứng giữa, không chiếu sang Mệnh, nhưng các sao tại Thiên Di bị giảm cường độ nên phần đóng góp của cung này cho tính cách và hướng đi của bạn đến chậm và dịu hơn; ảnh hưởng thường rõ dần về sau, mỗi người cảm nhận khác nhau tùy hoàn cảnh và nỗ lực.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-menh-TUAN-xung",
+      "sao": [],
+      "cung": "Mệnh",
+      "nguon": "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Thiên Di"
+      ],
+      "yeuTo": [
+       "Tuần"
+      ]
+     }
+    },
+    {
+     "text": "Triệt đóng ở Quan Lộc (cung tam hợp của Mệnh): Triệt chỉ tác động hai cung nó tách đôi, không chiếu sang Mệnh, nhưng các sao tại Quan Lộc bị giảm cường độ nên phần đóng góp của cung này cho tính cách và hướng đi của bạn dịu hơn; ảnh hưởng thường rõ hơn ở giai đoạn đầu đời rồi nhẹ dần, mỗi người cảm nhận khác nhau tùy hoàn cảnh và nỗ lực.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-menh-TRIET-tam-hop",
+      "sao": [],
+      "cung": "Mệnh",
+      "nguon": "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Quan Lộc"
+      ],
+      "yeuTo": [
+       "Triệt"
+      ]
+     }
+    },
+    {
+     "text": "Địa Kiếp ở Thiên Di (cung xung chiếu của Mệnh) ảnh hưởng đến tính cách và hướng đi của bạn: hay muốn đổi hướng, nên cân nhắc trước khi quyết.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-menh-SP-ĐịaKiếp-xung",
+      "sao": [
+       "Địa Kiếp"
+      ],
+      "cung": "Mệnh",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Thiên Di"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "tom-lai",
+   "tieuDe": "Tóm lại",
+   "nhanDinh": [
+    {
+     "text": "Bạn thực tế, giữ chữ tín, hợp vai trò trách nhiệm. Cần luyện quyết dứt khoát và giữ ý mới trong kế hoạch, vì Đà La, Không Kiếp, Phá Quân hãm kéo về phía chần chừ rồi đổi hướng. Nền Vũ Khúc, Thiên Tướng đủ chắc để đi xa.",
+     "phan": "tom-lai",
+     "thamChieu": {
+      "quyTacId": "VIET-TAY-menh-2-tom-lai",
+      "sao": [
+       "Vũ Khúc",
+       "Thiên Tướng",
+       "Đà La",
+       "Địa Không",
+       "Phá Quân",
+       "Địa Kiếp"
+      ],
+      "cung": "Mệnh",
+      "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) | Tử Vi Đẩu Số Toàn Thư | Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+      "truongPhai": "Tam hợp phái Việt",
+      "maNghienCuu": [
+       "ML-S04-TOT",
+       "ML-S11-TOT",
+       "ML-PS-9",
+       "ML-PS-12",
+       "KHUNG-menh-TRIET-tam-hop"
+      ],
+      "nguoiViet": "hanh",
+      "sinh": false,
+      "moTaLaSo": "TC03 (Ất Hợi, Âm Nam): Mệnh Dần có Vũ Khúc (V), Thiên Tướng (M), Đà La (H), Địa Không; Thiên Di Thân có Phá Quân (H), Địa Kiếp, Tuần (Thân–Dậu), Thân cư Thiên Di; Quan Lộc Ngọ có Tử Vi hóa Khoa, Triệt (Ngọ–Mùi)"
+     }
+    },
+    {
+     "text": "Ở tuổi ngoài ba mươi, khi việc nhà và việc nghề cùng đòi thời gian, hãy chốt một mục tiêu nghề ba năm, đo bằng con số. Khi muốn đổi việc, cho mình hai tuần cân nhắc rồi mới quyết.",
+     "phan": "goi-y",
+     "thamChieu": {
+      "quyTacId": "VIET-TAY-menh-2-goi-y",
+      "sao": [
+       "Vũ Khúc",
+       "Địa Kiếp"
+      ],
+      "cung": "Mệnh",
+      "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) | Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "maNghienCuu": [
+       "ML-S04-TOT",
+       "KHUNG-menh-SP-ĐịaKiếp-xung"
+      ],
+      "nguoiViet": "hanh",
+      "sinh": false,
+      "moTaLaSo": "TC03 (Ất Hợi, Âm Nam): Mệnh Dần có Vũ Khúc (V), Thiên Tướng (M), Đà La (H), Địa Không; Thiên Di Thân có Phá Quân (H), Địa Kiếp, Tuần (Thân–Dậu), Thân cư Thiên Di; Quan Lộc Ngọ có Tử Vi hóa Khoa, Triệt (Ngọ–Mùi)"
+     }
+    }
+   ]
+  }
+ ],
+ "ghiChu": "Luận giải do hệ thống xemtuvi.vn tạo tự động từ các quy tắc Tử Vi có ghi nguồn; nội dung mang tính tham khảo, giúp hiểu mình và định hướng, không phải lời đoán chắc về tương lai.",
+ "phienBan": "2aabd4fef870",
+ "ghiChuNguoiViet": "Mẫu ground truth L-b6c541 (B2b). Thân bài do bộ ghép sinh từ quy tắc (stub, boQuaCache); 4 khối dau-bai/noi/tom-lai/goi-y do Hạnh viết tay, chỉ dùng sao trong pool của bài. Nội dung do AI hỗ trợ soạn, cần Thư kiểm duyệt trước khi đưa khách."
+}

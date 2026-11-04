@@ -1,0 +1,331 @@
+{
+ "chuyenDe": "menh",
+ "laSoMau": "TC09",
+ "moTaLaSo": "Nữ, sinh 2/9/1987 dương lịch (Đinh Mão), tuổi mụ 40 năm 2026",
+ "dauBai": {
+  "nhanDinh": [
+   {
+    "text": "Mệnh bạn không nổi một cách cục lớn; trục chính là Cự Môn sáng tại Mệnh. Đây là lá số của người sống bằng suy luận và lời nói.",
+    "phan": "dau-bai",
+    "thamChieu": {
+     "quyTacId": "VIET-TAY-menh-1-dau-bai",
+     "sao": [
+      "Cự Môn"
+     ],
+     "cung": "Mệnh",
+     "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang)",
+     "truongPhai": "Tam hợp phái Việt",
+     "maNghienCuu": [
+      "ML-S10-TOT"
+     ],
+     "nguoiViet": "hanh",
+     "sinh": false
+    }
+   }
+  ]
+ },
+ "muc": [
+  {
+   "id": "tong-quan",
+   "tieuDe": "Tổng quan bản thân",
+   "nhanDinh": [
+    {
+     "text": "Cự Môn tại Mệnh: bạn có xu hướng hay suy xét, lời nói có sức nặng, thích tìm hiểu đến cùng. Khả năng lập luận giúp bạn thuyết phục người khác; nên chọn việc dùng lời nói, phân tích, giảng giải. Bạn thử đối chiếu với trải nghiệm của mình xem nét nào đúng, nét nào chưa.",
+     "thamChieu": {
+      "quyTacId": "ML-S10-TOT",
+      "sao": [
+       "Cự Môn"
+      ],
+      "cung": "Mệnh",
+      "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "tam hợp phái Việt"
+     }
+    }
+   ]
+  },
+  {
+   "id": "cung-lien-quan",
+   "tieuDe": "Cung hợp chiếu",
+   "nhanDinh": [
+    {
+     "text": "Ba cung chiếu về Mệnh tô thêm cho nét ấy.",
+     "phan": "noi",
+     "thamChieu": {
+      "quyTacId": "VIET-TAY-menh-1-noi",
+      "sao": [
+       "Thiên Cơ",
+       "Thái Dương"
+      ],
+      "cung": "Mệnh",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư",
+      "truongPhai": "Tam hợp phái Việt",
+      "maNghienCuu": [
+       "ML-S02-C1",
+       "ML-S03-C2"
+      ],
+      "nguoiViet": "hanh",
+      "sinh": false
+     }
+    },
+    {
+     "text": "Thiên Cơ ở cung Thiên Di (xung chiếu với Mệnh): soi sang thêm nét nhanh nhạy, hay cân nhắc, nhiều ý tưởng. Khi ra ngoài, gặp người mới, nên lắng nghe trước rồi mới góp ý tưởng.",
+     "thamChieu": {
+      "quyTacId": "ML-S02-C1",
+      "sao": [
+       "Thiên Cơ"
+      ],
+      "cung": "Thiên Di",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư",
+      "truongPhai": "tam hợp phái Việt"
+     }
+    },
+    {
+     "text": "Thái Dương ở cung Quan Lộc (tam hợp với Mệnh): tiếp thêm nét cởi mở, nhiệt thành, thích giúp đỡ người khác. Trong công việc, nên chọn nơi mình được trình bày, chia sẻ kết quả.",
+     "thamChieu": {
+      "quyTacId": "ML-S03-C2",
+      "sao": [
+       "Thái Dương"
+      ],
+      "cung": "Quan Lộc",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư",
+      "truongPhai": "tam hợp phái Việt"
+     }
+    },
+    {
+     "text": "Tài Bạch (cung tam hợp của Mệnh) không có chính tinh (vô chính diệu): khi luận tính cách và hướng đi của bạn, nên mượn chính tinh của cung đối diện để xem (Thiên Đồng, Thiên Lương ở Phúc Đức), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-menh-VCD-tam-hop",
+      "sao": [
+       "Thiên Đồng",
+       "Thiên Lương"
+      ],
+      "cung": "Mệnh",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Tài Bạch",
+       "Phúc Đức"
+      ],
+      "yeuTo": [
+       "Vô Chính Diệu"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "tu-hoa",
+   "tieuDe": "Tứ hóa",
+   "nhanDinh": [
+    {
+     "text": "Tứ hóa chỉ ra chỗ được đỡ và chỗ cần bỏ công.",
+     "phan": "noi",
+     "thamChieu": {
+      "quyTacId": "VIET-TAY-menh-1-noi",
+      "sao": [],
+      "cung": "Mệnh",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+      "truongPhai": "Tam hợp phái Việt",
+      "maNghienCuu": [
+       "KHUNG-menh-DH-Khoa-Ky"
+      ],
+      "nguoiViet": "hanh",
+      "sinh": false
+     }
+    },
+    {
+     "text": "Thiên Cơ mang Hóa Khoa ở Thiên Di (cung xung chiếu của Mệnh) ảnh hưởng đến tính cách và hướng đi của bạn: thêm sự thanh nhã, danh tiếng tốt và người giúp đỡ đúng lúc.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-menh-HOA-Khoa-xung",
+      "sao": [
+       "Thiên Cơ"
+      ],
+      "cung": "Mệnh",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Thiên Di"
+      ]
+     }
+    },
+    {
+     "text": "Hóa Kỵ ở Mệnh hóa vào Cự Môn: tranh cãi, nói nhiều dễ bị ghét; chú ý lời nói sẽ nhẹ hơn. Đây là điểm cần đầu tư công sức nơi bản thân; đặt kỳ vọng vừa phải (\"làm việc chỉ cầu bảy phần\") và chuẩn bị kỹ sẽ nhẹ gánh hơn.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-menh-KY-CuMon",
+      "sao": [
+       "Cự Môn"
+      ],
+      "cung": "Mệnh",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Mệnh"
+      ]
+     }
+    },
+    {
+     "text": "Tam phương của Mệnh có cả Hóa Khoa lẫn Hóa Kỵ (Thiên Cơ, Cự Môn): thuận lợi và điểm vướng cùng có, nên nhờ người có kinh nghiệm góp ý trước khi chốt.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-menh-DH-Khoa-Ky",
+      "sao": [
+       "Thiên Cơ",
+       "Cự Môn"
+      ],
+      "cung": "Mệnh",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Thiên Di",
+       "Mệnh"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "phu-tinh",
+   "tieuDe": "Cát hung tinh đi kèm",
+   "nhanDinh": [
+    {
+     "text": "Sao phụ cho thấy người khác nhìn bạn ra sao.",
+     "phan": "noi",
+     "thamChieu": {
+      "quyTacId": "VIET-TAY-menh-1-noi",
+      "sao": [
+       "Văn Khúc",
+       "Hồng Loan",
+       "Đào Hoa"
+      ],
+      "cung": "Mệnh",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư",
+      "truongPhai": "Tam hợp phái Việt",
+      "maNghienCuu": [
+       "ML-PS-3",
+       "ML-PS-14",
+       "ML-PS-15"
+      ],
+      "nguoiViet": "hanh",
+      "sinh": false
+     }
+    },
+    {
+     "text": "Văn Khúc đồng cung Mệnh: có khiếu biểu đạt, nghệ thuật, khéo ăn nói.",
+     "thamChieu": {
+      "quyTacId": "ML-PS-3",
+      "sao": [
+       "Văn Khúc"
+      ],
+      "cung": "Mệnh",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư",
+      "truongPhai": "tam hợp phái Việt"
+     }
+    },
+    {
+     "text": "Hồng Loan đồng cung Mệnh: duyên giao tiếp tốt, dễ gây thiện cảm.",
+     "thamChieu": {
+      "quyTacId": "ML-PS-14",
+      "sao": [
+       "Hồng Loan"
+      ],
+      "cung": "Mệnh",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư",
+      "truongPhai": "tam hợp phái Việt"
+     }
+    },
+    {
+     "text": "Đào Hoa đồng cung Mệnh: sức hút cá nhân, nên cân bằng giữa duyên và nguyên tắc.",
+     "thamChieu": {
+      "quyTacId": "ML-PS-15",
+      "sao": [
+       "Đào Hoa"
+      ],
+      "cung": "Mệnh",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư",
+      "truongPhai": "tam hợp phái Việt"
+     }
+    },
+    {
+     "text": "Thiên Không ở Quan Lộc (cung tam hợp của Mệnh) ảnh hưởng đến tính cách và hướng đi của bạn: ý nghĩ thoáng, nhiều ý tưởng nhưng khó nắm chắc, nên cụ thể hóa bằng kế hoạch.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-menh-SP-ThiênKhông-tam-hop",
+      "sao": [
+       "Thiên Không"
+      ],
+      "cung": "Mệnh",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Quan Lộc"
+      ]
+     }
+    },
+    {
+     "text": "Lộc Tồn ở Thiên Di (cung xung chiếu của Mệnh) ảnh hưởng đến tính cách và hướng đi của bạn: biết tích lũy, thận trọng với tài chính, nên linh hoạt vừa đủ để không bỏ lỡ cơ hội.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-menh-SP-LộcTồn-xung",
+      "sao": [
+       "Lộc Tồn"
+      ],
+      "cung": "Mệnh",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Thiên Di"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "tom-lai",
+   "tieuDe": "Tóm lại",
+   "nhanDinh": [
+    {
+     "text": "Mạnh nhất ở bạn là tư duy sắc và tài diễn đạt. Hóa Khoa ở Thiên Di nâng đỡ, còn Hóa Kỵ trên Cự Môn nhắc bạn giữ lời. Biết cả hai mặt đó, lời nói thành lợi thế của bạn.",
+     "phan": "tom-lai",
+     "thamChieu": {
+      "quyTacId": "VIET-TAY-menh-1-tom-lai",
+      "sao": [
+       "Cự Môn",
+       "Thiên Cơ",
+       "Văn Khúc"
+      ],
+      "cung": "Mệnh",
+      "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) | Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) | Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương) | Tử Vi Đẩu Số Toàn Thư",
+      "truongPhai": "Tam hợp phái Việt",
+      "maNghienCuu": [
+       "ML-S10-TOT",
+       "KHUNG-menh-HOA-Khoa-xung",
+       "KHUNG-menh-KY-CuMon",
+       "ML-PS-3"
+      ],
+      "nguoiViet": "hanh",
+      "sinh": false
+     }
+    },
+    {
+     "text": "Với phụ nữ ngoài ba mươi lăm, đã có chỗ đứng, bạn nên chọn một lĩnh vực đào sâu để thành người được tìm đến hỏi ý. Trước buổi nói chuyện khó, hãy ghi ba ý chính và nói chậm lại một nhịp.",
+     "phan": "goi-y",
+     "thamChieu": {
+      "quyTacId": "VIET-TAY-menh-1-goi-y",
+      "sao": [
+       "Cự Môn"
+      ],
+      "cung": "Mệnh",
+      "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) | Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+      "truongPhai": "Tam hợp phái Việt",
+      "maNghienCuu": [
+       "ML-S10-TOT",
+       "KHUNG-menh-KY-CuMon"
+      ],
+      "nguoiViet": "hanh",
+      "sinh": false
+     }
+    }
+   ]
+  }
+ ],
+ "ghiChu": "Luận giải do hệ thống xemtuvi.vn tạo tự động từ các quy tắc Tử Vi có ghi nguồn; nội dung mang tính tham khảo, giúp hiểu mình và định hướng, không phải lời đoán chắc về tương lai.",
+ "phienBan": "2aabd4fef870",
+ "ghiChuNguoiViet": "Mẫu ground truth L-b6c541 (B2b). Thân bài do bộ ghép sinh từ quy tắc (stub, boQuaCache); 4 khối dau-bai/noi/tom-lai/goi-y do Hạnh viết tay, chỉ dùng sao trong pool của bài. Nội dung do AI hỗ trợ soạn, cần Thư kiểm duyệt trước khi đưa khách."
+}
