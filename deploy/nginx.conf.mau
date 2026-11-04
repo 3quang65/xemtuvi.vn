@@ -2,7 +2,6 @@
 server {
     listen 80;
     server_name __TEN_MIEN__;
-    add_header X-Robots-Tag "noindex, nofollow" always;
     gzip on;
     gzip_types text/css application/javascript application/json image/svg+xml;
     # Thử kín 16/11: đóng băng luồng nhận khách mới — trả 410 tại nginx, không cần rebuild Next.js.
@@ -11,10 +10,16 @@ server {
       default_type text/html;
       return 410 '<!DOCTYPE html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>body{font-family:system-ui,sans-serif;max-width:32rem;margin:2rem auto;padding:0 1rem;line-height:1.6;color:#222}a{color:#8a2be2}</style><title>Tạm dừng nhận khách mới</title></head><body><h1>Tạm dừng nhận khách mới</h1><p>Chúng mình đang tạm dừng nhận khách mới để chuẩn bị cho bản ra mắt (16/11).</p><p><a href="/">Lập lá số và xem tóm tắt miễn phí</a></p></body></html>';
     }
+    location = /cms {
+        return 301 /cms/;
+    }
     location / {
+        # Redirect /cms → /cms/ (301) - dùng rewrite thay if
+        rewrite ^/cms$ /cms/ permanent;
         proxy_pass http://127.0.0.1:3000;
         proxy_set_header Host $host;
         proxy_set_header X-Forwarded-For $remote_addr;
         proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_pass_header ETag;
     }
 }

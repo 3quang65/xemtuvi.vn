@@ -3,6 +3,11 @@ import { COOKIE_CO_SINH, canChuyenVeTrangChu } from '@/lib/co-phien';
 import { canGioiHan, kiemTraYeuCau } from '@/lib/gioi-han-toc-do';
 import { TEN_COOKIE_NGUON, NGAY_NGUON, moHoaNguon, nguonTuYeuCau } from '@/lib/nguon-khach';
 
+// Redirect /cms → /cms/ (trailing slash)
+const CHUYENHUONG = [
+  { from: '/cms', to: '/cms/' },
+];
+
 // Trang kết quả (lá số của khách) không bao giờ được index.
 // SITE_NOINDEX=1: bản thử, cấm index toàn site.
 const TRANG_KET_QUA = ['/la-so', '/ket-qua', '/tai-khoan', '/luan-giai', '/chon-goi', '/thanh-toan', '/huy-dang-ky', '/moi', '/toi'];
@@ -28,7 +33,8 @@ export function middleware(req: NextRequest) {
   const res = NextResponse.next();
   const { pathname } = req.nextUrl;
   const ketQua = TRANG_KET_QUA.some((p) => pathname === p || pathname.startsWith(p + '/'));
-  if (process.env.SITE_NOINDEX === '1' || ketQua) {
+  // Chỉ set noindex cho trang kết quả (lá số khách), không set cho public pages
+  if (ketQua) {
     res.headers.set('X-Robots-Tag', 'noindex, nofollow, noarchive');
   }
   // Ghi nguồn khách lần vào đầu có nguồn (UTM hoặc trang giới thiệu ngoài); đã có cookie thì giữ nguyên.
