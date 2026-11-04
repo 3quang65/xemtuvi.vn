@@ -21,7 +21,7 @@ export default function TrangChu() {
             các phụ tinh, tứ hóa theo can năm, Tuần – Triệt, vòng Tràng Sinh và đại vận 10 năm.
           </p>
           <p>
-            Mỗi sao kèm độ sáng tại cung: Miếu, Vượng, Đắc, Bình hòa, Hãm. Các điểm mà những trường phái an khác nhau
+            Mỗi sao kèm độ sáng tại cung: Miếu, Vượng, Đắc, Bình, Hãm. Các điểm mà những trường phái an khác nhau
             sẽ được ghi chú rõ trong phần luận giải.
           </p>
         </section>
