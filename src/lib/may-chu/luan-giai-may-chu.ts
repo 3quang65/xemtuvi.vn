@@ -53,7 +53,7 @@ export async function luanGiaiChoKhach(db: Csdl, k: BoKhoa, nguoiDungId: number,
   if (co) return giaiMaJson<LuanGiai>(co.noi_dung_ma_hoa, k);
 
   // boQuaCache: không dùng/ghi tệp đệm bản rõ trong .cache; bộ nhớ đệm duy nhất là bảng mã hóa.
-  const kq = await sinhLuanGiai(ls, chuyenDe, { nhaCungCap: 'stub', boQuaCache: true, namXem: nam });
+  const kq = await sinhLuanGiai(ls, chuyenDe, { nhaCungCap: 'stub', boQuaCache: true, namXem: nam, tongHop: true });
   db.prepare('INSERT OR REPLACE INTO luan_giai_luu (khoa_cache, chuyen_de, phien_ban, noi_dung_ma_hoa) VALUES (?,?,?,?)').run(khoa, chuyenDe, PHIEN_BAN_QUY_TAC, maHoaJson(kq, k));
   return kq;
 }
