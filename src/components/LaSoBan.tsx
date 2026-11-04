@@ -163,7 +163,7 @@ export default function LaSoBan({ laSo, namHienTai, coMienNam, onDoiQuyUoc, onDo
       <ChiTietCung c={laSo.cung[chon]} ln={ln} />
 
       <p className="chu-giai">
-        Độ sáng: M Miếu · V Vượng · Đ Đắc · B Bình hòa · H Hãm, theo bảng của phái Việt (dòng sách cụ Thiên Lương); vài ô có thể khác bảng của sách hoặc trang khác. Lộc, Quyền, Khoa, Kỵ là tứ hóa theo can năm sinh.
+        Độ sáng: M Miếu · V Vượng · Đ Đắc · B Bình · H Hãm, theo bảng của phái Việt (dòng sách cụ Thiên Lương); vài ô có thể khác bảng của sách hoặc trang khác. Lộc, Quyền, Khoa, Kỵ là tứ hóa theo can năm sinh.
         Sao ghi &quot;L.&quot; là sao lưu và lưu tứ hóa của năm {ln.canChi} ({namXem}), an theo can chi năm xem.
         {vanNay && ` Đại vận đang đi (${namXem}, ${tuoiMu} tuổi mụ) được tô đậm.`}
       </p>
