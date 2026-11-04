@@ -5,7 +5,7 @@
  "dauBai": {
   "nhanDinh": [
    {
-    "text": "Chuyện tình cảm của bạn nằm trong thế Cơ Nguyệt Đồng Lương, với Thái Âm miếu ngay tại Phu Thê. Đây là kiểu gắn bó thiên về êm ấm, chăm sóc và thấu hiểu hơn là sôi nổi.",
+    "text": "Tình cảm của bạn nằm trong thế Cơ Nguyệt Đồng Lương, với Thái Âm miếu hóa Lộc ngay tại Phu Thê: kiểu gắn bó êm ấm, chăm sóc, thấu hiểu hơn là sôi nổi. Tuần cùng cung nên cái ấm áp ấy đến chậm, cần thời gian mới rõ.",
     "phan": "dau-bai",
     "thamChieu": {
      "quyTacId": "VIET-TAY-phu-the-1-dau-bai",
@@ -20,10 +20,13 @@
      "truongPhai": "Tam hợp phái Việt",
      "maNghienCuu": [
       "KHUNG-phu-the-CC-CoNguyetdongLuong-PHA",
-      "PT-S08-TOT"
+      "PT-S08-TOT",
+      "PT-HOA-0",
+      "PT-TT-TUẦN"
      ],
      "nguoiViet": "hanh",
-     "sinh": false
+     "sinh": false,
+     "moTaLaSo": "TC09 (Đinh Mão, Âm Nữ): Phu Thê Tuất có Thái Âm (M) hóa Lộc, Tả Phù, Tuần (Tuất–Hợi); Thiên Di Ngọ có Thiên Cơ hóa Khoa, Lộc Tồn; Quan Lộc Thìn có Thái Dương, Hữu Bật, Thiên Không; Phúc Đức Dần có Thiên Đồng hóa Quyền, Thiên Lương, Linh Tinh, Triệt (Dần–Mão)"
     }
    }
   ]
@@ -78,6 +81,34 @@
        "Cách Nhật Nguyệt"
       ]
      }
+    },
+    {
+     "text": "Chỗ khuyết nằm ở Phúc Đức có Linh Tinh và Triệt, thêm Tuần tại Phu Thê: nền vẫn êm ấm, nhưng có lúc lòng bồn chồn, tình cảm chưa được đáp đúng lúc.",
+     "thamChieu": {
+      "quyTacId": "VIET-TAY-phu-the-1-cach-khuyet",
+      "sao": [
+       "Thiên Đồng",
+       "Thiên Lương",
+       "Linh Tinh",
+       "Thái Âm"
+      ],
+      "cung": "Phu Thê",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "moTaLaSo": "TC09 (Đinh Mão, Âm Nữ): Phu Thê Tuất có Thái Âm (M) hóa Lộc, Tả Phù, Tuần (Tuất–Hợi); Thiên Di Ngọ có Thiên Cơ hóa Khoa, Lộc Tồn; Quan Lộc Thìn có Thái Dương, Hữu Bật, Thiên Không; Phúc Đức Dần có Thiên Đồng hóa Quyền, Thiên Lương, Linh Tinh, Triệt (Dần–Mão)",
+      "maNghienCuu": [
+       "KHUNG-phu-the-CC-CoNguyetdongLuong-PHA",
+       "KHUNG-phu-the-CC-NhatNguyet-SANG-PHA",
+       "KHUNG-phu-the-TRIET-tam-hop",
+       "PT-TT-TUẦN"
+      ],
+      "nguoiViet": "hanh",
+      "sinh": false,
+      "cungLienQuan": [
+       "Phúc Đức",
+       "Phu Thê"
+      ]
+     }
     }
    ]
   },
@@ -86,7 +117,7 @@
    "tieuDe": "Cách yêu và gắn bó",
    "nhanDinh": [
     {
-     "text": "Từ thế chung, chính tinh tại cung cho biết bạn yêu theo cách nào.",
+     "text": "Chính tinh tại cung cho biết bạn yêu ra sao.",
      "phan": "noi",
      "thamChieu": {
       "quyTacId": "VIET-TAY-phu-the-1-noi",
@@ -100,7 +131,8 @@
        "PT-S08-TOT"
       ],
       "nguoiViet": "hanh",
-      "sinh": false
+      "sinh": false,
+      "moTaLaSo": "TC09 (Đinh Mão, Âm Nữ): Phu Thê Tuất có Thái Âm (M) hóa Lộc, Tả Phù, Tuần (Tuất–Hợi); Thiên Di Ngọ có Thiên Cơ hóa Khoa, Lộc Tồn; Quan Lộc Thìn có Thái Dương, Hữu Bật, Thiên Không; Phúc Đức Dần có Thiên Đồng hóa Quyền, Thiên Lương, Linh Tinh, Triệt (Dần–Mão)"
      }
     },
     {
@@ -122,7 +154,7 @@
    "tieuDe": "Cung hợp chiếu",
    "nhanDinh": [
     {
-     "text": "Các cung chiếu về thêm những nét mà người bên cạnh sẽ cảm nhận.",
+     "text": "Các cung chiếu về thêm nét người bên cạnh cảm nhận.",
      "phan": "noi",
      "thamChieu": {
       "quyTacId": "VIET-TAY-phu-the-1-noi",
@@ -142,7 +174,8 @@
        "PT-S12-C6"
       ],
       "nguoiViet": "hanh",
-      "sinh": false
+      "sinh": false,
+      "moTaLaSo": "TC09 (Đinh Mão, Âm Nữ): Phu Thê Tuất có Thái Âm (M) hóa Lộc, Tả Phù, Tuần (Tuất–Hợi); Thiên Di Ngọ có Thiên Cơ hóa Khoa, Lộc Tồn; Quan Lộc Thìn có Thái Dương, Hữu Bật, Thiên Không; Phúc Đức Dần có Thiên Đồng hóa Quyền, Thiên Lương, Linh Tinh, Triệt (Dần–Mão)"
      }
     },
     {
@@ -200,11 +233,12 @@
    "tieuDe": "Tứ hóa",
    "nhanDinh": [
     {
-     "text": "Tứ hóa ở tam hợp cho thấy vai trò của bạn trong quan hệ.",
+     "text": "Sao hóa quan trọng nhất nằm ngay tại Phu Thê; tam hợp bổ thêm vai trò của bạn.",
      "phan": "noi",
      "thamChieu": {
       "quyTacId": "VIET-TAY-phu-the-1-noi",
       "sao": [
+       "Thái Âm",
        "Thiên Đồng",
        "Thiên Cơ"
       ],
@@ -212,11 +246,67 @@
       "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
       "truongPhai": "Tam hợp phái Việt",
       "maNghienCuu": [
+       "PT-HOA-0",
        "KHUNG-phu-the-HOA-Quyền-tam-hop",
        "KHUNG-phu-the-HOA-Khoa-tam-hop"
       ],
       "nguoiViet": "hanh",
-      "sinh": false
+      "sinh": false,
+      "moTaLaSo": "TC09 (Đinh Mão, Âm Nữ): Phu Thê Tuất có Thái Âm (M) hóa Lộc, Tả Phù, Tuần (Tuất–Hợi); Thiên Di Ngọ có Thiên Cơ hóa Khoa, Lộc Tồn; Quan Lộc Thìn có Thái Dương, Hữu Bật, Thiên Không; Phúc Đức Dần có Thiên Đồng hóa Quyền, Thiên Lương, Linh Tinh, Triệt (Dần–Mão)"
+     }
+    },
+    {
+     "text": "Hóa Lộc tại Phu Thê mở ra cơ hội và nguồn lực, nên chủ động nắm bắt.",
+     "thamChieu": {
+      "quyTacId": "PT-HOA-0",
+      "sao": [
+       "Thái Âm"
+      ],
+      "cung": "Phu Thê",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư",
+      "truongPhai": "Tam hợp phái Việt",
+      "yeuTo": [
+       "Hóa Lộc"
+      ]
+     }
+    },
+    {
+     "text": "Lộc đi cùng Thái Âm miếu: người bên cạnh thường chu đáo, biết vun vén. Tuần cùng cung làm cái lợi này đến kín và chậm; đừng đánh giá mối quan hệ chỉ qua vài tháng đầu.",
+     "thamChieu": {
+      "quyTacId": "VIET-TAY-phu-the-1-loc-tuan",
+      "sao": [
+       "Thái Âm"
+      ],
+      "cung": "Phu Thê",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "moTaLaSo": "TC09 (Đinh Mão, Âm Nữ): Phu Thê Tuất có Thái Âm (M) hóa Lộc, Tả Phù, Tuần (Tuất–Hợi); Thiên Di Ngọ có Thiên Cơ hóa Khoa, Lộc Tồn; Quan Lộc Thìn có Thái Dương, Hữu Bật, Thiên Không; Phúc Đức Dần có Thiên Đồng hóa Quyền, Thiên Lương, Linh Tinh, Triệt (Dần–Mão)",
+      "maNghienCuu": [
+       "PT-HOA-0",
+       "PT-TT-TUẦN",
+       "PT-S08-TOT"
+      ],
+      "nguoiViet": "hanh",
+      "sinh": false,
+      "yeuTo": [
+       "Hóa Lộc",
+       "Tuần"
+      ]
+     }
+    },
+    {
+     "text": "Lộc Tồn ở Thiên Di (cung tam hợp của Phu Thê) ảnh hưởng đến chuyện tình cảm và hôn nhân: biết tích lũy, thận trọng với tài chính, nên linh hoạt vừa đủ để không bỏ lỡ cơ hội.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-phu-the-SP-LộcTồn-tam-hop",
+      "sao": [
+       "Lộc Tồn"
+      ],
+      "cung": "Phu Thê",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Thiên Di"
+      ]
      }
     },
     {
@@ -256,13 +346,14 @@
    "tieuDe": "Sao phụ",
    "nhanDinh": [
     {
-     "text": "Sao phụ cùng Tuần, Triệt nói về nhịp đến và độ rõ của tình cảm.",
+     "text": "Sao phụ, Tuần, Triệt nói về nhịp tình cảm.",
      "phan": "noi",
      "thamChieu": {
       "quyTacId": "VIET-TAY-phu-the-1-noi",
       "sao": [
        "Tả Phù",
-       "Linh Tinh"
+       "Linh Tinh",
+       "Thiên Không"
       ],
       "cung": "Phu Thê",
       "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) | Tử Vi Đẩu Số Toàn Thư | Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
@@ -270,10 +361,12 @@
       "maNghienCuu": [
        "PT-TT-TUẦN",
        "KHUNG-phu-the-TRIET-tam-hop",
-       "PT-PS-0"
+       "PT-PS-0",
+       "KHUNG-phu-the-SP-ThiênKhông-xung"
       ],
       "nguoiViet": "hanh",
-      "sinh": false
+      "sinh": false,
+      "moTaLaSo": "TC09 (Đinh Mão, Âm Nữ): Phu Thê Tuất có Thái Âm (M) hóa Lộc, Tả Phù, Tuần (Tuất–Hợi); Thiên Di Ngọ có Thiên Cơ hóa Khoa, Lộc Tồn; Quan Lộc Thìn có Thái Dương, Hữu Bật, Thiên Không; Phúc Đức Dần có Thiên Đồng hóa Quyền, Thiên Lương, Linh Tinh, Triệt (Dần–Mão)"
      }
     },
     {
@@ -331,6 +424,21 @@
        "Phúc Đức"
       ]
      }
+    },
+    {
+     "text": "Thiên Không ở Quan Lộc (cung xung chiếu của Phu Thê) ảnh hưởng đến chuyện tình cảm và hôn nhân: ý nghĩ thoáng, nhiều ý tưởng nhưng khó nắm chắc, nên cụ thể hóa bằng kế hoạch.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-phu-the-SP-ThiênKhông-xung",
+      "sao": [
+       "Thiên Không"
+      ],
+      "cung": "Phu Thê",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Quan Lộc"
+      ]
+     }
     }
    ]
   },
@@ -339,14 +447,13 @@
    "tieuDe": "Tóm lại",
    "nhanDinh": [
     {
-     "text": "Bạn yêu dịu dàng, cần được trò chuyện và chia sẻ. Thế mạnh là sự ấm áp hai chiều và có người giúp sức; điều cần giữ là đừng để mong muốn chủ động lấn sự lắng nghe. Tình cảm có thể biểu hiện chậm và kín, nên nhìn theo từng giai đoạn.",
+     "text": "Bạn yêu dịu dàng, cần được trò chuyện. Thế mạnh là Thái Âm hóa Lộc tại Phu Thê: ấm áp hai chiều, có người vun vén. Điều cần giữ: đừng để mong muốn chủ động lấn sự lắng nghe, và cho tình cảm thời gian vì Tuần làm nó chậm, kín.",
      "phan": "tom-lai",
      "thamChieu": {
       "quyTacId": "VIET-TAY-phu-the-1-tom-lai",
       "sao": [
        "Thái Âm",
-       "Thiên Đồng",
-       "Tả Phù"
+       "Thiên Đồng"
       ],
       "cung": "Phu Thê",
       "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) | Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) | Tử Vi Đẩu Số Toàn Thư",
@@ -359,11 +466,12 @@
        "PT-TT-TUẦN"
       ],
       "nguoiViet": "hanh",
-      "sinh": false
+      "sinh": false,
+      "moTaLaSo": "TC09 (Đinh Mão, Âm Nữ): Phu Thê Tuất có Thái Âm (M) hóa Lộc, Tả Phù, Tuần (Tuất–Hợi); Thiên Di Ngọ có Thiên Cơ hóa Khoa, Lộc Tồn; Quan Lộc Thìn có Thái Dương, Hữu Bật, Thiên Không; Phúc Đức Dần có Thiên Đồng hóa Quyền, Thiên Lương, Linh Tinh, Triệt (Dần–Mão)"
      }
     },
     {
-     "text": "Ở tuổi quanh bốn mươi, nếu đã có gia đình, hãy giữ một buổi trò chuyện riêng mỗi tuần, không bàn chuyện con cái hay tiền bạc. Nếu đang tìm hiểu, hãy để mối quan hệ đi chậm và quan sát cách người kia lắng nghe bạn.",
+     "text": "Ở tuổi quanh bốn mươi, nếu đã có gia đình, hãy giữ một buổi trò chuyện riêng mỗi tuần, không bàn con cái, tiền bạc. Nếu đang tìm hiểu, để mối quan hệ đi chậm và xem người kia lắng nghe bạn thế nào.",
      "phan": "goi-y",
      "thamChieu": {
       "quyTacId": "VIET-TAY-phu-the-1-goi-y",
@@ -379,7 +487,8 @@
        "KHUNG-phu-the-HOA-Quyền-tam-hop"
       ],
       "nguoiViet": "hanh",
-      "sinh": false
+      "sinh": false,
+      "moTaLaSo": "TC09 (Đinh Mão, Âm Nữ): Phu Thê Tuất có Thái Âm (M) hóa Lộc, Tả Phù, Tuần (Tuất–Hợi); Thiên Di Ngọ có Thiên Cơ hóa Khoa, Lộc Tồn; Quan Lộc Thìn có Thái Dương, Hữu Bật, Thiên Không; Phúc Đức Dần có Thiên Đồng hóa Quyền, Thiên Lương, Linh Tinh, Triệt (Dần–Mão)"
      }
     }
    ]
