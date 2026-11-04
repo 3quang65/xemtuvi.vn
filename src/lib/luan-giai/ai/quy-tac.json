@@ -5711,6 +5711,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "PT-S02-C6-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Phúc Đức",
+  "sao": [
+   "Thiên Cơ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Cơ hãm ở Phúc Đức, hội về Phu Thê: Toàn Thư ghi gặp thêm sát tinh thì hay lo xa, bôn tẩu, khó tĩnh tâm. Trong tình cảm, bạn dễ nghĩ trước quá nhiều kịch bản. Hỏi thẳng người kia thay vì tự đoán sẽ giúp lòng nhẹ hơn.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "PHUC-TCO-02",
+   "PHU-YN-02",
+   "PHUC-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "PHUC-TCO-02: TT (\"加羊陀火鈴空劫奔走不得寧靜\"); WD6 (lao tâm, Hóa Kỵ làm nặng thêm); WD8 (hãm: lo xa, bất an)"
+ },
+ {
   "id": "PT-S02-C1",
   "chuyenDe": "phu-the",
   "cung": "Thiên Di",
@@ -5846,6 +5870,30 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S03-C6-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Phúc Đức",
+  "sao": [
+   "Thái Dương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thái Dương hãm ở Phúc Đức: sách ghi gặp sát tinh, Kỵ, Hao thì dễ nóng nảy, bận rộn mà ít thảnh thơi. Tam hợp với Phu Thê, sự mệt mỏi tích lại dễ thành lời gắt với người gần nhất. Dành cho mình thời gian nghỉ thật sự trước khi về với người thương.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "PHUC-TDU-02",
+   "PHU-YN-02",
+   "PHUC-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "PHUC-TDU-02: TT (\"加羊陀火鈴空劫忌耗，終身不美之論\"); WD8 (hãm: nóng nảy, áp lực); WD6 (hãm gặp sát: bận rộn)"
  },
  {
   "id": "PT-S03-C1",
@@ -5985,6 +6033,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "PT-S04-C6-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Phúc Đức",
+  "sao": [
+   "Vũ Khúc"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Vũ Khúc hãm ở Phúc Đức: Toàn Thư ghi lao tâm vì tiền bạc, trách nhiệm, đồng cung Phá Quân thì khó yên một chỗ. Hội về Phu Thê, nỗi lo tài chính dễ chiếm chỗ của sự lãng mạn. Cùng nhau lập kế hoạch tiền chung để nỗi lo được chia đôi.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "PHUC-VK-02",
+   "PHU-YN-02",
+   "PHUC-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "PHUC-VK-02: TT (\"武曲勞心費力…破軍同東走西行，不寧靜\"); WD11 (hãm: hao tâm; đồng Phá Quân bất an); WD6 (hãm gặp sát: vất vả)"
+ },
+ {
   "id": "PT-S04-C1",
   "chuyenDe": "phu-the",
   "cung": "Thiên Di",
@@ -6122,6 +6194,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "PT-S05-C6-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Phúc Đức",
+  "sao": [
+   "Thiên Đồng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Đồng hãm ở Phúc Đức, gặp thêm Tứ sát, Không Kiếp: theo tư liệu Tử Vi Đại Toàn (bản dịch), tinh thần dễ dao động, thiếu quyết đoán. Trong quan hệ, bạn dễ lưỡng lự trước những quyết định chung. Đặt thời hạn cho mỗi quyết định và nói rõ điều mình thật sự muốn.",
+  "nguon": "Tư liệu web: Tử vi đại toàn – phúc đức cung (lyso.vn); Tư liệu web: Cung Phúc Đức (tracuulasotuvi.com); Tư liệu web: Cung Phúc Đức trong Tử Vi (thansohoconline.com)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "PHUC-TD-02",
+   "PHU-YN-02",
+   "PHUC-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "PHUC-TD-02: WD6 (hãm gặp Tứ sát Không Kiếp: vất vả); WD8 (hãm: dao động, thiếu quyết đoán); WD11 (Dậu, Thìn, Tuất kém)"
+ },
+ {
   "id": "PT-S05-C1",
   "chuyenDe": "phu-the",
   "cung": "Thiên Di",
@@ -6257,6 +6353,30 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S06-C6-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Phúc Đức",
+  "sao": [
+   "Liêm Trinh"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Liêm Trinh hãm ở Phúc Đức: Toàn Thư ghi hay lao tâm, khó tĩnh, về cuối đời mới như ý. Hội về Phu Thê, bạn dễ ôm việc mà quên chăm sóc cảm xúc của cả hai. Giảm bớt việc không cần thiết và giữ những khoảng nghỉ chung.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "PHUC-LT-02",
+   "PHU-YN-02",
+   "PHUC-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "PHUC-LT-02: TT (\"破軍同不守靜，勞心費力，再加羊陀火鈴勞苦終身，末年如意\"; Tham Lang \"廉貞同福薄\"); WD6 (Liêm Trinh: bận rộn, lo âu); WD11 (đồng Phá Quân lao tâm; Mão Dậu cùng Phá Quân vất vả)"
  },
  {
   "id": "PT-S06-C1",
@@ -6509,6 +6629,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "PT-S08-C6-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Phúc Đức",
+  "sao": [
+   "Thái Âm"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thái Âm hãm ở Phúc Đức: sách ghi dễ buồn phiền, suy tư, có lúc thấy cô đơn. Tam hợp với Phu Thê, bạn cần được lắng nghe nhiều hơn những gì mình thường nói ra. Có một người để tâm sự và vài hoạt động lành mạnh làm cùng nhau sẽ giúp tình cảm ấm hơn.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "PHUC-TA-02",
+   "PHU-YN-02",
+   "PHUC-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "PHUC-TA-02: TT (\"加羊陀火鈴空劫，有憂有喜，不得安靜\"); WD6 (hãm: cô đơn, bi quan); WD8 (hãm: buồn phiền, suy tư)"
+ },
+ {
   "id": "PT-S08-C1",
   "chuyenDe": "phu-the",
   "cung": "Thiên Di",
@@ -6644,6 +6788,30 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S09-C6-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Phúc Đức",
+  "sao": [
+   "Tham Lang"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Tham Lang hãm ở Phúc Đức: Toàn Thư ghi lao tâm, khó yên. Hội về Phu Thê, cảm xúc lên xuống của bạn dễ bị người kia hiểu thành thiếu cam kết. Giữ nhịp sống điều độ và nói rõ khi bạn cần không gian riêng.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "PHUC-THL-02",
+   "PHU-YN-02",
+   "PHUC-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "PHUC-THL-02: TT (\"貪狼勞心不安，廉貞同福薄\"); WD14 (\"lạc hãm là lao tâm…gặp Liêm Trinh thì phúc bạc\"); WD8 (hãm: bất ổn cảm xúc)"
  },
  {
   "id": "PT-S09-C1",
@@ -6783,6 +6951,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "PT-S10-C6-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Phúc Đức",
+  "sao": [
+   "Cự Môn"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Cự Môn hãm ở Phúc Đức: Toàn Thư ghi lao lực kém yên, gặp sát tinh thì hay lo. Tam hợp với Phu Thê, nỗi lo không nói ra dễ thành nghi ngờ trong quan hệ. Học cách buông bớt điều chưa xảy ra và hỏi lại cho rõ khi chưa hiểu ý nhau.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "PHUC-CM-02",
+   "PHU-YN-02",
+   "PHUC-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "PHUC-CM-02: TT (\"巨門勞力不安…加羊陀火鈴空劫生平多憂\"); WD14 (\"lạc hãm là lao tâm không yên\"); WD6 (hãm: lo lắng, căng thẳng thần kinh)"
+ },
+ {
   "id": "PT-S10-C1",
   "chuyenDe": "phu-the",
   "cung": "Thiên Di",
@@ -6918,6 +7110,30 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S11-C6-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Phúc Đức",
+  "sao": [
+   "Thiên Tướng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Tướng hãm ở Phúc Đức: Toàn Thư ghi gặp thêm sát tinh thì tâm khó tĩnh; có tư liệu cho rằng lúc trẻ vất vả, về sau ổn hơn. Hội về Phu Thê, lời ra tiếng vào bên ngoài dễ làm lung lay lòng tin. Chuyện của hai người nên được nói với nhau trước khi nghe từ người khác.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tư liệu web: Cung Phúc Đức (tracuulasotuvi.com)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "PHUC-TT-02",
+   "PHU-YN-02",
+   "PHUC-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "PHUC-TT-02: TT (\"加羊陀火鈴空劫不得心靜\"); WD8 (Mão Dậu: trẻ vất vả, già ổn); WD11 (Tuần Triệt Không Kiếp: thị phi)"
  },
  {
   "id": "PT-S11-C1",
@@ -7057,6 +7273,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "PT-S12-C6-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Phúc Đức",
+  "sao": [
+   "Thiên Lương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Lương hãm ở Phúc Đức: theo các tư liệu về cung Phúc Đức, dễ bi quan, tinh thần có lúc xa cách gia đình. Tam hợp với Phu Thê, bạn dễ thu mình lại khi buồn. Chủ động kể cho người thương khi mình đang không ổn, thay vì chờ người kia đoán.",
+  "nguon": "Tư liệu web: Tử vi đại toàn – phúc đức cung (lyso.vn); Tư liệu web: Cung Phúc Đức (tracuulasotuvi.com); Tư liệu web: Cung Phúc Đức trong Tử Vi (thansohoconline.com)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "PHUC-TL-02",
+   "PHU-YN-02",
+   "PHUC-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "PHUC-TL-02: WD6 (hãm: tranh chấp, bi quan); WD8 (Tỵ Hợi kém; có sát: xa cách); WD11 (Tỵ Hợi kém; hãm cùng Thiên Mã Hóa Kỵ: suy giảm)"
+ },
+ {
   "id": "PT-S12-C1",
   "chuyenDe": "phu-the",
   "cung": "Thiên Di",
@@ -7194,6 +7434,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "PT-S13-C6-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Phúc Đức",
+  "sao": [
+   "Thất Sát"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thất Sát hãm ở Phúc Đức, gặp Kình Đà Hỏa Linh: Toàn Thư ghi lao tâm tốn sức, dễ căng thẳng. Hội về Phu Thê, căng thẳng dồn nén dễ bùng lên ở nhà. Vận động thể chất đều đặn là cách giải tỏa trước khi nó thành lời qua tiếng lại.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "PHUC-TS-02",
+   "PHU-YN-02",
+   "PHUC-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "PHUC-TS-02: TT (\"陷地加羊陀火鈴勞心費力，武曲同欠安，廉貞同辛勤\"); WD6 (hãm: tiêu cực, ít phúc); WD8 (hãm: căng thẳng, cô độc)"
+ },
+ {
   "id": "PT-S13-C1",
   "chuyenDe": "phu-the",
   "cung": "Thiên Di",
@@ -7329,6 +7593,30 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S14-C6-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Phúc Đức",
+  "sao": [
+   "Phá Quân"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Phá Quân hãm ở Phúc Đức: Toàn Thư ghi lao tâm tốn sức, khó yên tĩnh, hay thay đổi. Tam hợp với Phu Thê, nhu cầu đổi mới của bạn nên được đặt vào những trải nghiệm chung. Cùng người thương thử điều mới, như một chuyến đi hay một sở thích, giúp quan hệ không thấy nhàm.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "PHUC-PQ-02",
+   "PHU-YN-02",
+   "PHUC-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "PHUC-PQ-02: TT (\"破軍勞心費力…廉貞同辛勤…加羊陀火鈴空劫操心，不得寧靜\"); WD6 (hãm gặp sát: vất vả); WD8 (hãm: bất ổn, biến động)"
  },
  {
   "id": "PT-S14-C1",
