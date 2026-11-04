@@ -4,22 +4,10 @@ Sinh bằng `node scripts/luan-giai/tao-cho-hanh.cjs`. Chưa có câu `-HAM` th�
 Thêm câu vào `src/lib/luan-giai/ai/quy-tac.json` (hoặc `quy-tac-v2/`): id = mã bên dưới, `dieuKien: {"doSang": ["Hãm"]}`, cùng `cung`, `sao`, `muc` với câu sáng; câu mở bằng mặt cần chú ý, giọng "hiểu mình, định hướng". Bộ ghép tự dùng, không cần sửa code.
 Tử Vi và Thiên Phủ không bao giờ Hãm nên không có trong danh sách.
 
-Còn thiếu: **84** mã.
+Còn thiếu: **72** mã.
 
 | Mã cần viết | Chuyên đề | Sao | Cung hợp chiếu | Câu sáng tương ứng (để giữ cùng ý) |
 |---|---|---|---|---|
-| ML-S02-C3-HAM | Mệnh | Thiên Cơ | Tài Bạch | ML-S02-C3 |
-| ML-S03-C3-HAM | Mệnh | Thái Dương | Tài Bạch | ML-S03-C3 |
-| ML-S04-C3-HAM | Mệnh | Vũ Khúc | Tài Bạch | ML-S04-C3 |
-| ML-S05-C3-HAM | Mệnh | Thiên Đồng | Tài Bạch | ML-S05-C3 |
-| ML-S06-C3-HAM | Mệnh | Liêm Trinh | Tài Bạch | ML-S06-C3 |
-| ML-S08-C3-HAM | Mệnh | Thái Âm | Tài Bạch | ML-S08-C3 |
-| ML-S09-C3-HAM | Mệnh | Tham Lang | Tài Bạch | ML-S09-C3 |
-| ML-S10-C3-HAM | Mệnh | Cự Môn | Tài Bạch | ML-S10-C3 |
-| ML-S11-C3-HAM | Mệnh | Thiên Tướng | Tài Bạch | ML-S11-C3 |
-| ML-S12-C3-HAM | Mệnh | Thiên Lương | Tài Bạch | ML-S12-C3 |
-| ML-S13-C3-HAM | Mệnh | Thất Sát | Tài Bạch | ML-S13-C3 |
-| ML-S14-C3-HAM | Mệnh | Phá Quân | Tài Bạch | ML-S14-C3 |
 | QL-S02-C4-HAM | Quan Lộc | Thiên Cơ | Phu Thê | QL-S02-C4 |
 | QL-S02-C5-HAM | Quan Lộc | Thiên Cơ | Mệnh | QL-S02-C5 |
 | QL-S02-C3-HAM | Quan Lộc | Thiên Cơ | Tài Bạch | QL-S02-C3 |

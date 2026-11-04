@@ -274,6 +274,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "ML-S02-C3-HAM",
+  "chuyenDe": "menh",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Thiên Cơ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Cơ hãm ở Tài Bạch, hội về Mệnh: sách ghi kiếm tiền chậm và khó, gặp thêm sát tinh thì một đời có thành có bại. Bạn nghĩ ra nhiều cách kiếm tiền nhưng dễ bỏ dở giữa chừng. Giữ một nguồn thu chính ổn định trước khi thử ý tưởng mới.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAI-TCO-02",
+   "MENH-YN-01",
+   "TAI-YN-03",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "TAI-TCO-02: TB (tr. 191); TT (q.2 «五财帛»: \"加羊陀火铃空劫一生有成有败\")"
+ },
+ {
   "id": "ML-S03-TOT",
   "chuyenDe": "menh",
   "cung": "Mệnh",
@@ -435,6 +459,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "ML-S03-C3-HAM",
+  "chuyenDe": "menh",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Thái Dương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thái Dương hãm ở Tài Bạch: sách ghi phải vất vả mới đủ dùng, về già mới sung túc. Mệnh chịu lực này nên bạn dễ hào phóng hơn khả năng tài chính của giai đoạn đầu. Lập quỹ tích lũy từ sớm, dù nhỏ, là cách để giai đoạn sau đến đúng như sách nói.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAI-TDU-02",
+   "MENH-YN-01",
+   "TAI-YN-03",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "TAI-TDU-02: TB (tr. 191); TT (q.2 «五财帛»: \"陷宫劳碌不遂\")"
+ },
+ {
   "id": "ML-S04-TOT",
   "chuyenDe": "menh",
   "cung": "Mệnh",
@@ -594,6 +642,30 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S04-C3-HAM",
+  "chuyenDe": "menh",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Vũ Khúc"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Vũ Khúc hãm ở Tài Bạch (đồng cung Phá Quân): Tân Biên ghi tiền vào tay này ra tay kia, trước ít sau có; hợp sản xuất, thương mại. Sự quyết đoán của Mệnh dễ thành chi mạnh tay. Tách riêng tài khoản chi tiêu và tài khoản để dành giúp dòng tiền có chỗ dừng lại.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAI-VK-04",
+   "MENH-YN-01",
+   "TAI-YN-03",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "TAI-VK-04: TB (tr. 191: \"tiền vào tay này sang tay kia, trước không sau có\"); TT (q.2 «五财帛»: \"破军同东来西去先无后有…加羊陀火铃不聚极怕空亡\")"
  },
  {
   "id": "ML-S05-TOT",
@@ -758,6 +830,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "ML-S05-C3-HAM",
+  "chuyenDe": "menh",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Thiên Đồng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Đồng hãm ở Tài Bạch: sách ghi tài chính hay eo hẹp hoặc tụ tán thất thường, phải vất vả rồi về sau mới khá. Mệnh ưa thoải mái nên bạn dễ để tiền trôi theo cảm hứng. Một bảng chi tiêu tháng đơn giản là đủ để bạn thấy tiền đang đi đâu.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAI-TD-02",
+   "MENH-YN-01",
+   "TAI-YN-03",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "TAI-TD-02: TB (tr. 190–191); TT (q.2 «五财帛» mục 太阴: \"陷宫成败不聚\")"
+ },
+ {
   "id": "ML-S06-TOT",
   "chuyenDe": "menh",
   "cung": "Mệnh",
@@ -918,6 +1014,31 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S06-C3-HAM",
+  "chuyenDe": "menh",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Liêm Trinh"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Liêm Trinh hãm ở Tài Bạch: sách ghi tài chính dễ lên xuống, tiền vào ra thất thường, dễ phát sinh tranh chấp vì tiền. Hội về Mệnh, nét này nhắc bạn đừng để chuyện tiền lẫn với chuyện nể nang. Giao dịch nào cũng nên có giấy tờ, kể cả với người quen.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAI-LT-02",
+   "TAI-LT-03",
+   "MENH-YN-01",
+   "TAI-YN-03",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "TAI-LT-02: TB (tr. 190: \"Hay mắc tai họa vì tiền, nhất là kiện tụng\"); TT (q.2 «五财帛»: \"贪狼生横发横破\") | TAI-LT-03: TB (tr. 190, mục 12.2); TT (q.2 «五财帛»: \"陷宫先难后易…七杀同闹中取\")"
  },
  {
   "id": "ML-S07-TOT",
@@ -1194,6 +1315,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "ML-S08-C3-HAM",
+  "chuyenDe": "menh",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Thái Âm"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thái Âm hãm ở Tài Bạch: sách ghi phải vất vả, thành bại khó tụ, về già mới sung túc. Tính tinh tế của Mệnh có lúc làm bạn ngại hỏi rõ chuyện tiền. Hỏi kỹ điều khoản và tiết kiệm đều đặn theo tháng sẽ giúp tiền có chỗ đọng lại.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAI-TA-02",
+   "MENH-YN-01",
+   "TAI-YN-03",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "TAI-TA-02: TB (tr. 192); TT (q.2 «五财帛»: \"陷宫成败不聚\")"
+ },
+ {
   "id": "ML-S09-TOT",
   "chuyenDe": "menh",
   "cung": "Mệnh",
@@ -1353,6 +1498,30 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S09-C3-HAM",
+  "chuyenDe": "menh",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Tham Lang"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Tham Lang hãm ở Tài Bạch (Tý, Ngọ): Tân Biên ghi dễ tiêu xài cho vui chơi, tài chính eo hẹp. Hội về Mệnh, lực này làm bạn khó từ chối những cuộc vui, món đồ mới. Đặt hạn mức chi giải trí mỗi tháng và cho phần còn lại tự động vào tiết kiệm.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAI-THL-02",
+   "MENH-YN-01",
+   "TAI-YN-03",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "TAI-THL-02: TB (tr. 192: \"hoang phí, chơi bời nên hao tán\"); TT (q.2 «五财帛»: \"陷地贫穷\")"
  },
  {
   "id": "ML-S10-TOT",
@@ -1516,6 +1685,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "ML-S10-C3-HAM",
+  "chuyenDe": "menh",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Cự Môn"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Cự Môn hãm ở Tài Bạch: sách ghi tiền tụ tán thất thường, dễ có thị phi vì tiền; gặp thêm sát tinh thì nhiều đường hao. Bạn dễ vướng tranh cãi khi góp vốn hay cho vay. Thỏa thuận bằng văn bản và hạn chế cho mượn tiền là lựa chọn an toàn hơn cả.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAI-CM-02",
+   "MENH-YN-01",
+   "TAI-YN-03",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "TAI-CM-02: TB (tr. 192); TT (q.2 «五财帛»: \"加羊陀火铃空劫破财多端\")"
+ },
+ {
   "id": "ML-S11-TOT",
   "chuyenDe": "menh",
   "cung": "Mệnh",
@@ -1675,6 +1868,30 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S11-C3-HAM",
+  "chuyenDe": "menh",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Thiên Tướng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Tướng hãm ở Tài Bạch (Mão, Dậu): Tân Biên ghi tài chính ở mức bình thường, hợp nghề kỹ thuật, công nghệ; gặp sát tinh thì khó tích lũy. Mệnh hay giúp người nên dễ chi cho người khác trước mình. Nâng tay nghề để tăng thu nhập, và chỉ giúp tiền trong phần đã để riêng.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAI-TT-02",
+   "MENH-YN-01",
+   "TAI-YN-03",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "TAI-TT-02: TB (tr. 193: \"bình thường, nên chuyên về công nghệ\"); TT (q.2 «五财帛»: \"加羊陀火铃空劫耗忌，成败无积聚\")"
  },
  {
   "id": "ML-S12-TOT",
@@ -1838,6 +2055,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "ML-S12-C3-HAM",
+  "chuyenDe": "menh",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Thiên Lương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Lương hãm ở Tài Bạch (Tỵ, Hợi): sách ghi kiếm tiền phải đi nhiều nơi, vất vả, khó giữ của. Mệnh nhận lực này nên thu nhập của bạn dễ đến theo từng đợt, từng chuyến. Lập quỹ dự phòng đủ vài tháng chi tiêu để những đợt thu thấp không làm bạn chao đảo.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAI-TL-02",
+   "MENH-YN-01",
+   "TAI-YN-03",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "TAI-TL-02: TB (tr. 193: \"lang thang nay đây mai đó đi kiếm tiền… không giữ được của\"); TT (q.2 «五财帛»: \"陷宫辛勤求财度日\"); WT7 (hãm \"phiêu bạt, vất vả kiếm tiền\")"
+ },
+ {
   "id": "ML-S13-TOT",
   "chuyenDe": "menh",
   "cung": "Mệnh",
@@ -1999,6 +2240,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "ML-S13-C3-HAM",
+  "chuyenDe": "menh",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Thất Sát"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thất Sát hãm ở Tài Bạch (Thìn, Tuất): Tân Biên ghi tài chính hay eo hẹp, một tư liệu hiện đại thêm rằng gặp Tả Hữu, Xương Khúc thì cải thiện. Sự quyết liệt của Mệnh dễ đẩy bạn vào những quyết định tiền bạc quá nhanh. Chia nhỏ khoản đầu tư và đặt sẵn mức dừng lỗ trước khi xuống tiền.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tư liệu web: Cung Tài Bạch (tracuutuvi.com)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAI-TS-02",
+   "MENH-YN-01",
+   "TAI-YN-03",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "TAI-TS-02: TB (tr. 193); WT7"
+ },
+ {
   "id": "ML-S14-TOT",
   "chuyenDe": "menh",
   "cung": "Mệnh",
@@ -2158,6 +2423,30 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S14-C3-HAM",
+  "chuyenDe": "menh",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Phá Quân"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Phá Quân hãm ở Tài Bạch (Dần, Thân): Tân Biên ghi kiếm tiền khó, chi nhiều hơn thu, hợp nghề thủ công hoặc mỹ thuật. Mệnh ưa đổi mới nên bạn dễ chi cho thứ mới trước khi cái cũ kịp sinh lời. Kiếm tiền từ tay nghề riêng và ghi chép dòng chi là hai việc nên làm song song.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAI-PQ-02",
+   "MENH-YN-01",
+   "TAI-YN-03",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "TAI-PQ-02: TB (tr. 194: \"kiếm tiền khó khăn, thu vào ít phóng ra nhiều, nên làm nghề thủ công hay mỹ thuật\"); TT (q.2 «五财帛»: \"陷宫破祖不聚…加空劫极贫\")"
  },
  {
   "id": "ML-HOA-0",
