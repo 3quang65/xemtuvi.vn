@@ -4,22 +4,10 @@ Sinh bằng `node scripts/luan-giai/tao-cho-hanh.cjs`. Chưa có câu `-HAM` th�
 Thêm câu vào `src/lib/luan-giai/ai/quy-tac.json` (hoặc `quy-tac-v2/`): id = mã bên dưới, `dieuKien: {"doSang": ["Hãm"]}`, cùng `cung`, `sao`, `muc` với câu sáng; câu mở bằng mặt cần chú ý, giọng "hiểu mình, định hướng". Bộ ghép tự dùng, không cần sửa code.
 Tử Vi và Thiên Phủ không bao giờ Hãm nên không có trong danh sách.
 
-Còn thiếu: **48** mã.
+Còn thiếu: **36** mã.
 
 | Mã cần viết | Chuyên đề | Sao | Cung hợp chiếu | Câu sáng tương ứng (để giữ cùng ý) |
 |---|---|---|---|---|
-| QL-S02-C3-HAM | Quan Lộc | Thiên Cơ | Tài Bạch | QL-S02-C3 |
-| QL-S03-C3-HAM | Quan Lộc | Thái Dương | Tài Bạch | QL-S03-C3 |
-| QL-S04-C3-HAM | Quan Lộc | Vũ Khúc | Tài Bạch | QL-S04-C3 |
-| QL-S05-C3-HAM | Quan Lộc | Thiên Đồng | Tài Bạch | QL-S05-C3 |
-| QL-S06-C3-HAM | Quan Lộc | Liêm Trinh | Tài Bạch | QL-S06-C3 |
-| QL-S08-C3-HAM | Quan Lộc | Thái Âm | Tài Bạch | QL-S08-C3 |
-| QL-S09-C3-HAM | Quan Lộc | Tham Lang | Tài Bạch | QL-S09-C3 |
-| QL-S10-C3-HAM | Quan Lộc | Cự Môn | Tài Bạch | QL-S10-C3 |
-| QL-S11-C3-HAM | Quan Lộc | Thiên Tướng | Tài Bạch | QL-S11-C3 |
-| QL-S12-C3-HAM | Quan Lộc | Thiên Lương | Tài Bạch | QL-S12-C3 |
-| QL-S13-C3-HAM | Quan Lộc | Thất Sát | Tài Bạch | QL-S13-C3 |
-| QL-S14-C3-HAM | Quan Lộc | Phá Quân | Tài Bạch | QL-S14-C3 |
 | PT-S02-C2-HAM | Phu Thê | Thiên Cơ | Quan Lộc | PT-S02-C2 |
 | PT-S02-C6-HAM | Phu Thê | Thiên Cơ | Phúc Đức | PT-S02-C6 |
 | PT-S02-C1-HAM | Phu Thê | Thiên Cơ | Thiên Di | PT-S02-C1 |

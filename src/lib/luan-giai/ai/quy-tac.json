@@ -3021,6 +3021,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "QL-S02-C3-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Thiên Cơ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Cơ hãm ở Tài Bạch, tam hợp với Quan Lộc: sách ghi kiếm tiền chậm và khó, gặp sát tinh thì có thành có bại. Thu nhập từ công việc của bạn dễ tăng chậm hơn công sức bỏ ra. Đàm phán lương thưởng dựa trên kết quả đo được, và đừng đổi việc chỉ vì chênh lệch nhỏ.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAI-TCO-02",
+   "QUAN-YN-04",
+   "TAI-YN-03",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "TAI-TCO-02: TB (tr. 191); TT (q.2 «五财帛»: \"加羊陀火铃空劫一生有成有败\")"
+ },
+ {
   "id": "QL-S03-TOT",
   "chuyenDe": "quan-loc",
   "cung": "Quan Lộc",
@@ -3179,6 +3203,30 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S03-C3-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Thái Dương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thái Dương hãm ở Tài Bạch: sách ghi phải vất vả mới đủ dùng, về già mới sung túc. Hội về Quan Lộc, giai đoạn đầu sự nghiệp là lúc đầu tư nhiều hơn thu hoạch. Chọn nơi làm có lộ trình tăng thu nhập rõ ràng thay vì chỉ nhìn mức lương khởi điểm.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAI-TDU-02",
+   "QUAN-YN-04",
+   "TAI-YN-03",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "TAI-TDU-02: TB (tr. 191); TT (q.2 «五财帛»: \"陷宫劳碌不遂\")"
  },
  {
   "id": "QL-S04-TOT",
@@ -3341,6 +3389,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "QL-S04-C3-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Vũ Khúc"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Vũ Khúc hãm ở Tài Bạch: sách ghi tiền vào ra nhanh, gặp thêm Kình, Đà, Hỏa, Linh thì khó tụ. Với công việc, nguồn thu của bạn hợp sản xuất, thương mại hơn là chức vị. Tách bạch tiền vốn làm ăn với tiền chi tiêu cá nhân ngay từ đầu.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAI-VK-04",
+   "QUAN-YN-04",
+   "TAI-YN-03",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "TAI-VK-04: TB (tr. 191: \"tiền vào tay này sang tay kia, trước không sau có\"); TT (q.2 «五财帛»: \"破军同东来西去先无后有…加羊陀火铃不聚极怕空亡\")"
+ },
+ {
   "id": "QL-S05-TOT",
   "chuyenDe": "quan-loc",
   "cung": "Quan Lộc",
@@ -3501,6 +3573,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "QL-S05-C3-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Thiên Đồng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Đồng hãm ở Tài Bạch: sách ghi tiền tụ tán thất thường, càng về sau càng khá. Tam hợp với Quan Lộc, thu nhập của bạn dễ đi theo mùa vụ, theo dự án. Lập ngân sách theo mức thu thấp nhất trong năm để không bị động.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAI-TD-02",
+   "QUAN-YN-04",
+   "TAI-YN-03",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "TAI-TD-02: TB (tr. 190–191); TT (q.2 «五财帛» mục 太阴: \"陷宫成败不聚\")"
+ },
+ {
   "id": "QL-S06-TOT",
   "chuyenDe": "quan-loc",
   "cung": "Quan Lộc",
@@ -3659,6 +3755,30 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S06-C3-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Liêm Trinh"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Liêm Trinh hãm ở Tài Bạch: Tân Biên ghi dễ vướng tranh chấp vì tiền. Đặt vào sự nghiệp, bạn nên cẩn thận với các thỏa thuận chia lợi nhuận, hoa hồng. Mọi cam kết tiền bạc trong công việc nên có hợp đồng và chứng từ.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAI-LT-02",
+   "QUAN-YN-04",
+   "TAI-YN-03",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "TAI-LT-02: TB (tr. 190: \"Hay mắc tai họa vì tiền, nhất là kiện tụng\"); TT (q.2 «五财帛»: \"贪狼生横发横破\")"
  },
  {
   "id": "QL-S07-TOT",
@@ -3934,6 +4054,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "QL-S08-C3-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Thái Âm"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thái Âm hãm ở Tài Bạch: sách ghi thành bại khó tụ, về già mới sung túc. Hội về Quan Lộc, công việc ổn định với thu nhập đều có thể hợp bạn hơn những thương vụ lớn. Tích lũy từng phần lương và tránh đặt cược vào một khoản thu bất thường.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAI-TA-02",
+   "QUAN-YN-04",
+   "TAI-YN-03",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "TAI-TA-02: TB (tr. 192); TT (q.2 «五财帛»: \"陷宫成败不聚\")"
+ },
+ {
   "id": "QL-S09-TOT",
   "chuyenDe": "quan-loc",
   "cung": "Quan Lộc",
@@ -4092,6 +4236,30 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S09-C3-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Tham Lang"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Tham Lang hãm ở Tài Bạch: sách ghi dễ tiêu xài vì vui chơi, cần lập kỷ luật chi tiêu. Với sự nghiệp, các khoản chi cho giao tế, tiếp khách dễ vượt quá phần thu về. Theo dõi chi phí quan hệ công việc và xem lại khoản nào thật sự mang lại việc.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAI-THL-02",
+   "QUAN-YN-04",
+   "TAI-YN-03",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "TAI-THL-02: TB (tr. 192: \"hoang phí, chơi bời nên hao tán\"); TT (q.2 «五财帛»: \"陷地贫穷\")"
  },
  {
   "id": "QL-S10-TOT",
@@ -4254,6 +4422,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "QL-S10-C3-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Cự Môn"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Cự Môn hãm ở Tài Bạch: sách ghi tiền tụ tán, dễ thị phi vì tiền. Hội về Quan Lộc, những bất đồng về thù lao, chia phần trong nhóm là điểm cần đề phòng. Thống nhất con số bằng văn bản trước khi bắt tay vào việc.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAI-CM-02",
+   "QUAN-YN-04",
+   "TAI-YN-03",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "TAI-CM-02: TB (tr. 192); TT (q.2 «五财帛»: \"加羊陀火铃空劫破财多端\")"
+ },
+ {
   "id": "QL-S11-TOT",
   "chuyenDe": "quan-loc",
   "cung": "Quan Lộc",
@@ -4412,6 +4604,30 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S11-C3-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Thiên Tướng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Tướng hãm ở Tài Bạch: Tân Biên ghi thu nhập ở mức bình thường, nên chuyên về kỹ thuật, công nghệ. Tam hợp với Quan Lộc, đây là gợi ý chọn nghề: giá trị của bạn tăng theo tay nghề. Đầu tư cho khóa học, chứng chỉ chuyên môn là khoản chi hợp lý nhất.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAI-TT-02",
+   "QUAN-YN-04",
+   "TAI-YN-03",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "TAI-TT-02: TB (tr. 193: \"bình thường, nên chuyên về công nghệ\"); TT (q.2 «五财帛»: \"加羊陀火铃空劫耗忌，成败无积聚\")"
  },
  {
   "id": "QL-S12-TOT",
@@ -4574,6 +4790,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "QL-S12-C3-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Thiên Lương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Lương hãm ở Tài Bạch: sách ghi kiếm tiền phải đi nhiều nơi, khó giữ của. Hội về Quan Lộc, công việc cần đi lại hoặc làm theo hợp đồng ngắn có thể là nguồn thu chính. Mỗi đợt thu, hãy để riêng một phần trước khi chi để có quỹ giữa các hợp đồng.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAI-TL-02",
+   "QUAN-YN-04",
+   "TAI-YN-03",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "TAI-TL-02: TB (tr. 193: \"lang thang nay đây mai đó đi kiếm tiền… không giữ được của\"); TT (q.2 «五财帛»: \"陷宫辛勤求财度日\"); WT7 (hãm \"phiêu bạt, vất vả kiếm tiền\")"
+ },
+ {
   "id": "QL-S13-TOT",
   "chuyenDe": "quan-loc",
   "cung": "Quan Lộc",
@@ -4734,6 +4974,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "QL-S13-C3-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Thất Sát"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thất Sát hãm ở Tài Bạch: Tân Biên ghi tài chính hay eo hẹp; một tư liệu hiện đại cho rằng gặp Tả Hữu, Xương Khúc thì khá hơn. Với sự nghiệp, hợp tác với người giỏi tổ chức, giấy tờ sẽ bù cho phần mạo hiểm của bạn. Chọn cộng sự kỹ và chia rủi ro thay vì một mình gánh.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tư liệu web: Cung Tài Bạch (tracuutuvi.com)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAI-TS-02",
+   "QUAN-YN-04",
+   "TAI-YN-03",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "TAI-TS-02: TB (tr. 193); WT7"
+ },
+ {
   "id": "QL-S14-TOT",
   "chuyenDe": "quan-loc",
   "cung": "Quan Lộc",
@@ -4892,6 +5156,30 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S14-C3-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Tài Bạch",
+  "sao": [
+   "Phá Quân"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Phá Quân hãm ở Tài Bạch: sách ghi chi nhiều hơn thu, hợp nghề thủ công, mỹ thuật; gặp Không Kiếp thì càng eo hẹp. Tam hợp với Quan Lộc gợi ý bạn kiếm tiền tốt nhất bằng sản phẩm do chính tay mình làm. Định giá đủ bù công sức và giữ chi phí cố định ở mức thấp.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAI-PQ-02",
+   "QUAN-YN-04",
+   "TAI-YN-03",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "TAI-PQ-02: TB (tr. 194: \"kiếm tiền khó khăn, thu vào ít phóng ra nhiều, nên làm nghề thủ công hay mỹ thuật\"); TT (q.2 «五财帛»: \"陷宫破祖不聚…加空劫极贫\")"
  },
  {
   "id": "QL-HOA-0",
