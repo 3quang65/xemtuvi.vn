@@ -186,6 +186,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "ML-S02-C1-HAM",
+  "chuyenDe": "menh",
+  "cung": "Thiên Di",
+  "sao": [
+   "Thiên Cơ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Cơ hãm ở Thiên Di, chiếu thẳng về Mệnh: sách ghi xa nhà khó được yên, gặp thêm sát tinh thì dễ vướng chuyện qua lại. Ở môi trường mới, đầu óc bạn dễ chạy nhiều hướng cùng lúc. Chọn một hai mối việc chính khi đi xa và giữ lịch sinh hoạt ổn định sẽ giúp bạn đỡ chông chênh.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "DI-TCO-02",
+   "MENH-YN-01",
+   "DI-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "DI-TCO-02: TB (tr. 175, §10.6); TT (卷二·七遷移: 「加羊陀火鈴在外多是非身不安靜」)"
+ },
+ {
   "id": "ML-S02-C2",
   "chuyenDe": "menh",
   "cung": "Quan Lộc",
@@ -297,6 +321,30 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S03-C1-HAM",
+  "chuyenDe": "menh",
+  "cung": "Thiên Di",
+  "sao": [
+   "Thái Dương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thái Dương hãm ở Thiên Di khiến hình ảnh của bạn ngoài xã hội dễ bị hiểu chưa đúng; Tân Biên ghi ra ngoài khó được lòng người ngay. Sự nhiệt thành của Mệnh vẫn còn đó, chỉ là người lạ cần thời gian mới nhận ra. Hãy giới thiệu mình bằng việc làm cụ thể và kiên nhẫn với các mối quan hệ mới.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "DI-TDU-02",
+   "MENH-YN-01",
+   "DI-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "DI-TDU-02: TB (tr. 175, §10.5); TT (卷二·七遷移: 「加羊陀火鈴空劫在外心身不清閒」)"
  },
  {
   "id": "ML-S03-C2",
@@ -412,6 +460,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "ML-S04-C1-HAM",
+  "chuyenDe": "menh",
+  "cung": "Thiên Di",
+  "sao": [
+   "Vũ Khúc"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Vũ Khúc hãm ở Thiên Di (đồng cung Phá Quân ở Tỵ, Hợi): sách ghi vẫn kiếm được tiền nhưng ra ngoài hay phiền lòng, thân tâm khó yên. Lực này chiếu về Mệnh làm bạn dễ lao vào việc mạnh tay khi ở môi trường lạ. Trước các chuyến đi hay dự án bên ngoài có rủi ro cao, hãy chuẩn bị sẵn phương án dự phòng.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "DI-VK-03",
+   "MENH-YN-01",
+   "DI-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "DI-VK-03: TB (tr. 175, §10.4); TT (卷二·七遷移: 武曲「七殺破軍同身心不得靜守」)"
+ },
+ {
   "id": "ML-S04-C2",
   "chuyenDe": "menh",
   "cung": "Quan Lộc",
@@ -525,6 +597,31 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "ML-S05-C1-HAM",
+  "chuyenDe": "menh",
+  "cung": "Thiên Di",
+  "sao": [
+   "Thiên Đồng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Đồng hãm ở Thiên Di: sách ghi hay phải xa nhà và dễ gặp chuyện phiền lòng, thị phi khi ra ngoài. Mệnh nhận lực chiếu này nên bạn dễ để cảm xúc dẫn đường ở môi trường mới. Chọn công việc có nhịp ổn định và đứng ngoài tranh chấp của người khác là cách giữ sự thoải mái vốn có.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "DI-TD-03",
+   "DI-TD-04",
+   "MENH-YN-01",
+   "DI-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "DI-TD-03: TB (tr. 174–175, §10.3); TT (卷二·七遷移: 「加羊陀火鈴空劫在外少遂志」) | DI-TD-04: TB (tr. 175, §10.3); TT (卷二·七遷移: 「巨門同勞心，太陰同辛苦」)"
+ },
+ {
   "id": "ML-S05-C2",
   "chuyenDe": "menh",
   "cung": "Quan Lộc",
@@ -636,6 +733,31 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S06-C1-HAM",
+  "chuyenDe": "menh",
+  "cung": "Thiên Di",
+  "sao": [
+   "Liêm Trinh"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Liêm Trinh hãm ở Thiên Di (đi cùng Tham Lang hoặc Phá Quân): sách cho rằng ra ngoài ít gặp người giúp và dễ vướng chuyện giấy tờ, thị phi. Nét nguyên tắc của bạn, đặt vào môi trường lạ, dễ bị đọc thành cứng nhắc. Giữ hợp đồng, thỏa thuận rõ ràng bằng văn bản là lớp bảo vệ đơn giản mà hiệu quả.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "DI-LT-03",
+   "DI-LT-04",
+   "MENH-YN-01",
+   "DI-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "DI-LT-03: TB (tr. 174, §10.2); TT (卷二·七遷移: 貪狼「廉貞同加四殺，在外艱難」); KL (Liêm trinh — Thiên di) | DI-LT-04: TB (tr. 174, §10.2); TT (卷二·七遷移); KL (Liêm trinh — Thiên di)"
  },
  {
   "id": "ML-S06-C2",
@@ -864,6 +986,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "ML-S08-C1-HAM",
+  "chuyenDe": "menh",
+  "cung": "Thiên Di",
+  "sao": [
+   "Thái Âm"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thái Âm hãm ở Thiên Di: Tân Biên ghi ra ngoài dễ gặp chuyện phiền lòng, khó được lòng người ngay. Người có Mệnh nhận lực chiếu này thường nhạy cảm với không khí xung quanh hơn mình nghĩ. Giữ thái độ ôn hòa, tránh va chạm trực diện, và cho mình khoảng nghỉ sau những ngày phải tiếp xúc nhiều.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "DI-TA-02",
+   "MENH-YN-01",
+   "DI-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "DI-TA-02: TB (tr. 176, §10.8); TT (卷二·七遷移: 「陷宮招是非」)"
+ },
+ {
   "id": "ML-S08-C2",
   "chuyenDe": "menh",
   "cung": "Quan Lộc",
@@ -975,6 +1121,30 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S09-C1-HAM",
+  "chuyenDe": "menh",
+  "cung": "Thiên Di",
+  "sao": [
+   "Tham Lang"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Tham Lang hãm ở Thiên Di: sách ghi ra ngoài nhiều vất vả, hay phiền lòng. Lực này chiếu về Mệnh khiến bạn dễ bị cuốn vào nhiều cuộc vui, nhiều mối quen biết cùng lúc. Chọn môi trường lành mạnh và giữ vài mối quan hệ chất lượng sẽ có lợi hơn mở rộng thật nhanh.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "DI-THL-03",
+   "MENH-YN-01",
+   "DI-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "DI-THL-03: TB (tr. 176, §10.9); TT (卷二·七遷移: 貪狼「獨守在外勞碌，鬧中橫進財」); KL (Tham lang — Di: \"Kỳ dư với các sao khác đều bất lợi\")"
  },
  {
   "id": "ML-S09-C2",
@@ -1090,6 +1260,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "ML-S10-C1-HAM",
+  "chuyenDe": "menh",
+  "cung": "Thiên Di",
+  "sao": [
+   "Cự Môn"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Cự Môn hãm ở Thiên Di: sách ghi ra ngoài hay vướng thị phi, khẩu thiệt. Chiếu về Mệnh, nét này nhắc rằng lời bạn nói ở nơi đông người dễ bị hiểu khác ý. Nói ít mà rõ, ghi lại các thỏa thuận quan trọng, và tránh bình luận chuyện của người vắng mặt.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "DI-CM-02",
+   "MENH-YN-01",
+   "DI-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "DI-CM-02: TB (tr. 177, §10.10); TT (卷一·問巨門: 「在遷移則招是非」; 卷二·七遷移: 巨門「出外勞心不安，與人不足多是非」); KL (Cự môn — Di: \"bị khẩu thiệt\")"
+ },
+ {
   "id": "ML-S10-C2",
   "chuyenDe": "menh",
   "cung": "Quan Lộc",
@@ -1201,6 +1395,30 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S11-C1-HAM",
+  "chuyenDe": "menh",
+  "cung": "Thiên Di",
+  "sao": [
+   "Thiên Tướng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Tướng hãm ở Thiên Di (Mão, Dậu): Tân Biên ghi xa nhà không được lợi nhiều nhưng vẫn được người mến. Lòng tốt và sự công bằng của bạn vẫn được ghi nhận, chỉ là ít khi đổi thành quyền lợi cụ thể. Biết đặt giới hạn khi giúp người ngoài sẽ giữ được sức cho việc của chính mình.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "DI-TT-02",
+   "MENH-YN-01",
+   "DI-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "DI-TT-02: TB (tr. 177, §10.11); TT (卷二·七遷移: 「廉貞同加羊陀火鈴招是非小人不足」)"
  },
  {
   "id": "ML-S11-C2",
@@ -1316,6 +1534,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "ML-S12-C1-HAM",
+  "chuyenDe": "menh",
+  "cung": "Thiên Di",
+  "sao": [
+   "Thiên Lương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Lương hãm ở Thiên Di (Tỵ, Hợi): sách ghi hay di chuyển, ít ở yên một chỗ, có xu hướng lập nghiệp xa quê. Mệnh nhận lực chiếu này nên bạn dễ bồn chồn khi phải đứng yên quá lâu. Nếu đã đi xa, hãy tạo một điểm tựa cố định như một nhóm bạn hay một thói quen để không thấy lạc lõng.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "DI-TL-03",
+   "MENH-YN-01",
+   "DI-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "DI-TL-03: TB (tr. 177, §10.12); KL (Thiên lương — Di: \"Lương Tỵ Hợi: lang thang …\")"
+ },
+ {
   "id": "ML-S12-C2",
   "chuyenDe": "menh",
   "cung": "Quan Lộc",
@@ -1429,6 +1671,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "ML-S13-C1-HAM",
+  "chuyenDe": "menh",
+  "cung": "Thiên Di",
+  "sao": [
+   "Thất Sát"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thất Sát hãm ở Thiên Di (Thìn, Tuất): sách ghi ra ngoài nhiều bất lợi và thường lập nghiệp xa quê. Sự quyết liệt của bạn ở môi trường lạ dễ gây va chạm hơn ở nơi quen. Tìm hiểu luật chơi của nơi mới trước khi hành động mạnh tay là cách giữ thế chủ động.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "DI-TS-03",
+   "MENH-YN-01",
+   "DI-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "DI-TS-03: TB (tr. 177, §10.13); KL (Thất sát — Di: \"các cung khác đều xấu vì ra ngoài hay gặp tai nạn\")"
+ },
+ {
   "id": "ML-S13-C2",
   "chuyenDe": "menh",
   "cung": "Quan Lộc",
@@ -1540,6 +1806,30 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "ML-S14-C1-HAM",
+  "chuyenDe": "menh",
+  "cung": "Thiên Di",
+  "sao": [
+   "Phá Quân"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Phá Quân hãm ở Thiên Di (Dần, Thân): sách ghi ra ngoài vất vả, càng xoay xở tiền bạc liều lĩnh càng dễ gặp rắc rối. Chiếu về Mệnh, nét này làm bạn dễ đổi chỗ làm, nơi ở theo cảm hứng. Cẩn trọng khi đi lại và cân nhắc kỹ trước mỗi lần thay đổi lớn giúp sự năng động thành lợi thế.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "DI-PQ-02",
+   "MENH-YN-01",
+   "DI-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "DI-PQ-02: TB (tr. 178, §10.14); TT (卷一·問破軍: 「在遷移奔走無力」); KL (Phá quân — Di: \"Ở Dần Thân: tai nạn xe cộ\")"
  },
  {
   "id": "ML-S14-C2",
