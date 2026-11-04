@@ -1,0 +1,391 @@
+{
+ "chuyenDe": "quan-loc",
+ "laSoMau": "TC03",
+ "moTaLaSo": "Nam, sinh 20/12/1995 dương lịch (Ất Hợi), tuổi mụ 32 năm 2026",
+ "dauBai": {
+  "nhanDinh": [
+   {
+    "text": "Công việc của bạn xoay quanh Tử Vi miếu tại Quan Lộc, lại có Hóa Khoa đi cùng. Tam hợp Vũ Khúc, Thiên Tướng, Liêm Trinh, Thiên Phủ dựng nên dáng Tử Phủ Vũ Tướng, nên sở trường là tổ chức và giữ trách nhiệm.",
+    "phan": "dau-bai",
+    "thamChieu": {
+     "quyTacId": "VIET-TAY-quan-loc-2-dau-bai",
+     "sao": [
+      "Tử Vi",
+      "Vũ Khúc",
+      "Thiên Tướng",
+      "Liêm Trinh",
+      "Thiên Phủ"
+     ],
+     "cung": "Quan Lộc",
+     "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) | Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) | Tử Vi Đẩu Số Toàn Thư",
+     "truongPhai": "Tam hợp phái Việt",
+     "maNghienCuu": [
+      "QL-S01-TOT",
+      "QL-HOA-2",
+      "KHUNG-quan-loc-CC-TuPhuVuTuong-PHA3-diem"
+     ],
+     "nguoiViet": "hanh",
+     "sinh": false
+    }
+   }
+  ]
+ },
+ "muc": [
+  {
+   "id": "cach-cuc",
+   "tieuDe": "Cách cục",
+   "nhanDinh": [
+    {
+     "text": "Tham Lang và Hỏa Tinh đều hãm, nên chưa đủ điều kiện gọi trọn cách Hỏa Tham: xem là sức bật trong công việc nhưng dễ nóng vội, nên cân nhắc trước khi nhận việc lớn.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-quan-loc-CC-HoaThamLinhTham-Hoa-PHA-HAM",
+      "sao": [
+       "Tham Lang",
+       "Hỏa Tinh"
+      ],
+      "cung": "Quan Lộc",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Phu Thê"
+      ],
+      "yeuTo": [
+       "Cách Hỏa Tham / Linh Tham"
+      ]
+     }
+    },
+    {
+     "text": "Có dáng dấp của thế Tử Phủ Vũ Tướng: hợp vị trí quản lý, điều phối, nơi cần quy trình và trách nhiệm rõ ràng; nhưng nhiều yếu tố hung (Hỏa Tinh, Đà La, Địa Không) hội ở tứ chính (cung này và ba cung chiếu về) nên chưa thể coi là cách vững. Trong công việc, hợp vị trí cần tính tổ chức và trách nhiệm; nên tìm môi trường có quy trình rõ.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-quan-loc-CC-TuPhuVuTuong-PHA3-diem",
+      "sao": [
+       "Tử Vi",
+       "Thiên Phủ",
+       "Vũ Khúc",
+       "Thiên Tướng",
+       "Hỏa Tinh",
+       "Đà La",
+       "Địa Không"
+      ],
+      "cung": "Quan Lộc",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Quan Lộc",
+       "Tài Bạch",
+       "Mệnh",
+       "Phu Thê"
+      ],
+      "yeuTo": [
+       "Cách Tử Phủ Vũ Tướng"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "phong-cach",
+   "tieuDe": "Phong cách làm việc",
+   "nhanDinh": [
+    {
+     "text": "Thế cách ấy cho thấy phong thái của bạn ở nơi làm việc.",
+     "phan": "noi",
+     "thamChieu": {
+      "quyTacId": "VIET-TAY-quan-loc-2-noi",
+      "sao": [
+       "Tử Vi"
+      ],
+      "cung": "Quan Lộc",
+      "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "maNghienCuu": [
+       "QL-S01-TOT"
+      ],
+      "nguoiViet": "hanh",
+      "sinh": false
+     }
+    },
+    {
+     "text": "Tử Vi tại Quan Lộc: có phong thái điềm tĩnh, hợp vị trí điều phối, cần học cách lắng nghe. Nên nhận vai trò quản lý nhóm, dự án và sớm xây vài cộng sự đáng tin; vai trò dẫn dắt phát huy khi có người hỗ trợ.",
+     "thamChieu": {
+      "quyTacId": "QL-S01-TOT",
+      "sao": [
+       "Tử Vi"
+      ],
+      "cung": "Quan Lộc",
+      "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "tam hợp phái Việt"
+     }
+    }
+   ]
+  },
+  {
+   "id": "cung-lien-quan",
+   "tieuDe": "Cung hợp chiếu",
+   "nhanDinh": [
+    {
+     "text": "Hai cung tam hợp góp thêm kỷ luật số liệu và nguyên tắc với tiền.",
+     "phan": "noi",
+     "thamChieu": {
+      "quyTacId": "VIET-TAY-quan-loc-2-noi",
+      "sao": [
+       "Vũ Khúc",
+       "Liêm Trinh",
+       "Thiên Phủ",
+       "Thiên Tướng"
+      ],
+      "cung": "Quan Lộc",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư",
+      "truongPhai": "Tam hợp phái Việt",
+      "maNghienCuu": [
+       "QL-S04-C5",
+       "QL-S06-C3",
+       "QL-S07-C3",
+       "QL-S11-C5"
+      ],
+      "nguoiViet": "hanh",
+      "sinh": false
+     }
+    },
+    {
+     "text": "Vũ Khúc ở cung Mệnh (tam hợp với Quan Lộc): tiếp thêm thế mạnh: hợp việc cần kỷ luật, số liệu và trách nhiệm rõ ràng. Nên đặt chỉ tiêu bằng con số cho công việc.",
+     "thamChieu": {
+      "quyTacId": "QL-S04-C5",
+      "sao": [
+       "Vũ Khúc"
+      ],
+      "cung": "Mệnh",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư",
+      "truongPhai": "tam hợp phái Việt"
+     }
+    },
+    {
+     "text": "Liêm Trinh ở cung Tài Bạch (tam hợp với Quan Lộc): tiếp thêm thế mạnh: hợp công việc đòi hỏi nguyên tắc và quản trị, cần mềm dẻo trong giao tiếp. Với thu nhập từ công việc, nên làm rõ hợp đồng, quyền lợi ngay từ đầu.",
+     "thamChieu": {
+      "quyTacId": "QL-S06-C3",
+      "sao": [
+       "Liêm Trinh"
+      ],
+      "cung": "Tài Bạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư",
+      "truongPhai": "tam hợp phái Việt"
+     }
+    },
+    {
+     "text": "Thiên Phủ ở cung Tài Bạch (tam hợp với Quan Lộc): tiếp thêm thế mạnh: hợp công việc quản lý, tích lũy dần, tiến từng bước chắc. Với thu nhập từ công việc, nên ưu tiên vị trí có thu nhập ổn định và quỹ phúc lợi tốt.",
+     "thamChieu": {
+      "quyTacId": "QL-S07-C3",
+      "sao": [
+       "Thiên Phủ"
+      ],
+      "cung": "Tài Bạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư",
+      "truongPhai": "tam hợp phái Việt"
+     }
+    },
+    {
+     "text": "Thiên Tướng ở cung Mệnh (tam hợp với Quan Lộc): tiếp thêm thế mạnh: hợp vai trò hỗ trợ, phối hợp, đại diện hoặc cố vấn. Nên nhận vai trò kết nối giữa các bên.",
+     "thamChieu": {
+      "quyTacId": "QL-S11-C5",
+      "sao": [
+       "Thiên Tướng"
+      ],
+      "cung": "Mệnh",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư",
+      "truongPhai": "tam hợp phái Việt"
+     }
+    }
+   ]
+  },
+  {
+   "id": "tu-hoa",
+   "tieuDe": "Tứ hóa",
+   "nhanDinh": [
+    {
+     "text": "Về Tứ hóa, Quan Lộc được Hóa Khoa trực tiếp nâng đỡ.",
+     "phan": "noi",
+     "thamChieu": {
+      "quyTacId": "VIET-TAY-quan-loc-2-noi",
+      "sao": [
+       "Tử Vi"
+      ],
+      "cung": "Quan Lộc",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư",
+      "truongPhai": "Tam hợp phái Việt",
+      "maNghienCuu": [
+       "QL-HOA-2"
+      ],
+      "nguoiViet": "hanh",
+      "sinh": false
+     }
+    },
+    {
+     "text": "Hóa Khoa tại Quan Lộc thiên về danh tiếng tốt, học hỏi và sự hỗ trợ từ người có hiểu biết.",
+     "thamChieu": {
+      "quyTacId": "QL-HOA-2",
+      "sao": [
+       "Tử Vi"
+      ],
+      "cung": "Quan Lộc",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư",
+      "truongPhai": "tam hợp phái Việt"
+     }
+    }
+   ]
+  },
+  {
+   "id": "phu-tinh",
+   "tieuDe": "Sao hỗ trợ và thử thách",
+   "nhanDinh": [
+    {
+     "text": "Phần sao phụ cho thấy nhịp tiến và các điểm nóng cần giữ.",
+     "phan": "noi",
+     "thamChieu": {
+      "quyTacId": "VIET-TAY-quan-loc-2-noi",
+      "sao": [
+       "Đà La",
+       "Hỏa Tinh",
+       "Địa Không",
+       "Thiên Không"
+      ],
+      "cung": "Quan Lộc",
+      "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) | Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "maNghienCuu": [
+       "QL-TT-TRIỆT",
+       "KHUNG-quan-loc-SP-HỏaTinh-xung"
+      ],
+      "nguoiViet": "hanh",
+      "sinh": false
+     }
+    },
+    {
+     "text": "Triệt đóng tại Quan Lộc: các đặc điểm của cung thường biểu hiện chậm hoặc kín đáo hơn, nên kiên nhẫn và nhìn theo giai đoạn.",
+     "thamChieu": {
+      "quyTacId": "QL-TT-TRIỆT",
+      "sao": [],
+      "cung": "Quan Lộc",
+      "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "tam hợp phái Việt",
+      "yeuTo": [
+       "Triệt"
+      ]
+     }
+    },
+    {
+     "text": "Đà La ở Mệnh (cung tam hợp của Quan Lộc) ảnh hưởng đến công việc và sự nghiệp: kiên trì, bền bỉ nhưng dễ chần chừ, nên chủ động hơn.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-quan-loc-SP-ĐàLa-tam-hop",
+      "sao": [
+       "Đà La"
+      ],
+      "cung": "Quan Lộc",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Mệnh"
+      ]
+     }
+    },
+    {
+     "text": "Hỏa Tinh ở Phu Thê (cung xung chiếu của Quan Lộc) ảnh hưởng đến công việc và sự nghiệp: nhiệt huyết, phản ứng nhanh, nên tiết chế cảm xúc.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-quan-loc-SP-HỏaTinh-xung",
+      "sao": [
+       "Hỏa Tinh"
+      ],
+      "cung": "Quan Lộc",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Phu Thê"
+      ]
+     }
+    },
+    {
+     "text": "Địa Không ở Mệnh (cung tam hợp của Quan Lộc) ảnh hưởng đến công việc và sự nghiệp: hay nghĩ khác lạ, cần thực tế hóa ý tưởng.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-quan-loc-SP-ĐịaKhông-tam-hop",
+      "sao": [
+       "Địa Không"
+      ],
+      "cung": "Quan Lộc",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Mệnh"
+      ]
+     }
+    },
+    {
+     "text": "Thiên Không ở Phu Thê (cung xung chiếu của Quan Lộc) ảnh hưởng đến công việc và sự nghiệp: ý nghĩ thoáng, nhiều ý tưởng nhưng khó nắm chắc, nên cụ thể hóa bằng kế hoạch.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-quan-loc-SP-ThiênKhông-xung",
+      "sao": [
+       "Thiên Không"
+      ],
+      "cung": "Quan Lộc",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Phu Thê"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "tom-lai",
+   "tieuDe": "Tóm lại",
+   "nhanDinh": [
+    {
+     "text": "Bạn hợp vai trò quản lý, điều phối, nơi có quy trình rõ. Triệt và nhóm sát tinh khiến bước tiến có lúc chậm hoặc vội, chứ không lấy đi sở trường. Giữ được nhịp đều, uy tín nghề nghiệp sẽ tích lũy theo năm.",
+     "phan": "tom-lai",
+     "thamChieu": {
+      "quyTacId": "VIET-TAY-quan-loc-2-tom-lai",
+      "sao": [
+       "Tử Vi",
+       "Hỏa Tinh",
+       "Đà La",
+       "Địa Không"
+      ],
+      "cung": "Quan Lộc",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) | Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "maNghienCuu": [
+       "KHUNG-quan-loc-CC-TuPhuVuTuong-PHA3-diem",
+       "QL-TT-TRIỆT",
+       "KHUNG-quan-loc-CC-HoaThamLinhTham-Hoa-PHA-HAM"
+      ],
+      "nguoiViet": "hanh",
+      "sinh": false
+     }
+    },
+    {
+     "text": "Đầu ba mươi là giai đoạn hợp để nhận quản lý một nhóm nhỏ và học cách lắng nghe trước khi quyết. Trước khi nhận một dự án lớn, hãy hỏi ý một người đi trước và đặt mốc kiểm tra sau ba tháng.",
+     "phan": "goi-y",
+     "thamChieu": {
+      "quyTacId": "VIET-TAY-quan-loc-2-goi-y",
+      "sao": [
+       "Tử Vi",
+       "Tham Lang",
+       "Hỏa Tinh"
+      ],
+      "cung": "Quan Lộc",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) | Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "maNghienCuu": [
+       "QL-S01-TOT",
+       "KHUNG-quan-loc-CC-HoaThamLinhTham-Hoa-PHA-HAM"
+      ],
+      "nguoiViet": "hanh",
+      "sinh": false
+     }
+    }
+   ]
+  }
+ ],
+ "ghiChu": "Luận giải do hệ thống xemtuvi.vn tạo tự động từ các quy tắc Tử Vi có ghi nguồn; nội dung mang tính tham khảo, giúp hiểu mình và định hướng, không phải lời đoán chắc về tương lai.",
+ "phienBan": "2aabd4fef870",
+ "ghiChuNguoiViet": "Mẫu ground truth L-b6c541 (B2b). Thân bài do bộ ghép sinh từ quy tắc (stub, boQuaCache); 4 khối dau-bai/noi/tom-lai/goi-y do Hạnh viết tay, chỉ dùng sao trong pool của bài. Nội dung do AI hỗ trợ soạn, cần Thư kiểm duyệt trước khi đưa khách."
+}

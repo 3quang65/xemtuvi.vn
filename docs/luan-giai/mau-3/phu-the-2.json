@@ -1,0 +1,390 @@
+{
+ "chuyenDe": "phu-the",
+ "laSoMau": "TC03",
+ "moTaLaSo": "Nam, sinh 20/12/1995 dương lịch (Ất Hợi), tuổi mụ 32 năm 2026",
+ "dauBai": {
+  "nhanDinh": [
+   {
+    "text": "Phu Thê của bạn có Tham Lang cùng Hỏa Tinh, nằm trong dáng thế Sát Phá Tham. Tình cảm vì vậy có nhịp nhanh và cảm xúc mạnh, cần nền tin cậy để đi đường dài.",
+    "phan": "dau-bai",
+    "thamChieu": {
+     "quyTacId": "VIET-TAY-phu-the-2-dau-bai",
+     "sao": [
+      "Tham Lang",
+      "Hỏa Tinh",
+      "Thất Sát",
+      "Phá Quân"
+     ],
+     "cung": "Phu Thê",
+     "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "truongPhai": "Tam hợp phái Việt",
+     "maNghienCuu": [
+      "KHUNG-phu-the-CC-SatPhaTham-PHA3-ham",
+      "KHUNG-phu-the-CC-HoaThamLinhTham-Hoa-PHA-HAM"
+     ],
+     "nguoiViet": "hanh",
+     "sinh": false
+    }
+   }
+  ]
+ },
+ "muc": [
+  {
+   "id": "cach-cuc",
+   "tieuDe": "Cách cục",
+   "nhanDinh": [
+    {
+     "text": "Tham Lang và Hỏa Tinh đều hãm, nên chưa đủ điều kiện gọi trọn cách Hỏa Tham: xem là cảm xúc đến nhanh và nóng trong quan hệ, cần tiết chế khi hai người bất đồng.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-phu-the-CC-HoaThamLinhTham-Hoa-PHA-HAM",
+      "sao": [
+       "Tham Lang",
+       "Hỏa Tinh"
+      ],
+      "cung": "Phu Thê",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Phu Thê"
+      ],
+      "yeuTo": [
+       "Cách Hỏa Tham / Linh Tham"
+      ]
+     }
+    },
+    {
+     "text": "Có dáng dấp của thế Sát Phá Tham: quan hệ tình cảm có nhịp nhanh, cảm xúc mạnh, dễ đến dễ đi nếu thiếu nền tin cậy; nhưng Hỏa Tinh hãm ngay tại cung này nên chưa thể coi là cách vững. Trong tình cảm, trước khi gắn bó lâu dài, hãy cùng nói rõ điều mỗi người cần, và khi nóng thì hẹn lúc khác nói.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-phu-the-CC-SatPhaTham-PHA3-ham",
+      "sao": [
+       "Thất Sát",
+       "Phá Quân",
+       "Tham Lang",
+       "Hỏa Tinh"
+      ],
+      "cung": "Phu Thê",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Phu Thê",
+       "Phúc Đức",
+       "Thiên Di"
+      ],
+      "yeuTo": [
+       "Cách Sát Phá Tham"
+      ]
+     }
+    },
+    {
+     "text": "Cả ba sao chủ cách Sát Phá Tham (Thất Sát, Phá Quân, Tham Lang) đều hãm, nên chuyện tình cảm của bạn thường nhiều thử thách hơn và cần nhiều lần điều chỉnh.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-phu-the-CC-SatPhaTham-DeuHam",
+      "sao": [
+       "Thất Sát",
+       "Phá Quân",
+       "Tham Lang"
+      ],
+      "cung": "Phu Thê",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Phu Thê",
+       "Phúc Đức",
+       "Thiên Di"
+      ],
+      "yeuTo": [
+       "Cách Sát Phá Tham"
+      ]
+     }
+    },
+    {
+     "text": "Kình Dương, Địa Kiếp đắc địa trong tam phương là trợ lực của thế Sát Phá Tham, giúp chuyện tình cảm của bạn có thêm sức bền để vượt thử thách.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-phu-the-CC-SatPhaTham-TroLuc",
+      "sao": [
+       "Thất Sát",
+       "Phá Quân",
+       "Tham Lang",
+       "Kình Dương",
+       "Địa Kiếp"
+      ],
+      "cung": "Phu Thê",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Phu Thê",
+       "Phúc Đức",
+       "Thiên Di"
+      ],
+      "yeuTo": [
+       "Cách Sát Phá Tham"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "phong-cach",
+   "tieuDe": "Cách yêu và gắn bó",
+   "nhanDinh": [
+    {
+     "text": "Thế cách đó hiện rõ trong cách bạn rung động và gắn bó.",
+     "phan": "noi",
+     "thamChieu": {
+      "quyTacId": "VIET-TAY-phu-the-2-noi",
+      "sao": [
+       "Tham Lang"
+      ],
+      "cung": "Phu Thê",
+      "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "maNghienCuu": [
+       "PT-S09-HAM"
+      ],
+      "nguoiViet": "hanh",
+      "sinh": false
+     }
+    },
+    {
+     "text": "Tham Lang tại Phu Thê khi kém sáng: trong tình cảm, bạn vẫn có sức thu hút, nhưng cảm xúc dễ thay đổi, có lúc hay ghen hoặc ham vui. Nên rõ ràng về sự tin tưởng và tìm hiểu kỹ trước khi gắn bó. Bạn thử đối chiếu với những mối quan hệ mình đã trải qua để xem điều này gần với mình đến đâu.",
+     "thamChieu": {
+      "quyTacId": "PT-S09-HAM",
+      "sao": [
+       "Tham Lang"
+      ],
+      "cung": "Phu Thê",
+      "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "tam hợp phái Việt"
+     }
+    }
+   ]
+  },
+  {
+   "id": "cung-lien-quan",
+   "tieuDe": "Cung hợp chiếu",
+   "nhanDinh": [
+    {
+     "text": "Cung xung chiếu mang sang một mong muốn khá cụ thể về người bạn đời.",
+     "phan": "noi",
+     "thamChieu": {
+      "quyTacId": "VIET-TAY-phu-the-2-noi",
+      "sao": [
+       "Tử Vi"
+      ],
+      "cung": "Phu Thê",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư",
+      "truongPhai": "Tam hợp phái Việt",
+      "maNghienCuu": [
+       "PT-S01-C2"
+      ],
+      "nguoiViet": "hanh",
+      "sinh": false
+     }
+    },
+    {
+     "text": "Tử Vi ở cung Quan Lộc (xung chiếu với Phu Thê): soi sang thêm mong muốn có một người bạn đời tôn trọng sự chủ động của mình và cùng bàn bạc. Trong quan hệ, nên cùng nhau bàn bạc thay vì một người quyết hết.",
+     "thamChieu": {
+      "quyTacId": "PT-S01-C2",
+      "sao": [
+       "Tử Vi"
+      ],
+      "cung": "Quan Lộc",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư",
+      "truongPhai": "tam hợp phái Việt"
+     }
+    }
+   ]
+  },
+  {
+   "id": "tu-hoa",
+   "tieuDe": "Tứ hóa",
+   "nhanDinh": [
+    {
+     "text": "Tứ hóa thêm một điểm nhẹ nhàng cho phần này.",
+     "phan": "noi",
+     "thamChieu": {
+      "quyTacId": "VIET-TAY-phu-the-2-noi",
+      "sao": [
+       "Tử Vi"
+      ],
+      "cung": "Phu Thê",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "maNghienCuu": [
+       "KHUNG-phu-the-HOA-Khoa-xung"
+      ],
+      "nguoiViet": "hanh",
+      "sinh": false
+     }
+    },
+    {
+     "text": "Tử Vi mang Hóa Khoa ở Quan Lộc (cung xung chiếu của Phu Thê) ảnh hưởng đến chuyện tình cảm và hôn nhân: thêm sự tinh tế, nhã nhặn và được người xung quanh quý trọng trong quan hệ.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-phu-the-HOA-Khoa-xung",
+      "sao": [
+       "Tử Vi"
+      ],
+      "cung": "Phu Thê",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Quan Lộc"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "phu-tinh",
+   "tieuDe": "Sao phụ",
+   "nhanDinh": [
+    {
+     "text": "Sao phụ cùng Tuần, Triệt cho biết sức hút và nhịp điều chỉnh của bạn.",
+     "phan": "noi",
+     "thamChieu": {
+      "quyTacId": "VIET-TAY-phu-the-2-noi",
+      "sao": [
+       "Hỏa Tinh",
+       "Đào Hoa"
+      ],
+      "cung": "Phu Thê",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư | Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+      "truongPhai": "Tam hợp phái Việt",
+      "maNghienCuu": [
+       "PT-PS-10",
+       "PT-PS-15",
+       "KHUNG-phu-the-TUAN-tam-hop",
+       "KHUNG-phu-the-TRIET-xung"
+      ],
+      "nguoiViet": "hanh",
+      "sinh": false
+     }
+    },
+    {
+     "text": "Hỏa Tinh đồng cung Phu Thê: nhiệt huyết, phản ứng nhanh, nên tiết chế cảm xúc.",
+     "thamChieu": {
+      "quyTacId": "PT-PS-10",
+      "sao": [
+       "Hỏa Tinh"
+      ],
+      "cung": "Phu Thê",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư",
+      "truongPhai": "tam hợp phái Việt"
+     }
+    },
+    {
+     "text": "Đào Hoa đồng cung Phu Thê: sức hút cá nhân, nên cân bằng giữa duyên và nguyên tắc.",
+     "thamChieu": {
+      "quyTacId": "PT-PS-15",
+      "sao": [
+       "Đào Hoa"
+      ],
+      "cung": "Phu Thê",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư",
+      "truongPhai": "tam hợp phái Việt"
+     }
+    },
+    {
+     "text": "Tuần đóng ở Thiên Di (cung tam hợp của Phu Thê): Tuần chỉ tác động hai cung nó đứng giữa, không chiếu sang Phu Thê, nhưng các sao tại Thiên Di bị giảm cường độ nên phần đóng góp của cung này cho chuyện tình cảm và hôn nhân đến chậm và dịu hơn; ảnh hưởng thường rõ dần về sau, mỗi người cảm nhận khác nhau tùy hoàn cảnh và nỗ lực.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-phu-the-TUAN-tam-hop",
+      "sao": [],
+      "cung": "Phu Thê",
+      "nguon": "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Thiên Di"
+      ],
+      "yeuTo": [
+       "Tuần"
+      ]
+     }
+    },
+    {
+     "text": "Triệt đóng ở Quan Lộc (cung xung chiếu của Phu Thê): Triệt chỉ tác động hai cung nó tách đôi, không chiếu sang Phu Thê, nhưng các sao tại Quan Lộc bị giảm cường độ nên phần đóng góp của cung này cho chuyện tình cảm và hôn nhân dịu hơn; ảnh hưởng thường rõ hơn ở giai đoạn đầu đời rồi nhẹ dần, mỗi người cảm nhận khác nhau tùy hoàn cảnh và nỗ lực.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-phu-the-TRIET-xung",
+      "sao": [],
+      "cung": "Phu Thê",
+      "nguon": "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Quan Lộc"
+      ],
+      "yeuTo": [
+       "Triệt"
+      ]
+     }
+    },
+    {
+     "text": "Kình Dương ở Phúc Đức (cung tam hợp của Phu Thê) ảnh hưởng đến chuyện tình cảm và hôn nhân: nghị lực mạnh, quyết liệt, nên kiểm soát sự nóng vội.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-phu-the-SP-KìnhDương-tam-hop",
+      "sao": [
+       "Kình Dương"
+      ],
+      "cung": "Phu Thê",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Phúc Đức"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "tom-lai",
+   "tieuDe": "Tóm lại",
+   "nhanDinh": [
+    {
+     "text": "Bạn có sức hút và yêu bằng cảm xúc thật, nhưng cảm xúc lên nhanh nên dễ va chạm. Điểm tựa là sự bền bỉ mà sát tinh đắc địa ở tam hợp đem lại, cùng mong muốn hai người cùng bàn bạc. Quan hệ của bạn cần vài lần điều chỉnh mới vào nếp, và đó là điều bình thường.",
+     "phan": "tom-lai",
+     "thamChieu": {
+      "quyTacId": "VIET-TAY-phu-the-2-tom-lai",
+      "sao": [
+       "Tham Lang",
+       "Kình Dương",
+       "Địa Kiếp",
+       "Tử Vi"
+      ],
+      "cung": "Phu Thê",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang) | Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) | Tử Vi Đẩu Số Toàn Thư",
+      "truongPhai": "Tam hợp phái Việt",
+      "maNghienCuu": [
+       "PT-S09-HAM",
+       "KHUNG-phu-the-CC-SatPhaTham-TroLuc",
+       "PT-S01-C2",
+       "KHUNG-phu-the-CC-SatPhaTham-DeuHam"
+      ],
+      "nguoiViet": "hanh",
+      "sinh": false
+     }
+    },
+    {
+     "text": "Đầu ba mươi, nếu tính chuyện lâu dài, bạn nên cùng người ấy nói rõ kỳ vọng về tiền bạc, việc nhà và thời gian riêng. Khi giận, hãy hẹn nói lại sau một ngày thay vì tranh luận ngay.",
+     "phan": "goi-y",
+     "thamChieu": {
+      "quyTacId": "VIET-TAY-phu-the-2-goi-y",
+      "sao": [
+       "Tham Lang",
+       "Hỏa Tinh"
+      ],
+      "cung": "Phu Thê",
+      "nguon": "Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang) | Tử Vi Đẩu Số Toàn Thư",
+      "truongPhai": "Tam hợp phái Việt",
+      "maNghienCuu": [
+       "PT-S09-HAM",
+       "PT-PS-10"
+      ],
+      "nguoiViet": "hanh",
+      "sinh": false
+     }
+    }
+   ]
+  }
+ ],
+ "ghiChu": "Luận giải do hệ thống xemtuvi.vn tạo tự động từ các quy tắc Tử Vi có ghi nguồn; nội dung mang tính tham khảo, giúp hiểu mình và định hướng, không phải lời đoán chắc về tương lai.",
+ "phienBan": "2aabd4fef870",
+ "ghiChuNguoiViet": "Mẫu ground truth L-b6c541 (B2b). Thân bài do bộ ghép sinh từ quy tắc (stub, boQuaCache); 4 khối dau-bai/noi/tom-lai/goi-y do Hạnh viết tay, chỉ dùng sao trong pool của bài. Nội dung do AI hỗ trợ soạn, cần Thư kiểm duyệt trước khi đưa khách."
+}
