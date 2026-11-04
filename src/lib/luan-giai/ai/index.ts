@@ -321,6 +321,24 @@ export const TAT_O_BAI: Record<string, Set<string>> = {
   ]),
 };
 
+// Bộ đếm mục cấu hình bị mất (rỗng) theo chuyên đề: { chuyenDe: { soLuot, mat: { idMuc: soLan } } }. Cảnh báo log 1 lần/mục/tiến trình.
+const MUC_MAT: Record<string, { soLuot: number; mat: Record<string, number> }> = {};
+const DA_CANH_BAO = new Set<string>();
+export function ghiNhanMucMat(chuyenDe: string, idCauHinh: string[], mucRa: { id: string; nhanDinh: unknown[] }[]): string[] {
+  const co = new Set(mucRa.filter((m) => m.nhanDinh.length).map((m) => m.id));
+  const mat = idCauHinh.filter((id) => !co.has(id));
+  const tk = (MUC_MAT[chuyenDe] ??= { soLuot: 0, mat: {} });
+  tk.soLuot++;
+  for (const id of mat) {
+    tk.mat[id] = (tk.mat[id] ?? 0) + 1;
+    const k = `${chuyenDe}|${id}`;
+    if (!DA_CANH_BAO.has(k)) { DA_CANH_BAO.add(k); console.warn(`[luan-giai] chuyên đề ${chuyenDe} mất mục cấu hình "${id}" (không có nhận định nào)`); }
+  }
+  return mat;
+}
+export function thongKeMucMat() { return JSON.parse(JSON.stringify(MUC_MAT)) as typeof MUC_MAT; }
+export function xoaThongKeMucMat() { for (const k of Object.keys(MUC_MAT)) delete MUC_MAT[k]; DA_CANH_BAO.clear(); }
+
 export async function sinhLuanGiai(ls: LaSo, chuyenDe: ChuyenDeMa, tuyChon: TuyChon = {}): Promise<LuanGiai> {
   const cfg = CHUYEN_DE[chuyenDe];
   if (!cfg) throw new Error(`Chuyên đề không hợp lệ: ${chuyenDe}`);
@@ -437,6 +455,8 @@ export async function sinhLuanGiai(ls: LaSo, chuyenDe: ChuyenDeMa, tuyChon: TuyC
   const tomLai = (th?.tomLai ?? []).map(choPhep).filter((n): n is NhanDinh => n !== null);
   if (tomLai.length) mucRa.unshift({ id: 'tom-lai', tieuDe: 'Tóm lại', nhanDinh: tomLai });
 
+  // Mục có trong cấu hình nhưng rỗng vẫn ẩn khỏi khách (đúng UX), nhưng phải đếm + cảnh báo để biết nội dung thiếu (L-6f7e17).
+  ghiNhanMucMat(chuyenDe, cfg.muc.map((m) => m.id), mucRa);
   const kq: LuanGiai = { chuyenDe, ...(dv ? { van: dv.thongTin } : {}), muc: mucRa.filter((m) => m.nhanDinh.length), ghiChu: GHI_CHU, phienBan: PHIEN_BAN_QUY_TAC };
   if (!tuyChon.boQuaCache && !bat && dung === 'stub') ghi(khoa, kq);
   return kq;
