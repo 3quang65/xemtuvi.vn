@@ -2977,6 +2977,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "QL-S02-C5-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Mệnh",
+  "sao": [
+   "Thiên Cơ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Cơ hãm ở Mệnh, hội về Quan Lộc: sách ghi thành tựu khó bền, hợp kinh doanh hoặc nghề kỹ thuật khéo tay, nên tránh dàn trải. Bạn có nhiều ý tưởng nhưng dễ chuyển việc trước khi thấy kết quả. Chọn ít dự án hơn và theo đến khi có sản phẩm cụ thể.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "MENH-TCO-02",
+   "QUAN-YN-02",
+   "QUAN-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "MENH-TCO-02: TB (WM4: hãm \"kém sáng suốt\"); TT (WM6: \"加巨门羊陀火铃忌… 亦不耐久，只宜经商巧艺\")"
+ },
+ {
   "id": "QL-S02-C3",
   "chuyenDe": "quan-loc",
   "cung": "Tài Bạch",
@@ -3111,6 +3135,30 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S03-C5-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Mệnh",
+  "sao": [
+   "Thái Dương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thái Dương hãm ở Mệnh: sách ghi công việc dễ thăng trầm, lúc đầu siêng rồi sau nản; rời quê lập nghiệp lại thuận hơn. Tam hợp về Quan Lộc, điều này cho thấy nhịp làm việc đều quan trọng hơn những lúc bùng nổ. Chia mục tiêu lớn thành chặng ngắn để giữ được hứng thú.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "MENH-TDU-02",
+   "QUAN-YN-02",
+   "QUAN-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "MENH-TDU-02: TB (WM4: \"giảm uy quyền, hay nhầm lẫn\"); TT (WM6: \"陷地虽化权禄也凶… 先勤终懒，成败不一，出外离祖可吉\")"
  },
  {
   "id": "QL-S03-C3",
@@ -3249,6 +3297,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "QL-S04-C5-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Mệnh",
+  "sao": [
+   "Vũ Khúc"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Vũ Khúc hãm ở Mệnh (đồng cung Phá Quân): sách ghi tính dễ cứng nhắc, chi tiêu bốc đồng, hợp nghề chuyên môn hay tay nghề. Ở chỗ làm, sự thẳng thắn của bạn dễ bị xem là khó hợp tác. Đi theo nghề có chuẩn mực kỹ thuật rõ ràng, nơi năng lực được đo bằng kết quả.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "MENH-VK-02",
+   "QUAN-YN-02",
+   "QUAN-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "MENH-VK-02: TB (WM5 tr.51: \"tham lam, ương ngạnh, phá tán\"); TT (WM6: \"陷地巧艺之人… 更遇廉贞破军羊忌空劫冲破下局\")"
+ },
+ {
   "id": "QL-S04-C3",
   "chuyenDe": "quan-loc",
   "cung": "Tài Bạch",
@@ -3385,6 +3457,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "QL-S05-C5-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Mệnh",
+  "sao": [
+   "Thiên Đồng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Đồng hãm ở Mệnh: sách ghi vẫn nhân hậu nhưng dễ thất thường, dễ vướng thị phi. Hội về Quan Lộc, nét này làm bạn dễ hứng lên rồi buông công việc giữa chừng. Một kế hoạch tuần viết ra giấy giúp bạn giữ nhịp mà vẫn không mất sự dễ chịu.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "MENH-TD-02",
+   "QUAN-YN-02",
+   "QUAN-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "MENH-TD-02: TB (WM4: hãm \"canh cải, thất thường… thị phi\"); TT (WM7, 斗数骨髓赋: \"天同戌宫为反背，丁人化吉主大贵\"; WM6: \"午宫陷\")"
+ },
+ {
   "id": "QL-S05-C3",
   "chuyenDe": "quan-loc",
   "cung": "Tài Bạch",
@@ -3519,6 +3615,30 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S06-C5-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Mệnh",
+  "sao": [
+   "Liêm Trinh"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Liêm Trinh hãm ở Mệnh: sách ghi tính cứng, dễ tranh luận gay gắt, hợp nghề chuyên môn hoặc tay nghề, thường sớm tự lập. Ở nơi làm việc, nguyên tắc của bạn là điểm mạnh khi được đặt đúng chỗ. Chọn vai trò cần tiêu chuẩn chặt, và tập nói \"không\" một cách mềm mỏng khi bất đồng.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "MENH-LT-02",
+   "QUAN-YN-02",
+   "QUAN-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "MENH-LT-02: TB (WM4: hãm \"khắc nghiệt\"); TT (WM6: \"性硬浮荡，好忿争\"; \"巳亥陷宫弃祖孤单，巧艺\")"
  },
  {
   "id": "QL-S06-C3",
@@ -3770,6 +3890,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "QL-S08-C5-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Mệnh",
+  "sao": [
+   "Thái Âm"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thái Âm hãm ở Mệnh: sách ghi dễ nhầm lẫn khi quyết định, xa quê lập nghiệp thì thuận hơn. Hội về Quan Lộc, nét này nhắc bạn kiểm tra lại thông tin trước khi chốt việc quan trọng. Làm việc với danh sách kiểm tra và hỏi ý người có kinh nghiệm là thói quen đáng giữ.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "MENH-TA-02",
+   "QUAN-YN-02",
+   "QUAN-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "MENH-TA-02: TB (WM4: \"kém sáng suốt, hay nhầm lẫn… phát tán\"); TT (WM6: \"陷地化吉科权禄，反以凶论，出外离祖则吉\")"
+ },
+ {
   "id": "QL-S08-C3",
   "chuyenDe": "quan-loc",
   "cung": "Tài Bạch",
@@ -3904,6 +4048,30 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S09-C5-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Mệnh",
+  "sao": [
+   "Tham Lang"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Tham Lang hãm ở Mệnh: Toàn Thư ghi dễ thiếu kiên nhẫn, làm vội nên \"khéo quá hóa vụng\". Tam hợp về Quan Lộc, nét này dễ thành nhảy việc khi chưa đủ chín. Rèn kỷ luật bằng một mục tiêu nghề nghiệp dài hạn và đo tiến độ theo từng quý.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "MENH-THL-02",
+   "QUAN-YN-02",
+   "QUAN-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "MENH-THL-02: TT (WM6: \"性格不常，心多计较，作事急速不耐静，作巧反拙，好赌博花酒\"); TB (WM4: hãm \"hay nhầm lẫn…\")"
  },
  {
   "id": "QL-S09-C3",
@@ -4042,6 +4210,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "QL-S10-C5-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Mệnh",
+  "sao": [
+   "Cự Môn"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Cự Môn hãm ở Mệnh: sách ghi hay nghi ngờ, học nhiều nhưng chưa chuyên sâu, dễ vướng thị phi. Với sự nghiệp, bạn nên đào sâu một chuyên môn thay vì biết rộng nhiều thứ. Kiểm chứng trước khi phản biện giúp lời bạn nói ở nơi làm có trọng lượng hơn.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "MENH-CM-02",
+   "QUAN-YN-02",
+   "QUAN-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "MENH-CM-02: TT (WM6: \"多疑且多学少精，与人寡合，多是多非\"; WM7: \"辰戌应嫌陷巨门\"); TB (WM4: hãm \"thường gây ra thị phi\")"
+ },
+ {
   "id": "QL-S10-C3",
   "chuyenDe": "quan-loc",
   "cung": "Tài Bạch",
@@ -4176,6 +4368,30 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S11-C5-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Mệnh",
+  "sao": [
+   "Thiên Tướng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Tướng hãm ở Mệnh (Mão, Dậu): sách ghi dễ mất thế chủ động, nên chuẩn bị kỹ trước khi nhận trọng trách. Hội về Quan Lộc, bạn dễ được giao việc lớn khi nền chưa vững. Hỏi rõ nguồn lực, người hỗ trợ và quyền quyết định trước khi gật đầu.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "MENH-TT-02",
+   "QUAN-YN-02",
+   "QUAN-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "MENH-TT-02: TB (WM5 tr.54: \"như dao kề trên đầu\"; \"ông tướng mất đầu… mất hết quyền lực\"); TT (WM6: \"与武破羊陀同行则为巧艺，更加火铃巨机，则伤刑\")"
  },
  {
   "id": "QL-S11-C3",
@@ -4314,6 +4530,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "QL-S12-C5-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Mệnh",
+  "sao": [
+   "Thiên Lương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Lương hãm ở Mệnh: sách ghi vẫn nhân hậu nhưng hay thay đổi, ham chơi, nhiều dịch chuyển. Hội về Quan Lộc, con đường sự nghiệp của bạn dễ rẽ nhánh nhiều lần. Chọn một hướng đi và cam kết tối thiểu vài năm để chuyên môn kịp thành hình.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "MENH-TL-02",
+   "QUAN-YN-02",
+   "QUAN-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "MENH-TL-02: TB (WM5 tr.55: hãm Tỵ Hợi \"canh cải, thất thường, ham chơi\"); TT (WM6: \"要入庙方富贵，陷地遇火羊破局\"; WM7: \"天梁天马陷飘荡无疑\")"
+ },
+ {
   "id": "QL-S12-C3",
   "chuyenDe": "quan-loc",
   "cung": "Tài Bạch",
@@ -4450,6 +4690,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "QL-S13-C5-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Mệnh",
+  "sao": [
+   "Thất Sát"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thất Sát hãm ở Mệnh: sách ghi dễ bốc đồng, nóng giận, gặp thêm sát tinh thì thành quả khó bền. Ở chỗ làm, sự quyết liệt của bạn cần đi kèm quản trị rủi ro. Trước quyết định lớn, hãy để qua một đêm và lập sẵn phương án dự phòng.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "MENH-TS-02",
+   "QUAN-YN-02",
+   "QUAN-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "MENH-TS-02: TB (WM4: hãm \"liều lĩnh\"); TT (WM6: \"羊陀火铃冲会，又在陷地… 虽富贵不耐久\")"
+ },
+ {
   "id": "QL-S13-C3",
   "chuyenDe": "quan-loc",
   "cung": "Tài Bạch",
@@ -4584,6 +4848,30 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S14-C5-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Mệnh",
+  "sao": [
+   "Phá Quân"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Phá Quân hãm ở Mệnh: sách ghi thích thay đổi, khó hợp quần, tự lập xa quê thì phát. Tam hợp về Quan Lộc, bạn hợp vai trò tự chủ hơn là làm trong một guồng máy cứng. Nếu làm việc nhóm, hãy thỏa thuận rõ phần việc của mình để giảm va chạm.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "MENH-PQ-02",
+   "QUAN-YN-02",
+   "QUAN-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "MENH-PQ-02: TB (WM4: hãm \"liều lĩnh… phá tán\"); TT (WM6: \"性刚寡合，好争强。弃祖发福\")"
  },
  {
   "id": "QL-S14-C3",
