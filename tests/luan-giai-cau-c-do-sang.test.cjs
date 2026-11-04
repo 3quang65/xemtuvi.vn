@@ -36,7 +36,7 @@ test('sao ở cung hợp chiếu đang Hãm: không phát câu C nào cho sao đ
         tot++;
       }
       // mọi chính tinh Hãm ở cung hợp chiếu (có câu C cũ) phải vắng câu C
-      for (const q of QT.filter((x) => AI.LA_CAU_C.test(x.id) && x.chuyenDe === cd)) {
+      for (const q of QT.filter((x) => AI.LA_CAU_C.test(x.id) && !x.id.endsWith('-HAM') && x.chuyenDe === cd)) {
         const s = ls.cung.find((c) => c.ten === q.cung).chinhTinh.find((x) => x.ten === q.sao[0]);
         if (s?.dacTinhTen === 'Hãm') { ham++; assert.ok(!cauC(bai).some((d) => d.thamChieu.quyTacId === q.id), `${q.id} phát cho sao Hãm`); }
       }
@@ -48,7 +48,7 @@ test('sao ở cung hợp chiếu đang Hãm: không phát câu C nào cho sao đ
 test('danh sách chờ Hạnh khớp đúng các mã C-HAM còn thiếu', () => {
   const md = fs.readFileSync(path.join(__dirname, '../docs/luan-giai/cho-hanh-C-HAM.md'), 'utf8');
   const ds = thieu();
-  assert.ok(ds.length > 0);
+  // Hạnh đã viết đủ C-HAM thì danh sách có thể rỗng; tệp chờ vẫn phải khớp số.
   for (const q of ds) assert.ok(md.includes(`| ${q.id}-HAM |`), `${q.id}-HAM thiếu trong cho-hanh-C-HAM.md`);
   assert.ok(md.includes(`**${ds.length}** mã`));
   assert.ok(!md.includes('| ML-S01-C1-HAM |'), 'Tử Vi không bao giờ Hãm');
