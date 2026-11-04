@@ -135,7 +135,7 @@ const PROMPT = fs.readFileSync(path.join(process.cwd(), 'src/lib/luan-giai/ai/pr
  */
 export const LA_CAU_C = /^(ML|QL|PT)-S\d+-C\d+(-HAM)?$/;
 /** Tăng khi đổi cách ghép/lọc câu (không đổi quy tắc) để bản lưu cũ không bị dùng lại. */
-const PHIEN_BAN_BO_GHEP = 'ghep-9';
+const PHIEN_BAN_BO_GHEP = 'ghep-10';
 export const PHIEN_BAN_QUY_TAC = bam(JSON.stringify([QUY_TAC, QUY_TAC_2, QUY_TAC_VAN, CHUYEN_DE, TU_CAM, PROMPT, PHIEN_BAN_BO_GHEP])).slice(0, 12);
 
 export function nhaCungCapDangDung(yeuCau: TuyChon['nhaCungCap']): 'stub' | 'claude' | string {
