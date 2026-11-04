@@ -26294,5 +26294,341 @@
   "yeuTo": [
    "Cách Không Kiếp giáp / chiếu"
   ]
+ },
+ {
+  "id": "KHUNG-dien-trach-SP-TảPhù-xung",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "DIEN-SP-02",
+   "CHUNG-SP-01"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tả Phù"
+    ],
+    "viTri": "xung"
+   }
+  ],
+  "muc": "cung-lien-quan",
+  "noiDung": "Tả Phù ở {cung}, cung xung chiếu Điền Trạch: Tả Phù là sao trợ lực, chiếu vào nhà cửa thì việc mua bán, sửa sang dễ có người đỡ một tay. Nên chủ động nhờ người quen có kinh nghiệm đi cùng khi xem nhà hoặc làm thủ tục.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (卷二 十田宅: \"文昌會諸吉田園廣置…文曲旺地有分…左輔有祖業\"; Hình tính phú: \"Tả Phụ Hữu Bật ôn lương quy mô… Thiên Khôi Thiên Việt cụ túc uy nghi\"); TB (lục cát tinh); WD13 (Xương Khúc Tả Hữu Khôi Việt: nhà đẹp, dễ mua bán); WD10",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [],
+  "ghiChu": "Sao ngoài 14 chính tinh: lục cát tinh ở cung hợp chiếu Điền Trạch (DIEN-SP-02), khung chưa có (L-b9baff)."
+ },
+ {
+  "id": "KHUNG-dien-trach-SP-TảPhù-tam-hop",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "DIEN-SP-02",
+   "CHUNG-SP-01"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Tả Phù"
+    ],
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "cung-lien-quan",
+  "noiDung": "Tả Phù ở {cung}, cung tam hợp của Điền Trạch: Toàn Thư nói Tả Phù tọa Điền Trạch thì có tổ nghiệp; hội từ tam hợp thì lực nhẹ hơn, chủ yếu là được người nâng đỡ trong việc nhà. Nên ghi nhận và đáp lại sự giúp này rõ ràng để quan hệ bền.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (卷二 十田宅: \"文昌會諸吉田園廣置…文曲旺地有分…左輔有祖業\"; Hình tính phú: \"Tả Phụ Hữu Bật ôn lương quy mô… Thiên Khôi Thiên Việt cụ túc uy nghi\"); TB (lục cát tinh); WD13 (Xương Khúc Tả Hữu Khôi Việt: nhà đẹp, dễ mua bán); WD10",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [],
+  "ghiChu": "Sao ngoài 14 chính tinh: lục cát tinh ở cung hợp chiếu Điền Trạch (DIEN-SP-02), khung chưa có (L-b9baff)."
+ },
+ {
+  "id": "KHUNG-dien-trach-SP-HữuBật-xung",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "DIEN-SP-02",
+   "CHUNG-SP-01"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Hữu Bật"
+    ],
+    "viTri": "xung"
+   }
+  ],
+  "muc": "cung-lien-quan",
+  "noiDung": "Hữu Bật ở {cung}, cung xung chiếu Điền Trạch: Hữu Bật đi đôi với Tả Phù, chủ người giúp và sự hỗ trợ âm thầm trong chuyện nhà. Đủ đôi Tả Hữu chiếu thì lực mạnh hơn lẻ một sao. Nên giữ một danh sách thợ, người tư vấn tin cậy để dùng lâu dài.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (卷二 十田宅: \"文昌會諸吉田園廣置…文曲旺地有分…左輔有祖業\"; Hình tính phú: \"Tả Phụ Hữu Bật ôn lương quy mô… Thiên Khôi Thiên Việt cụ túc uy nghi\"); TB (lục cát tinh); WD13 (Xương Khúc Tả Hữu Khôi Việt: nhà đẹp, dễ mua bán); WD10",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [],
+  "ghiChu": "Sao ngoài 14 chính tinh: lục cát tinh ở cung hợp chiếu Điền Trạch (DIEN-SP-02), khung chưa có (L-b9baff)."
+ },
+ {
+  "id": "KHUNG-dien-trach-SP-HữuBật-tam-hop",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "DIEN-SP-02",
+   "CHUNG-SP-01"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Hữu Bật"
+    ],
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "cung-lien-quan",
+  "noiDung": "Hữu Bật ở {cung}, cung tam hợp của Điền Trạch: thêm một nguồn trợ lực cho nhà cửa, việc lớn như chuyển nhà, sửa nhà dễ có người chia việc. Nên phân công rõ từ đầu để sự giúp đỡ không thành gánh nợ ân tình.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (卷二 十田宅: \"文昌會諸吉田園廣置…文曲旺地有分…左輔有祖業\"; Hình tính phú: \"Tả Phụ Hữu Bật ôn lương quy mô… Thiên Khôi Thiên Việt cụ túc uy nghi\"); TB (lục cát tinh); WD13 (Xương Khúc Tả Hữu Khôi Việt: nhà đẹp, dễ mua bán); WD10",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [],
+  "ghiChu": "Sao ngoài 14 chính tinh: lục cát tinh ở cung hợp chiếu Điền Trạch (DIEN-SP-02), khung chưa có (L-b9baff)."
+ },
+ {
+  "id": "KHUNG-dien-trach-SP-VănXương-xung",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "DIEN-SP-02",
+   "CHUNG-SP-01"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Văn Xương"
+    ],
+    "viTri": "xung"
+   }
+  ],
+  "muc": "cung-lien-quan",
+  "noiDung": "Văn Xương ở {cung}, cung xung chiếu Điền Trạch: Toàn Thư nói Văn Xương hội cát tinh ở Điền Trạch thì ruộng vườn mở rộng; chiếu từ xung thì lực nhẹ hơn tọa thủ. Xương chủ giấy tờ, văn bản, nên phần thủ tục là thế mạnh của bạn. Nên tự đọc kỹ hợp đồng và lưu hồ sơ nhà đất có hệ thống.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (卷二 十田宅: \"文昌會諸吉田園廣置…文曲旺地有分…左輔有祖業\"; Hình tính phú: \"Tả Phụ Hữu Bật ôn lương quy mô… Thiên Khôi Thiên Việt cụ túc uy nghi\"); TB (lục cát tinh); WD13 (Xương Khúc Tả Hữu Khôi Việt: nhà đẹp, dễ mua bán); WD10",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [],
+  "ghiChu": "Sao ngoài 14 chính tinh: lục cát tinh ở cung hợp chiếu Điền Trạch (DIEN-SP-02), khung chưa có (L-b9baff)."
+ },
+ {
+  "id": "KHUNG-dien-trach-SP-VănXương-tam-hop",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "DIEN-SP-02",
+   "CHUNG-SP-01"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Văn Xương"
+    ],
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "cung-lien-quan",
+  "noiDung": "Văn Xương ở {cung}, cung tam hợp của Điền Trạch: sao văn chương chiếu về làm nhà cửa thiên về nề nếp, có không gian học hành, đọc sách. Gặp sát tinh thì có vào có ra. Nên dành một góc đọc, học cố định trong nhà.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (卷二 十田宅: \"文昌會諸吉田園廣置…文曲旺地有分…左輔有祖業\"; Hình tính phú: \"Tả Phụ Hữu Bật ôn lương quy mô… Thiên Khôi Thiên Việt cụ túc uy nghi\"); TB (lục cát tinh); WD13 (Xương Khúc Tả Hữu Khôi Việt: nhà đẹp, dễ mua bán); WD10",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [],
+  "ghiChu": "Sao ngoài 14 chính tinh: lục cát tinh ở cung hợp chiếu Điền Trạch (DIEN-SP-02), khung chưa có (L-b9baff)."
+ },
+ {
+  "id": "KHUNG-dien-trach-SP-VănKhúc-xung",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "DIEN-SP-02",
+   "CHUNG-SP-01"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Văn Khúc"
+    ],
+    "viTri": "xung"
+   }
+  ],
+  "muc": "cung-lien-quan",
+  "noiDung": "Văn Khúc ở {cung}, cung xung chiếu Điền Trạch: Toàn Thư nói Văn Khúc ở Điền Trạch đắc địa thì có phần tài sản; chiếu từ xung thì ảnh hưởng nhẹ hơn. Khúc chủ sự khéo léo, mềm mỏng, giúp bạn thương lượng giá nhà tốt hơn. Nên chuẩn bị số liệu so sánh trước mỗi lần đàm phán.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (卷二 十田宅: \"文昌會諸吉田園廣置…文曲旺地有分…左輔有祖業\"; Hình tính phú: \"Tả Phụ Hữu Bật ôn lương quy mô… Thiên Khôi Thiên Việt cụ túc uy nghi\"); TB (lục cát tinh); WD13 (Xương Khúc Tả Hữu Khôi Việt: nhà đẹp, dễ mua bán); WD10",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [],
+  "ghiChu": "Sao ngoài 14 chính tinh: lục cát tinh ở cung hợp chiếu Điền Trạch (DIEN-SP-02), khung chưa có (L-b9baff)."
+ },
+ {
+  "id": "KHUNG-dien-trach-SP-VănKhúc-tam-hop",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "DIEN-SP-02",
+   "CHUNG-SP-01"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Văn Khúc"
+    ],
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "cung-lien-quan",
+  "noiDung": "Văn Khúc ở {cung}, cung tam hợp của Điền Trạch: nét tinh tế, thẩm mỹ chiếu về làm nơi ở thường đẹp, dễ mua bán. Đủ đôi Xương Khúc thì rõ hơn. Nên đầu tư vào những chi tiết làm tăng giá trị nhà như ánh sáng, cây xanh.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (卷二 十田宅: \"文昌會諸吉田園廣置…文曲旺地有分…左輔有祖業\"; Hình tính phú: \"Tả Phụ Hữu Bật ôn lương quy mô… Thiên Khôi Thiên Việt cụ túc uy nghi\"); TB (lục cát tinh); WD13 (Xương Khúc Tả Hữu Khôi Việt: nhà đẹp, dễ mua bán); WD10",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [],
+  "ghiChu": "Sao ngoài 14 chính tinh: lục cát tinh ở cung hợp chiếu Điền Trạch (DIEN-SP-02), khung chưa có (L-b9baff)."
+ },
+ {
+  "id": "KHUNG-dien-trach-SP-ThiênKhôi-xung",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "DIEN-SP-02",
+   "CHUNG-SP-01"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Khôi"
+    ],
+    "viTri": "xung"
+   }
+  ],
+  "muc": "cung-lien-quan",
+  "noiDung": "Thiên Khôi ở {cung}, cung xung chiếu Điền Trạch: Khôi là quý nhân, chiếu vào nhà cửa thì dễ gặp người có uy tín giới thiệu cơ hội nhà đất. Nên giữ quan hệ tốt với những người đi trước trong ngành bất động sản hoặc pháp lý.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (卷二 十田宅: \"文昌會諸吉田園廣置…文曲旺地有分…左輔有祖業\"; Hình tính phú: \"Tả Phụ Hữu Bật ôn lương quy mô… Thiên Khôi Thiên Việt cụ túc uy nghi\"); TB (lục cát tinh); WD13 (Xương Khúc Tả Hữu Khôi Việt: nhà đẹp, dễ mua bán); WD10",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [],
+  "ghiChu": "Sao ngoài 14 chính tinh: lục cát tinh ở cung hợp chiếu Điền Trạch (DIEN-SP-02), khung chưa có (L-b9baff)."
+ },
+ {
+  "id": "KHUNG-dien-trach-SP-ThiênKhôi-tam-hop",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "DIEN-SP-02",
+   "CHUNG-SP-01"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Khôi"
+    ],
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "cung-lien-quan",
+  "noiDung": "Thiên Khôi ở {cung}, cung tam hợp của Điền Trạch: quý nhân hội về giúp những việc nhà đất cần người đứng ra bảo đảm, tư vấn. Nên hỏi ý người có chuyên môn trước quyết định lớn thay vì tự xoay xở.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (卷二 十田宅: \"文昌會諸吉田園廣置…文曲旺地有分…左輔有祖業\"; Hình tính phú: \"Tả Phụ Hữu Bật ôn lương quy mô… Thiên Khôi Thiên Việt cụ túc uy nghi\"); TB (lục cát tinh); WD13 (Xương Khúc Tả Hữu Khôi Việt: nhà đẹp, dễ mua bán); WD10",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [],
+  "ghiChu": "Sao ngoài 14 chính tinh: lục cát tinh ở cung hợp chiếu Điền Trạch (DIEN-SP-02), khung chưa có (L-b9baff)."
+ },
+ {
+  "id": "KHUNG-dien-trach-SP-ThiênViệt-xung",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "DIEN-SP-02",
+   "CHUNG-SP-01"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Việt"
+    ],
+    "viTri": "xung"
+   }
+  ],
+  "muc": "cung-lien-quan",
+  "noiDung": "Thiên Việt ở {cung}, cung xung chiếu Điền Trạch: Việt đi đôi với Khôi, chủ quý nhân và cơ hội được nâng đỡ; đủ đôi Khôi Việt thì lực rõ hơn. Trong chuyện nhà, bạn dễ được giới thiệu nơi ở phù hợp. Nên nói rõ nhu cầu của mình với người quen để cơ hội tìm đến.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (卷二 十田宅: \"文昌會諸吉田園廣置…文曲旺地有分…左輔有祖業\"; Hình tính phú: \"Tả Phụ Hữu Bật ôn lương quy mô… Thiên Khôi Thiên Việt cụ túc uy nghi\"); TB (lục cát tinh); WD13 (Xương Khúc Tả Hữu Khôi Việt: nhà đẹp, dễ mua bán); WD10",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [],
+  "ghiChu": "Sao ngoài 14 chính tinh: lục cát tinh ở cung hợp chiếu Điền Trạch (DIEN-SP-02), khung chưa có (L-b9baff)."
+ },
+ {
+  "id": "KHUNG-dien-trach-SP-ThiênViệt-tam-hop",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "loai": "SP",
+  "maNghienCuu": [
+   "DIEN-SP-02",
+   "CHUNG-SP-01"
+  ],
+  "dieuKien": [
+   {
+    "sao": [
+     "Thiên Việt"
+    ],
+    "viTri": "tam-hop"
+   }
+  ],
+  "muc": "cung-lien-quan",
+  "noiDung": "Thiên Việt ở {cung}, cung tam hợp của Điền Trạch: thêm một sao quý nhân hội về nhà cửa, việc giấy tờ, thủ tục dễ được người hướng dẫn tận tình. Nên ghi chép lại các bước đã làm để lần sau tự chủ hơn.",
+  "nguon": [
+   "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+   "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)"
+  ],
+  "nguonChiTiet": "TT (卷二 十田宅: \"文昌會諸吉田園廣置…文曲旺地有分…左輔有祖業\"; Hình tính phú: \"Tả Phụ Hữu Bật ôn lương quy mô… Thiên Khôi Thiên Việt cụ túc uy nghi\"); TB (lục cát tinh); WD13 (Xương Khúc Tả Hữu Khôi Việt: nhà đẹp, dễ mua bán); WD10",
+  "truongPhai": "Tam hợp phái Việt",
+  "yeuTo": [],
+  "ghiChu": "Sao ngoài 14 chính tinh: lục cát tinh ở cung hợp chiếu Điền Trạch (DIEN-SP-02), khung chưa có (L-b9baff)."
  }
 ]

@@ -5643,6 +5643,2733 @@
   "muc": "phu-tinh"
  },
  {
+  "id": "DT-S01-C1",
+  "chuyenDe": "dien-trach",
+  "cung": "Tử Tức",
+  "sao": [
+   "Tử Vi"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Tử Vi ở Tử Tức, cung xung chiếu Điền Trạch: sách tả con cái về sau có vị thế, khá giả, nên chuyện nhà cửa của bạn hay gắn với kỳ vọng dành cho thế hệ sau. Bạn muốn ngôi nhà đủ chỉn chu để con tự hào. Nên bàn kế hoạch nhà đất dài hạn với cả nhà thay vì một mình gánh hết vì thể diện.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «四子女» (\"紫微庙旺\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tử Tức tr. 199, mục 13.2.1",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TU-TV-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-TV-01"
+  ]
+ },
+ {
+  "id": "DT-S02-C1",
+  "chuyenDe": "dien-trach",
+  "cung": "Tử Tức",
+  "sao": [
+   "Thiên Cơ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Thiên Cơ sáng ở Tử Tức chiếu về Điền Trạch mang nét linh hoạt, hay tính toán vào chuyện con cái và nếp nhà. Lịch sinh hoạt trong nhà dễ xoay theo việc học, việc đi lại của con. Nên chọn nơi ở thuận đường trường lớp và bố trí phòng có thể đổi công năng khi con lớn.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «四子女» (\"天机庙旺 / 加羊陀火铃空劫\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tử Tức tr. 200, mục 13.3.6",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TU-TCO-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-TCO-01"
+  ]
+ },
+ {
+  "id": "DT-S02-C1-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Tử Tức",
+  "sao": [
+   "Thiên Cơ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Cơ hãm ở Tử Tức, đối xung Điền Trạch: sách cho rằng đường con cái cần nhiều tâm sức hơn, gặp thêm sát tinh thì việc chăm con dễ làm xáo trộn nhịp nhà. Bạn hay lo nghĩ thay con nhiều việc. Nên chia việc nhà và việc đưa đón thành lịch cố định để bớt những quyết định vội.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «四子女» (\"天机庙旺 / 加羊陀火铃空劫\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tử Tức tr. 200, mục 13.3.6",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TU-TCO-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-TCO-01"
+  ]
+ },
+ {
+  "id": "DT-S03-C1",
+  "chuyenDe": "dien-trach",
+  "cung": "Tử Tức",
+  "sao": [
+   "Thái Dương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Thái Dương sáng ở Tử Tức soi sang Điền Trạch: sách tả con cái thành đạt, hướng ngoại, nên nhà bạn dễ là nơi đông người, rộn ràng. Bạn thường muốn cho con một nền nhà rộng rãi, sáng sủa. Nên dành một không gian chung đủ lớn để cả nhà sum họp thay vì chia quá nhỏ phòng riêng.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «四子女» (\"太阳入庙 / 陷地\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tử Tức tr. 200, mục 13.2.5",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TU-TDU-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-TDU-01"
+  ]
+ },
+ {
+  "id": "DT-S03-C1-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Tử Tức",
+  "sao": [
+   "Thái Dương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thái Dương hãm ở Tử Tức, xung chiếu Điền Trạch: sách cổ cho rằng việc nuôi dạy con thuận hơn khi cha mẹ đã vững vàng, giai đoạn con nhỏ cần nhiều kiên nhẫn. Chuyện nhà cửa vì vậy hợp đi từng bước, không cần dồn sức tậu lớn quá sớm. Nên ưu tiên chỗ ở ổn định, gần người có thể hỗ trợ trông con.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «四子女» (\"太阳入庙 / 陷地\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tử Tức tr. 200, mục 13.2.5",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TU-TDU-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-TDU-01"
+  ]
+ },
+ {
+  "id": "DT-S04-C1",
+  "chuyenDe": "dien-trach",
+  "cung": "Tử Tức",
+  "sao": [
+   "Vũ Khúc"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Vũ Khúc sáng ở Tử Tức chiếu Điền Trạch: sách tả con cái về sau khá giả, tính thực tế. Trong nhà, chuyện tiền bạc và tài sản dành cho con thường được bạn tính rõ từ sớm. Nên lập một quỹ riêng cho con (học hành, chỗ ở sau này) tách khỏi tiền sinh hoạt chung.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «四子女» (\"武曲 / 破军同主刑\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tử Tức tr. 200, mục 13.2.4",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TU-VK-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-VK-01"
+  ]
+ },
+ {
+  "id": "DT-S04-C1-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Tử Tức",
+  "sao": [
+   "Vũ Khúc"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Vũ Khúc hãm ở Tử Tức, đối Điền Trạch: theo sách, quan hệ cha mẹ và con dễ cứng nhắc, việc nuôi dạy tốn nhiều sức. Không khí trong nhà dễ căng khi bàn chuyện tiền với con. Nên nói chuyện tiền bạc với con bằng con số cụ thể và mục tiêu chung thay vì áp đặt.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «四子女» (\"武曲 / 破军同主刑\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tử Tức tr. 200, mục 13.2.4",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TU-VK-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-VK-01"
+  ]
+ },
+ {
+  "id": "DT-S05-C1",
+  "chuyenDe": "dien-trach",
+  "cung": "Tử Tức",
+  "sao": [
+   "Thiên Đồng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Thiên Đồng ở Tử Tức, xung chiếu Điền Trạch, mang chất phúc tinh hiền hòa vào chuyện con cái: sách tả nhà đông vui, dễ có người con nổi trội. Nhà bạn hợp kiểu ấm cúng, ít nghi thức. Nên giữ vài thói quen chung như bữa tối cuối tuần để nếp vui đó bền lâu.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «四子女» (\"天同庙旺 / 在午宫陷地减半\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tử Tức tr. 199–200, mục 13.2.3",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TU-TD-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-TD-01"
+  ]
+ },
+ {
+  "id": "DT-S05-C1-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Tử Tức",
+  "sao": [
+   "Thiên Đồng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Đồng hãm ở Tử Tức chiếu về Điền Trạch: sách nói việc nuôi con vất vả hơn và có ý cho rằng đổi chỗ ở thì mới thuận. Bạn có thể phải dời nhà vài lần vì con, như theo trường học hay việc chăm sóc. Nên tính chi phí chuyển chỗ vào kế hoạch nhà ở từ đầu để mỗi lần dời không bị động.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «四子女» (\"天同庙旺 / 在午宫陷地减半\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tử Tức tr. 199–200, mục 13.2.3",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TU-TD-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-TD-01"
+  ]
+ },
+ {
+  "id": "DT-S06-C1",
+  "chuyenDe": "dien-trach",
+  "cung": "Tử Tức",
+  "sao": [
+   "Liêm Trinh"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Liêm Trinh sáng ở Tử Tức, đối xung Điền Trạch: sách tả con lúc nhỏ cần chăm kỹ nhưng lớn lên dễ thành đạt, nhất là Liêm Tướng. Nếp nhà bạn thiên về kỷ luật và giờ giấc. Nên đặt vài quy tắc nhà rõ ràng nhưng để con được góp ý, tránh cứng quá mức.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «四子女» (\"廉贞一人，天相同有二子 / 贪狼破军七杀同主孤\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tử Tức tr. 199, mục 13.2.2",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TU-LT-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-LT-01"
+  ]
+ },
+ {
+  "id": "DT-S06-C1-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Tử Tức",
+  "sao": [
+   "Liêm Trinh"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Liêm Trinh hãm ở Tử Tức chiếu Điền Trạch: sách nói đường con cái nuôi dạy vất vả, con cần được quan tâm sức khỏe nhiều hơn. Nhà bạn vì vậy nên ưu tiên sự an toàn và tiện chăm sóc hơn là hình thức. Nên chọn nơi ở gần trường học, cơ sở y tế và giữ lịch khám định kỳ cho con.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «四子女» (\"廉贞一人，天相同有二子 / 贪狼破军七杀同主孤\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tử Tức tr. 199, mục 13.2.2",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TU-LT-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-LT-01"
+  ]
+ },
+ {
+  "id": "DT-S07-C1",
+  "chuyenDe": "dien-trach",
+  "cung": "Tử Tức",
+  "sao": [
+   "Thiên Phủ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Thiên Phủ ở Tử Tức, xung chiếu Điền Trạch: Phủ là sao kho tàng, sách tả nhà có người con nổi trội và được cha mẹ lo cho chu đáo. Bạn hay nghĩ đến việc để lại nền tảng cho thế hệ sau. Nên làm rõ giấy tờ nhà đất và ý định chia phần từ sớm để con cái sau này không vướng mắc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «四子女» (\"天府五人\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tử Tức tr. 201, mục 13.3.7",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TU-TP-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-TP-01"
+  ]
+ },
+ {
+  "id": "DT-S08-C1",
+  "chuyenDe": "dien-trach",
+  "cung": "Tử Tức",
+  "sao": [
+   "Thái Âm"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Thái Âm sáng ở Tử Tức chiếu Điền Trạch: Thái Âm là sao chủ điền trạch, vào cung con cái thì ngôi nhà thường gắn với sự chăm chút, dịu dàng. Sách tả tình cảm cha mẹ và con gần gũi, có người con nổi trội. Nên dành cho mỗi con một góc riêng nhỏ, vì nét tinh tế này cần được tôn trọng.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «四子女» (\"庙旺有贵子 / 陷地减半，招软弱之子\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tử Tức tr. 201, mục 13.3.8",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TU-TA-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-TA-01"
+  ]
+ },
+ {
+  "id": "DT-S08-C1-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Tử Tức",
+  "sao": [
+   "Thái Âm"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thái Âm hãm ở Tử Tức, xung Điền Trạch: sách nói con có thể thiếu quyết đoán và dễ bất đồng với cha mẹ, nên không khí nhà cần được giữ nhẹ nhàng. Nhu cầu riêng tư của từng người trong nhà cao hơn bạn nghĩ. Nên có giờ trò chuyện riêng với từng con thay vì chỉ nói chung cả nhà.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «四子女» (\"庙旺有贵子 / 陷地减半，招软弱之子\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tử Tức tr. 201, mục 13.3.8",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TU-TA-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-TA-01"
+  ]
+ },
+ {
+  "id": "DT-S09-C1",
+  "chuyenDe": "dien-trach",
+  "cung": "Tử Tức",
+  "sao": [
+   "Tham Lang"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Tham Lang ở Tử Tức, đối chiếu Điền Trạch: sách tả con có chí, có thể thành đạt nhưng cá tính mạnh, dễ khác quan điểm với cha mẹ. Nhà bạn vì thế hay sôi động, nhiều sở thích. Nên dành chỗ cho hoạt động riêng của con như nhạc cụ, thể thao để cá tính có chỗ phát huy thay vì va chạm.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «四子女» (\"贪狼庙旺二人，早有刑克\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tử Tức tr. 201, mục 13.3.9",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TU-THL-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-THL-01"
+  ]
+ },
+ {
+  "id": "DT-S09-C1-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Tử Tức",
+  "sao": [
+   "Tham Lang"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Tham Lang hãm ở Tử Tức chiếu về Điền Trạch: sách nói con nhỏ khó chăm, lớn lên khó dạy, cha mẹ cần nhiều kiên nhẫn. Nếp nhà dễ lỏng nếu thiếu quy tắc chung. Nên thống nhất giữa hai vợ chồng vài nguyên tắc về giờ giấc, tiêu vặt của con và giữ cho đều.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «四子女» (\"贪狼庙旺二人，早有刑克\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tử Tức tr. 201, mục 13.3.9",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TU-THL-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-THL-01"
+  ]
+ },
+ {
+  "id": "DT-S10-C1",
+  "chuyenDe": "dien-trach",
+  "cung": "Tử Tức",
+  "sao": [
+   "Cự Môn"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Cự Môn sáng ở Tử Tức, xung chiếu Điền Trạch: sách cho rằng con cái thường sớm rời nhà để đi học hoặc lập nghiệp xa. Ngôi nhà vì vậy dễ có giai đoạn vắng người. Nên tính trước công năng các phòng khi con đi xa, như giữ một phòng cho con về thăm hoặc cho thuê một phần.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «四子女» (\"巨门入庙二人，先难后易 / 加羊陀火铃子少\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tử Tức tr. 201, mục 13.3.10",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TU-CM-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-CM-01"
+  ]
+ },
+ {
+  "id": "DT-S10-C1-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Tử Tức",
+  "sao": [
+   "Cự Môn"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Cự Môn hãm ở Tử Tức, đối xung Điền Trạch: sách nói con lớn lên dễ bất đồng với cha mẹ và trong nhà cần chú ý hòa khí. Lời qua tiếng lại là điểm dễ vấp. Nên tập thói quen nói chuyện lúc cả hai đã bình tĩnh và tránh tranh luận trước mặt nhiều người.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «四子女» (\"巨门入庙二人，先难后易 / 加羊陀火铃子少\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tử Tức tr. 201, mục 13.3.10",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TU-CM-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-CM-01"
+  ]
+ },
+ {
+  "id": "DT-S11-C1",
+  "chuyenDe": "dien-trach",
+  "cung": "Tử Tức",
+  "sao": [
+   "Thiên Tướng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Thiên Tướng sáng ở Tử Tức chiếu Điền Trạch: sách tả con nên người khi không gặp Kình, Đà, Hỏa, Linh. Tướng là ấn tinh nên nếp nhà thường chỉn chu, coi trọng trách nhiệm. Nên giao cho con việc nhà vừa sức từ sớm, vì nét trách nhiệm này nảy nở tốt khi được tin tưởng.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «四子女» (\"天相无羊陀火铃同有二子成器\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tử Tức tr. 201–202, mục 13.3.11",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TU-TT-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-TT-01"
+  ]
+ },
+ {
+  "id": "DT-S11-C1-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Tử Tức",
+  "sao": [
+   "Thiên Tướng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Tướng hãm ở Tử Tức, xung Điền Trạch: Tân Biên ghi việc nuôi con thuận hơn khi cha mẹ đã ổn định, gặp sát tinh thì càng cần thời gian. Nhà bạn hợp được chuẩn bị kỹ trước những thay đổi lớn. Nên ổn định chỗ ở và tài chính trước, rồi mới tính chuyện mở rộng hay đổi nhà.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «四子女» (\"天相无羊陀火铃同有二子成器\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tử Tức tr. 201–202, mục 13.3.11",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TU-TT-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-TT-01"
+  ]
+ },
+ {
+  "id": "DT-S12-C1",
+  "chuyenDe": "dien-trach",
+  "cung": "Tử Tức",
+  "sao": [
+   "Thiên Lương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Thiên Lương sáng ở Tử Tức chiếu Điền Trạch: Lương là ấm tinh, sách tả con hiếu thảo, có người nổi trội. Nhà bạn hợp mô hình nhiều thế hệ che chở nhau. Nên tính sẵn chỗ cho ông bà hoặc cho con về ở chung khi cần, vì sự gắn kết này là điểm mạnh của bạn.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «四子女» (\"天梁庙旺 / 加羊陀火铃空劫早克\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tử Tức tr. 202, mục 13.3.12",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TU-TL-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-TL-01"
+  ]
+ },
+ {
+  "id": "DT-S12-C1-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Tử Tức",
+  "sao": [
+   "Thiên Lương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Lương hãm ở Tử Tức, đối Điền Trạch: sách nói con lớn lên mỗi người một nơi. Ngôi nhà về sau có thể rộng so với số người ở. Nên chọn nhà vừa đủ, dễ quản lý, và giữ một dịp sum họp định kỳ để cả nhà vẫn có điểm hẹn.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «四子女» (\"天梁庙旺 / 加羊陀火铃空劫早克\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tử Tức tr. 202, mục 13.3.12",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TU-TL-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-TL-01"
+  ]
+ },
+ {
+  "id": "DT-S13-C1",
+  "chuyenDe": "dien-trach",
+  "cung": "Tử Tức",
+  "sao": [
+   "Thất Sát"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Thất Sát sáng ở Tử Tức, xung chiếu Điền Trạch: sách tả con khá giả, có chí, nhưng bản chất sao là \"cô\" nên con sớm tự lập. Nhà bạn ít khi đông con cháu quây quần thường xuyên. Nên khuyến khích con tự quyết việc riêng và giữ ngôi nhà là nơi con muốn quay về.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «四子女» (\"七杀主孤 / 见羊陀火铃空劫\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tử Tức tr. 202, mục 13.3.13",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TU-TS-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-TS-01"
+  ]
+ },
+ {
+  "id": "DT-S13-C1-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Tử Tức",
+  "sao": [
+   "Thất Sát"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thất Sát hãm ở Tử Tức chiếu Điền Trạch: sách nói con có thể cá tính rất mạnh, khó dạy, cần nhiều tâm sức. Va chạm trong nhà dễ bùng lên khi cả hai bên cùng cứng. Nên cho con một không gian riêng và vài lựa chọn được tự quyết, đổi lại là những giới hạn rõ ràng.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «四子女» (\"七杀主孤 / 见羊陀火铃空劫\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tử Tức tr. 202, mục 13.3.13",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TU-TS-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-TS-01"
+  ]
+ },
+ {
+  "id": "DT-S14-C1",
+  "chuyenDe": "dien-trach",
+  "cung": "Tử Tức",
+  "sao": [
+   "Phá Quân"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Phá Quân sáng ở Tử Tức, đối xung Điền Trạch: sách tả con cương cường, sớm tự lập, thường ở xa cha mẹ. Nhà bạn hay có những đợt thay đổi lớn theo các mốc của con. Nên để sẵn khoản dự phòng cho việc sửa sang, cải tạo nhà khi con rời đi hoặc trở về.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «四子女» (\"破军入庙三人，刚强之子 / 无制见空劫火陀少子\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tử Tức tr. 202, mục 13.3.14",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TU-PQ-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-PQ-01"
+  ]
+ },
+ {
+  "id": "DT-S14-C1-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Tử Tức",
+  "sao": [
+   "Phá Quân"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Phá Quân hãm ở Tử Tức chiếu về Điền Trạch: sách nói quan hệ cha mẹ và con dễ căng thẳng, nhất là khi gặp Không Kiếp, Hỏa, Đà. Chuyện nhà cửa dễ bị kéo theo những quyết định vội vì con. Nên tách bạch quyết định nhà đất khỏi những lúc gia đình đang có mâu thuẫn.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «四子女» (\"破军入庙三人，刚强之子 / 无制见空劫火陀少子\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tử Tức tr. 202, mục 13.3.14",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TU-PQ-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-PQ-01"
+  ]
+ },
+ {
+  "id": "DT-S01-C2",
+  "chuyenDe": "dien-trach",
+  "cung": "Huynh Đệ",
+  "sao": [
+   "Tử Vi"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Tử Vi ở Huynh Đệ, cung tam hợp của Điền Trạch: sách tả anh chị em khá giả, có anh hoặc chị lớn để nương tựa. Trong chuyện nhà đất, bạn thường có người trong nhà đứng ra làm chỗ dựa hoặc góp ý. Nên tận dụng sự hỗ trợ này nhưng ghi rõ phần đóng góp của từng người khi mua chung.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Huynh Đệ mục 2.1; Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), mục 兄弟 (\"紫微有倚靠年长之兄\")",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "HUYNH-TV-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-TV-01"
+  ]
+ },
+ {
+  "id": "DT-S02-C2",
+  "chuyenDe": "dien-trach",
+  "cung": "Huynh Đệ",
+  "sao": [
+   "Thiên Cơ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Thiên Cơ sáng ở Huynh Đệ chiếu Điền Trạch: anh chị em biết tính toán, sách nói Cơ Lương thì khá giả và thuận hòa. Họ hay là người bàn mưu tính kế giúp bạn về chuyện nhà. Nên hỏi ý anh chị em khi so sánh các phương án mua, thuê hay sửa nhà.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Huynh Đệ mục 2.6; Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), mục 兄弟 (\"天机庙旺 / 与巨门同…相背不一心\")",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "HUYNH-TCO-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-TCO-01"
+  ]
+ },
+ {
+  "id": "DT-S02-C2-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Huynh Đệ",
+  "sao": [
+   "Thiên Cơ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Cơ hãm ở Huynh Đệ, tam hợp Điền Trạch: sách nói anh chị em khó đồng lòng, gặp sát tinh thì dễ va chạm. Chuyện nhà đất chung dễ kéo dài vì mỗi người một ý. Nên chốt phương án bằng văn bản sau mỗi lần bàn, tránh để thỏa thuận miệng.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Huynh Đệ mục 2.6; Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), mục 兄弟 (\"天机庙旺 / 与巨门同…相背不一心\")",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "HUYNH-TCO-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-TCO-01"
+  ]
+ },
+ {
+  "id": "DT-S03-C2",
+  "chuyenDe": "dien-trach",
+  "cung": "Huynh Đệ",
+  "sao": [
+   "Thái Dương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Thái Dương sáng ở Huynh Đệ chiếu về Điền Trạch: sách tả anh chị em có vị thế, nhiều người hiển đạt, nhất là Nhật Lương ở Mão. Chuyện nhà cửa của bạn dễ được anh chị em giúp về quan hệ, thông tin. Nên giữ vai trò rõ ràng: nhờ tư vấn thì được, còn góp vốn chung thì cần giấy tờ.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Huynh Đệ mục 2.5; Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), mục 兄弟 (\"太阳庙旺 / 陷地，不和欠力\")",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "HUYNH-TDU-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-TDU-01"
+  ]
+ },
+ {
+  "id": "DT-S03-C2-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Huynh Đệ",
+  "sao": [
+   "Thái Dương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thái Dương hãm ở Huynh Đệ, cung tam hợp Điền Trạch: sách nói anh chị em khó giúp được nhau, dễ không hòa, gặp sát thì càng giảm. Bạn hợp tự lo chuyện nhà đất bằng sức mình hơn là trông vào phần chia. Nên tích lũy độc lập và tránh trộn lẫn tài sản với anh em.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Huynh Đệ mục 2.5; Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), mục 兄弟 (\"太阳庙旺 / 陷地，不和欠力\")",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "HUYNH-TDU-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-TDU-01"
+  ]
+ },
+ {
+  "id": "DT-S04-C2",
+  "chuyenDe": "dien-trach",
+  "cung": "Huynh Đệ",
+  "sao": [
+   "Vũ Khúc"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Vũ Khúc sáng ở Huynh Đệ chiếu Điền Trạch: sách tả anh chị em khá giả nhưng không hợp tính, Vũ Phủ thì có của, có vị thế. Khi bàn chuyện nhà đất, anh chị em thường thực tế và tính kỹ. Nên đưa mọi thỏa thuận về tiền ra con số rõ ràng ngay từ đầu, vì ai cũng coi trọng sòng phẳng.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Huynh Đệ mục 2.4; Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), mục 兄弟 (\"武曲庙旺有二人，不合 / 破军七杀同…不和睦\")",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "HUYNH-VK-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-VK-01"
+  ]
+ },
+ {
+  "id": "DT-S04-C2-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Huynh Đệ",
+  "sao": [
+   "Vũ Khúc"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Vũ Khúc hãm ở Huynh Đệ, tam hợp Điền Trạch: sách nói anh chị em dễ va chạm, nên sống riêng, gặp Xương Khúc, Tả Hữu thì khá hơn. Ở chung nhà hoặc đứng chung sổ với anh em dễ sinh bất đồng. Nên ưu tiên tách sổ, tách chỗ ở ngay từ đầu.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Huynh Đệ mục 2.4; Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), mục 兄弟 (\"武曲庙旺有二人，不合 / 破军七杀同…不和睦\")",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "HUYNH-VK-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-VK-01"
+  ]
+ },
+ {
+  "id": "DT-S05-C2",
+  "chuyenDe": "dien-trach",
+  "cung": "Huynh Đệ",
+  "sao": [
+   "Thiên Đồng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Thiên Đồng ở Huynh Đệ chiếu về Điền Trạch: sách tả anh chị em thuận hòa, Đồng Nguyệt ở Tý thì khá giả. Nhà bạn hay là nơi anh chị em tụ họp, ghé chơi. Nên tính một phòng khách hoặc chỗ ngủ dự phòng, vì sự qua lại này là nguồn vui của cả nhà.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Huynh Đệ mục 2.3; Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), mục 兄弟 (\"天同入庙 / 陷地…少宜分居不和\")",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "HUYNH-TD-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-TD-01"
+  ]
+ },
+ {
+  "id": "DT-S05-C2-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Huynh Đệ",
+  "sao": [
+   "Thiên Đồng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Đồng hãm ở Huynh Đệ, cung tam hợp Điền Trạch: sách nói anh chị em dễ xa cách, Đồng Cự thì trong nhà thiếu hòa khí, ở riêng mới êm. Ở chung lâu dài với anh em không hợp với bạn. Nên chọn ở gần để còn giúp nhau nhưng mỗi nhà một cửa.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Huynh Đệ mục 2.3; Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), mục 兄弟 (\"天同入庙 / 陷地…少宜分居不和\")",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "HUYNH-TD-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-TD-01"
+  ]
+ },
+ {
+  "id": "DT-S06-C2",
+  "chuyenDe": "dien-trach",
+  "cung": "Huynh Đệ",
+  "sao": [
+   "Liêm Trinh"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Liêm Trinh sáng ở Huynh Đệ chiếu Điền Trạch: sách tả tình cảm anh chị em ổn, Liêm Tướng thì đều có vị thế. Anh chị em thường giữ nguyên tắc trong chuyện của chung. Nên cùng nhau đặt và tôn trọng quy tắc khi chia việc chăm lo nhà cha mẹ.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Huynh Đệ mục 2.2; Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), mục 兄弟 (\"廉贞入庙二人 / 贪狼同招怨\")",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "HUYNH-LT-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-LT-01"
+  ]
+ },
+ {
+  "id": "DT-S06-C2-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Huynh Đệ",
+  "sao": [
+   "Liêm Trinh"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Liêm Trinh hãm ở Huynh Đệ, tam hợp Điền Trạch: sách nói anh chị em dễ bất đồng, mỗi người một ngả, nhất là khi gặp Tham Lang, Thất Sát, Phá Quân. Tài sản chung là điểm dễ vướng. Nên chủ động giữ liên lạc và minh bạch giấy tờ khi có nhà đất thừa hưởng chung.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Huynh Đệ mục 2.2; Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), mục 兄弟 (\"廉贞入庙二人 / 贪狼同招怨\")",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "HUYNH-LT-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-LT-01"
+  ]
+ },
+ {
+  "id": "DT-S07-C2",
+  "chuyenDe": "dien-trach",
+  "cung": "Huynh Đệ",
+  "sao": [
+   "Thiên Phủ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Thiên Phủ ở Huynh Đệ chiếu về Điền Trạch: sách tả anh chị em có của, biết giữ gìn, nhưng gặp sát tinh thì trong nhà dễ thiếu hòa khí. Phủ là kho, nên tài sản gia đình thường được anh chị em cùng trông nom. Nên lập một sổ chung ghi thu chi cho nhà đất của cha mẹ để ai cũng nắm được.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Huynh Đệ mục 2.7; Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), mục 兄弟 (\"天府有五人 / 见羊陀火铃空劫只二人\")",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "HUYNH-TP-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-TP-01"
+  ]
+ },
+ {
+  "id": "DT-S08-C2",
+  "chuyenDe": "dien-trach",
+  "cung": "Huynh Đệ",
+  "sao": [
+   "Thái Âm"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Thái Âm sáng ở Huynh Đệ, tam hợp Điền Trạch: Thái Âm là sao chủ điền trạch, sách tả anh chị em khá giả, tình cảm êm. Anh chị em có thể là người giúp bạn chọn nhà, chăm chút nơi ở. Nên rủ họ cùng đi xem nhà, vì con mắt tinh tế của họ là một lợi thế.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Huynh Đệ mục 2.8; Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), mục 兄弟 (\"太阴入庙 / 见羊陀火铃空劫…宜分居\")",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "HUYNH-TA-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-TA-01"
+  ]
+ },
+ {
+  "id": "DT-S08-C2-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Huynh Đệ",
+  "sao": [
+   "Thái Âm"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thái Âm hãm ở Huynh Đệ chiếu Điền Trạch: sách nói anh chị em khó sống gần nhau lâu, gặp sát tinh thì nên ở riêng. Bạn sẽ thấy dễ chịu hơn khi mỗi nhà có không gian riêng. Nên tránh mua chung một căn để ở cùng anh em; nếu cần giúp thì giúp bằng tiền có hạn mức rõ.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Huynh Đệ mục 2.8; Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), mục 兄弟 (\"太阴入庙 / 见羊陀火铃空劫…宜分居\")",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "HUYNH-TA-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-TA-01"
+  ]
+ },
+ {
+  "id": "DT-S09-C2",
+  "chuyenDe": "dien-trach",
+  "cung": "Huynh Đệ",
+  "sao": [
+   "Tham Lang"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Tham Lang sáng ở Huynh Đệ, cung tam hợp Điền Trạch: sách tả anh chị em thường mỗi người một nơi, tự lập vất vả rồi mới khá. Mỗi nhà một hướng nên ít khi có tài sản chung lớn. Nên giữ liên lạc qua những dịp cố định và để chuyện nhà đất ai nấy tự lo.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Huynh Đệ mục 2.9; Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), mục 兄弟 (\"贪狼庙旺二人 / 陷地宜各胞\")",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "HUYNH-THL-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-THL-01"
+  ]
+ },
+ {
+  "id": "DT-S09-C2-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Huynh Đệ",
+  "sao": [
+   "Tham Lang"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Tham Lang hãm ở Huynh Đệ chiếu về Điền Trạch: sách nói anh chị em dễ bất hòa, gặp sát thì càng ít gắn bó. Chuyện vay mượn giữa anh em để mua nhà dễ thành gánh nặng tình cảm. Nên tự đặt mức cho vay tối đa bạn chấp nhận không đòi lại; vượt mức thì từ chối nhẹ nhàng.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Huynh Đệ mục 2.9; Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), mục 兄弟 (\"贪狼庙旺二人 / 陷地宜各胞\")",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "HUYNH-THL-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-THL-01"
+  ]
+ },
+ {
+  "id": "DT-S10-C2",
+  "chuyenDe": "dien-trach",
+  "cung": "Huynh Đệ",
+  "sao": [
+   "Cự Môn"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Cự Môn sáng ở Huynh Đệ, tam hợp Điền Trạch: sách tả anh chị em hay bất đồng ý kiến, nhưng Nhật Cự ở Dần có Tả Hữu, Xương Khúc thì khá giả. Khi bàn chuyện nhà, anh chị em tranh luận nhiều mà vẫn ra được quyết định. Nên cử một người ghi lại và chốt kết luận cuối mỗi buổi bàn.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Huynh Đệ mục 2.10; Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), mục 兄弟 (\"巨门庙旺二人 / 陷地，各胞有，宜分居\")",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "HUYNH-CM-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-CM-01"
+  ]
+ },
+ {
+  "id": "DT-S10-C2-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Huynh Đệ",
+  "sao": [
+   "Cự Môn"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Cự Môn hãm ở Huynh Đệ chiếu Điền Trạch: sách nói anh em nên ở riêng, lời ăn tiếng nói dễ gây hiểu lầm. Nhà đất chung dễ thành chuyện thị phi nếu bàn qua người trung gian. Nên trao đổi trực tiếp, có văn bản, và hạn chế bàn chuyện tài sản qua tin nhắn nhóm.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Huynh Đệ mục 2.10; Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), mục 兄弟 (\"巨门庙旺二人 / 陷地，各胞有，宜分居\")",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "HUYNH-CM-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-CM-01"
+  ]
+ },
+ {
+  "id": "DT-S11-C2",
+  "chuyenDe": "dien-trach",
+  "cung": "Huynh Đệ",
+  "sao": [
+   "Thiên Tướng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Thiên Tướng sáng ở Huynh Đệ chiếu về Điền Trạch: sách tả anh chị em tương đối hòa, Tử Tướng, Liêm Tướng thì đều có vị thế. Anh chị em hay đứng ra phân xử công bằng khi trong nhà có việc. Nên mời người anh chị em đáng tin làm người chứng khi có thỏa thuận nhà đất trong gia đình.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Huynh Đệ mục 2.11; Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), mục 兄弟 (\"天相和平有二三人 / 见羊陀火铃空劫孤单\")",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "HUYNH-TT-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-TT-01"
+  ]
+ },
+ {
+  "id": "DT-S11-C2-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Huynh Đệ",
+  "sao": [
+   "Thiên Tướng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Tướng hãm ở Huynh Đệ, tam hợp Điền Trạch: sách nói anh chị em ít gắn bó, gặp sát tinh thì càng thưa. Bạn chủ yếu tự xoay xở chuyện nhà. Nên chọn người tư vấn có chuyên môn bên ngoài như luật sư, môi giới uy tín thay vì chờ người nhà.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Huynh Đệ mục 2.11; Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), mục 兄弟 (\"天相和平有二三人 / 见羊陀火铃空劫孤单\")",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "HUYNH-TT-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-TT-01"
+  ]
+ },
+ {
+  "id": "DT-S12-C2",
+  "chuyenDe": "dien-trach",
+  "cung": "Huynh Đệ",
+  "sao": [
+   "Thiên Lương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Thiên Lương sáng ở Huynh Đệ chiếu Điền Trạch: sách tả anh chị em khá giả và thuận hòa. Lương là ấm tinh nên có người anh chị em hay che chở, giúp bạn lúc cần chỗ ở. Nên đáp lại sự giúp đỡ này bằng việc góp phần chăm lo nhà cha mẹ.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Huynh Đệ mục 2.12; Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), mục 兄弟 (\"天梁庙旺二人和顺 / 陷宫…见羊陀火铃空劫少\")",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "HUYNH-TL-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-TL-01"
+  ]
+ },
+ {
+  "id": "DT-S12-C2-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Huynh Đệ",
+  "sao": [
+   "Thiên Lương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Lương hãm ở Huynh Đệ, tam hợp Điền Trạch: sách nói anh chị em sớm xa nhau, có người sống phóng khoáng, hay đi xa. Nhà cha mẹ có thể chủ yếu do bạn trông nom. Nên bàn trước với anh chị em về phần chi phí và công sức này để không ai thiệt thòi ngầm.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Huynh Đệ mục 2.12; Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), mục 兄弟 (\"天梁庙旺二人和顺 / 陷宫…见羊陀火铃空劫少\")",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "HUYNH-TL-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-TL-01"
+  ]
+ },
+ {
+  "id": "DT-S13-C2",
+  "chuyenDe": "dien-trach",
+  "cung": "Huynh Đệ",
+  "sao": [
+   "Thất Sát"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Thất Sát sáng ở Huynh Đệ chiếu về Điền Trạch: sách nói sao này chủ \"cô\", anh chị em độc lập, ở Dần Thân thì khá giả nhưng ít hòa. Mỗi người tự dựng nhà riêng là chuyện tự nhiên. Nên giữ ranh giới rõ trong chuyện tiền nhà; nếu cung có thêm Xương Khúc, Tả Hữu thì mới tính hợp tác.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Huynh Đệ mục 2.13; Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), mục 兄弟 (\"七杀主孤克…加昌曲左右更好\")",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "HUYNH-TS-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-TS-01"
+  ]
+ },
+ {
+  "id": "DT-S13-C2-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Huynh Đệ",
+  "sao": [
+   "Thất Sát"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thất Sát hãm ở Huynh Đệ, tam hợp Điền Trạch: sách nói anh chị em rất ít gắn bó. Bạn nên coi chuyện nhà đất là việc tự lập từ đầu. Nên xây mạng lưới hỗ trợ ngoài gia đình, như bạn bè, hàng xóm tin cậy, cho những lúc cần người giúp chuyển nhà, trông nhà.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Huynh Đệ mục 2.13; Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), mục 兄弟 (\"七杀主孤克…加昌曲左右更好\")",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "HUYNH-TS-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-TS-01"
+  ]
+ },
+ {
+  "id": "DT-S14-C2",
+  "chuyenDe": "dien-trach",
+  "cung": "Huynh Đệ",
+  "sao": [
+   "Phá Quân"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Phá Quân sáng ở Huynh Đệ chiếu Điền Trạch: sách tả anh chị em khá giả nhưng ít hòa, sớm xa nhau; có Xương Khúc, Tả Hữu thì hòa thuận hơn. Nhà cũ của gia đình dễ được bán hoặc cải tạo theo ý số đông. Nên tham gia từ đầu vào các quyết định này thay vì chỉ nghe kết quả.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Huynh Đệ mục 2.14; Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), mục 兄弟 (\"破军入庙三人…加昌曲左右有三人和睦 / 陷地加杀孤单\")",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "HUYNH-PQ-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-PQ-01"
+  ]
+ },
+ {
+  "id": "DT-S14-C2-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Huynh Đệ",
+  "sao": [
+   "Phá Quân"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Phá Quân hãm ở Huynh Đệ, tam hợp Điền Trạch: sách nói anh chị em khó sống gần nhau, Vũ Phá, Liêm Phá dễ xích mích. Góp vốn chung mua nhà với anh em là phương án nhiều rủi ro với bạn. Nên tách tài sản; nếu đã chung thì lập văn bản chia phần ngay.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Huynh Đệ mục 2.14; Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), mục 兄弟 (\"破军入庙三人…加昌曲左右有三人和睦 / 陷地加杀孤单\")",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "HUYNH-PQ-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-PQ-01"
+  ]
+ },
+ {
+  "id": "DT-S01-C3",
+  "chuyenDe": "dien-trach",
+  "cung": "Tật Ách",
+  "sao": [
+   "Tử Vi"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Tử Vi ở Tật Ách, cung tam hợp của Điền Trạch, là sao cứu giải: sách tả thể trạng khá, có việc thì dễ gặp người giúp. Sức khỏe ổn giúp bạn đủ sức tự lo chuyện nhà cửa. Nên giữ nhịp sinh hoạt đều trong nhà, vì nền thể trạng tốt cần được duy trì.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «六疾厄» (\"紫微灾少\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tật Ách tr. 181, mục 11.1.1",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAT-TV-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-TV-01"
+  ]
+ },
+ {
+  "id": "DT-S02-C3",
+  "chuyenDe": "dien-trach",
+  "cung": "Tật Ách",
+  "sao": [
+   "Thiên Cơ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Thiên Cơ sáng ở Tật Ách chiếu về Điền Trạch: sách nói thời nhỏ hay ốm vặt, nên chú ý da, gân cơ, khớp. Nơi ở khô ráo, thoáng hợp với bạn hơn chỗ ẩm thấp. Nên để ý độ ẩm phòng ngủ và có chỗ vận động nhẹ ngay tại nhà.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «六疾厄» (\"天机襁褓多灾 / 加羊火陷宫有目疾，四肢无力\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tật Ách tr. 183, mục 11.2.5",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAT-TCO-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-TCO-01"
+  ]
+ },
+ {
+  "id": "DT-S02-C3-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Tật Ách",
+  "sao": [
+   "Thiên Cơ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Cơ hãm ở Tật Ách, tam hợp Điền Trạch: sách lưu ý vùng đầu mặt, mắt và sức tay chân, nhất là khi gặp Kình, Đà, Hỏa. Nhà nhiều bậc, đồ đạc lộn xộn dễ gây va vấp. Nên giữ lối đi trong nhà gọn, đủ sáng và đặt đồ nặng ở tầm thấp.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «六疾厄» (\"天机襁褓多灾 / 加羊火陷宫有目疾，四肢无力\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tật Ách tr. 183, mục 11.2.5",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAT-TCO-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-TCO-01"
+  ]
+ },
+ {
+  "id": "DT-S03-C3",
+  "chuyenDe": "dien-trach",
+  "cung": "Tật Ách",
+  "sao": [
+   "Thái Dương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Thái Dương ở Tật Ách chiếu Điền Trạch: sách nói nên chú ý vùng đầu, huyết áp, mạch máu. Nhà quá nóng, thiếu thông gió dễ làm bạn mệt. Nên ưu tiên nhà thoáng, có che nắng hướng tây và đo huyết áp định kỳ.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «六疾厄» (\"太阳头风 / 陷宫亦主目疾欠光明\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tật Ách tr. 183, mục 11.2.4",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAT-TDU-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-TDU-01"
+  ]
+ },
+ {
+  "id": "DT-S03-C3-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Tật Ách",
+  "sao": [
+   "Thái Dương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thái Dương hãm ở Tật Ách, tam hợp Điền Trạch: sách lưu ý về mắt, nhất là khi gặp Thiên Riêu, Đà La, Hóa Kỵ. Ánh sáng trong nhà ảnh hưởng nhiều đến bạn. Nên bố trí đèn đọc đủ sáng, hạn chế màn hình buổi tối và khám mắt định kỳ.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «六疾厄» (\"太阳头风 / 陷宫亦主目疾欠光明\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tật Ách tr. 183, mục 11.2.4",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAT-TDU-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-TDU-01"
+  ]
+ },
+ {
+  "id": "DT-S04-C3",
+  "chuyenDe": "dien-trach",
+  "cung": "Tật Ách",
+  "sao": [
+   "Vũ Khúc"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Vũ Khúc sáng ở Tật Ách chiếu về Điền Trạch: sách tả thể trạng khá, chỉ nên chú ý da, tay chân, thời nhỏ hay va chạm nhẹ. Bạn hay tự tay sửa sang, khuân vác trong nhà. Nên trang bị găng tay, dụng cụ bảo hộ cơ bản cho những việc này.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «六疾厄» (\"武曲襁褓灾迍手足头面有伤 / 破军…武曲同目视疾\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tật Ách tr. 182, mục 11.2.3",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAT-VK-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-VK-01"
+  ]
+ },
+ {
+  "id": "DT-S04-C3-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Tật Ách",
+  "sao": [
+   "Vũ Khúc"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Vũ Khúc hãm ở Tật Ách, tam hợp Điền Trạch: sách lưu ý về mắt khi Vũ Phá ở Tỵ, Hợi, còn Vũ Sát thì chú ý tiêu hóa. Lúc bận chuyện nhà cửa, bạn dễ bỏ bữa, thức khuya. Nên giữ giờ ăn cố định, kể cả trong những đợt chuyển nhà hay sửa nhà.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «六疾厄» (\"武曲襁褓灾迍手足头面有伤 / 破军…武曲同目视疾\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tật Ách tr. 182, mục 11.2.3",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAT-VK-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-VK-01"
+  ]
+ },
+ {
+  "id": "DT-S05-C3",
+  "chuyenDe": "dien-trach",
+  "cung": "Tật Ách",
+  "sao": [
+   "Thiên Đồng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Thiên Đồng sáng ở Tật Ách chiếu Điền Trạch: sách tả ít bệnh, xu hướng chung nên chú ý tiêu hóa. Bạn hợp một căn bếp gọn để tự nấu. Nên duy trì thói quen ăn ở nhà nhiều hơn ăn ngoài.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «六疾厄» (\"天同入庙灾少 / 巨门同心气疾\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tật Ách tr. 182, mục 11.2.2",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAT-TD-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-TD-01"
+  ]
+ },
+ {
+  "id": "DT-S05-C3-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Tật Ách",
+  "sao": [
+   "Thiên Đồng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Đồng hãm ở Tật Ách, tam hợp Điền Trạch: sách lưu ý dạ dày, ruột, gan, còn Đồng Cự thì chú ý cảm xúc. Không khí căng thẳng trong nhà dễ ảnh hưởng đến bạn qua ăn uống, giấc ngủ. Nên giữ bữa cơm nhà là lúc thư giãn, không bàn chuyện nặng.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «六疾厄» (\"天同入庙灾少 / 巨门同心气疾\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tật Ách tr. 182, mục 11.2.2",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAT-TD-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-TD-01"
+  ]
+ },
+ {
+  "id": "DT-S06-C3",
+  "chuyenDe": "dien-trach",
+  "cung": "Tật Ách",
+  "sao": [
+   "Liêm Trinh"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Liêm Trinh sáng ở Tật Ách chiếu về Điền Trạch: sách tả thể trạng bình hòa khi gặp cát tinh, xu hướng chung nên chú ý lưng, tay chân, da. Ghế ngồi và giường ngủ là chỗ đáng đầu tư với bạn. Nên chọn nệm, bàn ghế đúng tư thế thay vì chạy theo kiểu dáng.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «六疾厄» (\"廉贞…腰足之疾，入庙加吉和平 / 遇贪狼同，陷地眼疾\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tật Ách tr. 182, mục 11.2.1",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAT-LT-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-LT-01"
+  ]
+ },
+ {
+  "id": "DT-S06-C3-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Tật Ách",
+  "sao": [
+   "Liêm Trinh"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Liêm Trinh hãm ở Tật Ách, tam hợp Điền Trạch: sách lưu ý về mắt và nhịp nghỉ ngơi, nhất là Liêm Tham ở Tỵ, Hợi. Bạn dễ làm việc khuya ngay trong phòng ngủ. Nên tách góc làm việc khỏi giường và đặt giờ tắt đèn cố định.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «六疾厄» (\"廉贞…腰足之疾，入庙加吉和平 / 遇贪狼同，陷地眼疾\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tật Ách tr. 182, mục 11.2.1",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAT-LT-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-LT-01"
+  ]
+ },
+ {
+  "id": "DT-S07-C3",
+  "chuyenDe": "dien-trach",
+  "cung": "Tật Ách",
+  "sao": [
+   "Thiên Phủ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Thiên Phủ ở Tật Ách chiếu Điền Trạch là sao cứu giải: sách nói ít bệnh, có bệnh thì có cách chữa, gặp sát tinh thì sức đề kháng giảm. Bạn có nền sức khỏe đủ để lo việc nhà đều đặn. Nên giữ tủ thuốc gia đình và lịch khám tổng quát hằng năm để nền này bền.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «六疾厄» (\"天府灾少临灾有救\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tật Ách tr. 181, mục 11.1.1",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAT-TP-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-TP-01"
+  ]
+ },
+ {
+  "id": "DT-S08-C3",
+  "chuyenDe": "dien-trach",
+  "cung": "Tật Ách",
+  "sao": [
+   "Thái Âm"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Thái Âm sáng ở Tật Ách, tam hợp Điền Trạch: sách tả ít bệnh, chỉ nên chú ý bụng, tiêu hóa. Thái Âm cũng là sao chủ nhà cửa, nên sự yên tĩnh của nơi ở có ích cho bạn. Nên giữ phòng ngủ tối, mát, ít tiếng ồn.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «六疾厄» (\"太阴庙旺无灾 / 陷地灾多主劳伤之症\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tật Ách tr. 183, mục 11.2.6",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAT-TA-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-TA-01"
+  ]
+ },
+ {
+  "id": "DT-S08-C3-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Tật Ách",
+  "sao": [
+   "Thái Âm"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thái Âm hãm ở Tật Ách chiếu về Điền Trạch: sách nói dễ mệt vì làm quá sức và nên chú ý hô hấp. Bụi và không khí bí trong nhà là điều bạn nên để tâm. Nên lau dọn thường xuyên, mở cửa thông gió và tránh ôm hết việc nhà một mình.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «六疾厄» (\"太阴庙旺无灾 / 陷地灾多主劳伤之症\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tật Ách tr. 183, mục 11.2.6",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAT-TA-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-TA-01"
+  ]
+ },
+ {
+  "id": "DT-S09-C3",
+  "chuyenDe": "dien-trach",
+  "cung": "Tật Ách",
+  "sao": [
+   "Tham Lang"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Tham Lang sáng ở Tật Ách, tam hợp Điền Trạch: sách nói Tham Lang đắc đơn thủ ở Dần, Thân nên chú ý chân, còn Vũ Tham miếu thì ít bệnh. Nhà nhiều cầu thang hoặc sàn trơn không hợp với bạn. Nên dùng thảm chống trơn và dép mềm trong nhà.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «六疾厄» (\"武曲…贪狼同庙旺无疾\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tật Ách tr. 183–184, mục 11.2.7",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAT-THL-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-THL-01"
+  ]
+ },
+ {
+  "id": "DT-S09-C3-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Tật Ách",
+  "sao": [
+   "Tham Lang"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Tham Lang hãm ở Tật Ách chiếu Điền Trạch: sách nhắc nên giữ lối sống điều độ, chú ý gan. Nhà bạn dễ thành nơi tụ tập ăn uống khuya. Nên đặt giờ kết thúc cho những buổi tiếp khách tại nhà.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «六疾厄» (\"武曲…贪狼同庙旺无疾\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tật Ách tr. 183–184, mục 11.2.7",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAT-THL-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-THL-01"
+  ]
+ },
+ {
+  "id": "DT-S10-C3",
+  "chuyenDe": "dien-trach",
+  "cung": "Tật Ách",
+  "sao": [
+   "Cự Môn"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Cự Môn sáng ở Tật Ách, tam hợp Điền Trạch: sách nói thời trẻ da hay mụn nhọt và nên chú ý vùng bụng dưới. Nơi ở ẩm, nóng dễ làm da bạn khó chịu. Nên giữ chăn gối sạch, thay định kỳ và để phòng ngủ thoáng.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «六疾厄» (\"巨门少年脓血之厄 / 加羊火酒色之疾，加忌有耳目之忧\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tật Ách tr. 184, mục 11.2.8",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAT-CM-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-CM-01"
+  ]
+ },
+ {
+  "id": "DT-S10-C3-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Tật Ách",
+  "sao": [
+   "Cự Môn"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Cự Môn hãm ở Tật Ách chiếu về Điền Trạch: sách lưu ý khi gặp Kình Dương, Hỏa Tinh thì nên điều độ rượu bia, gặp Hóa Kỵ thì chú ý tai, mắt. Không gian ồn ào ảnh hưởng đến bạn rõ hơn người khác. Nên chọn phòng ngủ xa đường lớn hoặc dùng rèm, kính cách âm.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «六疾厄» (\"巨门少年脓血之厄 / 加羊火酒色之疾，加忌有耳目之忧\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tật Ách tr. 184, mục 11.2.8",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAT-CM-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-CM-01"
+  ]
+ },
+ {
+  "id": "DT-S11-C3",
+  "chuyenDe": "dien-trach",
+  "cung": "Tật Ách",
+  "sao": [
+   "Thiên Tướng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Thiên Tướng sáng ở Tật Ách chiếu Điền Trạch: sách tả ít bệnh, xu hướng chung chú ý đầu, mặt, da. Bạn hợp nếp sinh hoạt sạch sẽ, ngăn nắp. Nên giữ phòng tắm, khu vệ sinh khô thoáng, vì đó là nơi ảnh hưởng đến da nhiều nhất.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «六疾厄» (\"天相灾少 / 面皮黄肿血气之疾\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tật Ách tr. 184, mục 11.2.9",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAT-TT-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-TT-01"
+  ]
+ },
+ {
+  "id": "DT-S11-C3-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Tật Ách",
+  "sao": [
+   "Thiên Tướng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Tướng hãm ở Tật Ách, tam hợp Điền Trạch: sách lưu ý khí huyết và da, sắc mặt dễ kém tươi. Nhà thiếu ánh nắng tự nhiên dễ làm bạn uể oải. Nên mở rèm buổi sáng và dành thời gian ra ban công hoặc sân.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «六疾厄» (\"天相灾少 / 面皮黄肿血气之疾\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tật Ách tr. 184, mục 11.2.9",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAT-TT-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-TT-01"
+  ]
+ },
+ {
+  "id": "DT-S12-C3",
+  "chuyenDe": "dien-trach",
+  "cung": "Tật Ách",
+  "sao": [
+   "Thiên Lương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Thiên Lương sáng ở Tật Ách chiếu về Điền Trạch là sao cứu giải: sách nói có bệnh dễ qua, đơn thủ ở Tý, Sửu chỉ hay cảm nóng lạnh nhẹ. Nhiệt độ trong nhà thay đổi đột ngột là điều bạn nên tránh. Nên để điều hòa ở mức vừa phải và chuẩn bị áo ấm khi trời chuyển mùa.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «六疾厄» (\"天同…天梁同加四杀心气疾\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tật Ách tr. 184, mục 11.2.10",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAT-TL-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-TL-01"
+  ]
+ },
+ {
+  "id": "DT-S12-C3-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Tật Ách",
+  "sao": [
+   "Thiên Lương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Lương hãm ở Tật Ách, tam hợp Điền Trạch: sách nói bệnh dễ kéo dài, nên chữa dứt điểm và chú ý tỳ vị. Bạn hay để mệt vặt dai dẳng vì bận việc nhà. Nên đi khám sớm khi thấy mệt kéo dài và nhờ người nhà chia bớt việc.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «六疾厄» (\"天同…天梁同加四杀心气疾\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tật Ách tr. 184, mục 11.2.10",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAT-TL-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-TL-01"
+  ]
+ },
+ {
+  "id": "DT-S13-C3",
+  "chuyenDe": "dien-trach",
+  "cung": "Tật Ách",
+  "sao": [
+   "Thất Sát"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Thất Sát ở Tật Ách chiếu Điền Trạch: sách nói thời nhỏ cần chăm sóc kỹ, lớn lên chú ý vùng hậu môn, trực tràng. Thói quen ngồi lâu là điều nên hạn chế. Nên đặt nhắc đứng dậy vận động mỗi giờ khi làm việc tại nhà.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «六疾厄» (\"七杀幼年多灾，长主痔疾\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tật Ách tr. 184, mục 11.2.11",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAT-TS-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-TS-01"
+  ]
+ },
+ {
+  "id": "DT-S13-C3-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Tật Ách",
+  "sao": [
+   "Thất Sát"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thất Sát hãm ở Tật Ách, tam hợp Điền Trạch: sách lưu ý tiêu hóa, tay chân và khuyên khám tổng quát định kỳ khi gặp Hao, Hóa Kỵ. Bạn dễ tự làm việc nặng trong nhà cho nhanh. Nên thuê người hoặc nhờ trợ giúp với những việc khuân vác, leo trèo.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «六疾厄» (\"七杀幼年多灾，长主痔疾\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tật Ách tr. 184, mục 11.2.11",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAT-TS-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-TS-01"
+  ]
+ },
+ {
+  "id": "DT-S14-C3",
+  "chuyenDe": "dien-trach",
+  "cung": "Tật Ách",
+  "sao": [
+   "Phá Quân"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc",
+    "Bình"
+   ]
+  },
+  "noiDung": "Phá Quân sáng ở Tật Ách chiếu về Điền Trạch: sách tả cơ địa \"nóng\", thời nhỏ da hay mẩn ngứa, Tử Phá thì ít bệnh. Nhà bí, nóng dễ làm bạn bứt rứt. Nên chọn chăn ga, vật liệu thoáng mát và đặt vài chậu cây xanh trong nhà.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «六疾厄» (\"破军幼年疮癞…紫微同灾少 / 武曲同目视疾\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tật Ách tr. 184–185, mục 11.2.12",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAT-PQ-01",
+   "DIEN-YN-04",
+   "CHUNG-CT-PQ-01"
+  ]
+ },
+ {
+  "id": "DT-S14-C3-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Tật Ách",
+  "sao": [
+   "Phá Quân"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Phá Quân hãm ở Tật Ách, tam hợp Điền Trạch: sách lưu ý dễ căng thẳng, nóng nảy khi gặp Kình, Đà, Hình, Kỵ. Ngôi nhà nên là nơi bạn xả áp lực chứ không thêm áp lực. Nên giữ một góc yên tĩnh để nghỉ và tránh dồn việc sửa nhà lớn vào lúc công việc đang căng.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «六疾厄» (\"破军幼年疮癞…紫微同灾少 / 武曲同目视疾\"); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang), cung Tật Ách tr. 184–185, mục 11.2.12",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "TAT-PQ-02",
+   "DIEN-YN-04",
+   "CHUNG-CT-PQ-01"
+  ]
+ },
+ {
+  "id": "DT-S01-TOT",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Tử Vi"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Tử Vi sáng ở Điền Trạch: sách nói nhà đất thịnh, có khả năng tự tậu và mở rộng, gặp Lộc Tồn, Hóa Lộc càng thuận. Bạn thường muốn ngôi nhà có vị thế, chỉn chu. Nên lên kế hoạch nhà đất theo từng chặng vài năm, mỗi chặng một mục tiêu rõ.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"紫微茂盛自置旺相\"); Tư liệu web: WD7 (tracuulasotuvi.com, Cung Điền Trạch); Tư liệu web: WD13 (cohoc.vn, Luận cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-TV-01",
+   "CHUNG-CT-TV-01"
+  ]
+ },
+ {
+  "id": "DT-S01-BINH",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Tử Vi"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Tử Vi bình hòa ở Điền Trạch: nhà đất có lúc tậu được, có lúc phải chuyển nhượng, nhất là khi gặp sát tinh, Không Kiếp. Bạn vẫn có ý chí tạo dựng nhưng hợp nhịp chậm. Nên tích lũy thận trọng, tránh mua bán dồn dập trong thời gian ngắn.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"加羊陀火鈴空劫，有置有去\"); Tư liệu web: WD7 (tracuulasotuvi.com, Cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-TV-02",
+   "CHUNG-CT-TV-01"
+  ]
+ },
+ {
+  "id": "DT-S01-PQ",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Tử Vi",
+   "Phá Quân"
+  ],
+  "dieuKien": {},
+  "noiDung": "Tử Vi đồng cung Phá Quân ở Điền Trạch: sách nói khó giữ nền cũ, dễ đổi nơi ở, cơ nghiệp chủ yếu tự tạo. Bạn hợp cải tạo, làm mới hơn là giữ nguyên nhà cũ. Nên lập ngân sách sửa sang riêng và chỉ khởi công khi đã có phần lớn chi phí trong tay.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"破軍同退祖\"); Tư liệu web: WD13 (cohoc.vn, Luận cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-TV-04",
+   "CHUNG-CT-TV-01"
+  ]
+ },
+ {
+  "id": "DT-S02-TOT",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Thiên Cơ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Thiên Cơ sáng ở Điền Trạch: sách nói bạn thường không giữ nhà cũ mà tự tạo nơi ở mới, nhà đất phát triển theo nỗ lực bản thân. Bạn thích tính toán, so nhiều phương án trước khi chọn. Nên đặt tiêu chí chốt từ trước và giới hạn số lần đi xem nhà để không bị phân tán.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"天機退祖新創置\"); Tư liệu web: WD13 (cohoc.vn, Luận cung Điền Trạch); Tư liệu web: WD7 (tracuulasotuvi.com, Cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-TCO-01",
+   "CHUNG-CT-TCO-01"
+  ]
+ },
+ {
+  "id": "DT-S02-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Thiên Cơ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Cơ hãm ở Điền Trạch: sách nói dễ chuyển dời chỗ ở, nhất là gặp sát tinh hoặc Hóa Kỵ, nơi ở có thể ồn ào. Bạn nhạy với môi trường quanh nhà hơn bạn nghĩ. Nên đến xem nhà vào nhiều khung giờ khác nhau, kể cả buổi tối, trước khi quyết.",
+  "nguon": "Tư liệu web: WD7 (tracuulasotuvi.com, Cung Điền Trạch); Tư liệu web: WD13 (cohoc.vn, Luận cung Điền Trạch); Tư liệu web: WD10 (thansohoconline.com, Cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-TCO-02",
+   "CHUNG-CT-TCO-01"
+  ]
+ },
+ {
+  "id": "DT-S02-TA",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Thiên Cơ",
+   "Thái Âm"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Cơ đồng cung Thái Âm ở Điền Trạch: sách nói tự tậu và vượng. Óc tính toán gặp sao chủ điền trạch giúp bạn chọn được nhà vừa túi tiền vừa ấm cúng. Nên dùng điểm mạnh này để tìm những căn vị trí tốt mà chỉ cần sửa ít.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"太陰同自置旺相\"); Tư liệu web: WD4 (lyso.vn, Từ điển tử vi: Cung Điền Trạch, dẫn Khoa Học Huyền Bí 1973)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-TCO-03",
+   "DIEN-TA-03",
+   "CHUNG-CT-TCO-01"
+  ]
+ },
+ {
+  "id": "DT-S03-TOT",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Thái Dương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Thái Dương sáng ở Điền Trạch: sách nói có nền tảng gia đình, thời đầu thịnh rồi về sau bình ổn, nhà đất có nhưng hay thay đổi. Bạn thích nhà sáng, rộng, đón người. Nên giữ một tài sản nền ổn định trước khi đổi nhà theo nhu cầu. Có nguồn Việt cho rằng Thái Dương không hợp thủ Điền Trạch; hai ý gặp nhau ở chỗ \"có nhưng hay đổi\".",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"太陽入廟得祖業，初旺未平\"); Tư liệu web: WD13 (cohoc.vn, Luận cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-TDU-01",
+   "DIEN-TRANH-05",
+   "CHUNG-CT-TDU-01"
+  ]
+ },
+ {
+  "id": "DT-S03-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Thái Dương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thái Dương hãm ở Điền Trạch: sách nói khó giữ tài sản thừa hưởng, chủ yếu tự gây dựng, và không nên kinh doanh địa ốc mạo hiểm. Nhà đất của bạn bền nhất khi đến từ sức mình. Nên mua để ở trước, chưa vội mua đi bán lại.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"陷地逢羊陀火鈴空劫\"); Tư liệu web: WD13 (cohoc.vn, Luận cung Điền Trạch); Tư liệu web: WD7 (tracuulasotuvi.com, Cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-TDU-02",
+   "CHUNG-CT-TDU-01"
+  ]
+ },
+ {
+  "id": "DT-S03-TA",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Thái Dương",
+   "Thái Âm"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thái Dương và Thái Âm cùng ở Điền Trạch (Sửu, Mùi): đây là thế Nhật Nguyệt chiếu bích mà Toàn Thư xếp vào cách giàu, ưa ở mộ khố, chủ tích lũy nhà đất; gặp cát tinh thì nhiều đất đai. Bạn có xu hướng giữ của bằng bất động sản. Nên giữ nhà đất làm nền nhưng vẫn có một quỹ dễ rút cho việc gấp.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"日月照璧 日月臨田宅宮是也，喜居墓庫\"); Tư liệu web: WD7 (tracuulasotuvi.com, Cung Điền Trạch); Tư liệu web: WD13 (cohoc.vn, Luận cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-CC-01",
+   "DIEN-TDU-03",
+   "CHUNG-CT-TDU-01"
+  ]
+ },
+ {
+  "id": "DT-S04-TOT",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Vũ Khúc"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Vũ Khúc sáng ở Điền Trạch: Vũ Khúc là sao quản tài sản, sách nói dễ được hưởng nền tảng gia đình lớn, có thể có nhiều bất động sản, kể cả cho thuê. Bạn nhìn nhà đất như một khoản đầu tư cần kỷ luật. Nên theo dõi dòng tiền từng tài sản (tiền thuê, phí, thuế) trong một bảng riêng.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"武曲單居旺地，得祖父大業\"); Tư liệu web: WD7 (tracuulasotuvi.com, Cung Điền Trạch); Tư liệu web: WD13 (cohoc.vn, Luận cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-VK-01",
+   "DIEN-YN-02",
+   "CHUNG-CT-VK-01"
+  ]
+ },
+ {
+  "id": "DT-S04-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Vũ Khúc"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Vũ Khúc hãm ở Điền Trạch: sách nói trước có hao hụt rồi sau mới thành. Bạn có thể trải qua một lần mua bán chưa như ý trước khi ổn định. Nên tích lũy từng bước và giữ khoản vay ở mức vừa sức trả.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"陷地退後方成\"); Tư liệu web: WD7 (tracuulasotuvi.com, Cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-VK-02",
+   "CHUNG-CT-VK-01"
+  ]
+ },
+ {
+  "id": "DT-S04-THL",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Vũ Khúc",
+   "Tham Lang"
+  ],
+  "dieuKien": {},
+  "noiDung": "Vũ Khúc đồng cung Tham Lang ở Điền Trạch: sách nói tậu nhà đất muộn, thường sau trung niên, gặp Hỏa Tinh hoặc Linh Tinh thì rất tốt. Thời trẻ bạn dễ chi cho trải nghiệm hơn cho nhà. Nên mở sớm một khoản tích lũy nhà ở tự động để đến lúc chín muồi đã có vốn.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"貪狼同晚置，見火鈴星同極美\"); Tư liệu web: WD7 (tracuulasotuvi.com, Cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-VK-04",
+   "CHUNG-CT-VK-01"
+  ]
+ },
+ {
+  "id": "DT-S05-TOT",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Thiên Đồng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Thiên Đồng sáng ở Điền Trạch: sách nói thường trước ít sau nhiều, tự gây dựng là chính và về sau khá vững. Bạn chuộng nhà ấm cúng, dễ chịu hơn là hoành tráng. Nên chọn nhà vừa sức để còn dư cho những thứ làm cuộc sống thoải mái.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"天同先少後多，自置甚旺\"); Tư liệu web: WD10 (thansohoconline.com, Cung Điền Trạch); Tư liệu web: WD4 (lyso.vn, Từ điển tử vi: Cung Điền Trạch, dẫn Khoa Học Huyền Bí 1973)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-TD-01",
+   "CHUNG-CT-TD-01"
+  ]
+ },
+ {
+  "id": "DT-S05-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Thiên Đồng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Đồng hãm ở Điền Trạch: sách nói nhà đất đến muộn, dễ phải chuyển chỗ ở, nhất là khi gặp Kình Đà, Không Kiếp, Hóa Kỵ. Thuê nhà một thời gian không phải là thua kém với bạn. Nên ổn định chỗ ở trước rồi mới tính đầu tư.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"加羊陀火鈴空忌全無\"); Tư liệu web: WD10 (thansohoconline.com, Cung Điền Trạch); Tư liệu web: WD7 (tracuulasotuvi.com, Cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-TD-02",
+   "CHUNG-CT-TD-01"
+  ]
+ },
+ {
+  "id": "DT-S05-TL",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Thiên Đồng",
+   "Thiên Lương"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Đồng đồng cung Thiên Lương ở Điền Trạch: sách nói trước hao sau tăng, và Đồng Lương ở Dần, Thân hay được người giúp mà thành. Bạn có thể được người thân, người quen hỗ trợ trong lần mua nhà quan trọng. Nên ghi rõ phần hỗ trợ đó là cho hay cho vay để giữ tình cảm lâu dài.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"天梁同先退後進\"); Tư liệu web: WD4 (lyso.vn, Từ điển tử vi: Cung Điền Trạch, dẫn Khoa Học Huyền Bí 1973)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-TD-03",
+   "DIEN-TL-03",
+   "CHUNG-CT-TD-01"
+  ]
+ },
+ {
+  "id": "DT-S06-TOT",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Liêm Trinh"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Liêm Trinh sáng ở Điền Trạch: sách nói bạn có xu hướng tự tay gây dựng nhà cửa và thích không gian có thẩm mỹ. Bạn để tâm đến từng chi tiết thiết kế. Nên đặt trần chi phí cho phần trang trí trước khi bắt đầu để thẩm mỹ không kéo ngân sách đi xa.",
+  "nguon": "Tư liệu web: WD10 (thansohoconline.com, Cung Điền Trạch); Tư liệu web: WD7 (tracuulasotuvi.com, Cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-LT-01",
+   "CHUNG-CT-LT-01"
+  ]
+ },
+ {
+  "id": "DT-S06-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Liêm Trinh"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Liêm Trinh hãm ở Điền Trạch: sách nói nền tảng gia đình khó giữ nguyên vẹn, dễ phát sinh vướng mắc giấy tờ nhà đất, nhất là khi gặp Hóa Kỵ hoặc sát tinh. Giấy tờ là chỗ bạn không nên làm tắt. Nên kiểm tra pháp lý kỹ và nhờ người có chuyên môn đọc hợp đồng.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"廉貞破祖\"); Tư liệu web: WD7 (tracuulasotuvi.com, Cung Điền Trạch); Tư liệu web: WD13 (cohoc.vn, Luận cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-LT-02",
+   "CHUNG-CT-LT-01"
+  ]
+ },
+ {
+  "id": "DT-S06-TP",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Liêm Trinh",
+   "Thiên Phủ"
+  ],
+  "dieuKien": {},
+  "noiDung": "Liêm Trinh đồng cung Thiên Phủ ở Điền Trạch: sách nói giữ được cơ nghiệp có sẵn. Bạn có xu hướng gìn giữ và làm đẹp thêm nền cũ hơn là đổi mới hoàn toàn. Nên ưu tiên tu sửa, nâng cấp nhà gia đình trước khi tính mua mới.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"天府同守見成家業\"); Tư liệu web: WD13 (cohoc.vn, Luận cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-LT-03",
+   "CHUNG-CT-LT-01"
+  ]
+ },
+ {
+  "id": "DT-S07-TOT",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Thiên Phủ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Thiên Phủ sáng ở Điền Trạch: sách xếp đây vào những vị trí tốt nhất của cung, vừa giữ được nền cũ vừa tự tậu thêm. Phủ là kho, nên bạn có bản năng tích trữ và quản lý tài sản. Nên định kỳ rà lại danh mục nhà đất và bán bớt thứ không còn sinh lợi.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"天府田園茂盛，守祖自置旺相\"); Tư liệu web: WD4 (lyso.vn, Từ điển tử vi: Cung Điền Trạch, dẫn Khoa Học Huyền Bí 1973); Tư liệu web: WD13 (cohoc.vn, Luận cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-TP-01",
+   "CHUNG-CT-TP-01"
+  ]
+ },
+ {
+  "id": "DT-S07-BINH",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Thiên Phủ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Bình"
+   ]
+  },
+  "noiDung": "Thiên Phủ bình hòa ở Điền Trạch: sách nói tài sản ít hơn, có thành có bại, cần quản lý giấy tờ và tránh tranh chấp. Bạn giữ của tốt khi mọi thứ rõ ràng. Nên lưu bản sao giấy tờ nhà đất ở hai nơi và cập nhật mỗi khi có thay đổi.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"見羊陀火鈴空劫更少，有成敗\"); Tư liệu web: WD7 (tracuulasotuvi.com, Cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-TP-02",
+   "CHUNG-CT-TP-01"
+  ]
+ },
+ {
+  "id": "DT-S07-DKHONG",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Thiên Phủ"
+  ],
+  "dieuKien": {
+   "cungCo": "Địa Không"
+  },
+  "noiDung": "Thiên Phủ gặp Địa Không ở Điền Trạch: sách nói gia tài khó bền nếu chủ quan. Kho tốt mà có chỗ hở thì cần khóa kỹ. Nên tránh đứng tên hộ, bảo lãnh hay góp vốn vào dự án nhà đất chưa đủ pháp lý.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"見羊陀火鈴空劫更少，有成敗\"); Tư liệu web: WD4 (lyso.vn, Từ điển tử vi: Cung Điền Trạch, dẫn Khoa Học Huyền Bí 1973)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-TP-02",
+   "DIEN-SP-05",
+   "CHUNG-CT-TP-01"
+  ]
+ },
+ {
+  "id": "DT-S08-TOT",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Thái Âm"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Thái Âm sáng ở Điền Trạch: đây là sao chủ của cung, sách nói nhiều nhà đất, gặp Tả Hữu, Hóa Quyền, Hóa Lộc, Lộc Tồn càng tốt. Bạn có con mắt tinh tế với nơi ở và chăm chút tổ ấm. Nên dành thời gian tìm hiểu thị trường khu bạn sống, vì đây là mảng bạn có lợi thế.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"太陰入廟田多…同左右權祿及祿存主多田產\"); Tư liệu web: WD4 (lyso.vn, Từ điển tử vi: Cung Điền Trạch, dẫn Khoa Học Huyền Bí 1973); Tư liệu web: WD13 (cohoc.vn, Luận cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-TA-01",
+   "DIEN-YN-02",
+   "CHUNG-CT-TA-01"
+  ]
+ },
+ {
+  "id": "DT-S08-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Thái Âm"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thái Âm hãm ở Điền Trạch: sách nói tài sản lúc đầu tạm đủ, về sau dễ giảm, nhất là khi gặp Hóa Kỵ và sát tinh. Bạn dễ chi cho nhà theo cảm xúc. Nên tích lũy đều đặn, hạn chế đầu cơ và chờ ít nhất một tuần trước mỗi quyết định mua lớn.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"陷地加忌及羊陀火鈴空劫\"); Tư liệu web: WD4 (lyso.vn, Từ điển tử vi: Cung Điền Trạch, dẫn Khoa Học Huyền Bí 1973); Tư liệu web: WD13 (cohoc.vn, Luận cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-TA-02",
+   "CHUNG-CT-TA-01"
+  ]
+ },
+ {
+  "id": "DT-S08-TD",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Thái Âm",
+   "Thiên Đồng"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thái Âm đồng cung Thiên Đồng ở Điền Trạch: sách nói tay trắng tự tậu, ở Tý khi cả hai sáng thì rất tốt cho nhà đất. Bạn đi lên từ sự kiên nhẫn hơn là từ vốn sẵn. Nên bắt đầu bằng một căn nhỏ rồi nâng dần.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"天同同白手自置\"); Tư liệu web: WD10 (thansohoconline.com, Cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-TA-03",
+   "DIEN-TD-03",
+   "CHUNG-CT-TA-01"
+  ]
+ },
+ {
+  "id": "DT-S09-TOT",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Tham Lang"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Tham Lang sáng ở Điền Trạch: sách nói có nền tảng gia đình nhưng giữa chừng có hao hụt rồi tự tậu lại, gặp Tam hóa hoặc Lộc thì có nhiều nhà đất. Bạn thích nhà có không gian giải trí, tiếp khách. Nên tách rõ tiền cho nhà ở và tiền cho sở thích để giai đoạn hao hụt không kéo dài.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"廟旺有祖業，也去中未自有置\"); Tư liệu web: WD4 (lyso.vn, Từ điển tử vi: Cung Điền Trạch, dẫn Khoa Học Huyền Bí 1973); Tư liệu web: WD13 (cohoc.vn, Luận cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-THL-01",
+   "CHUNG-CT-THL-01"
+  ]
+ },
+ {
+  "id": "DT-S09-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Tham Lang"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Tham Lang hãm ở Điền Trạch: sách nói khó giữ nền cũ, nhà đất đến muộn, trước có vướng mắc rồi sau mới ổn. Bạn cần thời gian để hiểu mình thật sự muốn sống ở đâu. Nên thuê thử ở khu vực định mua vài tháng trước khi xuống tiền.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"貪狼陷宮退祖\"); Tư liệu web: WD4 (lyso.vn, Từ điển tử vi: Cung Điền Trạch, dẫn Khoa Học Huyền Bí 1973); Tư liệu web: WD13 (cohoc.vn, Luận cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-THL-02",
+   "CHUNG-CT-THL-01"
+  ]
+ },
+ {
+  "id": "DT-S09-HOA",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Tham Lang"
+  ],
+  "dieuKien": {
+   "cungCo": "Hỏa Tinh"
+  },
+  "noiDung": "Tham Lang gặp Hỏa Tinh ở Điền Trạch: sách nói giữ được tổ nghiệp và tự tạo thêm, đồng thời nhắc chuyện an toàn lửa, điện trong nhà. Đây là lời nhắc thực tế, đặc biệt với nhà nhiều thiết bị. Nên kiểm tra hệ thống điện, bếp gas định kỳ và để sẵn một bình chữa cháy nhỏ.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"見火鈴星守祖業，有自創\"); Tư liệu web: WD13 (cohoc.vn, Luận cung Điền Trạch); Tư liệu web: WD7 (tracuulasotuvi.com, Cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-THL-03",
+   "CHUNG-CT-THL-01"
+  ]
+ },
+ {
+  "id": "DT-S10-TOT",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Cự Môn"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Cự Môn sáng ở Điền Trạch: Toàn Thư nói có thể tậu nhà đất bất ngờ, nhanh, gặp Lộc thì tự mua được. Cơ hội của bạn hay đến qua thông tin, lời giới thiệu. Nên chuẩn bị sẵn hồ sơ vay và khoản đặt cọc để kịp nắm cơ hội tốt. Có nguồn Việt dè dặt hơn, cho rằng tài sản thừa hưởng dễ kéo theo tranh chấp.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"巨門廟旺橫發置買\"); Tư liệu web: WD13 (cohoc.vn, Luận cung Điền Trạch); Tư liệu web: WD7 (tracuulasotuvi.com, Cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-CM-01",
+   "DIEN-TRANH-03",
+   "CHUNG-CT-CM-01"
+  ]
+ },
+ {
+  "id": "DT-S10-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Cự Môn"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Cự Môn hãm ở Điền Trạch: sách nói ít được chia phần và dễ vì nhà đất mà sinh thị phi. Thỏa thuận miệng là điểm yếu với bạn. Nên mua bán rõ ràng giấy tờ và tránh góp chung theo kiểu mơ hồ.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"陷地無分，因田產招非\"); Tư liệu web: WD4 (lyso.vn, Từ điển tử vi: Cung Điền Trạch, dẫn Khoa Học Huyền Bí 1973); Tư liệu web: WD13 (cohoc.vn, Luận cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-CM-02",
+   "CHUNG-CT-CM-01"
+  ]
+ },
+ {
+  "id": "DT-S10-TDU",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Cự Môn",
+   "Thái Dương"
+  ],
+  "dieuKien": {},
+  "noiDung": "Cự Môn đồng cung Thái Dương ở Điền Trạch: sách nói trước chưa có, sau mới có; ở Dần thì nhà đất vượng, ở Thân khó giữ nền cũ nhưng vẫn có tài sản. Con đường của bạn là tự gây dựng dần. Nên đặt mốc tài chính cho căn nhà đầu tiên và kiên trì theo nó.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"太陽同先無後有\"); Tư liệu web: WD10 (thansohoconline.com, Cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-CM-03",
+   "DIEN-TDU-03",
+   "CHUNG-CT-CM-01"
+  ]
+ },
+ {
+  "id": "DT-S11-TOT",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Thiên Tướng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Thiên Tướng sáng ở Điền Trạch: sách nói có phần tài sản gia đình, nhà cửa ngăn nắp, có hậu thuẫn, trung niên thường ổn định chỗ ở. Bạn coi trọng nếp nhà và sự chỉn chu. Nên giữ hồ sơ bảo trì nhà (điện, nước, mái) cẩn thận như giữ sổ sách.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"天相廟旺有分\"); Tư liệu web: WD7 (tracuulasotuvi.com, Cung Điền Trạch); Tư liệu web: WD13 (cohoc.vn, Luận cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-TT-01",
+   "CHUNG-CT-TT-01"
+  ]
+ },
+ {
+  "id": "DT-S11-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Thiên Tướng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Tướng hãm ở Điền Trạch: các trang Việt nói nhà đất ít lúc đầu, có thể mất rồi mua lại, gặp Không Kiếp, Đại Hao thì dễ hao hụt. Lòng tốt của bạn dễ bị nhờ vả về tài sản. Nên tránh bảo lãnh hoặc thế chấp nhà cho người khác.",
+  "nguon": "Tư liệu web: WD7 (tracuulasotuvi.com, Cung Điền Trạch); Tư liệu web: WD10 (thansohoconline.com, Cung Điền Trạch); Tư liệu web: WD13 (cohoc.vn, Luận cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-TT-02",
+   "CHUNG-CT-TT-01"
+  ]
+ },
+ {
+  "id": "DT-S11-TV",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Thiên Tướng",
+   "Tử Vi"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thiên Tướng đồng cung Tử Vi ở Điền Trạch: sách nói tự tậu được, có Tả Hữu, Xương Khúc thì có sẵn cơ nghiệp. Bạn hợp vai người đứng ra lo nhà cho cả gia đình. Nên phân công rõ để không ôm hết trách nhiệm một mình.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"紫微同自置\"); Tư liệu web: WD7 (tracuulasotuvi.com, Cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-TT-03",
+   "DIEN-TV-04",
+   "CHUNG-CT-TT-01"
+  ]
+ },
+ {
+  "id": "DT-S12-TOT",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Thiên Lương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Thiên Lương sáng ở Điền Trạch: sách nói thường được hưởng nhà cửa từ gia đình. Bạn có tâm lý gìn giữ nơi chốn của ông bà, cha mẹ. Nên bàn với gia đình từ sớm về việc sửa sang, sang tên, khi cả nhà còn đủ thời gian bàn bạc thong thả.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"天梁入廟旺有祖業\"); Tư liệu web: WD4 (lyso.vn, Từ điển tử vi: Cung Điền Trạch, dẫn Khoa Học Huyền Bí 1973); Tư liệu web: WD13 (cohoc.vn, Luận cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-TL-01",
+   "CHUNG-CT-TL-01"
+  ]
+ },
+ {
+  "id": "DT-S12-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Thiên Lương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Lương hãm ở Điền Trạch: các trang Việt nói chỗ ở hay thay đổi, khó ổn định sớm, nhất là khi gặp Hỏa Tinh, Địa Kiếp, Kình Dương. Bạn có thể sống ở nhiều nơi trước khi định cư. Nên giữ đồ đạc gọn và ưu tiên đồ dễ tháo lắp, dễ chuyển.",
+  "nguon": "Tư liệu web: WD7 (tracuulasotuvi.com, Cung Điền Trạch); Tư liệu web: WD13 (cohoc.vn, Luận cung Điền Trạch); Tư liệu web: WD10 (thansohoconline.com, Cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-TL-02",
+   "CHUNG-CT-TL-01"
+  ]
+ },
+ {
+  "id": "DT-S12-MA",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Thiên Lương"
+  ],
+  "dieuKien": {
+   "cungCo": "Thiên Mã"
+  },
+  "noiDung": "Thiên Lương gặp Thiên Mã ở Điền Trạch: sách nói hay chuyển nhà, có thể có nhà đất xa quê. Đi xa không có nghĩa là mất gốc. Nên chọn tài sản ở nơi bạn thật sự sống và giữ liên lạc với người trông nhà ở quê nếu có.",
+  "nguon": "Tư liệu web: WD10 (thansohoconline.com, Cung Điền Trạch); Tư liệu web: WD13 (cohoc.vn, Luận cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-TL-02",
+   "DIEN-SP-06",
+   "CHUNG-CT-TL-01"
+  ]
+ },
+ {
+  "id": "DT-S13-TOT",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Thất Sát"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Thất Sát sáng ở Điền Trạch: các trang Việt nói ít dựa vào nền cũ, tự lực gây dựng bằng ý chí, về sau ổn định, dù chưa thống nhất chuyện có tổ nghiệp hay không. Bạn ra quyết định mua nhà nhanh và dứt khoát. Nên có một người phản biện trước khi ký để sự quyết đoán đi cùng kiểm tra.",
+  "nguon": "Tư liệu web: WD7 (tracuulasotuvi.com, Cung Điền Trạch); Tư liệu web: WD13 (cohoc.vn, Luận cung Điền Trạch); Tư liệu web: WD10 (thansohoconline.com, Cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-TS-01",
+   "DIEN-TRANH-04",
+   "CHUNG-CT-TS-01"
+  ]
+ },
+ {
+  "id": "DT-S13-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Thất Sát"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thất Sát hãm ở Điền Trạch: các trang Việt nói tài sản dễ biến động, \"có mà như không\", nhất là khi gặp sát tinh, Không Kiếp. Quyết định nóng là rủi ro chính của bạn. Nên giữ tài sản ở dạng an toàn và đợi qua một đêm trước những quyết định lớn.",
+  "nguon": "Tư liệu web: WD13 (cohoc.vn, Luận cung Điền Trạch); Tư liệu web: WD10 (thansohoconline.com, Cung Điền Trạch); Tư liệu web: WD7 (tracuulasotuvi.com, Cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-TS-02",
+   "CHUNG-CT-TS-01"
+  ]
+ },
+ {
+  "id": "DT-S13-LT",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Thất Sát",
+   "Liêm Trinh"
+  ],
+  "dieuKien": {},
+  "noiDung": "Thất Sát đồng cung Liêm Trinh ở Điền Trạch: Toàn Thư nói tự tậu. Ý chí đi cùng nguyên tắc giúp bạn tự đứng tên nhà bằng sức mình. Nên lập kế hoạch trả nợ nhà rõ từng tháng, vì bạn làm tốt nhất khi có kỷ luật.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"七殺同自置\"); Tư liệu web: WD10 (thansohoconline.com, Cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-TS-03",
+   "DIEN-LT-03",
+   "CHUNG-CT-TS-01"
+  ]
+ },
+ {
+  "id": "DT-S14-TOT",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Phá Quân"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Miếu",
+    "Vượng",
+    "Đắc"
+   ]
+  },
+  "noiDung": "Phá Quân sáng ở Điền Trạch: sách nói trước phá sau thành, ở Tý, Ngọ giữ được nền cũ và phát triển nhưng có lúc vào lúc ra. Bạn hợp sửa sang, cải tạo. Nên để riêng một khoản dự phòng cho các phát sinh mỗi lần cải tạo.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"破軍在子午宮守祖業榮昌，但見有進退; 田宅遇破軍，先破後成\"); Tư liệu web: WD4 (lyso.vn, Từ điển tử vi: Cung Điền Trạch, dẫn Khoa Học Huyền Bí 1973); Tư liệu web: WD7 (tracuulasotuvi.com, Cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-PQ-01",
+   "CHUNG-CT-PQ-01"
+  ]
+ },
+ {
+  "id": "DT-S14-HAM",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Phá Quân"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Phá Quân hãm ở Điền Trạch: sách nói nhà đất khó giữ, dễ bán đi, nhất là khi gặp Hao, Hóa Kỵ, sát tinh. Bạn dễ mua bán theo cảm hứng. Nên ưu tiên tài sản dễ quản lý và viết sẵn điều kiện bán ngay từ lúc mua.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"加羊陀火鈴退祖田少\"); Tư liệu web: WD4 (lyso.vn, Từ điển tử vi: Cung Điền Trạch, dẫn Khoa Học Huyền Bí 1973); Tư liệu web: WD13 (cohoc.vn, Luận cung Điền Trạch)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-PQ-02",
+   "CHUNG-CT-PQ-01"
+  ]
+ },
+ {
+  "id": "DT-S14-LT",
+  "chuyenDe": "dien-trach",
+  "cung": "Điền Trạch",
+  "sao": [
+   "Phá Quân",
+   "Liêm Trinh"
+  ],
+  "dieuKien": {},
+  "noiDung": "Phá Quân đồng cung Liêm Trinh ở Điền Trạch: sách nói trước hao sau tự tậu. Lần mua đầu có thể chưa như ý nhưng là bài học cho lần sau. Nên ghi lại những điều rút ra sau mỗi lần mua hay thuê nhà để quyết định sau chắc hơn.",
+  "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn), q.2 «十田宅» (\"廉貞同先破後有置\"); Tư liệu web: WD4 (lyso.vn, Từ điển tử vi: Cung Điền Trạch, dẫn Khoa Học Huyền Bí 1973)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "phong-cach",
+  "maNghienCuu": [
+   "DIEN-PQ-03",
+   "CHUNG-CT-PQ-01"
+  ]
+ },
+ {
   "id": "TB-S01-TOT",
   "chuyenDe": "tai-bach",
   "cung": "Tài Bạch",
