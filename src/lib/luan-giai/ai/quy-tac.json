@@ -2934,6 +2934,29 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "QL-S02-C4-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thiên Cơ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Cơ hãm ở Phu Thê, xung chiếu Quan Lộc: sách ghi nên cưới muộn, hai người dễ khác tính, dễ tranh luận. Với công việc, điều này nghĩa là chuyện nhà dễ chen vào các quyết định nghề nghiệp của bạn. Bàn kỹ với người thân trước những thay đổi lớn để không phải đổi ý giữa chừng.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "PHU-TCO-02",
+   "QUAN-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "PHU-TCO-02: TB (WM3, 6); WM1 (\"Thiên cơ ở Hợi, Tý, Sửu: trễ mới tốt\"; \"Cơ Cự… trễ mới tốt\"); TT (WM6: \"加羊陀火铃主生离，晚娶吉\")"
+ },
+ {
   "id": "QL-S02-C5",
   "chuyenDe": "quan-loc",
   "cung": "Mệnh",
@@ -3045,6 +3068,29 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S03-C4-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thái Dương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thái Dương hãm ở Phu Thê: sách ghi việc cưới xin hay trắc trở, kết hôn muộn thì thuận. Vì Phu Thê chiếu thẳng Quan Lộc, bạn dễ ưu tiên sự nghiệp và để phần riêng tư chờ. Dành thời gian cố định cho gia đình giúp nhà thành chỗ dựa, thay vì nỗi áy náy mỗi khi bận việc.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "PHU-TDU-02",
+   "QUAN-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "PHU-TDU-02: TB (WM3, 5); WM1 (\"Thái dương tối: cưới xin trắc trở, trễ mới tốt\"; \"Nhật Cự… Thân: trễ mới tốt\"); TT (WM6: \"早娶克\")"
  },
  {
   "id": "QL-S03-C5",
@@ -3160,6 +3206,29 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "QL-S04-C4-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Phu Thê",
+  "sao": [
+   "Vũ Khúc"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Vũ Khúc hãm ở Phu Thê (Vũ Phá): sách ghi cả hai đều mạnh và giỏi, kết hôn khi đã chín chắn thì bớt va chạm. Chiếu sang Quan Lộc, nét này dễ thành một cuộc đua ngầm về thành tích giữa hai người. Phân rõ vai trò và cùng đặt mục tiêu chung cho cả nhà sẽ biến sự cạnh tranh thành động lực.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "PHU-VK-02",
+   "QUAN-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "PHU-VK-02: TB (WM3, 4); WM1 (\"Vũ Sát: hình khắc, dễ xa nhau\"; \"Vũ Phá: giỏi, trễ mới tốt\"); TT (WM6: \"七杀同克二三妻，加羊陀火铃空劫更克\")"
+ },
+ {
   "id": "QL-S04-C5",
   "chuyenDe": "quan-loc",
   "cung": "Mệnh",
@@ -3273,6 +3342,29 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "QL-S05-C4-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thiên Đồng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Đồng hãm ở Phu Thê: sách ghi tình cảm dễ đến dễ đi, có lúc xa cách một thời gian rồi mới đoàn tụ. Chiếu về Quan Lộc, nhịp công việc của bạn dễ bị đảo theo biến động tình cảm. Giữ một lịch làm việc cố định giúp năng suất không lên xuống theo tâm trạng.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "PHU-TD-02",
+   "QUAN-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "PHU-TD-02: TB (WM3, 3); WM1 (\"Đồng tại Dậu: bất hòa\"; \"Đồng Cự: xa nhau một thời rồi mới đoàn tụ\"); TT (WM6: \"加四杀欠和生离，巨门同加四杀亦克\")"
+ },
+ {
   "id": "QL-S05-C5",
   "chuyenDe": "quan-loc",
   "cung": "Mệnh",
@@ -3384,6 +3476,29 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S06-C4-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Phu Thê",
+  "sao": [
+   "Liêm Trinh"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Liêm Trinh hãm ở Phu Thê: sách ghi tình duyên nhiều thay đổi, dễ bất hòa, nên tìm hiểu kỹ và giữ giao tiếp cởi mở. Từ cung đối diện, nét này nhắc bạn đừng mang căng thẳng ở nhà vào chỗ làm, hoặc ngược lại. Nếu làm ăn chung với người thân, hãy tách bạch tiền nhà và tiền việc.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "PHU-LT-02",
+   "QUAN-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "PHU-LT-02: TB (WM3, 2); WM1 (\"Liêm đơn thủ Dần Thân: mấy lần lập gia đình\"; Liêm Tướng, Liêm Phá \"bất hòa\"); TT (WM6: \"廉贞三度作新郎，即贪狼同愈克七杀同亦刑\")"
  },
  {
   "id": "QL-S06-C5",
@@ -3612,6 +3727,29 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "QL-S08-C4-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thái Âm"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thái Âm hãm ở Phu Thê: sách ghi dễ bất hòa, nên kết hôn muộn và tìm hiểu kỹ người bạn đời. Xung chiếu sang Quan Lộc, điều này làm bạn khó tập trung khi chuyện tình cảm chưa ổn. Thẳng thắn trò chuyện sớm khi có khúc mắc sẽ giữ được sự tỉnh táo cho công việc.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "PHU-TA-02",
+   "QUAN-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "PHU-TA-02: TB (WM3, 8); WM1 (\"Thái âm tối: bất hòa… trễ mới tốt\"); TT (WM6: \"加羊陀火铃空劫耗忌，不克主生离\")"
+ },
+ {
   "id": "QL-S08-C5",
   "chuyenDe": "quan-loc",
   "cung": "Mệnh",
@@ -3723,6 +3861,29 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S09-C4-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Phu Thê",
+  "sao": [
+   "Tham Lang"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Tham Lang hãm ở Phu Thê: sách ghi tình cảm dễ đến dễ đi, nhiều cảm xúc mạnh, nên đặt nền tảng tin cậy và cam kết rõ. Chiếu về Quan Lộc, bạn dễ phân tâm bởi các mối quan hệ ngoài công việc. Phân định rõ thời gian riêng và thời gian làm, nhất là ở môi trường nhiều giao tế.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "PHU-THL-02",
+   "QUAN-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "PHU-THL-02: TB (WM3, 9); TT (WM6: \"贪狼男女不得美，三次作新郎… 廉贞同主克，加羊陀火铃主生离\"); WM1 (Liêm Tham \"xung khắc\")"
  },
  {
   "id": "QL-S09-C5",
@@ -3838,6 +3999,29 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "QL-S10-C4-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Phu Thê",
+  "sao": [
+   "Cự Môn"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Cự Môn hãm ở Phu Thê: sách ghi hai người dễ xung khắc, cần học cách giao tiếp không làm tổn thương nhau. Chiếu sang Quan Lộc, thói quen tranh luận ở nhà dễ theo bạn vào phòng họp. Tập nói điều mình cần thay vì điều người kia sai, ở cả hai nơi.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "PHU-CM-02",
+   "QUAN-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "PHU-CM-02: TB (WM3, 10); WM1 (\"Cự môn tại Thìn, Tuất, Tỵ: xung khắc, hay bỏ nhau\"); TT (WM6: \"加羊陀火铃空劫定克二妻或主生离\")"
+ },
+ {
   "id": "QL-S10-C5",
   "chuyenDe": "quan-loc",
   "cung": "Mệnh",
@@ -3949,6 +4133,29 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S11-C4-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thiên Tướng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Tướng hãm ở Phu Thê (Mão, Dậu): sách ghi chuyện cưới xin nhiều trở ngại, dễ bất hòa, cưới muộn thì tránh được phần lớn. Chiếu về Quan Lộc, bạn dễ ôm trách nhiệm cho cả nhà lẫn cơ quan. Chia việc nhà rõ ràng để còn sức cho những trách nhiệm ở nơi làm.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "PHU-TT-02",
+   "QUAN-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "PHU-TT-02: TB (WM3, 11); WM1 (\"Liêm Tướng đồng cung: bất hòa\"); TT (WM6: \"加羊陀火铃空劫刑克\")"
  },
  {
   "id": "QL-S11-C5",
@@ -4064,6 +4271,29 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "QL-S12-C4-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thiên Lương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Lương hãm ở Phu Thê (Tỵ, Hợi): sách ghi dễ đến dễ đi, nên giữ cam kết và dành thời gian cho nhau. Vì Phu Thê đối diện Quan Lộc, công việc đi lại nhiều có thể làm hai người xa nhau. Nếu nghề cần di chuyển, hãy thống nhất trước nhịp liên lạc và những dịp nhất định phải có mặt.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "PHU-TL-02",
+   "QUAN-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "PHU-TL-02: TB (WM3, 12); TT (WM6: \"加羊陀火铃空劫朵不和顺\")"
+ },
+ {
   "id": "QL-S12-C5",
   "chuyenDe": "quan-loc",
   "cung": "Mệnh",
@@ -4177,6 +4407,29 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "QL-S13-C4-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Phu Thê",
+  "sao": [
+   "Thất Sát"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thất Sát hãm ở Phu Thê: sách ghi kết hôn sớm dễ nhiều sóng gió, nên lập gia đình khi đã vững về cảm xúc và tài chính. Chiếu về Quan Lộc, điều này gợi ý rằng ổn định sự nghiệp trước là bước đệm tốt cho hôn nhân. Đặt mốc công việc rõ ràng rồi mới tính chuyện lớn trong đời riêng.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "PHU-TS-02",
+   "QUAN-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "PHU-TS-02: TB (WM3, 13); WM1 (\"sớm thì hình khắc chia ly\"); TT (WM6: \"七杀早克，武曲同亦克… 廉贞主生离\")"
+ },
+ {
   "id": "QL-S13-C5",
   "chuyenDe": "quan-loc",
   "cung": "Mệnh",
@@ -4288,6 +4541,29 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "QL-S14-C4-HAM",
+  "chuyenDe": "quan-loc",
+  "cung": "Phu Thê",
+  "sao": [
+   "Phá Quân"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Phá Quân hãm ở Phu Thê (Dần, Thân): sách ghi tình duyên nhiều biến động, nên kết hôn muộn và chọn người có giá trị sống tương đồng. Chiếu về Quan Lộc, mỗi lần đời riêng thay đổi dễ kéo theo đổi việc. Tách các quyết định lớn ra những thời điểm khác nhau để không phải xoay xở hai mặt cùng lúc.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "PHU-PQ-02",
+   "QUAN-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "PHU-PQ-02: TB (WM3, 14); TT (WM6: \"武曲同克三，廉贞亦克且欠和\")"
  },
  {
   "id": "QL-S14-C5",
