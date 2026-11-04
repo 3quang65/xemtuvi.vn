@@ -1,0 +1,294 @@
+{
+ "chuyenDe": "dien-trach",
+ "laSoMau": {
+  "id": "TC03",
+  "doiTuong": "Nam, sinh 20/12/1995 (Ất Hợi), khoảng 31 tuổi",
+  "nguonLaSo": "docs/nghien-cuu/tuvi-test-cases.json (engine lapLaSo)"
+ },
+ "dauBai": {
+  "nhanDinh": [
+   {
+    "text": "Điền Trạch của bạn có Thiên Cơ sáng (Vượng) tọa thủ và mang Hóa Lộc, nên nền gia đạo nghiêng về phía thuận, thiên về sắp xếp, cải tiến hơn là giữ nguyên. Ở phía đối diện, Thái Âm hóa Kỵ tại Tử Tức là phần cần đầu tư tâm sức, và bài sẽ xem hai lực này cân nhau thế nào.",
+    "phan": "dau-bai",
+    "thamChieu": {
+     "quyTacId": "KHUNG-dien-trach-DH-Lộc-Ky",
+     "sao": [
+      "Thiên Cơ",
+      "Thái Âm"
+     ],
+     "cung": "Điền Trạch",
+     "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+     "truongPhai": "Tam hợp phái Việt",
+     "cungLienQuan": [
+      "Điền Trạch",
+      "Tử Tức"
+     ]
+    }
+   }
+  ]
+ },
+ "muc": [
+  {
+   "id": "phong-cach",
+   "tieuDe": "Nhà cửa và nếp nhà",
+   "nhanDinh": [
+    {
+     "text": "Trước hết là chính tinh ngay tại Điền Trạch.",
+     "phan": "noi",
+     "thamChieu": {
+      "quyTacId": "KHUNG-dien-trach-DH-Lộc-Ky",
+      "sao": [
+       "Thiên Cơ",
+       "Thái Âm"
+      ],
+      "cung": "Điền Trạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Điền Trạch",
+       "Tử Tức"
+      ]
+     }
+    },
+    {
+     "text": "Thiên Cơ mang Hóa Lộc tại Điền Trạch là điểm thuận rõ nhất của gia đạo: thêm cơ hội và nguồn lực cho chuyện nhà cửa, nhất là khi bạn chịu tìm hiểu, so sánh trước khi chọn.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-dien-trach-DH-Lộc-Ky",
+      "sao": [
+       "Thiên Cơ"
+      ],
+      "cung": "Điền Trạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Điền Trạch"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "nguoi-than",
+   "tieuDe": "Cha mẹ, anh chị em, con cái",
+   "nhanDinh": [
+    {
+     "text": "Với người trong nhà, cung Tử Tức đối diện Điền Trạch có sao liên quan trực tiếp.",
+     "phan": "noi",
+     "thamChieu": {
+      "quyTacId": "KHUNG-dien-trach-HOA-Kỵ-xung",
+      "sao": [
+       "Thái Âm"
+      ],
+      "cung": "Điền Trạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Tử Tức"
+      ]
+     }
+    },
+    {
+     "text": "Ở Tử Tức, Thái Âm hóa Kỵ cho thấy chuyện con cái và người nhỏ trong nhà là phần bạn dễ để tâm nhiều; trò chuyện thường xuyên sẽ hiệu quả hơn đoán ý.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-dien-trach-HOA-Kỵ-xung",
+      "sao": [
+       "Thái Âm"
+      ],
+      "cung": "Điền Trạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Tử Tức"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "cung-lien-quan",
+   "tieuDe": "Cung hợp chiếu",
+   "nhanDinh": [
+    {
+     "text": "Tật Ách trong tam phương không có chính tinh nên đọc theo cách mượn sao.",
+     "phan": "noi",
+     "thamChieu": {
+      "quyTacId": "KHUNG-dien-trach-VCD-tam-hop-Tuan",
+      "sao": [
+       "Thái Dương",
+       "Thiên Lương"
+      ],
+      "cung": "Điền Trạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Tật Ách",
+       "Phụ Mẫu"
+      ],
+      "yeuTo": [
+       "Vô Chính Diệu"
+      ]
+     }
+    },
+    {
+     "text": "Tật Ách (cung tam hợp của Điền Trạch) không có chính tinh (vô chính diệu): khi luận nhà cửa và gia đạo, nên mượn chính tinh của cung đối diện để xem (Thái Dương, Thiên Lương ở Phụ Mẫu), lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung; cung này có Tuần, mà phái Việt coi vô chính diệu gặp Tuần là thuận hơn.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-dien-trach-VCD-tam-hop-Tuan",
+      "sao": [
+       "Thái Dương",
+       "Thiên Lương"
+      ],
+      "cung": "Điền Trạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Tật Ách",
+       "Phụ Mẫu"
+      ],
+      "yeuTo": [
+       "Vô Chính Diệu"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "tu-hoa",
+   "tieuDe": "Tứ hóa",
+   "nhanDinh": [
+    {
+     "text": "Hai sao Tứ hóa nằm trên trục Điền Trạch – Tử Tức nên cần đọc cùng lúc.",
+     "phan": "noi",
+     "thamChieu": {
+      "quyTacId": "KHUNG-dien-trach-DH-Lộc-Ky",
+      "sao": [
+       "Thiên Cơ",
+       "Thái Âm"
+      ],
+      "cung": "Điền Trạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Điền Trạch",
+       "Tử Tức"
+      ]
+     }
+    },
+    {
+     "text": "Thái Âm mang Hóa Kỵ ở Tử Tức (cung xung chiếu của Điền Trạch) ảnh hưởng đến nhà cửa và gia đạo: là điểm cần đầu tư công sức trong việc nhà và dễ để tâm; nên giữ giấy tờ rõ ràng, trao đổi thẳng thắn với người trong nhà.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-dien-trach-HOA-Kỵ-xung",
+      "sao": [
+       "Thái Âm"
+      ],
+      "cung": "Điền Trạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Tử Tức"
+      ]
+     }
+    },
+    {
+     "text": "Tam phương của Điền Trạch có cả Hóa Lộc lẫn Hóa Kỵ (Thiên Cơ, Thái Âm): thuận lợi và điểm vướng cùng có, nên giữ một khoản dự phòng trước khi mở hướng mới.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-dien-trach-DH-Lộc-Ky",
+      "sao": [
+       "Thiên Cơ",
+       "Thái Âm"
+      ],
+      "cung": "Điền Trạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Điền Trạch",
+       "Tử Tức"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "phu-tinh",
+   "tieuDe": "Sao phụ",
+   "nhanDinh": [
+    {
+     "text": "Cuối cùng là Tuần ở một cung tam hợp.",
+     "phan": "noi",
+     "thamChieu": {
+      "quyTacId": "KHUNG-dien-trach-TUAN-tam-hop",
+      "sao": [],
+      "cung": "Điền Trạch",
+      "nguon": "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Tật Ách"
+      ],
+      "yeuTo": [
+       "Tuần"
+      ]
+     }
+    },
+    {
+     "text": "Tuần đóng ở Tật Ách (cung tam hợp của Điền Trạch): Tuần chỉ tác động hai cung nó đứng giữa, không chiếu sang Điền Trạch, nhưng các sao tại Tật Ách bị giảm cường độ nên phần đóng góp của cung này cho nhà cửa và gia đạo đến chậm và dịu hơn; ảnh hưởng thường rõ dần về sau, mỗi người cảm nhận khác nhau tùy hoàn cảnh và nỗ lực.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-dien-trach-TUAN-tam-hop",
+      "sao": [],
+      "cung": "Điền Trạch",
+      "nguon": "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Tật Ách"
+      ],
+      "yeuTo": [
+       "Tuần"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "tom-lai",
+   "tieuDe": "Tóm lại",
+   "nhanDinh": [
+    {
+     "text": "Tóm lại, gia đạo của bạn có nền thuận nhờ Thiên Cơ sáng mang Hóa Lộc tại Điền Trạch, hợp với cải tiến nhà cửa từng bước. Thái Âm hóa Kỵ ở Tử Tức là phần cần đầu tư công sức, chủ yếu qua trò chuyện và giấy tờ rõ ràng. Tật Ách vô chính diệu gặp Tuần nên phần hỗ trợ từ cung này đến chậm nhưng êm.",
+     "phan": "tom-lai",
+     "thamChieu": {
+      "quyTacId": "KHUNG-dien-trach-DH-Lộc-Ky",
+      "sao": [
+       "Thiên Cơ",
+       "Thái Âm"
+      ],
+      "cung": "Điền Trạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Điền Trạch",
+       "Tử Tức"
+      ]
+     }
+    },
+    {
+     "text": "Ở tuổi ngoài 30, nếu bạn đang tính mua hoặc thuê nhà lâu dài, Hóa Lộc tại Điền Trạch là lợi thế khi bạn chịu so sánh nhiều phương án. Với quyết định ảnh hưởng đến cả nhà, nhất là khi đã hoặc sắp có con nhỏ, nên bàn trước với người bạn đời và ghi lại điều đã thống nhất.",
+     "phan": "goi-y",
+     "thamChieu": {
+      "quyTacId": "KHUNG-dien-trach-HOA-Kỵ-xung",
+      "sao": [
+       "Thái Âm"
+      ],
+      "cung": "Điền Trạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Tử Tức"
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "ghiChu": "Luận giải do hệ thống xemtuvi.vn tạo tự động từ các quy tắc Tử Vi có ghi nguồn; nội dung mang tính tham khảo, giúp hiểu mình và định hướng, không phải lời đoán chắc về tương lai.",
+ "phienBan": "2aabd4fef870",
+ "nguoiViet": "Hạnh (luan-giai)",
+ "viec": "L-b6c541"
+}

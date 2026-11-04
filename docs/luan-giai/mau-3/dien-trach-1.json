@@ -1,0 +1,359 @@
+{
+ "chuyenDe": "dien-trach",
+ "laSoMau": {
+  "id": "TC09",
+  "doiTuong": "Nữ, sinh 2/9/1987 (Đinh Mão), khoảng 39 tuổi",
+  "nguonLaSo": "docs/nghien-cuu/tuvi-test-cases.json (engine lapLaSo)"
+ },
+ "dauBai": {
+  "nhanDinh": [
+   {
+    "text": "Gia đạo của bạn mang dáng dấp thế Sát Phá Tham: Thất Sát tại Điền Trạch, Phá Quân và Tham Lang hội về từ hai cung tam hợp, nên chuyện nhà cửa ít khi đứng yên lâu. Địa Không hãm nằm ngay trong cung khiến thế này chưa thành cách vững, và bài sẽ chỉ ra đâu là sức đẩy, đâu là chỗ nên tính kỹ.",
+    "phan": "dau-bai",
+    "thamChieu": {
+     "quyTacId": "KHUNG-dien-trach-CC-SatPhaTham-PHA3-ham",
+     "sao": [
+      "Thất Sát",
+      "Phá Quân",
+      "Tham Lang",
+      "Địa Không"
+     ],
+     "cung": "Điền Trạch",
+     "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "truongPhai": "Tam hợp phái Việt",
+     "cungLienQuan": [
+      "Điền Trạch",
+      "Tật Ách",
+      "Huynh Đệ"
+     ],
+     "yeuTo": [
+      "Cách Sát Phá Tham"
+     ]
+    }
+   }
+  ]
+ },
+ "muc": [
+  {
+   "id": "cach-cuc",
+   "tieuDe": "Cách cục",
+   "nhanDinh": [
+    {
+     "text": "Bức tranh chung: Thất Sát ở Điền Trạch, Tử Vi cùng Phá Quân sáng (Vượng) ở Tật Ách, Tham Lang ở Huynh Đệ.",
+     "phan": "noi",
+     "thamChieu": {
+      "quyTacId": "KHUNG-dien-trach-CC-SatPhaTham-PHA3-ham",
+      "sao": [
+       "Thất Sát",
+       "Phá Quân",
+       "Tham Lang",
+       "Địa Không"
+      ],
+      "cung": "Điền Trạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Điền Trạch",
+       "Tật Ách",
+       "Huynh Đệ"
+      ],
+      "yeuTo": [
+       "Cách Sát Phá Tham"
+      ]
+     }
+    },
+    {
+     "text": "Có dáng dấp của thế Sát Phá Tham: chuyện nhà cửa dễ có lần đổi chỗ ở hoặc sửa sang lớn, ít khi đứng yên lâu; nhưng Địa Không hãm ngay tại cung này nên chưa thể coi là cách vững. Về nhà cửa, nên cân nhắc kỹ chi phí trước khi quyết.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-dien-trach-CC-SatPhaTham-PHA3-ham",
+      "sao": [
+       "Thất Sát",
+       "Phá Quân",
+       "Tham Lang",
+       "Địa Không"
+      ],
+      "cung": "Điền Trạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Điền Trạch",
+       "Tật Ách",
+       "Huynh Đệ"
+      ],
+      "yeuTo": [
+       "Cách Sát Phá Tham"
+      ]
+     }
+    },
+    {
+     "text": "Có dáng dấp của thế Tử Phá: dễ có kế hoạch cải tạo, đổi mới nhà cửa theo ý riêng; nhưng Địa Không hãm ngay tại cung này nên chưa thể coi là cách vững.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-dien-trach-CC-TuPha-PHA3-ham",
+      "sao": [
+       "Tử Vi",
+       "Phá Quân",
+       "Địa Không"
+      ],
+      "cung": "Điền Trạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Tật Ách",
+       "Điền Trạch"
+      ],
+      "yeuTo": [
+       "Cách Tử Phá"
+      ]
+     }
+    },
+    {
+     "text": "Kình Dương đắc địa trong tam phương là trợ lực của thế Sát Phá Tham, giúp chuyện nhà cửa của bạn có thêm sức bền để vượt thử thách.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-dien-trach-CC-SatPhaTham-TroLuc",
+      "sao": [
+       "Thất Sát",
+       "Phá Quân",
+       "Tham Lang",
+       "Kình Dương"
+      ],
+      "cung": "Điền Trạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Điền Trạch",
+       "Tật Ách",
+       "Huynh Đệ"
+      ],
+      "yeuTo": [
+       "Cách Sát Phá Tham"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "phong-cach",
+   "tieuDe": "Nhà cửa và nếp nhà",
+   "nhanDinh": [
+    {
+     "text": "Nhìn riêng cung Điền Trạch, hai sao tại cung nói rõ về nếp nhà.",
+     "phan": "noi",
+     "thamChieu": {
+      "quyTacId": "KHUNG-dien-trach-CC-SatPhaTham-PHA3-ham",
+      "sao": [
+       "Thất Sát",
+       "Phá Quân",
+       "Tham Lang",
+       "Địa Không"
+      ],
+      "cung": "Điền Trạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Điền Trạch",
+       "Tật Ách",
+       "Huynh Đệ"
+      ],
+      "yeuTo": [
+       "Cách Sát Phá Tham"
+      ]
+     }
+    },
+    {
+     "text": "Thất Sát hãm cùng Địa Không tại Điền Trạch cho thấy nếp nhà thiên về quyết nhanh, làm mạnh tay, nhưng chi phí dễ vượt dự tính mỗi lần đổi chỗ ở hay sửa sang; nên lập dự toán có phần dư và chia việc thành từng đợt.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-dien-trach-CC-SatPhaTham-PHA3-ham",
+      "sao": [
+       "Thất Sát",
+       "Địa Không"
+      ],
+      "cung": "Điền Trạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Điền Trạch"
+      ],
+      "yeuTo": [
+       "Cách Sát Phá Tham"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "nguoi-than",
+   "tieuDe": "Cha mẹ, anh chị em, con cái",
+   "nhanDinh": [
+    {
+     "text": "Trong những người cùng nhà, cung Huynh Đệ nằm ngay trong tam phương của Điền Trạch.",
+     "phan": "noi",
+     "thamChieu": {
+      "quyTacId": "KHUNG-dien-trach-TUAN-tam-hop",
+      "sao": [],
+      "cung": "Điền Trạch",
+      "nguon": "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Huynh Đệ"
+      ],
+      "yeuTo": [
+       "Tuần"
+      ]
+     }
+    },
+    {
+     "text": "Tham Lang ở Huynh Đệ là một mắt xích của thế Sát Phá Tham, nhưng cung này có Tuần nên phần anh chị em góp vào chuyện nhà thường đến chậm và nhẹ hơn; bạn nên chủ động lo phần chính.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-dien-trach-TUAN-tam-hop",
+      "sao": [
+       "Tham Lang"
+      ],
+      "cung": "Điền Trạch",
+      "nguon": "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Huynh Đệ"
+      ],
+      "yeuTo": [
+       "Tuần"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "phu-tinh",
+   "tieuDe": "Sao phụ",
+   "nhanDinh": [
+    {
+     "text": "Sao phụ ở hai cung tam hợp cho biết sức bền khi việc nhà dồn lại; Kình Dương vừa là trợ lực vừa làm nhịp gấp hơn.",
+     "phan": "noi",
+     "thamChieu": {
+      "quyTacId": "KHUNG-dien-trach-CC-SatPhaTham-TroLuc",
+      "sao": [
+       "Thất Sát",
+       "Phá Quân",
+       "Tham Lang",
+       "Kình Dương"
+      ],
+      "cung": "Điền Trạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Điền Trạch",
+       "Tật Ách",
+       "Huynh Đệ"
+      ],
+      "yeuTo": [
+       "Cách Sát Phá Tham"
+      ]
+     }
+    },
+    {
+     "text": "Tuần đóng ở Huynh Đệ (cung tam hợp của Điền Trạch): Tuần chỉ tác động hai cung nó đứng giữa, không chiếu sang Điền Trạch, nhưng các sao tại Huynh Đệ bị giảm cường độ nên phần đóng góp của cung này cho nhà cửa và gia đạo đến chậm và dịu hơn; ảnh hưởng thường rõ dần về sau, mỗi người cảm nhận khác nhau tùy hoàn cảnh và nỗ lực.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-dien-trach-TUAN-tam-hop",
+      "sao": [],
+      "cung": "Điền Trạch",
+      "nguon": "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Huynh Đệ"
+      ],
+      "yeuTo": [
+       "Tuần"
+      ]
+     }
+    },
+    {
+     "text": "Kình Dương ở Tật Ách (cung tam hợp của Điền Trạch) ảnh hưởng đến nhà cửa và gia đạo: nghị lực mạnh, quyết liệt, nên kiểm soát sự nóng vội.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-dien-trach-SP-KìnhDương-tam-hop",
+      "sao": [
+       "Kình Dương"
+      ],
+      "cung": "Điền Trạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Tật Ách"
+      ]
+     }
+    },
+    {
+     "text": "Địa Kiếp ở Tật Ách (cung tam hợp của Điền Trạch) ảnh hưởng đến nhà cửa và gia đạo: hay muốn đổi hướng, nên cân nhắc trước khi quyết.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-dien-trach-SP-ĐịaKiếp-tam-hop",
+      "sao": [
+       "Địa Kiếp"
+      ],
+      "cung": "Điền Trạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Tật Ách"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "tom-lai",
+   "tieuDe": "Tóm lại",
+   "nhanDinh": [
+    {
+     "text": "Tóm lại, nhà cửa của bạn đi theo nhịp thay đổi của thế Sát Phá Tham hơn là sự yên ổn lâu dài. Sức bền có sẵn nhờ Phá Quân sáng và Kình Dương ở Tật Ách, còn điều cần giữ là chi phí vì Địa Không hãm ngay tại Điền Trạch. Phần anh chị em góp vào bị Tuần làm chậm, nên bạn là người cầm nhịp chính.",
+     "phan": "tom-lai",
+     "thamChieu": {
+      "quyTacId": "KHUNG-dien-trach-CC-SatPhaTham-PHA3-ham",
+      "sao": [
+       "Thất Sát",
+       "Phá Quân",
+       "Tham Lang",
+       "Địa Không"
+      ],
+      "cung": "Điền Trạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Điền Trạch",
+       "Tật Ách",
+       "Huynh Đệ"
+      ],
+      "yeuTo": [
+       "Cách Sát Phá Tham"
+      ]
+     }
+    },
+    {
+     "text": "Ở tuổi ngoài 35, nhiều người bắt đầu tính chuyện an cư lâu dài hoặc sửa sang tổ ấm; với lá số này, nên chọn phương án làm dần được và giữ một khoản dự phòng riêng cho nhà cửa. Khi bàn chuyện nhà với người thân, bạn có thể đưa dự toán lên giấy trước, để quyết nhanh mà không bị hụt.",
+     "phan": "goi-y",
+     "thamChieu": {
+      "quyTacId": "KHUNG-dien-trach-CC-SatPhaTham-PHA3-ham",
+      "sao": [
+       "Thất Sát",
+       "Phá Quân",
+       "Tham Lang",
+       "Địa Không"
+      ],
+      "cung": "Điền Trạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Điền Trạch",
+       "Tật Ách",
+       "Huynh Đệ"
+      ],
+      "yeuTo": [
+       "Cách Sát Phá Tham"
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "ghiChu": "Luận giải do hệ thống xemtuvi.vn tạo tự động từ các quy tắc Tử Vi có ghi nguồn; nội dung mang tính tham khảo, giúp hiểu mình và định hướng, không phải lời đoán chắc về tương lai.",
+ "phienBan": "2aabd4fef870",
+ "nguoiViet": "Hạnh (luan-giai)",
+ "viec": "L-b6c541"
+}

@@ -1,0 +1,317 @@
+{
+ "chuyenDe": "tai-bach",
+ "laSoMau": {
+  "id": "TC03",
+  "doiTuong": "Nam, sinh 20/12/1995 (Ất Hợi), khoảng 31 tuổi",
+  "nguonLaSo": "docs/nghien-cuu/tuvi-test-cases.json (engine lapLaSo)"
+ },
+ "dauBai": {
+  "nhanDinh": [
+   {
+    "text": "Tài Bạch của bạn nằm trong thế Tử Phủ Vũ Tướng: Liêm Trinh, Thiên Phủ tại cung, Vũ Khúc, Thiên Tướng ở Mệnh và Tử Vi ở Quan Lộc cùng hội về. Đây là bộ sao của tích lũy và kỷ luật hơn là kiếm nhanh, nhưng có khuyết vì sát tinh xen vào tam phương.",
+    "phan": "dau-bai",
+    "thamChieu": {
+     "quyTacId": "KHUNG-tai-bach-CC-TuPhuVuTuong-PHA",
+     "sao": [
+      "Tử Vi",
+      "Thiên Phủ",
+      "Vũ Khúc",
+      "Thiên Tướng",
+      "Kình Dương",
+      "Đà La",
+      "Địa Không"
+     ],
+     "cung": "Tài Bạch",
+     "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+     "truongPhai": "Tam hợp phái Việt",
+     "cungLienQuan": [
+      "Tài Bạch",
+      "Mệnh",
+      "Quan Lộc",
+      "Phúc Đức"
+     ],
+     "yeuTo": [
+      "Cách Tử Phủ Vũ Tướng"
+     ]
+    }
+   }
+  ]
+ },
+ "muc": [
+  {
+   "id": "cach-cuc",
+   "tieuDe": "Cách cục",
+   "nhanDinh": [
+    {
+     "text": "Bắt đầu từ thế sao lớn nhất quanh Tài Bạch.",
+     "phan": "noi",
+     "thamChieu": {
+      "quyTacId": "KHUNG-tai-bach-CC-TuPhuVuTuong-PHA",
+      "sao": [
+       "Tử Vi",
+       "Thiên Phủ",
+       "Vũ Khúc",
+       "Thiên Tướng",
+       "Kình Dương",
+       "Đà La",
+       "Địa Không"
+      ],
+      "cung": "Tài Bạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Tài Bạch",
+       "Mệnh",
+       "Quan Lộc",
+       "Phúc Đức"
+      ],
+      "yeuTo": [
+       "Cách Tử Phủ Vũ Tướng"
+      ]
+     }
+    },
+    {
+     "text": "Tử Vi, Thiên Phủ, Vũ Khúc, Thiên Tướng cùng hội trong tam phương, tạo thế Tử Phủ Vũ Tướng (thành cách nhưng có khuyết): tiền bạc thiên về tích lũy đều, quản lý chặt và biết dành quỹ dự phòng; cần thêm nỗ lực và sự cẩn trọng để giữ vững.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-tai-bach-CC-TuPhuVuTuong-PHA",
+      "sao": [
+       "Tử Vi",
+       "Thiên Phủ",
+       "Vũ Khúc",
+       "Thiên Tướng",
+       "Kình Dương",
+       "Đà La",
+       "Địa Không"
+      ],
+      "cung": "Tài Bạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Tài Bạch",
+       "Mệnh",
+       "Quan Lộc",
+       "Phúc Đức"
+      ],
+      "yeuTo": [
+       "Cách Tử Phủ Vũ Tướng"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "phong-cach",
+   "tieuDe": "Cách kiếm và giữ tiền",
+   "nhanDinh": [
+    {
+     "text": "Hai chính tinh tại Tài Bạch đều sáng, cho thấy cách bạn tự nhiên xoay xở với tiền.",
+     "phan": "noi",
+     "thamChieu": {
+      "quyTacId": "TB-S07-TOT",
+      "sao": [
+       "Thiên Phủ"
+      ],
+      "cung": "Tài Bạch",
+      "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+      "truongPhai": "Tam hợp phái Việt"
+     }
+    },
+    {
+     "text": "Liêm Trinh sáng tại Tài Bạch hợp môi trường cạnh tranh, sôi động: bạn thường tiến chậm nhưng chắc và giữ nguyên tắc rõ. Nên chọn lĩnh vực có cạnh tranh nhưng luật chơi minh bạch để phát huy sức bền của mình.",
+     "thamChieu": {
+      "quyTacId": "TB-S06-TOT",
+      "sao": [
+       "Liêm Trinh"
+      ],
+      "cung": "Tài Bạch",
+      "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+      "truongPhai": "Tam hợp phái Việt"
+     }
+    },
+    {
+     "text": "Thiên Phủ là sao chủ kho, sáng ở Tài Bạch thì bạn thường giỏi giữ của, chi tiêu chừng mực và tích lũy bền. Nên chia tài sản thành ba ngăn rõ ràng: tiền khẩn cấp, mục tiêu gần, mục tiêu xa.",
+     "thamChieu": {
+      "quyTacId": "TB-S07-TOT",
+      "sao": [
+       "Thiên Phủ"
+      ],
+      "cung": "Tài Bạch",
+      "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+      "truongPhai": "Tam hợp phái Việt"
+     }
+    }
+   ]
+  },
+  {
+   "id": "tu-hoa",
+   "tieuDe": "Tứ hóa",
+   "nhanDinh": [
+    {
+     "text": "Điểm nhấn Tứ hóa nằm ở Quan Lộc, tức là tiền đi qua con đường công việc.",
+     "phan": "noi",
+     "thamChieu": {
+      "quyTacId": "KHUNG-tai-bach-HOA-Khoa-tam-hop",
+      "sao": [
+       "Tử Vi"
+      ],
+      "cung": "Tài Bạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Quan Lộc"
+      ]
+     }
+    },
+    {
+     "text": "Tử Vi mang Hóa Khoa ở Quan Lộc (cung tam hợp của Tài Bạch) ảnh hưởng đến cách kiếm tiền và giữ tiền: thêm uy tín trong chuyện tiền bạc và người hiểu biết giúp đỡ khi cần, nên giữ sự minh bạch.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-tai-bach-HOA-Khoa-tam-hop",
+      "sao": [
+       "Tử Vi"
+      ],
+      "cung": "Tài Bạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Quan Lộc"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "phu-tinh",
+   "tieuDe": "Sao hỗ trợ và cần lưu ý",
+   "nhanDinh": [
+    {
+     "text": "Sát tinh trong tam phương là lý do cách cục chưa trọn, cũng là chỗ bạn chủ động điều chỉnh được.",
+     "phan": "noi",
+     "thamChieu": {
+      "quyTacId": "KHUNG-tai-bach-SP-KìnhDương-xung",
+      "sao": [
+       "Kình Dương"
+      ],
+      "cung": "Tài Bạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Phúc Đức"
+      ]
+     }
+    },
+    {
+     "text": "Triệt đóng ở Quan Lộc (cung tam hợp của Tài Bạch): Triệt chỉ tác động hai cung nó tách đôi, không chiếu sang Tài Bạch, nhưng các sao tại Quan Lộc bị giảm cường độ nên phần đóng góp của cung này cho cách kiếm tiền và giữ tiền dịu hơn; ảnh hưởng thường rõ hơn ở giai đoạn đầu đời rồi nhẹ dần, mỗi người cảm nhận khác nhau tùy hoàn cảnh và nỗ lực.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-tai-bach-TRIET-tam-hop",
+      "sao": [],
+      "cung": "Tài Bạch",
+      "nguon": "Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Quan Lộc"
+      ],
+      "yeuTo": [
+       "Triệt"
+      ]
+     }
+    },
+    {
+     "text": "Kình Dương ở Phúc Đức (cung xung chiếu của Tài Bạch) ảnh hưởng đến cách kiếm tiền và giữ tiền: nghị lực mạnh, quyết liệt, nên kiểm soát sự nóng vội.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-tai-bach-SP-KìnhDương-xung",
+      "sao": [
+       "Kình Dương"
+      ],
+      "cung": "Tài Bạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Phúc Đức"
+      ]
+     }
+    },
+    {
+     "text": "Đà La ở Mệnh (cung tam hợp của Tài Bạch) ảnh hưởng đến cách kiếm tiền và giữ tiền: kiên trì, bền bỉ nhưng dễ chần chừ, nên chủ động hơn.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-tai-bach-SP-ĐàLa-tam-hop",
+      "sao": [
+       "Đà La"
+      ],
+      "cung": "Tài Bạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Mệnh"
+      ]
+     }
+    },
+    {
+     "text": "Địa Không ở Mệnh (cung tam hợp của Tài Bạch) ảnh hưởng đến cách kiếm tiền và giữ tiền: hay nghĩ khác lạ, cần thực tế hóa ý tưởng.",
+     "thamChieu": {
+      "quyTacId": "KHUNG-tai-bach-SP-ĐịaKhông-tam-hop",
+      "sao": [
+       "Địa Không"
+      ],
+      "cung": "Tài Bạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Mệnh"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "tom-lai",
+   "tieuDe": "Tóm lại",
+   "nhanDinh": [
+    {
+     "text": "Tóm lại, nền tiền bạc của bạn vững nhờ thế Tử Phủ Vũ Tướng cùng Liêm Trinh, Thiên Phủ sáng tại cung, hợp với tích lũy đều. Tử Vi hóa Khoa ở Quan Lộc cho uy tín qua công việc, dù Triệt làm phần thuận ấy đến chậm hơn. Kình Dương ở Phúc Đức, Đà La và Địa Không ở Mệnh là chỗ dễ nóng vội hoặc chần chừ, nên bạn cần một nhịp quyết định ổn định.",
+     "phan": "tom-lai",
+     "thamChieu": {
+      "quyTacId": "KHUNG-tai-bach-CC-TuPhuVuTuong-PHA",
+      "sao": [
+       "Tử Vi",
+       "Thiên Phủ",
+       "Vũ Khúc",
+       "Thiên Tướng",
+       "Kình Dương",
+       "Đà La",
+       "Địa Không"
+      ],
+      "cung": "Tài Bạch",
+      "nguon": "Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang)",
+      "truongPhai": "Tam hợp phái Việt",
+      "cungLienQuan": [
+       "Tài Bạch",
+       "Mệnh",
+       "Quan Lộc",
+       "Phúc Đức"
+      ],
+      "yeuTo": [
+       "Cách Tử Phủ Vũ Tướng"
+      ]
+     }
+    },
+    {
+     "text": "Ở tuổi ngoài 30, các mục tiêu lớn như mua nhà, lập gia đình hay đổi việc thường đến gần nhau; tự động trích một tỷ lệ cố định mỗi tháng vào quỹ dài hạn là cách để Thiên Phủ làm đúng phần giữ kho. Gặp lời mời đầu tư hứa lãi nhanh, bạn nên chờ vài ngày và đối chiếu bằng số liệu trước khi quyết.",
+     "phan": "goi-y",
+     "thamChieu": {
+      "quyTacId": "TB-S07-TOT",
+      "sao": [
+       "Thiên Phủ"
+      ],
+      "cung": "Tài Bạch",
+      "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+      "truongPhai": "Tam hợp phái Việt"
+     }
+    }
+   ]
+  }
+ ],
+ "ghiChu": "Luận giải do hệ thống xemtuvi.vn tạo tự động từ các quy tắc Tử Vi có ghi nguồn; nội dung mang tính tham khảo, giúp hiểu mình và định hướng, không phải lời đoán chắc về tương lai.",
+ "phienBan": "2aabd4fef870",
+ "nguoiViet": "Hạnh (luan-giai)",
+ "viec": "L-b6c541"
+}
