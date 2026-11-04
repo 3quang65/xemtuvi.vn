@@ -5755,6 +5755,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "PT-S02-C1-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Thiên Di",
+  "sao": [
+   "Thiên Cơ"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Cơ hãm ở Thiên Di, tam hợp với Phu Thê: sách ghi xa nhà khó được yên. Trong tình cảm, những giai đoạn đi xa, đổi chỗ ở dễ làm hai người lệch nhịp. Thống nhất trước cách giữ liên lạc khi một người phải đi.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "DI-TCO-02",
+   "PHU-YN-02",
+   "DI-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "DI-TCO-02: TB (tr. 175, §10.6); TT (卷二·七遷移: 「加羊陀火鈴在外多是非身不安靜」)"
+ },
+ {
   "id": "PT-S03-TOT",
   "chuyenDe": "phu-the",
   "cung": "Phu Thê",
@@ -5914,6 +5938,30 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S03-C1-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Thiên Di",
+  "sao": [
+   "Thái Dương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thái Dương hãm ở Thiên Di: sách ghi ra ngoài dễ bị hiểu lầm, khó được lòng người ngay. Hội về Phu Thê, ấn tượng đầu tiên bạn để lại với người mới quen có thể chưa đúng con người thật. Cho mối quan hệ thời gian, và để người kia hiểu bạn qua những việc làm nhỏ.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "DI-TDU-02",
+   "PHU-YN-02",
+   "DI-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "DI-TDU-02: TB (tr. 175, §10.5); TT (卷二·七遷移: 「加羊陀火鈴空劫在外心身不清閒」)"
  },
  {
   "id": "PT-S04-TOT",
@@ -6077,6 +6125,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "PT-S04-C1-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Thiên Di",
+  "sao": [
+   "Vũ Khúc"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Vũ Khúc hãm ở Thiên Di: sách ghi ra ngoài hay phiền lòng, thân tâm khó yên. Tam hợp với Phu Thê, công việc bên ngoài nhiều áp lực dễ làm bạn ít thời gian cho người thương. Về nhà là lúc gác chuyện bên ngoài lại, dù chỉ một buổi tối mỗi tuần.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "DI-VK-03",
+   "PHU-YN-02",
+   "DI-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "DI-VK-03: TB (tr. 175, §10.4); TT (卷二·七遷移: 武曲「七殺破軍同身心不得靜守」)"
+ },
+ {
   "id": "PT-S05-TOT",
   "chuyenDe": "phu-the",
   "cung": "Phu Thê",
@@ -6238,6 +6310,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "PT-S05-C1-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Thiên Di",
+  "sao": [
+   "Thiên Đồng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Đồng hãm ở Thiên Di: sách ghi dễ gặp chuyện phiền lòng, thị phi khi ra ngoài. Hội về Phu Thê, lời ra tiếng vào từ bên ngoài dễ xen vào chuyện hai người. Giữ chuyện riêng của hai người cho riêng hai người.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "DI-TD-03",
+   "PHU-YN-02",
+   "DI-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "DI-TD-03: TB (tr. 174–175, §10.3); TT (卷二·七遷移: 「加羊陀火鈴空劫在外少遂志」)"
+ },
+ {
   "id": "PT-S06-TOT",
   "chuyenDe": "phu-the",
   "cung": "Phu Thê",
@@ -6397,6 +6493,30 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S06-C1-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Thiên Di",
+  "sao": [
+   "Liêm Trinh"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Liêm Trinh hãm ở Thiên Di: sách ghi ra ngoài ít gặp người giúp, dễ vướng thị phi. Tam hợp với Phu Thê, bạn nên tìm hiểu kỹ người mới quen trước khi gắn bó. Gặp gỡ trong môi trường lành mạnh, có bạn bè chung, sẽ giúp bạn nhìn người rõ hơn.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "DI-LT-03",
+   "PHU-YN-02",
+   "DI-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "DI-LT-03: TB (tr. 174, §10.2); TT (卷二·七遷移: 貪狼「廉貞同加四殺，在外艱難」); KL (Liêm trinh — Thiên di)"
  },
  {
   "id": "PT-S07-TOT",
@@ -6673,6 +6793,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "PT-S08-C1-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Thiên Di",
+  "sao": [
+   "Thái Âm"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thái Âm hãm ở Thiên Di: Tân Biên ghi ra ngoài dễ gặp chuyện phiền lòng, nên giữ ôn hòa, tránh va chạm. Hội về Phu Thê, bạn dễ mang sự mệt mỏi từ bên ngoài về và cần người kia thấu hiểu. Hãy nói ra nhu cầu được nghỉ ngơi một cách nhẹ nhàng.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "DI-TA-02",
+   "PHU-YN-02",
+   "DI-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "DI-TA-02: TB (tr. 176, §10.8); TT (卷二·七遷移: 「陷宮招是非」)"
+ },
+ {
   "id": "PT-S09-TOT",
   "chuyenDe": "phu-the",
   "cung": "Phu Thê",
@@ -6832,6 +6976,30 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S09-C1-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Thiên Di",
+  "sao": [
+   "Tham Lang"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Tham Lang hãm ở Thiên Di: sách ghi ra ngoài nhiều vất vả, nên chọn môi trường lành mạnh. Tam hợp với Phu Thê, những cuộc vui đông người dễ làm người bên cạnh thấy thiếu an tâm. Rủ người thương cùng tham gia, hoặc kể rõ bạn đi đâu, với ai.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "DI-THL-03",
+   "PHU-YN-02",
+   "DI-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "DI-THL-03: TB (tr. 176, §10.9); TT (卷二·七遷移: 貪狼「獨守在外勞碌，鬧中橫進財」); KL (Tham lang — Di: \"Kỳ dư với các sao khác đều bất lợi\")"
  },
  {
   "id": "PT-S10-TOT",
@@ -6995,6 +7163,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "PT-S10-C1-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Thiên Di",
+  "sao": [
+   "Cự Môn"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Cự Môn hãm ở Thiên Di: sách ghi ra ngoài hay vướng khẩu thiệt. Hội về Phu Thê, lời người ngoài kể lại dễ thành hiểu lầm giữa hai người. Hỏi thẳng người trong cuộc trước khi tin chuyện nghe được.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "DI-CM-02",
+   "PHU-YN-02",
+   "DI-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "DI-CM-02: TB (tr. 177, §10.10); TT (卷一·問巨門: 「在遷移則招是非」; 卷二·七遷移: 巨門「出外勞心不安，與人不足多是非」); KL (Cự môn — Di: \"bị khẩu thiệt\")"
+ },
+ {
   "id": "PT-S11-TOT",
   "chuyenDe": "phu-the",
   "cung": "Phu Thê",
@@ -7154,6 +7346,30 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S11-C1-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Thiên Di",
+  "sao": [
+   "Thiên Tướng"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Tướng hãm ở Thiên Di: Tân Biên ghi xa nhà không được lợi nhiều nhưng vẫn được người mến. Tam hợp với Phu Thê, sự dễ mến bên ngoài của bạn cần đi kèm ranh giới rõ trong các mối quan hệ. Để người thương luôn thấy mình là ưu tiên.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "DI-TT-02",
+   "PHU-YN-02",
+   "DI-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "DI-TT-02: TB (tr. 177, §10.11); TT (卷二·七遷移: 「廉貞同加羊陀火鈴招是非小人不足」)"
  },
  {
   "id": "PT-S12-TOT",
@@ -7317,6 +7533,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "PT-S12-C1-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Thiên Di",
+  "sao": [
+   "Thiên Lương"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thiên Lương hãm ở Thiên Di: sách ghi hay di chuyển, có xu hướng lập nghiệp xa quê. Hội về Phu Thê, hai người có thể phải sống xa quê hoặc xa nhau một thời gian vì công việc. Cùng bàn trước chuyện nơi ở lâu dài để không ai phải hy sinh một mình.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "DI-TL-03",
+   "PHU-YN-02",
+   "DI-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "DI-TL-03: TB (tr. 177, §10.12); KL (Thiên lương — Di: \"Lương Tỵ Hợi: lang thang …\")"
+ },
+ {
   "id": "PT-S13-TOT",
   "chuyenDe": "phu-the",
   "cung": "Phu Thê",
@@ -7478,6 +7718,30 @@
   "muc": "cung-lien-quan"
  },
  {
+  "id": "PT-S13-C1-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Thiên Di",
+  "sao": [
+   "Thất Sát"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Thất Sát hãm ở Thiên Di: sách ghi ra ngoài nhiều bất lợi, thường lập nghiệp xa quê. Tam hợp với Phu Thê, việc lập nghiệp ở nơi mới cần hai người cùng đồng thuận. Bàn kỹ kế hoạch chuyển đi, kể cả phương án quay về.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "DI-TS-03",
+   "PHU-YN-02",
+   "DI-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "DI-TS-03: TB (tr. 177, §10.13); KL (Thất sát — Di: \"các cung khác đều xấu vì ra ngoài hay gặp tai nạn\")"
+ },
+ {
   "id": "PT-S14-TOT",
   "chuyenDe": "phu-the",
   "cung": "Phu Thê",
@@ -7637,6 +7901,30 @@
   "nguon": "Tử Vi Đẩu Số Toàn Thư",
   "truongPhai": "tam hợp phái Việt",
   "muc": "cung-lien-quan"
+ },
+ {
+  "id": "PT-S14-C1-HAM",
+  "chuyenDe": "phu-the",
+  "cung": "Thiên Di",
+  "sao": [
+   "Phá Quân"
+  ],
+  "dieuKien": {
+   "doSang": [
+    "Hãm"
+   ]
+  },
+  "noiDung": "Phá Quân hãm ở Thiên Di: sách ghi ra ngoài vất vả, nên cẩn trọng khi đi lại và tránh xoay xở tiền liều lĩnh. Hội về Phu Thê, những thay đổi đột ngột về nơi ở, công việc dễ làm người bên cạnh hụt hẫng. Báo trước và cùng quyết định thay vì đặt người kia trước việc đã rồi.",
+  "nguon": "Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương)",
+  "truongPhai": "Tam hợp phái Việt",
+  "muc": "cung-lien-quan",
+  "maNghienCuu": [
+   "DI-PQ-02",
+   "PHU-YN-02",
+   "DI-YN-04",
+   "CHUNG-TP-02"
+  ],
+  "nguonChiTiet": "DI-PQ-02: TB (tr. 178, §10.14); TT (卷一·問破軍: 「在遷移奔走無力」); KL (Phá quân — Di: \"Ở Dần Thân: tai nạn xe cộ\")"
  },
  {
   "id": "PT-HOA-0",
