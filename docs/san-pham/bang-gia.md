@@ -9,9 +9,9 @@ Mặt bằng lần mua đầu của đối thủ 35k–129k; mở lẻ 9k/mục;
 |---|---|---|---|
 | Mở một chủ đề | `mot-chu-de` | **29.000đ** / một lần | Luận sâu 1 chủ đề tự chọn: Bản thân · Tình cảm · Sự nghiệp (Tài chính, Gia đạo mở khi qua kiểm duyệt). Ghi sao, cung, nguồn. |
 | Trọn lá số — **Khuyên dùng** | `tron-la-so` | **99.000đ** / một lần | Luận ba chủ đề (Bản thân, Tình cảm, Sự nghiệp) + vận 10 năm (đại vận); Tài chính, Gia đạo chỉ nêu khi cờ `NOI_DUNG_TAI_CHINH_GIA_DAO_DA_QUA_THU=1` (sau khi Thư duyệt). Ghi sao, cung, trường phái. Xem lại không giới hạn thời gian khi đăng nhập tài khoản. |
-| Thành viên năm | `thanh-vien-nam` | **299.000đ** / năm (≈ 25.000đ/tháng) | Trọn lá số của bạn + luận vận năm + lưu nguyệt từng tháng + hỏi đáp về lá số 5 câu/tháng + trọn lá số cho 2 người thân. |
+| Thành viên năm (đang ẩn, `an: true`) | `thanh-vien-nam` | **299.000đ** / năm (≈ 25.000đ/tháng) | Công bố hiện tại (khớp thẻ trong `goi.ts`): Trọn lá số của bạn xem trong 365 ngày + Trọn lá số cho 2 người thân, áp dụng cho 3 lá số lập đầu tiên. Hỏi đáp về lá số 5 câu/tháng đã có mã nhưng chưa ghi lên thẻ. Luận vận năm và lưu nguyệt từng tháng CHƯA công bố: chỉ thêm vào thẻ khi cờ `LUU_NGUYET_SAN_SANG` bật (sau P18). |
 
-Vận năm 2027 (`van-nam-2027`, giá nháp 39.000đ, chờ duyệt 49.000đ) và gói gộp `tron-la-so-kem-van-nam` 129.000đ, bán đến hết 6/2/2027 (`banDen`, máy chủ từ chối đơn sau ngày đó).
+Khu Vận năm 2027 (mở bán từ 15/12/2026, `MO_BAN_VAN_TU`; giá đã duyệt 30/10): Vận năm 2027 `van-nam-2027` **49.000đ**; gói gộp `tron-la-so-kem-van-nam` **129.000đ**, bán đến hết 6/2/2027; gói đôi `goi-doi-valentine` **179.000đ**, bán đến hết 14/2/2027 (hiện chưa cấp quyền: `GOI_DOI_CHUA_CAP_QUYEN`). Gói có `banDen`: máy chủ từ chối đơn sau ngày đó.
 Điều kiện xem lại: hằng `DIEU_KIEN_XEM_LAI` trong `goi.ts` (L-44c062 theo trang giá v4: câu Thành viên năm chỉ ghép khi gói năm mở), hiện ở /chon-goi và bước xác nhận xóa ở /toi.
 
 ## Lý do chọn số
