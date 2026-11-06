@@ -88,7 +88,7 @@ Bước tái hiện chung: v3.xemtuvi.vn, đăng nhập tài khoản thử, ô "
 - Lộc Tồn "thận trọng với tài chính" ở bài 1 Gia đạo (dòng 233).
 - Hỏa Tinh "nên tiết chế cảm xúc" ở bài 1 Gia đạo (dòng 227), bài 3 Gia đạo (dòng 230), bài 2 Tài chính (dòng 196).
 - Hóa Kỵ Thái Âm "nặng chuyện tiền bạc và cảm xúc; nên chăm đời sống tinh thần" ở bài 3 Sự nghiệp (dòng 151).
-- Chuyển: Hạnh (câu cho sao phụ và câu "tam phương có cả hai hóa" cần viết theo từng chuyên đề).
+- Chuyển: Hạnh (câu cho phụ tinh và câu "tam phương có cả hai hóa" cần viết theo từng chuyên đề).
 
 **TH-08. Nội dung không theo tuổi người đọc.** Bài 3 là nam 66 tuổi.
 - Sự nghiệp dòng 118: "nên chủ động nhận việc để năng lực được thấy". Dòng 140: "giữ quỹ dự phòng cho giai đoạn chuyển việc".

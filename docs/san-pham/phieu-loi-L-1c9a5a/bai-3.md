@@ -85,7 +85,7 @@ Căn cứ: sao Thái Âm; cung Quan Lộc; nguồn Tử Vi Đẩu Số Toàn Th�
 Cự Môn ở cung Thiên Di (tam hợp với Phu Thê): tiếp thêm nét coi trọng sự thẳng thắn, dễ có lời qua tiếng lại khi bất đồng. Trong quan hệ, nên nói thẳng nhưng nhẹ nhàng.
 Căn cứ: sao Cự Môn; cung Thiên Di; nguồn Tử Vi Đẩu Số Toàn Thư; trường phái tam hợp phái Việt
 
-Phúc Đức (cung tam hợp của Phu Thê) không có chính tinh (vô chính diệu): khi luận chuyện tình cảm và hôn nhân, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung.
+Phúc Đức (cung tam hợp của Phu Thê) không có chính tinh (vô chính diệu): khi luận chuyện tình cảm và hôn nhân, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm phụ tinh tại cung.
 Căn cứ: yếu tố Vô Chính Diệu; cung Phu Thê; nguồn Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); trường phái Tam hợp phái Việt
 
 Tứ hóa
@@ -96,7 +96,7 @@ Căn cứ: sao Thái Âm; cung Phu Thê; nguồn Tử Vi Đẩu Số Toàn Thư 
 Tam phương của Phu Thê có cả Hóa Lộc lẫn Hóa Kỵ (Thái Dương, Thái Âm): thuận lợi và điểm vướng cùng có, nên giữ một khoản dự phòng trước khi mở hướng mới.
 Căn cứ: sao Thái Dương, Thái Âm; cung Phu Thê; nguồn Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương); trường phái Tam hợp phái Việt
 
-Sao phụ
+Phụ tinh
 
 Tuần đóng ở Quan Lộc (cung xung chiếu của Phu Thê): Tuần chỉ tác động hai cung nó đứng giữa, không chiếu sang Phu Thê, nhưng các sao tại Quan Lộc bị giảm cường độ nên phần đóng góp của cung này cho chuyện tình cảm và hôn nhân đến chậm và dịu hơn; ảnh hưởng thường rõ dần về sau, mỗi người cảm nhận khác nhau tùy hoàn cảnh và nỗ lực.
 Căn cứ: yếu tố Tuần; cung Phu Thê; nguồn Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương); trường phái Tam hợp phái Việt
@@ -181,7 +181,7 @@ Căn cứ: sao Thiên Cơ, Thái Âm, Thiên Đồng, Thiên Lương; yếu tố
 
 Cung hợp chiếu
 
-Phúc Đức (cung xung chiếu của Tài Bạch) không có chính tinh (vô chính diệu): khi luận cách kiếm tiền và giữ tiền, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung.
+Phúc Đức (cung xung chiếu của Tài Bạch) không có chính tinh (vô chính diệu): khi luận cách kiếm tiền và giữ tiền, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm phụ tinh tại cung.
 Căn cứ: yếu tố Vô Chính Diệu; cung Tài Bạch; nguồn Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); trường phái Tam hợp phái Việt
 
 Tứ hóa
@@ -208,7 +208,7 @@ Luận giải do hệ thống xemtuvi.vn tạo tự động từ các quy tắc 
 
 Cung hợp chiếu
 
-Huynh Đệ (cung tam hợp của Điền Trạch) không có chính tinh (vô chính diệu): khi luận nhà cửa và gia đạo, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung.
+Huynh Đệ (cung tam hợp của Điền Trạch) không có chính tinh (vô chính diệu): khi luận nhà cửa và gia đạo, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm phụ tinh tại cung.
 Căn cứ: yếu tố Vô Chính Diệu; cung Điền Trạch; nguồn Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); trường phái Tam hợp phái Việt
 
 Tứ hóa
@@ -216,7 +216,7 @@ Tứ hóa
 Vũ Khúc mang Hóa Quyền ở Tử Tức (cung xung chiếu của Điền Trạch) ảnh hưởng đến nhà cửa và gia đạo: thêm vai trò quán xuyến việc nhà và quyết định chuyện chung, nên bàn bạc để cả nhà cùng đồng thuận.
 Căn cứ: sao Vũ Khúc; cung Điền Trạch; nguồn Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); trường phái Tam hợp phái Việt
 
-Sao phụ
+Phụ tinh
 
 Triệt đóng ở Tật Ách (cung tam hợp của Điền Trạch): Triệt chỉ tác động hai cung nó tách đôi, không chiếu sang Điền Trạch, nhưng các sao tại Tật Ách bị giảm cường độ nên phần đóng góp của cung này cho nhà cửa và gia đạo dịu hơn; ảnh hưởng thường rõ hơn ở giai đoạn đầu đời rồi nhẹ dần, mỗi người cảm nhận khác nhau tùy hoàn cảnh và nỗ lực.
 Căn cứ: yếu tố Triệt; cung Điền Trạch; nguồn Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương); trường phái Tam hợp phái Việt
