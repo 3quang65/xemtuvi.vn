@@ -1,14 +1,25 @@
 #!/bin/sh
-# Chặn commit khi kiểm thử không đạt (quy ước: CLAUDE.md, mục Kỹ thuật).
-# Cài một lần cho mỗi bản clone: git config core.hooksPath .githooks (npm install làm sẵn qua "prepare").
+# Chặn commit khi kiểm thử không đạt. L-1a16bc (anh quyết 5/11): VPS 8 lõi quá tải, KHÔNG chạy cả bộ tại chỗ.
+# Chỉ chạy `node --test` trên tệp test ĐANG COMMIT (tối đa 3). Cả bộ: office test gui --tat-ca.
+# Cài một lần: git config core.hooksPath .githooks
 
+tep=$(git diff --cached --name-only --diff-filter=ACM | grep -E '(^|/)[^/]+\.test\.(m?js|cjs|ts)$')
+if [ -z "$tep" ]; then
+  echo "pre-commit: không có tệp test nào trong commit, bỏ qua kiểm tại chỗ. Cả bộ: office test gui --tat-ca"
+  exit 0
+fi
+n=$(printf '%s\n' "$tep" | wc -l)
+if [ "$n" -gt 3 ]; then
+  echo "pre-commit: $n tệp test đổi (>3), không chạy tại chỗ (tránh quá tải). Kiểm: office test gui <tệp…> hoặc --tat-ca"
+  exit 0
+fi
 log=$(mktemp)
 trap 'rm -f "$log"' EXIT
-
-echo "pre-commit: chạy npm test..."
-if ! npm test >"$log" 2>&1; then
+echo "pre-commit: node --test $(printf '%s' "$tep" | tr '\n' ' ')"
+# shellcheck disable=SC2086
+if ! node --test $tep >"$log" 2>&1; then
   tail -n 60 "$log"
-  echo "pre-commit: npm test KHÔNG đạt, commit bị chặn. Sửa rồi commit lại."
+  echo "pre-commit: test KHÔNG đạt, commit bị chặn. Sửa rồi commit lại."
   exit 1
 fi
-echo "pre-commit: npm test đạt."
+echo "pre-commit: test đạt."
