@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: 'Phương pháp & nguồn — xemtuvi.vn',
   description: MO_TA,
   alternates: { canonical: '/phuong-phap' },
+  openGraph: { title: 'Phương pháp & nguồn', description: MO_TA, type: 'website', url: '/phuong-phap' },
   robots: { index: true, follow: true },
 };
 
