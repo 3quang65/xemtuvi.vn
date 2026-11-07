@@ -231,6 +231,8 @@ export const hoiDapGhi = (req: Request, m: MayChu) => chay(req, async () => {
 export const lienHeGhi = (req: Request, m: MayChu) => chay(req, async () => {
   const b = await doc(req);
   if (!b) return loi(400, 'du_lieu_sai', 'Dữ liệu không hợp lệ.');
+  // Honeypot: ô ẩn "website" người thật không điền; có nội dung (kể cả số/true) thì từ chối, không lưu.
+  if (b.website !== undefined && b.website !== null && b.website !== '') return loi(400, 'du_lieu_sai', 'Dữ liệu không hợp lệ.');
   if (b.dongY !== true) return loi(400, 'chua_dong_y', 'Cần tích đồng ý nhận tin trước khi gửi.');
   const lh = chuanHoa(b.loai, b.giaTri);
   if (!lh) return loi(400, 'lien_he_sai', b.loai === 'zalo' ? 'Số điện thoại chưa đúng.' : 'Email chưa đúng.');
