@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: `Vận năm 2027 (${TEN_NAM}) — xemtuvi.vn`,
   description: LP.moTa,
   alternates: { canonical: '/lp/van-nam-2027' },
-  openGraph: { title: LP.tieuDe, description: LP.moTa, type: 'website' },
+  openGraph: { title: LP.tieuDe, description: LP.moTa, type: 'website', url: '/lp/van-nam-2027' },
 };
 
 // Khối Giá phụ thuộc cổng mở bán (ngày, cờ môi trường) nên trang dựng theo từng yêu cầu.
