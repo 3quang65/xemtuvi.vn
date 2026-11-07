@@ -12,12 +12,14 @@ export default function TaiKhoanToi() {
   const [email, setEmail] = useState('');
   const [loi, setLoi] = useState<string | null>(null);
   const [go, setGo] = useState('');
+  const [coLaSo, setCoLaSo] = useState(false);
+  const [coDon, setCoDon] = useState(false);
 
   useEffect(() => {
     let huy = false;
     fetch('/api/toi', { cache: 'no-store' })
       .then((r) => r.json())
-      .then((d: { dangNhap?: boolean; email?: string }) => { if (!huy) { setEmail(d.email ?? ''); setBuoc(d.dangNhap ? 'xem' : 'chua-dang-nhap'); } })
+      .then((d: { dangNhap?: boolean; email?: string; laSoIds?: number[]; donGanNhat?: number | null }) => { if (!huy) { setEmail(d.email ?? ''); setCoLaSo((d.laSoIds?.length ?? 0) > 0); setCoDon(d.donGanNhat != null); setBuoc(d.dangNhap ? 'xem' : 'chua-dang-nhap'); } })
       .catch(() => { if (!huy) setBuoc('loi'); });
     return () => { huy = true; };
   }, []);
@@ -42,7 +44,14 @@ export default function TaiKhoanToi() {
     <section className="lien-he" aria-labelledby="toi-tieu-de">
       <h1 id="toi-tieu-de">Tài khoản của tôi</h1>
       <p>Đang đăng nhập: <strong>{email}</strong></p>
-      <p><Link href="/luan-giai">Xem lá số và luận giải của tôi</Link></p>
+      {!coLaSo && !coDon ? (
+        <div className="toi-trong">
+          <p>Bạn chưa có lá số nào và chưa có đơn nào. Hãy lập lá số miễn phí để xem tổng quan và bắt đầu hiểu mình hơn.</p>
+          <Link href="/" className="nut-chinh nut-lien-ket">Lập lá số đầu tiên</Link>
+        </div>
+      ) : (
+        <p><Link href="/luan-giai">Xem lá số và luận giải của tôi</Link></p>
+      )}
       <h2>Xóa dữ liệu của tôi</h2>
       {buoc === 'xem' ? (
         <>
