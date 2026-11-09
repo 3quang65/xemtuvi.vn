@@ -196,7 +196,7 @@ export function tongHop(ls: LaSo, chuyenDe: string, cungChinh: string, pool: Muc
       mot('TOM-LAI-CHINH-TINH', ngan(`Về ${cd}, nền của lá số là ${hop(mo)} tọa thủ ${goc.ten}.`, `Về ${cd}, nền là ${hop(ct.map((s) => s.ten))} tọa thủ ${goc.ten}.`), ct.map((s) => s.ten), goc, nguonCua(chinh.filter((x) => ct.some((s) => x.sao.includes(s.ten)))));
     } else if (!ct.length) {
       const vcd = dangCo.find((x) => /VCD/.test(x.q.id) && x.yeuTo.includes('Vô Chính Diệu') && x.sao.length);
-      if (vcd) mot('TOM-LAI-VO-CHINH-DIEU', ngan(`Về ${cd}, ${goc.ten} không có chính tinh nên luận qua cung đối diện (${hop(vcd.sao)}) và sao phụ.`, `Về ${cd}, ${goc.ten} vô chính tinh nên luận qua cung đối diện.`), vcd.sao, goc, vcd.q.nguon, ['Vô Chính Diệu']);
+      if (vcd) mot('TOM-LAI-VO-CHINH-DIEU', ngan(`Về ${cd}, ${goc.ten} không có chính tinh nên luận qua cung đối diện (${hop(vcd.sao)}) và phụ tinh.`, `Về ${cd}, ${goc.ten} vô chính tinh nên luận qua cung đối diện.`), vcd.sao, goc, vcd.q.nguon, ['Vô Chính Diệu']);
     }
   }
 
