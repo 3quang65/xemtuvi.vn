@@ -91,7 +91,7 @@ Tứ hóa
 Tử Vi mang Hóa Khoa ở Phúc Đức (cung tam hợp của Phu Thê) ảnh hưởng đến chuyện tình cảm và hôn nhân: thêm sự tinh tế, nhã nhặn và được người xung quanh quý trọng trong quan hệ.
 Căn cứ: sao Tử Vi; cung Phu Thê; nguồn Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); trường phái Tam hợp phái Việt
 
-Sao phụ
+Phụ tinh
 
 Đà La đồng cung Phu Thê: kiên trì nhưng dễ chần chừ, cần chủ động hơn.
 Căn cứ: sao Đà La; cung Phu Thê; nguồn Tử Vi Đẩu Số Toàn Thư; trường phái tam hợp phái Việt
@@ -222,7 +222,7 @@ Căn cứ: sao Thái Âm; cung Điền Trạch; nguồn Tử Vi Đẩu Số Toà
 Tam phương của Điền Trạch có cả Hóa Quyền lẫn Hóa Kỵ (Thiên Lương, Thái Âm): thuận lợi và điểm vướng cùng có, nên bàn với người cùng làm trước khi chốt quyết định lớn.
 Căn cứ: sao Thiên Lương, Thái Âm; cung Điền Trạch; nguồn Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương); trường phái Tam hợp phái Việt
 
-Sao phụ
+Phụ tinh
 
 Hỏa Tinh ở Tử Tức (cung xung chiếu của Điền Trạch) ảnh hưởng đến nhà cửa và gia đạo: nhiệt huyết, phản ứng nhanh, nên tiết chế cảm xúc.
 Căn cứ: sao Hỏa Tinh; cung Điền Trạch; nguồn Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); trường phái Tam hợp phái Việt

@@ -54,7 +54,7 @@ c5 (Nữ, New York, 24/12/1990 22:15, chọn "miền Đông · giờ mùa đông
 
 **LOI-04 NÊN SỬA Trang chọn gói không hiện giá, chỉ ghi "Sẽ công bố khi ra mắt".** Bảng kiểm yêu cầu giá nhìn thấy trước khi bấm mua; trang thanh toán cũng chưa có giá. Có thể là chủ ý (chưa đổi giá thật), nhờ Minh quyết. 375px, mọi lá số. Ảnh `anh/mobile-c2-nam-ty-muon-1988-03-chon-goi.png`.
 
-**LOI-05 NÊN SỬA Chữ nhỏ hơn 14 px trên điện thoại.** Lá số: 229-241 phần tử 12,5-12,8 px (tên cung, sao phụ, can cung). Chọn gói 5 (nhãn "Khuyên dùng" 12,8 px, "Quy tắc" 13,1 px); bài trả phí 16 (dòng "Căn cứ" 13,3 px); chân trang 13,6 px. 375/390px. Ảnh `anh/mobile-c1-nu-1995-02-la-so.png`, `anh/mobile-c1-nu-1995-06-bai-dau.png`.
+**LOI-05 NÊN SỬA Chữ nhỏ hơn 14 px trên điện thoại.** Lá số: 229-241 phần tử 12,5-12,8 px (tên cung, phụ tinh, can cung). Chọn gói 5 (nhãn "Khuyên dùng" 12,8 px, "Quy tắc" 13,1 px); bài trả phí 16 (dòng "Căn cứ" 13,3 px); chân trang 13,6 px. 375/390px. Ảnh `anh/mobile-c1-nu-1995-02-la-so.png`, `anh/mobile-c1-nu-1995-06-bai-dau.png`.
 
 **LOI-06 NÊN SỬA Ô bấm nhỏ hơn 40 px trên điện thoại.** Radio Nữ/Nam, Dương/Âm lịch và giờ: ô 13x13 (nhãn kèm chữ có thể bấm nhưng vùng thật nhỏ, cần kiểm vùng label); mũi tên đổi năm ‹ › 27x36; ô tick 22x22; logo "xemtuvi.vn" 122x29; liên kết "Trợ giúp" 54x18 ở chân trang mọi trang. 375/390px. Ảnh `anh/mobile-c1-nu-1995-01-trang-chu.png`.
 

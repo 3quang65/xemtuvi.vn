@@ -111,7 +111,7 @@ Căn cứ: sao Thiên Cơ; cung Phu Thê; nguồn Tử Vi Đẩu Số Toàn Thư
 Tam phương của Phu Thê có cả Hóa Quyền lẫn Hóa Kỵ (Thái Âm, Thiên Cơ): thuận lợi và điểm vướng cùng có, nên bàn với người cùng làm trước khi chốt quyết định lớn.
 Căn cứ: sao Thái Âm, Thiên Cơ; cung Phu Thê; nguồn Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương); trường phái Tam hợp phái Việt
 
-Sao phụ
+Phụ tinh
 
 Triệt đóng tại Phu Thê: các đặc điểm của cung thường biểu hiện chậm hoặc kín đáo hơn, nên kiên nhẫn và nhìn theo giai đoạn.
 Căn cứ: yếu tố Triệt; cung Phu Thê; nguồn Tân Biên Tử Vi Đẩu Số (Vân Đằng Thái Thứ Lang); trường phái tam hợp phái Việt
@@ -144,7 +144,7 @@ Căn cứ: sao Cự Môn; cung Tài Bạch; nguồn Tử Vi Đẩu Số Toàn Th
 Thiên Lương ở cung Phu Thê (xung chiếu với Quan Lộc): soi sang thêm nét hợp công việc mang tính tư vấn, giáo dục, bảo vệ quyền lợi. Nên phát huy ở vai trò hướng dẫn, góp ý.
 Căn cứ: sao Thiên Lương; cung Phu Thê; nguồn Tử Vi Đẩu Số Toàn Thư; trường phái tam hợp phái Việt
 
-Mệnh (cung tam hợp của Quan Lộc) không có chính tinh (vô chính diệu): khi luận công việc và sự nghiệp, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung.
+Mệnh (cung tam hợp của Quan Lộc) không có chính tinh (vô chính diệu): khi luận công việc và sự nghiệp, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm phụ tinh tại cung.
 Căn cứ: yếu tố Vô Chính Diệu; cung Quan Lộc; nguồn Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); trường phái Tam hợp phái Việt
 
 Tứ hóa
@@ -182,7 +182,7 @@ Căn cứ: sao Địa Không, Địa Kiếp; yếu tố Cách Không Kiếp giá
 
 Cung hợp chiếu
 
-Mệnh (cung tam hợp của Tài Bạch) không có chính tinh (vô chính diệu): khi luận cách kiếm tiền và giữ tiền, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm sao phụ tại cung.
+Mệnh (cung tam hợp của Tài Bạch) không có chính tinh (vô chính diệu): khi luận cách kiếm tiền và giữ tiền, nên mượn chính tinh của cung đối diện để xem, lực yếu hơn chính tinh tọa thủ, và xét thêm phụ tinh tại cung.
 Căn cứ: yếu tố Vô Chính Diệu; cung Tài Bạch; nguồn Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); trường phái Tam hợp phái Việt
 
 Sao hỗ trợ và cần lưu ý
@@ -218,7 +218,7 @@ Tứ hóa
 Tham Lang mang Hóa Lộc ở Tật Ách (cung tam hợp của Điền Trạch) ảnh hưởng đến nhà cửa và gia đạo: thêm điều kiện thuận lợi cho nhà cửa và sự gắn kết trong nhà, nên chủ động vun vén.
 Căn cứ: sao Tham Lang; cung Điền Trạch; nguồn Tử Vi Đẩu Số Toàn Thư (Hy Di Trần Đoàn); Tử Vi Đẩu Số Tân Biên (Vân Đằng Thái Thứ Lang); trường phái Tam hợp phái Việt
 
-Sao phụ
+Phụ tinh
 
 Tuần đóng ở Tử Tức (cung xung chiếu của Điền Trạch): Tuần chỉ tác động hai cung nó đứng giữa, không chiếu sang Điền Trạch, nhưng các sao tại Tử Tức bị giảm cường độ nên phần đóng góp của cung này cho nhà cửa và gia đạo đến chậm và dịu hơn; ảnh hưởng thường rõ dần về sau, mỗi người cảm nhận khác nhau tùy hoàn cảnh và nỗ lực.
 Căn cứ: yếu tố Tuần; cung Điền Trạch; nguồn Tử Vi Nghiệm Lý Toàn Thư (Thiên Lương); Tử Vi Khảo Luận (Hoàng Thường, Hàm Chương); trường phái Tam hợp phái Việt
