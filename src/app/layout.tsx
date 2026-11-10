@@ -13,7 +13,7 @@ const sans = Be_Vietnam_Pro({
 
 const serif = Noto_Serif({
   subsets: ['latin', 'vietnamese'],
-  weight: ['400', '600'],
+  weight: ['600'] // L-efff7e: serif chỉ dùng ở tiêu đề (600); bỏ 400 để bớt tệp phông phải tải,
   variable: '--font-serif',
   display: 'swap',
   preload: false,
