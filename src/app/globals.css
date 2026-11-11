@@ -73,12 +73,12 @@ a { color: inherit; }
 }
 .chon-doi label:has(input:checked) { border-color: var(--ngoc); background: var(--ngoc-nhat); color: var(--ngoc-dam); font-weight: 500; }
 .chon-doi input { accent-color: var(--ngoc); }
-.chon-doi.nho label { min-height: 36px; font-size: 0.9rem; }
+.chon-doi.nho label { min-height: 44px; font-size: 0.9rem; }
 .chon-doi.nho { margin-bottom: 8px; }
 .nuoc-ngoai { margin-top: 6px; font-size: 0.9rem; }
 .nuoc-ngoai select, .nuoc-ngoai input { width: 100%; margin-top: 6px; }
-.lk-nho { background: none; border: 0; padding: 4px 0; color: inherit; text-decoration: underline; cursor: pointer; font: inherit; min-height: 32px; }
-.loi-muigio { margin: 6px 0 0; font-size: 0.85rem; }
+.lk-nho { background: none; border: 0; padding: 4px 0; color: inherit; text-decoration: underline; cursor: pointer; font: inherit; min-height: 44px; }
+.loi-muigio { margin: 6px 0 0; font-size: 0.875rem; }
 .nhuan { display: flex; gap: 8px; align-items: center; font-size: 0.9rem; margin-top: 6px; }
 .bao-loi { margin: 0; color: var(--sen); font-size: 0.95rem; }
 .nut-chinh {
@@ -156,10 +156,10 @@ a { color: inherit; }
 .chi-tiet h3 { font-size: 1.2rem; margin-bottom: 12px; }
 .chi-tiet h3 span { font-family: var(--font-than); font-weight: 400; font-size: 0.9rem; color: var(--muc-nhat); margin-left: 8px; }
 .nhom-sao { margin-bottom: 10px; }
-.nhom-sao h4 { font-family: var(--font-than); font-size: 0.85rem; font-weight: 500; color: var(--muc-nhat); margin-bottom: 2px; }
+.nhom-sao h4 { font-family: var(--font-than); font-size: 0.875rem; font-weight: 500; color: var(--muc-nhat); margin-bottom: 2px; }
 .nhom-sao p { margin: 0; display: flex; flex-wrap: wrap; gap: 2px 14px; }
 .phu-chu { font-size: 0.88rem; color: var(--muc-nhat); margin: 12px 0 0; }
-.chu-giai { font-size: 0.85rem; color: var(--muc-nhat); margin-top: 12px; max-width: 60em; }
+.chu-giai { font-size: 0.875rem; color: var(--muc-nhat); margin-top: 12px; max-width: 60em; }
 
 /* ---------- Giới thiệu, chân trang ---------- */
 .gioi-thieu { max-width: 42em; padding: 32px 0 56px; }
@@ -167,7 +167,7 @@ a { color: inherit; }
 .gioi-thieu p { color: var(--muc-nhat); }
 /* L-c8a890 D1: lá số hiện chen vào trên phần giới thiệu sẽ đẩy nó xuống (CLS 0.35); ẩn nó khi đã có lá số, nội dung vẫn có trong HTML cho người chưa lập */
 main:has(.ket-qua) .gioi-thieu { display: none; }
-.chan-trang { border-top: 1px solid var(--vien); padding-top: 20px; padding-bottom: 32px; font-size: 0.85rem; color: var(--muc-nhat); }
+.chan-trang { border-top: 1px solid var(--vien); padding-top: 20px; padding-bottom: 32px; font-size: 0.875rem; color: var(--muc-nhat); }
 .chan-trang p { max-width: 48em; margin: 0 0 8px; }
 
 /* ---------- Luồng mua: tóm tắt, chọn gói, thanh toán ---------- */
@@ -189,7 +189,7 @@ main:has(.ket-qua) .gioi-thieu { display: none; }
 .tt-dong dd { margin: 0; font-weight: 500; text-align: right; }
 .tt-doan { margin: 0; padding: 12px 14px; background: var(--ngoc-nhat); color: var(--ngoc-dam); border-radius: 10px; }
 .tt-doan p { margin: 0 0 6px; }
-.tt-doan footer { font-size: 0.82rem; }
+.tt-doan footer { font-size: 0.875rem; }
 .tt-dan { margin: 0; font-size: 0.95rem; color: var(--ngoc-dam); }
 .tt-ghi-chu { margin: 0; font-size: 0.88rem; color: var(--muc-nhat); }
 
@@ -208,7 +208,7 @@ main:has(.ket-qua) .gioi-thieu { display: none; }
 .luoi-goi { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
 .the-goi { background: var(--giay); border: 1px solid var(--vien); border-radius: 16px; padding: 18px; display: grid; gap: 10px; box-shadow: var(--bong); }
 .the-goi.noi-bat { border: 2px solid var(--ngoc); background: var(--ngoc-nhat); }
-.nhan-chinh { justify-self: start; font-size: 0.8rem; font-weight: 600; color: #fff; background: var(--ngoc); border-radius: 999px; padding: 2px 10px; }
+.nhan-chinh { justify-self: start; font-size: 0.875rem; font-weight: 600; color: #fff; background: var(--ngoc); border-radius: 999px; padding: 2px 10px; }
 .the-goi h3 { font-size: 1.15rem; }
 .gia { margin: 0; color: var(--muc-nhat); }
 .gia strong { font-size: 1.5rem; color: var(--muc); }
@@ -285,7 +285,7 @@ main:has(.ket-qua) .gioi-thieu { display: none; }
 }
 
 /* Màn chào bán: nguồn đoạn mẫu, phương pháp, cam kết hoàn tiền, báo lỗi */
-.doan-nguon { font-size: 0.82rem; color: var(--muc-nhat); }
+.doan-nguon { font-size: 0.875rem; color: var(--muc-nhat); }
 .phuong-phap { background: var(--giay); border: 1px solid var(--vien); border-radius: 14px; padding: 12px 16px; }
 .phuong-phap summary { cursor: pointer; font-weight: 500; color: var(--ngoc-dam); }
 .phuong-phap ul { margin: 8px 0 0; padding-left: 18px; display: grid; gap: 4px; font-size: 0.9rem; }
@@ -300,7 +300,7 @@ main:has(.ket-qua) .gioi-thieu { display: none; }
 .lien-he p { margin: 0; }
 .lien-he input[type="email"], .lien-he input[type="tel"] { width: 100%; min-height: 44px; padding: 0 12px; font: inherit; border: 1px solid var(--vien-dam); border-radius: 10px; background: var(--giay); }
 .lien-he input:focus { border-color: var(--ngoc); outline: none; box-shadow: 0 0 0 3px rgba(106, 61, 115, 0.2); }
-.lh-dong-y { display: flex; gap: 10px; align-items: flex-start; font-size: 0.92rem; cursor: pointer; }
+.lh-dong-y { display: flex; gap: 10px; align-items: flex-start; font-size: 0.92rem; cursor: pointer; min-height: 44px; }
 .lh-dong-y input { flex: 0 0 22px; width: 22px; height: 22px; margin-top: 2px; }
 .lien-he .chon-doi.nho label { min-height: 44px; }
 .lien-he { max-width: 640px; }

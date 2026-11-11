@@ -74,13 +74,13 @@ export default function ChonGoi() {
       <p className="tt-ghi-chu">Luận giải dựa trên 948 quy tắc có ghi nguồn — xem <a href="/phuong-phap">Phương pháp &amp; nguồn</a>.</p>
       <div className="khu-chon-goi">
         {gia.vanNam.length > 0 && (
-          <section className="khu-van-nam" id="van-nam-2027" aria-labelledby="tieu-de-van-nam" style={uuTienVanNam ? { order: -1 } : undefined}>
+          <section className="khu-van-nam" id="van-nam-2027" aria-labelledby="tieu-de-van-nam" style={{ order: uuTienVanNam ? -1 : 1 }}>
             <h2 id="tieu-de-van-nam">Vận năm 2027 (Đinh Mùi)</h2>
             <p className="tt-ghi-chu">{chuDanVanNam(gia.vanNam)}</p>
             <ul className="luoi-goi">{gia.vanNam.map((g) => <TheGoi key={g.ma} g={g} onChon={chonGoi} />)}</ul>
           </section>
         )}
-        <ul className="luoi-goi">{gia.goi.map((g) => <TheGoi key={g.ma} g={g} onChon={chonGoi} />)}</ul>
+        <ul className="luoi-goi" style={{ order: 0 }}>{gia.goi.map((g) => <TheGoi key={g.ma} g={g} onChon={chonGoi} />)}</ul>
       </div>
       <p className="tt-ghi-chu">{DIEU_KIEN_XEM_LAI}</p>
       <p className="tt-ghi-chu">{GHI_CHU_AI}</p>
